@@ -1,0 +1,37 @@
+{
+  "status": "pass",
+  "utc": "2026-10-09T15:38:58.853008+00:00",
+  "script": {
+    "path": "research/discovery/set_protein_extract_saved.py",
+    "bytes": 2128,
+    "sha256": "c74e902a3ad33b7c2a301d474e6d804a8d2a342a8edad92a4f0ac34ab3b210fc"
+  },
+  "outputs": [
+    {
+      "path": "research/results/discovery_set_validation_v1/protein_full_tables_small/PXD033514/extracted_verified/SampleNameEncription_Proteome24h.txt",
+      "bytes": 593,
+      "sha256": "3495ecb7a12e9639fd34527c7bd9fdcda2990fc9e8c89165bb0b8364551e31b6",
+      "crc32": 1551991292,
+      "member": "SampleNameEncription_Proteome24h.txt"
+    },
+    {
+      "path": "research/results/discovery_set_validation_v1/protein_full_tables_small/PXD033514/extracted_verified/txt/parameters.txt",
+      "bytes": 3628,
+      "sha256": "e5c72eb7a7d654ef1086c68c2227f42a3ac4bacf8ceac15f2fe9abc751c01f6f",
+      "crc32": 3443239492,
+      "member": "txt/parameters.txt"
+    },
+    {
+      "path": "research/results/discovery_set_validation_v1/protein_full_tables_small/PXD033514/extracted_verified/txt/proteinGroups.txt",
+      "bytes": 32134908,
+      "sha256": "6433f8df5e440965209b0b9007f062a2c26a1828bd15a07635bdf682de1e6aa0",
+      "crc32": 3023969931,
+      "member": "txt/proteinGroups.txt"
+    }
+  ],
+  "partial_container": true,
+  "whole_archive_SHA1_verified": false,
+  "range_parts": 1076,
+  "repair": "BufferedIO.read may return shorter block at acquired boundary; no missing bytes synthesized. All requested member CRCs verified.",
+  "scope": "Complete original unselectedMaxQuant proteinGroups, samplemapping andparameters; archivedcontainerpartial"
+}
