@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>BioExplainR Analysis Explanation Report</title><style>body{font-family:-apple-system,'Segoe UI','Noto Sans CJK SC','Microsoft YaHei',sans-serif;max-width:960px;margin:2em auto;padding:0 1em;line-height:1.6;color:#222} table{border-collapse:collapse;margin:.5em 0;font-size:.9em}th,td{border:1px solid #ccc;padding:3px 8px;text-align:left} th{background:#f3f3f3}pre{background:#f6f8fa;padding:.8em;overflow-x:auto}h1{border-bottom:2px solid #2a6f97}h2{color:#2a6f97}</style></head><body>
+<h1>BioExplainR Analysis Explanation Report</h1>
+<p>Generated: 2026-10-05 22:11:56 CST; BioExplainR 0.4.0.9000.</p>
+<p>Note: statistical facts are computed deterministically by R from the full input; model text (if any) only organises language and is not numerically verified. The report contains no API key, raw expression matrix, cell barcodes or sample names.</p>
+<h2>Object 1</h2>
+<h3>Source and parameters</h3>
+<table><tr><th>item</th><th>value</th></tr><tr><td>analysis_type</td><td>differential_expression</td></tr><tr><td>source_class</td><td>data.frame</td></tr><tr><td>source_package</td><td>NA</td></tr><tr><td>source_status</td><td>unknown</td></tr><tr><td>adapter</td><td>de_table</td></tr><tr><td>thresholds</td><td>padj=0.05; lfc=0; p=0.05</td></tr><tr><td>created</td><td>2026-10-05 22:11:44 CST</td></tr></table>
+<h3>User-supplied study context</h3>
+<table><tr><th>item</th><th>value</th></tr><tr><td>scope</td><td>human</td></tr></table>
+<h3>Deterministic statistical facts</h3>
+<table><tr><th>item</th><th>value</th></tr><tr><td>n_features</td><td>3</td></tr><tr><td>lfc_column</td><td>log2FoldChange</td></tr><tr><td>p_value_column</td><td>NA</td></tr><tr><td>adjusted_p_column</td><td>padj</td></tr><tr><td>p_value_basis</td><td>adjusted_column</td></tr><tr><td>n_na_lfc</td><td>0</td></tr><tr><td>n_tested</td><td>3</td></tr><tr><td>n_na_padj</td><td>0</td></tr><tr><td>padj_threshold</td><td>0.05</td></tr><tr><td>lfc_threshold</td><td>0</td></tr><tr><td>n_significant_any_lfc</td><td>2</td></tr><tr><td>n_up</td><td>1</td></tr><tr><td>n_down</td><td>1</td></tr><tr><td>n_significant</td><td>2</td></tr><tr><td>min_padj</td><td>0.01</td></tr><tr><td>lfc_range</td><td>-2, 2</td></tr><tr><td>lfc_median</td><td>0.1</td></tr></table>
+<h3>Summary of the top 3 rows</h3>
+<table><tr><th>feature</th><th>log2fc</th><th>padj</th><th>direction</th><th>passes_thresholds</th></tr><tr><td>1</td><td>2</td><td>0.01</td><td>up</td><td>TRUE</td></tr><tr><td>2</td><td>-2</td><td>0.02</td><td>down</td><td>TRUE</td></tr><tr><td>3</td><td>0.1</td><td>0.8</td><td>up</td><td>FALSE</td></tr></table>
+<h3>Local explanation (rule template)</h3>
+<p><strong>Data facts (computed deterministically in R)</strong></p>
+<ul><li>The result table has 3 features; the log2FC column is &#39;log2FoldChange&#39;.</li><li>With padj &lt; 0.05 and |log2FC| &gt; 0: 2 significant (1 up, 1 down); 0 features have NA padj.</li><li>log2FC ranges from -2 to 2; median 0.1.</li></ul>
+<p><strong>Statistical meaning</strong></p>
+<ul><li>log2FC describes the direction and size of a change, while the adjusted p-value describes statistical reliability under multiple testing; they are different dimensions and both must be considered.</li><li>A gene with a very small p-value but a tiny log2FC is statistically reliable but may be biologically unimportant; conversely, a large log2FC with a non-significant padj may reflect low expression or high variability.</li></ul>
+<p><strong>Biological interpretation (verify against evidence)</strong></p>
+<ul><li>The most significant features include: 1, 2, 3. Look up the functional annotations of these genes (for example NCBI Gene, UniProt) before judging whether they relate to the experimental treatment.</li><li>Differential expression only shows that expression level is associated with the grouping in this dataset; biological mechanisms need support from the literature, database evidence or experiments.</li></ul>
+<p><strong>Uncertainty and limitations</strong></p>
+<ul><li>The package that produced this table cannot be determined from its column names; supply it with the source_package argument.</li><li>No comparison (contrast) was provided; the sign of log2FC depends on which group is the denominator/reference group.</li><li>No species was provided, so the user must confirm the species background for any biological interpretation.</li></ul>
+<p><strong>Conclusions that cannot be drawn</strong></p>
+<ul><li>Do not rewrite &#39;significantly differentially expressed&#39; as &#39;this gene caused the phenotype&#39; or &#39;this pathway is activated&#39;.</li><li>Do not describe genes that are not significant as &#39;unchanged&#39;; the study may simply lack statistical power.</li></ul>
+<p><strong>Learning questions</strong></p>
+<ul><li>How would the sign of log2FC change if the order of the compared groups were swapped?</li><li>Why must adjusted p-values be used when tens of thousands of genes are tested at once?</li><li>How would you describe a gene with a very small padj but |log2FC| = 0.1?</li></ul>
+<p><strong>Concept cards</strong></p>
+<ul><li>p-value: the probability of observing a result at least as extreme as the current one if there were truly no difference; it is not an effect size and not the probability that the hypothesis is true.</li><li>Adjusted p-value (FDR/padj): controls the false discovery rate when thousands of genes are tested at once; for example padj &lt; 0.05 means about 5% of the features called significant are expected to be false discoveries.</li><li>log2 fold change: the base-2 logarithm of the ratio of expression between two groups; 1 means about 2-fold higher, -1 means about half. The sign depends on the comparison order.</li></ul>
+<p>Model not used: local mode (protocol = &#39;none&#39;)</p>
+<h3>Traceable evidence sources</h3>
+<table><tr><th>id</th><th>type</th><th>title</th><th>claim</th><th>source</th><th>supplied_by</th><th>url</th><th>version</th><th>accessed</th></tr><tr><td>Local:fixture</td><td>literature</td><td>&lt;script&gt;window.untrustedEvidence=true&lt;/script&gt;</td><td></td><td>Local</td><td>user</td><td></td><td></td><td>2026-10-05</td></tr></table>
+<h3>Typed claim ledger</h3>
+<table><tr><th>id</th><th>schema_version</th><th>claim_type</th><th>text</th><th>origin</th><th>text_ref</th><th>context_id</th><th>fact_path</th><th>value_type</th><th>unit</th><th>direction</th><th>value</th><th>scope</th><th>path_tokens</th><th>evidence_refs</th><th>validation</th></tr><tr><td>fixture_count</td><td>1.0</td><td>statistical_fact</td><td></td><td>model</td><td></td><td>ed236b90e6dfb589db6cd5d205b53dcf1d9a395008c8f8106cc90802d010105f</td><td>n_features</td><td>integer</td><td>NA</td><td>NA</td><td>3</td><td>list(species = &quot;human&quot;)</td><td>n_features</td><td>Local:fixture</td><td>list(claim = &quot;fixture_count&quot;, check = &quot;value&quot;, status = &quot;pass&quot;, detail = &quot;typed value matches computed fact&quot;, reference_scope = &quot;full&quot;)</td></tr></table>
+<table><tr><th>claim</th><th>check</th><th>status</th><th>detail</th><th>reference_scope</th></tr><tr><td>fixture_count</td><td>value</td><td>pass</td><td>typed value matches computed fact</td><td>full</td></tr></table>
+<table><tr><th>claim</th><th>check</th><th>status</th><th>detail</th></tr><tr><td>fixture_count</td><td>support_relation</td><td>unverified</td><td>no claim-level relation for Local:fixture</td></tr></table>
+<h3>Runtime manifest</h3>
+<pre><code>{
+  &quot;manifest_version&quot;: &quot;1.0&quot;,
+  &quot;run_id&quot;: &quot;run-20261005221144&quot;,
+  &quot;context_id&quot;: &quot;ed236b90e6dfb589db6cd5d205b53dcf1d9a395008c8f8106cc90802d010105f&quot;,
+  &quot;facts_hash&quot;: &quot;c2efe11ab3b9f6d92ec95617367182d6b4b5106b5092135eac172718939a0abb&quot;,
+  &quot;payload_hash&quot;: &quot;62f80047a589eee1f94acc865eaf1f3760be3dff6a0ece5d72abd816d720b472&quot;,
+  &quot;request_hash&quot;: null,
+  &quot;response_hash&quot;: null,
+  &quot;schema_version&quot;: &quot;1.0&quot;,
+  &quot;serialization_version&quot;: &quot;jsonlite-17-null-1&quot;,
+  &quot;numeric_policy&quot;: {
+    &quot;digits&quot;: 17,
+    &quot;na&quot;: &quot;null&quot;,
+    &quot;null&quot;: &quot;null&quot;
+  },
+  &quot;policy_id&quot;: &quot;e3e07162158ec48661e5d5e3768588cc12aefa573b03844e9182e1743b7818d9&quot;,
+  &quot;created&quot;: &quot;2026-10-05 22:11:44 CST&quot;,
+  &quot;status&quot;: &quot;not_run&quot;
+}</code></pre>
+<h3>Explanation fact and citation check</h3>
+<p>Status: partial</p>
+<table><tr><th>claim</th><th>check</th><th>status</th><th>detail</th></tr><tr><td>fixture_count</td><td>value</td><td>pass</td><td>n_features = 3</td></tr><tr><td>fixture_count</td><td>citation</td><td>pass</td><td>citations are supplied evidence ids</td></tr></table>
+<h2>Model configuration (no key)</h2>
+<table><tr><th>item</th><th>value</th></tr><tr><td>preset</td><td>local</td></tr><tr><td>protocol</td><td>none</td></tr><tr><td>model</td><td>NA</td></tr><tr><td>endpoint_host</td><td>NA</td></tr><tr><td>key_source</td><td>none</td></tr><tr><td>timeout</td><td>60</td></tr><tr><td>max_retries</td><td>2</td></tr><tr><td>temperature</td><td>NA</td></tr><tr><td>max_tokens</td><td>1500</td></tr></table>
+<h2>Runtime environment and dependency provenance</h2>
+<table><tr><th>item</th><th>value</th></tr><tr><td>R</td><td>R version 4.3.3 (2024-02-29)</td></tr><tr><td>platform</td><td>x86_64-pc-linux-gnu</td></tr><tr><td>os</td><td>Ubuntu 24.04.4 LTS</td></tr></table>
+<table><tr><th>package</th><th>version</th><th>source</th></tr><tr><td>BioExplainR</td><td>0.4.0.9000</td><td>local/unknown</td></tr><tr><td>httr2</td><td>1.0.0</td><td>CRAN</td></tr><tr><td>jsonlite</td><td>1.8.8</td><td>CRAN</td></tr><tr><td>SummarizedExperiment</td><td>1.32.0</td><td>Bioconductor</td></tr></table>
+</body></html>

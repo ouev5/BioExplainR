@@ -1,0 +1,192 @@
+{
+  "case": "single_cell_012",
+  "family": "single_cell",
+  "method": "direct_bounded",
+  "replicate": 3,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:24:02 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"数据矩阵维度为37行54列。\",\n    \"assay名称为counts。\",\n    \"不同样本数为1。\"\n  ],\n  \"statistical_meaning\": [\n    \"37行通常代表特征数，54列通常代表细胞数。\",\n    \"counts表示计数矩阵。\",\n    \"n_distinct_samples为1表示样本标签无区分度。\"\n  ],\n  \"biological_interpretation\": [\n    \"该数据可能来自单细胞计数矩阵。\",\n    \"样本信息不足，无法进行有意义的生物学比较。\",\n    \"特征和细胞数量可用于初步评估数据规模。\"\n  ],\n  \"uncertainty\": [\n    \"无法确认37行是否一定为特征、54列是否一定为细胞。\",\n    \"样本数1可能由元数据缺失或标签错误导致。\"\n  ],\n  \"cannot_conclude\": [\n    \"无法确定n_cells、n_features、n_samples的明确语义。\",\n    \"无法进行差异表达或样本间比较。\"\n  ],\n  \"learning_questions\": [\n    \"如何从R对象中正确提取细胞数和特征数？\",\n    \"为什么样本元数据中只有1个不同样本？\",\n    \"counts assay是否已经过标准化？\"\n  ],\n  \"evidence_used\": [\n    \"dim\",\n    \"assays\",\n    \"n_distinct_samples\"\n  ],\n  \"claims\": [\n    {\n      \"id\": \"claim_n_cells\",\n      \"text\": \"n_cells无法从给定输出中确定。\",\n      \"fact\": \"n_cells\",\n      \"value\": null,\n      \"evidence\": [\n        \"dim\"\n      ]\n    },\n    {\n      \"id\": \"claim_n_features\",\n      \"text\": \"n_features无法从给定输出中确定。\",\n      \"fact\": \"n_features\",\n      \"value\": null,\n      \"evidence\": [\n        \"dim\"\n      ]\n    },\n    {\n      \"id\": \"claim_n_samples\",\n      \"text\": \"n_samples无法从给定输出中确定。\",\n      \"fact\": \"n_samples\",\n      \"value\": null,\n      \"evidence\": [\n        \"n_distinct_samples\"\n      ]\n    },\n    {\n      \"id\": \"claim_assays\",\n      \"text\": \"assays为counts。\",\n      \"fact\": \"assays\",\n      \"value\": \"counts\",\n      \"evidence\": [\n        \"assays\"\n      ]\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 316,
+      "completion_tokens": 523,
+      "total_tokens": 839,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 188
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.6099999999999999
+  },
+  "parsed": {
+    "data_facts": [
+      "数据矩阵维度为37行54列。",
+      "assay名称为counts。",
+      "不同样本数为1。"
+    ],
+    "statistical_meaning": [
+      "37行通常代表特征数，54列通常代表细胞数。",
+      "counts表示计数矩阵。",
+      "n_distinct_samples为1表示样本标签无区分度。"
+    ],
+    "biological_interpretation": [
+      "该数据可能来自单细胞计数矩阵。",
+      "样本信息不足，无法进行有意义的生物学比较。",
+      "特征和细胞数量可用于初步评估数据规模。"
+    ],
+    "uncertainty": [
+      "无法确认37行是否一定为特征、54列是否一定为细胞。",
+      "样本数1可能由元数据缺失或标签错误导致。"
+    ],
+    "cannot_conclude": [
+      "无法确定n_cells、n_features、n_samples的明确语义。",
+      "无法进行差异表达或样本间比较。"
+    ],
+    "learning_questions": [
+      "如何从R对象中正确提取细胞数和特征数？",
+      "为什么样本元数据中只有1个不同样本？",
+      "counts assay是否已经过标准化？"
+    ],
+    "evidence_used": [
+      "dim",
+      "assays",
+      "n_distinct_samples"
+    ],
+    "claims": [
+      {
+        "id": "claim_n_cells",
+        "text": "n_cells无法从给定输出中确定。",
+        "fact": "n_cells",
+        "value": null,
+        "evidence": [
+          "dim"
+        ]
+      },
+      {
+        "id": "claim_n_features",
+        "text": "n_features无法从给定输出中确定。",
+        "fact": "n_features",
+        "value": null,
+        "evidence": [
+          "dim"
+        ]
+      },
+      {
+        "id": "claim_n_samples",
+        "text": "n_samples无法从给定输出中确定。",
+        "fact": "n_samples",
+        "value": null,
+        "evidence": [
+          "n_distinct_samples"
+        ]
+      },
+      {
+        "id": "claim_assays",
+        "text": "assays为counts。",
+        "fact": "assays",
+        "value": "counts",
+        "evidence": [
+          "assays"
+        ]
+      }
+    ]
+  },
+  "validation": {
+    "status": "fail",
+    "findings": [
+      {
+        "claim": "(evidence_used)",
+        "check": "evidence_ids",
+        "status": "fail",
+        "detail": "unknown evidence id(s): dim, assays, n_distinct_samples (no evidence list was supplied)"
+      },
+      {
+        "claim": "claim_n_cells",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_n_cells",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: dim"
+      },
+      {
+        "claim": "claim_n_features",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_n_features",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: dim"
+      },
+      {
+        "claim": "claim_n_samples",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_n_samples",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: n_distinct_samples"
+      },
+      {
+        "claim": "claim_assays",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      },
+      {
+        "claim": "claim_assays",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: assays"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_cells",
+      "expected": 54,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "n_features",
+      "expected": 37,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "n_samples",
+      "expected": 1,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "assays",
+      "expected": "counts",
+      "value": "counts",
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 1204
+}

@@ -1,0 +1,159 @@
+{
+  "case": "reactome_ora",
+  "method": "facts_only",
+  "replicate": 3,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-03 19:35:24 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"本次 ORA 分析共检验了 1104 个基因集/通路条目。\",\n    \"在 p.adjust < 0.05 的阈值下，只有 1 个条目达到显著。\",\n    \"富集方法为 ORA（过表达分析）。\",\n    \"显著条目的基因数范围为 16 到 16（即唯一显著条目包含 16 个输入基因）。\",\n    \"背景基因集大小（由 BgRatio 推算）为 8887。\",\n    \"输入基因映射到背景的数目（由 GeneRatio 分母推算）为 547。\",\n    \"p 值依据为 adjusted_column（即使用校正后的 p 值）。\",\n    \"显著性阈值为 0.05。\",\n    \"p.adjust 缺失值个数为 0。\",\n    \"排名第一的条目为 Interleukin-4 and Interleukin-13 signaling（R-HSA-6785807），Count=16，GeneRatio=16/547，BgRatio=79/8887，pvalue=0.00002，p.adjust=0.02159。\",\n    \"排名第二的条目为 G alpha (q) signalling events（R-HSA-416476），Count=15，GeneRatio=15/547，BgRatio=94/8887，pvalue=0.000571，p.adjust=0.1576。\",\n    \"排名第三的条目为 Ethanol oxidation（R-HSA-71384），Count=5，GeneRatio=5/547，BgRatio=12/8887，pvalue=0.000478，p.adjust=0.1576。\",\n    \"排名第四的条目为 Collagen chain trimerization（R-HSA-8948216），Count=9，GeneRatio=9/547，BgRatio=39/8887，pvalue=0.000476，p.adjust=0.1576。\",\n    \"排名第五的条目为 Voltage gated Potassium channels（R-HSA-1296072），Count=7，GeneRatio=7/547，BgRatio=27/8887，pvalue=0.000969，p.adjust=0.1714。\",\n    \"排名第六的条目为 Integrin cell surface interactions（R-HSA-216083），Count=12，GeneRatio=12/547，BgRatio=71/8887，pvalue=0.001188，p.adjust=0.1714。\",\n    \"排名第七的条目为 Anchoring fibril formation（R-HSA-2214320），Count=5，GeneRatio=5/547，BgRatio=15/8887，pvalue=0.001553，p.adjust=0.1714。\",\n    \"排名第八的条目为 Non-integrin membrane-ECM interactions（R-HSA-3000171），Count=8，GeneRatio=8/547，BgRatio=36/8887，pvalue=0.001275，p.adjust=0.1714。\",\n    \"排名第九的条目为 G alpha (z) signalling events（R-HSA-418597），Count=8，GeneRatio=8/547，BgRatio=37/8887，pvalue=0.001541，p.adjust=0.1714。\",\n    \"排名第十的条目为 FOXO-mediated transcription of cell death genes（R-HSA-9614657），Count=5，GeneRatio=5/547，BgRatio=15/8887，pvalue=0.001553，p.adjust=0.1714。\"\n  ],\n  \"statistical_meaning\": [\n    \"ORA 检验的是：在给定背景基因集（universe）下，输入基因列表与某个基因集的重叠数是否超过随机期望。\",\n    \"p 值越小表示观察到的重叠越难用随机抽样解释；p.adjust 是对多重检验（1104 个条目）进行校正后的 p 值。\",\n    \"只有 p.adjust < 0.05 的条目才被判定为显著；本次仅 1 个条目满足该条件。\",\n    \"Count 是输入基因列表中属于该基因集的基因个数，是计数型统计量，本身没有正负方向。\",\n    \"GeneRatio 与 BgRatio 的差异反映该基因集在输入列表中的相对富集程度，但 ORA 不提供效应量方向。\",\n    \"pvalue 与 p.adjust 的差异体现了多重检验校正的影响：例如 G alpha (q) signalling events 的 pvalue=0.000571 但 p.adjust=0.1576。\"\n  ],\n  \"biological_interpretation\": [\n    \"唯一达到校正后显著的条目是 Interleukin-4 and Interleukin-13 signaling（R-HSA-6785807），提示输入基因列表（airway_lfc1）中与该信号通路相关的基因（16 个）在背景中占比相对较高。\",\n    \"该结果属于假设生成性质：ORA 只能说明基因列表与通路基因集存在统计重叠，不能说明该通路在生物学上被激活或抑制。\",\n    \"其他条目（如 G alpha (q) signalling events、Ethanol oxidation、Collagen chain trimerization 等）在校正后不显著，只能作为探索性线索，不宜作为独立结论。\",\n    \"由于输入基因列表来自 airway_lfc1（一个派生结果），这些通路关联应视为对该派生列表的描述，而非对原始实验的独立验证。\"\n  ],\n  \"uncertainty\": [\n    \"列名与 clusterProfiler/DOSE 的 as.data.frame() 输出相似，但来源包仅为推测。\",\n    \"ORA 只检验输入基因列表与基因集的重叠是否超出随机预期，本身没有“激活/抑制”方向，不能据此认定通路激活。\",\n    \"ORA 结果依赖背景基因集（universe）的选择；未指定合适背景时 p 值可能被高估或低估。\",\n    \"该富集结果派生自 airway_lfc1；它是派生证据，不构成对上游结果的独立验证。\",\n    \"pvalue 与 p.adjust 的差异较大（如 0.000571 vs 0.1576），说明多重检验校正对结论影响很大，未校正的 p 值不能直接用于判定显著性。\"\n  ],\n  \"cannot_conclude\": [\n    \"不能得出 Interleukin-4 and Interleukin-13 signaling 通路在样本中被激活或抑制的结论。\",\n    \"不能得出其他未校正显著条目（如 G alpha (q) signalling events、Ethanol oxidation 等）具有生物学意义的结论。\",\n    \"不能从 ORA 结果推断基因表达变化的方向（上调/下调）。\",\n    \"不能将该富集结果视为对 airway_lfc1 上游分析的独立验证。\",\n    \"不能在没有明确背景基因集的情况下，将 p 值解释为绝对的通路富集概率。\",\n    \"不能根据 Count 的大小判断通路的“强弱”或“方向”，Count 只是重叠基因数。\"\n  ],\n  \"learning_questions\": [\n    \"ORA 与 GSEA 的核心区别是什么？为什么 ORA 不能给出通路激活方向？\",\n    \"为什么多重检验校正（如 BH 方法）对富集分析结果影响如此大？\",\n    \"背景基因集（universe）的选择会如何影响 ORA 的 p 值？\",\n    \"GeneRatio 和 BgRatio 分别代表什么？如何用它们理解富集程度？\",\n    \"如果只有 1 个条目通过校正后显著性，应如何谨慎解读该结果？\",\n    \"为什么说派生自 airway_lfc1 的富集结果不是独立验证？\"\n  ],\n  \"evidence_used\": [],\n  \"claims\": [\n    {\n      \"id\": \"claim_n_terms\",\n      \"text\": \"本次 ORA 分析共检验了 1104 个基因集/通路条目。\",\n      \"fact\": \"n_terms\",\n      \"value\": 1104,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_n_significant\",\n      \"text\": \"在 p.adjust < 0.05 的阈值下，只有 1 个条目达到显著。\",\n      \"fact\": \"n_significant\",\n      \"value\": 1,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_enrichment_method\",\n      \"text\": \"富集方法为 ORA（过表达分析）。\",\n      \"fact\": \"enrichment_method\",\n      \"value\": \"ORA\",\n      \"evidence\": []\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 2374,
+      "completion_tokens": 1855,
+      "total_tokens": 4229,
+      "prompt_tokens_details": {
+        "cached_tokens": 2176
+      },
+      "prompt_cache_hit_tokens": 2176,
+      "prompt_cache_miss_tokens": 198
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 7.11
+  },
+  "parsed": {
+    "data_facts": [
+      "本次 ORA 分析共检验了 1104 个基因集/通路条目。",
+      "在 p.adjust < 0.05 的阈值下，只有 1 个条目达到显著。",
+      "富集方法为 ORA（过表达分析）。",
+      "显著条目的基因数范围为 16 到 16（即唯一显著条目包含 16 个输入基因）。",
+      "背景基因集大小（由 BgRatio 推算）为 8887。",
+      "输入基因映射到背景的数目（由 GeneRatio 分母推算）为 547。",
+      "p 值依据为 adjusted_column（即使用校正后的 p 值）。",
+      "显著性阈值为 0.05。",
+      "p.adjust 缺失值个数为 0。",
+      "排名第一的条目为 Interleukin-4 and Interleukin-13 signaling（R-HSA-6785807），Count=16，GeneRatio=16/547，BgRatio=79/8887，pvalue=0.00002，p.adjust=0.02159。",
+      "排名第二的条目为 G alpha (q) signalling events（R-HSA-416476），Count=15，GeneRatio=15/547，BgRatio=94/8887，pvalue=0.000571，p.adjust=0.1576。",
+      "排名第三的条目为 Ethanol oxidation（R-HSA-71384），Count=5，GeneRatio=5/547，BgRatio=12/8887，pvalue=0.000478，p.adjust=0.1576。",
+      "排名第四的条目为 Collagen chain trimerization（R-HSA-8948216），Count=9，GeneRatio=9/547，BgRatio=39/8887，pvalue=0.000476，p.adjust=0.1576。",
+      "排名第五的条目为 Voltage gated Potassium channels（R-HSA-1296072），Count=7，GeneRatio=7/547，BgRatio=27/8887，pvalue=0.000969，p.adjust=0.1714。",
+      "排名第六的条目为 Integrin cell surface interactions（R-HSA-216083），Count=12，GeneRatio=12/547，BgRatio=71/8887，pvalue=0.001188，p.adjust=0.1714。",
+      "排名第七的条目为 Anchoring fibril formation（R-HSA-2214320），Count=5，GeneRatio=5/547，BgRatio=15/8887，pvalue=0.001553，p.adjust=0.1714。",
+      "排名第八的条目为 Non-integrin membrane-ECM interactions（R-HSA-3000171），Count=8，GeneRatio=8/547，BgRatio=36/8887，pvalue=0.001275，p.adjust=0.1714。",
+      "排名第九的条目为 G alpha (z) signalling events（R-HSA-418597），Count=8，GeneRatio=8/547，BgRatio=37/8887，pvalue=0.001541，p.adjust=0.1714。",
+      "排名第十的条目为 FOXO-mediated transcription of cell death genes（R-HSA-9614657），Count=5，GeneRatio=5/547，BgRatio=15/8887，pvalue=0.001553，p.adjust=0.1714。"
+    ],
+    "statistical_meaning": [
+      "ORA 检验的是：在给定背景基因集（universe）下，输入基因列表与某个基因集的重叠数是否超过随机期望。",
+      "p 值越小表示观察到的重叠越难用随机抽样解释；p.adjust 是对多重检验（1104 个条目）进行校正后的 p 值。",
+      "只有 p.adjust < 0.05 的条目才被判定为显著；本次仅 1 个条目满足该条件。",
+      "Count 是输入基因列表中属于该基因集的基因个数，是计数型统计量，本身没有正负方向。",
+      "GeneRatio 与 BgRatio 的差异反映该基因集在输入列表中的相对富集程度，但 ORA 不提供效应量方向。",
+      "pvalue 与 p.adjust 的差异体现了多重检验校正的影响：例如 G alpha (q) signalling events 的 pvalue=0.000571 但 p.adjust=0.1576。"
+    ],
+    "biological_interpretation": [
+      "唯一达到校正后显著的条目是 Interleukin-4 and Interleukin-13 signaling（R-HSA-6785807），提示输入基因列表（airway_lfc1）中与该信号通路相关的基因（16 个）在背景中占比相对较高。",
+      "该结果属于假设生成性质：ORA 只能说明基因列表与通路基因集存在统计重叠，不能说明该通路在生物学上被激活或抑制。",
+      "其他条目（如 G alpha (q) signalling events、Ethanol oxidation、Collagen chain trimerization 等）在校正后不显著，只能作为探索性线索，不宜作为独立结论。",
+      "由于输入基因列表来自 airway_lfc1（一个派生结果），这些通路关联应视为对该派生列表的描述，而非对原始实验的独立验证。"
+    ],
+    "uncertainty": [
+      "列名与 clusterProfiler/DOSE 的 as.data.frame() 输出相似，但来源包仅为推测。",
+      "ORA 只检验输入基因列表与基因集的重叠是否超出随机预期，本身没有“激活/抑制”方向，不能据此认定通路激活。",
+      "ORA 结果依赖背景基因集（universe）的选择；未指定合适背景时 p 值可能被高估或低估。",
+      "该富集结果派生自 airway_lfc1；它是派生证据，不构成对上游结果的独立验证。",
+      "pvalue 与 p.adjust 的差异较大（如 0.000571 vs 0.1576），说明多重检验校正对结论影响很大，未校正的 p 值不能直接用于判定显著性。"
+    ],
+    "cannot_conclude": [
+      "不能得出 Interleukin-4 and Interleukin-13 signaling 通路在样本中被激活或抑制的结论。",
+      "不能得出其他未校正显著条目（如 G alpha (q) signalling events、Ethanol oxidation 等）具有生物学意义的结论。",
+      "不能从 ORA 结果推断基因表达变化的方向（上调/下调）。",
+      "不能将该富集结果视为对 airway_lfc1 上游分析的独立验证。",
+      "不能在没有明确背景基因集的情况下，将 p 值解释为绝对的通路富集概率。",
+      "不能根据 Count 的大小判断通路的“强弱”或“方向”，Count 只是重叠基因数。"
+    ],
+    "learning_questions": [
+      "ORA 与 GSEA 的核心区别是什么？为什么 ORA 不能给出通路激活方向？",
+      "为什么多重检验校正（如 BH 方法）对富集分析结果影响如此大？",
+      "背景基因集（universe）的选择会如何影响 ORA 的 p 值？",
+      "GeneRatio 和 BgRatio 分别代表什么？如何用它们理解富集程度？",
+      "如果只有 1 个条目通过校正后显著性，应如何谨慎解读该结果？",
+      "为什么说派生自 airway_lfc1 的富集结果不是独立验证？"
+    ],
+    "evidence_used": [],
+    "claims": [
+      {
+        "id": "claim_n_terms",
+        "text": "本次 ORA 分析共检验了 1104 个基因集/通路条目。",
+        "fact": "n_terms",
+        "value": 1104,
+        "evidence": []
+      },
+      {
+        "id": "claim_n_significant",
+        "text": "在 p.adjust < 0.05 的阈值下，只有 1 个条目达到显著。",
+        "fact": "n_significant",
+        "value": 1,
+        "evidence": []
+      },
+      {
+        "id": "claim_enrichment_method",
+        "text": "富集方法为 ORA（过表达分析）。",
+        "fact": "enrichment_method",
+        "value": "ORA",
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "claim_n_terms",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_terms = 1104"
+      },
+      {
+        "claim": "claim_n_significant",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_significant = 1"
+      },
+      {
+        "claim": "claim_enrichment_method",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      }
+    ],
+    "n_claims": 3,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_terms",
+      "expected": 1104,
+      "value": 1104,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_significant",
+      "expected": 1,
+      "value": 1,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "enrichment_method",
+      "expected": "ORA",
+      "value": "ORA",
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 7031
+}

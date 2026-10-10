@@ -1,0 +1,26 @@
+{
+  "command": [
+    "sudo",
+    "-n",
+    "env",
+    "DEBIAN_FRONTEND=noninteractive",
+    "NEEDRESTART_MODE=l",
+    "apt-get",
+    "install",
+    "-y",
+    "--no-install-recommends",
+    "r-cran-magick",
+    "r-cran-rjson",
+    "r-bioc-biocfilecache"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-05T12:01:16.463221+00:00",
+  "finished_utc": "2026-10-05T12:01:23.492334+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/continuation-spatial-deps.txt",
+    "bytes": 7499,
+    "sha256": "6476d3fa6e4dac4fd92276f2c451550da9e19c531a76c9ac8ae7185ab4f2c2d7"
+  }
+}

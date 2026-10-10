@@ -1,0 +1,19 @@
+{
+  "command": [
+    "env",
+    "BIOEXPLAINR_PAPER_RESULTS_DIR=research/results/w00_baseline/continuation-paper-browser-final",
+    "NODE_PATH=/tmp/opencode/node_modules",
+    "node",
+    "research/paper_smoke.cjs"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-05T13:34:42.071236+00:00",
+  "finished_utc": "2026-10-05T13:35:04.517053+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/continuation-paper-browser-user-actions-final.txt",
+    "bytes": 1720,
+    "sha256": "e7646d1cc9e562ccc407da9160bac4aea0b461de461e9693f96d306cdc0b5e0f"
+  }
+}

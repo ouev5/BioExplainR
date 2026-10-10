@@ -1,0 +1,160 @@
+{
+  "case": "cell_composition_010",
+  "family": "cell_composition",
+  "method": "facts_evidence",
+  "replicate": 3,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:28:01 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"本次分析共使用 168 个细胞，来自 6 个样本。\",\n    \"样本分为 2 组（control 3 个、treated 3 个），共识别出 3 个 cluster。\",\n    \"每个 cluster 的平均比例均为 0.3333，范围在 0.3214 到 0.3571 之间。\"\n  ],\n  \"statistical_meaning\": [\n    \"独立重复单位是样本（n=6），不是细胞；每个样本对每个 cluster 只贡献一个比例值。\",\n    \"同一细胞内各 cluster 比例之和为 1，属于成分数据，一个 cluster 升高会相对压低其他 cluster。\",\n    \"当前 test_status 为 descriptive_only，未提供 p 值或校正后 p 值，因此只能做描述性比较。\"\n  ],\n  \"biological_interpretation\": [\n    \"三个 cluster 的平均比例几乎相同，提示在所声明的分组下未见明显的细胞组成偏移（仅为描述性观察）。\",\n    \"若物种与细胞类型背景确认，可进一步讨论这些 cluster 是否对应特定细胞群，但目前证据不足。\",\n    \"文献命中 EuropePMC:MED:24926665 仅表示检索匹配，不能用于支持本分析的细胞组成结论。\"\n  ],\n  \"uncertainty\": [\n    \"独立重复单位是样本而非细胞，所有比较基于每个样本一个比例值。\",\n    \"成分数据约束使 cluster 比例不能独立变化，单看一个 cluster 的升降需谨慎。\",\n    \"未提供物种信息，生物学解释需要用户确认物种背景。\"\n  ],\n  \"cannot_conclude\": [\n    \"不能推断组间差异具有统计学显著性，因为未提供 p 值或校正后 p 值。\",\n    \"不能推断因果或机制，比例差异只描述与所声明分组的关联。\",\n    \"不能把细胞当作重复来增加检验效能，也不能据此做临床或功能结论。\"\n  ],\n  \"learning_questions\": [\n    \"为什么细胞组成分析中要以样本而不是细胞作为重复单位？\",\n    \"成分数据（比例之和为 1）会给差异比较带来什么限制？\",\n    \"描述性分析与带 p 值的统计检验在结论强度上有何不同？\"\n  ],\n  \"evidence_used\": [\n    \"EuropePMC:MED:24926665\"\n  ],\n  \"claims\": [\n    {\n      \"id\": \"claim_n_cells_used\",\n      \"text\": \"使用的细胞数为 168。\",\n      \"fact\": \"n_cells_used\",\n      \"value\": 168,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_n_samples\",\n      \"text\": \"样本数为 6。\",\n      \"fact\": \"n_samples\",\n      \"value\": 6,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_n_clusters\",\n      \"text\": \"cluster 数为 3。\",\n      \"fact\": \"n_clusters\",\n      \"value\": 3,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_n_groups\",\n      \"text\": \"分组数为 2。\",\n      \"fact\": \"n_groups\",\n      \"value\": 2,\n      \"evidence\": []\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 1261,
+      "completion_tokens": 706,
+      "total_tokens": 1967,
+      "prompt_tokens_details": {
+        "cached_tokens": 1024
+      },
+      "prompt_cache_hit_tokens": 1024,
+      "prompt_cache_miss_tokens": 237
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 3.0600000000000001
+  },
+  "parsed": {
+    "data_facts": [
+      "本次分析共使用 168 个细胞，来自 6 个样本。",
+      "样本分为 2 组（control 3 个、treated 3 个），共识别出 3 个 cluster。",
+      "每个 cluster 的平均比例均为 0.3333，范围在 0.3214 到 0.3571 之间。"
+    ],
+    "statistical_meaning": [
+      "独立重复单位是样本（n=6），不是细胞；每个样本对每个 cluster 只贡献一个比例值。",
+      "同一细胞内各 cluster 比例之和为 1，属于成分数据，一个 cluster 升高会相对压低其他 cluster。",
+      "当前 test_status 为 descriptive_only，未提供 p 值或校正后 p 值，因此只能做描述性比较。"
+    ],
+    "biological_interpretation": [
+      "三个 cluster 的平均比例几乎相同，提示在所声明的分组下未见明显的细胞组成偏移（仅为描述性观察）。",
+      "若物种与细胞类型背景确认，可进一步讨论这些 cluster 是否对应特定细胞群，但目前证据不足。",
+      "文献命中 EuropePMC:MED:24926665 仅表示检索匹配，不能用于支持本分析的细胞组成结论。"
+    ],
+    "uncertainty": [
+      "独立重复单位是样本而非细胞，所有比较基于每个样本一个比例值。",
+      "成分数据约束使 cluster 比例不能独立变化，单看一个 cluster 的升降需谨慎。",
+      "未提供物种信息，生物学解释需要用户确认物种背景。"
+    ],
+    "cannot_conclude": [
+      "不能推断组间差异具有统计学显著性，因为未提供 p 值或校正后 p 值。",
+      "不能推断因果或机制，比例差异只描述与所声明分组的关联。",
+      "不能把细胞当作重复来增加检验效能，也不能据此做临床或功能结论。"
+    ],
+    "learning_questions": [
+      "为什么细胞组成分析中要以样本而不是细胞作为重复单位？",
+      "成分数据（比例之和为 1）会给差异比较带来什么限制？",
+      "描述性分析与带 p 值的统计检验在结论强度上有何不同？"
+    ],
+    "evidence_used": [
+      "EuropePMC:MED:24926665"
+    ],
+    "claims": [
+      {
+        "id": "claim_n_cells_used",
+        "text": "使用的细胞数为 168。",
+        "fact": "n_cells_used",
+        "value": 168,
+        "evidence": []
+      },
+      {
+        "id": "claim_n_samples",
+        "text": "样本数为 6。",
+        "fact": "n_samples",
+        "value": 6,
+        "evidence": []
+      },
+      {
+        "id": "claim_n_clusters",
+        "text": "cluster 数为 3。",
+        "fact": "n_clusters",
+        "value": 3,
+        "evidence": []
+      },
+      {
+        "id": "claim_n_groups",
+        "text": "分组数为 2。",
+        "fact": "n_groups",
+        "value": 2,
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "(evidence_used)",
+        "check": "evidence_ids",
+        "status": "pass",
+        "detail": "all cited evidence ids were supplied"
+      },
+      {
+        "claim": "claim_n_cells_used",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_cells_used = 168"
+      },
+      {
+        "claim": "claim_n_samples",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_samples = 6"
+      },
+      {
+        "claim": "claim_n_clusters",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_clusters = 3"
+      },
+      {
+        "claim": "claim_n_groups",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_groups = 2"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_cells_used",
+      "expected": 168,
+      "value": 168,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_samples",
+      "expected": 6,
+      "value": 6,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_clusters",
+      "expected": 3,
+      "value": 3,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_groups",
+      "expected": 2,
+      "value": 2,
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 4548
+}

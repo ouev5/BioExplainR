@@ -1,0 +1,4 @@
+"case","expected","actual","findings"
+"facet_and_clip","pass","pass","all_source_genes_plotted:pass;x_axis:pass;y_axis:pass"
+"raw_p_in_facets","fail","fail","all_source_genes_plotted:pass;x_axis:pass;y_axis:fail"
+"multiple_point_layers","not_checkable","not_checkable","plot_layers:not_checkable"

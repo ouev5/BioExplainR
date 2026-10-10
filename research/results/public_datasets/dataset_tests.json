@@ -1,0 +1,97 @@
+{
+  "primary_datasets": [
+    {
+      "dataset": "airway",
+      "source": "Bioconductor airway 1.22.0 / GSE52778",
+      "object_class": "DESeqResults",
+      "task": "DESeqResults deterministic fact extraction",
+      "status": "pass",
+      "elapsed_sec": 5.8308,
+      "n_features": "22369"
+    },
+    {
+      "dataset": "PBMC3k",
+      "source": "10x Genomics filtered PBMC3k matrix",
+      "object_class": "SingleCellExperiment",
+      "task": "SingleCellExperiment object, QC and UMAP summary",
+      "status": "pass",
+      "elapsed_sec": 0.6695,
+      "n_features": "32738",
+      "n_samples": "1"
+    },
+    {
+      "dataset": "pasilla",
+      "source": "Bioconductor pasilla 1.30.0 archive",
+      "object_class": "count matrix",
+      "task": "independent DESeq2 benchmark; 30/30 fact checks passed",
+      "status": "pass",
+      "elapsed_sec": 0.0005,
+      "n_features": "14599",
+      "n_samples": "7",
+      "archive": "pasilla_1.30.0.tar.gz",
+      "archive_sha256": "a0594fbfe8292a5549a7deda36bcc3d27a9e1dd18b5c1f6af02f4a7cd622ea35"
+    },
+    {
+      "dataset": "ALL",
+      "source": "Bioconductor ALL 1.44.0",
+      "object_class": "ExpressionSet",
+      "task": "ExpressionSet object and BT group summary",
+      "status": "pass",
+      "elapsed_sec": 0.0824,
+      "n_features": "12625",
+      "n_samples": "128",
+      "n_groups": "10",
+      "archive": "ALL_1.44.0.tar.gz",
+      "archive_sha256": "6c52471acf4bb77ed86e71c25e69ce5cc5235acec50785107b212934c6eec5db"
+    },
+    {
+      "dataset": "bladderbatch",
+      "source": "Bioconductor bladderbatch 1.40.0",
+      "object_class": "ExpressionSet",
+      "task": "ExpressionSet object, cancer group and batch summary",
+      "status": "pass",
+      "elapsed_sec": 0.0179,
+      "n_features": "22283",
+      "n_samples": "57",
+      "n_groups": "3",
+      "n_batches": "5",
+      "archive": "bladderbatch_1.40.0.tar.gz",
+      "archive_sha256": "74e7a300c2d2835f0dc82d70f9e90af55e7a5d248e7364a80b9e6bdd57dbafa5"
+    }
+  ],
+  "additional_locked_archives": [
+    {
+      "dataset": "ALL",
+      "package_version": "1.44.0",
+      "archive": "ALL_1.44.0.tar.gz",
+      "url": "https://bioconductor.org/packages/3.18/data/experiment/src/contrib/ALL_1.44.0.tar.gz",
+      "sha256": "6c52471acf4bb77ed86e71c25e69ce5cc5235acec50785107b212934c6eec5db",
+      "_row": "ALL_1.44.0.tar.gz"
+    },
+    {
+      "dataset": "bladderbatch",
+      "package_version": "1.40.0",
+      "archive": "bladderbatch_1.40.0.tar.gz",
+      "url": "https://bioconductor.org/packages/3.18/data/experiment/src/contrib/bladderbatch_1.40.0.tar.gz",
+      "sha256": "74e7a300c2d2835f0dc82d70f9e90af55e7a5d248e7364a80b9e6bdd57dbafa5",
+      "_row": "bladderbatch_1.40.0.tar.gz"
+    },
+    {
+      "dataset": "tximportData",
+      "package_version": "1.30.0",
+      "archive": "tximportData_1.30.0.tar.gz",
+      "url": "https://bioconductor.org/packages/3.18/data/experiment/src/contrib/tximportData_1.30.0.tar.gz",
+      "sha256": "0f8218398e976c5930ecebf45663feba4af8b8f165d47f01f91f4fbade78554f",
+      "_row": "tximportData_1.30.0.tar.gz"
+    },
+    {
+      "dataset": "RNAseqData.HNRNPC.bam.chr14",
+      "package_version": "0.40.0",
+      "archive": "RNAseqData.HNRNPC.bam.chr14_0.40.0.tar.gz",
+      "url": "https://bioconductor.org/packages/3.18/data/experiment/src/contrib/RNAseqData.HNRNPC.bam.chr14_0.40.0.tar.gz",
+      "sha256": "ee88ed18b7f6d6ebbf827c91102a0fa6c2ad67e6eb090ce311692c2be7d2bcbd",
+      "_row": "RNAseqData.HNRNPC.bam.chr14_0.40.0.tar.gz"
+    }
+  ],
+  "interpretation": "Dataset checks validate object ingestion and deterministic summaries only; they do not establish biological reproducibility or model performance."
+}

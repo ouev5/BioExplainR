@@ -1,0 +1,43 @@
+{
+  "status": "completed",
+  "candidate": "SPARCL1",
+  "results": [
+    {
+      "symbol": "SPARCL1",
+      "comparison": "dex24h vs untreated",
+      "role": "primary",
+      "n_control": 4,
+      "n_treated": 3,
+      "n_probes": 1,
+      "effect": 4.1315175526666685,
+      "pvalue": 0.00015547054705390362,
+      "ci_low": 3.747855828517914,
+      "ci_high": 4.515179276815423,
+      "welch_df": 2.5022750630839203,
+      "permutation_p": 0.02857142857142857,
+      "permutations": 35,
+      "holm_two_timepoints": 0.00015547054705390362
+    },
+    {
+      "symbol": "SPARCL1",
+      "comparison": "dex4h vs untreated",
+      "role": "secondary",
+      "n_control": 4,
+      "n_treated": 3,
+      "n_probes": 1,
+      "effect": 1.9658497193333337,
+      "pvalue": 6.566062912590384e-06,
+      "ci_low": 1.7954742370832193,
+      "ci_high": 2.136225201583448,
+      "welch_df": 3.9256871484730764,
+      "permutation_p": 0.02857142857142857,
+      "permutations": 35,
+      "holm_two_timepoints": 1.3132125825180769e-05
+    }
+  ],
+  "primary_supported": true,
+  "online_model_calls": 0,
+  "novelty": "candidate prioritization and external reanalysis, not first biological discovery",
+  "external_scope": "Single-cell-line culture replication; no donor-independent inference",
+  "finished_utc": "2026-10-08T11:14:53.516796+00:00"
+}

@@ -1,0 +1,144 @@
+{
+  "case": "enrichment_015",
+  "family": "enrichment",
+  "method": "direct_bounded",
+  "replicate": 3,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:23:32 UTC",
+  "response": {
+    "text": "{\"data_facts\":[\"R输出包含27行5列，但仅提供了10行。\",\"提供的行中p.adjust值从0.01到0.08不等。\"],\"statistical_meaning\":[\"富集分析通常使用ORA方法，但输出未明确说明。\",\"显著性阈值可能为0.05，但未在输出中确认。\"],\"biological_interpretation\":[\"无法从部分数据推断生物学意义。\"],\"uncertainty\":[\"数据不完整，无法确定总条目数和显著条目数。\",\"富集方法和显著性阈值未在输出中明确。\"],\"cannot_conclude\":[\"无法计算n_terms、n_significant、enrichment_method和significance_threshold。\"],\"learning_questions\":[\"如何从R输出中提取富集分析方法和显著性阈值？\",\"数据不完整时如何报告富集分析结果？\"],\"evidence_used\":[],\"claims\":[{\"id\":\"claim1\",\"text\":\"总条目数无法确定\",\"fact\":\"n_terms\",\"value\":null,\"evidence\":[]},{\"id\":\"claim2\",\"text\":\"显著条目数无法确定\",\"fact\":\"n_significant\",\"value\":null,\"evidence\":[]},{\"id\":\"claim3\",\"text\":\"富集方法无法确定\",\"fact\":\"enrichment_method\",\"value\":null,\"evidence\":[]},{\"id\":\"claim4\",\"text\":\"显著性阈值无法确定\",\"fact\":\"significance_threshold\",\"value\":null,\"evidence\":[]}]}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 866,
+      "completion_tokens": 299,
+      "total_tokens": 1165,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 226
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 1.6200000000000001
+  },
+  "parsed": {
+    "data_facts": [
+      "R输出包含27行5列，但仅提供了10行。",
+      "提供的行中p.adjust值从0.01到0.08不等。"
+    ],
+    "statistical_meaning": [
+      "富集分析通常使用ORA方法，但输出未明确说明。",
+      "显著性阈值可能为0.05，但未在输出中确认。"
+    ],
+    "biological_interpretation": [
+      "无法从部分数据推断生物学意义。"
+    ],
+    "uncertainty": [
+      "数据不完整，无法确定总条目数和显著条目数。",
+      "富集方法和显著性阈值未在输出中明确。"
+    ],
+    "cannot_conclude": [
+      "无法计算n_terms、n_significant、enrichment_method和significance_threshold。"
+    ],
+    "learning_questions": [
+      "如何从R输出中提取富集分析方法和显著性阈值？",
+      "数据不完整时如何报告富集分析结果？"
+    ],
+    "evidence_used": [],
+    "claims": [
+      {
+        "id": "claim1",
+        "text": "总条目数无法确定",
+        "fact": "n_terms",
+        "value": null,
+        "evidence": []
+      },
+      {
+        "id": "claim2",
+        "text": "显著条目数无法确定",
+        "fact": "n_significant",
+        "value": null,
+        "evidence": []
+      },
+      {
+        "id": "claim3",
+        "text": "富集方法无法确定",
+        "fact": "enrichment_method",
+        "value": null,
+        "evidence": []
+      },
+      {
+        "id": "claim4",
+        "text": "显著性阈值无法确定",
+        "fact": "significance_threshold",
+        "value": null,
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "unverified",
+    "findings": [
+      {
+        "claim": "claim1",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim2",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim3",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim4",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_terms",
+      "expected": 27,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "n_significant",
+      "expected": 15,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "enrichment_method",
+      "expected": "ORA",
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "significance_threshold",
+      "expected": 0.050000000000000003,
+      "value": null,
+      "answered": false,
+      "correct": false
+    }
+  ],
+  "prompt_chars": 2718
+}

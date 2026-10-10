@@ -1,0 +1,7 @@
+﻿数据,对象/来源版本,规模,分析边界
+airway,airway 1.22.0; DESeq2 1.42.0,"8文库、4供体; 22,369保留特征",配对DE、PCA、ORA及阈值核对
+PBMC3k,SCE 1.24.0; SeuratObject 5.0.1,"2,700细胞、32,738特征; 1供体",QC/UMAP/独立单位摘要
+pasilla,pasilla 1.30.0; DESeq2 1.42.0,"7文库、14,599特征",6组阈值、30项保存数值核对
+ALL,ALL 1.44.0; Biobase 2.62.0,"128样本、12,625特征",表型与10个BT分组摘要
+bladderbatch,bladderbatch 1.40.0,"57样本、22,283特征",3癌症分组、5批次摘要
+miniACC,MultiAssayExperiment 1.28.0,92病例、5模态; 46配对,开发案例:覆盖、方向、BH及安装包复现

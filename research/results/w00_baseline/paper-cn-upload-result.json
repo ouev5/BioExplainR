@@ -1,0 +1,72 @@
+{
+  "status": "pass",
+  "scope": "User-authorized public paper upload; no authentication secret stored",
+  "files": [
+    {
+      "id": 45,
+      "local_file": "docs/paper_cn_v1/BioExplainR-中文论文-v0.8.docx",
+      "bytes": 1093006,
+      "sha256": "fe68b2754c8cc349baf5239536c91ddbc8b1618fd02c9c9a934c4071a23752d8",
+      "is_public": 1,
+      "uploaded_utc": "2026-10-08T09:35:22.964Z",
+      "verification": [
+        {
+          "url": "http://62.234.106.117:8003/api/download/45",
+          "http_status": 200,
+          "sha256": "fe68b2754c8cc349baf5239536c91ddbc8b1618fd02c9c9a934c4071a23752d8",
+          "anonymous": true
+        },
+        {
+          "url": "http://62.234.106.117:8003/api/file/45",
+          "http_status": 200,
+          "sha256": "fe68b2754c8cc349baf5239536c91ddbc8b1618fd02c9c9a934c4071a23752d8",
+          "anonymous": true
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "local_file": "docs/paper_cn_v1/BioExplainR-中文论文-v0.8.pdf",
+      "bytes": 2802383,
+      "sha256": "5a838cae8e801775a60fae1731a25d0740e6303a5724eec22520501fa433233d",
+      "is_public": 1,
+      "uploaded_utc": "2026-10-08T09:35:23.407Z",
+      "verification": [
+        {
+          "url": "http://62.234.106.117:8003/api/download/46",
+          "http_status": 200,
+          "sha256": "5a838cae8e801775a60fae1731a25d0740e6303a5724eec22520501fa433233d",
+          "anonymous": true
+        },
+        {
+          "url": "http://62.234.106.117:8003/api/file/46",
+          "http_status": 200,
+          "sha256": "5a838cae8e801775a60fae1731a25d0740e6303a5724eec22520501fa433233d",
+          "anonymous": true
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "local_file": "docs/BioExplainR-中文论文-v0.8-图表附件.zip",
+      "bytes": 7670920,
+      "sha256": "f4e2f023be340ee4daacabb2d1eb50fe39ec66fcc5aec5d7d2411e4732ea137c",
+      "is_public": 1,
+      "uploaded_utc": "2026-10-08T09:35:30.660Z",
+      "verification": [
+        {
+          "url": "http://62.234.106.117:8003/api/download/47",
+          "http_status": 200,
+          "sha256": "f4e2f023be340ee4daacabb2d1eb50fe39ec66fcc5aec5d7d2411e4732ea137c",
+          "anonymous": true
+        },
+        {
+          "url": "http://62.234.106.117:8003/api/file/47",
+          "http_status": 200,
+          "sha256": "f4e2f023be340ee4daacabb2d1eb50fe39ec66fcc5aec5d7d2411e4732ea137c",
+          "anonymous": true
+        }
+      ]
+    }
+  ]
+}

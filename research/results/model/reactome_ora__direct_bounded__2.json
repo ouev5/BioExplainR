@@ -1,0 +1,173 @@
+{
+  "case": "reactome_ora",
+  "method": "direct_bounded",
+  "replicate": 2,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-03 19:42:22 UTC",
+  "response": {
+    "text": "{\"data_facts\":[\"输入为Reactome ORA富集结果，共1104行但仅提供10行。\",\"提供的10行中仅1行p.adjust<0.05。\",\"未提供enrichment_method字段。\"],\"statistical_meaning\":[\"n_terms指富集分析中的通路总数，此处为1104。\",\"n_significant指满足padj<0.05的通路数，但仅能基于提供的10行判断。\",\"ORA方法需从分析类型推断，但输出未明确给出。\"],\"biological_interpretation\":[\"显著通路为IL-4/IL-13信号，提示2型免疫相关过程。\",\"其余通路p.adjust均大于0.05，未达阈值。\",\"无法评估完整通路列表的生物学主题。\"],\"uncertainty\":[\"仅提供10/1104行，n_significant无法从完整数据确定。\",\"enrichment_method未在输出中说明。\",\"提供的行不完整，可能遗漏显著通路。\"],\"cannot_conclude\":[\"不能确定完整结果中显著通路的总数。\",\"不能确认富集方法为ORA。\",\"不能基于不完整数据做全面生物学解释。\"],\"learning_questions\":[\"如何从完整富集结果中计算显著通路数？\",\"ORA与GSEA在结果解读上有何区别？\",\"p.adjust阈值如何影响通路显著性判断？\"],\"evidence_used\":[\"R-HSA-6785807\",\"R-HSA-416476\",\"R-HSA-71384\",\"R-HSA-8948216\",\"R-HSA-1296072\",\"R-HSA-216083\",\"R-HSA-2214320\",\"R-HSA-3000171\",\"R-HSA-418597\",\"R-HSA-9614657\"],\"claims\":[{\"id\":\"c1\",\"text\":\"通路总数为1104。\",\"fact\":\"n_terms\",\"value\":1104,\"evidence\":[\"dim\"]},{\"id\":\"c2\",\"text\":\"显著通路数无法从提供的不完整数据确定。\",\"fact\":\"n_significant\",\"value\":null,\"evidence\":[\"rows_complete\"]},{\"id\":\"c3\",\"text\":\"富集方法未在输出中提供。\",\"fact\":\"enrichment_method\",\"value\":null,\"evidence\":[\"analysis_type_hint\"]}]}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 924,
+      "completion_tokens": 482,
+      "total_tokens": 1406,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 156
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.77
+  },
+  "parsed": {
+    "data_facts": [
+      "输入为Reactome ORA富集结果，共1104行但仅提供10行。",
+      "提供的10行中仅1行p.adjust<0.05。",
+      "未提供enrichment_method字段。"
+    ],
+    "statistical_meaning": [
+      "n_terms指富集分析中的通路总数，此处为1104。",
+      "n_significant指满足padj<0.05的通路数，但仅能基于提供的10行判断。",
+      "ORA方法需从分析类型推断，但输出未明确给出。"
+    ],
+    "biological_interpretation": [
+      "显著通路为IL-4/IL-13信号，提示2型免疫相关过程。",
+      "其余通路p.adjust均大于0.05，未达阈值。",
+      "无法评估完整通路列表的生物学主题。"
+    ],
+    "uncertainty": [
+      "仅提供10/1104行，n_significant无法从完整数据确定。",
+      "enrichment_method未在输出中说明。",
+      "提供的行不完整，可能遗漏显著通路。"
+    ],
+    "cannot_conclude": [
+      "不能确定完整结果中显著通路的总数。",
+      "不能确认富集方法为ORA。",
+      "不能基于不完整数据做全面生物学解释。"
+    ],
+    "learning_questions": [
+      "如何从完整富集结果中计算显著通路数？",
+      "ORA与GSEA在结果解读上有何区别？",
+      "p.adjust阈值如何影响通路显著性判断？"
+    ],
+    "evidence_used": [
+      "R-HSA-6785807",
+      "R-HSA-416476",
+      "R-HSA-71384",
+      "R-HSA-8948216",
+      "R-HSA-1296072",
+      "R-HSA-216083",
+      "R-HSA-2214320",
+      "R-HSA-3000171",
+      "R-HSA-418597",
+      "R-HSA-9614657"
+    ],
+    "claims": [
+      {
+        "id": "c1",
+        "text": "通路总数为1104。",
+        "fact": "n_terms",
+        "value": 1104,
+        "evidence": [
+          "dim"
+        ]
+      },
+      {
+        "id": "c2",
+        "text": "显著通路数无法从提供的不完整数据确定。",
+        "fact": "n_significant",
+        "value": null,
+        "evidence": [
+          "rows_complete"
+        ]
+      },
+      {
+        "id": "c3",
+        "text": "富集方法未在输出中提供。",
+        "fact": "enrichment_method",
+        "value": null,
+        "evidence": [
+          "analysis_type_hint"
+        ]
+      }
+    ]
+  },
+  "validation": {
+    "status": "fail",
+    "findings": [
+      {
+        "claim": "(evidence_used)",
+        "check": "evidence_ids",
+        "status": "fail",
+        "detail": "unknown evidence id(s): R-HSA-6785807, R-HSA-416476, R-HSA-71384, R-HSA-8948216, R-HSA-1296072, R-HSA-216083, R-HSA-2214320, R-HSA-3000171, R-HSA-418597, R-HSA-9614657 (no evidence list was supplied)"
+      },
+      {
+        "claim": "c1",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_terms = 1104"
+      },
+      {
+        "claim": "c1",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: dim"
+      },
+      {
+        "claim": "c2",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "c2",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: rows_complete"
+      },
+      {
+        "claim": "c3",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "c3",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: analysis_type_hint"
+      }
+    ],
+    "n_claims": 3,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_terms",
+      "expected": 1104,
+      "value": 1104,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_significant",
+      "expected": 1,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "enrichment_method",
+      "expected": "ORA",
+      "value": null,
+      "answered": false,
+      "correct": false
+    }
+  ],
+  "prompt_chars": 2926,
+  "validation_rechecked_utc": "2026-10-03 20:09:20 UTC"
+}

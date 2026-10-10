@@ -1,0 +1,350 @@
+{
+  "status": "pass",
+  "references": 29,
+  "figures": 8,
+  "panel_pdfs": 32,
+  "composite_pdfs": 8,
+  "external_tables": 9,
+  "docx_tables": 0,
+  "pdf_pages": 23,
+  "airway_independent_numeric_rechecks": 45,
+  "development_scenarios": 15,
+  "miniacc": {
+    "status": "pass",
+    "scope": "Independent Python recomputation; same development data, no expert gold",
+    "files_verified": 23,
+    "effects_recomputed": 66,
+    "features": 33,
+    "paired_units": 46,
+    "direction": {
+      "same": 18,
+      "opposite": 15,
+      "unverified": 0
+    },
+    "artifact_paths": "run-relative; legacy directory prefixes supported without original-tree access",
+    "pvalue_scope": "BH recomputed from saved R Wilcoxon p values; Wilcoxon statistic not independently recomputed"
+  },
+  "geometry": [
+    {
+      "file": "docs/paper_cn_v1/figures/panels/Figure_1A.pdf",
+      "text_spans": 12,
+      "drawings": 34,
+      "images": 0,
+      "page_bounds": "pass",
+      "text_overlap": "pass"
+    },
+    {
+      "file": "docs/paper_cn_v1/figures/panels/Figure_1B.pdf",
+      "text_spans": 12,
+      "drawings": 16,
+      "images": 0,
+      "page_bounds": "pass",
+      "text_overlap": "pass"
+    },
+    {
+      "file": "docs/paper_cn_v1/figures/panels/Figure_1C.pdf",
+      "text_spans": 10,
+      "drawings": 13,
+      "images": 0,
+      "page_bounds": "pass",
+      "text_overlap": "pass"
+    },
+    {
+      "file": "docs/paper_cn_v1/figures/panels/Figure_1D.pdf",
+      "text_spans": 10,
+      "drawings": 11,
+      "images": 0,
+      "page_bounds": "pass",
+      "text_overlap": "pass"
+    },
+    {
+      "file": "docs/paper_cn_v1/figures/panels/Figure_2A.pdf",
+      "text_spans": 21,
+      "drawings": 18184,
+      "images": 0,
+      "page_bounds": "pass",
+      "text_overlap": "pass"
+    },
+    {
+      "file": "docs/paper_cn_v1/figures/panels/Figure_2B.pdf",
+      "text_spans": 20,
+      "drawings": 31,
+      "images": 0,
+      "page_bounds": "pass",
+      "text_overlap": "pass"
+    },
+    {
+      "file": "docs/paper_cn_v1/figures/panels/Figure_2C.pdf",
+      "text_spans": 16,
+      "drawings": 40,
+      "images": 0,
+      "page_bounds": "pass",
+      "text_overlap": "pass"
+    },
+    {
+      "file": "docs/paper_cn_v1/figures/panels/Figure_2D.pdf",
+      "text_spans": 17,
+      "drawings": 24,
+      "images": 0,
+      "page_bounds": "pass",
+      "text_overlap": "pass"
+    },
+    {
+      "file": "docs/paper_cn_v1/figures/panels/Figure_3A.pdf",
+      "text_spans": 16,
+      "drawings": 2716,
+      "images": 0,
+      "page_bounds": "pass",
+      "text_overlap": "pass"
+    },
+    {
+      "file": "docs/paper_cn_v1/figures/panels/Figure_3B.pdf",
+      "text_spans": 17,
+      "drawings": 63,
+      "images": 0,
+      "page_bounds": "pass",
+      "text_overlap": "pass"
+    },
+    {
+      "file": "docs/paper_cn_v1/figures/panels/Figure_3C.pdf",
+      "text_spans": 6,
+      "drawings": 3,
+      "images": 0,
+      "page_bounds": "pass",
+      "text_overlap": "pass"
+    },
+    {
+      "file": "docs/paper_cn_v1/figures/panels/Figure_3D.pdf",
+      "text_spans": 17,
+      "drawings": 24,
+      "images": 0,
+      "page_bounds": "pass",
+      "text_overlap": "pass"
+    },
+    {
+      "file": "docs/paper_cn_v1/figures/panels/Figure_4A.pdf",
+      "text_spans": 22,
+      "drawings": 29,
+      "images": 0,
+      "page_bounds": "pass",
+      "text_overlap": "pass"
+    },
+    {
+      "file": "docs/paper_cn_v1/figures/panels/Figure_4B.pdf",
+      "text_spans": 17,
+      "drawings": 9034,
+      "images": 0,
+      "page_bounds": "pass",
+      "text_overlap": "pass"
+    },
+    {
+      "file": "docs/paper_cn_v1/figures/panels/Figure_4C.pdf",
+      "text_spans": 14,
+      "drawings": 22,
+      "images": 0,
+      "page_bounds": "pass",
+      "text_overlap": "pass"
+    },
+    {
+      "file": "docs/paper_cn_v1/figures/panels/Figure_4D.pdf",
+      "text_spans": 16,
+      "drawings": 25,
+      "images": 0,
+      "page_bounds": "pass",
+      "text_overlap": "pass"
+    },
+    {
+      "file": "docs/paper_cn_v1/figures/panels/Figure_5A.pdf",
+      "text_spans": 20,
+      "drawings": 25,
+      "images": 0,
+      "page_bounds": "pass",
+      "text_overlap": "pass"
+    },
+    {
+      "file": "docs/paper_cn_v1/figures/panels/Figure_5B.pdf",
+      "text_spans": 20,
+      "drawings": 55,
+      "images": 0,
+      "page_bounds": "pass",
+      "text_overlap": "pass"
+    },
+    {
+      "file": "docs/paper_cn_v1/figures/panels/Figure_5C.pdf",
+      "text_spans": 17,
+      "drawings": 19,
+      "images": 2,
+      "page_bounds": "pass",
+      "text_overlap": "pass"
+    },
+    {
+      "file": "docs/paper_cn_v1/figures/panels/Figure_5D.pdf",
+      "text_spans": 17,
+      "drawings": 23,
+      "images": 0,
+      "page_bounds": "pass",
+      "text_overlap": "pass"
+    },
+    {
+      "file": "docs/paper_cn_v1/figures/panels/Figure_6A.pdf",
+      "text_spans": 19,
+      "drawings": 24,
+      "images": 0,
+      "page_bounds": "pass",
+      "text_overlap": "pass"
+    },
+    {
+      "file": "docs/paper_cn_v1/figures/panels/Figure_6B.pdf",
+      "text_spans": 17,
+      "drawings": 22,
+      "images": 0,
+      "page_bounds": "pass",
+      "text_overlap": "pass"
+    },
+    {
+      "file": "docs/paper_cn_v1/figures/panels/Figure_6C.pdf",
+      "text_spans": 29,
+      "drawings": 13,
+      "images": 1,
+      "page_bounds": "pass",
+      "text_overlap": "pass"
+    },
+    {
+      "file": "docs/paper_cn_v1/figures/panels/Figure_6D.pdf",
+      "text_spans": 18,
+      "drawings": 21,
+      "images": 0,
+      "page_bounds": "pass",
+      "text_overlap": "pass"
+    },
+    {
+      "file": "docs/paper_cn_v1/figures/panels/Figure_7A.pdf",
+      "text_spans": 13,
+      "drawings": 18,
+      "images": 0,
+      "page_bounds": "pass",
+      "text_overlap": "pass"
+    },
+    {
+      "file": "docs/paper_cn_v1/figures/panels/Figure_7B.pdf",
+      "text_spans": 17,
+      "drawings": 24,
+      "images": 0,
+      "page_bounds": "pass",
+      "text_overlap": "pass"
+    },
+    {
+      "file": "docs/paper_cn_v1/figures/panels/Figure_7C.pdf",
+      "text_spans": 17,
+      "drawings": 22,
+      "images": 0,
+      "page_bounds": "pass",
+      "text_overlap": "pass"
+    },
+    {
+      "file": "docs/paper_cn_v1/figures/panels/Figure_7D.pdf",
+      "text_spans": 6,
+      "drawings": 3,
+      "images": 0,
+      "page_bounds": "pass",
+      "text_overlap": "pass"
+    },
+    {
+      "file": "docs/paper_cn_v1/figures/panels/Figure_8A.pdf",
+      "text_spans": 2,
+      "drawings": 1,
+      "images": 1,
+      "page_bounds": "pass",
+      "text_overlap": "pass"
+    },
+    {
+      "file": "docs/paper_cn_v1/figures/panels/Figure_8B.pdf",
+      "text_spans": 2,
+      "drawings": 1,
+      "images": 1,
+      "page_bounds": "pass",
+      "text_overlap": "pass"
+    },
+    {
+      "file": "docs/paper_cn_v1/figures/panels/Figure_8C.pdf",
+      "text_spans": 2,
+      "drawings": 1,
+      "images": 1,
+      "page_bounds": "pass",
+      "text_overlap": "pass"
+    },
+    {
+      "file": "docs/paper_cn_v1/figures/panels/Figure_8D.pdf",
+      "text_spans": 8,
+      "drawings": 4,
+      "images": 0,
+      "page_bounds": "pass",
+      "text_overlap": "pass"
+    },
+    {
+      "file": "docs/paper_cn_v1/figures/composites/Figure_1.pdf",
+      "text_spans": 44,
+      "drawings": 74,
+      "images": 0,
+      "page_bounds": "pass",
+      "text_overlap": "pass"
+    },
+    {
+      "file": "docs/paper_cn_v1/figures/composites/Figure_2.pdf",
+      "text_spans": 74,
+      "drawings": 18279,
+      "images": 0,
+      "page_bounds": "pass",
+      "text_overlap": "pass"
+    },
+    {
+      "file": "docs/paper_cn_v1/figures/composites/Figure_3.pdf",
+      "text_spans": 56,
+      "drawings": 2806,
+      "images": 0,
+      "page_bounds": "pass",
+      "text_overlap": "pass"
+    },
+    {
+      "file": "docs/paper_cn_v1/figures/composites/Figure_4.pdf",
+      "text_spans": 69,
+      "drawings": 9110,
+      "images": 0,
+      "page_bounds": "pass",
+      "text_overlap": "pass"
+    },
+    {
+      "file": "docs/paper_cn_v1/figures/composites/Figure_5.pdf",
+      "text_spans": 74,
+      "drawings": 122,
+      "images": 2,
+      "page_bounds": "pass",
+      "text_overlap": "pass"
+    },
+    {
+      "file": "docs/paper_cn_v1/figures/composites/Figure_6.pdf",
+      "text_spans": 83,
+      "drawings": 80,
+      "images": 1,
+      "page_bounds": "pass",
+      "text_overlap": "pass"
+    },
+    {
+      "file": "docs/paper_cn_v1/figures/composites/Figure_7.pdf",
+      "text_spans": 53,
+      "drawings": 67,
+      "images": 0,
+      "page_bounds": "pass",
+      "text_overlap": "pass"
+    },
+    {
+      "file": "docs/paper_cn_v1/figures/composites/Figure_8.pdf",
+      "text_spans": 14,
+      "drawings": 7,
+      "images": 3,
+      "page_bounds": "pass",
+      "text_overlap": "pass"
+    }
+  ],
+  "visual_review_scope": "Automated text bounding/overlap and content audit; model cannot view images/PDF directly"
+}

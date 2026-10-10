@@ -1,0 +1,22 @@
+{
+  "command": [
+    "R",
+    "CMD",
+    "check",
+    "--no-manual",
+    "--no-vignettes",
+    "--no-build-vignettes",
+    "--output=research/results/w00_baseline",
+    "BioExplainR_0.3.1.tar.gz"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-05T07:54:50.861047+00:00",
+  "finished_utc": "2026-10-05T07:55:48.040400+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/package-check.txt",
+    "bytes": 2505,
+    "sha256": "4779c1466d249c7bd17a650cae7d7c08e638dbf18901c50a7b7fbb8dcb9cb525"
+  }
+}

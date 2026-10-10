@@ -1,0 +1,20 @@
+{
+  "text": "{\"claims\":[{\"fact\":\"n_cells\",\"value\":2700},{\"fact\":\"n_features\",\"value\":32738},{\"fact\":\"n_samples\",\"value\":1}]}",
+  "model": "deepseek-flash",
+  "stop_reason": "stop",
+  "usage": {
+    "prompt_tokens": 201,
+    "completion_tokens": 36,
+    "total_tokens": 237,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 201
+  },
+  "endpoint_host": "https://api.deepseek.com",
+  "elapsed_sec": 0.62
+}

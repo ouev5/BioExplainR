@@ -1,0 +1,35 @@
+{
+  "status": "pass",
+  "checks": [
+    "typed-evidence-payload-manifest-and-escaping",
+    "downloaded-report-content",
+    "Chinese-labels-and-download",
+    "MAE-alignment-findings",
+    "two-session-workspace-isolation"
+  ],
+  "viewports": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "bounds": {
+        "width": 1440,
+        "scroll": 1440
+      },
+      "visiblePixels": 23700
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "bounds": {
+        "width": 390,
+        "scroll": 390
+      },
+      "visiblePixels": 20800
+    }
+  ],
+  "errors": []
+}

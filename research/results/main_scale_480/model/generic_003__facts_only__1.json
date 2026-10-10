@@ -1,0 +1,142 @@
+{
+  "case": "generic_003",
+  "family": "generic",
+  "method": "facts_only",
+  "replicate": 1,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:15:24 UTC",
+  "response": {
+    "text": "{\"data_facts\":[\"该对象是一个 data.frame（class 为 data.frame），底层类型为 list。\"],\"statistical_meaning\":[\"这里只给出对象结构摘要，没有进行任何统计检验或差异分析。\"],\"biological_interpretation\":[\"没有提供物种与实验设计，无法给出可靠的生物学解释。\"],\"uncertainty\":[\"没有针对该对象类型的专用适配器，只给出结构摘要。\",\"未提供物种（species），生物学解释需要用户确认物种背景。\"],\"cannot_conclude\":[\"不能据此判断差异表达、富集或任何生物学结论。\"],\"learning_questions\":[\"data.frame 与 list 在 R 中是什么关系？\",\"为什么结构摘要不能替代统计分析？\"],\"evidence_used\":[],\"claims\":[{\"id\":\"c1\",\"text\":\"对象类别为 data.frame。\",\"fact\":\"class\",\"value\":\"data.frame\",\"evidence\":[]},{\"id\":\"c2\",\"text\":\"对象类型为 list。\",\"fact\":\"type\",\"value\":\"list\",\"evidence\":[]},{\"id\":\"c3\",\"text\":\"该对象不是 S4 对象。\",\"fact\":\"is_s4\",\"value\":false,\"evidence\":[]},{\"id\":\"c4\",\"text\":\"对象大小为 1.7 Kb。\",\"fact\":\"size\",\"value\":\"1.7 Kb\",\"evidence\":[]}]}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 969,
+      "completion_tokens": 274,
+      "total_tokens": 1243,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 201
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 1.5600000000000001
+  },
+  "parsed": {
+    "data_facts": [
+      "该对象是一个 data.frame（class 为 data.frame），底层类型为 list。"
+    ],
+    "statistical_meaning": [
+      "这里只给出对象结构摘要，没有进行任何统计检验或差异分析。"
+    ],
+    "biological_interpretation": [
+      "没有提供物种与实验设计，无法给出可靠的生物学解释。"
+    ],
+    "uncertainty": [
+      "没有针对该对象类型的专用适配器，只给出结构摘要。",
+      "未提供物种（species），生物学解释需要用户确认物种背景。"
+    ],
+    "cannot_conclude": [
+      "不能据此判断差异表达、富集或任何生物学结论。"
+    ],
+    "learning_questions": [
+      "data.frame 与 list 在 R 中是什么关系？",
+      "为什么结构摘要不能替代统计分析？"
+    ],
+    "evidence_used": [],
+    "claims": [
+      {
+        "id": "c1",
+        "text": "对象类别为 data.frame。",
+        "fact": "class",
+        "value": "data.frame",
+        "evidence": []
+      },
+      {
+        "id": "c2",
+        "text": "对象类型为 list。",
+        "fact": "type",
+        "value": "list",
+        "evidence": []
+      },
+      {
+        "id": "c3",
+        "text": "该对象不是 S4 对象。",
+        "fact": "is_s4",
+        "value": false,
+        "evidence": []
+      },
+      {
+        "id": "c4",
+        "text": "对象大小为 1.7 Kb。",
+        "fact": "size",
+        "value": "1.7 Kb",
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "c1",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      },
+      {
+        "claim": "c2",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      },
+      {
+        "claim": "c3",
+        "check": "value",
+        "status": "pass",
+        "detail": "is_s4 = 0"
+      },
+      {
+        "claim": "c4",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "class",
+      "expected": "data.frame",
+      "value": "data.frame",
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "type",
+      "expected": "list",
+      "value": "list",
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "is_s4",
+      "expected": false,
+      "value": false,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "size",
+      "expected": "1.7 Kb",
+      "value": "1.7 Kb",
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 3591
+}

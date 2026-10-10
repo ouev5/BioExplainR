@@ -1,0 +1,18 @@
+{
+  "command": [
+    "Rscript",
+    "--vanilla",
+    "tools/legacy-interface-check.R",
+    "research/results/w00_baseline/acceptance-legacy-api-result.json"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-05T14:20:27.937084+00:00",
+  "finished_utc": "2026-10-05T14:20:29.582213+00:00",
+  "exit_code": 1,
+  "status": "fail",
+  "log": {
+    "path": "research/results/w00_baseline/acceptance-legacy-api.txt",
+    "bytes": 90,
+    "sha256": "20671f16cbd908c543eab805fd3d23e28a930d94e24ed6d650e905deb09f2e1e"
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "case": "enrichment_016",
+  "family": "enrichment",
+  "method": "direct_bounded",
+  "replicate": 1,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:12:52 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"R输出显示28行5列，但仅提供10行，rows_complete为false。\",\n    \"提供的行中p.adjust值包括0.02、0.029999999999999999、0.040000000000000001、0.050000000000000003、0.01等。\",\n    \"分析类型提示为enrichment_ora，阈值padj为0.050000000000000003。\"\n  ],\n  \"statistical_meaning\": [\n    \"n_terms指富集分析中的总条目数，但数据不完整无法确定。\",\n    \"n_significant指p.adjust小于阈值的条目数，但数据不完整无法计算。\",\n    \"enrichment_method可能为ORA，但未明确指定。\"\n  ],\n  \"biological_interpretation\": [\n    \"富集分析用于识别基因集在生物学通路中的过度代表。\",\n    \"由于数据不完整，无法进行可靠的生物学解释。\",\n    \"显著条目可能提示相关通路，但需完整数据确认。\"\n  ],\n  \"uncertainty\": [\n    \"数据不完整，rows_complete为false，无法确定总条目数。\",\n    \"无法计算显著条目数，因为缺失行可能包含显著或不显著条目。\",\n    \"富集方法未明确，仅从提示推断为ORA。\"\n  ],\n  \"cannot_conclude\": [\n    \"无法确定n_terms，因为仅提供部分行。\",\n    \"无法确定n_significant，因为数据不完整。\",\n    \"无法确认enrichment_method，因为未明确说明。\"\n  ],\n  \"learning_questions\": [\n    \"如何从完整的富集分析输出中提取总条目数？\",\n    \"如何根据p.adjust阈值计算显著条目数？\",\n    \"ORA与其他富集方法（如GSEA）有何区别？\"\n  ],\n  \"evidence_used\": [\n    \"dim\",\n    \"provided_rows\",\n    \"rows_complete\",\n    \"analysis_type_hint\",\n    \"padj\"\n  ],\n  \"claims\": [\n    {\n      \"id\": \"claim_n_terms\",\n      \"text\": \"总条目数无法确定，因为数据不完整。\",\n      \"fact\": \"n_terms\",\n      \"value\": null,\n      \"evidence\": [\n        \"dim\",\n        \"provided_rows\",\n        \"rows_complete\"\n      ]\n    },\n    {\n      \"id\": \"claim_n_significant\",\n      \"text\": \"显著条目数无法确定，因为数据不完整。\",\n      \"fact\": \"n_significant\",\n      \"value\": null,\n      \"evidence\": [\n        \"provided_rows\",\n        \"rows_complete\",\n        \"padj\"\n      ]\n    },\n    {\n      \"id\": \"claim_enrichment_method\",\n      \"text\": \"富集方法未明确，但分析类型提示为ORA。\",\n      \"fact\": \"enrichment_method\",\n      \"value\": null,\n      \"evidence\": [\n        \"analysis_type_hint\"\n      ]\n    },\n    {\n      \"id\": \"claim_significance_threshold\",\n      \"text\": \"显著性阈值为0.050000000000000003。\",\n      \"fact\": \"significance_threshold\",\n      \"value\": \"0.050000000000000003\",\n      \"evidence\": [\n        \"padj\"\n      ]\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 861,
+      "completion_tokens": 720,
+      "total_tokens": 1581,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 221
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.8199999999999998
+  },
+  "parsed": {
+    "data_facts": [
+      "R输出显示28行5列，但仅提供10行，rows_complete为false。",
+      "提供的行中p.adjust值包括0.02、0.029999999999999999、0.040000000000000001、0.050000000000000003、0.01等。",
+      "分析类型提示为enrichment_ora，阈值padj为0.050000000000000003。"
+    ],
+    "statistical_meaning": [
+      "n_terms指富集分析中的总条目数，但数据不完整无法确定。",
+      "n_significant指p.adjust小于阈值的条目数，但数据不完整无法计算。",
+      "enrichment_method可能为ORA，但未明确指定。"
+    ],
+    "biological_interpretation": [
+      "富集分析用于识别基因集在生物学通路中的过度代表。",
+      "由于数据不完整，无法进行可靠的生物学解释。",
+      "显著条目可能提示相关通路，但需完整数据确认。"
+    ],
+    "uncertainty": [
+      "数据不完整，rows_complete为false，无法确定总条目数。",
+      "无法计算显著条目数，因为缺失行可能包含显著或不显著条目。",
+      "富集方法未明确，仅从提示推断为ORA。"
+    ],
+    "cannot_conclude": [
+      "无法确定n_terms，因为仅提供部分行。",
+      "无法确定n_significant，因为数据不完整。",
+      "无法确认enrichment_method，因为未明确说明。"
+    ],
+    "learning_questions": [
+      "如何从完整的富集分析输出中提取总条目数？",
+      "如何根据p.adjust阈值计算显著条目数？",
+      "ORA与其他富集方法（如GSEA）有何区别？"
+    ],
+    "evidence_used": [
+      "dim",
+      "provided_rows",
+      "rows_complete",
+      "analysis_type_hint",
+      "padj"
+    ],
+    "claims": [
+      {
+        "id": "claim_n_terms",
+        "text": "总条目数无法确定，因为数据不完整。",
+        "fact": "n_terms",
+        "value": null,
+        "evidence": [
+          "dim",
+          "provided_rows",
+          "rows_complete"
+        ]
+      },
+      {
+        "id": "claim_n_significant",
+        "text": "显著条目数无法确定，因为数据不完整。",
+        "fact": "n_significant",
+        "value": null,
+        "evidence": [
+          "provided_rows",
+          "rows_complete",
+          "padj"
+        ]
+      },
+      {
+        "id": "claim_enrichment_method",
+        "text": "富集方法未明确，但分析类型提示为ORA。",
+        "fact": "enrichment_method",
+        "value": null,
+        "evidence": [
+          "analysis_type_hint"
+        ]
+      },
+      {
+        "id": "claim_significance_threshold",
+        "text": "显著性阈值为0.050000000000000003。",
+        "fact": "significance_threshold",
+        "value": "0.050000000000000003",
+        "evidence": [
+          "padj"
+        ]
+      }
+    ]
+  },
+  "validation": {
+    "status": "fail",
+    "findings": [
+      {
+        "claim": "(evidence_used)",
+        "check": "evidence_ids",
+        "status": "fail",
+        "detail": "unknown evidence id(s): dim, provided_rows, rows_complete, analysis_type_hint, padj (no evidence list was supplied)"
+      },
+      {
+        "claim": "claim_n_terms",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_n_terms",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: dim, provided_rows, rows_complete"
+      },
+      {
+        "claim": "claim_n_significant",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_n_significant",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: provided_rows, rows_complete, padj"
+      },
+      {
+        "claim": "claim_enrichment_method",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_enrichment_method",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: analysis_type_hint"
+      },
+      {
+        "claim": "claim_significance_threshold",
+        "check": "value",
+        "status": "pass",
+        "detail": "significance_threshold = 0.05"
+      },
+      {
+        "claim": "claim_significance_threshold",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: padj"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_terms",
+      "expected": 28,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "n_significant",
+      "expected": 23,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "enrichment_method",
+      "expected": "ORA",
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "significance_threshold",
+      "expected": 0.050000000000000003,
+      "value": "0.050000000000000003",
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 2702
+}

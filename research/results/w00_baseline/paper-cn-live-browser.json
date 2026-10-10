@@ -1,0 +1,18 @@
+{
+  "command": [
+    "env",
+    "NODE_PATH=/tmp/opencode/node_modules",
+    "node",
+    "research/paper_cn/live_workbench.cjs"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-08T09:39:24.409274+00:00",
+  "finished_utc": "2026-10-08T09:39:28.394416+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/paper-cn-live-browser.txt",
+    "bytes": 164,
+    "sha256": "f77acd68cc1a0d9864913fa829a1db2c8ab1d311ef7ee68b170075cabb8d8085"
+  }
+}

@@ -1,0 +1,50 @@
+[1] TRUE
+Report written to research/results/miniacc_installed_review/report-en.html
+Report written to research/results/miniacc_installed_review/report-zh.html
+$dataset
+[1] "TCGA-ACC / miniACC"
+
+$scope
+[1] "public real-data development case; no expert/test gold"
+
+$n_primary_units
+[1] 92
+
+$n_modalities
+[1] 5
+
+$n_paired_known_stage
+[1] 46
+
+$n_early
+[1] 28
+
+$n_late
+[1] 18
+
+$n_common_features
+[1] 33
+
+$direction
+$direction$same
+[1] 18
+
+$direction$opposite
+[1] 15
+
+$direction$unverified
+[1] 0
+
+
+$rna_bh_below_005
+[1] 3
+
+$protein_bh_below_005
+[1] 0
+
+$n_complete_all_modalities
+[1] 43
+
+$n_unmeasured_units
+[1] 0
+

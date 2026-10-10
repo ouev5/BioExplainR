@@ -1,0 +1,38 @@
+{
+  "dataset": "TCGA-ACC / miniACC",
+  "scope": "public real-data development case; no expert/test gold",
+  "n_primary_units": 92,
+  "n_modalities": 5,
+  "n_paired_known_stage": 46,
+  "n_early": 28,
+  "n_late": 18,
+  "n_common_features": 33,
+  "direction": {
+    "same": 18,
+    "opposite": 15,
+    "unverified": 0
+  },
+  "rna_bh_below_005": 3,
+  "protein_bh_below_005": 0,
+  "n_complete_all_modalities": 43,
+  "n_unmeasured_units": 0,
+  "engineering_checks": 6,
+  "online_model_calls": 0,
+  "expert_evaluation": "deferred_until_ready",
+  "user_study": "deferred_by_owner",
+  "protocol": {
+    "path": "research/multiomics/PROTOCOL.md",
+    "bytes": 3030,
+    "sha256": "4445b3e7f34f5d44b65b54822ca8a9098bab222516888dc2127ed7c0bd69718e"
+  },
+  "script": {
+    "path": "research/multiomics/run_miniacc.R",
+    "bytes": 12094,
+    "sha256": "15e7ccfbb55df2fd8d4b8c677d6fa370f705c09e5fbbc24c574bd89497db992b"
+  },
+  "package_mode": "installed",
+  "package_version": "0.4.0.9000",
+  "package_path": "/tmp/opencode/bioexplainr-install-review/BioExplainR",
+  "started_utc": "2026-10-08 08:26:25 UTC",
+  "finished_utc": "2026-10-08 08:26:28 UTC"
+}

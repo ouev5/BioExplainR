@@ -1,0 +1,160 @@
+{
+  "case": "de_008",
+  "family": "differential_expression",
+  "method": "facts_evidence",
+  "replicate": 2,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:21:04 UTC",
+  "response": {
+    "text": "{\"data_facts\": [\"该差异表达表包含 48 个特征（基因）。\", \"按 padj<0.05 且 |log2FC|>1 的阈值，共有 32 个特征显著。\", \"其中上调 16 个、下调 16 个。\"], \"statistical_meaning\": [\"显著性基于校正后 p 值（padj）列，阈值为 0.05。\", \"log2FC 阈值为 1，用于筛选变化幅度较大的特征。\", \"上调与下调数量相等，说明方向分布对称。\"], \"biological_interpretation\": [\"这些结果提示在所比较的两组之间存在一批表达差异明显的基因（假设）。\", \"方向（上调/下调）取决于未提供的比较方向设定，需谨慎解读。\", \"文献命中仅表示检索匹配，不构成对具体基因功能的证据（见 EuropePMC:MED:24926665）。\"], \"uncertainty\": [\"无法从列名确定产生该表的软件包，请用 source_package 参数补充。\", \"未提供比较方向（contrast）；log2FC 的正负含义取决于哪一组作为分母/参考组。\", \"未提供物种（species），生物学解释需要用户确认物种背景。\"], \"cannot_conclude\": [\"不能推断具体基因的生物学功能或通路机制。\", \"不能判断上调/下调对应哪一实验组。\", \"不能得出任何临床或因果结论。\"], \"learning_questions\": [\"padj 与原始 p 值有何区别？\", \"为什么需要同时设定 log2FC 和 padj 阈值？\", \"比较方向（contrast）如何影响 log2FC 的符号？\"], \"evidence_used\": [\"EuropePMC:MED:24926665\"], \"claims\": [{\"id\": \"c1\", \"text\": \"特征总数为 48。\", \"fact\": \"n_features\", \"value\": 48, \"evidence\": []}, {\"id\": \"c2\", \"text\": \"显著特征数为 32。\", \"fact\": \"n_significant\", \"value\": 32, \"evidence\": []}, {\"id\": \"c3\", \"text\": \"上调特征数为 16。\", \"fact\": \"n_up\", \"value\": 16, \"evidence\": []}, {\"id\": \"c4\", \"text\": \"下调特征数为 16。\", \"fact\": \"n_down\", \"value\": 16, \"evidence\": []}]}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 1626,
+      "completion_tokens": 520,
+      "total_tokens": 2146,
+      "prompt_tokens_details": {
+        "cached_tokens": 1408
+      },
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 218
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.46
+  },
+  "parsed": {
+    "data_facts": [
+      "该差异表达表包含 48 个特征（基因）。",
+      "按 padj<0.05 且 |log2FC|>1 的阈值，共有 32 个特征显著。",
+      "其中上调 16 个、下调 16 个。"
+    ],
+    "statistical_meaning": [
+      "显著性基于校正后 p 值（padj）列，阈值为 0.05。",
+      "log2FC 阈值为 1，用于筛选变化幅度较大的特征。",
+      "上调与下调数量相等，说明方向分布对称。"
+    ],
+    "biological_interpretation": [
+      "这些结果提示在所比较的两组之间存在一批表达差异明显的基因（假设）。",
+      "方向（上调/下调）取决于未提供的比较方向设定，需谨慎解读。",
+      "文献命中仅表示检索匹配，不构成对具体基因功能的证据（见 EuropePMC:MED:24926665）。"
+    ],
+    "uncertainty": [
+      "无法从列名确定产生该表的软件包，请用 source_package 参数补充。",
+      "未提供比较方向（contrast）；log2FC 的正负含义取决于哪一组作为分母/参考组。",
+      "未提供物种（species），生物学解释需要用户确认物种背景。"
+    ],
+    "cannot_conclude": [
+      "不能推断具体基因的生物学功能或通路机制。",
+      "不能判断上调/下调对应哪一实验组。",
+      "不能得出任何临床或因果结论。"
+    ],
+    "learning_questions": [
+      "padj 与原始 p 值有何区别？",
+      "为什么需要同时设定 log2FC 和 padj 阈值？",
+      "比较方向（contrast）如何影响 log2FC 的符号？"
+    ],
+    "evidence_used": [
+      "EuropePMC:MED:24926665"
+    ],
+    "claims": [
+      {
+        "id": "c1",
+        "text": "特征总数为 48。",
+        "fact": "n_features",
+        "value": 48,
+        "evidence": []
+      },
+      {
+        "id": "c2",
+        "text": "显著特征数为 32。",
+        "fact": "n_significant",
+        "value": 32,
+        "evidence": []
+      },
+      {
+        "id": "c3",
+        "text": "上调特征数为 16。",
+        "fact": "n_up",
+        "value": 16,
+        "evidence": []
+      },
+      {
+        "id": "c4",
+        "text": "下调特征数为 16。",
+        "fact": "n_down",
+        "value": 16,
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "(evidence_used)",
+        "check": "evidence_ids",
+        "status": "pass",
+        "detail": "all cited evidence ids were supplied"
+      },
+      {
+        "claim": "c1",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_features = 48"
+      },
+      {
+        "claim": "c2",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_significant = 32"
+      },
+      {
+        "claim": "c3",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_up = 16"
+      },
+      {
+        "claim": "c4",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_down = 16"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_features",
+      "expected": 48,
+      "value": 48,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_significant",
+      "expected": 32,
+      "value": 32,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_up",
+      "expected": 16,
+      "value": 16,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_down",
+      "expected": 16,
+      "value": 16,
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 5505
+}

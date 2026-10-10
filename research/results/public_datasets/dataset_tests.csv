@@ -1,0 +1,6 @@
+"dataset","source","object_class","task","status","elapsed_sec","n_features","n_samples","n_groups","n_batches","archive","archive_sha256","error"
+"airway","Bioconductor airway 1.22.0 / GSE52778","DESeqResults","DESeqResults deterministic fact extraction","pass",5.83077311515808,"22369",NA,NA,NA,NA,NA,NA
+"PBMC3k","10x Genomics filtered PBMC3k matrix","SingleCellExperiment","SingleCellExperiment object, QC and UMAP summary","pass",0.669519662857056,"32738","1",NA,NA,NA,NA,NA
+"pasilla","Bioconductor pasilla 1.30.0 archive","count matrix","independent DESeq2 benchmark; 30/30 fact checks passed","pass",0.000519275665283203,"14599","7",NA,NA,"pasilla_1.30.0.tar.gz","a0594fbfe8292a5549a7deda36bcc3d27a9e1dd18b5c1f6af02f4a7cd622ea35",NA
+"ALL","Bioconductor ALL 1.44.0","ExpressionSet","ExpressionSet object and BT group summary","pass",0.0824184417724609,"12625","128","10",NA,"ALL_1.44.0.tar.gz","6c52471acf4bb77ed86e71c25e69ce5cc5235acec50785107b212934c6eec5db",NA
+"bladderbatch","Bioconductor bladderbatch 1.40.0","ExpressionSet","ExpressionSet object, cancer group and batch summary","pass",0.0178885459899902,"22283","57","3","5","bladderbatch_1.40.0.tar.gz","74e7a300c2d2835f0dc82d70f9e90af55e7a5d248e7364a80b9e6bdd57dbafa5",NA

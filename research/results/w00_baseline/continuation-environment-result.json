@@ -1,0 +1,16 @@
+{
+  "status": "local_engineering_verified",
+  "r": "4.3.3",
+  "bioconductor": "3.18",
+  "full_optional_dependencies": "all DESCRIPTION Suggests installed; capability checks limited to exercised tests",
+  "imports_only": "installed/report smoke pass using linked dependency library; not a clean OS",
+  "container": "boundary probes pass: readonly input, scratch, gold not mounted, network, resource limits, timeout; host-mounted runtime, not fresh OS",
+  "acceptance_results": [
+    "acceptance-http-result.json",
+    "acceptance-shiny-browser/summary.json",
+    "acceptance-sandbox-result.json",
+    "acceptance-legacy-api-result.json"
+  ],
+  "remote_ci_matrix": "not_run; workflow parsed locally",
+  "third_party_reproduction": "not_run"
+}

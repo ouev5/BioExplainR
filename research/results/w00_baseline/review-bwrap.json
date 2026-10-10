@@ -1,0 +1,18 @@
+{
+  "command": [
+    "bash",
+    "tools/bwrap-offline-smoke.sh",
+    "/tmp/opencode/bioexplainr-review-bwrap",
+    "/tmp/opencode/bioexplainr-review-core/library"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-08T08:26:13.999973+00:00",
+  "finished_utc": "2026-10-08T08:26:15.373478+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/review-bwrap.txt",
+    "bytes": 144,
+    "sha256": "9747fe92e581ac98075dc848c406cf19d0cbd0654d76bb1464102d0e3909eb85"
+  }
+}

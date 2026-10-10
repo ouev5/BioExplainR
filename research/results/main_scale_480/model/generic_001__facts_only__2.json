@@ -1,0 +1,152 @@
+{
+  "case": "generic_001",
+  "family": "generic",
+  "method": "facts_only",
+  "replicate": 2,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:20:44 UTC",
+  "response": {
+    "text": "{\"data_facts\": [\"该对象是一个 data.frame（普通数据框），不是 S4 对象。\", \"对象在内存中的大小约为 1.2 Kb。\", \"分析上下文未提供物种信息，也未提供任何证据条目。\"], \"statistical_meaning\": [\"当前只做了结构摘要，没有进行差异表达、富集或统计检验。\", \"阈值 padj=0.05、lfc=0、p=0.05 只是预设参数，并未在本对象上实际计算。\", \"因此这里没有任何可报告的统计量（如 p 值、倍数变化）。\"], \"biological_interpretation\": [\"没有基因、通路或样本层面的结果，无法提出生物学假设。\", \"若后续补充物种与数据表类型，才可能进行功能层面的解读。\", \"当前所有生物学说法都只能视为待验证的假设。\"], \"uncertainty\": [\"没有针对该对象类型的专用适配器，只给出结构摘要。\", \"未提供物种（species），生物学解释需要用户确认物种背景。\", \"证据列表为空，任何生物学结论都缺乏文献或数据库支持。\"], \"cannot_conclude\": [\"不能得出任何基因差异表达或富集显著性的结论。\", \"不能判断上/下调方向，因为没有效应量或计数结果。\", \"不能推断物种、实验设计或临床意义。\"], \"learning_questions\": [\"data.frame 与 S4 对象在 R 中有什么区别？\", \"为什么只有结构摘要时不能报告 p 值或倍数变化？\", \"做富集分析前为什么需要先确认物种和注释数据库？\"], \"evidence_used\": [], \"claims\": [{\"id\": \"c1\", \"text\": \"对象类别为 data.frame。\", \"fact\": \"class\", \"value\": \"data.frame\", \"evidence\": []}, {\"id\": \"c2\", \"text\": \"对象类型为 list。\", \"fact\": \"type\", \"value\": \"list\", \"evidence\": []}, {\"id\": \"c3\", \"text\": \"该对象不是 S4 对象。\", \"fact\": \"is_s4\", \"value\": false, \"evidence\": []}, {\"id\": \"c4\", \"text\": \"对象大小约为 1.2 Kb。\", \"fact\": \"size\", \"value\": \"1.2 Kb\", \"evidence\": []}]}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 830,
+      "completion_tokens": 498,
+      "total_tokens": 1328,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 190
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.5600000000000001
+  },
+  "parsed": {
+    "data_facts": [
+      "该对象是一个 data.frame（普通数据框），不是 S4 对象。",
+      "对象在内存中的大小约为 1.2 Kb。",
+      "分析上下文未提供物种信息，也未提供任何证据条目。"
+    ],
+    "statistical_meaning": [
+      "当前只做了结构摘要，没有进行差异表达、富集或统计检验。",
+      "阈值 padj=0.05、lfc=0、p=0.05 只是预设参数，并未在本对象上实际计算。",
+      "因此这里没有任何可报告的统计量（如 p 值、倍数变化）。"
+    ],
+    "biological_interpretation": [
+      "没有基因、通路或样本层面的结果，无法提出生物学假设。",
+      "若后续补充物种与数据表类型，才可能进行功能层面的解读。",
+      "当前所有生物学说法都只能视为待验证的假设。"
+    ],
+    "uncertainty": [
+      "没有针对该对象类型的专用适配器，只给出结构摘要。",
+      "未提供物种（species），生物学解释需要用户确认物种背景。",
+      "证据列表为空，任何生物学结论都缺乏文献或数据库支持。"
+    ],
+    "cannot_conclude": [
+      "不能得出任何基因差异表达或富集显著性的结论。",
+      "不能判断上/下调方向，因为没有效应量或计数结果。",
+      "不能推断物种、实验设计或临床意义。"
+    ],
+    "learning_questions": [
+      "data.frame 与 S4 对象在 R 中有什么区别？",
+      "为什么只有结构摘要时不能报告 p 值或倍数变化？",
+      "做富集分析前为什么需要先确认物种和注释数据库？"
+    ],
+    "evidence_used": [],
+    "claims": [
+      {
+        "id": "c1",
+        "text": "对象类别为 data.frame。",
+        "fact": "class",
+        "value": "data.frame",
+        "evidence": []
+      },
+      {
+        "id": "c2",
+        "text": "对象类型为 list。",
+        "fact": "type",
+        "value": "list",
+        "evidence": []
+      },
+      {
+        "id": "c3",
+        "text": "该对象不是 S4 对象。",
+        "fact": "is_s4",
+        "value": false,
+        "evidence": []
+      },
+      {
+        "id": "c4",
+        "text": "对象大小约为 1.2 Kb。",
+        "fact": "size",
+        "value": "1.2 Kb",
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "c1",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      },
+      {
+        "claim": "c2",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      },
+      {
+        "claim": "c3",
+        "check": "value",
+        "status": "pass",
+        "detail": "is_s4 = 0"
+      },
+      {
+        "claim": "c4",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "class",
+      "expected": "data.frame",
+      "value": "data.frame",
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "type",
+      "expected": "list",
+      "value": "list",
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "is_s4",
+      "expected": false,
+      "value": false,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "size",
+      "expected": "1.2 Kb",
+      "value": "1.2 Kb",
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 3259
+}

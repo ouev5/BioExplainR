@@ -1,0 +1,152 @@
+{
+  "case": "pca_003",
+  "family": "pca",
+  "method": "direct_bounded",
+  "replicate": 2,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:18:19 UTC",
+  "response": {
+    "text": "{\"data_facts\":[\"观测数为11，变量数为15。\",\"第一主成分的方差解释比例为0.050000000000000003。\",\"第二主成分的方差解释比例为0.050000000000000003。\"],\"statistical_meaning\":[\"观测数表示样本量，变量数表示特征维度。\",\"方差解释比例反映各主成分对总方差的贡献。\",\"阈值padj和p均为0.050000000000000003，lfc为0。\"],\"biological_interpretation\":[\"样本量较小，可能限制统计功效。\",\"变量数多于观测数，存在高维问题。\",\"主成分分析可帮助降维，但需谨慎解释。\"],\"uncertainty\":[\"方差解释比例基于给定阈值，可能不反映实际数据。\",\"sdev向量包含接近零的值，提示某些主成分方差极小。\",\"未提供原始表达矩阵，无法验证计算。\"],\"cannot_conclude\":[\"无法确定具体生物学通路或基因。\",\"无法判断差异表达是否显著。\",\"无法评估样本分组或实验设计。\"],\"learning_questions\":[\"如何从sdev计算方差解释比例？\",\"高维小样本下PCA结果如何稳健解释？\",\"阈值选择对结果有何影响？\"],\"evidence_used\":[],\"claims\":[{\"id\":\"claim_1\",\"text\":\"观测数为11。\",\"fact\":\"n_observations\",\"value\":11,\"evidence\":[]},{\"id\":\"claim_2\",\"text\":\"变量数为15。\",\"fact\":\"n_variables\",\"value\":15,\"evidence\":[]},{\"id\":\"claim_3\",\"text\":\"第一主成分的方差解释比例为0.050000000000000003。\",\"fact\":\"variance_explained.1\",\"value\":\"0.050000000000000003\",\"evidence\":[]},{\"id\":\"claim_4\",\"text\":\"第二主成分的方差解释比例为0.050000000000000003。\",\"fact\":\"variance_explained.2\",\"value\":\"0.050000000000000003\",\"evidence\":[]}]}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 430,
+      "completion_tokens": 423,
+      "total_tokens": 853,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 174
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.2799999999999998
+  },
+  "parsed": {
+    "data_facts": [
+      "观测数为11，变量数为15。",
+      "第一主成分的方差解释比例为0.050000000000000003。",
+      "第二主成分的方差解释比例为0.050000000000000003。"
+    ],
+    "statistical_meaning": [
+      "观测数表示样本量，变量数表示特征维度。",
+      "方差解释比例反映各主成分对总方差的贡献。",
+      "阈值padj和p均为0.050000000000000003，lfc为0。"
+    ],
+    "biological_interpretation": [
+      "样本量较小，可能限制统计功效。",
+      "变量数多于观测数，存在高维问题。",
+      "主成分分析可帮助降维，但需谨慎解释。"
+    ],
+    "uncertainty": [
+      "方差解释比例基于给定阈值，可能不反映实际数据。",
+      "sdev向量包含接近零的值，提示某些主成分方差极小。",
+      "未提供原始表达矩阵，无法验证计算。"
+    ],
+    "cannot_conclude": [
+      "无法确定具体生物学通路或基因。",
+      "无法判断差异表达是否显著。",
+      "无法评估样本分组或实验设计。"
+    ],
+    "learning_questions": [
+      "如何从sdev计算方差解释比例？",
+      "高维小样本下PCA结果如何稳健解释？",
+      "阈值选择对结果有何影响？"
+    ],
+    "evidence_used": [],
+    "claims": [
+      {
+        "id": "claim_1",
+        "text": "观测数为11。",
+        "fact": "n_observations",
+        "value": 11,
+        "evidence": []
+      },
+      {
+        "id": "claim_2",
+        "text": "变量数为15。",
+        "fact": "n_variables",
+        "value": 15,
+        "evidence": []
+      },
+      {
+        "id": "claim_3",
+        "text": "第一主成分的方差解释比例为0.050000000000000003。",
+        "fact": "variance_explained.1",
+        "value": "0.050000000000000003",
+        "evidence": []
+      },
+      {
+        "id": "claim_4",
+        "text": "第二主成分的方差解释比例为0.050000000000000003。",
+        "fact": "variance_explained.2",
+        "value": "0.050000000000000003",
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "fail",
+    "findings": [
+      {
+        "claim": "claim_1",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_observations = 11"
+      },
+      {
+        "claim": "claim_2",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_variables = 15"
+      },
+      {
+        "claim": "claim_3",
+        "check": "value",
+        "status": "fail",
+        "detail": "claimed 0.05 but variance_explained.1 = 0.260782"
+      },
+      {
+        "claim": "claim_4",
+        "check": "value",
+        "status": "fail",
+        "detail": "claimed 0.05 but variance_explained.2 = 0.166246"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_observations",
+      "expected": 11,
+      "value": 11,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_variables",
+      "expected": 15,
+      "value": 15,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "variance_explained.1",
+      "expected": 0.26078151220115814,
+      "value": "0.050000000000000003",
+      "answered": true,
+      "correct": false
+    },
+    {
+      "fact": "variance_explained.2",
+      "expected": 0.16624601901317942,
+      "value": "0.050000000000000003",
+      "answered": true,
+      "correct": false
+    }
+  ],
+  "prompt_chars": 1449
+}

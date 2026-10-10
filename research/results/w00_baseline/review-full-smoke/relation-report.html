@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>BioExplainR Analysis Explanation Report</title><style>body{font-family:-apple-system,'Segoe UI','Noto Sans CJK SC','Microsoft YaHei',sans-serif;max-width:960px;margin:2em auto;padding:0 1em;line-height:1.6;color:#222} table{border-collapse:collapse;margin:.5em 0;font-size:.9em}th,td{border:1px solid #ccc;padding:3px 8px;text-align:left} th{background:#f3f3f3}pre{background:#f6f8fa;padding:.8em;overflow-x:auto}h1{border-bottom:2px solid #2a6f97}h2{color:#2a6f97}</style></head><body>
+<h1>BioExplainR Analysis Explanation Report</h1>
+<p>Generated: 2026-10-08 16:26:15 CST; BioExplainR 0.4.0.9000.</p>
+<p>Note: statistical facts are computed deterministically by R from the full input; model text (if any) only organises language and is not numerically verified. The report contains no API key, raw expression matrix, cell barcodes or sample names.</p>
+<h2>Object 1</h2>
+<h3>Cross-analysis project summary</h3>
+<table><tr><th>name</th><th>type</th><th>source</th><th>source_status</th><th>validation</th></tr><tr><td>rna</td><td>generic</td><td>fixture</td><td>user_declared</td><td>not_applicable</td></tr><tr><td>protein</td><td>generic</td><td>fixture</td><td>user_declared</td><td>not_applicable</td></tr></table>
+<h3>Source consistency check</h3>
+<table><tr><th>check</th><th>status</th><th>detail</th></tr><tr><td>species</td><td>unknown</td><td>No recorded value</td></tr><tr><td>tissue</td><td>unknown</td><td>No recorded value</td></tr><tr><td>contrast</td><td>unknown</td><td>No recorded value</td></tr></table>
+<h3>Data dependencies (upstream -&gt; derived result)</h3>
+<p>(empty table)</p>
+<p>Derived enrichment results or plots share inputs with their upstream results and are not independent validation.</p>
+<h3>Sample alignment</h3>
+<table><tr><th>check</th><th>status</th><th>detail</th></tr><tr><td>required_columns</td><td>pass</td><td>modality, source_id and biological_unit are present</td></tr><tr><td>duplicate_mapping</td><td>pass</td><td>no ambiguous modality/source mappings</td></tr></table>
+<table><tr><th>modality</th><th>n_units</th><th>n_missing</th></tr><tr><td>rna</td><td>2</td><td>1</td></tr><tr><td>protein</td><td>2</td><td>1</td></tr></table>
+<table><tr><th>from</th><th>to</th><th>n_shared</th><th>n_from_only</th><th>n_to_only</th></tr><tr><td>rna</td><td>protein</td><td>1</td><td>1</td><td>1</td></tr></table>
+<table><tr><th>item</th><th>value</th></tr><tr><td>n_primary_units</td><td>3</td></tr><tr><td>n_complete_units</td><td>1</td></tr><tr><td>n_unmeasured_units</td><td>0</td></tr><tr><td>coverage_basis</td><td>declared_map</td></tr></table>
+<h3>Explicit cross-result direction checks</h3>
+<table><tr><th>item</th><th>value</th></tr><tr><td>status</td><td>pass</td></tr><tr><td>scope</td><td>Explicit sign relations only; no significance, causality or independent-evidence assessment</td></tr></table>
+<table><tr><th>id</th><th>check</th><th>status</th><th>detail</th></tr><tr><td>pair1</td><td>scope_dataset_id</td><td>pass</td><td>Recorded scope agrees</td></tr><tr><td>pair1</td><td>scope_comparison_id</td><td>pass</td><td>Recorded scope agrees</td></tr><tr><td>pair1</td><td>scope_species</td><td>pass</td><td>Recorded scope agrees</td></tr><tr><td>pair1</td><td>scope_tissue</td><td>pass</td><td>Recorded scope agrees</td></tr><tr><td>pair1</td><td>scope_sample_level</td><td>pass</td><td>Recorded scope agrees</td></tr><tr><td>pair1</td><td>orientation_numerator</td><td>pass</td><td>Recorded orientation agrees</td></tr><tr><td>pair1</td><td>orientation_denominator</td><td>pass</td><td>Recorded orientation agrees</td></tr><tr><td>pair1</td><td>feature_identity</td><td>pass</td><td>Feature identity uses explicit fact descriptors</td></tr><tr><td>pair1</td><td>direction</td><td>pass</td><td>Effects have opposite signs</td></tr></table>
+<ul><li>The project contains 2 results and 0 recorded data dependencies.</li><li>Agreement in direction across analyses only yields a biological hypothesis to be tested; it cannot automatically establish causality.</li></ul>
+<h2>rna</h2>
+<h3>Source and parameters</h3>
+<table><tr><th>item</th><th>value</th></tr><tr><td>analysis_type</td><td>generic</td></tr><tr><td>source_class</td><td>list</td></tr><tr><td>source_package</td><td>fixture</td></tr><tr><td>source_status</td><td>user_declared</td></tr><tr><td>adapter</td><td>NA</td></tr></table>
+<h3>Deterministic statistical facts</h3>
+<table><tr><th>item</th><th>value</th></tr><tr><td>HLA.A</td><td>2</td></tr></table>
+<h2>protein</h2>
+<h3>Source and parameters</h3>
+<table><tr><th>item</th><th>value</th></tr><tr><td>analysis_type</td><td>generic</td></tr><tr><td>source_class</td><td>list</td></tr><tr><td>source_package</td><td>fixture</td></tr><tr><td>source_status</td><td>user_declared</td></tr><tr><td>adapter</td><td>NA</td></tr></table>
+<h3>Deterministic statistical facts</h3>
+<table><tr><th>item</th><th>value</th></tr><tr><td>HLA.A</td><td>-1</td></tr></table>
+<h2>Model configuration (no key)</h2>
+<table><tr><th>item</th><th>value</th></tr><tr><td>preset</td><td>local</td></tr><tr><td>protocol</td><td>none</td></tr><tr><td>model</td><td>NA</td></tr><tr><td>endpoint_host</td><td>NA</td></tr><tr><td>key_source</td><td>none</td></tr><tr><td>timeout</td><td>60</td></tr><tr><td>max_retries</td><td>2</td></tr><tr><td>temperature</td><td>NA</td></tr><tr><td>max_tokens</td><td>1500</td></tr></table>
+<h2>Runtime environment and dependency provenance</h2>
+<table><tr><th>item</th><th>value</th></tr><tr><td>R</td><td>R version 4.3.3 (2024-02-29)</td></tr><tr><td>platform</td><td>x86_64-pc-linux-gnu</td></tr><tr><td>os</td><td>Ubuntu 24.04.4 LTS</td></tr></table>
+<table><tr><th>package</th><th>version</th><th>source</th></tr><tr><td>BioExplainR</td><td>0.4.0.9000</td><td>local/unknown</td></tr><tr><td>httr2</td><td>1.0.0</td><td>CRAN</td></tr><tr><td>jsonlite</td><td>1.8.8</td><td>CRAN</td></tr></table>
+</body></html>

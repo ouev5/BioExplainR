@@ -1,0 +1,18 @@
+{
+  "text": "{\"claims\":[{\"fact\":\"n_features\",\"value\":22369},{\"fact\":\"n_significant\",\"value\":999},{\"fact\":\"n_up\",\"value\":519},{\"fact\":\"n_down\",\"value\":480},{\"fact\":\"n_na_padj\",\"value\":5204}]}",
+  "model": "step-5-preview",
+  "stop_reason": "stop",
+  "usage": {
+    "prompt_tokens": 206,
+    "completion_tokens": 174,
+    "total_tokens": 380,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "endpoint_host": "https://api.stepfun.com",
+  "elapsed_sec": 2.47
+}

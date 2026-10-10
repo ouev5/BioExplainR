@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><title>BioExplainR 分析解释报告</title><style>body{font-family:-apple-system,'Segoe UI','Noto Sans CJK SC','Microsoft YaHei',sans-serif;max-width:960px;margin:2em auto;padding:0 1em;line-height:1.6;color:#222} table{border-collapse:collapse;margin:.5em 0;font-size:.9em}th,td{border:1px solid #ccc;padding:3px 8px;text-align:left} th{background:#f3f3f3}pre{background:#f6f8fa;padding:.8em;overflow-x:auto}h1{border-bottom:2px solid #2a6f97}h2{color:#2a6f97}</style></head><body>
+<h1>BioExplainR 分析解释报告</h1>
+<p>生成时间：2026-10-04 04:13:08 CST；BioExplainR 0.3.1。</p>
+<p>说明：统计事实由 R 从完整输入确定性计算；模型文本（如有）仅组织语言，未经数值核验。报告不包含 API key、原始表达矩阵、细胞条码或样本名称。</p>
+<h2>对象 1</h2>
+<h3>来源与参数</h3>
+<table><tr><th>item</th><th>value</th></tr><tr><td>analysis_type</td><td>differential_expression</td></tr><tr><td>source_class</td><td>DESeqResults</td></tr><tr><td>source_package</td><td>DESeq2</td></tr><tr><td>source_status</td><td>verified_class</td></tr><tr><td>adapter</td><td>deseq_results</td></tr><tr><td>thresholds</td><td>padj=0.05; lfc=1; p=0.05</td></tr><tr><td>created</td><td>2026-10-04 04:13:03 CST</td></tr></table>
+<h3>用户提供的研究背景</h3>
+<table><tr><th>item</th><th>value</th></tr><tr><td>contrast</td><td>dex trt vs untrt</td></tr></table>
+<h3>确定性统计事实</h3>
+<table><tr><th>item</th><th>value</th></tr><tr><td>n_features</td><td>22369</td></tr><tr><td>lfc_column</td><td>log2FoldChange</td></tr><tr><td>p_value_column</td><td>pvalue</td></tr><tr><td>adjusted_p_column</td><td>padj</td></tr><tr><td>p_value_basis</td><td>adjusted_column</td></tr><tr><td>n_na_lfc</td><td>0</td></tr><tr><td>n_na_pvalue</td><td>0</td></tr><tr><td>n_raw_p_below</td><td>5690</td></tr><tr><td>raw_p_threshold</td><td>0.05</td></tr><tr><td>n_tested</td><td>17165</td></tr><tr><td>n_na_padj</td><td>5204</td></tr><tr><td>padj_threshold</td><td>0.05</td></tr><tr><td>lfc_threshold</td><td>1</td></tr><tr><td>n_significant_any_lfc</td><td>4030</td></tr><tr><td>n_up</td><td>519</td></tr><tr><td>n_down</td><td>480</td></tr><tr><td>n_significant</td><td>999</td></tr><tr><td>min_padj</td><td>7.056e-132</td></tr><tr><td>lfc_range</td><td>-5.325, 9.506</td></tr><tr><td>lfc_median</td><td>-0.02247</td></tr><tr><td>mean_expression_column</td><td>baseMean</td></tr><tr><td>deseq2_lfc_description</td><td>log2 fold change (MLE): dex trt vs untrt</td></tr><tr><td>deseq2_alpha</td><td>0.05</td></tr></table>
+<h3>前 10 行摘要</h3>
+<table><tr><th>feature</th><th>log2fc</th><th>pvalue</th><th>padj</th><th>baseMean</th><th>direction</th><th>passes_thresholds</th></tr><tr><td>ENSG00000152583</td><td>4.575</td><td>4.11e-136</td><td>7.06e-132</td><td>997.4</td><td>up</td><td>TRUE</td></tr><tr><td>ENSG00000165995</td><td>3.291</td><td>4.46e-135</td><td>3.83e-131</td><td>495.1</td><td>up</td><td>TRUE</td></tr><tr><td>ENSG00000120129</td><td>2.948</td><td>3.03e-129</td><td>1.74e-125</td><td>3409</td><td>up</td><td>TRUE</td></tr><tr><td>ENSG00000101347</td><td>3.767</td><td>7.68e-129</td><td>3.30e-125</td><td>12700</td><td>up</td><td>TRUE</td></tr><tr><td>ENSG00000189221</td><td>3.354</td><td>5.21e-123</td><td>1.79e-119</td><td>2342</td><td>up</td><td>TRUE</td></tr><tr><td>ENSG00000211445</td><td>3.73</td><td>2.58e-111</td><td>7.39e-108</td><td>12290</td><td>up</td><td>TRUE</td></tr><tr><td>ENSG00000157214</td><td>1.977</td><td>6.09e-106</td><td>1.49e-102</td><td>3009</td><td>up</td><td>TRUE</td></tr><tr><td>ENSG00000162614</td><td>2.036</td><td>1.56e-102</td><td>3.36e-99</td><td>5393</td><td>up</td><td>TRUE</td></tr><tr><td>ENSG00000125148</td><td>2.211</td><td>1.85e-96</td><td>3.53e-93</td><td>3656</td><td>up</td><td>TRUE</td></tr><tr><td>ENSG00000154734</td><td>2.346</td><td>2.27e-90</td><td>3.89e-87</td><td>30320</td><td>up</td><td>TRUE</td></tr></table>
+<h3>本地解释（规则模板）</h3>
+<p><strong>数据事实（由 R 确定性计算）</strong></p>
+<ul><li>结果表共 22369 个特征；log2FC 列为 &#39;log2FoldChange&#39;。</li><li>在 padj &lt; 0.05 且 |log2FC| &gt; 1 的条件下：显著 999 个，其中上调 519 个、下调 480 个；padj 为 NA 的特征 5204 个。</li><li>log2FC 范围 -5.33 到 9.51，中位数 -0.0225。</li><li>比较：dex trt vs untrt。</li></ul>
+<p><strong>统计含义</strong></p>
+<ul><li>log2FC 描述变化方向和大小，校正后 p 值描述在多重检验下结果的统计可靠性；二者是不同维度，需要同时看。</li><li>p 值很小但 log2FC 很小的基因，统计上可靠但效应可能在生物学上不重要；反之，大 log2FC 但 padj 不显著可能来自低表达或高变异。</li></ul>
+<p><strong>生物学解释（需结合证据核查）</strong></p>
+<ul><li>最显著的特征包括：ENSG00000152583、ENSG00000165995、ENSG00000120129、ENSG00000101347、ENSG00000189221。可以查阅这些基因的功能注释（例如 NCBI Gene、UniProt），再判断是否与实验处理相关。</li><li>差异表达只说明在本数据中表达水平与分组相关；生物学机制需要文献、数据库证据或实验验证支持。</li></ul>
+<p><strong>不确定性与限制</strong></p>
+<ul><li>log2FC 似乎经过收缩（shrinkage）；收缩后的效应量更保守，适合排序和可视化。</li><li>DESeq2 中 padj 为 NA 常由独立过滤、全零计数或极端离群值导致，这些基因未参与 FDR 计数。</li><li>未提供物种（species），生物学解释需要用户确认物种背景。</li></ul>
+<p><strong>不能据此推出的结论</strong></p>
+<ul><li>不能把“显著差异表达”直接写成“该基因导致了表型”或“该通路被激活”。</li><li>不能把未达到显著的基因说成“没有变化”；可能只是统计功效不足。</li></ul>
+<p><strong>学习问题</strong></p>
+<ul><li>如果交换比较组的顺序，log2FC 的符号会怎样变化？</li><li>为什么在数万个基因同时检验时需要使用校正后的 p 值？</li><li>一个 padj 很小但 |log2FC| = 0.1 的基因，你会如何描述它？</li></ul>
+<p><strong>概念卡片</strong></p>
+<ul><li>p 值：在“没有真实差异”的假设下，观察到当前或更极端结果的概率；不是效应大小，也不是假设为真的概率。</li><li>校正后 p 值（FDR/padj）：同时检验成千上万个基因时，用于控制假发现比例的指标，例如 padj &lt; 0.05 表示在该阈值下预期假发现比例约 5%。</li><li>log2 fold change：两组表达量之比取以 2 为底的对数；1 表示约 2 倍，-1 表示约一半。正负方向取决于比较顺序。</li></ul>
+<h3>模型生成的解释（未经数值核验）</h3>
+<table><tr><th>item</th><th>value</th></tr><tr><td>protocol</td><td>openai</td></tr><tr><td>preset</td><td>deepseek</td></tr><tr><td>model_requested</td><td>deepseek-flash</td></tr><tr><td>model_reported</td><td>deepseek-flash</td></tr><tr><td>endpoint_host</td><td>https://api.deepseek.com</td></tr><tr><td>time</td><td>2026-10-04 04:13:08 CST</td></tr><tr><td>structured_json</td><td>TRUE</td></tr></table>
+<p><strong>数据事实（由 R 确定性计算）</strong></p>
+<ul><li>数据集共 22369 个特征，其中 17165 个特征参与了统计检验（n_tested）。</li><li>在 raw p &lt; 0.05 时有 5690 个特征显著；在 padj &lt; 0.05 且 |log2FC| &gt; 1 时，显著特征为 999 个（上调 519、下调 480）。</li><li>padj 最小值为 7.0559599946e-132；log2FC 范围从 -5.3252832589 到 9.5059979827，中位数为 -0.022471777006。</li></ul>
+<p><strong>统计含义</strong></p>
+<ul><li>本次分析基于 DESeq2 的 DESeqResults，padj 为经多重检验校正后的 FDR，raw p 仅作参考。</li><li>以 padj &lt; 0.05 与 |log2FC| &gt; 1 为阈值，999 个基因同时通过双重筛选，属于差异表达基因。</li><li>padj 为 NA 的有 5204 个特征，未参与 FDR 计算，多源于独立过滤或极端计数。</li></ul>
+<p><strong>生物学解释（需结合证据核查）</strong></p>
+<ul><li>在 dex 处理相对未处理（dex trt vs untrt）的比较中，存在大量转录本水平的显著变化，提示地塞米松对转录组有广泛影响（需物种背景确认）。</li><li>top_features 中以正 log2FC（上调）为主，前 10 个特征全部为 direction=up，暗示部分基因在 dex 处理后被诱导表达。</li><li>排名靠前的基因（如 ENSG00000152583、ENSG00000165995）log2FC 约为 4.6 与 3.3，可能对应较强的转录激活反应（仅为假设）。</li></ul>
+<p><strong>不确定性与限制</strong></p>
+<ul><li>log2FC 似乎经过收缩（shrinkage），效应量偏保守，更适用于排序与可视化，不直接反映原始倍数变化。</li><li>DESeq2 中 padj 为 NA 常由独立过滤、全零计数或极端离群值导致，这些基因未参与 FDR 计数。</li><li>未提供物种（species），生物学解释需用户确认物种背景。</li></ul>
+<p><strong>不能据此推出的结论</strong></p>
+<ul><li>无法判断显著基因具体的分子功能或通路归属，因为未提供注释、ORA/GSEA 或通路数据库结果。</li><li>ORA 结果本身不包含激活或抑制方向；方向只能从 log2FC 的符号单独读取。</li><li>不能把细胞数量当作生物学重复，也不能仅凭本次结果推断临床疗效或药物机制。</li></ul>
+<p><strong>学习问题</strong></p>
+<ul><li>为什么 DESeq2 的 padj 会存在 NA，且这些基因不计入 FDR？</li><li>log2FC 收缩（shrinkage）对差异表达基因排序有什么影响？</li><li>padj 与 raw p 在多基因检验中有什么区别？</li></ul>
+<p><strong>evidence_used</strong></p>
+<ul><li>（无）</li></ul>
+<p><strong>claims</strong></p>
+<ul><li>c1</li><li>特征总数</li><li>n_features</li><li>22369</li><li>c2</li><li>参与检验的特征数</li><li>n_tested</li><li>17165</li><li>c3</li><li>raw p &lt; 0.05 的特征数</li><li>n_raw_p_below</li><li>5690</li><li>c4</li><li>raw p 阈值</li><li>raw_p_threshold</li><li>0.05</li><li>c5</li><li>padj 为 NA 的特征数</li><li>n_na_padj</li><li>5204</li><li>c6</li><li>padj 阈值</li><li>padj_threshold</li><li>0.05</li><li>c7</li><li>log2FC 阈值</li><li>lfc_threshold</li><li>1</li><li>c8</li><li>通过任意 log2FC 阈值的显著特征数</li><li>n_significant_any_lfc</li><li>4030</li><li>c9</li><li>上调特征数</li><li>n_up</li><li>519</li><li>c10</li><li>下调特征数</li><li>n_down</li><li>480</li><li>c11</li><li>同时通过 padj 与 log2FC 阈值的显著特征数</li><li>n_significant</li><li>999</li><li>c12</li><li>最小 padj</li><li>min_padj</li><li>7.0559599946e-132</li><li>c13</li><li>log2FC 最小值</li><li>lfc_range.1</li><li>-5.3252832589</li><li>c14</li><li>log2FC 最大值</li><li>lfc_range.2</li><li>9.5059979827</li><li>c15</li><li>log2FC 中位数</li><li>lfc_median</li><li>-0.022471777006</li></ul>
+<h3>解释事实与引用检查</h3>
+<p>状态：pass</p>
+<table><tr><th>claim</th><th>check</th><th>status</th><th>detail</th></tr><tr><td>c1</td><td>value</td><td>pass</td><td>n_features = 22369</td></tr><tr><td>c2</td><td>value</td><td>pass</td><td>n_tested = 17165</td></tr><tr><td>c3</td><td>value</td><td>pass</td><td>n_raw_p_below = 5690</td></tr><tr><td>c4</td><td>value</td><td>pass</td><td>raw_p_threshold = 0.05</td></tr><tr><td>c5</td><td>value</td><td>pass</td><td>n_na_padj = 5204</td></tr><tr><td>c6</td><td>value</td><td>pass</td><td>padj_threshold = 0.05</td></tr><tr><td>c7</td><td>value</td><td>pass</td><td>lfc_threshold = 1</td></tr><tr><td>c8</td><td>value</td><td>pass</td><td>n_significant_any_lfc = 4030</td></tr><tr><td>c9</td><td>value</td><td>pass</td><td>n_up = 519</td></tr><tr><td>c10</td><td>value</td><td>pass</td><td>n_down = 480</td></tr><tr><td>c11</td><td>value</td><td>pass</td><td>n_significant = 999</td></tr><tr><td>c12</td><td>value</td><td>pass</td><td>min_padj = 7.06e-132</td></tr><tr><td>c13</td><td>value</td><td>pass</td><td>lfc_range.1 = -5.32528</td></tr><tr><td>c14</td><td>value</td><td>pass</td><td>lfc_range.2 = 9.506</td></tr><tr><td>c15</td><td>value</td><td>pass</td><td>lfc_median = -0.0224718</td></tr></table>
+<h2>模型配置（不含密钥）</h2>
+<table><tr><th>item</th><th>value</th></tr><tr><td>preset</td><td>deepseek</td></tr><tr><td>protocol</td><td>openai</td></tr><tr><td>model</td><td>deepseek-flash</td></tr><tr><td>endpoint_host</td><td>https://api.deepseek.com</td></tr><tr><td>key_source</td><td>env:DEEPSEEK_API_KEY</td></tr><tr><td>timeout</td><td>120</td></tr><tr><td>max_retries</td><td>2</td></tr><tr><td>temperature</td><td>NA</td></tr><tr><td>max_tokens</td><td>5000</td></tr></table>
+<h2>运行环境与依赖来源</h2>
+<table><tr><th>item</th><th>value</th></tr><tr><td>R</td><td>R version 4.3.3 (2024-02-29)</td></tr><tr><td>platform</td><td>x86_64-pc-linux-gnu</td></tr><tr><td>os</td><td>Ubuntu 24.04.4 LTS</td></tr></table>
+<table><tr><th>package</th><th>version</th><th>source</th></tr><tr><td>BioExplainR</td><td>0.3.1</td><td>local/unknown</td></tr><tr><td>httr2</td><td>1.0.0</td><td>CRAN</td></tr><tr><td>jsonlite</td><td>1.8.8</td><td>CRAN</td></tr><tr><td>DESeq2</td><td>1.42.0</td><td>Bioconductor</td></tr><tr><td>ggplot2</td><td>3.4.4</td><td>CRAN</td></tr><tr><td>SeuratObject</td><td>5.0.1</td><td>CRAN</td></tr><tr><td>SingleCellExperiment</td><td>1.24.0</td><td>Bioconductor</td></tr><tr><td>SummarizedExperiment</td><td>1.32.0</td><td>Bioconductor</td></tr></table>
+</body></html>

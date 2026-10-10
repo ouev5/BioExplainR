@@ -1,0 +1,192 @@
+{
+  "case": "single_cell_010",
+  "family": "single_cell",
+  "method": "direct_bounded",
+  "replicate": 2,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:18:39 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"数据矩阵维度为35行50列。\",\n    \"检测到的测定类型为counts。\",\n    \"不同样本数为2。\"\n  ],\n  \"statistical_meaning\": [\n    \"n_cells表示细胞数，对应矩阵行数。\",\n    \"n_features表示特征数，对应矩阵列数。\",\n    \"n_samples表示样本数，由n_distinct_samples给出。\"\n  ],\n  \"biological_interpretation\": [\n    \"该数据包含35个细胞和50个特征。\",\n    \"样本来自2个不同样本。\",\n    \"测定类型为counts，可能为原始计数数据。\"\n  ],\n  \"uncertainty\": [\n    \"未提供细胞和特征的具体标识。\",\n    \"样本分组信息未知。\"\n  ],\n  \"cannot_conclude\": [\n    \"无法确定细胞类型或特征生物学意义。\",\n    \"无法进行差异表达分析。\"\n  ],\n  \"learning_questions\": [\n    \"n_cells和n_features分别对应矩阵的哪个维度？\",\n    \"n_distinct_samples与n_samples是否相同？\",\n    \"assays字段的含义是什么？\"\n  ],\n  \"evidence_used\": [\n    \"dim\",\n    \"assays\",\n    \"n_distinct_samples\"\n  ],\n  \"claims\": [\n    {\n      \"id\": \"claim_1\",\n      \"text\": \"细胞数为35。\",\n      \"fact\": \"n_cells\",\n      \"value\": 35,\n      \"evidence\": [\n        \"dim\"\n      ]\n    },\n    {\n      \"id\": \"claim_2\",\n      \"text\": \"特征数为50。\",\n      \"fact\": \"n_features\",\n      \"value\": 50,\n      \"evidence\": [\n        \"dim\"\n      ]\n    },\n    {\n      \"id\": \"claim_3\",\n      \"text\": \"样本数为2。\",\n      \"fact\": \"n_samples\",\n      \"value\": 2,\n      \"evidence\": [\n        \"n_distinct_samples\"\n      ]\n    },\n    {\n      \"id\": \"claim_4\",\n      \"text\": \"测定类型为counts。\",\n      \"fact\": \"assays\",\n      \"value\": \"counts\",\n      \"evidence\": [\n        \"assays\"\n      ]\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 316,
+      "completion_tokens": 487,
+      "total_tokens": 803,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 188
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.3399999999999999
+  },
+  "parsed": {
+    "data_facts": [
+      "数据矩阵维度为35行50列。",
+      "检测到的测定类型为counts。",
+      "不同样本数为2。"
+    ],
+    "statistical_meaning": [
+      "n_cells表示细胞数，对应矩阵行数。",
+      "n_features表示特征数，对应矩阵列数。",
+      "n_samples表示样本数，由n_distinct_samples给出。"
+    ],
+    "biological_interpretation": [
+      "该数据包含35个细胞和50个特征。",
+      "样本来自2个不同样本。",
+      "测定类型为counts，可能为原始计数数据。"
+    ],
+    "uncertainty": [
+      "未提供细胞和特征的具体标识。",
+      "样本分组信息未知。"
+    ],
+    "cannot_conclude": [
+      "无法确定细胞类型或特征生物学意义。",
+      "无法进行差异表达分析。"
+    ],
+    "learning_questions": [
+      "n_cells和n_features分别对应矩阵的哪个维度？",
+      "n_distinct_samples与n_samples是否相同？",
+      "assays字段的含义是什么？"
+    ],
+    "evidence_used": [
+      "dim",
+      "assays",
+      "n_distinct_samples"
+    ],
+    "claims": [
+      {
+        "id": "claim_1",
+        "text": "细胞数为35。",
+        "fact": "n_cells",
+        "value": 35,
+        "evidence": [
+          "dim"
+        ]
+      },
+      {
+        "id": "claim_2",
+        "text": "特征数为50。",
+        "fact": "n_features",
+        "value": 50,
+        "evidence": [
+          "dim"
+        ]
+      },
+      {
+        "id": "claim_3",
+        "text": "样本数为2。",
+        "fact": "n_samples",
+        "value": 2,
+        "evidence": [
+          "n_distinct_samples"
+        ]
+      },
+      {
+        "id": "claim_4",
+        "text": "测定类型为counts。",
+        "fact": "assays",
+        "value": "counts",
+        "evidence": [
+          "assays"
+        ]
+      }
+    ]
+  },
+  "validation": {
+    "status": "fail",
+    "findings": [
+      {
+        "claim": "(evidence_used)",
+        "check": "evidence_ids",
+        "status": "fail",
+        "detail": "unknown evidence id(s): dim, assays, n_distinct_samples (no evidence list was supplied)"
+      },
+      {
+        "claim": "claim_1",
+        "check": "value",
+        "status": "fail",
+        "detail": "claimed 35 but n_cells = 50"
+      },
+      {
+        "claim": "claim_1",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: dim"
+      },
+      {
+        "claim": "claim_2",
+        "check": "value",
+        "status": "fail",
+        "detail": "claimed 50 but n_features = 35"
+      },
+      {
+        "claim": "claim_2",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: dim"
+      },
+      {
+        "claim": "claim_3",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_samples = 2"
+      },
+      {
+        "claim": "claim_3",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: n_distinct_samples"
+      },
+      {
+        "claim": "claim_4",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      },
+      {
+        "claim": "claim_4",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: assays"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_cells",
+      "expected": 50,
+      "value": 35,
+      "answered": true,
+      "correct": false
+    },
+    {
+      "fact": "n_features",
+      "expected": 35,
+      "value": 50,
+      "answered": true,
+      "correct": false
+    },
+    {
+      "fact": "n_samples",
+      "expected": 2,
+      "value": 2,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "assays",
+      "expected": "counts",
+      "value": "counts",
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 1204
+}

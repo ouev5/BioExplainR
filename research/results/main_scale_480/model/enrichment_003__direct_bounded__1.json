@@ -1,0 +1,175 @@
+{
+  "case": "enrichment_003",
+  "family": "enrichment",
+  "method": "direct_bounded",
+  "replicate": 1,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:12:40 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"R输出包含15行5列，但仅提供了10行数据，且rows_complete为false。\",\n    \"提供的行中p.adjust值从0.01到0.08不等。\"\n  ],\n  \"statistical_meaning\": [\n    \"富集分析通常使用超几何检验或Fisher精确检验计算p值，并校正为p.adjust。\",\n    \"显著性阈值通常为0.05，但需确认具体方法。\"\n  ],\n  \"biological_interpretation\": [\n    \"显著富集的通路可能揭示生物学功能，但数据不完整无法可靠推断。\"\n  ],\n  \"uncertainty\": [\n    \"数据不完整，无法确定总条目数和显著条目数。\",\n    \"富集方法未明确说明。\"\n  ],\n  \"cannot_conclude\": [\n    \"无法计算n_terms，因为总行数未知且数据不完整。\",\n    \"无法计算n_significant，因为缺少完整p.adjust值。\",\n    \"无法确定enrichment_method，未提供相关信息。\",\n    \"无法确定significance_threshold，未提供明确阈值。\"\n  ],\n  \"learning_questions\": [\n    \"如何从R输出中提取富集分析的方法和阈值？\",\n    \"数据不完整时如何合理报告富集分析结果？\"\n  ],\n  \"evidence_used\": [\n    \"dim\",\n    \"provided_rows\",\n    \"rows_complete\"\n  ],\n  \"claims\": [\n    {\n      \"id\": \"claim_n_terms\",\n      \"text\": \"总条目数无法确定。\",\n      \"fact\": \"n_terms\",\n      \"value\": null,\n      \"evidence\": [\n        \"dim\",\n        \"rows_complete\"\n      ]\n    },\n    {\n      \"id\": \"claim_n_significant\",\n      \"text\": \"显著条目数无法确定。\",\n      \"fact\": \"n_significant\",\n      \"value\": null,\n      \"evidence\": [\n        \"provided_rows\",\n        \"rows_complete\"\n      ]\n    },\n    {\n      \"id\": \"claim_enrichment_method\",\n      \"text\": \"富集方法未提供。\",\n      \"fact\": \"enrichment_method\",\n      \"value\": null,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_significance_threshold\",\n      \"text\": \"显著性阈值未提供。\",\n      \"fact\": \"significance_threshold\",\n      \"value\": null,\n      \"evidence\": []\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 866,
+      "completion_tokens": 531,
+      "total_tokens": 1397,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 226
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.1499999999999999
+  },
+  "parsed": {
+    "data_facts": [
+      "R输出包含15行5列，但仅提供了10行数据，且rows_complete为false。",
+      "提供的行中p.adjust值从0.01到0.08不等。"
+    ],
+    "statistical_meaning": [
+      "富集分析通常使用超几何检验或Fisher精确检验计算p值，并校正为p.adjust。",
+      "显著性阈值通常为0.05，但需确认具体方法。"
+    ],
+    "biological_interpretation": [
+      "显著富集的通路可能揭示生物学功能，但数据不完整无法可靠推断。"
+    ],
+    "uncertainty": [
+      "数据不完整，无法确定总条目数和显著条目数。",
+      "富集方法未明确说明。"
+    ],
+    "cannot_conclude": [
+      "无法计算n_terms，因为总行数未知且数据不完整。",
+      "无法计算n_significant，因为缺少完整p.adjust值。",
+      "无法确定enrichment_method，未提供相关信息。",
+      "无法确定significance_threshold，未提供明确阈值。"
+    ],
+    "learning_questions": [
+      "如何从R输出中提取富集分析的方法和阈值？",
+      "数据不完整时如何合理报告富集分析结果？"
+    ],
+    "evidence_used": [
+      "dim",
+      "provided_rows",
+      "rows_complete"
+    ],
+    "claims": [
+      {
+        "id": "claim_n_terms",
+        "text": "总条目数无法确定。",
+        "fact": "n_terms",
+        "value": null,
+        "evidence": [
+          "dim",
+          "rows_complete"
+        ]
+      },
+      {
+        "id": "claim_n_significant",
+        "text": "显著条目数无法确定。",
+        "fact": "n_significant",
+        "value": null,
+        "evidence": [
+          "provided_rows",
+          "rows_complete"
+        ]
+      },
+      {
+        "id": "claim_enrichment_method",
+        "text": "富集方法未提供。",
+        "fact": "enrichment_method",
+        "value": null,
+        "evidence": []
+      },
+      {
+        "id": "claim_significance_threshold",
+        "text": "显著性阈值未提供。",
+        "fact": "significance_threshold",
+        "value": null,
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "fail",
+    "findings": [
+      {
+        "claim": "(evidence_used)",
+        "check": "evidence_ids",
+        "status": "fail",
+        "detail": "unknown evidence id(s): dim, provided_rows, rows_complete (no evidence list was supplied)"
+      },
+      {
+        "claim": "claim_n_terms",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_n_terms",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: dim, rows_complete"
+      },
+      {
+        "claim": "claim_n_significant",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_n_significant",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: provided_rows, rows_complete"
+      },
+      {
+        "claim": "claim_enrichment_method",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_significance_threshold",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_terms",
+      "expected": 15,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "n_significant",
+      "expected": 7,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "enrichment_method",
+      "expected": "ORA",
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "significance_threshold",
+      "expected": 0.050000000000000003,
+      "value": null,
+      "answered": false,
+      "correct": false
+    }
+  ],
+  "prompt_chars": 2718
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bioexplainr.local/schema/context-1.0.json",
+  "title": "BioExplainR context",
+  "type": "object",
+  "required": ["schema_version", "analysis_type", "source", "facts", "scope", "design", "uncertainty"],
+  "properties": {
+    "schema_version": {"type": "string", "const": "1.0"},
+    "context_id": {"type": ["string", "null"]},
+    "analysis_type": {"type": "string"},
+    "source": {"type": "object", "required": ["class", "status"], "properties": {"class": {}, "package": {}, "status": {"enum": ["verified_class", "user_declared", "inferred_from_columns", "unknown", "legacy"]}}},
+    "facts": {"type": "object"},
+    "fact_descriptors": {"type": "object"},
+    "scope": {"type": "object"},
+    "design": {"type": "object"},
+    "uncertainty": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": true
+}

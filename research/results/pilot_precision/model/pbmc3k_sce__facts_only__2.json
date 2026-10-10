@@ -1,0 +1,146 @@
+{
+  "case": "pbmc3k_sce",
+  "method": "facts_only",
+  "replicate": 2,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-03 19:34:57 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"该数据集包含 2700 个细胞。\",\n    \"该数据集包含 32738 个特征（基因）。\",\n    \"该数据集仅包含 1 个样本（sample_id）。\",\n    \"QC 指标中，nCount_RNA 的中位数为 2197，四分位距为 1758 到 2763。\",\n    \"QC 指标中，nFeature_RNA 的中位数为 817，四分位距为 690 到 953.2。\",\n    \"QC 指标中，percent.mt 的中位数为 2.03，四分位距为 1.536 到 2.64。\",\n    \"counts 矩阵的维度为 32738 行 × 2700 列，稀疏矩阵中存储值数量为 2286884，零值比例为 0.9741。\",\n    \"降维方法为 UMAP，维度为 2。\"\n  ],\n  \"statistical_meaning\": [\n    \"n_cells 表示观测到的细胞总数，是单细胞数据的基本计数，不代表独立生物学重复数。\",\n    \"n_features 表示检测到的基因总数，反映数据矩阵的特征维度。\",\n    \"n_samples 表示样本（供体）数量，是进行组间统计推断时的独立重复单位。\",\n    \"QC 分位数描述了细胞级别文库大小、基因检出数和线粒体比例的分布，用于评估数据质量。\",\n    \"稀疏矩阵的零值比例和存储值数量反映了单细胞计数矩阵的稀疏特性。\",\n    \"UMAP 的 2 个维度是用于可视化的降维坐标，不是真实的生物学距离。\"\n  ],\n  \"biological_interpretation\": [\n    \"该数据来自人类 PBMC（外周血单个核细胞），包含多种免疫细胞类型。\",\n    \"线粒体比例中位数较低（2.03%），提示大多数细胞质量较好，但最大值 22.57% 表明存在少数高线粒体比例的细胞。\",\n    \"基因检出数中位数 817，范围 212 到 3422，反映了不同细胞类型或状态下的转录组复杂度差异。\",\n    \"由于只有一个样本，无法进行有意义的组间生物学比较。\"\n  ],\n  \"uncertainty\": [\n    \"细胞数不等于生物学重复数；样本/供体才是独立重复单位。单细胞差异分析若把细胞当重复，容易产生假阳性（伪重复问题）。\",\n    \"UMAP/t-SNE 上的距离不代表真实空间距离，图形结构受参数影响，不能单独证明细胞谱系。\",\n    \"cluster 编号本身没有生物学含义；细胞类型注释应基于多个 marker 的组合并结合组织背景。\",\n    \"仅识别到 1 个样本；组间比较的统计推断能力非常有限。\",\n    \"assay 数值只检查了有限子集（稀疏矩阵读取存储槽位，稠密矩阵最多抽样一个小块）。\"\n  ],\n  \"cannot_conclude\": [\n    \"不能基于单个样本推断任何组间差异或处理效应。\",\n    \"不能从 UMAP 坐标推断细胞类型、谱系关系或发育轨迹。\",\n    \"不能将细胞数（2700）视为生物学重复数来进行统计检验。\",\n    \"不能仅凭线粒体比例最大值判断细胞是否凋亡或死亡，需要结合其他 QC 指标。\",\n    \"不能从当前数据得出任何临床结论或生物标志物。\"\n  ],\n  \"learning_questions\": [\n    \"为什么在单细胞分析中，细胞数不能当作生物学重复数？\",\n    \"QC 指标中的线粒体比例高通常意味着什么？\",\n    \"UMAP 图中的距离为什么不能直接解释为生物学距离？\",\n    \"如果只有一个样本，可以做哪些类型的分析？\",\n    \"稀疏矩阵中的零值比例对下游分析有什么影响？\"\n  ],\n  \"evidence_used\": [],\n  \"claims\": [\n    {\n      \"id\": \"claim_n_cells\",\n      \"text\": \"细胞总数为 2700。\",\n      \"fact\": \"n_cells\",\n      \"value\": 2700,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_n_features\",\n      \"text\": \"特征（基因）总数为 32738。\",\n      \"fact\": \"n_features\",\n      \"value\": 32738,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_n_samples\",\n      \"text\": \"样本数量为 1。\",\n      \"fact\": \"n_samples\",\n      \"value\": 1,\n      \"evidence\": []\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 1261,
+      "completion_tokens": 986,
+      "total_tokens": 2247,
+      "prompt_tokens_details": {
+        "cached_tokens": 1024
+      },
+      "prompt_cache_hit_tokens": 1024,
+      "prompt_cache_miss_tokens": 237
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 4.15
+  },
+  "parsed": {
+    "data_facts": [
+      "该数据集包含 2700 个细胞。",
+      "该数据集包含 32738 个特征（基因）。",
+      "该数据集仅包含 1 个样本（sample_id）。",
+      "QC 指标中，nCount_RNA 的中位数为 2197，四分位距为 1758 到 2763。",
+      "QC 指标中，nFeature_RNA 的中位数为 817，四分位距为 690 到 953.2。",
+      "QC 指标中，percent.mt 的中位数为 2.03，四分位距为 1.536 到 2.64。",
+      "counts 矩阵的维度为 32738 行 × 2700 列，稀疏矩阵中存储值数量为 2286884，零值比例为 0.9741。",
+      "降维方法为 UMAP，维度为 2。"
+    ],
+    "statistical_meaning": [
+      "n_cells 表示观测到的细胞总数，是单细胞数据的基本计数，不代表独立生物学重复数。",
+      "n_features 表示检测到的基因总数，反映数据矩阵的特征维度。",
+      "n_samples 表示样本（供体）数量，是进行组间统计推断时的独立重复单位。",
+      "QC 分位数描述了细胞级别文库大小、基因检出数和线粒体比例的分布，用于评估数据质量。",
+      "稀疏矩阵的零值比例和存储值数量反映了单细胞计数矩阵的稀疏特性。",
+      "UMAP 的 2 个维度是用于可视化的降维坐标，不是真实的生物学距离。"
+    ],
+    "biological_interpretation": [
+      "该数据来自人类 PBMC（外周血单个核细胞），包含多种免疫细胞类型。",
+      "线粒体比例中位数较低（2.03%），提示大多数细胞质量较好，但最大值 22.57% 表明存在少数高线粒体比例的细胞。",
+      "基因检出数中位数 817，范围 212 到 3422，反映了不同细胞类型或状态下的转录组复杂度差异。",
+      "由于只有一个样本，无法进行有意义的组间生物学比较。"
+    ],
+    "uncertainty": [
+      "细胞数不等于生物学重复数；样本/供体才是独立重复单位。单细胞差异分析若把细胞当重复，容易产生假阳性（伪重复问题）。",
+      "UMAP/t-SNE 上的距离不代表真实空间距离，图形结构受参数影响，不能单独证明细胞谱系。",
+      "cluster 编号本身没有生物学含义；细胞类型注释应基于多个 marker 的组合并结合组织背景。",
+      "仅识别到 1 个样本；组间比较的统计推断能力非常有限。",
+      "assay 数值只检查了有限子集（稀疏矩阵读取存储槽位，稠密矩阵最多抽样一个小块）。"
+    ],
+    "cannot_conclude": [
+      "不能基于单个样本推断任何组间差异或处理效应。",
+      "不能从 UMAP 坐标推断细胞类型、谱系关系或发育轨迹。",
+      "不能将细胞数（2700）视为生物学重复数来进行统计检验。",
+      "不能仅凭线粒体比例最大值判断细胞是否凋亡或死亡，需要结合其他 QC 指标。",
+      "不能从当前数据得出任何临床结论或生物标志物。"
+    ],
+    "learning_questions": [
+      "为什么在单细胞分析中，细胞数不能当作生物学重复数？",
+      "QC 指标中的线粒体比例高通常意味着什么？",
+      "UMAP 图中的距离为什么不能直接解释为生物学距离？",
+      "如果只有一个样本，可以做哪些类型的分析？",
+      "稀疏矩阵中的零值比例对下游分析有什么影响？"
+    ],
+    "evidence_used": [],
+    "claims": [
+      {
+        "id": "claim_n_cells",
+        "text": "细胞总数为 2700。",
+        "fact": "n_cells",
+        "value": 2700,
+        "evidence": []
+      },
+      {
+        "id": "claim_n_features",
+        "text": "特征（基因）总数为 32738。",
+        "fact": "n_features",
+        "value": 32738,
+        "evidence": []
+      },
+      {
+        "id": "claim_n_samples",
+        "text": "样本数量为 1。",
+        "fact": "n_samples",
+        "value": 1,
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "claim_n_cells",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_cells = 2700"
+      },
+      {
+        "claim": "claim_n_features",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_features = 32738"
+      },
+      {
+        "claim": "claim_n_samples",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_samples = 1"
+      }
+    ],
+    "n_claims": 3,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_cells",
+      "expected": 2700,
+      "value": 2700,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_features",
+      "expected": 32738,
+      "value": 32738,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_samples",
+      "expected": 1,
+      "value": 1,
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 4305
+}

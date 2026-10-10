@@ -1,0 +1,180 @@
+{
+  "case": "airway_lfc1",
+  "method": "facts_evidence",
+  "replicate": 2,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-03 19:42:31 UTC",
+  "response": {
+    "text": "{\"data_facts\": [\"本次差异表达分析共包含 22369 个特征（基因）。\", \"在 padj<0.05 且 |log2FC|>1 的阈值下，共有 999 个显著差异基因，其中上调 519 个、下调 480 个。\", \"padj 为 NA 的特征有 5204 个，这些基因未参与 FDR 计数。\"], \"statistical_meaning\": [\"n_features 是纳入结果表的特征总数，不等于实际参与检验的基因数（n_tested=17165）。\", \"n_up 与 n_down 是满足阈值的计数，计数本身没有方向性，方向由 log2FC 的符号决定。\", \"n_na_padj 表示校正后 p 值缺失，通常源于独立过滤、全零计数或极端离群值。\"], \"biological_interpretation\": [\"地塞米松处理与未处理相比，存在一批表达变化较大的基因，提示糖皮质激素可能调控一批转录本（假设）。\", \"上调与下调数量接近，说明调控并非单一方向（假设）。\", \"文献检索命中 CRISPLD2 与糖皮质激素响应相关（证据 EuropePMC:MED:24926665），但该证据仅表示检索匹配，未评估其结论。\"], \"uncertainty\": [\"log2FC 似乎经过收缩（shrinkage），收缩后的效应量更保守，适合排序和可视化。\", \"padj 为 NA 的基因未参与 FDR 计数，因此显著基因数基于可检验子集。\", \"本分析为细胞水平样本，细胞不是生物学重复，推断需谨慎。\"], \"cannot_conclude\": [\"不能从计数推断具体通路或生物学机制被激活或抑制。\", \"不能把 n_up/n_down 当作有方向的效应量。\", \"不能仅凭文献检索命中就断定 CRISPLD2 在本数据中显著或发挥功能。\"], \"learning_questions\": [\"为什么 n_features 与 n_tested 不同？\", \"padj 为 NA 的基因应如何处理？\", \"计数（n_up/n_down）与有方向的 log2FC 有何区别？\"], \"evidence_used\": [\"EuropePMC:MED:24926665\"], \"claims\": [{\"id\": \"c1\", \"text\": \"纳入分析的特征总数为 22369。\", \"fact\": \"n_features\", \"value\": 22369, \"evidence\": []}, {\"id\": \"c2\", \"text\": \"满足 padj<0.05 且 |log2FC|>1 的显著基因数为 999。\", \"fact\": \"n_significant\", \"value\": 999, \"evidence\": []}, {\"id\": \"c3\", \"text\": \"显著基因中上调计数为 519。\", \"fact\": \"n_up\", \"value\": 519, \"evidence\": []}, {\"id\": \"c4\", \"text\": \"显著基因中下调计数为 480。\", \"fact\": \"n_down\", \"value\": 480, \"evidence\": []}, {\"id\": \"c5\", \"text\": \"padj 为 NA 的特征数为 5204。\", \"fact\": \"n_na_padj\", \"value\": 5204, \"evidence\": []}]}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 1994,
+      "completion_tokens": 703,
+      "total_tokens": 2697,
+      "prompt_tokens_details": {
+        "cached_tokens": 1792
+      },
+      "prompt_cache_hit_tokens": 1792,
+      "prompt_cache_miss_tokens": 202
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 3.23
+  },
+  "parsed": {
+    "data_facts": [
+      "本次差异表达分析共包含 22369 个特征（基因）。",
+      "在 padj<0.05 且 |log2FC|>1 的阈值下，共有 999 个显著差异基因，其中上调 519 个、下调 480 个。",
+      "padj 为 NA 的特征有 5204 个，这些基因未参与 FDR 计数。"
+    ],
+    "statistical_meaning": [
+      "n_features 是纳入结果表的特征总数，不等于实际参与检验的基因数（n_tested=17165）。",
+      "n_up 与 n_down 是满足阈值的计数，计数本身没有方向性，方向由 log2FC 的符号决定。",
+      "n_na_padj 表示校正后 p 值缺失，通常源于独立过滤、全零计数或极端离群值。"
+    ],
+    "biological_interpretation": [
+      "地塞米松处理与未处理相比，存在一批表达变化较大的基因，提示糖皮质激素可能调控一批转录本（假设）。",
+      "上调与下调数量接近，说明调控并非单一方向（假设）。",
+      "文献检索命中 CRISPLD2 与糖皮质激素响应相关（证据 EuropePMC:MED:24926665），但该证据仅表示检索匹配，未评估其结论。"
+    ],
+    "uncertainty": [
+      "log2FC 似乎经过收缩（shrinkage），收缩后的效应量更保守，适合排序和可视化。",
+      "padj 为 NA 的基因未参与 FDR 计数，因此显著基因数基于可检验子集。",
+      "本分析为细胞水平样本，细胞不是生物学重复，推断需谨慎。"
+    ],
+    "cannot_conclude": [
+      "不能从计数推断具体通路或生物学机制被激活或抑制。",
+      "不能把 n_up/n_down 当作有方向的效应量。",
+      "不能仅凭文献检索命中就断定 CRISPLD2 在本数据中显著或发挥功能。"
+    ],
+    "learning_questions": [
+      "为什么 n_features 与 n_tested 不同？",
+      "padj 为 NA 的基因应如何处理？",
+      "计数（n_up/n_down）与有方向的 log2FC 有何区别？"
+    ],
+    "evidence_used": [
+      "EuropePMC:MED:24926665"
+    ],
+    "claims": [
+      {
+        "id": "c1",
+        "text": "纳入分析的特征总数为 22369。",
+        "fact": "n_features",
+        "value": 22369,
+        "evidence": []
+      },
+      {
+        "id": "c2",
+        "text": "满足 padj<0.05 且 |log2FC|>1 的显著基因数为 999。",
+        "fact": "n_significant",
+        "value": 999,
+        "evidence": []
+      },
+      {
+        "id": "c3",
+        "text": "显著基因中上调计数为 519。",
+        "fact": "n_up",
+        "value": 519,
+        "evidence": []
+      },
+      {
+        "id": "c4",
+        "text": "显著基因中下调计数为 480。",
+        "fact": "n_down",
+        "value": 480,
+        "evidence": []
+      },
+      {
+        "id": "c5",
+        "text": "padj 为 NA 的特征数为 5204。",
+        "fact": "n_na_padj",
+        "value": 5204,
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "(evidence_used)",
+        "check": "evidence_ids",
+        "status": "pass",
+        "detail": "all cited evidence ids were supplied"
+      },
+      {
+        "claim": "c1",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_features = 22369"
+      },
+      {
+        "claim": "c2",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_significant = 999"
+      },
+      {
+        "claim": "c3",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_up = 519"
+      },
+      {
+        "claim": "c4",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_down = 480"
+      },
+      {
+        "claim": "c5",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_na_padj = 5204"
+      }
+    ],
+    "n_claims": 5,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_features",
+      "expected": 22369,
+      "value": 22369,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_significant",
+      "expected": 999,
+      "value": 999,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_up",
+      "expected": 519,
+      "value": 519,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_down",
+      "expected": 480,
+      "value": 480,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_na_padj",
+      "expected": 5204,
+      "value": 5204,
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 6311,
+  "validation_rechecked_utc": "2026-10-03 20:09:20 UTC"
+}

@@ -1,0 +1,152 @@
+{
+  "case": "generic_005",
+  "family": "generic",
+  "method": "facts_only",
+  "replicate": 3,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:26:11 UTC",
+  "response": {
+    "text": "{\"data_facts\": [\"该对象是一个 data.frame（普通数据框），不是 S4 对象。\", \"对象大小为 1.1 Kb，维度为 15 行 × 3 列，三列均为整数型。\", \"分析未提供物种信息，也没有专用适配器。\"], \"statistical_meaning\": [\"当前只做了结构摘要，没有进行差异表达或富集等统计检验。\", \"阈值 padj=0.05、p=0.05、lfc=0 已设定，但没有任何检验结果与之对应。\", \"因此不存在可报告的 p 值、校正 p 值或倍数变化。\"], \"biological_interpretation\": [\"由于没有基因、通路或样本层面的结果，无法提出具体的生物学假设。\", \"15×3 的整数表可能只是计数或分组信息，需用户说明每列含义后才能解释。\", \"物种未知，任何基因功能层面的推断都缺少前提。\"], \"uncertainty\": [\"没有针对该对象类型的专用适配器，只给出结构摘要。\", \"未提供物种（species），生物学解释需要用户确认物种背景。\", \"整数列的具体含义（计数、分组编号还是其他）未说明。\"], \"cannot_conclude\": [\"不能得出任何基因差异表达或通路富集的结论。\", \"不能判断激活或抑制方向，因为没有带符号的效应量。\", \"不能把 15 行当作 15 个生物学重复，单元格不是重复样本。\"], \"learning_questions\": [\"这 15 行和 3 列分别代表什么（基因、样本还是分组）？\", \"研究物种是什么，实验设计中有几个生物学重复？\", \"你希望做哪种分析：差异表达、富集分析还是其他？\"], \"evidence_used\": [], \"claims\": [{\"id\": \"c1\", \"text\": \"对象类别为 data.frame。\", \"fact\": \"class\", \"value\": \"data.frame\", \"evidence\": []}, {\"id\": \"c2\", \"text\": \"对象类型为 list。\", \"fact\": \"type\", \"value\": \"list\", \"evidence\": []}, {\"id\": \"c3\", \"text\": \"该对象不是 S4 对象。\", \"fact\": \"is_s4\", \"value\": false, \"evidence\": []}, {\"id\": \"c4\", \"text\": \"对象大小为 1.1 Kb。\", \"fact\": \"size\", \"value\": \"1.1 Kb\", \"evidence\": []}]}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 827,
+      "completion_tokens": 531,
+      "total_tokens": 1358,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 187
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.77
+  },
+  "parsed": {
+    "data_facts": [
+      "该对象是一个 data.frame（普通数据框），不是 S4 对象。",
+      "对象大小为 1.1 Kb，维度为 15 行 × 3 列，三列均为整数型。",
+      "分析未提供物种信息，也没有专用适配器。"
+    ],
+    "statistical_meaning": [
+      "当前只做了结构摘要，没有进行差异表达或富集等统计检验。",
+      "阈值 padj=0.05、p=0.05、lfc=0 已设定，但没有任何检验结果与之对应。",
+      "因此不存在可报告的 p 值、校正 p 值或倍数变化。"
+    ],
+    "biological_interpretation": [
+      "由于没有基因、通路或样本层面的结果，无法提出具体的生物学假设。",
+      "15×3 的整数表可能只是计数或分组信息，需用户说明每列含义后才能解释。",
+      "物种未知，任何基因功能层面的推断都缺少前提。"
+    ],
+    "uncertainty": [
+      "没有针对该对象类型的专用适配器，只给出结构摘要。",
+      "未提供物种（species），生物学解释需要用户确认物种背景。",
+      "整数列的具体含义（计数、分组编号还是其他）未说明。"
+    ],
+    "cannot_conclude": [
+      "不能得出任何基因差异表达或通路富集的结论。",
+      "不能判断激活或抑制方向，因为没有带符号的效应量。",
+      "不能把 15 行当作 15 个生物学重复，单元格不是重复样本。"
+    ],
+    "learning_questions": [
+      "这 15 行和 3 列分别代表什么（基因、样本还是分组）？",
+      "研究物种是什么，实验设计中有几个生物学重复？",
+      "你希望做哪种分析：差异表达、富集分析还是其他？"
+    ],
+    "evidence_used": [],
+    "claims": [
+      {
+        "id": "c1",
+        "text": "对象类别为 data.frame。",
+        "fact": "class",
+        "value": "data.frame",
+        "evidence": []
+      },
+      {
+        "id": "c2",
+        "text": "对象类型为 list。",
+        "fact": "type",
+        "value": "list",
+        "evidence": []
+      },
+      {
+        "id": "c3",
+        "text": "该对象不是 S4 对象。",
+        "fact": "is_s4",
+        "value": false,
+        "evidence": []
+      },
+      {
+        "id": "c4",
+        "text": "对象大小为 1.1 Kb。",
+        "fact": "size",
+        "value": "1.1 Kb",
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "c1",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      },
+      {
+        "claim": "c2",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      },
+      {
+        "claim": "c3",
+        "check": "value",
+        "status": "pass",
+        "detail": "is_s4 = 0"
+      },
+      {
+        "claim": "c4",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "class",
+      "expected": "data.frame",
+      "value": "data.frame",
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "type",
+      "expected": "list",
+      "value": "list",
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "is_s4",
+      "expected": false,
+      "value": false,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "size",
+      "expected": "1.1 Kb",
+      "value": "1.1 Kb",
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 3248
+}

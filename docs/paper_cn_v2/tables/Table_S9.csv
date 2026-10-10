@@ -1,0 +1,7 @@
+﻿层级,结果,记录,范围
+源码,676 pass / 1 skip / 677,paper-cn-source.*,0失败/错误/警告
+包检查,Status: OK,paper-cn-package-check.*,本轮实际构建包
+历史API,74/74,review-legacy-api*-result.json,10-08源码及安装包名称/位置参数
+浏览器,7组pass,paper-cn-shiny-browser-final/summary.json,项目、PDF、英中、两会话、双视口
+miniACC安装复现,8核心表逐字节相同,review-miniacc-boundaries-final.*,同一数据工程复现
+Python复核,66效应/方向/覆盖/BH,review-miniacc-installed-audit.*,原始Wilcoxon P未独立重算

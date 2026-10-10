@@ -1,0 +1,17 @@
+{
+  "command": [
+    "python3",
+    "-c",
+    "import sys; sys.path.insert(0,\"research\"); import json; from audit_current_results import ROOT, main_experiment, common_task, supporting_results, paper; print(json.dumps({\"main\":main_experiment(ROOT),\"common\":common_task(ROOT),\"supporting\":supporting_results(ROOT),\"paper\":paper(ROOT)},ensure_ascii=False,indent=2))"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-05T08:08:30.097606+00:00",
+  "finished_utc": "2026-10-05T08:08:31.684653+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/audit-content.txt",
+    "bytes": 3791,
+    "sha256": "d11466932ab52e3fadcf786368768bae3cd7a329f9ffd222b2ce83f19b2212e3"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "command": [
+    "R",
+    "--vanilla",
+    "--slave",
+    "-f",
+    "tools/check.R"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-05T14:23:23.609770+00:00",
+  "finished_utc": "2026-10-05T14:24:03.224222+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/acceptance-source.txt",
+    "bytes": 1940,
+    "sha256": "9ca05bd17b4628c071bb399b2156f4a0699d948a2725d85c6bfe23a5bca07554"
+  }
+}

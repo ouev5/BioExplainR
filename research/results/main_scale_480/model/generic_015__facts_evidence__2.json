@@ -1,0 +1,160 @@
+{
+  "case": "generic_015",
+  "family": "generic",
+  "method": "facts_evidence",
+  "replicate": 2,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:22:55 UTC",
+  "response": {
+    "text": "{\"data_facts\": [\"输入对象是一个 data.frame，内部类型为 list，不是 S4 对象。\", \"对象大小约为 1.3 Kb，维度为 25 行 × 3 列，三列均为整数型。\", \"分析类型为 generic，未提供物种信息。\"], \"statistical_meaning\": [\"当前只有对象结构摘要，没有差异表达统计量或富集结果。\", \"阈值 padj=0.05、lfc=0、p=0.05 已设定，但没有任何检验结果与之对应。\", \"因此无法计算或报告任何显著性、效应量或方差解释比例。\"], \"biological_interpretation\": [\"没有基因或通路层面的结果，无法提出可检验的生物学假设。\", \"唯一文献命中（EuropePMC:MED:24926665）只是检索匹配，未评估其结论是否支持任何论断。\", \"若要做生物学解释，需要先确认物种并运行相应分析。\"], \"uncertainty\": [\"没有针对该对象类型的专用适配器，只给出结构摘要。\", \"未提供物种，生物学解释需要用户确认物种背景。\", \"文献命中不代表证据支持，需人工核查。\"], \"cannot_conclude\": [\"不能得出任何基因差异表达或通路富集的结论。\", \"不能判断激活方向或上下调方向。\", \"不能把 25 行 × 3 列的结构当作生物学重复或统计检验结果。\"], \"learning_questions\": [\"data.frame 与 S4 对象在 R 中有什么区别？\", \"为什么只有结构摘要时不能报告 p 值或 log2 倍数变化？\", \"运行差异表达分析前需要向用户确认哪些元数据（如物种、分组）？\"], \"evidence_used\": [\"EuropePMC:MED:24926665\"], \"claims\": [{\"id\": \"c1\", \"text\": \"对象类别为 data.frame。\", \"fact\": \"class\", \"value\": \"data.frame\", \"evidence\": []}, {\"id\": \"c2\", \"text\": \"对象内部类型为 list。\", \"fact\": \"type\", \"value\": \"list\", \"evidence\": []}, {\"id\": \"c3\", \"text\": \"该对象不是 S4 对象。\", \"fact\": \"is_s4\", \"value\": false, \"evidence\": []}, {\"id\": \"c4\", \"text\": \"对象大小约为 1.3 Kb。\", \"fact\": \"size\", \"value\": \"1.3 Kb\", \"evidence\": []}]}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 974,
+      "completion_tokens": 537,
+      "total_tokens": 1511,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 206
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 3.0800000000000001
+  },
+  "parsed": {
+    "data_facts": [
+      "输入对象是一个 data.frame，内部类型为 list，不是 S4 对象。",
+      "对象大小约为 1.3 Kb，维度为 25 行 × 3 列，三列均为整数型。",
+      "分析类型为 generic，未提供物种信息。"
+    ],
+    "statistical_meaning": [
+      "当前只有对象结构摘要，没有差异表达统计量或富集结果。",
+      "阈值 padj=0.05、lfc=0、p=0.05 已设定，但没有任何检验结果与之对应。",
+      "因此无法计算或报告任何显著性、效应量或方差解释比例。"
+    ],
+    "biological_interpretation": [
+      "没有基因或通路层面的结果，无法提出可检验的生物学假设。",
+      "唯一文献命中（EuropePMC:MED:24926665）只是检索匹配，未评估其结论是否支持任何论断。",
+      "若要做生物学解释，需要先确认物种并运行相应分析。"
+    ],
+    "uncertainty": [
+      "没有针对该对象类型的专用适配器，只给出结构摘要。",
+      "未提供物种，生物学解释需要用户确认物种背景。",
+      "文献命中不代表证据支持，需人工核查。"
+    ],
+    "cannot_conclude": [
+      "不能得出任何基因差异表达或通路富集的结论。",
+      "不能判断激活方向或上下调方向。",
+      "不能把 25 行 × 3 列的结构当作生物学重复或统计检验结果。"
+    ],
+    "learning_questions": [
+      "data.frame 与 S4 对象在 R 中有什么区别？",
+      "为什么只有结构摘要时不能报告 p 值或 log2 倍数变化？",
+      "运行差异表达分析前需要向用户确认哪些元数据（如物种、分组）？"
+    ],
+    "evidence_used": [
+      "EuropePMC:MED:24926665"
+    ],
+    "claims": [
+      {
+        "id": "c1",
+        "text": "对象类别为 data.frame。",
+        "fact": "class",
+        "value": "data.frame",
+        "evidence": []
+      },
+      {
+        "id": "c2",
+        "text": "对象内部类型为 list。",
+        "fact": "type",
+        "value": "list",
+        "evidence": []
+      },
+      {
+        "id": "c3",
+        "text": "该对象不是 S4 对象。",
+        "fact": "is_s4",
+        "value": false,
+        "evidence": []
+      },
+      {
+        "id": "c4",
+        "text": "对象大小约为 1.3 Kb。",
+        "fact": "size",
+        "value": "1.3 Kb",
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "(evidence_used)",
+        "check": "evidence_ids",
+        "status": "pass",
+        "detail": "all cited evidence ids were supplied"
+      },
+      {
+        "claim": "c1",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      },
+      {
+        "claim": "c2",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      },
+      {
+        "claim": "c3",
+        "check": "value",
+        "status": "pass",
+        "detail": "is_s4 = 0"
+      },
+      {
+        "claim": "c4",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "class",
+      "expected": "data.frame",
+      "value": "data.frame",
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "type",
+      "expected": "list",
+      "value": "list",
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "is_s4",
+      "expected": false,
+      "value": false,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "size",
+      "expected": "1.3 Kb",
+      "value": "1.3 Kb",
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 3776
+}

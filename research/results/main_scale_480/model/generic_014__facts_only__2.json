@@ -1,0 +1,151 @@
+{
+  "case": "generic_014",
+  "family": "generic",
+  "method": "facts_only",
+  "replicate": 2,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:20:55 UTC",
+  "response": {
+    "text": "{\"data_facts\": [\"该对象是一个 data.frame（class = \\\"data.frame\\\"），底层类型为 list，不是 S4 对象（is_s4 = false）。\", \"对象在内存中的报告大小为 \\\"2.3 Kb\\\"。\", \"整体表格为 24 行 × 7 列，无缺失值（n_na = 0），零值比例为 0。\"], \"statistical_meaning\": [\"这些只是对象结构与数值分布摘要，不包含任何检验、p 值或效应量。\", \"数值分位数（min 1、median 84.5、max 168）描述的是矩阵内数值范围，而非组间差异。\", \"整数型数值提示可能是原始计数，比较前通常需要标准化。\"], \"biological_interpretation\": [\"从结构看更像表达/计数矩阵，但未提供物种与实验设计，无法给出具体生物学结论。\", \"任何基因功能或通路层面的解释都只能作为待验证假设。\"], \"uncertainty\": [\"没有针对该对象类型的专用适配器，只给出结构摘要。\", \"行列名可能含样本或患者标识，原始数值不会被发送或写入报告。\", \"未提供物种背景，生物学解释需用户确认。\"], \"cannot_conclude\": [\"不能得出任何差异表达、富集或通路激活方向的结论。\", \"不能判断样本分组、重复数或统计显著性。\", \"不能推断基因功能或临床意义。\"], \"learning_questions\": [\"data.frame 与 matrix 在 R 中有什么区别？\", \"为什么原始计数需要先标准化再比较样本间表达量？\", \"如何用 bio_register_adapter() 为该对象类型扩展适配器？\"], \"evidence_used\": [], \"claims\": [{\"id\": \"c1\", \"text\": \"对象类别为 data.frame。\", \"fact\": \"class\", \"value\": \"data.frame\", \"evidence\": []}, {\"id\": \"c2\", \"text\": \"对象底层类型为 list。\", \"fact\": \"type\", \"value\": \"list\", \"evidence\": []}, {\"id\": \"c3\", \"text\": \"该对象不是 S4 对象。\", \"fact\": \"is_s4\", \"value\": false, \"evidence\": []}, {\"id\": \"c4\", \"text\": \"对象报告大小为 2.3 Kb。\", \"fact\": \"size\", \"value\": \"2.3 Kb\", \"evidence\": []}]}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 969,
+      "completion_tokens": 520,
+      "total_tokens": 1489,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 201
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.3700000000000001
+  },
+  "parsed": {
+    "data_facts": [
+      "该对象是一个 data.frame（class = \"data.frame\"），底层类型为 list，不是 S4 对象（is_s4 = false）。",
+      "对象在内存中的报告大小为 \"2.3 Kb\"。",
+      "整体表格为 24 行 × 7 列，无缺失值（n_na = 0），零值比例为 0。"
+    ],
+    "statistical_meaning": [
+      "这些只是对象结构与数值分布摘要，不包含任何检验、p 值或效应量。",
+      "数值分位数（min 1、median 84.5、max 168）描述的是矩阵内数值范围，而非组间差异。",
+      "整数型数值提示可能是原始计数，比较前通常需要标准化。"
+    ],
+    "biological_interpretation": [
+      "从结构看更像表达/计数矩阵，但未提供物种与实验设计，无法给出具体生物学结论。",
+      "任何基因功能或通路层面的解释都只能作为待验证假设。"
+    ],
+    "uncertainty": [
+      "没有针对该对象类型的专用适配器，只给出结构摘要。",
+      "行列名可能含样本或患者标识，原始数值不会被发送或写入报告。",
+      "未提供物种背景，生物学解释需用户确认。"
+    ],
+    "cannot_conclude": [
+      "不能得出任何差异表达、富集或通路激活方向的结论。",
+      "不能判断样本分组、重复数或统计显著性。",
+      "不能推断基因功能或临床意义。"
+    ],
+    "learning_questions": [
+      "data.frame 与 matrix 在 R 中有什么区别？",
+      "为什么原始计数需要先标准化再比较样本间表达量？",
+      "如何用 bio_register_adapter() 为该对象类型扩展适配器？"
+    ],
+    "evidence_used": [],
+    "claims": [
+      {
+        "id": "c1",
+        "text": "对象类别为 data.frame。",
+        "fact": "class",
+        "value": "data.frame",
+        "evidence": []
+      },
+      {
+        "id": "c2",
+        "text": "对象底层类型为 list。",
+        "fact": "type",
+        "value": "list",
+        "evidence": []
+      },
+      {
+        "id": "c3",
+        "text": "该对象不是 S4 对象。",
+        "fact": "is_s4",
+        "value": false,
+        "evidence": []
+      },
+      {
+        "id": "c4",
+        "text": "对象报告大小为 2.3 Kb。",
+        "fact": "size",
+        "value": "2.3 Kb",
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "c1",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      },
+      {
+        "claim": "c2",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      },
+      {
+        "claim": "c3",
+        "check": "value",
+        "status": "pass",
+        "detail": "is_s4 = 0"
+      },
+      {
+        "claim": "c4",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "class",
+      "expected": "data.frame",
+      "value": "data.frame",
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "type",
+      "expected": "list",
+      "value": "list",
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "is_s4",
+      "expected": false,
+      "value": false,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "size",
+      "expected": "2.3 Kb",
+      "value": "2.3 Kb",
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 3592
+}

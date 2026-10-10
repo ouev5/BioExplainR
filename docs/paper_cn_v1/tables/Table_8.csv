@@ -1,0 +1,16 @@
+﻿case,source,purpose,expected,actual
+airway_nine_thresholds,airway stored DESeqResults,full-table counts / 45 numeric facts,pass,pass
+pbmc_independent_unit,PBMC3k stored SCE,2700 cells remain one donor,pass,pass
+airway_correct_pca,airway stored VST,source and generated coordinates,pass,pass
+airway_injected_pca_coordinate,airway controlled mutation,detect coordinate drift,fail,fail
+airway_injected_pca_label,airway controlled mutation,detect wrong variance label,fail,fail
+raw_p_not_adjusted,hand-computable fixture,raw-only state is not adjusted significance,pass,pass
+payload_budget_rejects,airway stored DESeqResults,complete facts fail explicitly when over budget,pass,pass
+valid_map_incomplete_coverage,hand-computable fixture,valid map with 1 complete / 1 unmeasured of 3,pass,pass
+missing_observed_mapping,hand-computable fixture,observed-but-unmapped sample is partial,partial,partial
+mapped_unit_outside_cohort,hand-computable fixture,reject mapping outside complete denominator,fail,fail
+miniacc_observed_relation,miniACC stored project,explicit effect relation matches observed sign,pass,pass
+miniacc_wrong_relation,miniACC controlled mutation,reject incorrect relation,fail,fail
+miniacc_reversed_comparison,miniACC controlled mutation,reject reversed numerator / denominator,fail,fail
+miniacc_missing_comparison_scope,miniACC controlled mutation,missing scientific scope remains unverified,unverified,unverified
+workbench_project_dispatch,miniACC stored project,workbench preserves project and coverage,pass,pass

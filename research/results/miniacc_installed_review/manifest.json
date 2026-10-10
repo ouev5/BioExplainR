@@ -1,0 +1,123 @@
+{
+  "manifest_version": "2.0",
+  "path_base": "run_directory",
+  "status": "pass",
+  "files": [
+    {
+      "path": "alignment_summary.json",
+      "bytes": 1074,
+      "sha256": "fa76b9077a1ae11a275ecf9cf563fcdd747df00fca07ed7e17edfb989572b5c9"
+    },
+    {
+      "path": "clinical_groups.csv",
+      "bytes": 3101,
+      "sha256": "c8d0f7ce5cfc1a6e1a03e7188100960751d1a84afe41820b6c5cc074e2ab5776"
+    },
+    {
+      "path": "cohort_payload.json",
+      "bytes": 10204,
+      "sha256": "9802003f2668009d9c082d0578c91f7474b71476ac5bd17598b43cf70437d142"
+    },
+    {
+      "path": "direction_findings.csv",
+      "bytes": 19303,
+      "sha256": "dbdf7ccceb86e2be385aa62e5c822e0469f8c23dd219f8f15dd5058981f9eba5"
+    },
+    {
+      "path": "engineering_checks.csv",
+      "bytes": 274,
+      "sha256": "eb4dce49b7a6dc0a16f2ee2e1db40750dc9fa17a646936e35d68cc96ac0c0e7c"
+    },
+    {
+      "path": "facts.json",
+      "bytes": 2733,
+      "sha256": "dba7e18a12b1b3f52dde66eeec52d0bde744bd4e5de903c1210fe9e21a795173"
+    },
+    {
+      "path": "feature_results.csv",
+      "bytes": 4493,
+      "sha256": "207667076b8e3e8cfc0291b9cc98548fcca20871074cac909ebed355bdf3a21b"
+    },
+    {
+      "path": "input_miniACC.rds",
+      "bytes": 230188,
+      "sha256": "ef9f4c7fb4d5f948525dda7cff9c898229ca3b844e3f05d023563925c5c3013c"
+    },
+    {
+      "path": "modality_coverage.csv",
+      "bytes": 128,
+      "sha256": "38e6fdeb07108bfdc7ddb1449db4090db3b80152cca43ef8a18e82ba8f777e6c"
+    },
+    {
+      "path": "packages.csv",
+      "bytes": 301,
+      "sha256": "62113f673a347b794d1cd4fc596b7391d8488b1f971d07062aab20236a6fcfc7"
+    },
+    {
+      "path": "paired_measurements.csv",
+      "bytes": 93261,
+      "sha256": "be73b92fc128815473e23abbac32fa47fbca4d14b2000638715a7f1b78c4cf54"
+    },
+    {
+      "path": "pairwise_coverage.csv",
+      "bytes": 395,
+      "sha256": "1ef0fbc2ba0615a95ffb67174d38a51351a4be2d8046cc2cc5e790ebc5216f8b"
+    },
+    {
+      "path": "project.rds",
+      "bytes": 16606,
+      "sha256": "898afa4cd13c979340bf54193571b677afaa1eaad5ea7c6906ef1709f1367013"
+    },
+    {
+      "path": "PROTOCOL.md",
+      "bytes": 3030,
+      "sha256": "4445b3e7f34f5d44b65b54822ca8a9098bab222516888dc2127ed7c0bd69718e"
+    },
+    {
+      "path": "relations.csv",
+      "bytes": 2160,
+      "sha256": "5d2f79f3c7fc8610bf63b046b3638aec321d247ec68ed95348d2657e61c617d8"
+    },
+    {
+      "path": "report-en.html",
+      "bytes": 36098,
+      "sha256": "bfdbea42726f15a34fcfcc7c6ca9b4799bf72719286ef5065ba7a5ae51b41435"
+    },
+    {
+      "path": "report-zh.html",
+      "bytes": 35810,
+      "sha256": "4c5d64cff97c99a632330a1c02e71497e44bf4e27db5ddf5734d7a14e0ac72c6"
+    },
+    {
+      "path": "sample_map.csv",
+      "bytes": 22859,
+      "sha256": "d5b7698aa04dced7b8b57347a43589d9718b14fdf2907e836a23997ebe753af8"
+    },
+    {
+      "path": "sessionInfo.txt",
+      "bytes": 1716,
+      "sha256": "8b3e6ce88f95a7ede489b52f971aeb0d9e9df457b209fec24417eeaa7bbfe8f9"
+    },
+    {
+      "path": "source_help.txt",
+      "bytes": 2481,
+      "sha256": "6a228aca1214b2e75d54c4c2be816ee2f1dcb6df226f52449183cc07ac95f856"
+    },
+    {
+      "path": "source_metadata.json",
+      "bytes": 398,
+      "sha256": "931be09b152aa843707256eef50b3ed902e5cf719a4f57cfa6f8d3732cfcd7ca"
+    },
+    {
+      "path": "source_package.txt",
+      "bytes": 2380,
+      "sha256": "cc7c892b7d6e5e5a17d66cc2d9b5df668a995b161403bc4628fab5a7c8a239a7"
+    },
+    {
+      "path": "summary.json",
+      "bytes": 1141,
+      "sha256": "9d762f4c3e9c3fe7c58c9567ce86490e3c2fa4a260efb7daec5612be2c52af58"
+    }
+  ],
+  "hash_policy": "SHA-256 of each output file, excluding manifest itself"
+}

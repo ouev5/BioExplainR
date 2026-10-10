@@ -1,0 +1,152 @@
+{
+  "case": "pca_005",
+  "family": "pca",
+  "method": "facts_only",
+  "replicate": 3,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:25:20 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"本次分析为PCA，样本数8，变量数17，共提取8个主成分。\",\n    \"第一主成分解释方差比例为0.29628971760850725，第二主成分解释方差比例为0.22208875853746787。\",\n    \"数据已中心化，未进行标准化。\"\n  ],\n  \"statistical_meaning\": [\n    \"主成分按解释方差从大到小排列，前两个主成分合计解释约一半的方差。\",\n    \"方差解释比例反映各主成分承载的变异量，不代表统计显著性。\",\n    \"样本在主成分空间中的距离反映其在所选变量上的整体差异。\"\n  ],\n  \"biological_interpretation\": [\n    \"若样本按分组在主成分上分离，可能提示组间存在整体表达或测量差异（假设，需分组信息验证）。\",\n    \"由于未提供物种信息，无法给出具体的生物学机制解释。\",\n    \"当前证据列表为空，任何生物学结论都只能作为待验证假设。\"\n  ],\n  \"uncertainty\": [\n    \"样本在主成分上的分离不等于生物学机制，批次效应也可能造成分离。\",\n    \"未发送样本坐标或样本名称；分组分离需结合样本分组信息判断。\",\n    \"未提供物种（species），生物学解释需要用户确认物种背景。\"\n  ],\n  \"cannot_conclude\": [\n    \"不能仅凭PCA判断组间差异的统计显著性。\",\n    \"不能确定分离由生物学因素还是批次/技术因素导致。\",\n    \"不能推断具体基因或通路的功能变化。\"\n  ],\n  \"learning_questions\": [\n    \"为什么PCA前两个主成分的方差解释比例之和不是100%？\",\n    \"中心化与标准化对PCA结果有什么不同影响？\",\n    \"如何判断主成分上的分离是否具有生物学意义？\"\n  ],\n  \"evidence_used\": [],\n  \"claims\": [\n    {\n      \"id\": \"claim_n_obs\",\n      \"text\": \"样本数为8。\",\n      \"fact\": \"n_observations\",\n      \"value\": 8,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_n_var\",\n      \"text\": \"变量数为17。\",\n      \"fact\": \"n_variables\",\n      \"value\": 17,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_var1\",\n      \"text\": \"第一主成分解释方差比例为0.29628971760850725。\",\n      \"fact\": \"variance_explained.1\",\n      \"value\": \"0.29628971760850725\",\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_var2\",\n      \"text\": \"第二主成分解释方差比例为0.22208875853746787。\",\n      \"fact\": \"variance_explained.2\",\n      \"value\": \"0.22208875853746787\",\n      \"evidence\": []\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 990,
+      "completion_tokens": 630,
+      "total_tokens": 1620,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 222
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.8500000000000001
+  },
+  "parsed": {
+    "data_facts": [
+      "本次分析为PCA，样本数8，变量数17，共提取8个主成分。",
+      "第一主成分解释方差比例为0.29628971760850725，第二主成分解释方差比例为0.22208875853746787。",
+      "数据已中心化，未进行标准化。"
+    ],
+    "statistical_meaning": [
+      "主成分按解释方差从大到小排列，前两个主成分合计解释约一半的方差。",
+      "方差解释比例反映各主成分承载的变异量，不代表统计显著性。",
+      "样本在主成分空间中的距离反映其在所选变量上的整体差异。"
+    ],
+    "biological_interpretation": [
+      "若样本按分组在主成分上分离，可能提示组间存在整体表达或测量差异（假设，需分组信息验证）。",
+      "由于未提供物种信息，无法给出具体的生物学机制解释。",
+      "当前证据列表为空，任何生物学结论都只能作为待验证假设。"
+    ],
+    "uncertainty": [
+      "样本在主成分上的分离不等于生物学机制，批次效应也可能造成分离。",
+      "未发送样本坐标或样本名称；分组分离需结合样本分组信息判断。",
+      "未提供物种（species），生物学解释需要用户确认物种背景。"
+    ],
+    "cannot_conclude": [
+      "不能仅凭PCA判断组间差异的统计显著性。",
+      "不能确定分离由生物学因素还是批次/技术因素导致。",
+      "不能推断具体基因或通路的功能变化。"
+    ],
+    "learning_questions": [
+      "为什么PCA前两个主成分的方差解释比例之和不是100%？",
+      "中心化与标准化对PCA结果有什么不同影响？",
+      "如何判断主成分上的分离是否具有生物学意义？"
+    ],
+    "evidence_used": [],
+    "claims": [
+      {
+        "id": "claim_n_obs",
+        "text": "样本数为8。",
+        "fact": "n_observations",
+        "value": 8,
+        "evidence": []
+      },
+      {
+        "id": "claim_n_var",
+        "text": "变量数为17。",
+        "fact": "n_variables",
+        "value": 17,
+        "evidence": []
+      },
+      {
+        "id": "claim_var1",
+        "text": "第一主成分解释方差比例为0.29628971760850725。",
+        "fact": "variance_explained.1",
+        "value": "0.29628971760850725",
+        "evidence": []
+      },
+      {
+        "id": "claim_var2",
+        "text": "第二主成分解释方差比例为0.22208875853746787。",
+        "fact": "variance_explained.2",
+        "value": "0.22208875853746787",
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "claim_n_obs",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_observations = 8"
+      },
+      {
+        "claim": "claim_n_var",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_variables = 17"
+      },
+      {
+        "claim": "claim_var1",
+        "check": "value",
+        "status": "pass",
+        "detail": "variance_explained.1 = 0.29629"
+      },
+      {
+        "claim": "claim_var2",
+        "check": "value",
+        "status": "pass",
+        "detail": "variance_explained.2 = 0.222089"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_observations",
+      "expected": 8,
+      "value": 8,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_variables",
+      "expected": 17,
+      "value": 17,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "variance_explained.1",
+      "expected": 0.29628971760850725,
+      "value": "0.29628971760850725",
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "variance_explained.2",
+      "expected": 0.22208875853746787,
+      "value": "0.22208875853746787",
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 3568
+}

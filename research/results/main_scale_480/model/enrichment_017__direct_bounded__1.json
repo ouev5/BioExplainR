@@ -1,0 +1,147 @@
+{
+  "case": "enrichment_017",
+  "family": "enrichment",
+  "method": "direct_bounded",
+  "replicate": 1,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:12:53 UTC",
+  "response": {
+    "text": "{\"data_facts\":[\"输入包含29行5列，但仅提供10行且rows_complete为false。\",\"提供的p.adjust值范围从0.01到0.059999999999999998。\"],\"statistical_meaning\":[\"富集分析结果不完整，无法可靠计算显著条目数。\",\"显著性阈值padj为0.050000000000000003，但数据缺失影响统计判断。\"],\"biological_interpretation\":[\"由于数据不完整，无法进行可靠的生物学功能富集解释。\",\"仅能观察到部分条目的p.adjust值，但不足以推断整体生物学意义。\"],\"uncertainty\":[\"数据不完整，n_terms和n_significant无法确定。\",\"enrichment_method未在输入中明确提供。\"],\"cannot_conclude\":[\"无法确定总条目数n_terms。\",\"无法确定显著条目数n_significant。\",\"无法确定富集方法enrichment_method。\"],\"learning_questions\":[\"如何确保富集分析输出完整以支持统计计算？\",\"在数据缺失时，有哪些方法可以评估富集结果的可靠性？\"],\"evidence_used\":[],\"claims\":[{\"id\":\"claim_1\",\"text\":\"总条目数无法从输入确定。\",\"fact\":\"n_terms\",\"value\":null,\"evidence\":[]},{\"id\":\"claim_2\",\"text\":\"显著条目数无法从输入确定。\",\"fact\":\"n_significant\",\"value\":null,\"evidence\":[]},{\"id\":\"claim_3\",\"text\":\"富集方法未在输入中提供。\",\"fact\":\"enrichment_method\",\"value\":null,\"evidence\":[]},{\"id\":\"claim_4\",\"text\":\"显著性阈值padj为0.050000000000000003。\",\"fact\":\"significance_threshold\",\"value\":\"0.050000000000000003\",\"evidence\":[]}]}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 866,
+      "completion_tokens": 382,
+      "total_tokens": 1248,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 226
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.4500000000000002
+  },
+  "parsed": {
+    "data_facts": [
+      "输入包含29行5列，但仅提供10行且rows_complete为false。",
+      "提供的p.adjust值范围从0.01到0.059999999999999998。"
+    ],
+    "statistical_meaning": [
+      "富集分析结果不完整，无法可靠计算显著条目数。",
+      "显著性阈值padj为0.050000000000000003，但数据缺失影响统计判断。"
+    ],
+    "biological_interpretation": [
+      "由于数据不完整，无法进行可靠的生物学功能富集解释。",
+      "仅能观察到部分条目的p.adjust值，但不足以推断整体生物学意义。"
+    ],
+    "uncertainty": [
+      "数据不完整，n_terms和n_significant无法确定。",
+      "enrichment_method未在输入中明确提供。"
+    ],
+    "cannot_conclude": [
+      "无法确定总条目数n_terms。",
+      "无法确定显著条目数n_significant。",
+      "无法确定富集方法enrichment_method。"
+    ],
+    "learning_questions": [
+      "如何确保富集分析输出完整以支持统计计算？",
+      "在数据缺失时，有哪些方法可以评估富集结果的可靠性？"
+    ],
+    "evidence_used": [],
+    "claims": [
+      {
+        "id": "claim_1",
+        "text": "总条目数无法从输入确定。",
+        "fact": "n_terms",
+        "value": null,
+        "evidence": []
+      },
+      {
+        "id": "claim_2",
+        "text": "显著条目数无法从输入确定。",
+        "fact": "n_significant",
+        "value": null,
+        "evidence": []
+      },
+      {
+        "id": "claim_3",
+        "text": "富集方法未在输入中提供。",
+        "fact": "enrichment_method",
+        "value": null,
+        "evidence": []
+      },
+      {
+        "id": "claim_4",
+        "text": "显著性阈值padj为0.050000000000000003。",
+        "fact": "significance_threshold",
+        "value": "0.050000000000000003",
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "partial",
+    "findings": [
+      {
+        "claim": "claim_1",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_2",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_3",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_4",
+        "check": "value",
+        "status": "pass",
+        "detail": "significance_threshold = 0.05"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_terms",
+      "expected": 29,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "n_significant",
+      "expected": 19,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "enrichment_method",
+      "expected": "ORA",
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "significance_threshold",
+      "expected": 0.050000000000000003,
+      "value": "0.050000000000000003",
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 2718
+}

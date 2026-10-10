@@ -1,0 +1,37 @@
+{
+  "test_date": "2026-10-05 01:19:12 UTC",
+  "independent_dataset": "pasilla 1.30.0 archive",
+  "api_key_used": false,
+  "tests": [
+    {
+      "package": "iSEE",
+      "task": "Initialize SCE with UMAP and QC color mapping",
+      "status": "pass",
+      "detail": "shiny.appobj",
+      "elapsed_sec": 0.3149,
+      "version": "2.14.0"
+    },
+    {
+      "package": "GPTCelltype",
+      "task": "Build cell-type prompt from real PBMC marker table",
+      "status": "pass",
+      "detail": "clusters=3; marker_rows=30; no API request",
+      "elapsed_sec": 0,
+      "version": "1.0.1"
+    },
+    {
+      "package": "ellmer",
+      "task": "Six saved responses through local OpenAI-compatible transport",
+      "status": "pass",
+      "detail": "12/12 client calls preserve response text; no live inference",
+      "version": "0.5.0"
+    },
+    {
+      "package": "BioExplainR + DESeq2",
+      "task": "Independent pasilla count matrix and DESeq2 fact extraction",
+      "status": "pass",
+      "detail": "features=14599; samples=7; significant=218; 30/30 facts match",
+      "version": "0.3.1"
+    }
+  ]
+}

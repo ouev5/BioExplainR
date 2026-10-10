@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-03 20:09:22 UTC",
+  "model": "deepseek-flash",
+  "base_url": "https://api.deepseek.com",
+  "protocol": "openai",
+  "replicates": 3,
+  "cases": ["airway_lfc0", "airway_lfc1", "complete_slice120", "reactome_ora", "airway_pca", "pbmc3k_sce"],
+  "methods": ["direct_bounded", "facts_only", "facts_evidence"],
+  "thinking": "disabled",
+  "temperature": 0,
+  "summary": [
+    {
+      "method": "direct_bounded",
+      "correct": 24,
+      "expected": 75,
+      "accuracy": 0.32,
+      "coverage": 0.52,
+      "answered_accuracy": 0.61538461538,
+      "api_success": 18,
+      "calls": 18,
+      "structured": 18,
+      "median_elapsed_sec": 2.475,
+      "prompt_tokens": 50163,
+      "completion_tokens": 9338
+    },
+    {
+      "method": "facts_only",
+      "correct": 75,
+      "expected": 75,
+      "accuracy": 1,
+      "coverage": 1,
+      "answered_accuracy": 1,
+      "api_success": 18,
+      "calls": 18,
+      "structured": 18,
+      "median_elapsed_sec": 2.765,
+      "prompt_tokens": 31584,
+      "completion_tokens": 10908
+    },
+    {
+      "method": "facts_evidence",
+      "correct": 75,
+      "expected": 75,
+      "accuracy": 1,
+      "coverage": 1,
+      "answered_accuracy": 1,
+      "api_success": 18,
+      "calls": 18,
+      "structured": 18,
+      "median_elapsed_sec": 3.135,
+      "prompt_tokens": 34230,
+      "completion_tokens": 11761
+    }
+  ]
+}

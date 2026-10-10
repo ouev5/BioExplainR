@@ -1,0 +1,21 @@
+{
+  "status": "pass",
+  "package_version": "0.4.0.9000",
+  "r_version": "R version 4.3.3 (2024-02-29)",
+  "libraries": ["/tmp/opencode/bioexplainr-review-core/library", "/usr/lib/R/library"],
+  "optional_available": {
+    "DESeq2": false,
+    "SingleCellExperiment": false,
+    "MultiAssayExperiment": false,
+    "SpatialExperiment": false,
+    "shiny": false,
+    "ggplot2": false
+  },
+  "alignment": {
+    "status": "pass",
+    "n_complete_units": 1,
+    "n_unmeasured_units": 1
+  },
+  "relation_status": "pass",
+  "purpose": "Installed-package engineering smoke including coverage and exact-token direction relations, not a scientific result"
+}

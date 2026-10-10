@@ -1,0 +1,152 @@
+{
+  "case": "generic_008",
+  "family": "generic",
+  "method": "facts_only",
+  "replicate": 1,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:15:29 UTC",
+  "response": {
+    "text": "{\"data_facts\": [\"该对象是一个 data.frame（class 为 data.frame）。\", \"其底层类型为 list，且不是 S4 对象（is_s4 为 false）。\", \"对象在内存中的大小约为 2 Kb。\"], \"statistical_meaning\": [\"这些字段只描述对象的容器结构，不包含任何统计检验结果。\", \"class/type 决定可用哪些方法处理，is_s4 影响取子集与访问方式。\", \"size 只是内存占用，与数据量或统计功效无关。\"], \"biological_interpretation\": [\"仅凭结构信息无法提出任何生物学假设。\", \"需要先确认这是表达矩阵还是其他表格，并补充物种背景。\", \"在标准化之前，样本间表达量不宜直接比较。\"], \"uncertainty\": [\"没有针对该对象类型的专用适配器，只给出结构摘要。\", \"行列名可能含样本或患者标识，原始数值不会被发送或写入报告。\", \"未提供物种，生物学解释需用户确认物种背景。\"], \"cannot_conclude\": [\"不能判断数据来自哪种实验或平台。\", \"不能得出任何差异表达、富集或临床结论。\", \"不能说明样本间是否存在生物学差异。\"], \"learning_questions\": [\"data.frame 与 list 在 R 中是什么关系？\", \"为什么整数计数需要先标准化再比较？\", \"S4 对象与普通 list 在取子集时有何不同？\"], \"evidence_used\": [], \"claims\": [{\"id\": \"c1\", \"text\": \"对象类别为 data.frame。\", \"fact\": \"class\", \"value\": \"data.frame\", \"evidence\": []}, {\"id\": \"c2\", \"text\": \"对象底层类型为 list。\", \"fact\": \"type\", \"value\": \"list\", \"evidence\": []}, {\"id\": \"c3\", \"text\": \"该对象不是 S4 对象。\", \"fact\": \"is_s4\", \"value\": false, \"evidence\": []}, {\"id\": \"c4\", \"text\": \"对象大小约为 2 Kb。\", \"fact\": \"size\", \"value\": \"2 Kb\", \"evidence\": []}]}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 965,
+      "completion_tokens": 468,
+      "total_tokens": 1433,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 197
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.2400000000000002
+  },
+  "parsed": {
+    "data_facts": [
+      "该对象是一个 data.frame（class 为 data.frame）。",
+      "其底层类型为 list，且不是 S4 对象（is_s4 为 false）。",
+      "对象在内存中的大小约为 2 Kb。"
+    ],
+    "statistical_meaning": [
+      "这些字段只描述对象的容器结构，不包含任何统计检验结果。",
+      "class/type 决定可用哪些方法处理，is_s4 影响取子集与访问方式。",
+      "size 只是内存占用，与数据量或统计功效无关。"
+    ],
+    "biological_interpretation": [
+      "仅凭结构信息无法提出任何生物学假设。",
+      "需要先确认这是表达矩阵还是其他表格，并补充物种背景。",
+      "在标准化之前，样本间表达量不宜直接比较。"
+    ],
+    "uncertainty": [
+      "没有针对该对象类型的专用适配器，只给出结构摘要。",
+      "行列名可能含样本或患者标识，原始数值不会被发送或写入报告。",
+      "未提供物种，生物学解释需用户确认物种背景。"
+    ],
+    "cannot_conclude": [
+      "不能判断数据来自哪种实验或平台。",
+      "不能得出任何差异表达、富集或临床结论。",
+      "不能说明样本间是否存在生物学差异。"
+    ],
+    "learning_questions": [
+      "data.frame 与 list 在 R 中是什么关系？",
+      "为什么整数计数需要先标准化再比较？",
+      "S4 对象与普通 list 在取子集时有何不同？"
+    ],
+    "evidence_used": [],
+    "claims": [
+      {
+        "id": "c1",
+        "text": "对象类别为 data.frame。",
+        "fact": "class",
+        "value": "data.frame",
+        "evidence": []
+      },
+      {
+        "id": "c2",
+        "text": "对象底层类型为 list。",
+        "fact": "type",
+        "value": "list",
+        "evidence": []
+      },
+      {
+        "id": "c3",
+        "text": "该对象不是 S4 对象。",
+        "fact": "is_s4",
+        "value": false,
+        "evidence": []
+      },
+      {
+        "id": "c4",
+        "text": "对象大小约为 2 Kb。",
+        "fact": "size",
+        "value": "2 Kb",
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "c1",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      },
+      {
+        "claim": "c2",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      },
+      {
+        "claim": "c3",
+        "check": "value",
+        "status": "pass",
+        "detail": "is_s4 = 0"
+      },
+      {
+        "claim": "c4",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "class",
+      "expected": "data.frame",
+      "value": "data.frame",
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "type",
+      "expected": "list",
+      "value": "list",
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "is_s4",
+      "expected": false,
+      "value": false,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "size",
+      "expected": "2 Kb",
+      "value": "2 Kb",
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 3588
+}

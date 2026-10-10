@@ -1,0 +1,17 @@
+{
+  "command": [
+    "bash",
+    "tools/bwrap-offline-smoke.sh",
+    "/tmp/opencode/bioexplainr-bwrap-user-final"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-05T13:27:55.348632+00:00",
+  "finished_utc": "2026-10-05T13:27:56.035241+00:00",
+  "exit_code": 1,
+  "status": "fail",
+  "log": {
+    "path": "research/results/w00_baseline/continuation-bwrap-permission-probe.txt",
+    "bytes": 255,
+    "sha256": "af3800f1896377906c568145bfa04e6c561771cb6c335c202dd3aba713a3372d"
+  }
+}

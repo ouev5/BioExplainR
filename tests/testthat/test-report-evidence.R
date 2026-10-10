@@ -1,0 +1,73 @@
+test_that("markdown report contains facts, provenance and no secrets", {
+  bio_configure("openai_compatible", base_url = "https://proxy.example/v1", model = "report-model",
+                api_key = "sk-report-secret-000111")
+  on.exit(bio_reset_config())
+  m <- matrix(1:20 + 0.98765, 4, dimnames = list(NULL, paste0("PATIENT_RPT_", 1:5)))
+  ex <- bio_explain(make_de(50), use_llm = FALSE, contrast = "A vs B")
+  rec <- suppressMessages(bio_record(stop("object 'q' not found")))
+  txt <- bio_report(list(deg = ex, matrix = m, run = rec, diag = bio_explain_error(rec)))
+  expect_match(txt, "BioExplainR Analysis Explanation Report", fixed = TRUE)
+  expect_false(grepl("[^\\x01-\\x7F]", txt, perl = TRUE))
+  txt_zh <- bio_report(list(deg = ex, matrix = m, run = rec, diag = bio_explain_error(rec, language = "zh")),
+                       language = "zh")
+  expect_match(txt_zh, "确定性统计事实")
+  expect_match(txt, "n_significant")
+  expect_match(txt, "report-model")
+  expect_match(txt, "proxy.example")
+  expect_match(txt, "R version")
+  expect_match(txt, "A vs B")
+  expect_false(grepl("sk-report-secret", txt))
+  expect_false(grepl("PATIENT_RPT_", txt))
+  expect_false(grepl("0.98765", txt, fixed = TRUE))
+})
+
+test_that("HTML report escapes content and writes a file", {
+  de <- data.frame(log2FoldChange = c(2, -1), padj = c(0.01, 0.02),
+                   row.names = c("<script>alert(1)</script>", "GENE&B"))
+  f <- tempfile(fileext = ".html")
+  txt <- suppressMessages(bio_report(de, file = f, title = "T <b>"))
+  expect_true(file.exists(f))
+  expect_match(txt, "^<!DOCTYPE html>")
+  expect_false(grepl("<script>", txt, fixed = TRUE))
+  expect_match(txt, "&lt;script&gt;", fixed = TRUE)
+  expect_match(txt, "GENE&amp;B", fixed = TRUE)
+  expect_match(txt, "T &lt;b&gt;", fixed = TRUE)
+})
+
+test_that("Quarto reports have valid quoted metadata and an offline body", {
+  path <- tempfile(fileext = ".qmd")
+  text <- suppressMessages(bio_report(bio_context(make_de()), file = path, title = 'Title "quoted"'))
+  expect_match(text, "^---\\ntitle:")
+  expect_match(text, 'title: "Title \\"quoted\\""', fixed = TRUE)
+  expect_true(file.exists(path))
+  expect_match(text, "n_significant")
+})
+
+test_that("single objects and validation results render", {
+  ctx <- bio_context(make_de(20))
+  expect_match(bio_report(ctx, language = "zh"), "来源与参数")
+  skip_if_not_installed("callr")
+  v <- bio_validate_fix(quote(nrow(a)), inputs = list(a = data.frame(x = 1:3)))
+  txt <- bio_report(list(validation = v))
+  expect_match(txt, "runtime_only")
+})
+
+test_that("evidence registry, providers and provenance", {
+  bio_evidence_clear()
+  on.exit(bio_evidence_clear())
+  ev <- bio_evidence("PubMed", id = "25516281", title = "DESeq2 paper", claim = "DESeq2 method",
+                     url = "https://doi.org/10.1186/s13059-014-0550-8", type = "literature")
+  expect_equal(ev$id, "PubMed:25516281")
+  bio_evidence_register(ev)
+  expect_length(bio_evidence_list(), 1)
+  bio_register_evidence_provider("tbl", function(query, ...) lapply(query, function(g) bio_evidence("Local", id = g)))
+  res <- bio_evidence_lookup(c("IL6", "TNF"), "tbl", register = TRUE)
+  expect_length(res, 2)
+  expect_length(bio_evidence_list(), 3)
+  expect_error(bio_evidence_lookup("x", "missing_provider"), "No evidence provider")
+  txt <- bio_report(bio_context(make_de(10)))
+  expect_match(txt, "PubMed:25516281")
+  prov <- bio_dependency_provenance(c("jsonlite", "surely.not.installed.pkg"))
+  expect_equal(prov$source[2], "not installed")
+  expect_false(is.na(prov$version[1]))
+})

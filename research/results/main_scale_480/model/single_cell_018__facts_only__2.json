@@ -1,0 +1,152 @@
+{
+  "case": "single_cell_018",
+  "family": "single_cell",
+  "method": "facts_only",
+  "replicate": 2,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:20:28 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"该数据集包含 66 个细胞和 43 个特征（基因）。\",\n    \"仅有一个样本（sample_id），所有 66 个细胞均来自该样本。\",\n    \"可用的 assay 为 counts（原始计数矩阵）。\"\n  ],\n  \"statistical_meaning\": [\n    \"细胞数（66）是观测单位，不是独立生物学重复；样本/供体才是独立重复单位。\",\n    \"只有 1 个样本，无法进行有意义的组间统计比较。\",\n    \"counts 矩阵的数值为整数计数，适合进行基于计数的建模。\"\n  ],\n  \"biological_interpretation\": [\n    \"由于只有一个样本，无法推断任何组间生物学差异。\",\n    \"43 个特征数量较少，可能只覆盖了部分基因或标记。\",\n    \"缺乏物种信息，无法进行具体的基因功能解释。\"\n  ],\n  \"uncertainty\": [\n    \"细胞数不等于生物学重复数；样本/供体才是独立重复单位。\",\n    \"仅识别到 1 个样本；组间比较的统计推断能力非常有限。\",\n    \"未提供物种（species），生物学解释需要用户确认物种背景。\"\n  ],\n  \"cannot_conclude\": [\n    \"不能得出任何组间差异表达或生物学结论。\",\n    \"不能将细胞视为独立重复进行差异分析。\",\n    \"不能基于当前数据推断细胞类型或功能。\"\n  ],\n  \"learning_questions\": [\n    \"为什么单细胞分析中不能把细胞当作独立重复？\",\n    \"只有一个样本时，可以做什么类型的分析？\",\n    \"counts assay 与 logcounts assay 有什么区别？\"\n  ],\n  \"evidence_used\": [],\n  \"claims\": [\n    {\n      \"id\": \"claim_n_cells\",\n      \"text\": \"细胞总数为 66。\",\n      \"fact\": \"n_cells\",\n      \"value\": 66,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_n_features\",\n      \"text\": \"特征总数为 43。\",\n      \"fact\": \"n_features\",\n      \"value\": 43,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_n_samples\",\n      \"text\": \"样本数量为 1。\",\n      \"fact\": \"n_samples\",\n      \"value\": 1,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_assays\",\n      \"text\": \"可用的 assay 为 counts。\",\n      \"fact\": \"assays\",\n      \"value\": \"counts\",\n      \"evidence\": []\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 1117,
+      "completion_tokens": 564,
+      "total_tokens": 1681,
+      "prompt_tokens_details": {
+        "cached_tokens": 896
+      },
+      "prompt_cache_hit_tokens": 896,
+      "prompt_cache_miss_tokens": 221
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.5099999999999998
+  },
+  "parsed": {
+    "data_facts": [
+      "该数据集包含 66 个细胞和 43 个特征（基因）。",
+      "仅有一个样本（sample_id），所有 66 个细胞均来自该样本。",
+      "可用的 assay 为 counts（原始计数矩阵）。"
+    ],
+    "statistical_meaning": [
+      "细胞数（66）是观测单位，不是独立生物学重复；样本/供体才是独立重复单位。",
+      "只有 1 个样本，无法进行有意义的组间统计比较。",
+      "counts 矩阵的数值为整数计数，适合进行基于计数的建模。"
+    ],
+    "biological_interpretation": [
+      "由于只有一个样本，无法推断任何组间生物学差异。",
+      "43 个特征数量较少，可能只覆盖了部分基因或标记。",
+      "缺乏物种信息，无法进行具体的基因功能解释。"
+    ],
+    "uncertainty": [
+      "细胞数不等于生物学重复数；样本/供体才是独立重复单位。",
+      "仅识别到 1 个样本；组间比较的统计推断能力非常有限。",
+      "未提供物种（species），生物学解释需要用户确认物种背景。"
+    ],
+    "cannot_conclude": [
+      "不能得出任何组间差异表达或生物学结论。",
+      "不能将细胞视为独立重复进行差异分析。",
+      "不能基于当前数据推断细胞类型或功能。"
+    ],
+    "learning_questions": [
+      "为什么单细胞分析中不能把细胞当作独立重复？",
+      "只有一个样本时，可以做什么类型的分析？",
+      "counts assay 与 logcounts assay 有什么区别？"
+    ],
+    "evidence_used": [],
+    "claims": [
+      {
+        "id": "claim_n_cells",
+        "text": "细胞总数为 66。",
+        "fact": "n_cells",
+        "value": 66,
+        "evidence": []
+      },
+      {
+        "id": "claim_n_features",
+        "text": "特征总数为 43。",
+        "fact": "n_features",
+        "value": 43,
+        "evidence": []
+      },
+      {
+        "id": "claim_n_samples",
+        "text": "样本数量为 1。",
+        "fact": "n_samples",
+        "value": 1,
+        "evidence": []
+      },
+      {
+        "id": "claim_assays",
+        "text": "可用的 assay 为 counts。",
+        "fact": "assays",
+        "value": "counts",
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "claim_n_cells",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_cells = 66"
+      },
+      {
+        "claim": "claim_n_features",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_features = 43"
+      },
+      {
+        "claim": "claim_n_samples",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_samples = 1"
+      },
+      {
+        "claim": "claim_assays",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_cells",
+      "expected": 66,
+      "value": 66,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_features",
+      "expected": 43,
+      "value": 43,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_samples",
+      "expected": 1,
+      "value": 1,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "assays",
+      "expected": "counts",
+      "value": "counts",
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 3985
+}

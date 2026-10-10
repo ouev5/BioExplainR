@@ -1,0 +1,63 @@
+{
+  "captured_utc": "2026-10-05T09:04:40.647594+00:00",
+  "platform": "Linux-6.8.0-117-generic-x86_64-with-glibc2.39",
+  "tools": {
+    "R": {
+      "path": "/usr/bin/R",
+      "status": "available",
+      "version": "R version 4.3.3 (2024-02-29) -- \"Angel Food Cake\"\nCopyright (C) 2024 The R Foundation for Statistical Computing\nPlatform: x86_64-pc-linux-gnu (64-bit)\n\nR is free software and comes with ABSOLUTELY NO WARRANTY.\nYou are welcome to redistribute it under the terms of the\nGNU General Public License versions 2 or 3.\nFor more information about these matters see\nhttps://www.gnu.org/licenses/."
+    },
+    "python3": {
+      "path": "/usr/bin/python3",
+      "status": "available",
+      "version": "Python 3.12.3"
+    },
+    "node": {
+      "path": "/home/ubuntu/.nvm/versions/node/v22.23.0/bin/node",
+      "status": "available",
+      "version": "v22.23.0"
+    },
+    "npm": {
+      "path": "/home/ubuntu/.nvm/versions/node/v22.23.0/bin/npm",
+      "status": "available",
+      "version": "10.9.8"
+    },
+    "pandoc": {
+      "path": "/usr/bin/pandoc",
+      "status": "available",
+      "version": "pandoc 3.1.3\nFeatures: -server +lua\nScripting engine: Lua 5.4\nUser data directory: /home/ubuntu/opencode-v2/data/pandoc\nCopyright (C) 2006-2023 John MacFarlane. Web: https://pandoc.org\nThis is free software; see the source for copying conditions. There is no\nwarranty, not even for merchantability or fitness for a particular purpose."
+    },
+    "libreoffice": {
+      "path": "/usr/bin/libreoffice",
+      "status": "available",
+      "version": "LibreOffice 24.2.7.2 420(Build:2)"
+    },
+    "google-chrome": {
+      "path": "/usr/bin/google-chrome",
+      "status": "available",
+      "version": "Google Chrome 147.0.7727.116"
+    }
+  },
+  "system_packages": {
+    "path": "research/results/w00_baseline/system_packages.tsv",
+    "bytes": 43044,
+    "sha256": "8c36a8646b0cd4380f8f0962352688068e2b41cd12078226921012fcaf2a2dfd"
+  },
+  "r_packages": {
+    "path": "research/results/w00_baseline/r_packages.csv",
+    "bytes": 8351,
+    "sha256": "d996c6f0941d485db0e4e7db27ee574272ec5e10b8dd7560c8ba21133406b2b3"
+  },
+  "r_session": {
+    "path": "research/results/w00_baseline/r_environment.txt",
+    "bytes": 1012,
+    "sha256": "b227bb0b82769b5130fc49a660f6f9ccf85c47a2f45af32f625acd45246dab63"
+  },
+  "supplemental_tools": {
+    "path": "research/results/w00_baseline/supplemental_tools.json",
+    "bytes": 957,
+    "sha256": "7d5efc7ed92d39fd60bb4b71b8cdb0f06955d68f095900f62094721f95eaa1e8"
+  },
+  "restoration_spec": "tools/restore-baseline.sh",
+  "clean_environment_reproduction": "not_run (W13)"
+}

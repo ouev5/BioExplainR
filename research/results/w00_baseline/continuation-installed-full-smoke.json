@@ -1,0 +1,20 @@
+{
+  "command": [
+    "env",
+    "R_LIBS=BioExplainR.Rcheck",
+    "Rscript",
+    "--vanilla",
+    "tools/offline-smoke.R",
+    "research/results/w00_baseline/continuation-full-smoke"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-05T12:22:34.895107+00:00",
+  "finished_utc": "2026-10-05T12:22:46.672958+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/continuation-installed-full-smoke.txt",
+    "bytes": 172,
+    "sha256": "fe1989f7dcf476d327f3fece167cfd1c0bd796f6f5ad12ecf5ebdc8d5a2c7b34"
+  }
+}

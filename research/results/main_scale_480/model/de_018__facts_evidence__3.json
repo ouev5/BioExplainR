@@ -1,0 +1,160 @@
+{
+  "case": "de_018",
+  "family": "differential_expression",
+  "method": "facts_evidence",
+  "replicate": 3,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:26:39 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"共检测 58 个特征（基因），其中 39 个在 padj<0.05 且 |log2FC|>1 下显著。\",\n    \"显著基因中 20 个上调、19 个下调。\",\n    \"最小 padj 为 0.00118，log2FC 范围为 -1.59 到 2.18，中位数 0.2。\"\n  ],\n  \"statistical_meaning\": [\n    \"padj 是多重检验校正后的 p 值，控制错误发现率。\",\n    \"log2FC 表示两组表达量的 log2 倍数变化，正负取决于比较方向。\",\n    \"阈值 padj<0.05 且 |log2FC|>1 用于筛选差异表达基因。\"\n  ],\n  \"biological_interpretation\": [\n    \"39 个基因差异表达提示两组间存在转录组差异（假设，需物种和实验背景确认）。\",\n    \"上调与下调基因数量接近，可能涉及双向调控（假设）。\",\n    \"文献检索命中 CRISPLD2 与糖皮质激素反应相关（证据 EuropePMC:MED:24926665），但未评估其与当前数据的直接关系。\"\n  ],\n  \"uncertainty\": [\n    \"无法从列名确定产生该表的软件包，请用 source_package 参数补充。\",\n    \"未提供比较方向（contrast）；log2FC 的正负含义取决于哪一组作为分母/参考组。\",\n    \"未提供物种（species），生物学解释需要用户确认物种背景。\"\n  ],\n  \"cannot_conclude\": [\n    \"不能推断差异表达基因的激活或抑制方向（ORA 无方向性）。\",\n    \"不能将细胞或样本视为重复，除非实验设计明确。\",\n    \"不能从当前数据得出临床或因果结论。\"\n  ],\n  \"learning_questions\": [\n    \"padj 与 p 值有何区别？为什么需要多重检验校正？\",\n    \"log2FC 的正负号如何根据比较方向解释？\",\n    \"如何根据物种和实验设计进一步解释差异表达基因的生物学意义？\"\n  ],\n  \"evidence_used\": [\n    \"EuropePMC:MED:24926665\"\n  ],\n  \"claims\": [\n    {\n      \"id\": \"claim_n_features\",\n      \"text\": \"检测的特征总数为 58。\",\n      \"fact\": \"n_features\",\n      \"value\": 58,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_n_significant\",\n      \"text\": \"显著差异表达基因数为 39。\",\n      \"fact\": \"n_significant\",\n      \"value\": 39,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_n_up\",\n      \"text\": \"上调基因数为 20。\",\n      \"fact\": \"n_up\",\n      \"value\": 20,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_n_down\",\n      \"text\": \"下调基因数为 19。\",\n      \"fact\": \"n_down\",\n      \"value\": 19,\n      \"evidence\": []\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 1626,
+      "completion_tokens": 681,
+      "total_tokens": 2307,
+      "prompt_tokens_details": {
+        "cached_tokens": 1408
+      },
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 218
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.8700000000000001
+  },
+  "parsed": {
+    "data_facts": [
+      "共检测 58 个特征（基因），其中 39 个在 padj<0.05 且 |log2FC|>1 下显著。",
+      "显著基因中 20 个上调、19 个下调。",
+      "最小 padj 为 0.00118，log2FC 范围为 -1.59 到 2.18，中位数 0.2。"
+    ],
+    "statistical_meaning": [
+      "padj 是多重检验校正后的 p 值，控制错误发现率。",
+      "log2FC 表示两组表达量的 log2 倍数变化，正负取决于比较方向。",
+      "阈值 padj<0.05 且 |log2FC|>1 用于筛选差异表达基因。"
+    ],
+    "biological_interpretation": [
+      "39 个基因差异表达提示两组间存在转录组差异（假设，需物种和实验背景确认）。",
+      "上调与下调基因数量接近，可能涉及双向调控（假设）。",
+      "文献检索命中 CRISPLD2 与糖皮质激素反应相关（证据 EuropePMC:MED:24926665），但未评估其与当前数据的直接关系。"
+    ],
+    "uncertainty": [
+      "无法从列名确定产生该表的软件包，请用 source_package 参数补充。",
+      "未提供比较方向（contrast）；log2FC 的正负含义取决于哪一组作为分母/参考组。",
+      "未提供物种（species），生物学解释需要用户确认物种背景。"
+    ],
+    "cannot_conclude": [
+      "不能推断差异表达基因的激活或抑制方向（ORA 无方向性）。",
+      "不能将细胞或样本视为重复，除非实验设计明确。",
+      "不能从当前数据得出临床或因果结论。"
+    ],
+    "learning_questions": [
+      "padj 与 p 值有何区别？为什么需要多重检验校正？",
+      "log2FC 的正负号如何根据比较方向解释？",
+      "如何根据物种和实验设计进一步解释差异表达基因的生物学意义？"
+    ],
+    "evidence_used": [
+      "EuropePMC:MED:24926665"
+    ],
+    "claims": [
+      {
+        "id": "claim_n_features",
+        "text": "检测的特征总数为 58。",
+        "fact": "n_features",
+        "value": 58,
+        "evidence": []
+      },
+      {
+        "id": "claim_n_significant",
+        "text": "显著差异表达基因数为 39。",
+        "fact": "n_significant",
+        "value": 39,
+        "evidence": []
+      },
+      {
+        "id": "claim_n_up",
+        "text": "上调基因数为 20。",
+        "fact": "n_up",
+        "value": 20,
+        "evidence": []
+      },
+      {
+        "id": "claim_n_down",
+        "text": "下调基因数为 19。",
+        "fact": "n_down",
+        "value": 19,
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "(evidence_used)",
+        "check": "evidence_ids",
+        "status": "pass",
+        "detail": "all cited evidence ids were supplied"
+      },
+      {
+        "claim": "claim_n_features",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_features = 58"
+      },
+      {
+        "claim": "claim_n_significant",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_significant = 39"
+      },
+      {
+        "claim": "claim_n_up",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_up = 20"
+      },
+      {
+        "claim": "claim_n_down",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_down = 19"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_features",
+      "expected": 58,
+      "value": 58,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_significant",
+      "expected": 39,
+      "value": 39,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_up",
+      "expected": 20,
+      "value": 20,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_down",
+      "expected": 19,
+      "value": 19,
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 5505
+}

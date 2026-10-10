@@ -1,0 +1,56 @@
+Package: BioExplainR
+Type: Package
+Title: Evidence-Constrained Explanation and Error Diagnosis for Bioinformatics R Objects
+Version: 0.4.0.9000
+Authors@R: person(given = "BioExplainR", family = "contributors", role = c("aut", "cre"),
+    email = "maintainer@example.org")
+Author: BioExplainR contributors
+Maintainer: BioExplainR contributors <maintainer@example.org>
+Description: A beginner-oriented framework that converts common bioinformatics
+    R results (differential expression tables, 'DESeq2' results, 'clusterProfiler'
+    enrichment results, 'Seurat'/'SingleCellExperiment' objects, 'ggplot2' plots)
+    into a compact, inspectable intermediate context. Statistical facts are
+    computed deterministically in R; an optional large language model (OpenAI-
+    compatible or Anthropic Messages protocol, user-supplied URL/key/model) only
+    organises language. It also records R execution with warnings, errors and
+    call stacks, offers offline error categories, validates user-supplied fixes
+    in a separate R process against explicit invariants, and writes Markdown or
+    HTML reports without secrets or raw expression matrices. Retrieves traceable
+    database and literature evidence, validates explicit model claims, checks
+    plots against source results, integrates dependent analyses into projects,
+    and provides interpretation benchmarks and educational assessment tools. It
+    also includes an optional local Shiny browser workbench for model settings,
+    R runtime inspection, recorded code execution, natural-language analysis,
+    and common bioinformatics plots.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en
+Depends: R (>= 4.1.0)
+Imports:
+    httr2 (>= 1.0.0),
+    jsonlite,
+    digest,
+    stats,
+    utils,
+    methods
+Suggests:
+    callr,
+    testthat (>= 3.0.0),
+    shiny,
+    ggplot2,
+    rlang,
+    withr,
+    Biobase,
+    S4Vectors,
+    SummarizedExperiment,
+    SingleCellExperiment,
+    MultiAssayExperiment,
+    SpatialExperiment,
+    SeuratObject,
+    DESeq2,
+    limma,
+    edgeR,
+    Matrix,
+    uwot
+Config/testthat/edition: 3
+RoxygenNote: 7.3.1

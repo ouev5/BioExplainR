@@ -1,0 +1,165 @@
+{
+  "case": "pbmc3k_sce",
+  "method": "facts_evidence",
+  "replicate": 2,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-03 19:35:08 UTC",
+  "response": {
+    "text": "{\"data_facts\": [\"本次分析对象为单细胞数据，来源类为 SingleCellExperiment，物种 Homo sapiens，组织 PBMC。\", \"数据共包含 2700 个细胞。\", \"数据共包含 32738 个特征（基因）。\", \"样本列名为 sample_id，识别到 1 个样本，缺失样本信息的细胞数为 0。\", \"每个样本的细胞数范围为 2700 到 2700。\", \"counts 矩阵维度为 32738 × 2700，存储值 2286884 个，零值比例 0.9741。\", \"counts 矩阵前 1000000 个存储值中无 NA，非零值分位数为 min 1、q25 1、median 1、q75 2、max 419。\", \"QC 指标：nCount_RNA 分位数为 min 548、q25 1758、median 2197、q75 2763、max 15840。\", \"QC 指标：nFeature_RNA 分位数为 min 212、q25 690、median 817、q75 953.2、max 3422。\", \"QC 指标：percent.mt 分位数为 min 0、q25 1.536、median 2.03、q75 2.64、max 22.57。\", \"降维方法为 UMAP，维度为 2，alt_experiments 为空。\", \"阈值设定：padj 0.05、lfc 0、p 0.05。\", \"top_features 与 plot_mapping 均为空。\"], \"statistical_meaning\": [\"n_cells 表示参与分析的细胞总数，是观测单位数量，不是生物学重复数。\", \"n_features 表示矩阵中检测的特征（基因）总数，反映检测覆盖范围，不代表差异表达基因数量。\", \"n_samples 表示样本（供体）数量，是独立重复单位；此处为 1，意味着无法进行组间统计推断。\", \"counts 矩阵的零值比例 0.9741 说明数据高度稀疏，这是单细胞 RNA 测序的常见特征。\", \"QC 分位数用于描述细胞层面的技术质量分布，例如 nCount_RNA 与 nFeature_RNA 反映测序深度与基因检出数，percent.mt 反映线粒体转录本占比。\", \"UMAP 的 2 个维度是用于可视化的降维坐标，不是真实距离或统计检验结果。\", \"阈值 padj 0.05、p 0.05、lfc 0 是预设的判定标准，但本次摘要未提供任何差异分析结果。\"], \"biological_interpretation\": [\"组织为 PBMC（外周血单个核细胞），提示数据可能包含多种免疫细胞类型，但本次摘要未提供细胞类型注释或 marker 信息，无法确认具体组成。\", \"样本数为 1，只能描述该样本内的细胞异质性，不能推广到人群或其他供体。\", \"高稀疏性与 QC 分布提示需要谨慎处理低质量细胞与批次效应，但本次摘要未给出过滤后的细胞数。\", \"UMAP 结构可能反映细胞状态差异，但仅凭二维坐标不能证明细胞谱系或发育关系。\"], \"uncertainty\": [\"细胞数不等于生物学重复数；样本/供体才是独立重复单位。单细胞差异分析若把细胞当重复，容易产生假阳性（伪重复问题）。\", \"UMAP/t-SNE 上的距离不代表真实空间距离，图形结构受参数影响，不能单独证明细胞谱系。\", \"cluster 编号本身没有生物学含义；细胞类型注释应基于多个 marker 的组合并结合组织背景。\", \"仅识别到 1 个样本；组间比较的统计推断能力非常有限。\", \"assay 数值只检查了有限子集（稀疏矩阵读取存储槽位，稠密矩阵最多抽样一个小块）。\", \"n_na 仅针对前 1000000 个存储值检查，不能代表整个矩阵。\", \"fraction_zero 由存储值计数得出，显式存储的零被计为非零，因此该比例是近似值。\"], \"cannot_conclude\": [\"不能得出任何组间差异表达结论，因为只有 1 个样本，且未提供差异分析结果。\", \"不能确定细胞类型组成或比例，因为未提供 cluster 或注释信息。\", \"不能判断细胞谱系或分化轨迹，因为 UMAP 距离不能作为谱系证据。\", \"不能评估批次效应或供体效应，因为只有 1 个样本。\", \"不能把 n_cells 当作生物学重复数进行统计推断。\", \"不能从 counts 矩阵的零值比例推断基因表达的功能意义。\", \"不能确认文献证据 EuropePMC:MED:24926665 是否支持本数据的任何具体生物学论断。\"], \"learning_questions\": [\"为什么单细胞分析中细胞数不能替代生物学重复数？\", \"nCount_RNA、nFeature_RNA 和 percent.mt 分别反映什么技术因素？\", \"为什么 UMAP 上的距离不能直接解释为细胞之间的真实距离？\", \"在只有 1 个样本的情况下，可以做哪些描述性分析，不能做哪些推断性分析？\", \"稀疏矩阵的零值比例对下游分析有什么影响？\", \"如何基于多个 marker 组合而不是单个 marker 来注释细胞类型？\"], \"evidence_used\": [\"EuropePMC:MED:24926665\"], \"claims\": [{\"id\": \"c1\", \"text\": \"数据共包含 2700 个细胞。\", \"fact\": \"n_cells\", \"value\": 2700, \"evidence\": []}, {\"id\": \"c2\", \"text\": \"数据共包含 32738 个特征（基因）。\", \"fact\": \"n_features\", \"value\": 32738, \"evidence\": []}, {\"id\": \"c3\", \"text\": \"识别到 1 个样本。\", \"fact\": \"n_samples\", \"value\": 1, \"evidence\": []}]}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 1408,
+      "completion_tokens": 1310,
+      "total_tokens": 2718,
+      "prompt_tokens_details": {
+        "cached_tokens": 1152
+      },
+      "prompt_cache_hit_tokens": 1152,
+      "prompt_cache_miss_tokens": 256
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 5.72
+  },
+  "parsed": {
+    "data_facts": [
+      "本次分析对象为单细胞数据，来源类为 SingleCellExperiment，物种 Homo sapiens，组织 PBMC。",
+      "数据共包含 2700 个细胞。",
+      "数据共包含 32738 个特征（基因）。",
+      "样本列名为 sample_id，识别到 1 个样本，缺失样本信息的细胞数为 0。",
+      "每个样本的细胞数范围为 2700 到 2700。",
+      "counts 矩阵维度为 32738 × 2700，存储值 2286884 个，零值比例 0.9741。",
+      "counts 矩阵前 1000000 个存储值中无 NA，非零值分位数为 min 1、q25 1、median 1、q75 2、max 419。",
+      "QC 指标：nCount_RNA 分位数为 min 548、q25 1758、median 2197、q75 2763、max 15840。",
+      "QC 指标：nFeature_RNA 分位数为 min 212、q25 690、median 817、q75 953.2、max 3422。",
+      "QC 指标：percent.mt 分位数为 min 0、q25 1.536、median 2.03、q75 2.64、max 22.57。",
+      "降维方法为 UMAP，维度为 2，alt_experiments 为空。",
+      "阈值设定：padj 0.05、lfc 0、p 0.05。",
+      "top_features 与 plot_mapping 均为空。"
+    ],
+    "statistical_meaning": [
+      "n_cells 表示参与分析的细胞总数，是观测单位数量，不是生物学重复数。",
+      "n_features 表示矩阵中检测的特征（基因）总数，反映检测覆盖范围，不代表差异表达基因数量。",
+      "n_samples 表示样本（供体）数量，是独立重复单位；此处为 1，意味着无法进行组间统计推断。",
+      "counts 矩阵的零值比例 0.9741 说明数据高度稀疏，这是单细胞 RNA 测序的常见特征。",
+      "QC 分位数用于描述细胞层面的技术质量分布，例如 nCount_RNA 与 nFeature_RNA 反映测序深度与基因检出数，percent.mt 反映线粒体转录本占比。",
+      "UMAP 的 2 个维度是用于可视化的降维坐标，不是真实距离或统计检验结果。",
+      "阈值 padj 0.05、p 0.05、lfc 0 是预设的判定标准，但本次摘要未提供任何差异分析结果。"
+    ],
+    "biological_interpretation": [
+      "组织为 PBMC（外周血单个核细胞），提示数据可能包含多种免疫细胞类型，但本次摘要未提供细胞类型注释或 marker 信息，无法确认具体组成。",
+      "样本数为 1，只能描述该样本内的细胞异质性，不能推广到人群或其他供体。",
+      "高稀疏性与 QC 分布提示需要谨慎处理低质量细胞与批次效应，但本次摘要未给出过滤后的细胞数。",
+      "UMAP 结构可能反映细胞状态差异，但仅凭二维坐标不能证明细胞谱系或发育关系。"
+    ],
+    "uncertainty": [
+      "细胞数不等于生物学重复数；样本/供体才是独立重复单位。单细胞差异分析若把细胞当重复，容易产生假阳性（伪重复问题）。",
+      "UMAP/t-SNE 上的距离不代表真实空间距离，图形结构受参数影响，不能单独证明细胞谱系。",
+      "cluster 编号本身没有生物学含义；细胞类型注释应基于多个 marker 的组合并结合组织背景。",
+      "仅识别到 1 个样本；组间比较的统计推断能力非常有限。",
+      "assay 数值只检查了有限子集（稀疏矩阵读取存储槽位，稠密矩阵最多抽样一个小块）。",
+      "n_na 仅针对前 1000000 个存储值检查，不能代表整个矩阵。",
+      "fraction_zero 由存储值计数得出，显式存储的零被计为非零，因此该比例是近似值。"
+    ],
+    "cannot_conclude": [
+      "不能得出任何组间差异表达结论，因为只有 1 个样本，且未提供差异分析结果。",
+      "不能确定细胞类型组成或比例，因为未提供 cluster 或注释信息。",
+      "不能判断细胞谱系或分化轨迹，因为 UMAP 距离不能作为谱系证据。",
+      "不能评估批次效应或供体效应，因为只有 1 个样本。",
+      "不能把 n_cells 当作生物学重复数进行统计推断。",
+      "不能从 counts 矩阵的零值比例推断基因表达的功能意义。",
+      "不能确认文献证据 EuropePMC:MED:24926665 是否支持本数据的任何具体生物学论断。"
+    ],
+    "learning_questions": [
+      "为什么单细胞分析中细胞数不能替代生物学重复数？",
+      "nCount_RNA、nFeature_RNA 和 percent.mt 分别反映什么技术因素？",
+      "为什么 UMAP 上的距离不能直接解释为细胞之间的真实距离？",
+      "在只有 1 个样本的情况下，可以做哪些描述性分析，不能做哪些推断性分析？",
+      "稀疏矩阵的零值比例对下游分析有什么影响？",
+      "如何基于多个 marker 组合而不是单个 marker 来注释细胞类型？"
+    ],
+    "evidence_used": [
+      "EuropePMC:MED:24926665"
+    ],
+    "claims": [
+      {
+        "id": "c1",
+        "text": "数据共包含 2700 个细胞。",
+        "fact": "n_cells",
+        "value": 2700,
+        "evidence": []
+      },
+      {
+        "id": "c2",
+        "text": "数据共包含 32738 个特征（基因）。",
+        "fact": "n_features",
+        "value": 32738,
+        "evidence": []
+      },
+      {
+        "id": "c3",
+        "text": "识别到 1 个样本。",
+        "fact": "n_samples",
+        "value": 1,
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "(evidence_used)",
+        "check": "evidence_ids",
+        "status": "pass",
+        "detail": "all cited evidence ids were supplied"
+      },
+      {
+        "claim": "c1",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_cells = 2700"
+      },
+      {
+        "claim": "c2",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_features = 32738"
+      },
+      {
+        "claim": "c3",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_samples = 1"
+      }
+    ],
+    "n_claims": 3,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_cells",
+      "expected": 2700,
+      "value": 2700,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_features",
+      "expected": 32738,
+      "value": 32738,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_samples",
+      "expected": 1,
+      "value": 1,
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 4833
+}

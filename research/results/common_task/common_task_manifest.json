@@ -1,0 +1,51 @@
+{
+  "date_utc": "2026-10-04 12:05:05 UTC",
+  "live": true,
+  "models_env_present": true,
+  "code_agent_env_present": true,
+  "methods": [
+    {
+      "name": "bioexplainr_deterministic",
+      "mode": "deterministic_reference",
+      "description": "R-side fact reference; no language-model inference"
+    },
+    {
+      "name": "saved_facts_only",
+      "mode": "saved_response",
+      "method": "facts_only",
+      "replicate": 1,
+      "description": "Replay one saved response per case; no network request"
+    },
+    {
+      "name": "configured_models",
+      "mode": "openai_compatible",
+      "description": "Optional live models supplied through BIOEXPLAINR_BENCHMARK_MODELS_JSON"
+    },
+    {
+      "name": "configured_code_agent",
+      "mode": "command_agent",
+      "description": "Optional CLI code agent supplied through BIOEXPLAINR_CODE_AGENT_COMMAND"
+    }
+  ],
+  "model_specs_public": [
+    {
+      "name": "step-5-preview",
+      "model": "step-5-preview",
+      "base_url": "https://api.stepfun.com/step_plan/v1",
+      "endpoint": null,
+      "json_mode": false,
+      "temperature": 0,
+      "max_tokens": 800
+    },
+    {
+      "name": "deepseek-flash",
+      "model": "deepseek-flash",
+      "base_url": "https://api.deepseek.com",
+      "endpoint": null,
+      "json_mode": false,
+      "temperature": 0,
+      "max_tokens": 800
+    }
+  ],
+  "cases": ["airway_lfc0", "airway_lfc1", "complete_slice120", "reactome_ora", "airway_pca", "pbmc3k_sce"]
+}

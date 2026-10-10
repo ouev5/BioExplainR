@@ -1,0 +1,21 @@
+{
+  "command": [
+    "sudo",
+    "-n",
+    "apt-get",
+    "install",
+    "-y",
+    "--no-install-recommends",
+    "r-bioc-multiassayexperiment"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-05T11:56:31.443410+00:00",
+  "finished_utc": "2026-10-05T11:56:38.640110+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/continuation-install-mae.txt",
+    "bytes": 4309,
+    "sha256": "0df0aa5c3e75575869ab67939b7a12fc723389ba1df6dfcccd029dda409b8724"
+  }
+}

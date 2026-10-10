@@ -1,0 +1,17 @@
+{
+  "command": [
+    "Rscript",
+    "--vanilla",
+    "research/w12_challenges/audit_challenges.R"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-05T12:19:54.338827+00:00",
+  "finished_utc": "2026-10-05T12:19:54.792490+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/continuation-w12-audit.txt",
+    "bytes": 35,
+    "sha256": "119880e32c307be83fcbc2c20c1c6907f04cd01f2c7c6bcd4d7f72bfca557ad2"
+  }
+}

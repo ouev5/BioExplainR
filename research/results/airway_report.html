@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><title>BioExplainR 分析解释报告</title><style>body{font-family:-apple-system,'Segoe UI','Noto Sans CJK SC','Microsoft YaHei',sans-serif;max-width:960px;margin:2em auto;padding:0 1em;line-height:1.6;color:#222} table{border-collapse:collapse;margin:.5em 0;font-size:.9em}th,td{border:1px solid #ccc;padding:3px 8px;text-align:left} th{background:#f3f3f3}pre{background:#f6f8fa;padding:.8em;overflow-x:auto}h1{border-bottom:2px solid #2a6f97}h2{color:#2a6f97}</style></head><body>
+<h1>BioExplainR 分析解释报告</h1>
+<p>生成时间：2026-10-04 03:41:30 CST；BioExplainR 0.3.1。</p>
+<p>说明：统计事实由 R 从完整输入确定性计算；模型文本（如有）仅组织语言，未经数值核验。报告不包含 API key、原始表达矩阵、细胞条码或样本名称。</p>
+<h2>对象 1</h2>
+<h3>跨分析项目摘要</h3>
+<table><tr><th>name</th><th>type</th><th>source</th><th>source_status</th><th>validation</th></tr><tr><td>deg</td><td>differential_expression</td><td>DESeq2</td><td>verified_class</td><td>unverified</td></tr><tr><td>enrichment</td><td>enrichment_ora</td><td>clusterProfiler/DOSE</td><td>inferred_from_columns</td><td>unverified</td></tr><tr><td>volcano</td><td>plot</td><td>ggplot2</td><td>verified_class</td><td>unverified</td></tr></table>
+<h3>来源一致性检查</h3>
+<table><tr><th>check</th><th>status</th><th>detail</th></tr><tr><td>species</td><td>consistent</td><td>Homo sapiens</td></tr><tr><td>tissue</td><td>unknown</td><td>No recorded value</td></tr><tr><td>contrast</td><td>consistent</td><td>dexamethasone trt vs untrt</td></tr></table>
+<h3>数据依赖关系（上游 → 派生结果）</h3>
+<table><tr><th>from</th><th>to</th></tr><tr><td>deg</td><td>enrichment</td></tr><tr><td>deg</td><td>volcano</td></tr></table>
+<p>派生的富集或图表与上游共享输入，不构成独立验证。</p>
+<ul><li>项目包含 3 个结果，2 条记录的数据依赖关系。</li><li>enrichment 派生自 deg；派生结果不构成上游结果的独立验证。</li><li>volcano 派生自 deg；派生结果不构成上游结果的独立验证。</li><li>不同分析结果方向一致只能形成待验证的生物学假设，不能自动推出因果关系。</li></ul>
+<h2>deg</h2>
+<h3>来源与参数</h3>
+<table><tr><th>item</th><th>value</th></tr><tr><td>analysis_type</td><td>differential_expression</td></tr><tr><td>source_class</td><td>DESeqResults</td></tr><tr><td>source_package</td><td>DESeq2</td></tr><tr><td>source_status</td><td>verified_class</td></tr><tr><td>adapter</td><td>deseq_results</td></tr><tr><td>thresholds</td><td>padj=0.05; lfc=1; p=0.05</td></tr><tr><td>created</td><td>2026-10-04 03:41:29 CST</td></tr></table>
+<h3>用户提供的研究背景</h3>
+<table><tr><th>item</th><th>value</th></tr><tr><td>species</td><td>Homo sapiens</td></tr><tr><td>contrast</td><td>dexamethasone trt vs untrt</td></tr><tr><td>design</td><td>~ cell + dex</td></tr></table>
+<h3>确定性统计事实</h3>
+<table><tr><th>item</th><th>value</th></tr><tr><td>n_features</td><td>22369</td></tr><tr><td>lfc_column</td><td>log2FoldChange</td></tr><tr><td>p_value_column</td><td>pvalue</td></tr><tr><td>adjusted_p_column</td><td>padj</td></tr><tr><td>p_value_basis</td><td>adjusted_column</td></tr><tr><td>n_na_lfc</td><td>0</td></tr><tr><td>n_na_pvalue</td><td>0</td></tr><tr><td>n_raw_p_below</td><td>5690</td></tr><tr><td>raw_p_threshold</td><td>0.05</td></tr><tr><td>n_tested</td><td>17165</td></tr><tr><td>n_na_padj</td><td>5204</td></tr><tr><td>padj_threshold</td><td>0.05</td></tr><tr><td>lfc_threshold</td><td>1</td></tr><tr><td>n_significant_any_lfc</td><td>4030</td></tr><tr><td>n_up</td><td>519</td></tr><tr><td>n_down</td><td>480</td></tr><tr><td>n_significant</td><td>999</td></tr><tr><td>min_padj</td><td>7.056e-132</td></tr><tr><td>lfc_range</td><td>-5.325, 9.506</td></tr><tr><td>lfc_median</td><td>-0.02247</td></tr><tr><td>mean_expression_column</td><td>baseMean</td></tr><tr><td>deseq2_lfc_description</td><td>log2 fold change (MLE): dex trt vs untrt</td></tr><tr><td>deseq2_alpha</td><td>0.05</td></tr></table>
+<h3>前 10 行摘要</h3>
+<table><tr><th>feature</th><th>log2fc</th><th>pvalue</th><th>padj</th><th>baseMean</th><th>direction</th><th>passes_thresholds</th></tr><tr><td>ENSG00000152583</td><td>4.575</td><td>4.11e-136</td><td>7.06e-132</td><td>997.4</td><td>up</td><td>TRUE</td></tr><tr><td>ENSG00000165995</td><td>3.291</td><td>4.46e-135</td><td>3.83e-131</td><td>495.1</td><td>up</td><td>TRUE</td></tr><tr><td>ENSG00000120129</td><td>2.948</td><td>3.03e-129</td><td>1.74e-125</td><td>3409</td><td>up</td><td>TRUE</td></tr><tr><td>ENSG00000101347</td><td>3.767</td><td>7.68e-129</td><td>3.30e-125</td><td>12700</td><td>up</td><td>TRUE</td></tr><tr><td>ENSG00000189221</td><td>3.354</td><td>5.21e-123</td><td>1.79e-119</td><td>2342</td><td>up</td><td>TRUE</td></tr><tr><td>ENSG00000211445</td><td>3.73</td><td>2.58e-111</td><td>7.39e-108</td><td>12290</td><td>up</td><td>TRUE</td></tr><tr><td>ENSG00000157214</td><td>1.977</td><td>6.09e-106</td><td>1.49e-102</td><td>3009</td><td>up</td><td>TRUE</td></tr><tr><td>ENSG00000162614</td><td>2.036</td><td>1.56e-102</td><td>3.36e-99</td><td>5393</td><td>up</td><td>TRUE</td></tr><tr><td>ENSG00000125148</td><td>2.211</td><td>1.85e-96</td><td>3.53e-93</td><td>3656</td><td>up</td><td>TRUE</td></tr><tr><td>ENSG00000154734</td><td>2.346</td><td>2.27e-90</td><td>3.89e-87</td><td>30320</td><td>up</td><td>TRUE</td></tr></table>
+<h3>本地解释（规则模板）</h3>
+<p><strong>数据事实（由 R 确定性计算）</strong></p>
+<ul><li>结果表共 22369 个特征；log2FC 列为 &#39;log2FoldChange&#39;。</li><li>在 padj &lt; 0.05 且 |log2FC| &gt; 1 的条件下：显著 999 个，其中上调 519 个、下调 480 个；padj 为 NA 的特征 5204 个。</li><li>log2FC 范围 -5.33 到 9.51，中位数 -0.0225。</li><li>物种：Homo sapiens；比较：dexamethasone trt vs untrt；设计：~ cell + dex。</li></ul>
+<p><strong>统计含义</strong></p>
+<ul><li>log2FC 描述变化方向和大小，校正后 p 值描述在多重检验下结果的统计可靠性；二者是不同维度，需要同时看。</li><li>p 值很小但 log2FC 很小的基因，统计上可靠但效应可能在生物学上不重要；反之，大 log2FC 但 padj 不显著可能来自低表达或高变异。</li></ul>
+<p><strong>生物学解释（需结合证据核查）</strong></p>
+<ul><li>最显著的特征包括：ENSG00000152583、ENSG00000165995、ENSG00000120129、ENSG00000101347、ENSG00000189221。可以查阅这些基因的功能注释（例如 NCBI Gene、UniProt），再判断是否与实验处理相关。</li><li>差异表达只说明在本数据中表达水平与分组相关；生物学机制需要文献、数据库证据或实验验证支持。</li></ul>
+<p><strong>不确定性与限制</strong></p>
+<ul><li>log2FC 似乎经过收缩（shrinkage）；收缩后的效应量更保守，适合排序和可视化。</li><li>DESeq2 中 padj 为 NA 常由独立过滤、全零计数或极端离群值导致，这些基因未参与 FDR 计数。</li></ul>
+<p><strong>不能据此推出的结论</strong></p>
+<ul><li>不能把“显著差异表达”直接写成“该基因导致了表型”或“该通路被激活”。</li><li>不能把未达到显著的基因说成“没有变化”；可能只是统计功效不足。</li></ul>
+<p><strong>学习问题</strong></p>
+<ul><li>如果交换比较组的顺序，log2FC 的符号会怎样变化？</li><li>为什么在数万个基因同时检验时需要使用校正后的 p 值？</li><li>一个 padj 很小但 |log2FC| = 0.1 的基因，你会如何描述它？</li></ul>
+<p><strong>概念卡片</strong></p>
+<ul><li>p 值：在“没有真实差异”的假设下，观察到当前或更极端结果的概率；不是效应大小，也不是假设为真的概率。</li><li>校正后 p 值（FDR/padj）：同时检验成千上万个基因时，用于控制假发现比例的指标，例如 padj &lt; 0.05 表示在该阈值下预期假发现比例约 5%。</li><li>log2 fold change：两组表达量之比取以 2 为底的对数；1 表示约 2 倍，-1 表示约一半。正负方向取决于比较顺序。</li></ul>
+<p>模型未使用：local mode (protocol = &#39;none&#39;)</p>
+<h2>enrichment</h2>
+<h3>来源与参数</h3>
+<table><tr><th>item</th><th>value</th></tr><tr><td>analysis_type</td><td>enrichment_ora</td></tr><tr><td>source_class</td><td>data.frame</td></tr><tr><td>source_package</td><td>clusterProfiler/DOSE</td></tr><tr><td>source_status</td><td>inferred_from_columns</td></tr><tr><td>adapter</td><td>enrichment_table</td></tr><tr><td>thresholds</td><td>padj=0.05; lfc=0; p=0.05</td></tr><tr><td>created</td><td>2026-10-04 03:41:30 CST</td></tr></table>
+<h3>确定性统计事实</h3>
+<table><tr><th>item</th><th>value</th></tr><tr><td>n_terms</td><td>1104</td></tr><tr><td>enrichment_method</td><td>ORA</td></tr><tr><td>p_value_basis</td><td>adjusted_column</td></tr><tr><td>significance_threshold</td><td>0.05</td></tr><tr><td>n_significant</td><td>1</td></tr><tr><td>n_na_padj</td><td>0</td></tr><tr><td>count_range_significant</td><td>16, 16</td></tr><tr><td>background_size_from_bgratio</td><td>8887</td></tr><tr><td>input_genes_mapped_from_generatio</td><td>547</td></tr></table>
+<h3>前 10 行摘要</h3>
+<table><tr><th>term</th><th>id</th><th>Count</th><th>GeneRatio</th><th>gene_ratio_value</th><th>BgRatio</th><th>pvalue</th><th>p.adjust</th><th>genes_preview</th></tr><tr><td>Interleukin-4 and Interleukin-13 signaling</td><td>R-HSA-6785807</td><td>16</td><td>16/547</td><td>0.0293</td><td>79/8887</td><td>1.96e-05</td><td>0.02159</td><td>ENSG00000073756/ENSG00000100292/ENSG00000112715/ENSG00000118689/ENSG00000124762/ENSG00000128342/ENSG00000137265/ENSG00000145675/... (16 genes)</td></tr><tr><td>G alpha (q) signalling events</td><td>R-HSA-416476</td><td>15</td><td>15/547</td><td>0.0274</td><td>94/8887</td><td>5.71e-04</td><td>0.1576</td><td>ENSG00000100739/ENSG00000102468/ENSG00000117152/ENSG00000117461/ENSG00000119714/ENSG00000128285/ENSG00000135744/ENSG00000145675/... (15 genes)</td></tr><tr><td>Ethanol oxidation</td><td>R-HSA-71384</td><td>5</td><td>5/547</td><td>0.00914</td><td>12/8887</td><td>4.78e-04</td><td>0.1576</td><td>ENSG00000154930/ENSG00000172955/ENSG00000187758/ENSG00000196616/ENSG00000248144</td></tr><tr><td>Collagen chain trimerization</td><td>R-HSA-8948216</td><td>9</td><td>9/547</td><td>0.0165</td><td>39/8887</td><td>4.76e-04</td><td>0.1576</td><td>ENSG00000060718/ENSG00000081052/ENSG00000108821/ENSG00000114270/ENSG00000144810/ENSG00000169031/ENSG00000187498/ENSG00000196739/... (9 genes)</td></tr><tr><td>Voltage gated Potassium channels</td><td>R-HSA-1296072</td><td>7</td><td>7/547</td><td>0.0128</td><td>27/8887</td><td>9.69e-04</td><td>0.1714</td><td>ENSG00000124134/ENSG00000170745/ENSG00000171385/ENSG00000177272/ENSG00000182674/ENSG00000184156/ENSG00000184408</td></tr><tr><td>Integrin cell surface interactions</td><td>R-HSA-216083</td><td>12</td><td>12/547</td><td>0.0219</td><td>71/8887</td><td>0.001188</td><td>0.1714</td><td>ENSG00000077943/ENSG00000081052/ENSG00000108821/ENSG00000114270/ENSG00000137801/ENSG00000137809/ENSG00000143127/ENSG00000144810/... (12 genes)</td></tr><tr><td>Anchoring fibril formation</td><td>R-HSA-2214320</td><td>5</td><td>5/547</td><td>0.00914</td><td>15/8887</td><td>0.001553</td><td>0.1714</td><td>ENSG00000081052/ENSG00000108821/ENSG00000114270/ENSG00000169031/ENSG00000187498</td></tr><tr><td>Non-integrin membrane-ECM interactions</td><td>R-HSA-3000171</td><td>8</td><td>8/547</td><td>0.0146</td><td>36/8887</td><td>0.001275</td><td>0.1714</td><td>ENSG00000060718/ENSG00000074527/ENSG00000081052/ENSG00000108821/ENSG00000169031/ENSG00000187498/ENSG00000196569/ENSG00000198947</td></tr><tr><td>G alpha (z) signalling events</td><td>R-HSA-418597</td><td>8</td><td>8/547</td><td>0.0146</td><td>37/8887</td><td>0.001541</td><td>0.1714</td><td>ENSG00000027075/ENSG00000117152/ENSG00000129467/ENSG00000150594/ENSG00000155897/ENSG00000164742/ENSG00000171132/ENSG00000186469</td></tr><tr><td>FOXO-mediated transcription of cell death genes</td><td>R-HSA-9614657</td><td>5</td><td>5/547</td><td>0.00914</td><td>15/8887</td><td>0.001553</td><td>0.1714</td><td>ENSG00000118689/ENSG00000120837/ENSG00000150907/ENSG00000164442/ENSG00000175197</td></tr></table>
+<h3>本地解释（规则模板）</h3>
+<p><strong>数据事实（由 R 确定性计算）</strong></p>
+<ul><li>共 1104 个条目（ORA）；按 校正 p 值 &lt; 0.05 计数，显著 1 个。</li><li>由 BgRatio 分母得到的背景基因数：8887；由 GeneRatio 分母得到的可注释输入基因数：547。</li><li>显著条目的重叠基因数（Count）范围：16–16。</li></ul>
+<p><strong>统计含义</strong></p>
+<ul><li>ORA 检验输入基因与某基因集的重叠是否显著多于随机期望；GeneRatio 和 Count 描述重叠程度。</li><li>显著性依赖输入列表的阈值和背景基因集，改变阈值或 universe 可能显著改变结果。</li></ul>
+<p><strong>生物学解释（需结合证据核查）</strong></p>
+<ul><li>最显著的条目包括：Interleukin-4 and Interleukin-13 signaling；G alpha (q) signalling events；Ethanol oxidation；Collagen chain trimerization；Voltage gated Potassium channels。</li><li>这些条目提示输入基因在相应功能类别中聚集，可作为生物学假设的线索，需结合核心基因和文献证据判断。</li></ul>
+<p><strong>不确定性与限制</strong></p>
+<ul><li>列名与 clusterProfiler/DOSE 的 as.data.frame() 输出相似，但来源包仅为推测。</li><li>ORA（过表达分析）只检验输入基因列表与基因集的重叠是否超出随机预期，本身没有“激活/抑制”方向，不能据此认定通路激活。</li><li>ORA 结果依赖背景基因集（universe）的选择；未指定合适背景时 p 值可能被高估或低估。</li><li>未提供物种（species），生物学解释需要用户确认物种背景。</li></ul>
+<p><strong>不能据此推出的结论</strong></p>
+<ul><li>ORA 结果不能说明通路被“激活”或“抑制”。</li><li>多个 GO 条目可能高度重叠，不能把它们当作多条独立证据。</li><li>由同一差异基因列表得到的富集结果是派生证据，不是对差异表达结果的独立验证。</li></ul>
+<p><strong>学习问题</strong></p>
+<ul><li>ORA 与 GSEA 的输入有什么不同？各自适合回答什么问题？</li><li>如果把背景基因集从“全基因组”换成“本实验检测到的基因”，结果可能如何变化？</li><li>如何判断两个显著 GO 条目是否只是同一批基因的重复体现？</li></ul>
+<p><strong>概念卡片</strong></p>
+<ul><li>ORA（过表达分析）：检验输入基因列表在某基因集中是否比随机期望出现得更多，使用超几何/Fisher 检验。</li><li>GeneRatio：输入基因中落入该通路的基因数 / 能被注释的输入基因数。</li><li>校正后 p 值（FDR/padj）：同时检验成千上万个基因时，用于控制假发现比例的指标，例如 padj &lt; 0.05 表示在该阈值下预期假发现比例约 5%。</li></ul>
+<p>模型未使用：local mode (protocol = &#39;none&#39;)</p>
+<h2>volcano</h2>
+<h3>来源与参数</h3>
+<table><tr><th>item</th><th>value</th></tr><tr><td>analysis_type</td><td>plot</td></tr><tr><td>source_class</td><td>gg/ggplot</td></tr><tr><td>source_package</td><td>ggplot2</td></tr><tr><td>source_status</td><td>verified_class</td></tr><tr><td>adapter</td><td>ggplot</td></tr><tr><td>thresholds</td><td>padj=0.05; lfc=0; p=0.05</td></tr><tr><td>created</td><td>2026-10-04 03:41:30 CST</td></tr></table>
+<h3>确定性统计事实</h3>
+<table><tr><th>item</th><th>value</th></tr><tr><td>n_layers</td><td>1</td></tr><tr><td>geoms</td><td>GeomPoint</td></tr><tr><td>coord</td><td>CoordCartesian</td></tr><tr><td>facet</td><td>FacetNull</td></tr><tr><td>plot_type_guess</td><td>volcano_plot</td></tr><tr><td>n_data_rows</td><td>22369</td></tr></table>
+<h3>图形映射</h3>
+<pre><code>{
+  &quot;data&quot;: {
+    &quot;n_rows&quot;: 22369,
+    &quot;n_cols&quot;: 6,
+    &quot;columns&quot;: null
+  },
+  &quot;global_aes&quot;: {
+    &quot;x&quot;: &quot;log2FoldChange&quot;,
+    &quot;y&quot;: &quot;-log10(padj)&quot;
+  },
+  &quot;layers&quot;: [
+    {
+      &quot;geom&quot;: &quot;GeomPoint&quot;,
+      &quot;stat&quot;: &quot;StatIdentity&quot;,
+      &quot;position&quot;: &quot;PositionIdentity&quot;,
+      &quot;aes&quot;: null,
+      &quot;inherit_aes&quot;: true,
+      &quot;own_data&quot;: false,
+      &quot;fixed_params&quot;: [&quot;0.3&quot;, &quot;0.7&quot;]
+    }
+  ],
+  &quot;facet_vars&quot;: null,
+  &quot;labels&quot;: {
+    &quot;x&quot;: &quot;log2 fold change&quot;,
+    &quot;y&quot;: &quot;-log10 adjusted p&quot;,
+    &quot;title&quot;: &quot;airway: trt vs untrt&quot;
+  },
+  &quot;scales&quot;: []
+}</code></pre>
+<h3>本地解释（规则模板）</h3>
+<p><strong>数据事实（由 R 确定性计算）</strong></p>
+<ul><li>ggplot 对象，1 个图层：GeomPoint；坐标系 CoordCartesian，分面 FacetNull。</li><li>全局 aes 映射：x = log2FoldChange，y = -log10(padj)。</li><li>绘图数据共 22369 行。</li><li>标签：x=log2 fold change；y=-log10 adjusted p；title=airway: trt vs untrt。</li><li>推测图形类型：volcano_plot（推测，未核实）。</li></ul>
+<p><strong>统计含义</strong></p>
+<ul><li>火山图中每个点是一个基因：横轴为 log2FC（方向与大小），纵轴为 -log10(p)（越高越显著）。</li><li>需确认纵轴使用的是原始 p 值还是校正后 p 值，以及阈值线代表的规则。</li></ul>
+<p><strong>生物学解释（需结合证据核查）</strong></p>
+<ul><li>图形本身不提供新的统计证据；其生物学含义取决于底层数据对象与分析设计。</li></ul>
+<p><strong>不确定性与限制</strong></p>
+<ul><li>图形类型是根据 aes 映射与几何对象推测的（plot_type_guess），不代表来源已核实。</li><li>图上的标签和颜色不能替代完整结果表；请结合产生该图的数据对象一起解释。</li><li>火山图纵轴通常为 -log10(p)；需确认使用的是原始 p 值还是校正后 p 值。</li><li>未提供物种（species），生物学解释需要用户确认物种背景。</li></ul>
+<p><strong>不能据此推出的结论</strong></p>
+<ul><li>不能只根据图中标注的少数基因或颜色得出完整结论。</li><li>不能从视觉上的“分离”直接推断因果或机制。</li></ul>
+<p><strong>学习问题</strong></p>
+<ul><li>这张图的每个点（或每个几何元素）代表什么？</li><li>如果改变坐标轴变换或阈值线，图的观感会怎样变化？</li></ul>
+<p><strong>概念卡片</strong></p>
+<ul><li>aes 映射：ggplot 中把数据列映射到 x、y、颜色、大小等视觉通道的规则。</li></ul>
+<p>模型未使用：local mode (protocol = &#39;none&#39;)</p>
+<h3>图表与原结果交叉核对</h3>
+<p>状态：pass</p>
+<table><tr><th>check</th><th>status</th><th>detail</th></tr><tr><td>all_source_genes_plotted</td><td>pass</td><td>every source feature is plotted</td></tr><tr><td>x_axis</td><td>pass</td><td>x (log2FoldChange) equals the fold-change column &#39;log2FoldChange&#39;</td></tr><tr><td>y_axis</td><td>pass</td><td>y (-log10(padj)) equals -log10(padj) [adjusted p]</td></tr></table>
+<h2>模型配置（不含密钥）</h2>
+<table><tr><th>item</th><th>value</th></tr><tr><td>preset</td><td>local</td></tr><tr><td>protocol</td><td>none</td></tr><tr><td>model</td><td>NA</td></tr><tr><td>endpoint_host</td><td>NA</td></tr><tr><td>key_source</td><td>none</td></tr><tr><td>timeout</td><td>60</td></tr><tr><td>max_retries</td><td>2</td></tr><tr><td>temperature</td><td>NA</td></tr><tr><td>max_tokens</td><td>1500</td></tr></table>
+<h2>运行环境与依赖来源</h2>
+<table><tr><th>item</th><th>value</th></tr><tr><td>R</td><td>R version 4.3.3 (2024-02-29)</td></tr><tr><td>platform</td><td>x86_64-pc-linux-gnu</td></tr><tr><td>os</td><td>Ubuntu 24.04.4 LTS</td></tr></table>
+<table><tr><th>package</th><th>version</th><th>source</th></tr><tr><td>BioExplainR</td><td>0.3.1</td><td>local/unknown</td></tr><tr><td>httr2</td><td>1.0.0</td><td>CRAN</td></tr><tr><td>jsonlite</td><td>1.8.8</td><td>CRAN</td></tr><tr><td>callr</td><td>3.7.5</td><td>CRAN</td></tr><tr><td>DESeq2</td><td>1.42.0</td><td>Bioconductor</td></tr><tr><td>edgeR</td><td>4.0.16</td><td>Bioconductor 3.18</td></tr><tr><td>ggplot2</td><td>3.4.4</td><td>CRAN</td></tr><tr><td>limma</td><td>3.58.1</td><td>Bioconductor</td></tr><tr><td>SeuratObject</td><td>5.0.1</td><td>CRAN</td></tr><tr><td>SingleCellExperiment</td><td>1.24.0</td><td>Bioconductor</td></tr><tr><td>SummarizedExperiment</td><td>1.32.0</td><td>Bioconductor</td></tr></table>
+</body></html>

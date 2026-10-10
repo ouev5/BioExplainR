@@ -1,0 +1,20 @@
+{
+  "command": [
+    "python3",
+    "tools/isolated-library-check.py",
+    "--archive",
+    "BioExplainR_0.4.0.9000.tar.gz",
+    "--output",
+    "/tmp/opencode/bioexplainr-acceptance-core"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-05T14:26:06.145297+00:00",
+  "finished_utc": "2026-10-05T14:26:14.246464+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/acceptance-imports-only.txt",
+    "bytes": 665,
+    "sha256": "90d77093f083f807bf6efeff0c2e8e1525d59cef81e7dca03c3ae8ad1e2d27e0"
+  }
+}

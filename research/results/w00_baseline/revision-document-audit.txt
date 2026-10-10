@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/home/ubuntu/creatR/research/paper_cn_revision/audit_revision.py", line 94, in <module>
+    if __name__ == "__main__": main()
+                               ^^^^^^
+  File "/home/ubuntu/creatR/research/paper_cn_revision/audit_revision.py", line 83, in main
+    figures = [geometry(OUT / "figures/Figure_2.pdf")]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/creatR/research/paper_cn/audit_manuscript.py", line 32, in geometry
+    require(p.rect.contains(rect),f"Figure text outside page: {path.name}: {text}")
+  File "/home/ubuntu/creatR/research/paper_cn/audit_manuscript.py", line 19, in require
+    if not condition:raise ValueError(message)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Figure text outside page: Figure_2.pdf: 24h (primary)

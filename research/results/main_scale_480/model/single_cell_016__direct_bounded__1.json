@@ -1,0 +1,152 @@
+{
+  "case": "single_cell_016",
+  "family": "single_cell",
+  "method": "direct_bounded",
+  "replicate": 1,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:13:24 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"数据矩阵维度为41行62列。\",\n    \"测定类型为counts。\",\n    \"不同样本数为2。\"\n  ],\n  \"statistical_meaning\": [\n    \"41行通常代表特征数，62列通常代表细胞数。\",\n    \"counts测定表示原始计数数据。\",\n    \"2个不同样本提示样本分组信息。\"\n  ],\n  \"biological_interpretation\": [\n    \"该数据可能来自单细胞RNA测序实验。\",\n    \"41个特征和62个细胞规模较小。\",\n    \"2个样本可能对应两种实验条件。\"\n  ],\n  \"uncertainty\": [\n    \"无法确认41行是否全部为基因特征。\",\n    \"无法确认62列是否全部为细胞。\",\n    \"样本分组的具体生物学含义未知。\"\n  ],\n  \"cannot_conclude\": [\n    \"不能确定细胞类型或组织来源。\",\n    \"不能确定差异表达或富集结果。\",\n    \"不能确定样本间的生物学差异。\"\n  ],\n  \"learning_questions\": [\n    \"41个特征具体是基因还是其他类型？\",\n    \"62个细胞是否经过质控过滤？\",\n    \"2个样本分别对应什么实验条件？\"\n  ],\n  \"evidence_used\": [],\n  \"claims\": [\n    {\n      \"id\": \"claim_001\",\n      \"text\": \"细胞数（n_cells）无法从给定数据中确定。\",\n      \"fact\": \"n_cells\",\n      \"value\": null,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_002\",\n      \"text\": \"特征数（n_features）无法从给定数据中确定。\",\n      \"fact\": \"n_features\",\n      \"value\": null,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_003\",\n      \"text\": \"样本数（n_samples）为2。\",\n      \"fact\": \"n_samples\",\n      \"value\": 2,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_004\",\n      \"text\": \"测定类型（assays）为counts。\",\n      \"fact\": \"assays\",\n      \"value\": \"counts\",\n      \"evidence\": []\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 316,
+      "completion_tokens": 487,
+      "total_tokens": 803,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 188
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.46
+  },
+  "parsed": {
+    "data_facts": [
+      "数据矩阵维度为41行62列。",
+      "测定类型为counts。",
+      "不同样本数为2。"
+    ],
+    "statistical_meaning": [
+      "41行通常代表特征数，62列通常代表细胞数。",
+      "counts测定表示原始计数数据。",
+      "2个不同样本提示样本分组信息。"
+    ],
+    "biological_interpretation": [
+      "该数据可能来自单细胞RNA测序实验。",
+      "41个特征和62个细胞规模较小。",
+      "2个样本可能对应两种实验条件。"
+    ],
+    "uncertainty": [
+      "无法确认41行是否全部为基因特征。",
+      "无法确认62列是否全部为细胞。",
+      "样本分组的具体生物学含义未知。"
+    ],
+    "cannot_conclude": [
+      "不能确定细胞类型或组织来源。",
+      "不能确定差异表达或富集结果。",
+      "不能确定样本间的生物学差异。"
+    ],
+    "learning_questions": [
+      "41个特征具体是基因还是其他类型？",
+      "62个细胞是否经过质控过滤？",
+      "2个样本分别对应什么实验条件？"
+    ],
+    "evidence_used": [],
+    "claims": [
+      {
+        "id": "claim_001",
+        "text": "细胞数（n_cells）无法从给定数据中确定。",
+        "fact": "n_cells",
+        "value": null,
+        "evidence": []
+      },
+      {
+        "id": "claim_002",
+        "text": "特征数（n_features）无法从给定数据中确定。",
+        "fact": "n_features",
+        "value": null,
+        "evidence": []
+      },
+      {
+        "id": "claim_003",
+        "text": "样本数（n_samples）为2。",
+        "fact": "n_samples",
+        "value": 2,
+        "evidence": []
+      },
+      {
+        "id": "claim_004",
+        "text": "测定类型（assays）为counts。",
+        "fact": "assays",
+        "value": "counts",
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "partial",
+    "findings": [
+      {
+        "claim": "claim_001",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_002",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_003",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_samples = 2"
+      },
+      {
+        "claim": "claim_004",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_cells",
+      "expected": 62,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "n_features",
+      "expected": 41,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "n_samples",
+      "expected": 2,
+      "value": 2,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "assays",
+      "expected": "counts",
+      "value": "counts",
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 1204
+}

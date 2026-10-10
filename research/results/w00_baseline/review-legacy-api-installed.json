@@ -1,0 +1,21 @@
+{
+  "command": [
+    "env",
+    "R_LIBS=/tmp/opencode/bioexplainr-install-review",
+    "Rscript",
+    "--vanilla",
+    "tools/legacy-interface-check.R",
+    "research/results/w00_baseline/review-legacy-api-installed-result.json",
+    "--installed"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-08T08:28:57.540271+00:00",
+  "finished_utc": "2026-10-08T08:28:58.113439+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/review-legacy-api-installed.txt",
+    "bytes": 13,
+    "sha256": "9920e5e6f10c57acc16323dfb248f3710f6d57d7454cafeac0902a9b3aa4f04e"
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "case": "single_cell_016",
+  "family": "single_cell",
+  "method": "direct_bounded",
+  "replicate": 3,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:24:05 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"数据矩阵维度为41行62列。\",\n    \"唯一测定类型为counts。\",\n    \"不同样本数为2。\"\n  ],\n  \"statistical_meaning\": [\n    \"41行通常代表特征数，62列代表细胞数。\",\n    \"counts测定表示原始计数数据。\",\n    \"2个不同样本表明样本分组信息有限。\"\n  ],\n  \"biological_interpretation\": [\n    \"该数据可能来自单细胞RNA测序实验。\",\n    \"41个特征和62个细胞规模较小。\",\n    \"仅2个样本可能限制组间比较的统计效力。\"\n  ],\n  \"uncertainty\": [\n    \"无法确认41行是否全部为基因特征。\",\n    \"无法确认62列是否全部为细胞。\",\n    \"样本分组的具体生物学含义未知。\"\n  ],\n  \"cannot_conclude\": [\n    \"无法确定细胞类型或组织来源。\",\n    \"无法评估数据质量或批次效应。\",\n    \"无法进行差异表达分析。\"\n  ],\n  \"learning_questions\": [\n    \"如何从数据维度判断单细胞实验的规模？\",\n    \"counts测定与标准化测定有何区别？\",\n    \"样本数较少时如何设计统计检验？\"\n  ],\n  \"evidence_used\": [\n    \"dim\",\n    \"assays\",\n    \"n_distinct_samples\"\n  ],\n  \"claims\": [\n    {\n      \"id\": \"claim_1\",\n      \"text\": \"细胞数量为62。\",\n      \"fact\": \"n_cells\",\n      \"value\": 62,\n      \"evidence\": [\n        \"dim\"\n      ]\n    },\n    {\n      \"id\": \"claim_2\",\n      \"text\": \"特征数量为41。\",\n      \"fact\": \"n_features\",\n      \"value\": 41,\n      \"evidence\": [\n        \"dim\"\n      ]\n    },\n    {\n      \"id\": \"claim_3\",\n      \"text\": \"样本数量为2。\",\n      \"fact\": \"n_samples\",\n      \"value\": 2,\n      \"evidence\": [\n        \"n_distinct_samples\"\n      ]\n    },\n    {\n      \"id\": \"claim_4\",\n      \"text\": \"测定类型为counts。\",\n      \"fact\": \"assays\",\n      \"value\": \"counts\",\n      \"evidence\": [\n        \"assays\"\n      ]\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 316,
+      "completion_tokens": 514,
+      "total_tokens": 830,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 188
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.3599999999999999
+  },
+  "parsed": {
+    "data_facts": [
+      "数据矩阵维度为41行62列。",
+      "唯一测定类型为counts。",
+      "不同样本数为2。"
+    ],
+    "statistical_meaning": [
+      "41行通常代表特征数，62列代表细胞数。",
+      "counts测定表示原始计数数据。",
+      "2个不同样本表明样本分组信息有限。"
+    ],
+    "biological_interpretation": [
+      "该数据可能来自单细胞RNA测序实验。",
+      "41个特征和62个细胞规模较小。",
+      "仅2个样本可能限制组间比较的统计效力。"
+    ],
+    "uncertainty": [
+      "无法确认41行是否全部为基因特征。",
+      "无法确认62列是否全部为细胞。",
+      "样本分组的具体生物学含义未知。"
+    ],
+    "cannot_conclude": [
+      "无法确定细胞类型或组织来源。",
+      "无法评估数据质量或批次效应。",
+      "无法进行差异表达分析。"
+    ],
+    "learning_questions": [
+      "如何从数据维度判断单细胞实验的规模？",
+      "counts测定与标准化测定有何区别？",
+      "样本数较少时如何设计统计检验？"
+    ],
+    "evidence_used": [
+      "dim",
+      "assays",
+      "n_distinct_samples"
+    ],
+    "claims": [
+      {
+        "id": "claim_1",
+        "text": "细胞数量为62。",
+        "fact": "n_cells",
+        "value": 62,
+        "evidence": [
+          "dim"
+        ]
+      },
+      {
+        "id": "claim_2",
+        "text": "特征数量为41。",
+        "fact": "n_features",
+        "value": 41,
+        "evidence": [
+          "dim"
+        ]
+      },
+      {
+        "id": "claim_3",
+        "text": "样本数量为2。",
+        "fact": "n_samples",
+        "value": 2,
+        "evidence": [
+          "n_distinct_samples"
+        ]
+      },
+      {
+        "id": "claim_4",
+        "text": "测定类型为counts。",
+        "fact": "assays",
+        "value": "counts",
+        "evidence": [
+          "assays"
+        ]
+      }
+    ]
+  },
+  "validation": {
+    "status": "fail",
+    "findings": [
+      {
+        "claim": "(evidence_used)",
+        "check": "evidence_ids",
+        "status": "fail",
+        "detail": "unknown evidence id(s): dim, assays, n_distinct_samples (no evidence list was supplied)"
+      },
+      {
+        "claim": "claim_1",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_cells = 62"
+      },
+      {
+        "claim": "claim_1",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: dim"
+      },
+      {
+        "claim": "claim_2",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_features = 41"
+      },
+      {
+        "claim": "claim_2",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: dim"
+      },
+      {
+        "claim": "claim_3",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_samples = 2"
+      },
+      {
+        "claim": "claim_3",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: n_distinct_samples"
+      },
+      {
+        "claim": "claim_4",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      },
+      {
+        "claim": "claim_4",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: assays"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_cells",
+      "expected": 62,
+      "value": 62,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_features",
+      "expected": 41,
+      "value": 41,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_samples",
+      "expected": 2,
+      "value": 2,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "assays",
+      "expected": "counts",
+      "value": "counts",
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 1204
+}

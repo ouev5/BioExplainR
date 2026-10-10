@@ -1,0 +1,140 @@
+{
+  "case": "reactome_ora",
+  "method": "facts_evidence",
+  "replicate": 1,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-03 19:42:17 UTC",
+  "response": {
+    "text": "{\"data_facts\": [\"本次 ORA 共检验 1104 个通路条目，其中按 padj<0.05 判定为显著的仅 1 个。\", \"显著条目为 Interleukin-4 and Interleukin-13 signaling（R-HSA-6785807），Count=16，GeneRatio=16/547，padj=0.02159。\", \"输入基因映射到 547 个基因，背景基因集大小约 8887。\"], \"statistical_meaning\": [\"ORA 检验的是输入基因列表与基因集的重叠是否超过随机预期，p 值基于校正后列（adjusted_column）。\", \"多重检验校正后仅 1 个条目显著，说明多数条目的原始 p 值虽小但校正后不再显著。\", \"Count 是重叠基因数，不是效应方向或效应量。\"], \"biological_interpretation\": [\"IL-4/IL-13 信号通路在气道平滑肌相关转录组背景下被检索到（证据 EuropePMC:MED:24926665），可作为待验证假设。\", \"其余条目（如 G alpha (q) signalling events、Collagen chain trimerization）校正后不显著，只能作为探索性线索。\", \"以上均为基于富集结果的假设，需独立实验验证。\"], \"uncertainty\": [\"来源包仅为推测（列名与 clusterProfiler/DOSE 输出相似），未确认实际调用。\", \"ORA 无激活/抑制方向，不能据此判断通路被激活或抑制。\", \"结果依赖背景基因集选择，且派生自 airway_lfc1，不构成独立验证。\"], \"cannot_conclude\": [\"不能得出 IL-4/IL-13 通路被激活或抑制的结论。\", \"不能把 Count=16 解释为上调或下调方向。\", \"不能由单一显著条目推断整体生物学机制或临床意义。\"], \"learning_questions\": [\"ORA 的 p 值与 padj 有何区别，为什么只有 1 个条目显著？\", \"GeneRatio 与 BgRatio 分别代表什么，如何影响富集判断？\", \"为什么 ORA 结果不能说明通路的激活方向？\"], \"evidence_used\": [\"EuropePMC:MED:24926665\"], \"claims\": [{\"id\": \"c1\", \"text\": \"检验的通路条目数为 1104。\", \"fact\": \"n_terms\", \"value\": 1104, \"evidence\": []}, {\"id\": \"c2\", \"text\": \"校正后显著条目数为 1。\", \"fact\": \"n_significant\", \"value\": 1, \"evidence\": []}, {\"id\": \"c3\", \"text\": \"富集方法为 ORA。\", \"fact\": \"enrichment_method\", \"value\": \"ORA\", \"evidence\": []}]}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 2586,
+      "completion_tokens": 603,
+      "total_tokens": 3189,
+      "prompt_tokens_details": {
+        "cached_tokens": 2176
+      },
+      "prompt_cache_hit_tokens": 2176,
+      "prompt_cache_miss_tokens": 410
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.87
+  },
+  "parsed": {
+    "data_facts": [
+      "本次 ORA 共检验 1104 个通路条目，其中按 padj<0.05 判定为显著的仅 1 个。",
+      "显著条目为 Interleukin-4 and Interleukin-13 signaling（R-HSA-6785807），Count=16，GeneRatio=16/547，padj=0.02159。",
+      "输入基因映射到 547 个基因，背景基因集大小约 8887。"
+    ],
+    "statistical_meaning": [
+      "ORA 检验的是输入基因列表与基因集的重叠是否超过随机预期，p 值基于校正后列（adjusted_column）。",
+      "多重检验校正后仅 1 个条目显著，说明多数条目的原始 p 值虽小但校正后不再显著。",
+      "Count 是重叠基因数，不是效应方向或效应量。"
+    ],
+    "biological_interpretation": [
+      "IL-4/IL-13 信号通路在气道平滑肌相关转录组背景下被检索到（证据 EuropePMC:MED:24926665），可作为待验证假设。",
+      "其余条目（如 G alpha (q) signalling events、Collagen chain trimerization）校正后不显著，只能作为探索性线索。",
+      "以上均为基于富集结果的假设，需独立实验验证。"
+    ],
+    "uncertainty": [
+      "来源包仅为推测（列名与 clusterProfiler/DOSE 输出相似），未确认实际调用。",
+      "ORA 无激活/抑制方向，不能据此判断通路被激活或抑制。",
+      "结果依赖背景基因集选择，且派生自 airway_lfc1，不构成独立验证。"
+    ],
+    "cannot_conclude": [
+      "不能得出 IL-4/IL-13 通路被激活或抑制的结论。",
+      "不能把 Count=16 解释为上调或下调方向。",
+      "不能由单一显著条目推断整体生物学机制或临床意义。"
+    ],
+    "learning_questions": [
+      "ORA 的 p 值与 padj 有何区别，为什么只有 1 个条目显著？",
+      "GeneRatio 与 BgRatio 分别代表什么，如何影响富集判断？",
+      "为什么 ORA 结果不能说明通路的激活方向？"
+    ],
+    "evidence_used": [
+      "EuropePMC:MED:24926665"
+    ],
+    "claims": [
+      {
+        "id": "c1",
+        "text": "检验的通路条目数为 1104。",
+        "fact": "n_terms",
+        "value": 1104,
+        "evidence": []
+      },
+      {
+        "id": "c2",
+        "text": "校正后显著条目数为 1。",
+        "fact": "n_significant",
+        "value": 1,
+        "evidence": []
+      },
+      {
+        "id": "c3",
+        "text": "富集方法为 ORA。",
+        "fact": "enrichment_method",
+        "value": "ORA",
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "(evidence_used)",
+        "check": "evidence_ids",
+        "status": "pass",
+        "detail": "all cited evidence ids were supplied"
+      },
+      {
+        "claim": "c1",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_terms = 1104"
+      },
+      {
+        "claim": "c2",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_significant = 1"
+      },
+      {
+        "claim": "c3",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      }
+    ],
+    "n_claims": 3,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_terms",
+      "expected": 1104,
+      "value": 1104,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_significant",
+      "expected": 1,
+      "value": 1,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "enrichment_method",
+      "expected": "ORA",
+      "value": "ORA",
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 7879,
+  "validation_rechecked_utc": "2026-10-03 20:09:20 UTC"
+}

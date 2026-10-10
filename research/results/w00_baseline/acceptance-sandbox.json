@@ -1,0 +1,20 @@
+{
+  "command": [
+    "python3",
+    "tools/sandbox-boundary-check.py",
+    "--library",
+    "BioExplainR.Rcheck",
+    "--output",
+    "research/results/w00_baseline/acceptance-sandbox-result.json"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-05T14:14:31.034166+00:00",
+  "finished_utc": "2026-10-05T14:14:31.210619+00:00",
+  "exit_code": 1,
+  "status": "fail",
+  "log": {
+    "path": "research/results/w00_baseline/acceptance-sandbox.txt",
+    "bytes": 360,
+    "sha256": "8cf585641e23f2a504a5e1d8422bc6ee223af97f463ba8ec6ef2be3b7897a0bc"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "date_utc": "2026-10-05 01:18:53 UTC",
+  "scope": "installed packages only; not a full upstream version matrix",
+  "rows": [
+    {
+      "package": "DESeq2",
+      "version_slot": "installed",
+      "installed": true,
+      "version": "1.42.0",
+      "object": "DESeqResults",
+      "status": "pass",
+      "detail": "saved deterministic compatibility result"
+    },
+    {
+      "package": "limma",
+      "version_slot": "installed",
+      "installed": true,
+      "version": "3.58.1",
+      "object": "MArrayLM",
+      "status": "pass",
+      "detail": "saved deterministic compatibility result"
+    },
+    {
+      "package": "edgeR",
+      "version_slot": "installed",
+      "installed": true,
+      "version": "4.0.16",
+      "object": "TopTags",
+      "status": "pass",
+      "detail": "saved deterministic compatibility result"
+    },
+    {
+      "package": "SummarizedExperiment",
+      "version_slot": "installed",
+      "installed": true,
+      "version": "1.32.0",
+      "object": "RangedSummarizedExperiment",
+      "status": "pass",
+      "detail": "saved deterministic compatibility result"
+    },
+    {
+      "package": "SingleCellExperiment",
+      "version_slot": "installed",
+      "installed": true,
+      "version": "1.24.0",
+      "object": "SingleCellExperiment",
+      "status": "pass",
+      "detail": "saved deterministic compatibility result"
+    },
+    {
+      "package": "SeuratObject",
+      "version_slot": "installed",
+      "installed": true,
+      "version": "5.0.1",
+      "object": "Seurat",
+      "status": "pass",
+      "detail": "saved deterministic compatibility result"
+    },
+    {
+      "package": "ggplot2",
+      "version_slot": "installed",
+      "installed": true,
+      "version": "3.4.4",
+      "object": "ggplot",
+      "status": "pass",
+      "detail": "plot"
+    },
+    {
+      "package": "uwot",
+      "version_slot": "installed",
+      "installed": true,
+      "version": "0.1.16",
+      "object": "UMAP",
+      "status": "pass",
+      "detail": "plot"
+    }
+  ]
+}

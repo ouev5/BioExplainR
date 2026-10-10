@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use BioExplainR, cite this software snapshot. Version DOI will be added only after archival publication."
+type: software
+title: "BioExplainR: fact-constrained explanations and traceable checks for bioinformatics R results"
+authors:
+  - name: "BioExplainR contributors"
+version: "0.4.0.9000"
+date-released: "2026-10-08"
+license: MIT
+abstract: >-
+  BioExplainR computes deterministic facts from existing R bioinformatics results,
+  optionally uses language models to organise explanations, checks explicit claims
+  and supported plot mappings, and reports project dependencies and sample coverage.
+keywords:
+  - bioinformatics
+  - R
+  - reproducibility
+  - explanation

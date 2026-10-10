@@ -1,0 +1,192 @@
+{
+  "case": "enrichment_020",
+  "family": "enrichment",
+  "method": "direct_bounded",
+  "replicate": 3,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:23:37 UTC",
+  "response": {
+    "text": "{\"data_facts\":[\"R输出包含32行5列，但仅提供10行，数据不完整。\",\"提供的行中p.adjust值介于0.01至0.050000000000000003之间。\"],\"statistical_meaning\":[\"富集分析通常使用超几何检验或Fisher精确检验计算p值，并校正为p.adjust。\",\"显著性阈值设为0.050000000000000003，但数据不完整无法可靠计数。\"],\"biological_interpretation\":[\"无法基于不完整数据解释生物学意义。\"],\"uncertainty\":[\"由于rows_complete为false，无法确定总条目数和显著条目数。\"],\"cannot_conclude\":[\"无法计算n_terms和n_significant，因为数据不完整。\",\"无法确认enrichment_method，因为未提供具体方法信息。\"],\"learning_questions\":[\"如何从完整的富集分析结果中提取显著通路？\",\"p.adjust与p值在多重检验校正中有何区别？\"],\"evidence_used\":[\"dim\",\"provided_rows\",\"rows_complete\",\"padj\",\"lfc\",\"p\"],\"claims\":[{\"id\":\"c1\",\"text\":\"总条目数无法确定，因为数据不完整。\",\"fact\":\"n_terms\",\"value\":null,\"evidence\":[\"dim\",\"rows_complete\"]},{\"id\":\"c2\",\"text\":\"显著条目数无法确定，因为数据不完整。\",\"fact\":\"n_significant\",\"value\":null,\"evidence\":[\"provided_rows\",\"rows_complete\",\"padj\"]},{\"id\":\"c3\",\"text\":\"富集方法未在输入中明确指定。\",\"fact\":\"enrichment_method\",\"value\":null,\"evidence\":[\"analysis_type_hint\"]},{\"id\":\"c4\",\"text\":\"显著性阈值设定为0.050000000000000003。\",\"fact\":\"significance_threshold\",\"value\":\"0.050000000000000003\",\"evidence\":[\"padj\"]}]}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 861,
+      "completion_tokens": 400,
+      "total_tokens": 1261,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 221
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.46
+  },
+  "parsed": {
+    "data_facts": [
+      "R输出包含32行5列，但仅提供10行，数据不完整。",
+      "提供的行中p.adjust值介于0.01至0.050000000000000003之间。"
+    ],
+    "statistical_meaning": [
+      "富集分析通常使用超几何检验或Fisher精确检验计算p值，并校正为p.adjust。",
+      "显著性阈值设为0.050000000000000003，但数据不完整无法可靠计数。"
+    ],
+    "biological_interpretation": [
+      "无法基于不完整数据解释生物学意义。"
+    ],
+    "uncertainty": [
+      "由于rows_complete为false，无法确定总条目数和显著条目数。"
+    ],
+    "cannot_conclude": [
+      "无法计算n_terms和n_significant，因为数据不完整。",
+      "无法确认enrichment_method，因为未提供具体方法信息。"
+    ],
+    "learning_questions": [
+      "如何从完整的富集分析结果中提取显著通路？",
+      "p.adjust与p值在多重检验校正中有何区别？"
+    ],
+    "evidence_used": [
+      "dim",
+      "provided_rows",
+      "rows_complete",
+      "padj",
+      "lfc",
+      "p"
+    ],
+    "claims": [
+      {
+        "id": "c1",
+        "text": "总条目数无法确定，因为数据不完整。",
+        "fact": "n_terms",
+        "value": null,
+        "evidence": [
+          "dim",
+          "rows_complete"
+        ]
+      },
+      {
+        "id": "c2",
+        "text": "显著条目数无法确定，因为数据不完整。",
+        "fact": "n_significant",
+        "value": null,
+        "evidence": [
+          "provided_rows",
+          "rows_complete",
+          "padj"
+        ]
+      },
+      {
+        "id": "c3",
+        "text": "富集方法未在输入中明确指定。",
+        "fact": "enrichment_method",
+        "value": null,
+        "evidence": [
+          "analysis_type_hint"
+        ]
+      },
+      {
+        "id": "c4",
+        "text": "显著性阈值设定为0.050000000000000003。",
+        "fact": "significance_threshold",
+        "value": "0.050000000000000003",
+        "evidence": [
+          "padj"
+        ]
+      }
+    ]
+  },
+  "validation": {
+    "status": "fail",
+    "findings": [
+      {
+        "claim": "(evidence_used)",
+        "check": "evidence_ids",
+        "status": "fail",
+        "detail": "unknown evidence id(s): dim, provided_rows, rows_complete, padj, lfc, p (no evidence list was supplied)"
+      },
+      {
+        "claim": "c1",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "c1",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: dim, rows_complete"
+      },
+      {
+        "claim": "c2",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "c2",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: provided_rows, rows_complete, padj"
+      },
+      {
+        "claim": "c3",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "c3",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: analysis_type_hint"
+      },
+      {
+        "claim": "c4",
+        "check": "value",
+        "status": "pass",
+        "detail": "significance_threshold = 0.05"
+      },
+      {
+        "claim": "c4",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: padj"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_terms",
+      "expected": 32,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "n_significant",
+      "expected": 26,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "enrichment_method",
+      "expected": "ORA",
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "significance_threshold",
+      "expected": 0.050000000000000003,
+      "value": "0.050000000000000003",
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 2702
+}

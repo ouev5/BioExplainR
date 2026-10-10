@@ -1,0 +1,21 @@
+{
+  "command": [
+    "bwrap",
+    "--unshare-all",
+    "--ro-bind",
+    "/",
+    "/",
+    "--",
+    "true"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-05T12:16:17.241600+00:00",
+  "finished_utc": "2026-10-05T12:16:17.245954+00:00",
+  "exit_code": 1,
+  "status": "fail",
+  "log": {
+    "path": "research/results/w00_baseline/continuation-container-probe.txt",
+    "bytes": 61,
+    "sha256": "ed3471f7900377f86150471417911309833a36d664cb5af7409e139103f67ddf"
+  }
+}

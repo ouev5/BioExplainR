@@ -1,0 +1,6 @@
+Error in x$Priority : $ operator is invalid for atomic vectors
+Calls: bio_report ... .session_versions -> %||% -> <Anonymous> -> sapply -> lapply -> FUN
+In addition: Warning message:
+In FUN(X[[i]], ...) :
+  DESCRIPTION file of package 'BioExplainR' is missing or broken
+Execution halted

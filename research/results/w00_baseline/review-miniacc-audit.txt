@@ -1,0 +1,15 @@
+{
+  "status": "pass",
+  "scope": "Independent Python recomputation; same development data, no expert gold",
+  "files_verified": 23,
+  "effects_recomputed": 66,
+  "features": 33,
+  "paired_units": 46,
+  "direction": {
+    "same": 18,
+    "opposite": 15,
+    "unverified": 0
+  },
+  "artifact_paths": "run-relative; legacy directory prefixes supported without original-tree access",
+  "pvalue_scope": "BH recomputed from saved R Wilcoxon p values; Wilcoxon statistic not independently recomputed"
+}

@@ -1,0 +1,160 @@
+{
+  "case": "single_cell_020",
+  "family": "single_cell",
+  "method": "facts_evidence",
+  "replicate": 2,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:22:25 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"该数据集包含 70 个细胞、45 个特征（基因），来自 3 个样本。\",\n    \"唯一可用的 assay 是 counts（原始计数矩阵）。\",\n    \"counts 矩阵中非零值范围约为 0 到 10，零值比例约 9.11%。\"\n  ],\n  \"statistical_meaning\": [\n    \"n_cells=70 是细胞总数，不是独立生物学重复数；独立重复单位是样本/供体（n_samples=3）。\",\n    \"counts 为整数型计数数据，适合负二项等计数模型，而非直接做正态检验。\",\n    \"45 个特征属于小规模面板，统计功效有限，多重检验校正后可能无显著结果。\"\n  ],\n  \"biological_interpretation\": [\n    \"在确认物种与组织背景前，只能假设这 45 个特征代表某类细胞的表达面板。\",\n    \"样本间细胞数接近（23–24），提示采样较均衡，但样本量仅 3，生物学结论需谨慎。\",\n    \"证据 EuropePMC:MED:24926665 仅表示检索命中，不能据此推断本数据集的基因功能。\"\n  ],\n  \"uncertainty\": [\n    \"细胞数不等于生物学重复数；把细胞当重复会产生伪重复假阳性。\",\n    \"未提供物种信息，生物学解释需用户确认物种背景。\",\n    \"未找到常见 QC 指标列（nCount/nFeature/percent.mt），无法评估质控。\"\n  ],\n  \"cannot_conclude\": [\n    \"不能仅凭 3 个样本得出组间差异或疾病相关结论。\",\n    \"不能从 counts 数值推断细胞类型、激活方向或临床意义。\",\n    \"不能在没有降维结果的情况下讨论细胞谱系或轨迹。\"\n  ],\n  \"learning_questions\": [\n    \"为什么单细胞分析中要把样本/供体而非单个细胞当作重复单位？\",\n    \"counts 计数数据为什么常用负二项模型而不是 t 检验？\",\n    \"在只有 45 个特征和 3 个样本时，多重检验校正会带来什么影响？\"\n  ],\n  \"evidence_used\": [\n    \"EuropePMC:MED:24926665\"\n  ],\n  \"claims\": [\n    {\n      \"id\": \"c1\",\n      \"text\": \"细胞总数为 70。\",\n      \"fact\": \"n_cells\",\n      \"value\": 70,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"c2\",\n      \"text\": \"特征（基因）数为 45。\",\n      \"fact\": \"n_features\",\n      \"value\": 45,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"c3\",\n      \"text\": \"样本数为 3。\",\n      \"fact\": \"n_samples\",\n      \"value\": 3,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"c4\",\n      \"text\": \"唯一 assay 为 counts。\",\n      \"fact\": \"assays\",\n      \"value\": \"counts\",\n      \"evidence\": []\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 1243,
+      "completion_tokens": 681,
+      "total_tokens": 1924,
+      "prompt_tokens_details": {
+        "cached_tokens": 1024
+      },
+      "prompt_cache_hit_tokens": 1024,
+      "prompt_cache_miss_tokens": 219
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.98
+  },
+  "parsed": {
+    "data_facts": [
+      "该数据集包含 70 个细胞、45 个特征（基因），来自 3 个样本。",
+      "唯一可用的 assay 是 counts（原始计数矩阵）。",
+      "counts 矩阵中非零值范围约为 0 到 10，零值比例约 9.11%。"
+    ],
+    "statistical_meaning": [
+      "n_cells=70 是细胞总数，不是独立生物学重复数；独立重复单位是样本/供体（n_samples=3）。",
+      "counts 为整数型计数数据，适合负二项等计数模型，而非直接做正态检验。",
+      "45 个特征属于小规模面板，统计功效有限，多重检验校正后可能无显著结果。"
+    ],
+    "biological_interpretation": [
+      "在确认物种与组织背景前，只能假设这 45 个特征代表某类细胞的表达面板。",
+      "样本间细胞数接近（23–24），提示采样较均衡，但样本量仅 3，生物学结论需谨慎。",
+      "证据 EuropePMC:MED:24926665 仅表示检索命中，不能据此推断本数据集的基因功能。"
+    ],
+    "uncertainty": [
+      "细胞数不等于生物学重复数；把细胞当重复会产生伪重复假阳性。",
+      "未提供物种信息，生物学解释需用户确认物种背景。",
+      "未找到常见 QC 指标列（nCount/nFeature/percent.mt），无法评估质控。"
+    ],
+    "cannot_conclude": [
+      "不能仅凭 3 个样本得出组间差异或疾病相关结论。",
+      "不能从 counts 数值推断细胞类型、激活方向或临床意义。",
+      "不能在没有降维结果的情况下讨论细胞谱系或轨迹。"
+    ],
+    "learning_questions": [
+      "为什么单细胞分析中要把样本/供体而非单个细胞当作重复单位？",
+      "counts 计数数据为什么常用负二项模型而不是 t 检验？",
+      "在只有 45 个特征和 3 个样本时，多重检验校正会带来什么影响？"
+    ],
+    "evidence_used": [
+      "EuropePMC:MED:24926665"
+    ],
+    "claims": [
+      {
+        "id": "c1",
+        "text": "细胞总数为 70。",
+        "fact": "n_cells",
+        "value": 70,
+        "evidence": []
+      },
+      {
+        "id": "c2",
+        "text": "特征（基因）数为 45。",
+        "fact": "n_features",
+        "value": 45,
+        "evidence": []
+      },
+      {
+        "id": "c3",
+        "text": "样本数为 3。",
+        "fact": "n_samples",
+        "value": 3,
+        "evidence": []
+      },
+      {
+        "id": "c4",
+        "text": "唯一 assay 为 counts。",
+        "fact": "assays",
+        "value": "counts",
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "(evidence_used)",
+        "check": "evidence_ids",
+        "status": "pass",
+        "detail": "all cited evidence ids were supplied"
+      },
+      {
+        "claim": "c1",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_cells = 70"
+      },
+      {
+        "claim": "c2",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_features = 45"
+      },
+      {
+        "claim": "c3",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_samples = 3"
+      },
+      {
+        "claim": "c4",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_cells",
+      "expected": 70,
+      "value": 70,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_features",
+      "expected": 45,
+      "value": 45,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_samples",
+      "expected": 3,
+      "value": 3,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "assays",
+      "expected": "counts",
+      "value": "counts",
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 4482
+}

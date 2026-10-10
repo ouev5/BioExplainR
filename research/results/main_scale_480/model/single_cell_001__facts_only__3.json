@@ -1,0 +1,151 @@
+{
+  "case": "single_cell_001",
+  "family": "single_cell",
+  "method": "facts_only",
+  "replicate": 3,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:25:36 UTC",
+  "response": {
+    "text": "{\"data_facts\":[\"该数据集包含 32 个细胞和 26 个特征。\",\"样本列 sample_id 共识别到 2 个样本，每个样本 16 个细胞。\",\"唯一 assay 为 counts，矩阵维度 26×32，无缺失值。\"],\"statistical_meaning\":[\"细胞数（32）是观测单位数量，不等于独立生物学重复数。\",\"样本数（2）决定组间比较的独立重复单位，此处推断能力非常有限。\",\"counts 数值为整数型，零值比例约 0.09，符合计数数据特征。\"],\"biological_interpretation\":[\"26 个特征可能代表一组基因，但未提供基因名，无法判断其生物学功能。\",\"仅 2 个样本，任何组间生物学差异都只能作为假设，不能作为结论。\"],\"uncertainty\":[\"细胞数不等于生物学重复数；把细胞当重复易产生伪重复假阳性。\",\"仅识别到 2 个样本，组间比较统计推断能力非常有限。\",\"未找到常见 QC 指标列（nCount/nFeature/percent.mt），无法评估质控。\"],\"cannot_conclude\":[\"不能得出任何组间差异表达或细胞类型比例的结论。\",\"不能判断细胞类型、谱系关系或组织来源。\",\"不能评估数据质量是否合格。\"],\"learning_questions\":[\"为什么单细胞分析中细胞数不能当作生物学重复数？\",\"样本量只有 2 时，哪些统计方法仍然适用？\",\"counts assay 的整数与零值比例对下游分析意味着什么？\"],\"evidence_used\":[],\"claims\":[{\"id\":\"c1\",\"text\":\"细胞总数为 32。\",\"fact\":\"n_cells\",\"value\":32,\"evidence\":[]},{\"id\":\"c2\",\"text\":\"特征总数为 26。\",\"fact\":\"n_features\",\"value\":26,\"evidence\":[]},{\"id\":\"c3\",\"text\":\"样本数为 2。\",\"fact\":\"n_samples\",\"value\":2,\"evidence\":[]},{\"id\":\"c4\",\"text\":\"唯一 assay 为 counts。\",\"fact\":\"assays\",\"value\":\"counts\",\"evidence\":[]}]}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 1116,
+      "completion_tokens": 457,
+      "total_tokens": 1573,
+      "prompt_tokens_details": {
+        "cached_tokens": 896
+      },
+      "prompt_cache_hit_tokens": 896,
+      "prompt_cache_miss_tokens": 220
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.8399999999999999
+  },
+  "parsed": {
+    "data_facts": [
+      "该数据集包含 32 个细胞和 26 个特征。",
+      "样本列 sample_id 共识别到 2 个样本，每个样本 16 个细胞。",
+      "唯一 assay 为 counts，矩阵维度 26×32，无缺失值。"
+    ],
+    "statistical_meaning": [
+      "细胞数（32）是观测单位数量，不等于独立生物学重复数。",
+      "样本数（2）决定组间比较的独立重复单位，此处推断能力非常有限。",
+      "counts 数值为整数型，零值比例约 0.09，符合计数数据特征。"
+    ],
+    "biological_interpretation": [
+      "26 个特征可能代表一组基因，但未提供基因名，无法判断其生物学功能。",
+      "仅 2 个样本，任何组间生物学差异都只能作为假设，不能作为结论。"
+    ],
+    "uncertainty": [
+      "细胞数不等于生物学重复数；把细胞当重复易产生伪重复假阳性。",
+      "仅识别到 2 个样本，组间比较统计推断能力非常有限。",
+      "未找到常见 QC 指标列（nCount/nFeature/percent.mt），无法评估质控。"
+    ],
+    "cannot_conclude": [
+      "不能得出任何组间差异表达或细胞类型比例的结论。",
+      "不能判断细胞类型、谱系关系或组织来源。",
+      "不能评估数据质量是否合格。"
+    ],
+    "learning_questions": [
+      "为什么单细胞分析中细胞数不能当作生物学重复数？",
+      "样本量只有 2 时，哪些统计方法仍然适用？",
+      "counts assay 的整数与零值比例对下游分析意味着什么？"
+    ],
+    "evidence_used": [],
+    "claims": [
+      {
+        "id": "c1",
+        "text": "细胞总数为 32。",
+        "fact": "n_cells",
+        "value": 32,
+        "evidence": []
+      },
+      {
+        "id": "c2",
+        "text": "特征总数为 26。",
+        "fact": "n_features",
+        "value": 26,
+        "evidence": []
+      },
+      {
+        "id": "c3",
+        "text": "样本数为 2。",
+        "fact": "n_samples",
+        "value": 2,
+        "evidence": []
+      },
+      {
+        "id": "c4",
+        "text": "唯一 assay 为 counts。",
+        "fact": "assays",
+        "value": "counts",
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "c1",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_cells = 32"
+      },
+      {
+        "claim": "c2",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_features = 26"
+      },
+      {
+        "claim": "c3",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_samples = 2"
+      },
+      {
+        "claim": "c4",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_cells",
+      "expected": 32,
+      "value": 32,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_features",
+      "expected": 26,
+      "value": 26,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_samples",
+      "expected": 2,
+      "value": 2,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "assays",
+      "expected": "counts",
+      "value": "counts",
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 3984
+}

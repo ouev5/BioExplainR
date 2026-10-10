@@ -1,0 +1,132 @@
+{
+  "case": "reactome_ora",
+  "method": "facts_only",
+  "replicate": 2,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-03 19:42:27 UTC",
+  "response": {
+    "text": "{\"data_facts\": [\"本次分析共检验 1104 个基因集（term）。\", \"在 padj < 0.05 阈值下，只有 1 个基因集达到显著。\", \"富集方法为 ORA（过表达分析）。\"], \"statistical_meaning\": [\"ORA 检验输入基因列表与基因集的重叠是否超出随机预期。\", \"p 值基于校正后的列（adjusted_column），阈值设为 0.05。\", \"显著基因集的 Count 范围为 16 到 16。\"], \"biological_interpretation\": [\"唯一显著的通路为 Interleukin-4 and Interleukin-13 signaling（R-HSA-6785807），含 16 个基因。\", \"其余通路（如 G alpha (q) signalling events、Ethanol oxidation）校正后 p 值均大于 0.05，仅为提示性假设。\", \"这些结果来自 airway_lfc1 派生数据，属于假设生成而非独立验证。\"], \"uncertainty\": [\"列名与 clusterProfiler/DOSE 的 as.data.frame() 输出相似，但来源包仅为推测。\", \"ORA 只检验重叠是否超出随机预期，本身没有激活/抑制方向，不能据此认定通路激活。\", \"ORA 结果依赖背景基因集（universe）的选择；未指定合适背景时 p 值可能被高估或低估。\"], \"cannot_conclude\": [\"不能从 ORA 结果推断任何通路的激活或抑制方向。\", \"不能把该富集结果当作对上游差异表达分析的独立验证。\", \"不能仅凭 1 个显著基因集得出广泛的生物学结论。\"], \"learning_questions\": [\"ORA 与 GSEA 在方向性推断上有何区别？\", \"为什么背景基因集（universe）的选择会影响 ORA 的 p 值？\", \"校正后 p 值与原始 p 值在多重检验中分别代表什么？\"], \"evidence_used\": [], \"claims\": [{\"id\": \"c1\", \"text\": \"共检验 1104 个基因集。\", \"fact\": \"n_terms\", \"value\": 1104, \"evidence\": []}, {\"id\": \"c2\", \"text\": \"padj < 0.05 下显著基因集数为 1。\", \"fact\": \"n_significant\", \"value\": 1, \"evidence\": []}, {\"id\": \"c3\", \"text\": \"富集方法为 ORA。\", \"fact\": \"enrichment_method\", \"value\": \"ORA\", \"evidence\": []}]}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 2439,
+      "completion_tokens": 553,
+      "total_tokens": 2992,
+      "prompt_tokens_details": {
+        "cached_tokens": 2304
+      },
+      "prompt_cache_hit_tokens": 2304,
+      "prompt_cache_miss_tokens": 135
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.4
+  },
+  "parsed": {
+    "data_facts": [
+      "本次分析共检验 1104 个基因集（term）。",
+      "在 padj < 0.05 阈值下，只有 1 个基因集达到显著。",
+      "富集方法为 ORA（过表达分析）。"
+    ],
+    "statistical_meaning": [
+      "ORA 检验输入基因列表与基因集的重叠是否超出随机预期。",
+      "p 值基于校正后的列（adjusted_column），阈值设为 0.05。",
+      "显著基因集的 Count 范围为 16 到 16。"
+    ],
+    "biological_interpretation": [
+      "唯一显著的通路为 Interleukin-4 and Interleukin-13 signaling（R-HSA-6785807），含 16 个基因。",
+      "其余通路（如 G alpha (q) signalling events、Ethanol oxidation）校正后 p 值均大于 0.05，仅为提示性假设。",
+      "这些结果来自 airway_lfc1 派生数据，属于假设生成而非独立验证。"
+    ],
+    "uncertainty": [
+      "列名与 clusterProfiler/DOSE 的 as.data.frame() 输出相似，但来源包仅为推测。",
+      "ORA 只检验重叠是否超出随机预期，本身没有激活/抑制方向，不能据此认定通路激活。",
+      "ORA 结果依赖背景基因集（universe）的选择；未指定合适背景时 p 值可能被高估或低估。"
+    ],
+    "cannot_conclude": [
+      "不能从 ORA 结果推断任何通路的激活或抑制方向。",
+      "不能把该富集结果当作对上游差异表达分析的独立验证。",
+      "不能仅凭 1 个显著基因集得出广泛的生物学结论。"
+    ],
+    "learning_questions": [
+      "ORA 与 GSEA 在方向性推断上有何区别？",
+      "为什么背景基因集（universe）的选择会影响 ORA 的 p 值？",
+      "校正后 p 值与原始 p 值在多重检验中分别代表什么？"
+    ],
+    "evidence_used": [],
+    "claims": [
+      {
+        "id": "c1",
+        "text": "共检验 1104 个基因集。",
+        "fact": "n_terms",
+        "value": 1104,
+        "evidence": []
+      },
+      {
+        "id": "c2",
+        "text": "padj < 0.05 下显著基因集数为 1。",
+        "fact": "n_significant",
+        "value": 1,
+        "evidence": []
+      },
+      {
+        "id": "c3",
+        "text": "富集方法为 ORA。",
+        "fact": "enrichment_method",
+        "value": "ORA",
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "c1",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_terms = 1104"
+      },
+      {
+        "claim": "c2",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_significant = 1"
+      },
+      {
+        "claim": "c3",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      }
+    ],
+    "n_claims": 3,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_terms",
+      "expected": 1104,
+      "value": 1104,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_significant",
+      "expected": 1,
+      "value": 1,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "enrichment_method",
+      "expected": "ORA",
+      "value": "ORA",
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 7351,
+  "validation_rechecked_utc": "2026-10-03 20:09:20 UTC"
+}

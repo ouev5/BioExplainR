@@ -1,0 +1,18 @@
+{
+  "command": [
+    "Rscript",
+    "--vanilla",
+    "research/paper_cn/run_cases.R",
+    "research/results/paper_cn_cases_v1"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-08T08:59:58.534912+00:00",
+  "finished_utc": "2026-10-08T09:00:15.273461+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/paper-cn-cases.txt",
+    "bytes": 4944,
+    "sha256": "d737e7b136a06b553dd6e91fdd7b5bb328d218e47d8e24089902abdcc84702bd"
+  }
+}

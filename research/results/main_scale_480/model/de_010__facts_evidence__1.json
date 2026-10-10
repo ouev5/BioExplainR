@@ -1,0 +1,160 @@
+{
+  "case": "de_010",
+  "family": "differential_expression",
+  "method": "facts_evidence",
+  "replicate": 1,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:15:45 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"共检测50个特征（基因），其中34个在padj<0.05且|log2FC|>1下显著。\",\n    \"显著基因中上调17个、下调17个，方向由log2FC正负定义。\",\n    \"最小padj为0.0011，log2FC范围为[-1.55, 2.1]，中位数0.2。\"\n  ],\n  \"statistical_meaning\": [\n    \"padj为多重检验校正后的p值，阈值0.05控制错误发现率。\",\n    \"log2FC阈值1表示倍数变化≥2或≤0.5，方向取决于比较参考组。\",\n    \"34个显著基因中上调和下调数量相等，提示双向调控。\"\n  ],\n  \"biological_interpretation\": [\n    \"显著基因可能参与处理组与对照组的转录差异，但需物种和实验设计确认。\",\n    \"文献检索命中CRISPLD2与糖皮质激素反应相关（证据EuropePMC:MED:24926665），但未评估其与当前数据的直接关联。\",\n    \"上调和下调基因数量相同，可能反映平衡的转录响应，但需通路分析验证。\"\n  ],\n  \"uncertainty\": [\n    \"未提供比较方向（contrast），log2FC正负含义未知。\",\n    \"未提供物种，生物学解释受限。\",\n    \"无法从列名确定产生该表的软件包。\"\n  ],\n  \"cannot_conclude\": [\n    \"不能推断基因功能或临床意义。\",\n    \"不能确定差异表达是否由特定处理引起。\",\n    \"不能将文献命中直接关联到当前基因列表。\"\n  ],\n  \"learning_questions\": [\n    \"padj与p值有何区别？\",\n    \"log2FC的正负如何对应实验组与对照组？\",\n    \"为什么需要设定log2FC阈值？\"\n  ],\n  \"evidence_used\": [\n    \"EuropePMC:MED:24926665\"\n  ],\n  \"claims\": [\n    {\n      \"id\": \"claim_n_features\",\n      \"text\": \"检测特征总数为50。\",\n      \"fact\": \"n_features\",\n      \"value\": 50,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_n_significant\",\n      \"text\": \"显著特征数为34。\",\n      \"fact\": \"n_significant\",\n      \"value\": 34,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_n_up\",\n      \"text\": \"上调特征数为17。\",\n      \"fact\": \"n_up\",\n      \"value\": 17,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_n_down\",\n      \"text\": \"下调特征数为17。\",\n      \"fact\": \"n_down\",\n      \"value\": 17,\n      \"evidence\": []\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 1626,
+      "completion_tokens": 618,
+      "total_tokens": 2244,
+      "prompt_tokens_details": {
+        "cached_tokens": 1408
+      },
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 218
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.79
+  },
+  "parsed": {
+    "data_facts": [
+      "共检测50个特征（基因），其中34个在padj<0.05且|log2FC|>1下显著。",
+      "显著基因中上调17个、下调17个，方向由log2FC正负定义。",
+      "最小padj为0.0011，log2FC范围为[-1.55, 2.1]，中位数0.2。"
+    ],
+    "statistical_meaning": [
+      "padj为多重检验校正后的p值，阈值0.05控制错误发现率。",
+      "log2FC阈值1表示倍数变化≥2或≤0.5，方向取决于比较参考组。",
+      "34个显著基因中上调和下调数量相等，提示双向调控。"
+    ],
+    "biological_interpretation": [
+      "显著基因可能参与处理组与对照组的转录差异，但需物种和实验设计确认。",
+      "文献检索命中CRISPLD2与糖皮质激素反应相关（证据EuropePMC:MED:24926665），但未评估其与当前数据的直接关联。",
+      "上调和下调基因数量相同，可能反映平衡的转录响应，但需通路分析验证。"
+    ],
+    "uncertainty": [
+      "未提供比较方向（contrast），log2FC正负含义未知。",
+      "未提供物种，生物学解释受限。",
+      "无法从列名确定产生该表的软件包。"
+    ],
+    "cannot_conclude": [
+      "不能推断基因功能或临床意义。",
+      "不能确定差异表达是否由特定处理引起。",
+      "不能将文献命中直接关联到当前基因列表。"
+    ],
+    "learning_questions": [
+      "padj与p值有何区别？",
+      "log2FC的正负如何对应实验组与对照组？",
+      "为什么需要设定log2FC阈值？"
+    ],
+    "evidence_used": [
+      "EuropePMC:MED:24926665"
+    ],
+    "claims": [
+      {
+        "id": "claim_n_features",
+        "text": "检测特征总数为50。",
+        "fact": "n_features",
+        "value": 50,
+        "evidence": []
+      },
+      {
+        "id": "claim_n_significant",
+        "text": "显著特征数为34。",
+        "fact": "n_significant",
+        "value": 34,
+        "evidence": []
+      },
+      {
+        "id": "claim_n_up",
+        "text": "上调特征数为17。",
+        "fact": "n_up",
+        "value": 17,
+        "evidence": []
+      },
+      {
+        "id": "claim_n_down",
+        "text": "下调特征数为17。",
+        "fact": "n_down",
+        "value": 17,
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "(evidence_used)",
+        "check": "evidence_ids",
+        "status": "pass",
+        "detail": "all cited evidence ids were supplied"
+      },
+      {
+        "claim": "claim_n_features",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_features = 50"
+      },
+      {
+        "claim": "claim_n_significant",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_significant = 34"
+      },
+      {
+        "claim": "claim_n_up",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_up = 17"
+      },
+      {
+        "claim": "claim_n_down",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_down = 17"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_features",
+      "expected": 50,
+      "value": 50,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_significant",
+      "expected": 34,
+      "value": 34,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_up",
+      "expected": 17,
+      "value": 17,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_down",
+      "expected": 17,
+      "value": 17,
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 5483
+}

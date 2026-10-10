@@ -1,0 +1,158 @@
+{
+  "analysis_type": "differential_expression",
+  "source_class": "DESeqResults",
+  "source_package": "DESeq2",
+  "source_status": "verified_class",
+  "facts": {
+    "n_features": 22369,
+    "lfc_column": "log2FoldChange",
+    "p_value_column": "pvalue",
+    "adjusted_p_column": "padj",
+    "p_value_basis": "adjusted_column",
+    "n_na_lfc": 0,
+    "n_na_pvalue": 0,
+    "n_raw_p_below": 5690,
+    "raw_p_threshold": 0.05,
+    "n_tested": 17165,
+    "n_na_padj": 5204,
+    "padj_threshold": 0.05,
+    "lfc_threshold": 1,
+    "n_significant_any_lfc": 4030,
+    "n_up": 519,
+    "n_down": 480,
+    "n_significant": 999,
+    "min_padj": 7.056e-132,
+    "lfc_range": [-5.3253, 9.506],
+    "lfc_median": -0.0225,
+    "mean_expression_column": "baseMean",
+    "deseq2_lfc_description": "log2 fold change (MLE): dex trt vs untrt",
+    "deseq2_alpha": 0.05
+  },
+  "top_features": [
+    {
+      "feature": "ENSG00000152583",
+      "log2fc": 4.575,
+      "pvalue": 4.111e-136,
+      "padj": 7.056e-132,
+      "baseMean": 997.4,
+      "direction": "up",
+      "passes_thresholds": true
+    },
+    {
+      "feature": "ENSG00000165995",
+      "log2fc": 3.291,
+      "pvalue": 4.463e-135,
+      "padj": 3.831e-131,
+      "baseMean": 495.1,
+      "direction": "up",
+      "passes_thresholds": true
+    },
+    {
+      "feature": "ENSG00000120129",
+      "log2fc": 2.948,
+      "pvalue": 3.034e-129,
+      "padj": 1.736e-125,
+      "baseMean": 3409,
+      "direction": "up",
+      "passes_thresholds": true
+    },
+    {
+      "feature": "ENSG00000101347",
+      "log2fc": 3.767,
+      "pvalue": 7.683e-129,
+      "padj": 3.297e-125,
+      "baseMean": 12700,
+      "direction": "up",
+      "passes_thresholds": true
+    },
+    {
+      "feature": "ENSG00000189221",
+      "log2fc": 3.354,
+      "pvalue": 5.213e-123,
+      "padj": 1.79e-119,
+      "baseMean": 2342,
+      "direction": "up",
+      "passes_thresholds": true
+    },
+    {
+      "feature": "ENSG00000211445",
+      "log2fc": 3.73,
+      "pvalue": 2.585e-111,
+      "padj": 7.395e-108,
+      "baseMean": 12290,
+      "direction": "up",
+      "passes_thresholds": true
+    },
+    {
+      "feature": "ENSG00000157214",
+      "log2fc": 1.977,
+      "pvalue": 6.091e-106,
+      "padj": 1.494e-102,
+      "baseMean": 3009,
+      "direction": "up",
+      "passes_thresholds": true
+    },
+    {
+      "feature": "ENSG00000162614",
+      "log2fc": 2.036,
+      "pvalue": 1.565e-102,
+      "padj": 3.359e-99,
+      "baseMean": 5393,
+      "direction": "up",
+      "passes_thresholds": true
+    },
+    {
+      "feature": "ENSG00000125148",
+      "log2fc": 2.211,
+      "pvalue": 1.85e-96,
+      "padj": 3.528e-93,
+      "baseMean": 3656,
+      "direction": "up",
+      "passes_thresholds": true
+    },
+    {
+      "feature": "ENSG00000154734",
+      "log2fc": 2.346,
+      "pvalue": 2.267e-90,
+      "padj": 3.891e-87,
+      "baseMean": 30320,
+      "direction": "up",
+      "passes_thresholds": true
+    }
+  ],
+  "plot_mapping": null,
+  "provenance": {
+    "adapter": "deseq_results",
+    "created": "2026-10-05 12:42:52 CST",
+    "bioexplainr_version": "0.3.1",
+    "thresholds": {
+      "padj": 0.05,
+      "lfc": 1,
+      "p": 0.05
+    },
+    "p_adjust_method": null,
+    "n_top": 10,
+    "input_summary": {
+      "name": null,
+      "class": "DESeqResults",
+      "type": "S4",
+      "is_s4": true,
+      "size": "2.6 Mb",
+      "dim": [22369, 6]
+    },
+    "columns_used": {
+      "lfc": "log2FoldChange",
+      "p_raw": "pvalue",
+      "p_adj": "padj",
+      "mean": "baseMean",
+      "stat": "stat"
+    }
+  },
+  "uncertainty": ["log2FC appears to be shrunken (shrinkage); shrunken effect sizes are more conservative and suit ranking and visualisation.", "In DESeq2 an NA padj is usually caused by independent filtering, all-zero counts or extreme outliers; these genes do not enter the FDR counts."],
+  "metadata": {
+    "species": "Homo sapiens",
+    "contrast": "trt vs untrt"
+  },
+  "adapter": "deseq_results",
+  "language": "en"
+}

@@ -1,0 +1,149 @@
+{
+  "case": "airway_pca",
+  "method": "direct_bounded",
+  "replicate": 2,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-03 19:34:45 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"观测数为8\",\n    \"变量数为500\",\n    \"第一主成分的标准差为14.1515118432\",\n    \"第二主成分的标准差为9.8934581924\"\n  ],\n  \"statistical_meaning\": [\n    \"方差解释比例由主成分标准差平方除以所有主成分标准差平方和计算\",\n    \"第一主成分方差解释比例约为0.5007\",\n    \"第二主成分方差解释比例约为0.2448\"\n  ],\n  \"biological_interpretation\": [\n    \"前两个主成分解释了约74.55%的总方差，表明样本间存在较强的结构\",\n    \"第一主成分可能反映了主要的生物学或技术变异来源\"\n  ],\n  \"uncertainty\": [\n    \"未提供样本分组或协变量信息，无法判断主成分与生物学因素的关系\",\n    \"标准差极小值（1.24e-14）可能表示数值误差或零方差成分\"\n  ],\n  \"cannot_conclude\": [\n    \"无法确定主成分是否对应特定的生物学通路或条件\",\n    \"无法进行差异表达分析，因为未提供基因水平统计量\"\n  ],\n  \"learning_questions\": [\n    \"如何解释主成分分析中的方差解释比例？\",\n    \"在PCA中，如何选择保留主成分的数量？\",\n    \"标准差接近零的主成分意味着什么？\"\n  ],\n  \"evidence_used\": [],\n  \"claims\": [\n    {\n      \"id\": \"claim_1\",\n      \"text\": \"观测数为8\",\n      \"fact\": \"n_observations\",\n      \"value\": 8,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_2\",\n      \"text\": \"变量数为500\",\n      \"fact\": \"n_variables\",\n      \"value\": 500,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_3\",\n      \"text\": \"第一主成分方差解释比例\",\n      \"fact\": \"variance_explained.1\",\n      \"value\": 0.5007,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_4\",\n      \"text\": \"第二主成分方差解释比例\",\n      \"fact\": \"variance_explained.2\",\n      \"value\": 0.2448,\n      \"evidence\": []\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 330,
+      "completion_tokens": 500,
+      "total_tokens": 830,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 202
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.23
+  },
+  "parsed": {
+    "data_facts": [
+      "观测数为8",
+      "变量数为500",
+      "第一主成分的标准差为14.1515118432",
+      "第二主成分的标准差为9.8934581924"
+    ],
+    "statistical_meaning": [
+      "方差解释比例由主成分标准差平方除以所有主成分标准差平方和计算",
+      "第一主成分方差解释比例约为0.5007",
+      "第二主成分方差解释比例约为0.2448"
+    ],
+    "biological_interpretation": [
+      "前两个主成分解释了约74.55%的总方差，表明样本间存在较强的结构",
+      "第一主成分可能反映了主要的生物学或技术变异来源"
+    ],
+    "uncertainty": [
+      "未提供样本分组或协变量信息，无法判断主成分与生物学因素的关系",
+      "标准差极小值（1.24e-14）可能表示数值误差或零方差成分"
+    ],
+    "cannot_conclude": [
+      "无法确定主成分是否对应特定的生物学通路或条件",
+      "无法进行差异表达分析，因为未提供基因水平统计量"
+    ],
+    "learning_questions": [
+      "如何解释主成分分析中的方差解释比例？",
+      "在PCA中，如何选择保留主成分的数量？",
+      "标准差接近零的主成分意味着什么？"
+    ],
+    "evidence_used": [],
+    "claims": [
+      {
+        "id": "claim_1",
+        "text": "观测数为8",
+        "fact": "n_observations",
+        "value": 8,
+        "evidence": []
+      },
+      {
+        "id": "claim_2",
+        "text": "变量数为500",
+        "fact": "n_variables",
+        "value": 500,
+        "evidence": []
+      },
+      {
+        "id": "claim_3",
+        "text": "第一主成分方差解释比例",
+        "fact": "variance_explained.1",
+        "value": 0.5007,
+        "evidence": []
+      },
+      {
+        "id": "claim_4",
+        "text": "第二主成分方差解释比例",
+        "fact": "variance_explained.2",
+        "value": 0.2448,
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "fail",
+    "findings": [
+      {
+        "claim": "claim_1",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_observations = 8"
+      },
+      {
+        "claim": "claim_2",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_variables = 500"
+      },
+      {
+        "claim": "claim_3",
+        "check": "value",
+        "status": "fail",
+        "detail": "claimed 0.5007 but variance_explained.1 = 0.4784"
+      },
+      {
+        "claim": "claim_4",
+        "check": "value",
+        "status": "fail",
+        "detail": "claimed 0.2448 but variance_explained.2 = 0.2338"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_observations",
+      "expected": 8,
+      "value": 8,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_variables",
+      "expected": 500,
+      "value": 500,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "variance_explained.1",
+      "expected": 0.47842864474,
+      "value": 0.5007,
+      "answered": true,
+      "correct": false
+    },
+    {
+      "fact": "variance_explained.2",
+      "expected": 0.23383404452,
+      "value": 0.2448,
+      "answered": true,
+      "correct": false
+    }
+  ],
+  "prompt_chars": 1051
+}

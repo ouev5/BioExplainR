@@ -1,0 +1,198 @@
+{
+  "case": "enrichment_013",
+  "family": "enrichment",
+  "method": "direct_bounded",
+  "replicate": 1,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:12:49 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"输入数据包含10个通路条目，但rows_complete为false，数据不完整。\",\n    \"显著性阈值padj为0.050000000000000003。\",\n    \"分析类型提示为enrichment_ora。\"\n  ],\n  \"statistical_meaning\": [\n    \"n_terms应表示通路总数，但数据不完整无法确定。\",\n    \"n_significant应表示显著通路数，但数据不完整无法确定。\",\n    \"enrichment_method应表示富集方法，但数据不完整无法确定。\"\n  ],\n  \"biological_interpretation\": [\n    \"无法基于不完整数据解释生物学意义。\",\n    \"需要完整数据才能进行通路富集分析。\",\n    \"当前无法得出任何生物学结论。\"\n  ],\n  \"uncertainty\": [\n    \"数据不完整，无法计算请求的统计量。\",\n    \"提供的行可能不是全部结果。\",\n    \"无法确定缺失数据的影响。\"\n  ],\n  \"cannot_conclude\": [\n    \"无法确定n_terms。\",\n    \"无法确定n_significant。\",\n    \"无法确定enrichment_method。\",\n    \"无法确定significance_threshold。\"\n  ],\n  \"learning_questions\": [\n    \"如何确保富集分析数据的完整性？\",\n    \"在数据不完整时，应如何报告结果？\",\n    \"富集分析中常用的显著性阈值是什么？\"\n  ],\n  \"evidence_used\": [\n    \"padj\",\n    \"lfc\",\n    \"p\",\n    \"dim\",\n    \"provided_rows\",\n    \"rows_complete\"\n  ],\n  \"claims\": [\n    {\n      \"id\": \"claim1\",\n      \"text\": \"n_terms无法确定，因为数据不完整。\",\n      \"fact\": \"n_terms\",\n      \"value\": null,\n      \"evidence\": [\n        \"rows_complete\"\n      ]\n    },\n    {\n      \"id\": \"claim2\",\n      \"text\": \"n_significant无法确定，因为数据不完整。\",\n      \"fact\": \"n_significant\",\n      \"value\": null,\n      \"evidence\": [\n        \"rows_complete\"\n      ]\n    },\n    {\n      \"id\": \"claim3\",\n      \"text\": \"enrichment_method无法确定，因为数据不完整。\",\n      \"fact\": \"enrichment_method\",\n      \"value\": null,\n      \"evidence\": [\n        \"rows_complete\"\n      ]\n    },\n    {\n      \"id\": \"claim4\",\n      \"text\": \"significance_threshold无法确定，因为数据不完整。\",\n      \"fact\": \"significance_threshold\",\n      \"value\": null,\n      \"evidence\": [\n        \"rows_complete\"\n      ]\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 866,
+      "completion_tokens": 587,
+      "total_tokens": 1453,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 226
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.8100000000000001
+  },
+  "parsed": {
+    "data_facts": [
+      "输入数据包含10个通路条目，但rows_complete为false，数据不完整。",
+      "显著性阈值padj为0.050000000000000003。",
+      "分析类型提示为enrichment_ora。"
+    ],
+    "statistical_meaning": [
+      "n_terms应表示通路总数，但数据不完整无法确定。",
+      "n_significant应表示显著通路数，但数据不完整无法确定。",
+      "enrichment_method应表示富集方法，但数据不完整无法确定。"
+    ],
+    "biological_interpretation": [
+      "无法基于不完整数据解释生物学意义。",
+      "需要完整数据才能进行通路富集分析。",
+      "当前无法得出任何生物学结论。"
+    ],
+    "uncertainty": [
+      "数据不完整，无法计算请求的统计量。",
+      "提供的行可能不是全部结果。",
+      "无法确定缺失数据的影响。"
+    ],
+    "cannot_conclude": [
+      "无法确定n_terms。",
+      "无法确定n_significant。",
+      "无法确定enrichment_method。",
+      "无法确定significance_threshold。"
+    ],
+    "learning_questions": [
+      "如何确保富集分析数据的完整性？",
+      "在数据不完整时，应如何报告结果？",
+      "富集分析中常用的显著性阈值是什么？"
+    ],
+    "evidence_used": [
+      "padj",
+      "lfc",
+      "p",
+      "dim",
+      "provided_rows",
+      "rows_complete"
+    ],
+    "claims": [
+      {
+        "id": "claim1",
+        "text": "n_terms无法确定，因为数据不完整。",
+        "fact": "n_terms",
+        "value": null,
+        "evidence": [
+          "rows_complete"
+        ]
+      },
+      {
+        "id": "claim2",
+        "text": "n_significant无法确定，因为数据不完整。",
+        "fact": "n_significant",
+        "value": null,
+        "evidence": [
+          "rows_complete"
+        ]
+      },
+      {
+        "id": "claim3",
+        "text": "enrichment_method无法确定，因为数据不完整。",
+        "fact": "enrichment_method",
+        "value": null,
+        "evidence": [
+          "rows_complete"
+        ]
+      },
+      {
+        "id": "claim4",
+        "text": "significance_threshold无法确定，因为数据不完整。",
+        "fact": "significance_threshold",
+        "value": null,
+        "evidence": [
+          "rows_complete"
+        ]
+      }
+    ]
+  },
+  "validation": {
+    "status": "fail",
+    "findings": [
+      {
+        "claim": "(evidence_used)",
+        "check": "evidence_ids",
+        "status": "fail",
+        "detail": "unknown evidence id(s): padj, lfc, p, dim, provided_rows, rows_complete (no evidence list was supplied)"
+      },
+      {
+        "claim": "claim1",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim1",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: rows_complete"
+      },
+      {
+        "claim": "claim2",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim2",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: rows_complete"
+      },
+      {
+        "claim": "claim3",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim3",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: rows_complete"
+      },
+      {
+        "claim": "claim4",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim4",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: rows_complete"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_terms",
+      "expected": 25,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "n_significant",
+      "expected": 17,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "enrichment_method",
+      "expected": "ORA",
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "significance_threshold",
+      "expected": 0.050000000000000003,
+      "value": null,
+      "answered": false,
+      "correct": false
+    }
+  ],
+  "prompt_chars": 2718
+}

@@ -1,0 +1,153 @@
+{
+  "case": "single_cell_017",
+  "family": "single_cell",
+  "method": "facts_only",
+  "replicate": 2,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:20:28 UTC",
+  "response": {
+    "text": "{\"data_facts\": [\"该数据集包含 64 个细胞。\", \"共检测到 42 个特征（基因）。\", \"样本列 sample_id 下共有 3 个样本。\", \"可用的 assay 为 counts。\"], \"statistical_meaning\": [\"细胞数、特征数与样本数描述的是数据规模，而非统计检验结果。\", \"counts assay 为计数矩阵，适合作为表达定量的起点。\", \"样本数 3 是独立重复单位的数量，细胞数 64 不是重复数。\"], \"biological_interpretation\": [\"数据规模较小，适合做探索性细胞类型与表达模式观察。\", \"3 个样本可初步比较样本间差异，但检验效能有限。\", \"42 个特征提示这是靶向或小 panel 数据，而非全转录组。\"], \"uncertainty\": [\"细胞数不等于生物学重复数；样本/供体才是独立重复单位。\", \"未提供物种，生物学解释需用户确认物种背景。\", \"未找到常见 QC 指标列，无法评估质控。\"], \"cannot_conclude\": [\"不能仅凭细胞数推断统计功效或差异表达显著性。\", \"不能从样本数 3 得出组间差异的稳健结论。\", \"不能在没有物种与注释信息时确定细胞类型。\"], \"learning_questions\": [\"为什么单细胞分析中细胞不能当作独立重复？\", \"counts assay 与归一化后的 assay 有何区别？\", \"样本数很少时，差异分析应如何设计？\"], \"evidence_used\": [], \"claims\": [{\"id\": \"c1\", \"text\": \"细胞数为 64。\", \"fact\": \"n_cells\", \"value\": 64, \"evidence\": []}, {\"id\": \"c2\", \"text\": \"特征数为 42。\", \"fact\": \"n_features\", \"value\": 42, \"evidence\": []}, {\"id\": \"c3\", \"text\": \"样本数为 3。\", \"fact\": \"n_samples\", \"value\": 3, \"evidence\": []}, {\"id\": \"c4\", \"text\": \"可用 assay 为 counts。\", \"fact\": \"assays\", \"value\": \"counts\", \"evidence\": []}]}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 1096,
+      "completion_tokens": 481,
+      "total_tokens": 1577,
+      "prompt_tokens_details": {
+        "cached_tokens": 896
+      },
+      "prompt_cache_hit_tokens": 896,
+      "prompt_cache_miss_tokens": 200
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.6499999999999999
+  },
+  "parsed": {
+    "data_facts": [
+      "该数据集包含 64 个细胞。",
+      "共检测到 42 个特征（基因）。",
+      "样本列 sample_id 下共有 3 个样本。",
+      "可用的 assay 为 counts。"
+    ],
+    "statistical_meaning": [
+      "细胞数、特征数与样本数描述的是数据规模，而非统计检验结果。",
+      "counts assay 为计数矩阵，适合作为表达定量的起点。",
+      "样本数 3 是独立重复单位的数量，细胞数 64 不是重复数。"
+    ],
+    "biological_interpretation": [
+      "数据规模较小，适合做探索性细胞类型与表达模式观察。",
+      "3 个样本可初步比较样本间差异，但检验效能有限。",
+      "42 个特征提示这是靶向或小 panel 数据，而非全转录组。"
+    ],
+    "uncertainty": [
+      "细胞数不等于生物学重复数；样本/供体才是独立重复单位。",
+      "未提供物种，生物学解释需用户确认物种背景。",
+      "未找到常见 QC 指标列，无法评估质控。"
+    ],
+    "cannot_conclude": [
+      "不能仅凭细胞数推断统计功效或差异表达显著性。",
+      "不能从样本数 3 得出组间差异的稳健结论。",
+      "不能在没有物种与注释信息时确定细胞类型。"
+    ],
+    "learning_questions": [
+      "为什么单细胞分析中细胞不能当作独立重复？",
+      "counts assay 与归一化后的 assay 有何区别？",
+      "样本数很少时，差异分析应如何设计？"
+    ],
+    "evidence_used": [],
+    "claims": [
+      {
+        "id": "c1",
+        "text": "细胞数为 64。",
+        "fact": "n_cells",
+        "value": 64,
+        "evidence": []
+      },
+      {
+        "id": "c2",
+        "text": "特征数为 42。",
+        "fact": "n_features",
+        "value": 42,
+        "evidence": []
+      },
+      {
+        "id": "c3",
+        "text": "样本数为 3。",
+        "fact": "n_samples",
+        "value": 3,
+        "evidence": []
+      },
+      {
+        "id": "c4",
+        "text": "可用 assay 为 counts。",
+        "fact": "assays",
+        "value": "counts",
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "c1",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_cells = 64"
+      },
+      {
+        "claim": "c2",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_features = 42"
+      },
+      {
+        "claim": "c3",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_samples = 3"
+      },
+      {
+        "claim": "c4",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_cells",
+      "expected": 64,
+      "value": 64,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_features",
+      "expected": 42,
+      "value": 42,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_samples",
+      "expected": 3,
+      "value": 3,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "assays",
+      "expected": "counts",
+      "value": "counts",
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 3954
+}

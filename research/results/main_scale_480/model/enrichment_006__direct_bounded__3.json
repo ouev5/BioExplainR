@@ -1,0 +1,198 @@
+{
+  "case": "enrichment_006",
+  "family": "enrichment",
+  "method": "direct_bounded",
+  "replicate": 3,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:23:26 UTC",
+  "response": {
+    "text": "{\"data_facts\":[\"R输出包含18行5列，但仅提供10行。\",\"提供的行中p.adjust值从0.01到0.070000000000000007。\",\"阈值设定为padj=0.050000000000000003。\"],\"statistical_meaning\":[\"富集分析通常使用ORA方法，但输出未明确说明。\",\"显著性阈值用于判断哪些条目显著。\",\"由于行不完整，无法可靠计算显著条目数。\"],\"biological_interpretation\":[\"无法从当前数据得出生物学解释。\",\"需要完整的富集结果才能评估功能富集。\",\"缺失行可能影响结论。\"],\"uncertainty\":[\"数据不完整，rows_complete为false。\",\"无法确定总条目数和显著条目数。\",\"富集方法未在输出中指定。\"],\"cannot_conclude\":[\"无法计算n_terms，因为总行数未知。\",\"无法计算n_significant，因为缺失行可能包含显著条目。\",\"无法确定enrichment_method，输出未提供。\",\"无法确定significance_threshold，尽管元数据有padj阈值，但请求路径可能指其他。\"],\"learning_questions\":[\"如何从R富集输出中提取总条目数？\",\"如何根据p.adjust阈值筛选显著条目？\",\"ORA和GSEA方法在输出上有何区别？\"],\"evidence_used\":[\"dim\",\"provided_rows\",\"rows_complete\",\"padj\"],\"claims\":[{\"id\":\"claim_1\",\"text\":\"总条目数无法确定。\",\"fact\":\"n_terms\",\"value\":null,\"evidence\":[\"dim\",\"rows_complete\"]},{\"id\":\"claim_2\",\"text\":\"显著条目数无法确定。\",\"fact\":\"n_significant\",\"value\":null,\"evidence\":[\"provided_rows\",\"rows_complete\"]},{\"id\":\"claim_3\",\"text\":\"富集方法未在输出中指定。\",\"fact\":\"enrichment_method\",\"value\":null,\"evidence\":[\"provided_rows\"]},{\"id\":\"claim_4\",\"text\":\"显著性阈值无法从输出中确定。\",\"fact\":\"significance_threshold\",\"value\":null,\"evidence\":[\"provided_rows\"]}]}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 866,
+      "completion_tokens": 447,
+      "total_tokens": 1313,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 226
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.73
+  },
+  "parsed": {
+    "data_facts": [
+      "R输出包含18行5列，但仅提供10行。",
+      "提供的行中p.adjust值从0.01到0.070000000000000007。",
+      "阈值设定为padj=0.050000000000000003。"
+    ],
+    "statistical_meaning": [
+      "富集分析通常使用ORA方法，但输出未明确说明。",
+      "显著性阈值用于判断哪些条目显著。",
+      "由于行不完整，无法可靠计算显著条目数。"
+    ],
+    "biological_interpretation": [
+      "无法从当前数据得出生物学解释。",
+      "需要完整的富集结果才能评估功能富集。",
+      "缺失行可能影响结论。"
+    ],
+    "uncertainty": [
+      "数据不完整，rows_complete为false。",
+      "无法确定总条目数和显著条目数。",
+      "富集方法未在输出中指定。"
+    ],
+    "cannot_conclude": [
+      "无法计算n_terms，因为总行数未知。",
+      "无法计算n_significant，因为缺失行可能包含显著条目。",
+      "无法确定enrichment_method，输出未提供。",
+      "无法确定significance_threshold，尽管元数据有padj阈值，但请求路径可能指其他。"
+    ],
+    "learning_questions": [
+      "如何从R富集输出中提取总条目数？",
+      "如何根据p.adjust阈值筛选显著条目？",
+      "ORA和GSEA方法在输出上有何区别？"
+    ],
+    "evidence_used": [
+      "dim",
+      "provided_rows",
+      "rows_complete",
+      "padj"
+    ],
+    "claims": [
+      {
+        "id": "claim_1",
+        "text": "总条目数无法确定。",
+        "fact": "n_terms",
+        "value": null,
+        "evidence": [
+          "dim",
+          "rows_complete"
+        ]
+      },
+      {
+        "id": "claim_2",
+        "text": "显著条目数无法确定。",
+        "fact": "n_significant",
+        "value": null,
+        "evidence": [
+          "provided_rows",
+          "rows_complete"
+        ]
+      },
+      {
+        "id": "claim_3",
+        "text": "富集方法未在输出中指定。",
+        "fact": "enrichment_method",
+        "value": null,
+        "evidence": [
+          "provided_rows"
+        ]
+      },
+      {
+        "id": "claim_4",
+        "text": "显著性阈值无法从输出中确定。",
+        "fact": "significance_threshold",
+        "value": null,
+        "evidence": [
+          "provided_rows"
+        ]
+      }
+    ]
+  },
+  "validation": {
+    "status": "fail",
+    "findings": [
+      {
+        "claim": "(evidence_used)",
+        "check": "evidence_ids",
+        "status": "fail",
+        "detail": "unknown evidence id(s): dim, provided_rows, rows_complete, padj (no evidence list was supplied)"
+      },
+      {
+        "claim": "claim_1",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_1",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: dim, rows_complete"
+      },
+      {
+        "claim": "claim_2",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_2",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: provided_rows, rows_complete"
+      },
+      {
+        "claim": "claim_3",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_3",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: provided_rows"
+      },
+      {
+        "claim": "claim_4",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_4",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: provided_rows"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_terms",
+      "expected": 18,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "n_significant",
+      "expected": 11,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "enrichment_method",
+      "expected": "ORA",
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "significance_threshold",
+      "expected": 0.050000000000000003,
+      "value": null,
+      "answered": false,
+      "correct": false
+    }
+  ],
+  "prompt_chars": 2718
+}

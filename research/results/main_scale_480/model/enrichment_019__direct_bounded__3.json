@@ -1,0 +1,193 @@
+{
+  "case": "enrichment_019",
+  "family": "enrichment",
+  "method": "direct_bounded",
+  "replicate": 3,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:23:35 UTC",
+  "response": {
+    "text": "{\"data_facts\":[\"输入仅提供10行，但dim显示共31行，数据不完整。\",\"提供的p.adjust值范围从0.01到0.080000000000000002。\"],\"statistical_meaning\":[\"富集分析通常基于p.adjust与阈值比较判断显著性。\",\"由于行不完整，无法可靠计算显著条目数。\"],\"biological_interpretation\":[\"无法基于不完整数据解释生物学功能富集。\",\"需完整结果才能评估通路或功能偏好。\"],\"uncertainty\":[\"缺失21行数据，任何汇总统计都可能偏差。\",\"无法确认未提供行的p.adjust分布。\"],\"cannot_conclude\":[\"不能确定总条目数n_terms。\",\"不能确定显著条目数n_significant。\",\"不能确定富集方法enrichment_method。\",\"不能确定显著性阈值significance_threshold。\"],\"learning_questions\":[\"如何从完整富集结果中提取总条目数和显著条目数？\",\"如何根据分析类型确定富集方法和显著性阈值？\"],\"evidence_used\":[\"dim\",\"provided_rows\",\"rows_complete\"],\"claims\":[{\"id\":\"claim_1\",\"text\":\"总条目数无法从提供数据确定。\",\"fact\":\"n_terms\",\"value\":null,\"evidence\":[\"dim\",\"rows_complete\"]},{\"id\":\"claim_2\",\"text\":\"显著条目数无法从提供数据确定。\",\"fact\":\"n_significant\",\"value\":null,\"evidence\":[\"provided_rows\",\"rows_complete\"]},{\"id\":\"claim_3\",\"text\":\"富集方法无法从提供数据确定。\",\"fact\":\"enrichment_method\",\"value\":null,\"evidence\":[\"analysis_type_hint\"]},{\"id\":\"claim_4\",\"text\":\"显著性阈值无法从提供数据确定。\",\"fact\":\"significance_threshold\",\"value\":null,\"evidence\":[\"padj\",\"p\"]}]}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 866,
+      "completion_tokens": 387,
+      "total_tokens": 1253,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 226
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.0299999999999998
+  },
+  "parsed": {
+    "data_facts": [
+      "输入仅提供10行，但dim显示共31行，数据不完整。",
+      "提供的p.adjust值范围从0.01到0.080000000000000002。"
+    ],
+    "statistical_meaning": [
+      "富集分析通常基于p.adjust与阈值比较判断显著性。",
+      "由于行不完整，无法可靠计算显著条目数。"
+    ],
+    "biological_interpretation": [
+      "无法基于不完整数据解释生物学功能富集。",
+      "需完整结果才能评估通路或功能偏好。"
+    ],
+    "uncertainty": [
+      "缺失21行数据，任何汇总统计都可能偏差。",
+      "无法确认未提供行的p.adjust分布。"
+    ],
+    "cannot_conclude": [
+      "不能确定总条目数n_terms。",
+      "不能确定显著条目数n_significant。",
+      "不能确定富集方法enrichment_method。",
+      "不能确定显著性阈值significance_threshold。"
+    ],
+    "learning_questions": [
+      "如何从完整富集结果中提取总条目数和显著条目数？",
+      "如何根据分析类型确定富集方法和显著性阈值？"
+    ],
+    "evidence_used": [
+      "dim",
+      "provided_rows",
+      "rows_complete"
+    ],
+    "claims": [
+      {
+        "id": "claim_1",
+        "text": "总条目数无法从提供数据确定。",
+        "fact": "n_terms",
+        "value": null,
+        "evidence": [
+          "dim",
+          "rows_complete"
+        ]
+      },
+      {
+        "id": "claim_2",
+        "text": "显著条目数无法从提供数据确定。",
+        "fact": "n_significant",
+        "value": null,
+        "evidence": [
+          "provided_rows",
+          "rows_complete"
+        ]
+      },
+      {
+        "id": "claim_3",
+        "text": "富集方法无法从提供数据确定。",
+        "fact": "enrichment_method",
+        "value": null,
+        "evidence": [
+          "analysis_type_hint"
+        ]
+      },
+      {
+        "id": "claim_4",
+        "text": "显著性阈值无法从提供数据确定。",
+        "fact": "significance_threshold",
+        "value": null,
+        "evidence": [
+          "padj",
+          "p"
+        ]
+      }
+    ]
+  },
+  "validation": {
+    "status": "fail",
+    "findings": [
+      {
+        "claim": "(evidence_used)",
+        "check": "evidence_ids",
+        "status": "fail",
+        "detail": "unknown evidence id(s): dim, provided_rows, rows_complete (no evidence list was supplied)"
+      },
+      {
+        "claim": "claim_1",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_1",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: dim, rows_complete"
+      },
+      {
+        "claim": "claim_2",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_2",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: provided_rows, rows_complete"
+      },
+      {
+        "claim": "claim_3",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_3",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: analysis_type_hint"
+      },
+      {
+        "claim": "claim_4",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_4",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: padj, p"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_terms",
+      "expected": 31,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "n_significant",
+      "expected": 15,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "enrichment_method",
+      "expected": "ORA",
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "significance_threshold",
+      "expected": 0.050000000000000003,
+      "value": null,
+      "answered": false,
+      "correct": false
+    }
+  ],
+  "prompt_chars": 2718
+}

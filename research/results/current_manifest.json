@@ -1,0 +1,3749 @@
+{
+  "manifest_version": "development-baseline-7",
+  "created_utc": "2026-10-08T11:42:38.950306+00:00",
+  "package_version": "0.4.0.9000",
+  "scope": "Stored 0.3.1 results plus 0.4.0.9000 checks, miniACC, Chinese paper v0.9 comparison/concise main text and fixed SPARCL1 external experiment; expert/user evaluation deferred",
+  "git": {
+    "commit_sha": "dbd707566518d4b1d939906dcb001849abc2774e",
+    "state": "working_tree",
+    "status": [
+      " M SESSION_HANDOFF.md",
+      " M research/results/w00_baseline/documentation_files.csv"
+    ]
+  },
+  "source": {
+    "inventory": {
+      "path": "research/results/w00_baseline/source_files.csv",
+      "bytes": 25540,
+      "sha256": "636e7730cb64ef6329ed37084e6278021183b75ad709b32e0f0dabaaebb5e1e8"
+    },
+    "code_hash": "b6cfaab6b7734e9ae09205cc0a05522a6336c1bbe562017fa454ae39c695dc30",
+    "package_inventory": {
+      "path": "research/results/w00_baseline/package_source_files.csv",
+      "bytes": 14760,
+      "sha256": "e0cb09311325194e69f4eaf3378cd5ce2d6ce6152427df49a56621aa7c630c55"
+    },
+    "package_code_hash": "9b7a9ef73217754b9d5724af2fa1aec591233aec15f1137ee83ec70be514d35f",
+    "archive": {
+      "path": "BioExplainR_0.4.0.9000.tar.gz",
+      "bytes": 221229,
+      "sha256": "bb8b508962b19322da77bc0bb1b7b04efcc4f2c8de537d57924656be11c4299a"
+    },
+    "hash_policy": "SHA-256 of UTF-8 canonical JSON inventory (sorted paths, size and file SHA-256)"
+  },
+  "documentation": {
+    "path": "research/results/w00_baseline/documentation_files.csv",
+    "bytes": 4634,
+    "sha256": "440572ebcc4fac966c8964ff1397258200a395b9c745eaffcca5a84051fb67de"
+  },
+  "environment": {
+    "path": "research/results/w00_baseline/environment.json",
+    "bytes": 2640,
+    "sha256": "5bd8aa5eea94c07bb33a71e743160e31cf1566f093ff6d041c84c0b20ad58926"
+  },
+  "groups": {
+    "main_experiment": {
+      "entrypoints": [
+        "research/results/main_scale_480"
+      ],
+      "inventory": {
+        "path": "research/results/w00_baseline/main_experiment_files.csv",
+        "bytes": 320893,
+        "sha256": "04ef6ef339a15e40022b9b93e98b34a8b3d480586b87b74e50fb96028855fe24"
+      },
+      "file_count": 2169,
+      "mode": "saved_results",
+      "rerun_experiment": false
+    },
+    "common_task": {
+      "entrypoints": [
+        "research/results/common_task_scale_480",
+        "research/results/reference_facts_scale_480.json",
+        "research/results/reference_facts_scale_480_manifest.json"
+      ],
+      "inventory": {
+        "path": "research/results/w00_baseline/common_task_files.csv",
+        "bytes": 39538,
+        "sha256": "e1e2b300c1fd4ef1df29c74037999b53215e4761ffa5f46c2683f70c54d266c6"
+      },
+      "file_count": 246,
+      "mode": "saved_results",
+      "rerun_experiment": false
+    },
+    "public_datasets": {
+      "entrypoints": [
+        "research/results/public_datasets"
+      ],
+      "inventory": {
+        "path": "research/results/w00_baseline/public_datasets_files.csv",
+        "bytes": 888,
+        "sha256": "cc45555efd83a19bf82356f1a58e6792df2961104570e0705d1422a9e9750b51"
+      },
+      "file_count": 7,
+      "mode": "saved_results",
+      "rerun_experiment": false
+    },
+    "human_evaluation": {
+      "entrypoints": [
+        "research/results/human_evaluation"
+      ],
+      "inventory": {
+        "path": "research/results/w00_baseline/human_evaluation_files.csv",
+        "bytes": 548,
+        "sha256": "3f276b12a7cdaacd12361cb84a71ab3bd76c8a976a368f263b8b44decdb86a17"
+      },
+      "file_count": 4,
+      "mode": "saved_results",
+      "rerun_experiment": false
+    },
+    "related_tools": {
+      "entrypoints": [
+        "research/results/related_tools"
+      ],
+      "inventory": {
+        "path": "research/results/w00_baseline/related_tools_files.csv",
+        "bytes": 1727,
+        "sha256": "46386e35b397436d48043199a5f31ffc516836363109234ad6ce4f6b9860cb4a"
+      },
+      "file_count": 14,
+      "mode": "saved_results",
+      "rerun_experiment": false
+    },
+    "miniacc_development": {
+      "entrypoints": [
+        "research/results/miniacc_development_v1",
+        "research/results/miniacc_installed_review"
+      ],
+      "inventory": {
+        "path": "research/results/w00_baseline/miniacc_development_files.csv",
+        "bytes": 6245,
+        "sha256": "f8536e2ba136630e4c93c732334b0f21d5851e94e3e4e10408e2c4ba69ec226a"
+      },
+      "file_count": 48,
+      "mode": "saved_results",
+      "rerun_experiment": false
+    },
+    "paper_cn_cases": {
+      "entrypoints": [
+        "research/results/paper_cn_cases_v1",
+        "research/cache/real_objects.rds"
+      ],
+      "inventory": {
+        "path": "research/results/w00_baseline/paper_cn_cases_files.csv",
+        "bytes": 1503,
+        "sha256": "bfdca2d28a378b82da9d452f44e65bca269fc8c1e212b4a48a3efa57c89992f4"
+      },
+      "file_count": 12,
+      "mode": "saved_results",
+      "rerun_experiment": false
+    },
+    "paper_cn_revision": {
+      "entrypoints": [
+        "docs/paper_cn_v1"
+      ],
+      "inventory": {
+        "path": "research/results/w00_baseline/paper_cn_revision_files.csv",
+        "bytes": 8788,
+        "sha256": "59b761f8efe5bf509272cb9645ffcda0dbb60b5a09ed47de70e93dcf21657587"
+      },
+      "file_count": 76,
+      "mode": "saved_results",
+      "rerun_experiment": false
+    },
+    "paper_cn_v09": {
+      "entrypoints": [
+        "docs/paper_cn_v2"
+      ],
+      "inventory": {
+        "path": "research/results/w00_baseline/paper_cn_v09_files.csv",
+        "bytes": 10750,
+        "sha256": "9a163363928c49735095baad580bb088424f5b52b6ded59220a735b1b8f1cfbf"
+      },
+      "file_count": 93,
+      "mode": "saved_results",
+      "rerun_experiment": false
+    },
+    "discovery_sparcl1": {
+      "entrypoints": [
+        "research/results/discovery_sparcl1_v1"
+      ],
+      "inventory": {
+        "path": "research/results/w00_baseline/discovery_sparcl1_files.csv",
+        "bytes": 2701,
+        "sha256": "b2cd651e808feb29e1e59ab15038360df3af2c071d9624b1b7870e649d9eff63"
+      },
+      "file_count": 21,
+      "mode": "saved_results",
+      "rerun_experiment": false
+    },
+    "paper": {
+      "entrypoints": [
+        "docs/PAPER_DRAFT.md",
+        "docs/SUPPLEMENTARY_MATERIAL.md",
+        "docs/paper_tables.json",
+        "docs/supplementary_tables.json",
+        "docs/paper.css",
+        "docs/submission_assets",
+        "research/results/submission-audit.json",
+        "research/results/reference_audit.json",
+        "docs/BioExplainR-development-delivery-0.4.0.9000-r2.zip",
+        "docs/BioExplainR-中文论文-v0.8-图表附件.zip",
+        "docs/BioExplainR-paper-draft.docx",
+        "docs/BioExplainR-development-delivery-0.4.0.9000-r8.zip",
+        "docs/BioExplainR-paper-draft.html",
+        "docs/BioExplainR-development-delivery-0.4.0.9000-r5.zip",
+        "docs/BioExplainR-iMeta-Q1-submission-roadmap.docx",
+        "docs/BioExplainR-supplementary.html",
+        "docs/BioExplainR-API与需求核查报告.docx",
+        "docs/BioExplainR-development-delivery-0.4.0.9000.zip",
+        "docs/BioExplainR-development-delivery-0.4.0.9000-r7.zip",
+        "docs/BioExplainR-supplementary.pdf",
+        "docs/BioExplainR-development-delivery-0.4.0.9000-r3.zip",
+        "docs/BioExplainR-development-delivery-0.4.0.9000-r6.zip",
+        "docs/BioExplainR-iMeta-Q1-submission-roadmap.pdf",
+        "docs/BioExplainR-paper-draft.pdf",
+        "docs/BioExplainR-development-delivery-0.4.0.9000-r4.zip",
+        "docs/BioExplainR-supplementary.docx",
+        "docs/BioExplainR-user-guide.docx"
+      ],
+      "inventory": {
+        "path": "research/results/w00_baseline/paper_files.csv",
+        "bytes": 18409,
+        "sha256": "384e1798127a59587e20972787ae9bf8f63cb5141051ae524ae2092608149969"
+      },
+      "file_count": 153,
+      "mode": "saved_results",
+      "rerun_experiment": false
+    },
+    "historical": {
+      "inventory": {
+        "path": "research/results/w00_baseline/historical_files.csv",
+        "bytes": 45240,
+        "sha256": "7cabbf1bca5c2ef3be75e3fb19544a6ec10de5cd997962577c905a12229b3294"
+      },
+      "file_count": 325,
+      "mode": "historical",
+      "rerun_experiment": false,
+      "entrypoints": [
+        "research/results/experiment_manifest.json",
+        "research/results/pilot_precision/experiment_manifest.json",
+        "research/results/common_task/common_task_manifest.json"
+      ],
+      "note": "Directories remain in place; see docs/REPRODUCTION.md for classification"
+    }
+  },
+  "saved_result_summary": {
+    "main_experiment": {
+      "cases": 120,
+      "unique_target_facts": 480,
+      "requests": 1080,
+      "score_rows": 4320,
+      "methods": [
+        {
+          "method": "direct_bounded",
+          "expected": 1440,
+          "correct": 437,
+          "answered": 516,
+          "accuracy": 0.3034722222222222,
+          "coverage": 0.35833333333333334,
+          "answered_accuracy": 0.8468992248062015,
+          "calls": 360,
+          "api_success": 360,
+          "structured": 360,
+          "correct_by_repeat": {
+            "1": 149,
+            "2": 143,
+            "3": 145
+          }
+        },
+        {
+          "method": "facts_only",
+          "expected": 1440,
+          "correct": 1440,
+          "answered": 1440,
+          "accuracy": 1.0,
+          "coverage": 1.0,
+          "answered_accuracy": 1.0,
+          "calls": 360,
+          "api_success": 360,
+          "structured": 360,
+          "correct_by_repeat": {
+            "1": 480,
+            "2": 480,
+            "3": 480
+          }
+        },
+        {
+          "method": "facts_evidence",
+          "expected": 1440,
+          "correct": 1440,
+          "answered": 1440,
+          "accuracy": 1.0,
+          "coverage": 1.0,
+          "answered_accuracy": 1.0,
+          "calls": 360,
+          "api_success": 360,
+          "structured": 360,
+          "correct_by_repeat": {
+            "1": 480,
+            "2": 480,
+            "3": 480
+          }
+        }
+      ],
+      "score_policy": "saved protocol relative tolerance 1e-6"
+    },
+    "common_task": {
+      "cases": 120,
+      "unique_target_facts": 480,
+      "call_records": 600,
+      "score_rows": 2400,
+      "methods": [
+        {
+          "method": "bioexplainr_deterministic",
+          "mode": "deterministic_reference",
+          "statuses": [
+            "executed"
+          ],
+          "case_records": 120,
+          "expected": 480,
+          "correct": 480,
+          "answered": 480
+        },
+        {
+          "method": "configured_code_agent",
+          "mode": "command_agent",
+          "statuses": [
+            "not_configured"
+          ],
+          "case_records": 120,
+          "expected": 480,
+          "correct": 0,
+          "answered": 0
+        },
+        {
+          "method": "configured_models:deepseek-flash",
+          "mode": "openai_compatible",
+          "statuses": [
+            "executed"
+          ],
+          "case_records": 120,
+          "expected": 480,
+          "correct": 480,
+          "answered": 480
+        },
+        {
+          "method": "configured_models:step-5-preview",
+          "mode": "openai_compatible",
+          "statuses": [
+            "executed"
+          ],
+          "case_records": 120,
+          "expected": 480,
+          "correct": 480,
+          "answered": 480
+        },
+        {
+          "method": "saved_facts_only",
+          "mode": "saved_response",
+          "statuses": [
+            "missing"
+          ],
+          "case_records": 120,
+          "expected": 480,
+          "correct": 0,
+          "answered": 0
+        }
+      ],
+      "note": "Call records include deterministic, replay and not-configured methods; they are not all API requests"
+    },
+    "supporting": {
+      "public_datasets": {
+        "count": 5,
+        "statuses": {
+          "airway": "pass",
+          "PBMC3k": "pass",
+          "pasilla": "pass",
+          "ALL": "pass",
+          "bladderbatch": "pass"
+        },
+        "scope": "saved object ingestion tests, not rerun"
+      },
+      "pasilla": {
+        "checks": 30,
+        "passed": 30
+      },
+      "human_evaluation": {
+        "expert_scores": 720,
+        "user_scores": 150,
+        "expert_mean": 1.751389,
+        "user_mean": 91.98,
+        "status": "aggregate_consistency_only",
+        "raw_ratings": "unavailable_in_project",
+        "note": "No independent recomputation of SD, agreement or individual scores"
+      }
+    },
+    "paper": {
+      "supplementary_records": 2770,
+      "figure_pdfs": 35,
+      "references": 38,
+      "saved_audit_status": "pass",
+      "geometry_audit_rerun": false
+    }
+  },
+  "software_check_records": {
+    "source": "revision-source",
+    "package": "revision-package-check"
+  },
+  "continuation_environment": {
+    "path": "research/results/w00_baseline/continuation-environment-result.json",
+    "bytes": 741,
+    "sha256": "e49e0677381b398ba690add6758a687ed76b43a1cf4438ea6ede417236a3712b"
+  },
+  "review_environment": {
+    "path": "research/results/w00_baseline/review-environment-result.json",
+    "bytes": 779,
+    "sha256": "83ebb4dc2a08437afb98d053eb02a4432367c7ddb59455b3c6fc1a5f3cd1ea4c"
+  },
+  "user_actions": "docs/USER_ACTIONS_REQUIRED.md",
+  "audit_entrypoints": {
+    "current": "R --vanilla --slave -f research/audit_results.R --args --mode=current",
+    "historical": "R --vanilla --slave -f research/audit_results.R --args --mode=historical",
+    "current_output": "research/results/w00_baseline/current_audit.json",
+    "historical_output": "research/results/w00_baseline/historical_audit.json"
+  },
+  "baseline_artifacts": {
+    "path": "research/results/w00_baseline/manifest_files.csv",
+    "bytes": 66256,
+    "sha256": "1c94938fcfb151203f2c0197b169f8070fea1e22b04a0ccf6b1ab07ba5b8258b"
+  },
+  "checks": {
+    "review-legacy-api": {
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "tools/legacy-interface-check.R",
+        "research/results/w00_baseline/review-legacy-api-result.json"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T08:23:20.792317+00:00",
+      "finished_utc": "2026-10-08T08:23:23.500018+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/review-legacy-api.txt",
+        "bytes": 13,
+        "sha256": "9920e5e6f10c57acc16323dfb248f3710f6d57d7454cafeac0902a9b3aa4f04e"
+      }
+    },
+    "paper-cn-export-final": {
+      "command": [
+        "/tmp/opencode/paper-venv/bin/python",
+        "research/paper_cn/export_manuscript.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T09:28:12.578651+00:00",
+      "finished_utc": "2026-10-08T09:28:21.247066+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/paper-cn-export-final.txt",
+        "bytes": 2167,
+        "sha256": "bf93ddd3f6c0bef35b0a5b1af0fc7d92644717ebc72a8a51419c20e34f965855"
+      }
+    },
+    "review-full-smoke": {
+      "command": [
+        "env",
+        "R_LIBS=/tmp/opencode/bioexplainr-install-review",
+        "Rscript",
+        "--vanilla",
+        "tools/offline-smoke.R",
+        "research/results/w00_baseline/review-full-smoke"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T08:26:13.993820+00:00",
+      "finished_utc": "2026-10-08T08:26:28.791567+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/review-full-smoke.txt",
+        "bytes": 273,
+        "sha256": "5805dd2c4f240d0c540b98a54ad3d2269235d52030e1386766e341812c86d44a"
+      }
+    },
+    "continuation-environment-capture": {
+      "command": [
+        "python3",
+        "tools/capture-continuation.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T12:32:20.428992+00:00",
+      "finished_utc": "2026-10-05T12:32:30.459860+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-environment-capture.txt",
+        "bytes": 4573,
+        "sha256": "4e2bd9fe2f7869d18a5d7412d41f2ebeaa775c9475d31263ce459acf1175e3ec"
+      }
+    },
+    "continuation-bwrap-offline-smoke-final2": {
+      "command": [
+        "bash",
+        "tools/bwrap-offline-smoke.sh",
+        "/tmp/opencode/bioexplainr-bwrap-record-final2"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T13:31:09.864023+00:00",
+      "finished_utc": "2026-10-05T13:31:10.373078+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-bwrap-offline-smoke-final2.txt",
+        "bytes": 151,
+        "sha256": "235daf2996b20567e3d040ab783c8a5118b2393d38c9475cc2271aa6479f9faa"
+      }
+    },
+    "paper-cn-assets-layout": {
+      "command": [
+        "/tmp/opencode/paper-venv/bin/python",
+        "research/paper_cn/build_assets.py",
+        "--refresh-draft"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T09:24:45.646514+00:00",
+      "finished_utc": "2026-10-08T09:24:59.379026+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/paper-cn-assets-layout.txt",
+        "bytes": 74,
+        "sha256": "3867d5f99a3ad9e6ed2b4a536da3d638119d38c8e17b0f48a6736321673661f4"
+      }
+    },
+    "supplemental-capture": {
+      "command": [
+        "/tmp/opencode/paper-venv/bin/python",
+        "tools/capture-supplemental.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T08:21:23.809017+00:00",
+      "finished_utc": "2026-10-05T08:21:25.414013+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/supplemental-capture.txt",
+        "bytes": 711,
+        "sha256": "6b0ce80a3e511e320a12aea9b6ddf95e4778797851fb7e7622a46d9ef38a7c60"
+      }
+    },
+    "package-check": {
+      "command": [
+        "R",
+        "CMD",
+        "check",
+        "--no-manual",
+        "--no-vignettes",
+        "--no-build-vignettes",
+        "--output=research/results/w00_baseline",
+        "BioExplainR_0.3.1.tar.gz"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T07:54:50.861047+00:00",
+      "finished_utc": "2026-10-05T07:55:48.040400+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/package-check.txt",
+        "bytes": 2505,
+        "sha256": "4779c1466d249c7bd17a650cae7d7c08e638dbf18901c50a7b7fbb8dcb9cb525"
+      }
+    },
+    "continuation-build-user-actions-final3": {
+      "command": [
+        "R",
+        "CMD",
+        "build",
+        "."
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T13:51:17.663161+00:00",
+      "finished_utc": "2026-10-05T13:51:19.721897+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-build-user-actions-final3.txt",
+        "bytes": 292,
+        "sha256": "fc6918ab6998430c2768a8f0e35ca4bafebab072ece7c4e8e67ac321957ba8d0"
+      }
+    },
+    "acceptance-sandbox-public-readable": {
+      "command": [
+        "python3",
+        "tools/sandbox-boundary-check.py",
+        "--library",
+        "/tmp/opencode/bioexplainr-core-user-actions-final2/library",
+        "--output",
+        "research/results/w00_baseline/acceptance-sandbox-result.json"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T14:16:51.556132+00:00",
+      "finished_utc": "2026-10-05T14:16:51.699763+00:00",
+      "exit_code": 1,
+      "status": "fail",
+      "log": {
+        "path": "research/results/w00_baseline/acceptance-sandbox-public-readable.txt",
+        "bytes": 340,
+        "sha256": "e506fa906cfc7a77f8d6f2619e1bbb55495131fb75cf1409b5d7941e22f2f351"
+      }
+    },
+    "review-contracts": {
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "inst/fixtures/contracts/validate_fixtures.R"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T08:23:20.734581+00:00",
+      "finished_utc": "2026-10-08T08:23:21.572693+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/review-contracts.txt",
+        "bytes": 236,
+        "sha256": "480b785b4c2466920aa2bbea37da97bf3fd941c74d9554712d39d52e98e1acd6"
+      }
+    },
+    "continuation-source-check": {
+      "command": [
+        "R",
+        "--vanilla",
+        "--slave",
+        "-f",
+        "tools/check.R"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T12:16:17.241600+00:00",
+      "finished_utc": "2026-10-05T12:16:53.983582+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-source-check.txt",
+        "bytes": 1684,
+        "sha256": "b4de54b0951a9f77bf99149db898c85373dd8beb7ea4d103aac35f69d7089b07"
+      }
+    },
+    "paper-cn-workbench-reload": {
+      "command": [
+        "python3",
+        "research/paper_cn/restart_workbench.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T09:38:42.588240+00:00",
+      "finished_utc": "2026-10-08T09:38:44.645710+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/paper-cn-workbench-reload.txt",
+        "bytes": 257,
+        "sha256": "eba45939956e86af73c10e6984ddc5d4bf9d326c08b56419db36b86252edae84"
+      }
+    },
+    "paper-cn-build": {
+      "command": [
+        "R",
+        "CMD",
+        "build",
+        "."
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T09:15:34.943122+00:00",
+      "finished_utc": "2026-10-08T09:15:41.009253+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/paper-cn-build.txt",
+        "bytes": 292,
+        "sha256": "fc6918ab6998430c2768a8f0e35ca4bafebab072ece7c4e8e67ac321957ba8d0"
+      }
+    },
+    "continuation-paper-browser-user-actions-final": {
+      "command": [
+        "env",
+        "BIOEXPLAINR_PAPER_RESULTS_DIR=research/results/w00_baseline/continuation-paper-browser-final",
+        "NODE_PATH=/tmp/opencode/node_modules",
+        "node",
+        "research/paper_smoke.cjs"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T13:34:42.071236+00:00",
+      "finished_utc": "2026-10-05T13:35:04.517053+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-paper-browser-user-actions-final.txt",
+        "bytes": 1720,
+        "sha256": "e7646d1cc9e562ccc407da9160bac4aea0b461de461e9693f96d306cdc0b5e0f"
+      }
+    },
+    "review-package-check": {
+      "command": [
+        "R",
+        "CMD",
+        "check",
+        "--no-manual",
+        "--no-vignettes",
+        "--no-build-vignettes",
+        "BioExplainR_0.4.0.9000.tar.gz"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T08:23:59.177409+00:00",
+      "finished_utc": "2026-10-08T08:25:30.073653+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/review-package-check.txt",
+        "bytes": 2480,
+        "sha256": "7dd601a4c8aa0c24d61244d40f998bd8b0e3d81e0145f6cce1fb04877c4fc9dd"
+      }
+    },
+    "continuation-container-probe": {
+      "command": [
+        "bwrap",
+        "--unshare-all",
+        "--ro-bind",
+        "/",
+        "/",
+        "--",
+        "true"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T12:16:17.241600+00:00",
+      "finished_utc": "2026-10-05T12:16:17.245954+00:00",
+      "exit_code": 1,
+      "status": "fail",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-container-probe.txt",
+        "bytes": 61,
+        "sha256": "ed3471f7900377f86150471417911309833a36d664cb5af7409e139103f67ddf"
+      }
+    },
+    "review-audit-probes": {
+      "command": [
+        "python3",
+        "research/test_current_audit.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T08:23:59.174727+00:00",
+      "finished_utc": "2026-10-08T08:23:59.388130+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/review-audit-probes.txt",
+        "bytes": 101,
+        "sha256": "41cee9cc70f8e2902ff4277cf9577cbdf05c130cf7652490990fd48efa2e4859"
+      }
+    },
+    "paper-cn-shiny-final": {
+      "command": [
+        "python3",
+        "tools/shiny-acceptance.py",
+        "--output",
+        "research/results/w00_baseline/paper-cn-shiny-browser-final"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T09:02:42.221617+00:00",
+      "finished_utc": "2026-10-08T09:03:22.328267+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/paper-cn-shiny-final.txt",
+        "bytes": 730,
+        "sha256": "8de520e2db83bd29fc82097ab64d233bb7f336f1ce6624f217bf22ded65cb39f"
+      }
+    },
+    "continuation-paper-browser": {
+      "command": [
+        "env",
+        "BIOEXPLAINR_PAPER_RESULTS_DIR=research/results/w00_baseline/continuation-paper-browser",
+        "NODE_PATH=/tmp/opencode/node_modules",
+        "node",
+        "research/paper_smoke.cjs"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T12:22:34.863798+00:00",
+      "finished_utc": "2026-10-05T12:22:53.767888+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-paper-browser.txt",
+        "bytes": 1720,
+        "sha256": "e7646d1cc9e562ccc407da9160bac4aea0b461de461e9693f96d306cdc0b5e0f"
+      }
+    },
+    "continuation-package-check": {
+      "command": [
+        "R",
+        "CMD",
+        "check",
+        "--no-manual",
+        "--no-vignettes",
+        "--no-build-vignettes",
+        "BioExplainR_0.4.0.9000.tar.gz"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T12:20:12.963223+00:00",
+      "finished_utc": "2026-10-05T12:22:05.571296+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-package-check.txt",
+        "bytes": 2480,
+        "sha256": "7dd601a4c8aa0c24d61244d40f998bd8b0e3d81e0145f6cce1fb04877c4fc9dd"
+      }
+    },
+    "review-build": {
+      "command": [
+        "R",
+        "CMD",
+        "build",
+        "."
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T08:23:20.761998+00:00",
+      "finished_utc": "2026-10-08T08:23:28.022786+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/review-build.txt",
+        "bytes": 292,
+        "sha256": "fc6918ab6998430c2768a8f0e35ca4bafebab072ece7c4e8e67ac321957ba8d0"
+      }
+    },
+    "continuation-ci-yaml": {
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "-e",
+        "x <- yaml::read_yaml(\".github/workflows/R-CMD-check.yaml\"); stopifnot(length(x$jobs)==2L, length(x$jobs$check$strategy$matrix$os)==2L); print(names(x$jobs))"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T12:19:54.330530+00:00",
+      "finished_utc": "2026-10-05T12:19:54.751090+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-ci-yaml.txt",
+        "bytes": 20,
+        "sha256": "69135a11449682f2bbc3c51781eb15abbb41575dcfeef974528d9cadc4fb8787"
+      }
+    },
+    "continuation-package-delivery": {
+      "command": [
+        "python3",
+        "research/package_submission.py",
+        "--audit",
+        "research/results/w00_baseline/continuation-submission-audit-result.json"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T12:38:58.483619+00:00",
+      "finished_utc": "2026-10-05T12:39:00.123360+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-package-delivery.txt",
+        "bytes": 166,
+        "sha256": "c475cd91daf6d208c3153da2a26eda5d992a5560ee00b66bb8e6a3fb44140cce"
+      }
+    },
+    "acceptance-sandbox-built": {
+      "command": [
+        "python3",
+        "tools/sandbox-boundary-check.py",
+        "--library",
+        "/tmp/opencode/bioexplainr-acceptance-core/library",
+        "--output",
+        "research/results/w00_baseline/acceptance-sandbox-result.json"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T14:26:38.089095+00:00",
+      "finished_utc": "2026-10-05T14:26:42.602911+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/acceptance-sandbox-built.txt",
+        "bytes": 117,
+        "sha256": "18ea08fe48494f0fdc4ff9482a543b7163110932e5c8d939ac6bd7d8b5a8e3ca"
+      }
+    },
+    "continuation-contract-fixtures": {
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "inst/fixtures/contracts/validate_fixtures.R"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T12:19:54.317803+00:00",
+      "finished_utc": "2026-10-05T12:19:54.979108+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-contract-fixtures.txt",
+        "bytes": 236,
+        "sha256": "480b785b4c2466920aa2bbea37da97bf3fd941c74d9554712d39d52e98e1acd6"
+      }
+    },
+    "revision-browser-final": {
+      "command": [
+        "node",
+        "research/paper_cn_revision/browser_revision.cjs"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T11:38:14.827912+00:00",
+      "finished_utc": "2026-10-08T11:38:21.481040+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/revision-browser-final.txt",
+        "bytes": 692,
+        "sha256": "0e787a16c82282fc516aa55b089273b51002e54ecce58cb4361ff55fdd7bb57b"
+      }
+    },
+    "paper-cn-final-python-syntax": {
+      "command": [
+        "env",
+        "PYTHONPYCACHEPREFIX=/tmp/opencode/paper-cn-pycache",
+        "python3",
+        "-m",
+        "py_compile",
+        "research/paper_cn/verify_upload.py",
+        "research/export_paper.py",
+        "research/manage_baseline.py",
+        "research/audit_current_results.py",
+        "research/package_submission.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T09:36:20.978342+00:00",
+      "finished_utc": "2026-10-08T09:36:21.093992+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/paper-cn-final-python-syntax.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    "revision-discovery-r-audit": {
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "research/discovery/audit_and_report.R",
+        "research/results/discovery_sparcl1_v1"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T11:17:45.877531+00:00",
+      "finished_utc": "2026-10-08T11:17:48.159562+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/revision-discovery-r-audit.txt",
+        "bytes": 835,
+        "sha256": "547824bfeb2e87ed53d5d225190b2c203e2ff0c641b00f344e7f0ffb962aa029"
+      }
+    },
+    "revision-discovery-validation": {
+      "command": [
+        "/tmp/opencode/paper-venv/bin/python",
+        "research/discovery/run_discovery.py",
+        "validate",
+        "research/results/discovery_sparcl1_v1"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T11:07:10.736211+00:00",
+      "finished_utc": "2026-10-08T11:14:55.756591+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/revision-discovery-validation.txt",
+        "bytes": 900,
+        "sha256": "6da8827a4374d3fea7c52c932c063f2a16d40c4ab8ce62e46fd6bd51631d7396"
+      }
+    },
+    "revision-browser": {
+      "command": [
+        "node",
+        "research/paper_cn_revision/browser_revision.cjs"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T11:26:31.522371+00:00",
+      "finished_utc": "2026-10-08T11:26:40.795846+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/revision-browser.txt",
+        "bytes": 692,
+        "sha256": "0e787a16c82282fc516aa55b089273b51002e54ecce58cb4361ff55fdd7bb57b"
+      }
+    },
+    "review-imports-only": {
+      "command": [
+        "python3",
+        "tools/isolated-library-check.py",
+        "--archive",
+        "BioExplainR_0.4.0.9000.tar.gz",
+        "--output",
+        "/tmp/opencode/bioexplainr-review-core"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T08:23:59.168583+00:00",
+      "finished_utc": "2026-10-08T08:24:18.008934+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/review-imports-only.txt",
+        "bytes": 764,
+        "sha256": "f3e205d175d5ac3150e2a2da25da58a558f5242fa120c9a0526752bfa55e8ece"
+      }
+    },
+    "apt-dpkg-audit": {
+      "command": [
+        "sudo",
+        "dpkg",
+        "--audit"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T07:52:51.511478+00:00",
+      "finished_utc": "2026-10-05T07:52:51.578427+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/apt-dpkg-audit.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    "revision-archive-secret-scan": {
+      "command": [
+        "python3",
+        "tools/audit-publication.py",
+        "--archive",
+        "docs/BioExplainR-development-delivery-0.4.0.9000-r8.zip",
+        "--output",
+        "research/results/w00_baseline/revision-archive-secret-scan-result.json"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T11:38:59.733803+00:00",
+      "finished_utc": "2026-10-08T11:39:01.350022+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/revision-archive-secret-scan.txt",
+        "bytes": 118,
+        "sha256": "1cdb16e0a93af91ead975113ee05ee45135af26fa7671cebc7739bbf8d2a972c"
+      }
+    },
+    "paper-cn-live-browser": {
+      "command": [
+        "env",
+        "NODE_PATH=/tmp/opencode/node_modules",
+        "node",
+        "research/paper_cn/live_workbench.cjs"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T09:39:24.409274+00:00",
+      "finished_utc": "2026-10-08T09:39:28.394416+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/paper-cn-live-browser.txt",
+        "bytes": 164,
+        "sha256": "f77acd68cc1a0d9864913fa829a1db2c8ab1d311ef7ee68b170075cabb8d8085"
+      }
+    },
+    "review-python-syntax": {
+      "command": [
+        "env",
+        "PYTHONPYCACHEPREFIX=/tmp/opencode/bioexplainr-review-pycache",
+        "python3",
+        "-m",
+        "py_compile",
+        "tools/capture-continuation.py",
+        "research/multiomics/audit_miniacc.py",
+        "research/multiomics/test_audit_miniacc.py",
+        "research/manage_baseline.py",
+        "research/audit_current_results.py",
+        "research/package_submission.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T08:32:27.909463+00:00",
+      "finished_utc": "2026-10-08T08:32:28.281187+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/review-python-syntax.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    "continuation-source-user-actions-final2": {
+      "command": [
+        "R",
+        "--vanilla",
+        "--slave",
+        "-f",
+        "tools/check.R"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T13:40:33.466116+00:00",
+      "finished_utc": "2026-10-05T13:41:10.023359+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-source-user-actions-final2.txt",
+        "bytes": 1888,
+        "sha256": "0d56e186bf4a23f33cbd7435516308c5f9d89dfbc10aa105353ade071d1ceebb"
+      }
+    },
+    "acceptance-contracts": {
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "inst/fixtures/contracts/validate_fixtures.R"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T14:33:19.221145+00:00",
+      "finished_utc": "2026-10-05T14:33:19.610488+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/acceptance-contracts.txt",
+        "bytes": 236,
+        "sha256": "480b785b4c2466920aa2bbea37da97bf3fd941c74d9554712d39d52e98e1acd6"
+      }
+    },
+    "acceptance-legacy-api-final": {
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "tools/legacy-interface-check.R",
+        "research/results/w00_baseline/acceptance-legacy-api-result.json"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T14:23:23.419214+00:00",
+      "finished_utc": "2026-10-05T14:23:24.637269+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/acceptance-legacy-api-final.txt",
+        "bytes": 13,
+        "sha256": "9920e5e6f10c57acc16323dfb248f3710f6d57d7454cafeac0902a9b3aa4f04e"
+      }
+    },
+    "review-miniacc-installed-audit": {
+      "command": [
+        "python3",
+        "research/multiomics/audit_miniacc.py",
+        "research/results/miniacc_installed_review"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T08:26:46.974712+00:00",
+      "finished_utc": "2026-10-08T08:26:47.077502+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/review-miniacc-installed-audit.txt",
+        "bytes": 496,
+        "sha256": "68b40358ae69f31edf4ada102c881287715bdae5f7d4c5a24b29d70e29afd36c"
+      }
+    },
+    "continuation-install-mae": {
+      "command": [
+        "sudo",
+        "-n",
+        "apt-get",
+        "install",
+        "-y",
+        "--no-install-recommends",
+        "r-bioc-multiassayexperiment"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T11:56:31.443410+00:00",
+      "finished_utc": "2026-10-05T11:56:38.640110+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-install-mae.txt",
+        "bytes": 4309,
+        "sha256": "0df0aa5c3e75575869ab67939b7a12fc723389ba1df6dfcccd029dda409b8724"
+      }
+    },
+    "paper-cn-cases": {
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "research/paper_cn/run_cases.R",
+        "research/results/paper_cn_cases_v1"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T08:59:58.534912+00:00",
+      "finished_utc": "2026-10-08T09:00:15.273461+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/paper-cn-cases.txt",
+        "bytes": 4944,
+        "sha256": "d737e7b136a06b553dd6e91fdd7b5bb328d218e47d8e24089902abdcc84702bd"
+      }
+    },
+    "audit-content": {
+      "command": [
+        "python3",
+        "-c",
+        "import sys; sys.path.insert(0,\"research\"); import json; from audit_current_results import ROOT, main_experiment, common_task, supporting_results, paper; print(json.dumps({\"main\":main_experiment(ROOT),\"common\":common_task(ROOT),\"supporting\":supporting_results(ROOT),\"paper\":paper(ROOT)},ensure_ascii=False,indent=2))"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T08:08:30.097606+00:00",
+      "finished_utc": "2026-10-05T08:08:31.684653+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/audit-content.txt",
+        "bytes": 3791,
+        "sha256": "d11466932ab52e3fadcf786368768bae3cd7a329f9ffd222b2ce83f19b2212e3"
+      }
+    },
+    "revision-audit-boundaries-final": {
+      "command": [
+        "python3",
+        "research/test_current_audit.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T11:35:19.676343+00:00",
+      "finished_utc": "2026-10-08T11:35:19.758553+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/revision-audit-boundaries-final.txt",
+        "bytes": 101,
+        "sha256": "2c37d50a88147ca2ebd5197d74ee37d462dab650d793512e849814c28d5a38f0"
+      }
+    },
+    "review-http": {
+      "command": [
+        "python3",
+        "tools/http-transport-smoke.py",
+        "--output",
+        "research/results/w00_baseline/review-http-result.json"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T08:23:21.159356+00:00",
+      "finished_utc": "2026-10-08T08:23:26.749469+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/review-http.txt",
+        "bytes": 154,
+        "sha256": "db44131827b458329873dc2386b64f9ed2f30023a4c5cac45069af5f97369899"
+      }
+    },
+    "supplemental-install": {
+      "command": [
+        "sudo",
+        "env",
+        "DEBIAN_FRONTEND=noninteractive",
+        "apt-get",
+        "install",
+        "-y",
+        "--no-install-recommends",
+        "r-bioc-biocversion",
+        "r-cran-biocmanager",
+        "python3-venv"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T07:56:29.711855+00:00",
+      "finished_utc": "2026-10-05T07:57:06.365265+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/supplemental-install.txt",
+        "bytes": 2939,
+        "sha256": "41f75d256ead6177353a5cc70441760d572ea68133d2b746d3b3775f1ec6354c"
+      }
+    },
+    "restore-script": {
+      "command": [
+        "bash",
+        "tools/restore-baseline.sh"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T09:02:04.691626+00:00",
+      "finished_utc": "2026-10-05T09:04:02.702898+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/restore-script.txt",
+        "bytes": 10417,
+        "sha256": "a2ab10d6f866f61ca27a2b59ab1de40ea9492fe0794214afabf04cc2b194ff60"
+      }
+    },
+    "submission-audit": {
+      "command": [
+        "/tmp/opencode/paper-venv/bin/python",
+        "research/audit_submission.py",
+        "--output",
+        "research/results/w00_baseline/submission-audit.json"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T08:08:30.064719+00:00",
+      "finished_utc": "2026-10-05T08:08:46.302528+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/submission-audit.txt",
+        "bytes": 17034,
+        "sha256": "c95bf7045fb5914056b2e52dfcd7dbdbe7e3ced855dd49aa151efdfd3291b045"
+      }
+    },
+    "review-source": {
+      "command": [
+        "R",
+        "--vanilla",
+        "--slave",
+        "-f",
+        "tools/check.R"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T08:22:20.397632+00:00",
+      "finished_utc": "2026-10-08T08:23:03.562660+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/review-source.txt",
+        "bytes": 1989,
+        "sha256": "d3817ccd460c58add5251040e5903d3cf93d804fcd862db2661d3ef997b99b00"
+      }
+    },
+    "revision-paper-export-final": {
+      "command": [
+        "/tmp/opencode/paper-venv/bin/python",
+        "research/paper_cn_revision/build_revision.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T11:29:56.506956+00:00",
+      "finished_utc": "2026-10-08T11:30:07.918074+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/revision-paper-export-final.txt",
+        "bytes": 4421,
+        "sha256": "e4b72b5b674bf8d30d9332c01cc2d0b4a049ec162d3b1ff3e949926e582bab43"
+      }
+    },
+    "continuation-source-final": {
+      "command": [
+        "R",
+        "--vanilla",
+        "--slave",
+        "-f",
+        "tools/check.R"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T12:28:59.391304+00:00",
+      "finished_utc": "2026-10-05T12:29:35.014143+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-source-final.txt",
+        "bytes": 1685,
+        "sha256": "852cd0a6c68f33fbb550c4ef13f3223716bc8e8c37782dfc1bd6fe1a3e9281d7"
+      }
+    },
+    "acceptance-sandbox-limits": {
+      "command": [
+        "python3",
+        "tools/sandbox-boundary-check.py",
+        "--library",
+        "/tmp/opencode/bioexplainr-core-user-actions-final2/library",
+        "--output",
+        "research/results/w00_baseline/acceptance-sandbox-result.json"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T14:17:36.630583+00:00",
+      "finished_utc": "2026-10-05T14:17:40.727224+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/acceptance-sandbox-limits.txt",
+        "bytes": 117,
+        "sha256": "18ea08fe48494f0fdc4ff9482a543b7163110932e5c8d939ac6bd7d8b5a8e3ca"
+      }
+    },
+    "source-check": {
+      "command": [
+        "R",
+        "--vanilla",
+        "--slave",
+        "-f",
+        "tools/check.R"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T07:53:45.544078+00:00",
+      "finished_utc": "2026-10-05T07:54:14.658119+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/source-check.txt",
+        "bytes": 1523,
+        "sha256": "080d8ab3675225f54156a155b1573b680544e60c51c353f659c0e67aa1029b76"
+      }
+    },
+    "review-legacy-api-installed": {
+      "command": [
+        "env",
+        "R_LIBS=/tmp/opencode/bioexplainr-install-review",
+        "Rscript",
+        "--vanilla",
+        "tools/legacy-interface-check.R",
+        "research/results/w00_baseline/review-legacy-api-installed-result.json",
+        "--installed"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T08:28:57.540271+00:00",
+      "finished_utc": "2026-10-08T08:28:58.113439+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/review-legacy-api-installed.txt",
+        "bytes": 13,
+        "sha256": "9920e5e6f10c57acc16323dfb248f3710f6d57d7454cafeac0902a9b3aa4f04e"
+      }
+    },
+    "review-delivery": {
+      "command": [
+        "python3",
+        "research/package_submission.py",
+        "--audit",
+        "research/results/w00_baseline/continuation-submission-audit-result.json"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T08:39:50.321520+00:00",
+      "finished_utc": "2026-10-08T08:39:52.653004+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/review-delivery.txt",
+        "bytes": 169,
+        "sha256": "bfbeccd257de05d376c992e2865140a31dec610cddbadf0c3099345c021df6a5"
+      }
+    },
+    "capture-baseline": {
+      "command": [
+        "bash",
+        "tools/server-R",
+        "--vanilla",
+        "--slave",
+        "-f",
+        "tools/capture-baseline.R"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T08:05:02.026328+00:00",
+      "finished_utc": "2026-10-05T08:05:04.068035+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/capture-baseline.txt",
+        "bytes": 75,
+        "sha256": "c41ea3d5410ece6fef3d6ee65dcf01d55b5d5da7fced72aed88ab251e725f0d0"
+      }
+    },
+    "review-miniacc-audit": {
+      "command": [
+        "python3",
+        "research/multiomics/audit_miniacc.py",
+        "research/results/miniacc_development_v1"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T08:22:20.339153+00:00",
+      "finished_utc": "2026-10-08T08:22:20.435862+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/review-miniacc-audit.txt",
+        "bytes": 496,
+        "sha256": "68b40358ae69f31edf4ada102c881287715bdae5f7d4c5a24b29d70e29afd36c"
+      }
+    },
+    "audit-historical-verified": {
+      "command": [
+        "R",
+        "--vanilla",
+        "--slave",
+        "-f",
+        "research/audit_results.R",
+        "--args",
+        "--mode=historical"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T09:04:39.833281+00:00",
+      "finished_utc": "2026-10-05T09:04:40.346213+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/audit-historical-verified.txt",
+        "bytes": 114,
+        "sha256": "95ef5467ee1819f4135e4ef3015c66071a3b28bc014bc0b505ecac3c03b61b21"
+      }
+    },
+    "paper-smoke": {
+      "command": [
+        "env",
+        "NODE_PATH=/tmp/opencode/node_modules",
+        "BIOEXPLAINR_PAPER_RESULTS_DIR=research/results/w00_baseline/paper_browser",
+        "node",
+        "research/paper_smoke.cjs"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T08:08:30.118335+00:00",
+      "finished_utc": "2026-10-05T08:08:48.855754+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/paper-smoke.txt",
+        "bytes": 1720,
+        "sha256": "e7646d1cc9e562ccc407da9160bac4aea0b461de461e9693f96d306cdc0b5e0f"
+      }
+    },
+    "paper-cn-html-browser": {
+      "command": [
+        "env",
+        "NODE_PATH=/tmp/opencode/node_modules",
+        "BIOEXPLAINR_PAPER_CN_BROWSER=research/results/w00_baseline/paper-cn-html-browser",
+        "node",
+        "research/paper_cn/browser_manuscript.cjs"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T09:29:33.231891+00:00",
+      "finished_utc": "2026-10-08T09:29:39.604019+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/paper-cn-html-browser.txt",
+        "bytes": 1576,
+        "sha256": "682f57d4a4cdb83fb2bb38193d3c2d52b7145fe641d411d99897088ac20496e7"
+      }
+    },
+    "continuation-install-spatial-root": {
+      "command": [
+        "sudo",
+        "-n",
+        "Rscript",
+        "--vanilla",
+        "-e",
+        "options(timeout=120); install.packages(\"https://bioconductor.org/packages/3.18/bioc/src/contrib/SpatialExperiment_1.12.0.tar.gz\", repos=NULL, type=\"source\"); stopifnot(requireNamespace(\"SpatialExperiment\", quietly=TRUE)); print(packageVersion(\"SpatialExperiment\"))"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T12:11:15.031451+00:00",
+      "finished_utc": "2026-10-05T12:12:01.151308+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-install-spatial-root.txt",
+        "bytes": 822,
+        "sha256": "656f5767af9e5c7170966294c4eb65637bffde14caad7a359d33106828fd2482"
+      }
+    },
+    "continuation-spatial-deps": {
+      "command": [
+        "sudo",
+        "-n",
+        "env",
+        "DEBIAN_FRONTEND=noninteractive",
+        "NEEDRESTART_MODE=l",
+        "apt-get",
+        "install",
+        "-y",
+        "--no-install-recommends",
+        "r-cran-magick",
+        "r-cran-rjson",
+        "r-bioc-biocfilecache"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T12:01:16.463221+00:00",
+      "finished_utc": "2026-10-05T12:01:23.492334+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-spatial-deps.txt",
+        "bytes": 7499,
+        "sha256": "6476d3fa6e4dac4fd92276f2c451550da9e19c531a76c9ac8ae7185ab4f2c2d7"
+      }
+    },
+    "revision-build": {
+      "command": [
+        "R",
+        "CMD",
+        "build",
+        "."
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T11:26:31.540202+00:00",
+      "finished_utc": "2026-10-08T11:26:39.091805+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/revision-build.txt",
+        "bytes": 292,
+        "sha256": "fc6918ab6998430c2768a8f0e35ca4bafebab072ece7c4e8e67ac321957ba8d0"
+      }
+    },
+    "offline-package-smoke": {
+      "command": [
+        "R",
+        "--vanilla",
+        "--slave",
+        "-f",
+        "tools/offline-baseline.R"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T08:21:23.866357+00:00",
+      "finished_utc": "2026-10-05T08:21:24.512625+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/offline-package-smoke.txt",
+        "bytes": 167,
+        "sha256": "66335d09fc7046cc8ba1339bb8f7c33a9c9d631343464adf1597637d6c51476e"
+      }
+    },
+    "continuation-install-spatial": {
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "-e",
+        "options(timeout=120); install.packages(\"https://bioconductor.org/packages/3.18/bioc/src/contrib/SpatialExperiment_1.12.0.tar.gz\", repos=NULL, type=\"source\"); stopifnot(requireNamespace(\"SpatialExperiment\", quietly=TRUE)); print(packageVersion(\"SpatialExperiment\"))"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T12:07:47.233814+00:00",
+      "finished_utc": "2026-10-05T12:07:47.400000+00:00",
+      "exit_code": 1,
+      "status": "fail",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-install-spatial.txt",
+        "bytes": 437,
+        "sha256": "ce7fdae3f488308f9554935a29f0a8af87b0948313630286a704108571552147"
+      }
+    },
+    "continuation-submission-audit": {
+      "command": [
+        "/tmp/opencode/paper-venv/bin/python",
+        "research/audit_submission.py",
+        "--output",
+        "research/results/w00_baseline/continuation-submission-audit-result.json"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T12:20:12.967133+00:00",
+      "finished_utc": "2026-10-05T12:20:26.471179+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-submission-audit.txt",
+        "bytes": 17034,
+        "sha256": "c95bf7045fb5914056b2e52dfcd7dbdbe7e3ced855dd49aa151efdfd3291b045"
+      }
+    },
+    "revision-audit-boundaries": {
+      "command": [
+        "python3",
+        "research/test_current_audit.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T11:29:56.506957+00:00",
+      "finished_utc": "2026-10-08T11:29:56.604395+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/revision-audit-boundaries.txt",
+        "bytes": 101,
+        "sha256": "2c37d50a88147ca2ebd5197d74ee37d462dab650d793512e849814c28d5a38f0"
+      }
+    },
+    "continuation-package-final": {
+      "command": [
+        "R",
+        "CMD",
+        "check",
+        "--no-manual",
+        "--no-vignettes",
+        "--no-build-vignettes",
+        "BioExplainR_0.4.0.9000.tar.gz"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T12:30:50.637863+00:00",
+      "finished_utc": "2026-10-05T12:31:58.035571+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-package-final.txt",
+        "bytes": 2480,
+        "sha256": "7dd601a4c8aa0c24d61244d40f998bd8b0e3d81e0145f6cce1fb04877c4fc9dd"
+      }
+    },
+    "continuation-bwrap-user-actions-final": {
+      "command": [
+        "bash",
+        "tools/bwrap-offline-smoke.sh",
+        "/tmp/opencode/bioexplainr-bwrap-user-actions-final"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T13:34:41.886108+00:00",
+      "finished_utc": "2026-10-05T13:34:42.602491+00:00",
+      "exit_code": 1,
+      "status": "fail",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-bwrap-user-actions-final.txt",
+        "bytes": 287,
+        "sha256": "6f5e18d4b10441dba024566e50c11c2006c8b7d7e2e49320f352fa523cbb4c2d"
+      }
+    },
+    "continuation-bwrap-offline-smoke-final": {
+      "command": [
+        "bash",
+        "tools/bwrap-offline-smoke.sh",
+        "/tmp/opencode/bioexplainr-bwrap-record-final"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T13:30:44.694544+00:00",
+      "finished_utc": "2026-10-05T13:30:45.123140+00:00",
+      "exit_code": 1,
+      "status": "fail",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-bwrap-offline-smoke-final.txt",
+        "bytes": 186,
+        "sha256": "e4633f86f13109a346abf0b6988e09722015fb88509ec976a794c61481ca31ed"
+      }
+    },
+    "continuation-build": {
+      "command": [
+        "R",
+        "CMD",
+        "build",
+        "."
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T12:19:54.230675+00:00",
+      "finished_utc": "2026-10-05T12:19:56.822862+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-build.txt",
+        "bytes": 292,
+        "sha256": "fc6918ab6998430c2768a8f0e35ca4bafebab072ece7c4e8e67ac321957ba8d0"
+      }
+    },
+    "revision-package-check": {
+      "command": [
+        "R",
+        "CMD",
+        "check",
+        "--no-manual",
+        "--no-vignettes",
+        "--no-build-vignettes",
+        "BioExplainR_0.4.0.9000.tar.gz"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T11:26:39.262773+00:00",
+      "finished_utc": "2026-10-08T11:27:48.423011+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/revision-package-check.txt",
+        "bytes": 2480,
+        "sha256": "7dd601a4c8aa0c24d61244d40f998bd8b0e3d81e0145f6cce1fb04877c4fc9dd"
+      }
+    },
+    "w13-source-check": {
+      "command": [
+        "R",
+        "--vanilla",
+        "--slave",
+        "-f",
+        "tools/check.R"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T11:16:30.295460+00:00",
+      "finished_utc": "2026-10-05T11:17:02.625902+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/w13-source-check.txt",
+        "bytes": 1584,
+        "sha256": "8954eafa07ae0a46bdb6d550626fdd518d77cd6ab41cf1c24156da4fbfb0ca52"
+      }
+    },
+    "review-optional-dependencies": {
+      "command": [
+        "bash",
+        "tools/restore-development-optional.sh",
+        "--verify-only"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T08:28:57.488938+00:00",
+      "finished_utc": "2026-10-08T08:29:09.454192+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/review-optional-dependencies.txt",
+        "bytes": 1785,
+        "sha256": "67767c35ccc08b0c3d0ac2b5b6a97863c9690f8b7ad5da0c7ad28c6ab2cf0cff"
+      }
+    },
+    "revision-paper-export-reviewed": {
+      "command": [
+        "/tmp/opencode/paper-venv/bin/python",
+        "research/paper_cn_revision/build_revision.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T11:35:19.370310+00:00",
+      "finished_utc": "2026-10-08T11:35:30.778650+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/revision-paper-export-reviewed.txt",
+        "bytes": 4421,
+        "sha256": "34413ff40ae92b30e629edbf7c0c7153e6773d6354fe8b9ac7658c65ae4cd0c1"
+      }
+    },
+    "acceptance-legacy-api": {
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "tools/legacy-interface-check.R",
+        "research/results/w00_baseline/acceptance-legacy-api-result.json"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T14:20:27.937084+00:00",
+      "finished_utc": "2026-10-05T14:20:29.582213+00:00",
+      "exit_code": 1,
+      "status": "fail",
+      "log": {
+        "path": "research/results/w00_baseline/acceptance-legacy-api.txt",
+        "bytes": 90,
+        "sha256": "20671f16cbd908c543eab805fd3d23e28a930d94e24ed6d650e905deb09f2e1e"
+      }
+    },
+    "ensure-dev": {
+      "command": [
+        "bash",
+        "tools/ensure-server-r-dev.sh"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T08:21:24.015416+00:00",
+      "finished_utc": "2026-10-05T08:21:25.238652+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/ensure-dev.txt",
+        "bytes": 88,
+        "sha256": "0516f0d67face4674b0873041914f27dcb6edfa98a7ca524c26f02c69e0ff129"
+      }
+    },
+    "paper-cn-assets": {
+      "command": [
+        "/tmp/opencode/paper-venv/bin/python",
+        "research/paper_cn/build_assets.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T09:08:35.381421+00:00",
+      "finished_utc": "2026-10-08T09:08:35.445518+00:00",
+      "exit_code": 1,
+      "status": "fail",
+      "log": {
+        "path": "research/results/w00_baseline/paper-cn-assets.txt",
+        "bytes": 432,
+        "sha256": "f12ca2c9482fb6bba3ce59080ae9b2e653201c12a650e1c648ffffc17be50c69"
+      }
+    },
+    "continuation-optional-restore-verify": {
+      "command": [
+        "bash",
+        "tools/restore-development-optional.sh",
+        "--verify-only"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T12:30:34.803177+00:00",
+      "finished_utc": "2026-10-05T12:30:42.089072+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-optional-restore-verify.txt",
+        "bytes": 1785,
+        "sha256": "67767c35ccc08b0c3d0ac2b5b6a97863c9690f8b7ad5da0c7ad28c6ab2cf0cff"
+      }
+    },
+    "continuation-build-user-actions-final2": {
+      "command": [
+        "R",
+        "CMD",
+        "build",
+        "."
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T13:41:20.059627+00:00",
+      "finished_utc": "2026-10-05T13:41:22.696256+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-build-user-actions-final2.txt",
+        "bytes": 292,
+        "sha256": "fc6918ab6998430c2768a8f0e35ca4bafebab072ece7c4e8e67ac321957ba8d0"
+      }
+    },
+    "continuation-source-user-actions-final": {
+      "command": [
+        "R",
+        "--vanilla",
+        "--slave",
+        "-f",
+        "tools/check.R"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T13:33:46.748944+00:00",
+      "finished_utc": "2026-10-05T13:34:26.186383+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-source-user-actions-final.txt",
+        "bytes": 1888,
+        "sha256": "0d56e186bf4a23f33cbd7435516308c5f9d89dfbc10aa105353ade071d1ceebb"
+      }
+    },
+    "audit-negative-final": {
+      "command": [
+        "python3",
+        "research/test_current_audit.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T09:02:04.708330+00:00",
+      "finished_utc": "2026-10-05T09:02:04.867903+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/audit-negative-final.txt",
+        "bytes": 101,
+        "sha256": "869ea8047d0ae89dddb808470175fa3bdce5d6007a92e195f2d7e7e762e1f49f"
+      }
+    },
+    "acceptance-audit-probes": {
+      "command": [
+        "python3",
+        "research/test_current_audit.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T14:26:38.433121+00:00",
+      "finished_utc": "2026-10-05T14:26:38.538073+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/acceptance-audit-probes.txt",
+        "bytes": 101,
+        "sha256": "27c4a39d34ece4cbc66cc59cb0870c7abe4cc0a5f009205bdd0ea06a93f8b3ac"
+      }
+    },
+    "review-miniacc-installed": {
+      "command": [
+        "env",
+        "R_LIBS=/tmp/opencode/bioexplainr-install-review",
+        "Rscript",
+        "--vanilla",
+        "research/multiomics/run_miniacc.R",
+        "research/results/miniacc_installed_review",
+        "--installed"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T08:26:13.995610+00:00",
+      "finished_utc": "2026-10-08T08:26:28.536974+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/review-miniacc-installed.txt",
+        "bytes": 608,
+        "sha256": "6e9b703b8056fb94c9c516ba37c2d144524969d8befe0d55b86e193c5711c28d"
+      }
+    },
+    "continuation-benchmark-tests": {
+      "command": [
+        "python3",
+        "research/test_frozen_benchmark.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T11:56:31.461069+00:00",
+      "finished_utc": "2026-10-05T11:56:34.214989+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-benchmark-tests.txt",
+        "bytes": 101,
+        "sha256": "fbd208745138a7247df15b729c7da60b809301ebcc7479cf1a4fef7449a19b80"
+      }
+    },
+    "paper-cn-source": {
+      "command": [
+        "R",
+        "--vanilla",
+        "--slave",
+        "-f",
+        "tools/check.R"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T09:02:42.222347+00:00",
+      "finished_utc": "2026-10-08T09:03:40.803592+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/paper-cn-source.txt",
+        "bytes": 1989,
+        "sha256": "d3817ccd460c58add5251040e5903d3cf93d804fcd862db2661d3ef997b99b00"
+      }
+    },
+    "acceptance-sandbox-final": {
+      "command": [
+        "python3",
+        "tools/sandbox-boundary-check.py",
+        "--library",
+        "/tmp/opencode/bioexplainr-core-user-actions-final2/library",
+        "--output",
+        "research/results/w00_baseline/acceptance-sandbox-result.json"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T14:20:28.114598+00:00",
+      "finished_utc": "2026-10-05T14:20:33.239338+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/acceptance-sandbox-final.txt",
+        "bytes": 117,
+        "sha256": "18ea08fe48494f0fdc4ff9482a543b7163110932e5c8d939ac6bd7d8b5a8e3ca"
+      }
+    },
+    "supplemental-capture-final": {
+      "command": [
+        "/tmp/opencode/paper-venv/bin/python",
+        "tools/capture-supplemental.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T09:04:02.758938+00:00",
+      "finished_utc": "2026-10-05T09:04:04.049655+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/supplemental-capture-final.txt",
+        "bytes": 957,
+        "sha256": "7d5efc7ed92d39fd60bb4b71b8cdb0f06955d68f095900f62094721f95eaa1e8"
+      }
+    },
+    "paper-cn-final-tool-syntax": {
+      "command": [
+        "env",
+        "PYTHONPYCACHEPREFIX=/tmp/opencode/paper-cn-pycache",
+        "python3",
+        "-m",
+        "py_compile",
+        "research/paper_cn/restart_workbench.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T09:38:42.634023+00:00",
+      "finished_utc": "2026-10-08T09:38:42.692188+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/paper-cn-final-tool-syntax.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    "revision-document-audit-final": {
+      "command": [
+        "/tmp/opencode/paper-venv/bin/python",
+        "research/paper_cn_revision/audit_revision.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T11:30:07.979757+00:00",
+      "finished_utc": "2026-10-08T11:30:14.608400+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/revision-document-audit-final.txt",
+        "bytes": 974,
+        "sha256": "2b69184ea9f1f0eb962a848ffe16876293c341f8f38ac2e78ff80a621b518245"
+      }
+    },
+    "continuation-environment-final": {
+      "command": [
+        "python3",
+        "tools/capture-continuation.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T12:37:59.725989+00:00",
+      "finished_utc": "2026-10-05T12:38:11.642967+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-environment-final.txt",
+        "bytes": 4606,
+        "sha256": "a88f7a25b0788522bf776af0bcdb054f1126f0603749b792f209e9b1be666e1e"
+      }
+    },
+    "acceptance-benchmark": {
+      "command": [
+        "python3",
+        "research/test_frozen_benchmark.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T14:33:19.231565+00:00",
+      "finished_utc": "2026-10-05T14:33:21.938748+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/acceptance-benchmark.txt",
+        "bytes": 101,
+        "sha256": "ae8eb49ed6a9633ce8b54aa2f3d285c8ec0ae35fe4a5f60e32cd9c42c49f63e2"
+      }
+    },
+    "acceptance-environment": {
+      "command": [
+        "python3",
+        "tools/capture-continuation.py",
+        "--core-output",
+        "/tmp/opencode/bioexplainr-acceptance-core",
+        "--bwrap-output",
+        "/tmp/opencode/bioexplainr-acceptance-bwrap"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T14:33:18.959203+00:00",
+      "finished_utc": "2026-10-05T14:33:29.789213+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/acceptance-environment.txt",
+        "bytes": 4606,
+        "sha256": "a88f7a25b0788522bf776af0bcdb054f1126f0603749b792f209e9b1be666e1e"
+      }
+    },
+    "revision-document-audit-reviewed": {
+      "command": [
+        "/tmp/opencode/paper-venv/bin/python",
+        "research/paper_cn_revision/audit_revision.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T11:35:30.839494+00:00",
+      "finished_utc": "2026-10-08T11:35:37.902983+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/revision-document-audit-reviewed.txt",
+        "bytes": 974,
+        "sha256": "2b69184ea9f1f0eb962a848ffe16876293c341f8f38ac2e78ff80a621b518245"
+      }
+    },
+    "review-audit-probes-final": {
+      "command": [
+        "python3",
+        "research/test_current_audit.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T08:32:27.870402+00:00",
+      "finished_utc": "2026-10-08T08:32:28.103468+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/review-audit-probes-final.txt",
+        "bytes": 101,
+        "sha256": "4d781620bc10541738c207349d827f2b375d4f72493bce92c5f0ea15cb151f4e"
+      }
+    },
+    "continuation-isolated-final": {
+      "command": [
+        "python3",
+        "tools/isolated-library-check.py",
+        "--archive",
+        "BioExplainR_0.4.0.9000.tar.gz",
+        "--output",
+        "/tmp/opencode/bioexplainr-continuation-core-final"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T12:30:50.714073+00:00",
+      "finished_utc": "2026-10-05T12:31:01.803869+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-isolated-final.txt",
+        "bytes": 673,
+        "sha256": "d76561331d9b16778ba0e5380a8d72caa76d81d149440ecbafe2764271937189"
+      }
+    },
+    "review-python-syntax-final": {
+      "command": [
+        "env",
+        "PYTHONPYCACHEPREFIX=/tmp/opencode/bioexplainr-review-pycache",
+        "python3",
+        "-m",
+        "py_compile",
+        "tools/capture-continuation.py",
+        "research/multiomics/audit_miniacc.py",
+        "research/multiomics/test_audit_miniacc.py",
+        "research/manage_baseline.py",
+        "research/audit_current_results.py",
+        "research/package_submission.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T08:39:38.903296+00:00",
+      "finished_utc": "2026-10-08T08:39:38.996439+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/review-python-syntax-final.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    "continuation-bwrap-permission-probe": {
+      "command": [
+        "bash",
+        "tools/bwrap-offline-smoke.sh",
+        "/tmp/opencode/bioexplainr-bwrap-user-final"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T13:27:55.348632+00:00",
+      "finished_utc": "2026-10-05T13:27:56.035241+00:00",
+      "exit_code": 1,
+      "status": "fail",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-bwrap-permission-probe.txt",
+        "bytes": 255,
+        "sha256": "af3800f1896377906c568145bfa04e6c561771cb6c335c202dd3aba713a3372d"
+      }
+    },
+    "acceptance-http": {
+      "command": [
+        "python3",
+        "tools/http-transport-smoke.py",
+        "--output",
+        "research/results/w00_baseline/acceptance-http-result.json"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T14:08:37.302694+00:00",
+      "finished_utc": "2026-10-05T14:08:40.920209+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/acceptance-http.txt",
+        "bytes": 154,
+        "sha256": "db44131827b458329873dc2386b64f9ed2f30023a4c5cac45069af5f97369899"
+      }
+    },
+    "acceptance-bwrap-final": {
+      "command": [
+        "bash",
+        "tools/bwrap-offline-smoke.sh",
+        "/tmp/opencode/bioexplainr-acceptance-bwrap",
+        "/tmp/opencode/bioexplainr-acceptance-core/library"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T14:26:38.047835+00:00",
+      "finished_utc": "2026-10-05T14:26:38.716329+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/acceptance-bwrap-final.txt",
+        "bytes": 148,
+        "sha256": "1e75889f3d5b2e75ff77944debd7349ad90abfdb8c335434b18922ccc178af12"
+      }
+    },
+    "revision-python-syntax": {
+      "command": [
+        "python3",
+        "-m",
+        "py_compile",
+        "research/discovery/run_discovery.py",
+        "research/discovery/audit_saved.py",
+        "research/paper_cn_revision/build_revision.py",
+        "research/paper_cn_revision/audit_revision.py",
+        "research/package_submission.py",
+        "research/manage_baseline.py",
+        "research/audit_current_results.py",
+        "tools/audit-publication.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T11:35:19.526418+00:00",
+      "finished_utc": "2026-10-08T11:35:19.609658+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/revision-python-syntax.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    "audit-failure-tests-final": {
+      "command": [
+        "python3",
+        "research/test_current_audit.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T08:21:23.986971+00:00",
+      "finished_utc": "2026-10-05T08:21:24.094799+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/audit-failure-tests-final.txt",
+        "bytes": 101,
+        "sha256": "5279d1fc9a1ced44f9c96da1414ef59e4676f963fbad52e7a1a2903538819b0d"
+      }
+    },
+    "continuation-spatial-archive": {
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "-e",
+        "options(timeout=120); f <- \"research/results/w00_baseline/SpatialExperiment_1.12.0.tar.gz\"; download.file(\"https://bioconductor.org/packages/3.18/bioc/src/contrib/SpatialExperiment_1.12.0.tar.gz\", f, mode=\"wb\"); cat(digest::digest(file=f, algo=\"sha256\"), \"\\n\")"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T12:28:59.388424+00:00",
+      "finished_utc": "2026-10-05T12:29:53.027665+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-spatial-archive.txt",
+        "bytes": 299,
+        "sha256": "3c0fc047e5a2aabefd05371049a3096dc9237f4d6d0654e20501dd4950a11b46"
+      }
+    },
+    "continuation-installed-full-smoke": {
+      "command": [
+        "env",
+        "R_LIBS=BioExplainR.Rcheck",
+        "Rscript",
+        "--vanilla",
+        "tools/offline-smoke.R",
+        "research/results/w00_baseline/continuation-full-smoke"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T12:22:34.895107+00:00",
+      "finished_utc": "2026-10-05T12:22:46.672958+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-installed-full-smoke.txt",
+        "bytes": 172,
+        "sha256": "fe1989f7dcf476d327f3fece167cfd1c0bd796f6f5ad12ecf5ebdc8d5a2c7b34"
+      }
+    },
+    "review-shiny": {
+      "command": [
+        "python3",
+        "tools/shiny-acceptance.py",
+        "--output",
+        "research/results/w00_baseline/review-shiny-browser"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T08:23:21.215559+00:00",
+      "finished_utc": "2026-10-08T08:23:41.059932+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/review-shiny.txt",
+        "bytes": 627,
+        "sha256": "34ed02eebb68c76fb057a1369c797d70adcc37d0b534868a0beb423796034264"
+      }
+    },
+    "continuation-source-initial": {
+      "command": [
+        "R",
+        "--vanilla",
+        "--slave",
+        "-f",
+        "tools/check.R"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T11:57:02.305350+00:00",
+      "finished_utc": "2026-10-05T11:57:36.717899+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-source-initial.txt",
+        "bytes": 1678,
+        "sha256": "d4627dd47cdfd54a57b7a08bceef6b670758942e729bd78f4ac6ecb2a4abff05"
+      }
+    },
+    "paper-cn-package-check": {
+      "command": [
+        "R",
+        "CMD",
+        "check",
+        "--no-manual",
+        "--no-vignettes",
+        "--no-build-vignettes",
+        "BioExplainR_0.4.0.9000.tar.gz"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T09:22:16.254068+00:00",
+      "finished_utc": "2026-10-08T09:23:40.080819+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/paper-cn-package-check.txt",
+        "bytes": 2480,
+        "sha256": "7dd601a4c8aa0c24d61244d40f998bd8b0e3d81e0145f6cce1fb04877c4fc9dd"
+      }
+    },
+    "revision-document-audit": {
+      "command": [
+        "/tmp/opencode/paper-venv/bin/python",
+        "research/paper_cn_revision/audit_revision.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T11:26:30.919093+00:00",
+      "finished_utc": "2026-10-08T11:26:39.512058+00:00",
+      "exit_code": 1,
+      "status": "fail",
+      "log": {
+        "path": "research/results/w00_baseline/revision-document-audit.txt",
+        "bytes": 829,
+        "sha256": "b6536be7e0f1bae6c1a0f180ee5934178ff5fbd31a764c3a9977f7b6a5f142d7"
+      }
+    },
+    "paper-cn-export": {
+      "command": [
+        "/tmp/opencode/paper-venv/bin/python",
+        "research/paper_cn/export_manuscript.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T09:25:06.064549+00:00",
+      "finished_utc": "2026-10-08T09:25:16.379741+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/paper-cn-export.txt",
+        "bytes": 2069,
+        "sha256": "702c3bc4a833ce107102888b28993c4958ad34fd8940e54f701babaf47c15d4e"
+      }
+    },
+    "continuation-fixtures-user-actions-final": {
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "inst/fixtures/contracts/validate_fixtures.R"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T13:33:47.441288+00:00",
+      "finished_utc": "2026-10-05T13:33:48.057401+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-fixtures-user-actions-final.txt",
+        "bytes": 236,
+        "sha256": "480b785b4c2466920aa2bbea37da97bf3fd941c74d9554712d39d52e98e1acd6"
+      }
+    },
+    "continuation-package-user-actions-final3": {
+      "command": [
+        "R",
+        "CMD",
+        "check",
+        "--no-manual",
+        "--no-vignettes",
+        "--no-build-vignettes",
+        "BioExplainR_0.4.0.9000.tar.gz"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T13:51:19.776726+00:00",
+      "finished_utc": "2026-10-05T13:52:30.869181+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-package-user-actions-final3.txt",
+        "bytes": 2480,
+        "sha256": "7dd601a4c8aa0c24d61244d40f998bd8b0e3d81e0145f6cce1fb04877c4fc9dd"
+      }
+    },
+    "paper-cn-delivery": {
+      "command": [
+        "python3",
+        "research/package_submission.py",
+        "--audit",
+        "docs/paper_cn_v1/audit.json",
+        "--output",
+        "docs/BioExplainR-development-delivery-0.4.0.9000-r7.zip",
+        "--result",
+        "research/results/w00_baseline/paper-cn-delivery-audit-result.json"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T09:40:17.469013+00:00",
+      "finished_utc": "2026-10-08T09:40:22.093392+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/paper-cn-delivery.txt",
+        "bytes": 169,
+        "sha256": "9dc2da9e8a8b3e3f5028ec74d64d6bf91bc7d6eac918fe1dfd914456ae84114e"
+      }
+    },
+    "submission-audit-isolated": {
+      "command": [
+        "/tmp/opencode/paper-venv/bin/python",
+        "research/audit_submission.py",
+        "--output",
+        "research/results/w00_baseline/submission-audit-isolated.json"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T09:04:39.757587+00:00",
+      "finished_utc": "2026-10-05T09:04:53.009221+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/submission-audit-isolated.txt",
+        "bytes": 17034,
+        "sha256": "c95bf7045fb5914056b2e52dfcd7dbdbe7e3ced855dd49aa151efdfd3291b045"
+      }
+    },
+    "w13-package-check": {
+      "command": [
+        "R",
+        "CMD",
+        "check",
+        "--no-manual",
+        "--no-vignettes",
+        "--no-build-vignettes",
+        "BioExplainR_0.4.0.9000.tar.gz"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T11:17:02.670920+00:00",
+      "finished_utc": "2026-10-05T11:19:09.151653+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/w13-package-check.txt",
+        "bytes": 2480,
+        "sha256": "7dd601a4c8aa0c24d61244d40f998bd8b0e3d81e0145f6cce1fb04877c4fc9dd"
+      }
+    },
+    "paper-cn-document-audit-final": {
+      "command": [
+        "/tmp/opencode/paper-venv/bin/python",
+        "research/paper_cn/audit_manuscript.py",
+        "--output",
+        "docs/paper_cn_v1/audit.json"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T09:28:21.304558+00:00",
+      "finished_utc": "2026-10-08T09:28:38.313061+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/paper-cn-document-audit-final.txt",
+        "bytes": 896,
+        "sha256": "b0a3b1ef0af50dc6590e25740ce22db308ef2c7e4eed23613f7ef73e99cbec26"
+      }
+    },
+    "continuation-shell-syntax": {
+      "command": [
+        "bash",
+        "-n",
+        "tools/restore-development-optional.sh"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T12:30:34.780090+00:00",
+      "finished_utc": "2026-10-05T12:30:34.784497+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-shell-syntax.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    "revision-paper-export": {
+      "command": [
+        "/tmp/opencode/paper-venv/bin/python",
+        "research/paper_cn_revision/build_revision.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T11:20:34.118747+00:00",
+      "finished_utc": "2026-10-08T11:20:48.796641+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/revision-paper-export.txt",
+        "bytes": 4225,
+        "sha256": "d7f11a310ea95b5482646001fbccef34cff0ed9532514d3ba7e67b0732353f1c"
+      }
+    },
+    "continuation-w12-audit": {
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "research/w12_challenges/audit_challenges.R"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T12:19:54.338827+00:00",
+      "finished_utc": "2026-10-05T12:19:54.792490+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-w12-audit.txt",
+        "bytes": 35,
+        "sha256": "119880e32c307be83fcbc2c20c1c6907f04cd01f2c7c6bcd4d7f72bfca557ad2"
+      }
+    },
+    "revision-delivery": {
+      "command": [
+        "python3",
+        "research/package_submission.py",
+        "--revision",
+        "--audit",
+        "docs/paper_cn_v2/audit.json",
+        "--output",
+        "docs/BioExplainR-development-delivery-0.4.0.9000-r8.zip",
+        "--result",
+        "research/results/w00_baseline/revision-delivery-audit-result.json"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T11:38:53.953692+00:00",
+      "finished_utc": "2026-10-08T11:38:59.685575+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/revision-delivery.txt",
+        "bytes": 170,
+        "sha256": "966816f2a8375cb85d6a29713ce16fa81d2ee2d67d70e5f47e66845be94b0629"
+      }
+    },
+    "package-build": {
+      "command": [
+        "R",
+        "CMD",
+        "build",
+        "."
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T07:54:46.251804+00:00",
+      "finished_utc": "2026-10-05T07:54:50.809821+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/package-build.txt",
+        "bytes": 287,
+        "sha256": "fa07df8e737229f2dd0f3874793518dbddc247aaa1a82c71237d885342bab249"
+      }
+    },
+    "improvement-build": {
+      "command": [
+        "R",
+        "CMD",
+        "build",
+        "."
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-07T09:09:25.774363+00:00",
+      "finished_utc": "2026-10-07T09:09:28.758847+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/improvement-build.txt",
+        "bytes": 292,
+        "sha256": "fc6918ab6998430c2768a8f0e35ca4bafebab072ece7c4e8e67ac321957ba8d0"
+      }
+    },
+    "paper-cn-installed-smoke": {
+      "command": [
+        "env",
+        "R_LIBS=BioExplainR.Rcheck",
+        "Rscript",
+        "--vanilla",
+        "tools/offline-smoke.R",
+        "research/results/w00_baseline/paper-cn-full-smoke"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T09:24:45.646399+00:00",
+      "finished_utc": "2026-10-08T09:24:56.593454+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/paper-cn-installed-smoke.txt",
+        "bytes": 277,
+        "sha256": "f3b0fee6f04c321fe30e22a8cb5a51e5f42f4cedfb465f9de6baaf95c3314a66"
+      }
+    },
+    "continuation-build-final": {
+      "command": [
+        "R",
+        "CMD",
+        "build",
+        "."
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T12:30:34.743384+00:00",
+      "finished_utc": "2026-10-05T12:30:37.610359+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-build-final.txt",
+        "bytes": 292,
+        "sha256": "fc6918ab6998430c2768a8f0e35ca4bafebab072ece7c4e8e67ac321957ba8d0"
+      }
+    },
+    "improvement-package-check": {
+      "command": [
+        "R",
+        "CMD",
+        "check",
+        "--no-manual",
+        "--no-vignettes",
+        "--no-build-vignettes",
+        "BioExplainR_0.4.0.9000.tar.gz"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-07T09:10:25.391637+00:00",
+      "finished_utc": "2026-10-07T09:11:35.081548+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/improvement-package-check.txt",
+        "bytes": 2480,
+        "sha256": "7dd601a4c8aa0c24d61244d40f998bd8b0e3d81e0145f6cce1fb04877c4fc9dd"
+      }
+    },
+    "capture-baseline-final": {
+      "command": [
+        "bash",
+        "tools/server-R",
+        "--vanilla",
+        "--slave",
+        "-f",
+        "tools/capture-baseline.R"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T08:08:30.004591+00:00",
+      "finished_utc": "2026-10-05T08:08:32.170166+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/capture-baseline-final.txt",
+        "bytes": 75,
+        "sha256": "c41ea3d5410ece6fef3d6ee65dcf01d55b5d5da7fced72aed88ab251e725f0d0"
+      }
+    },
+    "review-benchmark": {
+      "command": [
+        "python3",
+        "research/test_frozen_benchmark.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T08:23:20.738041+00:00",
+      "finished_utc": "2026-10-08T08:23:25.866642+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/review-benchmark.txt",
+        "bytes": 101,
+        "sha256": "c143450919b2251d4923e893fcfa025b5f7dea683521288973e5c23809057f18"
+      }
+    },
+    "paper-cn-assets-corrected": {
+      "command": [
+        "/tmp/opencode/paper-venv/bin/python",
+        "research/paper_cn/build_assets.py",
+        "--refresh-draft"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T09:27:23.833182+00:00",
+      "finished_utc": "2026-10-08T09:27:34.689226+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/paper-cn-assets-corrected.txt",
+        "bytes": 74,
+        "sha256": "3867d5f99a3ad9e6ed2b4a536da3d638119d38c8e17b0f48a6736321673661f4"
+      }
+    },
+    "paper-cn-core": {
+      "command": [
+        "python3",
+        "tools/isolated-library-check.py",
+        "--archive",
+        "BioExplainR_0.4.0.9000.tar.gz",
+        "--output",
+        "/tmp/opencode/bioexplainr-paper-cn-core"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T09:29:33.164169+00:00",
+      "finished_utc": "2026-10-08T09:29:43.704557+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/paper-cn-core.txt",
+        "bytes": 768,
+        "sha256": "5eefc098bff10a619093b5e3b89c15a5a1b30f4223fcf0d7b3d4358ea1e4df17"
+      }
+    },
+    "continuation-installed-final": {
+      "command": [
+        "env",
+        "R_LIBS=BioExplainR.Rcheck",
+        "Rscript",
+        "--vanilla",
+        "tools/offline-smoke.R",
+        "research/results/w00_baseline/continuation-full-smoke-final"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T12:37:59.744300+00:00",
+      "finished_utc": "2026-10-05T12:38:10.821361+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-installed-final.txt",
+        "bytes": 178,
+        "sha256": "b4bb9c3da4c59cdabeb127aaf8b39d168c9cf33effcb9ad03d2f706c16f2788c"
+      }
+    },
+    "continuation-python-compile": {
+      "command": [
+        "python3",
+        "-m",
+        "py_compile",
+        "research/manage_baseline.py",
+        "research/audit_current_results.py",
+        "research/package_submission.py",
+        "research/test_frozen_benchmark.py",
+        "tools/isolated-library-check.py",
+        "tools/capture-continuation.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T12:30:34.805495+00:00",
+      "finished_utc": "2026-10-05T12:30:34.883671+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-python-compile.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    "paper-cn-input-inventory": {
+      "command": [
+        "python3",
+        "research/paper_cn/capture_case_inputs.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T09:40:17.334570+00:00",
+      "finished_utc": "2026-10-08T09:40:17.420871+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/paper-cn-input-inventory.txt",
+        "bytes": 861,
+        "sha256": "89f99ebba45c296717d1ae6ca212651501e8333afd03a9afebbbb88b521c2f4b"
+      }
+    },
+    "python-venv": {
+      "command": [
+        "python3",
+        "-m",
+        "venv",
+        "--system-site-packages",
+        "/tmp/opencode/paper-venv"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T08:05:02.198021+00:00",
+      "finished_utc": "2026-10-05T08:05:06.754061+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/python-venv.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    "review-miniacc-boundaries": {
+      "command": [
+        "python3",
+        "research/multiomics/test_audit_miniacc.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T08:22:20.348142+00:00",
+      "finished_utc": "2026-10-08T08:22:20.954852+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/review-miniacc-boundaries.txt",
+        "bytes": 113,
+        "sha256": "87aa530d21c96032a28294ada615276463c011d7fb6244647b34eef4de5caa73"
+      }
+    },
+    "audit-failure-tests": {
+      "command": [
+        "python3",
+        "research/test_current_audit.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T08:05:02.917853+00:00",
+      "finished_utc": "2026-10-05T08:05:03.035848+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/audit-failure-tests.txt",
+        "bytes": 100,
+        "sha256": "24adda79e21044fef19cdc7f0606a9cd7770fc9a99c705a8622ee923c13bce5d"
+      }
+    },
+    "acceptance-source": {
+      "command": [
+        "R",
+        "--vanilla",
+        "--slave",
+        "-f",
+        "tools/check.R"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T14:23:23.609770+00:00",
+      "finished_utc": "2026-10-05T14:24:03.224222+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/acceptance-source.txt",
+        "bytes": 1940,
+        "sha256": "9ca05bd17b4628c071bb399b2156f4a0699d948a2725d85c6bfe23a5bca07554"
+      }
+    },
+    "paper-cn-assets-manifest": {
+      "command": [
+        "/tmp/opencode/paper-venv/bin/python",
+        "research/paper_cn/build_assets.py",
+        "--refresh-draft"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T09:28:01.175845+00:00",
+      "finished_utc": "2026-10-08T09:28:12.508664+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/paper-cn-assets-manifest.txt",
+        "bytes": 74,
+        "sha256": "3867d5f99a3ad9e6ed2b4a536da3d638119d38c8e17b0f48a6736321673661f4"
+      }
+    },
+    "revision-discovery-freeze": {
+      "command": [
+        "/tmp/opencode/paper-venv/bin/python",
+        "research/discovery/run_discovery.py",
+        "freeze",
+        "research/results/discovery_sparcl1_v1"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T11:07:05.249986+00:00",
+      "finished_utc": "2026-10-08T11:07:10.687131+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/revision-discovery-freeze.txt",
+        "bytes": 302,
+        "sha256": "3a0dc243256658d5db44c6b6c61abe240b278cfc4fd9e0a4889ea73a6e1dec13"
+      }
+    },
+    "continuation-source-user-actions-final3": {
+      "command": [
+        "R",
+        "--vanilla",
+        "--slave",
+        "-f",
+        "tools/check.R"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T13:48:36.752252+00:00",
+      "finished_utc": "2026-10-05T13:49:15.413674+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-source-user-actions-final3.txt",
+        "bytes": 1907,
+        "sha256": "19b25dc4a93e129d9617c0f58a7498eaaa43458fbbc974cebae512dc5c99df83"
+      }
+    },
+    "acceptance-imports-only": {
+      "command": [
+        "python3",
+        "tools/isolated-library-check.py",
+        "--archive",
+        "BioExplainR_0.4.0.9000.tar.gz",
+        "--output",
+        "/tmp/opencode/bioexplainr-acceptance-core"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T14:26:06.145297+00:00",
+      "finished_utc": "2026-10-05T14:26:14.246464+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/acceptance-imports-only.txt",
+        "bytes": 665,
+        "sha256": "90d77093f083f807bf6efeff0c2e8e1525d59cef81e7dca03c3ae8ad1e2d27e0"
+      }
+    },
+    "continuation-bwrap-offline-smoke": {
+      "command": [
+        "bash",
+        "tools/bwrap-offline-smoke.sh",
+        "/tmp/opencode/bioexplainr-bwrap-record"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T13:30:16.710196+00:00",
+      "finished_utc": "2026-10-05T13:30:17.067055+00:00",
+      "exit_code": 1,
+      "status": "fail",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-bwrap-offline-smoke.txt",
+        "bytes": 120,
+        "sha256": "ab2d1ccc118bd0948a5447eedc586cfc672f6c60c014b57889a8fc8097813869"
+      }
+    },
+    "paper-cn-upload-verification": {
+      "command": [
+        "python3",
+        "research/paper_cn/verify_upload.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T09:36:20.924296+00:00",
+      "finished_utc": "2026-10-08T09:36:44.148572+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/paper-cn-upload-verification.txt",
+        "bytes": 2435,
+        "sha256": "875f6c368539845ffd1b629f65b81a5e39928a9da132d2adb1a36b104f5032a9"
+      }
+    },
+    "continuation-isolated-library": {
+      "command": [
+        "python3",
+        "tools/isolated-library-check.py",
+        "--archive",
+        "BioExplainR_0.4.0.9000.tar.gz",
+        "--output",
+        "/tmp/opencode/bioexplainr-continuation-core"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T12:20:12.977942+00:00",
+      "finished_utc": "2026-10-05T12:20:23.742075+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-isolated-library.txt",
+        "bytes": 667,
+        "sha256": "b0029b8e578a36521daf347c756acc4a3cbb9e50661a56522b159908675d4729"
+      }
+    },
+    "node-install": {
+      "command": [
+        "npm",
+        "install",
+        "--prefix",
+        "/tmp/opencode",
+        "playwright@1.56.1",
+        "pngjs@7.0.0"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T08:05:02.231540+00:00",
+      "finished_utc": "2026-10-05T08:05:05.978716+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/node-install.txt",
+        "bytes": 24,
+        "sha256": "88b9141cb58f11737b41844c74cbe5d9637404f57b3afb015ee2f41ab63691cd"
+      }
+    },
+    "paper-cn-shiny": {
+      "command": [
+        "python3",
+        "tools/shiny-acceptance.py",
+        "--output",
+        "research/results/w00_baseline/paper-cn-shiny-browser"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T08:59:58.534707+00:00",
+      "finished_utc": "2026-10-08T09:00:21.027158+00:00",
+      "exit_code": 1,
+      "status": "fail",
+      "log": {
+        "path": "research/results/w00_baseline/paper-cn-shiny.txt",
+        "bytes": 900,
+        "sha256": "a7cab0133dec086d5bf00515a211ab5bafc385ebd3ef05558d7b0fbdca798c2f"
+      }
+    },
+    "audit-current-initial": {
+      "command": [
+        "R",
+        "--vanilla",
+        "--slave",
+        "-f",
+        "research/audit_results.R",
+        "--args",
+        "--mode=current"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T08:05:44.738093+00:00",
+      "finished_utc": "2026-10-05T08:05:46.441607+00:00",
+      "exit_code": 1,
+      "status": "fail",
+      "log": {
+        "path": "research/results/w00_baseline/audit-current-initial.txt",
+        "bytes": 90,
+        "sha256": "36e902971df9805125570e29b9067e5fa44a5d0004929956c1c977fa46df5e28"
+      }
+    },
+    "continuation-package-user-actions-final2": {
+      "command": [
+        "R",
+        "CMD",
+        "check",
+        "--no-manual",
+        "--no-vignettes",
+        "--no-build-vignettes",
+        "BioExplainR_0.4.0.9000.tar.gz"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T13:41:39.406804+00:00",
+      "finished_utc": "2026-10-05T13:42:51.125051+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-package-user-actions-final2.txt",
+        "bytes": 2480,
+        "sha256": "7dd601a4c8aa0c24d61244d40f998bd8b0e3d81e0145f6cce1fb04877c4fc9dd"
+      }
+    },
+    "continuation-audit-probes": {
+      "command": [
+        "python3",
+        "research/test_current_audit.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T12:28:59.392708+00:00",
+      "finished_utc": "2026-10-05T12:28:59.545394+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-audit-probes.txt",
+        "bytes": 101,
+        "sha256": "27c4a39d34ece4cbc66cc59cb0870c7abe4cc0a5f009205bdd0ea06a93f8b3ac"
+      }
+    },
+    "continuation-benchmark-user-actions-final": {
+      "command": [
+        "python3",
+        "research/test_frozen_benchmark.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T13:33:47.328195+00:00",
+      "finished_utc": "2026-10-05T13:33:51.286749+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-benchmark-user-actions-final.txt",
+        "bytes": 101,
+        "sha256": "8a4cf712b75d1a326cd4d260e1fbef69f4404edcd0b36f702469736e88b7d543"
+      }
+    },
+    "revision-source": {
+      "command": [
+        "R",
+        "--vanilla",
+        "--slave",
+        "-f",
+        "tools/check.R"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T11:20:34.228047+00:00",
+      "finished_utc": "2026-10-08T11:21:18.358952+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/revision-source.txt",
+        "bytes": 1989,
+        "sha256": "d3817ccd460c58add5251040e5903d3cf93d804fcd862db2661d3ef997b99b00"
+      }
+    },
+    "improvement-miniacc-audit": {
+      "command": [
+        "python3",
+        "research/multiomics/audit_miniacc.py",
+        "research/results/miniacc_development_v1"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-07T08:58:39.392737+00:00",
+      "finished_utc": "2026-10-07T08:58:39.477541+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/improvement-miniacc-audit.txt",
+        "bytes": 394,
+        "sha256": "0ee7637b684590a993da1c20c112e50949b1c624f4e5b4a5a05223f649b996ef"
+      }
+    },
+    "continuation-benchmark-final": {
+      "command": [
+        "python3",
+        "research/test_frozen_benchmark.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T12:19:54.279973+00:00",
+      "finished_utc": "2026-10-05T12:19:57.557412+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-benchmark-final.txt",
+        "bytes": 101,
+        "sha256": "2b7a16a6ea6acbe4df380f4ca249d592af678be829c691d237753ed951340ed1"
+      }
+    },
+    "review-w12": {
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "research/w12_challenges/audit_challenges.R"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T08:26:14.003992+00:00",
+      "finished_utc": "2026-10-08T08:26:15.032014+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/review-w12.txt",
+        "bytes": 35,
+        "sha256": "119880e32c307be83fcbc2c20c1c6907f04cd01f2c7c6bcd4d7f72bfca557ad2"
+      }
+    },
+    "improvement-source": {
+      "command": [
+        "R",
+        "--vanilla",
+        "--slave",
+        "-f",
+        "tools/check.R"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-07T08:58:39.459045+00:00",
+      "finished_utc": "2026-10-07T08:59:20.229644+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/improvement-source.txt",
+        "bytes": 2115,
+        "sha256": "a03e2061e7b7d83dffd68185b93c5341cfa42ffd8bc1e00a987699ebe268d7df"
+      }
+    },
+    "acceptance-package-check": {
+      "command": [
+        "R",
+        "CMD",
+        "check",
+        "--no-manual",
+        "--no-vignettes",
+        "--no-build-vignettes",
+        "BioExplainR_0.4.0.9000.tar.gz"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T14:24:44.627260+00:00",
+      "finished_utc": "2026-10-05T14:25:54.221668+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/acceptance-package-check.txt",
+        "bytes": 2480,
+        "sha256": "7dd601a4c8aa0c24d61244d40f998bd8b0e3d81e0145f6cce1fb04877c4fc9dd"
+      }
+    },
+    "paper-cn-audit-probes": {
+      "command": [
+        "python3",
+        "research/test_current_audit.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T09:36:20.924108+00:00",
+      "finished_utc": "2026-10-08T09:36:21.028700+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/paper-cn-audit-probes.txt",
+        "bytes": 101,
+        "sha256": "27c4a39d34ece4cbc66cc59cb0870c7abe4cc0a5f009205bdd0ea06a93f8b3ac"
+      }
+    },
+    "review-environment": {
+      "command": [
+        "python3",
+        "tools/capture-continuation.py",
+        "--core-output",
+        "/tmp/opencode/bioexplainr-review-core",
+        "--bwrap-output",
+        "/tmp/opencode/bioexplainr-review-bwrap",
+        "--prefix",
+        "review"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T08:28:57.491995+00:00",
+      "finished_utc": "2026-10-08T08:29:13.487433+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/review-environment.txt",
+        "bytes": 4606,
+        "sha256": "a88f7a25b0788522bf776af0bcdb054f1126f0603749b792f209e9b1be666e1e"
+      }
+    },
+    "paper-cn-export-corrected": {
+      "command": [
+        "/tmp/opencode/paper-venv/bin/python",
+        "research/paper_cn/export_manuscript.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T09:27:34.753223+00:00",
+      "finished_utc": "2026-10-08T09:27:43.222803+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/paper-cn-export-corrected.txt",
+        "bytes": 2167,
+        "sha256": "bf93ddd3f6c0bef35b0a5b1af0fc7d92644717ebc72a8a51419c20e34f965855"
+      }
+    },
+    "continuation-paper-audit-user-actions-final": {
+      "command": [
+        "/tmp/opencode/paper-venv/bin/python",
+        "research/audit_submission.py",
+        "--output",
+        "research/results/w00_baseline/continuation-submission-audit-result.json"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T13:34:41.870351+00:00",
+      "finished_utc": "2026-10-05T13:35:00.968610+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-paper-audit-user-actions-final.txt",
+        "bytes": 17034,
+        "sha256": "c95bf7045fb5914056b2e52dfcd7dbdbe7e3ced855dd49aa151efdfd3291b045"
+      }
+    },
+    "acceptance-build": {
+      "command": [
+        "R",
+        "CMD",
+        "build",
+        "."
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T14:24:42.641138+00:00",
+      "finished_utc": "2026-10-05T14:24:44.573464+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/acceptance-build.txt",
+        "bytes": 292,
+        "sha256": "fc6918ab6998430c2768a8f0e35ca4bafebab072ece7c4e8e67ac321957ba8d0"
+      }
+    },
+    "acceptance-sandbox": {
+      "command": [
+        "python3",
+        "tools/sandbox-boundary-check.py",
+        "--library",
+        "BioExplainR.Rcheck",
+        "--output",
+        "research/results/w00_baseline/acceptance-sandbox-result.json"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T14:14:31.034166+00:00",
+      "finished_utc": "2026-10-05T14:14:31.210619+00:00",
+      "exit_code": 1,
+      "status": "fail",
+      "log": {
+        "path": "research/results/w00_baseline/acceptance-sandbox.txt",
+        "bytes": 360,
+        "sha256": "8cf585641e23f2a504a5e1d8422bc6ee223af97f463ba8ec6ef2be3b7897a0bc"
+      }
+    },
+    "acceptance-shiny": {
+      "command": [
+        "python3",
+        "tools/shiny-acceptance.py",
+        "--output",
+        "research/results/w00_baseline/acceptance-shiny-browser"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T14:11:42.419810+00:00",
+      "finished_utc": "2026-10-05T14:11:58.867488+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/acceptance-shiny.txt",
+        "bytes": 627,
+        "sha256": "83e5177b546c4dbc478136bdca10c0b625e7115c661c9599dba8a89e07a628b6"
+      }
+    },
+    "apt-install": {
+      "command": [
+        "sudo",
+        "env",
+        "DEBIAN_FRONTEND=noninteractive",
+        "apt-get",
+        "install",
+        "-y",
+        "--no-install-recommends",
+        "r-base",
+        "r-base-dev",
+        "r-cran-jsonlite",
+        "r-cran-httr2",
+        "r-cran-testthat",
+        "r-cran-pkgload",
+        "r-cran-roxygen2",
+        "r-cran-callr",
+        "r-cran-withr",
+        "r-cran-ggplot2",
+        "r-cran-shiny",
+        "r-cran-rlang",
+        "r-cran-digest",
+        "r-bioc-s4vectors",
+        "r-bioc-summarizedexperiment",
+        "r-bioc-singlecellexperiment",
+        "r-bioc-biobase",
+        "r-bioc-deseq2",
+        "r-bioc-limma",
+        "r-bioc-edger",
+        "r-cran-seuratobject",
+        "r-cran-uwot",
+        "pandoc",
+        "python3-docx",
+        "python3-openpyxl",
+        "python3-pil",
+        "python3-matplotlib"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T07:51:19.925812+00:00",
+      "finished_utc": "2026-10-05T07:52:13.000026+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/apt-install.txt",
+        "bytes": 73667,
+        "sha256": "904b0d670d0aad16a0f5d0ec90ff8b84750c7bd32dae8f1fe0af42307214ea50"
+      }
+    },
+    "acceptance-delivery": {
+      "command": [
+        "python3",
+        "research/package_submission.py",
+        "--audit",
+        "research/results/w00_baseline/continuation-submission-audit-result.json"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T14:34:05.272500+00:00",
+      "finished_utc": "2026-10-05T14:34:06.908974+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/acceptance-delivery.txt",
+        "bytes": 169,
+        "sha256": "356a177ae45291f411dda38ab1f4de2eea3fa9717d295561dde6cdb8955d7e91"
+      }
+    },
+    "paper-cn-document-audit": {
+      "command": [
+        "/tmp/opencode/paper-venv/bin/python",
+        "research/paper_cn/audit_manuscript.py",
+        "--output",
+        "docs/paper_cn_v1/audit.json"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T09:27:43.280014+00:00",
+      "finished_utc": "2026-10-08T09:27:43.722946+00:00",
+      "exit_code": 1,
+      "status": "fail",
+      "log": {
+        "path": "research/results/w00_baseline/paper-cn-document-audit.txt",
+        "bytes": 802,
+        "sha256": "1279c30f21663880e73ac7130bce28cf43f70214233d43676d6177c8a3b8f0a8"
+      }
+    },
+    "continuation-build-user-actions-final": {
+      "command": [
+        "R",
+        "CMD",
+        "build",
+        "."
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T13:33:46.777161+00:00",
+      "finished_utc": "2026-10-05T13:33:50.331310+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-build-user-actions-final.txt",
+        "bytes": 292,
+        "sha256": "fc6918ab6998430c2768a8f0e35ca4bafebab072ece7c4e8e67ac321957ba8d0"
+      }
+    },
+    "paper-cn-python-syntax": {
+      "command": [
+        "env",
+        "PYTHONPYCACHEPREFIX=/tmp/opencode/paper-cn-pycache",
+        "python3",
+        "-m",
+        "py_compile",
+        "research/paper_cn/build_assets.py",
+        "research/paper_cn/export_manuscript.py",
+        "research/paper_cn/audit_manuscript.py",
+        "research/paper_cn/package_paper.py",
+        "research/manage_baseline.py",
+        "research/audit_current_results.py",
+        "research/package_submission.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T09:35:04.660455+00:00",
+      "finished_utc": "2026-10-08T09:35:04.916648+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/paper-cn-python-syntax.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    "python-install": {
+      "command": [
+        "/tmp/opencode/paper-venv/bin/pip",
+        "install",
+        "PyMuPDF==1.26.5"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T08:05:06.905359+00:00",
+      "finished_utc": "2026-10-05T08:05:09.814818+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/python-install.txt",
+        "bytes": 513,
+        "sha256": "d1f7cba46733a1fb11afae36899bd6245bfb401a35cbf1b8b978ce9444aa0c39"
+      }
+    },
+    "review-bwrap": {
+      "command": [
+        "bash",
+        "tools/bwrap-offline-smoke.sh",
+        "/tmp/opencode/bioexplainr-review-bwrap",
+        "/tmp/opencode/bioexplainr-review-core/library"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T08:26:13.999973+00:00",
+      "finished_utc": "2026-10-08T08:26:15.373478+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/review-bwrap.txt",
+        "bytes": 144,
+        "sha256": "9747fe92e581ac98075dc848c406cf19d0cbd0654d76bb1464102d0e3909eb85"
+      }
+    },
+    "paper-cn-assets-final": {
+      "command": [
+        "/tmp/opencode/paper-venv/bin/python",
+        "research/paper_cn/build_assets.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T09:14:46.473904+00:00",
+      "finished_utc": "2026-10-08T09:14:58.842768+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/paper-cn-assets-final.txt",
+        "bytes": 74,
+        "sha256": "3867d5f99a3ad9e6ed2b4a536da3d638119d38c8e17b0f48a6736321673661f4"
+      }
+    },
+    "review-delivery-final-verify": {
+      "command": [
+        "python3",
+        "research/package_submission.py",
+        "--audit",
+        "research/results/w00_baseline/continuation-submission-audit-result.json",
+        "--verify-only",
+        "--result",
+        "research/results/w00_baseline/review-delivery-final-verification.json"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T08:41:56.753372+00:00",
+      "finished_utc": "2026-10-08T08:41:57.450386+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/review-delivery-final-verify.txt",
+        "bytes": 169,
+        "sha256": "bfbeccd257de05d376c992e2865140a31dec610cddbadf0c3099345c021df6a5"
+      }
+    },
+    "review-install": {
+      "command": [
+        "R",
+        "CMD",
+        "INSTALL",
+        "--library=/tmp/opencode/bioexplainr-install-review",
+        "BioExplainR_0.4.0.9000.tar.gz"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T08:23:59.164913+00:00",
+      "finished_utc": "2026-10-08T08:24:15.685774+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/review-install.txt",
+        "bytes": 446,
+        "sha256": "6e2449b82751c933b550afb8c63a68ac88571a2166aa498a8655efeeceedd1f6"
+      }
+    },
+    "acceptance-full-smoke": {
+      "command": [
+        "env",
+        "R_LIBS=BioExplainR.Rcheck",
+        "Rscript",
+        "--vanilla",
+        "tools/offline-smoke.R",
+        "research/results/w00_baseline/acceptance-full-smoke"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T14:26:38.238008+00:00",
+      "finished_utc": "2026-10-05T14:26:47.346291+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/acceptance-full-smoke.txt",
+        "bytes": 170,
+        "sha256": "fbe29481c49abbf4f1770554a074a2deefc3471dc8da4e7a76948f90fecb0677"
+      }
+    },
+    "review-miniacc-boundaries-final": {
+      "command": [
+        "python3",
+        "research/multiomics/test_audit_miniacc.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T08:32:27.821630+00:00",
+      "finished_utc": "2026-10-08T08:32:28.717131+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/review-miniacc-boundaries-final.txt",
+        "bytes": 115,
+        "sha256": "af06ee01aa3befbc27264f48296d59ebbae6231e8ae27ef51050070ccb861f70"
+      }
+    },
+    "review-sandbox": {
+      "command": [
+        "python3",
+        "tools/sandbox-boundary-check.py",
+        "--library",
+        "/tmp/opencode/bioexplainr-review-core/library",
+        "--output",
+        "research/results/w00_baseline/review-sandbox-result.json"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T08:26:13.988296+00:00",
+      "finished_utc": "2026-10-08T08:26:20.764861+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/review-sandbox.txt",
+        "bytes": 117,
+        "sha256": "18ea08fe48494f0fdc4ff9482a543b7163110932e5c8d939ac6bd7d8b5a8e3ca"
+      }
+    },
+    "paper-cn-paper-bundle": {
+      "command": [
+        "/tmp/opencode/paper-venv/bin/python",
+        "research/paper_cn/package_paper.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T09:35:04.214929+00:00",
+      "finished_utc": "2026-10-08T09:35:04.680762+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/paper-cn-paper-bundle.txt",
+        "bytes": 205,
+        "sha256": "86f5974e3ccbc0d53b709a007762cd44187606ffc49eb7cb77e0bcf16eeb8c2a"
+      }
+    },
+    "continuation-package-user-actions-final": {
+      "command": [
+        "R",
+        "CMD",
+        "check",
+        "--no-manual",
+        "--no-vignettes",
+        "--no-build-vignettes",
+        "BioExplainR_0.4.0.9000.tar.gz"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-05T13:34:41.852173+00:00",
+      "finished_utc": "2026-10-05T13:35:56.459874+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-package-user-actions-final.txt",
+        "bytes": 2480,
+        "sha256": "7dd601a4c8aa0c24d61244d40f998bd8b0e3d81e0145f6cce1fb04877c4fc9dd"
+      }
+    }
+  },
+  "original_record_inventory": {
+    "path": "research/results/w00_baseline/original_records.csv",
+    "bytes": 425593,
+    "sha256": "e6f0a825028f204d6cefc9af003cfc70ebb645dcb9c586d22c84f029c78ce2be"
+  },
+  "delivery_bundle": {
+    "path": "docs/BioExplainR-development-delivery-0.4.0.9000-r8.zip",
+    "status": "development_delivery_verified",
+    "inspection": {
+      "path": "research/results/w00_baseline/revision-delivery-audit-result.json",
+      "bytes": 172128,
+      "sha256": "7d4472474b6d745a5a8d7102eaf690f3263c94818027a021ceffd60517e35f31"
+    }
+  },
+  "paper_cn": {
+    "path": "docs/paper_cn_v2",
+    "audit": {
+      "path": "docs/paper_cn_v2/audit.json",
+      "bytes": 974,
+      "sha256": "2b69184ea9f1f0eb962a848ffe16876293c341f8f38ac2e78ff80a621b518245"
+    },
+    "version": "v0.9",
+    "human_evaluation": "not_in_manuscript; deferred placeholders"
+  },
+  "historical_delivery_bundle": {
+    "path": "docs/BioExplainR-submission-bundle.zip",
+    "status": "historical_stale_preserved",
+    "inspection": {
+      "path": "research/results/w00_baseline/bundle_inspection.json",
+      "bytes": 7749,
+      "sha256": "f76432ce0e888b807d3567d0a29a19690c4201cb2caf42637a0acdfe541e9630"
+    }
+  },
+  "boundaries": [
+    "Stored experiments were audited offline, not rerun",
+    "No new expert or user study",
+    "No Git commit/release/DOI is inferred",
+    "W10/W11 external scientific materials are not complete",
+    "0.4.0.9000 is a development snapshot; GitHub creation blocked by credential permissions",
+    "SPARCL1 validation is an external single-cell-line experiment, not donor-independent confirmation"
+  ]
+}

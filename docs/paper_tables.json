@@ -1,0 +1,114 @@
+{
+  "tables": [
+    {
+      "id": "1",
+      "file": "Table_1_tool_comparison.xlsx",
+      "title": "表 1. 相关工具的对象接入、事实与检查能力比较",
+      "headers": ["Tool", "Object parsing", "R facts", "Evidence", "Claim check", "Plot check", "Error/fix", "Language"],
+      "widths_cm": [3.1, 2.3, 2.1, 2.1, 2.4, 2.4, 2.5, 2.5],
+      "rows": [
+        ["GPTCelltype [8]", "partial", "×", "partial", "×", "×", "×", "Model"],
+        ["SCassist [9]", "partial", "partial", "partial", "×", "partial", "partial", "Model"],
+        ["GeneAgent [10]", "partial", "partial", "✓", "partial", "×", "partial", "Model"],
+        ["AnnDictionary [11]", "partial", "×", "partial", "partial", "×", "×", "Model"],
+        ["BioChatter [12]", "partial", "partial", "✓", "partial", "partial", "partial", "Model"],
+        ["Biomni [13]", "partial", "partial", "✓", "partial", "partial", "partial", "Model"],
+        ["BioMaster [14]", "partial", "partial", "partial", "partial", "partial", "partial", "Model"],
+        ["iSEE [15]", "✓", "partial", "×", "×", "partial", "partial", "Interface"],
+        ["ellmer [16]", "×", "×", "partial", "partial", "×", "×", "Model"],
+        ["llm2geneset [17]", "partial", "partial", "partial", "×", "×", "×", "Model"],
+        ["BioExplainR", "✓", "✓", "✓", "✓", "✓", "✓", "English / optional Chinese"]
+      ],
+      "note": "设计比较，不是性能排名。✓ 表示在定义范围内有文档描述的能力；partial 表示对象/任务受限、应用依赖或机制目标不同；× 表示未确认本文式内置机制，不表示不能扩展。Object parsing 指生信对象或特定输入结构接入；R facts 指可重复程序事实摘要；Evidence 指可追溯外部来源，不证明支持；Claim check 指生成内容的显式核对；Plot check 指源结果一致性；Error/fix 指执行追踪、诊断或修复支持。信息截至 2026-10-04，依据 [8-17]，比较工具没有共同任务实测。",
+      "source": "论文参考文献 [8-17]；BioExplainR 0.3.1 源码和接口文档；人工设计编码，非运行评分"
+    },
+    {
+      "id": "2",
+      "file": "Table_2_main_results.xlsx",
+      "title": "表 2. 三种输入方法的主实验结果",
+      "headers": ["方法", "正确/目标（匹配率）", "覆盖率", "已回答准确率", "中位响应时间（s）"],
+      "widths_cm": [3.4, 4.0, 2.5, 3.0, 3.5],
+      "source_csv": "main_scale_480/ablation_summary.csv",
+      "note": "每方法 120 案例 × 3 次调用 = 360 次请求，480 个目标重复三轮 = 1,440 条评分；三方法共 1,080 次请求、4,320 条评分。覆盖率为非 null 标量数/目标数，已回答准确率为正确数/已回答数；有界原始输出匹配 437/1,440、覆盖率 35.83%、已回答准确率 84.69%；两种事实方法均为 1,440/1,440。100% 是已提供 R 标量事实后的管道设计目标，不是模型能力上限、自由文本正确率或外部泛化性能。时间为 API 请求耗时的中位数，不含上游分析、数据下载或证据检索。",
+      "source": "research/results/main_scale_480/ablation_summary.csv；fact_scores.csv；model_calls.csv"
+    },
+    {
+      "id": "3",
+      "file": "Table_3_real_object_compatibility.xlsx",
+      "title": "表 3. 所测真实对象与版本的兼容性",
+      "headers": ["对象/软件版本", "输入", "摘要/绘图观察", "解释边界"],
+      "widths_cm": [4.0, 2.5, 5.0, 4.9],
+      "rows": [
+        ["DESeqResults / DESeq2 1.42.0", "airway 配对", "22,369 特征；显著 999（519 上、480 下）", "完整结果计数；未经 LFC shrinkage"],
+        ["MArrayLM / limma 3.58.1", "airway voom", "系数 dextrt；显著 1,301", "多系数需明确选择；与 DESeq2 不必相同"],
+        ["TopTags / edgeR 4.0.16", "airway 准似然", "完整 TopTags；显著 1,292", "相同过滤/设计；统计模型不同"],
+        ["RangedSummarizedExperiment / 1.32.0", "原始 airway", "63,677 特征 × 8 文库", "8 文库来自 4 供体；assay 诊断有界"],
+        ["SingleCellExperiment 1.24.0", "PBMC3k", "32,738 特征；2,700 细胞；QC/UMAP", "单供体；稀疏诊断标记检查范围"],
+        ["Seurat / SeuratObject 5.0.1", "同一 PBMC3k", "2,700 细胞；Assay5；QC/UMAP", "对象接入不是细胞类型标注验证"],
+        ["Biobase ExpressionSet / ALL 1.44.0", "ALL", "12,625 特征；128 样本；10 个 BT 分组", "对象摘要；不推断差异设计"],
+        ["Biobase ExpressionSet / bladderbatch 1.40.0", "bladderbatch", "22,283 特征；57 样本；3 癌症组；5 批次", "批次与分组摘要；不等于批次校正"]
+      ],
+      "note": "差异表达筛选为 P_adj < 0.05 且 |log2FC| > 1，采用各上游方法的结果；不同方法显著数不要求一致。此表仅描述实际安装版本与数据的成功观察，不是全部上游版本兼容矩阵，Seurat v4 未实际安装验证。SummarizedExperiment 的 Sample 列记录文库标识，供体数由 cell 元数据判断。ALL 与 bladderbatch 的 ExpressionSet 仅做对象、分组和批次摘要，不宣称完成差异表达或批次校正。",
+      "source": "research/results/compatibility.json；research/results/public_datasets/dataset_tests.csv；data_manifest.json；prepare_real_data.R；缓存中的真实对象"
+    },
+    {
+      "id": "4",
+      "file": "Table_4_case_results.xlsx",
+      "title": "表 4. 六类功能家族的目标事实匹配数",
+      "headers": ["案例", "有界原始输出", "R 事实摘要", "R 事实加证据"],
+      "widths_cm": [5.0, 3.8, 3.8, 3.8],
+      "source_csv": "main_scale_480/family_summary.csv",
+      "note": "每类分母为该功能家族的唯一目标数 × 3 次重复，不是生物学样本数；六类分别为 cell composition 60、differential expression 120、enrichment 80、generic 60、PCA 80、single-cell 80 个唯一目标，表中显示为三轮总计。完整逐项事实见表 8。",
+      "source": "research/results/main_scale_480/family_summary.csv；fact_scores.csv；case_manifest.csv"
+    },
+    {
+      "id": "5",
+      "file": "Table_5_claim_challenges.xlsx",
+      "title": "表 5. 显式声明验证的受控挑战",
+      "headers": ["挑战类型", "项数", "启用验证器", "移除验证器"],
+      "widths_cm": [6.0, 2.0, 4.2, 4.2],
+      "source_csv": "validation_summary.csv",
+      "note": "在 18 个事实加证据响应的上下文中逐类注入挑战。前四类 72 个显式错误全部 fail；最后 18 个仅路径无值声明均 partial，来自引用集合检查通过但事实值仍未验证。unchecked 指没有机器核对状态，不是通过。挑战衡量指定机制的识别能力，不是自然幻觉率或完整文本正确率。",
+      "source": "research/results/validation_ablation.csv；validation_summary.csv"
+    },
+    {
+      "id": "6",
+      "file": "Table_6_plot_fix_challenges.xlsx",
+      "title": "表 6. 图形来源核对与参考水平修复挑战",
+      "headers": ["检查案例", "期望状态", "实际状态", "移除检查器"],
+      "widths_cm": [6.1, 3.2, 3.9, 3.2],
+      "source_csv": "plot_challenges.csv",
+      "note": "前三类正确图共 3/3 pass，六种注入错误共 6/6 fail，均由保存的真实数据对象构造。修复两项均能执行，指定不变量为 8 行及 dex 水平顺序 untrt、trt；只有正确参考通过。unchecked 表示无对应检查状态；修复不检查不变量时最多报告运行成功，不能判定语义正确。本表不估计一般图形错误或修复成功率。",
+      "source": "research/results/plot_challenges.csv；plot_findings.json；fix_validation.json"
+    },
+    {
+      "id": "7",
+      "file": "Table_7_external_evaluation.xlsx",
+      "title": "表 7. 外部评分者与功能感知评价",
+      "headers": ["评价部分", "项目", "n", "均值", "标准差", "比例", "解释"],
+      "widths_cm": [2.6, 5.2, 1.8, 2.3, 2.3, 2.8, 5.0],
+      "note": "3 位外部评分者对 30 个去来源化解释案例的 8 个维度进行 0-2 评分；30 位评分参与者对 5 项 BioExplainR 功能进行 0-100 功能感知评分并判断是否有用。所有记录均来自外部填写表，无缺失。结果是描述性外部评价，不是随机对照实验、SUS、学习增益或临床效用评价。",
+      "source": "research/results/human_evaluation/expert_dimension_summary.csv；user_feature_summary.csv；expert_agreement_summary.csv；human_evaluation_manifest.json"
+    },
+    {
+      "id": "8",
+      "file": "Table_8_main_scale_480_fact_results.xlsx",
+      "title": "表 8. 480 个目标事实的逐项主实验结果",
+      "headers": ["案例", "功能家族", "事实路径", "R 参考值", "有界原始匹配", "有界原始回答", "R 事实摘要匹配", "R 事实摘要回答", "R 事实加证据匹配", "R 事实加证据回答"],
+      "widths_cm": [3.0, 3.0, 3.2, 4.0, 2.2, 2.2, 2.2, 2.2, 2.2, 2.2],
+      "source_csv": "main_scale_480/fact_scores.csv",
+      "note": "本表列出 120 个可复现案例的 480 个唯一目标事实；每个方法实际重复 3 次。匹配和回答单元格为“次数/3”，分别表示严格 fact-path 与数值/字符串匹配次数、非空标量回答次数。该规模实验用于检验 BioExplainR 的输入契约、事实摘要和模型传递在不同对象家族下的稳定性；案例由包的确定性 adapter 从可复现对象生成，不是 480 个独立生物学样本，也不是模型泛化性能排名。",
+      "source": "research/results/main_scale_480/fact_scores.csv；reference_facts.json；case_manifest.csv；run_main_scale_experiment.R"
+    },
+    {
+      "id": "S1",
+      "file": "Table_S1_citations_tokens_cost.xlsx",
+      "title": "补充表 S1. 规模主实验 tokens 与估算成本",
+      "headers": ["方法", "引用 ID 次数", "未知引用", "输入 tokens", "输出 tokens", "估算 USD"],
+      "widths_cm": [3.4, 2.6, 2.1, 2.8, 2.8, 2.7],
+      "source_csv": "main_scale_480/model_calls.csv",
+      "note": "规模主实验每种方法 360 次请求；tokens 来自保存的调用 usage。估算按非缓存输入 0.15 美元/百万 tokens、输出 0.60 美元/百万 tokens计算，不是账单，也不包含历史预实验、浏览器或双模型共同任务；缓存折扣可能降低实际价格。",
+      "source": "research/results/main_scale_480/model_calls.csv；ablation_summary.csv；原始响应 usage"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "command": [
+    "env",
+    "PYTHONPYCACHEPREFIX=/tmp/opencode/paper-cn-pycache",
+    "python3",
+    "-m",
+    "py_compile",
+    "research/paper_cn/restart_workbench.py"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-08T09:38:42.634023+00:00",
+  "finished_utc": "2026-10-08T09:38:42.692188+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/paper-cn-final-tool-syntax.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

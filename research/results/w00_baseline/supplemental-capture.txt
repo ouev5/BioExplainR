@@ -1,0 +1,27 @@
+{
+  "python": "3.12.3 (main, Mar 23 2026, 19:04:32) [GCC 13.3.0]",
+  "python_packages": {
+    "python-docx": "1.2.0",
+    "openpyxl": "3.1.2",
+    "PyMuPDF": "1.26.5",
+    "Pillow": "10.2.0",
+    "matplotlib": "3.6.3"
+  },
+  "node_packages": {
+    "name": "opencode",
+    "dependencies": {
+      "playwright": {
+        "version": "1.56.1",
+        "resolved": "http://mirrors.tencent.com/npm/playwright/-/playwright-1.56.1.tgz",
+        "overridden": false
+      },
+      "pngjs": {
+        "version": "7.0.0",
+        "resolved": "http://mirrors.tencent.com/npm/pngjs/-/pngjs-7.0.0.tgz",
+        "overridden": false
+      }
+    }
+  },
+  "status": "imports_pass",
+  "definition": "tools/restore-baseline.sh"
+}

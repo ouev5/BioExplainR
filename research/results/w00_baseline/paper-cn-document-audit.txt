@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/home/ubuntu/creatR/research/paper_cn/audit_manuscript.py", line 134, in <module>
+    if __name__=="__main__":main()
+                            ^^^^^^
+  File "/home/ubuntu/creatR/research/paper_cn/audit_manuscript.py", line 129, in main
+    result=audit()
+           ^^^^^^^
+  File "/home/ubuntu/creatR/research/paper_cn/audit_manuscript.py", line 70, in audit
+    require(p.stat().st_size==r["bytes"] and hashlib.sha256(p.read_bytes()).hexdigest()==r["sha256"],f"Asset hash {p}")
+  File "/home/ubuntu/creatR/research/paper_cn/audit_manuscript.py", line 19, in require
+    if not condition:raise ValueError(message)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Asset hash /home/ubuntu/creatR/docs/paper_cn_v1/BioExplainR-中文论文-v0.8.docx

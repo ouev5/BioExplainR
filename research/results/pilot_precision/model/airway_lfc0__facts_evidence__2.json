@@ -1,0 +1,189 @@
+{
+  "case": "airway_lfc0",
+  "method": "facts_evidence",
+  "replicate": 2,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-03 19:35:01 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"本次差异表达分析共包含 22369 个特征（基因）。\",\n    \"在 padj < 0.05 且 |log2FC| > 0 的阈值下，显著差异表达基因数为 4030。\",\n    \"其中上调基因数为 2208，下调基因数为 1822。\",\n    \"padj 为 NA 的特征数为 5204。\",\n    \"最小 padj 为 7.05596e-132。\",\n    \"log2FC 范围为 [-5.325283, 9.505998]，中位数为 -0.022472。\",\n    \"原始 p 值小于 0.05 的特征数为 5690，参与检验的特征数为 17165。\"\n  ],\n  \"statistical_meaning\": [\n    \"DESeq2 使用负二项模型进行差异表达检验，padj 是经过多重检验校正后的 p 值。\",\n    \"n_significant 表示同时满足 padj < 0.05 和 |log2FC| > 0 的基因数。\",\n    \"n_up 和 n_down 分别表示在显著基因中 log2FC 为正和为负的计数，计数本身不表示效应方向，方向由 log2FC 的符号决定。\",\n    \"n_na_padj 表示独立过滤或极端离群值等原因导致 padj 缺失的基因数，这些基因未参与 FDR 校正。\",\n    \"log2FC 可能经过收缩（shrinkage），收缩后的效应量更保守，适合排序和可视化。\"\n  ],\n  \"biological_interpretation\": [\n    \"地塞米松处理与未处理相比，在转录组水平上存在广泛的基因表达变化。\",\n    \"上调基因数（2208）多于下调基因数（1822），提示地塞米松可能更倾向于激活某些基因表达程序。\",\n    \"排名靠前的上调基因包括 ENSG00000152583、ENSG00000165995 等，但这些基因的具体生物学功能需进一步验证。\",\n    \"文献检索命中 CRISPLD2 为糖皮质激素响应基因（证据 ID: EuropePMC:MED:24926665），但该文献仅表示匹配检索词，未评估其结论是否支持本分析中的具体论断。\"\n  ],\n  \"uncertainty\": [\n    \"log2FC 似乎经过收缩（shrinkage）；收缩后的效应量更保守，适合排序和可视化。\",\n    \"DESeq2 中 padj 为 NA 常由独立过滤、全零计数或极端离群值导致，这些基因未参与 FDR 计数。\",\n    \"原始 p 值小于 0.05 的基因数（5690）多于显著基因数（4030），说明多重检验校正后部分基因不再显著。\",\n    \"本次分析未提供细胞类型或重复信息，无法评估细胞是否作为重复。\"\n  ],\n  \"cannot_conclude\": [\n    \"不能从计数推断上调或下调的生物学方向，方向仅由 log2FC 符号决定。\",\n    \"不能从本分析推断基因功能或临床意义。\",\n    \"不能从本分析推断地塞米松处理的具体作用机制。\",\n    \"不能从本分析推断基因表达变化与表型之间的因果关系。\"\n  ],\n  \"learning_questions\": [\n    \"为什么 padj 为 NA 的基因不参与 FDR 校正？\",\n    \"log2FC 收缩对差异表达基因排序有什么影响？\",\n    \"如何解释上调基因数多于下调基因数这一现象？\",\n    \"为什么原始 p 值显著但校正后不显著的基因不能视为显著差异表达？\"\n  ],\n  \"evidence_used\": [\n    \"EuropePMC:MED:24926665\"\n  ],\n  \"claims\": [\n    {\n      \"id\": \"claim_n_features\",\n      \"text\": \"特征总数（基因数）为 22369。\",\n      \"fact\": \"n_features\",\n      \"value\": 22369,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_n_significant\",\n      \"text\": \"显著差异表达基因数为 4030。\",\n      \"fact\": \"n_significant\",\n      \"value\": 4030,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_n_up\",\n      \"text\": \"上调基因数为 2208。\",\n      \"fact\": \"n_up\",\n      \"value\": 2208,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_n_down\",\n      \"text\": \"下调基因数为 1822。\",\n      \"fact\": \"n_down\",\n      \"value\": 1822,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_n_na_padj\",\n      \"text\": \"padj 为 NA 的特征数为 5204。\",\n      \"fact\": \"n_na_padj\",\n      \"value\": 5204,\n      \"evidence\": []\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 1932,
+      "completion_tokens": 1073,
+      "total_tokens": 3005,
+      "prompt_tokens_details": {
+        "cached_tokens": 1792
+      },
+      "prompt_cache_hit_tokens": 1792,
+      "prompt_cache_miss_tokens": 140
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 4.55
+  },
+  "parsed": {
+    "data_facts": [
+      "本次差异表达分析共包含 22369 个特征（基因）。",
+      "在 padj < 0.05 且 |log2FC| > 0 的阈值下，显著差异表达基因数为 4030。",
+      "其中上调基因数为 2208，下调基因数为 1822。",
+      "padj 为 NA 的特征数为 5204。",
+      "最小 padj 为 7.05596e-132。",
+      "log2FC 范围为 [-5.325283, 9.505998]，中位数为 -0.022472。",
+      "原始 p 值小于 0.05 的特征数为 5690，参与检验的特征数为 17165。"
+    ],
+    "statistical_meaning": [
+      "DESeq2 使用负二项模型进行差异表达检验，padj 是经过多重检验校正后的 p 值。",
+      "n_significant 表示同时满足 padj < 0.05 和 |log2FC| > 0 的基因数。",
+      "n_up 和 n_down 分别表示在显著基因中 log2FC 为正和为负的计数，计数本身不表示效应方向，方向由 log2FC 的符号决定。",
+      "n_na_padj 表示独立过滤或极端离群值等原因导致 padj 缺失的基因数，这些基因未参与 FDR 校正。",
+      "log2FC 可能经过收缩（shrinkage），收缩后的效应量更保守，适合排序和可视化。"
+    ],
+    "biological_interpretation": [
+      "地塞米松处理与未处理相比，在转录组水平上存在广泛的基因表达变化。",
+      "上调基因数（2208）多于下调基因数（1822），提示地塞米松可能更倾向于激活某些基因表达程序。",
+      "排名靠前的上调基因包括 ENSG00000152583、ENSG00000165995 等，但这些基因的具体生物学功能需进一步验证。",
+      "文献检索命中 CRISPLD2 为糖皮质激素响应基因（证据 ID: EuropePMC:MED:24926665），但该文献仅表示匹配检索词，未评估其结论是否支持本分析中的具体论断。"
+    ],
+    "uncertainty": [
+      "log2FC 似乎经过收缩（shrinkage）；收缩后的效应量更保守，适合排序和可视化。",
+      "DESeq2 中 padj 为 NA 常由独立过滤、全零计数或极端离群值导致，这些基因未参与 FDR 计数。",
+      "原始 p 值小于 0.05 的基因数（5690）多于显著基因数（4030），说明多重检验校正后部分基因不再显著。",
+      "本次分析未提供细胞类型或重复信息，无法评估细胞是否作为重复。"
+    ],
+    "cannot_conclude": [
+      "不能从计数推断上调或下调的生物学方向，方向仅由 log2FC 符号决定。",
+      "不能从本分析推断基因功能或临床意义。",
+      "不能从本分析推断地塞米松处理的具体作用机制。",
+      "不能从本分析推断基因表达变化与表型之间的因果关系。"
+    ],
+    "learning_questions": [
+      "为什么 padj 为 NA 的基因不参与 FDR 校正？",
+      "log2FC 收缩对差异表达基因排序有什么影响？",
+      "如何解释上调基因数多于下调基因数这一现象？",
+      "为什么原始 p 值显著但校正后不显著的基因不能视为显著差异表达？"
+    ],
+    "evidence_used": [
+      "EuropePMC:MED:24926665"
+    ],
+    "claims": [
+      {
+        "id": "claim_n_features",
+        "text": "特征总数（基因数）为 22369。",
+        "fact": "n_features",
+        "value": 22369,
+        "evidence": []
+      },
+      {
+        "id": "claim_n_significant",
+        "text": "显著差异表达基因数为 4030。",
+        "fact": "n_significant",
+        "value": 4030,
+        "evidence": []
+      },
+      {
+        "id": "claim_n_up",
+        "text": "上调基因数为 2208。",
+        "fact": "n_up",
+        "value": 2208,
+        "evidence": []
+      },
+      {
+        "id": "claim_n_down",
+        "text": "下调基因数为 1822。",
+        "fact": "n_down",
+        "value": 1822,
+        "evidence": []
+      },
+      {
+        "id": "claim_n_na_padj",
+        "text": "padj 为 NA 的特征数为 5204。",
+        "fact": "n_na_padj",
+        "value": 5204,
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "(evidence_used)",
+        "check": "evidence_ids",
+        "status": "pass",
+        "detail": "all cited evidence ids were supplied"
+      },
+      {
+        "claim": "claim_n_features",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_features = 22369"
+      },
+      {
+        "claim": "claim_n_significant",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_significant = 4030"
+      },
+      {
+        "claim": "claim_n_up",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_up = 2208"
+      },
+      {
+        "claim": "claim_n_down",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_down = 1822"
+      },
+      {
+        "claim": "claim_n_na_padj",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_na_padj = 5204"
+      }
+    ],
+    "n_claims": 5,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_features",
+      "expected": 22369,
+      "value": 22369,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_significant",
+      "expected": 4030,
+      "value": 4030,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_up",
+      "expected": 2208,
+      "value": 2208,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_down",
+      "expected": 1822,
+      "value": 1822,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_na_padj",
+      "expected": 5204,
+      "value": 5204,
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 5994
+}

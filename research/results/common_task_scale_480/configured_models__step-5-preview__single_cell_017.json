@@ -1,0 +1,18 @@
+{
+  "text": "{\"claims\":[{\"fact\":\"n_cells\",\"value\":64},{\"fact\":\"n_features\",\"value\":42},{\"fact\":\"n_samples\",\"value\":3},{\"fact\":\"assay_name\",\"value\":\"counts\"}]}",
+  "model": "step-5-preview",
+  "stop_reason": "stop",
+  "usage": {
+    "prompt_tokens": 272,
+    "completion_tokens": 154,
+    "total_tokens": 426,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "endpoint_host": "https://api.stepfun.com",
+  "elapsed_sec": 2.53
+}

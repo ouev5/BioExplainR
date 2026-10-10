@@ -1,0 +1,152 @@
+{
+  "case": "single_cell_020",
+  "family": "single_cell",
+  "method": "direct_bounded",
+  "replicate": 1,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:13:26 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"数据矩阵维度为45行70列。\",\n    \"唯一测定类型为counts。\",\n    \"不同样本数为3。\"\n  ],\n  \"statistical_meaning\": [\n    \"45行通常代表特征数，70列代表细胞数。\",\n    \"counts测定表示原始计数数据。\",\n    \"3个不同样本表明样本分组信息。\"\n  ],\n  \"biological_interpretation\": [\n    \"该数据可能来自单细胞RNA测序实验。\",\n    \"45个特征和70个细胞规模较小。\",\n    \"3个样本可用于初步比较分析。\"\n  ],\n  \"uncertainty\": [\n    \"无法确认45行是否确为特征数。\",\n    \"无法确认70列是否确为细胞数。\",\n    \"样本与细胞对应关系未知。\"\n  ],\n  \"cannot_conclude\": [\n    \"无法确定细胞类型或组织来源。\",\n    \"无法评估数据质量或批次效应。\",\n    \"无法进行差异表达分析。\"\n  ],\n  \"learning_questions\": [\n    \"如何从数据维度推断特征和细胞数量？\",\n    \"counts测定在单细胞分析中如何预处理？\",\n    \"样本数量对统计检验有何影响？\"\n  ],\n  \"evidence_used\": [],\n  \"claims\": [\n    {\n      \"id\": \"claim_1\",\n      \"text\": \"细胞数量为70。\",\n      \"fact\": \"n_cells\",\n      \"value\": 70,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_2\",\n      \"text\": \"特征数量为45。\",\n      \"fact\": \"n_features\",\n      \"value\": 45,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_3\",\n      \"text\": \"样本数量为3。\",\n      \"fact\": \"n_samples\",\n      \"value\": 3,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_4\",\n      \"text\": \"测定类型为counts。\",\n      \"fact\": \"assays\",\n      \"value\": \"counts\",\n      \"evidence\": []\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 316,
+      "completion_tokens": 463,
+      "total_tokens": 779,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 188
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.2599999999999998
+  },
+  "parsed": {
+    "data_facts": [
+      "数据矩阵维度为45行70列。",
+      "唯一测定类型为counts。",
+      "不同样本数为3。"
+    ],
+    "statistical_meaning": [
+      "45行通常代表特征数，70列代表细胞数。",
+      "counts测定表示原始计数数据。",
+      "3个不同样本表明样本分组信息。"
+    ],
+    "biological_interpretation": [
+      "该数据可能来自单细胞RNA测序实验。",
+      "45个特征和70个细胞规模较小。",
+      "3个样本可用于初步比较分析。"
+    ],
+    "uncertainty": [
+      "无法确认45行是否确为特征数。",
+      "无法确认70列是否确为细胞数。",
+      "样本与细胞对应关系未知。"
+    ],
+    "cannot_conclude": [
+      "无法确定细胞类型或组织来源。",
+      "无法评估数据质量或批次效应。",
+      "无法进行差异表达分析。"
+    ],
+    "learning_questions": [
+      "如何从数据维度推断特征和细胞数量？",
+      "counts测定在单细胞分析中如何预处理？",
+      "样本数量对统计检验有何影响？"
+    ],
+    "evidence_used": [],
+    "claims": [
+      {
+        "id": "claim_1",
+        "text": "细胞数量为70。",
+        "fact": "n_cells",
+        "value": 70,
+        "evidence": []
+      },
+      {
+        "id": "claim_2",
+        "text": "特征数量为45。",
+        "fact": "n_features",
+        "value": 45,
+        "evidence": []
+      },
+      {
+        "id": "claim_3",
+        "text": "样本数量为3。",
+        "fact": "n_samples",
+        "value": 3,
+        "evidence": []
+      },
+      {
+        "id": "claim_4",
+        "text": "测定类型为counts。",
+        "fact": "assays",
+        "value": "counts",
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "claim_1",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_cells = 70"
+      },
+      {
+        "claim": "claim_2",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_features = 45"
+      },
+      {
+        "claim": "claim_3",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_samples = 3"
+      },
+      {
+        "claim": "claim_4",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_cells",
+      "expected": 70,
+      "value": 70,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_features",
+      "expected": 45,
+      "value": 45,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_samples",
+      "expected": 3,
+      "value": 3,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "assays",
+      "expected": "counts",
+      "value": "counts",
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 1204
+}

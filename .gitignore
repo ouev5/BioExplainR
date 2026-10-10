@@ -1,0 +1,23 @@
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+.Renviron
+*.Rcheck/
+BioExplainR_*.tar.gz
+/tmp/
+*.log
+# never commit keys or generated reports with local data
+.env
+*.secret
+bioexplainr_report*.md
+bioexplainr_report*.html
+artifacts/
+*.tar.gz
+research/cache/
+__pycache__/
+*.pyc
+docs/*.zip
+docs/**/rendered_docx/
+research/results/human_evaluation/
+research/study_materials/

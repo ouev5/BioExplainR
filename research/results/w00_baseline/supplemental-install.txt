@@ -1,0 +1,65 @@
+Reading package lists...
+Building dependency tree...
+Reading state information...
+python3-venv is already the newest version (3.12.3-0ubuntu2.1).
+Recommended packages:
+  r-cran-remotes r-cran-rmarkdown
+The following NEW packages will be installed:
+  r-bioc-biocversion r-cran-biocmanager
+0 upgraded, 2 newly installed, 0 to remove and 253 not upgraded.
+Need to get 0 B/136 kB of archives.
+After this operation, 244 kB of additional disk space will be used.
+Selecting previously unselected package r-bioc-biocversion.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 182760 files and directories currently installed.)
+Preparing to unpack .../r-bioc-biocversion_3.18.1-1_all.deb ...
+Unpacking r-bioc-biocversion (3.18.1-1) ...
+Selecting previously unselected package r-cran-biocmanager.
+Preparing to unpack .../r-cran-biocmanager_1.30.22+dfsg-2_all.deb ...
+Unpacking r-cran-biocmanager (1.30.22+dfsg-2) ...
+Setting up r-bioc-biocversion (3.18.1-1) ...
+Setting up r-cran-biocmanager (1.30.22+dfsg-2) ...
+
+Running kernel seems to be up-to-date.
+
+Restarting services...
+ /etc/needrestart/restart.d/systemd-manager
+ systemctl restart agent-hub-8015.service ai-showcase-8010.service api-proxy-8009.service chat-site-8012.service claude-science-auto-login.service cron.service exam-system-8008.service file-converter-8000.service fwupd.service home-security.service homework.service lighthouse-chromium.service lobster-platform-8016.service mariadb.service model-lab-8002.service multipathd.service packagekit.service polkit.service redis-server.service resource-hub-8006.service rsyslog.service sentence-app-3001.service systemd-journald.service systemd-networkd.service systemd-resolved.service systemd-udevd.service udisks2.service unipass.service vocab-site-8013.service
+
+Service restarts being deferred:
+ systemctl restart ModemManager.service
+ /etc/needrestart/restart.d/dbus.service
+ systemctl restart getty@tty1.service
+ systemctl restart networkd-dispatcher.service
+ systemctl restart serial-getty@ttyS0.service
+ systemctl restart systemd-logind.service
+
+No containers need to be restarted.
+
+User sessions running outdated binaries:
+ lighthouse @ user manager service: systemd[453411]
+ root @ session #1282: PM2 v7.0.1: God[231355]
+ root @ user manager service: systemd[11309]
+ ubuntu @ user manager service: at-spi-bus-laun[2150], systemd[1168]
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.

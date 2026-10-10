@@ -1,0 +1,52 @@
+{
+  "date_utc": "2026-10-05 02:28:27 UTC",
+  "n_cases": 120,
+  "n_facts": 480,
+  "methods": ["direct_bounded", "facts_only", "facts_evidence"],
+  "replicates": 3,
+  "model": "deepseek-flash",
+  "summary": [
+    {
+      "method": "direct_bounded",
+      "correct": 437,
+      "expected": 1440,
+      "accuracy": 0.3034722222222222,
+      "coverage": 0.35833333333333334,
+      "answered_accuracy": 0.8468992248062015,
+      "api_success": 360,
+      "calls": 360,
+      "structured": 360,
+      "median_elapsed_sec": 2.23,
+      "prompt_tokens": 190305,
+      "completion_tokens": 167277
+    },
+    {
+      "method": "facts_only",
+      "correct": 1440,
+      "expected": 1440,
+      "accuracy": 1,
+      "coverage": 1,
+      "answered_accuracy": 1,
+      "api_success": 360,
+      "calls": 360,
+      "structured": 360,
+      "median_elapsed_sec": 2.6800000000000002,
+      "prompt_tokens": 445731,
+      "completion_tokens": 203194
+    },
+    {
+      "method": "facts_evidence",
+      "correct": 1440,
+      "expected": 1440,
+      "accuracy": 1,
+      "coverage": 1,
+      "answered_accuracy": 1,
+      "api_success": 360,
+      "calls": 360,
+      "structured": 360,
+      "median_elapsed_sec": 2.9050000000000002,
+      "prompt_tokens": 498651,
+      "completion_tokens": 223801
+    }
+  ]
+}

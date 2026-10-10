@@ -1,0 +1,145 @@
+{
+  "case": "de_003",
+  "family": "differential_expression",
+  "method": "direct_bounded",
+  "replicate": 2,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:17:37 UTC",
+  "response": {
+    "text": "{\"data_facts\":[\"输入数据不完整，仅提供10行，但dim显示共43行。\",\"阈值：padj<0.050000000000000003，lfc绝对值>1，p<0.050000000000000003。\"],\"statistical_meaning\":[\"n_features应为总特征数，但rows_complete为false，无法确认完整数据。\",\"n_significant、n_up、n_down需基于全部43行计算，当前无法确定。\"],\"biological_interpretation\":[\"无法基于不完整数据判断显著差异表达基因的生物学意义。\"],\"uncertainty\":[\"提供的行数少于总行数，缺失33行数据。\",\"无法从现有数据推断缺失行的log2FoldChange和padj值。\"],\"cannot_conclude\":[\"无法计算n_features、n_significant、n_up、n_down。\",\"无法判断显著基因的上调或下调数量。\"],\"learning_questions\":[\"如何确保输入数据完整以进行差异表达分析？\",\"在数据缺失时，有哪些方法可以处理或报告结果？\"],\"evidence_used\":[],\"claims\":[{\"id\":\"claim1\",\"text\":\"n_features无法确定\",\"fact\":\"n_features\",\"value\":null,\"evidence\":[]},{\"id\":\"claim2\",\"text\":\"n_significant无法确定\",\"fact\":\"n_significant\",\"value\":null,\"evidence\":[]},{\"id\":\"claim3\",\"text\":\"n_up无法确定\",\"fact\":\"n_up\",\"value\":null,\"evidence\":[]},{\"id\":\"claim4\",\"text\":\"n_down无法确定\",\"fact\":\"n_down\",\"value\":null,\"evidence\":[]}]}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 758,
+      "completion_tokens": 336,
+      "total_tokens": 1094,
+      "prompt_tokens_details": {
+        "cached_tokens": 512
+      },
+      "prompt_cache_hit_tokens": 512,
+      "prompt_cache_miss_tokens": 246
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 1.8200000000000001
+  },
+  "parsed": {
+    "data_facts": [
+      "输入数据不完整，仅提供10行，但dim显示共43行。",
+      "阈值：padj<0.050000000000000003，lfc绝对值>1，p<0.050000000000000003。"
+    ],
+    "statistical_meaning": [
+      "n_features应为总特征数，但rows_complete为false，无法确认完整数据。",
+      "n_significant、n_up、n_down需基于全部43行计算，当前无法确定。"
+    ],
+    "biological_interpretation": [
+      "无法基于不完整数据判断显著差异表达基因的生物学意义。"
+    ],
+    "uncertainty": [
+      "提供的行数少于总行数，缺失33行数据。",
+      "无法从现有数据推断缺失行的log2FoldChange和padj值。"
+    ],
+    "cannot_conclude": [
+      "无法计算n_features、n_significant、n_up、n_down。",
+      "无法判断显著基因的上调或下调数量。"
+    ],
+    "learning_questions": [
+      "如何确保输入数据完整以进行差异表达分析？",
+      "在数据缺失时，有哪些方法可以处理或报告结果？"
+    ],
+    "evidence_used": [],
+    "claims": [
+      {
+        "id": "claim1",
+        "text": "n_features无法确定",
+        "fact": "n_features",
+        "value": null,
+        "evidence": []
+      },
+      {
+        "id": "claim2",
+        "text": "n_significant无法确定",
+        "fact": "n_significant",
+        "value": null,
+        "evidence": []
+      },
+      {
+        "id": "claim3",
+        "text": "n_up无法确定",
+        "fact": "n_up",
+        "value": null,
+        "evidence": []
+      },
+      {
+        "id": "claim4",
+        "text": "n_down无法确定",
+        "fact": "n_down",
+        "value": null,
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "unverified",
+    "findings": [
+      {
+        "claim": "claim1",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim2",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim3",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim4",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_features",
+      "expected": 43,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "n_significant",
+      "expected": 29,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "n_up",
+      "expected": 15,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "n_down",
+      "expected": 14,
+      "value": null,
+      "answered": false,
+      "correct": false
+    }
+  ],
+  "prompt_chars": 2364
+}

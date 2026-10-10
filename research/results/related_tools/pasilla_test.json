@@ -1,0 +1,16 @@
+{
+  "dataset": "pasilla",
+  "counts_dim": [14599, 7],
+  "facts": {
+    "n_samples": 7,
+    "n_features": 14599,
+    "n_significant": 218,
+    "n_up": 108,
+    "n_down": 110,
+    "n_na_padj": 5800,
+    "n_features_after_filter": 9921,
+    "pca_variance": [0.584, 0.2922, 0.084, 0.0211, 0.013, 0.0057, 1.2885e-30],
+    "archive_sha256": "a0594fbfe8292a5549a7deda36bcc3d27a9e1dd18b5c1f6af02f4a7cd622ea35"
+  },
+  "package_versions": ["1.30.0 data archive", "1.42.0", "0.3.1"]
+}

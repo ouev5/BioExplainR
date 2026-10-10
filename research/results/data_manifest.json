@@ -1,0 +1,97 @@
+{
+  "dataset": "airway / GSE52778",
+  "citation": "doi:10.1371/journal.pone.0099625",
+  "airway_package": "1.22.0",
+  "airway_data_sha256": "89cbaab5547a6000765e02fa677d1f11090ede3bfa1253e80365a52c7085e6ad",
+  "original_features": 63677,
+  "retained_features": 22369,
+  "samples": 8,
+  "donors": 4,
+  "filter": "rowSums(counts) >= 10",
+  "design": "~ cell + dex",
+  "contrast": "trt vs untrt",
+  "thresholds": {
+    "padj": 0.05,
+    "lfc": 1
+  },
+  "reference": {
+    "n_features": 22369,
+    "n_significant": 999,
+    "n_up": 519,
+    "n_down": 480,
+    "n_na_padj": 5204
+  },
+  "pca_variance": [0.47842864474, 0.23383404452, 0.14820223803, 0.10693798563, 0.016592885597, 0.010661563133, 0.0053426383517, 3.6772615996e-31],
+  "reactome": {
+    "url": "https://reactome.org/download/current/Ensembl2Reactome.txt",
+    "file": "Ensembl2Reactome.txt",
+    "sha256": "34852dc2ac258a851bad914708c0045a636161dbbeca604f04343174cca8d7fb",
+    "checked_utc": "2026-10-03 19:40:59 UTC"
+  },
+  "ora_terms": 1104,
+  "ora_significant": 1,
+  "ora_universe": 8887,
+  "ora_selected": 547,
+  "pbmc": {
+    "url": "https://cf.10xgenomics.com/samples/cell-exp/1.1.0/pbmc3k/pbmc3k_filtered_gene_bc_matrices.tar.gz",
+    "file": "pbmc3k_filtered_gene_bc_matrices.tar.gz",
+    "sha256": "847d6ebd9a1ec9a768f2be7e40ca42cbfe75ebeb6d76a4c24167041699dc28b5",
+    "checked_utc": "2026-10-03 19:41:08 UTC"
+  },
+  "pbmc_features": 32738,
+  "pbmc_cells": 2700,
+  "pbmc_samples": 1,
+  "seed": 20261004,
+  "software": [
+    {
+      "package": "BioExplainR",
+      "version": "0.3.1",
+      "source": "local/unknown"
+    },
+    {
+      "package": "airway",
+      "version": "1.22.0",
+      "source": "Bioconductor"
+    },
+    {
+      "package": "DESeq2",
+      "version": "1.42.0",
+      "source": "Bioconductor"
+    },
+    {
+      "package": "limma",
+      "version": "3.58.1",
+      "source": "Bioconductor"
+    },
+    {
+      "package": "edgeR",
+      "version": "4.0.16",
+      "source": "Bioconductor 3.18"
+    },
+    {
+      "package": "SingleCellExperiment",
+      "version": "1.24.0",
+      "source": "Bioconductor"
+    },
+    {
+      "package": "SeuratObject",
+      "version": "5.0.1",
+      "source": "CRAN"
+    },
+    {
+      "package": "uwot",
+      "version": "0.1.16",
+      "source": "CRAN"
+    },
+    {
+      "package": "Matrix",
+      "version": "1.6-5",
+      "source": "CRAN"
+    },
+    {
+      "package": "ggplot2",
+      "version": "3.4.4",
+      "source": "CRAN"
+    }
+  ]
+}

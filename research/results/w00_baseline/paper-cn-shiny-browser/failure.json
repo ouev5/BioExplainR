@@ -1,0 +1,11 @@
+{
+  "error": "The expression evaluated to a falsy value:\n\n  assert(fs.readFileSync(path.join(output, 'generated-pca.pdf')).subarray(0, 5).toString() === '%PDF-')\n",
+  "checks": [
+    "typed-evidence-payload-manifest-and-escaping",
+    "downloaded-report-content",
+    "Chinese-labels-and-download",
+    "MAE-alignment-findings",
+    "real-miniacc-project-coverage-relations-report-mobile"
+  ],
+  "errors": []
+}

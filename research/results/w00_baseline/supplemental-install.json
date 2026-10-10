@@ -1,0 +1,24 @@
+{
+  "command": [
+    "sudo",
+    "env",
+    "DEBIAN_FRONTEND=noninteractive",
+    "apt-get",
+    "install",
+    "-y",
+    "--no-install-recommends",
+    "r-bioc-biocversion",
+    "r-cran-biocmanager",
+    "python3-venv"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-05T07:56:29.711855+00:00",
+  "finished_utc": "2026-10-05T07:57:06.365265+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/supplemental-install.txt",
+    "bytes": 2939,
+    "sha256": "41f75d256ead6177353a5cc70441760d572ea68133d2b746d3b3775f1ec6354c"
+  }
+}

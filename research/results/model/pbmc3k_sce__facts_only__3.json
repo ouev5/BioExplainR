@@ -1,0 +1,132 @@
+{
+  "case": "pbmc3k_sce",
+  "method": "facts_only",
+  "replicate": 3,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-03 19:42:45 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"该数据集包含 2700 个细胞、32738 个基因特征，仅来自 1 个样本。\",\n    \"QC 指标中位数为：nCount_RNA 2197、nFeature_RNA 817、percent.mt 2.03。\",\n    \"counts 矩阵为稀疏矩阵，维度 32738×2700，零值比例约 0.9741。\"\n  ],\n  \"statistical_meaning\": [\n    \"n_cells 是观测到的细胞总数，不是独立生物学重复数。\",\n    \"n_samples=1 意味着无法进行有意义的组间统计推断。\",\n    \"QC 分位数描述数据分布，不代表组间差异或效应方向。\"\n  ],\n  \"biological_interpretation\": [\n    \"PBMC 单细胞数据可用于探索免疫细胞类型组成（假设，需 marker 验证）。\",\n    \"仅 1 个样本时，细胞类型比例不能外推到人群或供体水平。\",\n    \"线粒体比例中位数较低，提示多数细胞质量尚可（描述性观察）。\"\n  ],\n  \"uncertainty\": [\n    \"细胞数不等于生物学重复数；样本/供体才是独立重复单位。\",\n    \"UMAP 距离不代表真实空间距离，不能单独证明细胞谱系。\",\n    \"cluster 编号本身没有生物学含义，注释需基于多个 marker 组合。\"\n  ],\n  \"cannot_conclude\": [\n    \"不能进行组间差异比较或推断处理效应。\",\n    \"不能把细胞当作重复进行差异分析，否则易产生伪重复假阳性。\",\n    \"不能仅凭 UMAP 结构断定细胞谱系或发育关系。\"\n  ],\n  \"learning_questions\": [\n    \"为什么单细胞分析中细胞数不能替代生物学重复数？\",\n    \"QC 分位数能告诉我们什么、不能告诉我们什么？\",\n    \"只有一个样本时，哪些分析仍然可行、哪些不可行？\"\n  ],\n  \"evidence_used\": [],\n  \"claims\": [\n    {\n      \"id\": \"claim_n_cells\",\n      \"text\": \"细胞总数为 2700。\",\n      \"fact\": \"n_cells\",\n      \"value\": 2700,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_n_features\",\n      \"text\": \"基因特征数为 32738。\",\n      \"fact\": \"n_features\",\n      \"value\": 32738,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_n_samples\",\n      \"text\": \"样本数为 1。\",\n      \"fact\": \"n_samples\",\n      \"value\": 1,\n      \"evidence\": []\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 1326,
+      "completion_tokens": 582,
+      "total_tokens": 1908,
+      "prompt_tokens_details": {
+        "cached_tokens": 1152
+      },
+      "prompt_cache_hit_tokens": 1152,
+      "prompt_cache_miss_tokens": 174
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.68
+  },
+  "parsed": {
+    "data_facts": [
+      "该数据集包含 2700 个细胞、32738 个基因特征，仅来自 1 个样本。",
+      "QC 指标中位数为：nCount_RNA 2197、nFeature_RNA 817、percent.mt 2.03。",
+      "counts 矩阵为稀疏矩阵，维度 32738×2700，零值比例约 0.9741。"
+    ],
+    "statistical_meaning": [
+      "n_cells 是观测到的细胞总数，不是独立生物学重复数。",
+      "n_samples=1 意味着无法进行有意义的组间统计推断。",
+      "QC 分位数描述数据分布，不代表组间差异或效应方向。"
+    ],
+    "biological_interpretation": [
+      "PBMC 单细胞数据可用于探索免疫细胞类型组成（假设，需 marker 验证）。",
+      "仅 1 个样本时，细胞类型比例不能外推到人群或供体水平。",
+      "线粒体比例中位数较低，提示多数细胞质量尚可（描述性观察）。"
+    ],
+    "uncertainty": [
+      "细胞数不等于生物学重复数；样本/供体才是独立重复单位。",
+      "UMAP 距离不代表真实空间距离，不能单独证明细胞谱系。",
+      "cluster 编号本身没有生物学含义，注释需基于多个 marker 组合。"
+    ],
+    "cannot_conclude": [
+      "不能进行组间差异比较或推断处理效应。",
+      "不能把细胞当作重复进行差异分析，否则易产生伪重复假阳性。",
+      "不能仅凭 UMAP 结构断定细胞谱系或发育关系。"
+    ],
+    "learning_questions": [
+      "为什么单细胞分析中细胞数不能替代生物学重复数？",
+      "QC 分位数能告诉我们什么、不能告诉我们什么？",
+      "只有一个样本时，哪些分析仍然可行、哪些不可行？"
+    ],
+    "evidence_used": [],
+    "claims": [
+      {
+        "id": "claim_n_cells",
+        "text": "细胞总数为 2700。",
+        "fact": "n_cells",
+        "value": 2700,
+        "evidence": []
+      },
+      {
+        "id": "claim_n_features",
+        "text": "基因特征数为 32738。",
+        "fact": "n_features",
+        "value": 32738,
+        "evidence": []
+      },
+      {
+        "id": "claim_n_samples",
+        "text": "样本数为 1。",
+        "fact": "n_samples",
+        "value": 1,
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "claim_n_cells",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_cells = 2700"
+      },
+      {
+        "claim": "claim_n_features",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_features = 32738"
+      },
+      {
+        "claim": "claim_n_samples",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_samples = 1"
+      }
+    ],
+    "n_claims": 3,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_cells",
+      "expected": 2700,
+      "value": 2700,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_features",
+      "expected": 32738,
+      "value": 32738,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_samples",
+      "expected": 1,
+      "value": 1,
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 4625,
+  "validation_rechecked_utc": "2026-10-03 20:09:21 UTC"
+}

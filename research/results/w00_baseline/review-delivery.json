@@ -1,0 +1,18 @@
+{
+  "command": [
+    "python3",
+    "research/package_submission.py",
+    "--audit",
+    "research/results/w00_baseline/continuation-submission-audit-result.json"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-08T08:39:50.321520+00:00",
+  "finished_utc": "2026-10-08T08:39:52.653004+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/review-delivery.txt",
+    "bytes": 169,
+    "sha256": "bfbeccd257de05d376c992e2865140a31dec610cddbadf0c3099345c021df6a5"
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "case": "cell_composition_008",
+  "family": "cell_composition",
+  "method": "direct_bounded",
+  "replicate": 3,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:24:14 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"输入提供了细胞数、样本数和聚类数。\",\n    \"未提供分组数。\"\n  ],\n  \"statistical_meaning\": [\n    \"n_cells 表示用于分析的细胞总数。\",\n    \"n_samples 表示样本数量。\",\n    \"n_clusters 表示聚类数量。\"\n  ],\n  \"biological_interpretation\": [\n    \"104 个细胞来自 4 个样本，分为 4 个聚类。\",\n    \"分组数未知，无法评估组间设计。\"\n  ],\n  \"uncertainty\": [\n    \"n_groups 未在输入中给出。\",\n    \"无法从现有数据推断分组数。\"\n  ],\n  \"cannot_conclude\": [\n    \"无法确定 n_groups。\",\n    \"无法判断分组是否与聚类或样本对应。\"\n  ],\n  \"learning_questions\": [\n    \"分组信息是否在元数据中定义？\",\n    \"聚类是否对应已知细胞类型？\"\n  ],\n  \"evidence_used\": [\n    \"n_cells\",\n    \"n_samples\",\n    \"n_clusters\"\n  ],\n  \"claims\": [\n    {\n      \"id\": \"claim_n_cells_used\",\n      \"text\": \"用于分析的细胞数为 104。\",\n      \"fact\": \"n_cells_used\",\n      \"value\": 104,\n      \"evidence\": [\n        \"n_cells\"\n      ]\n    },\n    {\n      \"id\": \"claim_n_samples\",\n      \"text\": \"样本数为 4。\",\n      \"fact\": \"n_samples\",\n      \"value\": 4,\n      \"evidence\": [\n        \"n_samples\"\n      ]\n    },\n    {\n      \"id\": \"claim_n_clusters\",\n      \"text\": \"聚类数为 4。\",\n      \"fact\": \"n_clusters\",\n      \"value\": 4,\n      \"evidence\": [\n        \"n_clusters\"\n      ]\n    },\n    {\n      \"id\": \"claim_n_groups\",\n      \"text\": \"分组数无法从输入确定。\",\n      \"fact\": \"n_groups\",\n      \"value\": null,\n      \"evidence\": []\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 318,
+      "completion_tokens": 460,
+      "total_tokens": 778,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 190
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 1.96
+  },
+  "parsed": {
+    "data_facts": [
+      "输入提供了细胞数、样本数和聚类数。",
+      "未提供分组数。"
+    ],
+    "statistical_meaning": [
+      "n_cells 表示用于分析的细胞总数。",
+      "n_samples 表示样本数量。",
+      "n_clusters 表示聚类数量。"
+    ],
+    "biological_interpretation": [
+      "104 个细胞来自 4 个样本，分为 4 个聚类。",
+      "分组数未知，无法评估组间设计。"
+    ],
+    "uncertainty": [
+      "n_groups 未在输入中给出。",
+      "无法从现有数据推断分组数。"
+    ],
+    "cannot_conclude": [
+      "无法确定 n_groups。",
+      "无法判断分组是否与聚类或样本对应。"
+    ],
+    "learning_questions": [
+      "分组信息是否在元数据中定义？",
+      "聚类是否对应已知细胞类型？"
+    ],
+    "evidence_used": [
+      "n_cells",
+      "n_samples",
+      "n_clusters"
+    ],
+    "claims": [
+      {
+        "id": "claim_n_cells_used",
+        "text": "用于分析的细胞数为 104。",
+        "fact": "n_cells_used",
+        "value": 104,
+        "evidence": [
+          "n_cells"
+        ]
+      },
+      {
+        "id": "claim_n_samples",
+        "text": "样本数为 4。",
+        "fact": "n_samples",
+        "value": 4,
+        "evidence": [
+          "n_samples"
+        ]
+      },
+      {
+        "id": "claim_n_clusters",
+        "text": "聚类数为 4。",
+        "fact": "n_clusters",
+        "value": 4,
+        "evidence": [
+          "n_clusters"
+        ]
+      },
+      {
+        "id": "claim_n_groups",
+        "text": "分组数无法从输入确定。",
+        "fact": "n_groups",
+        "value": null,
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "fail",
+    "findings": [
+      {
+        "claim": "(evidence_used)",
+        "check": "evidence_ids",
+        "status": "fail",
+        "detail": "unknown evidence id(s): n_cells, n_samples, n_clusters (no evidence list was supplied)"
+      },
+      {
+        "claim": "claim_n_cells_used",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_cells_used = 104"
+      },
+      {
+        "claim": "claim_n_cells_used",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: n_cells"
+      },
+      {
+        "claim": "claim_n_samples",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_samples = 4"
+      },
+      {
+        "claim": "claim_n_samples",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: n_samples"
+      },
+      {
+        "claim": "claim_n_clusters",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_clusters = 4"
+      },
+      {
+        "claim": "claim_n_clusters",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: n_clusters"
+      },
+      {
+        "claim": "claim_n_groups",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_cells_used",
+      "expected": 104,
+      "value": 104,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_samples",
+      "expected": 4,
+      "value": 4,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_clusters",
+      "expected": 4,
+      "value": 4,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_groups",
+      "expected": 2,
+      "value": null,
+      "answered": false,
+      "correct": false
+    }
+  ],
+  "prompt_chars": 1198
+}

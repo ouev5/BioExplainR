@@ -1,0 +1,18 @@
+{
+  "command": [
+    "/tmp/opencode/paper-venv/bin/python",
+    "research/discovery/run_discovery.py",
+    "validate",
+    "research/results/discovery_sparcl1_v1"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-08T11:07:10.736211+00:00",
+  "finished_utc": "2026-10-08T11:14:55.756591+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/revision-discovery-validation.txt",
+    "bytes": 900,
+    "sha256": "6da8827a4374d3fea7c52c932c063f2a16d40c4ab8ce62e46fd6bd51631d7396"
+  }
+}

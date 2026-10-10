@@ -1,0 +1,20 @@
+{
+  "command": [
+    "env",
+    "R_LIBS=/tmp/opencode/bioexplainr-install-review",
+    "Rscript",
+    "--vanilla",
+    "tools/offline-smoke.R",
+    "research/results/w00_baseline/review-full-smoke"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-08T08:26:13.993820+00:00",
+  "finished_utc": "2026-10-08T08:26:28.791567+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/review-full-smoke.txt",
+    "bytes": 273,
+    "sha256": "5805dd2c4f240d0c540b98a54ad3d2269235d52030e1386766e341812c86d44a"
+  }
+}

@@ -1,0 +1,451 @@
+{
+  "package_version": "0.3.1",
+  "schema": "legacy_unversioned",
+  "n_exports": 74,
+  "interfaces": [
+    {
+      "name": "bio_adapters",
+      "source": "R/context.R",
+      "line": 87,
+      "signature": "bio_adapters()"
+    },
+    {
+      "name": "bio_benchmark",
+      "source": "R/evaluation.R",
+      "line": 19,
+      "signature": "bio_benchmark(cases, methods = list(local = function(x, ...) bio_explain(x, use_llm = FALSE, ...)), tolerance = 1e-08)"
+    },
+    {
+      "name": "bio_benchmark_fixes",
+      "source": "R/evaluation.R",
+      "line": 151,
+      "signature": "bio_benchmark_fixes(cases, timeout = 60)"
+    },
+    {
+      "name": "bio_build_request",
+      "source": "R/llm.R",
+      "line": 23,
+      "signature": "bio_build_request(config, system, user)"
+    },
+    {
+      "name": "bio_cell_proportions",
+      "source": "R/cell-proportions.R",
+      "line": 63,
+      "signature": "bio_cell_proportions(x, sample_col, cluster_col, group_col = NULL, anonymize = TRUE, test = c(\"none\", \"wilcox\", \"t\"), p_adjust_method = \"BH\", alpha = 0.05, min_samples_per_group = 3, language = NULL)"
+    },
+    {
+      "name": "bio_config",
+      "source": "R/config.R",
+      "line": 171,
+      "signature": "bio_config(preset = NULL, base_url = NULL, api_key = NULL, api_key_env = NULL, model = NULL, protocol = NULL, endpoint = NULL, timeout = 60, max_retries = 2, temperature = NULL, max_tokens = 1500, language = \"en\", anthropic_version = \"2023-06-01\", extra_headers = NULL, json_mode = FALSE, extra_body = NULL)"
+    },
+    {
+      "name": "bio_configure",
+      "source": "R/config.R",
+      "line": 345,
+      "signature": "bio_configure(...)"
+    },
+    {
+      "name": "bio_context",
+      "source": "R/context.R",
+      "line": 223,
+      "signature": "bio_context(x, analysis_type = NULL, adapter = NULL, species = NULL, tissue = NULL, contrast = NULL, gene_id_type = NULL, design = NULL, background = NULL, source_package = NULL, thresholds = list(), p_adjust_method = NULL, coefficient = NULL, n_top = 10, data_dependencies = NULL, notes = NULL, language = NULL, ...)"
+    },
+    {
+      "name": "bio_context_payload",
+      "source": "R/context.R",
+      "line": 324,
+      "signature": "bio_context_payload(ctx, max_top = 10, max_chars = 12000, include_features = TRUE)"
+    },
+    {
+      "name": "bio_cross_check",
+      "source": "R/plot-cross-check.R",
+      "line": 71,
+      "signature": "bio_cross_check(plot, source, allow_subset = FALSE, tolerance = 1e-06, coefficient = NULL, metadata = NULL, group = NULL)"
+    },
+    {
+      "name": "bio_dependency_provenance",
+      "source": "R/evidence.R",
+      "line": 133,
+      "signature": "bio_dependency_provenance(packages = NULL)"
+    },
+    {
+      "name": "bio_endpoint_url",
+      "source": "R/config.R",
+      "line": 304,
+      "signature": "bio_endpoint_url(config)"
+    },
+    {
+      "name": "bio_evaluate_experts",
+      "source": "R/evaluation.R",
+      "line": 187,
+      "signature": "bio_evaluate_experts(ratings, rubric = bio_review_rubric())"
+    },
+    {
+      "name": "bio_evaluate_learning",
+      "source": "R/evaluation.R",
+      "line": 83,
+      "signature": "bio_evaluate_learning(data, id = \"participant\", group = \"group\", pre = \"pre\", post = \"post\", delayed = NULL, transfer = NULL, reference = NULL, conf_level = 0.95)"
+    },
+    {
+      "name": "bio_evidence",
+      "source": "R/evidence.R",
+      "line": 31,
+      "signature": "bio_evidence(source, id = NULL, title = NULL, claim = NULL, url = NULL, type = c(\"literature\", \"database\", \"method\", \"software\", \"other\"), version = NULL, accessed = Sys.Date(), note = NULL)"
+    },
+    {
+      "name": "bio_evidence_cache_clear",
+      "source": "R/evidence-live.R",
+      "line": 418,
+      "signature": "bio_evidence_cache_clear()"
+    },
+    {
+      "name": "bio_evidence_clear",
+      "source": "R/evidence.R",
+      "line": 61,
+      "signature": "bio_evidence_clear()"
+    },
+    {
+      "name": "bio_evidence_for_context",
+      "source": "R/evidence-live.R",
+      "line": 513,
+      "signature": "bio_evidence_for_context(ctx, sources = .live_sources, n_genes = 5, ids = NULL, organism = NULL, limit = 3, ...)"
+    },
+    {
+      "name": "bio_evidence_list",
+      "source": "R/evidence.R",
+      "line": 57,
+      "signature": "bio_evidence_list()"
+    },
+    {
+      "name": "bio_evidence_lookup",
+      "source": "R/evidence.R",
+      "line": 107,
+      "signature": "bio_evidence_lookup(query, provider, register = FALSE, ...)"
+    },
+    {
+      "name": "bio_evidence_providers",
+      "source": "R/evidence-live.R",
+      "line": 458,
+      "signature": "bio_evidence_providers()"
+    },
+    {
+      "name": "bio_evidence_register",
+      "source": "R/evidence.R",
+      "line": 45,
+      "signature": "bio_evidence_register(...)"
+    },
+    {
+      "name": "bio_explain",
+      "source": "R/explain.R",
+      "line": 339,
+      "signature": "bio_explain(x, config = NULL, use_llm = NA, language = NULL, level = \"beginner\", question = NULL, evidence = NULL, max_top = 10, cross_check = NULL, evidence_sources = NULL, evidence_args = list(), allow_subset = FALSE, ...)"
+    },
+    {
+      "name": "bio_explain_error",
+      "source": "R/diagnose.R",
+      "line": 203,
+      "signature": "bio_explain_error(x = NULL, config = NULL, use_llm = FALSE, language = NULL, include_code = FALSE)"
+    },
+    {
+      "name": "bio_explain_project",
+      "source": "R/project.R",
+      "line": 124,
+      "signature": "bio_explain_project(project, config = bio_get_config(), use_llm = FALSE, max_chars = 24000, language = NULL)"
+    },
+    {
+      "name": "bio_fetch_evidence",
+      "source": "R/evidence-live.R",
+      "line": 366,
+      "signature": "bio_fetch_evidence(query, source = c(\"europepmc\", \"go\", \"reactome\", \"kegg\", \"uniprot\"), limit = 5, timeout = 15, cache = TRUE, retries = 2, organism = NULL, mode = c(\"auto\", \"gene\", \"protein\", \"accession\"), reviewed = TRUE, base_url = NULL, register = FALSE, on_error = c(\"stop\", \"warn\"))"
+    },
+    {
+      "name": "bio_get_config",
+      "source": "R/config.R",
+      "line": 354,
+      "signature": "bio_get_config()"
+    },
+    {
+      "name": "bio_go_annotations",
+      "source": "R/evidence-live.R",
+      "line": 476,
+      "signature": "bio_go_annotations(evidence, go_ids = NULL)"
+    },
+    {
+      "name": "bio_grade",
+      "source": "R/teaching.R",
+      "line": 160,
+      "signature": "bio_grade(quiz, answers)"
+    },
+    {
+      "name": "bio_invariant",
+      "source": "R/validate.R",
+      "line": 23,
+      "signature": "bio_invariant(name, fn, description = name)"
+    },
+    {
+      "name": "bio_last_error",
+      "source": "R/record.R",
+      "line": 213,
+      "signature": "bio_last_error(x = NULL)"
+    },
+    {
+      "name": "bio_llm_available",
+      "source": "R/config.R",
+      "line": 274,
+      "signature": "bio_llm_available(config = bio_get_config(), reason = FALSE)"
+    },
+    {
+      "name": "bio_llm_chat",
+      "source": "R/llm.R",
+      "line": 105,
+      "signature": "bio_llm_chat(config, system, user)"
+    },
+    {
+      "name": "bio_object_inventory",
+      "source": "R/runtime.R",
+      "line": 198,
+      "signature": "bio_object_inventory(envir = parent.frame(), include_functions = FALSE, include_hidden = FALSE)"
+    },
+    {
+      "name": "bio_package_usage",
+      "source": "R/runtime.R",
+      "line": 150,
+      "signature": "bio_package_usage(reset = FALSE)"
+    },
+    {
+      "name": "bio_parse_response",
+      "source": "R/llm.R",
+      "line": 73,
+      "signature": "bio_parse_response(protocol, body)"
+    },
+    {
+      "name": "bio_plan_learning_study",
+      "source": "R/evaluation.R",
+      "line": 244,
+      "signature": "bio_plan_learning_study(effect, power = 0.8, alpha = 0.05, attrition = 0)"
+    },
+    {
+      "name": "bio_plot",
+      "source": "R/plots.R",
+      "line": 318,
+      "signature": "bio_plot(x, type = c(\"auto\", \"pca\", \"umap\", \"enrichment\", \"heatmap\", \"existing\"), ...)"
+    },
+    {
+      "name": "bio_plot_enrichment",
+      "source": "R/plots.R",
+      "line": 210,
+      "signature": "bio_plot_enrichment(x, top_n = 20, term_col = NULL, ratio_col = NULL, p_col = NULL, count_col = NULL)"
+    },
+    {
+      "name": "bio_plot_heatmap",
+      "source": "R/plots.R",
+      "line": 275,
+      "signature": "bio_plot_heatmap(x, metadata = NULL, feature_axis = c(\"rows\", \"columns\"), top_n = 50, scale_rows = TRUE)"
+    },
+    {
+      "name": "bio_plot_pca",
+      "source": "R/plots.R",
+      "line": 86,
+      "signature": "bio_plot_pca(x, metadata = NULL, group = NULL, feature_axis = c(\"rows\", \"columns\"), transform = c(\"none\", \"log1p\"), center = TRUE, scale. = FALSE, n_top_features = 500)"
+    },
+    {
+      "name": "bio_plot_umap",
+      "source": "R/plots.R",
+      "line": 142,
+      "signature": "bio_plot_umap(x, metadata = NULL, group = NULL, method = \"UMAP\", reduction = NULL, feature_axis = c(\"rows\", \"columns\"), input_type = c(\"auto\", \"embedding\", \"expression\"), ...)"
+    },
+    {
+      "name": "bio_presets",
+      "source": "R/config.R",
+      "line": 74,
+      "signature": "bio_presets()"
+    },
+    {
+      "name": "bio_project",
+      "source": "R/project.R",
+      "line": 85,
+      "signature": "bio_project(results, title = \"BioExplainR project\", dependencies = list(), metadata = list())"
+    },
+    {
+      "name": "bio_question_bank",
+      "source": "R/teaching.R",
+      "line": 16,
+      "signature": "bio_question_bank(topics = NULL, language = NULL)"
+    },
+    {
+      "name": "bio_quiz",
+      "source": "R/teaching.R",
+      "line": 125,
+      "signature": "bio_quiz(x = NULL, topics = NULL, n = 8, form = \"pre\", language = NULL)"
+    },
+    {
+      "name": "bio_randomize_learning_study",
+      "source": "R/evaluation.R",
+      "line": 274,
+      "signature": "bio_randomize_learning_study(participants, strata = rep(\"all\", length(participants)), seed = 1, groups = c(\"control\", \"tool\"))"
+    },
+    {
+      "name": "bio_record",
+      "source": "R/record.R",
+      "line": 159,
+      "signature": "bio_record(expr, label = NULL, envir = parent.frame(), muffle_warnings = FALSE, rethrow = FALSE, purpose = NULL)"
+    },
+    {
+      "name": "bio_record_code",
+      "source": "R/record.R",
+      "line": 178,
+      "signature": "bio_record_code(code, label = NULL, envir = parent.frame(), muffle_warnings = FALSE, rethrow = FALSE, purpose = NULL)"
+    },
+    {
+      "name": "bio_records",
+      "source": "R/record.R",
+      "line": 223,
+      "signature": "bio_records()"
+    },
+    {
+      "name": "bio_redact",
+      "source": "R/utils.R",
+      "line": 183,
+      "signature": "bio_redact(x)"
+    },
+    {
+      "name": "bio_register_adapter",
+      "source": "R/context.R",
+      "line": 71,
+      "signature": "bio_register_adapter(name, detect, extract, analysis_types = character())"
+    },
+    {
+      "name": "bio_register_evidence_provider",
+      "source": "R/evidence.R",
+      "line": 99,
+      "signature": "bio_register_evidence_provider(name, fn)"
+    },
+    {
+      "name": "bio_register_live_providers",
+      "source": "R/evidence-live.R",
+      "line": 439,
+      "signature": "bio_register_live_providers(sources = .live_sources, overwrite = FALSE, ...)"
+    },
+    {
+      "name": "bio_register_preset",
+      "source": "R/config.R",
+      "line": 91,
+      "signature": "bio_register_preset(name, protocol = c(\"openai\", \"anthropic\", \"none\"), base_url = NULL, api_key_env = NULL, key_required = !is.null(api_key_env), description = \"\", overwrite = FALSE)"
+    },
+    {
+      "name": "bio_report",
+      "source": "R/report.R",
+      "line": 291,
+      "signature": "bio_report(x, file = NULL, format = NULL, title = NULL, include_llm = TRUE, include_session = TRUE, config = NULL, show_answers = FALSE, language = NULL)"
+    },
+    {
+      "name": "bio_reset_config",
+      "source": "R/config.R",
+      "line": 360,
+      "signature": "bio_reset_config()"
+    },
+    {
+      "name": "bio_review_rubric",
+      "source": "R/teaching.R",
+      "line": 183,
+      "signature": "bio_review_rubric(language = NULL)"
+    },
+    {
+      "name": "bio_run_app",
+      "source": "R/shiny-app.R",
+      "line": 85,
+      "signature": "bio_run_app(envir = parent.frame(), host = \"127.0.0.1\", port = NULL, launch.browser = interactive(), language = NULL, ...)"
+    },
+    {
+      "name": "bio_runtime_info",
+      "source": "R/runtime.R",
+      "line": 164,
+      "signature": "bio_runtime_info(include_installed = TRUE)"
+    },
+    {
+      "name": "bio_suggest_fix",
+      "source": "R/diagnose.R",
+      "line": 281,
+      "signature": "bio_suggest_fix(x = NULL, config = NULL, use_llm = FALSE, language = NULL)"
+    },
+    {
+      "name": "bio_unregister_adapter",
+      "source": "R/context.R",
+      "line": 80,
+      "signature": "bio_unregister_adapter(name)"
+    },
+    {
+      "name": "bio_unregister_preset",
+      "source": "R/config.R",
+      "line": 111,
+      "signature": "bio_unregister_preset(name)"
+    },
+    {
+      "name": "bio_validate_explanation",
+      "source": "R/explanation-validation.R",
+      "line": 46,
+      "signature": "bio_validate_explanation(explanation, claims = NULL, tolerance = 1e-06)"
+    },
+    {
+      "name": "bio_validate_fix",
+      "source": "R/validate.R",
+      "line": 191,
+      "signature": "bio_validate_fix(expr, inputs = list(), invariants = list(), packages = character(), timeout = 60, label = NULL)"
+    },
+    {
+      "name": "bio_value",
+      "source": "R/record.R",
+      "line": 206,
+      "signature": "bio_value(x)"
+    },
+    {
+      "name": "inv_class",
+      "source": "R/validate.R",
+      "line": 37,
+      "signature": "inv_class(cls)"
+    },
+    {
+      "name": "inv_equal",
+      "source": "R/validate.R",
+      "line": 97,
+      "signature": "inv_equal(name, fn, expected)"
+    },
+    {
+      "name": "inv_factor_levels",
+      "source": "R/validate.R",
+      "line": 74,
+      "signature": "inv_factor_levels(column, levels)"
+    },
+    {
+      "name": "inv_has_columns",
+      "source": "R/validate.R",
+      "line": 44,
+      "signature": "inv_has_columns(cols)"
+    },
+    {
+      "name": "inv_no_na",
+      "source": "R/validate.R",
+      "line": 86,
+      "signature": "inv_no_na(column = NULL)"
+    },
+    {
+      "name": "inv_nrow",
+      "source": "R/validate.R",
+      "line": 54,
+      "signature": "inv_nrow(n)"
+    },
+    {
+      "name": "inv_same_nrow_as_input",
+      "source": "R/validate.R",
+      "line": 63,
+      "signature": "inv_same_nrow_as_input(input)"
+    },
+    {
+      "name": "new_bio_context",
+      "source": "R/context.R",
+      "line": 26,
+      "signature": "new_bio_context(analysis_type, source_class, source_package = NA_character_, source_status = c(\"verified_class\", \"user_declared\", \"inferred_from_columns\", \"unknown\"), facts = list(), top_features = NULL, plot_mapping = NULL, provenance = list(), uncertainty = character(), metadata = list(), adapter = NA_character_)"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "status": "pass",
+  "commands": [
+    [
+      "R",
+      "CMD",
+      "INSTALL",
+      "--library=/tmp/opencode/bioexplainr-review-core/library",
+      "/home/ubuntu/creatR/BioExplainR_0.4.0.9000.tar.gz"
+    ],
+    [
+      "Rscript",
+      "--vanilla",
+      "/home/ubuntu/creatR/tools/offline-smoke.R",
+      "/tmp/opencode/bioexplainr-review-core/smoke"
+    ],
+    [
+      "Rscript",
+      "--vanilla",
+      "-e",
+      "stopifnot(!any(vapply(c(\"DESeq2\",\"SingleCellExperiment\",\"MultiAssayExperiment\",\"SpatialExperiment\",\"shiny\",\"ggplot2\"),requireNamespace,logical(1),quietly=TRUE)))"
+    ]
+  ],
+  "scope": "Imports-only linked library on existing Ubuntu/R; no container or third-party reproduction"
+}

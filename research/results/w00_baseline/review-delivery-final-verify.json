@@ -1,0 +1,21 @@
+{
+  "command": [
+    "python3",
+    "research/package_submission.py",
+    "--audit",
+    "research/results/w00_baseline/continuation-submission-audit-result.json",
+    "--verify-only",
+    "--result",
+    "research/results/w00_baseline/review-delivery-final-verification.json"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-08T08:41:56.753372+00:00",
+  "finished_utc": "2026-10-08T08:41:57.450386+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/review-delivery-final-verify.txt",
+    "bytes": 169,
+    "sha256": "bfbeccd257de05d376c992e2865140a31dec610cddbadf0c3099345c021df6a5"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "command": [
+    "R",
+    "--vanilla",
+    "--slave",
+    "-f",
+    "tools/check.R"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-07T08:58:39.459045+00:00",
+  "finished_utc": "2026-10-07T08:59:20.229644+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/improvement-source.txt",
+    "bytes": 2115,
+    "sha256": "a03e2061e7b7d83dffd68185b93c5341cfa42ffd8bc1e00a987699ebe268d7df"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "command": [
+    "Rscript",
+    "--vanilla",
+    "inst/fixtures/contracts/validate_fixtures.R"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-05T13:33:47.441288+00:00",
+  "finished_utc": "2026-10-05T13:33:48.057401+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/continuation-fixtures-user-actions-final.txt",
+    "bytes": 236,
+    "sha256": "480b785b4c2466920aa2bbea37da97bf3fd941c74d9554712d39d52e98e1acd6"
+  }
+}

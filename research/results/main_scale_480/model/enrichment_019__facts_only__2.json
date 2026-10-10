@@ -1,0 +1,152 @@
+{
+  "case": "enrichment_019",
+  "family": "enrichment",
+  "method": "facts_only",
+  "replicate": 2,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:19:50 UTC",
+  "response": {
+    "text": "{\"data_facts\":[\"本次分析共检验 31 个条目，其中 15 个达到校正 p 值 < 0.05 的显著性阈值。\",\"方法为 ORA（过表达分析），p 值依据校正后列（adjusted_column）。\",\"显著条目的基因计数范围为 2 到 7，输入基因映射数为 20。\"],\"statistical_meaning\":[\"ORA 检验输入基因列表与基因集的重叠是否超出随机预期，p 值已做多重检验校正。\",\"显著性阈值 0.05 用于筛选条目，校正后 p 值越小表示重叠越不可能是随机产生。\",\"条目间可能共享基因，存在层级冗余，不应视为独立证据。\"],\"biological_interpretation\":[\"显著条目提示这些基因集与输入基因列表存在统计学关联，可作为后续假设生成的线索。\",\"由于 ORA 无方向性，不能据此判断通路是激活还是抑制。\",\"生物学解释需先确认物种与背景基因集，否则结论可能不稳健。\"],\"uncertainty\":[\"来源包仅为推测（列名与 clusterProfiler/DOSE 输出相似），未确认实际包。\",\"ORA 结果依赖背景基因集（universe）选择，未指定合适背景时 p 值可能被高估或低估。\",\"未提供物种信息，生物学解释需用户确认物种背景。\"],\"cannot_conclude\":[\"不能认定任何通路被激活或抑制，ORA 本身没有方向。\",\"不能把多个显著条目当作相互独立的证据，它们可能共享大量基因。\",\"不能在没有合适背景基因集与物种信息的情况下推广生物学结论。\"],\"learning_questions\":[\"ORA 与 GSEA 在方向性上有何区别？\",\"为什么多重检验校正对富集分析很重要？\",\"背景基因集（universe）的选择如何影响 ORA 的 p 值？\"],\"evidence_used\":[],\"claims\":[{\"id\":\"c1\",\"text\":\"检验条目总数\",\"fact\":\"n_terms\",\"value\":31,\"evidence\":[]},{\"id\":\"c2\",\"text\":\"显著条目数\",\"fact\":\"n_significant\",\"value\":15,\"evidence\":[]},{\"id\":\"c3\",\"text\":\"富集分析方法\",\"fact\":\"enrichment_method\",\"value\":\"ORA\",\"evidence\":[]},{\"id\":\"c4\",\"text\":\"显著性阈值\",\"fact\":\"significance_threshold\",\"value\":\"0.050000000000000003\",\"evidence\":[]}]}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 1590,
+      "completion_tokens": 509,
+      "total_tokens": 2099,
+      "prompt_tokens_details": {
+        "cached_tokens": 1408
+      },
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 182
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.4399999999999999
+  },
+  "parsed": {
+    "data_facts": [
+      "本次分析共检验 31 个条目，其中 15 个达到校正 p 值 < 0.05 的显著性阈值。",
+      "方法为 ORA（过表达分析），p 值依据校正后列（adjusted_column）。",
+      "显著条目的基因计数范围为 2 到 7，输入基因映射数为 20。"
+    ],
+    "statistical_meaning": [
+      "ORA 检验输入基因列表与基因集的重叠是否超出随机预期，p 值已做多重检验校正。",
+      "显著性阈值 0.05 用于筛选条目，校正后 p 值越小表示重叠越不可能是随机产生。",
+      "条目间可能共享基因，存在层级冗余，不应视为独立证据。"
+    ],
+    "biological_interpretation": [
+      "显著条目提示这些基因集与输入基因列表存在统计学关联，可作为后续假设生成的线索。",
+      "由于 ORA 无方向性，不能据此判断通路是激活还是抑制。",
+      "生物学解释需先确认物种与背景基因集，否则结论可能不稳健。"
+    ],
+    "uncertainty": [
+      "来源包仅为推测（列名与 clusterProfiler/DOSE 输出相似），未确认实际包。",
+      "ORA 结果依赖背景基因集（universe）选择，未指定合适背景时 p 值可能被高估或低估。",
+      "未提供物种信息，生物学解释需用户确认物种背景。"
+    ],
+    "cannot_conclude": [
+      "不能认定任何通路被激活或抑制，ORA 本身没有方向。",
+      "不能把多个显著条目当作相互独立的证据，它们可能共享大量基因。",
+      "不能在没有合适背景基因集与物种信息的情况下推广生物学结论。"
+    ],
+    "learning_questions": [
+      "ORA 与 GSEA 在方向性上有何区别？",
+      "为什么多重检验校正对富集分析很重要？",
+      "背景基因集（universe）的选择如何影响 ORA 的 p 值？"
+    ],
+    "evidence_used": [],
+    "claims": [
+      {
+        "id": "c1",
+        "text": "检验条目总数",
+        "fact": "n_terms",
+        "value": 31,
+        "evidence": []
+      },
+      {
+        "id": "c2",
+        "text": "显著条目数",
+        "fact": "n_significant",
+        "value": 15,
+        "evidence": []
+      },
+      {
+        "id": "c3",
+        "text": "富集分析方法",
+        "fact": "enrichment_method",
+        "value": "ORA",
+        "evidence": []
+      },
+      {
+        "id": "c4",
+        "text": "显著性阈值",
+        "fact": "significance_threshold",
+        "value": "0.050000000000000003",
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "c1",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_terms = 31"
+      },
+      {
+        "claim": "c2",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_significant = 15"
+      },
+      {
+        "claim": "c3",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      },
+      {
+        "claim": "c4",
+        "check": "value",
+        "status": "pass",
+        "detail": "significance_threshold = 0.05"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_terms",
+      "expected": 31,
+      "value": 31,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_significant",
+      "expected": 15,
+      "value": 15,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "enrichment_method",
+      "expected": "ORA",
+      "value": "ORA",
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "significance_threshold",
+      "expected": 0.050000000000000003,
+      "value": "0.050000000000000003",
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 5183
+}

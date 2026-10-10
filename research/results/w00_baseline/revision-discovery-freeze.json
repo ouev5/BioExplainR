@@ -1,0 +1,18 @@
+{
+  "command": [
+    "/tmp/opencode/paper-venv/bin/python",
+    "research/discovery/run_discovery.py",
+    "freeze",
+    "research/results/discovery_sparcl1_v1"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-08T11:07:05.249986+00:00",
+  "finished_utc": "2026-10-08T11:07:10.687131+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/revision-discovery-freeze.txt",
+    "bytes": 302,
+    "sha256": "3a0dc243256658d5db44c6b6c61abe240b278cfc4fd9e0a4889ea73a6e1dec13"
+  }
+}

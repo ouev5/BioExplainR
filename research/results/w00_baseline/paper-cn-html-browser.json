@@ -1,0 +1,19 @@
+{
+  "command": [
+    "env",
+    "NODE_PATH=/tmp/opencode/node_modules",
+    "BIOEXPLAINR_PAPER_CN_BROWSER=research/results/w00_baseline/paper-cn-html-browser",
+    "node",
+    "research/paper_cn/browser_manuscript.cjs"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-08T09:29:33.231891+00:00",
+  "finished_utc": "2026-10-08T09:29:39.604019+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/paper-cn-html-browser.txt",
+    "bytes": 1576,
+    "sha256": "682f57d4a4cdb83fb2bb38193d3c2d52b7145fe641d411d99897088ac20496e7"
+  }
+}

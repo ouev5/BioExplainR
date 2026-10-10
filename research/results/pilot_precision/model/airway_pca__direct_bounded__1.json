@@ -1,0 +1,196 @@
+{
+  "case": "airway_pca",
+  "method": "direct_bounded",
+  "replicate": 1,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-03 19:34:20 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"观测数为8。\",\n    \"变量数为500。\",\n    \"第一主成分的标准差为14.1515118432。\",\n    \"第二主成分的标准差为9.8934581924。\"\n  ],\n  \"statistical_meaning\": [\n    \"n_observations 表示样本量，即数据矩阵的行数。\",\n    \"n_variables 表示特征数，即数据矩阵的列数。\",\n    \"variance_explained.1 表示第一主成分解释的方差比例，由对应奇异值的平方除以总方差得到。\",\n    \"variance_explained.2 表示第二主成分解释的方差比例，由对应奇异值的平方除以总方差得到。\"\n  ],\n  \"biological_interpretation\": [\n    \"样本量较小（8个观测），可能限制统计功效和结果稳定性。\",\n    \"变量数较多（500个），提示高维数据，可能存在多重检验负担和过拟合风险。\",\n    \"第一主成分解释的方差比例最高，可能反映数据中主要的生物学或技术变异来源。\",\n    \"第二主成分解释的方差比例次之，可能反映与第一主成分正交的次要变异模式。\"\n  ],\n  \"uncertainty\": [\n    \"未提供总方差或奇异值平方和，无法精确计算方差解释比例。\",\n    \"未提供样本分组、批次或协变量信息，无法评估主成分与生物学因素的关系。\",\n    \"未提供数据预处理细节（如中心化、标准化），可能影响方差解释比例。\"\n  ],\n  \"cannot_conclude\": [\n    \"无法确定方差解释比例的具体数值。\",\n    \"无法判断主成分是否对应有意义的生物学信号。\",\n    \"无法评估差异表达或统计显著性，因为未提供检验结果。\"\n  ],\n  \"learning_questions\": [\n    \"如何从奇异值计算主成分的方差解释比例？\",\n    \"样本量小和高维变量对主成分分析结果有何影响？\",\n    \"如何将主成分与实验设计中的生物学变量关联？\"\n  ],\n  \"evidence_used\": [\n    \"sdev\",\n    \"observations\",\n    \"variables\"\n  ],\n  \"claims\": [\n    {\n      \"id\": \"claim_n_observations\",\n      \"text\": \"观测数为8。\",\n      \"fact\": \"n_observations\",\n      \"value\": 8,\n      \"evidence\": [\n        \"observations\"\n      ]\n    },\n    {\n      \"id\": \"claim_n_variables\",\n      \"text\": \"变量数为500。\",\n      \"fact\": \"n_variables\",\n      \"value\": 500,\n      \"evidence\": [\n        \"variables\"\n      ]\n    },\n    {\n      \"id\": \"claim_variance_explained_1\",\n      \"text\": \"第一主成分的方差解释比例无法从提供的数据中确定。\",\n      \"fact\": \"variance_explained.1\",\n      \"value\": null,\n      \"evidence\": [\n        \"sdev\"\n      ]\n    },\n    {\n      \"id\": \"claim_variance_explained_2\",\n      \"text\": \"第二主成分的方差解释比例无法从提供的数据中确定。\",\n      \"fact\": \"variance_explained.2\",\n      \"value\": null,\n      \"evidence\": [\n        \"sdev\"\n      ]\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 330,
+      "completion_tokens": 717,
+      "total_tokens": 1047,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 330
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 3.13
+  },
+  "parsed": {
+    "data_facts": [
+      "观测数为8。",
+      "变量数为500。",
+      "第一主成分的标准差为14.1515118432。",
+      "第二主成分的标准差为9.8934581924。"
+    ],
+    "statistical_meaning": [
+      "n_observations 表示样本量，即数据矩阵的行数。",
+      "n_variables 表示特征数，即数据矩阵的列数。",
+      "variance_explained.1 表示第一主成分解释的方差比例，由对应奇异值的平方除以总方差得到。",
+      "variance_explained.2 表示第二主成分解释的方差比例，由对应奇异值的平方除以总方差得到。"
+    ],
+    "biological_interpretation": [
+      "样本量较小（8个观测），可能限制统计功效和结果稳定性。",
+      "变量数较多（500个），提示高维数据，可能存在多重检验负担和过拟合风险。",
+      "第一主成分解释的方差比例最高，可能反映数据中主要的生物学或技术变异来源。",
+      "第二主成分解释的方差比例次之，可能反映与第一主成分正交的次要变异模式。"
+    ],
+    "uncertainty": [
+      "未提供总方差或奇异值平方和，无法精确计算方差解释比例。",
+      "未提供样本分组、批次或协变量信息，无法评估主成分与生物学因素的关系。",
+      "未提供数据预处理细节（如中心化、标准化），可能影响方差解释比例。"
+    ],
+    "cannot_conclude": [
+      "无法确定方差解释比例的具体数值。",
+      "无法判断主成分是否对应有意义的生物学信号。",
+      "无法评估差异表达或统计显著性，因为未提供检验结果。"
+    ],
+    "learning_questions": [
+      "如何从奇异值计算主成分的方差解释比例？",
+      "样本量小和高维变量对主成分分析结果有何影响？",
+      "如何将主成分与实验设计中的生物学变量关联？"
+    ],
+    "evidence_used": [
+      "sdev",
+      "observations",
+      "variables"
+    ],
+    "claims": [
+      {
+        "id": "claim_n_observations",
+        "text": "观测数为8。",
+        "fact": "n_observations",
+        "value": 8,
+        "evidence": [
+          "observations"
+        ]
+      },
+      {
+        "id": "claim_n_variables",
+        "text": "变量数为500。",
+        "fact": "n_variables",
+        "value": 500,
+        "evidence": [
+          "variables"
+        ]
+      },
+      {
+        "id": "claim_variance_explained_1",
+        "text": "第一主成分的方差解释比例无法从提供的数据中确定。",
+        "fact": "variance_explained.1",
+        "value": null,
+        "evidence": [
+          "sdev"
+        ]
+      },
+      {
+        "id": "claim_variance_explained_2",
+        "text": "第二主成分的方差解释比例无法从提供的数据中确定。",
+        "fact": "variance_explained.2",
+        "value": null,
+        "evidence": [
+          "sdev"
+        ]
+      }
+    ]
+  },
+  "validation": {
+    "status": "fail",
+    "findings": [
+      {
+        "claim": "(evidence_used)",
+        "check": "evidence_ids",
+        "status": "fail",
+        "detail": "unknown evidence id(s): sdev, observations, variables (no evidence list was supplied)"
+      },
+      {
+        "claim": "claim_n_observations",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_observations = 8"
+      },
+      {
+        "claim": "claim_n_observations",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: observations"
+      },
+      {
+        "claim": "claim_n_variables",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_variables = 500"
+      },
+      {
+        "claim": "claim_n_variables",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: variables"
+      },
+      {
+        "claim": "claim_variance_explained_1",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_variance_explained_1",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: sdev"
+      },
+      {
+        "claim": "claim_variance_explained_2",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_variance_explained_2",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: sdev"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_observations",
+      "expected": 8,
+      "value": 8,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_variables",
+      "expected": 500,
+      "value": 500,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "variance_explained.1",
+      "expected": 0.47842864474,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "variance_explained.2",
+      "expected": 0.23383404452,
+      "value": null,
+      "answered": false,
+      "correct": false
+    }
+  ],
+  "prompt_chars": 1051
+}

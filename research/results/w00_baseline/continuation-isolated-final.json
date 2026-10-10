@@ -1,0 +1,20 @@
+{
+  "command": [
+    "python3",
+    "tools/isolated-library-check.py",
+    "--archive",
+    "BioExplainR_0.4.0.9000.tar.gz",
+    "--output",
+    "/tmp/opencode/bioexplainr-continuation-core-final"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-05T12:30:50.714073+00:00",
+  "finished_utc": "2026-10-05T12:31:01.803869+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/continuation-isolated-final.txt",
+    "bytes": 673,
+    "sha256": "d76561331d9b16778ba0e5380a8d72caa76d81d149440ecbafe2764271937189"
+  }
+}

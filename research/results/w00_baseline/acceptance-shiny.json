@@ -1,0 +1,18 @@
+{
+  "command": [
+    "python3",
+    "tools/shiny-acceptance.py",
+    "--output",
+    "research/results/w00_baseline/acceptance-shiny-browser"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-05T14:11:42.419810+00:00",
+  "finished_utc": "2026-10-05T14:11:58.867488+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/acceptance-shiny.txt",
+    "bytes": 627,
+    "sha256": "83e5177b546c4dbc478136bdca10c0b625e7115c661c9599dba8a89e07a628b6"
+  }
+}

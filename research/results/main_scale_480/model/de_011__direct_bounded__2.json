@@ -1,0 +1,147 @@
+{
+  "case": "de_011",
+  "family": "differential_expression",
+  "method": "direct_bounded",
+  "replicate": 2,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:17:44 UTC",
+  "response": {
+    "text": "{\"data_facts\":[\"数据维度为51行2列。\",\"仅提供了10行数据，rows_complete为false。\",\"阈值：padj=0.050000000000000003，lfc=1，p=0.050000000000000003。\"],\"statistical_meaning\":[\"n_features指特征总数，n_significant指满足阈值的特征数，n_up和n_down分别指显著上调和下调数。\",\"由于数据不完整，无法可靠计算这些计数。\"],\"biological_interpretation\":[\"显著上调和下调基因可能反映处理引起的转录组变化。\",\"但当前数据不完整，无法进行生物学解释。\"],\"uncertainty\":[\"数据仅提供10行，而总维度为51行，缺失41行。\",\"因此所有请求的计数均无法确定。\"],\"cannot_conclude\":[\"无法确定n_features、n_significant、n_up和n_down。\",\"无法判断显著基因的生物学功能或通路。\"],\"learning_questions\":[\"如何确保差异表达分析输出完整？\",\"在数据缺失时，如何合理报告结果？\"],\"evidence_used\":[],\"claims\":[{\"id\":\"claim_1\",\"text\":\"特征总数无法确定。\",\"fact\":\"n_features\",\"value\":null,\"evidence\":[]},{\"id\":\"claim_2\",\"text\":\"显著特征数无法确定。\",\"fact\":\"n_significant\",\"value\":null,\"evidence\":[]},{\"id\":\"claim_3\",\"text\":\"显著上调特征数无法确定。\",\"fact\":\"n_up\",\"value\":null,\"evidence\":[]},{\"id\":\"claim_4\",\"text\":\"显著下调特征数无法确定。\",\"fact\":\"n_down\",\"value\":null,\"evidence\":[]}]}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 758,
+      "completion_tokens": 354,
+      "total_tokens": 1112,
+      "prompt_tokens_details": {
+        "cached_tokens": 512
+      },
+      "prompt_cache_hit_tokens": 512,
+      "prompt_cache_miss_tokens": 246
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.0800000000000001
+  },
+  "parsed": {
+    "data_facts": [
+      "数据维度为51行2列。",
+      "仅提供了10行数据，rows_complete为false。",
+      "阈值：padj=0.050000000000000003，lfc=1，p=0.050000000000000003。"
+    ],
+    "statistical_meaning": [
+      "n_features指特征总数，n_significant指满足阈值的特征数，n_up和n_down分别指显著上调和下调数。",
+      "由于数据不完整，无法可靠计算这些计数。"
+    ],
+    "biological_interpretation": [
+      "显著上调和下调基因可能反映处理引起的转录组变化。",
+      "但当前数据不完整，无法进行生物学解释。"
+    ],
+    "uncertainty": [
+      "数据仅提供10行，而总维度为51行，缺失41行。",
+      "因此所有请求的计数均无法确定。"
+    ],
+    "cannot_conclude": [
+      "无法确定n_features、n_significant、n_up和n_down。",
+      "无法判断显著基因的生物学功能或通路。"
+    ],
+    "learning_questions": [
+      "如何确保差异表达分析输出完整？",
+      "在数据缺失时，如何合理报告结果？"
+    ],
+    "evidence_used": [],
+    "claims": [
+      {
+        "id": "claim_1",
+        "text": "特征总数无法确定。",
+        "fact": "n_features",
+        "value": null,
+        "evidence": []
+      },
+      {
+        "id": "claim_2",
+        "text": "显著特征数无法确定。",
+        "fact": "n_significant",
+        "value": null,
+        "evidence": []
+      },
+      {
+        "id": "claim_3",
+        "text": "显著上调特征数无法确定。",
+        "fact": "n_up",
+        "value": null,
+        "evidence": []
+      },
+      {
+        "id": "claim_4",
+        "text": "显著下调特征数无法确定。",
+        "fact": "n_down",
+        "value": null,
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "unverified",
+    "findings": [
+      {
+        "claim": "claim_1",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_2",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_3",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_4",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_features",
+      "expected": 51,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "n_significant",
+      "expected": 34,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "n_up",
+      "expected": 17,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "n_down",
+      "expected": 17,
+      "value": null,
+      "answered": false,
+      "correct": false
+    }
+  ],
+  "prompt_chars": 2364
+}

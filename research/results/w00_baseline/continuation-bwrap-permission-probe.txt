@@ -1,0 +1,6 @@
+Error in file(con, "w") : cannot open the connection
+Calls: bio_report -> writeLines -> file
+In addition: Warning message:
+In file(con, "w") :
+  cannot open file '/tmp/opencode/bioexplainr-bwrap-user-final/report.html': Permission denied
+Execution halted

@@ -1,0 +1,28 @@
+{
+  "status": "pass",
+  "references": 29,
+  "figures": 8,
+  "panel_pdfs": 32,
+  "composite_pdfs": 8,
+  "external_tables": 9,
+  "docx_tables": 0,
+  "pdf_pages": 23,
+  "airway_independent_numeric_rechecks": 45,
+  "development_scenarios": 15,
+  "miniacc": {
+    "status": "pass",
+    "scope": "Independent Python recomputation; same development data, no expert gold",
+    "files_verified": 23,
+    "effects_recomputed": 66,
+    "features": 33,
+    "paired_units": 46,
+    "direction": {
+      "same": 18,
+      "opposite": 15,
+      "unverified": 0
+    },
+    "artifact_paths": "run-relative; legacy directory prefixes supported without original-tree access",
+    "pvalue_scope": "BH recomputed from saved R Wilcoxon p values; Wilcoxon statistic not independently recomputed"
+  },
+  "visual_review_scope": "Automated text bounding/overlap and content audit; model cannot view images/PDF directly"
+}

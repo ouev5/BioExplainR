@@ -1,0 +1,21 @@
+{
+  "review_date": "2026-10-08",
+  "scope": "Task and documented built-in capability comparison; not a common-task performance ranking. Not documented does not prove impossible through extensions.",
+  "headers": ["工具", "主要任务与输入", "数值与语言分工", "检查/证据重点", "离线能力", "与本文互补的优势"],
+  "rows": [
+    ["iSEE [12]", "SE/SCE 交互探索", "对象驱动图表；不以 LLM 为核心", "联动选择、元数据和绘图代码", "完整交互探索", "成熟可定制面板；BioExplainR 增加显式声明和图源核对"],
+    ["SCassist [8]", "Seurat 单细胞工作流指导", "R 指标/富集增强 LLM 提示", "QC/标准化/聚类建议、注释与富集解释", "可用本地 Ollama；仍需模型", "端到端单细胞建议；BioExplainR 扩展为跨对象的范围与分项核对"],
+    ["GeneAgent [9]", "基因集功能分析", "LLM 生成、数据库检索与自验证", "生物学功能声明与多数据库支持/反驳", "主流程需模型和数据库", "深入基因集证据；BioExplainR 从已有数值对象核对统计声明"],
+    ["ellmer [13]", "通用 R–LLM 连接", "结构化输出、流式及工具调用", "由开发者定义工具和检查规则", "可接本地 Ollama；仍需模型", "广泛模型基础设施；BioExplainR 提供现成生物统计事实与验证契约"],
+    ["GPTCelltype [7]", "cluster marker → 细胞类型", "marker 提示与模型标签输出", "细胞类型注释任务", "可先生成提示；注释需模型", "专用标注入口；BioExplainR 保留细胞/供体层级及解释范围"],
+    ["BioExplainR（本文）", "已有差异/富集/PCA/单细胞/多组学结果", "R 全输入 facts；可选模型只组织语言", "声明、图源、scope/unit、映射覆盖、方向和依赖", "无需模型的事实、解释、检查和报告", "完整事实 + 可定位检查 + 科学分母 + 项目溯源的集成审查层"]
+  ],
+  "sources": [
+    {"tool": "iSEE", "urls": ["https://raw.githubusercontent.com/iSEE/iSEE/master/README.md", "https://doi.org/10.12688/f1000research.14966.1"]},
+    {"tool": "SCassist", "urls": ["https://raw.githubusercontent.com/NIH-NEI/SCassist/main/README.md", "https://pmc.ncbi.nlm.nih.gov/articles/PMC12341677/", "https://doi.org/10.1093/bioinformatics/btaf402"]},
+    {"tool": "GeneAgent", "urls": ["https://raw.githubusercontent.com/ncbi-nlp/GeneAgent/main/README.md", "https://www.nature.com/articles/s41592-025-02748-6"]},
+    {"tool": "ellmer", "urls": ["https://ellmer.tidyverse.org/", "https://ellmer.tidyverse.org/articles/tool-calling.html"]},
+    {"tool": "GPTCelltype", "urls": ["https://raw.githubusercontent.com/Winnie09/GPTCelltype/master/README.md", "https://doi.org/10.1038/s41592-024-02235-4"]},
+    {"tool": "BioExplainR", "urls": [], "local_evidence": ["R/context.R", "R/validation.R", "R/project-relations.R", "R/sample-map.R", "research/results/paper_cn_cases_v1", "research/results/miniacc_installed_review"]}
+  ]
+}

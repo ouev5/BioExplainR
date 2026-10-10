@@ -1,0 +1,31 @@
+{
+  "frozen_utc": "2026-10-08T11:07:10.592764+00:00",
+  "candidate": "SPARCL1",
+  "primary_comparison": "dex24h vs untreated",
+  "primary_test": "two-sided Welch t",
+  "decision": "effect > 0 and pvalue < 0.05",
+  "external": "GSE34313",
+  "external_unit": "culture replicate in one HASM cell line, not independent donor",
+  "protocol": {
+    "path": "PROTOCOL.md",
+    "bytes": 3328,
+    "sha256": "0d080fac6973b2980b0283cff3f4108984dd4f34ab52d4ea7fd79da5efc50821"
+  },
+  "discovery_input": {
+    "path": "airway_de.csv",
+    "bytes": 2731871,
+    "sha256": "52aa0278fb58170f3ccd2ab42697c9afcb3b841a2357853289fbd33958f45095"
+  },
+  "mapping_url": "https://rest.ensembl.org/lookup/id/ENSG00000152583?content-type=application/json",
+  "mapping": {
+    "path": "ensembl_mapping.json",
+    "bytes": 426,
+    "sha256": "3b9330dadcf09e0b095b65fde27a9a1eda7743f0d6ed10e154504cdf3ead9079"
+  },
+  "candidate_record": {
+    "path": "candidate.csv",
+    "bytes": 102,
+    "sha256": "a8aa830afde01dcfe271a01f1b98e60a4283564ca4ce5d837c97b026af7ae8ee"
+  },
+  "timing_scope": "Metadata/platform feasibility read; candidate expression unexamined before freeze"
+}

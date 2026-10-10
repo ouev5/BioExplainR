@@ -1,0 +1,18 @@
+{
+  "command": [
+    "Rscript",
+    "--vanilla",
+    "-e",
+    "options(timeout=120); f <- \"research/results/w00_baseline/SpatialExperiment_1.12.0.tar.gz\"; download.file(\"https://bioconductor.org/packages/3.18/bioc/src/contrib/SpatialExperiment_1.12.0.tar.gz\", f, mode=\"wb\"); cat(digest::digest(file=f, algo=\"sha256\"), \"\\n\")"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-05T12:28:59.388424+00:00",
+  "finished_utc": "2026-10-05T12:29:53.027665+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/continuation-spatial-archive.txt",
+    "bytes": 299,
+    "sha256": "3c0fc047e5a2aabefd05371049a3096dc9237f4d6d0654e20501dd4950a11b46"
+  }
+}

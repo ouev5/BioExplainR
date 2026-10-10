@@ -1,0 +1,109 @@
+Reading package lists...
+Building dependency tree...
+Reading state information...
+r-base is already the newest version (4.3.3-2build2).
+r-base-dev is already the newest version (4.3.3-2build2).
+r-cran-jsonlite is already the newest version (1.8.8+dfsg-1).
+r-cran-httr2 is already the newest version (1.0.0-1).
+r-cran-testthat is already the newest version (3.2.1-1).
+r-cran-pkgload is already the newest version (1.3.4-1).
+r-cran-roxygen2 is already the newest version (7.3.1-1).
+r-cran-callr is already the newest version (3.7.5-1).
+r-cran-withr is already the newest version (2.5.0-1).
+r-cran-ggplot2 is already the newest version (3.4.4+dfsg-1).
+r-cran-shiny is already the newest version (1.8.0+dfsg-1).
+r-cran-rlang is already the newest version (1.1.3-1).
+r-cran-digest is already the newest version (0.6.34-1).
+r-bioc-s4vectors is already the newest version (0.40.2+dfsg-1).
+r-bioc-summarizedexperiment is already the newest version (1.32.0+dfsg-1).
+r-bioc-singlecellexperiment is already the newest version (1.24.0+ds-1).
+r-bioc-biobase is already the newest version (2.62.0-1).
+r-bioc-deseq2 is already the newest version (1.42.0+dfsg-1).
+r-bioc-limma is already the newest version (3.58.1+dfsg-1).
+r-bioc-edger is already the newest version (4.0.16+dfsg-1build1).
+r-cran-seuratobject is already the newest version (5.0.1-1).
+r-cran-uwot is already the newest version (0.1.16-2).
+r-bioc-biocversion is already the newest version (3.18.1-1).
+r-cran-biocmanager is already the newest version (1.30.22+dfsg-2).
+pandoc is already the newest version (3.1.3+ds-2).
+python3-venv is already the newest version (3.12.3-0ubuntu2.1).
+python3-docx is already the newest version (1.1.0+dfsg-2).
+python3-openpyxl is already the newest version (3.1.2+dfsg-6).
+python3-pil is already the newest version (10.2.0-1ubuntu1.3).
+python3-matplotlib is already the newest version (3.6.3-1ubuntu5).
+0 upgraded, 0 newly installed, 0 to remove and 253 not upgraded.
+Looking in indexes: http://mirrors.tencentyun.com/pypi/simple
+Collecting python-docx==1.2.0 (from -r /home/ubuntu/creatR/tools/paper-requirements.txt (line 2))
+  Downloading http://mirrors.tencentyun.com/pypi/packages/d0/00/1e03a4989fa5795da308cd774f05b704ace555a70f9bf9d3be057b680bcf/python_docx-1.2.0-py3-none-any.whl (252 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 253.0/253.0 kB 13.3 MB/s eta 0:00:00
+Collecting openpyxl==3.1.2 (from -r /home/ubuntu/creatR/tools/paper-requirements.txt (line 3))
+  Downloading http://mirrors.tencentyun.com/pypi/packages/6a/94/a59521de836ef0da54aaf50da6c4da8fb4072fb3053fa71f052fd9399e7a/openpyxl-3.1.2-py2.py3-none-any.whl (249 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 250.0/250.0 kB 2.3 MB/s eta 0:00:00
+Requirement already satisfied: PyMuPDF==1.26.5 in /tmp/opencode/paper-venv/lib/python3.12/site-packages (from -r /home/ubuntu/creatR/tools/paper-requirements.txt (line 4)) (1.26.5)
+Collecting Pillow==10.2.0 (from -r /home/ubuntu/creatR/tools/paper-requirements.txt (line 5))
+  Downloading http://mirrors.tencentyun.com/pypi/packages/5c/c6/5b6b1f7362267494a423b45af684d604491565e81436e3ebeefee68f78fd/pillow-10.2.0-cp312-cp312-manylinux_2_28_x86_64.whl (4.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.5/4.5 MB 13.4 MB/s eta 0:00:00
+Collecting matplotlib==3.6.3 (from -r /home/ubuntu/creatR/tools/paper-requirements.txt (line 6))
+  Downloading http://mirrors.tencentyun.com/pypi/packages/23/6d/2917ed23b17a8c4d1d59974a574cae0a365c392ba8820c8824b03a02f376/matplotlib-3.6.3.tar.gz (35.9 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.9/35.9 MB 63.2 MB/s eta 0:00:00
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Installing backend dependencies: started
+  Installing backend dependencies: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting numpy==1.26.4 (from -r /home/ubuntu/creatR/tools/paper-requirements.txt (line 7))
+  Downloading http://mirrors.tencentyun.com/pypi/packages/0f/50/de23fde84e45f5c4fda2488c759b69990fd4512387a8632860f3ac9cd225/numpy-1.26.4-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (18.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 18.0/18.0 MB 30.6 MB/s eta 0:00:00
+Collecting lxml>=3.1.0 (from python-docx==1.2.0->-r /home/ubuntu/creatR/tools/paper-requirements.txt (line 2))
+  Downloading http://mirrors.tencentyun.com/pypi/packages/0a/20/e022dbc6b4753a9bc9fc5fb28a27163430c1731b9913997f6544c1b2518c/lxml-6.1.3-cp312-cp312-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl (5.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.2/5.2 MB 111.8 MB/s eta 0:00:00
+Collecting typing_extensions>=4.9.0 (from python-docx==1.2.0->-r /home/ubuntu/creatR/tools/paper-requirements.txt (line 2))
+  Using cached http://mirrors.tencentyun.com/pypi/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Collecting et-xmlfile (from openpyxl==3.1.2->-r /home/ubuntu/creatR/tools/paper-requirements.txt (line 3))
+  Using cached http://mirrors.tencentyun.com/pypi/packages/c1/8b/5fe2cc11fee489817272089c4203e679c63b570a5aaeb18d852ae3cbba6a/et_xmlfile-2.0.0-py3-none-any.whl (18 kB)
+Collecting contourpy>=1.0.1 (from matplotlib==3.6.3->-r /home/ubuntu/creatR/tools/paper-requirements.txt (line 6))
+  Using cached http://mirrors.tencentyun.com/pypi/packages/78/f9/b6831508960d559581c448532ba4df312217072975486dbf2b24fcc5b76f/contourpy-1.4.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (383 kB)
+Collecting cycler>=0.10 (from matplotlib==3.6.3->-r /home/ubuntu/creatR/tools/paper-requirements.txt (line 6))
+  Using cached http://mirrors.tencentyun.com/pypi/packages/e7/05/c19819d5e3d95294a6f5947fb9b9629efb316b96de511b418c53d245aae6/cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Collecting fonttools>=4.22.0 (from matplotlib==3.6.3->-r /home/ubuntu/creatR/tools/paper-requirements.txt (line 6))
+  Using cached http://mirrors.tencentyun.com/pypi/packages/a6/6e/babde908b879a3b51ffc230919d06a804912559dd4cf8c94f3fa2af69fec/fonttools-4.66.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (5.4 MB)
+Collecting kiwisolver>=1.0.1 (from matplotlib==3.6.3->-r /home/ubuntu/creatR/tools/paper-requirements.txt (line 6))
+  Using cached http://mirrors.tencentyun.com/pypi/packages/fc/f4/dadfec469313c7f428efa7e84b4aba9732f813c13ea7131a24b7b008ef57/kiwisolver-1.5.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (1.5 MB)
+Collecting packaging>=20.0 (from matplotlib==3.6.3->-r /home/ubuntu/creatR/tools/paper-requirements.txt (line 6))
+  Using cached http://mirrors.tencentyun.com/pypi/packages/63/34/ba1c580383c9eada3711951fef0795c80b829a078d72188184bcab9dd527/packaging-26.3-py3-none-any.whl (129 kB)
+Collecting pyparsing>=2.2.1 (from matplotlib==3.6.3->-r /home/ubuntu/creatR/tools/paper-requirements.txt (line 6))
+  Using cached http://mirrors.tencentyun.com/pypi/packages/38/bb/d215ee7c73b61497b28a5503f9f53523f294fcc936762b7caf90e0c1c2b5/pyparsing-3.3.3-py3-none-any.whl (126 kB)
+Collecting python-dateutil>=2.7 (from matplotlib==3.6.3->-r /home/ubuntu/creatR/tools/paper-requirements.txt (line 6))
+  Using cached http://mirrors.tencentyun.com/pypi/packages/ec/57/56b9bcc3c9c6a792fcbaf139543cee77261f3651ca9da0c93f5c1221264b/python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+INFO: pip is looking at multiple versions of contourpy to determine which version is compatible with other requirements. This could take a while.
+Collecting contourpy>=1.0.1 (from matplotlib==3.6.3->-r /home/ubuntu/creatR/tools/paper-requirements.txt (line 6))
+  Downloading http://mirrors.tencentyun.com/pypi/packages/cc/8f/ec6289987824b29529d0dfda0d74a07cec60e54b9c92f3c9da4c0ac732de/contourpy-1.3.3-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (362 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 362.6/362.6 kB 3.2 MB/s eta 0:00:00
+Collecting six>=1.5 (from python-dateutil>=2.7->matplotlib==3.6.3->-r /home/ubuntu/creatR/tools/paper-requirements.txt (line 6))
+  Using cached http://mirrors.tencentyun.com/pypi/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl (11 kB)
+Building wheels for collected packages: matplotlib
+  Building wheel for matplotlib (pyproject.toml): started
+  Building wheel for matplotlib (pyproject.toml): still running...
+  Building wheel for matplotlib (pyproject.toml): finished with status 'done'
+  Created wheel for matplotlib: filename=matplotlib-3.6.3-cp312-cp312-linux_x86_64.whl size=11102823 sha256=4541c6130fcdba83595854722d0078bcb85eacaf01890a61793c5b8efba0ccea
+  Stored in directory: /home/ubuntu/opencode-v2/cache/pip/wheels/cb/da/29/6d3f2814b21b6735440519f382d4bf05e28ca76b16c74e360d
+Successfully built matplotlib
+Installing collected packages: typing_extensions, six, pyparsing, Pillow, packaging, numpy, lxml, kiwisolver, fonttools, et-xmlfile, cycler, python-docx, python-dateutil, openpyxl, contourpy, matplotlib
+Successfully installed Pillow-10.2.0 contourpy-1.3.3 cycler-0.12.1 et-xmlfile-2.0.0 fonttools-4.66.1 kiwisolver-1.5.1 lxml-6.1.3 matplotlib-3.6.3 numpy-1.26.4 openpyxl-3.1.2 packaging-26.3 pyparsing-3.3.3 python-dateutil-2.9.0.post0 python-docx-1.2.0 six-1.17.0 typing_extensions-4.16.0
+
+up to date, audited 4 packages in 3s
+
+found 0 vulnerabilities
+R version 4.3.3 (2024-02-29) -- "Angel Food Cake"
+Copyright (C) 2024 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under the terms of the
+GNU General Public License versions 2 or 3.
+For more information about these matters see
+https://www.gnu.org/licenses/.
+

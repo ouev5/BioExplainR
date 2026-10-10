@@ -1,0 +1,160 @@
+{
+  "case": "pca_006",
+  "family": "pca",
+  "method": "facts_evidence",
+  "replicate": 1,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:16:31 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"本次分析为PCA，样本数9，变量数18，共得到9个主成分。\",\n    \"第一主成分解释方差比例为0.28372209040590846，第二主成分解释方差比例为0.20609738104198896。\",\n    \"数据已中心化，未进行标准化。\"\n  ],\n  \"statistical_meaning\": [\n    \"主成分解释方差比例表示该成分对总变异的贡献大小。\",\n    \"前两个主成分合计解释约49%的方差，说明数据存在多个变异方向。\",\n    \"样本在主成分图上的距离反映变量空间中的相似性，但不直接对应统计显著性。\"\n  ],\n  \"biological_interpretation\": [\n    \"若样本分组信息已知，主成分分离可能提示组间转录差异，但需谨慎解释。\",\n    \"当前未提供物种和分组信息，无法将主成分与具体生物学过程关联。\",\n    \"文献检索命中CRISPLD2相关研究（EuropePMC:MED:24926665），但该文献仅表示匹配检索词，不构成对本次PCA结果的直接支持。\"\n  ],\n  \"uncertainty\": [\n    \"样本在主成分上的分离不等于生物学机制，批次效应也可能造成分离。\",\n    \"未发送样本坐标或样本名称；分组分离需结合样本分组信息判断。\",\n    \"未提供物种（species），生物学解释需要用户确认物种背景。\"\n  ],\n  \"cannot_conclude\": [\n    \"不能仅凭PCA判断组间差异是否具有统计学显著性。\",\n    \"不能推断任何基因或通路的激活或抑制方向。\",\n    \"不能将主成分分离直接归因于特定生物学机制或临床意义。\"\n  ],\n  \"learning_questions\": [\n    \"主成分分析中，解释方差比例与统计显著性有何区别？\",\n    \"为什么PCA前通常需要中心化和标准化？\",\n    \"如何结合样本分组信息解释主成分图？\"\n  ],\n  \"evidence_used\": [\n    \"EuropePMC:MED:24926665\"\n  ],\n  \"claims\": [\n    {\n      \"id\": \"claim_n_obs\",\n      \"text\": \"样本数为9。\",\n      \"fact\": \"n_observations\",\n      \"value\": 9,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_n_var\",\n      \"text\": \"变量数为18。\",\n      \"fact\": \"n_variables\",\n      \"value\": 18,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_var1\",\n      \"text\": \"第一主成分解释方差比例为0.28372209040590846。\",\n      \"fact\": \"variance_explained.1\",\n      \"value\": \"0.28372209040590846\",\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_var2\",\n      \"text\": \"第二主成分解释方差比例为0.20609738104198896。\",\n      \"fact\": \"variance_explained.2\",\n      \"value\": \"0.20609738104198896\",\n      \"evidence\": []\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 1153,
+      "completion_tokens": 670,
+      "total_tokens": 1823,
+      "prompt_tokens_details": {
+        "cached_tokens": 1019
+      },
+      "prompt_cache_hit_tokens": 1019,
+      "prompt_cache_miss_tokens": 134
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 3.0899999999999999
+  },
+  "parsed": {
+    "data_facts": [
+      "本次分析为PCA，样本数9，变量数18，共得到9个主成分。",
+      "第一主成分解释方差比例为0.28372209040590846，第二主成分解释方差比例为0.20609738104198896。",
+      "数据已中心化，未进行标准化。"
+    ],
+    "statistical_meaning": [
+      "主成分解释方差比例表示该成分对总变异的贡献大小。",
+      "前两个主成分合计解释约49%的方差，说明数据存在多个变异方向。",
+      "样本在主成分图上的距离反映变量空间中的相似性，但不直接对应统计显著性。"
+    ],
+    "biological_interpretation": [
+      "若样本分组信息已知，主成分分离可能提示组间转录差异，但需谨慎解释。",
+      "当前未提供物种和分组信息，无法将主成分与具体生物学过程关联。",
+      "文献检索命中CRISPLD2相关研究（EuropePMC:MED:24926665），但该文献仅表示匹配检索词，不构成对本次PCA结果的直接支持。"
+    ],
+    "uncertainty": [
+      "样本在主成分上的分离不等于生物学机制，批次效应也可能造成分离。",
+      "未发送样本坐标或样本名称；分组分离需结合样本分组信息判断。",
+      "未提供物种（species），生物学解释需要用户确认物种背景。"
+    ],
+    "cannot_conclude": [
+      "不能仅凭PCA判断组间差异是否具有统计学显著性。",
+      "不能推断任何基因或通路的激活或抑制方向。",
+      "不能将主成分分离直接归因于特定生物学机制或临床意义。"
+    ],
+    "learning_questions": [
+      "主成分分析中，解释方差比例与统计显著性有何区别？",
+      "为什么PCA前通常需要中心化和标准化？",
+      "如何结合样本分组信息解释主成分图？"
+    ],
+    "evidence_used": [
+      "EuropePMC:MED:24926665"
+    ],
+    "claims": [
+      {
+        "id": "claim_n_obs",
+        "text": "样本数为9。",
+        "fact": "n_observations",
+        "value": 9,
+        "evidence": []
+      },
+      {
+        "id": "claim_n_var",
+        "text": "变量数为18。",
+        "fact": "n_variables",
+        "value": 18,
+        "evidence": []
+      },
+      {
+        "id": "claim_var1",
+        "text": "第一主成分解释方差比例为0.28372209040590846。",
+        "fact": "variance_explained.1",
+        "value": "0.28372209040590846",
+        "evidence": []
+      },
+      {
+        "id": "claim_var2",
+        "text": "第二主成分解释方差比例为0.20609738104198896。",
+        "fact": "variance_explained.2",
+        "value": "0.20609738104198896",
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "(evidence_used)",
+        "check": "evidence_ids",
+        "status": "pass",
+        "detail": "all cited evidence ids were supplied"
+      },
+      {
+        "claim": "claim_n_obs",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_observations = 9"
+      },
+      {
+        "claim": "claim_n_var",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_variables = 18"
+      },
+      {
+        "claim": "claim_var1",
+        "check": "value",
+        "status": "pass",
+        "detail": "variance_explained.1 = 0.283722"
+      },
+      {
+        "claim": "claim_var2",
+        "check": "value",
+        "status": "pass",
+        "detail": "variance_explained.2 = 0.206097"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_observations",
+      "expected": 9,
+      "value": 9,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_variables",
+      "expected": 18,
+      "value": 18,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "variance_explained.1",
+      "expected": 0.28372209040590846,
+      "value": "0.28372209040590846",
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "variance_explained.2",
+      "expected": 0.20609738104198896,
+      "value": "0.20609738104198896",
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 4129
+}

@@ -1,0 +1,128 @@
+{
+  "case": "reactome_ora",
+  "method": "direct_bounded",
+  "replicate": 3,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-03 19:42:38 UTC",
+  "response": {
+    "text": "{\"data_facts\": [\"提供了10行通路富集结果，但rows_complete为false，总行数1104。\", \"padj阈值为0.05，lfc阈值为0，p阈值为0.05。\"], \"statistical_meaning\": [\"n_terms无法从提供数据确定，因为rows_complete为false。\", \"n_significant无法从提供数据确定，因为rows_complete为false。\", \"enrichment_method无法从提供数据确定，分析类型提示为enrichment_ora。\"], \"biological_interpretation\": [\"无法基于不完整数据得出生物学结论。\", \"仅能确认部分通路名称，但不足以进行解释。\"], \"uncertainty\": [\"数据不完整，无法计算总通路数和显著通路数。\", \"富集方法未在输出中明确给出。\"], \"cannot_conclude\": [\"无法确定n_terms。\", \"无法确定n_significant。\", \"无法确定enrichment_method。\"], \"learning_questions\": [\"如何从完整的富集分析输出中计算显著通路数？\", \"ORA与GSEA在结果解读上有何区别？\"], \"evidence_used\": [], \"claims\": [{\"id\": \"c1\", \"text\": \"n_terms无法确定\", \"fact\": \"n_terms\", \"value\": null, \"evidence\": []}, {\"id\": \"c2\", \"text\": \"n_significant无法确定\", \"fact\": \"n_significant\", \"value\": null, \"evidence\": []}, {\"id\": \"c3\", \"text\": \"enrichment_method无法确定\", \"fact\": \"enrichment_method\", \"value\": null, \"evidence\": []}]}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 924,
+      "completion_tokens": 360,
+      "total_tokens": 1284,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 156
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 1.68
+  },
+  "parsed": {
+    "data_facts": [
+      "提供了10行通路富集结果，但rows_complete为false，总行数1104。",
+      "padj阈值为0.05，lfc阈值为0，p阈值为0.05。"
+    ],
+    "statistical_meaning": [
+      "n_terms无法从提供数据确定，因为rows_complete为false。",
+      "n_significant无法从提供数据确定，因为rows_complete为false。",
+      "enrichment_method无法从提供数据确定，分析类型提示为enrichment_ora。"
+    ],
+    "biological_interpretation": [
+      "无法基于不完整数据得出生物学结论。",
+      "仅能确认部分通路名称，但不足以进行解释。"
+    ],
+    "uncertainty": [
+      "数据不完整，无法计算总通路数和显著通路数。",
+      "富集方法未在输出中明确给出。"
+    ],
+    "cannot_conclude": [
+      "无法确定n_terms。",
+      "无法确定n_significant。",
+      "无法确定enrichment_method。"
+    ],
+    "learning_questions": [
+      "如何从完整的富集分析输出中计算显著通路数？",
+      "ORA与GSEA在结果解读上有何区别？"
+    ],
+    "evidence_used": [],
+    "claims": [
+      {
+        "id": "c1",
+        "text": "n_terms无法确定",
+        "fact": "n_terms",
+        "value": null,
+        "evidence": []
+      },
+      {
+        "id": "c2",
+        "text": "n_significant无法确定",
+        "fact": "n_significant",
+        "value": null,
+        "evidence": []
+      },
+      {
+        "id": "c3",
+        "text": "enrichment_method无法确定",
+        "fact": "enrichment_method",
+        "value": null,
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "unverified",
+    "findings": [
+      {
+        "claim": "c1",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "c2",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "c3",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      }
+    ],
+    "n_claims": 3,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_terms",
+      "expected": 1104,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "n_significant",
+      "expected": 1,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "enrichment_method",
+      "expected": "ORA",
+      "value": null,
+      "answered": false,
+      "correct": false
+    }
+  ],
+  "prompt_chars": 2926,
+  "validation_rechecked_utc": "2026-10-03 20:09:21 UTC"
+}

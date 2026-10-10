@@ -1,0 +1,194 @@
+{
+  "case": "single_cell_011",
+  "family": "single_cell",
+  "method": "direct_bounded",
+  "replicate": 2,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:18:40 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"数据矩阵维度为36行52列。\",\n    \"唯一测定类型为counts。\",\n    \"不同样本数为3。\"\n  ],\n  \"statistical_meaning\": [\n    \"36行通常对应特征数，52列对应细胞数。\",\n    \"counts测定表示原始计数数据。\",\n    \"3个不同样本表明样本分组信息有限。\"\n  ],\n  \"biological_interpretation\": [\n    \"该数据可能来自单细胞RNA测序实验。\",\n    \"36个特征较少，可能为靶向基因 panel。\",\n    \"3个样本可用于初步比较，但统计功效有限。\"\n  ],\n  \"uncertainty\": [\n    \"无法确认36行是否全部为基因特征。\",\n    \"无法确认52列是否全部为细胞。\",\n    \"样本间批次效应未知。\"\n  ],\n  \"cannot_conclude\": [\n    \"无法确定细胞类型或组织来源。\",\n    \"无法进行差异表达分析。\",\n    \"无法评估数据质量或归一化必要性。\"\n  ],\n  \"learning_questions\": [\n    \"36个特征具体是哪些基因或区域？\",\n    \"52个细胞是否经过质控过滤？\",\n    \"3个样本分别代表什么实验条件？\"\n  ],\n  \"evidence_used\": [\n    \"dim\",\n    \"assays\",\n    \"n_distinct_samples\"\n  ],\n  \"claims\": [\n    {\n      \"id\": \"claim_n_cells\",\n      \"text\": \"细胞数为52。\",\n      \"fact\": \"n_cells\",\n      \"value\": 52,\n      \"evidence\": [\n        \"dim\"\n      ]\n    },\n    {\n      \"id\": \"claim_n_features\",\n      \"text\": \"特征数为36。\",\n      \"fact\": \"n_features\",\n      \"value\": 36,\n      \"evidence\": [\n        \"dim\"\n      ]\n    },\n    {\n      \"id\": \"claim_n_samples\",\n      \"text\": \"样本数为3。\",\n      \"fact\": \"n_samples\",\n      \"value\": 3,\n      \"evidence\": [\n        \"n_distinct_samples\"\n      ]\n    },\n    {\n      \"id\": \"claim_assays\",\n      \"text\": \"测定类型为counts。\",\n      \"fact\": \"assays\",\n      \"value\": \"counts\",\n      \"evidence\": [\n        \"assays\"\n      ]\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 316,
+      "completion_tokens": 512,
+      "total_tokens": 828,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 188
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.1800000000000002
+  },
+  "parsed": {
+    "data_facts": [
+      "数据矩阵维度为36行52列。",
+      "唯一测定类型为counts。",
+      "不同样本数为3。"
+    ],
+    "statistical_meaning": [
+      "36行通常对应特征数，52列对应细胞数。",
+      "counts测定表示原始计数数据。",
+      "3个不同样本表明样本分组信息有限。"
+    ],
+    "biological_interpretation": [
+      "该数据可能来自单细胞RNA测序实验。",
+      "36个特征较少，可能为靶向基因 panel。",
+      "3个样本可用于初步比较，但统计功效有限。"
+    ],
+    "uncertainty": [
+      "无法确认36行是否全部为基因特征。",
+      "无法确认52列是否全部为细胞。",
+      "样本间批次效应未知。"
+    ],
+    "cannot_conclude": [
+      "无法确定细胞类型或组织来源。",
+      "无法进行差异表达分析。",
+      "无法评估数据质量或归一化必要性。"
+    ],
+    "learning_questions": [
+      "36个特征具体是哪些基因或区域？",
+      "52个细胞是否经过质控过滤？",
+      "3个样本分别代表什么实验条件？"
+    ],
+    "evidence_used": [
+      "dim",
+      "assays",
+      "n_distinct_samples"
+    ],
+    "claims": [
+      {
+        "id": "claim_n_cells",
+        "text": "细胞数为52。",
+        "fact": "n_cells",
+        "value": 52,
+        "evidence": [
+          "dim"
+        ]
+      },
+      {
+        "id": "claim_n_features",
+        "text": "特征数为36。",
+        "fact": "n_features",
+        "value": 36,
+        "evidence": [
+          "dim"
+        ]
+      },
+      {
+        "id": "claim_n_samples",
+        "text": "样本数为3。",
+        "fact": "n_samples",
+        "value": 3,
+        "evidence": [
+          "n_distinct_samples"
+        ]
+      },
+      {
+        "id": "claim_assays",
+        "text": "测定类型为counts。",
+        "fact": "assays",
+        "value": "counts",
+        "evidence": [
+          "assays"
+        ]
+      }
+    ]
+  },
+  "validation": {
+    "status": "fail",
+    "findings": [
+      {
+        "claim": "(evidence_used)",
+        "check": "evidence_ids",
+        "status": "fail",
+        "detail": "unknown evidence id(s): dim, assays, n_distinct_samples (no evidence list was supplied)"
+      },
+      {
+        "claim": "claim_n_cells",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_cells = 52"
+      },
+      {
+        "claim": "claim_n_cells",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: dim"
+      },
+      {
+        "claim": "claim_n_features",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_features = 36"
+      },
+      {
+        "claim": "claim_n_features",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: dim"
+      },
+      {
+        "claim": "claim_n_samples",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_samples = 3"
+      },
+      {
+        "claim": "claim_n_samples",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: n_distinct_samples"
+      },
+      {
+        "claim": "claim_assays",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      },
+      {
+        "claim": "claim_assays",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: assays"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_cells",
+      "expected": 52,
+      "value": 52,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_features",
+      "expected": 36,
+      "value": 36,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_samples",
+      "expected": 3,
+      "value": 3,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "assays",
+      "expected": "counts",
+      "value": "counts",
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 1204
+}

@@ -1,0 +1,354 @@
+{
+  "schema_version": "1.0",
+  "context_id": "b24836e12a055630a3336aef8373548591fe37c1324e385203ea3bbb4e70157b",
+  "analysis_type": "multi_assay",
+  "source": {
+    "class": "MultiAssayExperiment",
+    "package": "MultiAssayExperiment",
+    "status": "verified_class"
+  },
+  "study_context": {
+    "species": "Homo sapiens",
+    "tissue": "adrenal cortex"
+  },
+  "facts": {
+    "n_modalities": 5,
+    "modalities": ["RNASeq2GeneNorm", "gistict", "RPPAArray", "Mutations", "miRNASeqGene"],
+    "child_contexts": [
+      {
+        "name": "RNASeq2GeneNorm",
+        "context_id": "1f519fb8ad3a1356f3d8a70bba53fd7c8ac5a70955ac54493558a493af553232",
+        "analysis_type": "summarized_experiment",
+        "source_class": "SummarizedExperiment",
+        "facts_hash": "1e362b002448aaae614e4044ad54b881a08a02693a99e6e91d532cd2c0db7b48",
+        "facts": {
+          "n_features": 198,
+          "n_columns": 79,
+          "assays": "exprs",
+          "colData_variables": [],
+          "rowData_columns": [],
+          "assay_summaries": {
+            "exprs": {
+              "class": "matrix",
+              "dim": [198, 79],
+              "inspection": "full",
+              "values_inspected": 15642,
+              "value_quantiles": {
+                "min": 0,
+                "q25": 251.90000000000001,
+                "median": 901.20000000000005,
+                "q75": 2191,
+                "max": 355300
+              },
+              "n_na": 0,
+              "integer_like": false,
+              "fraction_zero": 0.0206
+            }
+          }
+        }
+      },
+      {
+        "name": "gistict",
+        "context_id": "6959acd32ae6af0b2faa9c4bcea1ad98b5946eda22b3524bbff2030920e011d5",
+        "analysis_type": "summarized_experiment",
+        "source_class": "SummarizedExperiment",
+        "facts_hash": "26b93546481ff6447de4c49d078d20c4bbf5d2923c2574a57316530ec0c20537",
+        "facts": {
+          "n_features": 198,
+          "n_columns": 90,
+          "colData_variables": [],
+          "rowData_columns": ["Gene.Symbol", "Locus.ID", "Cytoband"],
+          "assay_summaries": []
+        }
+      },
+      {
+        "name": "RPPAArray",
+        "context_id": "f5af9b7ef5d1ca88bde2aa3fcac3523f70c0ce7d0c1067fe6a676b9284e598c7",
+        "analysis_type": "summarized_experiment",
+        "source_class": "SummarizedExperiment",
+        "facts_hash": "ef25ebdfcd4c40ad4a6d7ec7e694622f2575dc44bb40030570c790ca3d35ddc5",
+        "facts": {
+          "n_features": 33,
+          "n_columns": 46,
+          "assays": "exprs",
+          "colData_variables": [],
+          "rowData_columns": ["Protein", "Genes", "ARRAY_ID", "ARRAY_TYPE", "RESIDUE"],
+          "assay_summaries": {
+            "exprs": {
+              "class": "matrix",
+              "dim": [33, 46],
+              "inspection": "full",
+              "values_inspected": 1518,
+              "value_quantiles": {
+                "min": -2.3730000000000002,
+                "q25": -0.22439999999999999,
+                "median": -0.0095300000000000003,
+                "q75": 0.23580000000000001,
+                "max": 3.419
+              },
+              "n_na": 0,
+              "integer_like": false,
+              "fraction_zero": 0
+            }
+          }
+        }
+      },
+      {
+        "name": "Mutations",
+        "context_id": "bf2240c55c7846b25661e4fd07dfdd5f9f0e6f67934edd05c3afa315d5028893",
+        "analysis_type": "generic",
+        "source_class": ["matrix", "array"],
+        "facts_hash": "2d5c730e012083a990f3726fdcf29a73e7b75fe51c4690abc15c27fe64f18927",
+        "facts": {
+          "class": ["matrix", "array"],
+          "type": "double",
+          "is_s4": false,
+          "size": "82.5 Kb",
+          "dim": [97, 90],
+          "value_quantiles": {
+            "min": 0,
+            "q25": 0,
+            "median": 0,
+            "q75": 0,
+            "max": 1
+          },
+          "n_na": 0,
+          "integer_like": true,
+          "has_dimnames": true,
+          "fraction_zero": 0.99160000000000004
+        }
+      },
+      {
+        "name": "miRNASeqGene",
+        "context_id": "811503c8507a060baf865254af735842d63e2c310169961da06cc0b804ee7eaf",
+        "analysis_type": "summarized_experiment",
+        "source_class": "SummarizedExperiment",
+        "facts_hash": "7af0f3bb4b4fc528ba1468ceafdd603978a45ae30bd8122b0f20757f8d4ef7de",
+        "facts": {
+          "n_features": 471,
+          "n_columns": 80,
+          "assays": "exprs",
+          "colData_variables": [],
+          "rowData_columns": [],
+          "assay_summaries": {
+            "exprs": {
+              "class": "matrix",
+              "dim": [471, 80],
+              "inspection": "full",
+              "values_inspected": 37680,
+              "value_quantiles": {
+                "min": 0,
+                "q25": 4,
+                "median": 46,
+                "q75": 702.20000000000005,
+                "max": 5727000
+              },
+              "n_na": 0,
+              "integer_like": true,
+              "fraction_zero": 0.10630000000000001
+            }
+          }
+        }
+      }
+    ],
+    "sample_map_rows": 385,
+    "sample_map_columns": ["modality", "biological_unit", "source_id"],
+    "n_primary_units": 92,
+    "alignment_status": "pass",
+    "modality_coverage": [
+      {
+        "modality": "RNASeq2GeneNorm",
+        "n_units": 79,
+        "n_missing": 13
+      },
+      {
+        "modality": "gistict",
+        "n_units": 90,
+        "n_missing": 2
+      },
+      {
+        "modality": "RPPAArray",
+        "n_units": 46,
+        "n_missing": 46
+      },
+      {
+        "modality": "Mutations",
+        "n_units": 90,
+        "n_missing": 2
+      },
+      {
+        "modality": "miRNASeqGene",
+        "n_units": 80,
+        "n_missing": 12
+      }
+    ],
+    "pairwise_coverage": [
+      {
+        "from": "RNASeq2GeneNorm",
+        "to": "gistict",
+        "n_shared": 77,
+        "n_from_only": 2,
+        "n_to_only": 13
+      },
+      {
+        "from": "RNASeq2GeneNorm",
+        "to": "RPPAArray",
+        "n_shared": 46,
+        "n_from_only": 33,
+        "n_to_only": 0
+      },
+      {
+        "from": "RNASeq2GeneNorm",
+        "to": "Mutations",
+        "n_shared": 77,
+        "n_from_only": 2,
+        "n_to_only": 13
+      },
+      {
+        "from": "RNASeq2GeneNorm",
+        "to": "miRNASeqGene",
+        "n_shared": 79,
+        "n_from_only": 0,
+        "n_to_only": 1
+      },
+      {
+        "from": "gistict",
+        "to": "RPPAArray",
+        "n_shared": 45,
+        "n_from_only": 45,
+        "n_to_only": 1
+      },
+      {
+        "from": "gistict",
+        "to": "Mutations",
+        "n_shared": 88,
+        "n_from_only": 2,
+        "n_to_only": 2
+      },
+      {
+        "from": "gistict",
+        "to": "miRNASeqGene",
+        "n_shared": 78,
+        "n_from_only": 12,
+        "n_to_only": 2
+      },
+      {
+        "from": "RPPAArray",
+        "to": "Mutations",
+        "n_shared": 44,
+        "n_from_only": 2,
+        "n_to_only": 46
+      },
+      {
+        "from": "RPPAArray",
+        "to": "miRNASeqGene",
+        "n_shared": 46,
+        "n_from_only": 0,
+        "n_to_only": 34
+      },
+      {
+        "from": "Mutations",
+        "to": "miRNASeqGene",
+        "n_shared": 78,
+        "n_from_only": 12,
+        "n_to_only": 2
+      }
+    ],
+    "n_complete_units": 43,
+    "n_unmeasured_units": 0
+  },
+  "fact_descriptors": {
+    "n_modalities": {
+      "value_type": "number",
+      "source_path": "n_modalities",
+      "computation": "adapter_defined",
+      "inspection": "full_fact",
+      "completeness": "complete"
+    },
+    "modalities": {
+      "value_type": "character",
+      "source_path": "modalities",
+      "computation": "adapter_defined",
+      "inspection": "full_fact",
+      "completeness": "complete"
+    },
+    "child_contexts": {
+      "value_type": "list",
+      "source_path": "child_contexts",
+      "computation": "adapter_defined",
+      "inspection": "full_fact",
+      "completeness": "complete"
+    },
+    "sample_map_rows": {
+      "value_type": "number",
+      "source_path": "sample_map_rows",
+      "computation": "adapter_defined",
+      "inspection": "full_fact",
+      "completeness": "complete"
+    },
+    "sample_map_columns": {
+      "value_type": "character",
+      "source_path": "sample_map_columns",
+      "computation": "adapter_defined",
+      "inspection": "full_fact",
+      "completeness": "complete"
+    },
+    "n_primary_units": {
+      "value_type": "number",
+      "source_path": "n_primary_units",
+      "computation": "adapter_defined",
+      "inspection": "full_fact",
+      "completeness": "complete"
+    },
+    "alignment_status": {
+      "value_type": "character",
+      "source_path": "alignment_status",
+      "computation": "adapter_defined",
+      "inspection": "full_fact",
+      "completeness": "complete"
+    },
+    "modality_coverage": {
+      "value_type": "list",
+      "source_path": "modality_coverage",
+      "computation": "adapter_defined",
+      "inspection": "full_fact",
+      "completeness": "complete"
+    },
+    "pairwise_coverage": {
+      "value_type": "list",
+      "source_path": "pairwise_coverage",
+      "computation": "adapter_defined",
+      "inspection": "full_fact",
+      "completeness": "complete"
+    },
+    "n_complete_units": {
+      "value_type": "number",
+      "source_path": "n_complete_units",
+      "computation": "adapter_defined",
+      "inspection": "full_fact",
+      "completeness": "complete"
+    },
+    "n_unmeasured_units": {
+      "value_type": "number",
+      "source_path": "n_unmeasured_units",
+      "computation": "adapter_defined",
+      "inspection": "full_fact",
+      "completeness": "complete"
+    }
+  },
+  "scope": {
+    "dataset_id": "TCGA-ACC-miniACC",
+    "sample_level": "patient"
+  },
+  "design": [],
+  "thresholds": {
+    "padj": 0.050000000000000003,
+    "lfc": 0,
+    "p": 0.050000000000000003
+  },
+  "uncertainty": "Each modality retains a separate context; a joint context does not make modalities independently replicated.",
+  "completeness": {
+    "status": "complete",
+    "omitted_fields": ["top_features", "plot_mapping", "completeness.reason", "completeness.omitted_fact_paths", "study_context.scope"]
+  }
+}

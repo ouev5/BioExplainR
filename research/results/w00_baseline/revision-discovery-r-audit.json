@@ -1,0 +1,18 @@
+{
+  "command": [
+    "Rscript",
+    "--vanilla",
+    "research/discovery/audit_and_report.R",
+    "research/results/discovery_sparcl1_v1"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-08T11:17:45.877531+00:00",
+  "finished_utc": "2026-10-08T11:17:48.159562+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/revision-discovery-r-audit.txt",
+    "bytes": 835,
+    "sha256": "547824bfeb2e87ed53d5d225190b2c203e2ff0c641b00f344e7f0ffb962aa029"
+  }
+}

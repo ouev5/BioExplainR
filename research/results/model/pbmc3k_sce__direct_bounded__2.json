@@ -1,0 +1,126 @@
+{
+  "case": "pbmc3k_sce",
+  "method": "direct_bounded",
+  "replicate": 2,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-03 19:42:22 UTC",
+  "response": {
+    "text": "{\"data_facts\":[\"数据包含32738个特征和2700个细胞。\",\"样本元数据中仅检测到1个不同样本。\"],\"statistical_meaning\":[\"维度信息直接给出特征数和细胞数，不涉及统计检验。\",\"样本数来自元数据去重计数，与阈值无关。\"],\"biological_interpretation\":[\"该数据为人类PBMC的单细胞转录组计数矩阵。\",\"单样本设计限制组间比较，仅能描述该样本的细胞异质性。\"],\"uncertainty\":[\"样本数可能因元数据缺失或合并而低估。\",\"细胞数可能包含低质量细胞，未提供过滤信息。\"],\"cannot_conclude\":[\"无法进行差异表达或条件间比较。\",\"无法推断细胞类型比例或生物学效应。\"],\"learning_questions\":[\"单样本单细胞数据适合回答哪些生物学问题？\",\"如何评估细胞过滤对特征数和细胞数的影响？\"],\"evidence_used\":[],\"claims\":[{\"id\":\"c1\",\"text\":\"细胞数为2700。\",\"fact\":\"n_cells\",\"value\":2700,\"evidence\":[]},{\"id\":\"c2\",\"text\":\"特征数为32738。\",\"fact\":\"n_features\",\"value\":32738,\"evidence\":[]},{\"id\":\"c3\",\"text\":\"样本数为1。\",\"fact\":\"n_samples\",\"value\":1,\"evidence\":[]}]}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 303,
+      "completion_tokens": 283,
+      "total_tokens": 586,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 175
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 1.72
+  },
+  "parsed": {
+    "data_facts": [
+      "数据包含32738个特征和2700个细胞。",
+      "样本元数据中仅检测到1个不同样本。"
+    ],
+    "statistical_meaning": [
+      "维度信息直接给出特征数和细胞数，不涉及统计检验。",
+      "样本数来自元数据去重计数，与阈值无关。"
+    ],
+    "biological_interpretation": [
+      "该数据为人类PBMC的单细胞转录组计数矩阵。",
+      "单样本设计限制组间比较，仅能描述该样本的细胞异质性。"
+    ],
+    "uncertainty": [
+      "样本数可能因元数据缺失或合并而低估。",
+      "细胞数可能包含低质量细胞，未提供过滤信息。"
+    ],
+    "cannot_conclude": [
+      "无法进行差异表达或条件间比较。",
+      "无法推断细胞类型比例或生物学效应。"
+    ],
+    "learning_questions": [
+      "单样本单细胞数据适合回答哪些生物学问题？",
+      "如何评估细胞过滤对特征数和细胞数的影响？"
+    ],
+    "evidence_used": [],
+    "claims": [
+      {
+        "id": "c1",
+        "text": "细胞数为2700。",
+        "fact": "n_cells",
+        "value": 2700,
+        "evidence": []
+      },
+      {
+        "id": "c2",
+        "text": "特征数为32738。",
+        "fact": "n_features",
+        "value": 32738,
+        "evidence": []
+      },
+      {
+        "id": "c3",
+        "text": "样本数为1。",
+        "fact": "n_samples",
+        "value": 1,
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "c1",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_cells = 2700"
+      },
+      {
+        "claim": "c2",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_features = 32738"
+      },
+      {
+        "claim": "c3",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_samples = 1"
+      }
+    ],
+    "n_claims": 3,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_cells",
+      "expected": 2700,
+      "value": 2700,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_features",
+      "expected": 32738,
+      "value": 32738,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_samples",
+      "expected": 1,
+      "value": 1,
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 1083,
+  "validation_rechecked_utc": "2026-10-03 20:09:20 UTC"
+}

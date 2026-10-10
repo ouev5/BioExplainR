@@ -1,0 +1,18 @@
+{
+  "text": "{\"claims\":[{\"fact\":\"n_observations\",\"value\":8},{\"fact\":\"n_variables\",\"value\":22},{\"fact\":\"variance_explained_1\",\"value\":\"0.31461754603352449\"},{\"fact\":\"variance_explained_2\",\"value\":\"0.2115526206250169\"}]}",
+  "model": "step-5-preview",
+  "stop_reason": "stop",
+  "usage": {
+    "prompt_tokens": 306,
+    "completion_tokens": 322,
+    "total_tokens": 628,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "endpoint_host": "https://api.stepfun.com",
+  "elapsed_sec": 3.55
+}

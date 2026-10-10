@@ -1,0 +1,20 @@
+{
+  "command": [
+    "python3",
+    "tools/sandbox-boundary-check.py",
+    "--library",
+    "/tmp/opencode/bioexplainr-core-user-actions-final2/library",
+    "--output",
+    "research/results/w00_baseline/acceptance-sandbox-result.json"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-05T14:16:51.556132+00:00",
+  "finished_utc": "2026-10-05T14:16:51.699763+00:00",
+  "exit_code": 1,
+  "status": "fail",
+  "log": {
+    "path": "research/results/w00_baseline/acceptance-sandbox-public-readable.txt",
+    "bytes": 340,
+    "sha256": "e506fa906cfc7a77f8d6f2619e1bbb55495131fb75cf1409b5d7941e22f2f351"
+  }
+}

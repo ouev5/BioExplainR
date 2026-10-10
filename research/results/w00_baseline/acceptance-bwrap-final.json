@@ -1,0 +1,18 @@
+{
+  "command": [
+    "bash",
+    "tools/bwrap-offline-smoke.sh",
+    "/tmp/opencode/bioexplainr-acceptance-bwrap",
+    "/tmp/opencode/bioexplainr-acceptance-core/library"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-05T14:26:38.047835+00:00",
+  "finished_utc": "2026-10-05T14:26:38.716329+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/acceptance-bwrap-final.txt",
+    "bytes": 148,
+    "sha256": "1e75889f3d5b2e75ff77944debd7349ad90abfdb8c335434b18922ccc178af12"
+  }
+}

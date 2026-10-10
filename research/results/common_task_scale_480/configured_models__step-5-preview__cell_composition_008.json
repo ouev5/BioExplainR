@@ -1,0 +1,18 @@
+{
+  "text": "{\"claims\":[{\"fact\":\"n_samples\",\"value\":4},{\"fact\":\"n_clusters\",\"value\":4},{\"fact\":\"n_cells_used\",\"value\":104},{\"fact\":\"analysis_type\",\"value\":\"cell_composition\"}]}",
+  "model": "step-5-preview",
+  "stop_reason": "stop",
+  "usage": {
+    "prompt_tokens": 279,
+    "completion_tokens": 149,
+    "total_tokens": 428,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "endpoint_host": "https://api.stepfun.com",
+  "elapsed_sec": 2.49
+}

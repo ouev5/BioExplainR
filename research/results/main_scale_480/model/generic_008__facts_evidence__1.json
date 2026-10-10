@@ -1,0 +1,160 @@
+{
+  "case": "generic_008",
+  "family": "generic",
+  "method": "facts_evidence",
+  "replicate": 1,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:17:29 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"该对象是一个 data.frame，类型为 list，不是 S4 对象，大小约 2 Kb。\",\n    \"原始数据为 18 行 6 列的宽表，列名被隐去，可能包含样本 ID。\",\n    \"数值均为整数，无缺失值，无零值，范围从 1 到 108。\"\n  ],\n  \"statistical_meaning\": [\n    \"整数数值提示可能是原始计数矩阵，而非标准化后的表达量。\",\n    \"四分位数显示数值分布：最小值 1，第一四分位数 27.75，中位数 54.5，第三四分位数 81.25，最大值 108。\",\n    \"没有针对该对象类型的专用适配器，仅提供结构摘要。\"\n  ],\n  \"biological_interpretation\": [\n    \"若为表达矩阵，可能反映基因表达或计数数据，但需标准化后才能比较样本间表达量。\",\n    \"未提供物种信息，生物学解释需用户确认物种背景。\",\n    \"文献检索命中一篇关于 RNA-Seq 转录组分析 CRISPLD2 的研究（证据 EuropePMC:MED:24926665），但仅表示匹配检索词，不评估其结论是否支持具体论断。\"\n  ],\n  \"uncertainty\": [\n    \"没有针对该对象类型的专用适配器，只给出结构摘要。\",\n    \"行列名（可能是样本或患者标识）与原始数值不会被发送或写入报告。\",\n    \"数值均为整数，可能是原始计数，需标准化后才能直接比较样本间表达量。\"\n  ],\n  \"cannot_conclude\": [\n    \"无法确定具体基因或样本的生物学功能或临床意义。\",\n    \"无法判断样本间差异表达或统计显著性。\",\n    \"无法推断物种或实验条件。\"\n  ],\n  \"learning_questions\": [\n    \"这个数据框代表什么类型的组学数据？\",\n    \"为什么整数计数需要标准化后才能比较样本间表达量？\",\n    \"如何确认数据的物种来源和实验设计？\"\n  ],\n  \"evidence_used\": [\n    \"EuropePMC:MED:24926665\"\n  ],\n  \"claims\": [\n    {\n      \"id\": \"claim1\",\n      \"text\": \"对象类别为 data.frame。\",\n      \"fact\": \"class\",\n      \"value\": \"data.frame\",\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim2\",\n      \"text\": \"对象类型为 list。\",\n      \"fact\": \"type\",\n      \"value\": \"list\",\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim3\",\n      \"text\": \"不是 S4 对象。\",\n      \"fact\": \"is_s4\",\n      \"value\": false,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim4\",\n      \"text\": \"对象大小约为 2 Kb。\",\n      \"fact\": \"size\",\n      \"value\": \"2 Kb\",\n      \"evidence\": []\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 1112,
+      "completion_tokens": 643,
+      "total_tokens": 1755,
+      "prompt_tokens_details": {
+        "cached_tokens": 896
+      },
+      "prompt_cache_hit_tokens": 896,
+      "prompt_cache_miss_tokens": 216
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.7999999999999998
+  },
+  "parsed": {
+    "data_facts": [
+      "该对象是一个 data.frame，类型为 list，不是 S4 对象，大小约 2 Kb。",
+      "原始数据为 18 行 6 列的宽表，列名被隐去，可能包含样本 ID。",
+      "数值均为整数，无缺失值，无零值，范围从 1 到 108。"
+    ],
+    "statistical_meaning": [
+      "整数数值提示可能是原始计数矩阵，而非标准化后的表达量。",
+      "四分位数显示数值分布：最小值 1，第一四分位数 27.75，中位数 54.5，第三四分位数 81.25，最大值 108。",
+      "没有针对该对象类型的专用适配器，仅提供结构摘要。"
+    ],
+    "biological_interpretation": [
+      "若为表达矩阵，可能反映基因表达或计数数据，但需标准化后才能比较样本间表达量。",
+      "未提供物种信息，生物学解释需用户确认物种背景。",
+      "文献检索命中一篇关于 RNA-Seq 转录组分析 CRISPLD2 的研究（证据 EuropePMC:MED:24926665），但仅表示匹配检索词，不评估其结论是否支持具体论断。"
+    ],
+    "uncertainty": [
+      "没有针对该对象类型的专用适配器，只给出结构摘要。",
+      "行列名（可能是样本或患者标识）与原始数值不会被发送或写入报告。",
+      "数值均为整数，可能是原始计数，需标准化后才能直接比较样本间表达量。"
+    ],
+    "cannot_conclude": [
+      "无法确定具体基因或样本的生物学功能或临床意义。",
+      "无法判断样本间差异表达或统计显著性。",
+      "无法推断物种或实验条件。"
+    ],
+    "learning_questions": [
+      "这个数据框代表什么类型的组学数据？",
+      "为什么整数计数需要标准化后才能比较样本间表达量？",
+      "如何确认数据的物种来源和实验设计？"
+    ],
+    "evidence_used": [
+      "EuropePMC:MED:24926665"
+    ],
+    "claims": [
+      {
+        "id": "claim1",
+        "text": "对象类别为 data.frame。",
+        "fact": "class",
+        "value": "data.frame",
+        "evidence": []
+      },
+      {
+        "id": "claim2",
+        "text": "对象类型为 list。",
+        "fact": "type",
+        "value": "list",
+        "evidence": []
+      },
+      {
+        "id": "claim3",
+        "text": "不是 S4 对象。",
+        "fact": "is_s4",
+        "value": false,
+        "evidence": []
+      },
+      {
+        "id": "claim4",
+        "text": "对象大小约为 2 Kb。",
+        "fact": "size",
+        "value": "2 Kb",
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "(evidence_used)",
+        "check": "evidence_ids",
+        "status": "pass",
+        "detail": "all cited evidence ids were supplied"
+      },
+      {
+        "claim": "claim1",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      },
+      {
+        "claim": "claim2",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      },
+      {
+        "claim": "claim3",
+        "check": "value",
+        "status": "pass",
+        "detail": "is_s4 = 0"
+      },
+      {
+        "claim": "claim4",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "class",
+      "expected": "data.frame",
+      "value": "data.frame",
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "type",
+      "expected": "list",
+      "value": "list",
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "is_s4",
+      "expected": false,
+      "value": false,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "size",
+      "expected": "2 Kb",
+      "value": "2 Kb",
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 4116
+}

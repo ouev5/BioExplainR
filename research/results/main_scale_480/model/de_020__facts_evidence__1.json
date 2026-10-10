@@ -1,0 +1,160 @@
+{
+  "case": "de_020",
+  "family": "differential_expression",
+  "method": "facts_evidence",
+  "replicate": 1,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:15:56 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"共检测 60 个特征（基因），其中 40 个在 padj<0.05 且 |log2FC|>1 下显著。\",\n    \"显著基因中 20 个上调、20 个下调，方向由 log2FC 正负定义。\",\n    \"最小 padj 为 0.0012，log2FC 范围为 -1.6 到 2.2，中位数 0.2。\"\n  ],\n  \"statistical_meaning\": [\n    \"padj 是多重检验校正后的 p 值，阈值 0.05 控制错误发现率。\",\n    \"log2FC 表示两组表达量的 log2 倍数变化，正负取决于比较方向。\",\n    \"显著计数 40 是满足双阈值（padj 与 |log2FC|）的特征数，不是效应量大小。\"\n  ],\n  \"biological_interpretation\": [\n    \"在未指定物种与比较方向前，上调/下调仅表示相对参考组的表达差异方向。\",\n    \"20 上/20 下的对称模式提示两组间存在双向转录响应（假设）。\",\n    \"文献命中 EuropePMC:MED:24926665 仅说明检索匹配，不直接支持本数据结论。\"\n  ],\n  \"uncertainty\": [\n    \"无法从列名确定产生该表的软件包，请用 source_package 参数补充。\",\n    \"未提供比较方向（contrast）；log2FC 的正负含义取决于哪一组作为分母/参考组。\",\n    \"未提供物种（species），生物学解释需要用户确认物种背景。\"\n  ],\n  \"cannot_conclude\": [\n    \"不能推断具体通路、基因功能或临床意义。\",\n    \"不能判断上调/下调是否具有激活或抑制方向（ORA 无方向性）。\",\n    \"不能将细胞或样本视为重复，也不能外推至其他条件。\"\n  ],\n  \"learning_questions\": [\n    \"padj 与原始 p 值有何区别？为什么需要多重检验校正？\",\n    \"log2FC 的正负号由什么决定？如何从实验设计确定比较方向？\",\n    \"显著基因计数 40 能说明效应大小吗？还需要哪些统计量？\"\n  ],\n  \"evidence_used\": [\n    \"EuropePMC:MED:24926665\"\n  ],\n  \"claims\": [\n    {\n      \"id\": \"c1\",\n      \"text\": \"检测特征数为 60。\",\n      \"fact\": \"n_features\",\n      \"value\": 60,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"c2\",\n      \"text\": \"显著特征数为 40。\",\n      \"fact\": \"n_significant\",\n      \"value\": 40,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"c3\",\n      \"text\": \"上调特征数为 20。\",\n      \"fact\": \"n_up\",\n      \"value\": 20,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"c4\",\n      \"text\": \"下调特征数为 20。\",\n      \"fact\": \"n_down\",\n      \"value\": 20,\n      \"evidence\": []\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 1626,
+      "completion_tokens": 698,
+      "total_tokens": 2324,
+      "prompt_tokens_details": {
+        "cached_tokens": 1408
+      },
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 218
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 3.54
+  },
+  "parsed": {
+    "data_facts": [
+      "共检测 60 个特征（基因），其中 40 个在 padj<0.05 且 |log2FC|>1 下显著。",
+      "显著基因中 20 个上调、20 个下调，方向由 log2FC 正负定义。",
+      "最小 padj 为 0.0012，log2FC 范围为 -1.6 到 2.2，中位数 0.2。"
+    ],
+    "statistical_meaning": [
+      "padj 是多重检验校正后的 p 值，阈值 0.05 控制错误发现率。",
+      "log2FC 表示两组表达量的 log2 倍数变化，正负取决于比较方向。",
+      "显著计数 40 是满足双阈值（padj 与 |log2FC|）的特征数，不是效应量大小。"
+    ],
+    "biological_interpretation": [
+      "在未指定物种与比较方向前，上调/下调仅表示相对参考组的表达差异方向。",
+      "20 上/20 下的对称模式提示两组间存在双向转录响应（假设）。",
+      "文献命中 EuropePMC:MED:24926665 仅说明检索匹配，不直接支持本数据结论。"
+    ],
+    "uncertainty": [
+      "无法从列名确定产生该表的软件包，请用 source_package 参数补充。",
+      "未提供比较方向（contrast）；log2FC 的正负含义取决于哪一组作为分母/参考组。",
+      "未提供物种（species），生物学解释需要用户确认物种背景。"
+    ],
+    "cannot_conclude": [
+      "不能推断具体通路、基因功能或临床意义。",
+      "不能判断上调/下调是否具有激活或抑制方向（ORA 无方向性）。",
+      "不能将细胞或样本视为重复，也不能外推至其他条件。"
+    ],
+    "learning_questions": [
+      "padj 与原始 p 值有何区别？为什么需要多重检验校正？",
+      "log2FC 的正负号由什么决定？如何从实验设计确定比较方向？",
+      "显著基因计数 40 能说明效应大小吗？还需要哪些统计量？"
+    ],
+    "evidence_used": [
+      "EuropePMC:MED:24926665"
+    ],
+    "claims": [
+      {
+        "id": "c1",
+        "text": "检测特征数为 60。",
+        "fact": "n_features",
+        "value": 60,
+        "evidence": []
+      },
+      {
+        "id": "c2",
+        "text": "显著特征数为 40。",
+        "fact": "n_significant",
+        "value": 40,
+        "evidence": []
+      },
+      {
+        "id": "c3",
+        "text": "上调特征数为 20。",
+        "fact": "n_up",
+        "value": 20,
+        "evidence": []
+      },
+      {
+        "id": "c4",
+        "text": "下调特征数为 20。",
+        "fact": "n_down",
+        "value": 20,
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "(evidence_used)",
+        "check": "evidence_ids",
+        "status": "pass",
+        "detail": "all cited evidence ids were supplied"
+      },
+      {
+        "claim": "c1",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_features = 60"
+      },
+      {
+        "claim": "c2",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_significant = 40"
+      },
+      {
+        "claim": "c3",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_up = 20"
+      },
+      {
+        "claim": "c4",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_down = 20"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_features",
+      "expected": 60,
+      "value": 60,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_significant",
+      "expected": 40,
+      "value": 40,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_up",
+      "expected": 20,
+      "value": 20,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_down",
+      "expected": 20,
+      "value": 20,
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 5482
+}

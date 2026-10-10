@@ -1,0 +1,152 @@
+{
+  "case": "generic_013",
+  "family": "generic",
+  "method": "facts_only",
+  "replicate": 2,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:20:55 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"该对象是一个 data.frame，类型为 list，不是 S4 对象，大小约 2 Kb。\",\n    \"表格维度为 23 行 × 6 列，列名被隐藏，可能包含样本 ID。\",\n    \"数值均为整数，无缺失值，零值比例为 0，数值范围从 1 到 138。\"\n  ],\n  \"statistical_meaning\": [\n    \"整数且无零值提示可能是原始计数或表达矩阵，但未提供标准化信息。\",\n    \"分位数显示数据分布：中位数 69.5，四分位距约 35.25 到 103.8。\",\n    \"没有针对该对象类型的专用适配器，仅提供结构摘要。\"\n  ],\n  \"biological_interpretation\": [\n    \"若为表达矩阵，行可能代表基因，列可能代表样本，但需用户确认。\",\n    \"未提供物种信息，无法进行具体的生物学功能解释。\",\n    \"数值为整数，可能反映原始测序计数，但需标准化后才能比较样本间表达量。\"\n  ],\n  \"uncertainty\": [\n    \"没有专用适配器，仅能提供结构摘要，无法进行统计检验。\",\n    \"行列名可能包含样本或患者标识，但未发送或写入报告。\",\n    \"未提供物种，生物学解释需要用户确认物种背景。\"\n  ],\n  \"cannot_conclude\": [\n    \"无法判断数据是否经过标准化或转换。\",\n    \"无法进行差异表达分析或功能富集分析。\",\n    \"无法推断任何基因或样本的生物学意义。\"\n  ],\n  \"learning_questions\": [\n    \"这个数据框代表什么类型的实验数据？\",\n    \"行和列分别对应什么？\",\n    \"是否需要标准化或转换后再分析？\"\n  ],\n  \"evidence_used\": [],\n  \"claims\": [\n    {\n      \"id\": \"claim1\",\n      \"text\": \"对象类别为 data.frame。\",\n      \"fact\": \"class\",\n      \"value\": \"data.frame\",\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim2\",\n      \"text\": \"对象类型为 list。\",\n      \"fact\": \"type\",\n      \"value\": \"list\",\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim3\",\n      \"text\": \"不是 S4 对象。\",\n      \"fact\": \"is_s4\",\n      \"value\": false,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim4\",\n      \"text\": \"对象大小约为 2 Kb。\",\n      \"fact\": \"size\",\n      \"value\": \"2 Kb\",\n      \"evidence\": []\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 965,
+      "completion_tokens": 584,
+      "total_tokens": 1549,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 197
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.9199999999999999
+  },
+  "parsed": {
+    "data_facts": [
+      "该对象是一个 data.frame，类型为 list，不是 S4 对象，大小约 2 Kb。",
+      "表格维度为 23 行 × 6 列，列名被隐藏，可能包含样本 ID。",
+      "数值均为整数，无缺失值，零值比例为 0，数值范围从 1 到 138。"
+    ],
+    "statistical_meaning": [
+      "整数且无零值提示可能是原始计数或表达矩阵，但未提供标准化信息。",
+      "分位数显示数据分布：中位数 69.5，四分位距约 35.25 到 103.8。",
+      "没有针对该对象类型的专用适配器，仅提供结构摘要。"
+    ],
+    "biological_interpretation": [
+      "若为表达矩阵，行可能代表基因，列可能代表样本，但需用户确认。",
+      "未提供物种信息，无法进行具体的生物学功能解释。",
+      "数值为整数，可能反映原始测序计数，但需标准化后才能比较样本间表达量。"
+    ],
+    "uncertainty": [
+      "没有专用适配器，仅能提供结构摘要，无法进行统计检验。",
+      "行列名可能包含样本或患者标识，但未发送或写入报告。",
+      "未提供物种，生物学解释需要用户确认物种背景。"
+    ],
+    "cannot_conclude": [
+      "无法判断数据是否经过标准化或转换。",
+      "无法进行差异表达分析或功能富集分析。",
+      "无法推断任何基因或样本的生物学意义。"
+    ],
+    "learning_questions": [
+      "这个数据框代表什么类型的实验数据？",
+      "行和列分别对应什么？",
+      "是否需要标准化或转换后再分析？"
+    ],
+    "evidence_used": [],
+    "claims": [
+      {
+        "id": "claim1",
+        "text": "对象类别为 data.frame。",
+        "fact": "class",
+        "value": "data.frame",
+        "evidence": []
+      },
+      {
+        "id": "claim2",
+        "text": "对象类型为 list。",
+        "fact": "type",
+        "value": "list",
+        "evidence": []
+      },
+      {
+        "id": "claim3",
+        "text": "不是 S4 对象。",
+        "fact": "is_s4",
+        "value": false,
+        "evidence": []
+      },
+      {
+        "id": "claim4",
+        "text": "对象大小约为 2 Kb。",
+        "fact": "size",
+        "value": "2 Kb",
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "claim1",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      },
+      {
+        "claim": "claim2",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      },
+      {
+        "claim": "claim3",
+        "check": "value",
+        "status": "pass",
+        "detail": "is_s4 = 0"
+      },
+      {
+        "claim": "claim4",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "class",
+      "expected": "data.frame",
+      "value": "data.frame",
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "type",
+      "expected": "list",
+      "value": "list",
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "is_s4",
+      "expected": false,
+      "value": false,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "size",
+      "expected": "2 Kb",
+      "value": "2 Kb",
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 3588
+}

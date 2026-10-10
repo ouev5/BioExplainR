@@ -1,0 +1,151 @@
+{
+  "case": "cell_composition_004",
+  "family": "cell_composition",
+  "method": "facts_only",
+  "replicate": 2,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:20:33 UTC",
+  "response": {
+    "text": "{\"data_facts\": [\"共使用 88 个细胞，来自 4 个样本。\", \"样本分为 2 组，每组 2 个样本。\", \"共识别出 3 个 cluster。\"], \"statistical_meaning\": [\"每个样本每个 cluster 得到一个比例值，比较单位是样本而非细胞。\", \"各 cluster 比例之和为 1，属于成分数据。\", \"本次分析为描述性统计，未进行显著性检验。\"], \"biological_interpretation\": [\"三个 cluster 的平均比例接近，提示在所声明分组间细胞组成可能相似（假设）。\", \"该模式是否具有生物学意义需结合物种与实验背景确认（假设）。\"], \"uncertainty\": [\"独立重复单位是样本，不是细胞。\", \"成分数据中一个 cluster 比例升高会使其他 cluster 比例相对降低。\", \"未提供物种信息，生物学解释需用户确认。\"], \"cannot_conclude\": [\"不能推断分组与细胞组成之间存在因果或机制关系。\", \"不能基于细胞数进行统计检验或推断显著性。\", \"不能将比例差异外推到其他物种或实验条件。\"], \"learning_questions\": [\"为什么细胞不能当作独立重复？\", \"成分数据对差异分析有什么影响？\", \"描述性结果与推断性检验有何区别？\"], \"evidence_used\": [], \"claims\": [{\"id\": \"c1\", \"text\": \"使用的细胞数为 88。\", \"fact\": \"n_cells_used\", \"value\": 88, \"evidence\": []}, {\"id\": \"c2\", \"text\": \"样本数为 4。\", \"fact\": \"n_samples\", \"value\": 4, \"evidence\": []}, {\"id\": \"c3\", \"text\": \"cluster 数为 3。\", \"fact\": \"n_clusters\", \"value\": 3, \"evidence\": []}, {\"id\": \"c4\", \"text\": \"分组数为 2。\", \"fact\": \"n_groups\", \"value\": 2, \"evidence\": []}]}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 1114,
+      "completion_tokens": 434,
+      "total_tokens": 1548,
+      "prompt_tokens_details": {
+        "cached_tokens": 896
+      },
+      "prompt_cache_hit_tokens": 896,
+      "prompt_cache_miss_tokens": 218
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.6299999999999999
+  },
+  "parsed": {
+    "data_facts": [
+      "共使用 88 个细胞，来自 4 个样本。",
+      "样本分为 2 组，每组 2 个样本。",
+      "共识别出 3 个 cluster。"
+    ],
+    "statistical_meaning": [
+      "每个样本每个 cluster 得到一个比例值，比较单位是样本而非细胞。",
+      "各 cluster 比例之和为 1，属于成分数据。",
+      "本次分析为描述性统计，未进行显著性检验。"
+    ],
+    "biological_interpretation": [
+      "三个 cluster 的平均比例接近，提示在所声明分组间细胞组成可能相似（假设）。",
+      "该模式是否具有生物学意义需结合物种与实验背景确认（假设）。"
+    ],
+    "uncertainty": [
+      "独立重复单位是样本，不是细胞。",
+      "成分数据中一个 cluster 比例升高会使其他 cluster 比例相对降低。",
+      "未提供物种信息，生物学解释需用户确认。"
+    ],
+    "cannot_conclude": [
+      "不能推断分组与细胞组成之间存在因果或机制关系。",
+      "不能基于细胞数进行统计检验或推断显著性。",
+      "不能将比例差异外推到其他物种或实验条件。"
+    ],
+    "learning_questions": [
+      "为什么细胞不能当作独立重复？",
+      "成分数据对差异分析有什么影响？",
+      "描述性结果与推断性检验有何区别？"
+    ],
+    "evidence_used": [],
+    "claims": [
+      {
+        "id": "c1",
+        "text": "使用的细胞数为 88。",
+        "fact": "n_cells_used",
+        "value": 88,
+        "evidence": []
+      },
+      {
+        "id": "c2",
+        "text": "样本数为 4。",
+        "fact": "n_samples",
+        "value": 4,
+        "evidence": []
+      },
+      {
+        "id": "c3",
+        "text": "cluster 数为 3。",
+        "fact": "n_clusters",
+        "value": 3,
+        "evidence": []
+      },
+      {
+        "id": "c4",
+        "text": "分组数为 2。",
+        "fact": "n_groups",
+        "value": 2,
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "c1",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_cells_used = 88"
+      },
+      {
+        "claim": "c2",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_samples = 4"
+      },
+      {
+        "claim": "c3",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_clusters = 3"
+      },
+      {
+        "claim": "c4",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_groups = 2"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_cells_used",
+      "expected": 88,
+      "value": 88,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_samples",
+      "expected": 4,
+      "value": 4,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_clusters",
+      "expected": 3,
+      "value": 3,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_groups",
+      "expected": 2,
+      "value": 2,
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 4018
+}

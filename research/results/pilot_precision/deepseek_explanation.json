@@ -1,0 +1,243 @@
+{
+  "context": {
+    "analysis_type": "differential_expression",
+    "source_class": "DESeqResults",
+    "source_package": "DESeq2",
+    "source_status": "verified_class",
+    "facts": {
+      "n_features": 22369,
+      "lfc_column": "log2FoldChange",
+      "p_value_column": "pvalue",
+      "adjusted_p_column": "padj",
+      "p_value_basis": "adjusted_column",
+      "n_na_lfc": 0,
+      "n_na_pvalue": 0,
+      "n_raw_p_below": 5690,
+      "raw_p_threshold": 0.05,
+      "n_tested": 17165,
+      "n_na_padj": 5204,
+      "padj_threshold": 0.05,
+      "lfc_threshold": 1,
+      "n_significant_any_lfc": 4030,
+      "n_up": 519,
+      "n_down": 480,
+      "n_significant": 999,
+      "min_padj": 7.0559599946e-132,
+      "lfc_range": [-5.3252832589, 9.5059979827],
+      "lfc_median": -0.022471777006,
+      "mean_expression_column": "baseMean",
+      "deseq2_lfc_description": "log2 fold change (MLE): dex trt vs untrt",
+      "deseq2_alpha": 0.05
+    },
+    "top_features": [
+      {
+        "feature": "ENSG00000152583",
+        "log2fc": 4.575,
+        "pvalue": 4.111e-136,
+        "padj": 7.056e-132,
+        "baseMean": 997.4,
+        "direction": "up",
+        "passes_thresholds": true
+      },
+      {
+        "feature": "ENSG00000165995",
+        "log2fc": 3.291,
+        "pvalue": 4.463e-135,
+        "padj": 3.831e-131,
+        "baseMean": 495.1,
+        "direction": "up",
+        "passes_thresholds": true
+      },
+      {
+        "feature": "ENSG00000120129",
+        "log2fc": 2.948,
+        "pvalue": 3.034e-129,
+        "padj": 1.736e-125,
+        "baseMean": 3409,
+        "direction": "up",
+        "passes_thresholds": true
+      },
+      {
+        "feature": "ENSG00000101347",
+        "log2fc": 3.767,
+        "pvalue": 7.683e-129,
+        "padj": 3.297e-125,
+        "baseMean": 12700,
+        "direction": "up",
+        "passes_thresholds": true
+      },
+      {
+        "feature": "ENSG00000189221",
+        "log2fc": 3.354,
+        "pvalue": 5.213e-123,
+        "padj": 1.79e-119,
+        "baseMean": 2342,
+        "direction": "up",
+        "passes_thresholds": true
+      },
+      {
+        "feature": "ENSG00000211445",
+        "log2fc": 3.73,
+        "pvalue": 2.585e-111,
+        "padj": 7.395e-108,
+        "baseMean": 12290,
+        "direction": "up",
+        "passes_thresholds": true
+      },
+      {
+        "feature": "ENSG00000157214",
+        "log2fc": 1.977,
+        "pvalue": 6.091e-106,
+        "padj": 1.494e-102,
+        "baseMean": 3009,
+        "direction": "up",
+        "passes_thresholds": true
+      },
+      {
+        "feature": "ENSG00000162614",
+        "log2fc": 2.036,
+        "pvalue": 1.565e-102,
+        "padj": 3.359e-99,
+        "baseMean": 5393,
+        "direction": "up",
+        "passes_thresholds": true
+      },
+      {
+        "feature": "ENSG00000125148",
+        "log2fc": 2.211,
+        "pvalue": 1.85e-96,
+        "padj": 3.528e-93,
+        "baseMean": 3656,
+        "direction": "up",
+        "passes_thresholds": true
+      },
+      {
+        "feature": "ENSG00000154734",
+        "log2fc": 2.346,
+        "pvalue": 2.267e-90,
+        "padj": 3.891e-87,
+        "baseMean": 30320,
+        "direction": "up",
+        "passes_thresholds": true
+      }
+    ],
+    "plot_mapping": null,
+    "provenance": {
+      "adapter": "deseq_results",
+      "created": "2026-10-04 03:35:36 CST",
+      "bioexplainr_version": "0.3.1",
+      "thresholds": {
+        "padj": 0.05,
+        "lfc": 1,
+        "p": 0.05
+      },
+      "p_adjust_method": null,
+      "n_top": 10,
+      "input_summary": {
+        "name": null,
+        "class": "DESeqResults",
+        "type": "S4",
+        "is_s4": true,
+        "size": "2.6 Mb",
+        "dim": [22369, 6]
+      },
+      "columns_used": {
+        "lfc": "log2FoldChange",
+        "p_raw": "pvalue",
+        "p_adj": "padj",
+        "mean": "baseMean",
+        "stat": "stat"
+      }
+    },
+    "uncertainty": ["log2FC 似乎经过收缩（shrinkage）；收缩后的效应量更保守，适合排序和可视化。", "DESeq2 中 padj 为 NA 常由独立过滤、全零计数或极端离群值导致，这些基因未参与 FDR 计数。"],
+    "metadata": {
+      "species": "Homo sapiens",
+      "contrast": "dexamethasone trt vs untrt",
+      "design": "~ cell + dex"
+    },
+    "adapter": "deseq_results"
+  },
+  "local": {
+    "data_facts": ["结果表共 22369 个特征；log2FC 列为 'log2FoldChange'。", "在 padj < 0.05 且 |log2FC| > 1 的条件下：显著 999 个，其中上调 519 个、下调 480 个；padj 为 NA 的特征 5204 个。", "log2FC 范围 -5.33 到 9.51，中位数 -0.0225。", "物种：Homo sapiens；比较：dexamethasone trt vs untrt；设计：~ cell + dex。"],
+    "statistical_meaning": ["log2FC 描述变化方向和大小，校正后 p 值描述在多重检验下结果的统计可靠性；二者是不同维度，需要同时看。", "p 值很小但 log2FC 很小的基因，统计上可靠但效应可能在生物学上不重要；反之，大 log2FC 但 padj 不显著可能来自低表达或高变异。"],
+    "biological_interpretation": ["最显著的特征包括：ENSG00000152583、ENSG00000165995、ENSG00000120129、ENSG00000101347、ENSG00000189221。可以查阅这些基因的功能注释（例如 NCBI Gene、UniProt），再判断是否与实验处理相关。", "差异表达只说明在本数据中表达水平与分组相关；生物学机制需要文献、数据库证据或实验验证支持。"],
+    "uncertainty": ["log2FC 似乎经过收缩（shrinkage）；收缩后的效应量更保守，适合排序和可视化。", "DESeq2 中 padj 为 NA 常由独立过滤、全零计数或极端离群值导致，这些基因未参与 FDR 计数。"],
+    "cannot_conclude": ["不能把“显著差异表达”直接写成“该基因导致了表型”或“该通路被激活”。", "不能把未达到显著的基因说成“没有变化”；可能只是统计功效不足。"],
+    "learning_questions": ["如果交换比较组的顺序，log2FC 的符号会怎样变化？", "为什么在数万个基因同时检验时需要使用校正后的 p 值？", "一个 padj 很小但 |log2FC| = 0.1 的基因，你会如何描述它？"],
+    "concepts": ["p 值：在“没有真实差异”的假设下，观察到当前或更极端结果的概率；不是效应大小，也不是假设为真的概率。", "校正后 p 值（FDR/padj）：同时检验成千上万个基因时，用于控制假发现比例的指标，例如 padj < 0.05 表示在该阈值下预期假发现比例约 5%。", "log2 fold change：两组表达量之比取以 2 为底的对数；1 表示约 2 倍，-1 表示约一半。正负方向取决于比较顺序。"]
+  },
+  "llm": {
+    "free_text": "{\"data_facts\": [\"该分析为 DESeq2 差异表达分析，对比为地塞米松处理组 vs 未处理组（dexamethasone trt vs untrt），设计公式为 ~ cell + dex。\", \"输入特征总数为 22369 个，其中实际参与检验的有 17165 个。\", \"在未校正 p 值 < 0.05 的阈值下，有 5690 个特征。\", \"在 padj < 0.05 且 |log2FC| > 1 的阈值下，显著特征为 999 个，其中上调 519 个、下调 480 个。\", \"仅按 |log2FC| > 1（不考虑显著性）筛选时，有 4030 个特征。\", \"padj 为 NA 的特征有 5204 个，log2FC 为 NA 的有 0 个，pvalue 为 NA 的有 0 个。\", \"最小 padj 为 7.05596e-132。\", \"log2FC 范围为 -5.325283 到 9.505998，中位数为 -0.022472。\", \"top_features 中列出的 10 个特征均为上调且通过阈值，例如 ENSG00000152583（log2FC 4.575，padj 7.056e-132，baseMean 997.4）。\"], \"statistical_meaning\": [\"padj 是经过多重检验校正后的 p 值，用于控制错误发现率（FDR）；本分析以 padj < 0.05 作为显著性标准。\", \"log2FC 表示处理组相对于未处理组的 log2 倍数变化；正值表示处理后表达升高，负值表示降低。\", \"n_tested（17165）小于 n_features（22369），说明部分特征未进入检验；padj 为 NA 的 5204 个特征通常由独立过滤、全零计数或极端离群值导致，未参与 FDR 计数。\", \"未校正 p 值 < 0.05 的 5690 个特征与 padj < 0.05 且 |log2FC| > 1 的 999 个特征数量差异很大，说明多重检验校正和效应量阈值共同大幅收紧了显著集合。\", \"log2FC 中位数接近 0（-0.022472），说明整体上处理组与未处理组的表达变化方向大致平衡，但显著子集中上调（519）略多于下调（480）。\"], \"biological_interpretation\": [\"在地塞米松处理的人源细胞中，存在一批表达显著改变的基因，提示糖皮质激素可能调控了这些基因的转录（假设）。\", \"top_features 中多个基因（如 ENSG00000152583、ENSG00000165995、ENSG00000120129 等）在处理后表达上调，可作为后续验证的候选基因（假设）。\", \"检索到的文献（EuropePMC:MED:24926665）报道 CRISPLD2 是糖皮质激素响应基因，但该证据仅表示文献匹配检索词，未评估其结论是否支持本分析中的任何具体论断。\"], \"uncertainty\": [\"log2FC 似乎经过收缩（shrinkage）；收缩后的效应量更保守，适合排序和可视化。\", \"DESeq2 中 padj 为 NA 常由独立过滤、全零计数或极端离群值导致，这些基因未参与 FDR 计数。\", \"本分析为 summary 级别，未提供原始计数或样本层面的信息，无法评估批次效应或细胞类型异质性。\", \"top_features 仅列出前 10 个特征，不能代表全部 999 个显著特征的整体模式。\"], \"cannot_conclude\": [\"不能从本分析推断地塞米松对基因表达的直接因果机制。\", \"不能从本分析推断蛋白水平或功能层面的变化。\", \"不能从本分析推断临床疗效或安全性。\", \"不能从本分析推断未检验的 5204 个特征（padj 为 NA）的表达状态。\", \"不能仅凭检索命中的文献（EuropePMC:MED:24926665）断定 CRISPLD2 在本数据集中显著变化或具有特定功能。\"], \"learning_questions\": [\"为什么 padj < 0.05 的显著基因数（999）远少于未校正 p < 0.05 的基因数（5690）？\", \"log2FC 收缩（shrinkage）对差异表达基因排序有什么影响？\", \"为什么有些基因的 padj 是 NA？它们是否应被纳入 FDR 计数？\", \"在本设计中（~ cell + dex），细胞因子作为协变量起到了什么作用？\", \"如何用 baseMean 和 log2FC 一起判断一个基因的生物学重要性？\"], \"evidence_used\": [\"EuropePMC:MED:24926665\"], \"claims\": [{\"id\": \"c1\", \"text\": \"输入特征总数为 22369。\", \"fact\": \"n_features\", \"value\": 22369, \"evidence\": []}, {\"id\": \"c2\", \"text\": \"实际参与检验的特征数为 17165。\", \"fact\": \"n_tested\", \"value\": 17165, \"evidence\": []}, {\"id\": \"c3\", \"text\": \"未校正 p 值 < 0.05 的特征数为 5690。\", \"fact\": \"n_raw_p_below\", \"value\": 5690, \"evidence\": []}, {\"id\": \"c4\", \"text\": \"未校正 p 值阈值为 0.05。\", \"fact\": \"raw_p_threshold\", \"value\": 0.05, \"evidence\": []}, {\"id\": \"c5\", \"text\": \"padj 为 NA 的特征数为 5204。\", \"fact\": \"n_na_padj\", \"value\": 5204, \"evidence\": []}, {\"id\": \"c6\", \"text\": \"log2FC 为 NA 的特征数为 0。\", \"fact\": \"n_na_lfc\", \"value\": 0, \"evidence\": []}, {\"id\": \"c7\", \"text\": \"pvalue 为 NA 的特征数为 0。\", \"fact\": \"n_na_pvalue\", \"value\": 0, \"evidence\": []}, {\"id\": \"c8\", \"text\": \"padj 阈值为 0.05。\", \"fact\": \"padj_threshold\", \"value\": 0.05, \"evidence\": []}, {\"id\": \"c9\", \"text\": \"log2FC 阈值为 1。\", \"fact\": \"lfc_threshold\", \"value\": 1, \"evidence\": []}, {\"id\": \"c10\", \"text\": \"仅按 |log2FC| > 1 筛选的特征数为 4030。\", \"fact\": \"n_significant_any_lfc\", \"value\": 4030, \"evidence\": []}, {\"id\": \"c11\", \"text\": \"padj < 0.05 且 |log2FC| > 1 的显著特征数为 999。\", \"fact\": \"n_significant\", \"value\": 999, \"evidence\": []}, {\"id\": \"c12\", \"text\": \"显著特征中上调数量为 519。\", \"fact\": \"n_up\", \"value\": 519, \"evidence\": []}, {\"id\": \"c13\", \"text\": \"显著特征中下调数量为 480。\", \"fact\": \"n_down\", \"value\": 480, \"evidence\": []}, {\"id\": \"c14\", \"text\": \"最小 padj 为 7.05596e-132。\", \"fact\": \"min_padj\", \"value\": 7.05596e-132, \"evidence\": []}, {\"id\": \"c15\", \"text\": \"log2FC 范围下界为 -5.325283。\", \"fact\": \"lfc_range.1\", \"value\": -5.325283, \"evidence\": []}, {\"id\": \"c16\", \"text\": \"log2FC 范围上界为 9.505998。\", \"fact\": \"lfc_range.2\", \"value\": 9.505998, \"evidence\": []}, {\"id\": \"c17\", \"text\": \"log2FC 中位数为 -0.022472。\", \"fact\": \"lfc_median\", \"value\": -0.022472, \"evidence\": []}, {\"id\": \"c18\", \"text\": \"DESeq2 的 alpha 为 0.05。\", \"fact\": \"deseq2_alpha\", \"value\": 0.05, \"evidence\": []}, {\"id\": \"c19\", \"text\": \"top_features 中 ENSG00000152583 的 log2FC 为 4.575。\", \"fact\": \"top_features.1.log2fc\", \"value\": 4.575, \"evidence\": []}, {\"id\": \"c20\", \"text\": \"top_features 中 ENSG00000152583 的 padj 为 7.056e-132。\", \"fact\": \"top_features.1.padj\", \"value\": 7.056e-132, \"evidence\": []}, {\"id\": \"c21\", \"text\": \"top_features 中 ENSG00000152583 的 baseMean 为 997.4。\", \"fact\": \"top_features.1.baseMean\", \"value\": 997.4, \"evidence\": []}, {\"id\": \"c22\", \"text\": \"top_features 中 ENSG00000165995 的 log2FC 为 3.291。\", \"fact\": \"top_features.2.log2fc\", \"value\": 3.291, \"evidence\": []}, {\"id\": \"c23\", \"text\": \"top_features 中 ENSG00000120129 的 log2FC 为 2.948。\", \"fact\": \"top_features.3.log2fc\", \"value\": 2.948, \"evidence\": []}, {\"id\": \"c24\", \"text\": \"top_features 中 ENSG00000101347 的 log2FC 为 3.767。\", \"fact\": \"top_features.4.log2fc\", \"value\": 3.767, \"evidence\": []}, {\"id\": \"c25\", \"text\": \"top_features 中 ENSG00000189221 的 log2FC 为 3.354。\", \"fact\": \"top_features.5.log2fc\", \"value\": 3.354, \"evidence\": []}, {\"id\": \"c26\", \"text\": \"top_features 中 ENSG00000211445 的 log2FC 为 3.73。\", \"fact\": \"top_features.6.log2fc\", \"value\": 3.73, \"evidence\": []}, {\"id\": \"c27\", \"text\": \"top_features 中 ENSG00000157214 的 log2FC 为 1.977。\", \"fact\": \"top_features.7.log2fc\", \"value\": 1.977, \"evidence\": []}, {\"id\": \"c28\", \"text\": \"top_features 中 ENSG00000162614 的 log2FC 为 2.036。\", \"fact\": \"top_features.8.log2fc\", \"value\": 2.036, \"evidence\": []}, {\"id\": \"c29\", \"text\": \"top_features 中 ENSG00000125148 的 log2FC 为 2.211。\", \"fact\": \"top_features.9.log2fc\", \"value\": 2.211, \"evidence\": []}, {\"id\": \"c30\", \"text\": \"top_features 中 ENSG00000154734 的 log2FC 为 2.346。\", \"fact\": \"top_features.10.log2fc\", \"value\": 2.346"
+  },
+  "llm_meta": {
+    "used": true,
+    "protocol": "openai",
+    "preset": "deepseek",
+    "model_requested": "deepseek-flash",
+    "model_reported": "deepseek-flash",
+    "endpoint_host": "https://api.deepseek.com",
+    "stop_reason": "length",
+    "usage": {
+      "prompt_tokens": 1776,
+      "completion_tokens": 2600,
+      "total_tokens": 4376,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 1648
+    },
+    "elapsed_sec": 8.52,
+    "structured": false,
+    "time": "2026-10-04 03:35:44 CST",
+    "payload_chars": 2408
+  },
+  "evidence": [
+    {
+      "id": "EuropePMC:MED:24926665",
+      "source": "EuropePMC",
+      "source_id": "MED:24926665",
+      "title": "RNA-Seq transcriptome profiling identifies CRISPLD2 as a glucocorticoid responsive gene that modulates cytokine function in airway smooth muscle cells.",
+      "claim": "文献检索命中：RNA-Seq transcriptome profiling identifies CRISPLD2 as a glucocorticoid responsive gene that modulates cytokine function in airway smooth muscle cells.（PLoS One 2014）。仅表示该文献匹配检索词，BioExplainR 未评估其结论是否支持任何具体论断。",
+      "url": "https://europepmc.org/article/MED/24926665",
+      "type": "literature",
+      "version": "Europe PMC REST v6.9",
+      "accessed": "2026-10-04 03:34:07 CST",
+      "note": "query: EXT_ID:24926665 AND SRC:MED",
+      "supplied_by": "retrieved:EuropePMC",
+      "pmid": "24926665",
+      "doi": "10.1371/journal.pone.0099625",
+      "authors": "Himes BE, Jiang X, Wagner P, Hu R, Wang Q, Klanderman B, Whitaker RM, Duan Q, Lasky-Su J, Nikolos C, Jester W, Johnso...",
+      "origin": "supplied"
+    }
+  ],
+  "evidence_trace": [
+    {
+      "id": "EuropePMC:MED:24926665",
+      "source": "EuropePMC",
+      "origin": "supplied"
+    }
+  ],
+  "evidence_retrieval": null,
+  "cross_check": null,
+  "level": "beginner",
+  "language": "zh",
+  "verification": {
+    "facts": "computed deterministically in R from the full input",
+    "llm_text": "model-generated prose; not numerically verified by BioExplainR"
+  },
+  "created": "2026-10-04 03:35:44 CST",
+  "validation": {
+    "status": "unverified",
+    "findings": [
+      {
+        "claim": "(none)",
+        "check": "claims",
+        "status": "unverified",
+        "detail": "no explicit machine-checkable claims; prose is not verified"
+      }
+    ],
+    "n_claims": 0,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  }
+}

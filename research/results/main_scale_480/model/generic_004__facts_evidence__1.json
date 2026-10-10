@@ -1,0 +1,160 @@
+{
+  "case": "generic_004",
+  "family": "generic",
+  "method": "facts_evidence",
+  "replicate": 1,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:17:24 UTC",
+  "response": {
+    "text": "{\"data_facts\":[\"该对象是一个 data.frame（class 为 data.frame），底层类型为 list，不是 S4 对象。\",\"对象在内存中的报告大小为 1.9 Kb。\",\"表格维度为 14 行 × 7 列，列名被隐去，可能包含样本标识。\"],\"statistical_meaning\":[\"数值范围 1 到 98，中位数 49.5，四分位数为 25.25 与 73.75，全部为整数且无缺失值。\",\"整数型数值提示可能是原始计数，样本间比较前通常需要标准化。\",\"零值比例为 0，说明矩阵中没有零计数。\"],\"biological_interpretation\":[\"若这是表达或计数矩阵，行可能代表基因、列可能代表样本，但当前仅有结构摘要，无法确认。\",\"未提供物种信息，任何基因功能层面的解释都只能作为待验证假设。\",\"检索命中的文献（EuropePMC:MED:24926665）仅表示匹配检索词，不构成对具体生物学结论的支持。\"],\"uncertainty\":[\"没有针对该对象类型的专用适配器，只给出结构摘要；可用 bio_register_adapter() 扩展或指定 analysis_type。\",\"行列名与原始数值不会被发送或写入报告，因此无法核对具体基因或样本。\",\"数值为整数，可能是原始计数，需标准化后才能直接比较样本间表达量。\"],\"cannot_conclude\":[\"不能判断差异表达、富集方向或任何统计显著性（未提供 p 值、校正 p 值或效应量）。\",\"不能确定物种、实验设计、分组或重复结构。\",\"不能把该文献命中当作对 CRISPLD2 或细胞因子功能的证据。\"],\"learning_questions\":[\"为什么整数计数矩阵在比较样本前需要标准化？\",\"data.frame 与 S4 对象在 R 中有什么结构差异？\",\"如何用 bio_register_adapter() 为特定表格类型添加适配器？\"],\"evidence_used\":[\"EuropePMC:MED:24926665\"],\"claims\":[{\"id\":\"c1\",\"text\":\"对象类别为 data.frame。\",\"fact\":\"class\",\"value\":\"data.frame\",\"evidence\":[]},{\"id\":\"c2\",\"text\":\"对象底层类型为 list。\",\"fact\":\"type\",\"value\":\"list\",\"evidence\":[]},{\"id\":\"c3\",\"text\":\"该对象不是 S4 对象。\",\"fact\":\"is_s4\",\"value\":false,\"evidence\":[]},{\"id\":\"c4\",\"text\":\"对象报告大小为 1.9 Kb。\",\"fact\":\"size\",\"value\":\"1.9 Kb\",\"evidence\":[]}]}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 1116,
+      "completion_tokens": 552,
+      "total_tokens": 1668,
+      "prompt_tokens_details": {
+        "cached_tokens": 896
+      },
+      "prompt_cache_hit_tokens": 896,
+      "prompt_cache_miss_tokens": 220
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.6899999999999999
+  },
+  "parsed": {
+    "data_facts": [
+      "该对象是一个 data.frame（class 为 data.frame），底层类型为 list，不是 S4 对象。",
+      "对象在内存中的报告大小为 1.9 Kb。",
+      "表格维度为 14 行 × 7 列，列名被隐去，可能包含样本标识。"
+    ],
+    "statistical_meaning": [
+      "数值范围 1 到 98，中位数 49.5，四分位数为 25.25 与 73.75，全部为整数且无缺失值。",
+      "整数型数值提示可能是原始计数，样本间比较前通常需要标准化。",
+      "零值比例为 0，说明矩阵中没有零计数。"
+    ],
+    "biological_interpretation": [
+      "若这是表达或计数矩阵，行可能代表基因、列可能代表样本，但当前仅有结构摘要，无法确认。",
+      "未提供物种信息，任何基因功能层面的解释都只能作为待验证假设。",
+      "检索命中的文献（EuropePMC:MED:24926665）仅表示匹配检索词，不构成对具体生物学结论的支持。"
+    ],
+    "uncertainty": [
+      "没有针对该对象类型的专用适配器，只给出结构摘要；可用 bio_register_adapter() 扩展或指定 analysis_type。",
+      "行列名与原始数值不会被发送或写入报告，因此无法核对具体基因或样本。",
+      "数值为整数，可能是原始计数，需标准化后才能直接比较样本间表达量。"
+    ],
+    "cannot_conclude": [
+      "不能判断差异表达、富集方向或任何统计显著性（未提供 p 值、校正 p 值或效应量）。",
+      "不能确定物种、实验设计、分组或重复结构。",
+      "不能把该文献命中当作对 CRISPLD2 或细胞因子功能的证据。"
+    ],
+    "learning_questions": [
+      "为什么整数计数矩阵在比较样本前需要标准化？",
+      "data.frame 与 S4 对象在 R 中有什么结构差异？",
+      "如何用 bio_register_adapter() 为特定表格类型添加适配器？"
+    ],
+    "evidence_used": [
+      "EuropePMC:MED:24926665"
+    ],
+    "claims": [
+      {
+        "id": "c1",
+        "text": "对象类别为 data.frame。",
+        "fact": "class",
+        "value": "data.frame",
+        "evidence": []
+      },
+      {
+        "id": "c2",
+        "text": "对象底层类型为 list。",
+        "fact": "type",
+        "value": "list",
+        "evidence": []
+      },
+      {
+        "id": "c3",
+        "text": "该对象不是 S4 对象。",
+        "fact": "is_s4",
+        "value": false,
+        "evidence": []
+      },
+      {
+        "id": "c4",
+        "text": "对象报告大小为 1.9 Kb。",
+        "fact": "size",
+        "value": "1.9 Kb",
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "(evidence_used)",
+        "check": "evidence_ids",
+        "status": "pass",
+        "detail": "all cited evidence ids were supplied"
+      },
+      {
+        "claim": "c1",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      },
+      {
+        "claim": "c2",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      },
+      {
+        "claim": "c3",
+        "check": "value",
+        "status": "pass",
+        "detail": "is_s4 = 0"
+      },
+      {
+        "claim": "c4",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "class",
+      "expected": "data.frame",
+      "value": "data.frame",
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "type",
+      "expected": "list",
+      "value": "list",
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "is_s4",
+      "expected": false,
+      "value": false,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "size",
+      "expected": "1.9 Kb",
+      "value": "1.9 Kb",
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 4119
+}

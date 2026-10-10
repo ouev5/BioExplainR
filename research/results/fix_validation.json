@@ -1,0 +1,92 @@
+{
+  "correct_reference": {
+    "label": null,
+    "status": "invariants_passed",
+    "runtime_ok": true,
+    "semantically_verified": true,
+    "code": "{\n    md$dex <- relevel(factor(md$dex), ref = \"untrt\")\n    md\n}",
+    "inputs": {
+      "md": {
+        "name": null,
+        "class": "data.frame",
+        "type": "list",
+        "is_s4": false,
+        "size": "8.9 Kb",
+        "dim": [8, 9],
+        "column_types": ["factor", "factor", "factor", "factor", "factor", "integer", "factor", "factor", "factor"],
+        "factor_levels_count": [8, 4, 2, 1, 8, 8, 8, 8]
+      }
+    },
+    "output_shape": {
+      "class": "data.frame",
+      "type": "list",
+      "dim": [8, 9],
+      "length": 9,
+      "names": ["SampleName", "cell", "dex", "albut", "Run", "avgLength", "Experiment", "Sample", "BioSample"]
+    },
+    "invariants": [
+      {
+        "name": "nrow==8",
+        "description": "结果行数等于 8",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "levels:dex",
+        "description": "dex 的因子水平及顺序为 untrt < trt（保证比较方向不变）",
+        "passed": true,
+        "detail": ""
+      }
+    ],
+    "warnings": [],
+    "error": null,
+    "elapsed_sec": 0.001,
+    "child_r_version": "R version 4.3.3 (2024-02-29)",
+    "note": "代码可运行且通过了用户指定的不变量；这只覆盖所列检查，不代表整体分析结论正确。 独立 R 进程不是操作系统级安全沙箱。"
+  },
+  "reversed_reference": {
+    "label": null,
+    "status": "invariants_failed",
+    "runtime_ok": true,
+    "semantically_verified": false,
+    "code": "{\n    md$dex <- relevel(factor(md$dex), ref = \"trt\")\n    md\n}",
+    "inputs": {
+      "md": {
+        "name": null,
+        "class": "data.frame",
+        "type": "list",
+        "is_s4": false,
+        "size": "8.9 Kb",
+        "dim": [8, 9],
+        "column_types": ["factor", "factor", "factor", "factor", "factor", "integer", "factor", "factor", "factor"],
+        "factor_levels_count": [8, 4, 2, 1, 8, 8, 8, 8]
+      }
+    },
+    "output_shape": {
+      "class": "data.frame",
+      "type": "list",
+      "dim": [8, 9],
+      "length": 9,
+      "names": ["SampleName", "cell", "dex", "albut", "Run", "avgLength", "Experiment", "Sample", "BioSample"]
+    },
+    "invariants": [
+      {
+        "name": "nrow==8",
+        "description": "结果行数等于 8",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "levels:dex",
+        "description": "dex 的因子水平及顺序为 untrt < trt（保证比较方向不变）",
+        "passed": false,
+        "detail": "levels of dex are [trt, untrt], expected [untrt, trt]"
+      }
+    ],
+    "warnings": [],
+    "error": null,
+    "elapsed_sec": 0.001,
+    "child_r_version": "R version 4.3.3 (2024-02-29)",
+    "note": "代码可运行，但至少一个语义不变量未通过。 独立 R 进程不是操作系统级安全沙箱。"
+  }
+}

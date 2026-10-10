@@ -1,0 +1,160 @@
+{
+  "case": "enrichment_008",
+  "family": "enrichment",
+  "method": "facts_evidence",
+  "replicate": 2,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:21:33 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"本次 ORA 共检验 20 个条目，其中 16 个在校正 p 值 < 0.05 下显著。\",\n    \"富集方法为 ORA，显著性阈值设为 0.05。\",\n    \"输入基因列表映射到 20 个基因，显著条目的 Count 范围为 1 到 7。\"\n  ],\n  \"statistical_meaning\": [\n    \"ORA 检验输入基因与基因集的重叠是否超出随机预期，p 值基于校正列。\",\n    \"显著条目数 16 表示在给定阈值下被判定为富集的条目数量。\",\n    \"Count 是落入某条目的输入基因数，GeneRatio 是 Count 除以输入基因总数。\"\n  ],\n  \"biological_interpretation\": [\n    \"这些条目可能反映输入基因列表共同参与的生物学过程，但需确认物种与背景基因集。\",\n    \"多个显著条目可能共享基因，GO 层级冗余使它们不构成独立证据。\",\n    \"文献检索命中 CRISPLD2 相关研究（EuropePMC:MED:24926665），仅表示匹配检索词，不直接支持本 ORA 结论。\"\n  ],\n  \"uncertainty\": [\n    \"来源包仅为推测，列名与 clusterProfiler/DOSE 输出相似但未确认。\",\n    \"ORA 没有激活/抑制方向，不能据此认定通路被激活。\",\n    \"未指定背景基因集与物种，p 值可能被高估或低估。\"\n  ],\n  \"cannot_conclude\": [\n    \"不能得出任何通路被激活或抑制的结论。\",\n    \"不能把显著条目当作相互独立的证据。\",\n    \"不能推断基因表达变化方向或临床意义。\"\n  ],\n  \"learning_questions\": [\n    \"ORA 与 GSEA 在方向性上有何区别？\",\n    \"为什么背景基因集（universe）会影响 ORA 的 p 值？\",\n    \"如何减少 GO 层级冗余带来的重复证据？\"\n  ],\n  \"evidence_used\": [\n    \"EuropePMC:MED:24926665\"\n  ],\n  \"claims\": [\n    {\n      \"id\": \"c1\",\n      \"text\": \"检验条目总数为 20。\",\n      \"fact\": \"n_terms\",\n      \"value\": 20,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"c2\",\n      \"text\": \"显著条目数为 16。\",\n      \"fact\": \"n_significant\",\n      \"value\": 16,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"c3\",\n      \"text\": \"富集方法为 ORA。\",\n      \"fact\": \"enrichment_method\",\n      \"value\": \"ORA\",\n      \"evidence\": []\n    },\n    {\n      \"id\": \"c4\",\n      \"text\": \"显著性阈值为 0.05。\",\n      \"fact\": \"significance_threshold\",\n      \"value\": \"0.050000000000000003\",\n      \"evidence\": []\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 1737,
+      "completion_tokens": 664,
+      "total_tokens": 2401,
+      "prompt_tokens_details": {
+        "cached_tokens": 1536
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 201
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.9300000000000002
+  },
+  "parsed": {
+    "data_facts": [
+      "本次 ORA 共检验 20 个条目，其中 16 个在校正 p 值 < 0.05 下显著。",
+      "富集方法为 ORA，显著性阈值设为 0.05。",
+      "输入基因列表映射到 20 个基因，显著条目的 Count 范围为 1 到 7。"
+    ],
+    "statistical_meaning": [
+      "ORA 检验输入基因与基因集的重叠是否超出随机预期，p 值基于校正列。",
+      "显著条目数 16 表示在给定阈值下被判定为富集的条目数量。",
+      "Count 是落入某条目的输入基因数，GeneRatio 是 Count 除以输入基因总数。"
+    ],
+    "biological_interpretation": [
+      "这些条目可能反映输入基因列表共同参与的生物学过程，但需确认物种与背景基因集。",
+      "多个显著条目可能共享基因，GO 层级冗余使它们不构成独立证据。",
+      "文献检索命中 CRISPLD2 相关研究（EuropePMC:MED:24926665），仅表示匹配检索词，不直接支持本 ORA 结论。"
+    ],
+    "uncertainty": [
+      "来源包仅为推测，列名与 clusterProfiler/DOSE 输出相似但未确认。",
+      "ORA 没有激活/抑制方向，不能据此认定通路被激活。",
+      "未指定背景基因集与物种，p 值可能被高估或低估。"
+    ],
+    "cannot_conclude": [
+      "不能得出任何通路被激活或抑制的结论。",
+      "不能把显著条目当作相互独立的证据。",
+      "不能推断基因表达变化方向或临床意义。"
+    ],
+    "learning_questions": [
+      "ORA 与 GSEA 在方向性上有何区别？",
+      "为什么背景基因集（universe）会影响 ORA 的 p 值？",
+      "如何减少 GO 层级冗余带来的重复证据？"
+    ],
+    "evidence_used": [
+      "EuropePMC:MED:24926665"
+    ],
+    "claims": [
+      {
+        "id": "c1",
+        "text": "检验条目总数为 20。",
+        "fact": "n_terms",
+        "value": 20,
+        "evidence": []
+      },
+      {
+        "id": "c2",
+        "text": "显著条目数为 16。",
+        "fact": "n_significant",
+        "value": 16,
+        "evidence": []
+      },
+      {
+        "id": "c3",
+        "text": "富集方法为 ORA。",
+        "fact": "enrichment_method",
+        "value": "ORA",
+        "evidence": []
+      },
+      {
+        "id": "c4",
+        "text": "显著性阈值为 0.05。",
+        "fact": "significance_threshold",
+        "value": "0.050000000000000003",
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "(evidence_used)",
+        "check": "evidence_ids",
+        "status": "pass",
+        "detail": "all cited evidence ids were supplied"
+      },
+      {
+        "claim": "c1",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_terms = 20"
+      },
+      {
+        "claim": "c2",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_significant = 16"
+      },
+      {
+        "claim": "c3",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      },
+      {
+        "claim": "c4",
+        "check": "value",
+        "status": "pass",
+        "detail": "significance_threshold = 0.05"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_terms",
+      "expected": 20,
+      "value": 20,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_significant",
+      "expected": 16,
+      "value": 16,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "enrichment_method",
+      "expected": "ORA",
+      "value": "ORA",
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "significance_threshold",
+      "expected": 0.050000000000000003,
+      "value": "0.050000000000000003",
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 5710
+}

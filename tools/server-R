@@ -1,0 +1,10 @@
+#!/bin/bash
+# Prefer an explicitly restored user runtime; otherwise use installed system R.
+set -euo pipefail
+if [[ -f /tmp/opencode/r-env.sh ]]; then
+  source /tmp/opencode/r-env.sh
+elif ! command -v R >/dev/null 2>&1; then
+  printf '%s\n' 'R is unavailable. Restore the runtime or install system R; see docs/REPRODUCTION.md.' >&2
+  exit 1
+fi
+exec R "$@"

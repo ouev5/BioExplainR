@@ -1,0 +1,140 @@
+{
+  "case": "generic_008",
+  "family": "generic",
+  "method": "direct_bounded",
+  "replicate": 2,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:19:01 UTC",
+  "response": {
+    "text": "{\"data_facts\":[\"R 输出仅提供 dim 为 [18, 6]，未提供 class、type、is_s4、size 信息。\"],\"statistical_meaning\":[\"dim 表示对象有 18 行、6 列，但无法据此推断统计检验结果。\"],\"biological_interpretation\":[\"缺少基因或样本标识，无法进行生物学解释。\"],\"uncertainty\":[\"请求的 class、type、is_s4、size 均无法从输入确定。\"],\"cannot_conclude\":[\"不能判断对象类别、类型、是否为 S4 对象或大小。\"],\"learning_questions\":[\"如何用 class()、typeof()、isS4()、object.size() 获取这些属性？\"],\"evidence_used\":[],\"claims\":[{\"id\":\"claim_class\",\"text\":\"class 无法从输入确定。\",\"fact\":\"class\",\"value\":null,\"evidence\":[]},{\"id\":\"claim_type\",\"text\":\"type 无法从输入确定。\",\"fact\":\"type\",\"value\":null,\"evidence\":[]},{\"id\":\"claim_is_s4\",\"text\":\"is_s4 无法从输入确定。\",\"fact\":\"is_s4\",\"value\":null,\"evidence\":[]},{\"id\":\"claim_size\",\"text\":\"size 无法从输入确定。\",\"fact\":\"size\",\"value\":null,\"evidence\":[]}]}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 306,
+      "completion_tokens": 279,
+      "total_tokens": 585,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 178
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 1.74
+  },
+  "parsed": {
+    "data_facts": [
+      "R 输出仅提供 dim 为 [18, 6]，未提供 class、type、is_s4、size 信息。"
+    ],
+    "statistical_meaning": [
+      "dim 表示对象有 18 行、6 列，但无法据此推断统计检验结果。"
+    ],
+    "biological_interpretation": [
+      "缺少基因或样本标识，无法进行生物学解释。"
+    ],
+    "uncertainty": [
+      "请求的 class、type、is_s4、size 均无法从输入确定。"
+    ],
+    "cannot_conclude": [
+      "不能判断对象类别、类型、是否为 S4 对象或大小。"
+    ],
+    "learning_questions": [
+      "如何用 class()、typeof()、isS4()、object.size() 获取这些属性？"
+    ],
+    "evidence_used": [],
+    "claims": [
+      {
+        "id": "claim_class",
+        "text": "class 无法从输入确定。",
+        "fact": "class",
+        "value": null,
+        "evidence": []
+      },
+      {
+        "id": "claim_type",
+        "text": "type 无法从输入确定。",
+        "fact": "type",
+        "value": null,
+        "evidence": []
+      },
+      {
+        "id": "claim_is_s4",
+        "text": "is_s4 无法从输入确定。",
+        "fact": "is_s4",
+        "value": null,
+        "evidence": []
+      },
+      {
+        "id": "claim_size",
+        "text": "size 无法从输入确定。",
+        "fact": "size",
+        "value": null,
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "unverified",
+    "findings": [
+      {
+        "claim": "claim_class",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_type",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_is_s4",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_size",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "class",
+      "expected": "data.frame",
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "type",
+      "expected": "list",
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "is_s4",
+      "expected": false,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "size",
+      "expected": "2 Kb",
+      "value": null,
+      "answered": false,
+      "correct": false
+    }
+  ],
+  "prompt_chars": 1175
+}

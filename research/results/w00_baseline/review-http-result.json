@@ -1,0 +1,150 @@
+{
+  "status": "pass",
+  "scope": "actual loopback HTTP, not a model evaluation",
+  "counts": {
+    "/openai": 1,
+    "/anthropic": 1,
+    "/retry": 2,
+    "/unauthorized": 1
+  },
+  "client": {
+    "openai": {
+      "request_hash": "790e60c274e0872606347ebb65187d5965bfc900c647f51716d5bcd636af397e",
+      "request_bytes": 3128,
+      "request_hash_scope": "UTF-8 HTTP JSON body bytes; headers excluded",
+      "usage": {
+        "prompt_tokens": 8,
+        "completion_tokens": 4,
+        "total_tokens": 12
+      },
+      "structured": true
+    },
+    "anthropic": {
+      "request_hash": "eb6225515e42608860f51da38634f297a7fee2de7853e48c6c54b5a8b1a16c3b",
+      "request_bytes": 3109,
+      "request_hash_scope": "UTF-8 HTTP JSON body bytes; headers excluded",
+      "usage": {
+        "input_tokens": 8,
+        "output_tokens": 4
+      },
+      "structured": true
+    },
+    "retry": {
+      "text": "{\"data_facts\":[\"three\"],\"claims\":[]}",
+      "request_hash": "57e90d223ced8df163fe4d266f9d65801949e76360d6d4b4873632290e5e0ab9",
+      "request_bytes": 126
+    },
+    "unauthorized": "Model API HTTP 401: [REDACTED] Check the API key."
+  },
+  "requests": [
+    {
+      "path": "/openai",
+      "sha256": "790e60c274e0872606347ebb65187d5965bfc900c647f51716d5bcd636af397e",
+      "bytes": 3128,
+      "body": {
+        "model": "local-fixture",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a bioinformatics teaching assistant. Write in English for a beginner audience. All prose strings in the JSON must be in English; keep JSON keys, gene symbols and ids unchanged.\nRules:\n1. All numbers (counts, thresholds, p-values, fold changes) must come from the provided JSON facts. Never compute, estimate or invent new statistics.\n2. Separate data facts, statistical meaning, biological interpretation, uncertainty, and conclusions that cannot be drawn.\n3. Biological statements are hypotheses unless supported by the supplied evidence list; cite evidence by its id. Do not invent references, database IDs, gene functions you are unsure of, or clinical claims.\n4. Respect the uncertainty notes (e.g. raw vs adjusted p-values, ORA has no activation direction, cells are not replicates).\nReturn ONLY a JSON object with keys: data_facts, statistical_meaning, biological_interpretation, uncertainty, cannot_conclude, learning_questions (each an array of short strings), evidence_used (array of evidence ids), and claims: an array of objects {\"id\", \"text\", \"fact\" (path into the facts JSON), \"value\" (a single number or string), \"evidence\" (array of evidence ids)} for every statistical fact you state. Use one claim per scalar value; numeric arrays can be referenced with 1-based paths such as variance_explained.1. Copy numeric claim values exactly from the JSON, without rounding; prose may use approximate values. Keep each section concise (up to 3 short strings) so the required claims fit the output budget. Do not attach an up/down direction to a positive count; direction is only appropriate for signed effects."
+          },
+          {
+            "role": "user",
+            "content": "Analysis context (computed deterministically in R; summary only, no raw data):\n{\n  \"schema_version\": \"1.0\",\n  \"context_id\": \"6cd02d439fba602ec71dcc6703d376d9eb2115e5fb013c867a5a7aeea5c80963\",\n  \"analysis_type\": \"generic\",\n  \"source\": {\n    \"class\": \"list\",\n    \"package\": \"NA\",\n    \"status\": \"verified_class\"\n  },\n  \"study_context\": [],\n  \"facts\": {\n    \"n\": 3,\n    \"p\": 9.9999999999999999e-133\n  },\n  \"fact_descriptors\": {\n    \"n\": {\n      \"value_type\": \"number\",\n      \"source_path\": \"n\",\n      \"computation\": \"adapter_defined\",\n      \"inspection\": \"full_fact\",\n      \"completeness\": \"complete\"\n    },\n    \"p\": {\n      \"value_type\": \"number\",\n      \"source_path\": \"p\",\n      \"computation\": \"adapter_defined\",\n      \"inspection\": \"full_fact\",\n      \"completeness\": \"complete\"\n    }\n  },\n  \"scope\": [],\n  \"design\": [],\n  \"uncertainty\": [],\n  \"completeness\": {\n    \"status\": \"complete\",\n    \"omitted_fields\": [\"top_features\", \"plot_mapping\", \"thresholds\", \"completeness.reason\", \"completeness.omitted_fact_paths\"]\n  }\n}\n\nUser-supplied evidence (may be empty):\n[]\n\nLearner question: precision 数值\n\nProduce the JSON explanation now."
+          }
+        ],
+        "max_tokens": 1500,
+        "fixture": {
+          "p": 1e-132,
+          "pca": 0.47842864474215935,
+          "zero": 0,
+          "missing": null
+        }
+      },
+      "auth_header_present": true
+    },
+    {
+      "path": "/anthropic",
+      "sha256": "eb6225515e42608860f51da38634f297a7fee2de7853e48c6c54b5a8b1a16c3b",
+      "bytes": 3109,
+      "body": {
+        "model": "local-fixture",
+        "max_tokens": 1500,
+        "system": "You are a bioinformatics teaching assistant. Write in English for a beginner audience. All prose strings in the JSON must be in English; keep JSON keys, gene symbols and ids unchanged.\nRules:\n1. All numbers (counts, thresholds, p-values, fold changes) must come from the provided JSON facts. Never compute, estimate or invent new statistics.\n2. Separate data facts, statistical meaning, biological interpretation, uncertainty, and conclusions that cannot be drawn.\n3. Biological statements are hypotheses unless supported by the supplied evidence list; cite evidence by its id. Do not invent references, database IDs, gene functions you are unsure of, or clinical claims.\n4. Respect the uncertainty notes (e.g. raw vs adjusted p-values, ORA has no activation direction, cells are not replicates).\nReturn ONLY a JSON object with keys: data_facts, statistical_meaning, biological_interpretation, uncertainty, cannot_conclude, learning_questions (each an array of short strings), evidence_used (array of evidence ids), and claims: an array of objects {\"id\", \"text\", \"fact\" (path into the facts JSON), \"value\" (a single number or string), \"evidence\" (array of evidence ids)} for every statistical fact you state. Use one claim per scalar value; numeric arrays can be referenced with 1-based paths such as variance_explained.1. Copy numeric claim values exactly from the JSON, without rounding; prose may use approximate values. Keep each section concise (up to 3 short strings) so the required claims fit the output budget. Do not attach an up/down direction to a positive count; direction is only appropriate for signed effects.",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Analysis context (computed deterministically in R; summary only, no raw data):\n{\n  \"schema_version\": \"1.0\",\n  \"context_id\": \"6cd02d439fba602ec71dcc6703d376d9eb2115e5fb013c867a5a7aeea5c80963\",\n  \"analysis_type\": \"generic\",\n  \"source\": {\n    \"class\": \"list\",\n    \"package\": \"NA\",\n    \"status\": \"verified_class\"\n  },\n  \"study_context\": [],\n  \"facts\": {\n    \"n\": 3,\n    \"p\": 9.9999999999999999e-133\n  },\n  \"fact_descriptors\": {\n    \"n\": {\n      \"value_type\": \"number\",\n      \"source_path\": \"n\",\n      \"computation\": \"adapter_defined\",\n      \"inspection\": \"full_fact\",\n      \"completeness\": \"complete\"\n    },\n    \"p\": {\n      \"value_type\": \"number\",\n      \"source_path\": \"p\",\n      \"computation\": \"adapter_defined\",\n      \"inspection\": \"full_fact\",\n      \"completeness\": \"complete\"\n    }\n  },\n  \"scope\": [],\n  \"design\": [],\n  \"uncertainty\": [],\n  \"completeness\": {\n    \"status\": \"complete\",\n    \"omitted_fields\": [\"top_features\", \"plot_mapping\", \"thresholds\", \"completeness.reason\", \"completeness.omitted_fact_paths\"]\n  }\n}\n\nUser-supplied evidence (may be empty):\n[]\n\nLearner question: precision 数值\n\nProduce the JSON explanation now."
+          }
+        ],
+        "fixture": {
+          "p": 1e-132,
+          "pca": 0.47842864474215935,
+          "zero": 0,
+          "missing": null
+        }
+      },
+      "auth_header_present": true
+    },
+    {
+      "path": "/retry",
+      "sha256": "57e90d223ced8df163fe4d266f9d65801949e76360d6d4b4873632290e5e0ab9",
+      "bytes": 126,
+      "body": {
+        "model": "local-fixture",
+        "messages": [
+          {
+            "role": "system",
+            "content": "system"
+          },
+          {
+            "role": "user",
+            "content": "user"
+          }
+        ],
+        "max_tokens": 1500
+      },
+      "auth_header_present": true
+    },
+    {
+      "path": "/retry",
+      "sha256": "57e90d223ced8df163fe4d266f9d65801949e76360d6d4b4873632290e5e0ab9",
+      "bytes": 126,
+      "body": {
+        "model": "local-fixture",
+        "messages": [
+          {
+            "role": "system",
+            "content": "system"
+          },
+          {
+            "role": "user",
+            "content": "user"
+          }
+        ],
+        "max_tokens": 1500
+      },
+      "auth_header_present": true
+    },
+    {
+      "path": "/unauthorized",
+      "sha256": "57e90d223ced8df163fe4d266f9d65801949e76360d6d4b4873632290e5e0ab9",
+      "bytes": 126,
+      "body": {
+        "model": "local-fixture",
+        "messages": [
+          {
+            "role": "system",
+            "content": "system"
+          },
+          {
+            "role": "user",
+            "content": "user"
+          }
+        ],
+        "max_tokens": 1500
+      },
+      "auth_header_present": true
+    }
+  ]
+}

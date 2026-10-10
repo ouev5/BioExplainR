@@ -1,0 +1,158 @@
+{
+  "case": "pbmc3k_sce",
+  "method": "facts_evidence",
+  "replicate": 3,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-03 19:35:35 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"该数据集包含 2700 个细胞。\",\n    \"该数据集包含 32738 个特征（基因）。\",\n    \"该数据集仅包含 1 个样本（sample_id）。\",\n    \"每个样本的细胞数范围为 2700 到 2700。\",\n    \"没有细胞缺失样本标签（n_cells_missing_sample = 0）。\",\n    \"counts 矩阵维度为 32738 × 2700，稀疏矩阵中存储值数量为 2286884，零值比例为 0.9741。\",\n    \"counts 矩阵中非零值的分位数：最小值 1，第一四分位数 1，中位数 1，第三四分位数 2，最大值 419。\",\n    \"QC 指标 nCount_RNA 的分位数：最小值 548，第一四分位数 1758，中位数 2197，第三四分位数 2763，最大值 15840。\",\n    \"QC 指标 nFeature_RNA 的分位数：最小值 212，第一四分位数 690，中位数 817，第三四分位数 953.2，最大值 3422。\",\n    \"QC 指标 percent.mt 的分位数：最小值 0，第一四分位数 1.536，中位数 2.03，第三四分位数 2.64，最大值 22.57。\",\n    \"降维方法为 UMAP，维度为 2。\",\n    \"没有其他实验（alt_experiments 为空）。\"\n  ],\n  \"statistical_meaning\": [\n    \"n_cells 表示数据集中细胞的总数，是观测单位数量，不是生物学重复数。\",\n    \"n_features 表示检测到的基因数量，反映转录组覆盖广度。\",\n    \"n_samples 表示独立样本（供体）数量，是统计推断中独立重复的单位。\",\n    \"counts 矩阵的稀疏性（零值比例 0.9741）表明大多数基因在大多数细胞中表达为零，这是单细胞 RNA 测序数据的典型特征。\",\n    \"QC 指标的分位数描述了细胞水平的技术质量分布，例如 nCount_RNA 和 nFeature_RNA 反映测序深度和基因检出数，percent.mt 反映线粒体基因比例。\",\n    \"UMAP 是一种非线性降维方法，用于可视化高维数据，其二维坐标不直接对应生物学距离。\"\n  ],\n  \"biological_interpretation\": [\n    \"该数据来自人类 PBMC（外周血单核细胞），可能包含多种免疫细胞类型（如 T 细胞、B 细胞、单核细胞、NK 细胞等），但需要基于 marker 基因进行注释。\",\n    \"仅有一个样本，无法进行组间比较或推断样本水平的生物学差异。\",\n    \"高比例的零值可能反映基因表达的稀疏性，也可能包含技术噪音（如 dropout 事件）。\",\n    \"线粒体基因比例中位数较低（2.03%），但最大值达 22.57%，提示部分细胞可能处于应激或凋亡状态，通常需要在分析中考虑过滤。\"\n  ],\n  \"uncertainty\": [\n    \"细胞数不等于生物学重复数；样本/供体才是独立重复单位。单细胞差异分析若把细胞当重复，容易产生假阳性（伪重复问题）。\",\n    \"UMAP/t-SNE 上的距离不代表真实空间距离，图形结构受参数影响，不能单独证明细胞谱系。\",\n    \"cluster 编号本身没有生物学含义；细胞类型注释应基于多个 marker 的组合并结合组织背景。\",\n    \"仅识别到 1 个样本；组间比较的统计推断能力非常有限。\",\n    \"assay 数值只检查了有限子集（稀疏矩阵读取存储槽位，稠密矩阵最多抽样一个小块）。\"\n  ],\n  \"cannot_conclude\": [\n    \"不能基于单个样本推断细胞类型组成或比例的生物学差异。\",\n    \"不能进行任何组间差异表达分析或统计检验。\",\n    \"不能从 UMAP 图中推断细胞发育轨迹或谱系关系。\",\n    \"不能将细胞数（2700）视为生物学重复数进行统计推断。\",\n    \"不能基于当前数据评估批次效应或技术变异。\"\n  ],\n  \"learning_questions\": [\n    \"为什么在单细胞分析中，细胞数不能替代生物学重复数？\",\n    \"QC 指标（如 nCount_RNA、nFeature_RNA、percent.mt）分别反映什么技术因素？\",\n    \"如何利用 marker 基因对 PBMC 中的细胞类型进行注释？\",\n    \"UMAP 降维在单细胞分析中的主要用途和局限性是什么？\",\n    \"为什么稀疏矩阵中零值比例高是单细胞 RNA 测序数据的常见特征？\"\n  ],\n  \"evidence_used\": [\n    \"EuropePMC:MED:24926665\"\n  ],\n  \"claims\": [\n    {\n      \"id\": \"claim_n_cells\",\n      \"text\": \"数据集包含 2700 个细胞。\",\n      \"fact\": \"n_cells\",\n      \"value\": 2700,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_n_features\",\n      \"text\": \"数据集包含 32738 个特征（基因）。\",\n      \"fact\": \"n_features\",\n      \"value\": 32738,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_n_samples\",\n      \"text\": \"数据集包含 1 个样本。\",\n      \"fact\": \"n_samples\",\n      \"value\": 1,\n      \"evidence\": []\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 1408,
+      "completion_tokens": 1196,
+      "total_tokens": 2604,
+      "prompt_tokens_details": {
+        "cached_tokens": 1152
+      },
+      "prompt_cache_hit_tokens": 1152,
+      "prompt_cache_miss_tokens": 256
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 4.87
+  },
+  "parsed": {
+    "data_facts": [
+      "该数据集包含 2700 个细胞。",
+      "该数据集包含 32738 个特征（基因）。",
+      "该数据集仅包含 1 个样本（sample_id）。",
+      "每个样本的细胞数范围为 2700 到 2700。",
+      "没有细胞缺失样本标签（n_cells_missing_sample = 0）。",
+      "counts 矩阵维度为 32738 × 2700，稀疏矩阵中存储值数量为 2286884，零值比例为 0.9741。",
+      "counts 矩阵中非零值的分位数：最小值 1，第一四分位数 1，中位数 1，第三四分位数 2，最大值 419。",
+      "QC 指标 nCount_RNA 的分位数：最小值 548，第一四分位数 1758，中位数 2197，第三四分位数 2763，最大值 15840。",
+      "QC 指标 nFeature_RNA 的分位数：最小值 212，第一四分位数 690，中位数 817，第三四分位数 953.2，最大值 3422。",
+      "QC 指标 percent.mt 的分位数：最小值 0，第一四分位数 1.536，中位数 2.03，第三四分位数 2.64，最大值 22.57。",
+      "降维方法为 UMAP，维度为 2。",
+      "没有其他实验（alt_experiments 为空）。"
+    ],
+    "statistical_meaning": [
+      "n_cells 表示数据集中细胞的总数，是观测单位数量，不是生物学重复数。",
+      "n_features 表示检测到的基因数量，反映转录组覆盖广度。",
+      "n_samples 表示独立样本（供体）数量，是统计推断中独立重复的单位。",
+      "counts 矩阵的稀疏性（零值比例 0.9741）表明大多数基因在大多数细胞中表达为零，这是单细胞 RNA 测序数据的典型特征。",
+      "QC 指标的分位数描述了细胞水平的技术质量分布，例如 nCount_RNA 和 nFeature_RNA 反映测序深度和基因检出数，percent.mt 反映线粒体基因比例。",
+      "UMAP 是一种非线性降维方法，用于可视化高维数据，其二维坐标不直接对应生物学距离。"
+    ],
+    "biological_interpretation": [
+      "该数据来自人类 PBMC（外周血单核细胞），可能包含多种免疫细胞类型（如 T 细胞、B 细胞、单核细胞、NK 细胞等），但需要基于 marker 基因进行注释。",
+      "仅有一个样本，无法进行组间比较或推断样本水平的生物学差异。",
+      "高比例的零值可能反映基因表达的稀疏性，也可能包含技术噪音（如 dropout 事件）。",
+      "线粒体基因比例中位数较低（2.03%），但最大值达 22.57%，提示部分细胞可能处于应激或凋亡状态，通常需要在分析中考虑过滤。"
+    ],
+    "uncertainty": [
+      "细胞数不等于生物学重复数；样本/供体才是独立重复单位。单细胞差异分析若把细胞当重复，容易产生假阳性（伪重复问题）。",
+      "UMAP/t-SNE 上的距离不代表真实空间距离，图形结构受参数影响，不能单独证明细胞谱系。",
+      "cluster 编号本身没有生物学含义；细胞类型注释应基于多个 marker 的组合并结合组织背景。",
+      "仅识别到 1 个样本；组间比较的统计推断能力非常有限。",
+      "assay 数值只检查了有限子集（稀疏矩阵读取存储槽位，稠密矩阵最多抽样一个小块）。"
+    ],
+    "cannot_conclude": [
+      "不能基于单个样本推断细胞类型组成或比例的生物学差异。",
+      "不能进行任何组间差异表达分析或统计检验。",
+      "不能从 UMAP 图中推断细胞发育轨迹或谱系关系。",
+      "不能将细胞数（2700）视为生物学重复数进行统计推断。",
+      "不能基于当前数据评估批次效应或技术变异。"
+    ],
+    "learning_questions": [
+      "为什么在单细胞分析中，细胞数不能替代生物学重复数？",
+      "QC 指标（如 nCount_RNA、nFeature_RNA、percent.mt）分别反映什么技术因素？",
+      "如何利用 marker 基因对 PBMC 中的细胞类型进行注释？",
+      "UMAP 降维在单细胞分析中的主要用途和局限性是什么？",
+      "为什么稀疏矩阵中零值比例高是单细胞 RNA 测序数据的常见特征？"
+    ],
+    "evidence_used": [
+      "EuropePMC:MED:24926665"
+    ],
+    "claims": [
+      {
+        "id": "claim_n_cells",
+        "text": "数据集包含 2700 个细胞。",
+        "fact": "n_cells",
+        "value": 2700,
+        "evidence": []
+      },
+      {
+        "id": "claim_n_features",
+        "text": "数据集包含 32738 个特征（基因）。",
+        "fact": "n_features",
+        "value": 32738,
+        "evidence": []
+      },
+      {
+        "id": "claim_n_samples",
+        "text": "数据集包含 1 个样本。",
+        "fact": "n_samples",
+        "value": 1,
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "(evidence_used)",
+        "check": "evidence_ids",
+        "status": "pass",
+        "detail": "all cited evidence ids were supplied"
+      },
+      {
+        "claim": "claim_n_cells",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_cells = 2700"
+      },
+      {
+        "claim": "claim_n_features",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_features = 32738"
+      },
+      {
+        "claim": "claim_n_samples",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_samples = 1"
+      }
+    ],
+    "n_claims": 3,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_cells",
+      "expected": 2700,
+      "value": 2700,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_features",
+      "expected": 32738,
+      "value": 32738,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_samples",
+      "expected": 1,
+      "value": 1,
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 4833
+}

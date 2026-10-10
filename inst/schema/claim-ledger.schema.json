@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bioexplainr.local/schema/claim-ledger-1.0.json",
+  "title": "BioExplainR typed claim ledger",
+  "type": "object",
+  "required": ["schema_version", "claims"],
+  "properties": {
+    "schema_version": {"type": "string", "const": "1.0"},
+    "context_id": {"type": ["string", "null"]},
+    "claims": {"type": "array", "items": {"type": "object", "required": ["id", "claim_type", "origin", "path_tokens"], "properties": {
+      "id": {"type": "string"},
+      "claim_type": {"enum": ["statistical_fact", "statistical_interpretation", "biological_association", "causal", "evidence_support", "design", "plot_mapping", "unknown"]},
+      "origin": {"enum": ["local_template", "model", "user"]},
+      "path_tokens": {"type": "array", "items": {"type": "string"}},
+      "evidence_refs": {"type": "array", "items": {"type": "string"}},
+      "validation": {"type": ["object", "null"]}
+    }, "additionalProperties": true}}
+  },
+  "additionalProperties": true
+}

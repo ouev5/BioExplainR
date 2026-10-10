@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><title>BioExplainR 分析解释报告</title><style>body{font-family:-apple-system,'Segoe UI','Noto Sans CJK SC','Microsoft YaHei',sans-serif;max-width:960px;margin:2em auto;padding:0 1em;line-height:1.6;color:#222} table{border-collapse:collapse;margin:.5em 0;font-size:.9em}th,td{border:1px solid #ccc;padding:3px 8px;text-align:left} th{background:#f3f3f3}pre{background:#f6f8fa;padding:.8em;overflow-x:auto}h1{border-bottom:2px solid #2a6f97}h2{color:#2a6f97}</style></head><body>
+<h1>BioExplainR 分析解释报告</h1>
+<p>生成时间：2026-10-08 17:00:16 CST；BioExplainR 0.4.0.9000。</p>
+<p>说明：统计事实由 R 从完整输入确定性计算；模型文本（如有）仅组织语言，未经数值核验。报告不包含 API key、原始表达矩阵、细胞条码或样本名称。</p>
+<h2>对象 1</h2>
+<h3>来源与参数</h3>
+<table><tr><th>item</th><th>value</th></tr><tr><td>analysis_type</td><td>differential_expression</td></tr><tr><td>source_class</td><td>data.frame</td></tr><tr><td>source_package</td><td>NA</td></tr><tr><td>source_status</td><td>unknown</td></tr><tr><td>adapter</td><td>de_table</td></tr><tr><td>thresholds</td><td>padj=0.05; lfc=0; p=0.05</td></tr><tr><td>created</td><td>2026-10-08 17:00:00 CST</td></tr></table>
+<h3>用户提供的研究背景</h3>
+<table><tr><th>item</th><th>value</th></tr><tr><td>scope</td><td>human</td></tr></table>
+<h3>确定性统计事实</h3>
+<table><tr><th>item</th><th>value</th></tr><tr><td>n_features</td><td>3</td></tr><tr><td>lfc_column</td><td>log2FoldChange</td></tr><tr><td>p_value_column</td><td>NA</td></tr><tr><td>adjusted_p_column</td><td>padj</td></tr><tr><td>p_value_basis</td><td>adjusted_column</td></tr><tr><td>n_na_lfc</td><td>0</td></tr><tr><td>n_tested</td><td>3</td></tr><tr><td>n_na_padj</td><td>0</td></tr><tr><td>padj_threshold</td><td>0.05</td></tr><tr><td>lfc_threshold</td><td>0</td></tr><tr><td>n_significant_any_lfc</td><td>2</td></tr><tr><td>n_up</td><td>1</td></tr><tr><td>n_down</td><td>1</td></tr><tr><td>n_significant</td><td>2</td></tr><tr><td>min_padj</td><td>0.01</td></tr><tr><td>lfc_range</td><td>-2, 2</td></tr><tr><td>lfc_median</td><td>0.1</td></tr></table>
+<h3>前 3 行摘要</h3>
+<table><tr><th>feature</th><th>log2fc</th><th>padj</th><th>direction</th><th>passes_thresholds</th></tr><tr><td>1</td><td>2</td><td>0.01</td><td>up</td><td>TRUE</td></tr><tr><td>2</td><td>-2</td><td>0.02</td><td>down</td><td>TRUE</td></tr><tr><td>3</td><td>0.1</td><td>0.8</td><td>up</td><td>FALSE</td></tr></table>
+<h3>本地解释（规则模板）</h3>
+<p><strong>数据事实（由 R 确定性计算）</strong></p>
+<ul><li>结果表共 3 个特征；log2FC 列为 &#39;log2FoldChange&#39;。</li><li>在 padj &lt; 0.05 且 |log2FC| &gt; 0 的条件下：显著 2 个，其中上调 1 个、下调 1 个；padj 为 NA 的特征 0 个。</li><li>log2FC 范围 -2 到 2，中位数 0.1。</li></ul>
+<p><strong>统计含义</strong></p>
+<ul><li>log2FC 描述变化方向和大小，校正后 p 值描述在多重检验下结果的统计可靠性；二者是不同维度，需要同时看。</li><li>p 值很小但 log2FC 很小的基因，统计上可靠但效应可能在生物学上不重要；反之，大 log2FC 但 padj 不显著可能来自低表达或高变异。</li></ul>
+<p><strong>生物学解释（需结合证据核查）</strong></p>
+<ul><li>最显著的特征包括：1、2、3。可以查阅这些基因的功能注释（例如 NCBI Gene、UniProt），再判断是否与实验处理相关。</li><li>差异表达只说明在本数据中表达水平与分组相关；生物学机制需要文献、数据库证据或实验验证支持。</li></ul>
+<p><strong>不确定性与限制</strong></p>
+<ul><li>无法从列名确定产生该表的软件包，请用 source_package 参数补充。</li><li>未提供比较方向（contrast）；log2FC 的正负含义取决于哪一组作为分母/参考组。</li><li>未提供物种（species），生物学解释需要用户确认物种背景。</li></ul>
+<p><strong>不能据此推出的结论</strong></p>
+<ul><li>不能把“显著差异表达”直接写成“该基因导致了表型”或“该通路被激活”。</li><li>不能把未达到显著的基因说成“没有变化”；可能只是统计功效不足。</li></ul>
+<p><strong>学习问题</strong></p>
+<ul><li>如果交换比较组的顺序，log2FC 的符号会怎样变化？</li><li>为什么在数万个基因同时检验时需要使用校正后的 p 值？</li><li>一个 padj 很小但 |log2FC| = 0.1 的基因，你会如何描述它？</li></ul>
+<p><strong>概念卡片</strong></p>
+<ul><li>p 值：在“没有真实差异”的假设下，观察到当前或更极端结果的概率；不是效应大小，也不是假设为真的概率。</li><li>校正后 p 值（FDR/padj）：同时检验成千上万个基因时，用于控制假发现比例的指标，例如 padj &lt; 0.05 表示在该阈值下预期假发现比例约 5%。</li><li>log2 fold change：两组表达量之比取以 2 为底的对数；1 表示约 2 倍，-1 表示约一半。正负方向取决于比较顺序。</li></ul>
+<p>模型未使用：local mode (protocol = &#39;none&#39;)</p>
+<h3>可追溯证据来源</h3>
+<table><tr><th>id</th><th>type</th><th>title</th><th>claim</th><th>source</th><th>supplied_by</th><th>url</th><th>version</th><th>accessed</th></tr><tr><td>Local:fixture</td><td>literature</td><td>&lt;script&gt;window.untrustedEvidence=true&lt;/script&gt;</td><td></td><td>Local</td><td>user</td><td></td><td></td><td>2026-10-08</td></tr></table>
+<h3>类型化声明台账</h3>
+<table><tr><th>id</th><th>schema_version</th><th>claim_type</th><th>text</th><th>origin</th><th>text_ref</th><th>context_id</th><th>fact_path</th><th>value_type</th><th>unit</th><th>direction</th><th>value</th><th>scope</th><th>path_tokens</th><th>evidence_refs</th><th>validation</th></tr><tr><td>fixture_count</td><td>1.0</td><td>statistical_fact</td><td></td><td>model</td><td></td><td>c80bff9acf4c46be2d5bb8e78bd810a4249a5280a0eebf2e29fbece9ecaeb007</td><td>n_features</td><td>integer</td><td>NA</td><td>NA</td><td>3</td><td>list(species = &quot;human&quot;)</td><td>n_features</td><td>Local:fixture</td><td>list(claim = &quot;fixture_count&quot;, check = &quot;value&quot;, status = &quot;pass&quot;, detail = &quot;typed value matches computed fact&quot;, reference_scope = &quot;full&quot;)</td></tr></table>
+<table><tr><th>claim</th><th>check</th><th>status</th><th>detail</th><th>reference_scope</th></tr><tr><td>fixture_count</td><td>value</td><td>pass</td><td>typed value matches computed fact</td><td>full</td></tr></table>
+<table><tr><th>claim</th><th>check</th><th>status</th><th>detail</th></tr><tr><td>fixture_count</td><td>support_relation</td><td>unverified</td><td>no claim-level relation for Local:fixture</td></tr></table>
+<h3>运行清单</h3>
+<pre><code>{
+  &quot;manifest_version&quot;: &quot;1.0&quot;,
+  &quot;run_id&quot;: &quot;run-20261008170000&quot;,
+  &quot;context_id&quot;: &quot;c80bff9acf4c46be2d5bb8e78bd810a4249a5280a0eebf2e29fbece9ecaeb007&quot;,
+  &quot;facts_hash&quot;: &quot;c2efe11ab3b9f6d92ec95617367182d6b4b5106b5092135eac172718939a0abb&quot;,
+  &quot;payload_hash&quot;: &quot;0904594712178d83b15fd1241e9981e99af77df2f04ccaaf6f019b49c7c2943e&quot;,
+  &quot;request_hash&quot;: null,
+  &quot;response_hash&quot;: null,
+  &quot;schema_version&quot;: &quot;1.0&quot;,
+  &quot;serialization_version&quot;: &quot;jsonlite-17-null-1&quot;,
+  &quot;numeric_policy&quot;: {
+    &quot;digits&quot;: 17,
+    &quot;na&quot;: &quot;null&quot;,
+    &quot;null&quot;: &quot;null&quot;
+  },
+  &quot;policy_id&quot;: &quot;e3e07162158ec48661e5d5e3768588cc12aefa573b03844e9182e1743b7818d9&quot;,
+  &quot;created&quot;: &quot;2026-10-08 17:00:00 CST&quot;,
+  &quot;status&quot;: &quot;not_run&quot;
+}</code></pre>
+<h3>解释事实与引用检查</h3>
+<p>状态：partial</p>
+<table><tr><th>claim</th><th>check</th><th>status</th><th>detail</th></tr><tr><td>fixture_count</td><td>value</td><td>pass</td><td>n_features = 3</td></tr><tr><td>fixture_count</td><td>citation</td><td>pass</td><td>citations are supplied evidence ids</td></tr></table>
+<h2>模型配置（不含密钥）</h2>
+<table><tr><th>item</th><th>value</th></tr><tr><td>preset</td><td>local</td></tr><tr><td>protocol</td><td>none</td></tr><tr><td>model</td><td>NA</td></tr><tr><td>endpoint_host</td><td>NA</td></tr><tr><td>key_source</td><td>none</td></tr><tr><td>timeout</td><td>60</td></tr><tr><td>max_retries</td><td>2</td></tr><tr><td>temperature</td><td>NA</td></tr><tr><td>max_tokens</td><td>1500</td></tr></table>
+<h2>运行环境与依赖来源</h2>
+<table><tr><th>item</th><th>value</th></tr><tr><td>R</td><td>R version 4.3.3 (2024-02-29)</td></tr><tr><td>platform</td><td>x86_64-pc-linux-gnu</td></tr><tr><td>os</td><td>Ubuntu 24.04.4 LTS</td></tr></table>
+<table><tr><th>package</th><th>version</th><th>source</th></tr><tr><td>BioExplainR</td><td>0.4.0.9000</td><td>local/unknown</td></tr><tr><td>httr2</td><td>1.0.0</td><td>CRAN</td></tr><tr><td>jsonlite</td><td>1.8.8</td><td>CRAN</td></tr><tr><td>SummarizedExperiment</td><td>1.32.0</td><td>Bioconductor</td></tr></table>
+</body></html>

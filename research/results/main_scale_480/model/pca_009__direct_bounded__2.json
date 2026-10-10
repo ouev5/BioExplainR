@@ -1,0 +1,146 @@
+{
+  "case": "pca_009",
+  "family": "pca",
+  "method": "direct_bounded",
+  "replicate": 2,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:18:23 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"观测数为12，变量数为21。\",\n    \"第一主成分标准差为1.9820254416486525，第二主成分标准差为1.7470528796836184。\"\n  ],\n  \"statistical_meaning\": [\n    \"方差解释比例等于对应主成分标准差的平方除以所有主成分标准差的平方和。\",\n    \"第一主成分方差解释比例约为0.222，第二主成分约为0.173。\"\n  ],\n  \"biological_interpretation\": [\n    \"前两个主成分合计解释约39.5%的变异，可能反映样本间的主要生物学差异。\",\n    \"但需结合载荷和分组信息才能解释具体生物学意义。\"\n  ],\n  \"uncertainty\": [\n    \"未提供样本分组、批次或协变量信息，无法评估混杂影响。\",\n    \"未提供主成分载荷，无法判断哪些变量驱动了主成分。\"\n  ],\n  \"cannot_conclude\": [\n    \"不能确定前两个主成分是否对应特定的生物学过程或处理效应。\",\n    \"不能判断该降维结果是否具有统计学显著性。\"\n  ],\n  \"learning_questions\": [\n    \"如何计算主成分的方差解释比例？\",\n    \"如何利用载荷矩阵解释主成分的生物学含义？\"\n  ],\n  \"evidence_used\": [],\n  \"claims\": [\n    {\n      \"id\": \"claim_1\",\n      \"text\": \"观测数为12。\",\n      \"fact\": \"n_observations\",\n      \"value\": 12,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_2\",\n      \"text\": \"变量数为21。\",\n      \"fact\": \"n_variables\",\n      \"value\": 21,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_3\",\n      \"text\": \"第一主成分方差解释比例约为0.222。\",\n      \"fact\": \"variance_explained.1\",\n      \"value\": \"0.222\",\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_4\",\n      \"text\": \"第二主成分方差解释比例约为0.173。\",\n      \"fact\": \"variance_explained.2\",\n      \"value\": \"0.173\",\n      \"evidence\": []\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 441,
+      "completion_tokens": 497,
+      "total_tokens": 938,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 185
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.23
+  },
+  "parsed": {
+    "data_facts": [
+      "观测数为12，变量数为21。",
+      "第一主成分标准差为1.9820254416486525，第二主成分标准差为1.7470528796836184。"
+    ],
+    "statistical_meaning": [
+      "方差解释比例等于对应主成分标准差的平方除以所有主成分标准差的平方和。",
+      "第一主成分方差解释比例约为0.222，第二主成分约为0.173。"
+    ],
+    "biological_interpretation": [
+      "前两个主成分合计解释约39.5%的变异，可能反映样本间的主要生物学差异。",
+      "但需结合载荷和分组信息才能解释具体生物学意义。"
+    ],
+    "uncertainty": [
+      "未提供样本分组、批次或协变量信息，无法评估混杂影响。",
+      "未提供主成分载荷，无法判断哪些变量驱动了主成分。"
+    ],
+    "cannot_conclude": [
+      "不能确定前两个主成分是否对应特定的生物学过程或处理效应。",
+      "不能判断该降维结果是否具有统计学显著性。"
+    ],
+    "learning_questions": [
+      "如何计算主成分的方差解释比例？",
+      "如何利用载荷矩阵解释主成分的生物学含义？"
+    ],
+    "evidence_used": [],
+    "claims": [
+      {
+        "id": "claim_1",
+        "text": "观测数为12。",
+        "fact": "n_observations",
+        "value": 12,
+        "evidence": []
+      },
+      {
+        "id": "claim_2",
+        "text": "变量数为21。",
+        "fact": "n_variables",
+        "value": 21,
+        "evidence": []
+      },
+      {
+        "id": "claim_3",
+        "text": "第一主成分方差解释比例约为0.222。",
+        "fact": "variance_explained.1",
+        "value": "0.222",
+        "evidence": []
+      },
+      {
+        "id": "claim_4",
+        "text": "第二主成分方差解释比例约为0.173。",
+        "fact": "variance_explained.2",
+        "value": "0.173",
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "fail",
+    "findings": [
+      {
+        "claim": "claim_1",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_observations = 12"
+      },
+      {
+        "claim": "claim_2",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_variables = 21"
+      },
+      {
+        "claim": "claim_3",
+        "check": "value",
+        "status": "fail",
+        "detail": "claimed 0.222 but variance_explained.1 = 0.200123"
+      },
+      {
+        "claim": "claim_4",
+        "check": "value",
+        "status": "fail",
+        "detail": "claimed 0.173 but variance_explained.2 = 0.155486"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_observations",
+      "expected": 12,
+      "value": 12,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_variables",
+      "expected": 21,
+      "value": 21,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "variance_explained.1",
+      "expected": 0.20012286953371852,
+      "value": "0.222",
+      "answered": true,
+      "correct": false
+    },
+    {
+      "fact": "variance_explained.2",
+      "expected": 0.15548567113306785,
+      "value": "0.173",
+      "answered": true,
+      "correct": false
+    }
+  ],
+  "prompt_chars": 1470
+}

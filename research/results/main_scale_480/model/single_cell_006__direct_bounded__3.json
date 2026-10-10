@@ -1,0 +1,169 @@
+{
+  "case": "single_cell_006",
+  "family": "single_cell",
+  "method": "direct_bounded",
+  "replicate": 3,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:23:57 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"数据矩阵维度为31行42列。\",\n    \"assay类型为counts。\",\n    \"不同样本数为1。\"\n  ],\n  \"statistical_meaning\": [\n    \"31行通常对应特征数，42列对应细胞数。\",\n    \"counts表示原始计数矩阵。\",\n    \"n_distinct_samples为1表示样本标签无区分。\"\n  ],\n  \"biological_interpretation\": [\n    \"该数据可能为单细胞计数矩阵。\",\n    \"仅一个样本标签，无法进行样本间比较。\",\n    \"特征数31较少，可能为靶向或过滤后数据。\"\n  ],\n  \"uncertainty\": [\n    \"无法确认31行是否一定为特征、42列是否一定为细胞。\",\n    \"样本标签无区分可能由元数据缺失导致。\"\n  ],\n  \"cannot_conclude\": [\n    \"无法确定n_cells，因为未提供细胞数事实路径。\",\n    \"无法确定n_features，因为未提供特征数事实路径。\",\n    \"无法确定n_samples，因为未提供样本数事实路径。\"\n  ],\n  \"learning_questions\": [\n    \"如何从dim和n_distinct_samples推断单细胞数据的基本结构？\",\n    \"为什么样本标签无区分会影响差异表达分析？\",\n    \"counts assay与标准化表达矩阵有何区别？\"\n  ],\n  \"evidence_used\": [\n    \"dim\",\n    \"assays\",\n    \"n_distinct_samples\"\n  ],\n  \"claims\": [\n    {\n      \"id\": \"claim_n_cells\",\n      \"text\": \"n_cells无法从输入确定。\",\n      \"fact\": \"n_cells\",\n      \"value\": null,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_n_features\",\n      \"text\": \"n_features无法从输入确定。\",\n      \"fact\": \"n_features\",\n      \"value\": null,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_n_samples\",\n      \"text\": \"n_samples无法从输入确定。\",\n      \"fact\": \"n_samples\",\n      \"value\": null,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_assays\",\n      \"text\": \"assays为counts。\",\n      \"fact\": \"assays\",\n      \"value\": \"counts\",\n      \"evidence\": [\n        \"assays\"\n      ]\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 316,
+      "completion_tokens": 520,
+      "total_tokens": 836,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 188
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.75
+  },
+  "parsed": {
+    "data_facts": [
+      "数据矩阵维度为31行42列。",
+      "assay类型为counts。",
+      "不同样本数为1。"
+    ],
+    "statistical_meaning": [
+      "31行通常对应特征数，42列对应细胞数。",
+      "counts表示原始计数矩阵。",
+      "n_distinct_samples为1表示样本标签无区分。"
+    ],
+    "biological_interpretation": [
+      "该数据可能为单细胞计数矩阵。",
+      "仅一个样本标签，无法进行样本间比较。",
+      "特征数31较少，可能为靶向或过滤后数据。"
+    ],
+    "uncertainty": [
+      "无法确认31行是否一定为特征、42列是否一定为细胞。",
+      "样本标签无区分可能由元数据缺失导致。"
+    ],
+    "cannot_conclude": [
+      "无法确定n_cells，因为未提供细胞数事实路径。",
+      "无法确定n_features，因为未提供特征数事实路径。",
+      "无法确定n_samples，因为未提供样本数事实路径。"
+    ],
+    "learning_questions": [
+      "如何从dim和n_distinct_samples推断单细胞数据的基本结构？",
+      "为什么样本标签无区分会影响差异表达分析？",
+      "counts assay与标准化表达矩阵有何区别？"
+    ],
+    "evidence_used": [
+      "dim",
+      "assays",
+      "n_distinct_samples"
+    ],
+    "claims": [
+      {
+        "id": "claim_n_cells",
+        "text": "n_cells无法从输入确定。",
+        "fact": "n_cells",
+        "value": null,
+        "evidence": []
+      },
+      {
+        "id": "claim_n_features",
+        "text": "n_features无法从输入确定。",
+        "fact": "n_features",
+        "value": null,
+        "evidence": []
+      },
+      {
+        "id": "claim_n_samples",
+        "text": "n_samples无法从输入确定。",
+        "fact": "n_samples",
+        "value": null,
+        "evidence": []
+      },
+      {
+        "id": "claim_assays",
+        "text": "assays为counts。",
+        "fact": "assays",
+        "value": "counts",
+        "evidence": [
+          "assays"
+        ]
+      }
+    ]
+  },
+  "validation": {
+    "status": "fail",
+    "findings": [
+      {
+        "claim": "(evidence_used)",
+        "check": "evidence_ids",
+        "status": "fail",
+        "detail": "unknown evidence id(s): dim, assays, n_distinct_samples (no evidence list was supplied)"
+      },
+      {
+        "claim": "claim_n_cells",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_n_features",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_n_samples",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_assays",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      },
+      {
+        "claim": "claim_assays",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: assays"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_cells",
+      "expected": 42,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "n_features",
+      "expected": 31,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "n_samples",
+      "expected": 1,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "assays",
+      "expected": "counts",
+      "value": "counts",
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 1204
+}

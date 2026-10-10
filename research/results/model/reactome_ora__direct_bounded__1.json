@@ -1,0 +1,168 @@
+{
+  "case": "reactome_ora",
+  "method": "direct_bounded",
+  "replicate": 1,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-03 19:42:05 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"输入数据包含1104行、8列，但仅提供了10行完整结果。\",\n    \"提供的10行中，只有1个通路满足padj<0.05。\",\n    \"分析类型提示为enrichment_ora，但未明确具体方法。\"\n  ],\n  \"statistical_meaning\": [\n    \"n_terms指富集分析中检验的通路总数，但数据不完整无法确定。\",\n    \"n_significant指满足显著性阈值（padj<0.05）的通路数，基于提供行可计算为1。\",\n    \"enrichment_method需从分析类型推断，但未明确指定。\"\n  ],\n  \"biological_interpretation\": [\n    \"显著通路为IL-4和IL-13信号，提示2型免疫反应可能激活。\",\n    \"其他通路p.adjust均大于0.05，无统计学显著性。\",\n    \"由于数据不完整，无法全面解释生物学意义。\"\n  ],\n  \"uncertainty\": [\n    \"rows_complete为false，总通路数未知。\",\n    \"n_significant可能因缺失行而低估。\",\n    \"enrichment_method未明确，可能为ORA。\"\n  ],\n  \"cannot_conclude\": [\n    \"无法确定总检验通路数n_terms。\",\n    \"无法确认n_significant是否为最终值。\",\n    \"无法确定具体的富集分析方法。\"\n  ],\n  \"learning_questions\": [\n    \"如何从不完整的富集结果中估计总通路数？\",\n    \"ORA与GSEA在结果解读上有何区别？\",\n    \"为什么需要报告所有检验通路而不仅是显著通路？\"\n  ],\n  \"evidence_used\": [\n    \"dim\",\n    \"provided_rows\",\n    \"rows_complete\",\n    \"analysis_type_hint\"\n  ],\n  \"claims\": [\n    {\n      \"id\": \"claim_n_terms\",\n      \"text\": \"总检验通路数无法从提供的数据中确定。\",\n      \"fact\": \"n_terms\",\n      \"value\": null,\n      \"evidence\": [\n        \"dim\",\n        \"rows_complete\"\n      ]\n    },\n    {\n      \"id\": \"claim_n_significant\",\n      \"text\": \"基于提供的10行，满足padj<0.05的通路数为1。\",\n      \"fact\": \"n_significant\",\n      \"value\": 1,\n      \"evidence\": [\n        \"provided_rows\"\n      ]\n    },\n    {\n      \"id\": \"claim_enrichment_method\",\n      \"text\": \"富集分析方法未明确指定，但分析类型提示为ORA。\",\n      \"fact\": \"enrichment_method\",\n      \"value\": null,\n      \"evidence\": [\n        \"analysis_type_hint\"\n      ]\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 924,
+      "completion_tokens": 595,
+      "total_tokens": 1519,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 924
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.88
+  },
+  "parsed": {
+    "data_facts": [
+      "输入数据包含1104行、8列，但仅提供了10行完整结果。",
+      "提供的10行中，只有1个通路满足padj<0.05。",
+      "分析类型提示为enrichment_ora，但未明确具体方法。"
+    ],
+    "statistical_meaning": [
+      "n_terms指富集分析中检验的通路总数，但数据不完整无法确定。",
+      "n_significant指满足显著性阈值（padj<0.05）的通路数，基于提供行可计算为1。",
+      "enrichment_method需从分析类型推断，但未明确指定。"
+    ],
+    "biological_interpretation": [
+      "显著通路为IL-4和IL-13信号，提示2型免疫反应可能激活。",
+      "其他通路p.adjust均大于0.05，无统计学显著性。",
+      "由于数据不完整，无法全面解释生物学意义。"
+    ],
+    "uncertainty": [
+      "rows_complete为false，总通路数未知。",
+      "n_significant可能因缺失行而低估。",
+      "enrichment_method未明确，可能为ORA。"
+    ],
+    "cannot_conclude": [
+      "无法确定总检验通路数n_terms。",
+      "无法确认n_significant是否为最终值。",
+      "无法确定具体的富集分析方法。"
+    ],
+    "learning_questions": [
+      "如何从不完整的富集结果中估计总通路数？",
+      "ORA与GSEA在结果解读上有何区别？",
+      "为什么需要报告所有检验通路而不仅是显著通路？"
+    ],
+    "evidence_used": [
+      "dim",
+      "provided_rows",
+      "rows_complete",
+      "analysis_type_hint"
+    ],
+    "claims": [
+      {
+        "id": "claim_n_terms",
+        "text": "总检验通路数无法从提供的数据中确定。",
+        "fact": "n_terms",
+        "value": null,
+        "evidence": [
+          "dim",
+          "rows_complete"
+        ]
+      },
+      {
+        "id": "claim_n_significant",
+        "text": "基于提供的10行，满足padj<0.05的通路数为1。",
+        "fact": "n_significant",
+        "value": 1,
+        "evidence": [
+          "provided_rows"
+        ]
+      },
+      {
+        "id": "claim_enrichment_method",
+        "text": "富集分析方法未明确指定，但分析类型提示为ORA。",
+        "fact": "enrichment_method",
+        "value": null,
+        "evidence": [
+          "analysis_type_hint"
+        ]
+      }
+    ]
+  },
+  "validation": {
+    "status": "fail",
+    "findings": [
+      {
+        "claim": "(evidence_used)",
+        "check": "evidence_ids",
+        "status": "fail",
+        "detail": "unknown evidence id(s): dim, provided_rows, rows_complete, analysis_type_hint (no evidence list was supplied)"
+      },
+      {
+        "claim": "claim_n_terms",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_n_terms",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: dim, rows_complete"
+      },
+      {
+        "claim": "claim_n_significant",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_significant = 1"
+      },
+      {
+        "claim": "claim_n_significant",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: provided_rows"
+      },
+      {
+        "claim": "claim_enrichment_method",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_enrichment_method",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: analysis_type_hint"
+      }
+    ],
+    "n_claims": 3,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_terms",
+      "expected": 1104,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "n_significant",
+      "expected": 1,
+      "value": 1,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "enrichment_method",
+      "expected": "ORA",
+      "value": null,
+      "answered": false,
+      "correct": false
+    }
+  ],
+  "prompt_chars": 2926,
+  "validation_rechecked_utc": "2026-10-03 20:09:20 UTC"
+}

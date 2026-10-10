@@ -1,0 +1,172 @@
+{
+  "case": "cell_composition_010",
+  "family": "cell_composition",
+  "method": "direct_bounded",
+  "replicate": 3,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:24:16 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"输入提供了细胞数168、样本数6和聚类数3。\",\n    \"未提供分组数或实际用于分析的细胞数。\"\n  ],\n  \"statistical_meaning\": [\n    \"n_cells、n_samples和n_clusters分别表示细胞总数、样本总数和聚类总数。\",\n    \"n_cells_used和n_groups未在输出中给出，无法计算。\"\n  ],\n  \"biological_interpretation\": [\n    \"168个细胞来自6个样本，并划分为3个聚类。\",\n    \"缺少分组信息，无法判断实验条件或比较组。\"\n  ],\n  \"uncertainty\": [\n    \"n_cells_used可能不等于n_cells，但输入未说明过滤标准。\",\n    \"n_groups可能由样本元数据决定，但未提供。\"\n  ],\n  \"cannot_conclude\": [\n    \"无法确定实际用于分析的细胞数。\",\n    \"无法确定分组数量。\"\n  ],\n  \"learning_questions\": [\n    \"n_cells_used是否指经过质控过滤后保留的细胞数？\",\n    \"n_groups是否对应样本的生物学分组或处理条件？\"\n  ],\n  \"evidence_used\": [\n    \"n_cells\",\n    \"n_samples\",\n    \"n_clusters\"\n  ],\n  \"claims\": [\n    {\n      \"id\": \"claim_1\",\n      \"text\": \"实际用于分析的细胞数未提供。\",\n      \"fact\": \"n_cells_used\",\n      \"value\": null,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_2\",\n      \"text\": \"样本数为6。\",\n      \"fact\": \"n_samples\",\n      \"value\": 6,\n      \"evidence\": [\n        \"n_samples\"\n      ]\n    },\n    {\n      \"id\": \"claim_3\",\n      \"text\": \"聚类数为3。\",\n      \"fact\": \"n_clusters\",\n      \"value\": 3,\n      \"evidence\": [\n        \"n_clusters\"\n      ]\n    },\n    {\n      \"id\": \"claim_4\",\n      \"text\": \"分组数未提供。\",\n      \"fact\": \"n_groups\",\n      \"value\": null,\n      \"evidence\": []\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 318,
+      "completion_tokens": 487,
+      "total_tokens": 805,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 190
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.4900000000000002
+  },
+  "parsed": {
+    "data_facts": [
+      "输入提供了细胞数168、样本数6和聚类数3。",
+      "未提供分组数或实际用于分析的细胞数。"
+    ],
+    "statistical_meaning": [
+      "n_cells、n_samples和n_clusters分别表示细胞总数、样本总数和聚类总数。",
+      "n_cells_used和n_groups未在输出中给出，无法计算。"
+    ],
+    "biological_interpretation": [
+      "168个细胞来自6个样本，并划分为3个聚类。",
+      "缺少分组信息，无法判断实验条件或比较组。"
+    ],
+    "uncertainty": [
+      "n_cells_used可能不等于n_cells，但输入未说明过滤标准。",
+      "n_groups可能由样本元数据决定，但未提供。"
+    ],
+    "cannot_conclude": [
+      "无法确定实际用于分析的细胞数。",
+      "无法确定分组数量。"
+    ],
+    "learning_questions": [
+      "n_cells_used是否指经过质控过滤后保留的细胞数？",
+      "n_groups是否对应样本的生物学分组或处理条件？"
+    ],
+    "evidence_used": [
+      "n_cells",
+      "n_samples",
+      "n_clusters"
+    ],
+    "claims": [
+      {
+        "id": "claim_1",
+        "text": "实际用于分析的细胞数未提供。",
+        "fact": "n_cells_used",
+        "value": null,
+        "evidence": []
+      },
+      {
+        "id": "claim_2",
+        "text": "样本数为6。",
+        "fact": "n_samples",
+        "value": 6,
+        "evidence": [
+          "n_samples"
+        ]
+      },
+      {
+        "id": "claim_3",
+        "text": "聚类数为3。",
+        "fact": "n_clusters",
+        "value": 3,
+        "evidence": [
+          "n_clusters"
+        ]
+      },
+      {
+        "id": "claim_4",
+        "text": "分组数未提供。",
+        "fact": "n_groups",
+        "value": null,
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "fail",
+    "findings": [
+      {
+        "claim": "(evidence_used)",
+        "check": "evidence_ids",
+        "status": "fail",
+        "detail": "unknown evidence id(s): n_cells, n_samples, n_clusters (no evidence list was supplied)"
+      },
+      {
+        "claim": "claim_1",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_2",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_samples = 6"
+      },
+      {
+        "claim": "claim_2",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: n_samples"
+      },
+      {
+        "claim": "claim_3",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_clusters = 3"
+      },
+      {
+        "claim": "claim_3",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: n_clusters"
+      },
+      {
+        "claim": "claim_4",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_cells_used",
+      "expected": 168,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "n_samples",
+      "expected": 6,
+      "value": 6,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_clusters",
+      "expected": 3,
+      "value": 3,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_groups",
+      "expected": 2,
+      "value": null,
+      "answered": false,
+      "correct": false
+    }
+  ],
+  "prompt_chars": 1198
+}

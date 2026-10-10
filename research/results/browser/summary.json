@@ -1,0 +1,50 @@
+{
+  "url": "http://127.0.0.1:3876",
+  "steps": [
+    "settings-loaded",
+    "recorded-code-execution",
+    "real-DESeq2-explanation",
+    "HTML-report-download",
+    "PCA-plot-render-and-workspace-save",
+    "PCA-source-cross-check",
+    "DeepSeek-browser-explanation",
+    "pbmc_sce-explanation",
+    "pbmc_seurat-explanation",
+    "two-browser-session-isolation",
+    "mobile-no-horizontal-overflow"
+  ],
+  "screenshots": [
+    {
+      "name": "desktop-settings",
+      "width": 1440,
+      "height": 1000,
+      "nonwhite": 6320,
+      "colours": 1762
+    },
+    {
+      "name": "desktop-plot",
+      "width": 1440,
+      "height": 1000,
+      "nonwhite": 4499,
+      "colours": 1418
+    },
+    {
+      "name": "desktop-analysis",
+      "width": 1440,
+      "height": 1686,
+      "nonwhite": 11147,
+      "colours": 927
+    },
+    {
+      "name": "mobile-code",
+      "width": 390,
+      "height": 1023,
+      "nonwhite": 4319,
+      "colours": 1460
+    }
+  ],
+  "plotColouredPixels": 1816,
+  "errors": [],
+  "failedAssets": [],
+  "status": "pass"
+}

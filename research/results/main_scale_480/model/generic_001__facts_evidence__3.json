@@ -1,0 +1,160 @@
+{
+  "case": "generic_001",
+  "family": "generic",
+  "method": "facts_evidence",
+  "replicate": 3,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:28:07 UTC",
+  "response": {
+    "text": "{\"data_facts\": [\"该对象是一个 data.frame（普通 list 结构，非 S4 对象）。\", \"对象大小为 1.2 Kb，维度为 11 行 × 4 列，四列均为整数型。\", \"分析未提供物种信息，也没有针对该对象类型的专用适配器。\"], \"statistical_meaning\": [\"当前只输出结构摘要，没有进行差异表达、富集或统计检验。\", \"阈值 padj=0.05、p=0.05、lfc=0 已设定，但没有任何结果与之比较。\", \"因此不存在可报告的统计量、p 值或效应量。\"], \"biological_interpretation\": [\"在缺少物种、分组与基因注释的情况下，无法给出可靠的生物学解释。\", \"文献检索仅命中一篇关于 CRISPLD2 与糖皮质激素应答的 RNA-Seq 研究（EuropePMC:MED:24926665），这只能说明检索词匹配，不能支持任何具体生物学结论。\", \"任何基因功能或通路层面的说法都只能作为待验证假设。\"], \"uncertainty\": [\"没有专用适配器，仅得到结构摘要，无法判断数据内容含义。\", \"未提供物种，生物学解释需用户确认物种背景。\", \"文献命中不代表其结论支持本数据集的任何论断。\"], \"cannot_conclude\": [\"不能得出任何基因差异表达或富集结论。\", \"不能判断上/下调方向、显著性大小或效应量。\", \"不能推断样本分组、重复关系或临床意义。\"], \"learning_questions\": [\"这个 data.frame 的 4 列分别代表什么变量？\", \"11 行是基因、样本还是其他单位？\", \"研究物种和实验设计是什么，是否设置了生物学重复？\"], \"evidence_used\": [\"EuropePMC:MED:24926665\"], \"claims\": [{\"id\": \"c1\", \"text\": \"对象类别为 data.frame。\", \"fact\": \"class\", \"value\": \"data.frame\", \"evidence\": []}, {\"id\": \"c2\", \"text\": \"对象类型为 list。\", \"fact\": \"type\", \"value\": \"list\", \"evidence\": []}, {\"id\": \"c3\", \"text\": \"该对象不是 S4 对象。\", \"fact\": \"is_s4\", \"value\": false, \"evidence\": []}, {\"id\": \"c4\", \"text\": \"对象大小为 1.2 Kb。\", \"fact\": \"size\", \"value\": \"1.2 Kb\", \"evidence\": []}]}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 977,
+      "completion_tokens": 544,
+      "total_tokens": 1521,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 209
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 3
+  },
+  "parsed": {
+    "data_facts": [
+      "该对象是一个 data.frame（普通 list 结构，非 S4 对象）。",
+      "对象大小为 1.2 Kb，维度为 11 行 × 4 列，四列均为整数型。",
+      "分析未提供物种信息，也没有针对该对象类型的专用适配器。"
+    ],
+    "statistical_meaning": [
+      "当前只输出结构摘要，没有进行差异表达、富集或统计检验。",
+      "阈值 padj=0.05、p=0.05、lfc=0 已设定，但没有任何结果与之比较。",
+      "因此不存在可报告的统计量、p 值或效应量。"
+    ],
+    "biological_interpretation": [
+      "在缺少物种、分组与基因注释的情况下，无法给出可靠的生物学解释。",
+      "文献检索仅命中一篇关于 CRISPLD2 与糖皮质激素应答的 RNA-Seq 研究（EuropePMC:MED:24926665），这只能说明检索词匹配，不能支持任何具体生物学结论。",
+      "任何基因功能或通路层面的说法都只能作为待验证假设。"
+    ],
+    "uncertainty": [
+      "没有专用适配器，仅得到结构摘要，无法判断数据内容含义。",
+      "未提供物种，生物学解释需用户确认物种背景。",
+      "文献命中不代表其结论支持本数据集的任何论断。"
+    ],
+    "cannot_conclude": [
+      "不能得出任何基因差异表达或富集结论。",
+      "不能判断上/下调方向、显著性大小或效应量。",
+      "不能推断样本分组、重复关系或临床意义。"
+    ],
+    "learning_questions": [
+      "这个 data.frame 的 4 列分别代表什么变量？",
+      "11 行是基因、样本还是其他单位？",
+      "研究物种和实验设计是什么，是否设置了生物学重复？"
+    ],
+    "evidence_used": [
+      "EuropePMC:MED:24926665"
+    ],
+    "claims": [
+      {
+        "id": "c1",
+        "text": "对象类别为 data.frame。",
+        "fact": "class",
+        "value": "data.frame",
+        "evidence": []
+      },
+      {
+        "id": "c2",
+        "text": "对象类型为 list。",
+        "fact": "type",
+        "value": "list",
+        "evidence": []
+      },
+      {
+        "id": "c3",
+        "text": "该对象不是 S4 对象。",
+        "fact": "is_s4",
+        "value": false,
+        "evidence": []
+      },
+      {
+        "id": "c4",
+        "text": "对象大小为 1.2 Kb。",
+        "fact": "size",
+        "value": "1.2 Kb",
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "(evidence_used)",
+        "check": "evidence_ids",
+        "status": "pass",
+        "detail": "all cited evidence ids were supplied"
+      },
+      {
+        "claim": "c1",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      },
+      {
+        "claim": "c2",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      },
+      {
+        "claim": "c3",
+        "check": "value",
+        "status": "pass",
+        "detail": "is_s4 = 0"
+      },
+      {
+        "claim": "c4",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "class",
+      "expected": "data.frame",
+      "value": "data.frame",
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "type",
+      "expected": "list",
+      "value": "list",
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "is_s4",
+      "expected": false,
+      "value": false,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "size",
+      "expected": "1.2 Kb",
+      "value": "1.2 Kb",
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 3787
+}

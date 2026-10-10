@@ -1,0 +1,2057 @@
+{
+  "status": "pass",
+  "docx_paragraphs": 219,
+  "references": 38,
+  "appendix_figures": 4,
+  "supplementary_figures": 15,
+  "appendix_tables": [
+    {
+      "id": "1",
+      "rows": 11,
+      "word_excel_identical": true
+    },
+    {
+      "id": "2",
+      "rows": 3,
+      "word_excel_identical": true
+    },
+    {
+      "id": "3",
+      "rows": 8,
+      "word_excel_identical": true
+    },
+    {
+      "id": "4",
+      "rows": 6,
+      "word_excel_identical": true
+    },
+    {
+      "id": "5",
+      "rows": 5,
+      "word_excel_identical": true
+    },
+    {
+      "id": "6",
+      "rows": 11,
+      "word_excel_identical": true
+    },
+    {
+      "id": "7",
+      "rows": 16,
+      "word_excel_identical": true
+    },
+    {
+      "id": "8",
+      "rows": 480,
+      "word_excel_identical": true
+    },
+    {
+      "id": "S1",
+      "rows": 3,
+      "word_excel_identical": true
+    },
+    {
+      "id": "S2",
+      "rows": 5,
+      "word_excel_identical": true
+    },
+    {
+      "id": "S3",
+      "rows": 6,
+      "word_excel_identical": true
+    },
+    {
+      "id": "S4",
+      "rows": 2,
+      "word_excel_identical": true
+    },
+    {
+      "id": "S5",
+      "rows": 15,
+      "word_excel_identical": true
+    }
+  ],
+  "supplementary_tables": 4,
+  "figure_pdfs": [
+    {
+      "file": "Figure_1A_framework.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "width": 432.0,
+          "height": 316.8,
+          "lines": 24,
+          "images": 0,
+          "first_text": [
+            "A",
+            "Evidence-constrained workflow"
+          ],
+          "last_text": [
+            "source states retained",
+            "Full matrices stay in R; only bounded summaries cross the model interface."
+          ],
+          "outside_text": []
+        }
+      ],
+      "fonts_embedded": true
+    },
+    {
+      "file": "Figure_1B_framework.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "width": 432.0,
+          "height": 316.8,
+          "lines": 16,
+          "images": 0,
+          "first_text": [
+            "B",
+            "Data contract"
+          ],
+          "last_text": [
+            "Not delegated: full-table counting, statistical testing, raw-matrix access",
+            "Evidence retrieval is explicit opt-in and does not establish claim support."
+          ],
+          "outside_text": []
+        }
+      ],
+      "fonts_embedded": true
+    },
+    {
+      "file": "Figure_1C_framework.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "width": 432.0,
+          "height": 316.8,
+          "lines": 12,
+          "images": 0,
+          "first_text": [
+            "C",
+            "Validation states"
+          ],
+          "last_text": [
+            "no explicit machine-checkable claim",
+            "Facts, provenance, model wording and check status stay separate in reports."
+          ],
+          "outside_text": []
+        }
+      ],
+      "fonts_embedded": true
+    },
+    {
+      "file": "Figure_1D_framework.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "width": 432.0,
+          "height": 316.8,
+          "lines": 12,
+          "images": 0,
+          "first_text": [
+            "D",
+            "Local workbench"
+          ],
+          "last_text": [
+            "PCA / UMAP / enrichment",
+            "Per-browser session: state is retained locally; model never executes code."
+          ],
+          "outside_text": []
+        }
+      ],
+      "fonts_embedded": true
+    },
+    {
+      "file": "Figure_1_architecture.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "width": 864.0,
+          "height": 619.2,
+          "lines": 64,
+          "images": 0,
+          "first_text": [
+            "A",
+            "Evidence-constrained workflow"
+          ],
+          "last_text": [
+            "PCA / UMAP / enrichment",
+            "Per-browser session: state is retained locally; model never executes code."
+          ],
+          "outside_text": []
+        }
+      ],
+      "fonts_embedded": true
+    },
+    {
+      "file": "Figure_2A_overall.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "width": 388.8,
+          "height": 345.6,
+          "lines": 20,
+          "images": 0,
+          "first_text": [
+            "Bounded raw",
+            "output"
+          ],
+          "last_text": [
+            "(100.0%)",
+            "Overall matching"
+          ],
+          "outside_text": []
+        }
+      ],
+      "fonts_embedded": true
+    },
+    {
+      "file": "Figure_2B_rounds.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "width": 388.8,
+          "height": 345.6,
+          "lines": 23,
+          "images": 0,
+          "first_text": [
+            "Round 1",
+            "Round 2"
+          ],
+          "last_text": [
+            "R facts only",
+            "R facts + evidence"
+          ],
+          "outside_text": []
+        }
+      ],
+      "fonts_embedded": true
+    },
+    {
+      "file": "Figure_2C_case_heatmap.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "width": 460.8,
+          "height": 345.6,
+          "lines": 39,
+          "images": 2,
+          "first_text": [
+            "Bounded raw",
+            "output"
+          ],
+          "last_text": [
+            "100",
+            "Matching rate (%)"
+          ],
+          "outside_text": []
+        }
+      ],
+      "fonts_embedded": true
+    },
+    {
+      "file": "Figure_2D_latency.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "width": 388.8,
+          "height": 345.6,
+          "lines": 16,
+          "images": 0,
+          "first_text": [
+            "Bounded raw",
+            "R facts"
+          ],
+          "last_text": [
+            "2.91",
+            "Request cost in time"
+          ],
+          "outside_text": []
+        }
+      ],
+      "fonts_embedded": true
+    },
+    {
+      "file": "Figure_2_ablation.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "width": 864.0,
+          "height": 626.4,
+          "lines": 97,
+          "images": 2,
+          "first_text": [
+            "Bounded raw",
+            "output"
+          ],
+          "last_text": [
+            "100",
+            "Matching rate (%)"
+          ],
+          "outside_text": []
+        }
+      ],
+      "fonts_embedded": true
+    },
+    {
+      "file": "Figure_3A_scores.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "width": 403.2,
+          "height": 324.0,
+          "lines": 20,
+          "images": 0,
+          "first_text": [
+            "-15",
+            "-10"
+          ],
+          "last_text": [
+            "untrt",
+            "trt"
+          ],
+          "outside_text": []
+        }
+      ],
+      "fonts_embedded": true
+    },
+    {
+      "file": "Figure_3B_pair_shift.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "width": 403.2,
+          "height": 324.0,
+          "lines": 22,
+          "images": 0,
+          "first_text": [
+            "-15",
+            "-10"
+          ],
+          "last_text": [
+            "D03",
+            "D04"
+          ],
+          "outside_text": []
+        }
+      ],
+      "fonts_embedded": true
+    },
+    {
+      "file": "Figure_3C_variance.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "width": 403.2,
+          "height": 324.0,
+          "lines": 15,
+          "images": 0,
+          "first_text": [
+            "PC1",
+            "PC2"
+          ],
+          "last_text": [
+            "47.8%",
+            "23.4%"
+          ],
+          "outside_text": []
+        }
+      ],
+      "fonts_embedded": true
+    },
+    {
+      "file": "Figure_3D_design.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "width": 403.2,
+          "height": 324.0,
+          "lines": 11,
+          "images": 0,
+          "first_text": [
+            "D Analysis design",
+            "Observed compatibility example, not a treatment efficacy test"
+          ],
+          "last_text": [
+            "paired design",
+            "No inference from visual separation is claimed."
+          ],
+          "outside_text": []
+        }
+      ],
+      "fonts_embedded": true
+    },
+    {
+      "file": "Figure_3_airway_PCA.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "width": 849.6,
+          "height": 633.6,
+          "lines": 68,
+          "images": 0,
+          "first_text": [
+            "-15",
+            "-10"
+          ],
+          "last_text": [
+            "paired design",
+            "No inference from visual separation is claimed."
+          ],
+          "outside_text": []
+        }
+      ],
+      "fonts_embedded": true
+    },
+    {
+      "file": "Figure_4A_embedding.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "width": 403.2,
+          "height": 324.0,
+          "lines": 17,
+          "images": 0,
+          "first_text": [
+            "-15",
+            "-10"
+          ],
+          "last_text": [
+            "mt <= 5%",
+            "mt > 5%"
+          ],
+          "outside_text": []
+        }
+      ],
+      "fonts_embedded": true
+    },
+    {
+      "file": "Figure_4B_qc_counts.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "width": 403.2,
+          "height": 324.0,
+          "lines": 15,
+          "images": 0,
+          "first_text": [
+            "mt <= 5%",
+            "mt > 5%"
+          ],
+          "last_text": [
+            "2,643",
+            "57"
+          ],
+          "outside_text": []
+        }
+      ],
+      "fonts_embedded": true
+    },
+    {
+      "file": "Figure_4C_qc_intervals.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "width": 403.2,
+          "height": 324.0,
+          "lines": 12,
+          "images": 0,
+          "first_text": [
+            "0",
+            "2500"
+          ],
+          "last_text": [
+            "median 817 genes",
+            "median 2.03 %"
+          ],
+          "outside_text": []
+        }
+      ],
+      "fonts_embedded": true
+    },
+    {
+      "file": "Figure_4D_scope.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "width": 403.2,
+          "height": 324.0,
+          "lines": 11,
+          "images": 0,
+          "first_text": [
+            "D Scope of the example",
+            "Compatibility and summarisation, not cell-type validation"
+          ],
+          "last_text": [
+            "cell-type labels",
+            "UMAP is an exploratory embedding; cells are not independent donors."
+          ],
+          "outside_text": []
+        }
+      ],
+      "fonts_embedded": true
+    },
+    {
+      "file": "Figure_4_PBMC3k_UMAP.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "width": 849.6,
+          "height": 633.6,
+          "lines": 59,
+          "images": 0,
+          "first_text": [
+            "-15",
+            "-10"
+          ],
+          "last_text": [
+            "cell-type labels",
+            "UMAP is an exploratory embedding; cells are not independent donors."
+          ],
+          "outside_text": []
+        }
+      ],
+      "fonts_embedded": true
+    },
+    {
+      "file": "Figure_S1A_workbench.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "width": 432.0,
+          "height": 324.0,
+          "lines": 3,
+          "images": 1,
+          "first_text": [
+            "A",
+            "Settings"
+          ],
+          "last_text": [
+            "Settings",
+            "Model and language controls"
+          ],
+          "outside_text": []
+        }
+      ],
+      "fonts_embedded": true
+    },
+    {
+      "file": "Figure_S1B_workbench.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "width": 432.0,
+          "height": 324.0,
+          "lines": 3,
+          "images": 1,
+          "first_text": [
+            "B",
+            "Plot"
+          ],
+          "last_text": [
+            "Plot",
+            "Generated PCA saved to session"
+          ],
+          "outside_text": []
+        }
+      ],
+      "fonts_embedded": true
+    },
+    {
+      "file": "Figure_S1C_workbench.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "width": 432.0,
+          "height": 324.0,
+          "lines": 2,
+          "images": 1,
+          "first_text": [
+            "C Analysis",
+            "Facts, wording and validation states"
+          ],
+          "last_text": [
+            "C Analysis",
+            "Facts, wording and validation states"
+          ],
+          "outside_text": []
+        }
+      ],
+      "fonts_embedded": true
+    },
+    {
+      "file": "Figure_S1D_workbench.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "width": 432.0,
+          "height": 324.0,
+          "lines": 16,
+          "images": 0,
+          "first_text": [
+            "D",
+            "Workflow"
+          ],
+          "last_text": [
+            "Download report",
+            "Workflow record; not a user-study usability score."
+          ],
+          "outside_text": []
+        }
+      ],
+      "fonts_embedded": true
+    },
+    {
+      "file": "Figure_S1_workbench.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "width": 864.0,
+          "height": 633.6,
+          "lines": 24,
+          "images": 3,
+          "first_text": [
+            "A",
+            "Settings"
+          ],
+          "last_text": [
+            "Download report",
+            "Workflow record; not a user-study usability score."
+          ],
+          "outside_text": []
+        }
+      ],
+      "fonts_embedded": true
+    },
+    {
+      "file": "Figure_S2A_pasilla_PCA.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "width": 374.4,
+          "height": 331.2,
+          "lines": 21,
+          "images": 0,
+          "first_text": [
+            "-7.5",
+            "-5.0"
+          ],
+          "last_text": [
+            "untreated",
+            "treated"
+          ],
+          "outside_text": []
+        }
+      ],
+      "fonts_embedded": true
+    },
+    {
+      "file": "Figure_S2B_pasilla_volcano.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "width": 374.4,
+          "height": 331.2,
+          "lines": 16,
+          "images": 0,
+          "first_text": [
+            "-4",
+            "-2"
+          ],
+          "last_text": [
+            "−log10 adjusted P",
+            "DESeq2 treated vs untreated"
+          ],
+          "outside_text": []
+        }
+      ],
+      "fonts_embedded": true
+    },
+    {
+      "file": "Figure_S2C_pasilla_counts.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "width": 374.4,
+          "height": 331.2,
+          "lines": 15,
+          "images": 0,
+          "first_text": [
+            "Features",
+            "Significant"
+          ],
+          "last_text": [
+            "C Independent fact benchmark",
+            "P_adj < 0.05 and |log2FC| > 1"
+          ],
+          "outside_text": []
+        }
+      ],
+      "fonts_embedded": true
+    },
+    {
+      "file": "Figure_S2D_pasilla_thresholds.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "width": 374.4,
+          "height": 331.2,
+          "lines": 15,
+          "images": 0,
+          "first_text": [
+            "0.01",
+            "0.05"
+          ],
+          "last_text": [
+            "|log2FC| = 0",
+            "|log2FC| = 1"
+          ],
+          "outside_text": []
+        }
+      ],
+      "fonts_embedded": true
+    },
+    {
+      "file": "Figure_S2_pasilla.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "width": 864.0,
+          "height": 633.6,
+          "lines": 69,
+          "images": 0,
+          "first_text": [
+            "-7.5",
+            "-5.0"
+          ],
+          "last_text": [
+            "|log2FC| = 0",
+            "|log2FC| = 1"
+          ],
+          "outside_text": []
+        }
+      ],
+      "fonts_embedded": true
+    },
+    {
+      "file": "Figure_S3A_human_evaluation.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "width": 417.6,
+          "height": 324.0,
+          "lines": 15,
+          "images": 0,
+          "first_text": [
+            "0.0",
+            "0.5"
+          ],
+          "last_text": [
+            "uncertainty A External rating dimensions",
+            "Three raters × 30 cases; score range 0–2"
+          ],
+          "outside_text": []
+        }
+      ],
+      "fonts_embedded": true
+    },
+    {
+      "file": "Figure_S3B_human_evaluation.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "width": 417.6,
+          "height": 324.0,
+          "lines": 14,
+          "images": 0,
+          "first_text": [
+            "Exact",
+            "Within 1 point"
+          ],
+          "last_text": [
+            "93.8%",
+            "100.0%"
+          ],
+          "outside_text": []
+        }
+      ],
+      "fonts_embedded": true
+    },
+    {
+      "file": "Figure_S3C_human_evaluation.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "width": 417.6,
+          "height": 324.0,
+          "lines": 14,
+          "images": 0,
+          "first_text": [
+            "0",
+            "20"
+          ],
+          "last_text": [
+            "C Student-rated feature scores",
+            "30 participants; score range 0–100"
+          ],
+          "outside_text": []
+        }
+      ],
+      "fonts_embedded": true
+    },
+    {
+      "file": "Figure_S3D_human_evaluation.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "width": 417.6,
+          "height": 324.0,
+          "lines": 19,
+          "images": 0,
+          "first_text": [
+            "0",
+            "20"
+          ],
+          "last_text": [
+            "100.0%",
+            "100.0%"
+          ],
+          "outside_text": []
+        }
+      ],
+      "fonts_embedded": true
+    },
+    {
+      "file": "Figure_S3_human_evaluation.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "width": 864.0,
+          "height": 633.6,
+          "lines": 68,
+          "images": 0,
+          "first_text": [
+            "0.00",
+            "0.25"
+          ],
+          "last_text": [
+            "100.0%",
+            "100.0%"
+          ],
+          "outside_text": []
+        }
+      ],
+      "fonts_embedded": true
+    }
+  ],
+  "main_pdf_pages": [
+    {
+      "page": 1,
+      "width": 595.3,
+      "height": 841.89,
+      "lines": 34,
+      "images": 0,
+      "first_text": [
+        "BioExplainR：已有 R 生物信息学对象的确定性事实驱动与可检",
+        "查解释框架"
+      ],
+      "last_text": [
+        "BioChatter、Biomni 和 BioMaster 连接知识资源、任务规划与代码执行 [12-14]。iSEE 提供实验对象交",
+        "1"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 2,
+      "width": 595.3,
+      "height": 841.89,
+      "lines": 37,
+      "images": 0,
+      "first_text": [
+        "互探索，ellmer 提供 R 中的模型调用基础设施，llm2geneset 结合模型生成基因集与过度表示分析 [15-",
+        "17]。CASSIA、scExtract 等工作进一步扩展了单细胞标注与分析 [18,19]。这些方向与“解释已有 R 对象"
+      ],
+      "last_text": [
+        "配”写成“所有版本均已验证”。",
+        "2"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 3,
+      "width": 595.3,
+      "height": 841.89,
+      "lines": 40,
+      "images": 0,
+      "first_text": [
+        "2.3 确定性事实与分层解释",
+        "差异表达适配器从完整提供的结果计算特征数、校正 P 值缺失数、筛选数量和方向。对于校正阈值 α 与"
+      ],
+      "last_text": [
+        "充材料 S7。",
+        "3"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 4,
+      "width": 595.3,
+      "height": 841.89,
+      "lines": 36,
+      "images": 0,
+      "first_text": [
+        "默认解释语言和 Shiny 界面为 English；用户可通过 language = \"zh\" 或界面选择切换为简体中",
+        "文。primary bioinformatics researchers 可按需使用中文术语入口；语言选择只改变用户可见措辞，不"
+      ],
+      "last_text": [
+        "摘要传递和协议行为，不代表 120 个独立生物学样本。",
+        "4"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 5,
+      "width": 595.3,
+      "height": 841.89,
+      "lines": 38,
+      "images": 0,
+      "first_text": [
+        "比较三种输入：bounded raw output（direct_bounded）只提供维度、有限行或对象结构，不提供完整",
+        "目标事实；R-computed fact summary（facts_only）提供从完整输入计算的事实、来源和最多 10 行 "
+      ],
+      "last_text": [
+        "户端响应文本。上述设计评价入口兼容性和传输解析，不评价细胞类型准确率、模型质量或工具优劣。",
+        "5"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 6,
+      "width": 595.3,
+      "height": 841.89,
+      "lines": 36,
+      "images": 0,
+      "first_text": [
+        "为提供未参与 airway/PBMC3k 开发的数值基准，使用 pasilla 1.30.0 数据归档，按 DESeq2 1.42.0 的 ~ ",
+        "type + condition 设计比较 treated 与 untreated。预设 Padj 阈值 0.01、0.05、0.10 和 |log2FC| 阈值 "
+      ],
+      "last_text": [
+        "ALL ExpressionSet 读取到 12,625 个特征和 128 个样本，按 BT 字段识别 10 个观察到的分组；",
+        "6"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 7,
+      "width": 595.3,
+      "height": 841.89,
+      "lines": 36,
+      "images": 0,
+      "first_text": [
+        "bladderbatch ExpressionSet 读取到 22,283 个特征和 57 个样本，识别 3 个癌症分组和 5 个批次。五个",
+        "数据集的检查均为对象接入、确定性摘要或独立事实核对，不是跨数据集的生物学复现率或模型泛化性"
+      ],
+      "last_text": [
+        "的请求将 Facts JSON 序列化为 17 位并要求小数作为完整字符串复制；定向 PCA 测试和完整规模测试均",
+        "7"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 8,
+      "width": 595.3,
+      "height": 841.89,
+      "lines": 32,
+      "images": 0,
+      "first_text": [
+        "通过。StepFun 的最终请求关闭 response_format = json_object，以避免此前探针中的网关 JSON 格",
+        "式不稳定。"
+      ],
+      "last_text": [
+        "信息，但不能替代独立实验设计审查或真实用户对照研究。",
+        "8"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 9,
+      "width": 595.3,
+      "height": 841.89,
+      "lines": 36,
+      "images": 0,
+      "first_text": [
+        "5.2 为什么确定性事实重要",
+        "计数、方向和方差比例适合由程序精确计算。本轮结果与“先由 R 计算，再由模型组织”的设计一致："
+      ],
+      "last_text": [
+        "制与工作流层面的支持；生物学解释质量和真实用户收益仍需独立验证。",
+        "9"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 10,
+      "width": 595.3,
+      "height": 841.89,
+      "lines": 36,
+      "images": 0,
+      "first_text": [
+        "数据、代码与稿件声明",
+        "软件可用性。 BioExplainR 0.3.1，MIT 许可证，要求 R >= 4.1.0，本研究使用 R 4.3.3。源代码、安装说"
+      ],
+      "last_text": [
+        "10.1093/bioinformatics/btp616.",
+        "10"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 11,
+      "width": 595.3,
+      "height": 841.89,
+      "lines": 34,
+      "images": 0,
+      "first_text": [
+        "4. Huber W, et al. Orchestrating high-throughput genomic analysis with Bioconductor. Nat ",
+        "Methods. 2015;12:115-121. doi: 10.1038/nmeth.3252."
+      ],
+      "last_text": [
+        "67084-x.",
+        "11"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 12,
+      "width": 595.3,
+      "height": 841.89,
+      "lines": 35,
+      "images": 0,
+      "first_text": [
+        "19. Wu Y, Tang F. scExtract: leveraging large language models for fully automated single-cell RNA-",
+        "seq data annotation and prior-informed multi-dataset integration. Genome Biol. 2025;26:174. doi: "
+      ],
+      "last_text": [
+        "tar.gz.",
+        "12"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 13,
+      "width": 595.3,
+      "height": 841.89,
+      "lines": 17,
+      "images": 0,
+      "first_text": [
+        "33. McInnes L, Healy J, Melville J. UMAP: Uniform Manifold Approximation and Projection for ",
+        "Dimension Reduction. arXiv [预印本]. 2018;1802.03426. https://arxiv.org/abs/1802.03426."
+      ],
+      "last_text": [
+        "256: 74e7a300c2d2835f0dc82d70f9e90af55e7a5d248e7364a80b9e6bdd57dbafa5.",
+        "13"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 14,
+      "width": 595.3,
+      "height": 841.89,
+      "lines": 11,
+      "images": 1,
+      "first_text": [
+        "附录 A：正文引用图表",
+        "图表在本稿中集中编排，编号沿用正文引用。每张图由相关子图组成；图内采用英文标签以便后续英文"
+      ],
+      "last_text": [
+        "也不等于论断支持。",
+        "14"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 15,
+      "width": 595.3,
+      "height": 841.89,
+      "lines": 7,
+      "images": 1,
+      "first_text": [
+        "图 2 目标事实匹配消融",
+        "图 2. 120 个案例和 480 个目标事实的输入消融。 (A) 三轮总体匹配率及样本标准差；(B) 三轮匹配率轨迹，图内直"
+      ],
+      "last_text": [
+        "差棒不是置信区间。100% 是输入已包含 R 标量事实后的管道设计目标，不是模型能力上限或全文正确率。",
+        "15"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 16,
+      "width": 595.3,
+      "height": 841.89,
+      "lines": 7,
+      "images": 1,
+      "first_text": [
+        "图 3 airway PCA",
+        "图 3. airway 配对 RNA-seq 的兼容性与设计边界。 (A) 样本文库得分，颜色为处理、点形为去来源化 donor "
+      ],
+      "last_text": [
+        "趋势视为额外假设检验。",
+        "16"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 17,
+      "width": 595.3,
+      "height": 841.89,
+      "lines": 7,
+      "images": 1,
+      "first_text": [
+        "图 4 PBMC3k UMAP",
+        "图 4. 单供体 PBMC3k 的嵌入、QC 和解释边界。 (A) 细胞嵌入，颜色表示线粒体比例 <= 5% 或 > 5% 的 QC 分组；"
+      ],
+      "last_text": [
+        "胞。2,700 个细胞来自一个供体，不构成 2,700 个独立生物学重复。UMAP 不作为差异推断或注释准确率验证。",
+        "17"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 18,
+      "width": 841.89,
+      "height": 595.3,
+      "lines": 107,
+      "images": 0,
+      "first_text": [
+        "表 1 相关工具的对象接入、事实与检查能力比较",
+        "表 1. 相关工具的对象接入、事实与检查能力比较"
+      ],
+      "last_text": [
+        "来源： 论文参考文献 [8-17]；BioExplainR 0.3.1 源码和接口文档；人工设计编码，非运行评分",
+        "18"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 19,
+      "width": 595.3,
+      "height": 841.89,
+      "lines": 28,
+      "images": 0,
+      "first_text": [
+        "表 2 主实验结果",
+        "表 2. 三种输入方法的主实验结果"
+      ],
+      "last_text": [
+        "来源： research/results/main_scale_480/ablation_summary.csv；fact_scores.csv；model_calls.csv",
+        "19"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 20,
+      "width": 595.3,
+      "height": 841.89,
+      "lines": 67,
+      "images": 0,
+      "first_text": [
+        "表 3 实际对象兼容性",
+        "表 3. 所测真实对象与版本的兼容性"
+      ],
+      "last_text": [
+        "data_manifest.json；prepare_real_data.R；缓存中的真实对象",
+        "20"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 21,
+      "width": 595.3,
+      "height": 841.89,
+      "lines": 35,
+      "images": 0,
+      "first_text": [
+        "表 4 各案例目标事实评分",
+        "表 4. 六类功能家族的目标事实匹配数"
+      ],
+      "last_text": [
+        "来源： research/results/main_scale_480/family_summary.csv；fact_scores.csv；case_manifest.csv",
+        "21"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 22,
+      "width": 595.3,
+      "height": 841.89,
+      "lines": 31,
+      "images": 0,
+      "first_text": [
+        "表 5 声明验证挑战",
+        "表 5. 显式声明验证的受控挑战"
+      ],
+      "last_text": [
+        "来源： research/results/validation_ablation.csv；validation_summary.csv",
+        "22"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 23,
+      "width": 595.3,
+      "height": 841.89,
+      "lines": 56,
+      "images": 0,
+      "first_text": [
+        "表 6 图形与修复挑战",
+        "表 6. 图形来源核对与参考水平修复挑战"
+      ],
+      "last_text": [
+        "来源： research/results/plot_challenges.csv；plot_findings.json；fix_validation.json",
+        "23"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 24,
+      "width": 595.3,
+      "height": 841.89,
+      "lines": 142,
+      "images": 0,
+      "first_text": [
+        "表 7 外部评分者与功能感知评价",
+        "表 7. 外部评分者与功能感知评价"
+      ],
+      "last_text": [
+        "expert_agreement_summary.csv；human_evaluation_manifest.json",
+        "24"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 25,
+      "width": 841.89,
+      "height": 595.3,
+      "lines": 151,
+      "images": 0,
+      "first_text": [
+        "表 8 480 个目标事实逐项主实验结果",
+        "表 8. 480 个目标事实的逐项主实验结果"
+      ],
+      "last_text": [
+        "3/3",
+        "25"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 26,
+      "width": 841.89,
+      "height": 595.3,
+      "lines": 161,
+      "images": 0,
+      "first_text": [
+        "案例",
+        "功能家族"
+      ],
+      "last_text": [
+        "3/3",
+        "26"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 27,
+      "width": 841.89,
+      "height": 595.3,
+      "lines": 161,
+      "images": 0,
+      "first_text": [
+        "案例",
+        "功能家族"
+      ],
+      "last_text": [
+        "3/3",
+        "27"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 28,
+      "width": 841.89,
+      "height": 595.3,
+      "lines": 161,
+      "images": 0,
+      "first_text": [
+        "案例",
+        "功能家族"
+      ],
+      "last_text": [
+        "3/3",
+        "28"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 29,
+      "width": 841.89,
+      "height": 595.3,
+      "lines": 161,
+      "images": 0,
+      "first_text": [
+        "案例",
+        "功能家族"
+      ],
+      "last_text": [
+        "3/3",
+        "29"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 30,
+      "width": 841.89,
+      "height": 595.3,
+      "lines": 150,
+      "images": 0,
+      "first_text": [
+        "案例",
+        "功能家族"
+      ],
+      "last_text": [
+        "3/3",
+        "30"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 31,
+      "width": 841.89,
+      "height": 595.3,
+      "lines": 149,
+      "images": 0,
+      "first_text": [
+        "案例",
+        "功能家族"
+      ],
+      "last_text": [
+        "3/3",
+        "31"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 32,
+      "width": 841.89,
+      "height": 595.3,
+      "lines": 149,
+      "images": 0,
+      "first_text": [
+        "案例",
+        "功能家族"
+      ],
+      "last_text": [
+        "3/3",
+        "32"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 33,
+      "width": 841.89,
+      "height": 595.3,
+      "lines": 149,
+      "images": 0,
+      "first_text": [
+        "案例",
+        "功能家族"
+      ],
+      "last_text": [
+        "3/3",
+        "33"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 34,
+      "width": 841.89,
+      "height": 595.3,
+      "lines": 149,
+      "images": 0,
+      "first_text": [
+        "案例",
+        "功能家族"
+      ],
+      "last_text": [
+        "3/3",
+        "34"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 35,
+      "width": 841.89,
+      "height": 595.3,
+      "lines": 149,
+      "images": 0,
+      "first_text": [
+        "案例",
+        "功能家族"
+      ],
+      "last_text": [
+        "3/3",
+        "35"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 36,
+      "width": 841.89,
+      "height": 595.3,
+      "lines": 149,
+      "images": 0,
+      "first_text": [
+        "案例",
+        "功能家族"
+      ],
+      "last_text": [
+        "3/3",
+        "36"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 37,
+      "width": 841.89,
+      "height": 595.3,
+      "lines": 149,
+      "images": 0,
+      "first_text": [
+        "案例",
+        "功能家族"
+      ],
+      "last_text": [
+        "3/3",
+        "37"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 38,
+      "width": 841.89,
+      "height": 595.3,
+      "lines": 149,
+      "images": 0,
+      "first_text": [
+        "案例",
+        "功能家族"
+      ],
+      "last_text": [
+        "3/3",
+        "38"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 39,
+      "width": 841.89,
+      "height": 595.3,
+      "lines": 149,
+      "images": 0,
+      "first_text": [
+        "案例",
+        "功能家族"
+      ],
+      "last_text": [
+        "3/3",
+        "39"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 40,
+      "width": 841.89,
+      "height": 595.3,
+      "lines": 154,
+      "images": 0,
+      "first_text": [
+        "案例",
+        "功能家族"
+      ],
+      "last_text": [
+        "3/3",
+        "40"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 41,
+      "width": 841.89,
+      "height": 595.3,
+      "lines": 155,
+      "images": 0,
+      "first_text": [
+        "案例",
+        "功能家族"
+      ],
+      "last_text": [
+        "3/3",
+        "41"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 42,
+      "width": 841.89,
+      "height": 595.3,
+      "lines": 155,
+      "images": 0,
+      "first_text": [
+        "案例",
+        "功能家族"
+      ],
+      "last_text": [
+        "3/3",
+        "42"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 43,
+      "width": 841.89,
+      "height": 595.3,
+      "lines": 155,
+      "images": 0,
+      "first_text": [
+        "案例",
+        "功能家族"
+      ],
+      "last_text": [
+        "3/3",
+        "43"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 44,
+      "width": 841.89,
+      "height": 595.3,
+      "lines": 155,
+      "images": 0,
+      "first_text": [
+        "案例",
+        "功能家族"
+      ],
+      "last_text": [
+        "3/3",
+        "44"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 45,
+      "width": 841.89,
+      "height": 595.3,
+      "lines": 155,
+      "images": 0,
+      "first_text": [
+        "案例",
+        "功能家族"
+      ],
+      "last_text": [
+        "3/3",
+        "45"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 46,
+      "width": 841.89,
+      "height": 595.3,
+      "lines": 181,
+      "images": 0,
+      "first_text": [
+        "案例",
+        "功能家族"
+      ],
+      "last_text": [
+        "3/3",
+        "46"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 47,
+      "width": 841.89,
+      "height": 595.3,
+      "lines": 227,
+      "images": 0,
+      "first_text": [
+        "案例",
+        "功能家族"
+      ],
+      "last_text": [
+        "3/3",
+        "47"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 48,
+      "width": 841.89,
+      "height": 595.3,
+      "lines": 227,
+      "images": 0,
+      "first_text": [
+        "案例",
+        "功能家族"
+      ],
+      "last_text": [
+        "3/3",
+        "48"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 49,
+      "width": 841.89,
+      "height": 595.3,
+      "lines": 210,
+      "images": 0,
+      "first_text": [
+        "案例",
+        "功能家族"
+      ],
+      "last_text": [
+        "3/3",
+        "49"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 50,
+      "width": 841.89,
+      "height": 595.3,
+      "lines": 185,
+      "images": 0,
+      "first_text": [
+        "案例",
+        "功能家族"
+      ],
+      "last_text": [
+        "3/3",
+        "50"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 51,
+      "width": 841.89,
+      "height": 595.3,
+      "lines": 185,
+      "images": 0,
+      "first_text": [
+        "案例",
+        "功能家族"
+      ],
+      "last_text": [
+        "3/3",
+        "51"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 52,
+      "width": 841.89,
+      "height": 595.3,
+      "lines": 185,
+      "images": 0,
+      "first_text": [
+        "案例",
+        "功能家族"
+      ],
+      "last_text": [
+        "3/3",
+        "52"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 53,
+      "width": 841.89,
+      "height": 595.3,
+      "lines": 185,
+      "images": 0,
+      "first_text": [
+        "案例",
+        "功能家族"
+      ],
+      "last_text": [
+        "3/3",
+        "53"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 54,
+      "width": 841.89,
+      "height": 595.3,
+      "lines": 202,
+      "images": 0,
+      "first_text": [
+        "案例",
+        "功能家族"
+      ],
+      "last_text": [
+        "3/3",
+        "54"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 55,
+      "width": 841.89,
+      "height": 595.3,
+      "lines": 227,
+      "images": 0,
+      "first_text": [
+        "案例",
+        "功能家族"
+      ],
+      "last_text": [
+        "3/3",
+        "55"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 56,
+      "width": 841.89,
+      "height": 595.3,
+      "lines": 227,
+      "images": 0,
+      "first_text": [
+        "案例",
+        "功能家族"
+      ],
+      "last_text": [
+        "3/3",
+        "56"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 57,
+      "width": 841.89,
+      "height": 595.3,
+      "lines": 227,
+      "images": 0,
+      "first_text": [
+        "案例",
+        "功能家族"
+      ],
+      "last_text": [
+        "3/3",
+        "57"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 58,
+      "width": 841.89,
+      "height": 595.3,
+      "lines": 101,
+      "images": 0,
+      "first_text": [
+        "案例",
+        "功能家族"
+      ],
+      "last_text": [
+        "来源： research/results/main_scale_480/fact_scores.csv；reference_facts.json；case_manifest.csv；run_main_scale_experiment.R",
+        "58"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 59,
+      "width": 595.3,
+      "height": 841.89,
+      "lines": 7,
+      "images": 1,
+      "first_text": [
+        "附录 B：补充图表与材料索引",
+        "补充图 S1 工作台记录"
+      ],
+      "last_text": [
+        "可用性的认证。",
+        "59"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 60,
+      "width": 595.3,
+      "height": 841.89,
+      "lines": 4,
+      "images": 1,
+      "first_text": [
+        "补充图 S2 独立 pasilla 基准",
+        "补充图 S2. 独立 pasilla 基准。 (A) VST 表达 PCA；(B) DESeq2 treated vs untreated 火山图；(C) Padj < 0.05 且 |"
+      ],
+      "last_text": [
+        "log2FC| > 1 下的计数；(D) 阈值敏感性。图用于独立事实核对和工作流展示，不作为新的生物学结论。",
+        "60"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 61,
+      "width": 595.3,
+      "height": 841.89,
+      "lines": 4,
+      "images": 1,
+      "first_text": [
+        "补充图 S3 外部评分者与功能感知评价",
+        "补充图 S3. 外部评分者与功能感知评价的聚合结果。 (A) 外部评分维度；(B) case-dimension 一致性；(C) 功能评"
+      ],
+      "last_text": [
+        "分；(D) 有用比例。图仅展示聚合描述统计，不替代正式用户研究。",
+        "61"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 62,
+      "width": 595.3,
+      "height": 841.89,
+      "lines": 31,
+      "images": 0,
+      "first_text": [
+        "补充表 S1 主实验 tokens 与估算成本",
+        "补充表 S1. 规模主实验 tokens 与估算成本"
+      ],
+      "last_text": [
+        "来源： research/results/main_scale_480/model_calls.csv；ablation_summary.csv；原始响应 usage",
+        "62"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 63,
+      "width": 595.3,
+      "height": 841.89,
+      "lines": 113,
+      "images": 0,
+      "first_text": [
+        "补充表 S2-S5",
+        "补充表 S2. 相近工具入口与独立数据基准"
+      ],
+      "last_text": [
+        "来源： research/results/related_tools/pasilla_fact_checks.csv；pasilla_test.json；pasilla_1.30.0.tar.gz 的 SHA-256",
+        "63"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 64,
+      "width": 595.3,
+      "height": 841.89,
+      "lines": 120,
+      "images": 0,
+      "first_text": [
+        "补充表 S4. 双模型规模共同任务结果",
+        "方法"
+      ],
+      "last_text": [
+        "无 0 分记录",
+        "64"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 65,
+      "width": 595.3,
+      "height": 841.89,
+      "lines": 88,
+      "images": 0,
+      "first_text": [
+        "部分",
+        "对象/维度"
+      ],
+      "last_text": [
+        "大型原始数据缓存不嵌入 Word。附件图表文件与索引见 submission_assets/README.md。",
+        "65"
+      ],
+      "outside_text": []
+    }
+  ],
+  "supplementary_pdf_pages": [
+    {
+      "page": 1,
+      "width": 595.3,
+      "height": 841.89,
+      "lines": 39,
+      "images": 0,
+      "first_text": [
+        "BioExplainR 补充材料",
+        "对应中文稿 v0.7 与软件 0.3.1"
+      ],
+      "last_text": [
+        "并重新验证，以免重复付费。新的独立评测应冻结软件版本、提示、案例、评分容差和模型配置，并单",
+        "1"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 2,
+      "width": 595.3,
+      "height": 841.89,
+      "lines": 56,
+      "images": 0,
+      "first_text": [
+        "独归档新一轮记录。大型下载与 R 对象保存在 Git 忽略的 research/cache/，不嵌入补充文档或记录压缩",
+        "包。五数据集的固定归档、SHA-256、对象类、任务和状态保存在 "
+      ],
+      "last_text": [
+        "transport_replay.csv",
+        "2"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 3,
+      "width": 595.3,
+      "height": 841.89,
+      "lines": 88,
+      "images": 0,
+      "first_text": [
+        "工具/组件",
+        "版本"
+      ],
+      "last_text": [
+        "来源： research/results/related_tools/pasilla_fact_checks.csv；pasilla_test.json；pasilla_1.30.0.tar.gz 的 SHA-256",
+        "3"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 4,
+      "width": 595.3,
+      "height": 841.89,
+      "lines": 22,
+      "images": 1,
+      "first_text": [
+        "补充图 S2. 独立 pasilla 基准。 (A) VST 表达 PCA，按 condition 着色；(B) DESeq2 treated vs ",
+        "untreated 结果，颜色标出 Padj < 0.05 且 |log2FC| > 1 的特征；(C) 该阈值下的特征、显著、上下调计"
+      ],
+      "last_text": [
+        "求、1,440 次评分，三方法合计 1,080 次请求、4,320 次评分；共享案例与重复调用不视为独立生物学样",
+        "4"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 5,
+      "width": 595.3,
+      "height": 841.89,
+      "lines": 52,
+      "images": 0,
+      "first_text": [
+        "本。默认事实摘要路径将完整 R facts 和最多 10 行 top-feature 预览传给模型；direct_bounded 仅提供",
+        "有限原始结构，作为信息受限基线。消融图按每轮 480 项聚合，均值与样本标准差只作描述，不实施泛"
+      ],
+      "last_text": [
+        "示修复后评分",
+        "5"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 6,
+      "width": 595.3,
+      "height": 841.89,
+      "lines": 54,
+      "images": 0,
+      "first_text": [
+        "方法",
+        "输入/协议"
+      ],
+      "last_text": [
+        "组。",
+        "6"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 7,
+      "width": 595.3,
+      "height": 841.89,
+      "lines": 103,
+      "images": 0,
+      "first_text": [
+        "评价结果",
+        "当前保存的聚合结果不包含招募方式、评分者资历、知情同意、补偿或伦理审查流程记录；本批记录只"
+      ],
+      "last_text": [
+        "无 0 分记录",
+        "7"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 8,
+      "width": 595.3,
+      "height": 841.89,
+      "lines": 64,
+      "images": 0,
+      "first_text": [
+        "部分",
+        "对象/维度"
+      ],
+      "last_text": [
+        "expert_agreement_summary.csv；human_evaluation_manifest.json",
+        "8"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 9,
+      "width": 595.3,
+      "height": 841.89,
+      "lines": 16,
+      "images": 1,
+      "first_text": [
+        "补充图 S3. 外部评分者与功能感知评价的聚合结果。 (A) 外部评分者对八个维度的均值；(B) 以 case-",
+        "dimension 为单位的完全一致和相差不超过 1 分比例；(C) 评分参与者对五项功能的平均分；(D) 评分参"
+      ],
+      "last_text": [
+        "定义标准并系统评审。",
+        "9"
+      ],
+      "outside_text": []
+    },
+    {
+      "page": 10,
+      "width": 595.3,
+      "height": 841.89,
+      "lines": 36,
+      "images": 0,
+      "first_text": [
+        "还应区分 17,165 个非缺失校正 P 值与实际原始检验数。保存的兼容性结果表明该对象原始 P 值缺失数为",
+        "零；适配器字段 n_tested 在这个对象中对应可用校正值计数，不能仅据其名字解释成“实际参与原始检"
+      ],
+      "last_text": [
+        "部原始生成文本仍需由署名作者审阅。",
+        "10"
+      ],
+      "outside_text": []
+    }
+  ],
+  "bundle_records": 2770,
+  "bundle_sha256": null,
+  "bundle_sha256_note": "Not embedded: the archive contains this audit JSON and would be self-referential. Verify the external archive with sha256sum.",
+  "resolved_dois": 31,
+  "tables_complete_on_single_pages": true,
+  "visual_review": "Not performed: this model cannot view images. Geometry, fonts, nonblank pixels and content consistency checked."
+}

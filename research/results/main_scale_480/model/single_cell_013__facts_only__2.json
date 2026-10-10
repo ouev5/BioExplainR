@@ -1,0 +1,152 @@
+{
+  "case": "single_cell_013",
+  "family": "single_cell",
+  "method": "facts_only",
+  "replicate": 2,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:20:25 UTC",
+  "response": {
+    "text": "{\"data_facts\": [\"该数据集包含 56 个细胞和 38 个特征。\", \"样本列 sample_id 共识别到 2 个样本，每个样本 28 个细胞。\", \"仅提供 counts 一个 assay，矩阵维度为 38×56。\"], \"statistical_meaning\": [\"细胞数（56）是观测单位数量，不等于独立生物学重复数。\", \"样本数（2）决定组间比较的自由度，此处推断能力非常有限。\", \"counts 值域为 0–10，中位数 5，零值比例约 9%。\"], \"biological_interpretation\": [\"38 个特征对单细胞研究而言偏少，可能只覆盖一组候选基因。\", \"两个样本各 28 个细胞，提示设计为小规模对照/处理或两个供体。\", \"在缺少物种与注释信息时，无法判断这些特征对应哪些细胞类型。\"], \"uncertainty\": [\"细胞不是重复：把细胞当重复做差异分析会产生伪重复假阳性。\", \"仅 2 个样本，组间统计推断能力非常有限。\", \"未找到 nCount/nFeature/percent.mt 等 QC 列，无法评估质控。\"], \"cannot_conclude\": [\"不能得出任何组间差异表达或富集结论。\", \"不能仅凭 cluster 编号推断细胞类型或谱系关系。\", \"不能在没有物种信息的情况下做生物学功能解释。\"], \"learning_questions\": [\"为什么单细胞分析中样本/供体才是独立重复单位？\", \"counts 矩阵的零值比例对下游归一化有什么影响？\", \"只有 2 个样本时，哪些分析仍然可行？\"], \"evidence_used\": [], \"claims\": [{\"id\": \"c1\", \"text\": \"细胞数为 56。\", \"fact\": \"n_cells\", \"value\": 56, \"evidence\": []}, {\"id\": \"c2\", \"text\": \"特征数为 38。\", \"fact\": \"n_features\", \"value\": 38, \"evidence\": []}, {\"id\": \"c3\", \"text\": \"样本数为 2。\", \"fact\": \"n_samples\", \"value\": 2, \"evidence\": []}, {\"id\": \"c4\", \"text\": \"可用 assay 为 counts。\", \"fact\": \"assays\", \"value\": \"counts\", \"evidence\": []}]}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 1117,
+      "completion_tokens": 520,
+      "total_tokens": 1637,
+      "prompt_tokens_details": {
+        "cached_tokens": 896
+      },
+      "prompt_cache_hit_tokens": 896,
+      "prompt_cache_miss_tokens": 221
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 3.0699999999999998
+  },
+  "parsed": {
+    "data_facts": [
+      "该数据集包含 56 个细胞和 38 个特征。",
+      "样本列 sample_id 共识别到 2 个样本，每个样本 28 个细胞。",
+      "仅提供 counts 一个 assay，矩阵维度为 38×56。"
+    ],
+    "statistical_meaning": [
+      "细胞数（56）是观测单位数量，不等于独立生物学重复数。",
+      "样本数（2）决定组间比较的自由度，此处推断能力非常有限。",
+      "counts 值域为 0–10，中位数 5，零值比例约 9%。"
+    ],
+    "biological_interpretation": [
+      "38 个特征对单细胞研究而言偏少，可能只覆盖一组候选基因。",
+      "两个样本各 28 个细胞，提示设计为小规模对照/处理或两个供体。",
+      "在缺少物种与注释信息时，无法判断这些特征对应哪些细胞类型。"
+    ],
+    "uncertainty": [
+      "细胞不是重复：把细胞当重复做差异分析会产生伪重复假阳性。",
+      "仅 2 个样本，组间统计推断能力非常有限。",
+      "未找到 nCount/nFeature/percent.mt 等 QC 列，无法评估质控。"
+    ],
+    "cannot_conclude": [
+      "不能得出任何组间差异表达或富集结论。",
+      "不能仅凭 cluster 编号推断细胞类型或谱系关系。",
+      "不能在没有物种信息的情况下做生物学功能解释。"
+    ],
+    "learning_questions": [
+      "为什么单细胞分析中样本/供体才是独立重复单位？",
+      "counts 矩阵的零值比例对下游归一化有什么影响？",
+      "只有 2 个样本时，哪些分析仍然可行？"
+    ],
+    "evidence_used": [],
+    "claims": [
+      {
+        "id": "c1",
+        "text": "细胞数为 56。",
+        "fact": "n_cells",
+        "value": 56,
+        "evidence": []
+      },
+      {
+        "id": "c2",
+        "text": "特征数为 38。",
+        "fact": "n_features",
+        "value": 38,
+        "evidence": []
+      },
+      {
+        "id": "c3",
+        "text": "样本数为 2。",
+        "fact": "n_samples",
+        "value": 2,
+        "evidence": []
+      },
+      {
+        "id": "c4",
+        "text": "可用 assay 为 counts。",
+        "fact": "assays",
+        "value": "counts",
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "c1",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_cells = 56"
+      },
+      {
+        "claim": "c2",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_features = 38"
+      },
+      {
+        "claim": "c3",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_samples = 2"
+      },
+      {
+        "claim": "c4",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_cells",
+      "expected": 56,
+      "value": 56,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_features",
+      "expected": 38,
+      "value": 38,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_samples",
+      "expected": 2,
+      "value": 2,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "assays",
+      "expected": "counts",
+      "value": "counts",
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 3985
+}

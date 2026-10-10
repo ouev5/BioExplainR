@@ -1,0 +1,269 @@
+{
+  "score_unit": "25 requested scalar facts per method, repeated across 3 calls each = 75 evaluations; dependent observations",
+  "tolerance": "relative 1e-6 for nonzero numeric facts; absolute 1e-6 at zero; exact string match",
+  "main_requests": 54,
+  "main_successes": 54,
+  "structured": 54,
+  "summary": [
+    {
+      "method": "direct_bounded",
+      "correct": 24,
+      "expected": 75,
+      "accuracy": 0.32,
+      "coverage": 0.52,
+      "answered_accuracy": 0.61538461538,
+      "api_success": 18,
+      "calls": 18,
+      "structured": 18,
+      "median_elapsed_sec": 2.475,
+      "prompt_tokens": 50163,
+      "completion_tokens": 9338
+    },
+    {
+      "method": "facts_only",
+      "correct": 75,
+      "expected": 75,
+      "accuracy": 1,
+      "coverage": 1,
+      "answered_accuracy": 1,
+      "api_success": 18,
+      "calls": 18,
+      "structured": 18,
+      "median_elapsed_sec": 2.765,
+      "prompt_tokens": 31584,
+      "completion_tokens": 10908
+    },
+    {
+      "method": "facts_evidence",
+      "correct": 75,
+      "expected": 75,
+      "accuracy": 1,
+      "coverage": 1,
+      "answered_accuracy": 1,
+      "api_success": 18,
+      "calls": 18,
+      "structured": 18,
+      "median_elapsed_sec": 3.135,
+      "prompt_tokens": 34230,
+      "completion_tokens": 11761
+    }
+  ],
+  "by_case": [
+    {
+      "case": "airway_lfc0",
+      "method": "direct_bounded",
+      "correct": 1,
+      "answered": 1,
+      "expected": 15,
+      "accuracy": 0.066666666667
+    },
+    {
+      "case": "airway_lfc1",
+      "method": "direct_bounded",
+      "correct": 2,
+      "answered": 2,
+      "expected": 15,
+      "accuracy": 0.13333333333
+    },
+    {
+      "case": "airway_pca",
+      "method": "direct_bounded",
+      "correct": 6,
+      "answered": 10,
+      "expected": 12,
+      "accuracy": 0.5
+    },
+    {
+      "case": "complete_slice120",
+      "method": "direct_bounded",
+      "correct": 4,
+      "answered": 15,
+      "expected": 15,
+      "accuracy": 0.26666666667
+    },
+    {
+      "case": "pbmc3k_sce",
+      "method": "direct_bounded",
+      "correct": 9,
+      "answered": 9,
+      "expected": 9,
+      "accuracy": 1
+    },
+    {
+      "case": "reactome_ora",
+      "method": "direct_bounded",
+      "correct": 2,
+      "answered": 2,
+      "expected": 9,
+      "accuracy": 0.22222222222
+    },
+    {
+      "case": "airway_lfc0",
+      "method": "facts_evidence",
+      "correct": 15,
+      "answered": 15,
+      "expected": 15,
+      "accuracy": 1
+    },
+    {
+      "case": "airway_lfc1",
+      "method": "facts_evidence",
+      "correct": 15,
+      "answered": 15,
+      "expected": 15,
+      "accuracy": 1
+    },
+    {
+      "case": "airway_pca",
+      "method": "facts_evidence",
+      "correct": 12,
+      "answered": 12,
+      "expected": 12,
+      "accuracy": 1
+    },
+    {
+      "case": "complete_slice120",
+      "method": "facts_evidence",
+      "correct": 15,
+      "answered": 15,
+      "expected": 15,
+      "accuracy": 1
+    },
+    {
+      "case": "pbmc3k_sce",
+      "method": "facts_evidence",
+      "correct": 9,
+      "answered": 9,
+      "expected": 9,
+      "accuracy": 1
+    },
+    {
+      "case": "reactome_ora",
+      "method": "facts_evidence",
+      "correct": 9,
+      "answered": 9,
+      "expected": 9,
+      "accuracy": 1
+    },
+    {
+      "case": "airway_lfc0",
+      "method": "facts_only",
+      "correct": 15,
+      "answered": 15,
+      "expected": 15,
+      "accuracy": 1
+    },
+    {
+      "case": "airway_lfc1",
+      "method": "facts_only",
+      "correct": 15,
+      "answered": 15,
+      "expected": 15,
+      "accuracy": 1
+    },
+    {
+      "case": "airway_pca",
+      "method": "facts_only",
+      "correct": 12,
+      "answered": 12,
+      "expected": 12,
+      "accuracy": 1
+    },
+    {
+      "case": "complete_slice120",
+      "method": "facts_only",
+      "correct": 15,
+      "answered": 15,
+      "expected": 15,
+      "accuracy": 1
+    },
+    {
+      "case": "pbmc3k_sce",
+      "method": "facts_only",
+      "correct": 9,
+      "answered": 9,
+      "expected": 9,
+      "accuracy": 1
+    },
+    {
+      "case": "reactome_ora",
+      "method": "facts_only",
+      "correct": 9,
+      "answered": 9,
+      "expected": 9,
+      "accuracy": 1
+    }
+  ],
+  "citations": [
+    {
+      "method": "direct_bounded",
+      "citations": 45,
+      "unknown_citations": 45
+    },
+    {
+      "method": "facts_evidence",
+      "citations": 18,
+      "unknown_citations": 0
+    },
+    {
+      "method": "facts_only",
+      "citations": 0,
+      "unknown_citations": 0
+    }
+  ],
+  "validation": [
+    {
+      "mutation": "fabricated_citation",
+      "status": "fail",
+      "n": 18
+    },
+    {
+      "mutation": "unknown_path",
+      "status": "fail",
+      "n": 18
+    },
+    {
+      "mutation": "vector_value",
+      "status": "fail",
+      "n": 18
+    },
+    {
+      "mutation": "wrong_number",
+      "status": "fail",
+      "n": 18
+    },
+    {
+      "mutation": "reference_only",
+      "status": "partial",
+      "n": 18
+    }
+  ],
+  "cost": [
+    {
+      "method": "direct_bounded",
+      "input_cache_hit": 31232,
+      "input_cache_miss": 18931,
+      "output": 9338,
+      "estimated_usd": 0.008536146
+    },
+    {
+      "method": "facts_only",
+      "input_cache_hit": 20736,
+      "input_cache_miss": 10848,
+      "output": 10908,
+      "estimated_usd": 0.008234208
+    },
+    {
+      "method": "facts_evidence",
+      "input_cache_hit": 30458,
+      "input_cache_miss": 3772,
+      "output": 11761,
+      "estimated_usd": 0.007713774
+    }
+  ],
+  "cost_basis": "DeepSeek published off-peak USD per million tokens: cache hit 0.003, cache miss 0.15, output 0.6; not an invoice",
+  "main_model_generation": "See the original per-call prompt/response files. Cached responses may be revalidated by later code; generated text is preserved.",
+  "independent_datasets": 2,
+  "human_participants": 0,
+  "independent_expert_raters": 0
+}

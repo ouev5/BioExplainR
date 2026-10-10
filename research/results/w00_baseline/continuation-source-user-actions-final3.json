@@ -1,0 +1,19 @@
+{
+  "command": [
+    "R",
+    "--vanilla",
+    "--slave",
+    "-f",
+    "tools/check.R"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-05T13:48:36.752252+00:00",
+  "finished_utc": "2026-10-05T13:49:15.413674+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/continuation-source-user-actions-final3.txt",
+    "bytes": 1907,
+    "sha256": "19b25dc4a93e129d9617c0f58a7498eaaa43458fbbc974cebae512dc5c99df83"
+  }
+}

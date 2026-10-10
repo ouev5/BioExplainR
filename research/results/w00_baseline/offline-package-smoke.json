@@ -1,0 +1,19 @@
+{
+  "command": [
+    "R",
+    "--vanilla",
+    "--slave",
+    "-f",
+    "tools/offline-baseline.R"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-05T08:21:23.866357+00:00",
+  "finished_utc": "2026-10-05T08:21:24.512625+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/offline-package-smoke.txt",
+    "bytes": 167,
+    "sha256": "66335d09fc7046cc8ba1339bb8f7c33a9c9d631343464adf1597637d6c51476e"
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "case": "cell_composition_004",
+  "family": "cell_composition",
+  "method": "facts_evidence",
+  "replicate": 3,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:27:55 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"本次分析共使用 88 个细胞，来自 4 个样本，分为 2 组，共 3 个聚类。\",\n    \"每组各有 2 个样本，每个样本的细胞数范围是 22 到 22。\",\n    \"各聚类平均比例分别为 0.3409、0.3295、0.3295。\"\n  ],\n  \"statistical_meaning\": [\n    \"分析类型为细胞组成描述性分析，未进行统计检验（test_status 为 descriptive_only）。\",\n    \"独立重复单位是样本而非细胞，所有比较基于每个样本一个比例值。\",\n    \"同一细胞内各聚类比例之和为 1，属于成分数据。\"\n  ],\n  \"biological_interpretation\": [\n    \"在 3 个聚类中，cluster1 的平均比例略高，但样本间范围重叠，差异可能由样本间变异导致。\",\n    \"由于未提供物种信息，无法进行具体的生物学功能解释。\",\n    \"文献检索命中一篇关于 CRISPLD2 的研究（EuropePMC:MED:24926665），但该文献仅表示匹配检索词，未评估其结论是否支持任何具体论断。\"\n  ],\n  \"uncertainty\": [\n    \"独立重复单位是样本，不是细胞；所有比较都基于每个样本一个比例值。\",\n    \"同一样本内各 cluster 比例之和为 1（成分数据），一个 cluster 比例升高会使其他 cluster 比例相对降低。\",\n    \"比例差异只描述与所声明分组的关联，不能据此推断因果或机制。\"\n  ],\n  \"cannot_conclude\": [\n    \"不能推断组间差异具有统计学显著性，因为未进行统计检验。\",\n    \"不能推断因果或机制，因为这是描述性分析。\",\n    \"不能进行物种特异性的生物学解释，因为未提供物种信息。\"\n  ],\n  \"learning_questions\": [\n    \"为什么在细胞组成分析中，独立重复单位是样本而不是细胞？\",\n    \"成分数据（各聚类比例之和为 1）对差异分析有什么影响？\",\n    \"描述性分析与统计检验分析在结论上有什么不同？\"\n  ],\n  \"evidence_used\": [\n    \"EuropePMC:MED:24926665\"\n  ],\n  \"claims\": [\n    {\n      \"id\": \"claim1\",\n      \"text\": \"使用的细胞数\",\n      \"fact\": \"n_cells_used\",\n      \"value\": 88,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim2\",\n      \"text\": \"样本数\",\n      \"fact\": \"n_samples\",\n      \"value\": 4,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim3\",\n      \"text\": \"聚类数\",\n      \"fact\": \"n_clusters\",\n      \"value\": 3,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim4\",\n      \"text\": \"分组数\",\n      \"fact\": \"n_groups\",\n      \"value\": 2,\n      \"evidence\": []\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 1261,
+      "completion_tokens": 665,
+      "total_tokens": 1926,
+      "prompt_tokens_details": {
+        "cached_tokens": 1024
+      },
+      "prompt_cache_hit_tokens": 1024,
+      "prompt_cache_miss_tokens": 237
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.9300000000000002
+  },
+  "parsed": {
+    "data_facts": [
+      "本次分析共使用 88 个细胞，来自 4 个样本，分为 2 组，共 3 个聚类。",
+      "每组各有 2 个样本，每个样本的细胞数范围是 22 到 22。",
+      "各聚类平均比例分别为 0.3409、0.3295、0.3295。"
+    ],
+    "statistical_meaning": [
+      "分析类型为细胞组成描述性分析，未进行统计检验（test_status 为 descriptive_only）。",
+      "独立重复单位是样本而非细胞，所有比较基于每个样本一个比例值。",
+      "同一细胞内各聚类比例之和为 1，属于成分数据。"
+    ],
+    "biological_interpretation": [
+      "在 3 个聚类中，cluster1 的平均比例略高，但样本间范围重叠，差异可能由样本间变异导致。",
+      "由于未提供物种信息，无法进行具体的生物学功能解释。",
+      "文献检索命中一篇关于 CRISPLD2 的研究（EuropePMC:MED:24926665），但该文献仅表示匹配检索词，未评估其结论是否支持任何具体论断。"
+    ],
+    "uncertainty": [
+      "独立重复单位是样本，不是细胞；所有比较都基于每个样本一个比例值。",
+      "同一样本内各 cluster 比例之和为 1（成分数据），一个 cluster 比例升高会使其他 cluster 比例相对降低。",
+      "比例差异只描述与所声明分组的关联，不能据此推断因果或机制。"
+    ],
+    "cannot_conclude": [
+      "不能推断组间差异具有统计学显著性，因为未进行统计检验。",
+      "不能推断因果或机制，因为这是描述性分析。",
+      "不能进行物种特异性的生物学解释，因为未提供物种信息。"
+    ],
+    "learning_questions": [
+      "为什么在细胞组成分析中，独立重复单位是样本而不是细胞？",
+      "成分数据（各聚类比例之和为 1）对差异分析有什么影响？",
+      "描述性分析与统计检验分析在结论上有什么不同？"
+    ],
+    "evidence_used": [
+      "EuropePMC:MED:24926665"
+    ],
+    "claims": [
+      {
+        "id": "claim1",
+        "text": "使用的细胞数",
+        "fact": "n_cells_used",
+        "value": 88,
+        "evidence": []
+      },
+      {
+        "id": "claim2",
+        "text": "样本数",
+        "fact": "n_samples",
+        "value": 4,
+        "evidence": []
+      },
+      {
+        "id": "claim3",
+        "text": "聚类数",
+        "fact": "n_clusters",
+        "value": 3,
+        "evidence": []
+      },
+      {
+        "id": "claim4",
+        "text": "分组数",
+        "fact": "n_groups",
+        "value": 2,
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "(evidence_used)",
+        "check": "evidence_ids",
+        "status": "pass",
+        "detail": "all cited evidence ids were supplied"
+      },
+      {
+        "claim": "claim1",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_cells_used = 88"
+      },
+      {
+        "claim": "claim2",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_samples = 4"
+      },
+      {
+        "claim": "claim3",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_clusters = 3"
+      },
+      {
+        "claim": "claim4",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_groups = 2"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_cells_used",
+      "expected": 88,
+      "value": 88,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_samples",
+      "expected": 4,
+      "value": 4,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_clusters",
+      "expected": 3,
+      "value": 3,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_groups",
+      "expected": 2,
+      "value": 2,
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 4546
+}

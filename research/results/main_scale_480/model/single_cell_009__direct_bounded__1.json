@@ -1,0 +1,191 @@
+{
+  "case": "single_cell_009",
+  "family": "single_cell",
+  "method": "direct_bounded",
+  "replicate": 1,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:13:19 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"数据矩阵维度为34行48列。\",\n    \"唯一assay为counts。\",\n    \"不同样本数为1。\"\n  ],\n  \"statistical_meaning\": [\n    \"34行通常对应特征数，48列通常对应细胞数。\",\n    \"counts表示原始计数矩阵。\",\n    \"n_distinct_samples为1表示样本标签无区分度。\"\n  ],\n  \"biological_interpretation\": [\n    \"该数据可能来自单细胞计数矩阵。\",\n    \"仅一个样本标签，无法进行样本间比较。\",\n    \"特征和细胞数量需结合实验设计解读。\"\n  ],\n  \"uncertainty\": [\n    \"无法确认34行是否一定为特征、48列是否一定为细胞。\",\n    \"样本标签唯一值可能因元数据缺失或合并导致。\"\n  ],\n  \"cannot_conclude\": [\n    \"不能确定实际细胞类型或生物学条件。\",\n    \"不能进行差异表达或样本间统计比较。\"\n  ],\n  \"learning_questions\": [\n    \"如何确认矩阵行列分别对应特征和细胞？\",\n    \"为什么样本标签唯一值会影响下游分析？\"\n  ],\n  \"evidence_used\": [\n    \"dim\",\n    \"assays\",\n    \"n_distinct_samples\"\n  ],\n  \"claims\": [\n    {\n      \"id\": \"claim_n_cells\",\n      \"text\": \"n_cells为48。\",\n      \"fact\": \"n_cells\",\n      \"value\": 48,\n      \"evidence\": [\n        \"dim\"\n      ]\n    },\n    {\n      \"id\": \"claim_n_features\",\n      \"text\": \"n_features为34。\",\n      \"fact\": \"n_features\",\n      \"value\": 34,\n      \"evidence\": [\n        \"dim\"\n      ]\n    },\n    {\n      \"id\": \"claim_n_samples\",\n      \"text\": \"n_samples为1。\",\n      \"fact\": \"n_samples\",\n      \"value\": 1,\n      \"evidence\": [\n        \"n_distinct_samples\"\n      ]\n    },\n    {\n      \"id\": \"claim_assays\",\n      \"text\": \"assays为counts。\",\n      \"fact\": \"assays\",\n      \"value\": \"counts\",\n      \"evidence\": [\n        \"assays\"\n      ]\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 316,
+      "completion_tokens": 495,
+      "total_tokens": 811,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 188
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.4900000000000002
+  },
+  "parsed": {
+    "data_facts": [
+      "数据矩阵维度为34行48列。",
+      "唯一assay为counts。",
+      "不同样本数为1。"
+    ],
+    "statistical_meaning": [
+      "34行通常对应特征数，48列通常对应细胞数。",
+      "counts表示原始计数矩阵。",
+      "n_distinct_samples为1表示样本标签无区分度。"
+    ],
+    "biological_interpretation": [
+      "该数据可能来自单细胞计数矩阵。",
+      "仅一个样本标签，无法进行样本间比较。",
+      "特征和细胞数量需结合实验设计解读。"
+    ],
+    "uncertainty": [
+      "无法确认34行是否一定为特征、48列是否一定为细胞。",
+      "样本标签唯一值可能因元数据缺失或合并导致。"
+    ],
+    "cannot_conclude": [
+      "不能确定实际细胞类型或生物学条件。",
+      "不能进行差异表达或样本间统计比较。"
+    ],
+    "learning_questions": [
+      "如何确认矩阵行列分别对应特征和细胞？",
+      "为什么样本标签唯一值会影响下游分析？"
+    ],
+    "evidence_used": [
+      "dim",
+      "assays",
+      "n_distinct_samples"
+    ],
+    "claims": [
+      {
+        "id": "claim_n_cells",
+        "text": "n_cells为48。",
+        "fact": "n_cells",
+        "value": 48,
+        "evidence": [
+          "dim"
+        ]
+      },
+      {
+        "id": "claim_n_features",
+        "text": "n_features为34。",
+        "fact": "n_features",
+        "value": 34,
+        "evidence": [
+          "dim"
+        ]
+      },
+      {
+        "id": "claim_n_samples",
+        "text": "n_samples为1。",
+        "fact": "n_samples",
+        "value": 1,
+        "evidence": [
+          "n_distinct_samples"
+        ]
+      },
+      {
+        "id": "claim_assays",
+        "text": "assays为counts。",
+        "fact": "assays",
+        "value": "counts",
+        "evidence": [
+          "assays"
+        ]
+      }
+    ]
+  },
+  "validation": {
+    "status": "fail",
+    "findings": [
+      {
+        "claim": "(evidence_used)",
+        "check": "evidence_ids",
+        "status": "fail",
+        "detail": "unknown evidence id(s): dim, assays, n_distinct_samples (no evidence list was supplied)"
+      },
+      {
+        "claim": "claim_n_cells",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_cells = 48"
+      },
+      {
+        "claim": "claim_n_cells",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: dim"
+      },
+      {
+        "claim": "claim_n_features",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_features = 34"
+      },
+      {
+        "claim": "claim_n_features",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: dim"
+      },
+      {
+        "claim": "claim_n_samples",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_samples = 1"
+      },
+      {
+        "claim": "claim_n_samples",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: n_distinct_samples"
+      },
+      {
+        "claim": "claim_assays",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      },
+      {
+        "claim": "claim_assays",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: assays"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_cells",
+      "expected": 48,
+      "value": 48,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_features",
+      "expected": 34,
+      "value": 34,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_samples",
+      "expected": 1,
+      "value": 1,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "assays",
+      "expected": "counts",
+      "value": "counts",
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 1204
+}

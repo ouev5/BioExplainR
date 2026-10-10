@@ -1,0 +1,6 @@
+"method","mode","status","expected","correct","answered","accuracy","coverage"
+"bioexplainr_deterministic","deterministic_reference","executed",25,25,25,1,1
+"configured_code_agent","command_agent","executed",25,23,25,0.92,1
+"configured_models:deepseek-flash","openai_compatible","executed",25,23,25,0.92,1
+"configured_models:step-5-preview","openai_compatible","executed",25,23,25,0.92,1
+"saved_facts_only","saved_response","replayed",25,25,25,1,1

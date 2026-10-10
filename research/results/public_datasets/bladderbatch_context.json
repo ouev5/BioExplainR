@@ -1,0 +1,75 @@
+{
+  "analysis_type": "expression_set",
+  "source_class": "ExpressionSet",
+  "source_package": "Biobase",
+  "source_status": "verified_class",
+  "facts": {
+    "n_features": 22283,
+    "n_samples": 57,
+    "pheno_columns": ["sample", "outcome", "batch", "cancer"],
+    "assay_summary": {
+      "class": "matrix",
+      "dim": [22283, 57],
+      "inspection": "sampled_block",
+      "values_inspected": 2000,
+      "value_quantiles": {
+        "min": 3.216,
+        "q25": 4.69,
+        "median": 6.128,
+        "q75": 7.398,
+        "max": 10.93
+      },
+      "n_na_sampled": 0,
+      "integer_like_sampled": false,
+      "fraction_zero_sampled": 0,
+      "sample_note": "n_na/fraction_zero/integer_like are from a sampled block, not the full matrix"
+    },
+    "sample_column": "sample",
+    "n_samples.1": 57,
+    "n_samples_missing_sample": 0,
+    "samples_per_sample_range": [1, 1],
+    "group_column": "cancer",
+    "n_groups": 3,
+    "n_samples_missing_group": 0,
+    "n_samples_in_multiple_groups": 0,
+    "replicate_unit": "sample",
+    "units_per_group": {
+      "Biopsy": 9,
+      "Cancer": 40,
+      "Normal": 8
+    },
+    "min_units_per_group": 8,
+    "batch_column": "batch",
+    "n_batches": 5,
+    "group_batch_confounded": false
+  },
+  "top_features": null,
+  "plot_mapping": null,
+  "provenance": {
+    "adapter": "expression_set",
+    "created": "2026-10-05 12:42:54 CST",
+    "bioexplainr_version": "0.3.1",
+    "thresholds": {
+      "padj": 0.05,
+      "lfc": 0,
+      "p": 0.05
+    },
+    "p_adjust_method": null,
+    "n_top": 10,
+    "input_summary": {
+      "name": null,
+      "class": "ExpressionSet",
+      "type": "S4",
+      "is_s4": true,
+      "size": "1.6 Mb",
+      "dim": [22283, 57]
+    }
+  },
+  "uncertainty": ["A batch is a technical grouping, not an independent biological replicate; the number of batches must not be used as the number of samples/donors.", "ExpressionSet assay values were summarised without inferring a differential-expression design; group labels do not establish a valid contrast or biological replication."],
+  "metadata": {
+    "species": "Homo sapiens",
+    "tissue": "bladder"
+  },
+  "adapter": "expression_set",
+  "language": "en"
+}

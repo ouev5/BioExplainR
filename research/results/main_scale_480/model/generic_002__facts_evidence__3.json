@@ -1,0 +1,160 @@
+{
+  "case": "generic_002",
+  "family": "generic",
+  "method": "facts_evidence",
+  "replicate": 3,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:28:08 UTC",
+  "response": {
+    "text": "{\"data_facts\": [\"该对象是一个 data.frame，类型为 list，不是 S4 对象，占用约 1.4 Kb。\", \"对象维度为 12 行 5 列，5 列均为整数型。\", \"分析类型为 generic，未提供物种信息。\"], \"statistical_meaning\": [\"当前只做了结构摘要，没有进行差异表达或富集统计。\", \"阈值 padj=0.05、lfc=0、p=0.05 已设定，但未报告任何检验结果。\", \"top_features 与 plot_mapping 均为空，说明没有可解释的统计输出。\"], \"biological_interpretation\": [\"在缺少物种与实验设计的情况下，无法给出可靠的生物学解释。\", \"检索命中的文献（EuropePMC:MED:24926665）仅表示匹配检索词，不构成对任何基因功能的证据。\", \"若后续补充物种与分组信息，才可讨论候选基因假设。\"], \"uncertainty\": [\"没有针对该对象类型的专用适配器，只给出结构摘要。\", \"未提供物种，生物学解释需要用户确认物种背景。\", \"未提供原始数据与分组信息，统计结果不可复现。\"], \"cannot_conclude\": [\"不能得出任何基因差异表达或富集结论。\", \"不能判断激活方向或效应大小。\", \"不能把检索到的文献当作支持性证据。\"], \"learning_questions\": [\"data.frame 的 dim 与 column_types 分别告诉你什么？\", \"为什么没有物种信息时不能做生物学解释？\", \"padj 与 p 阈值在多重检验中有什么区别？\"], \"evidence_used\": [\"EuropePMC:MED:24926665\"], \"claims\": [{\"id\": \"c1\", \"text\": \"对象类别为 data.frame。\", \"fact\": \"class\", \"value\": \"data.frame\", \"evidence\": []}, {\"id\": \"c2\", \"text\": \"对象类型为 list。\", \"fact\": \"type\", \"value\": \"list\", \"evidence\": []}, {\"id\": \"c3\", \"text\": \"该对象不是 S4 对象。\", \"fact\": \"is_s4\", \"value\": false, \"evidence\": []}, {\"id\": \"c4\", \"text\": \"对象大小约为 1.4 Kb。\", \"fact\": \"size\", \"value\": \"1.4 Kb\", \"evidence\": []}]}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 980,
+      "completion_tokens": 519,
+      "total_tokens": 1499,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 212
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.8199999999999998
+  },
+  "parsed": {
+    "data_facts": [
+      "该对象是一个 data.frame，类型为 list，不是 S4 对象，占用约 1.4 Kb。",
+      "对象维度为 12 行 5 列，5 列均为整数型。",
+      "分析类型为 generic，未提供物种信息。"
+    ],
+    "statistical_meaning": [
+      "当前只做了结构摘要，没有进行差异表达或富集统计。",
+      "阈值 padj=0.05、lfc=0、p=0.05 已设定，但未报告任何检验结果。",
+      "top_features 与 plot_mapping 均为空，说明没有可解释的统计输出。"
+    ],
+    "biological_interpretation": [
+      "在缺少物种与实验设计的情况下，无法给出可靠的生物学解释。",
+      "检索命中的文献（EuropePMC:MED:24926665）仅表示匹配检索词，不构成对任何基因功能的证据。",
+      "若后续补充物种与分组信息，才可讨论候选基因假设。"
+    ],
+    "uncertainty": [
+      "没有针对该对象类型的专用适配器，只给出结构摘要。",
+      "未提供物种，生物学解释需要用户确认物种背景。",
+      "未提供原始数据与分组信息，统计结果不可复现。"
+    ],
+    "cannot_conclude": [
+      "不能得出任何基因差异表达或富集结论。",
+      "不能判断激活方向或效应大小。",
+      "不能把检索到的文献当作支持性证据。"
+    ],
+    "learning_questions": [
+      "data.frame 的 dim 与 column_types 分别告诉你什么？",
+      "为什么没有物种信息时不能做生物学解释？",
+      "padj 与 p 阈值在多重检验中有什么区别？"
+    ],
+    "evidence_used": [
+      "EuropePMC:MED:24926665"
+    ],
+    "claims": [
+      {
+        "id": "c1",
+        "text": "对象类别为 data.frame。",
+        "fact": "class",
+        "value": "data.frame",
+        "evidence": []
+      },
+      {
+        "id": "c2",
+        "text": "对象类型为 list。",
+        "fact": "type",
+        "value": "list",
+        "evidence": []
+      },
+      {
+        "id": "c3",
+        "text": "该对象不是 S4 对象。",
+        "fact": "is_s4",
+        "value": false,
+        "evidence": []
+      },
+      {
+        "id": "c4",
+        "text": "对象大小约为 1.4 Kb。",
+        "fact": "size",
+        "value": "1.4 Kb",
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "(evidence_used)",
+        "check": "evidence_ids",
+        "status": "pass",
+        "detail": "all cited evidence ids were supplied"
+      },
+      {
+        "claim": "c1",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      },
+      {
+        "claim": "c2",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      },
+      {
+        "claim": "c3",
+        "check": "value",
+        "status": "pass",
+        "detail": "is_s4 = 0"
+      },
+      {
+        "claim": "c4",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "class",
+      "expected": "data.frame",
+      "value": "data.frame",
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "type",
+      "expected": "list",
+      "value": "list",
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "is_s4",
+      "expected": false,
+      "value": false,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "size",
+      "expected": "1.4 Kb",
+      "value": "1.4 Kb",
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 3798
+}

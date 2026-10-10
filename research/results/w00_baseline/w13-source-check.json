@@ -1,0 +1,19 @@
+{
+  "command": [
+    "R",
+    "--vanilla",
+    "--slave",
+    "-f",
+    "tools/check.R"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-05T11:16:30.295460+00:00",
+  "finished_utc": "2026-10-05T11:17:02.625902+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/w13-source-check.txt",
+    "bytes": 1584,
+    "sha256": "8954eafa07ae0a46bdb6d550626fdd518d77cd6ab41cf1c24156da4fbfb0ca52"
+  }
+}

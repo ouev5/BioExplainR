@@ -1,0 +1,151 @@
+{
+  "case": "de_015",
+  "family": "differential_expression",
+  "method": "facts_only",
+  "replicate": 1,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:13:59 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"共检测到 55 个特征（基因）。\",\n    \"在 padj < 0.05 且 |log2FC| > 1 的阈值下，显著差异表达特征数为 37。\",\n    \"其中上调 19 个，下调 18 个。\"\n  ],\n  \"statistical_meaning\": [\n    \"n_features 表示纳入检验的特征总数。\",\n    \"n_significant 表示同时满足校正 p 值与 log2FC 阈值的特征数。\",\n    \"n_up 与 n_down 分别表示显著特征中 log2FC 为正和为负的数量。\"\n  ],\n  \"biological_interpretation\": [\n    \"显著特征数量较多，提示两组样本间可能存在广泛的转录差异（假设，需物种与实验设计确认）。\",\n    \"上调与下调数量接近，提示差异可能不是单一方向的整体偏移（假设）。\"\n  ],\n  \"uncertainty\": [\n    \"未提供比较方向（contrast），log2FC 正负的生物学含义取决于参考组。\",\n    \"未提供物种信息，无法进行具体基因功能解释。\",\n    \"无法从列名确定产生该表的软件包。\"\n  ],\n  \"cannot_conclude\": [\n    \"不能仅凭计数判断具体通路或生物学过程被激活或抑制。\",\n    \"不能将细胞或样本当作重复来推断总体效应。\",\n    \"不能从本摘要推断未列出的基因功能或临床意义。\"\n  ],\n  \"learning_questions\": [\n    \"为什么需要同时使用 padj 和 log2FC 两个阈值？\",\n    \"log2FC 的正负号由什么决定？\",\n    \"显著特征数量多是否一定意味着生物学效应强？\"\n  ],\n  \"evidence_used\": [],\n  \"claims\": [\n    {\n      \"id\": \"claim_n_features\",\n      \"text\": \"特征总数为 55。\",\n      \"fact\": \"n_features\",\n      \"value\": 55,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_n_significant\",\n      \"text\": \"显著差异表达特征数为 37。\",\n      \"fact\": \"n_significant\",\n      \"value\": 37,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_n_up\",\n      \"text\": \"显著上调特征数为 19。\",\n      \"fact\": \"n_up\",\n      \"value\": 19,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_n_down\",\n      \"text\": \"显著下调特征数为 18。\",\n      \"fact\": \"n_down\",\n      \"value\": 18,\n      \"evidence\": []\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 1479,
+      "completion_tokens": 576,
+      "total_tokens": 2055,
+      "prompt_tokens_details": {
+        "cached_tokens": 1280
+      },
+      "prompt_cache_hit_tokens": 1280,
+      "prompt_cache_miss_tokens": 199
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.6099999999999999
+  },
+  "parsed": {
+    "data_facts": [
+      "共检测到 55 个特征（基因）。",
+      "在 padj < 0.05 且 |log2FC| > 1 的阈值下，显著差异表达特征数为 37。",
+      "其中上调 19 个，下调 18 个。"
+    ],
+    "statistical_meaning": [
+      "n_features 表示纳入检验的特征总数。",
+      "n_significant 表示同时满足校正 p 值与 log2FC 阈值的特征数。",
+      "n_up 与 n_down 分别表示显著特征中 log2FC 为正和为负的数量。"
+    ],
+    "biological_interpretation": [
+      "显著特征数量较多，提示两组样本间可能存在广泛的转录差异（假设，需物种与实验设计确认）。",
+      "上调与下调数量接近，提示差异可能不是单一方向的整体偏移（假设）。"
+    ],
+    "uncertainty": [
+      "未提供比较方向（contrast），log2FC 正负的生物学含义取决于参考组。",
+      "未提供物种信息，无法进行具体基因功能解释。",
+      "无法从列名确定产生该表的软件包。"
+    ],
+    "cannot_conclude": [
+      "不能仅凭计数判断具体通路或生物学过程被激活或抑制。",
+      "不能将细胞或样本当作重复来推断总体效应。",
+      "不能从本摘要推断未列出的基因功能或临床意义。"
+    ],
+    "learning_questions": [
+      "为什么需要同时使用 padj 和 log2FC 两个阈值？",
+      "log2FC 的正负号由什么决定？",
+      "显著特征数量多是否一定意味着生物学效应强？"
+    ],
+    "evidence_used": [],
+    "claims": [
+      {
+        "id": "claim_n_features",
+        "text": "特征总数为 55。",
+        "fact": "n_features",
+        "value": 55,
+        "evidence": []
+      },
+      {
+        "id": "claim_n_significant",
+        "text": "显著差异表达特征数为 37。",
+        "fact": "n_significant",
+        "value": 37,
+        "evidence": []
+      },
+      {
+        "id": "claim_n_up",
+        "text": "显著上调特征数为 19。",
+        "fact": "n_up",
+        "value": 19,
+        "evidence": []
+      },
+      {
+        "id": "claim_n_down",
+        "text": "显著下调特征数为 18。",
+        "fact": "n_down",
+        "value": 18,
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "claim_n_features",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_features = 55"
+      },
+      {
+        "claim": "claim_n_significant",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_significant = 37"
+      },
+      {
+        "claim": "claim_n_up",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_up = 19"
+      },
+      {
+        "claim": "claim_n_down",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_down = 18"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_features",
+      "expected": 55,
+      "value": 55,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_significant",
+      "expected": 37,
+      "value": 37,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_up",
+      "expected": 19,
+      "value": 19,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_down",
+      "expected": 18,
+      "value": 18,
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 4978
+}

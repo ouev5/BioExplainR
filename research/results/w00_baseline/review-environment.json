@@ -1,0 +1,22 @@
+{
+  "command": [
+    "python3",
+    "tools/capture-continuation.py",
+    "--core-output",
+    "/tmp/opencode/bioexplainr-review-core",
+    "--bwrap-output",
+    "/tmp/opencode/bioexplainr-review-bwrap",
+    "--prefix",
+    "review"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-08T08:28:57.491995+00:00",
+  "finished_utc": "2026-10-08T08:29:13.487433+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/review-environment.txt",
+    "bytes": 4606,
+    "sha256": "a88f7a25b0788522bf776af0bcdb054f1126f0603749b792f209e9b1be666e1e"
+  }
+}

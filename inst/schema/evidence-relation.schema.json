@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bioexplainr.local/schema/evidence-relation-1.0.json",
+  "title": "BioExplainR claim evidence relation",
+  "type": "object",
+  "required": ["schema_version", "pairs"],
+  "properties": {
+    "schema_version": {"type": "string", "const": "1.0"},
+    "pairs": {"type": "array", "items": {"type": "object", "required": ["claim_id", "evidence_id", "relation", "origin"], "properties": {
+      "claim_id": {"type": "string"}, "evidence_id": {"type": "string"},
+      "relation": {"enum": ["supports", "contradicts", "definition_only", "irrelevant", "unknown"]},
+      "origin": {"enum": ["rule", "model_proposed", "user_declared", "expert_reviewed"]}
+    }, "additionalProperties": true}}
+  },
+  "additionalProperties": true
+}

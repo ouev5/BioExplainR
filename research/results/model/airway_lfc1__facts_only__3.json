@@ -1,0 +1,172 @@
+{
+  "case": "airway_lfc1",
+  "method": "facts_only",
+  "replicate": 3,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-03 19:42:42 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"共检测 22369 个特征，其中 17165 个参与检验。\",\n    \"在 padj<0.05 且 |log2FC|>1 下，显著特征 999 个，其中上调 519 个、下调 480 个。\",\n    \"padj 为 NA 的特征有 5204 个。\"\n  ],\n  \"statistical_meaning\": [\n    \"n_features 是输入特征总数，n_tested 是实际进入检验的数量。\",\n    \"n_significant 是同时满足 padj 与 log2FC 阈值的计数，n_up/n_down 是其方向拆分。\",\n    \"n_na_padj 表示未参与 FDR 校正计数的特征数。\"\n  ],\n  \"biological_interpretation\": [\n    \"地塞米松处理与未处理相比，存在一批表达变化较大的基因（假设，需结合证据）。\",\n    \"上调与下调数量接近，提示反应并非单一方向（假设）。\",\n    \"top_features 中多个基因 log2FC 为正且 padj 很小，可作为候选（假设）。\"\n  ],\n  \"uncertainty\": [\n    \"log2FC 似乎经过收缩，效应量更保守。\",\n    \"padj 为 NA 可能由独立过滤、全零计数或极端离群值导致。\",\n    \"计数不等于有方向的生物学效应。\"\n  ],\n  \"cannot_conclude\": [\n    \"不能从计数推断具体通路激活或抑制。\",\n    \"不能把细胞当作重复来推断个体水平效应。\",\n    \"不能仅凭 ORA 判断激活方向。\"\n  ],\n  \"learning_questions\": [\n    \"为什么 padj 会出现 NA？\",\n    \"log2FC 收缩对排序有什么影响？\",\n    \"显著计数与效应方向有何区别？\"\n  ],\n  \"evidence_used\": [],\n  \"claims\": [\n    {\n      \"id\": \"c1\",\n      \"text\": \"特征总数\",\n      \"fact\": \"n_features\",\n      \"value\": 22369,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"c2\",\n      \"text\": \"显著特征数\",\n      \"fact\": \"n_significant\",\n      \"value\": 999,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"c3\",\n      \"text\": \"上调特征数\",\n      \"fact\": \"n_up\",\n      \"value\": 519,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"c4\",\n      \"text\": \"下调特征数\",\n      \"fact\": \"n_down\",\n      \"value\": 480,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"c5\",\n      \"text\": \"padj 为 NA 的特征数\",\n      \"fact\": \"n_na_padj\",\n      \"value\": 5204,\n      \"evidence\": []\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 1847,
+      "completion_tokens": 632,
+      "total_tokens": 2479,
+      "prompt_tokens_details": {
+        "cached_tokens": 1664
+      },
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 183
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.81
+  },
+  "parsed": {
+    "data_facts": [
+      "共检测 22369 个特征，其中 17165 个参与检验。",
+      "在 padj<0.05 且 |log2FC|>1 下，显著特征 999 个，其中上调 519 个、下调 480 个。",
+      "padj 为 NA 的特征有 5204 个。"
+    ],
+    "statistical_meaning": [
+      "n_features 是输入特征总数，n_tested 是实际进入检验的数量。",
+      "n_significant 是同时满足 padj 与 log2FC 阈值的计数，n_up/n_down 是其方向拆分。",
+      "n_na_padj 表示未参与 FDR 校正计数的特征数。"
+    ],
+    "biological_interpretation": [
+      "地塞米松处理与未处理相比，存在一批表达变化较大的基因（假设，需结合证据）。",
+      "上调与下调数量接近，提示反应并非单一方向（假设）。",
+      "top_features 中多个基因 log2FC 为正且 padj 很小，可作为候选（假设）。"
+    ],
+    "uncertainty": [
+      "log2FC 似乎经过收缩，效应量更保守。",
+      "padj 为 NA 可能由独立过滤、全零计数或极端离群值导致。",
+      "计数不等于有方向的生物学效应。"
+    ],
+    "cannot_conclude": [
+      "不能从计数推断具体通路激活或抑制。",
+      "不能把细胞当作重复来推断个体水平效应。",
+      "不能仅凭 ORA 判断激活方向。"
+    ],
+    "learning_questions": [
+      "为什么 padj 会出现 NA？",
+      "log2FC 收缩对排序有什么影响？",
+      "显著计数与效应方向有何区别？"
+    ],
+    "evidence_used": [],
+    "claims": [
+      {
+        "id": "c1",
+        "text": "特征总数",
+        "fact": "n_features",
+        "value": 22369,
+        "evidence": []
+      },
+      {
+        "id": "c2",
+        "text": "显著特征数",
+        "fact": "n_significant",
+        "value": 999,
+        "evidence": []
+      },
+      {
+        "id": "c3",
+        "text": "上调特征数",
+        "fact": "n_up",
+        "value": 519,
+        "evidence": []
+      },
+      {
+        "id": "c4",
+        "text": "下调特征数",
+        "fact": "n_down",
+        "value": 480,
+        "evidence": []
+      },
+      {
+        "id": "c5",
+        "text": "padj 为 NA 的特征数",
+        "fact": "n_na_padj",
+        "value": 5204,
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "c1",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_features = 22369"
+      },
+      {
+        "claim": "c2",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_significant = 999"
+      },
+      {
+        "claim": "c3",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_up = 519"
+      },
+      {
+        "claim": "c4",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_down = 480"
+      },
+      {
+        "claim": "c5",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_na_padj = 5204"
+      }
+    ],
+    "n_claims": 5,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_features",
+      "expected": 22369,
+      "value": 22369,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_significant",
+      "expected": 999,
+      "value": 999,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_up",
+      "expected": 519,
+      "value": 519,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_down",
+      "expected": 480,
+      "value": 480,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_na_padj",
+      "expected": 5204,
+      "value": 5204,
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 5783,
+  "validation_rechecked_utc": "2026-10-03 20:09:21 UTC"
+}

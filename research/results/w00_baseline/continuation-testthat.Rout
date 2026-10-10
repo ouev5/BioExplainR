@@ -1,0 +1,35 @@
+
+R version 4.3.3 (2024-02-29) -- "Angel Food Cake"
+Copyright (C) 2024 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> library(testthat)
+> library(BioExplainR)
+> 
+> test_check("BioExplainR")
+bio_record: error captured -> failed to read /home/PRIVATE_PATH/file https://example.org/?token=PRIVATE_TOKEN
+  Use bio_explain_error() / bio_suggest_fix() for diagnosis.
+Loading required package: shiny
+[ FAIL 0 | WARN 0 | SKIP 2 | PASS 646 ]
+
+══ Skipped tests (2) ═══════════════════════════════════════════════════════════
+• On CRAN (1): 'test-validate.R:65:3'
+• real DESeq2 installed; class already defined (1): 'test-adapters-de.R:111:3'
+
+[ FAIL 0 | WARN 0 | SKIP 2 | PASS 646 ]
+> 
+> proc.time()
+   user  system elapsed 
+ 29.096   1.791  30.984 

@@ -1,0 +1,20 @@
+{
+  "command": [
+    "python3",
+    "tools/isolated-library-check.py",
+    "--archive",
+    "BioExplainR_0.4.0.9000.tar.gz",
+    "--output",
+    "/tmp/opencode/bioexplainr-paper-cn-core"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-08T09:29:33.164169+00:00",
+  "finished_utc": "2026-10-08T09:29:43.704557+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/paper-cn-core.txt",
+    "bytes": 768,
+    "sha256": "5eefc098bff10a619093b5e3b89c15a5a1b30f4223fcf0d7b3d4358ea1e4df17"
+  }
+}

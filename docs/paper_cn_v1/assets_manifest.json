@@ -1,0 +1,2018 @@
+{
+  "status": "generated",
+  "figures": [
+    {
+      "number": 1,
+      "composite": "docs/paper_cn_v1/figures/composites/Figure_1.pdf",
+      "panels": [
+        "docs/paper_cn_v1/figures/panels/Figure_1A.pdf",
+        "docs/paper_cn_v1/figures/panels/Figure_1B.pdf",
+        "docs/paper_cn_v1/figures/panels/Figure_1C.pdf",
+        "docs/paper_cn_v1/figures/panels/Figure_1D.pdf"
+      ],
+      "assembly": "PyMuPDF show_pdf_page; 2x2 vector-preserving composition"
+    },
+    {
+      "number": 2,
+      "composite": "docs/paper_cn_v1/figures/composites/Figure_2.pdf",
+      "panels": [
+        "docs/paper_cn_v1/figures/panels/Figure_2A.pdf",
+        "docs/paper_cn_v1/figures/panels/Figure_2B.pdf",
+        "docs/paper_cn_v1/figures/panels/Figure_2C.pdf",
+        "docs/paper_cn_v1/figures/panels/Figure_2D.pdf"
+      ],
+      "assembly": "PyMuPDF show_pdf_page; 2x2 vector-preserving composition"
+    },
+    {
+      "number": 3,
+      "composite": "docs/paper_cn_v1/figures/composites/Figure_3.pdf",
+      "panels": [
+        "docs/paper_cn_v1/figures/panels/Figure_3A.pdf",
+        "docs/paper_cn_v1/figures/panels/Figure_3B.pdf",
+        "docs/paper_cn_v1/figures/panels/Figure_3C.pdf",
+        "docs/paper_cn_v1/figures/panels/Figure_3D.pdf"
+      ],
+      "assembly": "PyMuPDF show_pdf_page; 2x2 vector-preserving composition"
+    },
+    {
+      "number": 4,
+      "composite": "docs/paper_cn_v1/figures/composites/Figure_4.pdf",
+      "panels": [
+        "docs/paper_cn_v1/figures/panels/Figure_4A.pdf",
+        "docs/paper_cn_v1/figures/panels/Figure_4B.pdf",
+        "docs/paper_cn_v1/figures/panels/Figure_4C.pdf",
+        "docs/paper_cn_v1/figures/panels/Figure_4D.pdf"
+      ],
+      "assembly": "PyMuPDF show_pdf_page; 2x2 vector-preserving composition"
+    },
+    {
+      "number": 5,
+      "composite": "docs/paper_cn_v1/figures/composites/Figure_5.pdf",
+      "panels": [
+        "docs/paper_cn_v1/figures/panels/Figure_5A.pdf",
+        "docs/paper_cn_v1/figures/panels/Figure_5B.pdf",
+        "docs/paper_cn_v1/figures/panels/Figure_5C.pdf",
+        "docs/paper_cn_v1/figures/panels/Figure_5D.pdf"
+      ],
+      "assembly": "PyMuPDF show_pdf_page; 2x2 vector-preserving composition"
+    },
+    {
+      "number": 6,
+      "composite": "docs/paper_cn_v1/figures/composites/Figure_6.pdf",
+      "panels": [
+        "docs/paper_cn_v1/figures/panels/Figure_6A.pdf",
+        "docs/paper_cn_v1/figures/panels/Figure_6B.pdf",
+        "docs/paper_cn_v1/figures/panels/Figure_6C.pdf",
+        "docs/paper_cn_v1/figures/panels/Figure_6D.pdf"
+      ],
+      "assembly": "PyMuPDF show_pdf_page; 2x2 vector-preserving composition"
+    },
+    {
+      "number": 7,
+      "composite": "docs/paper_cn_v1/figures/composites/Figure_7.pdf",
+      "panels": [
+        "docs/paper_cn_v1/figures/panels/Figure_7A.pdf",
+        "docs/paper_cn_v1/figures/panels/Figure_7B.pdf",
+        "docs/paper_cn_v1/figures/panels/Figure_7C.pdf",
+        "docs/paper_cn_v1/figures/panels/Figure_7D.pdf"
+      ],
+      "assembly": "PyMuPDF show_pdf_page; 2x2 vector-preserving composition"
+    },
+    {
+      "number": 8,
+      "composite": "docs/paper_cn_v1/figures/composites/Figure_8.pdf",
+      "panels": [
+        "docs/paper_cn_v1/figures/panels/Figure_8A.pdf",
+        "docs/paper_cn_v1/figures/panels/Figure_8B.pdf",
+        "docs/paper_cn_v1/figures/panels/Figure_8C.pdf",
+        "docs/paper_cn_v1/figures/panels/Figure_8D.pdf"
+      ],
+      "assembly": "PyMuPDF show_pdf_page; 2x2 vector-preserving composition"
+    }
+  ],
+  "tables": [
+    {
+      "number": 1,
+      "title": "案例数据、版本与分析边界",
+      "headers": [
+        "数据",
+        "对象/来源版本",
+        "规模",
+        "分析边界"
+      ],
+      "rows": [
+        [
+          "airway",
+          "airway 1.22.0; DESeq2 1.42.0",
+          "8文库、4供体; 22,369保留特征",
+          "配对DE、PCA、ORA及阈值核对"
+        ],
+        [
+          "PBMC3k",
+          "SCE 1.24.0; SeuratObject 5.0.1",
+          "2,700细胞、32,738特征; 1供体",
+          "QC/UMAP/独立单位摘要"
+        ],
+        [
+          "pasilla",
+          "pasilla 1.30.0; DESeq2 1.42.0",
+          "7文库、14,599特征",
+          "6组阈值、30项保存数值核对"
+        ],
+        [
+          "ALL",
+          "ALL 1.44.0; Biobase 2.62.0",
+          "128样本、12,625特征",
+          "表型与10个BT分组摘要"
+        ],
+        [
+          "bladderbatch",
+          "bladderbatch 1.40.0",
+          "57样本、22,283特征",
+          "3癌症分组、5批次摘要"
+        ],
+        [
+          "miniACC",
+          "MultiAssayExperiment 1.28.0",
+          "92病例、5模态; 46配对",
+          "开发案例:覆盖、方向、BH及安装包复现"
+        ]
+      ],
+      "note": "各数据承担不同验证终点；对象/细胞/文库/病例不合并为研究样本量。",
+      "sources": [
+        "research/results/data_manifest.json",
+        "research/results/public_datasets/dataset_tests.json",
+        "research/results/miniacc_installed_review/summary.json"
+      ],
+      "xlsx": "docs/paper_cn_v1/tables/Table_1.xlsx",
+      "csv": "docs/paper_cn_v1/tables/Table_1.csv"
+    },
+    {
+      "number": 2,
+      "title": "airway 阈值敏感性及适配器核对",
+      "headers": [
+        "P_adj阈值",
+        "|log2FC|阈值",
+        "事实",
+        "源表值",
+        "适配器值",
+        "一致"
+      ],
+      "rows": [
+        [
+          0.01,
+          0.0,
+          "n_features",
+          22369,
+          22369,
+          "TRUE"
+        ],
+        [
+          0.01,
+          0.0,
+          "n_significant",
+          2916,
+          2916,
+          "TRUE"
+        ],
+        [
+          0.01,
+          0.0,
+          "n_up",
+          1649,
+          1649,
+          "TRUE"
+        ],
+        [
+          0.01,
+          0.0,
+          "n_down",
+          1267,
+          1267,
+          "TRUE"
+        ],
+        [
+          0.01,
+          0.0,
+          "n_na_padj",
+          5204,
+          5204,
+          "TRUE"
+        ],
+        [
+          0.05,
+          0.0,
+          "n_features",
+          22369,
+          22369,
+          "TRUE"
+        ],
+        [
+          0.05,
+          0.0,
+          "n_significant",
+          4030,
+          4030,
+          "TRUE"
+        ],
+        [
+          0.05,
+          0.0,
+          "n_up",
+          2208,
+          2208,
+          "TRUE"
+        ],
+        [
+          0.05,
+          0.0,
+          "n_down",
+          1822,
+          1822,
+          "TRUE"
+        ],
+        [
+          0.05,
+          0.0,
+          "n_na_padj",
+          5204,
+          5204,
+          "TRUE"
+        ],
+        [
+          0.1,
+          0.0,
+          "n_features",
+          22369,
+          22369,
+          "TRUE"
+        ],
+        [
+          0.1,
+          0.0,
+          "n_significant",
+          4858,
+          4858,
+          "TRUE"
+        ],
+        [
+          0.1,
+          0.0,
+          "n_up",
+          2625,
+          2625,
+          "TRUE"
+        ],
+        [
+          0.1,
+          0.0,
+          "n_down",
+          2233,
+          2233,
+          "TRUE"
+        ],
+        [
+          0.1,
+          0.0,
+          "n_na_padj",
+          5204,
+          5204,
+          "TRUE"
+        ],
+        [
+          0.01,
+          1.0,
+          "n_features",
+          22369,
+          22369,
+          "TRUE"
+        ],
+        [
+          0.01,
+          1.0,
+          "n_significant",
+          871,
+          871,
+          "TRUE"
+        ],
+        [
+          0.01,
+          1.0,
+          "n_up",
+          471,
+          471,
+          "TRUE"
+        ],
+        [
+          0.01,
+          1.0,
+          "n_down",
+          400,
+          400,
+          "TRUE"
+        ],
+        [
+          0.01,
+          1.0,
+          "n_na_padj",
+          5204,
+          5204,
+          "TRUE"
+        ],
+        [
+          0.05,
+          1.0,
+          "n_features",
+          22369,
+          22369,
+          "TRUE"
+        ],
+        [
+          0.05,
+          1.0,
+          "n_significant",
+          999,
+          999,
+          "TRUE"
+        ],
+        [
+          0.05,
+          1.0,
+          "n_up",
+          519,
+          519,
+          "TRUE"
+        ],
+        [
+          0.05,
+          1.0,
+          "n_down",
+          480,
+          480,
+          "TRUE"
+        ],
+        [
+          0.05,
+          1.0,
+          "n_na_padj",
+          5204,
+          5204,
+          "TRUE"
+        ],
+        [
+          0.1,
+          1.0,
+          "n_features",
+          22369,
+          22369,
+          "TRUE"
+        ],
+        [
+          0.1,
+          1.0,
+          "n_significant",
+          1085,
+          1085,
+          "TRUE"
+        ],
+        [
+          0.1,
+          1.0,
+          "n_up",
+          562,
+          562,
+          "TRUE"
+        ],
+        [
+          0.1,
+          1.0,
+          "n_down",
+          523,
+          523,
+          "TRUE"
+        ],
+        [
+          0.1,
+          1.0,
+          "n_na_padj",
+          5204,
+          5204,
+          "TRUE"
+        ],
+        [
+          0.01,
+          2.0,
+          "n_features",
+          22369,
+          22369,
+          "TRUE"
+        ],
+        [
+          0.01,
+          2.0,
+          "n_significant",
+          227,
+          227,
+          "TRUE"
+        ],
+        [
+          0.01,
+          2.0,
+          "n_up",
+          128,
+          128,
+          "TRUE"
+        ],
+        [
+          0.01,
+          2.0,
+          "n_down",
+          99,
+          99,
+          "TRUE"
+        ],
+        [
+          0.01,
+          2.0,
+          "n_na_padj",
+          5204,
+          5204,
+          "TRUE"
+        ],
+        [
+          0.05,
+          2.0,
+          "n_features",
+          22369,
+          22369,
+          "TRUE"
+        ],
+        [
+          0.05,
+          2.0,
+          "n_significant",
+          244,
+          244,
+          "TRUE"
+        ],
+        [
+          0.05,
+          2.0,
+          "n_up",
+          137,
+          137,
+          "TRUE"
+        ],
+        [
+          0.05,
+          2.0,
+          "n_down",
+          107,
+          107,
+          "TRUE"
+        ],
+        [
+          0.05,
+          2.0,
+          "n_na_padj",
+          5204,
+          5204,
+          "TRUE"
+        ],
+        [
+          0.1,
+          2.0,
+          "n_features",
+          22369,
+          22369,
+          "TRUE"
+        ],
+        [
+          0.1,
+          2.0,
+          "n_significant",
+          252,
+          252,
+          "TRUE"
+        ],
+        [
+          0.1,
+          2.0,
+          "n_up",
+          141,
+          141,
+          "TRUE"
+        ],
+        [
+          0.1,
+          2.0,
+          "n_down",
+          111,
+          111,
+          "TRUE"
+        ],
+        [
+          0.1,
+          2.0,
+          "n_na_padj",
+          5204,
+          5204,
+          "TRUE"
+        ]
+      ],
+      "note": "9组阈值×5事实=45项。严格使用P_adj<α、|log2FC|>τ；NA不作零。",
+      "sources": [
+        "research/results/paper_cn_cases_v1/airway_threshold_checks.csv"
+      ],
+      "xlsx": "docs/paper_cn_v1/tables/Table_2.xlsx",
+      "csv": "docs/paper_cn_v1/tables/Table_2.csv"
+    },
+    {
+      "number": 3,
+      "title": "pasilla 独立来源数值事实核对",
+      "headers": [
+        "P_adj阈值",
+        "|log2FC|阈值",
+        "事实",
+        "直接源表值",
+        "适配器值",
+        "一致"
+      ],
+      "rows": [
+        [
+          0.01,
+          0.0,
+          "n_features",
+          14599,
+          14599,
+          "TRUE"
+        ],
+        [
+          0.01,
+          0.0,
+          "n_significant",
+          731,
+          731,
+          "TRUE"
+        ],
+        [
+          0.01,
+          0.0,
+          "n_up",
+          328,
+          328,
+          "TRUE"
+        ],
+        [
+          0.01,
+          0.0,
+          "n_down",
+          403,
+          403,
+          "TRUE"
+        ],
+        [
+          0.01,
+          0.0,
+          "n_na_padj",
+          5800,
+          5800,
+          "TRUE"
+        ],
+        [
+          0.01,
+          1.0,
+          "n_features",
+          14599,
+          14599,
+          "TRUE"
+        ],
+        [
+          0.01,
+          1.0,
+          "n_significant",
+          181,
+          181,
+          "TRUE"
+        ],
+        [
+          0.01,
+          1.0,
+          "n_up",
+          89,
+          89,
+          "TRUE"
+        ],
+        [
+          0.01,
+          1.0,
+          "n_down",
+          92,
+          92,
+          "TRUE"
+        ],
+        [
+          0.01,
+          1.0,
+          "n_na_padj",
+          5800,
+          5800,
+          "TRUE"
+        ],
+        [
+          0.05,
+          0.0,
+          "n_features",
+          14599,
+          14599,
+          "TRUE"
+        ],
+        [
+          0.05,
+          0.0,
+          "n_significant",
+          1068,
+          1068,
+          "TRUE"
+        ],
+        [
+          0.05,
+          0.0,
+          "n_up",
+          481,
+          481,
+          "TRUE"
+        ],
+        [
+          0.05,
+          0.0,
+          "n_down",
+          587,
+          587,
+          "TRUE"
+        ],
+        [
+          0.05,
+          0.0,
+          "n_na_padj",
+          5800,
+          5800,
+          "TRUE"
+        ],
+        [
+          0.05,
+          1.0,
+          "n_features",
+          14599,
+          14599,
+          "TRUE"
+        ],
+        [
+          0.05,
+          1.0,
+          "n_significant",
+          218,
+          218,
+          "TRUE"
+        ],
+        [
+          0.05,
+          1.0,
+          "n_up",
+          108,
+          108,
+          "TRUE"
+        ],
+        [
+          0.05,
+          1.0,
+          "n_down",
+          110,
+          110,
+          "TRUE"
+        ],
+        [
+          0.05,
+          1.0,
+          "n_na_padj",
+          5800,
+          5800,
+          "TRUE"
+        ],
+        [
+          0.1,
+          0.0,
+          "n_features",
+          14599,
+          14599,
+          "TRUE"
+        ],
+        [
+          0.1,
+          0.0,
+          "n_significant",
+          1330,
+          1330,
+          "TRUE"
+        ],
+        [
+          0.1,
+          0.0,
+          "n_up",
+          613,
+          613,
+          "TRUE"
+        ],
+        [
+          0.1,
+          0.0,
+          "n_down",
+          717,
+          717,
+          "TRUE"
+        ],
+        [
+          0.1,
+          0.0,
+          "n_na_padj",
+          5800,
+          5800,
+          "TRUE"
+        ],
+        [
+          0.1,
+          1.0,
+          "n_features",
+          14599,
+          14599,
+          "TRUE"
+        ],
+        [
+          0.1,
+          1.0,
+          "n_significant",
+          244,
+          244,
+          "TRUE"
+        ],
+        [
+          0.1,
+          1.0,
+          "n_up",
+          125,
+          125,
+          "TRUE"
+        ],
+        [
+          0.1,
+          1.0,
+          "n_down",
+          119,
+          119,
+          "TRUE"
+        ],
+        [
+          0.1,
+          1.0,
+          "n_na_padj",
+          5800,
+          5800,
+          "TRUE"
+        ]
+      ],
+      "note": "沿用0.3.1保存结果，30/30；本轮没有重拟合pasilla上游模型。",
+      "sources": [
+        "research/results/related_tools/pasilla_fact_checks.csv"
+      ],
+      "xlsx": "docs/paper_cn_v1/tables/Table_3.xlsx",
+      "csv": "docs/paper_cn_v1/tables/Table_3.csv"
+    },
+    {
+      "number": 4,
+      "title": "miniACC 模态覆盖及统一分母",
+      "headers": [
+        "模态",
+        "观测病例",
+        "缺失病例",
+        "主病例分母"
+      ],
+      "rows": [
+        [
+          "RNASeq2GeneNorm",
+          79,
+          13,
+          92
+        ],
+        [
+          "gistict",
+          90,
+          2,
+          92
+        ],
+        [
+          "RPPAArray",
+          46,
+          46,
+          92
+        ],
+        [
+          "Mutations",
+          90,
+          2,
+          92
+        ],
+        [
+          "miRNASeqGene",
+          80,
+          12,
+          92
+        ]
+      ],
+      "note": "映射pass表示观测ID对应合法，不表示五模态齐全；完全观测43病例、未观测0病例。",
+      "sources": [
+        "research/results/miniacc_installed_review/modality_coverage.csv",
+        "research/results/miniacc_installed_review/alignment_summary.json"
+      ],
+      "xlsx": "docs/paper_cn_v1/tables/Table_4.xlsx",
+      "csv": "docs/paper_cn_v1/tables/Table_4.csv"
+    },
+    {
+      "number": 5,
+      "title": "miniACC 33特征效应、方向及显著性",
+      "headers": [
+        "feature_id",
+        "n_early",
+        "n_late",
+        "n_excluded_nonfinite",
+        "rna_effect",
+        "protein_effect",
+        "rna_p",
+        "protein_p",
+        "direction",
+        "rna_padj",
+        "protein_padj"
+      ],
+      "rows": [
+        [
+          "ACVRL1",
+          28.0,
+          18.0,
+          0.0,
+          0.2644232579741,
+          0.0202704433690476,
+          0.628449514675669,
+          0.693669271818908,
+          "same",
+          0.78773395114388,
+          0.73842212806529
+        ],
+        [
+          "AR",
+          28.0,
+          18.0,
+          0.0,
+          -0.174086865937352,
+          0.105455922757936,
+          0.718057787862487,
+          0.596857315232731,
+          "opposite",
+          0.817100241360761,
+          0.673819736000771
+        ],
+        [
+          "ASNS",
+          28.0,
+          18.0,
+          0.0,
+          0.167969119553151,
+          0.156412205623016,
+          0.566008302938338,
+          0.246401557952506,
+          "same",
+          0.747130959878606,
+          0.427960600654352
+        ],
+        [
+          "ATM",
+          28.0,
+          18.0,
+          0.0,
+          -0.101905716575413,
+          0.00636413282539683,
+          0.4508493395466,
+          0.237347985980066,
+          "opposite",
+          0.708477533573228,
+          0.427960600654352
+        ],
+        [
+          "BRCA2",
+          28.0,
+          18.0,
+          0.0,
+          1.23293214646427,
+          -0.054293163,
+          0.00286149425090888,
+          0.128698740659342,
+          "opposite",
+          0.0314764367599976,
+          0.326696803212176
+        ],
+        [
+          "CDK1",
+          28.0,
+          18.0,
+          0.0,
+          1.73542937821387,
+          -0.0628986167142857,
+          0.000765811754235519,
+          0.550876245541321,
+          "opposite",
+          0.0148608677090062,
+          0.6492470036737
+        ],
+        [
+          "EGFR",
+          28.0,
+          18.0,
+          0.0,
+          -0.106632693055252,
+          0.0764415063253968,
+          0.973067587975066,
+          0.386195696849609,
+          "opposite",
+          1.0,
+          0.554106869392918
+        ],
+        [
+          "ERCC1",
+          28.0,
+          18.0,
+          0.0,
+          0.359862533821557,
+          0.0261684033571429,
+          0.0223417594024899,
+          0.506709527238744,
+          "same",
+          0.105325437183167,
+          0.61931164440291
+        ],
+        [
+          "FASN",
+          28.0,
+          18.0,
+          0.0,
+          0.911771891420948,
+          0.559023611285714,
+          0.0128798612242699,
+          0.0210540215266384,
+          "same",
+          0.0850070840801816,
+          0.0868478387973832
+        ],
+        [
+          "G6PD",
+          28.0,
+          18.0,
+          0.0,
+          -0.378150267836963,
+          -0.397061961861111,
+          0.219951762437007,
+          0.0175709895665302,
+          "same",
+          0.558339089263171,
+          0.0828346650993566
+        ],
+        [
+          "GAPDH",
+          28.0,
+          18.0,
+          0.0,
+          0.116947248637729,
+          0.493543036361111,
+          0.973067587975066,
+          0.246401557952506,
+          "same",
+          1.0,
+          0.427960600654352
+        ],
+        [
+          "GATA3",
+          28.0,
+          18.0,
+          0.0,
+          2.31466735386565,
+          -0.114176930730159,
+          0.000900658649030676,
+          0.327543233378293,
+          "opposite",
+          0.0148608677090062,
+          0.514710795308746
+        ],
+        [
+          "IGFBP2",
+          28.0,
+          18.0,
+          0.0,
+          0.13675508924346,
+          0.163275198047619,
+          0.550876245541321,
+          0.237347985980066,
+          "same",
+          0.747130959878606,
+          0.427960600654352
+        ],
+        [
+          "INPP4B",
+          28.0,
+          18.0,
+          0.0,
+          -0.324316013514311,
+          -0.144579099011905,
+          0.478333853467384,
+          0.0113385242129992,
+          "same",
+          0.717500780201076,
+          0.0828346650993566
+        ],
+        [
+          "IRS1",
+          28.0,
+          18.0,
+          0.0,
+          -0.00434804066936856,
+          0.0209376618650794,
+          0.644509596390447,
+          0.744153416682932,
+          "opposite",
+          0.78773395114388,
+          0.767408210954274
+        ],
+        [
+          "MSH2",
+          28.0,
+          18.0,
+          0.0,
+          0.0992460578634127,
+          -0.0109269030555555,
+          0.424281878163717,
+          0.612563396364337,
+          "opposite",
+          0.700065098970133,
+          0.673819736000771
+        ],
+        [
+          "MSH6",
+          28.0,
+          18.0,
+          0.0,
+          0.114303317667224,
+          0.126714658619048,
+          0.398652847860754,
+          0.159511603972232,
+          "same",
+          0.692397051547626,
+          0.375991637934547
+        ],
+        [
+          "MYH11",
+          28.0,
+          18.0,
+          0.0,
+          0.391649174779195,
+          -0.10487455643254,
+          0.521222224668819,
+          0.492412090011099,
+          "opposite",
+          0.747130959878606,
+          0.61931164440291
+        ],
+        [
+          "NF2",
+          28.0,
+          18.0,
+          0.0,
+          0.272935459607247,
+          -0.0496702631309524,
+          0.246401557952506,
+          0.424281878163717,
+          "opposite",
+          0.58080367231662,
+          0.560052079176107
+        ],
+        [
+          "PCNA",
+          28.0,
+          18.0,
+          0.0,
+          0.109117269513368,
+          -0.0275750380476191,
+          0.373979140450174,
+          0.830686772887779,
+          "opposite",
+          0.692397051547626,
+          0.830686772887779
+        ],
+        [
+          "PDCD4",
+          28.0,
+          18.0,
+          0.0,
+          0.0180202393588509,
+          0.257636163087302,
+          1.0,
+          0.305793104566941,
+          "same",
+          1.0,
+          0.504558622535453
+        ],
+        [
+          "PDK1",
+          28.0,
+          18.0,
+          0.0,
+          0.383364235612799,
+          -0.0591505620992063,
+          0.398652847860754,
+          0.386195696849609,
+          "opposite",
+          0.692397051547626,
+          0.554106869392918
+        ],
+        [
+          "PEA15",
+          28.0,
+          18.0,
+          0.0,
+          0.456395293885834,
+          0.131249425087302,
+          0.0334238497120283,
+          0.0266241508902018,
+          "same",
+          0.137873380062117,
+          0.0976218865974066
+        ],
+        [
+          "PRDX1",
+          28.0,
+          18.0,
+          0.0,
+          0.297119658246467,
+          -0.2323110185,
+          0.362004599283092,
+          0.00668486278624042,
+          "opposite",
+          0.692397051547626,
+          0.0828346650993566
+        ],
+        [
+          "PREX1",
+          28.0,
+          18.0,
+          0.0,
+          -0.291892064905626,
+          -0.0236414332936508,
+          0.265228090062215,
+          0.424281878163717,
+          "same",
+          0.583501798136874,
+          0.560052079176107
+        ],
+        [
+          "PTEN",
+          28.0,
+          18.0,
+          0.0,
+          0.309270637455834,
+          0.197632556746032,
+          0.0463809413106619,
+          0.0851020493413512,
+          "same",
+          0.170063451472427,
+          0.255306148024054
+        ],
+        [
+          "RBM15",
+          28.0,
+          18.0,
+          0.0,
+          0.368636990397065,
+          0.372576057944444,
+          0.0113385242129992,
+          0.0128798612242699,
+          "same",
+          0.0850070840801816,
+          0.0828346650993566
+        ],
+        [
+          "TFRC",
+          28.0,
+          18.0,
+          0.0,
+          0.756487201407239,
+          1.01559711280556,
+          0.073559622274472,
+          0.00307908193839542,
+          "same",
+          0.220678866823416,
+          0.0828346650993566
+        ],
+        [
+          "TSC1",
+          28.0,
+          18.0,
+          0.0,
+          0.33677392302303,
+          0.26574761309127,
+          0.0811019285627392,
+          0.0175709895665302,
+          "same",
+          0.223030303547533,
+          0.0828346650993566
+        ],
+        [
+          "TTF1",
+          28.0,
+          18.0,
+          0.0,
+          0.380965858502704,
+          -0.24003391772619,
+          0.016527931992041,
+          0.0772558047946589,
+          "opposite",
+          0.0909036259562254,
+          0.254944155822374
+        ],
+        [
+          "VHL",
+          28.0,
+          18.0,
+          0.0,
+          -0.096564290375472,
+          -0.345309483198413,
+          0.901480748010527,
+          0.0175709895665302,
+          "same",
+          0.99162882281158,
+          0.0828346650993566
+        ],
+        [
+          "XBP1",
+          28.0,
+          18.0,
+          0.0,
+          -0.660525458218901,
+          -0.13562561940873,
+          0.0543060227036129,
+          0.0980669635172524,
+          "same",
+          0.179209874921923,
+          0.269684149672444
+        ],
+        [
+          "XRCC1",
+          28.0,
+          18.0,
+          0.0,
+          0.121789853808137,
+          -0.0504100143452381,
+          0.693669271818908,
+          0.219951762437007,
+          "opposite",
+          0.817100241360761,
+          0.427960600654352
+        ]
+      ],
+      "note": "RNA为log2(归一化表达+1)，蛋白保持RPPA值；效应为late均值−early均值。两模态量纲不同，不比较绝对效应大小。BH分别在33特征内计算。",
+      "sources": [
+        "research/results/miniacc_installed_review/feature_results.csv"
+      ],
+      "xlsx": "docs/paper_cn_v1/tables/Table_5.xlsx",
+      "csv": "docs/paper_cn_v1/tables/Table_5.csv"
+    },
+    {
+      "number": 6,
+      "title": "保存的主消融实验",
+      "headers": [
+        "输入",
+        "匹配",
+        "目标",
+        "匹配率",
+        "覆盖率",
+        "已回答准确率",
+        "API请求",
+        "中位秒"
+      ],
+      "rows": [
+        [
+          "direct_bounded",
+          437,
+          1440,
+          0.303472222222222,
+          0.358333333333333,
+          0.846899224806202,
+          360,
+          2.23
+        ],
+        [
+          "facts_only",
+          1440,
+          1440,
+          1.0,
+          1.0,
+          1.0,
+          360,
+          2.68
+        ],
+        [
+          "facts_evidence",
+          1440,
+          1440,
+          1.0,
+          1.0,
+          1.0,
+          360,
+          2.905
+        ]
+      ],
+      "note": "120程序案例、480唯一事实、3方法×3重复；1,080实际请求、4,320评分。100%是显式事实传递终点。",
+      "sources": [
+        "research/results/main_scale_480/ablation_summary.csv"
+      ],
+      "xlsx": "docs/paper_cn_v1/tables/Table_6.xlsx",
+      "csv": "docs/paper_cn_v1/tables/Table_6.csv"
+    },
+    {
+      "number": 7,
+      "title": "六类功能家族与双模型事实传递",
+      "headers": [
+        "家族/模型",
+        "方法",
+        "匹配",
+        "已回答",
+        "目标"
+      ],
+      "rows": [
+        [
+          "cell_composition",
+          "direct_bounded",
+          125,
+          125,
+          180
+        ],
+        [
+          "cell_composition",
+          "facts_evidence",
+          180,
+          180,
+          180
+        ],
+        [
+          "cell_composition",
+          "facts_only",
+          180,
+          180,
+          180
+        ],
+        [
+          "differential_expression",
+          "direct_bounded",
+          0,
+          9,
+          360
+        ],
+        [
+          "differential_expression",
+          "facts_evidence",
+          360,
+          360,
+          360
+        ],
+        [
+          "differential_expression",
+          "facts_only",
+          360,
+          360,
+          360
+        ],
+        [
+          "enrichment",
+          "direct_bounded",
+          25,
+          25,
+          240
+        ],
+        [
+          "enrichment",
+          "facts_evidence",
+          240,
+          240,
+          240
+        ],
+        [
+          "enrichment",
+          "facts_only",
+          240,
+          240,
+          240
+        ],
+        [
+          "generic",
+          "direct_bounded",
+          0,
+          0,
+          180
+        ],
+        [
+          "generic",
+          "facts_evidence",
+          180,
+          180,
+          180
+        ],
+        [
+          "generic",
+          "facts_only",
+          180,
+          180,
+          180
+        ],
+        [
+          "pca",
+          "direct_bounded",
+          120,
+          158,
+          240
+        ],
+        [
+          "pca",
+          "facts_evidence",
+          240,
+          240,
+          240
+        ],
+        [
+          "pca",
+          "facts_only",
+          240,
+          240,
+          240
+        ],
+        [
+          "single_cell",
+          "direct_bounded",
+          167,
+          199,
+          240
+        ],
+        [
+          "single_cell",
+          "facts_evidence",
+          240,
+          240,
+          240
+        ],
+        [
+          "single_cell",
+          "facts_only",
+          240,
+          240,
+          240
+        ],
+        [
+          "step-5-preview",
+          "同输入单轮",
+          480,
+          480,
+          480
+        ],
+        [
+          "deepseek-flash",
+          "同输入单轮",
+          480,
+          480,
+          480
+        ]
+      ],
+      "note": "家族汇总属主消融三轮；双模型各120请求，只评价结构化事实传递。未配置代理和缺失replay不进入API分母。",
+      "sources": [
+        "research/results/main_scale_480/family_summary.csv",
+        "research/results/common_task_scale_480/common_task_summary.csv"
+      ],
+      "xlsx": "docs/paper_cn_v1/tables/Table_7.xlsx",
+      "csv": "docs/paper_cn_v1/tables/Table_7.csv"
+    },
+    {
+      "number": 8,
+      "title": "新增开发场景的期望状态与实际状态",
+      "headers": [
+        "case",
+        "source",
+        "purpose",
+        "expected",
+        "actual"
+      ],
+      "rows": [
+        [
+          "airway_nine_thresholds",
+          "airway stored DESeqResults",
+          "full-table counts / 45 numeric facts",
+          "pass",
+          "pass"
+        ],
+        [
+          "pbmc_independent_unit",
+          "PBMC3k stored SCE",
+          "2700 cells remain one donor",
+          "pass",
+          "pass"
+        ],
+        [
+          "airway_correct_pca",
+          "airway stored VST",
+          "source and generated coordinates",
+          "pass",
+          "pass"
+        ],
+        [
+          "airway_injected_pca_coordinate",
+          "airway controlled mutation",
+          "detect coordinate drift",
+          "fail",
+          "fail"
+        ],
+        [
+          "airway_injected_pca_label",
+          "airway controlled mutation",
+          "detect wrong variance label",
+          "fail",
+          "fail"
+        ],
+        [
+          "raw_p_not_adjusted",
+          "hand-computable fixture",
+          "raw-only state is not adjusted significance",
+          "pass",
+          "pass"
+        ],
+        [
+          "payload_budget_rejects",
+          "airway stored DESeqResults",
+          "complete facts fail explicitly when over budget",
+          "pass",
+          "pass"
+        ],
+        [
+          "valid_map_incomplete_coverage",
+          "hand-computable fixture",
+          "valid map with 1 complete / 1 unmeasured of 3",
+          "pass",
+          "pass"
+        ],
+        [
+          "missing_observed_mapping",
+          "hand-computable fixture",
+          "observed-but-unmapped sample is partial",
+          "partial",
+          "partial"
+        ],
+        [
+          "mapped_unit_outside_cohort",
+          "hand-computable fixture",
+          "reject mapping outside complete denominator",
+          "fail",
+          "fail"
+        ],
+        [
+          "miniacc_observed_relation",
+          "miniACC stored project",
+          "explicit effect relation matches observed sign",
+          "pass",
+          "pass"
+        ],
+        [
+          "miniacc_wrong_relation",
+          "miniACC controlled mutation",
+          "reject incorrect relation",
+          "fail",
+          "fail"
+        ],
+        [
+          "miniacc_reversed_comparison",
+          "miniACC controlled mutation",
+          "reject reversed numerator / denominator",
+          "fail",
+          "fail"
+        ],
+        [
+          "miniacc_missing_comparison_scope",
+          "miniACC controlled mutation",
+          "missing scientific scope remains unverified",
+          "unverified",
+          "unverified"
+        ],
+        [
+          "workbench_project_dispatch",
+          "miniACC stored project",
+          "workbench preserves project and coverage",
+          "pass",
+          "pass"
+        ]
+      ],
+      "note": "15/15期望一致；受控修改标明controlled mutation，手算fixture不冒充公开生物数据。",
+      "sources": [
+        "research/results/paper_cn_cases_v1/scenario_checks.csv"
+      ],
+      "xlsx": "docs/paper_cn_v1/tables/Table_8.xlsx",
+      "csv": "docs/paper_cn_v1/tables/Table_8.csv"
+    },
+    {
+      "number": 9,
+      "title": "工程验收与复现层级",
+      "headers": [
+        "层级",
+        "结果",
+        "记录",
+        "范围"
+      ],
+      "rows": [
+        [
+          "源码",
+          "676 pass / 1 skip / 677",
+          "paper-cn-source.*",
+          "0失败/错误/警告"
+        ],
+        [
+          "包检查",
+          "Status: OK",
+          "paper-cn-package-check.*",
+          "本轮实际构建包"
+        ],
+        [
+          "历史API",
+          "74/74",
+          "review-legacy-api*-result.json",
+          "10-08源码及安装包名称/位置参数"
+        ],
+        [
+          "浏览器",
+          "7组pass",
+          "paper-cn-shiny-browser-final/summary.json",
+          "项目、PDF、英中、两会话、双视口"
+        ],
+        [
+          "miniACC安装复现",
+          "8核心表逐字节相同",
+          "review-miniacc-boundaries-final.*",
+          "同一数据工程复现"
+        ],
+        [
+          "Python复核",
+          "66效应/方向/覆盖/BH",
+          "review-miniacc-installed-audit.*",
+          "原始Wilcoxon P未独立重算"
+        ]
+      ],
+      "note": "工程检查和数值复核不代替独立专家、用户或科学泛化评价。",
+      "sources": [
+        "research/results/w00_baseline/paper-cn-source.txt",
+        "research/results/w00_baseline/paper-cn-shiny-browser-final/summary.json",
+        "docs/implementation_records/REVIEW_CONTINUATION.md"
+      ],
+      "xlsx": "docs/paper_cn_v1/tables/Table_9.xlsx",
+      "csv": "docs/paper_cn_v1/tables/Table_9.csv"
+    }
+  ],
+  "files": [
+    {
+      "path": "docs/paper_cn_v1/figures/composites/Figure_1.pdf",
+      "bytes": 77666,
+      "sha256": "41e74152f3acfde796228a26baaa825a54e447320c96c0ce7f21fbde850f8a02"
+    },
+    {
+      "path": "docs/paper_cn_v1/figures/composites/Figure_2.pdf",
+      "bytes": 334799,
+      "sha256": "244fe1b91f86366499b161a6c8222c5a1ea40e334908dc14fb4fe6ba64c266fa"
+    },
+    {
+      "path": "docs/paper_cn_v1/figures/composites/Figure_3.pdf",
+      "bytes": 109737,
+      "sha256": "6bf16991c3f4a86ee492f789462034801da3f9daa8d6e6fd4eafc74c1dc9878f"
+    },
+    {
+      "path": "docs/paper_cn_v1/figures/composites/Figure_4.pdf",
+      "bytes": 197542,
+      "sha256": "8981734f2182bd74b7c83cba687258aa0f04e0afd6d7b649fcdd2aad2d7d1470"
+    },
+    {
+      "path": "docs/paper_cn_v1/figures/composites/Figure_5.pdf",
+      "bytes": 79280,
+      "sha256": "cc0bd430cb47bc9e110393624dce9c60c3405f96a9254deceea78666c3c5480b"
+    },
+    {
+      "path": "docs/paper_cn_v1/figures/composites/Figure_6.pdf",
+      "bytes": 77069,
+      "sha256": "b4195245aa67b3d08ea26c1d625f27363c5b22919541ad83b0f61c8d87d829d3"
+    },
+    {
+      "path": "docs/paper_cn_v1/figures/composites/Figure_7.pdf",
+      "bytes": 67166,
+      "sha256": "03e2b30d73ddb753549c7f9ecca6cdc046907e99cccae10841b407f8dbb27ae3"
+    },
+    {
+      "path": "docs/paper_cn_v1/figures/composites/Figure_8.pdf",
+      "bytes": 93009,
+      "sha256": "7a5c4f8cc7187678509bfbabc754293977389d7a510825a8a29fed446db2b908"
+    },
+    {
+      "path": "docs/paper_cn_v1/figures/panels/Figure_1A.pdf",
+      "bytes": 20795,
+      "sha256": "6227736a257f42fcf611be85623521d1c338d727a8289df1c45ca20eaadc2e80"
+    },
+    {
+      "path": "docs/paper_cn_v1/figures/panels/Figure_1B.pdf",
+      "bytes": 21223,
+      "sha256": "cc6b5e252fe6c43757ed06661d4b7683b12bd096737092fb5335a90a448e3c3e"
+    },
+    {
+      "path": "docs/paper_cn_v1/figures/panels/Figure_1C.pdf",
+      "bytes": 18624,
+      "sha256": "3ece628686e44ca6544cb9a184a1d4c213cd139d4ad5143c77b27063fcb5bd5b"
+    },
+    {
+      "path": "docs/paper_cn_v1/figures/panels/Figure_1D.pdf",
+      "bytes": 18295,
+      "sha256": "a945fb2460dcf77ddde6cd5a0defb9250a2d0e1f89c1c64fa376eec688e0edde"
+    },
+    {
+      "path": "docs/paper_cn_v1/figures/panels/Figure_2A.pdf",
+      "bytes": 284263,
+      "sha256": "bf722d43610f92b70e0b485ff3e058f79f88ca573860cd423a4c1735a902b92c"
+    },
+    {
+      "path": "docs/paper_cn_v1/figures/panels/Figure_2B.pdf",
+      "bytes": 18061,
+      "sha256": "1a10c241d1da69778a038a5c6b81c0ac199d7e88b0cfc2192eec2d2b0768cfef"
+    },
+    {
+      "path": "docs/paper_cn_v1/figures/panels/Figure_2C.pdf",
+      "bytes": 19980,
+      "sha256": "3f165c7d45417b43852a3a89724638d152a2de95c76eadac1399242182448847"
+    },
+    {
+      "path": "docs/paper_cn_v1/figures/panels/Figure_2D.pdf",
+      "bytes": 18256,
+      "sha256": "4b1d19b167a2a430ca6a25f49b64f3348cb145d184e542ed9543c46704dbbfcb"
+    },
+    {
+      "path": "docs/paper_cn_v1/figures/panels/Figure_3A.pdf",
+      "bytes": 58905,
+      "sha256": "4c10331d5277424b604342fdc22f2faf63b3e297df73fdec2af74c84628ebf2c"
+    },
+    {
+      "path": "docs/paper_cn_v1/figures/panels/Figure_3B.pdf",
+      "bytes": 16965,
+      "sha256": "b99bd9e01e7d9b02561fad4633091bc1ae1b7b09e695e9aa727ebf514653ddb8"
+    },
+    {
+      "path": "docs/paper_cn_v1/figures/panels/Figure_3C.pdf",
+      "bytes": 16694,
+      "sha256": "00e32e38c46c2914609a69daa810334255d6961b8630fea038e1f1f324e1a597"
+    },
+    {
+      "path": "docs/paper_cn_v1/figures/panels/Figure_3D.pdf",
+      "bytes": 19076,
+      "sha256": "b49a2f5341cc50eecc41d1921f3b2c837eb96c5e52d114e32ebe990e74d6003d"
+    },
+    {
+      "path": "docs/paper_cn_v1/figures/panels/Figure_4A.pdf",
+      "bytes": 16463,
+      "sha256": "63eb9dcdc8337b4b486323c2b1af111e95000c5d5e7b03b711909368cc5455c1"
+    },
+    {
+      "path": "docs/paper_cn_v1/figures/panels/Figure_4B.pdf",
+      "bytes": 147752,
+      "sha256": "f55a0963f7e94fa92291c925e41db51be7cd26961c0001cca5bb9e9540023c1f"
+    },
+    {
+      "path": "docs/paper_cn_v1/figures/panels/Figure_4C.pdf",
+      "bytes": 17356,
+      "sha256": "ab9ca492ced388ef4522b3cd9b5d7bb0c3c0d687d6d8e909f8c14f50bb90d22a"
+    },
+    {
+      "path": "docs/paper_cn_v1/figures/panels/Figure_4D.pdf",
+      "bytes": 19549,
+      "sha256": "d243b446d1598eaeaf002ccc5b0243240985d4b5a9dd062d7d3b9f751c25c873"
+    },
+    {
+      "path": "docs/paper_cn_v1/figures/panels/Figure_5A.pdf",
+      "bytes": 18162,
+      "sha256": "d03e525b2bb2d063402959ba58bb6acc7bc1a05ee3647d496ac989ca101139b0"
+    },
+    {
+      "path": "docs/paper_cn_v1/figures/panels/Figure_5B.pdf",
+      "bytes": 20185,
+      "sha256": "1e61d17b66debb15cc1cd9b5d1ef86e84050a940cc061dba1136eb0e152eb756"
+    },
+    {
+      "path": "docs/paper_cn_v1/figures/panels/Figure_5C.pdf",
+      "bytes": 22910,
+      "sha256": "9a4006e21f429440b8a3ae0df32ddf0ed3165297735e4134ae1e501a787d1384"
+    },
+    {
+      "path": "docs/paper_cn_v1/figures/panels/Figure_5D.pdf",
+      "bytes": 18638,
+      "sha256": "52685c15757f4bde40a2ff9f7b421f723c4ae8319b9d2a901ddeb31ff479df4e"
+    },
+    {
+      "path": "docs/paper_cn_v1/figures/panels/Figure_6A.pdf",
+      "bytes": 19929,
+      "sha256": "27686c2a4bebf631d5286090910c314becab2d065a77c96bc047032aacf50ecf"
+    },
+    {
+      "path": "docs/paper_cn_v1/figures/panels/Figure_6B.pdf",
+      "bytes": 19228,
+      "sha256": "25567f5e234244f4b711812d29fab770970159a9364378b46cad0bc28683130b"
+    },
+    {
+      "path": "docs/paper_cn_v1/figures/panels/Figure_6C.pdf",
+      "bytes": 19575,
+      "sha256": "63ac9ce19ca13aeb4fa4685946c663e38c036b0ccb0607dc73468f96a243d00c"
+    },
+    {
+      "path": "docs/paper_cn_v1/figures/panels/Figure_6D.pdf",
+      "bytes": 19772,
+      "sha256": "2ccaa1435f47674142081bc52bee978ac9e0e477746dbf0600ec2ff97a72d722"
+    },
+    {
+      "path": "docs/paper_cn_v1/figures/panels/Figure_7A.pdf",
+      "bytes": 17604,
+      "sha256": "a4e695058b652ea2daaafe1673260750eec02a00dfd3e9e0d34ab6b14facc2e8"
+    },
+    {
+      "path": "docs/paper_cn_v1/figures/panels/Figure_7B.pdf",
+      "bytes": 15771,
+      "sha256": "4e060f46c510bbe20a48ab9b533de4f5ddeef03c947dc2ae96bc018858e1ad70"
+    },
+    {
+      "path": "docs/paper_cn_v1/figures/panels/Figure_7C.pdf",
+      "bytes": 18087,
+      "sha256": "91f7a5adf9c57aac06dbb8e261a254e3134c1526202ac1e668c2403428da5808"
+    },
+    {
+      "path": "docs/paper_cn_v1/figures/panels/Figure_7D.pdf",
+      "bytes": 17061,
+      "sha256": "9e0891ec5657cb8fa1f3ab7525e8b1620cf43173bcb54075115a91d1433f604b"
+    },
+    {
+      "path": "docs/paper_cn_v1/figures/panels/Figure_8A.pdf",
+      "bytes": 33356,
+      "sha256": "6db6eade9035a3b11fa04b3f1ed814b754a67efda7704b54da2fdf675d84977a"
+    },
+    {
+      "path": "docs/paper_cn_v1/figures/panels/Figure_8B.pdf",
+      "bytes": 20911,
+      "sha256": "acc5ef6beccbe0724ee597e01ef6382e0f4a023a886b6686bb819b782d32b4e6"
+    },
+    {
+      "path": "docs/paper_cn_v1/figures/panels/Figure_8C.pdf",
+      "bytes": 19135,
+      "sha256": "895d6ce8d1f04581e47eefa09032633a5b509d23ea01ebd94c700eed02b5cfc2"
+    },
+    {
+      "path": "docs/paper_cn_v1/figures/panels/Figure_8D.pdf",
+      "bytes": 20699,
+      "sha256": "2e292a216f611d9be14b152f9ea32a97126880888750efbf912558573f792397"
+    },
+    {
+      "path": "docs/paper_cn_v1/figures/previews/Figure_1.png",
+      "bytes": 165921,
+      "sha256": "93d9bfa72fc1dc33734a636447edfc0cb714ece545a566ecfda02547eb194a2f"
+    },
+    {
+      "path": "docs/paper_cn_v1/figures/previews/Figure_2.png",
+      "bytes": 172184,
+      "sha256": "bf73e3c84e5ecee626f28073cd852e4161d4a3dabc3df5f8bb2e5e27eeb342e4"
+    },
+    {
+      "path": "docs/paper_cn_v1/figures/previews/Figure_3.png",
+      "bytes": 118240,
+      "sha256": "d4cb5e63febb041607e08a5c722ea2e63b6d40a8b35afd0d9e1b49d8c167d6bd"
+    },
+    {
+      "path": "docs/paper_cn_v1/figures/previews/Figure_4.png",
+      "bytes": 129591,
+      "sha256": "764ecd1bad12e1611ac736e5ba615f5f1edd27e490c6c9f4bb7a1eaae4cd5482"
+    },
+    {
+      "path": "docs/paper_cn_v1/figures/previews/Figure_5.png",
+      "bytes": 153175,
+      "sha256": "fc2675bacdd90370fd7b66620584442813fd68372e382928d0eb1d27dc54830b"
+    },
+    {
+      "path": "docs/paper_cn_v1/figures/previews/Figure_6.png",
+      "bytes": 161465,
+      "sha256": "70d49d8fa5acc54635474e5069a5f23f927fde67618ce68d10e315d36c4bf10f"
+    },
+    {
+      "path": "docs/paper_cn_v1/figures/previews/Figure_7.png",
+      "bytes": 101052,
+      "sha256": "a6b4016ef9fcb17e357286fbd08a3a64b01bd043e938001c0df4280d0dc298ad"
+    },
+    {
+      "path": "docs/paper_cn_v1/figures/previews/Figure_8.png",
+      "bytes": 170868,
+      "sha256": "c3504f347bef5818443033e5832f98ea3aee45848799e775d16229c0935d789d"
+    },
+    {
+      "path": "docs/paper_cn_v1/tables/Table_1.csv",
+      "bytes": 665,
+      "sha256": "b805924abce6f3f3d7273e34a9f9e27d161963178f11370593863a3af77b144d"
+    },
+    {
+      "path": "docs/paper_cn_v1/tables/Table_1.xlsx",
+      "bytes": 6555,
+      "sha256": "d59a75cbfb6d08c03d8acc0ef8f47630618a5ab358ccfb59e963562235577392"
+    },
+    {
+      "path": "docs/paper_cn_v1/tables/Table_2.csv",
+      "bytes": 1583,
+      "sha256": "8692586f998c58d356e2dc38b8a657f0a265a915ac2f3ae4f662d41e28f28164"
+    },
+    {
+      "path": "docs/paper_cn_v1/tables/Table_2.xlsx",
+      "bytes": 7185,
+      "sha256": "2a77ef05b649a91755a8a6e808b3a79d25178688ea3856f6781b36a7f5e15018"
+    },
+    {
+      "path": "docs/paper_cn_v1/tables/Table_3.csv",
+      "bytes": 1072,
+      "sha256": "cd5fc7e4249cdeeaf0522b001b8f9a8ae02ed50432715ae1aad4cea244c6dced"
+    },
+    {
+      "path": "docs/paper_cn_v1/tables/Table_3.xlsx",
+      "bytes": 6789,
+      "sha256": "2d778fd50dbcee02196e4d7179759f5056542558d2d131d536112b99f55664dc"
+    },
+    {
+      "path": "docs/paper_cn_v1/tables/Table_4.csv",
+      "bytes": 158,
+      "sha256": "8a693cc1f050caf0a26d1fd554bb0e5e04b9081e3615dfb2cee219196de024a8"
+    },
+    {
+      "path": "docs/paper_cn_v1/tables/Table_4.xlsx",
+      "bytes": 6116,
+      "sha256": "14f5a37e34911c401b90a993bc060b3158d9a5ca3d8781802375b0329463f462"
+    },
+    {
+      "path": "docs/paper_cn_v1/tables/Table_5.csv",
+      "bytes": 4582,
+      "sha256": "21cc5f4dd5150bf90abf0c83de391475280fff1d25a5762504c5cd659a23ce3f"
+    },
+    {
+      "path": "docs/paper_cn_v1/tables/Table_5.xlsx",
+      "bytes": 9382,
+      "sha256": "b76bdb34a561b49918f8d4a0610b8e459ff609f5b3ea35e4394cb06a19f3fe51"
+    },
+    {
+      "path": "docs/paper_cn_v1/tables/Table_6.csv",
+      "bytes": 263,
+      "sha256": "892eee6736c1451bc38e4744235fb1e4eb0fce0d44bccaa94fbee64dbd0a2041"
+    },
+    {
+      "path": "docs/paper_cn_v1/tables/Table_6.xlsx",
+      "bytes": 6194,
+      "sha256": "db2cc670a15636abd997fbc3706c78e08c066775bd5e99a69d33ec944849eb5c"
+    },
+    {
+      "path": "docs/paper_cn_v1/tables/Table_7.csv",
+      "bytes": 835,
+      "sha256": "256fa6627784c264651e00021e1a3bedabfcb23af6130a8f6bccfdfb04629af1"
+    },
+    {
+      "path": "docs/paper_cn_v1/tables/Table_7.xlsx",
+      "bytes": 6636,
+      "sha256": "f703f6cc925111eac4870f1c5fad5e1a5d2ba94c0bcbaa8fcd298f95cd66d762"
+    },
+    {
+      "path": "docs/paper_cn_v1/tables/Table_8.csv",
+      "bytes": 1545,
+      "sha256": "650ee27bb3ec6dbc6e54158a9eaf7dca4c71392278c0388fb5d89bb1504f6add"
+    },
+    {
+      "path": "docs/paper_cn_v1/tables/Table_8.xlsx",
+      "bytes": 6838,
+      "sha256": "63f9116413b87d4ebd180eae66b239ad6067f058ef61617a197f6497d194a17b"
+    },
+    {
+      "path": "docs/paper_cn_v1/tables/Table_9.csv",
+      "bytes": 583,
+      "sha256": "60f46dad60054e1b3526a3438b814527b5c0c17370deb1c360b193057ed61062"
+    },
+    {
+      "path": "docs/paper_cn_v1/tables/Table_9.xlsx",
+      "bytes": 6573,
+      "sha256": "1c655e86f2f53ee85fb37477eddf4d21f75daa31a3484ce169ed6734dc58ab9f"
+    }
+  ]
+}

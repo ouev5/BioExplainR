@@ -1,0 +1,21 @@
+{
+  "command": [
+    "R",
+    "CMD",
+    "check",
+    "--no-manual",
+    "--no-vignettes",
+    "--no-build-vignettes",
+    "BioExplainR_0.4.0.9000.tar.gz"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-08T09:22:16.254068+00:00",
+  "finished_utc": "2026-10-08T09:23:40.080819+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/paper-cn-package-check.txt",
+    "bytes": 2480,
+    "sha256": "7dd601a4c8aa0c24d61244d40f998bd8b0e3d81e0145f6cce1fb04877c4fc9dd"
+  }
+}

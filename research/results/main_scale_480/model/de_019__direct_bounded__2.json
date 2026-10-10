@@ -1,0 +1,194 @@
+{
+  "case": "de_019",
+  "family": "differential_expression",
+  "method": "direct_bounded",
+  "replicate": 2,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:17:51 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"数据维度为59行2列，但仅提供了9行完整数据。\",\n    \"提供的行中，padj和log2FoldChange值重复出现。\"\n  ],\n  \"statistical_meaning\": [\n    \"显著性阈值：padj < 0.05 且 |log2FoldChange| > 1。\",\n    \"提供的9行中，5行满足上调，3行满足下调，1行不显著。\"\n  ],\n  \"biological_interpretation\": [\n    \"无法基于不完整数据推断整体差异表达基因数量。\",\n    \"仅能说明提供的示例行中有8个显著差异基因。\"\n  ],\n  \"uncertainty\": [\n    \"数据不完整，无法确定总特征数。\",\n    \"无法计算全数据集的显著基因数、上调数和下调数。\"\n  ],\n  \"cannot_conclude\": [\n    \"不能得出n_features、n_significant、n_up、n_down的准确值。\",\n    \"不能基于部分数据外推整体结果。\"\n  ],\n  \"learning_questions\": [\n    \"如何从完整的差异表达结果中提取显著基因？\",\n    \"为什么需要完整数据才能计算汇总统计量？\"\n  ],\n  \"evidence_used\": [\n    \"dim\",\n    \"provided_rows\",\n    \"rows_complete\",\n    \"padj\",\n    \"lfc\"\n  ],\n  \"claims\": [\n    {\n      \"id\": \"claim1\",\n      \"text\": \"总特征数无法确定，因为数据不完整。\",\n      \"fact\": \"n_features\",\n      \"value\": null,\n      \"evidence\": [\n        \"dim\",\n        \"rows_complete\"\n      ]\n    },\n    {\n      \"id\": \"claim2\",\n      \"text\": \"显著基因数无法确定，因为数据不完整。\",\n      \"fact\": \"n_significant\",\n      \"value\": null,\n      \"evidence\": [\n        \"provided_rows\",\n        \"rows_complete\"\n      ]\n    },\n    {\n      \"id\": \"claim3\",\n      \"text\": \"上调基因数无法确定，因为数据不完整。\",\n      \"fact\": \"n_up\",\n      \"value\": null,\n      \"evidence\": [\n        \"provided_rows\",\n        \"rows_complete\"\n      ]\n    },\n    {\n      \"id\": \"claim4\",\n      \"text\": \"下调基因数无法确定，因为数据不完整。\",\n      \"fact\": \"n_down\",\n      \"value\": null,\n      \"evidence\": [\n        \"provided_rows\",\n        \"rows_complete\"\n      ]\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 731,
+      "completion_tokens": 549,
+      "total_tokens": 1280,
+      "prompt_tokens_details": {
+        "cached_tokens": 512
+      },
+      "prompt_cache_hit_tokens": 512,
+      "prompt_cache_miss_tokens": 219
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.6600000000000001
+  },
+  "parsed": {
+    "data_facts": [
+      "数据维度为59行2列，但仅提供了9行完整数据。",
+      "提供的行中，padj和log2FoldChange值重复出现。"
+    ],
+    "statistical_meaning": [
+      "显著性阈值：padj < 0.05 且 |log2FoldChange| > 1。",
+      "提供的9行中，5行满足上调，3行满足下调，1行不显著。"
+    ],
+    "biological_interpretation": [
+      "无法基于不完整数据推断整体差异表达基因数量。",
+      "仅能说明提供的示例行中有8个显著差异基因。"
+    ],
+    "uncertainty": [
+      "数据不完整，无法确定总特征数。",
+      "无法计算全数据集的显著基因数、上调数和下调数。"
+    ],
+    "cannot_conclude": [
+      "不能得出n_features、n_significant、n_up、n_down的准确值。",
+      "不能基于部分数据外推整体结果。"
+    ],
+    "learning_questions": [
+      "如何从完整的差异表达结果中提取显著基因？",
+      "为什么需要完整数据才能计算汇总统计量？"
+    ],
+    "evidence_used": [
+      "dim",
+      "provided_rows",
+      "rows_complete",
+      "padj",
+      "lfc"
+    ],
+    "claims": [
+      {
+        "id": "claim1",
+        "text": "总特征数无法确定，因为数据不完整。",
+        "fact": "n_features",
+        "value": null,
+        "evidence": [
+          "dim",
+          "rows_complete"
+        ]
+      },
+      {
+        "id": "claim2",
+        "text": "显著基因数无法确定，因为数据不完整。",
+        "fact": "n_significant",
+        "value": null,
+        "evidence": [
+          "provided_rows",
+          "rows_complete"
+        ]
+      },
+      {
+        "id": "claim3",
+        "text": "上调基因数无法确定，因为数据不完整。",
+        "fact": "n_up",
+        "value": null,
+        "evidence": [
+          "provided_rows",
+          "rows_complete"
+        ]
+      },
+      {
+        "id": "claim4",
+        "text": "下调基因数无法确定，因为数据不完整。",
+        "fact": "n_down",
+        "value": null,
+        "evidence": [
+          "provided_rows",
+          "rows_complete"
+        ]
+      }
+    ]
+  },
+  "validation": {
+    "status": "fail",
+    "findings": [
+      {
+        "claim": "(evidence_used)",
+        "check": "evidence_ids",
+        "status": "fail",
+        "detail": "unknown evidence id(s): dim, provided_rows, rows_complete, padj, lfc (no evidence list was supplied)"
+      },
+      {
+        "claim": "claim1",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim1",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: dim, rows_complete"
+      },
+      {
+        "claim": "claim2",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim2",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: provided_rows, rows_complete"
+      },
+      {
+        "claim": "claim3",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim3",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: provided_rows, rows_complete"
+      },
+      {
+        "claim": "claim4",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim4",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: provided_rows, rows_complete"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_features",
+      "expected": 59,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "n_significant",
+      "expected": 40,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "n_up",
+      "expected": 20,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "n_down",
+      "expected": 20,
+      "value": null,
+      "answered": false,
+      "correct": false
+    }
+  ],
+  "prompt_chars": 2286
+}

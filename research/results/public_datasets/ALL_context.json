@@ -1,0 +1,74 @@
+{
+  "analysis_type": "expression_set",
+  "source_class": "ExpressionSet",
+  "source_package": "Biobase",
+  "source_status": "verified_class",
+  "facts": {
+    "n_features": 12625,
+    "n_samples": 128,
+    "pheno_columns": ["cod", "diagnosis", "sex", "age", "BT", "remission", "CR", "date.cr", "t(4;11)", "t(9;22)", "cyto.normal", "citog", "mol.biol", "fusion protein", "mdr", "kinet", "ccr", "relapse", "transplant", "f.u"],
+    "assay_summary": {
+      "class": "matrix",
+      "dim": [12625, 128],
+      "inspection": "sampled_block",
+      "values_inspected": 2000,
+      "value_quantiles": {
+        "min": 2.543,
+        "q25": 4.57,
+        "median": 5.949,
+        "q75": 7.235,
+        "max": 12.8
+      },
+      "n_na_sampled": 0,
+      "integer_like_sampled": false,
+      "fraction_zero_sampled": 0,
+      "sample_note": "n_na/fraction_zero/integer_like are from a sampled block, not the full matrix"
+    },
+    "group_column": "BT",
+    "n_groups": 10,
+    "n_samples_missing_group": 0,
+    "replicate_unit": "column/samples (no sample column given; columns may not be independent donors)",
+    "units_per_group": {
+      "B": 5,
+      "B1": 19,
+      "B2": 36,
+      "B3": 23,
+      "B4": 12,
+      "T": 5,
+      "T1": 1,
+      "T2": 15,
+      "T3": 10,
+      "T4": 2
+    },
+    "min_units_per_group": 1
+  },
+  "top_features": null,
+  "plot_mapping": null,
+  "provenance": {
+    "adapter": "expression_set",
+    "created": "2026-10-05 12:42:53 CST",
+    "bioexplainr_version": "0.3.1",
+    "thresholds": {
+      "padj": 0.05,
+      "lfc": 0,
+      "p": 0.05
+    },
+    "p_adjust_method": null,
+    "n_top": 10,
+    "input_summary": {
+      "name": null,
+      "class": "ExpressionSet",
+      "type": "S4",
+      "is_s4": true,
+      "size": "964.3 Kb",
+      "dim": [12625, 128]
+    }
+  },
+  "uncertainty": ["At least one group has only 1 independent unit, so within-group variability cannot be estimated for it.", "ExpressionSet assay values were summarised without inferring a differential-expression design; group labels do not establish a valid contrast or biological replication."],
+  "metadata": {
+    "species": "Homo sapiens",
+    "tissue": "acute lymphoblastic leukaemia"
+  },
+  "adapter": "expression_set",
+  "language": "en"
+}

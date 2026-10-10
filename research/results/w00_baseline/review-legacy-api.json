@@ -1,0 +1,18 @@
+{
+  "command": [
+    "Rscript",
+    "--vanilla",
+    "tools/legacy-interface-check.R",
+    "research/results/w00_baseline/review-legacy-api-result.json"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-08T08:23:20.792317+00:00",
+  "finished_utc": "2026-10-08T08:23:23.500018+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/review-legacy-api.txt",
+    "bytes": 13,
+    "sha256": "9920e5e6f10c57acc16323dfb248f3710f6d57d7454cafeac0902a9b3aa4f04e"
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "case": "airway_lfc0",
+  "method": "facts_evidence",
+  "replicate": 2,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-03 19:42:31 UTC",
+  "response": {
+    "text": "{\"data_facts\":[\"本次差异表达分析共纳入 22369 个特征（基因）。\",\"在 padj < 0.05 且 |log2FC| > 0 的阈值下，共有 4030 个基因显著，其中 2208 个上调、1822 个下调。\",\"有 5204 个基因的 padj 为 NA，未参与 FDR 计数。\"],\"statistical_meaning\":[\"n_features 是检验前的特征总数，n_significant 是通过阈值的基因数，二者比例反映显著基因占比。\",\"n_up 与 n_down 是带方向的计数，方向来自 log2FoldChange 的符号，而非计数本身。\",\"padj 为 NA 通常源于独立过滤、全零计数或极端离群值，这些基因不进入多重检验校正。\"],\"biological_interpretation\":[\"地塞米松处理 vs 未处理在转录组层面产生广泛变化，上调基因数略多于下调基因数（假设）。\",\"显著基因中包括多个高表达、大效应量的基因，提示糖皮质激素应答涉及一批强响应基因（假设）。\",\"文献检索命中 CRISPLD2 为糖皮质激素应答基因（证据 EuropePMC:MED:24926665），但该证据仅表示检索匹配，未评估其是否支持本分析结论。\"],\"uncertainty\":[\"log2FC 似乎经过收缩（shrinkage），收缩后的效应量更保守，适合排序和可视化。\",\"padj 为 NA 的基因未参与 FDR 计数，因此显著基因数是在可检验子集上得到的。\",\"本分析为单细胞类型/单对比结果，未提供重复样本层面的生物学重复信息。\"],\"cannot_conclude\":[\"不能仅凭计数判断上调与下调在生物学功能上的重要性差异。\",\"不能从本摘要推断具体通路激活方向或临床疗效。\",\"不能把 padj 为 NA 的基因视为无差异或差异不显著。\"],\"learning_questions\":[\"为什么 padj 会出现 NA？它们对 FDR 计数有什么影响？\",\"n_up 与 n_down 的计数为什么不能直接当作生物学效应方向？\",\"log2FC 收缩对显著基因排序有什么影响？\"],\"evidence_used\":[\"EuropePMC:MED:24926665\"],\"claims\":[{\"id\":\"c1\",\"text\":\"特征总数\",\"fact\":\"n_features\",\"value\":22369,\"evidence\":[]},{\"id\":\"c2\",\"text\":\"显著基因数\",\"fact\":\"n_significant\",\"value\":4030,\"evidence\":[]},{\"id\":\"c3\",\"text\":\"上调基因数\",\"fact\":\"n_up\",\"value\":2208,\"evidence\":[]},{\"id\":\"c4\",\"text\":\"下调基因数\",\"fact\":\"n_down\",\"value\":1822,\"evidence\":[]},{\"id\":\"c5\",\"text\":\"padj 为 NA 的基因数\",\"fact\":\"n_na_padj\",\"value\":5204,\"evidence\":[]}]}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 1997,
+      "completion_tokens": 624,
+      "total_tokens": 2621,
+      "prompt_tokens_details": {
+        "cached_tokens": 1792
+      },
+      "prompt_cache_hit_tokens": 1792,
+      "prompt_cache_miss_tokens": 205
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 3.58
+  },
+  "parsed": {
+    "data_facts": [
+      "本次差异表达分析共纳入 22369 个特征（基因）。",
+      "在 padj < 0.05 且 |log2FC| > 0 的阈值下，共有 4030 个基因显著，其中 2208 个上调、1822 个下调。",
+      "有 5204 个基因的 padj 为 NA，未参与 FDR 计数。"
+    ],
+    "statistical_meaning": [
+      "n_features 是检验前的特征总数，n_significant 是通过阈值的基因数，二者比例反映显著基因占比。",
+      "n_up 与 n_down 是带方向的计数，方向来自 log2FoldChange 的符号，而非计数本身。",
+      "padj 为 NA 通常源于独立过滤、全零计数或极端离群值，这些基因不进入多重检验校正。"
+    ],
+    "biological_interpretation": [
+      "地塞米松处理 vs 未处理在转录组层面产生广泛变化，上调基因数略多于下调基因数（假设）。",
+      "显著基因中包括多个高表达、大效应量的基因，提示糖皮质激素应答涉及一批强响应基因（假设）。",
+      "文献检索命中 CRISPLD2 为糖皮质激素应答基因（证据 EuropePMC:MED:24926665），但该证据仅表示检索匹配，未评估其是否支持本分析结论。"
+    ],
+    "uncertainty": [
+      "log2FC 似乎经过收缩（shrinkage），收缩后的效应量更保守，适合排序和可视化。",
+      "padj 为 NA 的基因未参与 FDR 计数，因此显著基因数是在可检验子集上得到的。",
+      "本分析为单细胞类型/单对比结果，未提供重复样本层面的生物学重复信息。"
+    ],
+    "cannot_conclude": [
+      "不能仅凭计数判断上调与下调在生物学功能上的重要性差异。",
+      "不能从本摘要推断具体通路激活方向或临床疗效。",
+      "不能把 padj 为 NA 的基因视为无差异或差异不显著。"
+    ],
+    "learning_questions": [
+      "为什么 padj 会出现 NA？它们对 FDR 计数有什么影响？",
+      "n_up 与 n_down 的计数为什么不能直接当作生物学效应方向？",
+      "log2FC 收缩对显著基因排序有什么影响？"
+    ],
+    "evidence_used": [
+      "EuropePMC:MED:24926665"
+    ],
+    "claims": [
+      {
+        "id": "c1",
+        "text": "特征总数",
+        "fact": "n_features",
+        "value": 22369,
+        "evidence": []
+      },
+      {
+        "id": "c2",
+        "text": "显著基因数",
+        "fact": "n_significant",
+        "value": 4030,
+        "evidence": []
+      },
+      {
+        "id": "c3",
+        "text": "上调基因数",
+        "fact": "n_up",
+        "value": 2208,
+        "evidence": []
+      },
+      {
+        "id": "c4",
+        "text": "下调基因数",
+        "fact": "n_down",
+        "value": 1822,
+        "evidence": []
+      },
+      {
+        "id": "c5",
+        "text": "padj 为 NA 的基因数",
+        "fact": "n_na_padj",
+        "value": 5204,
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "(evidence_used)",
+        "check": "evidence_ids",
+        "status": "pass",
+        "detail": "all cited evidence ids were supplied"
+      },
+      {
+        "claim": "c1",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_features = 22369"
+      },
+      {
+        "claim": "c2",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_significant = 4030"
+      },
+      {
+        "claim": "c3",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_up = 2208"
+      },
+      {
+        "claim": "c4",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_down = 1822"
+      },
+      {
+        "claim": "c5",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_na_padj = 5204"
+      }
+    ],
+    "n_claims": 5,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_features",
+      "expected": 22369,
+      "value": 22369,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_significant",
+      "expected": 4030,
+      "value": 4030,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_up",
+      "expected": 2208,
+      "value": 2208,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_down",
+      "expected": 1822,
+      "value": 1822,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_na_padj",
+      "expected": 5204,
+      "value": 5204,
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 6314,
+  "validation_rechecked_utc": "2026-10-03 20:09:20 UTC"
+}

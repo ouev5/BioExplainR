@@ -1,0 +1,132 @@
+{
+  "case": "pbmc3k_sce",
+  "method": "facts_only",
+  "replicate": 1,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-03 19:42:10 UTC",
+  "response": {
+    "text": "{\"data_facts\": [\"本数据集包含 2700 个细胞、32738 个基因特征，仅来自 1 个样本。\", \"counts 矩阵维度为 32738 × 2700，稀疏矩阵中约 97.41% 的值为零。\", \"每个细胞的 nCount_RNA 中位数为 2197，nFeature_RNA 中位数为 817，percent.mt 中位数为 2.03。\"], \"statistical_meaning\": [\"这些数字是描述性统计量，用于刻画数据规模与测序深度分布，不构成组间差异检验。\", \"n_cells 是细胞数，不是生物学重复数；独立重复单位应为样本或供体。\", \"只有 1 个样本，因此无法进行有意义的组间统计推断。\"], \"biological_interpretation\": [\"数据来自人类 PBMC，属于外周血单个核细胞的单细胞转录组图谱。\", \"线粒体基因比例中位数较低，提示多数细胞质量尚可，但最大值 22.57 提示存在少数低质量细胞。\", \"以上均为基于 QC 指标的假设性描述，未做细胞类型注释，不能推断具体细胞组成。\"], \"uncertainty\": [\"细胞数不等于生物学重复数，把细胞当重复会产生伪重复与假阳性。\", \"UMAP 上的距离不代表真实空间距离，不能单独证明细胞谱系。\", \"assay 数值只检查了有限子集，稀疏矩阵的零比例来自存储值计数，显式存储的零被计为非零。\"], \"cannot_conclude\": [\"不能进行任何组间差异表达或富集分析，因为只有 1 个样本。\", \"不能确定细胞类型、细胞比例或谱系关系，因为未提供 marker 与注释结果。\", \"不能判断测序深度或线粒体比例是否与某个生物学条件相关。\"], \"learning_questions\": [\"为什么单细胞分析中细胞数不能当作生物学重复数？\", \"稀疏矩阵的 fraction_zero 与真实零值比例有何区别？\", \"在只有 1 个样本时，哪些分析是合理的，哪些是不合理的？\"], \"evidence_used\": [], \"claims\": [{\"id\": \"c1\", \"text\": \"细胞总数为 2700。\", \"fact\": \"n_cells\", \"value\": 2700, \"evidence\": []}, {\"id\": \"c2\", \"text\": \"基因特征总数为 32738。\", \"fact\": \"n_features\", \"value\": 32738, \"evidence\": []}, {\"id\": \"c3\", \"text\": \"样本数为 1。\", \"fact\": \"n_samples\", \"value\": 1, \"evidence\": []}]}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 1326,
+      "completion_tokens": 584,
+      "total_tokens": 1910,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 942
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.72
+  },
+  "parsed": {
+    "data_facts": [
+      "本数据集包含 2700 个细胞、32738 个基因特征，仅来自 1 个样本。",
+      "counts 矩阵维度为 32738 × 2700，稀疏矩阵中约 97.41% 的值为零。",
+      "每个细胞的 nCount_RNA 中位数为 2197，nFeature_RNA 中位数为 817，percent.mt 中位数为 2.03。"
+    ],
+    "statistical_meaning": [
+      "这些数字是描述性统计量，用于刻画数据规模与测序深度分布，不构成组间差异检验。",
+      "n_cells 是细胞数，不是生物学重复数；独立重复单位应为样本或供体。",
+      "只有 1 个样本，因此无法进行有意义的组间统计推断。"
+    ],
+    "biological_interpretation": [
+      "数据来自人类 PBMC，属于外周血单个核细胞的单细胞转录组图谱。",
+      "线粒体基因比例中位数较低，提示多数细胞质量尚可，但最大值 22.57 提示存在少数低质量细胞。",
+      "以上均为基于 QC 指标的假设性描述，未做细胞类型注释，不能推断具体细胞组成。"
+    ],
+    "uncertainty": [
+      "细胞数不等于生物学重复数，把细胞当重复会产生伪重复与假阳性。",
+      "UMAP 上的距离不代表真实空间距离，不能单独证明细胞谱系。",
+      "assay 数值只检查了有限子集，稀疏矩阵的零比例来自存储值计数，显式存储的零被计为非零。"
+    ],
+    "cannot_conclude": [
+      "不能进行任何组间差异表达或富集分析，因为只有 1 个样本。",
+      "不能确定细胞类型、细胞比例或谱系关系，因为未提供 marker 与注释结果。",
+      "不能判断测序深度或线粒体比例是否与某个生物学条件相关。"
+    ],
+    "learning_questions": [
+      "为什么单细胞分析中细胞数不能当作生物学重复数？",
+      "稀疏矩阵的 fraction_zero 与真实零值比例有何区别？",
+      "在只有 1 个样本时，哪些分析是合理的，哪些是不合理的？"
+    ],
+    "evidence_used": [],
+    "claims": [
+      {
+        "id": "c1",
+        "text": "细胞总数为 2700。",
+        "fact": "n_cells",
+        "value": 2700,
+        "evidence": []
+      },
+      {
+        "id": "c2",
+        "text": "基因特征总数为 32738。",
+        "fact": "n_features",
+        "value": 32738,
+        "evidence": []
+      },
+      {
+        "id": "c3",
+        "text": "样本数为 1。",
+        "fact": "n_samples",
+        "value": 1,
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "c1",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_cells = 2700"
+      },
+      {
+        "claim": "c2",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_features = 32738"
+      },
+      {
+        "claim": "c3",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_samples = 1"
+      }
+    ],
+    "n_claims": 3,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_cells",
+      "expected": 2700,
+      "value": 2700,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_features",
+      "expected": 32738,
+      "value": 32738,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_samples",
+      "expected": 1,
+      "value": 1,
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 4625,
+  "validation_rechecked_utc": "2026-10-03 20:09:20 UTC"
+}

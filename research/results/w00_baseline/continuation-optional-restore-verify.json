@@ -1,0 +1,17 @@
+{
+  "command": [
+    "bash",
+    "tools/restore-development-optional.sh",
+    "--verify-only"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-05T12:30:34.803177+00:00",
+  "finished_utc": "2026-10-05T12:30:42.089072+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/continuation-optional-restore-verify.txt",
+    "bytes": 1785,
+    "sha256": "67767c35ccc08b0c3d0ac2b5b6a97863c9690f8b7ad5da0c7ad28c6ab2cf0cff"
+  }
+}

@@ -1,0 +1,20 @@
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+  assert(fs.readFileSync(path.join(output, 'generated-pca.pdf')).subarray(0, 5).toString() === '%PDF-')
+
+    at /home/ubuntu/creatR/research/shiny_acceptance.cjs:101:5 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+Traceback (most recent call last):
+  File "/home/ubuntu/creatR/tools/shiny-acceptance.py", line 50, in <module>
+    main()
+  File "/home/ubuntu/creatR/tools/shiny-acceptance.py", line 39, in main
+    subprocess.run(["node", "research/shiny_acceptance.cjs"], cwd=ROOT, env=env, check=True, timeout=180)
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['node', 'research/shiny_acceptance.cjs']' returned non-zero exit status 1.

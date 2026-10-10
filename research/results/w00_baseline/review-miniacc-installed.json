@@ -1,0 +1,21 @@
+{
+  "command": [
+    "env",
+    "R_LIBS=/tmp/opencode/bioexplainr-install-review",
+    "Rscript",
+    "--vanilla",
+    "research/multiomics/run_miniacc.R",
+    "research/results/miniacc_installed_review",
+    "--installed"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-08T08:26:13.995610+00:00",
+  "finished_utc": "2026-10-08T08:26:28.536974+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/review-miniacc-installed.txt",
+    "bytes": 608,
+    "sha256": "6e9b703b8056fb94c9c516ba37c2d144524969d8befe0d55b86e193c5711c28d"
+  }
+}

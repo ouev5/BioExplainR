@@ -1,0 +1,152 @@
+{
+  "case": "generic_002",
+  "family": "generic",
+  "method": "facts_only",
+  "replicate": 3,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:26:08 UTC",
+  "response": {
+    "text": "{\"data_facts\": [\"该对象是一个 data.frame（普通 data.frame，非 S4 对象）。\", \"对象大小为 1.4 Kb，维度为 12 行 × 5 列，5 列均为整数型。\", \"分析阈值设定为 padj=0.05、lfc=0、p=0.05。\"], \"statistical_meaning\": [\"这些只是对象结构与阈值信息，不包含任何检验统计量或效应量。\", \"阈值仅表示判定标准，本身不构成显著性结论。\", \"由于没有提供 top_features 与 plot_mapping，无法判断具体比较或分组。\"], \"biological_interpretation\": [\"当前没有基因、通路或物种信息，无法提出有依据的生物学假设。\", \"若后续补充物种与差异结果，才可讨论功能富集等方向。\", \"现有证据列表为空，任何生物学说法都只能是待验证的假设。\"], \"uncertainty\": [\"没有针对该对象类型的专用适配器；只给出结构摘要。可用 bio_register_adapter() 扩展，或用 analysis_type 指定表格类型。\", \"未提供物种（species），生物学解释需要用户确认物种背景。\", \"未提供原始数据与分组信息，无法评估统计功效或重复性。\"], \"cannot_conclude\": [\"不能得出任何基因或通路显著差异的结论。\", \"不能判断表达上调或下调方向。\", \"不能进行临床或功能层面的推断。\"], \"learning_questions\": [\"data.frame 与 S4 对象在 R 中有什么区别？\", \"padj 与 p 值在多重检验校正中的关系是什么？\", \"为什么缺少物种信息会限制生物学解释？\"], \"evidence_used\": [], \"claims\": [{\"id\": \"c1\", \"text\": \"对象类别为 data.frame。\", \"fact\": \"class\", \"value\": \"data.frame\", \"evidence\": []}, {\"id\": \"c2\", \"text\": \"对象类型为 list。\", \"fact\": \"type\", \"value\": \"list\", \"evidence\": []}, {\"id\": \"c3\", \"text\": \"该对象不是 S4 对象。\", \"fact\": \"is_s4\", \"value\": false, \"evidence\": []}, {\"id\": \"c4\", \"text\": \"对象大小为 1.4 Kb。\", \"fact\": \"size\", \"value\": \"1.4 Kb\", \"evidence\": []}]}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 833,
+      "completion_tokens": 518,
+      "total_tokens": 1351,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 193
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.6499999999999999
+  },
+  "parsed": {
+    "data_facts": [
+      "该对象是一个 data.frame（普通 data.frame，非 S4 对象）。",
+      "对象大小为 1.4 Kb，维度为 12 行 × 5 列，5 列均为整数型。",
+      "分析阈值设定为 padj=0.05、lfc=0、p=0.05。"
+    ],
+    "statistical_meaning": [
+      "这些只是对象结构与阈值信息，不包含任何检验统计量或效应量。",
+      "阈值仅表示判定标准，本身不构成显著性结论。",
+      "由于没有提供 top_features 与 plot_mapping，无法判断具体比较或分组。"
+    ],
+    "biological_interpretation": [
+      "当前没有基因、通路或物种信息，无法提出有依据的生物学假设。",
+      "若后续补充物种与差异结果，才可讨论功能富集等方向。",
+      "现有证据列表为空，任何生物学说法都只能是待验证的假设。"
+    ],
+    "uncertainty": [
+      "没有针对该对象类型的专用适配器；只给出结构摘要。可用 bio_register_adapter() 扩展，或用 analysis_type 指定表格类型。",
+      "未提供物种（species），生物学解释需要用户确认物种背景。",
+      "未提供原始数据与分组信息，无法评估统计功效或重复性。"
+    ],
+    "cannot_conclude": [
+      "不能得出任何基因或通路显著差异的结论。",
+      "不能判断表达上调或下调方向。",
+      "不能进行临床或功能层面的推断。"
+    ],
+    "learning_questions": [
+      "data.frame 与 S4 对象在 R 中有什么区别？",
+      "padj 与 p 值在多重检验校正中的关系是什么？",
+      "为什么缺少物种信息会限制生物学解释？"
+    ],
+    "evidence_used": [],
+    "claims": [
+      {
+        "id": "c1",
+        "text": "对象类别为 data.frame。",
+        "fact": "class",
+        "value": "data.frame",
+        "evidence": []
+      },
+      {
+        "id": "c2",
+        "text": "对象类型为 list。",
+        "fact": "type",
+        "value": "list",
+        "evidence": []
+      },
+      {
+        "id": "c3",
+        "text": "该对象不是 S4 对象。",
+        "fact": "is_s4",
+        "value": false,
+        "evidence": []
+      },
+      {
+        "id": "c4",
+        "text": "对象大小为 1.4 Kb。",
+        "fact": "size",
+        "value": "1.4 Kb",
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "c1",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      },
+      {
+        "claim": "c2",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      },
+      {
+        "claim": "c3",
+        "check": "value",
+        "status": "pass",
+        "detail": "is_s4 = 0"
+      },
+      {
+        "claim": "c4",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "class",
+      "expected": "data.frame",
+      "value": "data.frame",
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "type",
+      "expected": "list",
+      "value": "list",
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "is_s4",
+      "expected": false,
+      "value": false,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "size",
+      "expected": "1.4 Kb",
+      "value": "1.4 Kb",
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 3270
+}

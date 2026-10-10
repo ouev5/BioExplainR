@@ -1,0 +1,194 @@
+{
+  "case": "single_cell_020",
+  "family": "single_cell",
+  "method": "direct_bounded",
+  "replicate": 2,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:18:47 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"数据矩阵维度为45行70列。\",\n    \"检测到的assay为counts。\",\n    \"不同样本数为3。\"\n  ],\n  \"statistical_meaning\": [\n    \"45行通常对应特征数，70列对应细胞数。\",\n    \"counts assay表示原始计数矩阵。\",\n    \"3个不同样本说明样本分组信息有限。\"\n  ],\n  \"biological_interpretation\": [\n    \"该数据可能来自3个样本的单细胞转录组实验。\",\n    \"45个特征数量较少，可能为靶向panel或过滤后结果。\",\n    \"需结合阈值判断差异表达，但当前未提供基因水平结果。\"\n  ],\n  \"uncertainty\": [\n    \"无法确认45行是否一定为特征、70列是否一定为细胞。\",\n    \"样本与细胞、特征之间的对应关系未明确。\",\n    \"阈值信息为空，无法评估统计显著性。\"\n  ],\n  \"cannot_conclude\": [\n    \"无法确定n_cells，因为未明确列是否为细胞。\",\n    \"无法确定n_features，因为未明确行是否为特征。\",\n    \"无法从给定输出直接得到n_samples，仅知n_distinct_samples为3。\"\n  ],\n  \"learning_questions\": [\n    \"如何从dim输出判断细胞数和特征数？\",\n    \"n_distinct_samples与n_samples有何区别？\",\n    \"counts assay在单细胞分析中通常如何处理？\"\n  ],\n  \"evidence_used\": [\n    \"dim\",\n    \"assays\",\n    \"n_distinct_samples\"\n  ],\n  \"claims\": [\n    {\n      \"id\": \"claim_n_cells\",\n      \"text\": \"n_cells无法从给定输出确定。\",\n      \"fact\": \"n_cells\",\n      \"value\": null,\n      \"evidence\": [\n        \"dim\"\n      ]\n    },\n    {\n      \"id\": \"claim_n_features\",\n      \"text\": \"n_features无法从给定输出确定。\",\n      \"fact\": \"n_features\",\n      \"value\": null,\n      \"evidence\": [\n        \"dim\"\n      ]\n    },\n    {\n      \"id\": \"claim_n_samples\",\n      \"text\": \"n_samples无法从给定输出确定，仅知不同样本数为3。\",\n      \"fact\": \"n_samples\",\n      \"value\": null,\n      \"evidence\": [\n        \"n_distinct_samples\"\n      ]\n    },\n    {\n      \"id\": \"claim_assays\",\n      \"text\": \"assays为counts。\",\n      \"fact\": \"assays\",\n      \"value\": \"counts\",\n      \"evidence\": [\n        \"assays\"\n      ]\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 316,
+      "completion_tokens": 572,
+      "total_tokens": 888,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 188
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.6099999999999999
+  },
+  "parsed": {
+    "data_facts": [
+      "数据矩阵维度为45行70列。",
+      "检测到的assay为counts。",
+      "不同样本数为3。"
+    ],
+    "statistical_meaning": [
+      "45行通常对应特征数，70列对应细胞数。",
+      "counts assay表示原始计数矩阵。",
+      "3个不同样本说明样本分组信息有限。"
+    ],
+    "biological_interpretation": [
+      "该数据可能来自3个样本的单细胞转录组实验。",
+      "45个特征数量较少，可能为靶向panel或过滤后结果。",
+      "需结合阈值判断差异表达，但当前未提供基因水平结果。"
+    ],
+    "uncertainty": [
+      "无法确认45行是否一定为特征、70列是否一定为细胞。",
+      "样本与细胞、特征之间的对应关系未明确。",
+      "阈值信息为空，无法评估统计显著性。"
+    ],
+    "cannot_conclude": [
+      "无法确定n_cells，因为未明确列是否为细胞。",
+      "无法确定n_features，因为未明确行是否为特征。",
+      "无法从给定输出直接得到n_samples，仅知n_distinct_samples为3。"
+    ],
+    "learning_questions": [
+      "如何从dim输出判断细胞数和特征数？",
+      "n_distinct_samples与n_samples有何区别？",
+      "counts assay在单细胞分析中通常如何处理？"
+    ],
+    "evidence_used": [
+      "dim",
+      "assays",
+      "n_distinct_samples"
+    ],
+    "claims": [
+      {
+        "id": "claim_n_cells",
+        "text": "n_cells无法从给定输出确定。",
+        "fact": "n_cells",
+        "value": null,
+        "evidence": [
+          "dim"
+        ]
+      },
+      {
+        "id": "claim_n_features",
+        "text": "n_features无法从给定输出确定。",
+        "fact": "n_features",
+        "value": null,
+        "evidence": [
+          "dim"
+        ]
+      },
+      {
+        "id": "claim_n_samples",
+        "text": "n_samples无法从给定输出确定，仅知不同样本数为3。",
+        "fact": "n_samples",
+        "value": null,
+        "evidence": [
+          "n_distinct_samples"
+        ]
+      },
+      {
+        "id": "claim_assays",
+        "text": "assays为counts。",
+        "fact": "assays",
+        "value": "counts",
+        "evidence": [
+          "assays"
+        ]
+      }
+    ]
+  },
+  "validation": {
+    "status": "fail",
+    "findings": [
+      {
+        "claim": "(evidence_used)",
+        "check": "evidence_ids",
+        "status": "fail",
+        "detail": "unknown evidence id(s): dim, assays, n_distinct_samples (no evidence list was supplied)"
+      },
+      {
+        "claim": "claim_n_cells",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_n_cells",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: dim"
+      },
+      {
+        "claim": "claim_n_features",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_n_features",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: dim"
+      },
+      {
+        "claim": "claim_n_samples",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_n_samples",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: n_distinct_samples"
+      },
+      {
+        "claim": "claim_assays",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      },
+      {
+        "claim": "claim_assays",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: assays"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_cells",
+      "expected": 70,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "n_features",
+      "expected": 45,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "n_samples",
+      "expected": 3,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "assays",
+      "expected": "counts",
+      "value": "counts",
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 1204
+}

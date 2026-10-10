@@ -1,0 +1,21 @@
+{
+  "command": [
+    "R",
+    "--vanilla",
+    "--slave",
+    "-f",
+    "research/audit_results.R",
+    "--args",
+    "--mode=current"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-05T08:05:44.738093+00:00",
+  "finished_utc": "2026-10-05T08:05:46.441607+00:00",
+  "exit_code": 1,
+  "status": "fail",
+  "log": {
+    "path": "research/results/w00_baseline/audit-current-initial.txt",
+    "bytes": 90,
+    "sha256": "36e902971df9805125570e29b9067e5fa44a5d0004929956c1c977fa46df5e28"
+  }
+}

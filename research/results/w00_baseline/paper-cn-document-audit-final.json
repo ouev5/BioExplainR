@@ -1,0 +1,18 @@
+{
+  "command": [
+    "/tmp/opencode/paper-venv/bin/python",
+    "research/paper_cn/audit_manuscript.py",
+    "--output",
+    "docs/paper_cn_v1/audit.json"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-08T09:28:21.304558+00:00",
+  "finished_utc": "2026-10-08T09:28:38.313061+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/paper-cn-document-audit-final.txt",
+    "bytes": 896,
+    "sha256": "b0a3b1ef0af50dc6590e25740ce22db308ef2c7e4eed23613f7ef73e99cbec26"
+  }
+}

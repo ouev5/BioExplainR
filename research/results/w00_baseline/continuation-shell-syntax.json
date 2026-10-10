@@ -1,0 +1,17 @@
+{
+  "command": [
+    "bash",
+    "-n",
+    "tools/restore-development-optional.sh"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-05T12:30:34.780090+00:00",
+  "finished_utc": "2026-10-05T12:30:34.784497+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/continuation-shell-syntax.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

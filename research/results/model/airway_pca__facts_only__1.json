@@ -1,0 +1,152 @@
+{
+  "case": "airway_pca",
+  "method": "facts_only",
+  "replicate": 1,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-03 19:42:10 UTC",
+  "response": {
+    "text": "{\"data_facts\": [\"本次分析为PCA，共8个观测、500个变量，提取8个主成分。\", \"PC1解释方差比例为0.478429，PC2为0.233834。\", \"数据仅做中心化（centered=true），未做标准化（scaled=false）。\"], \"statistical_meaning\": [\"方差解释比例表示各主成分承载的变异份额，PC1与PC2合计约71.2%。\", \"载荷（loading）反映变量对主成分的贡献大小，前10个基因的PC1载荷在0.09523至0.1393之间。\", \"主成分数量等于观测数，说明成分数受样本量限制。\"], \"biological_interpretation\": [\"PC1、PC2方向上样本若分离，可能提示存在表达异质性，但需样本分组信息才能解释。\", \"高载荷基因可作为后续探索的候选特征，但载荷本身不提供上调或下调方向。\", \"由于未提供物种信息，暂不能对这些基因编号做功能层面的推断。\"], \"uncertainty\": [\"样本在主成分上的分离不等于生物学机制，批次效应也可能造成分离。\", \"未发送样本坐标或样本名称；分组分离需结合样本分组信息判断。\", \"未提供物种（species），生物学解释需要用户确认物种背景。\"], \"cannot_conclude\": [\"不能仅凭PCA判断差异表达或统计显著性（未提供p值或校正p值）。\", \"不能确定样本分组、处理效应或临床意义。\", \"不能推断基因功能、通路激活方向或因果机制。\"], \"learning_questions\": [\"PC1与PC2合计解释了多少比例的方差？\", \"为什么主成分数量等于观测数（8）？\", \"载荷大小与基因表达上调/下调是同一件事吗？\"], \"evidence_used\": [], \"claims\": [{\"id\": \"c1\", \"text\": \"观测数为8。\", \"fact\": \"n_observations\", \"value\": 8, \"evidence\": []}, {\"id\": \"c2\", \"text\": \"变量数为500。\", \"fact\": \"n_variables\", \"value\": 500, \"evidence\": []}, {\"id\": \"c3\", \"text\": \"PC1解释方差比例为0.478429。\", \"fact\": \"variance_explained.1\", \"value\": 0.478429, \"evidence\": []}, {\"id\": \"c4\", \"text\": \"PC2解释方差比例为0.233834。\", \"fact\": \"variance_explained.2\", \"value\": 0.233834, \"evidence\": []}]}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 1290,
+      "completion_tokens": 558,
+      "total_tokens": 1848,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 906
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.81
+  },
+  "parsed": {
+    "data_facts": [
+      "本次分析为PCA，共8个观测、500个变量，提取8个主成分。",
+      "PC1解释方差比例为0.478429，PC2为0.233834。",
+      "数据仅做中心化（centered=true），未做标准化（scaled=false）。"
+    ],
+    "statistical_meaning": [
+      "方差解释比例表示各主成分承载的变异份额，PC1与PC2合计约71.2%。",
+      "载荷（loading）反映变量对主成分的贡献大小，前10个基因的PC1载荷在0.09523至0.1393之间。",
+      "主成分数量等于观测数，说明成分数受样本量限制。"
+    ],
+    "biological_interpretation": [
+      "PC1、PC2方向上样本若分离，可能提示存在表达异质性，但需样本分组信息才能解释。",
+      "高载荷基因可作为后续探索的候选特征，但载荷本身不提供上调或下调方向。",
+      "由于未提供物种信息，暂不能对这些基因编号做功能层面的推断。"
+    ],
+    "uncertainty": [
+      "样本在主成分上的分离不等于生物学机制，批次效应也可能造成分离。",
+      "未发送样本坐标或样本名称；分组分离需结合样本分组信息判断。",
+      "未提供物种（species），生物学解释需要用户确认物种背景。"
+    ],
+    "cannot_conclude": [
+      "不能仅凭PCA判断差异表达或统计显著性（未提供p值或校正p值）。",
+      "不能确定样本分组、处理效应或临床意义。",
+      "不能推断基因功能、通路激活方向或因果机制。"
+    ],
+    "learning_questions": [
+      "PC1与PC2合计解释了多少比例的方差？",
+      "为什么主成分数量等于观测数（8）？",
+      "载荷大小与基因表达上调/下调是同一件事吗？"
+    ],
+    "evidence_used": [],
+    "claims": [
+      {
+        "id": "c1",
+        "text": "观测数为8。",
+        "fact": "n_observations",
+        "value": 8,
+        "evidence": []
+      },
+      {
+        "id": "c2",
+        "text": "变量数为500。",
+        "fact": "n_variables",
+        "value": 500,
+        "evidence": []
+      },
+      {
+        "id": "c3",
+        "text": "PC1解释方差比例为0.478429。",
+        "fact": "variance_explained.1",
+        "value": 0.478429,
+        "evidence": []
+      },
+      {
+        "id": "c4",
+        "text": "PC2解释方差比例为0.233834。",
+        "fact": "variance_explained.2",
+        "value": 0.233834,
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "c1",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_observations = 8"
+      },
+      {
+        "claim": "c2",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_variables = 500"
+      },
+      {
+        "claim": "c3",
+        "check": "value",
+        "status": "pass",
+        "detail": "variance_explained.1 = 0.478429"
+      },
+      {
+        "claim": "c4",
+        "check": "value",
+        "status": "pass",
+        "detail": "variance_explained.2 = 0.233834"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_observations",
+      "expected": 8,
+      "value": 8,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_variables",
+      "expected": 500,
+      "value": 500,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "variance_explained.1",
+      "expected": 0.47842864474,
+      "value": 0.478429,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "variance_explained.2",
+      "expected": 0.23383404452,
+      "value": 0.233834,
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 4318,
+  "validation_rechecked_utc": "2026-10-03 20:09:20 UTC"
+}

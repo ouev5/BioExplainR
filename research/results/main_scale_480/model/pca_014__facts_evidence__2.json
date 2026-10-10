@@ -1,0 +1,160 @@
+{
+  "case": "pca_014",
+  "family": "pca",
+  "method": "facts_evidence",
+  "replicate": 2,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:21:58 UTC",
+  "response": {
+    "text": "{\"data_facts\": [\"本次 PCA 基于 12 个观测（样本）和 26 个变量（特征）。\", \"第 1 主成分解释方差比例为 0.2388070968088738，第 2 主成分解释方差比例为 0.15551602697122949。\", \"数据经过中心化处理（centered=true），未进行标准化（scaled=false）。\"], \"statistical_meaning\": [\"主成分分析把 26 个变量的变异压缩到少数几个正交主成分上，用方差解释比例衡量每个主成分承载的信息量。\", \"前两个主成分合计解释约 0.39 的方差，说明二维散点图只能展示部分结构。\", \"方差解释比例是描述性统计量，本身不提供显著性检验或效应方向。\"], \"biological_interpretation\": [\"若样本在 PC1/PC2 上形成分离，可提出“样本间存在整体表达差异”的假设，但需结合分组信息与批次信息验证。\", \"文献检索命中一条与气道平滑肌细胞糖皮质激素应答基因相关的记录（EuropePMC:MED:24926665），仅表示检索词匹配，不能据此推断本数据集的生物学机制。\", \"由于未提供物种信息，任何基因功能层面的解释都需用户先确认物种背景。\"], \"uncertainty\": [\"样本在主成分上的分离不等于生物学机制，批次效应也可能造成分离。\", \"未发送样本坐标或样本名称；分组分离需结合样本分组信息判断。\", \"未提供物种（species），生物学解释需要用户确认物种背景。\"], \"cannot_conclude\": [\"不能仅凭 PCA 判断哪些基因差异表达或显著上调/下调。\", \"不能确定样本分离的驱动因素是真实生物学差异还是批次/技术效应。\", \"不能从方差解释比例推断因果机制或临床意义。\"], \"learning_questions\": [\"为什么 PCA 前需要中心化，标准化在什么情况下更合适？\", \"方差解释比例与统计显著性有什么区别？\", \"如何用样本分组信息检验主成分分离是否具有生物学意义？\"], \"evidence_used\": [\"EuropePMC:MED:24926665\"], \"claims\": [{\"id\": \"c1\", \"text\": \"观测（样本）数为 12。\", \"fact\": \"n_observations\", \"value\": 12, \"evidence\": []}, {\"id\": \"c2\", \"text\": \"变量（特征）数为 26。\", \"fact\": \"n_variables\", \"value\": 26, \"evidence\": []}, {\"id\": \"c3\", \"text\": \"第 1 主成分解释方差比例为 0.2388070968088738。\", \"fact\": \"variance_explained.1\", \"value\": \"0.2388070968088738\", \"evidence\": []}, {\"id\": \"c4\", \"text\": \"第 2 主成分解释方差比例为 0.15551602697122949。\", \"fact\": \"variance_explained.2\", \"value\": \"0.15551602697122949\", \"evidence\": []}]}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 1176,
+      "completion_tokens": 662,
+      "total_tokens": 1838,
+      "prompt_tokens_details": {
+        "cached_tokens": 1024
+      },
+      "prompt_cache_hit_tokens": 1024,
+      "prompt_cache_miss_tokens": 152
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 3.5899999999999999
+  },
+  "parsed": {
+    "data_facts": [
+      "本次 PCA 基于 12 个观测（样本）和 26 个变量（特征）。",
+      "第 1 主成分解释方差比例为 0.2388070968088738，第 2 主成分解释方差比例为 0.15551602697122949。",
+      "数据经过中心化处理（centered=true），未进行标准化（scaled=false）。"
+    ],
+    "statistical_meaning": [
+      "主成分分析把 26 个变量的变异压缩到少数几个正交主成分上，用方差解释比例衡量每个主成分承载的信息量。",
+      "前两个主成分合计解释约 0.39 的方差，说明二维散点图只能展示部分结构。",
+      "方差解释比例是描述性统计量，本身不提供显著性检验或效应方向。"
+    ],
+    "biological_interpretation": [
+      "若样本在 PC1/PC2 上形成分离，可提出“样本间存在整体表达差异”的假设，但需结合分组信息与批次信息验证。",
+      "文献检索命中一条与气道平滑肌细胞糖皮质激素应答基因相关的记录（EuropePMC:MED:24926665），仅表示检索词匹配，不能据此推断本数据集的生物学机制。",
+      "由于未提供物种信息，任何基因功能层面的解释都需用户先确认物种背景。"
+    ],
+    "uncertainty": [
+      "样本在主成分上的分离不等于生物学机制，批次效应也可能造成分离。",
+      "未发送样本坐标或样本名称；分组分离需结合样本分组信息判断。",
+      "未提供物种（species），生物学解释需要用户确认物种背景。"
+    ],
+    "cannot_conclude": [
+      "不能仅凭 PCA 判断哪些基因差异表达或显著上调/下调。",
+      "不能确定样本分离的驱动因素是真实生物学差异还是批次/技术效应。",
+      "不能从方差解释比例推断因果机制或临床意义。"
+    ],
+    "learning_questions": [
+      "为什么 PCA 前需要中心化，标准化在什么情况下更合适？",
+      "方差解释比例与统计显著性有什么区别？",
+      "如何用样本分组信息检验主成分分离是否具有生物学意义？"
+    ],
+    "evidence_used": [
+      "EuropePMC:MED:24926665"
+    ],
+    "claims": [
+      {
+        "id": "c1",
+        "text": "观测（样本）数为 12。",
+        "fact": "n_observations",
+        "value": 12,
+        "evidence": []
+      },
+      {
+        "id": "c2",
+        "text": "变量（特征）数为 26。",
+        "fact": "n_variables",
+        "value": 26,
+        "evidence": []
+      },
+      {
+        "id": "c3",
+        "text": "第 1 主成分解释方差比例为 0.2388070968088738。",
+        "fact": "variance_explained.1",
+        "value": "0.2388070968088738",
+        "evidence": []
+      },
+      {
+        "id": "c4",
+        "text": "第 2 主成分解释方差比例为 0.15551602697122949。",
+        "fact": "variance_explained.2",
+        "value": "0.15551602697122949",
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "(evidence_used)",
+        "check": "evidence_ids",
+        "status": "pass",
+        "detail": "all cited evidence ids were supplied"
+      },
+      {
+        "claim": "c1",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_observations = 12"
+      },
+      {
+        "claim": "c2",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_variables = 26"
+      },
+      {
+        "claim": "c3",
+        "check": "value",
+        "status": "pass",
+        "detail": "variance_explained.1 = 0.238807"
+      },
+      {
+        "claim": "c4",
+        "check": "value",
+        "status": "pass",
+        "detail": "variance_explained.2 = 0.155516"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_observations",
+      "expected": 12,
+      "value": 12,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_variables",
+      "expected": 26,
+      "value": 26,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "variance_explained.1",
+      "expected": 0.2388070968088738,
+      "value": "0.2388070968088738",
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "variance_explained.2",
+      "expected": 0.15551602697122949,
+      "value": "0.15551602697122949",
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 4181
+}

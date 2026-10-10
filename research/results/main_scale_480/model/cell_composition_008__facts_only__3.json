@@ -1,0 +1,152 @@
+{
+  "case": "cell_composition_008",
+  "family": "cell_composition",
+  "method": "facts_only",
+  "replicate": 3,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:26:01 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"本次分析共使用 104 个细胞。\",\n    \"样本数为 4，分为 2 组。\",\n    \"共识别出 4 个细胞簇。\"\n  ],\n  \"statistical_meaning\": [\n    \"这些数字是描述性统计量，用于说明数据规模。\",\n    \"没有进行统计检验，因此不能给出 p 值或显著性。\",\n    \"样本是独立重复单位，细胞不是重复。\"\n  ],\n  \"biological_interpretation\": [\n    \"细胞簇数量提示可能存在 4 种细胞状态或类型。\",\n    \"样本量很小，生物学解释需谨慎。\",\n    \"缺少物种信息，无法进行具体生物学推断。\"\n  ],\n  \"uncertainty\": [\n    \"样本量仅 4，统计功效有限。\",\n    \"细胞比例是成分数据，一个簇升高会相对压低其他簇。\",\n    \"未提供物种背景，生物学解释不确定。\"\n  ],\n  \"cannot_conclude\": [\n    \"不能推断组间差异是否显著。\",\n    \"不能推断细胞簇比例变化的因果机制。\",\n    \"不能将细胞视为独立重复进行统计检验。\"\n  ],\n  \"learning_questions\": [\n    \"为什么样本而不是细胞是独立重复单位？\",\n    \"成分数据在细胞比例分析中有什么影响？\",\n    \"描述性统计与推断性统计有什么区别？\"\n  ],\n  \"evidence_used\": [],\n  \"claims\": [\n    {\n      \"id\": \"claim_n_cells_used\",\n      \"text\": \"使用的细胞总数为 104。\",\n      \"fact\": \"n_cells_used\",\n      \"value\": 104,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_n_samples\",\n      \"text\": \"样本数为 4。\",\n      \"fact\": \"n_samples\",\n      \"value\": 4,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_n_clusters\",\n      \"text\": \"细胞簇数量为 4。\",\n      \"fact\": \"n_clusters\",\n      \"value\": 4,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_n_groups\",\n      \"text\": \"分组数量为 2。\",\n      \"fact\": \"n_groups\",\n      \"value\": 2,\n      \"evidence\": []\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 1158,
+      "completion_tokens": 507,
+      "total_tokens": 1665,
+      "prompt_tokens_details": {
+        "cached_tokens": 1024
+      },
+      "prompt_cache_hit_tokens": 1024,
+      "prompt_cache_miss_tokens": 134
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.48
+  },
+  "parsed": {
+    "data_facts": [
+      "本次分析共使用 104 个细胞。",
+      "样本数为 4，分为 2 组。",
+      "共识别出 4 个细胞簇。"
+    ],
+    "statistical_meaning": [
+      "这些数字是描述性统计量，用于说明数据规模。",
+      "没有进行统计检验，因此不能给出 p 值或显著性。",
+      "样本是独立重复单位，细胞不是重复。"
+    ],
+    "biological_interpretation": [
+      "细胞簇数量提示可能存在 4 种细胞状态或类型。",
+      "样本量很小，生物学解释需谨慎。",
+      "缺少物种信息，无法进行具体生物学推断。"
+    ],
+    "uncertainty": [
+      "样本量仅 4，统计功效有限。",
+      "细胞比例是成分数据，一个簇升高会相对压低其他簇。",
+      "未提供物种背景，生物学解释不确定。"
+    ],
+    "cannot_conclude": [
+      "不能推断组间差异是否显著。",
+      "不能推断细胞簇比例变化的因果机制。",
+      "不能将细胞视为独立重复进行统计检验。"
+    ],
+    "learning_questions": [
+      "为什么样本而不是细胞是独立重复单位？",
+      "成分数据在细胞比例分析中有什么影响？",
+      "描述性统计与推断性统计有什么区别？"
+    ],
+    "evidence_used": [],
+    "claims": [
+      {
+        "id": "claim_n_cells_used",
+        "text": "使用的细胞总数为 104。",
+        "fact": "n_cells_used",
+        "value": 104,
+        "evidence": []
+      },
+      {
+        "id": "claim_n_samples",
+        "text": "样本数为 4。",
+        "fact": "n_samples",
+        "value": 4,
+        "evidence": []
+      },
+      {
+        "id": "claim_n_clusters",
+        "text": "细胞簇数量为 4。",
+        "fact": "n_clusters",
+        "value": 4,
+        "evidence": []
+      },
+      {
+        "id": "claim_n_groups",
+        "text": "分组数量为 2。",
+        "fact": "n_groups",
+        "value": 2,
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "claim_n_cells_used",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_cells_used = 104"
+      },
+      {
+        "claim": "claim_n_samples",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_samples = 4"
+      },
+      {
+        "claim": "claim_n_clusters",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_clusters = 4"
+      },
+      {
+        "claim": "claim_n_groups",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_groups = 2"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_cells_used",
+      "expected": 104,
+      "value": 104,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_samples",
+      "expected": 4,
+      "value": 4,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_clusters",
+      "expected": 4,
+      "value": 4,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_groups",
+      "expected": 2,
+      "value": 2,
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 4150
+}

@@ -1,0 +1,146 @@
+{
+  "case": "pca_019",
+  "family": "pca",
+  "method": "direct_bounded",
+  "replicate": 3,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:23:51 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"观测数为12，变量数为31。\",\n    \"前两个主成分的方差解释比例分别为0.1744和0.1543。\"\n  ],\n  \"statistical_meaning\": [\n    \"观测数表示样本量，变量数表示特征维度。\",\n    \"方差解释比例反映各主成分对总方差的贡献。\"\n  ],\n  \"biological_interpretation\": [\n    \"样本量较小，可能限制统计功效。\",\n    \"前两个主成分解释了约33%的变异，可能不足以完全区分生物学信号。\"\n  ],\n  \"uncertainty\": [\n    \"未提供分组信息，无法评估组间差异。\",\n    \"方差解释比例基于全部31个变量，可能受噪声影响。\"\n  ],\n  \"cannot_conclude\": [\n    \"无法判断主成分是否与特定生物学条件相关。\",\n    \"无法确定是否需要更多主成分来捕捉主要变异。\"\n  ],\n  \"learning_questions\": [\n    \"如何根据方差解释比例选择主成分数量？\",\n    \"样本量小对PCA结果稳定性有何影响？\"\n  ],\n  \"evidence_used\": [],\n  \"claims\": [\n    {\n      \"id\": \"claim_1\",\n      \"text\": \"观测数为12。\",\n      \"fact\": \"n_observations\",\n      \"value\": 12,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_2\",\n      \"text\": \"变量数为31。\",\n      \"fact\": \"n_variables\",\n      \"value\": 31,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_3\",\n      \"text\": \"第一主成分的方差解释比例为0.1744。\",\n      \"fact\": \"variance_explained.1\",\n      \"value\": \"0.1744\",\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_4\",\n      \"text\": \"第二主成分的方差解释比例为0.1543。\",\n      \"fact\": \"variance_explained.2\",\n      \"value\": \"0.1543\",\n      \"evidence\": []\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 441,
+      "completion_tokens": 461,
+      "total_tokens": 902,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 185
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.4500000000000002
+  },
+  "parsed": {
+    "data_facts": [
+      "观测数为12，变量数为31。",
+      "前两个主成分的方差解释比例分别为0.1744和0.1543。"
+    ],
+    "statistical_meaning": [
+      "观测数表示样本量，变量数表示特征维度。",
+      "方差解释比例反映各主成分对总方差的贡献。"
+    ],
+    "biological_interpretation": [
+      "样本量较小，可能限制统计功效。",
+      "前两个主成分解释了约33%的变异，可能不足以完全区分生物学信号。"
+    ],
+    "uncertainty": [
+      "未提供分组信息，无法评估组间差异。",
+      "方差解释比例基于全部31个变量，可能受噪声影响。"
+    ],
+    "cannot_conclude": [
+      "无法判断主成分是否与特定生物学条件相关。",
+      "无法确定是否需要更多主成分来捕捉主要变异。"
+    ],
+    "learning_questions": [
+      "如何根据方差解释比例选择主成分数量？",
+      "样本量小对PCA结果稳定性有何影响？"
+    ],
+    "evidence_used": [],
+    "claims": [
+      {
+        "id": "claim_1",
+        "text": "观测数为12。",
+        "fact": "n_observations",
+        "value": 12,
+        "evidence": []
+      },
+      {
+        "id": "claim_2",
+        "text": "变量数为31。",
+        "fact": "n_variables",
+        "value": 31,
+        "evidence": []
+      },
+      {
+        "id": "claim_3",
+        "text": "第一主成分的方差解释比例为0.1744。",
+        "fact": "variance_explained.1",
+        "value": "0.1744",
+        "evidence": []
+      },
+      {
+        "id": "claim_4",
+        "text": "第二主成分的方差解释比例为0.1543。",
+        "fact": "variance_explained.2",
+        "value": "0.1543",
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "fail",
+    "findings": [
+      {
+        "claim": "claim_1",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_observations = 12"
+      },
+      {
+        "claim": "claim_2",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_variables = 31"
+      },
+      {
+        "claim": "claim_3",
+        "check": "value",
+        "status": "fail",
+        "detail": "claimed 0.1744 but variance_explained.1 = 0.177623"
+      },
+      {
+        "claim": "claim_4",
+        "check": "value",
+        "status": "fail",
+        "detail": "claimed 0.1543 but variance_explained.2 = 0.157195"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_observations",
+      "expected": 12,
+      "value": 12,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_variables",
+      "expected": 31,
+      "value": 31,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "variance_explained.1",
+      "expected": 0.1776232139365326,
+      "value": "0.1744",
+      "answered": true,
+      "correct": false
+    },
+    {
+      "fact": "variance_explained.2",
+      "expected": 0.15719517750066458,
+      "value": "0.1543",
+      "answered": true,
+      "correct": false
+    }
+  ],
+  "prompt_chars": 1467
+}

@@ -1,0 +1,189 @@
+{
+  "case": "single_cell_005",
+  "family": "single_cell",
+  "method": "direct_bounded",
+  "replicate": 3,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:23:56 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"数据包含30个细胞和40个特征。\",\n    \"共有3个不同的样本。\",\n    \"测定类型为counts。\"\n  ],\n  \"statistical_meaning\": [\n    \"细胞数、特征数和样本数描述了数据集的维度。\",\n    \"测定类型表明数据为计数数据。\"\n  ],\n  \"biological_interpretation\": [\n    \"该数据集可能来自单细胞RNA测序实验。\",\n    \"3个样本可能代表不同的生物学条件或重复。\"\n  ],\n  \"uncertainty\": [\n    \"样本的具体来源和实验设计未知。\",\n    \"特征的具体类型（如基因）未明确。\"\n  ],\n  \"cannot_conclude\": [\n    \"无法推断样本间的生物学差异。\",\n    \"无法确定数据的质量或标准化状态。\"\n  ],\n  \"learning_questions\": [\n    \"这些样本是如何收集和处理的？\",\n    \"特征是否经过过滤或选择？\"\n  ],\n  \"evidence_used\": [\n    \"dim\",\n    \"assays\",\n    \"n_distinct_samples\"\n  ],\n  \"claims\": [\n    {\n      \"id\": \"claim_1\",\n      \"text\": \"细胞数为30。\",\n      \"fact\": \"n_cells\",\n      \"value\": 30,\n      \"evidence\": [\n        \"dim\"\n      ]\n    },\n    {\n      \"id\": \"claim_2\",\n      \"text\": \"特征数为40。\",\n      \"fact\": \"n_features\",\n      \"value\": 40,\n      \"evidence\": [\n        \"dim\"\n      ]\n    },\n    {\n      \"id\": \"claim_3\",\n      \"text\": \"样本数为3。\",\n      \"fact\": \"n_samples\",\n      \"value\": 3,\n      \"evidence\": [\n        \"n_distinct_samples\"\n      ]\n    },\n    {\n      \"id\": \"claim_4\",\n      \"text\": \"测定类型为counts。\",\n      \"fact\": \"assays\",\n      \"value\": \"counts\",\n      \"evidence\": [\n        \"assays\"\n      ]\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 316,
+      "completion_tokens": 444,
+      "total_tokens": 760,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 188
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.1299999999999999
+  },
+  "parsed": {
+    "data_facts": [
+      "数据包含30个细胞和40个特征。",
+      "共有3个不同的样本。",
+      "测定类型为counts。"
+    ],
+    "statistical_meaning": [
+      "细胞数、特征数和样本数描述了数据集的维度。",
+      "测定类型表明数据为计数数据。"
+    ],
+    "biological_interpretation": [
+      "该数据集可能来自单细胞RNA测序实验。",
+      "3个样本可能代表不同的生物学条件或重复。"
+    ],
+    "uncertainty": [
+      "样本的具体来源和实验设计未知。",
+      "特征的具体类型（如基因）未明确。"
+    ],
+    "cannot_conclude": [
+      "无法推断样本间的生物学差异。",
+      "无法确定数据的质量或标准化状态。"
+    ],
+    "learning_questions": [
+      "这些样本是如何收集和处理的？",
+      "特征是否经过过滤或选择？"
+    ],
+    "evidence_used": [
+      "dim",
+      "assays",
+      "n_distinct_samples"
+    ],
+    "claims": [
+      {
+        "id": "claim_1",
+        "text": "细胞数为30。",
+        "fact": "n_cells",
+        "value": 30,
+        "evidence": [
+          "dim"
+        ]
+      },
+      {
+        "id": "claim_2",
+        "text": "特征数为40。",
+        "fact": "n_features",
+        "value": 40,
+        "evidence": [
+          "dim"
+        ]
+      },
+      {
+        "id": "claim_3",
+        "text": "样本数为3。",
+        "fact": "n_samples",
+        "value": 3,
+        "evidence": [
+          "n_distinct_samples"
+        ]
+      },
+      {
+        "id": "claim_4",
+        "text": "测定类型为counts。",
+        "fact": "assays",
+        "value": "counts",
+        "evidence": [
+          "assays"
+        ]
+      }
+    ]
+  },
+  "validation": {
+    "status": "fail",
+    "findings": [
+      {
+        "claim": "(evidence_used)",
+        "check": "evidence_ids",
+        "status": "fail",
+        "detail": "unknown evidence id(s): dim, assays, n_distinct_samples (no evidence list was supplied)"
+      },
+      {
+        "claim": "claim_1",
+        "check": "value",
+        "status": "fail",
+        "detail": "claimed 30 but n_cells = 40"
+      },
+      {
+        "claim": "claim_1",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: dim"
+      },
+      {
+        "claim": "claim_2",
+        "check": "value",
+        "status": "fail",
+        "detail": "claimed 40 but n_features = 30"
+      },
+      {
+        "claim": "claim_2",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: dim"
+      },
+      {
+        "claim": "claim_3",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_samples = 3"
+      },
+      {
+        "claim": "claim_3",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: n_distinct_samples"
+      },
+      {
+        "claim": "claim_4",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      },
+      {
+        "claim": "claim_4",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: assays"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_cells",
+      "expected": 40,
+      "value": 30,
+      "answered": true,
+      "correct": false
+    },
+    {
+      "fact": "n_features",
+      "expected": 30,
+      "value": 40,
+      "answered": true,
+      "correct": false
+    },
+    {
+      "fact": "n_samples",
+      "expected": 3,
+      "value": 3,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "assays",
+      "expected": "counts",
+      "value": "counts",
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 1204
+}

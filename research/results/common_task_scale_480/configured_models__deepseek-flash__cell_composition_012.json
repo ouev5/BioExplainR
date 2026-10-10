@@ -1,0 +1,20 @@
+{
+  "text": "{\"claims\":[{\"fact\":\"n_samples\",\"value\":4},{\"fact\":\"n_clusters\",\"value\":2},{\"fact\":\"n_cells_used\",\"value\":120},{\"fact\":\"analysis_type\",\"value\":\"cell_composition\"}]}",
+  "model": "deepseek-flash",
+  "stop_reason": "stop",
+  "usage": {
+    "prompt_tokens": 293,
+    "completion_tokens": 155,
+    "total_tokens": 448,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 106
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 165
+  },
+  "endpoint_host": "https://api.deepseek.com",
+  "elapsed_sec": 1.04
+}

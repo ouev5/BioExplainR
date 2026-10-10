@@ -1,0 +1,18 @@
+{
+  "command": [
+    "Rscript",
+    "--vanilla",
+    "-e",
+    "options(timeout=120); install.packages(\"https://bioconductor.org/packages/3.18/bioc/src/contrib/SpatialExperiment_1.12.0.tar.gz\", repos=NULL, type=\"source\"); stopifnot(requireNamespace(\"SpatialExperiment\", quietly=TRUE)); print(packageVersion(\"SpatialExperiment\"))"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-05T12:07:47.233814+00:00",
+  "finished_utc": "2026-10-05T12:07:47.400000+00:00",
+  "exit_code": 1,
+  "status": "fail",
+  "log": {
+    "path": "research/results/w00_baseline/continuation-install-spatial.txt",
+    "bytes": 437,
+    "sha256": "ce7fdae3f488308f9554935a29f0a8af87b0948313630286a704108571552147"
+  }
+}

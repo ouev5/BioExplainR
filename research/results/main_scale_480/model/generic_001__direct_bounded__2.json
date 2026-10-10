@@ -1,0 +1,140 @@
+{
+  "case": "generic_001",
+  "family": "generic",
+  "method": "direct_bounded",
+  "replicate": 2,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:18:56 UTC",
+  "response": {
+    "text": "{\"data_facts\":[\"输入仅包含阈值和维度信息，未提供对象类、类型、S4状态或大小。\"],\"statistical_meaning\":[\"padj、lfc、p 为差异分析阈值，dim 表示矩阵维度。\"],\"biological_interpretation\":[\"缺少基因表达或富集结果，无法进行生物学解释。\"],\"uncertainty\":[\"无法确定对象类、类型、是否为S4对象及其大小。\"],\"cannot_conclude\":[\"不能从当前输入推断 class、type、is_s4、size。\"],\"learning_questions\":[\"如何从 R 对象中提取 class、type、isS4 和 object.size？\"],\"evidence_used\":[],\"claims\":[{\"id\":\"claim_class\",\"text\":\"对象类无法确定。\",\"fact\":\"class\",\"value\":null,\"evidence\":[]},{\"id\":\"claim_type\",\"text\":\"对象类型无法确定。\",\"fact\":\"type\",\"value\":null,\"evidence\":[]},{\"id\":\"claim_is_s4\",\"text\":\"是否为S4对象无法确定。\",\"fact\":\"is_s4\",\"value\":null,\"evidence\":[]},{\"id\":\"claim_size\",\"text\":\"对象大小无法确定。\",\"fact\":\"size\",\"value\":null,\"evidence\":[]}]}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 306,
+      "completion_tokens": 257,
+      "total_tokens": 563,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 178
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 1.5
+  },
+  "parsed": {
+    "data_facts": [
+      "输入仅包含阈值和维度信息，未提供对象类、类型、S4状态或大小。"
+    ],
+    "statistical_meaning": [
+      "padj、lfc、p 为差异分析阈值，dim 表示矩阵维度。"
+    ],
+    "biological_interpretation": [
+      "缺少基因表达或富集结果，无法进行生物学解释。"
+    ],
+    "uncertainty": [
+      "无法确定对象类、类型、是否为S4对象及其大小。"
+    ],
+    "cannot_conclude": [
+      "不能从当前输入推断 class、type、is_s4、size。"
+    ],
+    "learning_questions": [
+      "如何从 R 对象中提取 class、type、isS4 和 object.size？"
+    ],
+    "evidence_used": [],
+    "claims": [
+      {
+        "id": "claim_class",
+        "text": "对象类无法确定。",
+        "fact": "class",
+        "value": null,
+        "evidence": []
+      },
+      {
+        "id": "claim_type",
+        "text": "对象类型无法确定。",
+        "fact": "type",
+        "value": null,
+        "evidence": []
+      },
+      {
+        "id": "claim_is_s4",
+        "text": "是否为S4对象无法确定。",
+        "fact": "is_s4",
+        "value": null,
+        "evidence": []
+      },
+      {
+        "id": "claim_size",
+        "text": "对象大小无法确定。",
+        "fact": "size",
+        "value": null,
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "unverified",
+    "findings": [
+      {
+        "claim": "claim_class",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_type",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_is_s4",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_size",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "class",
+      "expected": "data.frame",
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "type",
+      "expected": "list",
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "is_s4",
+      "expected": false,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "size",
+      "expected": "1.2 Kb",
+      "value": null,
+      "answered": false,
+      "correct": false
+    }
+  ],
+  "prompt_chars": 1175
+}

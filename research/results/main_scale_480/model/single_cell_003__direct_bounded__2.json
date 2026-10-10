@@ -1,0 +1,191 @@
+{
+  "case": "single_cell_003",
+  "family": "single_cell",
+  "method": "direct_bounded",
+  "replicate": 2,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:18:33 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"数据矩阵维度为28行36列。\",\n    \"assay类型为counts。\",\n    \"不同样本数为1。\"\n  ],\n  \"statistical_meaning\": [\n    \"28可能代表特征数，36可能代表细胞数，但未明确行列含义。\",\n    \"counts表示原始计数数据。\",\n    \"n_distinct_samples为1表示所有列来自同一样本。\"\n  ],\n  \"biological_interpretation\": [\n    \"若28为特征数，则可能测量了28个基因或蛋白。\",\n    \"若36为细胞数，则可能包含36个细胞。\",\n    \"单样本设计无法进行组间比较。\"\n  ],\n  \"uncertainty\": [\n    \"行列含义未明确，无法确定n_cells和n_features。\",\n    \"样本数1可能限制统计推断。\"\n  ],\n  \"cannot_conclude\": [\n    \"无法确定n_cells和n_features的具体值。\",\n    \"无法进行差异表达分析。\"\n  ],\n  \"learning_questions\": [\n    \"如何从数据矩阵维度推断细胞数和特征数？\",\n    \"单样本数据可以进行哪些分析？\"\n  ],\n  \"evidence_used\": [\n    \"dim\",\n    \"assays\",\n    \"n_distinct_samples\"\n  ],\n  \"claims\": [\n    {\n      \"id\": \"claim_n_cells\",\n      \"text\": \"n_cells无法从提供的数据中确定。\",\n      \"fact\": \"n_cells\",\n      \"value\": null,\n      \"evidence\": [\n        \"dim\"\n      ]\n    },\n    {\n      \"id\": \"claim_n_features\",\n      \"text\": \"n_features无法从提供的数据中确定。\",\n      \"fact\": \"n_features\",\n      \"value\": null,\n      \"evidence\": [\n        \"dim\"\n      ]\n    },\n    {\n      \"id\": \"claim_n_samples\",\n      \"text\": \"n_samples为1。\",\n      \"fact\": \"n_samples\",\n      \"value\": 1,\n      \"evidence\": [\n        \"n_distinct_samples\"\n      ]\n    },\n    {\n      \"id\": \"claim_assays\",\n      \"text\": \"assays为counts。\",\n      \"fact\": \"assays\",\n      \"value\": \"counts\",\n      \"evidence\": [\n        \"assays\"\n      ]\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 316,
+      "completion_tokens": 504,
+      "total_tokens": 820,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 188
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.2000000000000002
+  },
+  "parsed": {
+    "data_facts": [
+      "数据矩阵维度为28行36列。",
+      "assay类型为counts。",
+      "不同样本数为1。"
+    ],
+    "statistical_meaning": [
+      "28可能代表特征数，36可能代表细胞数，但未明确行列含义。",
+      "counts表示原始计数数据。",
+      "n_distinct_samples为1表示所有列来自同一样本。"
+    ],
+    "biological_interpretation": [
+      "若28为特征数，则可能测量了28个基因或蛋白。",
+      "若36为细胞数，则可能包含36个细胞。",
+      "单样本设计无法进行组间比较。"
+    ],
+    "uncertainty": [
+      "行列含义未明确，无法确定n_cells和n_features。",
+      "样本数1可能限制统计推断。"
+    ],
+    "cannot_conclude": [
+      "无法确定n_cells和n_features的具体值。",
+      "无法进行差异表达分析。"
+    ],
+    "learning_questions": [
+      "如何从数据矩阵维度推断细胞数和特征数？",
+      "单样本数据可以进行哪些分析？"
+    ],
+    "evidence_used": [
+      "dim",
+      "assays",
+      "n_distinct_samples"
+    ],
+    "claims": [
+      {
+        "id": "claim_n_cells",
+        "text": "n_cells无法从提供的数据中确定。",
+        "fact": "n_cells",
+        "value": null,
+        "evidence": [
+          "dim"
+        ]
+      },
+      {
+        "id": "claim_n_features",
+        "text": "n_features无法从提供的数据中确定。",
+        "fact": "n_features",
+        "value": null,
+        "evidence": [
+          "dim"
+        ]
+      },
+      {
+        "id": "claim_n_samples",
+        "text": "n_samples为1。",
+        "fact": "n_samples",
+        "value": 1,
+        "evidence": [
+          "n_distinct_samples"
+        ]
+      },
+      {
+        "id": "claim_assays",
+        "text": "assays为counts。",
+        "fact": "assays",
+        "value": "counts",
+        "evidence": [
+          "assays"
+        ]
+      }
+    ]
+  },
+  "validation": {
+    "status": "fail",
+    "findings": [
+      {
+        "claim": "(evidence_used)",
+        "check": "evidence_ids",
+        "status": "fail",
+        "detail": "unknown evidence id(s): dim, assays, n_distinct_samples (no evidence list was supplied)"
+      },
+      {
+        "claim": "claim_n_cells",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_n_cells",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: dim"
+      },
+      {
+        "claim": "claim_n_features",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_n_features",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: dim"
+      },
+      {
+        "claim": "claim_n_samples",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_samples = 1"
+      },
+      {
+        "claim": "claim_n_samples",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: n_distinct_samples"
+      },
+      {
+        "claim": "claim_assays",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      },
+      {
+        "claim": "claim_assays",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: assays"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_cells",
+      "expected": 36,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "n_features",
+      "expected": 28,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "n_samples",
+      "expected": 1,
+      "value": 1,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "assays",
+      "expected": "counts",
+      "value": "counts",
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 1204
+}

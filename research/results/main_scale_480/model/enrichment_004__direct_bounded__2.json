@@ -1,0 +1,147 @@
+{
+  "case": "enrichment_004",
+  "family": "enrichment",
+  "method": "direct_bounded",
+  "replicate": 2,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:18:04 UTC",
+  "response": {
+    "text": "{\"data_facts\":[\"输入包含9个富集条目，但rows_complete为false，数据不完整。\",\"p.adjust阈值设为0.050000000000000003。\"],\"statistical_meaning\":[\"富集分析使用p.adjust进行多重检验校正。\",\"显著性阈值决定哪些条目被视为显著。\"],\"biological_interpretation\":[\"无法从当前不完整数据可靠推断生物学功能。\",\"需完整结果才能解释通路富集。\"],\"uncertainty\":[\"rows_complete为false，结果可能缺失。\",\"无法确定实际显著条目数量。\"],\"cannot_conclude\":[\"不能计算n_terms和n_significant。\",\"不能确认enrichment_method。\",\"不能验证significance_threshold是否适用。\"],\"learning_questions\":[\"如何判断富集分析结果是否完整？\",\"p.adjust与p值在富集分析中有何区别？\"],\"evidence_used\":[],\"claims\":[{\"id\":\"claim_1\",\"text\":\"条目总数无法确定。\",\"fact\":\"n_terms\",\"value\":null,\"evidence\":[]},{\"id\":\"claim_2\",\"text\":\"显著条目数无法确定。\",\"fact\":\"n_significant\",\"value\":null,\"evidence\":[]},{\"id\":\"claim_3\",\"text\":\"富集方法无法确定。\",\"fact\":\"enrichment_method\",\"value\":null,\"evidence\":[]},{\"id\":\"claim_4\",\"text\":\"显著性阈值为0.050000000000000003。\",\"fact\":\"significance_threshold\",\"value\":\"0.050000000000000003\",\"evidence\":[]}]}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 861,
+      "completion_tokens": 326,
+      "total_tokens": 1187,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 221
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.4100000000000001
+  },
+  "parsed": {
+    "data_facts": [
+      "输入包含9个富集条目，但rows_complete为false，数据不完整。",
+      "p.adjust阈值设为0.050000000000000003。"
+    ],
+    "statistical_meaning": [
+      "富集分析使用p.adjust进行多重检验校正。",
+      "显著性阈值决定哪些条目被视为显著。"
+    ],
+    "biological_interpretation": [
+      "无法从当前不完整数据可靠推断生物学功能。",
+      "需完整结果才能解释通路富集。"
+    ],
+    "uncertainty": [
+      "rows_complete为false，结果可能缺失。",
+      "无法确定实际显著条目数量。"
+    ],
+    "cannot_conclude": [
+      "不能计算n_terms和n_significant。",
+      "不能确认enrichment_method。",
+      "不能验证significance_threshold是否适用。"
+    ],
+    "learning_questions": [
+      "如何判断富集分析结果是否完整？",
+      "p.adjust与p值在富集分析中有何区别？"
+    ],
+    "evidence_used": [],
+    "claims": [
+      {
+        "id": "claim_1",
+        "text": "条目总数无法确定。",
+        "fact": "n_terms",
+        "value": null,
+        "evidence": []
+      },
+      {
+        "id": "claim_2",
+        "text": "显著条目数无法确定。",
+        "fact": "n_significant",
+        "value": null,
+        "evidence": []
+      },
+      {
+        "id": "claim_3",
+        "text": "富集方法无法确定。",
+        "fact": "enrichment_method",
+        "value": null,
+        "evidence": []
+      },
+      {
+        "id": "claim_4",
+        "text": "显著性阈值为0.050000000000000003。",
+        "fact": "significance_threshold",
+        "value": "0.050000000000000003",
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "partial",
+    "findings": [
+      {
+        "claim": "claim_1",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_2",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_3",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_4",
+        "check": "value",
+        "status": "pass",
+        "detail": "significance_threshold = 0.05"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_terms",
+      "expected": 16,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "n_significant",
+      "expected": 13,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "enrichment_method",
+      "expected": "ORA",
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "significance_threshold",
+      "expected": 0.050000000000000003,
+      "value": "0.050000000000000003",
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 2702
+}

@@ -1,0 +1,146 @@
+{
+  "case": "airway_pca",
+  "method": "direct_bounded",
+  "replicate": 1,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-03 19:42:04 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"观测数为8，变量数为500。\",\n    \"第一主成分标准差为14.1515118432，第二主成分标准差为9.8934581924。\"\n  ],\n  \"statistical_meaning\": [\n    \"方差解释比例由标准差平方除以总方差计算。\",\n    \"总方差为各主成分标准差平方和。\"\n  ],\n  \"biological_interpretation\": [\n    \"主成分分析降维展示样本间主要变异方向。\",\n    \"前两个主成分可能反映数据中最大的生物学或技术变异。\"\n  ],\n  \"uncertainty\": [\n    \"未提供样本分组或批次信息，无法评估变异来源。\",\n    \"方差解释比例基于当前500个变量，可能受变量选择影响。\"\n  ],\n  \"cannot_conclude\": [\n    \"无法确定主成分与具体生物学因素的关系。\",\n    \"无法判断样本间差异是否具有统计学显著性。\"\n  ],\n  \"learning_questions\": [\n    \"如何解释主成分分析中的方差解释比例？\",\n    \"样本量和变量数如何影响主成分分析结果？\"\n  ],\n  \"evidence_used\": [],\n  \"claims\": [\n    {\n      \"id\": \"claim_1\",\n      \"text\": \"观测数为8。\",\n      \"fact\": \"n_observations\",\n      \"value\": 8,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_2\",\n      \"text\": \"变量数为500。\",\n      \"fact\": \"n_variables\",\n      \"value\": 500,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_3\",\n      \"text\": \"第一主成分方差解释比例为0.5000000000。\",\n      \"fact\": \"variance_explained.1\",\n      \"value\": 0.5,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_4\",\n      \"text\": \"第二主成分方差解释比例为0.2444444444。\",\n      \"fact\": \"variance_explained.2\",\n      \"value\": 0.2444444444,\n      \"evidence\": []\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 356,
+      "completion_tokens": 466,
+      "total_tokens": 822,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 356
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.25
+  },
+  "parsed": {
+    "data_facts": [
+      "观测数为8，变量数为500。",
+      "第一主成分标准差为14.1515118432，第二主成分标准差为9.8934581924。"
+    ],
+    "statistical_meaning": [
+      "方差解释比例由标准差平方除以总方差计算。",
+      "总方差为各主成分标准差平方和。"
+    ],
+    "biological_interpretation": [
+      "主成分分析降维展示样本间主要变异方向。",
+      "前两个主成分可能反映数据中最大的生物学或技术变异。"
+    ],
+    "uncertainty": [
+      "未提供样本分组或批次信息，无法评估变异来源。",
+      "方差解释比例基于当前500个变量，可能受变量选择影响。"
+    ],
+    "cannot_conclude": [
+      "无法确定主成分与具体生物学因素的关系。",
+      "无法判断样本间差异是否具有统计学显著性。"
+    ],
+    "learning_questions": [
+      "如何解释主成分分析中的方差解释比例？",
+      "样本量和变量数如何影响主成分分析结果？"
+    ],
+    "evidence_used": [],
+    "claims": [
+      {
+        "id": "claim_1",
+        "text": "观测数为8。",
+        "fact": "n_observations",
+        "value": 8,
+        "evidence": []
+      },
+      {
+        "id": "claim_2",
+        "text": "变量数为500。",
+        "fact": "n_variables",
+        "value": 500,
+        "evidence": []
+      },
+      {
+        "id": "claim_3",
+        "text": "第一主成分方差解释比例为0.5000000000。",
+        "fact": "variance_explained.1",
+        "value": 0.5,
+        "evidence": []
+      },
+      {
+        "id": "claim_4",
+        "text": "第二主成分方差解释比例为0.2444444444。",
+        "fact": "variance_explained.2",
+        "value": 0.2444444444,
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "fail",
+    "findings": [
+      {
+        "claim": "claim_1",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_observations = 8"
+      },
+      {
+        "claim": "claim_2",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_variables = 500"
+      },
+      {
+        "claim": "claim_3",
+        "check": "value",
+        "status": "fail",
+        "detail": "claimed 0.5 but variance_explained.1 = 0.478429"
+      },
+      {
+        "claim": "claim_4",
+        "check": "value",
+        "status": "fail",
+        "detail": "claimed 0.244444 but variance_explained.2 = 0.233834"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_observations",
+      "expected": 8,
+      "value": 8,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_variables",
+      "expected": 500,
+      "value": 500,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "variance_explained.1",
+      "expected": 0.47842864474,
+      "value": 0.5,
+      "answered": true,
+      "correct": false
+    },
+    {
+      "fact": "variance_explained.2",
+      "expected": 0.23383404452,
+      "value": 0.2444444444,
+      "answered": true,
+      "correct": false
+    }
+  ],
+  "prompt_chars": 1174,
+  "validation_rechecked_utc": "2026-10-03 20:09:20 UTC"
+}

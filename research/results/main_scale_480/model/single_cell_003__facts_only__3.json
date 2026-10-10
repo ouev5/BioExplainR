@@ -1,0 +1,152 @@
+{
+  "case": "single_cell_003",
+  "family": "single_cell",
+  "method": "facts_only",
+  "replicate": 3,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:25:37 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"该数据集包含 36 个细胞和 28 个特征。\",\n    \"样本列 sample_id 仅识别到 1 个样本，且没有细胞缺失样本信息。\",\n    \"唯一可用的 assay 是 counts，其数值为整数样，零值比例为 0.0903。\"\n  ],\n  \"statistical_meaning\": [\n    \"36 个细胞来自 1 个样本，因此细胞不是独立生物学重复。\",\n    \"28 个特征对应 28 个基因或特征，矩阵维度为 28×36。\",\n    \"counts 矩阵的数值范围从 0 到 10，中位数为 5。\"\n  ],\n  \"biological_interpretation\": [\n    \"由于只有 1 个样本，无法进行有意义的组间差异表达分析。\",\n    \"细胞类型注释需要基于多个 marker 的组合，但当前未提供 marker 信息。\",\n    \"零值比例较低，可能表明数据并非高度稀疏，但需结合具体技术判断。\"\n  ],\n  \"uncertainty\": [\n    \"细胞数不等于生物学重复数；样本/供体才是独立重复单位。\",\n    \"仅识别到 1 个样本；组间比较的统计推断能力非常有限。\",\n    \"未找到常见 QC 指标列，无法评估质控。\"\n  ],\n  \"cannot_conclude\": [\n    \"不能进行组间差异分析或推断任何处理效应。\",\n    \"不能确定细胞类型或生物学状态。\",\n    \"不能评估数据质量或批次效应。\"\n  ],\n  \"learning_questions\": [\n    \"为什么单细胞分析中不能把每个细胞当作独立重复？\",\n    \"如果只有一个样本，可以做什么类型的分析？\",\n    \"如何判断单细胞数据是否需要质控？\"\n  ],\n  \"evidence_used\": [],\n  \"claims\": [\n    {\n      \"id\": \"claim_n_cells\",\n      \"text\": \"细胞总数为 36。\",\n      \"fact\": \"n_cells\",\n      \"value\": 36,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_n_features\",\n      \"text\": \"特征总数为 28。\",\n      \"fact\": \"n_features\",\n      \"value\": 28,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_n_samples\",\n      \"text\": \"样本数量为 1。\",\n      \"fact\": \"n_samples\",\n      \"value\": 1,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_assays\",\n      \"text\": \"可用 assay 为 counts。\",\n      \"fact\": \"assays\",\n      \"value\": \"counts\",\n      \"evidence\": []\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 1117,
+      "completion_tokens": 590,
+      "total_tokens": 1707,
+      "prompt_tokens_details": {
+        "cached_tokens": 896
+      },
+      "prompt_cache_hit_tokens": 896,
+      "prompt_cache_miss_tokens": 221
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.8500000000000001
+  },
+  "parsed": {
+    "data_facts": [
+      "该数据集包含 36 个细胞和 28 个特征。",
+      "样本列 sample_id 仅识别到 1 个样本，且没有细胞缺失样本信息。",
+      "唯一可用的 assay 是 counts，其数值为整数样，零值比例为 0.0903。"
+    ],
+    "statistical_meaning": [
+      "36 个细胞来自 1 个样本，因此细胞不是独立生物学重复。",
+      "28 个特征对应 28 个基因或特征，矩阵维度为 28×36。",
+      "counts 矩阵的数值范围从 0 到 10，中位数为 5。"
+    ],
+    "biological_interpretation": [
+      "由于只有 1 个样本，无法进行有意义的组间差异表达分析。",
+      "细胞类型注释需要基于多个 marker 的组合，但当前未提供 marker 信息。",
+      "零值比例较低，可能表明数据并非高度稀疏，但需结合具体技术判断。"
+    ],
+    "uncertainty": [
+      "细胞数不等于生物学重复数；样本/供体才是独立重复单位。",
+      "仅识别到 1 个样本；组间比较的统计推断能力非常有限。",
+      "未找到常见 QC 指标列，无法评估质控。"
+    ],
+    "cannot_conclude": [
+      "不能进行组间差异分析或推断任何处理效应。",
+      "不能确定细胞类型或生物学状态。",
+      "不能评估数据质量或批次效应。"
+    ],
+    "learning_questions": [
+      "为什么单细胞分析中不能把每个细胞当作独立重复？",
+      "如果只有一个样本，可以做什么类型的分析？",
+      "如何判断单细胞数据是否需要质控？"
+    ],
+    "evidence_used": [],
+    "claims": [
+      {
+        "id": "claim_n_cells",
+        "text": "细胞总数为 36。",
+        "fact": "n_cells",
+        "value": 36,
+        "evidence": []
+      },
+      {
+        "id": "claim_n_features",
+        "text": "特征总数为 28。",
+        "fact": "n_features",
+        "value": 28,
+        "evidence": []
+      },
+      {
+        "id": "claim_n_samples",
+        "text": "样本数量为 1。",
+        "fact": "n_samples",
+        "value": 1,
+        "evidence": []
+      },
+      {
+        "id": "claim_assays",
+        "text": "可用 assay 为 counts。",
+        "fact": "assays",
+        "value": "counts",
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "claim_n_cells",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_cells = 36"
+      },
+      {
+        "claim": "claim_n_features",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_features = 28"
+      },
+      {
+        "claim": "claim_n_samples",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_samples = 1"
+      },
+      {
+        "claim": "claim_assays",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_cells",
+      "expected": 36,
+      "value": 36,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_features",
+      "expected": 28,
+      "value": 28,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_samples",
+      "expected": 1,
+      "value": 1,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "assays",
+      "expected": "counts",
+      "value": "counts",
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 3985
+}

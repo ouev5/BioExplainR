@@ -1,0 +1,160 @@
+{
+  "case": "single_cell_004",
+  "family": "single_cell",
+  "method": "facts_evidence",
+  "replicate": 1,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:16:49 UTC",
+  "response": {
+    "text": "{\"data_facts\": [\"该数据集包含 38 个细胞、29 个特征（基因），来自 2 个样本。\", \"仅有一个 assay，名称为 counts，其矩阵维度为 29 × 38。\", \"counts 矩阵中无缺失值（n_na = 0），数值呈整数样，零值比例为 0.0907。\"], \"statistical_meaning\": [\"细胞数（38）是观测单位数量，不等于独立生物学重复数；独立重复单位是样本/供体。\", \"样本数仅为 2，组间比较的统计推断能力非常有限。\", \"counts 数值范围较小（最小 0、中位数 5、最大 10），提示数据规模有限。\"], \"biological_interpretation\": [\"在仅有 2 个样本、29 个特征的情况下，任何细胞类型或组间差异的生物学解释都只能作为假设。\", \"文献检索命中 CRISPLD2 相关研究（EuropePMC:MED:24926665），但该命中仅表示匹配检索词，不构成对本数据任何结论的支持。\", \"缺少物种信息，生物学解释需用户先确认物种背景。\"], \"uncertainty\": [\"细胞数不等于生物学重复数；把细胞当重复易产生伪重复导致的假阳性。\", \"未找到常见 QC 指标列（nCount/nFeature/percent.mt），无法评估质控。\", \"assay 数值只检查了有限子集（values_inspected = 1102），并非全部矩阵元素。\"], \"cannot_conclude\": [\"不能基于 2 个样本做可靠的组间差异推断。\", \"不能仅凭 cluster 编号或降维图判断细胞类型或谱系关系（本数据无 reductions）。\", \"不能在没有物种与质控信息的情况下给出临床或功能结论。\"], \"learning_questions\": [\"为什么单细胞分析中细胞数不能当作生物学重复数？\", \"只有 2 个样本时，差异分析结果应如何谨慎解读？\", \"counts 矩阵的零值比例与整数样特征对下游分析意味着什么？\"], \"evidence_used\": [\"EuropePMC:MED:24926665\"], \"claims\": [{\"id\": \"c1\", \"text\": \"细胞数为 38。\", \"fact\": \"n_cells\", \"value\": 38, \"evidence\": []}, {\"id\": \"c2\", \"text\": \"特征数为 29。\", \"fact\": \"n_features\", \"value\": 29, \"evidence\": []}, {\"id\": \"c3\", \"text\": \"样本数为 2。\", \"fact\": \"n_samples\", \"value\": 2, \"evidence\": []}, {\"id\": \"c4\", \"text\": \"assay 名称为 counts。\", \"fact\": \"assays\", \"value\": \"counts\", \"evidence\": []}]}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 1264,
+      "completion_tokens": 611,
+      "total_tokens": 1875,
+      "prompt_tokens_details": {
+        "cached_tokens": 1024
+      },
+      "prompt_cache_hit_tokens": 1024,
+      "prompt_cache_miss_tokens": 240
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 3.1299999999999999
+  },
+  "parsed": {
+    "data_facts": [
+      "该数据集包含 38 个细胞、29 个特征（基因），来自 2 个样本。",
+      "仅有一个 assay，名称为 counts，其矩阵维度为 29 × 38。",
+      "counts 矩阵中无缺失值（n_na = 0），数值呈整数样，零值比例为 0.0907。"
+    ],
+    "statistical_meaning": [
+      "细胞数（38）是观测单位数量，不等于独立生物学重复数；独立重复单位是样本/供体。",
+      "样本数仅为 2，组间比较的统计推断能力非常有限。",
+      "counts 数值范围较小（最小 0、中位数 5、最大 10），提示数据规模有限。"
+    ],
+    "biological_interpretation": [
+      "在仅有 2 个样本、29 个特征的情况下，任何细胞类型或组间差异的生物学解释都只能作为假设。",
+      "文献检索命中 CRISPLD2 相关研究（EuropePMC:MED:24926665），但该命中仅表示匹配检索词，不构成对本数据任何结论的支持。",
+      "缺少物种信息，生物学解释需用户先确认物种背景。"
+    ],
+    "uncertainty": [
+      "细胞数不等于生物学重复数；把细胞当重复易产生伪重复导致的假阳性。",
+      "未找到常见 QC 指标列（nCount/nFeature/percent.mt），无法评估质控。",
+      "assay 数值只检查了有限子集（values_inspected = 1102），并非全部矩阵元素。"
+    ],
+    "cannot_conclude": [
+      "不能基于 2 个样本做可靠的组间差异推断。",
+      "不能仅凭 cluster 编号或降维图判断细胞类型或谱系关系（本数据无 reductions）。",
+      "不能在没有物种与质控信息的情况下给出临床或功能结论。"
+    ],
+    "learning_questions": [
+      "为什么单细胞分析中细胞数不能当作生物学重复数？",
+      "只有 2 个样本时，差异分析结果应如何谨慎解读？",
+      "counts 矩阵的零值比例与整数样特征对下游分析意味着什么？"
+    ],
+    "evidence_used": [
+      "EuropePMC:MED:24926665"
+    ],
+    "claims": [
+      {
+        "id": "c1",
+        "text": "细胞数为 38。",
+        "fact": "n_cells",
+        "value": 38,
+        "evidence": []
+      },
+      {
+        "id": "c2",
+        "text": "特征数为 29。",
+        "fact": "n_features",
+        "value": 29,
+        "evidence": []
+      },
+      {
+        "id": "c3",
+        "text": "样本数为 2。",
+        "fact": "n_samples",
+        "value": 2,
+        "evidence": []
+      },
+      {
+        "id": "c4",
+        "text": "assay 名称为 counts。",
+        "fact": "assays",
+        "value": "counts",
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "(evidence_used)",
+        "check": "evidence_ids",
+        "status": "pass",
+        "detail": "all cited evidence ids were supplied"
+      },
+      {
+        "claim": "c1",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_cells = 38"
+      },
+      {
+        "claim": "c2",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_features = 29"
+      },
+      {
+        "claim": "c3",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_samples = 2"
+      },
+      {
+        "claim": "c4",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_cells",
+      "expected": 38,
+      "value": 38,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_features",
+      "expected": 29,
+      "value": 29,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_samples",
+      "expected": 2,
+      "value": 2,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "assays",
+      "expected": "counts",
+      "value": "counts",
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 4513
+}

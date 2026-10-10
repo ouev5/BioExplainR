@@ -1,0 +1,25 @@
+{
+  "command": [
+    "env",
+    "PYTHONPYCACHEPREFIX=/tmp/opencode/bioexplainr-review-pycache",
+    "python3",
+    "-m",
+    "py_compile",
+    "tools/capture-continuation.py",
+    "research/multiomics/audit_miniacc.py",
+    "research/multiomics/test_audit_miniacc.py",
+    "research/manage_baseline.py",
+    "research/audit_current_results.py",
+    "research/package_submission.py"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-08T08:32:27.909463+00:00",
+  "finished_utc": "2026-10-08T08:32:28.281187+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/review-python-syntax.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

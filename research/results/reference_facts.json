@@ -1,0 +1,39 @@
+{
+  "airway_lfc0": {
+    "n_features": 22369,
+    "n_significant": 4030,
+    "n_up": 2208,
+    "n_down": 1822,
+    "n_na_padj": 5204
+  },
+  "airway_lfc1": {
+    "n_features": 22369,
+    "n_significant": 999,
+    "n_up": 519,
+    "n_down": 480,
+    "n_na_padj": 5204
+  },
+  "complete_slice120": {
+    "n_features": 120,
+    "n_significant": 119,
+    "n_up": 88,
+    "n_down": 31,
+    "n_na_padj": 0
+  },
+  "reactome_ora": {
+    "n_terms": 1104,
+    "n_significant": 1,
+    "enrichment_method": "ORA"
+  },
+  "airway_pca": {
+    "n_observations": 8,
+    "n_variables": 500,
+    "variance_explained.1": 0.47842864474,
+    "variance_explained.2": 0.23383404452
+  },
+  "pbmc3k_sce": {
+    "n_cells": 2700,
+    "n_features": 32738,
+    "n_samples": 1
+  }
+}

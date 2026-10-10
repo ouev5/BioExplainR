@@ -1,0 +1,58 @@
+{
+  "facet_and_clip": {
+    "status": "pass",
+    "findings": [
+      {
+        "check": "all_source_genes_plotted",
+        "status": "pass",
+        "detail": "every source feature is plotted"
+      },
+      {
+        "check": "x_axis",
+        "status": "pass",
+        "detail": "x (log2FoldChange) equals the fold-change column 'log2FoldChange'"
+      },
+      {
+        "check": "y_axis",
+        "status": "pass",
+        "detail": "y (-log10(padj)) equals -log10(padj) [adjusted p]"
+      }
+    ],
+    "allow_subset": true,
+    "note": "A pass only means the plotted numbers match the supplied table; it says nothing about scientific correctness."
+  },
+  "raw_p_in_facets": {
+    "status": "fail",
+    "findings": [
+      {
+        "check": "all_source_genes_plotted",
+        "status": "pass",
+        "detail": "every source feature is plotted"
+      },
+      {
+        "check": "x_axis",
+        "status": "pass",
+        "detail": "x (log2FoldChange) equals the fold-change column 'log2FoldChange'"
+      },
+      {
+        "check": "y_axis",
+        "status": "fail",
+        "detail": "y (-log10(pvalue)) equals -log10(pvalue) [raw p]; the source also has an adjusted p column, so the plot shows RAW p-values"
+      }
+    ],
+    "allow_subset": true,
+    "note": "A pass only means the plotted numbers match the supplied table; it says nothing about scientific correctness."
+  },
+  "multiple_point_layers": {
+    "status": "not_checkable",
+    "findings": [
+      {
+        "check": "plot_layers",
+        "status": "not_checkable",
+        "detail": "multiple point layers require separate source pairing"
+      }
+    ],
+    "allow_subset": true,
+    "note": "A pass only means the plotted numbers match the supplied table; it says nothing about scientific correctness."
+  }
+}

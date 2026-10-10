@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "description": "Common-task adapters. Results from different modes must be scored with the same requested fact paths.",
+  "methods": [
+    {
+      "name": "bioexplainr_deterministic",
+      "mode": "deterministic_reference",
+      "description": "R-side fact reference; no language-model inference"
+    },
+    {
+      "name": "saved_facts_only",
+      "mode": "saved_response",
+      "method": "facts_only",
+      "replicate": 1,
+      "description": "Replay one saved response per case; no network request"
+    },
+    {
+      "name": "configured_models",
+      "mode": "openai_compatible",
+      "description": "Optional live models supplied through BIOEXPLAINR_BENCHMARK_MODELS_JSON"
+    },
+    {
+      "name": "configured_code_agent",
+      "mode": "command_agent",
+      "description": "Optional CLI code agent supplied through BIOEXPLAINR_CODE_AGENT_COMMAND"
+    }
+  ]
+}

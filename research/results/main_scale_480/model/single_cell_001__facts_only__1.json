@@ -1,0 +1,152 @@
+{
+  "case": "single_cell_001",
+  "family": "single_cell",
+  "method": "facts_only",
+  "replicate": 1,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:14:51 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"该数据集包含 32 个细胞。\",\n    \"共检测到 26 个特征（基因）。\",\n    \"样本列 sample_id 下共有 2 个样本。\",\n    \"可用 assay 为 counts。\"\n  ],\n  \"statistical_meaning\": [\n    \"细胞数（32）是观测单位数量，不等于独立生物学重复数。\",\n    \"样本数（2）是独立重复单位数量，统计推断能力非常有限。\",\n    \"特征数（26）表示当前矩阵的基因维度。\"\n  ],\n  \"biological_interpretation\": [\n    \"基于 2 个样本的组间比较只能作为探索性假设，不能得出稳健的生物学结论。\",\n    \"26 个特征可能仅覆盖部分基因，生物学解释需结合物种与组织背景。\"\n  ],\n  \"uncertainty\": [\n    \"细胞数不等于生物学重复数；样本/供体才是独立重复单位。\",\n    \"仅识别到 2 个样本；组间比较的统计推断能力非常有限。\",\n    \"未提供物种（species），生物学解释需要用户确认物种背景。\"\n  ],\n  \"cannot_conclude\": [\n    \"不能基于 32 个细胞推断细胞类型组成或组间差异。\",\n    \"不能仅凭 2 个样本得出可推广的生物学结论。\",\n    \"不能评估质控，因为未找到常见 QC 指标列。\"\n  ],\n  \"learning_questions\": [\n    \"为什么单细胞分析中不能把每个细胞当作独立重复？\",\n    \"样本量只有 2 时，差异分析结果应如何谨慎解读？\",\n    \"counts assay 的数值范围对下游分析有什么影响？\"\n  ],\n  \"evidence_used\": [],\n  \"claims\": [\n    {\n      \"id\": \"claim_n_cells\",\n      \"text\": \"细胞总数为 32。\",\n      \"fact\": \"n_cells\",\n      \"value\": 32,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_n_features\",\n      \"text\": \"特征（基因）总数为 26。\",\n      \"fact\": \"n_features\",\n      \"value\": 26,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_n_samples\",\n      \"text\": \"样本总数为 2。\",\n      \"fact\": \"n_samples\",\n      \"value\": 2,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_assays\",\n      \"text\": \"可用 assay 为 counts。\",\n      \"fact\": \"assays\",\n      \"value\": \"counts\",\n      \"evidence\": []\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 1116,
+      "completion_tokens": 574,
+      "total_tokens": 1690,
+      "prompt_tokens_details": {
+        "cached_tokens": 896
+      },
+      "prompt_cache_hit_tokens": 896,
+      "prompt_cache_miss_tokens": 220
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.4399999999999999
+  },
+  "parsed": {
+    "data_facts": [
+      "该数据集包含 32 个细胞。",
+      "共检测到 26 个特征（基因）。",
+      "样本列 sample_id 下共有 2 个样本。",
+      "可用 assay 为 counts。"
+    ],
+    "statistical_meaning": [
+      "细胞数（32）是观测单位数量，不等于独立生物学重复数。",
+      "样本数（2）是独立重复单位数量，统计推断能力非常有限。",
+      "特征数（26）表示当前矩阵的基因维度。"
+    ],
+    "biological_interpretation": [
+      "基于 2 个样本的组间比较只能作为探索性假设，不能得出稳健的生物学结论。",
+      "26 个特征可能仅覆盖部分基因，生物学解释需结合物种与组织背景。"
+    ],
+    "uncertainty": [
+      "细胞数不等于生物学重复数；样本/供体才是独立重复单位。",
+      "仅识别到 2 个样本；组间比较的统计推断能力非常有限。",
+      "未提供物种（species），生物学解释需要用户确认物种背景。"
+    ],
+    "cannot_conclude": [
+      "不能基于 32 个细胞推断细胞类型组成或组间差异。",
+      "不能仅凭 2 个样本得出可推广的生物学结论。",
+      "不能评估质控，因为未找到常见 QC 指标列。"
+    ],
+    "learning_questions": [
+      "为什么单细胞分析中不能把每个细胞当作独立重复？",
+      "样本量只有 2 时，差异分析结果应如何谨慎解读？",
+      "counts assay 的数值范围对下游分析有什么影响？"
+    ],
+    "evidence_used": [],
+    "claims": [
+      {
+        "id": "claim_n_cells",
+        "text": "细胞总数为 32。",
+        "fact": "n_cells",
+        "value": 32,
+        "evidence": []
+      },
+      {
+        "id": "claim_n_features",
+        "text": "特征（基因）总数为 26。",
+        "fact": "n_features",
+        "value": 26,
+        "evidence": []
+      },
+      {
+        "id": "claim_n_samples",
+        "text": "样本总数为 2。",
+        "fact": "n_samples",
+        "value": 2,
+        "evidence": []
+      },
+      {
+        "id": "claim_assays",
+        "text": "可用 assay 为 counts。",
+        "fact": "assays",
+        "value": "counts",
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "claim_n_cells",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_cells = 32"
+      },
+      {
+        "claim": "claim_n_features",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_features = 26"
+      },
+      {
+        "claim": "claim_n_samples",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_samples = 2"
+      },
+      {
+        "claim": "claim_assays",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_cells",
+      "expected": 32,
+      "value": 32,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_features",
+      "expected": 26,
+      "value": 26,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_samples",
+      "expected": 2,
+      "value": 2,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "assays",
+      "expected": "counts",
+      "value": "counts",
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 3984
+}

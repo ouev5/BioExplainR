@@ -1,0 +1,43 @@
+{
+  "status": "pass",
+  "n_primary_units": 92,
+  "n_complete_units": 43,
+  "n_unmeasured_units": 0,
+  "findings": [
+    {
+      "check": "required_columns",
+      "status": "pass",
+      "detail": "modality, source_id and biological_unit are present"
+    },
+    {
+      "check": "duplicate_mapping",
+      "status": "pass",
+      "detail": "no ambiguous modality/source mappings"
+    },
+    {
+      "check": "observed_RNASeq2GeneNorm",
+      "status": "pass",
+      "detail": "observed=79; mapped=79; missing=0; extra=0"
+    },
+    {
+      "check": "observed_gistict",
+      "status": "pass",
+      "detail": "observed=90; mapped=90; missing=0; extra=0"
+    },
+    {
+      "check": "observed_RPPAArray",
+      "status": "pass",
+      "detail": "observed=46; mapped=46; missing=0; extra=0"
+    },
+    {
+      "check": "observed_Mutations",
+      "status": "pass",
+      "detail": "observed=90; mapped=90; missing=0; extra=0"
+    },
+    {
+      "check": "observed_miRNASeqGene",
+      "status": "pass",
+      "detail": "observed=80; mapped=80; missing=0; extra=0"
+    }
+  ]
+}

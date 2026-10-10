@@ -1,0 +1,192 @@
+{
+  "case": "de_006",
+  "family": "differential_expression",
+  "method": "direct_bounded",
+  "replicate": 2,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:17:40 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"输入数据仅提供9行，但dim显示应有46行，数据不完整。\",\n    \"提供的行中，log2FoldChange和padj值重复出现。\"\n  ],\n  \"statistical_meaning\": [\n    \"由于数据不完整，无法计算显著基因数量。\",\n    \"阈值padj<0.05且|lfc|>1，但缺失行可能影响结果。\"\n  ],\n  \"biological_interpretation\": [\n    \"无法可靠判断差异表达基因的上调或下调情况。\",\n    \"数据不完整，生物学解释受限。\"\n  ],\n  \"uncertainty\": [\n    \"缺失37行数据，导致所有统计量不确定。\",\n    \"无法确定显著基因的数量和方向。\"\n  ],\n  \"cannot_conclude\": [\n    \"无法得出n_features、n_significant、n_up、n_down的具体值。\",\n    \"无法进行完整的差异表达分析。\"\n  ],\n  \"learning_questions\": [\n    \"如何确保输入数据完整？\",\n    \"缺失数据对差异表达分析有何影响？\"\n  ],\n  \"evidence_used\": [\n    \"dim\",\n    \"provided_rows\",\n    \"rows_complete\"\n  ],\n  \"claims\": [\n    {\n      \"id\": \"claim_n_features\",\n      \"text\": \"n_features无法确定，因为数据不完整。\",\n      \"fact\": \"n_features\",\n      \"value\": null,\n      \"evidence\": [\n        \"dim\",\n        \"rows_complete\"\n      ]\n    },\n    {\n      \"id\": \"claim_n_significant\",\n      \"text\": \"n_significant无法确定，因为数据不完整。\",\n      \"fact\": \"n_significant\",\n      \"value\": null,\n      \"evidence\": [\n        \"dim\",\n        \"rows_complete\"\n      ]\n    },\n    {\n      \"id\": \"claim_n_up\",\n      \"text\": \"n_up无法确定，因为数据不完整。\",\n      \"fact\": \"n_up\",\n      \"value\": null,\n      \"evidence\": [\n        \"dim\",\n        \"rows_complete\"\n      ]\n    },\n    {\n      \"id\": \"claim_n_down\",\n      \"text\": \"n_down无法确定，因为数据不完整。\",\n      \"fact\": \"n_down\",\n      \"value\": null,\n      \"evidence\": [\n        \"dim\",\n        \"rows_complete\"\n      ]\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 723,
+      "completion_tokens": 511,
+      "total_tokens": 1234,
+      "prompt_tokens_details": {
+        "cached_tokens": 512
+      },
+      "prompt_cache_hit_tokens": 512,
+      "prompt_cache_miss_tokens": 211
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.4100000000000001
+  },
+  "parsed": {
+    "data_facts": [
+      "输入数据仅提供9行，但dim显示应有46行，数据不完整。",
+      "提供的行中，log2FoldChange和padj值重复出现。"
+    ],
+    "statistical_meaning": [
+      "由于数据不完整，无法计算显著基因数量。",
+      "阈值padj<0.05且|lfc|>1，但缺失行可能影响结果。"
+    ],
+    "biological_interpretation": [
+      "无法可靠判断差异表达基因的上调或下调情况。",
+      "数据不完整，生物学解释受限。"
+    ],
+    "uncertainty": [
+      "缺失37行数据，导致所有统计量不确定。",
+      "无法确定显著基因的数量和方向。"
+    ],
+    "cannot_conclude": [
+      "无法得出n_features、n_significant、n_up、n_down的具体值。",
+      "无法进行完整的差异表达分析。"
+    ],
+    "learning_questions": [
+      "如何确保输入数据完整？",
+      "缺失数据对差异表达分析有何影响？"
+    ],
+    "evidence_used": [
+      "dim",
+      "provided_rows",
+      "rows_complete"
+    ],
+    "claims": [
+      {
+        "id": "claim_n_features",
+        "text": "n_features无法确定，因为数据不完整。",
+        "fact": "n_features",
+        "value": null,
+        "evidence": [
+          "dim",
+          "rows_complete"
+        ]
+      },
+      {
+        "id": "claim_n_significant",
+        "text": "n_significant无法确定，因为数据不完整。",
+        "fact": "n_significant",
+        "value": null,
+        "evidence": [
+          "dim",
+          "rows_complete"
+        ]
+      },
+      {
+        "id": "claim_n_up",
+        "text": "n_up无法确定，因为数据不完整。",
+        "fact": "n_up",
+        "value": null,
+        "evidence": [
+          "dim",
+          "rows_complete"
+        ]
+      },
+      {
+        "id": "claim_n_down",
+        "text": "n_down无法确定，因为数据不完整。",
+        "fact": "n_down",
+        "value": null,
+        "evidence": [
+          "dim",
+          "rows_complete"
+        ]
+      }
+    ]
+  },
+  "validation": {
+    "status": "fail",
+    "findings": [
+      {
+        "claim": "(evidence_used)",
+        "check": "evidence_ids",
+        "status": "fail",
+        "detail": "unknown evidence id(s): dim, provided_rows, rows_complete (no evidence list was supplied)"
+      },
+      {
+        "claim": "claim_n_features",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_n_features",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: dim, rows_complete"
+      },
+      {
+        "claim": "claim_n_significant",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_n_significant",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: dim, rows_complete"
+      },
+      {
+        "claim": "claim_n_up",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_n_up",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: dim, rows_complete"
+      },
+      {
+        "claim": "claim_n_down",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_n_down",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: dim, rows_complete"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_features",
+      "expected": 46,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "n_significant",
+      "expected": 31,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "n_up",
+      "expected": 16,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "n_down",
+      "expected": 15,
+      "value": null,
+      "answered": false,
+      "correct": false
+    }
+  ],
+  "prompt_chars": 2266
+}

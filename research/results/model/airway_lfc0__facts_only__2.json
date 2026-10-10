@@ -1,0 +1,172 @@
+{
+  "case": "airway_lfc0",
+  "method": "facts_only",
+  "replicate": 2,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-03 19:42:25 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"共检测 22369 个特征，其中 17165 个基因参与统计检验。\",\n    \"在 padj < 0.05 且 |log2FC| > 0 的阈值下，有 4030 个基因显著，其中 2208 个上调、1822 个下调。\",\n    \"有 5204 个基因的 padj 为 NA，未参与 FDR 计数。\"\n  ],\n  \"statistical_meaning\": [\n    \"n_features 是输入特征总数，n_tested 是实际进入检验的基因数。\",\n    \"n_significant 是同时满足校正 p 值和 log2FC 阈值的基因数，n_up 与 n_down 是其方向拆分。\",\n    \"n_na_padj 表示因独立过滤、全零计数或极端离群值等原因未获得校正 p 值的基因数。\"\n  ],\n  \"biological_interpretation\": [\n    \"地塞米松处理与未处理相比，在转录组水平上存在广泛差异表达（假设，需结合证据验证）。\",\n    \"上调基因数略多于下调基因数，提示处理可能整体上激活了更多基因（假设）。\",\n    \"排名靠前的上调基因包括 ENSG00000152583、ENSG00000165995 等，但具体功能需进一步注释（假设）。\"\n  ],\n  \"uncertainty\": [\n    \"log2FC 似乎经过收缩，效应量更保守，适合排序和可视化。\",\n    \"padj 为 NA 的基因未参与 FDR 计数，可能影响显著基因总数的解释。\",\n    \"分析基于细胞系设计，细胞不是重复，不能直接推断个体水平效应。\"\n  ],\n  \"cannot_conclude\": [\n    \"不能从计数推断具体通路或生物学过程的激活方向。\",\n    \"不能将细胞系结果直接外推到临床或个体治疗反应。\",\n    \"不能仅凭差异表达数量判断效应大小或因果机制。\"\n  ],\n  \"learning_questions\": [\n    \"为什么 padj 为 NA 的基因不参与 FDR 计数？\",\n    \"log2FC 收缩对差异表达基因排序有什么影响？\",\n    \"如何从差异表达结果过渡到通路富集分析？\"\n  ],\n  \"evidence_used\": [],\n  \"claims\": [\n    {\n      \"id\": \"c1\",\n      \"text\": \"特征总数\",\n      \"fact\": \"n_features\",\n      \"value\": 22369,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"c2\",\n      \"text\": \"显著基因数\",\n      \"fact\": \"n_significant\",\n      \"value\": 4030,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"c3\",\n      \"text\": \"上调基因数\",\n      \"fact\": \"n_up\",\n      \"value\": 2208,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"c4\",\n      \"text\": \"下调基因数\",\n      \"fact\": \"n_down\",\n      \"value\": 1822,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"c5\",\n      \"text\": \"padj 为 NA 的基因数\",\n      \"fact\": \"n_na_padj\",\n      \"value\": 5204,\n      \"evidence\": []\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 1850,
+      "completion_tokens": 728,
+      "total_tokens": 2578,
+      "prompt_tokens_details": {
+        "cached_tokens": 1664
+      },
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 186
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 3.04
+  },
+  "parsed": {
+    "data_facts": [
+      "共检测 22369 个特征，其中 17165 个基因参与统计检验。",
+      "在 padj < 0.05 且 |log2FC| > 0 的阈值下，有 4030 个基因显著，其中 2208 个上调、1822 个下调。",
+      "有 5204 个基因的 padj 为 NA，未参与 FDR 计数。"
+    ],
+    "statistical_meaning": [
+      "n_features 是输入特征总数，n_tested 是实际进入检验的基因数。",
+      "n_significant 是同时满足校正 p 值和 log2FC 阈值的基因数，n_up 与 n_down 是其方向拆分。",
+      "n_na_padj 表示因独立过滤、全零计数或极端离群值等原因未获得校正 p 值的基因数。"
+    ],
+    "biological_interpretation": [
+      "地塞米松处理与未处理相比，在转录组水平上存在广泛差异表达（假设，需结合证据验证）。",
+      "上调基因数略多于下调基因数，提示处理可能整体上激活了更多基因（假设）。",
+      "排名靠前的上调基因包括 ENSG00000152583、ENSG00000165995 等，但具体功能需进一步注释（假设）。"
+    ],
+    "uncertainty": [
+      "log2FC 似乎经过收缩，效应量更保守，适合排序和可视化。",
+      "padj 为 NA 的基因未参与 FDR 计数，可能影响显著基因总数的解释。",
+      "分析基于细胞系设计，细胞不是重复，不能直接推断个体水平效应。"
+    ],
+    "cannot_conclude": [
+      "不能从计数推断具体通路或生物学过程的激活方向。",
+      "不能将细胞系结果直接外推到临床或个体治疗反应。",
+      "不能仅凭差异表达数量判断效应大小或因果机制。"
+    ],
+    "learning_questions": [
+      "为什么 padj 为 NA 的基因不参与 FDR 计数？",
+      "log2FC 收缩对差异表达基因排序有什么影响？",
+      "如何从差异表达结果过渡到通路富集分析？"
+    ],
+    "evidence_used": [],
+    "claims": [
+      {
+        "id": "c1",
+        "text": "特征总数",
+        "fact": "n_features",
+        "value": 22369,
+        "evidence": []
+      },
+      {
+        "id": "c2",
+        "text": "显著基因数",
+        "fact": "n_significant",
+        "value": 4030,
+        "evidence": []
+      },
+      {
+        "id": "c3",
+        "text": "上调基因数",
+        "fact": "n_up",
+        "value": 2208,
+        "evidence": []
+      },
+      {
+        "id": "c4",
+        "text": "下调基因数",
+        "fact": "n_down",
+        "value": 1822,
+        "evidence": []
+      },
+      {
+        "id": "c5",
+        "text": "padj 为 NA 的基因数",
+        "fact": "n_na_padj",
+        "value": 5204,
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "c1",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_features = 22369"
+      },
+      {
+        "claim": "c2",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_significant = 4030"
+      },
+      {
+        "claim": "c3",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_up = 2208"
+      },
+      {
+        "claim": "c4",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_down = 1822"
+      },
+      {
+        "claim": "c5",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_na_padj = 5204"
+      }
+    ],
+    "n_claims": 5,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_features",
+      "expected": 22369,
+      "value": 22369,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_significant",
+      "expected": 4030,
+      "value": 4030,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_up",
+      "expected": 2208,
+      "value": 2208,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_down",
+      "expected": 1822,
+      "value": 1822,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_na_padj",
+      "expected": 5204,
+      "value": 5204,
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 5786,
+  "validation_rechecked_utc": "2026-10-03 20:09:20 UTC"
+}

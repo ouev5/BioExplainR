@@ -1,0 +1,17 @@
+{
+  "command": [
+    "python3",
+    "research/multiomics/audit_miniacc.py",
+    "research/results/miniacc_development_v1"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-08T08:22:20.339153+00:00",
+  "finished_utc": "2026-10-08T08:22:20.435862+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/review-miniacc-audit.txt",
+    "bytes": 496,
+    "sha256": "68b40358ae69f31edf4ada102c881287715bdae5f7d4c5a24b29d70e29afd36c"
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "case": "single_cell_010",
+  "family": "single_cell",
+  "method": "facts_only",
+  "replicate": 2,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:20:22 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"该数据集包含 50 个细胞和 35 个特征。\",\n    \"样本列 sample_id 共识别到 2 个样本，每个样本 25 个细胞。\",\n    \"唯一可用的 assay 是 counts，数值为整数样，零值比例为 0.0914。\"\n  ],\n  \"statistical_meaning\": [\n    \"50 个细胞是观测单位，不是独立生物学重复；独立重复单位是样本/供体。\",\n    \"只有 2 个样本，组间比较的统计推断能力非常有限。\",\n    \"counts 矩阵为 35×50，共检查 1750 个数值，无缺失值。\"\n  ],\n  \"biological_interpretation\": [\n    \"当前仅有计数矩阵和样本标签，尚不足以支持细胞类型或差异表达结论。\",\n    \"若要做生物学解释，需要先确认物种、组织背景和实验设计。\",\n    \"任何细胞类型或功能推断都应视为待验证假设。\"\n  ],\n  \"uncertainty\": [\n    \"细胞数不等于生物学重复数；把细胞当重复容易产生伪重复假阳性。\",\n    \"未找到常见 QC 指标列（nCount/nFeature/percent.mt），无法评估质控。\",\n    \"assay 数值只检查了有限子集，稀疏矩阵读取存储槽位，稠密矩阵最多抽样一个小块。\"\n  ],\n  \"cannot_conclude\": [\n    \"不能基于 2 个样本做可靠的组间差异推断。\",\n    \"不能仅凭 cluster 编号赋予生物学含义。\",\n    \"不能从当前信息判断细胞谱系或临床意义。\"\n  ],\n  \"learning_questions\": [\n    \"为什么单细胞分析中细胞不能直接当作生物学重复？\",\n    \"counts assay 的零值比例对下游分析有什么影响？\",\n    \"在只有 2 个样本时，哪些分析是合理的，哪些应避免？\"\n  ],\n  \"evidence_used\": [],\n  \"claims\": [\n    {\n      \"id\": \"claim_n_cells\",\n      \"text\": \"细胞数为 50。\",\n      \"fact\": \"n_cells\",\n      \"value\": 50,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_n_features\",\n      \"text\": \"特征数为 35。\",\n      \"fact\": \"n_features\",\n      \"value\": 35,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_n_samples\",\n      \"text\": \"样本数为 2。\",\n      \"fact\": \"n_samples\",\n      \"value\": 2,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_assays\",\n      \"text\": \"可用 assay 为 counts。\",\n      \"fact\": \"assays\",\n      \"value\": \"counts\",\n      \"evidence\": []\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 1117,
+      "completion_tokens": 618,
+      "total_tokens": 1735,
+      "prompt_tokens_details": {
+        "cached_tokens": 896
+      },
+      "prompt_cache_hit_tokens": 896,
+      "prompt_cache_miss_tokens": 221
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.8599999999999999
+  },
+  "parsed": {
+    "data_facts": [
+      "该数据集包含 50 个细胞和 35 个特征。",
+      "样本列 sample_id 共识别到 2 个样本，每个样本 25 个细胞。",
+      "唯一可用的 assay 是 counts，数值为整数样，零值比例为 0.0914。"
+    ],
+    "statistical_meaning": [
+      "50 个细胞是观测单位，不是独立生物学重复；独立重复单位是样本/供体。",
+      "只有 2 个样本，组间比较的统计推断能力非常有限。",
+      "counts 矩阵为 35×50，共检查 1750 个数值，无缺失值。"
+    ],
+    "biological_interpretation": [
+      "当前仅有计数矩阵和样本标签，尚不足以支持细胞类型或差异表达结论。",
+      "若要做生物学解释，需要先确认物种、组织背景和实验设计。",
+      "任何细胞类型或功能推断都应视为待验证假设。"
+    ],
+    "uncertainty": [
+      "细胞数不等于生物学重复数；把细胞当重复容易产生伪重复假阳性。",
+      "未找到常见 QC 指标列（nCount/nFeature/percent.mt），无法评估质控。",
+      "assay 数值只检查了有限子集，稀疏矩阵读取存储槽位，稠密矩阵最多抽样一个小块。"
+    ],
+    "cannot_conclude": [
+      "不能基于 2 个样本做可靠的组间差异推断。",
+      "不能仅凭 cluster 编号赋予生物学含义。",
+      "不能从当前信息判断细胞谱系或临床意义。"
+    ],
+    "learning_questions": [
+      "为什么单细胞分析中细胞不能直接当作生物学重复？",
+      "counts assay 的零值比例对下游分析有什么影响？",
+      "在只有 2 个样本时，哪些分析是合理的，哪些应避免？"
+    ],
+    "evidence_used": [],
+    "claims": [
+      {
+        "id": "claim_n_cells",
+        "text": "细胞数为 50。",
+        "fact": "n_cells",
+        "value": 50,
+        "evidence": []
+      },
+      {
+        "id": "claim_n_features",
+        "text": "特征数为 35。",
+        "fact": "n_features",
+        "value": 35,
+        "evidence": []
+      },
+      {
+        "id": "claim_n_samples",
+        "text": "样本数为 2。",
+        "fact": "n_samples",
+        "value": 2,
+        "evidence": []
+      },
+      {
+        "id": "claim_assays",
+        "text": "可用 assay 为 counts。",
+        "fact": "assays",
+        "value": "counts",
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "claim_n_cells",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_cells = 50"
+      },
+      {
+        "claim": "claim_n_features",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_features = 35"
+      },
+      {
+        "claim": "claim_n_samples",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_samples = 2"
+      },
+      {
+        "claim": "claim_assays",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_cells",
+      "expected": 50,
+      "value": 50,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_features",
+      "expected": 35,
+      "value": 35,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_samples",
+      "expected": 2,
+      "value": 2,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "assays",
+      "expected": "counts",
+      "value": "counts",
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 3985
+}

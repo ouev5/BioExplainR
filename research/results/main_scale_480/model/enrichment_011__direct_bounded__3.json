@@ -1,0 +1,191 @@
+{
+  "case": "enrichment_011",
+  "family": "enrichment",
+  "method": "direct_bounded",
+  "replicate": 3,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:23:30 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"R输出包含23行5列，但仅提供了10行完整数据。\",\n    \"提供的行中，p.adjust值从0.01到0.08不等。\",\n    \"GeneRatio和Count显示每个术语的基因数量和比例。\"\n  ],\n  \"statistical_meaning\": [\n    \"富集分析通常使用超几何检验或Fisher精确检验计算p值。\",\n    \"p.adjust是多重检验校正后的p值，常用Benjamini-Hochberg方法。\",\n    \"显著性阈值通常设为0.05，但需根据分析类型确认。\"\n  ],\n  \"biological_interpretation\": [\n    \"显著富集的术语可能代表与实验条件相关的生物学过程。\",\n    \"由于数据不完整，无法全面评估所有术语的富集情况。\",\n    \"提供的术语中，部分p.adjust小于0.05，可能具有生物学意义。\"\n  ],\n  \"uncertainty\": [\n    \"数据不完整，无法确定总术语数和显著术语数。\",\n    \"富集方法未明确说明，可能影响结果解释。\",\n    \"显著性阈值未在元数据中明确指定。\"\n  ],\n  \"cannot_conclude\": [\n    \"无法计算n_terms，因为数据不完整。\",\n    \"无法计算n_significant，因为数据不完整且阈值未明确。\",\n    \"无法确定enrichment_method和significance_threshold。\"\n  ],\n  \"learning_questions\": [\n    \"如何从R输出中提取完整的富集分析结果？\",\n    \"在数据不完整时，如何合理报告富集分析结果？\",\n    \"富集分析中常用的多重检验校正方法有哪些？\"\n  ],\n  \"evidence_used\": [\n    \"dim\",\n    \"provided_rows\",\n    \"rows_complete\",\n    \"padj\",\n    \"lfc\",\n    \"p\"\n  ],\n  \"claims\": [\n    {\n      \"id\": \"claim_1\",\n      \"text\": \"总术语数无法确定，因为数据不完整。\",\n      \"fact\": \"n_terms\",\n      \"value\": null,\n      \"evidence\": [\n        \"dim\",\n        \"rows_complete\"\n      ]\n    },\n    {\n      \"id\": \"claim_2\",\n      \"text\": \"显著术语数无法确定，因为数据不完整且阈值未明确。\",\n      \"fact\": \"n_significant\",\n      \"value\": null,\n      \"evidence\": [\n        \"provided_rows\",\n        \"padj\"\n      ]\n    },\n    {\n      \"id\": \"claim_3\",\n      \"text\": \"富集方法未在提供的数据中说明。\",\n      \"fact\": \"enrichment_method\",\n      \"value\": null,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_4\",\n      \"text\": \"显著性阈值未在提供的数据中明确指定。\",\n      \"fact\": \"significance_threshold\",\n      \"value\": null,\n      \"evidence\": [\n        \"padj\"\n      ]\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 866,
+      "completion_tokens": 645,
+      "total_tokens": 1511,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 226
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.8900000000000001
+  },
+  "parsed": {
+    "data_facts": [
+      "R输出包含23行5列，但仅提供了10行完整数据。",
+      "提供的行中，p.adjust值从0.01到0.08不等。",
+      "GeneRatio和Count显示每个术语的基因数量和比例。"
+    ],
+    "statistical_meaning": [
+      "富集分析通常使用超几何检验或Fisher精确检验计算p值。",
+      "p.adjust是多重检验校正后的p值，常用Benjamini-Hochberg方法。",
+      "显著性阈值通常设为0.05，但需根据分析类型确认。"
+    ],
+    "biological_interpretation": [
+      "显著富集的术语可能代表与实验条件相关的生物学过程。",
+      "由于数据不完整，无法全面评估所有术语的富集情况。",
+      "提供的术语中，部分p.adjust小于0.05，可能具有生物学意义。"
+    ],
+    "uncertainty": [
+      "数据不完整，无法确定总术语数和显著术语数。",
+      "富集方法未明确说明，可能影响结果解释。",
+      "显著性阈值未在元数据中明确指定。"
+    ],
+    "cannot_conclude": [
+      "无法计算n_terms，因为数据不完整。",
+      "无法计算n_significant，因为数据不完整且阈值未明确。",
+      "无法确定enrichment_method和significance_threshold。"
+    ],
+    "learning_questions": [
+      "如何从R输出中提取完整的富集分析结果？",
+      "在数据不完整时，如何合理报告富集分析结果？",
+      "富集分析中常用的多重检验校正方法有哪些？"
+    ],
+    "evidence_used": [
+      "dim",
+      "provided_rows",
+      "rows_complete",
+      "padj",
+      "lfc",
+      "p"
+    ],
+    "claims": [
+      {
+        "id": "claim_1",
+        "text": "总术语数无法确定，因为数据不完整。",
+        "fact": "n_terms",
+        "value": null,
+        "evidence": [
+          "dim",
+          "rows_complete"
+        ]
+      },
+      {
+        "id": "claim_2",
+        "text": "显著术语数无法确定，因为数据不完整且阈值未明确。",
+        "fact": "n_significant",
+        "value": null,
+        "evidence": [
+          "provided_rows",
+          "padj"
+        ]
+      },
+      {
+        "id": "claim_3",
+        "text": "富集方法未在提供的数据中说明。",
+        "fact": "enrichment_method",
+        "value": null,
+        "evidence": []
+      },
+      {
+        "id": "claim_4",
+        "text": "显著性阈值未在提供的数据中明确指定。",
+        "fact": "significance_threshold",
+        "value": null,
+        "evidence": [
+          "padj"
+        ]
+      }
+    ]
+  },
+  "validation": {
+    "status": "fail",
+    "findings": [
+      {
+        "claim": "(evidence_used)",
+        "check": "evidence_ids",
+        "status": "fail",
+        "detail": "unknown evidence id(s): dim, provided_rows, rows_complete, padj, lfc, p (no evidence list was supplied)"
+      },
+      {
+        "claim": "claim_1",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_1",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: dim, rows_complete"
+      },
+      {
+        "claim": "claim_2",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_2",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: provided_rows, padj"
+      },
+      {
+        "claim": "claim_3",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_4",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_4",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: padj"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_terms",
+      "expected": 23,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "n_significant",
+      "expected": 11,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "enrichment_method",
+      "expected": "ORA",
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "significance_threshold",
+      "expected": 0.050000000000000003,
+      "value": null,
+      "answered": false,
+      "correct": false
+    }
+  ],
+  "prompt_chars": 2718
+}

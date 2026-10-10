@@ -1,0 +1,145 @@
+{
+  "case": "cell_composition_001",
+  "family": "cell_composition",
+  "method": "direct_bounded",
+  "replicate": 3,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:24:09 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"输入提供了细胞数、样本数和聚类数。\",\n    \"未提供分组数。\"\n  ],\n  \"statistical_meaning\": [\n    \"n_cells 表示用于分析的细胞总数。\",\n    \"n_samples 表示样本数量。\",\n    \"n_clusters 表示聚类数量。\"\n  ],\n  \"biological_interpretation\": [\n    \"95个细胞来自5个样本，分为3个聚类。\",\n    \"分组数未知，无法评估组间差异。\"\n  ],\n  \"uncertainty\": [\n    \"分组数无法从输入中确定。\"\n  ],\n  \"cannot_conclude\": [\n    \"无法确定分组数。\"\n  ],\n  \"learning_questions\": [\n    \"分组数是否由实验设计决定？\",\n    \"聚类数是否与分组数相关？\"\n  ],\n  \"evidence_used\": [],\n  \"claims\": [\n    {\n      \"id\": \"claim_n_cells_used\",\n      \"text\": \"使用的细胞数为95。\",\n      \"fact\": \"n_cells_used\",\n      \"value\": 95,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_n_samples\",\n      \"text\": \"样本数为5。\",\n      \"fact\": \"n_samples\",\n      \"value\": 5,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_n_clusters\",\n      \"text\": \"聚类数为3。\",\n      \"fact\": \"n_clusters\",\n      \"value\": 3,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_n_groups\",\n      \"text\": \"分组数无法确定。\",\n      \"fact\": \"n_groups\",\n      \"value\": null,\n      \"evidence\": []\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 318,
+      "completion_tokens": 380,
+      "total_tokens": 698,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 190
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 1.6100000000000001
+  },
+  "parsed": {
+    "data_facts": [
+      "输入提供了细胞数、样本数和聚类数。",
+      "未提供分组数。"
+    ],
+    "statistical_meaning": [
+      "n_cells 表示用于分析的细胞总数。",
+      "n_samples 表示样本数量。",
+      "n_clusters 表示聚类数量。"
+    ],
+    "biological_interpretation": [
+      "95个细胞来自5个样本，分为3个聚类。",
+      "分组数未知，无法评估组间差异。"
+    ],
+    "uncertainty": [
+      "分组数无法从输入中确定。"
+    ],
+    "cannot_conclude": [
+      "无法确定分组数。"
+    ],
+    "learning_questions": [
+      "分组数是否由实验设计决定？",
+      "聚类数是否与分组数相关？"
+    ],
+    "evidence_used": [],
+    "claims": [
+      {
+        "id": "claim_n_cells_used",
+        "text": "使用的细胞数为95。",
+        "fact": "n_cells_used",
+        "value": 95,
+        "evidence": []
+      },
+      {
+        "id": "claim_n_samples",
+        "text": "样本数为5。",
+        "fact": "n_samples",
+        "value": 5,
+        "evidence": []
+      },
+      {
+        "id": "claim_n_clusters",
+        "text": "聚类数为3。",
+        "fact": "n_clusters",
+        "value": 3,
+        "evidence": []
+      },
+      {
+        "id": "claim_n_groups",
+        "text": "分组数无法确定。",
+        "fact": "n_groups",
+        "value": null,
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "partial",
+    "findings": [
+      {
+        "claim": "claim_n_cells_used",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_cells_used = 95"
+      },
+      {
+        "claim": "claim_n_samples",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_samples = 5"
+      },
+      {
+        "claim": "claim_n_clusters",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_clusters = 3"
+      },
+      {
+        "claim": "claim_n_groups",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_cells_used",
+      "expected": 95,
+      "value": 95,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_samples",
+      "expected": 5,
+      "value": 5,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_clusters",
+      "expected": 3,
+      "value": 3,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_groups",
+      "expected": 2,
+      "value": null,
+      "answered": false,
+      "correct": false
+    }
+  ],
+  "prompt_chars": 1197
+}

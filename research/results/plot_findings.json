@@ -1,0 +1,245 @@
+[
+  {
+    "status": "pass",
+    "findings": [
+      {
+        "check": "all_source_genes_plotted",
+        "status": "pass",
+        "detail": "every source feature is plotted"
+      },
+      {
+        "check": "x_axis",
+        "status": "pass",
+        "detail": "x (log2FoldChange) equals the fold-change column 'log2FoldChange'"
+      },
+      {
+        "check": "y_axis",
+        "status": "pass",
+        "detail": "y (-log10(padj)) equals -log10(padj) [adjusted p]"
+      }
+    ],
+    "allow_subset": true,
+    "note": "A pass only means the plotted numbers match the supplied table; it says nothing about scientific correctness."
+  },
+  {
+    "status": "fail",
+    "findings": [
+      {
+        "check": "all_source_genes_plotted",
+        "status": "pass",
+        "detail": "every source feature is plotted"
+      },
+      {
+        "check": "x_axis",
+        "status": "fail",
+        "detail": "x (-log2FoldChange) equals the NEGATED fold-change column 'log2FoldChange'"
+      },
+      {
+        "check": "y_axis",
+        "status": "pass",
+        "detail": "y (-log10(padj)) equals -log10(padj) [adjusted p]"
+      }
+    ],
+    "allow_subset": true,
+    "note": "A pass only means the plotted numbers match the supplied table; it says nothing about scientific correctness."
+  },
+  {
+    "status": "fail",
+    "findings": [
+      {
+        "check": "all_source_genes_plotted",
+        "status": "pass",
+        "detail": "every source feature is plotted"
+      },
+      {
+        "check": "x_axis",
+        "status": "pass",
+        "detail": "x (log2FoldChange) equals the fold-change column 'log2FoldChange'"
+      },
+      {
+        "check": "y_axis",
+        "status": "fail",
+        "detail": "y (-log10(pvalue)) equals -log10(pvalue) [raw p]; the source also has an adjusted p column, so the plot shows RAW p-values"
+      }
+    ],
+    "allow_subset": true,
+    "note": "A pass only means the plotted numbers match the supplied table; it says nothing about scientific correctness."
+  },
+  {
+    "status": "pass",
+    "findings": [
+      {
+        "check": "scores",
+        "status": "pass",
+        "detail": "PC1/PC2 aesthetics compared with independently supplied/recomputed PCA scores"
+      },
+      {
+        "check": "variance",
+        "status": "pass",
+        "detail": "stored explained variance compared with source eigenvalues"
+      },
+      {
+        "check": "PC1_label",
+        "status": "pass",
+        "detail": "expected axis label: PC1 (47.8%)"
+      },
+      {
+        "check": "PC2_label",
+        "status": "pass",
+        "detail": "expected axis label: PC2 (23.4%)"
+      }
+    ],
+    "allow_subset": false,
+    "note": "A pass only means the plotted numbers match the supplied table; it says nothing about scientific correctness."
+  },
+  {
+    "status": "fail",
+    "findings": [
+      {
+        "check": "scores",
+        "status": "fail",
+        "detail": "PC1/PC2 aesthetics compared with independently supplied/recomputed PCA scores"
+      },
+      {
+        "check": "variance",
+        "status": "pass",
+        "detail": "stored explained variance compared with source eigenvalues"
+      },
+      {
+        "check": "PC1_label",
+        "status": "pass",
+        "detail": "expected axis label: PC1 (47.8%)"
+      },
+      {
+        "check": "PC2_label",
+        "status": "pass",
+        "detail": "expected axis label: PC2 (23.4%)"
+      }
+    ],
+    "allow_subset": false,
+    "note": "A pass only means the plotted numbers match the supplied table; it says nothing about scientific correctness."
+  },
+  {
+    "status": "fail",
+    "findings": [
+      {
+        "check": "scores",
+        "status": "pass",
+        "detail": "PC1/PC2 aesthetics compared with independently supplied/recomputed PCA scores"
+      },
+      {
+        "check": "variance",
+        "status": "pass",
+        "detail": "stored explained variance compared with source eigenvalues"
+      },
+      {
+        "check": "PC1_label",
+        "status": "fail",
+        "detail": "expected axis label: PC1 (47.8%)"
+      },
+      {
+        "check": "PC2_label",
+        "status": "pass",
+        "detail": "expected axis label: PC2 (23.4%)"
+      }
+    ],
+    "allow_subset": false,
+    "note": "A pass only means the plotted numbers match the supplied table; it says nothing about scientific correctness."
+  },
+  {
+    "status": "pass",
+    "findings": [
+      {
+        "check": "coverage",
+        "status": "pass",
+        "detail": "15 of 1104 source terms plotted"
+      },
+      {
+        "check": "x_axis",
+        "status": "pass",
+        "detail": "ratio/count checked against source"
+      },
+      {
+        "check": "term_labels",
+        "status": "pass",
+        "detail": "term labels paired by term ID"
+      },
+      {
+        "check": "colour",
+        "status": "pass",
+        "detail": "colour checked against -log10 p.adjust"
+      },
+      {
+        "check": "size",
+        "status": "pass",
+        "detail": "point size checked against Count"
+      }
+    ],
+    "allow_subset": true,
+    "note": "A pass only means the plotted numbers match the supplied table; it says nothing about scientific correctness."
+  },
+  {
+    "status": "fail",
+    "findings": [
+      {
+        "check": "coverage",
+        "status": "pass",
+        "detail": "15 of 1104 source terms plotted"
+      },
+      {
+        "check": "x_axis",
+        "status": "pass",
+        "detail": "ratio/count checked against source"
+      },
+      {
+        "check": "term_labels",
+        "status": "pass",
+        "detail": "term labels paired by term ID"
+      },
+      {
+        "check": "colour",
+        "status": "pass",
+        "detail": "colour checked against -log10 p.adjust"
+      },
+      {
+        "check": "size",
+        "status": "fail",
+        "detail": "point size checked against Count"
+      }
+    ],
+    "allow_subset": true,
+    "note": "A pass only means the plotted numbers match the supplied table; it says nothing about scientific correctness."
+  },
+  {
+    "status": "fail",
+    "findings": [
+      {
+        "check": "coverage",
+        "status": "pass",
+        "detail": "15 of 1104 source terms plotted"
+      },
+      {
+        "check": "x_axis",
+        "status": "pass",
+        "detail": "ratio/count checked against source"
+      },
+      {
+        "check": "term_labels",
+        "status": "pass",
+        "detail": "term labels paired by term ID"
+      },
+      {
+        "check": "colour",
+        "status": "fail",
+        "detail": "colour checked against -log10 p.adjust"
+      },
+      {
+        "check": "size",
+        "status": "pass",
+        "detail": "point size checked against Count"
+      }
+    ],
+    "allow_subset": true,
+    "note": "A pass only means the plotted numbers match the supplied table; it says nothing about scientific correctness."
+  }
+]

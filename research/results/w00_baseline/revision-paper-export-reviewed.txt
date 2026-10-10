@@ -1,0 +1,120 @@
+[WARNING] Could not load translations for zh-CN
+  data file translations/zh.yaml not found
+[WARNING] The term Abstract has no translation defined.
+Warning: failed to launch javaldx - java may not function correctly
+convert /home/ubuntu/creatR/docs/paper_cn_v2/BioExplainR-中文论文-v0.9.docx as a Writer document -> /home/ubuntu/creatR/docs/paper_cn_v2/rendered_docx/BioExplainR-中文论文-v0.9.pdf using filter : writer_pdf_Export
+Overwriting: /home/ubuntu/creatR/docs/paper_cn_v2/rendered_docx/BioExplainR-中文论文-v0.9.pdf
+[WARNING] Could not load translations for zh-CN
+  data file translations/zh.yaml not found
+[WARNING] The term Abstract has no translation defined.
+Warning: failed to launch javaldx - java may not function correctly
+convert /home/ubuntu/creatR/docs/paper_cn_v2/BioExplainR-补充材料-v0.9.docx as a Writer document -> /home/ubuntu/creatR/docs/paper_cn_v2/rendered_docx/BioExplainR-补充材料-v0.9.pdf using filter : writer_pdf_Export
+Overwriting: /home/ubuntu/creatR/docs/paper_cn_v2/rendered_docx/BioExplainR-补充材料-v0.9.pdf
+{
+  "main": {
+    "name": "BioExplainR-中文论文-v0.9",
+    "pages": 9,
+    "docx_tables": 1,
+    "figures": 2,
+    "vector_figures": [
+      {
+        "caption": "图 1 BioExplainR 的事实约束工作流",
+        "page": 8,
+        "pdf": {
+          "path": "docs/paper_cn_v2/figures/Figure_1.pdf",
+          "bytes": 77666,
+          "sha256": "41e74152f3acfde796228a26baaa825a54e447320c96c0ce7f21fbde850f8a02"
+        }
+      },
+      {
+        "caption": "图 2 SPARCL1 候选固定与外部实验初步重复",
+        "page": 9,
+        "pdf": {
+          "path": "docs/paper_cn_v2/figures/Figure_2.pdf",
+          "bytes": 28234,
+          "sha256": "83f0d5e10068515cd7fbbbedfcf5c083ce1cce41378390a484bcf50cac8fe85f"
+        }
+      }
+    ]
+  },
+  "supplement": {
+    "name": "BioExplainR-补充材料-v0.9",
+    "pages": 16,
+    "docx_tables": 0,
+    "figures": 8,
+    "vector_figures": [
+      {
+        "caption": "补充图 S1 平台框架",
+        "page": 7,
+        "pdf": {
+          "path": "docs/paper_cn_v2/figures/composites/Figure_1.pdf",
+          "bytes": 77666,
+          "sha256": "41e74152f3acfde796228a26baaa825a54e447320c96c0ce7f21fbde850f8a02"
+        }
+      },
+      {
+        "caption": "补充图 S2 配对转录组案例",
+        "page": 8,
+        "pdf": {
+          "path": "docs/paper_cn_v2/figures/composites/Figure_2.pdf",
+          "bytes": 334799,
+          "sha256": "244fe1b91f86366499b161a6c8222c5a1ea40e334908dc14fb4fe6ba64c266fa"
+        }
+      },
+      {
+        "caption": "补充图 S3 单细胞与微阵列案例",
+        "page": 9,
+        "pdf": {
+          "path": "docs/paper_cn_v2/figures/composites/Figure_3.pdf",
+          "bytes": 109737,
+          "sha256": "6bf16991c3f4a86ee492f789462034801da3f9daa8d6e6fd4eafc74c1dc9878f"
+        }
+      },
+      {
+        "caption": "补充图 S4 pasilla 数值基准",
+        "page": 10,
+        "pdf": {
+          "path": "docs/paper_cn_v2/figures/composites/Figure_4.pdf",
+          "bytes": 197542,
+          "sha256": "8981734f2182bd74b7c83cba687258aa0f04e0afd6d7b649fcdd2aad2d7d1470"
+        }
+      },
+      {
+        "caption": "补充图 S5 miniACC 多组学案例",
+        "page": 11,
+        "pdf": {
+          "path": "docs/paper_cn_v2/figures/composites/Figure_5.pdf",
+          "bytes": 79280,
+          "sha256": "cc0bd430cb47bc9e110393624dce9c60c3405f96a9254deceea78666c3c5480b"
+        }
+      },
+      {
+        "caption": "补充图 S6 模型事实传递",
+        "page": 12,
+        "pdf": {
+          "path": "docs/paper_cn_v2/figures/composites/Figure_6.pdf",
+          "bytes": 77069,
+          "sha256": "b4195245aa67b3d08ea26c1d625f27363c5b22919541ad83b0f61c8d87d829d3"
+        }
+      },
+      {
+        "caption": "补充图 S7 受控错误与新增场景",
+        "page": 13,
+        "pdf": {
+          "path": "docs/paper_cn_v2/figures/composites/Figure_7.pdf",
+          "bytes": 67166,
+          "sha256": "03e2b30d73ddb753549c7f9ecca6cdc046907e99cccae10841b407f8dbb27ae3"
+        }
+      },
+      {
+        "caption": "补充图 S8 工作台与工程验收",
+        "page": 14,
+        "pdf": {
+          "path": "docs/paper_cn_v2/figures/composites/Figure_8.pdf",
+          "bytes": 93009,
+          "sha256": "7a5c4f8cc7187678509bfbabc754293977389d7a510825a8a29fed446db2b908"
+        }
+      }
+    ]
+  }
+}

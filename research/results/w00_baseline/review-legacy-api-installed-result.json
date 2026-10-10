@@ -1,0 +1,454 @@
+{
+  "status": "pass",
+  "checked": 74,
+  "package_mode": "installed",
+  "package_version": "0.4.0.9000",
+  "package_path": "/tmp/opencode/bioexplainr-install-review/BioExplainR",
+  "scope": "exported names and positional parameter order; not full behavioral sign-off",
+  "findings": [
+    {
+      "name": "bio_adapters",
+      "status": "pass",
+      "legacy_positions": "",
+      "current_positions": ""
+    },
+    {
+      "name": "bio_benchmark",
+      "status": "pass",
+      "legacy_positions": "cases,methods,tolerance",
+      "current_positions": "cases,methods,tolerance"
+    },
+    {
+      "name": "bio_benchmark_fixes",
+      "status": "pass",
+      "legacy_positions": "cases,timeout",
+      "current_positions": "cases,timeout"
+    },
+    {
+      "name": "bio_build_request",
+      "status": "pass",
+      "legacy_positions": "config,system,user",
+      "current_positions": "config,system,user"
+    },
+    {
+      "name": "bio_cell_proportions",
+      "status": "pass",
+      "legacy_positions": "x,sample_col,cluster_col,group_col,anonymize,test,p_adjust_method,alpha,min_samples_per_group,language",
+      "current_positions": "x,sample_col,cluster_col,group_col,anonymize,test,p_adjust_method,alpha,min_samples_per_group,language"
+    },
+    {
+      "name": "bio_config",
+      "status": "pass",
+      "legacy_positions": "preset,base_url,api_key,api_key_env,model,protocol,endpoint,timeout,max_retries,temperature,max_tokens,language,anthropic_version,extra_headers,json_mode,extra_body",
+      "current_positions": "preset,base_url,api_key,api_key_env,model,protocol,endpoint,timeout,max_retries,temperature,max_tokens,language,anthropic_version,extra_headers,json_mode,extra_body"
+    },
+    {
+      "name": "bio_configure",
+      "status": "pass",
+      "legacy_positions": "",
+      "current_positions": "..."
+    },
+    {
+      "name": "bio_context",
+      "status": "pass",
+      "legacy_positions": "x,analysis_type,adapter,species,tissue,contrast,gene_id_type,design,background,source_package,thresholds,p_adjust_method,coefficient,n_top,data_dependencies,notes,language",
+      "current_positions": "x,analysis_type,adapter,species,tissue,contrast,gene_id_type,design,background,source_package,thresholds,p_adjust_method,coefficient,n_top,data_dependencies,notes,language,scope,fact_descriptors,modalities,schema_version,..."
+    },
+    {
+      "name": "bio_context_payload",
+      "status": "pass",
+      "legacy_positions": "ctx,max_top,max_chars,include_features",
+      "current_positions": "ctx,max_top,max_chars,include_features,policy"
+    },
+    {
+      "name": "bio_cross_check",
+      "status": "pass",
+      "legacy_positions": "plot,source,allow_subset,tolerance,coefficient,metadata,group",
+      "current_positions": "plot,source,allow_subset,tolerance,coefficient,metadata,group"
+    },
+    {
+      "name": "bio_dependency_provenance",
+      "status": "pass",
+      "legacy_positions": "packages",
+      "current_positions": "packages"
+    },
+    {
+      "name": "bio_endpoint_url",
+      "status": "pass",
+      "legacy_positions": "config",
+      "current_positions": "config"
+    },
+    {
+      "name": "bio_evaluate_experts",
+      "status": "pass",
+      "legacy_positions": "ratings,rubric",
+      "current_positions": "ratings,rubric"
+    },
+    {
+      "name": "bio_evaluate_learning",
+      "status": "pass",
+      "legacy_positions": "data,id,group,pre,post,delayed,transfer,reference,conf_level",
+      "current_positions": "data,id,group,pre,post,delayed,transfer,reference,conf_level"
+    },
+    {
+      "name": "bio_evidence",
+      "status": "pass",
+      "legacy_positions": "source,id,title,claim,url,type,version,accessed,note",
+      "current_positions": "source,id,title,claim,url,type,version,accessed,note,content_type,scope,role,content,content_hash"
+    },
+    {
+      "name": "bio_evidence_cache_clear",
+      "status": "pass",
+      "legacy_positions": "",
+      "current_positions": ""
+    },
+    {
+      "name": "bio_evidence_clear",
+      "status": "pass",
+      "legacy_positions": "",
+      "current_positions": ""
+    },
+    {
+      "name": "bio_evidence_for_context",
+      "status": "pass",
+      "legacy_positions": "ctx,sources,n_genes,ids,organism,limit",
+      "current_positions": "ctx,sources,n_genes,ids,organism,limit,..."
+    },
+    {
+      "name": "bio_evidence_list",
+      "status": "pass",
+      "legacy_positions": "",
+      "current_positions": ""
+    },
+    {
+      "name": "bio_evidence_lookup",
+      "status": "pass",
+      "legacy_positions": "query,provider,register",
+      "current_positions": "query,provider,register,..."
+    },
+    {
+      "name": "bio_evidence_providers",
+      "status": "pass",
+      "legacy_positions": "",
+      "current_positions": ""
+    },
+    {
+      "name": "bio_evidence_register",
+      "status": "pass",
+      "legacy_positions": "",
+      "current_positions": "..."
+    },
+    {
+      "name": "bio_explain",
+      "status": "pass",
+      "legacy_positions": "x,config,use_llm,language,level,question,evidence,max_top,cross_check,evidence_sources,evidence_args,allow_subset",
+      "current_positions": "x,config,use_llm,language,level,question,evidence,max_top,cross_check,evidence_sources,evidence_args,allow_subset,payload_policy,run_id,..."
+    },
+    {
+      "name": "bio_explain_error",
+      "status": "pass",
+      "legacy_positions": "x,config,use_llm,language,include_code",
+      "current_positions": "x,config,use_llm,language,include_code"
+    },
+    {
+      "name": "bio_explain_project",
+      "status": "pass",
+      "legacy_positions": "project,config,use_llm,max_chars,language",
+      "current_positions": "project,config,use_llm,max_chars,language"
+    },
+    {
+      "name": "bio_fetch_evidence",
+      "status": "pass",
+      "legacy_positions": "query,source,limit,timeout,cache,retries,organism,mode,reviewed,base_url,register,on_error",
+      "current_positions": "query,source,limit,timeout,cache,retries,organism,mode,reviewed,base_url,register,on_error"
+    },
+    {
+      "name": "bio_get_config",
+      "status": "pass",
+      "legacy_positions": "",
+      "current_positions": ""
+    },
+    {
+      "name": "bio_go_annotations",
+      "status": "pass",
+      "legacy_positions": "evidence,go_ids",
+      "current_positions": "evidence,go_ids"
+    },
+    {
+      "name": "bio_grade",
+      "status": "pass",
+      "legacy_positions": "quiz,answers",
+      "current_positions": "quiz,answers"
+    },
+    {
+      "name": "bio_invariant",
+      "status": "pass",
+      "legacy_positions": "name,fn,description",
+      "current_positions": "name,fn,description"
+    },
+    {
+      "name": "bio_last_error",
+      "status": "pass",
+      "legacy_positions": "x",
+      "current_positions": "x"
+    },
+    {
+      "name": "bio_llm_available",
+      "status": "pass",
+      "legacy_positions": "config,reason",
+      "current_positions": "config,reason"
+    },
+    {
+      "name": "bio_llm_chat",
+      "status": "pass",
+      "legacy_positions": "config,system,user",
+      "current_positions": "config,system,user"
+    },
+    {
+      "name": "bio_object_inventory",
+      "status": "pass",
+      "legacy_positions": "envir,include_functions,include_hidden",
+      "current_positions": "envir,include_functions,include_hidden"
+    },
+    {
+      "name": "bio_package_usage",
+      "status": "pass",
+      "legacy_positions": "reset",
+      "current_positions": "reset"
+    },
+    {
+      "name": "bio_parse_response",
+      "status": "pass",
+      "legacy_positions": "protocol,body",
+      "current_positions": "protocol,body"
+    },
+    {
+      "name": "bio_plan_learning_study",
+      "status": "pass",
+      "legacy_positions": "effect,power,alpha,attrition",
+      "current_positions": "effect,power,alpha,attrition"
+    },
+    {
+      "name": "bio_plot",
+      "status": "pass",
+      "legacy_positions": "x,type",
+      "current_positions": "x,type,..."
+    },
+    {
+      "name": "bio_plot_enrichment",
+      "status": "pass",
+      "legacy_positions": "x,top_n,term_col,ratio_col,p_col,count_col",
+      "current_positions": "x,top_n,term_col,ratio_col,p_col,count_col"
+    },
+    {
+      "name": "bio_plot_heatmap",
+      "status": "pass",
+      "legacy_positions": "x,metadata,feature_axis,top_n,scale_rows",
+      "current_positions": "x,metadata,feature_axis,top_n,scale_rows"
+    },
+    {
+      "name": "bio_plot_pca",
+      "status": "pass",
+      "legacy_positions": "x,metadata,group,feature_axis,transform,center,scale.,n_top_features",
+      "current_positions": "x,metadata,group,feature_axis,transform,center,scale.,n_top_features"
+    },
+    {
+      "name": "bio_plot_umap",
+      "status": "pass",
+      "legacy_positions": "x,metadata,group,method,reduction,feature_axis,input_type",
+      "current_positions": "x,metadata,group,method,reduction,feature_axis,input_type,..."
+    },
+    {
+      "name": "bio_presets",
+      "status": "pass",
+      "legacy_positions": "",
+      "current_positions": ""
+    },
+    {
+      "name": "bio_project",
+      "status": "pass",
+      "legacy_positions": "results,title,dependencies,metadata",
+      "current_positions": "results,title,dependencies,metadata,sample_map,relations"
+    },
+    {
+      "name": "bio_question_bank",
+      "status": "pass",
+      "legacy_positions": "topics,language",
+      "current_positions": "topics,language"
+    },
+    {
+      "name": "bio_quiz",
+      "status": "pass",
+      "legacy_positions": "x,topics,n,form,language",
+      "current_positions": "x,topics,n,form,language"
+    },
+    {
+      "name": "bio_randomize_learning_study",
+      "status": "pass",
+      "legacy_positions": "participants,strata,seed,groups",
+      "current_positions": "participants,strata,seed,groups"
+    },
+    {
+      "name": "bio_record",
+      "status": "pass",
+      "legacy_positions": "expr,label,envir,muffle_warnings,rethrow,purpose",
+      "current_positions": "expr,label,envir,muffle_warnings,rethrow,purpose"
+    },
+    {
+      "name": "bio_record_code",
+      "status": "pass",
+      "legacy_positions": "code,label,envir,muffle_warnings,rethrow,purpose",
+      "current_positions": "code,label,envir,muffle_warnings,rethrow,purpose"
+    },
+    {
+      "name": "bio_records",
+      "status": "pass",
+      "legacy_positions": "",
+      "current_positions": ""
+    },
+    {
+      "name": "bio_redact",
+      "status": "pass",
+      "legacy_positions": "x",
+      "current_positions": "x"
+    },
+    {
+      "name": "bio_register_adapter",
+      "status": "pass",
+      "legacy_positions": "name,detect,extract,analysis_types",
+      "current_positions": "name,detect,extract,analysis_types"
+    },
+    {
+      "name": "bio_register_evidence_provider",
+      "status": "pass",
+      "legacy_positions": "name,fn",
+      "current_positions": "name,fn"
+    },
+    {
+      "name": "bio_register_live_providers",
+      "status": "pass",
+      "legacy_positions": "sources,overwrite",
+      "current_positions": "sources,overwrite,..."
+    },
+    {
+      "name": "bio_register_preset",
+      "status": "pass",
+      "legacy_positions": "name,protocol,base_url,api_key_env,key_required,description,overwrite",
+      "current_positions": "name,protocol,base_url,api_key_env,key_required,description,overwrite"
+    },
+    {
+      "name": "bio_report",
+      "status": "pass",
+      "legacy_positions": "x,file,format,title,include_llm,include_session,config,show_answers,language",
+      "current_positions": "x,file,format,title,include_llm,include_session,config,show_answers,language"
+    },
+    {
+      "name": "bio_reset_config",
+      "status": "pass",
+      "legacy_positions": "",
+      "current_positions": ""
+    },
+    {
+      "name": "bio_review_rubric",
+      "status": "pass",
+      "legacy_positions": "language",
+      "current_positions": "language"
+    },
+    {
+      "name": "bio_run_app",
+      "status": "pass",
+      "legacy_positions": "envir,host,port,launch.browser,language",
+      "current_positions": "envir,host,port,launch.browser,language,..."
+    },
+    {
+      "name": "bio_runtime_info",
+      "status": "pass",
+      "legacy_positions": "include_installed",
+      "current_positions": "include_installed"
+    },
+    {
+      "name": "bio_suggest_fix",
+      "status": "pass",
+      "legacy_positions": "x,config,use_llm,language",
+      "current_positions": "x,config,use_llm,language"
+    },
+    {
+      "name": "bio_unregister_adapter",
+      "status": "pass",
+      "legacy_positions": "name",
+      "current_positions": "name"
+    },
+    {
+      "name": "bio_unregister_preset",
+      "status": "pass",
+      "legacy_positions": "name",
+      "current_positions": "name"
+    },
+    {
+      "name": "bio_validate_explanation",
+      "status": "pass",
+      "legacy_positions": "explanation,claims,tolerance",
+      "current_positions": "explanation,claims,tolerance"
+    },
+    {
+      "name": "bio_validate_fix",
+      "status": "pass",
+      "legacy_positions": "expr,inputs,invariants,packages,timeout,label",
+      "current_positions": "expr,inputs,invariants,packages,timeout,label"
+    },
+    {
+      "name": "bio_value",
+      "status": "pass",
+      "legacy_positions": "x",
+      "current_positions": "x"
+    },
+    {
+      "name": "inv_class",
+      "status": "pass",
+      "legacy_positions": "cls",
+      "current_positions": "cls"
+    },
+    {
+      "name": "inv_equal",
+      "status": "pass",
+      "legacy_positions": "name,fn,expected",
+      "current_positions": "name,fn,expected"
+    },
+    {
+      "name": "inv_factor_levels",
+      "status": "pass",
+      "legacy_positions": "column,levels",
+      "current_positions": "column,levels"
+    },
+    {
+      "name": "inv_has_columns",
+      "status": "pass",
+      "legacy_positions": "cols",
+      "current_positions": "cols"
+    },
+    {
+      "name": "inv_no_na",
+      "status": "pass",
+      "legacy_positions": "column",
+      "current_positions": "column"
+    },
+    {
+      "name": "inv_nrow",
+      "status": "pass",
+      "legacy_positions": "n",
+      "current_positions": "n"
+    },
+    {
+      "name": "inv_same_nrow_as_input",
+      "status": "pass",
+      "legacy_positions": "input",
+      "current_positions": "input"
+    },
+    {
+      "name": "new_bio_context",
+      "status": "pass",
+      "legacy_positions": "analysis_type,source_class,source_package,source_status,facts,top_features,plot_mapping,provenance,uncertainty,metadata,adapter",
+      "current_positions": "analysis_type,source_class,source_package,source_status,facts,top_features,plot_mapping,provenance,uncertainty,metadata,adapter,schema_version,scope,design,fact_descriptors,modalities"
+    }
+  ]
+}

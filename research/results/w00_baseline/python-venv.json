@@ -1,0 +1,19 @@
+{
+  "command": [
+    "python3",
+    "-m",
+    "venv",
+    "--system-site-packages",
+    "/tmp/opencode/paper-venv"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-05T08:05:02.198021+00:00",
+  "finished_utc": "2026-10-05T08:05:06.754061+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/python-venv.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

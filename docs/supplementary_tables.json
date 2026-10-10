@@ -1,0 +1,57 @@
+{
+  "tables": [
+    {
+      "id": "S2",
+      "file": "Table_S2_external_validation.xlsx",
+      "title": "补充表 S2. 相近工具入口与独立数据基准",
+      "headers": ["工具/组件", "版本", "实际任务", "状态", "保存证据"],
+      "widths_cm": [3.4, 2.1, 5.3, 2.2, 4.0],
+      "rows": [
+        ["iSEE", "2.14.0", "真实 PBMC3k SCE 初始化、UMAP/QC 面板", "pass", "related_tool_tests.csv；iSEE_browser.json"],
+        ["GPTCelltype", "1.0.1", "真实 PBMC3k marker 表生成 3 个 cluster 的提示", "pass", "gptcelltype_prompt.json"],
+        ["ellmer", "0.5.0", "6 个保存 prompt 的本地 OpenAI-compatible replay；与 BioExplainR 各 6 次", "pass（12/12）", "transport_replay.csv"],
+        ["btw", "未安装", "安装尝试", "not_installed", "final_install_status.csv"],
+        ["BioExplainR + DESeq2", "0.3.1 / 1.42.0", "独立 pasilla counts、DESeq2 结果和事实提取", "pass（30/30）", "pasilla_test.json；pasilla_fact_checks.csv"]
+      ],
+      "note": "这些是各工具自身入口或协议的实际兼容性测试，不是共同任务性能排名。GPTCelltype 未提供 API key，因此只评价真实 marker 输入到提示构建；ellmer 是保存响应的本地协议 replay，不是在线模型推理；btw 未安装，未纳入性能比较。",
+      "source": "research/results/related_tools/related_tool_tests.csv；transport_replay.csv；final_install_status.csv；pasilla_test.json；iSEE_browser.json"
+    },
+    {
+      "id": "S3",
+      "file": "Table_S3_pasilla_fact_checks.xlsx",
+      "title": "补充表 S3. pasilla 独立数据的阈值事实核对",
+      "headers": ["P_adj 阈值", "|log2FC| 阈值", "特征数", "显著数", "上调", "下调", "P_adj 缺失", "全部核对"],
+      "widths_cm": [2.7, 3.0, 2.5, 2.5, 2.3, 2.3, 2.8, 2.5],
+      "rows": [
+        ["0.01", "0", "14599", "731", "328", "403", "5800", "pass"],
+        ["0.01", "1", "14599", "181", "89", "92", "5800", "pass"],
+        ["0.05", "0", "14599", "1068", "481", "587", "5800", "pass"],
+        ["0.05", "1", "14599", "218", "108", "110", "5800", "pass"],
+        ["0.10", "0", "14599", "1330", "613", "717", "5800", "pass"],
+        ["0.10", "1", "14599", "244", "125", "119", "5800", "pass"]
+      ],
+      "note": "pasilla 1.30.0 归档包含 14,599 个特征和 7 个文库；DESeq2 设计为 ~ type + condition，比较 treated vs untreated。每一行将 BioExplainR 从真实 DESeqResults 提取的事实与直接源表计算结果逐项比较；6 个阈值组合、每组合 5 个事实，共 30/30 匹配。P_adj 缺失值来自保存的 DESeq2 结果，不等于没有原始检验。",
+      "source": "research/results/related_tools/pasilla_fact_checks.csv；pasilla_test.json；pasilla_1.30.0.tar.gz 的 SHA-256"
+    },
+    {
+      "id": "S4",
+      "file": "Table_S4_common_task_models.xlsx",
+      "title": "补充表 S4. 双模型规模共同任务结果",
+      "headers": ["方法", "输入/协议", "目标事实", "正确", "已回答", "匹配率", "覆盖率", "备注"],
+      "widths_cm": [3.2, 4.0, 2.0, 2.0, 2.2, 2.3, 2.3, 5.0],
+      "source_csv": "common_task/common_task_summary.csv",
+      "note": "两个在线模型各处理 120 个可复现案例、480 个预定义标量事实，各运行一次；输入包含 R 计算事实，因此这是结构化事实传递和协议适配的机制性比较，不是泛化性能排名。正确/目标为严格 fact-path 与数值匹配；已回答为非空标量声明；覆盖率为已回答/目标。StepFun 与 DeepSeek 均为 480/480，提示要求保留完整小数精度。StepFun 使用关闭 response_format=json_object 的 OpenAI-compatible 请求。",
+      "source": "research/results/common_task_scale_480/common_task_summary.csv；common_task_calls.csv；common_task_manifest.json；脱敏响应记录"
+    },
+    {
+      "id": "S5",
+      "file": "Table_S5_human_evaluation.xlsx",
+      "title": "补充表 S5. 外部评分者与功能感知评价",
+      "headers": ["部分", "对象/维度", "n", "均值", "标准差", "有用/一致比例", "说明"],
+      "widths_cm": [2.5, 5.0, 2.0, 2.5, 2.5, 3.0, 6.0],
+      "source_csv": "human_evaluation/expert_dimension_summary.csv",
+      "note": "3 位外部评分者对 30 个去来源化解释案例、8 个维度进行 0-2 评分，共 720 条，无缺失；均值为评分者×案例的描述性汇总，case-dimension 完全一致率为 93.75%，相差不超过 1 分的比例为 100%。30 位评分参与者对 5 项功能进行 0-100 功能感知评分和 1=有用/2=没用判断，共 150 条，无缺失；这些是描述性功能感知结果，不是 SUS、学习增益、临床效用或随机对照实验。",
+      "source": "research/results/human_evaluation/expert_dimension_summary.csv；user_feature_summary.csv；expert_agreement_summary.csv；human_evaluation_manifest.json"
+    }
+  ]
+}

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <script type="application/shiny-singletons"></script>
+  <script type="application/html-dependencies">jquery[3.6.0];shiny-css[1.8.0];shiny-javascript[1.8.0];selectize[0.15.2];bootstrap[3.4.1]</script>
+<script src="jquery-3.6.0/jquery.min.js"></script>
+<link href="shiny-css-1.8.0/shiny.min.css" rel="stylesheet" />
+<script src="shiny-javascript-1.8.0/shiny.min.js"></script>
+<link href="selectize-0.15.2/css/selectize.bootstrap3.css" rel="stylesheet" />
+<script src="selectize-0.15.2/js/selectize.min.js"></script>
+<script src="selectize-0.15.2/accessibility/js/selectize-plugin-a11y.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet" />
+<link href="bootstrap-3.4.1/accessibility/css/bootstrap-accessibility.min.css" rel="stylesheet" />
+<script src="bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script src="bootstrap-3.4.1/accessibility/js/bootstrap-accessibility.min.js"></script>  <title>BioExplainR Local Analysis Workbench</title>
+  <script>document.documentElement.lang='en';$(document).on('shiny:inputchanged',function(e){if(e.name==='language'){document.documentElement.lang=(e.value==='zh'?'zh-CN':'en');}});</script>
+  <style>.bio-title{color:#215a7a;margin-bottom:0}.bio-subtitle{color:#5d6870;margin-top:4px}
+.shiny-input-container{margin-bottom:12px} .well{background:#f7fafc}
+pre{max-height:420px;overflow:auto;background:#f6f8fa;padding:12px}
+table{font-size:13px} .bio-scroll{max-width:100%;overflow-x:auto}</style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="container-fluid">
+      <h2 id="txt_app_title" class="shiny-text-output bio-title">BioExplainR Local Analysis Workbench</h2>
+      <p id="txt_app_subtitle" class="shiny-text-output bio-subtitle">R computes verifiable facts first, then explains them in natural language; code execution, model text and result provenance all stay in the current session.</p>
+      <div class="tabbable">
+        <ul class="nav nav-tabs shiny-tab-input" id="main_tabs" data-tabsetid="8742">
+          <li class="active">
+            <a href="#tab-8742-1" data-toggle="tab" data-bs-toggle="tab" data-value="model">
+              <span id="txt_tab_model" class="shiny-text-output">Model settings</span>
+            </a>
+          </li>
+          <li>
+            <a href="#tab-8742-2" data-toggle="tab" data-bs-toggle="tab" data-value="runtime">
+              <span id="txt_tab_runtime" class="shiny-text-output">R environment and run log</span>
+            </a>
+          </li>
+          <li>
+            <a href="#tab-8742-3" data-toggle="tab" data-bs-toggle="tab" data-value="code">
+              <span id="txt_tab_code" class="shiny-text-output">Code execution</span>
+            </a>
+          </li>
+          <li>
+            <a href="#tab-8742-4" data-toggle="tab" data-bs-toggle="tab" data-value="analysis">
+              <span id="txt_tab_analysis" class="shiny-text-output">Natural-language result analysis</span>
+            </a>
+          </li>
+          <li>
+            <a href="#tab-8742-5" data-toggle="tab" data-bs-toggle="tab" data-value="plots">
+              <span id="txt_tab_plots" class="shiny-text-output">Common plots</span>
+            </a>
+          </li>
+        </ul>
+        <div class="tab-content" data-tabsetid="8742">
+          <div class="tab-pane active" data-value="model" id="tab-8742-1">
+            <br/>
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="form-group shiny-input-container">
+                  <label class="control-label" id="preset-label" for="preset">Connection preset</label>
+                  <div>
+                    <select id="preset" class="shiny-input-select"><option value="local" selected>local</option>
+<option value="openai">openai</option>
+<option value="openai_compatible">openai_compatible</option>
+<option value="anthropic">anthropic</option>
+<option value="deepseek">deepseek</option>
+<option value="ollama">ollama</option></select>
+                    <script type="application/json" data-for="preset" data-nonempty="">{"plugins":["selectize-plugin-a11y"]}</script>
+                  </div>
+                </div>
+                <div class="form-group shiny-input-container">
+                  <label class="control-label" id="base_url-label" for="base_url">Service URL (optional)</label>
+                  <input id="base_url" type="text" class="shiny-input-text form-control" value=""/>
+                </div>
+                <div class="form-group shiny-input-container">
+                  <label class="control-label" id="model-label" for="model">Model ID</label>
+                  <input id="model" type="text" class="shiny-input-text form-control" value=""/>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="form-group shiny-input-container">
+                  <label class="control-label" id="api_key_env-label" for="api_key_env">API key environment variable name</label>
+                  <input id="api_key_env" type="text" class="shiny-input-text form-control" value="BIOEXPLAINR_API_KEY"/>
+                </div>
+                <div class="form-group shiny-input-container">
+                  <label class="control-label" id="api_key-label" for="api_key">Session API key (optional)</label>
+                  <input id="api_key" type="password" class="shiny-input-password form-control" value=""/>
+                </div>
+                <div class="form-group shiny-input-container">
+                  <label class="control-label" id="language-label" for="language">Language (interface and explanations)</label>
+                  <div>
+                    <select id="language" class="shiny-input-select"><option value="en" selected>English</option>
+<option value="zh">简体中文</option></select>
+                    <script type="application/json" data-for="language" data-nonempty="">{"plugins":["selectize-plugin-a11y"]}</script>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="form-group shiny-input-container">
+                  <label class="control-label" id="timeout-label" for="timeout">Request timeout (seconds)</label>
+                  <input id="timeout" type="number" class="shiny-input-number form-control" value="60" min="1"/>
+                </div>
+                <div class="form-group shiny-input-container">
+                  <label class="control-label" id="max_retries-label" for="max_retries">Retries on transient errors</label>
+                  <input id="max_retries" type="number" class="shiny-input-number form-control" value="2" min="0" step="1"/>
+                </div>
+                <div class="form-group shiny-input-container">
+                  <label class="control-label" id="max_tokens-label" for="max_tokens">Output token limit</label>
+                  <input id="max_tokens" type="number" class="shiny-input-number form-control" value="1500" min="1" step="100"/>
+                </div>
+                <div class="form-group shiny-input-container">
+                  <div class="checkbox">
+                    <label>
+                      <input id="json_mode" type="checkbox" class="shiny-input-checkbox"/>
+                      <span>JSON mode</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="form-group shiny-input-container">
+                  <label class="control-label" id="thinking-label" for="thinking">DeepSeek thinking</label>
+                  <div>
+                    <select id="thinking" class="shiny-input-select"><option value="disabled" selected>disabled</option>
+<option value="enabled">enabled</option></select>
+                    <script type="application/json" data-for="thinking" data-nonempty="">{"plugins":["selectize-plugin-a11y"]}</script>
+                  </div>
+                </div>
+                <button class="btn btn-default action-button btn-primary" id="save_config" type="button">Save model configuration</button>
+                <br/>
+                <br/>
+                <pre class="shiny-text-output noplaceholder" id="config_status"></pre>
+              </div>
+            </div>
+            <hr/>
+            <h4 id="txt_privacy_h" class="shiny-text-output">Privacy notice</h4>
+            <p id="txt_privacy_p" class="shiny-text-output">Model requests only send bounded summaries generated by BioExplainR. Raw matrices, cell barcodes, sample names and keys are not written into summaries or reports; check the provider's data policy yourself before using a model.</p>
+          </div>
+          <div class="tab-pane" data-value="runtime" id="tab-8742-2">
+            <br/>
+            <div class="row">
+              <div class="col-sm-3">
+                <button id="refresh_runtime" type="button" class="btn btn-default action-button">Refresh environment info</button>
+                <br/>
+                <br/>
+                <div id="ui_download_runtime" class="shiny-html-output"></div>
+              </div>
+              <div class="col-sm-9">
+                <pre class="shiny-text-output noplaceholder" id="runtime_summary"></pre>
+              </div>
+            </div>
+            <h4 id="txt_h_objects" class="shiny-text-output">Objects in the current workspace</h4>
+            <div id="object_table" class="shiny-html-output"></div>
+            <h4 id="txt_h_installed" class="shiny-text-output">R packages installed in the current environment</h4>
+            <div id="installed_table" class="shiny-html-output"></div>
+            <h4 id="txt_h_usage" class="shiny-text-output">Recorded package and function usage</h4>
+            <div id="usage_table" class="shiny-html-output"></div>
+            <h4 id="txt_h_history" class="shiny-text-output">Code run history</h4>
+            <div id="record_table" class="shiny-html-output"></div>
+            <h4 id="txt_h_record_out" class="shiny-text-output">Output of the selected run</h4>
+            <pre class="shiny-text-output noplaceholder" id="record_output"></pre>
+          </div>
+          <div class="tab-pane" data-value="code" id="tab-8742-3">
+            <br/>
+            <p id="txt_code_help" class="shiny-text-output">You can call loaded R packages and objects in the current workspace directly. Every execution is recorded through bio_record_code() with its status, warnings, errors, object summaries and package calls; only run code you trust.</p>
+            <div class="form-group shiny-input-container" style="width: 100%;">
+              <label class="control-label" id="code-label" for="code">R code</label>
+              <textarea id="code" class="shiny-input-textarea form-control" style="width:100%;" rows="14"># Example: read or process an existing object, then create a result object
+# result &lt;- bio_explain(your_object, use_llm = FALSE)
+ls()</textarea>
+            </div>
+            <div class="form-group shiny-input-container">
+              <label class="control-label" id="run_label-label" for="run_label">Run name</label>
+              <input id="run_label" type="text" class="shiny-input-text form-control" value="Browser code run"/>
+            </div>
+            <div class="form-group shiny-input-container">
+              <label class="control-label" id="run_purpose-label" for="run_purpose">Analysis purpose (optional)</label>
+              <input id="run_purpose" type="text" class="shiny-input-text form-control" value=""/>
+            </div>
+            <button class="btn btn-default action-button btn-primary" id="run_code" type="button">Run and record</button>
+            <br/>
+            <br/>
+            <pre class="shiny-text-output noplaceholder" id="run_status"></pre>
+            <pre class="shiny-text-output noplaceholder" id="run_console"></pre>
+          </div>
+          <div class="tab-pane" data-value="analysis" id="tab-8742-4">
+            <br/>
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="form-group shiny-input-container">
+                  <label class="control-label" id="analysis_object-label" for="analysis_object">Select a workspace object</label>
+                  <div>
+                    <select id="analysis_object" class="shiny-input-select"></select>
+                    <script type="application/json" data-for="analysis_object" data-nonempty="">{"plugins":["selectize-plugin-a11y"]}</script>
+                  </div>
+                </div>
+                <div class="form-group shiny-input-container">
+                  <label class="control-label" id="species-label" for="species">Species (optional)</label>
+                  <input id="species" type="text" class="shiny-input-text form-control" value=""/>
+                </div>
+                <div class="form-group shiny-input-container">
+                  <label class="control-label" id="tissue-label" for="tissue">Tissue / cell type (optional)</label>
+                  <input id="tissue" type="text" class="shiny-input-text form-control" value=""/>
+                </div>
+                <div class="form-group shiny-input-container">
+                  <label class="control-label" id="contrast-label" for="contrast">Comparison (optional)</label>
+                  <input id="contrast" type="text" class="shiny-input-text form-control" value=""/>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="form-group shiny-input-container">
+                  <label class="control-label" id="level-label" for="level">Reader level</label>
+                  <div>
+                    <select id="level" class="shiny-input-select"><option value="beginner" selected>Early-career researcher</option>
+<option value="undergraduate">Undergraduate</option>
+<option value="advanced">Advanced</option></select>
+                    <script type="application/json" data-for="level" data-nonempty="">{"plugins":["selectize-plugin-a11y"]}</script>
+                  </div>
+                </div>
+                <div class="form-group shiny-input-container">
+                  <label class="control-label" id="padj-label" for="padj">Adjusted p threshold</label>
+                  <input id="padj" type="number" class="shiny-input-number form-control" value="0.05" min="0" max="1" step="0.01"/>
+                </div>
+                <div class="form-group shiny-input-container">
+                  <label class="control-label" id="lfc-label" for="lfc">|log2FC| threshold</label>
+                  <input id="lfc" type="number" class="shiny-input-number form-control" value="0" min="0" step="0.1"/>
+                </div>
+                <div class="form-group shiny-input-container">
+                  <label class="control-label" id="p_adjust-label" for="p_adjust">Raw p-value adjustment</label>
+                  <div>
+                    <select id="p_adjust" class="shiny-input-select"><option value="none" selected>No automatic adjustment</option>
+<option value="BH">BH</option></select>
+                    <script type="application/json" data-for="p_adjust" data-nonempty="">{"plugins":["selectize-plugin-a11y"]}</script>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="form-group shiny-input-container">
+                  <div class="checkbox">
+                    <label>
+                      <input id="use_llm" type="checkbox" class="shiny-input-checkbox"/>
+                      <span>Use the configured model to organise the wording</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="form-group shiny-input-container">
+                  <label class="control-label" id="source_object-label" for="source_object">Plot source result</label>
+                  <div>
+                    <select id="source_object" class="shiny-input-select"><option value="" selected>None</option></select>
+                    <script type="application/json" data-for="source_object">{"plugins":["selectize-plugin-a11y"]}</script>
+                  </div>
+                </div>
+                <div class="form-group shiny-input-container">
+                  <div class="checkbox">
+                    <label>
+                      <input id="allow_subset" type="checkbox" class="shiny-input-checkbox"/>
+                      <span>Allow the plot to show a subset</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="form-group shiny-input-container">
+                  <label class="control-label" id="question-label" for="question">Question for the model (optional)</label>
+                  <textarea id="question" class="shiny-input-textarea form-control" rows="5"></textarea>
+                </div>
+                <button class="btn btn-default action-button btn-primary" id="analyze_object" type="button">Analyze selected object</button>
+              </div>
+            </div>
+            <h4 id="txt_h_result" class="shiny-text-output">Analysis results</h4>
+            <pre class="shiny-text-output noplaceholder" id="analysis_status"></pre>
+            <div id="analysis_sections" class="shiny-html-output"></div>
+            <div id="ui_download_report" class="shiny-html-output"></div>
+          </div>
+          <div class="tab-pane" data-value="plots" id="tab-8742-5">
+            <br/>
+            <p id="txt_plots_help" class="shiny-text-output">Plots are computed and generated in R. PCA, enrichment dot plots and heatmaps do not treat the appearance of a plot as a statistical conclusion; after generating one you can still use the natural-language result analysis tab to read an explanation of the object or plot.</p>
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="form-group shiny-input-container">
+                  <label class="control-label" id="plot_object-label" for="plot_object">Select object</label>
+                  <div>
+                    <select id="plot_object" class="shiny-input-select"></select>
+                    <script type="application/json" data-for="plot_object" data-nonempty="">{"plugins":["selectize-plugin-a11y"]}</script>
+                  </div>
+                </div>
+                <div class="form-group shiny-input-container">
+                  <label class="control-label" id="plot_type-label" for="plot_type">Plot type</label>
+                  <div>
+                    <select id="plot_type" class="shiny-input-select"><option value="auto" selected>Auto</option>
+<option value="pca">PCA</option>
+<option value="umap">UMAP / embedding</option>
+<option value="enrichment">Enrichment dot plot</option>
+<option value="heatmap">Heatmap</option></select>
+                    <script type="application/json" data-for="plot_type" data-nonempty="">{"plugins":["selectize-plugin-a11y"]}</script>
+                  </div>
+                </div>
+                <div class="form-group shiny-input-container">
+                  <label class="control-label" id="plot_top_n-label" for="plot_top_n">Features / terms to show</label>
+                  <input id="plot_top_n" type="number" class="shiny-input-number form-control" value="30" min="2" step="1"/>
+                </div>
+                <div class="form-group shiny-input-container">
+                  <label class="control-label" id="plot_metadata-label" for="plot_metadata">Sample / cell metadata</label>
+                  <div>
+                    <select id="plot_metadata" class="shiny-input-select"><option value="" selected>None</option></select>
+                    <script type="application/json" data-for="plot_metadata">{"plugins":["selectize-plugin-a11y"]}</script>
+                  </div>
+                </div>
+                <div class="form-group shiny-input-container">
+                  <label class="control-label" id="plot_group-label" for="plot_group">Group column</label>
+                  <input id="plot_group" type="text" class="shiny-input-text form-control" value=""/>
+                </div>
+                <div class="form-group shiny-input-container">
+                  <label class="control-label" id="plot_name-label" for="plot_name">Plot object name</label>
+                  <input id="plot_name" type="text" class="shiny-input-text form-control" value="bio_generated_plot"/>
+                </div>
+                <button class="btn btn-default action-button btn-primary" id="make_plot" type="button">Generate plot</button>
+              </div>
+              <div class="col-sm-8">
+                <pre class="shiny-text-output noplaceholder" id="plot_status"></pre>
+                <div id="ui_download_plot" class="shiny-html-output"></div>
+                <div class="shiny-plot-output html-fill-item" id="bio_plot" style="width:100%;height:600px;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

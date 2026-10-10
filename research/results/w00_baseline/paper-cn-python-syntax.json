@@ -1,0 +1,26 @@
+{
+  "command": [
+    "env",
+    "PYTHONPYCACHEPREFIX=/tmp/opencode/paper-cn-pycache",
+    "python3",
+    "-m",
+    "py_compile",
+    "research/paper_cn/build_assets.py",
+    "research/paper_cn/export_manuscript.py",
+    "research/paper_cn/audit_manuscript.py",
+    "research/paper_cn/package_paper.py",
+    "research/manage_baseline.py",
+    "research/audit_current_results.py",
+    "research/package_submission.py"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-08T09:35:04.660455+00:00",
+  "finished_utc": "2026-10-08T09:35:04.916648+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/paper-cn-python-syntax.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

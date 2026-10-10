@@ -1,0 +1,23 @@
+{
+  "command": [
+    "python3",
+    "-m",
+    "py_compile",
+    "research/manage_baseline.py",
+    "research/audit_current_results.py",
+    "research/package_submission.py",
+    "research/test_frozen_benchmark.py",
+    "tools/isolated-library-check.py",
+    "tools/capture-continuation.py"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-05T12:30:34.805495+00:00",
+  "finished_utc": "2026-10-05T12:30:34.883671+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/continuation-python-compile.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

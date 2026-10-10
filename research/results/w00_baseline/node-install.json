@@ -1,0 +1,20 @@
+{
+  "command": [
+    "npm",
+    "install",
+    "--prefix",
+    "/tmp/opencode",
+    "playwright@1.56.1",
+    "pngjs@7.0.0"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-05T08:05:02.231540+00:00",
+  "finished_utc": "2026-10-05T08:05:05.978716+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/node-install.txt",
+    "bytes": 24,
+    "sha256": "88b9141cb58f11737b41844c74cbe5d9637404f57b3afb015ee2f41ab63691cd"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "command": [
+    "Rscript",
+    "--vanilla",
+    "-e",
+    "x <- yaml::read_yaml(\".github/workflows/R-CMD-check.yaml\"); stopifnot(length(x$jobs)==2L, length(x$jobs$check$strategy$matrix$os)==2L); print(names(x$jobs))"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-05T12:19:54.330530+00:00",
+  "finished_utc": "2026-10-05T12:19:54.751090+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/continuation-ci-yaml.txt",
+    "bytes": 20,
+    "sha256": "69135a11449682f2bbc3c51781eb15abbb41575dcfeef974528d9cadc4fb8787"
+  }
+}

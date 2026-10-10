@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="720" viewBox="0 0 1400 720" role="img" aria-labelledby="title desc">
+  <title id="title">BioExplainR architecture and evidence-constrained explanation workflow</title>
+  <desc id="desc">R analysis objects enter deterministic adapters and a bio_context, then flow to local explanations or a bounded payload for model organization and explicit evidence. Claims, plots and fixes are checked before reports and the Shiny workbench.</desc>
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1"><stop offset="0" stop-color="#e8f3f0"/><stop offset="1" stop-color="#cde6df"/></linearGradient>
+    <linearGradient id="g2" x1="0" x2="1"><stop offset="0" stop-color="#eef1f8"/><stop offset="1" stop-color="#dce3f2"/></linearGradient>
+    <linearGradient id="g3" x1="0" x2="1"><stop offset="0" stop-color="#fff4d9"/><stop offset="1" stop-color="#f6df9d"/></linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#24443d" flood-opacity=".15"/></filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#396c62"/></marker>
+    <style>
+      .title{font:700 32px 'Noto Sans CJK SC','Microsoft YaHei',sans-serif;fill:#183b35}
+      .box-title{font:700 21px 'Noto Sans CJK SC','Microsoft YaHei',sans-serif;fill:#183b35}
+      .text{font:16px 'Noto Sans CJK SC','Microsoft YaHei',sans-serif;fill:#294a45}
+      .small{font:14px 'Noto Sans CJK SC','Microsoft YaHei',sans-serif;fill:#41655e}
+      .arrow{stroke:#396c62;stroke-width:4;fill:none;marker-end:url(#arrow)}
+      .dashed{stroke-dasharray:10 8}
+    </style>
+  </defs>
+  <rect width="1400" height="720" fill="#fbfcfb"/>
+  <text x="700" y="52" text-anchor="middle" class="title">BioExplainR：确定性事实驱动的结果解释工作流</text>
+  <text x="700" y="82" text-anchor="middle" class="small">模型组织语言；R、来源记录和声明核对保留可检查的事实路径</text>
+
+  <g filter="url(#shadow)">
+    <rect x="45" y="155" width="220" height="145" rx="18" fill="url(#g1)" stroke="#75aa9d" stroke-width="2"/>
+    <text x="155" y="195" text-anchor="middle" class="box-title">R 分析对象</text>
+    <text x="155" y="230" text-anchor="middle" class="text">DESeqResults / 富集表</text>
+    <text x="155" y="255" text-anchor="middle" class="text">SCE / Seurat / ggplot</text>
+    <text x="155" y="280" text-anchor="middle" class="small">已有结果，不要求从 FASTQ 开始</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="330" y="135" width="250" height="185" rx="18" fill="url(#g1)" stroke="#75aa9d" stroke-width="2"/>
+    <text x="455" y="177" text-anchor="middle" class="box-title">确定性适配器</text>
+    <text x="455" y="213" text-anchor="middle" class="text">识别来源类与分析类型</text>
+    <text x="455" y="240" text-anchor="middle" class="text">完整输入计算数量、方向、阈值</text>
+    <text x="455" y="267" text-anchor="middle" class="text">提取 QC、PCA、图形映射</text>
+    <text x="455" y="297" text-anchor="middle" class="small">不把模型当作统计计算器</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="655" y="115" width="300" height="225" rx="18" fill="url(#g2)" stroke="#849ac0" stroke-width="2"/>
+    <text x="805" y="157" text-anchor="middle" class="box-title">bio_context</text>
+    <text x="805" y="193" text-anchor="middle" class="text">facts：完整输入的统计事实</text>
+    <text x="805" y="220" text-anchor="middle" class="text">top_features：有界预览</text>
+    <text x="805" y="247" text-anchor="middle" class="text">provenance：来源与参数</text>
+    <text x="805" y="274" text-anchor="middle" class="text">uncertainty：限制和不确定性</text>
+    <text x="805" y="305" text-anchor="middle" class="small">context_payload：脱敏、有界 JSON</text>
+  </g>
+
+  <path d="M265 228 H325" class="arrow"/><path d="M580 228 H650" class="arrow"/>
+
+  <g filter="url(#shadow)">
+    <rect x="1030" y="115" width="300" height="100" rx="18" fill="url(#g3)" stroke="#d4ae52" stroke-width="2"/>
+    <text x="1180" y="155" text-anchor="middle" class="box-title">本地分层解释</text>
+    <text x="1180" y="184" text-anchor="middle" class="text">事实 · 统计含义 · 限制 · 学习问题</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="1030" y="240" width="300" height="100" rx="18" fill="url(#g3)" stroke="#d4ae52" stroke-width="2"/>
+    <text x="1180" y="280" text-anchor="middle" class="box-title">可选模型组织语言</text>
+    <text x="1180" y="309" text-anchor="middle" class="text">OpenAI-compatible / Anthropic</text>
+  </g>
+  <path d="M955 188 H1025" class="arrow"/><path d="M955 274 H1025" class="arrow"/>
+
+  <g filter="url(#shadow)">
+    <rect x="230" y="440" width="250" height="145" rx="18" fill="url(#g2)" stroke="#849ac0" stroke-width="2"/>
+    <text x="355" y="480" text-anchor="middle" class="box-title">显式证据</text>
+    <text x="355" y="513" text-anchor="middle" class="text">Europe PMC / GO / Reactome</text>
+    <text x="355" y="540" text-anchor="middle" class="text">来源 ID、URL、访问时间</text>
+    <text x="355" y="568" text-anchor="middle" class="small">命中不等于结论支持</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="575" y="405" width="270" height="180" rx="18" fill="url(#g1)" stroke="#75aa9d" stroke-width="2"/>
+    <text x="710" y="445" text-anchor="middle" class="box-title">机器可检查状态</text>
+    <text x="710" y="478" text-anchor="middle" class="text">claims：事实路径与数值</text>
+    <text x="710" y="505" text-anchor="middle" class="text">plot/source：图形核对</text>
+    <text x="710" y="532" text-anchor="middle" class="text">fix：语义不变量</text>
+    <text x="710" y="563" text-anchor="middle" class="small">pass / fail / partial / unverified</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="940" y="440" width="250" height="145" rx="18" fill="url(#g2)" stroke="#849ac0" stroke-width="2"/>
+    <text x="1065" y="480" text-anchor="middle" class="box-title">面向用户的出口</text>
+    <text x="1065" y="513" text-anchor="middle" class="text">HTML / Markdown / Quarto</text>
+    <text x="1065" y="540" text-anchor="middle" class="text">本地 Shiny 工作台</text>
+    <text x="1065" y="568" text-anchor="middle" class="small">保留来源、事实和限制</text>
+  </g>
+  <path d="M805 340 V390 H710 V400" class="arrow"/>
+  <path d="M1180 340 V390 H710 V400" class="arrow"/>
+  <path d="M355 440 V390 H650 V340" class="arrow dashed"/>
+  <path d="M845 495 H935" class="arrow"/>
+  <path d="M480 512 H570" class="arrow"/>
+  <text x="700" y="665" text-anchor="middle" class="small">统计数字、方向和阈值由 R 计算；模型文本与生物学假设保持可追踪的验证边界</text>
+</svg>

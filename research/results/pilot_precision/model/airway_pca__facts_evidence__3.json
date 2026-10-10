@@ -1,0 +1,173 @@
+{
+  "case": "airway_pca",
+  "method": "facts_evidence",
+  "replicate": 3,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-03 19:35:34 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"本次分析为PCA（主成分分析），由R的stats包prcomp函数计算，类别已验证。\",\n    \"观测样本数为8。\",\n    \"变量（特征）数为500。\",\n    \"主成分个数为8。\",\n    \"第1主成分解释的方差比例为0.4784。\",\n    \"第2主成分解释的方差比例为0.2338。\",\n    \"数据在分析前进行了中心化（centered=TRUE），未进行标准化（scaled=FALSE）。\",\n    \"PC1载荷最高的特征包括ENSG00000211445（0.1393）和ENSG00000101347（0.138）等。\"\n  ],\n  \"statistical_meaning\": [\n    \"PCA把500个变量的变异压缩到少数几个主成分上，用少数维度概括样本间的主要差异。\",\n    \"第1主成分解释方差比例0.4784，表示它单独概括了约47.84%的总变异。\",\n    \"第2主成分解释方差比例0.2338，表示它单独概括了约23.38%的总变异。\",\n    \"前两个主成分合计解释的方差比例可由累积方差给出（0.7123），说明二维图能展示大部分变异。\",\n    \"载荷（loading）表示原始变量对某个主成分的贡献方向和大小；载荷绝对值越大，该变量对该主成分越重要。\",\n    \"由于未标准化，方差大的基因（表达量高的基因）对主成分的影响更大。\"\n  ],\n  \"biological_interpretation\": [\n    \"若样本在主成分空间中形成分离，可能提示样本间存在整体表达差异，但这只是假设，需要分组信息验证。\",\n    \"PC1载荷较高的基因（如ENSG00000211445、ENSG00000101347）是驱动样本间主要差异的候选基因，可作为后续分析的重点，但需注意其生物学功能需另行核实。\",\n    \"文献检索命中一篇关于CRISPLD2与糖皮质激素反应的研究（证据EuropePMC:MED:24926665），仅表示检索词匹配，不能据此推断本数据中任何基因的功能或调控关系。\"\n  ],\n  \"uncertainty\": [\n    \"样本在主成分上的分离不等于生物学机制，批次效应也可能造成分离。\",\n    \"未发送样本坐标或样本名称；分组分离需结合样本分组信息判断。\",\n    \"未提供物种（species），生物学解释需要用户确认物种背景。\",\n    \"未标准化意味着结果受高表达基因主导，可能掩盖低表达但生物学重要的基因。\",\n    \"载荷只反映变量与主成分的线性关联，不代表因果或差异表达显著性。\"\n  ],\n  \"cannot_conclude\": [\n    \"不能仅凭PCA判断哪些基因差异表达或具有统计学显著性。\",\n    \"不能确定样本分离是否由实验条件、批次或其他因素导致。\",\n    \"不能推断任何基因的具体生物学功能或临床意义。\",\n    \"不能将载荷大小等同于效应方向（上调/下调）。\",\n    \"不能从本摘要推断物种、组织或实验设计。\"\n  ],\n  \"learning_questions\": [\n    \"PCA中主成分解释的方差比例代表什么？\",\n    \"为什么在PCA前有时需要标准化？不标准化会有什么影响？\",\n    \"载荷（loading）和得分（score）有什么区别？\",\n    \"如何判断PCA图中的样本分离是否具有生物学意义？\",\n    \"累积方差解释比例达到多少才认为前几个主成分足够代表数据？\"\n  ],\n  \"evidence_used\": [\n    \"EuropePMC:MED:24926665\"\n  ],\n  \"claims\": [\n    {\n      \"id\": \"c1\",\n      \"text\": \"观测样本数为8。\",\n      \"fact\": \"n_observations\",\n      \"value\": 8,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"c2\",\n      \"text\": \"变量（特征）数为500。\",\n      \"fact\": \"n_variables\",\n      \"value\": 500,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"c3\",\n      \"text\": \"第1主成分解释的方差比例为0.4784。\",\n      \"fact\": \"variance_explained.1\",\n      \"value\": 0.4784,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"c4\",\n      \"text\": \"第2主成分解释的方差比例为0.2338。\",\n      \"fact\": \"variance_explained.2\",\n      \"value\": 0.2338,\n      \"evidence\": []\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 1365,
+      "completion_tokens": 983,
+      "total_tokens": 2348,
+      "prompt_tokens_details": {
+        "cached_tokens": 1152
+      },
+      "prompt_cache_hit_tokens": 1152,
+      "prompt_cache_miss_tokens": 213
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 4.42
+  },
+  "parsed": {
+    "data_facts": [
+      "本次分析为PCA（主成分分析），由R的stats包prcomp函数计算，类别已验证。",
+      "观测样本数为8。",
+      "变量（特征）数为500。",
+      "主成分个数为8。",
+      "第1主成分解释的方差比例为0.4784。",
+      "第2主成分解释的方差比例为0.2338。",
+      "数据在分析前进行了中心化（centered=TRUE），未进行标准化（scaled=FALSE）。",
+      "PC1载荷最高的特征包括ENSG00000211445（0.1393）和ENSG00000101347（0.138）等。"
+    ],
+    "statistical_meaning": [
+      "PCA把500个变量的变异压缩到少数几个主成分上，用少数维度概括样本间的主要差异。",
+      "第1主成分解释方差比例0.4784，表示它单独概括了约47.84%的总变异。",
+      "第2主成分解释方差比例0.2338，表示它单独概括了约23.38%的总变异。",
+      "前两个主成分合计解释的方差比例可由累积方差给出（0.7123），说明二维图能展示大部分变异。",
+      "载荷（loading）表示原始变量对某个主成分的贡献方向和大小；载荷绝对值越大，该变量对该主成分越重要。",
+      "由于未标准化，方差大的基因（表达量高的基因）对主成分的影响更大。"
+    ],
+    "biological_interpretation": [
+      "若样本在主成分空间中形成分离，可能提示样本间存在整体表达差异，但这只是假设，需要分组信息验证。",
+      "PC1载荷较高的基因（如ENSG00000211445、ENSG00000101347）是驱动样本间主要差异的候选基因，可作为后续分析的重点，但需注意其生物学功能需另行核实。",
+      "文献检索命中一篇关于CRISPLD2与糖皮质激素反应的研究（证据EuropePMC:MED:24926665），仅表示检索词匹配，不能据此推断本数据中任何基因的功能或调控关系。"
+    ],
+    "uncertainty": [
+      "样本在主成分上的分离不等于生物学机制，批次效应也可能造成分离。",
+      "未发送样本坐标或样本名称；分组分离需结合样本分组信息判断。",
+      "未提供物种（species），生物学解释需要用户确认物种背景。",
+      "未标准化意味着结果受高表达基因主导，可能掩盖低表达但生物学重要的基因。",
+      "载荷只反映变量与主成分的线性关联，不代表因果或差异表达显著性。"
+    ],
+    "cannot_conclude": [
+      "不能仅凭PCA判断哪些基因差异表达或具有统计学显著性。",
+      "不能确定样本分离是否由实验条件、批次或其他因素导致。",
+      "不能推断任何基因的具体生物学功能或临床意义。",
+      "不能将载荷大小等同于效应方向（上调/下调）。",
+      "不能从本摘要推断物种、组织或实验设计。"
+    ],
+    "learning_questions": [
+      "PCA中主成分解释的方差比例代表什么？",
+      "为什么在PCA前有时需要标准化？不标准化会有什么影响？",
+      "载荷（loading）和得分（score）有什么区别？",
+      "如何判断PCA图中的样本分离是否具有生物学意义？",
+      "累积方差解释比例达到多少才认为前几个主成分足够代表数据？"
+    ],
+    "evidence_used": [
+      "EuropePMC:MED:24926665"
+    ],
+    "claims": [
+      {
+        "id": "c1",
+        "text": "观测样本数为8。",
+        "fact": "n_observations",
+        "value": 8,
+        "evidence": []
+      },
+      {
+        "id": "c2",
+        "text": "变量（特征）数为500。",
+        "fact": "n_variables",
+        "value": 500,
+        "evidence": []
+      },
+      {
+        "id": "c3",
+        "text": "第1主成分解释的方差比例为0.4784。",
+        "fact": "variance_explained.1",
+        "value": 0.4784,
+        "evidence": []
+      },
+      {
+        "id": "c4",
+        "text": "第2主成分解释的方差比例为0.2338。",
+        "fact": "variance_explained.2",
+        "value": 0.2338,
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "(evidence_used)",
+        "check": "evidence_ids",
+        "status": "pass",
+        "detail": "all cited evidence ids were supplied"
+      },
+      {
+        "claim": "c1",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_observations = 8"
+      },
+      {
+        "claim": "c2",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_variables = 500"
+      },
+      {
+        "claim": "c3",
+        "check": "value",
+        "status": "pass",
+        "detail": "variance_explained.1 = 0.4784"
+      },
+      {
+        "claim": "c4",
+        "check": "value",
+        "status": "pass",
+        "detail": "variance_explained.2 = 0.2338"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_observations",
+      "expected": 8,
+      "value": 8,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_variables",
+      "expected": 500,
+      "value": 500,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "variance_explained.1",
+      "expected": 0.47842864474,
+      "value": 0.4784,
+      "answered": true,
+      "correct": false
+    },
+    {
+      "fact": "variance_explained.2",
+      "expected": 0.23383404452,
+      "value": 0.2338,
+      "answered": true,
+      "correct": false
+    }
+  ],
+  "prompt_chars": 4488
+}

@@ -1,0 +1,148 @@
+{
+  "case": "cell_composition_013",
+  "family": "cell_composition",
+  "method": "direct_bounded",
+  "replicate": 1,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:13:36 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"输入数据包含155个细胞、5个样本和3个聚类。\",\n    \"未提供分组数（n_groups）的信息。\"\n  ],\n  \"statistical_meaning\": [\n    \"n_cells表示用于分析的细胞总数。\",\n    \"n_samples表示样本数量。\",\n    \"n_clusters表示聚类数量。\"\n  ],\n  \"biological_interpretation\": [\n    \"155个细胞来自5个样本，可能代表多个生物学重复。\",\n    \"3个聚类提示细胞可能分为三种类型或状态。\",\n    \"分组数未知，无法评估组间比较设计。\"\n  ],\n  \"uncertainty\": [\n    \"n_groups无法从提供的数据中确定。\",\n    \"n_cells_used未明确给出，可能等于n_cells。\"\n  ],\n  \"cannot_conclude\": [\n    \"无法确定实际使用的细胞数（n_cells_used）。\",\n    \"无法确定分组数（n_groups）。\"\n  ],\n  \"learning_questions\": [\n    \"n_cells_used是否与n_cells相同？\",\n    \"实验设计中有几个分组？\"\n  ],\n  \"evidence_used\": [],\n  \"claims\": [\n    {\n      \"id\": \"claim_1\",\n      \"text\": \"使用的细胞数未明确提供。\",\n      \"fact\": \"n_cells_used\",\n      \"value\": null,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_2\",\n      \"text\": \"样本数为5。\",\n      \"fact\": \"n_samples\",\n      \"value\": 5,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_3\",\n      \"text\": \"聚类数为3。\",\n      \"fact\": \"n_clusters\",\n      \"value\": 3,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_4\",\n      \"text\": \"分组数未提供。\",\n      \"fact\": \"n_groups\",\n      \"value\": null,\n      \"evidence\": []\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 318,
+      "completion_tokens": 443,
+      "total_tokens": 761,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 190
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.0099999999999998
+  },
+  "parsed": {
+    "data_facts": [
+      "输入数据包含155个细胞、5个样本和3个聚类。",
+      "未提供分组数（n_groups）的信息。"
+    ],
+    "statistical_meaning": [
+      "n_cells表示用于分析的细胞总数。",
+      "n_samples表示样本数量。",
+      "n_clusters表示聚类数量。"
+    ],
+    "biological_interpretation": [
+      "155个细胞来自5个样本，可能代表多个生物学重复。",
+      "3个聚类提示细胞可能分为三种类型或状态。",
+      "分组数未知，无法评估组间比较设计。"
+    ],
+    "uncertainty": [
+      "n_groups无法从提供的数据中确定。",
+      "n_cells_used未明确给出，可能等于n_cells。"
+    ],
+    "cannot_conclude": [
+      "无法确定实际使用的细胞数（n_cells_used）。",
+      "无法确定分组数（n_groups）。"
+    ],
+    "learning_questions": [
+      "n_cells_used是否与n_cells相同？",
+      "实验设计中有几个分组？"
+    ],
+    "evidence_used": [],
+    "claims": [
+      {
+        "id": "claim_1",
+        "text": "使用的细胞数未明确提供。",
+        "fact": "n_cells_used",
+        "value": null,
+        "evidence": []
+      },
+      {
+        "id": "claim_2",
+        "text": "样本数为5。",
+        "fact": "n_samples",
+        "value": 5,
+        "evidence": []
+      },
+      {
+        "id": "claim_3",
+        "text": "聚类数为3。",
+        "fact": "n_clusters",
+        "value": 3,
+        "evidence": []
+      },
+      {
+        "id": "claim_4",
+        "text": "分组数未提供。",
+        "fact": "n_groups",
+        "value": null,
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "partial",
+    "findings": [
+      {
+        "claim": "claim_1",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_2",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_samples = 5"
+      },
+      {
+        "claim": "claim_3",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_clusters = 3"
+      },
+      {
+        "claim": "claim_4",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_cells_used",
+      "expected": 155,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "n_samples",
+      "expected": 5,
+      "value": 5,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_clusters",
+      "expected": 3,
+      "value": 3,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_groups",
+      "expected": 2,
+      "value": null,
+      "answered": false,
+      "correct": false
+    }
+  ],
+  "prompt_chars": 1198
+}

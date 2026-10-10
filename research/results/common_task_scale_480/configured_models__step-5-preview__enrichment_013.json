@@ -1,0 +1,18 @@
+{
+  "text": "{\"claims\":[{\"fact\":\"n_terms\",\"value\":25},{\"fact\":\"n_significant\",\"value\":17},{\"fact\":\"enrichment_method\",\"value\":\"ORA\"},{\"fact\":\"significance_threshold\",\"value\":\"0.050000000000000003\"}]}",
+  "model": "step-5-preview",
+  "stop_reason": "stop",
+  "usage": {
+    "prompt_tokens": 283,
+    "completion_tokens": 269,
+    "total_tokens": 552,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "endpoint_host": "https://api.stepfun.com",
+  "elapsed_sec": 3.6
+}

@@ -1,0 +1,20 @@
+{
+  "command": [
+    "bash",
+    "tools/server-R",
+    "--vanilla",
+    "--slave",
+    "-f",
+    "tools/capture-baseline.R"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-05T08:08:30.004591+00:00",
+  "finished_utc": "2026-10-05T08:08:32.170166+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/capture-baseline-final.txt",
+    "bytes": 75,
+    "sha256": "c41ea3d5410ece6fef3d6ee65dcf01d55b5d5da7fced72aed88ab251e725f0d0"
+  }
+}

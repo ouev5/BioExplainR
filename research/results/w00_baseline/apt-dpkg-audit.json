@@ -1,0 +1,17 @@
+{
+  "command": [
+    "sudo",
+    "dpkg",
+    "--audit"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-05T07:52:51.511478+00:00",
+  "finished_utc": "2026-10-05T07:52:51.578427+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/apt-dpkg-audit.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

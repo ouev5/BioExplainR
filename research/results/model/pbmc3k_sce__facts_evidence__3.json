@@ -1,0 +1,140 @@
+{
+  "case": "pbmc3k_sce",
+  "method": "facts_evidence",
+  "replicate": 3,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-03 19:42:50 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"该数据集包含 2700 个细胞、32738 个基因特征，仅 1 个样本。\",\n    \"counts 矩阵为稀疏矩阵，维度 32738×2700，存储值 2286884 个，零值比例 0.9741。\",\n    \"QC 指标中位数为：nCount_RNA 2197、nFeature_RNA 817、percent.mt 2.03。\"\n  ],\n  \"statistical_meaning\": [\n    \"n_cells 是观测到的细胞数，不是独立生物学重复数。\",\n    \"n_features 是检测到的基因特征数，不代表全部基因都有表达。\",\n    \"n_samples=1 意味着无法进行组间统计比较。\"\n  ],\n  \"biological_interpretation\": [\n    \"PBMC 单细胞数据可用于探索细胞类型组成，但当前仅 1 个样本，无法推断群体差异。\",\n    \"线粒体比例中位数 2.03% 较低，提示多数细胞质量尚可，但最大值 22.57% 提示存在低质量细胞。\",\n    \"UMAP 仅用于可视化，不能单独证明细胞谱系或功能。\"\n  ],\n  \"uncertainty\": [\n    \"细胞数不等于生物学重复数；样本/供体才是独立重复单位。\",\n    \"UMAP 上的距离不代表真实空间距离，图形结构受参数影响。\",\n    \"仅识别到 1 个样本；组间比较的统计推断能力非常有限。\"\n  ],\n  \"cannot_conclude\": [\n    \"不能基于 1 个样本进行组间差异表达或细胞比例变化的统计推断。\",\n    \"不能仅凭 UMAP 或 cluster 编号确定细胞类型或谱系关系。\",\n    \"不能从当前数据得出任何临床或治疗相关结论。\"\n  ],\n  \"learning_questions\": [\n    \"为什么单细胞分析中不能把每个细胞当作独立重复？\",\n    \"稀疏矩阵中的零值比例高意味着什么？\",\n    \"UMAP 图上的距离为什么不能直接解释为生物学距离？\"\n  ],\n  \"evidence_used\": [\n    \"EuropePMC:MED:24926665\"\n  ],\n  \"claims\": [\n    {\n      \"id\": \"claim_n_cells\",\n      \"text\": \"细胞总数为 2700。\",\n      \"fact\": \"n_cells\",\n      \"value\": 2700,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_n_features\",\n      \"text\": \"基因特征数为 32738。\",\n      \"fact\": \"n_features\",\n      \"value\": 32738,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_n_samples\",\n      \"text\": \"样本数为 1。\",\n      \"fact\": \"n_samples\",\n      \"value\": 1,\n      \"evidence\": []\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 1473,
+      "completion_tokens": 626,
+      "total_tokens": 2099,
+      "prompt_tokens_details": {
+        "cached_tokens": 1280
+      },
+      "prompt_cache_hit_tokens": 1280,
+      "prompt_cache_miss_tokens": 193
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.81
+  },
+  "parsed": {
+    "data_facts": [
+      "该数据集包含 2700 个细胞、32738 个基因特征，仅 1 个样本。",
+      "counts 矩阵为稀疏矩阵，维度 32738×2700，存储值 2286884 个，零值比例 0.9741。",
+      "QC 指标中位数为：nCount_RNA 2197、nFeature_RNA 817、percent.mt 2.03。"
+    ],
+    "statistical_meaning": [
+      "n_cells 是观测到的细胞数，不是独立生物学重复数。",
+      "n_features 是检测到的基因特征数，不代表全部基因都有表达。",
+      "n_samples=1 意味着无法进行组间统计比较。"
+    ],
+    "biological_interpretation": [
+      "PBMC 单细胞数据可用于探索细胞类型组成，但当前仅 1 个样本，无法推断群体差异。",
+      "线粒体比例中位数 2.03% 较低，提示多数细胞质量尚可，但最大值 22.57% 提示存在低质量细胞。",
+      "UMAP 仅用于可视化，不能单独证明细胞谱系或功能。"
+    ],
+    "uncertainty": [
+      "细胞数不等于生物学重复数；样本/供体才是独立重复单位。",
+      "UMAP 上的距离不代表真实空间距离，图形结构受参数影响。",
+      "仅识别到 1 个样本；组间比较的统计推断能力非常有限。"
+    ],
+    "cannot_conclude": [
+      "不能基于 1 个样本进行组间差异表达或细胞比例变化的统计推断。",
+      "不能仅凭 UMAP 或 cluster 编号确定细胞类型或谱系关系。",
+      "不能从当前数据得出任何临床或治疗相关结论。"
+    ],
+    "learning_questions": [
+      "为什么单细胞分析中不能把每个细胞当作独立重复？",
+      "稀疏矩阵中的零值比例高意味着什么？",
+      "UMAP 图上的距离为什么不能直接解释为生物学距离？"
+    ],
+    "evidence_used": [
+      "EuropePMC:MED:24926665"
+    ],
+    "claims": [
+      {
+        "id": "claim_n_cells",
+        "text": "细胞总数为 2700。",
+        "fact": "n_cells",
+        "value": 2700,
+        "evidence": []
+      },
+      {
+        "id": "claim_n_features",
+        "text": "基因特征数为 32738。",
+        "fact": "n_features",
+        "value": 32738,
+        "evidence": []
+      },
+      {
+        "id": "claim_n_samples",
+        "text": "样本数为 1。",
+        "fact": "n_samples",
+        "value": 1,
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "(evidence_used)",
+        "check": "evidence_ids",
+        "status": "pass",
+        "detail": "all cited evidence ids were supplied"
+      },
+      {
+        "claim": "claim_n_cells",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_cells = 2700"
+      },
+      {
+        "claim": "claim_n_features",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_features = 32738"
+      },
+      {
+        "claim": "claim_n_samples",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_samples = 1"
+      }
+    ],
+    "n_claims": 3,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_cells",
+      "expected": 2700,
+      "value": 2700,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_features",
+      "expected": 32738,
+      "value": 32738,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_samples",
+      "expected": 1,
+      "value": 1,
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 5153,
+  "validation_rechecked_utc": "2026-10-03 20:09:21 UTC"
+}

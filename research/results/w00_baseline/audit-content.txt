@@ -1,0 +1,159 @@
+{
+  "main": {
+    "cases": 120,
+    "unique_target_facts": 480,
+    "requests": 1080,
+    "score_rows": 4320,
+    "methods": [
+      {
+        "method": "direct_bounded",
+        "expected": 1440,
+        "correct": 437,
+        "answered": 516,
+        "accuracy": 0.3034722222222222,
+        "coverage": 0.35833333333333334,
+        "answered_accuracy": 0.8468992248062015,
+        "calls": 360,
+        "api_success": 360,
+        "structured": 360,
+        "correct_by_repeat": {
+          "1": 149,
+          "2": 143,
+          "3": 145
+        }
+      },
+      {
+        "method": "facts_only",
+        "expected": 1440,
+        "correct": 1440,
+        "answered": 1440,
+        "accuracy": 1.0,
+        "coverage": 1.0,
+        "answered_accuracy": 1.0,
+        "calls": 360,
+        "api_success": 360,
+        "structured": 360,
+        "correct_by_repeat": {
+          "1": 480,
+          "2": 480,
+          "3": 480
+        }
+      },
+      {
+        "method": "facts_evidence",
+        "expected": 1440,
+        "correct": 1440,
+        "answered": 1440,
+        "accuracy": 1.0,
+        "coverage": 1.0,
+        "answered_accuracy": 1.0,
+        "calls": 360,
+        "api_success": 360,
+        "structured": 360,
+        "correct_by_repeat": {
+          "1": 480,
+          "2": 480,
+          "3": 480
+        }
+      }
+    ],
+    "score_policy": "saved protocol relative tolerance 1e-6"
+  },
+  "common": {
+    "cases": 120,
+    "unique_target_facts": 480,
+    "call_records": 600,
+    "score_rows": 2400,
+    "methods": [
+      {
+        "method": "bioexplainr_deterministic",
+        "mode": "deterministic_reference",
+        "statuses": [
+          "executed"
+        ],
+        "case_records": 120,
+        "expected": 480,
+        "correct": 480,
+        "answered": 480
+      },
+      {
+        "method": "configured_code_agent",
+        "mode": "command_agent",
+        "statuses": [
+          "not_configured"
+        ],
+        "case_records": 120,
+        "expected": 480,
+        "correct": 0,
+        "answered": 0
+      },
+      {
+        "method": "configured_models:deepseek-flash",
+        "mode": "openai_compatible",
+        "statuses": [
+          "executed"
+        ],
+        "case_records": 120,
+        "expected": 480,
+        "correct": 480,
+        "answered": 480
+      },
+      {
+        "method": "configured_models:step-5-preview",
+        "mode": "openai_compatible",
+        "statuses": [
+          "executed"
+        ],
+        "case_records": 120,
+        "expected": 480,
+        "correct": 480,
+        "answered": 480
+      },
+      {
+        "method": "saved_facts_only",
+        "mode": "saved_response",
+        "statuses": [
+          "missing"
+        ],
+        "case_records": 120,
+        "expected": 480,
+        "correct": 0,
+        "answered": 0
+      }
+    ],
+    "note": "Call records include deterministic, replay and not-configured methods; they are not all API requests"
+  },
+  "supporting": {
+    "public_datasets": {
+      "count": 5,
+      "statuses": {
+        "airway": "pass",
+        "PBMC3k": "pass",
+        "pasilla": "pass",
+        "ALL": "pass",
+        "bladderbatch": "pass"
+      },
+      "scope": "saved object ingestion tests, not rerun"
+    },
+    "pasilla": {
+      "checks": 30,
+      "passed": 30
+    },
+    "human_evaluation": {
+      "expert_scores": 720,
+      "user_scores": 150,
+      "expert_mean": 1.751389,
+      "user_mean": 91.98,
+      "status": "aggregate_consistency_only",
+      "raw_ratings": "unavailable_in_project",
+      "note": "No independent recomputation of SD, agreement or individual scores"
+    }
+  },
+  "paper": {
+    "supplementary_records": 2770,
+    "figure_pdfs": 35,
+    "references": 38,
+    "saved_audit_status": "pass",
+    "geometry_audit_rerun": false
+  }
+}

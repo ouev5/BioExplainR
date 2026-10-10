@@ -1,0 +1,194 @@
+{
+  "case": "single_cell_018",
+  "family": "single_cell",
+  "method": "direct_bounded",
+  "replicate": 3,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:24:07 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"数据矩阵维度为43行66列。\",\n    \"唯一测定类型为counts。\",\n    \"不同样本数为1。\"\n  ],\n  \"statistical_meaning\": [\n    \"43可能代表特征数，66可能代表细胞数。\",\n    \"counts表示原始计数数据。\",\n    \"样本数1表明所有细胞来自同一样本。\"\n  ],\n  \"biological_interpretation\": [\n    \"该数据可能来自单细胞RNA测序。\",\n    \"仅一个样本，无法进行组间比较。\",\n    \"特征数较少，可能为靶向测序或过滤后数据。\"\n  ],\n  \"uncertainty\": [\n    \"无法确定43和66分别对应细胞还是特征。\",\n    \"样本数1可能因元数据缺失导致。\",\n    \"测定类型counts可能未标准化。\"\n  ],\n  \"cannot_conclude\": [\n    \"无法确定细胞数和特征数的具体对应关系。\",\n    \"无法进行差异表达分析。\",\n    \"无法评估样本间变异。\"\n  ],\n  \"learning_questions\": [\n    \"如何从数据维度推断细胞数和特征数？\",\n    \"单样本单细胞数据有哪些分析限制？\",\n    \"counts数据是否需要标准化？\"\n  ],\n  \"evidence_used\": [\n    \"dim\",\n    \"assays\",\n    \"n_distinct_samples\"\n  ],\n  \"claims\": [\n    {\n      \"id\": \"claim_1\",\n      \"text\": \"n_cells无法从提供的数据中确定。\",\n      \"fact\": \"n_cells\",\n      \"value\": null,\n      \"evidence\": [\n        \"dim\"\n      ]\n    },\n    {\n      \"id\": \"claim_2\",\n      \"text\": \"n_features无法从提供的数据中确定。\",\n      \"fact\": \"n_features\",\n      \"value\": null,\n      \"evidence\": [\n        \"dim\"\n      ]\n    },\n    {\n      \"id\": \"claim_3\",\n      \"text\": \"n_samples为1。\",\n      \"fact\": \"n_samples\",\n      \"value\": 1,\n      \"evidence\": [\n        \"n_distinct_samples\"\n      ]\n    },\n    {\n      \"id\": \"claim_4\",\n      \"text\": \"assays为counts。\",\n      \"fact\": \"assays\",\n      \"value\": \"counts\",\n      \"evidence\": [\n        \"assays\"\n      ]\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 316,
+      "completion_tokens": 520,
+      "total_tokens": 836,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 188
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.6200000000000001
+  },
+  "parsed": {
+    "data_facts": [
+      "数据矩阵维度为43行66列。",
+      "唯一测定类型为counts。",
+      "不同样本数为1。"
+    ],
+    "statistical_meaning": [
+      "43可能代表特征数，66可能代表细胞数。",
+      "counts表示原始计数数据。",
+      "样本数1表明所有细胞来自同一样本。"
+    ],
+    "biological_interpretation": [
+      "该数据可能来自单细胞RNA测序。",
+      "仅一个样本，无法进行组间比较。",
+      "特征数较少，可能为靶向测序或过滤后数据。"
+    ],
+    "uncertainty": [
+      "无法确定43和66分别对应细胞还是特征。",
+      "样本数1可能因元数据缺失导致。",
+      "测定类型counts可能未标准化。"
+    ],
+    "cannot_conclude": [
+      "无法确定细胞数和特征数的具体对应关系。",
+      "无法进行差异表达分析。",
+      "无法评估样本间变异。"
+    ],
+    "learning_questions": [
+      "如何从数据维度推断细胞数和特征数？",
+      "单样本单细胞数据有哪些分析限制？",
+      "counts数据是否需要标准化？"
+    ],
+    "evidence_used": [
+      "dim",
+      "assays",
+      "n_distinct_samples"
+    ],
+    "claims": [
+      {
+        "id": "claim_1",
+        "text": "n_cells无法从提供的数据中确定。",
+        "fact": "n_cells",
+        "value": null,
+        "evidence": [
+          "dim"
+        ]
+      },
+      {
+        "id": "claim_2",
+        "text": "n_features无法从提供的数据中确定。",
+        "fact": "n_features",
+        "value": null,
+        "evidence": [
+          "dim"
+        ]
+      },
+      {
+        "id": "claim_3",
+        "text": "n_samples为1。",
+        "fact": "n_samples",
+        "value": 1,
+        "evidence": [
+          "n_distinct_samples"
+        ]
+      },
+      {
+        "id": "claim_4",
+        "text": "assays为counts。",
+        "fact": "assays",
+        "value": "counts",
+        "evidence": [
+          "assays"
+        ]
+      }
+    ]
+  },
+  "validation": {
+    "status": "fail",
+    "findings": [
+      {
+        "claim": "(evidence_used)",
+        "check": "evidence_ids",
+        "status": "fail",
+        "detail": "unknown evidence id(s): dim, assays, n_distinct_samples (no evidence list was supplied)"
+      },
+      {
+        "claim": "claim_1",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_1",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: dim"
+      },
+      {
+        "claim": "claim_2",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_2",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: dim"
+      },
+      {
+        "claim": "claim_3",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_samples = 1"
+      },
+      {
+        "claim": "claim_3",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: n_distinct_samples"
+      },
+      {
+        "claim": "claim_4",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      },
+      {
+        "claim": "claim_4",
+        "check": "citation",
+        "status": "fail",
+        "detail": "citation(s) not in the supplied evidence: assays"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_cells",
+      "expected": 66,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "n_features",
+      "expected": 43,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "n_samples",
+      "expected": 1,
+      "value": 1,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "assays",
+      "expected": "counts",
+      "value": "counts",
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 1204
+}

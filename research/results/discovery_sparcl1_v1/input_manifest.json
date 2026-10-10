@@ -1,0 +1,29 @@
+{
+  "downloaded": [
+    {
+      "path": "GSE34313_series_matrix.txt.gz",
+      "bytes": 1932820,
+      "sha256": "c76c4311bccd29096fd631c7ac9d3eafbb0ad5c92bc3bbe4b15b0b9eed8102a0",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE34nnn/GSE34313/matrix/GSE34313_series_matrix.txt.gz",
+      "retrieved_utc": "2026-10-08T11:08:21.763269+00:00"
+    },
+    {
+      "path": "GPL6480.annot.gz",
+      "bytes": 7380104,
+      "sha256": "aacec81b2d95f183f0827b43e769388a92917811b81920c13ecc8fe148c5a3ab",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/platforms/GPL6nnn/GPL6480/annot/GPL6480.annot.gz",
+      "retrieved_utc": "2026-10-08T11:14:52.569573+00:00"
+    }
+  ],
+  "freeze": {
+    "path": "frozen_protocol.json",
+    "bytes": 1148,
+    "sha256": "3bd88485af0f0c62b3959c6d9f928fe6f4838c0d3fd79bda9010671118bf450b"
+  },
+  "n_matrix_rows": 41000,
+  "probes": [
+    "A_23_P113351"
+  ],
+  "processed_scale": "published processed units; not re-normalized",
+  "independence": "external experiment, single cell line; donor overlap not verifiable"
+}

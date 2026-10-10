@@ -1,0 +1,147 @@
+{
+  "case": "enrichment_012",
+  "family": "enrichment",
+  "method": "direct_bounded",
+  "replicate": 3,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:23:30 UTC",
+  "response": {
+    "text": "{\"data_facts\":[\"R输出包含24行5列，但仅提供了10行。\",\"提供的行中p.adjust值介于0.01至0.050000000000000003之间。\"],\"statistical_meaning\":[\"富集分析通常使用超几何检验或Fisher精确检验计算p值，并校正为p.adjust。\",\"显著性阈值设为0.050000000000000003，但数据不完整无法可靠计数。\"],\"biological_interpretation\":[\"显著富集的通路可能揭示生物学功能，但当前数据不完整，无法进行可靠解释。\"],\"uncertainty\":[\"数据不完整（rows_complete为false），无法确定总条目数和显著条目数。\",\"提供的行可能不代表全部结果，任何计数都可能不准确。\"],\"cannot_conclude\":[\"无法计算n_terms，因为总行数未知且数据不完整。\",\"无法计算n_significant，因为缺少完整p.adjust值。\",\"无法确定enrichment_method，因为未提供具体检验方法。\",\"无法确认significance_threshold，尽管元数据提示0.05，但未在R输出中明确。\"],\"learning_questions\":[\"如何从完整的富集分析输出中正确计数显著条目？\",\"在数据不完整时，应如何报告富集分析结果？\"],\"evidence_used\":[],\"claims\":[{\"id\":\"claim_1\",\"text\":\"总条目数无法确定。\",\"fact\":\"n_terms\",\"value\":null,\"evidence\":[]},{\"id\":\"claim_2\",\"text\":\"显著条目数无法确定。\",\"fact\":\"n_significant\",\"value\":null,\"evidence\":[]},{\"id\":\"claim_3\",\"text\":\"富集方法未提供。\",\"fact\":\"enrichment_method\",\"value\":null,\"evidence\":[]},{\"id\":\"claim_4\",\"text\":\"显著性阈值未在输出中明确。\",\"fact\":\"significance_threshold\",\"value\":null,\"evidence\":[]}]}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 861,
+      "completion_tokens": 402,
+      "total_tokens": 1263,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 221
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.3799999999999999
+  },
+  "parsed": {
+    "data_facts": [
+      "R输出包含24行5列，但仅提供了10行。",
+      "提供的行中p.adjust值介于0.01至0.050000000000000003之间。"
+    ],
+    "statistical_meaning": [
+      "富集分析通常使用超几何检验或Fisher精确检验计算p值，并校正为p.adjust。",
+      "显著性阈值设为0.050000000000000003，但数据不完整无法可靠计数。"
+    ],
+    "biological_interpretation": [
+      "显著富集的通路可能揭示生物学功能，但当前数据不完整，无法进行可靠解释。"
+    ],
+    "uncertainty": [
+      "数据不完整（rows_complete为false），无法确定总条目数和显著条目数。",
+      "提供的行可能不代表全部结果，任何计数都可能不准确。"
+    ],
+    "cannot_conclude": [
+      "无法计算n_terms，因为总行数未知且数据不完整。",
+      "无法计算n_significant，因为缺少完整p.adjust值。",
+      "无法确定enrichment_method，因为未提供具体检验方法。",
+      "无法确认significance_threshold，尽管元数据提示0.05，但未在R输出中明确。"
+    ],
+    "learning_questions": [
+      "如何从完整的富集分析输出中正确计数显著条目？",
+      "在数据不完整时，应如何报告富集分析结果？"
+    ],
+    "evidence_used": [],
+    "claims": [
+      {
+        "id": "claim_1",
+        "text": "总条目数无法确定。",
+        "fact": "n_terms",
+        "value": null,
+        "evidence": []
+      },
+      {
+        "id": "claim_2",
+        "text": "显著条目数无法确定。",
+        "fact": "n_significant",
+        "value": null,
+        "evidence": []
+      },
+      {
+        "id": "claim_3",
+        "text": "富集方法未提供。",
+        "fact": "enrichment_method",
+        "value": null,
+        "evidence": []
+      },
+      {
+        "id": "claim_4",
+        "text": "显著性阈值未在输出中明确。",
+        "fact": "significance_threshold",
+        "value": null,
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "unverified",
+    "findings": [
+      {
+        "claim": "claim_1",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_2",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_3",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_4",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_terms",
+      "expected": 24,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "n_significant",
+      "expected": 19,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "enrichment_method",
+      "expected": "ORA",
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "significance_threshold",
+      "expected": 0.050000000000000003,
+      "value": null,
+      "answered": false,
+      "correct": false
+    }
+  ],
+  "prompt_chars": 2702
+}

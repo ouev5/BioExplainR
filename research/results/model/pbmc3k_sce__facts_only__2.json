@@ -1,0 +1,132 @@
+{
+  "case": "pbmc3k_sce",
+  "method": "facts_only",
+  "replicate": 2,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-03 19:42:29 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"该 SingleCellExperiment 数据集包含 2700 个细胞、32738 个基因特征，仅 1 个样本（sample_id）。\",\n    \"QC 指标中位数为：nCount_RNA 2197、nFeature_RNA 817、percent.mt 2.03。\",\n    \"counts 矩阵为稀疏矩阵，维度 32738×2700，零值比例约 0.9741。\"\n  ],\n  \"statistical_meaning\": [\n    \"n_cells 是观测到的细胞总数，不是独立生物学重复数；n_samples=1 意味着没有组间比较的统计推断基础。\",\n    \"QC 分位数描述的是细胞层面的分布，不能直接当作样本层面的统计量。\",\n    \"稀疏矩阵的零值比例反映数据稀疏性，与表达量高低无直接统计等价关系。\"\n  ],\n  \"biological_interpretation\": [\n    \"PBMC 单细胞数据通常包含多种免疫细胞类型，但本数据未提供聚类或注释结果，无法确认具体细胞类型。\",\n    \"线粒体基因比例中位数较低（2.03%），提示多数细胞质量尚可，但最大值 22.57% 提示存在少数高线粒体细胞。\",\n    \"仅 1 个样本，无法评估个体间生物学变异。\"\n  ],\n  \"uncertainty\": [\n    \"细胞数不等于生物学重复数；样本/供体才是独立重复单位，把细胞当重复易产生伪重复假阳性。\",\n    \"仅识别到 1 个样本，组间比较的统计推断能力非常有限。\",\n    \"assay 数值只检查了有限子集（稀疏矩阵读取存储槽位），零值比例基于存储值计数，显式存储的零被计为非零。\"\n  ],\n  \"cannot_conclude\": [\n    \"不能基于本数据得出任何组间差异表达或细胞类型比例差异的结论。\",\n    \"不能从 UMAP 距离推断细胞谱系或真实空间关系。\",\n    \"不能仅凭 cluster 编号赋予生物学含义，注释需基于多个 marker 组合并结合组织背景。\"\n  ],\n  \"learning_questions\": [\n    \"为什么单细胞分析中不能把每个细胞当作独立重复？\",\n    \"QC 指标（nCount、nFeature、percent.mt）分别反映什么？\",\n    \"稀疏矩阵的零值比例对下游分析有什么影响？\"\n  ],\n  \"evidence_used\": [],\n  \"claims\": [\n    {\n      \"id\": \"claim_n_cells\",\n      \"text\": \"细胞总数为 2700。\",\n      \"fact\": \"n_cells\",\n      \"value\": 2700,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_n_features\",\n      \"text\": \"基因特征数为 32738。\",\n      \"fact\": \"n_features\",\n      \"value\": 32738,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_n_samples\",\n      \"text\": \"样本数为 1。\",\n      \"fact\": \"n_samples\",\n      \"value\": 1,\n      \"evidence\": []\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 1326,
+      "completion_tokens": 682,
+      "total_tokens": 2008,
+      "prompt_tokens_details": {
+        "cached_tokens": 1152
+      },
+      "prompt_cache_hit_tokens": 1152,
+      "prompt_cache_miss_tokens": 174
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 3.37
+  },
+  "parsed": {
+    "data_facts": [
+      "该 SingleCellExperiment 数据集包含 2700 个细胞、32738 个基因特征，仅 1 个样本（sample_id）。",
+      "QC 指标中位数为：nCount_RNA 2197、nFeature_RNA 817、percent.mt 2.03。",
+      "counts 矩阵为稀疏矩阵，维度 32738×2700，零值比例约 0.9741。"
+    ],
+    "statistical_meaning": [
+      "n_cells 是观测到的细胞总数，不是独立生物学重复数；n_samples=1 意味着没有组间比较的统计推断基础。",
+      "QC 分位数描述的是细胞层面的分布，不能直接当作样本层面的统计量。",
+      "稀疏矩阵的零值比例反映数据稀疏性，与表达量高低无直接统计等价关系。"
+    ],
+    "biological_interpretation": [
+      "PBMC 单细胞数据通常包含多种免疫细胞类型，但本数据未提供聚类或注释结果，无法确认具体细胞类型。",
+      "线粒体基因比例中位数较低（2.03%），提示多数细胞质量尚可，但最大值 22.57% 提示存在少数高线粒体细胞。",
+      "仅 1 个样本，无法评估个体间生物学变异。"
+    ],
+    "uncertainty": [
+      "细胞数不等于生物学重复数；样本/供体才是独立重复单位，把细胞当重复易产生伪重复假阳性。",
+      "仅识别到 1 个样本，组间比较的统计推断能力非常有限。",
+      "assay 数值只检查了有限子集（稀疏矩阵读取存储槽位），零值比例基于存储值计数，显式存储的零被计为非零。"
+    ],
+    "cannot_conclude": [
+      "不能基于本数据得出任何组间差异表达或细胞类型比例差异的结论。",
+      "不能从 UMAP 距离推断细胞谱系或真实空间关系。",
+      "不能仅凭 cluster 编号赋予生物学含义，注释需基于多个 marker 组合并结合组织背景。"
+    ],
+    "learning_questions": [
+      "为什么单细胞分析中不能把每个细胞当作独立重复？",
+      "QC 指标（nCount、nFeature、percent.mt）分别反映什么？",
+      "稀疏矩阵的零值比例对下游分析有什么影响？"
+    ],
+    "evidence_used": [],
+    "claims": [
+      {
+        "id": "claim_n_cells",
+        "text": "细胞总数为 2700。",
+        "fact": "n_cells",
+        "value": 2700,
+        "evidence": []
+      },
+      {
+        "id": "claim_n_features",
+        "text": "基因特征数为 32738。",
+        "fact": "n_features",
+        "value": 32738,
+        "evidence": []
+      },
+      {
+        "id": "claim_n_samples",
+        "text": "样本数为 1。",
+        "fact": "n_samples",
+        "value": 1,
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "claim_n_cells",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_cells = 2700"
+      },
+      {
+        "claim": "claim_n_features",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_features = 32738"
+      },
+      {
+        "claim": "claim_n_samples",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_samples = 1"
+      }
+    ],
+    "n_claims": 3,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_cells",
+      "expected": 2700,
+      "value": 2700,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_features",
+      "expected": 32738,
+      "value": 32738,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_samples",
+      "expected": 1,
+      "value": 1,
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 4625,
+  "validation_rechecked_utc": "2026-10-03 20:09:20 UTC"
+}

@@ -1,0 +1,18 @@
+{
+  "command": [
+    "/tmp/opencode/paper-venv/bin/python",
+    "research/audit_submission.py",
+    "--output",
+    "research/results/w00_baseline/submission-audit.json"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-05T08:08:30.064719+00:00",
+  "finished_utc": "2026-10-05T08:08:46.302528+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/submission-audit.txt",
+    "bytes": 17034,
+    "sha256": "c95bf7045fb5914056b2e52dfcd7dbdbe7e3ced855dd49aa151efdfd3291b045"
+  }
+}

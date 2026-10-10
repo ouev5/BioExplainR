@@ -1,0 +1,5 @@
+"package","task","status","detail","elapsed_sec","version"
+"iSEE","Initialize SCE with UMAP and QC color mapping","pass","shiny.appobj",0.314882755279541,"2.14.0"
+"GPTCelltype","Build cell-type prompt from real PBMC marker table","pass","clusters=3; marker_rows=30; no API request",0,"1.0.1"
+"ellmer","Six saved responses through local OpenAI-compatible transport","pass","12/12 client calls preserve response text; no live inference",NA,"0.5.0"
+"BioExplainR + DESeq2","Independent pasilla count matrix and DESeq2 fact extraction","pass","features=14599; samples=7; significant=218; 30/30 facts match",NA,"0.3.1"

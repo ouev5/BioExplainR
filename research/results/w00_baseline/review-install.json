@@ -1,0 +1,19 @@
+{
+  "command": [
+    "R",
+    "CMD",
+    "INSTALL",
+    "--library=/tmp/opencode/bioexplainr-install-review",
+    "BioExplainR_0.4.0.9000.tar.gz"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-08T08:23:59.164913+00:00",
+  "finished_utc": "2026-10-08T08:24:15.685774+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/review-install.txt",
+    "bytes": 446,
+    "sha256": "6e2449b82751c933b550afb8c63a68ac88571a2166aa498a8655efeeceedd1f6"
+  }
+}

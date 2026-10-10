@@ -1,0 +1,4 @@
+[
+  {"case_id":"fixture-001","dataset_id":"fixture","family":"differential_expression","question":"Which supplied value is the computed feature count?","facts":{"n_features":3},"required_response_items":["n_features"]},
+  {"case_id":"fixture-002","dataset_id":"fixture","family":"differential_expression","question":"What is the supplied adjusted p-value?","facts":{"padj":1e-132},"required_response_items":["padj"]}
+]

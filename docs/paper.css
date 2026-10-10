@@ -1,0 +1,39 @@
+html { background: #fff; color: #202020; }
+body {
+  max-width: 960px;
+  margin: 32px auto;
+  padding: 0 24px;
+  font-family: "Noto Serif CJK SC", "Microsoft YaHei", serif;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+h1 { font-size: 26px; margin-top: 36px; }
+h2 { font-size: 21px; margin-top: 28px; }
+h3 { font-size: 18px; }
+h1, h2, h3 { font-family: "Noto Sans CJK SC", sans-serif; line-height: 1.4; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; margin: 20px 0; table-layout: fixed; }
+th, td { border: 1px solid #d4d4d4; padding: 7px 9px; vertical-align: top; overflow-wrap: anywhere; }
+th { background: #f3f5f4; text-align: left; }
+img { max-width: 100%; height: auto; }
+figure { margin: 24px 0; }
+figcaption { font-size: 14px; color: #505050; }
+pre { overflow-x: auto; background: #f4f4f4; padding: 16px; font-size: 13px; }
+code, a { overflow-wrap: anywhere; }
+a { color: #176552; }
+@media (max-width: 600px) {
+  body { padding: 0 14px; font-size: 15px; }
+  h1 { font-size: 23px; }
+  table { font-size: 12px; }
+  th, td { padding: 5px; }
+}
+@media print {
+  body { max-width: none; margin: 0; padding: 0; font-size: 10.5pt; }
+  pre, figure, tr { break-inside: avoid; }
+  h1, h2, h3 { break-after: avoid; }
+  figure img { max-height: 190mm; object-fit: contain; }
+  table { font-size: 9pt; }
+  th, td { padding: 4px; }
+}

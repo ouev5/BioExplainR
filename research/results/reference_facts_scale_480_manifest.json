@@ -1,0 +1,17 @@
+{
+  "generated_utc": "2026-10-05 00:51:26 UTC",
+  "purpose": "Protocol and serialization scale benchmark; not independent biological evidence.",
+  "n_cases": 120,
+  "n_facts": 480,
+  "case_families": {
+    "cell_composition": 15,
+    "de": 30,
+    "enrichment": 20,
+    "generic": 15,
+    "pca": 20,
+    "single_cell": 20
+  },
+  "facts_file": "/home/ubuntu/creatR/research/results/reference_facts_scale_480.json",
+  "seed_policy": "PCA cases use seeds 1001 through 1020; other cases are deterministic.",
+  "package": "BioExplainR"
+}

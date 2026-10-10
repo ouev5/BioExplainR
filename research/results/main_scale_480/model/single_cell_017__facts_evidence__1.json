@@ -1,0 +1,160 @@
+{
+  "case": "single_cell_017",
+  "family": "single_cell",
+  "method": "facts_evidence",
+  "replicate": 1,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:17:03 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"该数据集包含 64 个细胞、42 个特征（基因）和 3 个样本。\",\n    \"仅有一个 assay，名称为 counts，其数值为整数样，零值比例为 0.0908。\",\n    \"每个样本的细胞数在 21 到 22 之间，没有细胞缺失样本标签。\"\n  ],\n  \"statistical_meaning\": [\n    \"样本列 sample_id 有 3 个水平，但细胞数（64）不等于独立生物学重复数。\",\n    \"counts 矩阵的数值范围从 0 到 10，中位数为 5，提示测序深度较低或数据经过筛选。\",\n    \"未提供降维结果或差异分析结果，因此无法进行聚类或统计检验。\"\n  ],\n  \"biological_interpretation\": [\n    \"基于现有证据，无法将任何基因或细胞类型与生物学功能关联。\",\n    \"文献检索命中 CRISPLD2 与糖皮质激素反应相关（证据 EuropePMC:MED:24926665），但该文献是否适用于本数据集未知。\",\n    \"由于缺少物种信息，任何生物学解释都需用户确认物种背景。\"\n  ],\n  \"uncertainty\": [\n    \"细胞数不等于生物学重复数；样本/供体才是独立重复单位。\",\n    \"未找到常见 QC 指标列（nCount/nFeature/percent.mt），无法评估质控。\",\n    \"assay 数值只检查了有限子集（稀疏矩阵读取存储槽位，稠密矩阵最多抽样一个小块）。\"\n  ],\n  \"cannot_conclude\": [\n    \"不能得出任何基因差异表达或细胞类型注释的结论。\",\n    \"不能根据 UMAP/t-SNE 距离推断细胞谱系或空间关系（未提供降维结果）。\",\n    \"不能将文献命中视为支持本数据集任何具体生物学论断的证据。\"\n  ],\n  \"learning_questions\": [\n    \"为什么在单细胞分析中不能把每个细胞当作独立重复？\",\n    \"counts assay 的零值比例和数值分布对下游分析有什么影响？\",\n    \"如果缺少物种信息，会如何影响基因功能和通路解释？\"\n  ],\n  \"evidence_used\": [\n    \"EuropePMC:MED:24926665\"\n  ],\n  \"claims\": [\n    {\n      \"id\": \"claim_n_cells\",\n      \"text\": \"细胞总数为 64。\",\n      \"fact\": \"n_cells\",\n      \"value\": 64,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_n_features\",\n      \"text\": \"特征（基因）总数为 42。\",\n      \"fact\": \"n_features\",\n      \"value\": 42,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_n_samples\",\n      \"text\": \"样本数为 3。\",\n      \"fact\": \"n_samples\",\n      \"value\": 3,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_assays\",\n      \"text\": \"assay 名称为 counts。\",\n      \"fact\": \"assays\",\n      \"value\": \"counts\",\n      \"evidence\": []\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 1243,
+      "completion_tokens": 686,
+      "total_tokens": 1929,
+      "prompt_tokens_details": {
+        "cached_tokens": 1024
+      },
+      "prompt_cache_hit_tokens": 1024,
+      "prompt_cache_miss_tokens": 219
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.98
+  },
+  "parsed": {
+    "data_facts": [
+      "该数据集包含 64 个细胞、42 个特征（基因）和 3 个样本。",
+      "仅有一个 assay，名称为 counts，其数值为整数样，零值比例为 0.0908。",
+      "每个样本的细胞数在 21 到 22 之间，没有细胞缺失样本标签。"
+    ],
+    "statistical_meaning": [
+      "样本列 sample_id 有 3 个水平，但细胞数（64）不等于独立生物学重复数。",
+      "counts 矩阵的数值范围从 0 到 10，中位数为 5，提示测序深度较低或数据经过筛选。",
+      "未提供降维结果或差异分析结果，因此无法进行聚类或统计检验。"
+    ],
+    "biological_interpretation": [
+      "基于现有证据，无法将任何基因或细胞类型与生物学功能关联。",
+      "文献检索命中 CRISPLD2 与糖皮质激素反应相关（证据 EuropePMC:MED:24926665），但该文献是否适用于本数据集未知。",
+      "由于缺少物种信息，任何生物学解释都需用户确认物种背景。"
+    ],
+    "uncertainty": [
+      "细胞数不等于生物学重复数；样本/供体才是独立重复单位。",
+      "未找到常见 QC 指标列（nCount/nFeature/percent.mt），无法评估质控。",
+      "assay 数值只检查了有限子集（稀疏矩阵读取存储槽位，稠密矩阵最多抽样一个小块）。"
+    ],
+    "cannot_conclude": [
+      "不能得出任何基因差异表达或细胞类型注释的结论。",
+      "不能根据 UMAP/t-SNE 距离推断细胞谱系或空间关系（未提供降维结果）。",
+      "不能将文献命中视为支持本数据集任何具体生物学论断的证据。"
+    ],
+    "learning_questions": [
+      "为什么在单细胞分析中不能把每个细胞当作独立重复？",
+      "counts assay 的零值比例和数值分布对下游分析有什么影响？",
+      "如果缺少物种信息，会如何影响基因功能和通路解释？"
+    ],
+    "evidence_used": [
+      "EuropePMC:MED:24926665"
+    ],
+    "claims": [
+      {
+        "id": "claim_n_cells",
+        "text": "细胞总数为 64。",
+        "fact": "n_cells",
+        "value": 64,
+        "evidence": []
+      },
+      {
+        "id": "claim_n_features",
+        "text": "特征（基因）总数为 42。",
+        "fact": "n_features",
+        "value": 42,
+        "evidence": []
+      },
+      {
+        "id": "claim_n_samples",
+        "text": "样本数为 3。",
+        "fact": "n_samples",
+        "value": 3,
+        "evidence": []
+      },
+      {
+        "id": "claim_assays",
+        "text": "assay 名称为 counts。",
+        "fact": "assays",
+        "value": "counts",
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "(evidence_used)",
+        "check": "evidence_ids",
+        "status": "pass",
+        "detail": "all cited evidence ids were supplied"
+      },
+      {
+        "claim": "claim_n_cells",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_cells = 64"
+      },
+      {
+        "claim": "claim_n_features",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_features = 42"
+      },
+      {
+        "claim": "claim_n_samples",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_samples = 3"
+      },
+      {
+        "claim": "claim_assays",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_cells",
+      "expected": 64,
+      "value": 64,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_features",
+      "expected": 42,
+      "value": 42,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_samples",
+      "expected": 3,
+      "value": 3,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "assays",
+      "expected": "counts",
+      "value": "counts",
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 4482
+}

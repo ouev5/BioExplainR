@@ -1,0 +1,100 @@
+{
+  "analysis_type": "single_cell",
+  "source_class": "SingleCellExperiment",
+  "source_package": "SingleCellExperiment",
+  "source_status": "verified_class",
+  "facts": {
+    "n_cells": 2700,
+    "qc": {
+      "n_counts": {
+        "column": "nCount_RNA",
+        "quantiles": {
+          "min": 548,
+          "q25": 1758,
+          "median": 2197,
+          "q75": 2763,
+          "max": 15840
+        }
+      },
+      "n_features": {
+        "column": "nFeature_RNA",
+        "quantiles": {
+          "min": 212,
+          "q25": 690,
+          "median": 817,
+          "q75": 953.2,
+          "max": 3422
+        }
+      },
+      "pct_mt": {
+        "column": "percent.mt",
+        "quantiles": {
+          "min": 0,
+          "q25": 1.536,
+          "median": 2.03,
+          "q75": 2.64,
+          "max": 22.57
+        }
+      }
+    },
+    "sample_column": "sample_id",
+    "n_samples": 1,
+    "n_cells_missing_sample": 0,
+    "cells_per_sample_range": [2700, 2700],
+    "n_features": 32738,
+    "assays": "counts",
+    "assay_summaries": {
+      "counts": {
+        "class": "dgCMatrix",
+        "dim": [32738, 2700],
+        "inspection": "sparse_slots",
+        "n_stored_values": 2286884,
+        "fraction_zero": 0.9741,
+        "n_na": 0,
+        "n_na_scope": "first_1e6_stored_values_only",
+        "fraction_zero_scope": "from stored-value count (explicit stored zeros counted as non-zero)",
+        "integer_like": true,
+        "nonzero_quantiles": {
+          "min": 1,
+          "q25": 1,
+          "median": 1,
+          "q75": 2,
+          "max": 419
+        },
+        "values_inspected": 1000000
+      }
+    },
+    "reductions": "UMAP",
+    "reduction_dims": 2,
+    "alt_experiments": []
+  },
+  "top_features": null,
+  "plot_mapping": null,
+  "provenance": {
+    "adapter": "single_cell_experiment",
+    "created": "2026-10-05 12:42:52 CST",
+    "bioexplainr_version": "0.3.1",
+    "thresholds": {
+      "padj": 0.05,
+      "lfc": 0,
+      "p": 0.05
+    },
+    "p_adjust_method": null,
+    "n_top": 10,
+    "input_summary": {
+      "name": null,
+      "class": "SingleCellExperiment",
+      "type": "S4",
+      "is_s4": true,
+      "size": "31.4 Mb",
+      "dim": [32738, 2700]
+    }
+  },
+  "uncertainty": ["The number of cells is not the number of biological replicates; samples/donors are the independent units of replication. Treating cells as replicates in single-cell differential analysis easily yields false positives (pseudoreplication).", "Distances on a UMAP/t-SNE do not represent true spatial distances; the layout depends on parameters and cannot by itself prove cell lineage.", "Cluster numbers have no biological meaning by themselves; cell-type annotation should rely on a combination of several markers and tissue context.", "Only 1 samples were identified; the statistical power for between-group comparison is very limited.", "Only a limited subset of the assay values was inspected (stored slots for sparse matrices, at most one sampled block for dense matrices)."],
+  "metadata": {
+    "species": "Homo sapiens",
+    "tissue": "PBMC"
+  },
+  "adapter": "single_cell_experiment",
+  "language": "en"
+}

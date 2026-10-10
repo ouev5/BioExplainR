@@ -1,0 +1,20 @@
+{
+  "command": [
+    "python3",
+    "tools/sandbox-boundary-check.py",
+    "--library",
+    "/tmp/opencode/bioexplainr-review-core/library",
+    "--output",
+    "research/results/w00_baseline/review-sandbox-result.json"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-08T08:26:13.988296+00:00",
+  "finished_utc": "2026-10-08T08:26:20.764861+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/review-sandbox.txt",
+    "bytes": 117,
+    "sha256": "18ea08fe48494f0fdc4ff9482a543b7163110932e5c8d939ac6bd7d8b5a8e3ca"
+  }
+}

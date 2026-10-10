@@ -1,0 +1,152 @@
+{
+  "case": "airway_pca",
+  "method": "facts_only",
+  "replicate": 2,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-03 19:42:28 UTC",
+  "response": {
+    "text": "{\"data_facts\": [\"本次分析为PCA，共8个观测（样本）、500个变量（特征）。\", \"PC1解释方差比例为0.478429，PC2为0.233834。\", \"数据已中心化（centered=true），未标准化（scaled=false）。\"], \"statistical_meaning\": [\"PC1与PC2合计解释约71.2%的方差，是主要变异方向。\", \"载荷绝对值较大的基因对相应主成分贡献较大，但不代表表达上调或下调。\", \"方差解释比例是描述性统计量，不是显著性检验结果。\"], \"biological_interpretation\": [\"若样本在主成分上按分组分离，可能提示组间存在整体表达差异（假设，需分组信息验证）。\", \"高载荷基因可作为后续通路分析的候选，但需物种与注释信息支持（假设）。\", \"批次效应同样可能造成分离，不能仅凭PCA判定生物学机制。\"], \"uncertainty\": [\"样本在主成分上的分离不等于生物学机制，批次效应也可能造成分离。\", \"未发送样本坐标或样本名称；分组分离需结合样本分组信息判断。\", \"未提供物种（species），生物学解释需要用户确认物种背景。\"], \"cannot_conclude\": [\"不能判断样本是否按实验分组分离（缺少样本坐标与分组信息）。\", \"不能推断基因功能、通路激活方向或临床意义。\", \"不能把方差解释比例当作统计显著性。\"], \"learning_questions\": [\"PCA中载荷与表达变化方向有什么区别？\", \"为什么中心化但不标准化会影响主成分结果？\", \"如何用样本坐标和分组信息判断分离是否具有生物学意义？\"], \"evidence_used\": [], \"claims\": [{\"id\": \"c1\", \"text\": \"观测数为8。\", \"fact\": \"n_observations\", \"value\": 8, \"evidence\": []}, {\"id\": \"c2\", \"text\": \"变量数为500。\", \"fact\": \"n_variables\", \"value\": 500, \"evidence\": []}, {\"id\": \"c3\", \"text\": \"PC1解释方差比例为0.478429。\", \"fact\": \"variance_explained.1\", \"value\": 0.478429, \"evidence\": []}, {\"id\": \"c4\", \"text\": \"PC2解释方差比例为0.233834。\", \"fact\": \"variance_explained.2\", \"value\": 0.233834, \"evidence\": []}]}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 1290,
+      "completion_tokens": 525,
+      "total_tokens": 1815,
+      "prompt_tokens_details": {
+        "cached_tokens": 1152
+      },
+      "prompt_cache_hit_tokens": 1152,
+      "prompt_cache_miss_tokens": 138
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.71
+  },
+  "parsed": {
+    "data_facts": [
+      "本次分析为PCA，共8个观测（样本）、500个变量（特征）。",
+      "PC1解释方差比例为0.478429，PC2为0.233834。",
+      "数据已中心化（centered=true），未标准化（scaled=false）。"
+    ],
+    "statistical_meaning": [
+      "PC1与PC2合计解释约71.2%的方差，是主要变异方向。",
+      "载荷绝对值较大的基因对相应主成分贡献较大，但不代表表达上调或下调。",
+      "方差解释比例是描述性统计量，不是显著性检验结果。"
+    ],
+    "biological_interpretation": [
+      "若样本在主成分上按分组分离，可能提示组间存在整体表达差异（假设，需分组信息验证）。",
+      "高载荷基因可作为后续通路分析的候选，但需物种与注释信息支持（假设）。",
+      "批次效应同样可能造成分离，不能仅凭PCA判定生物学机制。"
+    ],
+    "uncertainty": [
+      "样本在主成分上的分离不等于生物学机制，批次效应也可能造成分离。",
+      "未发送样本坐标或样本名称；分组分离需结合样本分组信息判断。",
+      "未提供物种（species），生物学解释需要用户确认物种背景。"
+    ],
+    "cannot_conclude": [
+      "不能判断样本是否按实验分组分离（缺少样本坐标与分组信息）。",
+      "不能推断基因功能、通路激活方向或临床意义。",
+      "不能把方差解释比例当作统计显著性。"
+    ],
+    "learning_questions": [
+      "PCA中载荷与表达变化方向有什么区别？",
+      "为什么中心化但不标准化会影响主成分结果？",
+      "如何用样本坐标和分组信息判断分离是否具有生物学意义？"
+    ],
+    "evidence_used": [],
+    "claims": [
+      {
+        "id": "c1",
+        "text": "观测数为8。",
+        "fact": "n_observations",
+        "value": 8,
+        "evidence": []
+      },
+      {
+        "id": "c2",
+        "text": "变量数为500。",
+        "fact": "n_variables",
+        "value": 500,
+        "evidence": []
+      },
+      {
+        "id": "c3",
+        "text": "PC1解释方差比例为0.478429。",
+        "fact": "variance_explained.1",
+        "value": 0.478429,
+        "evidence": []
+      },
+      {
+        "id": "c4",
+        "text": "PC2解释方差比例为0.233834。",
+        "fact": "variance_explained.2",
+        "value": 0.233834,
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "c1",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_observations = 8"
+      },
+      {
+        "claim": "c2",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_variables = 500"
+      },
+      {
+        "claim": "c3",
+        "check": "value",
+        "status": "pass",
+        "detail": "variance_explained.1 = 0.478429"
+      },
+      {
+        "claim": "c4",
+        "check": "value",
+        "status": "pass",
+        "detail": "variance_explained.2 = 0.233834"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_observations",
+      "expected": 8,
+      "value": 8,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_variables",
+      "expected": 500,
+      "value": 500,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "variance_explained.1",
+      "expected": 0.47842864474,
+      "value": 0.478429,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "variance_explained.2",
+      "expected": 0.23383404452,
+      "value": 0.233834,
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 4318,
+  "validation_rechecked_utc": "2026-10-03 20:09:20 UTC"
+}

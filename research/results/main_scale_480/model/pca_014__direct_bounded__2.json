@@ -1,0 +1,146 @@
+{
+  "case": "pca_014",
+  "family": "pca",
+  "method": "direct_bounded",
+  "replicate": 2,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:18:26 UTC",
+  "response": {
+    "text": "{\"data_facts\":[\"观测数为12，变量数为26。\",\"第一主成分标准差为2.6019076139109529，第二主成分标准差为2.0996931618124193。\"],\"statistical_meaning\":[\"标准差反映主成分的方差大小，方差解释比例由标准差平方除以总方差得到。\",\"总方差为所有主成分标准差的平方和。\"],\"biological_interpretation\":[\"前两个主成分解释了样本中部分变异，可能反映主要的生物学或技术变异。\",\"具体生物学意义需结合载荷和样本分组信息。\"],\"uncertainty\":[\"方差解释比例基于给定标准差计算，未提供其他主成分的贡献细节。\",\"计算假设主成分分析基于相关矩阵或协方差矩阵，但未明确。\"],\"cannot_conclude\":[\"无法确定前两个主成分对应的具体生物学因素。\",\"无法判断方差解释比例是否具有统计学显著性。\"],\"learning_questions\":[\"如何从主成分分析结果中解释方差解释比例？\",\"主成分分析中标准差与方差解释比例的关系是什么？\"],\"evidence_used\":[],\"claims\":[{\"id\":\"claim1\",\"text\":\"观测数为12。\",\"fact\":\"n_observations\",\"value\":12,\"evidence\":[]},{\"id\":\"claim2\",\"text\":\"变量数为26。\",\"fact\":\"n_variables\",\"value\":26,\"evidence\":[]},{\"id\":\"claim3\",\"text\":\"第一主成分方差解释比例为0.26038176139109529。\",\"fact\":\"variance_explained.1\",\"value\":\"0.26038176139109529\",\"evidence\":[]},{\"id\":\"claim4\",\"text\":\"第二主成分方差解释比例为0.16961531618824193。\",\"fact\":\"variance_explained.2\",\"value\":\"0.16961531618824193\",\"evidence\":[]}]}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 440,
+      "completion_tokens": 379,
+      "total_tokens": 819,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 184
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.3100000000000001
+  },
+  "parsed": {
+    "data_facts": [
+      "观测数为12，变量数为26。",
+      "第一主成分标准差为2.6019076139109529，第二主成分标准差为2.0996931618124193。"
+    ],
+    "statistical_meaning": [
+      "标准差反映主成分的方差大小，方差解释比例由标准差平方除以总方差得到。",
+      "总方差为所有主成分标准差的平方和。"
+    ],
+    "biological_interpretation": [
+      "前两个主成分解释了样本中部分变异，可能反映主要的生物学或技术变异。",
+      "具体生物学意义需结合载荷和样本分组信息。"
+    ],
+    "uncertainty": [
+      "方差解释比例基于给定标准差计算，未提供其他主成分的贡献细节。",
+      "计算假设主成分分析基于相关矩阵或协方差矩阵，但未明确。"
+    ],
+    "cannot_conclude": [
+      "无法确定前两个主成分对应的具体生物学因素。",
+      "无法判断方差解释比例是否具有统计学显著性。"
+    ],
+    "learning_questions": [
+      "如何从主成分分析结果中解释方差解释比例？",
+      "主成分分析中标准差与方差解释比例的关系是什么？"
+    ],
+    "evidence_used": [],
+    "claims": [
+      {
+        "id": "claim1",
+        "text": "观测数为12。",
+        "fact": "n_observations",
+        "value": 12,
+        "evidence": []
+      },
+      {
+        "id": "claim2",
+        "text": "变量数为26。",
+        "fact": "n_variables",
+        "value": 26,
+        "evidence": []
+      },
+      {
+        "id": "claim3",
+        "text": "第一主成分方差解释比例为0.26038176139109529。",
+        "fact": "variance_explained.1",
+        "value": "0.26038176139109529",
+        "evidence": []
+      },
+      {
+        "id": "claim4",
+        "text": "第二主成分方差解释比例为0.16961531618824193。",
+        "fact": "variance_explained.2",
+        "value": "0.16961531618824193",
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "fail",
+    "findings": [
+      {
+        "claim": "claim1",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_observations = 12"
+      },
+      {
+        "claim": "claim2",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_variables = 26"
+      },
+      {
+        "claim": "claim3",
+        "check": "value",
+        "status": "fail",
+        "detail": "claimed 0.260382 but variance_explained.1 = 0.238807"
+      },
+      {
+        "claim": "claim4",
+        "check": "value",
+        "status": "fail",
+        "detail": "claimed 0.169615 but variance_explained.2 = 0.155516"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_observations",
+      "expected": 12,
+      "value": 12,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_variables",
+      "expected": 26,
+      "value": 26,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "variance_explained.1",
+      "expected": 0.2388070968088738,
+      "value": "0.26038176139109529",
+      "answered": true,
+      "correct": false
+    },
+    {
+      "fact": "variance_explained.2",
+      "expected": 0.15551602697122949,
+      "value": "0.16961531618824193",
+      "answered": true,
+      "correct": false
+    }
+  ],
+  "prompt_chars": 1468
+}

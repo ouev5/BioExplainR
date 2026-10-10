@@ -1,0 +1,13 @@
+{
+  "package_version": "0.3.1",
+  "purpose": "Small hand-computable software smoke, not a research result",
+  "context": ["analysis_type", "source_class", "source_package", "source_status", "facts", "top_features", "plot_mapping", "provenance", "uncertainty", "metadata", "adapter", "language"],
+  "context_provenance": ["adapter", "created", "bioexplainr_version", "thresholds", "p_adjust_method", "n_top", "input_summary", "columns_used"],
+  "payload": ["analysis_type", "source", "study_context", "facts", "top_features", "plot_mapping", "thresholds", "uncertainty"],
+  "explanation": ["context", "local", "llm", "llm_meta", "evidence", "evidence_trace", "evidence_retrieval", "cross_check", "level", "language", "verification", "created", "validation"],
+  "llm_meta_local": ["used", "reason"],
+  "validation": ["status", "findings", "n_claims", "note"],
+  "validation_findings": ["claim", "check", "status", "detail"],
+  "evidence": ["id", "source", "source_id", "title", "claim", "url", "type", "version", "accessed", "note", "supplied_by"],
+  "project": ["title", "items", "dependencies", "summary", "consistency", "metadata", "created", "version", "interpretation"]
+}

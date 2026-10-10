@@ -1,0 +1,249 @@
+{
+  "case": "reactome_ora",
+  "method": "facts_evidence",
+  "replicate": 3,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-03 19:35:33 UTC",
+  "response": {
+    "text": "{\"data_facts\": [\"本次 ORA 分析共检验了 1104 个基因集（term）。\", \"在 p.adjust < 0.05 的阈值下，只有 1 个基因集达到显著。\", \"富集方法为 ORA（过表达分析/超几何检验）。\", \"显著基因集的 Count 范围为 16 到 16，即唯一显著项包含 16 个输入基因。\", \"背景基因集大小（由 BgRatio 分母推断）为 8887。\", \"输入基因列表中成功映射到基因集的基因数为 547。\", \"p 值依据为校正后 p 值列（adjusted_column）。\", \"显著性阈值为 0.05。\", \"校正后 p 值为 NA 的条目数为 0。\", \"排名第一的条目为 Interleukin-4 and Interleukin-13 signaling（R-HSA-6785807），Count = 16，GeneRatio = 16/547，BgRatio = 79/8887，pvalue = 0.00002，p.adjust = 0.02159。\"], \"statistical_meaning\": [\"ORA 检验的是：在给定背景基因集（universe）下，输入基因列表与某个基因集的重叠数是否超过随机期望。\", \"p 值越小表示观察到的重叠越难用随机抽样解释；p.adjust 是对多重检验（1104 个基因集）的校正。\", \"只有 1 个基因集通过 p.adjust < 0.05，说明在控制假阳性后证据非常有限。\", \"GeneRatio（如 16/547）是输入列表中命中该基因集的比例；BgRatio（如 79/8887）是背景中该基因集的比例，两者比较构成富集信号。\", \"Count 是命中基因的绝对数量，本身没有方向性，不能解读为上调或下调。\"], \"biological_interpretation\": [\"唯一达到校正显著的通路是 Interleukin-4 and Interleukin-13 signaling（R-HSA-6785807），提示输入基因列表（airway_lfc1）中与该信号通路相关的基因存在富集（假设性解释）。\", \"排名靠前但未通过校正阈值的条目包括 G alpha (q) signalling events、Ethanol oxidation、Collagen chain trimerization、Integrin cell surface interactions 等，可作为探索性线索，但不能作为显著结论。\", \"多个与细胞外基质（胶原三聚化、锚定纤维形成、非整合素膜-ECM 相互作用、整合素细胞表面相互作用）相关的条目同时出现在前列，提示 ECM 相关基因可能在输入列表中聚集（假设性解释）。\", \"文献检索命中一篇关于气道平滑肌细胞中糖皮质激素响应基因 CRISPLD2 与细胞因子功能的研究（EuropePMC:MED:24926665），仅表示检索词匹配，不构成对上述通路结论的支持。\"], \"uncertainty\": [\"来源包（clusterProfiler/DOSE）仅为根据列名推测，未确证。\", \"ORA 本身没有激活/抑制方向，不能据此认定通路被激活或抑制。\", \"ORA 结果依赖背景基因集（universe）的选择；背景不合适时 p 值可能被高估或低估。\", \"该富集结果派生自 airway_lfc1，属于派生证据，不构成对上游结果的独立验证。\", \"除唯一显著项外，其余条目的 p.adjust 均大于 0.05（如 0.1576、0.1714），其排名不应被当作显著发现。\", \"输入基因列表的构建方式（阈值 lfc = 0、p = 0.05）会影响哪些基因进入 ORA，从而影响结果。\"], \"cannot_conclude\": [\"不能得出任何通路被激活或抑制的结论（ORA 无方向性）。\", \"不能仅凭 1 个显著基因集推断整体生物学机制或疾病因果关系。\", \"不能把未通过校正阈值的条目（如 G alpha (q) signalling events、Ethanol oxidation）当作显著富集。\", \"不能从 Count 数值推断基因表达上调或下调。\", \"不能把该结果视为对 airway_lfc1 上游差异表达分析的独立验证。\", \"不能基于检索命中的文献（EuropePMC:MED:24926665）声称其结论支持本分析中的任何具体通路。\"], \"learning_questions\": [\"ORA 与 GSEA 的核心区别是什么？为什么 ORA 没有方向性？\", \"p 值与 p.adjust 有什么区别？为什么多重检验校正会大幅减少显著条目？\", \"GeneRatio 与 BgRatio 的比值如何体现富集程度？\", \"背景基因集（universe）的选择会怎样影响 ORA 的 p 值？\", \"当只有 1 个基因集显著时，应如何谨慎地报告和解释结果？\", \"为什么 Count 是 16 不能说明该通路被激活？\"], \"evidence_used\": [\"EuropePMC:MED:24926665\"], \"claims\": [{\"id\": \"c1\", \"text\": \"本次 ORA 分析共检验了 1104 个基因集。\", \"fact\": \"n_terms\", \"value\": 1104, \"evidence\": []}, {\"id\": \"c2\", \"text\": \"在 p.adjust < 0.05 阈值下显著的基因集数量为 1。\", \"fact\": \"n_significant\", \"value\": 1, \"evidence\": []}, {\"id\": \"c3\", \"text\": \"富集方法为 ORA。\", \"fact\": \"enrichment_method\", \"value\": \"ORA\", \"evidence\": []}, {\"id\": \"c4\", \"text\": \"p 值依据为校正后 p 值列。\", \"fact\": \"p_value_basis\", \"value\": \"adjusted_column\", \"evidence\": []}, {\"id\": \"c5\", \"text\": \"显著性阈值为 0.05。\", \"fact\": \"significance_threshold\", \"value\": 0.05, \"evidence\": []}, {\"id\": \"c6\", \"text\": \"校正后 p 值为 NA 的条目数为 0。\", \"fact\": \"n_na_padj\", \"value\": 0, \"evidence\": []}, {\"id\": \"c7\", \"text\": \"显著基因集的 Count 下限为 16。\", \"fact\": \"count_range_significant.1\", \"value\": 16, \"evidence\": []}, {\"id\": \"c8\", \"text\": \"显著基因集的 Count 上限为 16。\", \"fact\": \"count_range_significant.2\", \"value\": 16, \"evidence\": []}, {\"id\": \"c9\", \"text\": \"由 BgRatio 分母推断的背景基因集大小为 8887。\", \"fact\": \"background_size_from_bgratio\", \"value\": 8887, \"evidence\": []}, {\"id\": \"c10\", \"text\": \"由 GeneRatio 分母推断的输入基因映射数为 547。\", \"fact\": \"input_genes_mapped_from_generatio\", \"value\": 547, \"evidence\": []}]}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 2521,
+      "completion_tokens": 1539,
+      "total_tokens": 4060,
+      "prompt_tokens_details": {
+        "cached_tokens": 2304
+      },
+      "prompt_cache_hit_tokens": 2304,
+      "prompt_cache_miss_tokens": 217
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 6.42
+  },
+  "parsed": {
+    "data_facts": [
+      "本次 ORA 分析共检验了 1104 个基因集（term）。",
+      "在 p.adjust < 0.05 的阈值下，只有 1 个基因集达到显著。",
+      "富集方法为 ORA（过表达分析/超几何检验）。",
+      "显著基因集的 Count 范围为 16 到 16，即唯一显著项包含 16 个输入基因。",
+      "背景基因集大小（由 BgRatio 分母推断）为 8887。",
+      "输入基因列表中成功映射到基因集的基因数为 547。",
+      "p 值依据为校正后 p 值列（adjusted_column）。",
+      "显著性阈值为 0.05。",
+      "校正后 p 值为 NA 的条目数为 0。",
+      "排名第一的条目为 Interleukin-4 and Interleukin-13 signaling（R-HSA-6785807），Count = 16，GeneRatio = 16/547，BgRatio = 79/8887，pvalue = 0.00002，p.adjust = 0.02159。"
+    ],
+    "statistical_meaning": [
+      "ORA 检验的是：在给定背景基因集（universe）下，输入基因列表与某个基因集的重叠数是否超过随机期望。",
+      "p 值越小表示观察到的重叠越难用随机抽样解释；p.adjust 是对多重检验（1104 个基因集）的校正。",
+      "只有 1 个基因集通过 p.adjust < 0.05，说明在控制假阳性后证据非常有限。",
+      "GeneRatio（如 16/547）是输入列表中命中该基因集的比例；BgRatio（如 79/8887）是背景中该基因集的比例，两者比较构成富集信号。",
+      "Count 是命中基因的绝对数量，本身没有方向性，不能解读为上调或下调。"
+    ],
+    "biological_interpretation": [
+      "唯一达到校正显著的通路是 Interleukin-4 and Interleukin-13 signaling（R-HSA-6785807），提示输入基因列表（airway_lfc1）中与该信号通路相关的基因存在富集（假设性解释）。",
+      "排名靠前但未通过校正阈值的条目包括 G alpha (q) signalling events、Ethanol oxidation、Collagen chain trimerization、Integrin cell surface interactions 等，可作为探索性线索，但不能作为显著结论。",
+      "多个与细胞外基质（胶原三聚化、锚定纤维形成、非整合素膜-ECM 相互作用、整合素细胞表面相互作用）相关的条目同时出现在前列，提示 ECM 相关基因可能在输入列表中聚集（假设性解释）。",
+      "文献检索命中一篇关于气道平滑肌细胞中糖皮质激素响应基因 CRISPLD2 与细胞因子功能的研究（EuropePMC:MED:24926665），仅表示检索词匹配，不构成对上述通路结论的支持。"
+    ],
+    "uncertainty": [
+      "来源包（clusterProfiler/DOSE）仅为根据列名推测，未确证。",
+      "ORA 本身没有激活/抑制方向，不能据此认定通路被激活或抑制。",
+      "ORA 结果依赖背景基因集（universe）的选择；背景不合适时 p 值可能被高估或低估。",
+      "该富集结果派生自 airway_lfc1，属于派生证据，不构成对上游结果的独立验证。",
+      "除唯一显著项外，其余条目的 p.adjust 均大于 0.05（如 0.1576、0.1714），其排名不应被当作显著发现。",
+      "输入基因列表的构建方式（阈值 lfc = 0、p = 0.05）会影响哪些基因进入 ORA，从而影响结果。"
+    ],
+    "cannot_conclude": [
+      "不能得出任何通路被激活或抑制的结论（ORA 无方向性）。",
+      "不能仅凭 1 个显著基因集推断整体生物学机制或疾病因果关系。",
+      "不能把未通过校正阈值的条目（如 G alpha (q) signalling events、Ethanol oxidation）当作显著富集。",
+      "不能从 Count 数值推断基因表达上调或下调。",
+      "不能把该结果视为对 airway_lfc1 上游差异表达分析的独立验证。",
+      "不能基于检索命中的文献（EuropePMC:MED:24926665）声称其结论支持本分析中的任何具体通路。"
+    ],
+    "learning_questions": [
+      "ORA 与 GSEA 的核心区别是什么？为什么 ORA 没有方向性？",
+      "p 值与 p.adjust 有什么区别？为什么多重检验校正会大幅减少显著条目？",
+      "GeneRatio 与 BgRatio 的比值如何体现富集程度？",
+      "背景基因集（universe）的选择会怎样影响 ORA 的 p 值？",
+      "当只有 1 个基因集显著时，应如何谨慎地报告和解释结果？",
+      "为什么 Count 是 16 不能说明该通路被激活？"
+    ],
+    "evidence_used": [
+      "EuropePMC:MED:24926665"
+    ],
+    "claims": [
+      {
+        "id": "c1",
+        "text": "本次 ORA 分析共检验了 1104 个基因集。",
+        "fact": "n_terms",
+        "value": 1104,
+        "evidence": []
+      },
+      {
+        "id": "c2",
+        "text": "在 p.adjust < 0.05 阈值下显著的基因集数量为 1。",
+        "fact": "n_significant",
+        "value": 1,
+        "evidence": []
+      },
+      {
+        "id": "c3",
+        "text": "富集方法为 ORA。",
+        "fact": "enrichment_method",
+        "value": "ORA",
+        "evidence": []
+      },
+      {
+        "id": "c4",
+        "text": "p 值依据为校正后 p 值列。",
+        "fact": "p_value_basis",
+        "value": "adjusted_column",
+        "evidence": []
+      },
+      {
+        "id": "c5",
+        "text": "显著性阈值为 0.05。",
+        "fact": "significance_threshold",
+        "value": 0.05,
+        "evidence": []
+      },
+      {
+        "id": "c6",
+        "text": "校正后 p 值为 NA 的条目数为 0。",
+        "fact": "n_na_padj",
+        "value": 0,
+        "evidence": []
+      },
+      {
+        "id": "c7",
+        "text": "显著基因集的 Count 下限为 16。",
+        "fact": "count_range_significant.1",
+        "value": 16,
+        "evidence": []
+      },
+      {
+        "id": "c8",
+        "text": "显著基因集的 Count 上限为 16。",
+        "fact": "count_range_significant.2",
+        "value": 16,
+        "evidence": []
+      },
+      {
+        "id": "c9",
+        "text": "由 BgRatio 分母推断的背景基因集大小为 8887。",
+        "fact": "background_size_from_bgratio",
+        "value": 8887,
+        "evidence": []
+      },
+      {
+        "id": "c10",
+        "text": "由 GeneRatio 分母推断的输入基因映射数为 547。",
+        "fact": "input_genes_mapped_from_generatio",
+        "value": 547,
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "(evidence_used)",
+        "check": "evidence_ids",
+        "status": "pass",
+        "detail": "all cited evidence ids were supplied"
+      },
+      {
+        "claim": "c1",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_terms = 1104"
+      },
+      {
+        "claim": "c2",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_significant = 1"
+      },
+      {
+        "claim": "c3",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      },
+      {
+        "claim": "c4",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      },
+      {
+        "claim": "c5",
+        "check": "value",
+        "status": "pass",
+        "detail": "significance_threshold = 0.05"
+      },
+      {
+        "claim": "c6",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_na_padj = 0"
+      },
+      {
+        "claim": "c7",
+        "check": "value",
+        "status": "pass",
+        "detail": "count_range_significant.1 = 16"
+      },
+      {
+        "claim": "c8",
+        "check": "value",
+        "status": "pass",
+        "detail": "count_range_significant.2 = 16"
+      },
+      {
+        "claim": "c9",
+        "check": "value",
+        "status": "pass",
+        "detail": "background_size_from_bgratio = 8887"
+      },
+      {
+        "claim": "c10",
+        "check": "value",
+        "status": "pass",
+        "detail": "input_genes_mapped_from_generatio = 547"
+      }
+    ],
+    "n_claims": 10,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_terms",
+      "expected": 1104,
+      "value": 1104,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_significant",
+      "expected": 1,
+      "value": 1,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "enrichment_method",
+      "expected": "ORA",
+      "value": "ORA",
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 7559
+}

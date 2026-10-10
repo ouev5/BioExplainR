@@ -1,0 +1,20 @@
+{
+  "command": [
+    "env",
+    "R_LIBS=BioExplainR.Rcheck",
+    "Rscript",
+    "--vanilla",
+    "tools/offline-smoke.R",
+    "research/results/w00_baseline/paper-cn-full-smoke"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-08T09:24:45.646399+00:00",
+  "finished_utc": "2026-10-08T09:24:56.593454+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/paper-cn-installed-smoke.txt",
+    "bytes": 277,
+    "sha256": "f3b0fee6f04c321fe30e22a8cb5a51e5f42f4cedfb465f9de6baaf95c3314a66"
+  }
+}

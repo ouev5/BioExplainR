@@ -1,0 +1,181 @@
+{
+  "case": "airway_lfc0",
+  "method": "facts_evidence",
+  "replicate": 1,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-03 19:42:14 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"本次差异表达分析共包含 22369 个特征。\",\n    \"在 padj < 0.05 且 |log2FC| > 0 的阈值下，显著特征数为 4030。\",\n    \"其中上调 2208 个，下调 1822 个。\",\n    \"有 5204 个特征的 padj 为 NA。\"\n  ],\n  \"statistical_meaning\": [\n    \"n_features 是纳入结果表的基因/特征总数，不代表全部参与统计检验。\",\n    \"n_significant 是在指定阈值下同时满足校正 p 值和 log2FC 阈值的特征数。\",\n    \"n_up 与 n_down 是显著特征按 log2FC 符号划分的计数，计数本身不带方向。\"\n  ],\n  \"biological_interpretation\": [\n    \"地塞米松处理 vs 未处理在转录组层面存在广泛差异，提示糖皮质激素可调控大量基因（假设）。\",\n    \"上调基因数略多于下调基因数，但需谨慎解读，因为计数不反映效应大小。\",\n    \"文献检索命中 CRISPLD2 为糖皮质激素响应基因（证据 EuropePMC:MED:24926665），但未评估其是否支持本分析结论。\"\n  ],\n  \"uncertainty\": [\n    \"log2FC 似乎经过收缩（shrinkage），收缩后的效应量更保守，适合排序和可视化。\",\n    \"DESeq2 中 padj 为 NA 常由独立过滤、全零计数或极端离群值导致，这些基因未参与 FDR 计数。\",\n    \"n_na_padj 为 5204，意味着这些特征未纳入多重检验校正后的显著性判定。\"\n  ],\n  \"cannot_conclude\": [\n    \"不能从计数推断具体基因的功能或临床意义。\",\n    \"不能从 ORA 或本摘要推断激活方向（上调/下调）的因果机制。\",\n    \"不能将细胞系或样本视为重复，也不能推断个体间变异。\"\n  ],\n  \"learning_questions\": [\n    \"为什么 padj 为 NA 的基因不参与 FDR 计数？\",\n    \"log2FC 收缩对差异表达结果排序有什么影响？\",\n    \"如何区分统计显著性与生物学显著性？\"\n  ],\n  \"evidence_used\": [\n    \"EuropePMC:MED:24926665\"\n  ],\n  \"claims\": [\n    {\n      \"id\": \"c1\",\n      \"text\": \"特征总数\",\n      \"fact\": \"n_features\",\n      \"value\": 22369,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"c2\",\n      \"text\": \"显著特征数\",\n      \"fact\": \"n_significant\",\n      \"value\": 4030,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"c3\",\n      \"text\": \"上调特征数\",\n      \"fact\": \"n_up\",\n      \"value\": 2208,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"c4\",\n      \"text\": \"下调特征数\",\n      \"fact\": \"n_down\",\n      \"value\": 1822,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"c5\",\n      \"text\": \"padj 为 NA 的特征数\",\n      \"fact\": \"n_na_padj\",\n      \"value\": 5204,\n      \"evidence\": []\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 1997,
+      "completion_tokens": 745,
+      "total_tokens": 2742,
+      "prompt_tokens_details": {
+        "cached_tokens": 1792
+      },
+      "prompt_cache_hit_tokens": 1792,
+      "prompt_cache_miss_tokens": 205
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 3.63
+  },
+  "parsed": {
+    "data_facts": [
+      "本次差异表达分析共包含 22369 个特征。",
+      "在 padj < 0.05 且 |log2FC| > 0 的阈值下，显著特征数为 4030。",
+      "其中上调 2208 个，下调 1822 个。",
+      "有 5204 个特征的 padj 为 NA。"
+    ],
+    "statistical_meaning": [
+      "n_features 是纳入结果表的基因/特征总数，不代表全部参与统计检验。",
+      "n_significant 是在指定阈值下同时满足校正 p 值和 log2FC 阈值的特征数。",
+      "n_up 与 n_down 是显著特征按 log2FC 符号划分的计数，计数本身不带方向。"
+    ],
+    "biological_interpretation": [
+      "地塞米松处理 vs 未处理在转录组层面存在广泛差异，提示糖皮质激素可调控大量基因（假设）。",
+      "上调基因数略多于下调基因数，但需谨慎解读，因为计数不反映效应大小。",
+      "文献检索命中 CRISPLD2 为糖皮质激素响应基因（证据 EuropePMC:MED:24926665），但未评估其是否支持本分析结论。"
+    ],
+    "uncertainty": [
+      "log2FC 似乎经过收缩（shrinkage），收缩后的效应量更保守，适合排序和可视化。",
+      "DESeq2 中 padj 为 NA 常由独立过滤、全零计数或极端离群值导致，这些基因未参与 FDR 计数。",
+      "n_na_padj 为 5204，意味着这些特征未纳入多重检验校正后的显著性判定。"
+    ],
+    "cannot_conclude": [
+      "不能从计数推断具体基因的功能或临床意义。",
+      "不能从 ORA 或本摘要推断激活方向（上调/下调）的因果机制。",
+      "不能将细胞系或样本视为重复，也不能推断个体间变异。"
+    ],
+    "learning_questions": [
+      "为什么 padj 为 NA 的基因不参与 FDR 计数？",
+      "log2FC 收缩对差异表达结果排序有什么影响？",
+      "如何区分统计显著性与生物学显著性？"
+    ],
+    "evidence_used": [
+      "EuropePMC:MED:24926665"
+    ],
+    "claims": [
+      {
+        "id": "c1",
+        "text": "特征总数",
+        "fact": "n_features",
+        "value": 22369,
+        "evidence": []
+      },
+      {
+        "id": "c2",
+        "text": "显著特征数",
+        "fact": "n_significant",
+        "value": 4030,
+        "evidence": []
+      },
+      {
+        "id": "c3",
+        "text": "上调特征数",
+        "fact": "n_up",
+        "value": 2208,
+        "evidence": []
+      },
+      {
+        "id": "c4",
+        "text": "下调特征数",
+        "fact": "n_down",
+        "value": 1822,
+        "evidence": []
+      },
+      {
+        "id": "c5",
+        "text": "padj 为 NA 的特征数",
+        "fact": "n_na_padj",
+        "value": 5204,
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "(evidence_used)",
+        "check": "evidence_ids",
+        "status": "pass",
+        "detail": "all cited evidence ids were supplied"
+      },
+      {
+        "claim": "c1",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_features = 22369"
+      },
+      {
+        "claim": "c2",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_significant = 4030"
+      },
+      {
+        "claim": "c3",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_up = 2208"
+      },
+      {
+        "claim": "c4",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_down = 1822"
+      },
+      {
+        "claim": "c5",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_na_padj = 5204"
+      }
+    ],
+    "n_claims": 5,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_features",
+      "expected": 22369,
+      "value": 22369,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_significant",
+      "expected": 4030,
+      "value": 4030,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_up",
+      "expected": 2208,
+      "value": 2208,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_down",
+      "expected": 1822,
+      "value": 1822,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_na_padj",
+      "expected": 5204,
+      "value": 5204,
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 6314,
+  "validation_rechecked_utc": "2026-10-03 20:09:20 UTC"
+}

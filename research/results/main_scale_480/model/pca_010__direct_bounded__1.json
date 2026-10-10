@@ -1,0 +1,146 @@
+{
+  "case": "pca_010",
+  "family": "pca",
+  "method": "direct_bounded",
+  "replicate": 1,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:13:03 UTC",
+  "response": {
+    "text": "{\n  \"data_facts\": [\n    \"观测数为8，变量数为22。\",\n    \"第一主成分标准差为2.649531743815742，第二主成分标准差为2.1726354539477981。\"\n  ],\n  \"statistical_meaning\": [\n    \"观测数表示样本量，变量数表示特征维度。\",\n    \"标准差反映各主成分的离散程度，方差解释比例需基于全部标准差计算。\"\n  ],\n  \"biological_interpretation\": [\n    \"样本量较小，可能限制统计功效。\",\n    \"变量数远大于样本数，需注意过拟合风险。\"\n  ],\n  \"uncertainty\": [\n    \"未提供总方差或全部主成分标准差，无法精确计算方差解释比例。\",\n    \"仅凭标准差无法判断生物学意义。\"\n  ],\n  \"cannot_conclude\": [\n    \"无法确定第一和第二主成分的方差解释比例。\",\n    \"无法评估样本分组或处理效应。\"\n  ],\n  \"learning_questions\": [\n    \"如何根据主成分标准差计算方差解释比例？\",\n    \"样本量小且变量多时，主成分分析应注意什么？\"\n  ],\n  \"evidence_used\": [],\n  \"claims\": [\n    {\n      \"id\": \"claim_1\",\n      \"text\": \"观测数为8。\",\n      \"fact\": \"n_observations\",\n      \"value\": 8,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_2\",\n      \"text\": \"变量数为22。\",\n      \"fact\": \"n_variables\",\n      \"value\": 22,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_3\",\n      \"text\": \"第一主成分方差解释比例无法确定。\",\n      \"fact\": \"variance_explained.1\",\n      \"value\": null,\n      \"evidence\": []\n    },\n    {\n      \"id\": \"claim_4\",\n      \"text\": \"第二主成分方差解释比例无法确定。\",\n      \"fact\": \"variance_explained.2\",\n      \"value\": null,\n      \"evidence\": []\n    }\n  ]\n}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 400,
+      "completion_tokens": 456,
+      "total_tokens": 856,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 144
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.3199999999999998
+  },
+  "parsed": {
+    "data_facts": [
+      "观测数为8，变量数为22。",
+      "第一主成分标准差为2.649531743815742，第二主成分标准差为2.1726354539477981。"
+    ],
+    "statistical_meaning": [
+      "观测数表示样本量，变量数表示特征维度。",
+      "标准差反映各主成分的离散程度，方差解释比例需基于全部标准差计算。"
+    ],
+    "biological_interpretation": [
+      "样本量较小，可能限制统计功效。",
+      "变量数远大于样本数，需注意过拟合风险。"
+    ],
+    "uncertainty": [
+      "未提供总方差或全部主成分标准差，无法精确计算方差解释比例。",
+      "仅凭标准差无法判断生物学意义。"
+    ],
+    "cannot_conclude": [
+      "无法确定第一和第二主成分的方差解释比例。",
+      "无法评估样本分组或处理效应。"
+    ],
+    "learning_questions": [
+      "如何根据主成分标准差计算方差解释比例？",
+      "样本量小且变量多时，主成分分析应注意什么？"
+    ],
+    "evidence_used": [],
+    "claims": [
+      {
+        "id": "claim_1",
+        "text": "观测数为8。",
+        "fact": "n_observations",
+        "value": 8,
+        "evidence": []
+      },
+      {
+        "id": "claim_2",
+        "text": "变量数为22。",
+        "fact": "n_variables",
+        "value": 22,
+        "evidence": []
+      },
+      {
+        "id": "claim_3",
+        "text": "第一主成分方差解释比例无法确定。",
+        "fact": "variance_explained.1",
+        "value": null,
+        "evidence": []
+      },
+      {
+        "id": "claim_4",
+        "text": "第二主成分方差解释比例无法确定。",
+        "fact": "variance_explained.2",
+        "value": null,
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "partial",
+    "findings": [
+      {
+        "claim": "claim_1",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_observations = 8"
+      },
+      {
+        "claim": "claim_2",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_variables = 22"
+      },
+      {
+        "claim": "claim_3",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      },
+      {
+        "claim": "claim_4",
+        "check": "reference",
+        "status": "unverified",
+        "detail": "fact reference exists, but no value or direction was checked"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_observations",
+      "expected": 8,
+      "value": 8,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_variables",
+      "expected": 22,
+      "value": 22,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "variance_explained.1",
+      "expected": 0.31461754603352449,
+      "value": null,
+      "answered": false,
+      "correct": false
+    },
+    {
+      "fact": "variance_explained.2",
+      "expected": 0.21155262062501687,
+      "value": null,
+      "answered": false,
+      "correct": false
+    }
+  ],
+  "prompt_chars": 1385
+}

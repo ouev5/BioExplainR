@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/tmp/opencode/paper-venv/bin/python",
+    "research/paper_cn_revision/audit_revision.py"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-08T11:26:30.919093+00:00",
+  "finished_utc": "2026-10-08T11:26:39.512058+00:00",
+  "exit_code": 1,
+  "status": "fail",
+  "log": {
+    "path": "research/results/w00_baseline/revision-document-audit.txt",
+    "bytes": 829,
+    "sha256": "b6536be7e0f1bae6c1a0f180ee5934178ff5fbd31a764c3a9977f7b6a5f142d7"
+  }
+}

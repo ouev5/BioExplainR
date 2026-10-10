@@ -1,0 +1,152 @@
+{
+  "case": "single_cell_020",
+  "family": "single_cell",
+  "method": "facts_only",
+  "replicate": 2,
+  "requested_model": "deepseek-flash",
+  "requested_thinking": "disabled",
+  "requested_temperature": 0,
+  "created_utc": "2026-10-05 02:20:31 UTC",
+  "response": {
+    "text": "{\"data_facts\": [\"该数据集包含 70 个细胞、45 个特征（基因），来自 3 个样本。\", \"唯一提供的 assay 为 counts，其矩阵维度为 45×70。\", \"counts 矩阵共检查 3150 个值，无缺失值，零值比例为 0.0911。\"], \"statistical_meaning\": [\"细胞数（70）是观测单位数量，不等于独立生物学重复数；独立重复单位是样本/供体（3 个）。\", \"特征数（45）表示纳入分析的基因数量，不代表全部转录组。\", \"counts 为整数型计数矩阵，适合作为计数模型（如负二项）的输入。\"], \"biological_interpretation\": [\"样本数仅 3 个，样本间差异的统计推断能力有限，任何细胞类型或状态差异都只能作为假设。\", \"45 个特征规模较小，可能只覆盖部分标记基因，生物学结论需结合组织背景确认。\", \"未提供物种信息，基因功能与细胞类型解释需用户确认物种背景。\"], \"uncertainty\": [\"细胞数不等于生物学重复数；样本/供体才是独立重复单位，把细胞当重复易产生伪重复假阳性。\", \"未找到常见 QC 指标列（nCount/nFeature/percent.mt），无法评估质控。\", \"assay 数值只检查了有限子集，且未提供物种，生物学解释需用户确认。\"], \"cannot_conclude\": [\"不能仅凭 3 个样本得出组间差异显著或细胞类型比例的总体结论。\", \"不能从当前事实推断细胞类型、谱系关系或激活方向。\", \"不能评估数据质量是否合格，因为缺少 QC 指标。\"], \"learning_questions\": [\"为什么单细胞分析中细胞数不能当作生物学重复数？\", \"counts assay 的整数计数对下游统计模型有什么影响？\", \"在只有 3 个样本时，如何设计差异分析以避免伪重复？\"], \"evidence_used\": [], \"claims\": [{\"id\": \"c1\", \"text\": \"细胞数为 70。\", \"fact\": \"n_cells\", \"value\": 70, \"evidence\": []}, {\"id\": \"c2\", \"text\": \"特征数为 45。\", \"fact\": \"n_features\", \"value\": 45, \"evidence\": []}, {\"id\": \"c3\", \"text\": \"样本数为 3。\", \"fact\": \"n_samples\", \"value\": 3, \"evidence\": []}, {\"id\": \"c4\", \"text\": \"assay 类型为 counts。\", \"fact\": \"assays\", \"value\": \"counts\", \"evidence\": []}]}",
+    "model": "deepseek-flash",
+    "stop_reason": "stop",
+    "usage": {
+      "prompt_tokens": 1096,
+      "completion_tokens": 583,
+      "total_tokens": 1679,
+      "prompt_tokens_details": {
+        "cached_tokens": 896
+      },
+      "prompt_cache_hit_tokens": 896,
+      "prompt_cache_miss_tokens": 200
+    },
+    "endpoint_host": "https://api.deepseek.com",
+    "elapsed_sec": 2.9300000000000002
+  },
+  "parsed": {
+    "data_facts": [
+      "该数据集包含 70 个细胞、45 个特征（基因），来自 3 个样本。",
+      "唯一提供的 assay 为 counts，其矩阵维度为 45×70。",
+      "counts 矩阵共检查 3150 个值，无缺失值，零值比例为 0.0911。"
+    ],
+    "statistical_meaning": [
+      "细胞数（70）是观测单位数量，不等于独立生物学重复数；独立重复单位是样本/供体（3 个）。",
+      "特征数（45）表示纳入分析的基因数量，不代表全部转录组。",
+      "counts 为整数型计数矩阵，适合作为计数模型（如负二项）的输入。"
+    ],
+    "biological_interpretation": [
+      "样本数仅 3 个，样本间差异的统计推断能力有限，任何细胞类型或状态差异都只能作为假设。",
+      "45 个特征规模较小，可能只覆盖部分标记基因，生物学结论需结合组织背景确认。",
+      "未提供物种信息，基因功能与细胞类型解释需用户确认物种背景。"
+    ],
+    "uncertainty": [
+      "细胞数不等于生物学重复数；样本/供体才是独立重复单位，把细胞当重复易产生伪重复假阳性。",
+      "未找到常见 QC 指标列（nCount/nFeature/percent.mt），无法评估质控。",
+      "assay 数值只检查了有限子集，且未提供物种，生物学解释需用户确认。"
+    ],
+    "cannot_conclude": [
+      "不能仅凭 3 个样本得出组间差异显著或细胞类型比例的总体结论。",
+      "不能从当前事实推断细胞类型、谱系关系或激活方向。",
+      "不能评估数据质量是否合格，因为缺少 QC 指标。"
+    ],
+    "learning_questions": [
+      "为什么单细胞分析中细胞数不能当作生物学重复数？",
+      "counts assay 的整数计数对下游统计模型有什么影响？",
+      "在只有 3 个样本时，如何设计差异分析以避免伪重复？"
+    ],
+    "evidence_used": [],
+    "claims": [
+      {
+        "id": "c1",
+        "text": "细胞数为 70。",
+        "fact": "n_cells",
+        "value": 70,
+        "evidence": []
+      },
+      {
+        "id": "c2",
+        "text": "特征数为 45。",
+        "fact": "n_features",
+        "value": 45,
+        "evidence": []
+      },
+      {
+        "id": "c3",
+        "text": "样本数为 3。",
+        "fact": "n_samples",
+        "value": 3,
+        "evidence": []
+      },
+      {
+        "id": "c4",
+        "text": "assay 类型为 counts。",
+        "fact": "assays",
+        "value": "counts",
+        "evidence": []
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "findings": [
+      {
+        "claim": "c1",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_cells = 70"
+      },
+      {
+        "claim": "c2",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_features = 45"
+      },
+      {
+        "claim": "c3",
+        "check": "value",
+        "status": "pass",
+        "detail": "n_samples = 3"
+      },
+      {
+        "claim": "c4",
+        "check": "value",
+        "status": "pass",
+        "detail": "value matches fact"
+      }
+    ],
+    "n_claims": 4,
+    "note": "Consistency with computed facts only; this does not establish scientific correctness."
+  },
+  "scores": [
+    {
+      "fact": "n_cells",
+      "expected": 70,
+      "value": 70,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_features",
+      "expected": 45,
+      "value": 45,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "n_samples",
+      "expected": 3,
+      "value": 3,
+      "answered": true,
+      "correct": true
+    },
+    {
+      "fact": "assays",
+      "expected": "counts",
+      "value": "counts",
+      "answered": true,
+      "correct": true
+    }
+  ],
+  "prompt_chars": 3954
+}
