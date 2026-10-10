@@ -1,0 +1,25 @@
+{
+  "status": "pass",
+  "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2023/03/PXD033504/HTPCsSecretome_72h_1uMdex.7z",
+  "start": 39583776,
+  "end": 39845919,
+  "last_modified": "Sat, 11 Mar 2023 11:50:58 GMT",
+  "body": {
+    "path": "research/results/discovery_secretome_v1/archives/72h/parts/39583776-39845919.bin",
+    "bytes": 262144,
+    "sha256": "96467eac39b0482ad549bbdd3d708cbb0398200f54c3596149c1d4a1b04bb498"
+  },
+  "attempts": [
+    {
+      "utc": "2026-10-09T23:58:08.749862+00:00",
+      "returncode": 0,
+      "bytes": 262144,
+      "stderr": "",
+      "header": {
+        "path": "research/results/discovery_secretome_v1/archives/72h/parts/39583776-39845919.attempt1.headers.txt",
+        "bytes": 472,
+        "sha256": "c4674c1fd0d9d57346a5aeba75672590951adaad5f167b1baed8ac5565acf9c2"
+      }
+    }
+  ]
+}
