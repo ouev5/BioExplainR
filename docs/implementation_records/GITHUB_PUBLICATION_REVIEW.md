@@ -15,7 +15,7 @@
 |R 包构建与检查|新临时目录构建成功；`R CMD check --no-manual --no-vignettes --no-build-vignettes` 为 Status: OK，0 ERROR / WARNING / NOTE|
 |安装后离线工作流|Imports-only 独立库实际安装通过；context → 声明核对 → 覆盖 / 方向关系项目 → HTML 报告通过；README 快速示例实际执行通过|
 |离线配套检查|5 个契约示例；3 个冻结基准测试；2 个分段下载测试；5 个 current 审计损坏探针均通过|
-|GitHub 创建|公开仓库 https://github.com/ouev5/BioExplainR 已创建，创建后核实为空；推送进行中|
+|GitHub 创建与推送|公开仓库 https://github.com/ouev5/BioExplainR 已创建；源码 / 文档 / 研究文件已全部推送至 main（远程不含按负责人选择省略的 CI 工作流）|
 |发布内容扫描|38,781 个暂存文件及 5 个 LFS 实体扫描 pass，常见凭据格式发现 0；历史失败响应按原始字节扫描|
 
 上皮封存的 rgo 文档记录通过
@@ -47,6 +47,15 @@
 - 后续推送被 GitHub 明确拒绝：令牌没有 Workflows 写权限，不能创建 `.github/workflows/R-CMD-check.yaml`。
 - 负责人确认“先上传项目”，同意远程先省略工作流。本地 `.github/workflows/R-CMD-check.yaml` 及含工作流的旧分支完整保留；远程发布使用独立历史，文件树与已审计暂存树仅在工作流和本次发布记录上不同。
 - 当前远程没有运行自动 CI；未来取得 Workflows 写权限后可补传本地工作流。
+
+## 最终远程核验
+
+- 大目录拆为 39 个小批次，每批提交均经 GitHub API 确认后继续；5 个 LFS 对象全部上传成功，`git lfs fsck` 为 OK。
+- 完整研究文件树提交：`2e3738a63f8fb620a92d335b3230ed0883bd002b`。
+- GitHub API 返回的 tree 与本地完全一致：`69dfafcd0a1b2bb3c3cccb2c905f2ebf9840c3b7`；该树包含 38,780 个文件。
+- 本记录随后独立提交更新发布状态；上述哈希固定对应完整项目文件树，后续文档提交另有自己的哈希。
+- 远程默认分支 main，公开且非空；GitHub Actions 实际运行数 0。
+- 本次以开发版代码仓库形式上传，正式版本 release / DOI 状态仍以实际归档为准。
 
 ## 尚需真实材料的后续工作
 
