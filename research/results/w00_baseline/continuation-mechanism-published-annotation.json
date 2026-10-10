@@ -1,0 +1,18 @@
+{
+  "command": [
+    "Rscript",
+    "--vanilla",
+    "research/discovery/inspect_published_mechanism.R",
+    "research/results/discovery_mechanism_fit_v4"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-09T03:18:46.168747+00:00",
+  "finished_utc": "2026-10-09T03:18:46.632940+00:00",
+  "exit_code": 1,
+  "status": "fail",
+  "log": {
+    "path": "research/results/w00_baseline/continuation-mechanism-published-annotation.txt",
+    "bytes": 71,
+    "sha256": "7604092d0e0c45ade40b1cc99dba2467a1302cccaef58bda34fa9a0367c09ae8"
+  }
+}

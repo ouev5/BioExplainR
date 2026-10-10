@@ -1,0 +1,2056 @@
+{
+  "status": "sealed",
+  "sealed_utc": "2026-10-09T08:55:03.670511+00:00",
+  "scope": "This genome/retained-response analysis and report only; not the entire project's old current manifest",
+  "analysis_files": [
+    {
+      "path": "docs/biology_discovery_v1/export_failure.json",
+      "bytes": 240,
+      "sha256": "8653262321228f365de4dc324c2b64f7a5f774e837630ff6410185f61d59e0c0"
+    },
+    {
+      "path": "docs/biology_discovery_v2/BioExplainR-生物学发现-结果报告-v1.docx",
+      "bytes": 762354,
+      "sha256": "00316d6781d4ff39ad29bb9e83425fe07a84dabf6ce8e0c762bcca173377ad3d"
+    },
+    {
+      "path": "docs/biology_discovery_v2/BioExplainR-生物学发现-结果报告-v1.html",
+      "bytes": 1018404,
+      "sha256": "3f6399f7efb4a902b4d5ae2d73aaa65c8efda381aefda9b62b8aa905dc750732"
+    },
+    {
+      "path": "docs/biology_discovery_v2/BioExplainR-生物学发现-结果报告-v1.pdf",
+      "bytes": 1037560,
+      "sha256": "b9715f942c8ae379d6423a4e4d1f0e72f9d628b172d1edd7de12bac5e731c482"
+    },
+    {
+      "path": "docs/biology_discovery_v2/README.md",
+      "bytes": 6365,
+      "sha256": "ede261d6d7aeed078e7a79d3c5e983a48b8fc584217570b249da08d15645b391"
+    },
+    {
+      "path": "docs/biology_discovery_v2/audit.json",
+      "bytes": 1098,
+      "sha256": "86bdf8258dd7ba42672565aaf85d28d8ee1b9c9d9bec2a3d2d54576261f87fd7"
+    },
+    {
+      "path": "docs/biology_discovery_v2/browser/audit.json",
+      "bytes": 399,
+      "sha256": "3087989406ceab8d445c890cdba22cc7f8f5b67743908294c1a64eb21b33207e"
+    },
+    {
+      "path": "docs/biology_discovery_v2/browser/report-1440.png",
+      "bytes": 1595590,
+      "sha256": "bae936c70c92d5dddab7cd6de529ef1d3eaf9b54b5057f770044456acc16a2f1"
+    },
+    {
+      "path": "docs/biology_discovery_v2/browser/report-390.png",
+      "bytes": 1217304,
+      "sha256": "c4d88029ece1e15e8cedf621006869f9cc12daf11edb7189b6359199be0499f6"
+    },
+    {
+      "path": "docs/biology_discovery_v2/export.json",
+      "bytes": 519,
+      "sha256": "e5f2f8654121e8c545fbd49bbe2c231181cf479ad0f0fa8a3aeeec7abf0cf661"
+    },
+    {
+      "path": "docs/biology_discovery_v2/export_log.txt",
+      "bytes": 322,
+      "sha256": "66e902c80b85804583aeb11864d1914092c20ceba1f84364eaa00f0243e801da"
+    },
+    {
+      "path": "docs/biology_discovery_v2/results.md",
+      "bytes": 11251,
+      "sha256": "5a3077c4ff33bee213b90fb0fdc1b89497f2ba9f8ec85b9ab644ca6cccf30007"
+    },
+    {
+      "path": "research/discovery/GENOME_PROTOCOL.md",
+      "bytes": 3557,
+      "sha256": "9b375cc25fea86ded51fb6ad17e70a26f0c8dfe56599bccee26445d8648bec91"
+    },
+    {
+      "path": "research/discovery/README.md",
+      "bytes": 4495,
+      "sha256": "67144bb5191712ce2ba1f1899987bfe8e02f96f622416ef7ea8073b11b9015bd"
+    },
+    {
+      "path": "research/discovery/RESPONSE_PROTOCOL.md",
+      "bytes": 2708,
+      "sha256": "edb6db660dc434d06b06b3e2851afb94e8f08f141ee017b37eb750a2f3818113"
+    },
+    {
+      "path": "research/discovery/RESPONSE_TIME_AMENDMENT.md",
+      "bytes": 1384,
+      "sha256": "41248a2f1af1da1ab42c6ae348875612281c29f7f000d858a8bc971ff548c36d"
+    },
+    {
+      "path": "research/discovery/audit_response.py",
+      "bytes": 12332,
+      "sha256": "239355309645f06e21641f5abd997c555531120b85864f6f735e25a2d9693216"
+    },
+    {
+      "path": "research/discovery/audit_response_external.R",
+      "bytes": 4541,
+      "sha256": "8f63d08c00e9c8afbf43fd11e4d265d0dcff681ea11224a86b899bd247384e26"
+    },
+    {
+      "path": "research/discovery/audit_response_report.py",
+      "bytes": 3534,
+      "sha256": "ead030c5ba3702a0ca762c13936ab797a36f4f58235252bc7368ad0355f3051e"
+    },
+    {
+      "path": "research/discovery/browser_response.cjs",
+      "bytes": 1925,
+      "sha256": "37ee447c1442fd6a3f3d33717c9e77fb26aa711fc8bf7456c470821ce33c6f0d"
+    },
+    {
+      "path": "research/discovery/build_response_report.py",
+      "bytes": 16610,
+      "sha256": "34f9af3e136da966ce3279d34469381280fee57d22d2a59e7d9455e35571c9b4"
+    },
+    {
+      "path": "research/discovery/freeze_genome.py",
+      "bytes": 1702,
+      "sha256": "ab0c743c7549ee4e5e1a8454fb676208f857169c0514cef38f32f0cca19f3e1a"
+    },
+    {
+      "path": "research/discovery/read_response_fulltexts.py",
+      "bytes": 1174,
+      "sha256": "d42f1a6f4578c493862f0c6cee061d9f8ce16c4cf79f9936e1e3b347787e7f0b"
+    },
+    {
+      "path": "research/discovery/report_response.R",
+      "bytes": 14272,
+      "sha256": "dd6699d8cecbf6be2604d053f27cb835f4ef0b3113f0e17416be785f921ac34b"
+    },
+    {
+      "path": "research/discovery/response_late_gr.R",
+      "bytes": 2115,
+      "sha256": "b9997b2bf9438d89176d2f287ab794ecc98327af90429ee4985f3bf978bd1926"
+    },
+    {
+      "path": "research/discovery/response_literature.py",
+      "bytes": 3763,
+      "sha256": "55e5a2551db1911fdb141c853f15c9be74f5ef125980593f0cca88bc8bba9fd7"
+    },
+    {
+      "path": "research/discovery/response_mechanism.R",
+      "bytes": 3270,
+      "sha256": "5c993c71148a560deb2a052c99ef2cbef73270c0fedb9be67c80e7990608338f"
+    },
+    {
+      "path": "research/discovery/response_temporal_difference.R",
+      "bytes": 2795,
+      "sha256": "003040c9cda7ac0bccc8f9ad5d6b538745b2b7c72991a26417be2d8869dfe3e4"
+    },
+    {
+      "path": "research/discovery/response_time.py",
+      "bytes": 4027,
+      "sha256": "43856ddce03c806fde76570e34af6044dae671163dce82035065b12caa3736ad"
+    },
+    {
+      "path": "research/discovery/run_discovery.py",
+      "bytes": 9178,
+      "sha256": "d8d82de22a13c21cf7e2e41fb6b637db74fee0dd3f0065fed4b805d75e21d13e"
+    },
+    {
+      "path": "research/discovery/run_donors.py",
+      "bytes": 9220,
+      "sha256": "30e50e26c02b9e2c9e06dfd27d5c0d191d7febf76e53a0a7a1992c0c0c07337e"
+    },
+    {
+      "path": "research/discovery/screen_genome.R",
+      "bytes": 8750,
+      "sha256": "e38b379682d4f1ad7d5908190521f78e698cf51be4f930eccbfb9a386d8a519d"
+    },
+    {
+      "path": "research/discovery/screen_response.R",
+      "bytes": 5744,
+      "sha256": "61ff9547f0a4c2a46e76fa317210c0f3bc956ccda2c0c8c0d45cc3ca05a9e6d8"
+    },
+    {
+      "path": "research/discovery/seal_response.py",
+      "bytes": 6908,
+      "sha256": "1a4e57a231635f788d5ed477e7abf18a7037b52a5c6129db2f3098130e75d0f7"
+    },
+    {
+      "path": "research/discovery/summarize_response_literature.py",
+      "bytes": 1275,
+      "sha256": "0dbd2f1b3e066e8d860203f81559625c95c5f3270a77b9ec69b6055e60cdee08"
+    },
+    {
+      "path": "research/discovery/validate_response.py",
+      "bytes": 9221,
+      "sha256": "235900f84d756935f90c9682e283ef6476470871ab638db4bf12c43a8693212c"
+    },
+    {
+      "path": "research/results/discovery_genome_v1/all_donor_effects.csv",
+      "bytes": 44109760,
+      "sha256": "1dde278e93c8db6b1c8ebc384366045b52f7feec686c67c23c70446d0922b44f"
+    },
+    {
+      "path": "research/results/discovery_genome_v1/alternative_model.rds",
+      "bytes": 16571174,
+      "sha256": "365f6fd28e1e00bfe12b7516fbc3cec406c24d115a990a5c1caad2acc35184d1"
+    },
+    {
+      "path": "research/results/discovery_genome_v1/analysis_freeze.json",
+      "bytes": 2044,
+      "sha256": "048f243eceb582999dbf598ea8bcb24b8a976aaf2131b9d2b0e4ecf9f615267f"
+    },
+    {
+      "path": "research/results/discovery_genome_v1/candidate_donor_effects.csv",
+      "bytes": 41,
+      "sha256": "309b359510e75f91806d935d674a19a48d3202a5808a2abded684a97b5ada046"
+    },
+    {
+      "path": "research/results/discovery_genome_v1/candidate_freeze.json",
+      "bytes": 242,
+      "sha256": "8a341d2f9919333acc9eecd3b981cc20c7981ba462e9ee683db552db00391087"
+    },
+    {
+      "path": "research/results/discovery_genome_v1/candidate_simple_effects.csv",
+      "bytes": 114,
+      "sha256": "8e7177eda692afc414c2d84b151679f344f964d36730465b1740490f6b44748d"
+    },
+    {
+      "path": "research/results/discovery_genome_v1/deseq2_all_contrasts.csv",
+      "bytes": 35229046,
+      "sha256": "44aea496218c6c4e32fd66ffad3757bb904700a850a59adf1d93e6c4fa350594"
+    },
+    {
+      "path": "research/results/discovery_genome_v1/design_matrix.csv",
+      "bytes": 1243,
+      "sha256": "698f040970c41ca12cc560bc5dba284ec65e8544bd1968681160a30d78af8764"
+    },
+    {
+      "path": "research/results/discovery_genome_v1/execution_failure.json",
+      "bytes": 460,
+      "sha256": "6eaa3bfb7d287e59d501bee0f67576d1746f7adc9b07fcb741558df5e1dd2e9b"
+    },
+    {
+      "path": "research/results/discovery_genome_v1/frozen_candidates.csv",
+      "bytes": 313,
+      "sha256": "506f30afda58d2d34e5ee75ddcdfa16d4f743943dfd9f7c85435af9e84b27b0a"
+    },
+    {
+      "path": "research/results/discovery_genome_v1/genome_screen.csv",
+      "bytes": 21177127,
+      "sha256": "5fc052c0dba3195b2256b2fa853707a646c8008c63168927cbbf85e79ba7a47d"
+    },
+    {
+      "path": "research/results/discovery_genome_v1/tmm_normalization.csv",
+      "bytes": 1392,
+      "sha256": "ca50ea77769b252c56a86da2d10aaa84f2e5177592ff425e126abb450c98508b"
+    },
+    {
+      "path": "research/results/discovery_genome_v1/voom_all_contrasts.csv",
+      "bytes": 16017358,
+      "sha256": "1e32b06786ac1095cb35ef8c5e6a25db34699308423abc421d4f9b6a46519858"
+    },
+    {
+      "path": "research/results/discovery_genome_v2/all_donor_effects.csv",
+      "bytes": 44109760,
+      "sha256": "1dde278e93c8db6b1c8ebc384366045b52f7feec686c67c23c70446d0922b44f"
+    },
+    {
+      "path": "research/results/discovery_genome_v2/alternative_model.rds",
+      "bytes": 16571174,
+      "sha256": "365f6fd28e1e00bfe12b7516fbc3cec406c24d115a990a5c1caad2acc35184d1"
+    },
+    {
+      "path": "research/results/discovery_genome_v2/analysis_freeze.json",
+      "bytes": 2044,
+      "sha256": "1fd1d0c50396948858532dad3ef7dcd9884fd32e88a3a7578b2c43c7fed0bc3e"
+    },
+    {
+      "path": "research/results/discovery_genome_v2/candidate_donor_effects.csv",
+      "bytes": 41,
+      "sha256": "309b359510e75f91806d935d674a19a48d3202a5808a2abded684a97b5ada046"
+    },
+    {
+      "path": "research/results/discovery_genome_v2/candidate_freeze.json",
+      "bytes": 242,
+      "sha256": "6cf6d5b98153e97105c3123241c3f77d756cff5f4e3ccb419421d0d7c13a64b8"
+    },
+    {
+      "path": "research/results/discovery_genome_v2/candidate_leave_one_donor_out.csv",
+      "bytes": 100,
+      "sha256": "d2b3495fac00ef237d1fe50ca660ee9a88a772fbc3d3b57cad418135839392a7"
+    },
+    {
+      "path": "research/results/discovery_genome_v2/candidate_simple_effects.csv",
+      "bytes": 114,
+      "sha256": "8e7177eda692afc414c2d84b151679f344f964d36730465b1740490f6b44748d"
+    },
+    {
+      "path": "research/results/discovery_genome_v2/deseq2_all_contrasts.csv",
+      "bytes": 35229046,
+      "sha256": "44aea496218c6c4e32fd66ffad3757bb904700a850a59adf1d93e6c4fa350594"
+    },
+    {
+      "path": "research/results/discovery_genome_v2/design_matrix.csv",
+      "bytes": 1243,
+      "sha256": "698f040970c41ca12cc560bc5dba284ec65e8544bd1968681160a30d78af8764"
+    },
+    {
+      "path": "research/results/discovery_genome_v2/frozen_candidates.csv",
+      "bytes": 313,
+      "sha256": "506f30afda58d2d34e5ee75ddcdfa16d4f743943dfd9f7c85435af9e84b27b0a"
+    },
+    {
+      "path": "research/results/discovery_genome_v2/genome_screen.csv",
+      "bytes": 21177127,
+      "sha256": "5fc052c0dba3195b2256b2fa853707a646c8008c63168927cbbf85e79ba7a47d"
+    },
+    {
+      "path": "research/results/discovery_genome_v2/screen_run.json",
+      "bytes": 824,
+      "sha256": "e7cfa065d234631c3301ebcd7527940e41db48505d4a6d91c4264f1aa416f293"
+    },
+    {
+      "path": "research/results/discovery_genome_v2/screen_summary.csv",
+      "bytes": 189,
+      "sha256": "f6365b6522b376ad67eaca2be14459ff6f29207abb996e07913a5637112548c9"
+    },
+    {
+      "path": "research/results/discovery_genome_v2/sessionInfo.txt",
+      "bytes": 2322,
+      "sha256": "bf46eda12277e7fe86b0af05aff154e3564e4ca44ed30ff75ec3dc63a9b69bdd"
+    },
+    {
+      "path": "research/results/discovery_genome_v2/tmm_normalization.csv",
+      "bytes": 1392,
+      "sha256": "ca50ea77769b252c56a86da2d10aaa84f2e5177592ff425e126abb450c98508b"
+    },
+    {
+      "path": "research/results/discovery_genome_v2/voom_all_contrasts.csv",
+      "bytes": 16017358,
+      "sha256": "1e32b06786ac1095cb35ef8c5e6a25db34699308423abc421d4f9b6a46519858"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/BioExplainR-report-en-v2.html",
+      "bytes": 79295,
+      "sha256": "0500f8c80f5d4e0ed669601f0b19f8f7dd3e2c975432b374a8cb64635c75bffa"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/BioExplainR-report-en.html",
+      "bytes": 77506,
+      "sha256": "84c52b0e0229a9dfb2f8494dcc80e9cd43a46dc269c2ccc8e3ae681b9e379a84"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/BioExplainR-report-zh-v2.html",
+      "bytes": 78939,
+      "sha256": "3e0aeb66e4d66ec3f62164639a4e5fa9c9d434e5a4b7853b445405d5ad2aa367"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/BioExplainR-report-zh.html",
+      "bytes": 77150,
+      "sha256": "e770b5f77aac160521daf2afc42b69a168163cf6ce17a5196c88fd2fc482f0cc"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/EXECUTION_NOTES.md",
+      "bytes": 2179,
+      "sha256": "6d000b8429a69a50f3e3d1f6ab5f04a764373134ecf7b837ebac58474ba791e7"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/all_priority_leave_one_donor_out.csv",
+      "bytes": 69608,
+      "sha256": "c5fa8c448de5f74165a0b9c8e0a1450a4023cc4f57247d1fefc46b5b8479bd2a"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/analysis_freeze.json",
+      "bytes": 1520,
+      "sha256": "b434a770b5059dba5981d5137d743872f82b5a163bac6521e65cff90853b2264"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/asm_time_annotation.csv",
+      "bytes": 18819,
+      "sha256": "54272b9b101adc1a0cbf7c284ad363dca541af0536fce4e5f2b1112ef403205b"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/asm_time_measurements.csv",
+      "bytes": 6920,
+      "sha256": "d514037c9a2fe0d7c1ca5cf4150f73b32c7ba5af5b5c27a8e93076a996c00b5a"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/asm_time_results.csv",
+      "bytes": 4224,
+      "sha256": "c75cbc853f982dd8927bb44a167168008ffbb52830a39fe59b9007c9a6eb53c5"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/bioexplainr_contexts.rds",
+      "bytes": 19998,
+      "sha256": "ebede0134264b5557f5d5d8907631785735dd1fedcbb81aab3a1e280cb1c6db7"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/bioexplainr_contexts_v2.rds",
+      "bytes": 20082,
+      "sha256": "b5cd9b71954e85bf261c57fe8f76857aea1f387231019209cae988c1fb76e26b"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/bioexplainr_fact_checks.csv",
+      "bytes": 184,
+      "sha256": "07ad68038cbbe1ef2acf12456d212611d1cc4ca3744fa256034cb7bb0848d43e"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/bioexplainr_fact_checks_v2.csv",
+      "bytes": 184,
+      "sha256": "07ad68038cbbe1ef2acf12456d212611d1cc4ca3744fa256034cb7bb0848d43e"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/bioexplainr_project.rds",
+      "bytes": 20903,
+      "sha256": "188ed5c36e1d4766170f102561bbdebcc419fb5cc176d653d007ac19590e9a8a"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/bioexplainr_project_v2.rds",
+      "bytes": 20968,
+      "sha256": "001e0a030f2cc3e19db8c6ae7a07ea4279e01fb70961b8d3b1a3737004bce5b8"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/bioexplainr_workflow.json",
+      "bytes": 270,
+      "sha256": "69f192a836dafe0bb950716546645708d903a90065d07857e0a18dee9c5fb818"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/bioexplainr_workflow_v2.json",
+      "bytes": 270,
+      "sha256": "69f192a836dafe0bb950716546645708d903a90065d07857e0a18dee9c5fb818"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/candidate_annotation.csv",
+      "bytes": 293,
+      "sha256": "a88f6bb13e234dfcf318484fa7a96213bfa03b597c2bd1832fb981d5de6213cf"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/candidate_context_donor_effects.csv",
+      "bytes": 11268,
+      "sha256": "c31611d29504e41b777f6e1c4704bebc6ee59416e9366013b30fef132f06e1bb"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/candidate_context_effects.csv",
+      "bytes": 15872,
+      "sha256": "28e27171b5c1642d74c009360d543f0fe8a6bcad912eb3c4e6c49106b15c0aa2"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/candidate_freeze.json",
+      "bytes": 4872,
+      "sha256": "19d3e28dd6562064fabe52dcb9a6b8161be93195242bf1cb4a1583a08746fb11"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/direct_temporal_freeze.json",
+      "bytes": 323,
+      "sha256": "ab42a1509cb2ee694e31fb4711a6528d69dd060dd2b84697d140f431a530ab00"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/direct_temporal_results.csv",
+      "bytes": 4347,
+      "sha256": "3b77ea0d9db07d80df7e4e19c4791667bf660bc0771a39c148795608d05441cc"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/evidence_summary.csv",
+      "bytes": 3214,
+      "sha256": "7437affc09a2b67eb8f9744e0b59eb486262f10cc6b6f55e42a644eb2feace10"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/external_analysis_freeze.json",
+      "bytes": 702,
+      "sha256": "84e413120d564912a8b26705a508aedc804cb3e8381656a70a6aea5c7343c40e"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/external_donor_effects.csv",
+      "bytes": 19773,
+      "sha256": "5c140906e48cd2e253102449bc4bb9d702ea43d24c713abdcea8446a3296a4f0"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/external_execution_amendment.json",
+      "bytes": 499,
+      "sha256": "97eb968b25511b0e43cb1921fb5b6e0c802adc56f279e2e863a7dd84f10fe5c9"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/external_gene_measurements.csv",
+      "bytes": 37280,
+      "sha256": "1ad7be977d3fe8e0e75e41de9ac66e3954170ac63de3981ac42308741a43694f"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/external_r_audit.json",
+      "bytes": 297,
+      "sha256": "86d35d41734c7fe42cb74b2f53e83bbedf6fdb3a28c67178ea1e2c03c738d5f8"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/external_r_numeric_checks.csv",
+      "bytes": 25305,
+      "sha256": "be8db87479c90c91cce96167bc2ddbc45358126b395f214a77c45a3fc96ed0bd"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/external_results.csv",
+      "bytes": 9005,
+      "sha256": "7d01eb5b0230a3447da5096f85d7e37344a55d45ed59795c7f41fb00a2db4b3c"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/external_run.json",
+      "bytes": 269,
+      "sha256": "0cf4c8890eaad71c790c189a4948b0f9ac33d9e7e07a731bb230ec13c1cba512"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/external_samples.csv",
+      "bytes": 1919,
+      "sha256": "48d960f4c8dc8847015f3b8c5a3b47c851939661e750f6690b98aedcbbf8f392"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/external_sensitivity.csv",
+      "bytes": 3186,
+      "sha256": "6c6fdddb31ee1105f862c5b586364fd029ff917831fad34ea0a10167fb20b20a"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/external_transcript_measurements.csv",
+      "bytes": 277978,
+      "sha256": "586f75dd2712ce026a01ae86a1f0876dfb0af474cbb4ca407f4216a8682b0970"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/figures/Figure_1_context_response.pdf",
+      "bytes": 15463,
+      "sha256": "028ef82c79ea46f7f11b634ddbe3e666927365a504f2c17377faabcf84c8904e"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/figures/Figure_1_context_response.png",
+      "bytes": 154106,
+      "sha256": "5f1daac9f5d5490f3f87249c952b92b0b2600f45a4604cdc2bcaf14f4e71bd6b"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/figures/Figure_2_external_donors.pdf",
+      "bytes": 14395,
+      "sha256": "09d6abe1d1534d31fa5d3b0697e59508123eb8012e5d4683454ff62f05827fb9"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/figures/Figure_2_external_donors.png",
+      "bytes": 82547,
+      "sha256": "70014c53b871eeb8cbcbb39ab669390b382495aaeac625dcf982882110b52413"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/figures/Figure_3_paired_measurements.pdf",
+      "bytes": 19590,
+      "sha256": "daec50df04c0d863bd7c9d043002692a4512b0b41c672148063e6159b34a9214"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/figures/Figure_3_paired_measurements.png",
+      "bytes": 355044,
+      "sha256": "919a490b34ace76bfae5f4159594411ada965020e6db9662f9f01dd0ce66b61e"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/figures/Figure_4_PER2_GR_time.pdf",
+      "bytes": 15478,
+      "sha256": "b0d24132ea00960c4c9f86f10bcf84beb34f8474c9a372c7f219652e429af8cc"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/figures/Figure_4_PER2_GR_time.png",
+      "bytes": 78309,
+      "sha256": "145d8425b82c1e336993bee37720e2b4665d551d07a7c09659f3f1e143540aaf"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/figures/Figure_5_clock_time_arrays.pdf",
+      "bytes": 13700,
+      "sha256": "5e59224ce4b20c4e6c90fd974205a570d9a823d78506457b80ea4f456dc0554b"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/figures/Figure_5_clock_time_arrays.png",
+      "bytes": 83604,
+      "sha256": "7a1df521b2faff2294aee896752dd2c2952f080b94a3c3c5c4616f7375a6a25a"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/focused_fulltext_acquisition.json",
+      "bytes": 1018,
+      "sha256": "864d9251cbd15e31840332c2c3a18eed2686f30be3e36599fb6b419e2fcb9773"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/frozen_candidates.csv",
+      "bytes": 1452,
+      "sha256": "afa59560c594ce8ba5a5c3e9243182a180110ad1d0d26da00019f06d7b1e5cb6"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/gr_analysis_freeze.json",
+      "bytes": 384,
+      "sha256": "3186228d4c67843368715032844f63c8b23f8d78268809ed11f984fb7c837ba7"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/gr_candidate_measurements.csv",
+      "bytes": 38906,
+      "sha256": "ad8f0a1613a0eb37e0abd3e9f907ebb79cd1c135f4c912073936261259cac87f"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/gr_candidate_results.csv",
+      "bytes": 8846,
+      "sha256": "58334fe7f378d3a9744c41be69a6470a760a3bfebd4aa228b93dc4d692a9ec5f"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/gr_contrasts.csv",
+      "bytes": 432,
+      "sha256": "c8ead208eab15fb9cd211d9cedf784a932e0029652b8a3c816f85883d4a098c3"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/gr_design_matrix.csv",
+      "bytes": 2743,
+      "sha256": "521bad4978b0d5480d5817d9c0b7dfc422fd91724257fa4860775d92502fd66a"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/gr_late_results.csv",
+      "bytes": 2416,
+      "sha256": "7fc3cd457ee6251c1c6ffac64875b2b6b6b37e0006eb465fbb6aa2ce999dfbb0"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/late_gr_freeze.json",
+      "bytes": 304,
+      "sha256": "161c770f34eae3711ceedbfdcb5966c2874a86a974ac00a087c860f2975145a7"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/literature/ANGPTL2.json",
+      "bytes": 796838,
+      "sha256": "9147a57f46c468191861e055667e046ae373019e712c22cec2b46bd0a52cc95f"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/literature/FKBP5.json",
+      "bytes": 749623,
+      "sha256": "2239929e21c6b26689e99cb83efb36a7fcb73093759c3d0439d24cbbbbb01b6d"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/literature/FSTL3.json",
+      "bytes": 821575,
+      "sha256": "16bb4e74c3b22de3f7a70a149b09a163147d223801f5c684468b668c91e7e0ca"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/literature/FSTL3_ASM.json",
+      "bytes": 158443,
+      "sha256": "0276a8e34b28217cf159710f7454e604db7210a3126affb7ef46d28e606f8e61"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/literature/GCNT1.json",
+      "bytes": 945478,
+      "sha256": "3f97cdc848f61cd2690a71cd9a4bf00bf78aa13c5db1c2933ba101e54389a0bd"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/literature/LINC00607.json",
+      "bytes": 66791,
+      "sha256": "230ceb58eb70c9771bf81626de52a6c47d4a29b42bcfb04e7cfd9af07aac1d28"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/literature/LINC00607_ensembl.json",
+      "bytes": 429,
+      "sha256": "026f18e137d345ddf453a9da8e897701b0bfe1f91e8f59adbc3f6b9233625730"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/literature/MAOA.json",
+      "bytes": 758548,
+      "sha256": "668bc080cc791a55c6ccee392a88b51fc77e962994d6a679004fb6d913ddce6e"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/literature/METTL7A.json",
+      "bytes": 612252,
+      "sha256": "a08e6c35c8799f35423bb98761a1fbfb286b16edfa0971013407706647e0d685"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/literature/PER2_ASM.json",
+      "bytes": 323865,
+      "sha256": "37b91aa578d6b0ef5528716063831c5bc6fdcbc638acf9bd807824500fb103ce"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/literature/PER3.json",
+      "bytes": 763593,
+      "sha256": "dfff832e3913bb9a6ae1c1baf0d387320d15e49c17237ec9a4d767a5f33f4207"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/literature/PMC12063231.xml",
+      "bytes": 145104,
+      "sha256": "011ce548084d1b3f2fb5ca9c61f2b998b7913b7ace146c0f84dd8426b6bed302"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/literature/PMC9879848.xml",
+      "bytes": 190855,
+      "sha256": "e7bbdece42cc3e8795b93050c56955d053cb8000cd66a638cc7f5224e71aa775"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/literature/TEF.json",
+      "bytes": 713353,
+      "sha256": "7c0844c76872fb9516255d4bcd945ff75e9cc3b616a32c97bfcbf13417b12798"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/literature/TSC22D3.json",
+      "bytes": 892161,
+      "sha256": "a438efde35107c7be861ac648c511318d686125cbec8f67889f1fb095b403778"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/literature/ZBTB16.json",
+      "bytes": 842624,
+      "sha256": "80f76de0c617960ea4d87a65c702679be262fd4bc6d81501407f08794f06e563"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/literature/clock_ASM.json",
+      "bytes": 771359,
+      "sha256": "8778ba6de2b7943407fa9b96f13eaeb3165265ca022ea3e27fe35eceb5c8a9a6"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/literature/focused_fulltext_ids.json",
+      "bytes": 906,
+      "sha256": "22fccbc25ce5edfcacedd076519933d156e954d9e0888a39ed99c82d07b34dc1"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/literature/focused_fulltext_mentions.csv",
+      "bytes": 42039,
+      "sha256": "62b7d186c494ce77a809cda3589f8bf57aed6f817ff49599ba5ecee0bd139464"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/literature/focused_search_digest.csv",
+      "bytes": 275750,
+      "sha256": "01d17dc836524ba28826e8861c174dcf2bdce67ae10e8c357edded849a6d6bb6"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/literature/original_paper_mentions.csv",
+      "bytes": 25891,
+      "sha256": "97773dd6405120ebd7e3987fa0b33783c9d2c37d639373befb286eada78f0f71"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/literature_search.json",
+      "bytes": 9372,
+      "sha256": "87fc58ab285e3c916cdeaa2b704c748a15999520faa89eba999ed81e69d6c7bf"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/numeric_audit.json",
+      "bytes": 591,
+      "sha256": "a6bc7cf8b27f3db878c841f2ae5cbb0f01b560dbcc8974e820468e9a3fe15740"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/report_amendment.json",
+      "bytes": 474,
+      "sha256": "2520b5954dda4636c81a2f4eb937842b4879b73c919d69e6375565c3efd6c81c"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/report_sessionInfo.txt",
+      "bytes": 1198,
+      "sha256": "050c5d463c594876d678327bf26959ee09ea6286799dfe0f8bd48cc81c93f6b5"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/report_sessionInfo_v2.txt",
+      "bytes": 1198,
+      "sha256": "050c5d463c594876d678327bf26959ee09ea6286799dfe0f8bd48cc81c93f6b5"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/response_full_results.csv",
+      "bytes": 30679305,
+      "sha256": "e8596721bd0d05154fb2c4a301d1eebc190d7de9aaf04829d0067d1327a56ec3"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/scientific_ledger.json",
+      "bytes": 2107,
+      "sha256": "9f555f27d23eef286d3856566fe9ae6ffaa415ee71421779ac12d05e374f76be"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/screen_run.json",
+      "bytes": 142,
+      "sha256": "ba85ab5086e4150072da781319fe3a8528a6b374ebf0ea99cb62609b605b4419"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/stable_response_screen.csv",
+      "bytes": 3026655,
+      "sha256": "3530775e11352a5b0d3be6644ec7268fbf7ed4861ac856caa2832c3d8b1eb205"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/time_analysis_freeze.json",
+      "bytes": 924,
+      "sha256": "05359586cdaf40dc778c4ad89fb73b84d8246117d62e427c353129d8b07f3729"
+    },
+    {
+      "path": "rgo.md",
+      "bytes": 55273,
+      "sha256": "c80768de80ebb187c97d9cbabb9bc8b90c90703ec89cdf4c5e38e64a40634326"
+    }
+  ],
+  "original_inputs": [
+    {
+      "path": "research/results/discovery_context_v1/model.rds",
+      "bytes": 32636612,
+      "sha256": "ff150cf0ac50522f04d2327126edd28c3d166e210cc41d7d83cbba41497a30c0"
+    },
+    {
+      "path": "research/results/discovery_context_v1/counts.txt.gz",
+      "bytes": 1371256,
+      "sha256": "62d3d3cbf246df73a9cf767f4c0f3f875d5c7d620af260d02de549647b2db30e"
+    },
+    {
+      "path": "research/results/discovery_context_v1/samples.csv",
+      "bytes": 3454,
+      "sha256": "2b73f7e3a79f3fae98fbf031ef9e93d0491d7e16de65d0719829b0d4de022fe6"
+    },
+    {
+      "path": "research/results/discovery_context_v1/size_factors.csv",
+      "bytes": 962,
+      "sha256": "2c423d8617e643d82d8b618f7a510f512d899137488281674d45dba7ca53394d"
+    },
+    {
+      "path": "research/results/discovery_donors_v1/tpm.txt.gz",
+      "bytes": 121575832,
+      "sha256": "30ebc92ddbd40bf4dedab57d05b46ba10a763c0130c89f6154862b351189277f"
+    },
+    {
+      "path": "research/results/discovery_donors_v1/samples.csv",
+      "bytes": 2351,
+      "sha256": "7bd368e012c810023a7bce6a63f0fd2ad533402cb1d6b7e63539d26e1d2a866a"
+    },
+    {
+      "path": "research/results/discovery_donors_v1/supplement_text.txt",
+      "bytes": 65006,
+      "sha256": "a4335a504d16447315797033141988df12cb0476fdadace632ff0a16fd59018d"
+    },
+    {
+      "path": "research/results/discovery_donors_v1/original_supplement_verified.pdf",
+      "bytes": 2188400,
+      "sha256": "58ffb30921ad7cb70a7d326dace8393ca6fc4dedc3de374c5c4d928a502ee7d6"
+    },
+    {
+      "path": "research/results/discovery_mechanism_fit_v4/model.rds",
+      "bytes": 30600410,
+      "sha256": "4ae82b5c8b23401f8aea6ca8518590afb2e207526b4e9ee4485f87bd011a89ae"
+    },
+    {
+      "path": "research/results/discovery_sparcl1_v1/GSE34313_series_matrix.txt.gz",
+      "bytes": 1932820,
+      "sha256": "c76c4311bccd29096fd631c7ac9d3eafbb0ad5c92bc3bbe4b15b0b9eed8102a0"
+    },
+    {
+      "path": "research/results/discovery_sparcl1_v1/GPL6480.annot.gz",
+      "bytes": 7380104,
+      "sha256": "aacec81b2d95f183f0827b43e769388a92917811b81920c13ecc8fe148c5a3ab"
+    }
+  ],
+  "package_source": [
+    {
+      "path": "DESCRIPTION",
+      "bytes": 2108,
+      "sha256": "5d59103e170b4eea6a955bb28ab9a65efd14c983e07aa57a7f2533a4844af6bb"
+    },
+    {
+      "path": "NAMESPACE",
+      "bytes": 3181,
+      "sha256": "c1aba4721cc66e304c4d6ce3ba610f3a225a1a04ce510d46459378a2aec58e85"
+    },
+    {
+      "path": "R/BioExplainR-package.R",
+      "bytes": 634,
+      "sha256": "ff9a30dd74f547f02fda0c8f222799981ff0b61b8907e9231deddffd46d9e917"
+    },
+    {
+      "path": "R/adapters-de.R",
+      "bytes": 17243,
+      "sha256": "76dd093251754c1b192253745169ac39dd4c7a81679e76a07ad89f4afa287a43"
+    },
+    {
+      "path": "R/adapters-enrich.R",
+      "bytes": 17831,
+      "sha256": "1066c1be961a7709e737b9bae29182a2e35651a1e33048d31f19ab2648b447e7"
+    },
+    {
+      "path": "R/adapters-extended.R",
+      "bytes": 21608,
+      "sha256": "d58a37371f07bfc41e7f464983a7775a6c41b1fbef52148ab36d57f6daf2d363"
+    },
+    {
+      "path": "R/adapters-multiomics.R",
+      "bytes": 5987,
+      "sha256": "842276174735dd591ca957cdcc2695d45fd61fe68414e12694e7caa65f8b8fa5"
+    },
+    {
+      "path": "R/adapters-plot-generic.R",
+      "bytes": 8666,
+      "sha256": "3dcb08da65225c975dd03389565b032db4ce780ad18fbc9e75770de0e1485625"
+    },
+    {
+      "path": "R/adapters-sc.R",
+      "bytes": 12179,
+      "sha256": "ae21a4e14fa10ede45cf70c71a29019fd838b6fdf4249c280fdd9397553997a6"
+    },
+    {
+      "path": "R/benchmark-contract.R",
+      "bytes": 4397,
+      "sha256": "a0e8c07eb97c195c2619362c3236aa4747d1ea2d55c10d04ea4dd25533556e40"
+    },
+    {
+      "path": "R/cell-proportions.R",
+      "bytes": 16376,
+      "sha256": "786997096cb96cb4b3f4e997c3b326eab257acde51e346090ebc46b0d7235c82"
+    },
+    {
+      "path": "R/claims.R",
+      "bytes": 14741,
+      "sha256": "4a3933c9266941b7b49c1349266b20ca04c23e0fe2af97276cc7c41169b7d791"
+    },
+    {
+      "path": "R/config.R",
+      "bytes": 17213,
+      "sha256": "4f051baa9b33c62f344ff7aa2ef8dbb6c5a2d457b1eb95254aac894e34dd6b4c"
+    },
+    {
+      "path": "R/context.R",
+      "bytes": 23332,
+      "sha256": "e7e5caffdbe20c8e612fc93513750a5adf18fc197b0aec6c88c47babc559fd7c"
+    },
+    {
+      "path": "R/contracts.R",
+      "bytes": 10550,
+      "sha256": "10e9539763717f7efd46cbed1a6795ed2811c151ac812e07cf7437d2ab6f56e6"
+    },
+    {
+      "path": "R/diagnose.R",
+      "bytes": 27610,
+      "sha256": "ee832f81fc77847267ceba590630eb0d512f20a8fc1a7659ccbd6eb2001e58c3"
+    },
+    {
+      "path": "R/docking.R",
+      "bytes": 6106,
+      "sha256": "2dd31afe1efccbe0ad122aadc7bab8b474f7f2cabc9319aa03b7d3b259392869"
+    },
+    {
+      "path": "R/evaluation.R",
+      "bytes": 17455,
+      "sha256": "416523e2550b10565ab753714b4b57f904995088307c1927b8930388f6168d16"
+    },
+    {
+      "path": "R/evidence-live.R",
+      "bytes": 31381,
+      "sha256": "079f763bb17f9b80156e70637dde8cdf7c8c58fccb2871618b2d85d2055e68f7"
+    },
+    {
+      "path": "R/evidence-support.R",
+      "bytes": 8222,
+      "sha256": "82be4a9b3cbaa2ec2b0e34f8def75939a11ea989b727c1decabad473fa4a86cf"
+    },
+    {
+      "path": "R/evidence.R",
+      "bytes": 7447,
+      "sha256": "42a113788cee02fac9d854160238072e07d6b8e3a87a97cc7a2e762407cff0fa"
+    },
+    {
+      "path": "R/explain.R",
+      "bytes": 47904,
+      "sha256": "93da878488e86811e1d313ce9ec90005c4fbe2a888c858096190cf027b42a471"
+    },
+    {
+      "path": "R/explanation-validation.R",
+      "bytes": 7152,
+      "sha256": "13646f21dbf8ac8f0672f5ba89a909010e0c3196015d3c73b6cebc8f861afb5e"
+    },
+    {
+      "path": "R/i18n-en.R",
+      "bytes": 32973,
+      "sha256": "d04c225a03103f8825ccaa65a07890c5ed08d5fb0a88b46bcaed4b926af8c8df"
+    },
+    {
+      "path": "R/i18n.R",
+      "bytes": 1880,
+      "sha256": "543ba1cfd3da62e158a8c0018f92c806f56465207c09fe0706e514152744178c"
+    },
+    {
+      "path": "R/llm.R",
+      "bytes": 7877,
+      "sha256": "69df41c692126fa7edc101950595b2bc329abab2a4eed5f547b2757ed59a929d"
+    },
+    {
+      "path": "R/plot-cross-check.R",
+      "bytes": 15459,
+      "sha256": "463f7126de678bab76ab36577f23bf135a8498f1482a59067466df3adb934c8f"
+    },
+    {
+      "path": "R/plots.R",
+      "bytes": 17333,
+      "sha256": "d64f121061bae60d8856af8253e875d079aec465f9dd5b1749b985c057bff56f"
+    },
+    {
+      "path": "R/project-relations.R",
+      "bytes": 6180,
+      "sha256": "3affcba7df6754b54c8c48a1719e0698d486810d87d4e594399dab20e3904fa2"
+    },
+    {
+      "path": "R/project.R",
+      "bytes": 10721,
+      "sha256": "745096fba006668c67285b84a51c7ba2ae174d540f52473e672aa6cce243e515"
+    },
+    {
+      "path": "R/record.R",
+      "bytes": 10006,
+      "sha256": "46106ab58dbc8c3ac083983c1e7dca6acb1444510a71ecb86147a82fcc75169d"
+    },
+    {
+      "path": "R/report.R",
+      "bytes": 23866,
+      "sha256": "a5fad961e8b3cd90baf5559fbc154e4dfd081f6e6112ac72c43b78576d4988a5"
+    },
+    {
+      "path": "R/runtime.R",
+      "bytes": 9297,
+      "sha256": "1c76df9255b806f636b3c7d984a853a725337ae41904cb48f3848c486b0d5bf9"
+    },
+    {
+      "path": "R/sample-map.R",
+      "bytes": 7735,
+      "sha256": "2906f5e7e0c22e342d43c224b5644de378332d9254b7ec736b0e629d9bc99c9b"
+    },
+    {
+      "path": "R/shiny-app.R",
+      "bytes": 31835,
+      "sha256": "538541d4433ff7020940941557829051edf2c1fa7e7ed2e7ef928c40a28805be"
+    },
+    {
+      "path": "R/shiny-i18n.R",
+      "bytes": 6535,
+      "sha256": "242e92085ee837c73efe15397000fb5a025b3cb700e7a0f9a52a338467950b5d"
+    },
+    {
+      "path": "R/spatial.R",
+      "bytes": 3777,
+      "sha256": "6f9a7218930e07f7510840b7e9d7c41ef2ae5413d11d3406f71ae88d88be4c47"
+    },
+    {
+      "path": "R/teaching.R",
+      "bytes": 16680,
+      "sha256": "a2fa4c89e94e4eae9d8405282b520dbd192fb96755297f4132365ca1f5910f4d"
+    },
+    {
+      "path": "R/utils.R",
+      "bytes": 7629,
+      "sha256": "32bc116ac690faa2d21cb81f2e0d48783a0564b162c9ff70abd3333cd3c343c6"
+    },
+    {
+      "path": "R/validate.R",
+      "bytes": 14816,
+      "sha256": "a4b7154686c44acc58ae5ac31958dfd3880825ab803e452e4e0d7896d541241c"
+    }
+  ],
+  "archive": {
+    "path": "docs/biology_discovery_v2/BioExplainR-biological-discovery-results-v1.zip",
+    "bytes": 134054024,
+    "sha256": "d29c0901eb33e180893c2baf779ecf4053d57d38d94f65c97fff8b75b359cfdd"
+  },
+  "archive_members": [
+    {
+      "path": "docs/biology_discovery_v1/export_failure.json",
+      "bytes": 240,
+      "sha256": "8653262321228f365de4dc324c2b64f7a5f774e837630ff6410185f61d59e0c0"
+    },
+    {
+      "path": "docs/biology_discovery_v2/BioExplainR-生物学发现-结果报告-v1.docx",
+      "bytes": 762354,
+      "sha256": "00316d6781d4ff39ad29bb9e83425fe07a84dabf6ce8e0c762bcca173377ad3d"
+    },
+    {
+      "path": "docs/biology_discovery_v2/BioExplainR-生物学发现-结果报告-v1.html",
+      "bytes": 1018404,
+      "sha256": "3f6399f7efb4a902b4d5ae2d73aaa65c8efda381aefda9b62b8aa905dc750732"
+    },
+    {
+      "path": "docs/biology_discovery_v2/BioExplainR-生物学发现-结果报告-v1.pdf",
+      "bytes": 1037560,
+      "sha256": "b9715f942c8ae379d6423a4e4d1f0e72f9d628b172d1edd7de12bac5e731c482"
+    },
+    {
+      "path": "docs/biology_discovery_v2/README.md",
+      "bytes": 6365,
+      "sha256": "ede261d6d7aeed078e7a79d3c5e983a48b8fc584217570b249da08d15645b391"
+    },
+    {
+      "path": "docs/biology_discovery_v2/audit.json",
+      "bytes": 1098,
+      "sha256": "86bdf8258dd7ba42672565aaf85d28d8ee1b9c9d9bec2a3d2d54576261f87fd7"
+    },
+    {
+      "path": "docs/biology_discovery_v2/browser/audit.json",
+      "bytes": 399,
+      "sha256": "3087989406ceab8d445c890cdba22cc7f8f5b67743908294c1a64eb21b33207e"
+    },
+    {
+      "path": "docs/biology_discovery_v2/browser/report-1440.png",
+      "bytes": 1595590,
+      "sha256": "bae936c70c92d5dddab7cd6de529ef1d3eaf9b54b5057f770044456acc16a2f1"
+    },
+    {
+      "path": "docs/biology_discovery_v2/browser/report-390.png",
+      "bytes": 1217304,
+      "sha256": "c4d88029ece1e15e8cedf621006869f9cc12daf11edb7189b6359199be0499f6"
+    },
+    {
+      "path": "docs/biology_discovery_v2/export.json",
+      "bytes": 519,
+      "sha256": "e5f2f8654121e8c545fbd49bbe2c231181cf479ad0f0fa8a3aeeec7abf0cf661"
+    },
+    {
+      "path": "docs/biology_discovery_v2/export_log.txt",
+      "bytes": 322,
+      "sha256": "66e902c80b85804583aeb11864d1914092c20ceba1f84364eaa00f0243e801da"
+    },
+    {
+      "path": "docs/biology_discovery_v2/results.md",
+      "bytes": 11251,
+      "sha256": "5a3077c4ff33bee213b90fb0fdc1b89497f2ba9f8ec85b9ab644ca6cccf30007"
+    },
+    {
+      "path": "research/discovery/GENOME_PROTOCOL.md",
+      "bytes": 3557,
+      "sha256": "9b375cc25fea86ded51fb6ad17e70a26f0c8dfe56599bccee26445d8648bec91"
+    },
+    {
+      "path": "research/discovery/README.md",
+      "bytes": 4495,
+      "sha256": "67144bb5191712ce2ba1f1899987bfe8e02f96f622416ef7ea8073b11b9015bd"
+    },
+    {
+      "path": "research/discovery/RESPONSE_PROTOCOL.md",
+      "bytes": 2708,
+      "sha256": "edb6db660dc434d06b06b3e2851afb94e8f08f141ee017b37eb750a2f3818113"
+    },
+    {
+      "path": "research/discovery/RESPONSE_TIME_AMENDMENT.md",
+      "bytes": 1384,
+      "sha256": "41248a2f1af1da1ab42c6ae348875612281c29f7f000d858a8bc971ff548c36d"
+    },
+    {
+      "path": "research/discovery/audit_response.py",
+      "bytes": 12332,
+      "sha256": "239355309645f06e21641f5abd997c555531120b85864f6f735e25a2d9693216"
+    },
+    {
+      "path": "research/discovery/audit_response_external.R",
+      "bytes": 4541,
+      "sha256": "8f63d08c00e9c8afbf43fd11e4d265d0dcff681ea11224a86b899bd247384e26"
+    },
+    {
+      "path": "research/discovery/audit_response_report.py",
+      "bytes": 3534,
+      "sha256": "ead030c5ba3702a0ca762c13936ab797a36f4f58235252bc7368ad0355f3051e"
+    },
+    {
+      "path": "research/discovery/browser_response.cjs",
+      "bytes": 1925,
+      "sha256": "37ee447c1442fd6a3f3d33717c9e77fb26aa711fc8bf7456c470821ce33c6f0d"
+    },
+    {
+      "path": "research/discovery/build_response_report.py",
+      "bytes": 16610,
+      "sha256": "34f9af3e136da966ce3279d34469381280fee57d22d2a59e7d9455e35571c9b4"
+    },
+    {
+      "path": "research/discovery/freeze_genome.py",
+      "bytes": 1702,
+      "sha256": "ab0c743c7549ee4e5e1a8454fb676208f857169c0514cef38f32f0cca19f3e1a"
+    },
+    {
+      "path": "research/discovery/read_response_fulltexts.py",
+      "bytes": 1174,
+      "sha256": "d42f1a6f4578c493862f0c6cee061d9f8ce16c4cf79f9936e1e3b347787e7f0b"
+    },
+    {
+      "path": "research/discovery/report_response.R",
+      "bytes": 14272,
+      "sha256": "dd6699d8cecbf6be2604d053f27cb835f4ef0b3113f0e17416be785f921ac34b"
+    },
+    {
+      "path": "research/discovery/response_late_gr.R",
+      "bytes": 2115,
+      "sha256": "b9997b2bf9438d89176d2f287ab794ecc98327af90429ee4985f3bf978bd1926"
+    },
+    {
+      "path": "research/discovery/response_literature.py",
+      "bytes": 3763,
+      "sha256": "55e5a2551db1911fdb141c853f15c9be74f5ef125980593f0cca88bc8bba9fd7"
+    },
+    {
+      "path": "research/discovery/response_mechanism.R",
+      "bytes": 3270,
+      "sha256": "5c993c71148a560deb2a052c99ef2cbef73270c0fedb9be67c80e7990608338f"
+    },
+    {
+      "path": "research/discovery/response_temporal_difference.R",
+      "bytes": 2795,
+      "sha256": "003040c9cda7ac0bccc8f9ad5d6b538745b2b7c72991a26417be2d8869dfe3e4"
+    },
+    {
+      "path": "research/discovery/response_time.py",
+      "bytes": 4027,
+      "sha256": "43856ddce03c806fde76570e34af6044dae671163dce82035065b12caa3736ad"
+    },
+    {
+      "path": "research/discovery/run_discovery.py",
+      "bytes": 9178,
+      "sha256": "d8d82de22a13c21cf7e2e41fb6b637db74fee0dd3f0065fed4b805d75e21d13e"
+    },
+    {
+      "path": "research/discovery/run_donors.py",
+      "bytes": 9220,
+      "sha256": "30e50e26c02b9e2c9e06dfd27d5c0d191d7febf76e53a0a7a1992c0c0c07337e"
+    },
+    {
+      "path": "research/discovery/screen_genome.R",
+      "bytes": 8750,
+      "sha256": "e38b379682d4f1ad7d5908190521f78e698cf51be4f930eccbfb9a386d8a519d"
+    },
+    {
+      "path": "research/discovery/screen_response.R",
+      "bytes": 5744,
+      "sha256": "61ff9547f0a4c2a46e76fa317210c0f3bc956ccda2c0c8c0d45cc3ca05a9e6d8"
+    },
+    {
+      "path": "research/discovery/seal_response.py",
+      "bytes": 6908,
+      "sha256": "1a4e57a231635f788d5ed477e7abf18a7037b52a5c6129db2f3098130e75d0f7"
+    },
+    {
+      "path": "research/discovery/summarize_response_literature.py",
+      "bytes": 1275,
+      "sha256": "0dbd2f1b3e066e8d860203f81559625c95c5f3270a77b9ec69b6055e60cdee08"
+    },
+    {
+      "path": "research/discovery/validate_response.py",
+      "bytes": 9221,
+      "sha256": "235900f84d756935f90c9682e283ef6476470871ab638db4bf12c43a8693212c"
+    },
+    {
+      "path": "research/results/discovery_genome_v1/all_donor_effects.csv",
+      "bytes": 44109760,
+      "sha256": "1dde278e93c8db6b1c8ebc384366045b52f7feec686c67c23c70446d0922b44f"
+    },
+    {
+      "path": "research/results/discovery_genome_v1/alternative_model.rds",
+      "bytes": 16571174,
+      "sha256": "365f6fd28e1e00bfe12b7516fbc3cec406c24d115a990a5c1caad2acc35184d1"
+    },
+    {
+      "path": "research/results/discovery_genome_v1/analysis_freeze.json",
+      "bytes": 2044,
+      "sha256": "048f243eceb582999dbf598ea8bcb24b8a976aaf2131b9d2b0e4ecf9f615267f"
+    },
+    {
+      "path": "research/results/discovery_genome_v1/candidate_donor_effects.csv",
+      "bytes": 41,
+      "sha256": "309b359510e75f91806d935d674a19a48d3202a5808a2abded684a97b5ada046"
+    },
+    {
+      "path": "research/results/discovery_genome_v1/candidate_freeze.json",
+      "bytes": 242,
+      "sha256": "8a341d2f9919333acc9eecd3b981cc20c7981ba462e9ee683db552db00391087"
+    },
+    {
+      "path": "research/results/discovery_genome_v1/candidate_simple_effects.csv",
+      "bytes": 114,
+      "sha256": "8e7177eda692afc414c2d84b151679f344f964d36730465b1740490f6b44748d"
+    },
+    {
+      "path": "research/results/discovery_genome_v1/deseq2_all_contrasts.csv",
+      "bytes": 35229046,
+      "sha256": "44aea496218c6c4e32fd66ffad3757bb904700a850a59adf1d93e6c4fa350594"
+    },
+    {
+      "path": "research/results/discovery_genome_v1/design_matrix.csv",
+      "bytes": 1243,
+      "sha256": "698f040970c41ca12cc560bc5dba284ec65e8544bd1968681160a30d78af8764"
+    },
+    {
+      "path": "research/results/discovery_genome_v1/execution_failure.json",
+      "bytes": 460,
+      "sha256": "6eaa3bfb7d287e59d501bee0f67576d1746f7adc9b07fcb741558df5e1dd2e9b"
+    },
+    {
+      "path": "research/results/discovery_genome_v1/frozen_candidates.csv",
+      "bytes": 313,
+      "sha256": "506f30afda58d2d34e5ee75ddcdfa16d4f743943dfd9f7c85435af9e84b27b0a"
+    },
+    {
+      "path": "research/results/discovery_genome_v1/genome_screen.csv",
+      "bytes": 21177127,
+      "sha256": "5fc052c0dba3195b2256b2fa853707a646c8008c63168927cbbf85e79ba7a47d"
+    },
+    {
+      "path": "research/results/discovery_genome_v1/tmm_normalization.csv",
+      "bytes": 1392,
+      "sha256": "ca50ea77769b252c56a86da2d10aaa84f2e5177592ff425e126abb450c98508b"
+    },
+    {
+      "path": "research/results/discovery_genome_v1/voom_all_contrasts.csv",
+      "bytes": 16017358,
+      "sha256": "1e32b06786ac1095cb35ef8c5e6a25db34699308423abc421d4f9b6a46519858"
+    },
+    {
+      "path": "research/results/discovery_genome_v2/all_donor_effects.csv",
+      "bytes": 44109760,
+      "sha256": "1dde278e93c8db6b1c8ebc384366045b52f7feec686c67c23c70446d0922b44f"
+    },
+    {
+      "path": "research/results/discovery_genome_v2/alternative_model.rds",
+      "bytes": 16571174,
+      "sha256": "365f6fd28e1e00bfe12b7516fbc3cec406c24d115a990a5c1caad2acc35184d1"
+    },
+    {
+      "path": "research/results/discovery_genome_v2/analysis_freeze.json",
+      "bytes": 2044,
+      "sha256": "1fd1d0c50396948858532dad3ef7dcd9884fd32e88a3a7578b2c43c7fed0bc3e"
+    },
+    {
+      "path": "research/results/discovery_genome_v2/candidate_donor_effects.csv",
+      "bytes": 41,
+      "sha256": "309b359510e75f91806d935d674a19a48d3202a5808a2abded684a97b5ada046"
+    },
+    {
+      "path": "research/results/discovery_genome_v2/candidate_freeze.json",
+      "bytes": 242,
+      "sha256": "6cf6d5b98153e97105c3123241c3f77d756cff5f4e3ccb419421d0d7c13a64b8"
+    },
+    {
+      "path": "research/results/discovery_genome_v2/candidate_leave_one_donor_out.csv",
+      "bytes": 100,
+      "sha256": "d2b3495fac00ef237d1fe50ca660ee9a88a772fbc3d3b57cad418135839392a7"
+    },
+    {
+      "path": "research/results/discovery_genome_v2/candidate_simple_effects.csv",
+      "bytes": 114,
+      "sha256": "8e7177eda692afc414c2d84b151679f344f964d36730465b1740490f6b44748d"
+    },
+    {
+      "path": "research/results/discovery_genome_v2/deseq2_all_contrasts.csv",
+      "bytes": 35229046,
+      "sha256": "44aea496218c6c4e32fd66ffad3757bb904700a850a59adf1d93e6c4fa350594"
+    },
+    {
+      "path": "research/results/discovery_genome_v2/design_matrix.csv",
+      "bytes": 1243,
+      "sha256": "698f040970c41ca12cc560bc5dba284ec65e8544bd1968681160a30d78af8764"
+    },
+    {
+      "path": "research/results/discovery_genome_v2/frozen_candidates.csv",
+      "bytes": 313,
+      "sha256": "506f30afda58d2d34e5ee75ddcdfa16d4f743943dfd9f7c85435af9e84b27b0a"
+    },
+    {
+      "path": "research/results/discovery_genome_v2/genome_screen.csv",
+      "bytes": 21177127,
+      "sha256": "5fc052c0dba3195b2256b2fa853707a646c8008c63168927cbbf85e79ba7a47d"
+    },
+    {
+      "path": "research/results/discovery_genome_v2/screen_run.json",
+      "bytes": 824,
+      "sha256": "e7cfa065d234631c3301ebcd7527940e41db48505d4a6d91c4264f1aa416f293"
+    },
+    {
+      "path": "research/results/discovery_genome_v2/screen_summary.csv",
+      "bytes": 189,
+      "sha256": "f6365b6522b376ad67eaca2be14459ff6f29207abb996e07913a5637112548c9"
+    },
+    {
+      "path": "research/results/discovery_genome_v2/sessionInfo.txt",
+      "bytes": 2322,
+      "sha256": "bf46eda12277e7fe86b0af05aff154e3564e4ca44ed30ff75ec3dc63a9b69bdd"
+    },
+    {
+      "path": "research/results/discovery_genome_v2/tmm_normalization.csv",
+      "bytes": 1392,
+      "sha256": "ca50ea77769b252c56a86da2d10aaa84f2e5177592ff425e126abb450c98508b"
+    },
+    {
+      "path": "research/results/discovery_genome_v2/voom_all_contrasts.csv",
+      "bytes": 16017358,
+      "sha256": "1e32b06786ac1095cb35ef8c5e6a25db34699308423abc421d4f9b6a46519858"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/BioExplainR-report-en-v2.html",
+      "bytes": 79295,
+      "sha256": "0500f8c80f5d4e0ed669601f0b19f8f7dd3e2c975432b374a8cb64635c75bffa"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/BioExplainR-report-en.html",
+      "bytes": 77506,
+      "sha256": "84c52b0e0229a9dfb2f8494dcc80e9cd43a46dc269c2ccc8e3ae681b9e379a84"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/BioExplainR-report-zh-v2.html",
+      "bytes": 78939,
+      "sha256": "3e0aeb66e4d66ec3f62164639a4e5fa9c9d434e5a4b7853b445405d5ad2aa367"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/BioExplainR-report-zh.html",
+      "bytes": 77150,
+      "sha256": "e770b5f77aac160521daf2afc42b69a168163cf6ce17a5196c88fd2fc482f0cc"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/EXECUTION_NOTES.md",
+      "bytes": 2179,
+      "sha256": "6d000b8429a69a50f3e3d1f6ab5f04a764373134ecf7b837ebac58474ba791e7"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/all_priority_leave_one_donor_out.csv",
+      "bytes": 69608,
+      "sha256": "c5fa8c448de5f74165a0b9c8e0a1450a4023cc4f57247d1fefc46b5b8479bd2a"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/analysis_freeze.json",
+      "bytes": 1520,
+      "sha256": "b434a770b5059dba5981d5137d743872f82b5a163bac6521e65cff90853b2264"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/asm_time_annotation.csv",
+      "bytes": 18819,
+      "sha256": "54272b9b101adc1a0cbf7c284ad363dca541af0536fce4e5f2b1112ef403205b"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/asm_time_measurements.csv",
+      "bytes": 6920,
+      "sha256": "d514037c9a2fe0d7c1ca5cf4150f73b32c7ba5af5b5c27a8e93076a996c00b5a"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/asm_time_results.csv",
+      "bytes": 4224,
+      "sha256": "c75cbc853f982dd8927bb44a167168008ffbb52830a39fe59b9007c9a6eb53c5"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/bioexplainr_contexts.rds",
+      "bytes": 19998,
+      "sha256": "ebede0134264b5557f5d5d8907631785735dd1fedcbb81aab3a1e280cb1c6db7"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/bioexplainr_contexts_v2.rds",
+      "bytes": 20082,
+      "sha256": "b5cd9b71954e85bf261c57fe8f76857aea1f387231019209cae988c1fb76e26b"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/bioexplainr_fact_checks.csv",
+      "bytes": 184,
+      "sha256": "07ad68038cbbe1ef2acf12456d212611d1cc4ca3744fa256034cb7bb0848d43e"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/bioexplainr_fact_checks_v2.csv",
+      "bytes": 184,
+      "sha256": "07ad68038cbbe1ef2acf12456d212611d1cc4ca3744fa256034cb7bb0848d43e"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/bioexplainr_project.rds",
+      "bytes": 20903,
+      "sha256": "188ed5c36e1d4766170f102561bbdebcc419fb5cc176d653d007ac19590e9a8a"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/bioexplainr_project_v2.rds",
+      "bytes": 20968,
+      "sha256": "001e0a030f2cc3e19db8c6ae7a07ea4279e01fb70961b8d3b1a3737004bce5b8"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/bioexplainr_workflow.json",
+      "bytes": 270,
+      "sha256": "69f192a836dafe0bb950716546645708d903a90065d07857e0a18dee9c5fb818"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/bioexplainr_workflow_v2.json",
+      "bytes": 270,
+      "sha256": "69f192a836dafe0bb950716546645708d903a90065d07857e0a18dee9c5fb818"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/candidate_annotation.csv",
+      "bytes": 293,
+      "sha256": "a88f6bb13e234dfcf318484fa7a96213bfa03b597c2bd1832fb981d5de6213cf"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/candidate_context_donor_effects.csv",
+      "bytes": 11268,
+      "sha256": "c31611d29504e41b777f6e1c4704bebc6ee59416e9366013b30fef132f06e1bb"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/candidate_context_effects.csv",
+      "bytes": 15872,
+      "sha256": "28e27171b5c1642d74c009360d543f0fe8a6bcad912eb3c4e6c49106b15c0aa2"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/candidate_freeze.json",
+      "bytes": 4872,
+      "sha256": "19d3e28dd6562064fabe52dcb9a6b8161be93195242bf1cb4a1583a08746fb11"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/direct_temporal_freeze.json",
+      "bytes": 323,
+      "sha256": "ab42a1509cb2ee694e31fb4711a6528d69dd060dd2b84697d140f431a530ab00"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/direct_temporal_results.csv",
+      "bytes": 4347,
+      "sha256": "3b77ea0d9db07d80df7e4e19c4791667bf660bc0771a39c148795608d05441cc"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/evidence_summary.csv",
+      "bytes": 3214,
+      "sha256": "7437affc09a2b67eb8f9744e0b59eb486262f10cc6b6f55e42a644eb2feace10"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/external_analysis_freeze.json",
+      "bytes": 702,
+      "sha256": "84e413120d564912a8b26705a508aedc804cb3e8381656a70a6aea5c7343c40e"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/external_donor_effects.csv",
+      "bytes": 19773,
+      "sha256": "5c140906e48cd2e253102449bc4bb9d702ea43d24c713abdcea8446a3296a4f0"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/external_execution_amendment.json",
+      "bytes": 499,
+      "sha256": "97eb968b25511b0e43cb1921fb5b6e0c802adc56f279e2e863a7dd84f10fe5c9"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/external_gene_measurements.csv",
+      "bytes": 37280,
+      "sha256": "1ad7be977d3fe8e0e75e41de9ac66e3954170ac63de3981ac42308741a43694f"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/external_r_audit.json",
+      "bytes": 297,
+      "sha256": "86d35d41734c7fe42cb74b2f53e83bbedf6fdb3a28c67178ea1e2c03c738d5f8"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/external_r_numeric_checks.csv",
+      "bytes": 25305,
+      "sha256": "be8db87479c90c91cce96167bc2ddbc45358126b395f214a77c45a3fc96ed0bd"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/external_results.csv",
+      "bytes": 9005,
+      "sha256": "7d01eb5b0230a3447da5096f85d7e37344a55d45ed59795c7f41fb00a2db4b3c"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/external_run.json",
+      "bytes": 269,
+      "sha256": "0cf4c8890eaad71c790c189a4948b0f9ac33d9e7e07a731bb230ec13c1cba512"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/external_samples.csv",
+      "bytes": 1919,
+      "sha256": "48d960f4c8dc8847015f3b8c5a3b47c851939661e750f6690b98aedcbbf8f392"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/external_sensitivity.csv",
+      "bytes": 3186,
+      "sha256": "6c6fdddb31ee1105f862c5b586364fd029ff917831fad34ea0a10167fb20b20a"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/external_transcript_measurements.csv",
+      "bytes": 277978,
+      "sha256": "586f75dd2712ce026a01ae86a1f0876dfb0af474cbb4ca407f4216a8682b0970"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/figures/Figure_1_context_response.pdf",
+      "bytes": 15463,
+      "sha256": "028ef82c79ea46f7f11b634ddbe3e666927365a504f2c17377faabcf84c8904e"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/figures/Figure_1_context_response.png",
+      "bytes": 154106,
+      "sha256": "5f1daac9f5d5490f3f87249c952b92b0b2600f45a4604cdc2bcaf14f4e71bd6b"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/figures/Figure_2_external_donors.pdf",
+      "bytes": 14395,
+      "sha256": "09d6abe1d1534d31fa5d3b0697e59508123eb8012e5d4683454ff62f05827fb9"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/figures/Figure_2_external_donors.png",
+      "bytes": 82547,
+      "sha256": "70014c53b871eeb8cbcbb39ab669390b382495aaeac625dcf982882110b52413"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/figures/Figure_3_paired_measurements.pdf",
+      "bytes": 19590,
+      "sha256": "daec50df04c0d863bd7c9d043002692a4512b0b41c672148063e6159b34a9214"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/figures/Figure_3_paired_measurements.png",
+      "bytes": 355044,
+      "sha256": "919a490b34ace76bfae5f4159594411ada965020e6db9662f9f01dd0ce66b61e"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/figures/Figure_4_PER2_GR_time.pdf",
+      "bytes": 15478,
+      "sha256": "b0d24132ea00960c4c9f86f10bcf84beb34f8474c9a372c7f219652e429af8cc"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/figures/Figure_4_PER2_GR_time.png",
+      "bytes": 78309,
+      "sha256": "145d8425b82c1e336993bee37720e2b4665d551d07a7c09659f3f1e143540aaf"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/figures/Figure_5_clock_time_arrays.pdf",
+      "bytes": 13700,
+      "sha256": "5e59224ce4b20c4e6c90fd974205a570d9a823d78506457b80ea4f456dc0554b"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/figures/Figure_5_clock_time_arrays.png",
+      "bytes": 83604,
+      "sha256": "7a1df521b2faff2294aee896752dd2c2952f080b94a3c3c5c4616f7375a6a25a"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/focused_fulltext_acquisition.json",
+      "bytes": 1018,
+      "sha256": "864d9251cbd15e31840332c2c3a18eed2686f30be3e36599fb6b419e2fcb9773"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/frozen_candidates.csv",
+      "bytes": 1452,
+      "sha256": "afa59560c594ce8ba5a5c3e9243182a180110ad1d0d26da00019f06d7b1e5cb6"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/gr_analysis_freeze.json",
+      "bytes": 384,
+      "sha256": "3186228d4c67843368715032844f63c8b23f8d78268809ed11f984fb7c837ba7"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/gr_candidate_measurements.csv",
+      "bytes": 38906,
+      "sha256": "ad8f0a1613a0eb37e0abd3e9f907ebb79cd1c135f4c912073936261259cac87f"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/gr_candidate_results.csv",
+      "bytes": 8846,
+      "sha256": "58334fe7f378d3a9744c41be69a6470a760a3bfebd4aa228b93dc4d692a9ec5f"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/gr_contrasts.csv",
+      "bytes": 432,
+      "sha256": "c8ead208eab15fb9cd211d9cedf784a932e0029652b8a3c816f85883d4a098c3"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/gr_design_matrix.csv",
+      "bytes": 2743,
+      "sha256": "521bad4978b0d5480d5817d9c0b7dfc422fd91724257fa4860775d92502fd66a"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/gr_late_results.csv",
+      "bytes": 2416,
+      "sha256": "7fc3cd457ee6251c1c6ffac64875b2b6b6b37e0006eb465fbb6aa2ce999dfbb0"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/late_gr_freeze.json",
+      "bytes": 304,
+      "sha256": "161c770f34eae3711ceedbfdcb5966c2874a86a974ac00a087c860f2975145a7"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/literature/ANGPTL2.json",
+      "bytes": 796838,
+      "sha256": "9147a57f46c468191861e055667e046ae373019e712c22cec2b46bd0a52cc95f"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/literature/FKBP5.json",
+      "bytes": 749623,
+      "sha256": "2239929e21c6b26689e99cb83efb36a7fcb73093759c3d0439d24cbbbbb01b6d"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/literature/FSTL3.json",
+      "bytes": 821575,
+      "sha256": "16bb4e74c3b22de3f7a70a149b09a163147d223801f5c684468b668c91e7e0ca"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/literature/FSTL3_ASM.json",
+      "bytes": 158443,
+      "sha256": "0276a8e34b28217cf159710f7454e604db7210a3126affb7ef46d28e606f8e61"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/literature/GCNT1.json",
+      "bytes": 945478,
+      "sha256": "3f97cdc848f61cd2690a71cd9a4bf00bf78aa13c5db1c2933ba101e54389a0bd"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/literature/LINC00607.json",
+      "bytes": 66791,
+      "sha256": "230ceb58eb70c9771bf81626de52a6c47d4a29b42bcfb04e7cfd9af07aac1d28"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/literature/LINC00607_ensembl.json",
+      "bytes": 429,
+      "sha256": "026f18e137d345ddf453a9da8e897701b0bfe1f91e8f59adbc3f6b9233625730"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/literature/MAOA.json",
+      "bytes": 758548,
+      "sha256": "668bc080cc791a55c6ccee392a88b51fc77e962994d6a679004fb6d913ddce6e"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/literature/METTL7A.json",
+      "bytes": 612252,
+      "sha256": "a08e6c35c8799f35423bb98761a1fbfb286b16edfa0971013407706647e0d685"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/literature/PER2_ASM.json",
+      "bytes": 323865,
+      "sha256": "37b91aa578d6b0ef5528716063831c5bc6fdcbc638acf9bd807824500fb103ce"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/literature/PER3.json",
+      "bytes": 763593,
+      "sha256": "dfff832e3913bb9a6ae1c1baf0d387320d15e49c17237ec9a4d767a5f33f4207"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/literature/PMC12063231.xml",
+      "bytes": 145104,
+      "sha256": "011ce548084d1b3f2fb5ca9c61f2b998b7913b7ace146c0f84dd8426b6bed302"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/literature/PMC9879848.xml",
+      "bytes": 190855,
+      "sha256": "e7bbdece42cc3e8795b93050c56955d053cb8000cd66a638cc7f5224e71aa775"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/literature/TEF.json",
+      "bytes": 713353,
+      "sha256": "7c0844c76872fb9516255d4bcd945ff75e9cc3b616a32c97bfcbf13417b12798"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/literature/TSC22D3.json",
+      "bytes": 892161,
+      "sha256": "a438efde35107c7be861ac648c511318d686125cbec8f67889f1fb095b403778"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/literature/ZBTB16.json",
+      "bytes": 842624,
+      "sha256": "80f76de0c617960ea4d87a65c702679be262fd4bc6d81501407f08794f06e563"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/literature/clock_ASM.json",
+      "bytes": 771359,
+      "sha256": "8778ba6de2b7943407fa9b96f13eaeb3165265ca022ea3e27fe35eceb5c8a9a6"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/literature/focused_fulltext_ids.json",
+      "bytes": 906,
+      "sha256": "22fccbc25ce5edfcacedd076519933d156e954d9e0888a39ed99c82d07b34dc1"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/literature/focused_fulltext_mentions.csv",
+      "bytes": 42039,
+      "sha256": "62b7d186c494ce77a809cda3589f8bf57aed6f817ff49599ba5ecee0bd139464"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/literature/focused_search_digest.csv",
+      "bytes": 275750,
+      "sha256": "01d17dc836524ba28826e8861c174dcf2bdce67ae10e8c357edded849a6d6bb6"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/literature/original_paper_mentions.csv",
+      "bytes": 25891,
+      "sha256": "97773dd6405120ebd7e3987fa0b33783c9d2c37d639373befb286eada78f0f71"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/literature_search.json",
+      "bytes": 9372,
+      "sha256": "87fc58ab285e3c916cdeaa2b704c748a15999520faa89eba999ed81e69d6c7bf"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/numeric_audit.json",
+      "bytes": 591,
+      "sha256": "a6bc7cf8b27f3db878c841f2ae5cbb0f01b560dbcc8974e820468e9a3fe15740"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/report_amendment.json",
+      "bytes": 474,
+      "sha256": "2520b5954dda4636c81a2f4eb937842b4879b73c919d69e6375565c3efd6c81c"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/report_sessionInfo.txt",
+      "bytes": 1198,
+      "sha256": "050c5d463c594876d678327bf26959ee09ea6286799dfe0f8bd48cc81c93f6b5"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/report_sessionInfo_v2.txt",
+      "bytes": 1198,
+      "sha256": "050c5d463c594876d678327bf26959ee09ea6286799dfe0f8bd48cc81c93f6b5"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/response_full_results.csv",
+      "bytes": 30679305,
+      "sha256": "e8596721bd0d05154fb2c4a301d1eebc190d7de9aaf04829d0067d1327a56ec3"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/scientific_ledger.json",
+      "bytes": 2107,
+      "sha256": "9f555f27d23eef286d3856566fe9ae6ffaa415ee71421779ac12d05e374f76be"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/screen_run.json",
+      "bytes": 142,
+      "sha256": "ba85ab5086e4150072da781319fe3a8528a6b374ebf0ea99cb62609b605b4419"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/stable_response_screen.csv",
+      "bytes": 3026655,
+      "sha256": "3530775e11352a5b0d3be6644ec7268fbf7ed4861ac856caa2832c3d8b1eb205"
+    },
+    {
+      "path": "research/results/discovery_stable_response_v1/time_analysis_freeze.json",
+      "bytes": 924,
+      "sha256": "05359586cdaf40dc778c4ad89fb73b84d8246117d62e427c353129d8b07f3729"
+    },
+    {
+      "path": "rgo.md",
+      "bytes": 55273,
+      "sha256": "c80768de80ebb187c97d9cbabb9bc8b90c90703ec89cdf4c5e38e64a40634326"
+    },
+    {
+      "path": "DESCRIPTION",
+      "bytes": 2108,
+      "sha256": "5d59103e170b4eea6a955bb28ab9a65efd14c983e07aa57a7f2533a4844af6bb"
+    },
+    {
+      "path": "NAMESPACE",
+      "bytes": 3181,
+      "sha256": "c1aba4721cc66e304c4d6ce3ba610f3a225a1a04ce510d46459378a2aec58e85"
+    },
+    {
+      "path": "R/BioExplainR-package.R",
+      "bytes": 634,
+      "sha256": "ff9a30dd74f547f02fda0c8f222799981ff0b61b8907e9231deddffd46d9e917"
+    },
+    {
+      "path": "R/adapters-de.R",
+      "bytes": 17243,
+      "sha256": "76dd093251754c1b192253745169ac39dd4c7a81679e76a07ad89f4afa287a43"
+    },
+    {
+      "path": "R/adapters-enrich.R",
+      "bytes": 17831,
+      "sha256": "1066c1be961a7709e737b9bae29182a2e35651a1e33048d31f19ab2648b447e7"
+    },
+    {
+      "path": "R/adapters-extended.R",
+      "bytes": 21608,
+      "sha256": "d58a37371f07bfc41e7f464983a7775a6c41b1fbef52148ab36d57f6daf2d363"
+    },
+    {
+      "path": "R/adapters-multiomics.R",
+      "bytes": 5987,
+      "sha256": "842276174735dd591ca957cdcc2695d45fd61fe68414e12694e7caa65f8b8fa5"
+    },
+    {
+      "path": "R/adapters-plot-generic.R",
+      "bytes": 8666,
+      "sha256": "3dcb08da65225c975dd03389565b032db4ce780ad18fbc9e75770de0e1485625"
+    },
+    {
+      "path": "R/adapters-sc.R",
+      "bytes": 12179,
+      "sha256": "ae21a4e14fa10ede45cf70c71a29019fd838b6fdf4249c280fdd9397553997a6"
+    },
+    {
+      "path": "R/benchmark-contract.R",
+      "bytes": 4397,
+      "sha256": "a0e8c07eb97c195c2619362c3236aa4747d1ea2d55c10d04ea4dd25533556e40"
+    },
+    {
+      "path": "R/cell-proportions.R",
+      "bytes": 16376,
+      "sha256": "786997096cb96cb4b3f4e997c3b326eab257acde51e346090ebc46b0d7235c82"
+    },
+    {
+      "path": "R/claims.R",
+      "bytes": 14741,
+      "sha256": "4a3933c9266941b7b49c1349266b20ca04c23e0fe2af97276cc7c41169b7d791"
+    },
+    {
+      "path": "R/config.R",
+      "bytes": 17213,
+      "sha256": "4f051baa9b33c62f344ff7aa2ef8dbb6c5a2d457b1eb95254aac894e34dd6b4c"
+    },
+    {
+      "path": "R/context.R",
+      "bytes": 23332,
+      "sha256": "e7e5caffdbe20c8e612fc93513750a5adf18fc197b0aec6c88c47babc559fd7c"
+    },
+    {
+      "path": "R/contracts.R",
+      "bytes": 10550,
+      "sha256": "10e9539763717f7efd46cbed1a6795ed2811c151ac812e07cf7437d2ab6f56e6"
+    },
+    {
+      "path": "R/diagnose.R",
+      "bytes": 27610,
+      "sha256": "ee832f81fc77847267ceba590630eb0d512f20a8fc1a7659ccbd6eb2001e58c3"
+    },
+    {
+      "path": "R/docking.R",
+      "bytes": 6106,
+      "sha256": "2dd31afe1efccbe0ad122aadc7bab8b474f7f2cabc9319aa03b7d3b259392869"
+    },
+    {
+      "path": "R/evaluation.R",
+      "bytes": 17455,
+      "sha256": "416523e2550b10565ab753714b4b57f904995088307c1927b8930388f6168d16"
+    },
+    {
+      "path": "R/evidence-live.R",
+      "bytes": 31381,
+      "sha256": "079f763bb17f9b80156e70637dde8cdf7c8c58fccb2871618b2d85d2055e68f7"
+    },
+    {
+      "path": "R/evidence-support.R",
+      "bytes": 8222,
+      "sha256": "82be4a9b3cbaa2ec2b0e34f8def75939a11ea989b727c1decabad473fa4a86cf"
+    },
+    {
+      "path": "R/evidence.R",
+      "bytes": 7447,
+      "sha256": "42a113788cee02fac9d854160238072e07d6b8e3a87a97cc7a2e762407cff0fa"
+    },
+    {
+      "path": "R/explain.R",
+      "bytes": 47904,
+      "sha256": "93da878488e86811e1d313ce9ec90005c4fbe2a888c858096190cf027b42a471"
+    },
+    {
+      "path": "R/explanation-validation.R",
+      "bytes": 7152,
+      "sha256": "13646f21dbf8ac8f0672f5ba89a909010e0c3196015d3c73b6cebc8f861afb5e"
+    },
+    {
+      "path": "R/i18n-en.R",
+      "bytes": 32973,
+      "sha256": "d04c225a03103f8825ccaa65a07890c5ed08d5fb0a88b46bcaed4b926af8c8df"
+    },
+    {
+      "path": "R/i18n.R",
+      "bytes": 1880,
+      "sha256": "543ba1cfd3da62e158a8c0018f92c806f56465207c09fe0706e514152744178c"
+    },
+    {
+      "path": "R/llm.R",
+      "bytes": 7877,
+      "sha256": "69df41c692126fa7edc101950595b2bc329abab2a4eed5f547b2757ed59a929d"
+    },
+    {
+      "path": "R/plot-cross-check.R",
+      "bytes": 15459,
+      "sha256": "463f7126de678bab76ab36577f23bf135a8498f1482a59067466df3adb934c8f"
+    },
+    {
+      "path": "R/plots.R",
+      "bytes": 17333,
+      "sha256": "d64f121061bae60d8856af8253e875d079aec465f9dd5b1749b985c057bff56f"
+    },
+    {
+      "path": "R/project-relations.R",
+      "bytes": 6180,
+      "sha256": "3affcba7df6754b54c8c48a1719e0698d486810d87d4e594399dab20e3904fa2"
+    },
+    {
+      "path": "R/project.R",
+      "bytes": 10721,
+      "sha256": "745096fba006668c67285b84a51c7ba2ae174d540f52473e672aa6cce243e515"
+    },
+    {
+      "path": "R/record.R",
+      "bytes": 10006,
+      "sha256": "46106ab58dbc8c3ac083983c1e7dca6acb1444510a71ecb86147a82fcc75169d"
+    },
+    {
+      "path": "R/report.R",
+      "bytes": 23866,
+      "sha256": "a5fad961e8b3cd90baf5559fbc154e4dfd081f6e6112ac72c43b78576d4988a5"
+    },
+    {
+      "path": "R/runtime.R",
+      "bytes": 9297,
+      "sha256": "1c76df9255b806f636b3c7d984a853a725337ae41904cb48f3848c486b0d5bf9"
+    },
+    {
+      "path": "R/sample-map.R",
+      "bytes": 7735,
+      "sha256": "2906f5e7e0c22e342d43c224b5644de378332d9254b7ec736b0e629d9bc99c9b"
+    },
+    {
+      "path": "R/shiny-app.R",
+      "bytes": 31835,
+      "sha256": "538541d4433ff7020940941557829051edf2c1fa7e7ed2e7ef928c40a28805be"
+    },
+    {
+      "path": "R/shiny-i18n.R",
+      "bytes": 6535,
+      "sha256": "242e92085ee837c73efe15397000fb5a025b3cb700e7a0f9a52a338467950b5d"
+    },
+    {
+      "path": "R/spatial.R",
+      "bytes": 3777,
+      "sha256": "6f9a7218930e07f7510840b7e9d7c41ef2ae5413d11d3406f71ae88d88be4c47"
+    },
+    {
+      "path": "R/teaching.R",
+      "bytes": 16680,
+      "sha256": "a2fa4c89e94e4eae9d8405282b520dbd192fb96755297f4132365ca1f5910f4d"
+    },
+    {
+      "path": "R/utils.R",
+      "bytes": 7629,
+      "sha256": "32bc116ac690faa2d21cb81f2e0d48783a0564b162c9ff70abd3333cd3c343c6"
+    },
+    {
+      "path": "R/validate.R",
+      "bytes": 14816,
+      "sha256": "a4b7154686c44acc58ae5ac31958dfd3880825ab803e452e4e0d7896d541241c"
+    },
+    {
+      "path": "research/results/discovery_context_v1/counts.txt.gz",
+      "bytes": 1371256,
+      "sha256": "62d3d3cbf246df73a9cf767f4c0f3f875d5c7d620af260d02de549647b2db30e"
+    },
+    {
+      "path": "research/results/discovery_context_v1/samples.csv",
+      "bytes": 3454,
+      "sha256": "2b73f7e3a79f3fae98fbf031ef9e93d0491d7e16de65d0719829b0d4de022fe6"
+    },
+    {
+      "path": "research/results/discovery_context_v1/size_factors.csv",
+      "bytes": 962,
+      "sha256": "2c423d8617e643d82d8b618f7a510f512d899137488281674d45dba7ca53394d"
+    },
+    {
+      "path": "research/results/discovery_donors_v1/samples.csv",
+      "bytes": 2351,
+      "sha256": "7bd368e012c810023a7bce6a63f0fd2ad533402cb1d6b7e63539d26e1d2a866a"
+    },
+    {
+      "path": "research/results/discovery_donors_v1/supplement_text.txt",
+      "bytes": 65006,
+      "sha256": "a4335a504d16447315797033141988df12cb0476fdadace632ff0a16fd59018d"
+    },
+    {
+      "path": "research/results/discovery_donors_v1/original_supplement_verified.pdf",
+      "bytes": 2188400,
+      "sha256": "58ffb30921ad7cb70a7d326dace8393ca6fc4dedc3de374c5c4d928a502ee7d6"
+    },
+    {
+      "path": "research/results/discovery_sparcl1_v1/GSE34313_series_matrix.txt.gz",
+      "bytes": 1932820,
+      "sha256": "c76c4311bccd29096fd631c7ac9d3eafbb0ad5c92bc3bbe4b15b0b9eed8102a0"
+    },
+    {
+      "path": "research/results/discovery_sparcl1_v1/GPL6480.annot.gz",
+      "bytes": 7380104,
+      "sha256": "aacec81b2d95f183f0827b43e769388a92917811b81920c13ecc8fe148c5a3ab"
+    }
+  ],
+  "original_protected_files_checked": 2905,
+  "original_protected_files_unchanged": true,
+  "external_reference_inputs": [
+    {
+      "path": "research/results/discovery_context_v1/model.rds",
+      "bytes": 32636612,
+      "sha256": "ff150cf0ac50522f04d2327126edd28c3d166e210cc41d7d83cbba41497a30c0"
+    },
+    {
+      "path": "research/results/discovery_donors_v1/tpm.txt.gz",
+      "bytes": 121575832,
+      "sha256": "30ebc92ddbd40bf4dedab57d05b46ba10a763c0130c89f6154862b351189277f"
+    },
+    {
+      "path": "research/results/discovery_mechanism_fit_v4/model.rds",
+      "bytes": 30600410,
+      "sha256": "4ae82b5c8b23401f8aea6ca8518590afb2e207526b4e9ee4485f87bd011a89ae"
+    }
+  ],
+  "tpm_recovery_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE94nnn/GSE94335/suppl/GSE94335_PostQC_all_sample_TPM.txt.gz",
+  "source_model_recovery": "Use earlier r11/r13 delivery or locally preserved source model.rds paths. ZIP includes new alternative_model.rds but not earlier DESeq2/A549 source models.",
+  "syntax": "All newly added Python parsed; source/text files have no trailing whitespace",
+  "visual_review": "not performed; numeric, browser and PDF geometry audits supplied"
+}

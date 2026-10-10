@@ -1,0 +1,11 @@
+{
+  "utc": "2026-10-09T13:47:16.089457+00:00",
+  "script": {
+    "path": "research/discovery/validation_human_protein.py",
+    "bytes": 3713,
+    "sha256": "6403f0808a3591886810a6654b0b30e1cf22c678805a7cb2e299573eee5fcf04"
+  },
+  "reason": "ALL sheets expose total intensity, not per-sample arrays; per-sample LFQ and statistics exist only in preselected differential sheets.",
+  "analysis": "Complete frozen candidate detection inventory; extract published effects/p/q only when candidate occurs in selected sheet. No new unselected family test or missing P=1 significance claim.",
+  "selection_limit": "No-hit in differential list is unavailable effect/test, not a null result. Published significance conditional on original all-protein processing; selected re-tests not independent replication."
+}

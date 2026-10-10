@@ -1,0 +1,24 @@
+{
+  "command": [
+    "env",
+    "BIOEXPLAINR_PAPER_DIRECTORY=docs/paper_cn_v4",
+    "BIOEXPLAINR_PAPER_VERSION=v0.10",
+    "BIOEXPLAINR_MAIN_FIGURES=3",
+    "BIOEXPLAINR_MAIN_TABLES=1",
+    "BIOEXPLAINR_REQUIRED_TEXT=iSEE,SCassist,GeneAgent,ellmer,GPTCelltype,SPARCL1,GSE94335,GSE146017,致死性哮喘",
+    "BIOEXPLAINR_REVISION_BROWSER=/tmp/opencode/paper-v010-browser",
+    "NODE_PATH=/tmp/opencode/node_modules",
+    "node",
+    "research/paper_cn_revision/browser_revision.cjs"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-08T15:57:22.768749+00:00",
+  "finished_utc": "2026-10-08T15:57:23.170557+00:00",
+  "exit_code": 1,
+  "status": "fail",
+  "log": {
+    "path": "research/results/w00_baseline/biology-paper-browser-pass.txt",
+    "bytes": 855,
+    "sha256": "98eec28947950bed733ca045e459c8bd916894927afa6d4b08779f297a02a4ac"
+  }
+}

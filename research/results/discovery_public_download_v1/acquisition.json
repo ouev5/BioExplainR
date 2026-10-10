@@ -1,0 +1,1393 @@
+{
+  "utc": "2026-10-10T06:20:11.732539+00:00",
+  "results": [
+    {
+      "project": "PXD029028",
+      "name": "PXD029028_community_annotated.sdrf.tsv",
+      "ranged": false,
+      "requests": [
+        {
+          "utc": "2026-10-10T06:18:23.661738+00:00",
+          "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2022/01/PXD029028/PXD029028_community_annotated.sdrf.tsv",
+          "start": null,
+          "end": null,
+          "exit_code": 0,
+          "stderr": "",
+          "seconds": 2.2202033679932356,
+          "completed_utc": "2026-10-10T06:18:25.881940+00:00",
+          "headers": {
+            "path": "research/results/discovery_public_download_v1/requests/PXD029028_PXD029028_community_annotated.sdrf.tsv.headers.txt",
+            "bytes": 445,
+            "sha256": "aaf3a86d07e6f9b9fbac40a7c1bb9fbe2c8d505395dad9d3dbf34688765aafa7"
+          },
+          "response": {
+            "path": "research/results/discovery_public_download_v1/ranges/PXD029028_PXD029028_community_annotated.sdrf.tsv.bin",
+            "bytes": 42400,
+            "sha256": "ab76d95aed93d1ba439d4e2cd9db0cd876483645d69ebeccb72cc0b775aa0c9d"
+          },
+          "http_status": 200,
+          "status": "retrieved"
+        }
+      ],
+      "integrity": {
+        "file": {
+          "path": "research/results/discovery_public_download_v1/sources/PXD029028_PXD029028_community_annotated.sdrf.tsv",
+          "bytes": 42400,
+          "sha256": "ab76d95aed93d1ba439d4e2cd9db0cd876483645d69ebeccb72cc0b775aa0c9d"
+        },
+        "valid": true,
+        "sha1": "065d676248da206d47731dfb2be89d24f0048368",
+        "upstream_sha1_matches": null,
+        "stored_bytes": 42400,
+        "uncompressed_bytes": 42400,
+        "gzip_crc_pass": false
+      },
+      "status": "verified"
+    },
+    {
+      "project": "PXD029028",
+      "name": "pepide_matrix.csv",
+      "ranged": true,
+      "requests": [
+        {
+          "utc": "2026-10-10T06:18:23.677254+00:00",
+          "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2022/01/PXD029028/pepide_matrix.csv",
+          "start": 0,
+          "end": 524287,
+          "exit_code": 0,
+          "stderr": "",
+          "seconds": 23.820332698524,
+          "completed_utc": "2026-10-10T06:18:47.497590+00:00",
+          "headers": {
+            "path": "research/results/discovery_public_download_v1/requests/PXD029028_pepide_matrix.csv.0.headers.txt",
+            "bytes": 484,
+            "sha256": "7297b3d6cfb42e059b525143890b3e71557ef4b26e92bad4055c6e7c1b48d269"
+          },
+          "response": {
+            "path": "research/results/discovery_public_download_v1/ranges/PXD029028_pepide_matrix.csv.0.bin",
+            "bytes": 524288,
+            "sha256": "f3c297a58a0d9be40fa505bde69a85349256d2a34e2cf43fdd7fef3901ccb388"
+          },
+          "http_status": 206,
+          "status": "retrieved"
+        },
+        {
+          "utc": "2026-10-10T06:18:23.675051+00:00",
+          "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2022/01/PXD029028/pepide_matrix.csv",
+          "start": 524288,
+          "end": 1048575,
+          "exit_code": 0,
+          "stderr": "",
+          "seconds": 15.865631870925426,
+          "completed_utc": "2026-10-10T06:18:39.540683+00:00",
+          "headers": {
+            "path": "research/results/discovery_public_download_v1/requests/PXD029028_pepide_matrix.csv.524288.headers.txt",
+            "bytes": 490,
+            "sha256": "a2eee9dc309af5483c58f80eb3f52ee069c43d97d2bede526c7445c91ce725d2"
+          },
+          "response": {
+            "path": "research/results/discovery_public_download_v1/ranges/PXD029028_pepide_matrix.csv.524288.bin",
+            "bytes": 524288,
+            "sha256": "99193e00c68338c4772a36e10b2ace0341507f5745da4d4265e00e43065e6b2a"
+          },
+          "http_status": 206,
+          "status": "retrieved"
+        },
+        {
+          "utc": "2026-10-10T06:18:23.677204+00:00",
+          "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2022/01/PXD029028/pepide_matrix.csv",
+          "start": 1048576,
+          "end": 1572863,
+          "exit_code": 0,
+          "stderr": "",
+          "seconds": 28.977714862674475,
+          "completed_utc": "2026-10-10T06:18:52.654921+00:00",
+          "headers": {
+            "path": "research/results/discovery_public_download_v1/requests/PXD029028_pepide_matrix.csv.1048576.headers.txt",
+            "bytes": 491,
+            "sha256": "e8b1ef4c78c345411391f94af85d962f98155ba50ef628e4881797d51026a22f"
+          },
+          "response": {
+            "path": "research/results/discovery_public_download_v1/ranges/PXD029028_pepide_matrix.csv.1048576.bin",
+            "bytes": 524288,
+            "sha256": "6f1ef3069e38881a47bce6957e4f830ba28bd858ea2718ab7a914e30bcee9ffb"
+          },
+          "http_status": 206,
+          "status": "retrieved"
+        },
+        {
+          "utc": "2026-10-10T06:18:23.677033+00:00",
+          "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2022/01/PXD029028/pepide_matrix.csv",
+          "start": 1572864,
+          "end": 2097151,
+          "exit_code": 0,
+          "stderr": "",
+          "seconds": 21.18891736678779,
+          "completed_utc": "2026-10-10T06:18:44.865952+00:00",
+          "headers": {
+            "path": "research/results/discovery_public_download_v1/requests/PXD029028_pepide_matrix.csv.1572864.headers.txt",
+            "bytes": 491,
+            "sha256": "8fff5bca81e6242987a63ec6a7117070fd934037b5eb9858efade670db244290"
+          },
+          "response": {
+            "path": "research/results/discovery_public_download_v1/ranges/PXD029028_pepide_matrix.csv.1572864.bin",
+            "bytes": 524288,
+            "sha256": "5209fac647e081280d14606428d05c82fc30b11d5f3942fce6dc6b58089b0098"
+          },
+          "http_status": 206,
+          "status": "retrieved"
+        },
+        {
+          "utc": "2026-10-10T06:18:23.681072+00:00",
+          "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2022/01/PXD029028/pepide_matrix.csv",
+          "start": 2097152,
+          "end": 2621439,
+          "exit_code": 0,
+          "stderr": "",
+          "seconds": 29.016477778553963,
+          "completed_utc": "2026-10-10T06:18:52.697550+00:00",
+          "headers": {
+            "path": "research/results/discovery_public_download_v1/requests/PXD029028_pepide_matrix.csv.2097152.headers.txt",
+            "bytes": 491,
+            "sha256": "e9c45cb678f01d5b12b51459d243e6c3da4008fe1a06e1d48bd8dc0ccb0f9ae7"
+          },
+          "response": {
+            "path": "research/results/discovery_public_download_v1/ranges/PXD029028_pepide_matrix.csv.2097152.bin",
+            "bytes": 524288,
+            "sha256": "5b32c598120beffc9dc3a7911f167046605b439467c8b56b9fa2c88860df5aba"
+          },
+          "http_status": 206,
+          "status": "retrieved"
+        },
+        {
+          "utc": "2026-10-10T06:18:23.681726+00:00",
+          "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2022/01/PXD029028/pepide_matrix.csv",
+          "start": 2621440,
+          "end": 3145727,
+          "exit_code": 0,
+          "stderr": "",
+          "seconds": 30.484911359846592,
+          "completed_utc": "2026-10-10T06:18:54.166639+00:00",
+          "headers": {
+            "path": "research/results/discovery_public_download_v1/requests/PXD029028_pepide_matrix.csv.2621440.headers.txt",
+            "bytes": 491,
+            "sha256": "c8eacae24e3865a183fd110d6a5eb60821004b7ecbb9c612ead0bfb2463b2386"
+          },
+          "response": {
+            "path": "research/results/discovery_public_download_v1/ranges/PXD029028_pepide_matrix.csv.2621440.bin",
+            "bytes": 524288,
+            "sha256": "79b0d101d691fab907f5a62550d47ffb2d46dd6726897e7a155e6b2ab10567c3"
+          },
+          "http_status": 206,
+          "status": "retrieved"
+        },
+        {
+          "utc": "2026-10-10T06:18:39.542056+00:00",
+          "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2022/01/PXD029028/pepide_matrix.csv",
+          "start": 3145728,
+          "end": 3670015,
+          "exit_code": 0,
+          "stderr": "",
+          "seconds": 33.04542989656329,
+          "completed_utc": "2026-10-10T06:19:12.587489+00:00",
+          "headers": {
+            "path": "research/results/discovery_public_download_v1/requests/PXD029028_pepide_matrix.csv.3145728.headers.txt",
+            "bytes": 491,
+            "sha256": "318db9d4e0b53f797fefa8fd3ce89b3eada1ed7b7da65025dafa9e071c3d8408"
+          },
+          "response": {
+            "path": "research/results/discovery_public_download_v1/ranges/PXD029028_pepide_matrix.csv.3145728.bin",
+            "bytes": 524288,
+            "sha256": "057aadb184edb78bdc6a9745c6db7b87e3f9f65d5ea91c121d3353c5fb4766e8"
+          },
+          "http_status": 206,
+          "status": "retrieved"
+        },
+        {
+          "utc": "2026-10-10T06:18:44.867597+00:00",
+          "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2022/01/PXD029028/pepide_matrix.csv",
+          "start": 3670016,
+          "end": 4194303,
+          "exit_code": 0,
+          "stderr": "",
+          "seconds": 26.983086870983243,
+          "completed_utc": "2026-10-10T06:19:11.850686+00:00",
+          "headers": {
+            "path": "research/results/discovery_public_download_v1/requests/PXD029028_pepide_matrix.csv.3670016.headers.txt",
+            "bytes": 491,
+            "sha256": "b52fa13135f5f54b009787d311c4f8f6dd11800c684ffb8d70faa4014f938d02"
+          },
+          "response": {
+            "path": "research/results/discovery_public_download_v1/ranges/PXD029028_pepide_matrix.csv.3670016.bin",
+            "bytes": 524288,
+            "sha256": "14b52efe0c7c1fd8a8e7ec40e05b457e2aa5873625fbd735e76a0f19d78eb4e2"
+          },
+          "http_status": 206,
+          "status": "retrieved"
+        },
+        {
+          "utc": "2026-10-10T06:18:47.499344+00:00",
+          "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2022/01/PXD029028/pepide_matrix.csv",
+          "start": 4194304,
+          "end": 4718591,
+          "exit_code": 0,
+          "stderr": "",
+          "seconds": 25.172337910160422,
+          "completed_utc": "2026-10-10T06:19:12.671684+00:00",
+          "headers": {
+            "path": "research/results/discovery_public_download_v1/requests/PXD029028_pepide_matrix.csv.4194304.headers.txt",
+            "bytes": 491,
+            "sha256": "86f86580d053d6556d4d6029bc720dabbd0b12f6354aa866b579b01f74b89923"
+          },
+          "response": {
+            "path": "research/results/discovery_public_download_v1/ranges/PXD029028_pepide_matrix.csv.4194304.bin",
+            "bytes": 524288,
+            "sha256": "e8ee72178cff0b6be5d0e883836c3bb016252139311ce534d88a4f51e1ee2aa7"
+          },
+          "http_status": 206,
+          "status": "retrieved"
+        },
+        {
+          "utc": "2026-10-10T06:18:52.656275+00:00",
+          "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2022/01/PXD029028/pepide_matrix.csv",
+          "start": 4718592,
+          "end": 5242879,
+          "exit_code": 0,
+          "stderr": "",
+          "seconds": 27.01771846972406,
+          "completed_utc": "2026-10-10T06:19:19.673997+00:00",
+          "headers": {
+            "path": "research/results/discovery_public_download_v1/requests/PXD029028_pepide_matrix.csv.4718592.headers.txt",
+            "bytes": 491,
+            "sha256": "d717903cd1cea4c0a04a397d0e8512e4eda3260de9d078acd168b49a1eb50d65"
+          },
+          "response": {
+            "path": "research/results/discovery_public_download_v1/ranges/PXD029028_pepide_matrix.csv.4718592.bin",
+            "bytes": 524288,
+            "sha256": "0012e56d680898995fae91091b734713dedc2c440125892ddc5d87f29cfae0d0"
+          },
+          "http_status": 206,
+          "status": "retrieved"
+        },
+        {
+          "utc": "2026-10-10T06:18:52.699340+00:00",
+          "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2022/01/PXD029028/pepide_matrix.csv",
+          "start": 5242880,
+          "end": 5767167,
+          "exit_code": 0,
+          "stderr": "",
+          "seconds": 24.541451327502728,
+          "completed_utc": "2026-10-10T06:19:17.240793+00:00",
+          "headers": {
+            "path": "research/results/discovery_public_download_v1/requests/PXD029028_pepide_matrix.csv.5242880.headers.txt",
+            "bytes": 491,
+            "sha256": "2430077ddff022bc574e6f6c6bd47104368143a880349831006fb2ce0a604de3"
+          },
+          "response": {
+            "path": "research/results/discovery_public_download_v1/ranges/PXD029028_pepide_matrix.csv.5242880.bin",
+            "bytes": 524288,
+            "sha256": "6746f68c23f566f6ceba56bd642036792c51e393637dd0c9e47ab428f3e9b737"
+          },
+          "http_status": 206,
+          "status": "retrieved"
+        },
+        {
+          "utc": "2026-10-10T06:18:54.168321+00:00",
+          "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2022/01/PXD029028/pepide_matrix.csv",
+          "start": 5767168,
+          "end": 6291455,
+          "exit_code": 0,
+          "stderr": "",
+          "seconds": 21.41909239254892,
+          "completed_utc": "2026-10-10T06:19:15.587416+00:00",
+          "headers": {
+            "path": "research/results/discovery_public_download_v1/requests/PXD029028_pepide_matrix.csv.5767168.headers.txt",
+            "bytes": 491,
+            "sha256": "07b1081be9bea368e8e60129aeb874dfa1feaf51ba1461badcd2599b962d8643"
+          },
+          "response": {
+            "path": "research/results/discovery_public_download_v1/ranges/PXD029028_pepide_matrix.csv.5767168.bin",
+            "bytes": 524288,
+            "sha256": "1bf36c6e3231affa2964e86fed51bf83aa3f5d2d40f5fb765e721ae916bdb677"
+          },
+          "http_status": 206,
+          "status": "retrieved"
+        },
+        {
+          "utc": "2026-10-10T06:19:11.851825+00:00",
+          "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2022/01/PXD029028/pepide_matrix.csv",
+          "start": 6291456,
+          "end": 6815743,
+          "exit_code": 0,
+          "stderr": "",
+          "seconds": 25.0665647611022,
+          "completed_utc": "2026-10-10T06:19:36.918392+00:00",
+          "headers": {
+            "path": "research/results/discovery_public_download_v1/requests/PXD029028_pepide_matrix.csv.6291456.headers.txt",
+            "bytes": 491,
+            "sha256": "7b38b9b20306708519353bee0aa6d2a8ac9e125b4261ebbd5dda9b204efae61e"
+          },
+          "response": {
+            "path": "research/results/discovery_public_download_v1/ranges/PXD029028_pepide_matrix.csv.6291456.bin",
+            "bytes": 524288,
+            "sha256": "d9d92126ff2ced8df2b7956bb0956a00106223820db7f0bb8247d4b4d579bb32"
+          },
+          "http_status": 206,
+          "status": "retrieved"
+        },
+        {
+          "utc": "2026-10-10T06:19:12.589100+00:00",
+          "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2022/01/PXD029028/pepide_matrix.csv",
+          "start": 6815744,
+          "end": 7340031,
+          "exit_code": 0,
+          "stderr": "",
+          "seconds": 43.213928220793605,
+          "completed_utc": "2026-10-10T06:19:55.803030+00:00",
+          "headers": {
+            "path": "research/results/discovery_public_download_v1/requests/PXD029028_pepide_matrix.csv.6815744.headers.txt",
+            "bytes": 491,
+            "sha256": "7ba8f6543b127193a566dfddfe9b6bc7e8edf9d2de485ad5e4534464c27afd1a"
+          },
+          "response": {
+            "path": "research/results/discovery_public_download_v1/ranges/PXD029028_pepide_matrix.csv.6815744.bin",
+            "bytes": 524288,
+            "sha256": "380aa0f1552afd2f9d472a8d5a2e804f6ce4d469eeeb53a1b9faa7ff81ef2003"
+          },
+          "http_status": 206,
+          "status": "retrieved"
+        },
+        {
+          "utc": "2026-10-10T06:19:12.673188+00:00",
+          "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2022/01/PXD029028/pepide_matrix.csv",
+          "start": 7340032,
+          "end": 7864319,
+          "exit_code": 0,
+          "stderr": "",
+          "seconds": 41.837521931156516,
+          "completed_utc": "2026-10-10T06:19:54.510712+00:00",
+          "headers": {
+            "path": "research/results/discovery_public_download_v1/requests/PXD029028_pepide_matrix.csv.7340032.headers.txt",
+            "bytes": 491,
+            "sha256": "919a36d66ce3efac3b35cd490da8e5b47aae69603dc47da50486f83dca97c406"
+          },
+          "response": {
+            "path": "research/results/discovery_public_download_v1/ranges/PXD029028_pepide_matrix.csv.7340032.bin",
+            "bytes": 524288,
+            "sha256": "45b102b58d9e2cb4400eb727b0e5d4a30251d05b91f763ee1151aa16ac437c24"
+          },
+          "http_status": 206,
+          "status": "retrieved"
+        },
+        {
+          "utc": "2026-10-10T06:19:15.588576+00:00",
+          "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2022/01/PXD029028/pepide_matrix.csv",
+          "start": 7864320,
+          "end": 8388607,
+          "exit_code": 0,
+          "stderr": "",
+          "seconds": 27.763103306293488,
+          "completed_utc": "2026-10-10T06:19:43.351682+00:00",
+          "headers": {
+            "path": "research/results/discovery_public_download_v1/requests/PXD029028_pepide_matrix.csv.7864320.headers.txt",
+            "bytes": 491,
+            "sha256": "23f8d2bd7ce0c7e2a9cafd18a0d732f456d6ad9aadfbfdf65cf3c6a9c0c84927"
+          },
+          "response": {
+            "path": "research/results/discovery_public_download_v1/ranges/PXD029028_pepide_matrix.csv.7864320.bin",
+            "bytes": 524288,
+            "sha256": "696848be7094db8cb010fccd74afec5ef882f43a7b8950f64d9444095005de02"
+          },
+          "http_status": 206,
+          "status": "retrieved"
+        },
+        {
+          "utc": "2026-10-10T06:19:17.241918+00:00",
+          "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2022/01/PXD029028/pepide_matrix.csv",
+          "start": 8388608,
+          "end": 8912895,
+          "exit_code": 0,
+          "stderr": "",
+          "seconds": 32.3392791878432,
+          "completed_utc": "2026-10-10T06:19:49.581200+00:00",
+          "headers": {
+            "path": "research/results/discovery_public_download_v1/requests/PXD029028_pepide_matrix.csv.8388608.headers.txt",
+            "bytes": 491,
+            "sha256": "ff6df368af093f83221be11d99f1d060c46cc808a42a47c4b4f64831e1e455ae"
+          },
+          "response": {
+            "path": "research/results/discovery_public_download_v1/ranges/PXD029028_pepide_matrix.csv.8388608.bin",
+            "bytes": 524288,
+            "sha256": "92306e800499cda34e86f42f4be879af26cc74de28e0bee698988a4636815a02"
+          },
+          "http_status": 206,
+          "status": "retrieved"
+        },
+        {
+          "utc": "2026-10-10T06:19:19.675206+00:00",
+          "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2022/01/PXD029028/pepide_matrix.csv",
+          "start": 8912896,
+          "end": 9437183,
+          "exit_code": 0,
+          "stderr": "",
+          "seconds": 24.442875320091844,
+          "completed_utc": "2026-10-10T06:19:44.118084+00:00",
+          "headers": {
+            "path": "research/results/discovery_public_download_v1/requests/PXD029028_pepide_matrix.csv.8912896.headers.txt",
+            "bytes": 491,
+            "sha256": "2655a1da08262757ddf54f60ab994152779805b05606459bb5db68400a5eda69"
+          },
+          "response": {
+            "path": "research/results/discovery_public_download_v1/ranges/PXD029028_pepide_matrix.csv.8912896.bin",
+            "bytes": 524288,
+            "sha256": "45a1f56e6af6b9c828953bcdedea00da068e09af84ba157f9948bbc057c24528"
+          },
+          "http_status": 206,
+          "status": "retrieved"
+        },
+        {
+          "utc": "2026-10-10T06:19:36.919648+00:00",
+          "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2022/01/PXD029028/pepide_matrix.csv",
+          "start": 9437184,
+          "end": 9961471,
+          "exit_code": 0,
+          "stderr": "",
+          "seconds": 25.36114700138569,
+          "completed_utc": "2026-10-10T06:20:02.280798+00:00",
+          "headers": {
+            "path": "research/results/discovery_public_download_v1/requests/PXD029028_pepide_matrix.csv.9437184.headers.txt",
+            "bytes": 491,
+            "sha256": "7eb8290e1edbfbcb58102e97cbb13e8c276c2d2992b352a98429a629d0953418"
+          },
+          "response": {
+            "path": "research/results/discovery_public_download_v1/ranges/PXD029028_pepide_matrix.csv.9437184.bin",
+            "bytes": 524288,
+            "sha256": "54ffb501cbda2a6450f8163d81372008579b9d7930bd4017c01d93222ea56c83"
+          },
+          "http_status": 206,
+          "status": "retrieved"
+        },
+        {
+          "utc": "2026-10-10T06:19:43.353154+00:00",
+          "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2022/01/PXD029028/pepide_matrix.csv",
+          "start": 9961472,
+          "end": 10485759,
+          "exit_code": 0,
+          "stderr": "",
+          "seconds": 28.34528516046703,
+          "completed_utc": "2026-10-10T06:20:11.698442+00:00",
+          "headers": {
+            "path": "research/results/discovery_public_download_v1/requests/PXD029028_pepide_matrix.csv.9961472.headers.txt",
+            "bytes": 492,
+            "sha256": "f39761725ee34c4335e43632e0d181578027039452f41cd37047c18066e01f5d"
+          },
+          "response": {
+            "path": "research/results/discovery_public_download_v1/ranges/PXD029028_pepide_matrix.csv.9961472.bin",
+            "bytes": 524288,
+            "sha256": "d17a396e7587b2792953b0ac23fcde3c6126c8aa4dfd2b8a62fffab740d06781"
+          },
+          "http_status": 206,
+          "status": "retrieved"
+        },
+        {
+          "utc": "2026-10-10T06:19:44.119266+00:00",
+          "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2022/01/PXD029028/pepide_matrix.csv",
+          "start": 10485760,
+          "end": 10989354,
+          "exit_code": 0,
+          "stderr": "",
+          "seconds": 19.35452170483768,
+          "completed_utc": "2026-10-10T06:20:03.473790+00:00",
+          "headers": {
+            "path": "research/results/discovery_public_download_v1/requests/PXD029028_pepide_matrix.csv.10485760.headers.txt",
+            "bytes": 493,
+            "sha256": "d1af4f6dd0628f4eece5b6a568dd80f44490aa11d8d6276d4d4752c8c02d2c76"
+          },
+          "response": {
+            "path": "research/results/discovery_public_download_v1/ranges/PXD029028_pepide_matrix.csv.10485760.bin",
+            "bytes": 503595,
+            "sha256": "aeb3693a7a4bedfa98cdc4dc624c9b9fa8e7ed5a2ee80201e2a1e94a943dbe2c"
+          },
+          "http_status": 206,
+          "status": "retrieved"
+        }
+      ],
+      "integrity": {
+        "file": {
+          "path": "research/results/discovery_public_download_v1/sources/PXD029028_pepide_matrix.csv",
+          "bytes": 10989355,
+          "sha256": "46644da5ddd124cca8b0312de930a5a61151db163fd0d43f82674806019d3486"
+        },
+        "valid": true,
+        "sha1": "f9b75b60b79b702872eafd58f7056681451375df",
+        "upstream_sha1_matches": true,
+        "stored_bytes": 10989355,
+        "uncompressed_bytes": 10989355,
+        "gzip_crc_pass": false
+      },
+      "status": "verified"
+    },
+    {
+      "project": "PXD029028",
+      "name": "peptide_annotations.csv",
+      "ranged": true,
+      "requests": [
+        {
+          "utc": "2026-10-10T06:18:23.664384+00:00",
+          "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2022/01/PXD029028/peptide_annotations.csv",
+          "start": 0,
+          "end": 524287,
+          "exit_code": 0,
+          "stderr": "",
+          "seconds": 26.71977837756276,
+          "completed_utc": "2026-10-10T06:18:50.384164+00:00",
+          "headers": {
+            "path": "research/results/discovery_public_download_v1/requests/PXD029028_peptide_annotations.csv.0.headers.txt",
+            "bytes": 483,
+            "sha256": "21711657538eea25ade3163d9bf48c2035caad02507b40501b4ef0c20a07ecd7"
+          },
+          "response": {
+            "path": "research/results/discovery_public_download_v1/ranges/PXD029028_peptide_annotations.csv.0.bin",
+            "bytes": 524288,
+            "sha256": "2fbd38bfee78ca71d80ade970a8eb1bf97157ad3b809ca6322cbdde1146ca2c9"
+          },
+          "http_status": 206,
+          "status": "retrieved"
+        },
+        {
+          "utc": "2026-10-10T06:18:23.662964+00:00",
+          "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2022/01/PXD029028/peptide_annotations.csv",
+          "start": 524288,
+          "end": 1048575,
+          "exit_code": 0,
+          "stderr": "",
+          "seconds": 20.643736511468887,
+          "completed_utc": "2026-10-10T06:18:44.306701+00:00",
+          "headers": {
+            "path": "research/results/discovery_public_download_v1/requests/PXD029028_peptide_annotations.csv.524288.headers.txt",
+            "bytes": 489,
+            "sha256": "6c8163ca5f67a72bc324e768a39fa98112ca47a71eef23c069866742b306e2c1"
+          },
+          "response": {
+            "path": "research/results/discovery_public_download_v1/ranges/PXD029028_peptide_annotations.csv.524288.bin",
+            "bytes": 524288,
+            "sha256": "ff6c9d1e37656c3c5a2feda91838b56b65861e4d07b51eb741c755c8bbd0bfb2"
+          },
+          "http_status": 206,
+          "status": "retrieved"
+        },
+        {
+          "utc": "2026-10-10T06:18:23.664047+00:00",
+          "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2022/01/PXD029028/peptide_annotations.csv",
+          "start": 1048576,
+          "end": 1572863,
+          "exit_code": 0,
+          "stderr": "",
+          "seconds": 25.1596109084785,
+          "completed_utc": "2026-10-10T06:18:48.823661+00:00",
+          "headers": {
+            "path": "research/results/discovery_public_download_v1/requests/PXD029028_peptide_annotations.csv.1048576.headers.txt",
+            "bytes": 490,
+            "sha256": "b8116e0185288f6749f8833522496eab9f20fca0dd989a857dbc9fb3064a0d88"
+          },
+          "response": {
+            "path": "research/results/discovery_public_download_v1/ranges/PXD029028_peptide_annotations.csv.1048576.bin",
+            "bytes": 524288,
+            "sha256": "f0ee983d38c594772bb57b302bd6c568e0163c2187b9b7bffe21b0fd6c7a1b5b"
+          },
+          "http_status": 206,
+          "status": "retrieved"
+        },
+        {
+          "utc": "2026-10-10T06:18:23.663809+00:00",
+          "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2022/01/PXD029028/peptide_annotations.csv",
+          "start": 1572864,
+          "end": 2097151,
+          "exit_code": 0,
+          "stderr": "",
+          "seconds": 29.37405483983457,
+          "completed_utc": "2026-10-10T06:18:53.037866+00:00",
+          "headers": {
+            "path": "research/results/discovery_public_download_v1/requests/PXD029028_peptide_annotations.csv.1572864.headers.txt",
+            "bytes": 490,
+            "sha256": "2457ca56eed564da5a9353fe149e60728c262f4c907fdb2522c039233c379918"
+          },
+          "response": {
+            "path": "research/results/discovery_public_download_v1/ranges/PXD029028_peptide_annotations.csv.1572864.bin",
+            "bytes": 524288,
+            "sha256": "06950787a78da26f7c4231f292a24c1178f22d672b39e43ffd3ab2bf59b5d5cc"
+          },
+          "http_status": 206,
+          "status": "retrieved"
+        },
+        {
+          "utc": "2026-10-10T06:18:23.664754+00:00",
+          "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2022/01/PXD029028/peptide_annotations.csv",
+          "start": 2097152,
+          "end": 2557321,
+          "exit_code": 0,
+          "stderr": "",
+          "seconds": 20.31520964950323,
+          "completed_utc": "2026-10-10T06:18:43.979965+00:00",
+          "headers": {
+            "path": "research/results/discovery_public_download_v1/requests/PXD029028_peptide_annotations.csv.2097152.headers.txt",
+            "bytes": 490,
+            "sha256": "a9a9d9d65f6ebbc64ca783eae2bef23da254da9466dca9d81844e183796efbdb"
+          },
+          "response": {
+            "path": "research/results/discovery_public_download_v1/ranges/PXD029028_peptide_annotations.csv.2097152.bin",
+            "bytes": 460170,
+            "sha256": "409f1e150788caa4bb4ca0eee0030498144521adb1ac0c1eaa0de332b890bbf1"
+          },
+          "http_status": 206,
+          "status": "retrieved"
+        }
+      ],
+      "integrity": {
+        "file": {
+          "path": "research/results/discovery_public_download_v1/sources/PXD029028_peptide_annotations.csv",
+          "bytes": 2557322,
+          "sha256": "d74d94efb175a1845b8adbf55afee99dfb463d005335f8e49779df545b0a6488"
+        },
+        "valid": true,
+        "sha1": "656fa176e936338a77bc59d57ba3d21885141b2b",
+        "upstream_sha1_matches": true,
+        "stored_bytes": 2557322,
+        "uncompressed_bytes": 2557322,
+        "gzip_crc_pass": false
+      },
+      "status": "verified"
+    },
+    {
+      "project": "PXD014171",
+      "name": "proteinGroups.txt",
+      "ranged": false,
+      "requests": [
+        {
+          "utc": "2026-10-10T06:18:25.883761+00:00",
+          "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2021/05/PXD014171/proteinGroups.txt",
+          "start": null,
+          "end": null,
+          "exit_code": 0,
+          "stderr": "",
+          "seconds": 4.514782199636102,
+          "completed_utc": "2026-10-10T06:18:30.398546+00:00",
+          "headers": {
+            "path": "research/results/discovery_public_download_v1/requests/PXD014171_proteinGroups.txt.headers.txt",
+            "bytes": 447,
+            "sha256": "746b8327643b86e27772a7b1130643eaa78727bb7127539cea4dd68a5e59bbfa"
+          },
+          "response": {
+            "path": "research/results/discovery_public_download_v1/ranges/PXD014171_proteinGroups.txt.bin",
+            "bytes": 288474,
+            "sha256": "24637990aa2927f5105dbe22ef156bd13144b2d903e066236cc0eddd69d92e68"
+          },
+          "http_status": 200,
+          "status": "retrieved"
+        }
+      ],
+      "integrity": {
+        "file": {
+          "path": "research/results/discovery_public_download_v1/sources/PXD014171_proteinGroups.txt",
+          "bytes": 288474,
+          "sha256": "24637990aa2927f5105dbe22ef156bd13144b2d903e066236cc0eddd69d92e68"
+        },
+        "valid": true,
+        "sha1": "727510c6ab98f1631e4f94f292c7b97fcf584113",
+        "upstream_sha1_matches": true,
+        "stored_bytes": 288474,
+        "uncompressed_bytes": 288474,
+        "gzip_crc_pass": false
+      },
+      "status": "verified"
+    },
+    {
+      "project": "PXD015566",
+      "name": "Linkbetweenfiles.xlsx",
+      "ranged": false,
+      "requests": [
+        {
+          "utc": "2026-10-10T06:18:30.401225+00:00",
+          "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2021/06/PXD015566/Linkbetweenfiles.xlsx",
+          "start": null,
+          "end": null,
+          "exit_code": 0,
+          "stderr": "",
+          "seconds": 1.3634622041136026,
+          "completed_utc": "2026-10-10T06:18:31.764690+00:00",
+          "headers": {
+            "path": "research/results/discovery_public_download_v1/requests/PXD015566_Linkbetweenfiles.xlsx.headers.txt",
+            "bytes": 485,
+            "sha256": "437e93c01540a009e9daa829009bc461cb2a37d38296639cf7a41bc0a540105e"
+          },
+          "response": {
+            "path": "research/results/discovery_public_download_v1/ranges/PXD015566_Linkbetweenfiles.xlsx.bin",
+            "bytes": 10668,
+            "sha256": "38e4f30b2eab69895d535dec4332226aaa58ed86eba3703b4bac0ac489215100"
+          },
+          "http_status": 200,
+          "status": "retrieved"
+        }
+      ],
+      "integrity": {
+        "file": {
+          "path": "research/results/discovery_public_download_v1/sources/PXD015566_Linkbetweenfiles.xlsx",
+          "bytes": 10668,
+          "sha256": "38e4f30b2eab69895d535dec4332226aaa58ed86eba3703b4bac0ac489215100"
+        },
+        "valid": true,
+        "sha1": "00fbeaa8f2a126d9eae8a0d31a3ee323d7122809",
+        "upstream_sha1_matches": true,
+        "stored_bytes": 10668,
+        "uncompressed_bytes": 10668,
+        "gzip_crc_pass": false
+      },
+      "status": "verified"
+    },
+    {
+      "project": "PXD003963",
+      "name": "NHDF_con_sn_1_2.pride.mztab.gz",
+      "ranged": false,
+      "requests": [
+        {
+          "utc": "2026-10-10T06:18:31.766135+00:00",
+          "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2017/02/PXD003963/generated/NHDF_con_sn_1_2.pride.mztab.gz",
+          "start": null,
+          "end": null,
+          "exit_code": 0,
+          "stderr": "",
+          "seconds": 6.649637803435326,
+          "completed_utc": "2026-10-10T06:18:38.415776+00:00",
+          "headers": {
+            "path": "research/results/discovery_public_download_v1/requests/PXD003963_NHDF_con_sn_1_2.pride.mztab.gz.headers.txt",
+            "bytes": 440,
+            "sha256": "b35aed0c99320aeca6fc1bf37a25c4b5bdac53a8a7c7336bcb59cbed76121461"
+          },
+          "response": {
+            "path": "research/results/discovery_public_download_v1/ranges/PXD003963_NHDF_con_sn_1_2.pride.mztab.gz.bin",
+            "bytes": 127738,
+            "sha256": "0e7bde5af93a444b5aa8e88d53a9b98c6542c6174408ae63e8076d73ad9e4b45"
+          },
+          "http_status": 200,
+          "status": "retrieved"
+        }
+      ],
+      "integrity": {
+        "file": {
+          "path": "research/results/discovery_public_download_v1/sources/PXD003963_NHDF_con_sn_1_2.pride.mztab.gz",
+          "bytes": 127738,
+          "sha256": "0e7bde5af93a444b5aa8e88d53a9b98c6542c6174408ae63e8076d73ad9e4b45"
+        },
+        "valid": true,
+        "sha1": "2e397c433544253cad5c23c599eaf6a0bb544b66",
+        "upstream_sha1_matches": true,
+        "stored_bytes": 127738,
+        "uncompressed_bytes": 750159,
+        "gzip_crc_pass": true
+      },
+      "status": "verified"
+    },
+    {
+      "project": "PXD003963",
+      "name": "NHDF_con_sn_2_1.pride.mztab.gz",
+      "ranged": false,
+      "requests": [
+        {
+          "utc": "2026-10-10T06:18:38.420759+00:00",
+          "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2017/02/PXD003963/generated/NHDF_con_sn_2_1.pride.mztab.gz",
+          "start": null,
+          "end": null,
+          "exit_code": 0,
+          "stderr": "",
+          "seconds": 1.8685999289155006,
+          "completed_utc": "2026-10-10T06:18:40.289360+00:00",
+          "headers": {
+            "path": "research/results/discovery_public_download_v1/requests/PXD003963_NHDF_con_sn_2_1.pride.mztab.gz.headers.txt",
+            "bytes": 440,
+            "sha256": "78854be4b4b4071a80124cf4bb3980bd2528b7c3826494d01fc514b9e93d0c64"
+          },
+          "response": {
+            "path": "research/results/discovery_public_download_v1/ranges/PXD003963_NHDF_con_sn_2_1.pride.mztab.gz.bin",
+            "bytes": 118742,
+            "sha256": "73de0f9179ae6680eae1bd6deb3e9fee57013aac9753e9dd354f6f9649b61fc2"
+          },
+          "http_status": 200,
+          "status": "retrieved"
+        }
+      ],
+      "integrity": {
+        "file": {
+          "path": "research/results/discovery_public_download_v1/sources/PXD003963_NHDF_con_sn_2_1.pride.mztab.gz",
+          "bytes": 118742,
+          "sha256": "73de0f9179ae6680eae1bd6deb3e9fee57013aac9753e9dd354f6f9649b61fc2"
+        },
+        "valid": true,
+        "sha1": "dffdae404bf77ca3fdbf69ea44d92b9f3bab6efd",
+        "upstream_sha1_matches": true,
+        "stored_bytes": 118742,
+        "uncompressed_bytes": 686472,
+        "gzip_crc_pass": true
+      },
+      "status": "verified"
+    },
+    {
+      "project": "PXD003963",
+      "name": "NHDF_con_sn_2_2.pride.mztab.gz",
+      "ranged": false,
+      "requests": [
+        {
+          "utc": "2026-10-10T06:18:40.292989+00:00",
+          "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2017/02/PXD003963/generated/NHDF_con_sn_2_2.pride.mztab.gz",
+          "start": null,
+          "end": null,
+          "exit_code": 0,
+          "stderr": "",
+          "seconds": 3.9064383171498775,
+          "completed_utc": "2026-10-10T06:18:44.199428+00:00",
+          "headers": {
+            "path": "research/results/discovery_public_download_v1/requests/PXD003963_NHDF_con_sn_2_2.pride.mztab.gz.headers.txt",
+            "bytes": 440,
+            "sha256": "735d76c2ac1c7c94322ddbdd3f6e7416bcd9c129bd90c173a0f9e2a9d5b01d3e"
+          },
+          "response": {
+            "path": "research/results/discovery_public_download_v1/ranges/PXD003963_NHDF_con_sn_2_2.pride.mztab.gz.bin",
+            "bytes": 123201,
+            "sha256": "2f980b42a6c7d7fb31d23b5f9d869a7f64250fe5587f0878d76a2c422d9b6692"
+          },
+          "http_status": 200,
+          "status": "retrieved"
+        }
+      ],
+      "integrity": {
+        "file": {
+          "path": "research/results/discovery_public_download_v1/sources/PXD003963_NHDF_con_sn_2_2.pride.mztab.gz",
+          "bytes": 123201,
+          "sha256": "2f980b42a6c7d7fb31d23b5f9d869a7f64250fe5587f0878d76a2c422d9b6692"
+        },
+        "valid": true,
+        "sha1": "62b3503b748e10fca9b0fffce4592b20ce1a9568",
+        "upstream_sha1_matches": true,
+        "stored_bytes": 123201,
+        "uncompressed_bytes": 712443,
+        "gzip_crc_pass": true
+      },
+      "status": "verified"
+    },
+    {
+      "project": "PXD003963",
+      "name": "NHDF_con_sn_3_1.pride.mztab.gz",
+      "ranged": false,
+      "requests": [
+        {
+          "utc": "2026-10-10T06:18:44.203061+00:00",
+          "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2017/02/PXD003963/generated/NHDF_con_sn_3_1.pride.mztab.gz",
+          "start": null,
+          "end": null,
+          "exit_code": 0,
+          "stderr": "",
+          "seconds": 3.8025559075176716,
+          "completed_utc": "2026-10-10T06:18:48.005619+00:00",
+          "headers": {
+            "path": "research/results/discovery_public_download_v1/requests/PXD003963_NHDF_con_sn_3_1.pride.mztab.gz.headers.txt",
+            "bytes": 440,
+            "sha256": "55b030ccacb1ce8a7715d731297ab621b5a35a85ae99bfefd2497756dc9eb091"
+          },
+          "response": {
+            "path": "research/results/discovery_public_download_v1/ranges/PXD003963_NHDF_con_sn_3_1.pride.mztab.gz.bin",
+            "bytes": 110746,
+            "sha256": "c4597b9cf6883bf2ebe27e9d693a8129d55f181ee24365ab592fb250e363c7b4"
+          },
+          "http_status": 200,
+          "status": "retrieved"
+        }
+      ],
+      "integrity": {
+        "file": {
+          "path": "research/results/discovery_public_download_v1/sources/PXD003963_NHDF_con_sn_3_1.pride.mztab.gz",
+          "bytes": 110746,
+          "sha256": "c4597b9cf6883bf2ebe27e9d693a8129d55f181ee24365ab592fb250e363c7b4"
+        },
+        "valid": true,
+        "sha1": "0b1f99f8a3dc2f45071c46dd5aeddaa31bcca6ec",
+        "upstream_sha1_matches": true,
+        "stored_bytes": 110746,
+        "uncompressed_bytes": 634261,
+        "gzip_crc_pass": true
+      },
+      "status": "verified"
+    },
+    {
+      "project": "PXD003963",
+      "name": "NHDF_con_sn_3_2.pride.mztab.gz",
+      "ranged": false,
+      "requests": [
+        {
+          "utc": "2026-10-10T06:18:48.010201+00:00",
+          "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2017/02/PXD003963/generated/NHDF_con_sn_3_2.pride.mztab.gz",
+          "start": null,
+          "end": null,
+          "exit_code": 0,
+          "stderr": "",
+          "seconds": 8.023180212825537,
+          "completed_utc": "2026-10-10T06:18:56.033384+00:00",
+          "headers": {
+            "path": "research/results/discovery_public_download_v1/requests/PXD003963_NHDF_con_sn_3_2.pride.mztab.gz.headers.txt",
+            "bytes": 440,
+            "sha256": "404d671d97dd34e368b10ae9011ef1f0d1352a41f6ee79843071df2516f3054d"
+          },
+          "response": {
+            "path": "research/results/discovery_public_download_v1/ranges/PXD003963_NHDF_con_sn_3_2.pride.mztab.gz.bin",
+            "bytes": 119298,
+            "sha256": "9e04485ed1535fdfa1c1514f5c636de2a290aa35394979c990f63689e20735fc"
+          },
+          "http_status": 200,
+          "status": "retrieved"
+        }
+      ],
+      "integrity": {
+        "file": {
+          "path": "research/results/discovery_public_download_v1/sources/PXD003963_NHDF_con_sn_3_2.pride.mztab.gz",
+          "bytes": 119298,
+          "sha256": "9e04485ed1535fdfa1c1514f5c636de2a290aa35394979c990f63689e20735fc"
+        },
+        "valid": true,
+        "sha1": "6e056acaad028fcbfb0b10557431612d17a76660",
+        "upstream_sha1_matches": true,
+        "stored_bytes": 119298,
+        "uncompressed_bytes": 691706,
+        "gzip_crc_pass": true
+      },
+      "status": "verified"
+    },
+    {
+      "project": "PXD003965",
+      "name": "NHDF_IL1beta_sn_1_2.pride.mztab.gz",
+      "ranged": false,
+      "requests": [
+        {
+          "utc": "2026-10-10T06:18:53.052741+00:00",
+          "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2017/02/PXD003965/generated/NHDF_IL1beta_sn_1_2.pride.mztab.gz",
+          "start": null,
+          "end": null,
+          "exit_code": 0,
+          "stderr": "",
+          "seconds": 4.8014479000121355,
+          "completed_utc": "2026-10-10T06:18:57.854189+00:00",
+          "headers": {
+            "path": "research/results/discovery_public_download_v1/requests/PXD003965_NHDF_IL1beta_sn_1_2.pride.mztab.gz.headers.txt",
+            "bytes": 440,
+            "sha256": "5f0670801d7fa6a1a860e4e9d447ec87db14ab4f389ba17c8ac981bd60f32d19"
+          },
+          "response": {
+            "path": "research/results/discovery_public_download_v1/ranges/PXD003965_NHDF_IL1beta_sn_1_2.pride.mztab.gz.bin",
+            "bytes": 158794,
+            "sha256": "e63d31524e5232f65022adc10fed96c1c61d870a1ff9d9513049dbbef031cf52"
+          },
+          "http_status": 200,
+          "status": "retrieved"
+        }
+      ],
+      "integrity": {
+        "file": {
+          "path": "research/results/discovery_public_download_v1/sources/PXD003965_NHDF_IL1beta_sn_1_2.pride.mztab.gz",
+          "bytes": 158794,
+          "sha256": "e63d31524e5232f65022adc10fed96c1c61d870a1ff9d9513049dbbef031cf52"
+        },
+        "valid": true,
+        "sha1": "3a41078493083f4e533c6b20d9b68115fe8ec67d",
+        "upstream_sha1_matches": true,
+        "stored_bytes": 158794,
+        "uncompressed_bytes": 922493,
+        "gzip_crc_pass": true
+      },
+      "status": "verified"
+    },
+    {
+      "project": "PXD003965",
+      "name": "NHDF_IL1beta_sn_2_1.pride.mztab.gz",
+      "ranged": false,
+      "requests": [
+        {
+          "utc": "2026-10-10T06:18:56.038143+00:00",
+          "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2017/02/PXD003965/generated/NHDF_IL1beta_sn_2_1.pride.mztab.gz",
+          "start": null,
+          "end": null,
+          "exit_code": 0,
+          "stderr": "",
+          "seconds": 1.8626224994659424,
+          "completed_utc": "2026-10-10T06:18:57.900767+00:00",
+          "headers": {
+            "path": "research/results/discovery_public_download_v1/requests/PXD003965_NHDF_IL1beta_sn_2_1.pride.mztab.gz.headers.txt",
+            "bytes": 440,
+            "sha256": "1d366e5e26596cdfb3f846e33d17433c0dbce17b543361743cbaf3bb9bd67bc6"
+          },
+          "response": {
+            "path": "research/results/discovery_public_download_v1/ranges/PXD003965_NHDF_IL1beta_sn_2_1.pride.mztab.gz.bin",
+            "bytes": 125703,
+            "sha256": "2fac117e202174bd19d62aed60f4ff19fd020370e4473e9ec3c4c2ac5e276b88"
+          },
+          "http_status": 200,
+          "status": "retrieved"
+        }
+      ],
+      "integrity": {
+        "file": {
+          "path": "research/results/discovery_public_download_v1/sources/PXD003965_NHDF_IL1beta_sn_2_1.pride.mztab.gz",
+          "bytes": 125703,
+          "sha256": "2fac117e202174bd19d62aed60f4ff19fd020370e4473e9ec3c4c2ac5e276b88"
+        },
+        "valid": true,
+        "sha1": "99c9b59b7281430208f7b4d8080a5502adc99321",
+        "upstream_sha1_matches": true,
+        "stored_bytes": 125703,
+        "uncompressed_bytes": 733257,
+        "gzip_crc_pass": true
+      },
+      "status": "verified"
+    },
+    {
+      "project": "PXD003965",
+      "name": "NHDF_IL1beta_sn_2_2.pride.mztab.gz",
+      "ranged": false,
+      "requests": [
+        {
+          "utc": "2026-10-10T06:18:57.858064+00:00",
+          "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2017/02/PXD003965/generated/NHDF_IL1beta_sn_2_2.pride.mztab.gz",
+          "start": null,
+          "end": null,
+          "exit_code": 0,
+          "stderr": "",
+          "seconds": 3.022338258102536,
+          "completed_utc": "2026-10-10T06:19:00.880406+00:00",
+          "headers": {
+            "path": "research/results/discovery_public_download_v1/requests/PXD003965_NHDF_IL1beta_sn_2_2.pride.mztab.gz.headers.txt",
+            "bytes": 440,
+            "sha256": "4795b0ecb4cd9377a346e89782fc9c04cc6dc31969ddf2b37f3b3856c3093043"
+          },
+          "response": {
+            "path": "research/results/discovery_public_download_v1/ranges/PXD003965_NHDF_IL1beta_sn_2_2.pride.mztab.gz.bin",
+            "bytes": 135218,
+            "sha256": "8e68c7ef296ccbca81a8fd1093ae341e470c2e4529dd4eabd9148c8b643d31a1"
+          },
+          "http_status": 200,
+          "status": "retrieved"
+        }
+      ],
+      "integrity": {
+        "file": {
+          "path": "research/results/discovery_public_download_v1/sources/PXD003965_NHDF_IL1beta_sn_2_2.pride.mztab.gz",
+          "bytes": 135218,
+          "sha256": "8e68c7ef296ccbca81a8fd1093ae341e470c2e4529dd4eabd9148c8b643d31a1"
+        },
+        "valid": true,
+        "sha1": "8c9864f8c1acb43935d72dca2bde2b6616aeba1d",
+        "upstream_sha1_matches": true,
+        "stored_bytes": 135218,
+        "uncompressed_bytes": 796704,
+        "gzip_crc_pass": true
+      },
+      "status": "verified"
+    },
+    {
+      "project": "PXD003965",
+      "name": "NHDF_IL1beta_sn_3_1.pride.mztab.gz",
+      "ranged": false,
+      "requests": [
+        {
+          "utc": "2026-10-10T06:18:57.904833+00:00",
+          "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2017/02/PXD003965/generated/NHDF_IL1beta_sn_3_1.pride.mztab.gz",
+          "start": null,
+          "end": null,
+          "exit_code": 0,
+          "stderr": "",
+          "seconds": 4.5268811248242855,
+          "completed_utc": "2026-10-10T06:19:02.431714+00:00",
+          "headers": {
+            "path": "research/results/discovery_public_download_v1/requests/PXD003965_NHDF_IL1beta_sn_3_1.pride.mztab.gz.headers.txt",
+            "bytes": 440,
+            "sha256": "5eb150fdb80fadba571d9656c1e5498aa0b0b86a9e994379feee00fb382a2a72"
+          },
+          "response": {
+            "path": "research/results/discovery_public_download_v1/ranges/PXD003965_NHDF_IL1beta_sn_3_1.pride.mztab.gz.bin",
+            "bytes": 132902,
+            "sha256": "7aea778e5896f9ecccaabbe4e11191f7854a7b7e82454f93bb7fd11ef2542926"
+          },
+          "http_status": 200,
+          "status": "retrieved"
+        }
+      ],
+      "integrity": {
+        "file": {
+          "path": "research/results/discovery_public_download_v1/sources/PXD003965_NHDF_IL1beta_sn_3_1.pride.mztab.gz",
+          "bytes": 132902,
+          "sha256": "7aea778e5896f9ecccaabbe4e11191f7854a7b7e82454f93bb7fd11ef2542926"
+        },
+        "valid": true,
+        "sha1": "d5f5abddb55e80dce814913bdcaa94529a23535d",
+        "upstream_sha1_matches": true,
+        "stored_bytes": 132902,
+        "uncompressed_bytes": 760911,
+        "gzip_crc_pass": true
+      },
+      "status": "verified"
+    },
+    {
+      "project": "PXD003965",
+      "name": "NHDF_IL1beta_sn_3_2.pride.mztab.gz",
+      "ranged": false,
+      "requests": [
+        {
+          "utc": "2026-10-10T06:19:00.884264+00:00",
+          "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2017/02/PXD003965/generated/NHDF_IL1beta_sn_3_2.pride.mztab.gz",
+          "start": null,
+          "end": null,
+          "exit_code": 0,
+          "stderr": "",
+          "seconds": 10.170459372922778,
+          "completed_utc": "2026-10-10T06:19:11.054724+00:00",
+          "headers": {
+            "path": "research/results/discovery_public_download_v1/requests/PXD003965_NHDF_IL1beta_sn_3_2.pride.mztab.gz.headers.txt",
+            "bytes": 440,
+            "sha256": "a3a672bfc874cc5b27f8061bd216826abd14e6170a2d7649172b3bf2b9095f6c"
+          },
+          "response": {
+            "path": "research/results/discovery_public_download_v1/ranges/PXD003965_NHDF_IL1beta_sn_3_2.pride.mztab.gz.bin",
+            "bytes": 149138,
+            "sha256": "ee137399f38f6356bf0ff29a6231ea1fbb7b3c0b3e692ef5e99799b565d1cf2a"
+          },
+          "http_status": 200,
+          "status": "retrieved"
+        }
+      ],
+      "integrity": {
+        "file": {
+          "path": "research/results/discovery_public_download_v1/sources/PXD003965_NHDF_IL1beta_sn_3_2.pride.mztab.gz",
+          "bytes": 149138,
+          "sha256": "ee137399f38f6356bf0ff29a6231ea1fbb7b3c0b3e692ef5e99799b565d1cf2a"
+        },
+        "valid": true,
+        "sha1": "c5e81ec1e01b729cf38ea408204f625a42f5db1f",
+        "upstream_sha1_matches": true,
+        "stored_bytes": 149138,
+        "uncompressed_bytes": 850772,
+        "gzip_crc_pass": true
+      },
+      "status": "verified"
+    },
+    {
+      "project": "PXD003971",
+      "name": "NHDF_IL1beta_Dex_sn_1_2.pride.mztab.gz",
+      "ranged": false,
+      "requests": [
+        {
+          "utc": "2026-10-10T06:19:02.435033+00:00",
+          "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2017/02/PXD003971/generated/NHDF_IL1beta_Dex_sn_1_2.pride.mztab.gz",
+          "start": null,
+          "end": null,
+          "exit_code": 0,
+          "stderr": "",
+          "seconds": 8.745898749679327,
+          "completed_utc": "2026-10-10T06:19:11.180934+00:00",
+          "headers": {
+            "path": "research/results/discovery_public_download_v1/requests/PXD003971_NHDF_IL1beta_Dex_sn_1_2.pride.mztab.gz.headers.txt",
+            "bytes": 440,
+            "sha256": "d067b8c9231f7d8f5deb2c1c160b8ae28e53b3216c32b3e6296ccf3c38a3d641"
+          },
+          "response": {
+            "path": "research/results/discovery_public_download_v1/ranges/PXD003971_NHDF_IL1beta_Dex_sn_1_2.pride.mztab.gz.bin",
+            "bytes": 131253,
+            "sha256": "25a40c4da61cb845b57d22b751ea64e6c7616eb13324df6405e4c704d9584d89"
+          },
+          "http_status": 200,
+          "status": "retrieved"
+        }
+      ],
+      "integrity": {
+        "file": {
+          "path": "research/results/discovery_public_download_v1/sources/PXD003971_NHDF_IL1beta_Dex_sn_1_2.pride.mztab.gz",
+          "bytes": 131253,
+          "sha256": "25a40c4da61cb845b57d22b751ea64e6c7616eb13324df6405e4c704d9584d89"
+        },
+        "valid": true,
+        "sha1": "24ffa2d492bdb9051a0adf01582327cd9d1d05b0",
+        "upstream_sha1_matches": true,
+        "stored_bytes": 131253,
+        "uncompressed_bytes": 744990,
+        "gzip_crc_pass": true
+      },
+      "status": "verified"
+    },
+    {
+      "project": "PXD003971",
+      "name": "NHDF_IL1beta_Dex_sn_2_1.pride.mztab.gz",
+      "ranged": false,
+      "requests": [
+        {
+          "utc": "2026-10-10T06:19:11.058248+00:00",
+          "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2017/02/PXD003971/generated/NHDF_IL1beta_Dex_sn_2_1.pride.mztab.gz",
+          "start": null,
+          "end": null,
+          "exit_code": 0,
+          "stderr": "",
+          "seconds": 1.7627231758087873,
+          "completed_utc": "2026-10-10T06:19:12.820974+00:00",
+          "headers": {
+            "path": "research/results/discovery_public_download_v1/requests/PXD003971_NHDF_IL1beta_Dex_sn_2_1.pride.mztab.gz.headers.txt",
+            "bytes": 440,
+            "sha256": "9821524bdd5a8c0204e23151fcbcf4f7f91444518af50e2a9cdaed473c3c6108"
+          },
+          "response": {
+            "path": "research/results/discovery_public_download_v1/ranges/PXD003971_NHDF_IL1beta_Dex_sn_2_1.pride.mztab.gz.bin",
+            "bytes": 128512,
+            "sha256": "dd1c01e2952eb3f4a49c4e1166826d9b829404d36bef3d4e7be8ae9f78416d3d"
+          },
+          "http_status": 200,
+          "status": "retrieved"
+        }
+      ],
+      "integrity": {
+        "file": {
+          "path": "research/results/discovery_public_download_v1/sources/PXD003971_NHDF_IL1beta_Dex_sn_2_1.pride.mztab.gz",
+          "bytes": 128512,
+          "sha256": "dd1c01e2952eb3f4a49c4e1166826d9b829404d36bef3d4e7be8ae9f78416d3d"
+        },
+        "valid": true,
+        "sha1": "1d5c9734d0cc76a39ceeaa0fe4bcd0c232201a2a",
+        "upstream_sha1_matches": true,
+        "stored_bytes": 128512,
+        "uncompressed_bytes": 736054,
+        "gzip_crc_pass": true
+      },
+      "status": "verified"
+    },
+    {
+      "project": "PXD003971",
+      "name": "NHDF_IL1beta_Dex_sn_2_2.pride.mztab.gz",
+      "ranged": false,
+      "requests": [
+        {
+          "utc": "2026-10-10T06:19:11.184164+00:00",
+          "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2017/02/PXD003971/generated/NHDF_IL1beta_Dex_sn_2_2.pride.mztab.gz",
+          "start": null,
+          "end": null,
+          "exit_code": 0,
+          "stderr": "",
+          "seconds": 5.12993224337697,
+          "completed_utc": "2026-10-10T06:19:16.314099+00:00",
+          "headers": {
+            "path": "research/results/discovery_public_download_v1/requests/PXD003971_NHDF_IL1beta_Dex_sn_2_2.pride.mztab.gz.headers.txt",
+            "bytes": 440,
+            "sha256": "a0a4b2e7cb0b45acad117b8e14127f30719539aaf46a6c812d53877fd4857be6"
+          },
+          "response": {
+            "path": "research/results/discovery_public_download_v1/ranges/PXD003971_NHDF_IL1beta_Dex_sn_2_2.pride.mztab.gz.bin",
+            "bytes": 133743,
+            "sha256": "21c9f459b817bcbc299ea34aa3f525133109bdb877909f62e86b3fb30fc59d76"
+          },
+          "http_status": 200,
+          "status": "retrieved"
+        }
+      ],
+      "integrity": {
+        "file": {
+          "path": "research/results/discovery_public_download_v1/sources/PXD003971_NHDF_IL1beta_Dex_sn_2_2.pride.mztab.gz",
+          "bytes": 133743,
+          "sha256": "21c9f459b817bcbc299ea34aa3f525133109bdb877909f62e86b3fb30fc59d76"
+        },
+        "valid": true,
+        "sha1": "6619926c03667a418abc606bf232f5e3f02cf453",
+        "upstream_sha1_matches": true,
+        "stored_bytes": 133743,
+        "uncompressed_bytes": 767463,
+        "gzip_crc_pass": true
+      },
+      "status": "verified"
+    },
+    {
+      "project": "PXD003971",
+      "name": "NHDF_IL1beta_Dex_sn_3_1.pride.mztab.gz",
+      "ranged": false,
+      "requests": [
+        {
+          "utc": "2026-10-10T06:19:12.825033+00:00",
+          "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2017/02/PXD003971/generated/NHDF_IL1beta_Dex_sn_3_1.pride.mztab.gz",
+          "start": null,
+          "end": null,
+          "exit_code": 0,
+          "stderr": "",
+          "seconds": 6.856172570958734,
+          "completed_utc": "2026-10-10T06:19:19.681207+00:00",
+          "headers": {
+            "path": "research/results/discovery_public_download_v1/requests/PXD003971_NHDF_IL1beta_Dex_sn_3_1.pride.mztab.gz.headers.txt",
+            "bytes": 440,
+            "sha256": "cc9f37e0a71f0f2ccfac3471e254c9cd316dc67f73d5e0c45a1f3185cc12557f"
+          },
+          "response": {
+            "path": "research/results/discovery_public_download_v1/ranges/PXD003971_NHDF_IL1beta_Dex_sn_3_1.pride.mztab.gz.bin",
+            "bytes": 117861,
+            "sha256": "99bdf2d021c1c727bb32490f06ee599705bbf0744ca6745578f9f6f2abff6db3"
+          },
+          "http_status": 200,
+          "status": "retrieved"
+        }
+      ],
+      "integrity": {
+        "file": {
+          "path": "research/results/discovery_public_download_v1/sources/PXD003971_NHDF_IL1beta_Dex_sn_3_1.pride.mztab.gz",
+          "bytes": 117861,
+          "sha256": "99bdf2d021c1c727bb32490f06ee599705bbf0744ca6745578f9f6f2abff6db3"
+        },
+        "valid": true,
+        "sha1": "ec0579d8483592d8302f253a76ef19e5852d1cbf",
+        "upstream_sha1_matches": true,
+        "stored_bytes": 117861,
+        "uncompressed_bytes": 672954,
+        "gzip_crc_pass": true
+      },
+      "status": "verified"
+    },
+    {
+      "project": "PXD003971",
+      "name": "NHDF_IL1beta_Dex_sn_3_2.pride.mztab.gz",
+      "ranged": false,
+      "requests": [
+        {
+          "utc": "2026-10-10T06:19:16.317390+00:00",
+          "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2017/02/PXD003971/generated/NHDF_IL1beta_Dex_sn_3_2.pride.mztab.gz",
+          "start": null,
+          "end": null,
+          "exit_code": 0,
+          "stderr": "",
+          "seconds": 3.430100105702877,
+          "completed_utc": "2026-10-10T06:19:19.747492+00:00",
+          "headers": {
+            "path": "research/results/discovery_public_download_v1/requests/PXD003971_NHDF_IL1beta_Dex_sn_3_2.pride.mztab.gz.headers.txt",
+            "bytes": 440,
+            "sha256": "958eb0818d4728877cc5cb182d039489076d652d6a9d5a973feac738089f9415"
+          },
+          "response": {
+            "path": "research/results/discovery_public_download_v1/ranges/PXD003971_NHDF_IL1beta_Dex_sn_3_2.pride.mztab.gz.bin",
+            "bytes": 135494,
+            "sha256": "73fa33d8e50456e18b51c5776e714cb11e1fc84022037efe1601d458fb1fd57d"
+          },
+          "http_status": 200,
+          "status": "retrieved"
+        }
+      ],
+      "integrity": {
+        "file": {
+          "path": "research/results/discovery_public_download_v1/sources/PXD003971_NHDF_IL1beta_Dex_sn_3_2.pride.mztab.gz",
+          "bytes": 135494,
+          "sha256": "73fa33d8e50456e18b51c5776e714cb11e1fc84022037efe1601d458fb1fd57d"
+        },
+        "valid": true,
+        "sha1": "1b897972a472b098eb42d718d72b92a1e7ba5a5b",
+        "upstream_sha1_matches": true,
+        "stored_bytes": 135494,
+        "uncompressed_bytes": 769823,
+        "gzip_crc_pass": true
+      },
+      "status": "verified"
+    }
+  ]
+}

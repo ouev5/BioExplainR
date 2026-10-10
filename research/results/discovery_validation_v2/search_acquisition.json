@@ -1,0 +1,391 @@
+{
+  "completed_utc": "2026-10-09T11:07:07.905730+00:00",
+  "records": [
+    {
+      "status": "retrieved",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=%28%22airway+smooth+muscle%22+OR+%22bronchial+smooth+muscle%22%29+AND+%28dexamethasone+OR+glucocorticoid+OR+budesonide%29+AND+gse%5BETYP%5D&retmax=1000&retmode=json",
+      "reuse_saved_on_resume": true,
+      "path": "research/results/discovery_validation_v2/sources/geo_asm_steroid.json",
+      "bytes": 2369,
+      "sha256": "244e35ed0b5d57355d2f98e883bdc72986d6dde798ec44e5fd218bb77ca591ad",
+      "label": "asm_steroid",
+      "query": "(\"airway smooth muscle\" OR \"bronchial smooth muscle\") AND (dexamethasone OR glucocorticoid OR budesonide) AND gse[ETYP]",
+      "hit_count": 9,
+      "returned": 9
+    },
+    {
+      "status": "retrieved",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=%28%22airway+smooth+muscle%22+OR+%22bronchial+smooth+muscle%22%29+AND+%28time+OR+circadian+OR+period+OR+rhythm%29+AND+gse%5BETYP%5D&retmax=1000&retmode=json",
+      "reuse_saved_on_resume": true,
+      "path": "research/results/discovery_validation_v2/sources/geo_asm_time.json",
+      "bytes": 1326,
+      "sha256": "2f6a73b0093a6bec0722b8725551118c93f71933aa49ac79029eef3ff9c4775f",
+      "label": "asm_time",
+      "query": "(\"airway smooth muscle\" OR \"bronchial smooth muscle\") AND (time OR circadian OR period OR rhythm) AND gse[ETYP]",
+      "hit_count": 11,
+      "returned": 11
+    },
+    {
+      "status": "retrieved",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=%28%22airway+smooth+muscle%22+OR+%22bronchial+smooth+muscle%22%29+AND+%28NR3C1+OR+%22glucocorticoid+receptor%22%29+AND+%28knockdown+OR+siRNA+OR+CRISPR+OR+silencing+OR+knockout%29+AND+gse%5BETYP%5D&retmax=1000&retmode=json",
+      "reuse_saved_on_resume": true,
+      "path": "research/results/discovery_validation_v2/sources/geo_asm_gr_genetic.json",
+      "bytes": 2100,
+      "sha256": "cb8438c12c1cc794b3abf69179de93647efe29a4f0645b29713075ae5faeb25a",
+      "label": "asm_gr_genetic",
+      "query": "(\"airway smooth muscle\" OR \"bronchial smooth muscle\") AND (NR3C1 OR \"glucocorticoid receptor\") AND (knockdown OR siRNA OR CRISPR OR silencing OR knockout) AND gse[ETYP]",
+      "hit_count": 0,
+      "returned": 0
+    },
+    {
+      "status": "retrieved",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=%28%22Homo+sapiens%22%5BORGN%5D%29+AND+%22smooth+muscle%22+AND+%28dexamethasone+OR+budesonide%29+AND+gse%5BETYP%5D&retmax=1000&retmode=json",
+      "reuse_saved_on_resume": true,
+      "path": "research/results/discovery_validation_v2/sources/geo_hsm_steroid.json",
+      "bytes": 1725,
+      "sha256": "28603d55ab1e3b95ac4de322692a39ab3beafcde5ae1968d7e89bd0e80d9b214",
+      "label": "hsm_steroid",
+      "query": "(\"Homo sapiens\"[ORGN]) AND \"smooth muscle\" AND (dexamethasone OR budesonide) AND gse[ETYP]",
+      "hit_count": 18,
+      "returned": 18
+    },
+    {
+      "status": "retrieved",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200004287&retmode=json",
+      "reuse_saved_on_resume": true,
+      "path": "research/results/discovery_validation_v2/sources/geo_summary_200004287.json",
+      "bytes": 4623,
+      "sha256": "f8253caad665d8e70cd332b779e3730152b577c09a917392a375f29803e67a4a"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200011917&retmode=json",
+      "reuse_saved_on_resume": true,
+      "path": "research/results/discovery_validation_v2/sources/geo_summary_200011917.json",
+      "bytes": 8326,
+      "sha256": "5a16e4e8860cfe6f0d189363ecb4fa5d4079a60103e1f946a5d8b094071153c0"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200013168&retmode=json",
+      "reuse_saved_on_resume": true,
+      "path": "research/results/discovery_validation_v2/sources/geo_summary_200013168.json",
+      "bytes": 4455,
+      "sha256": "d4ab5701465836d8d139b23038dbfbd645e197f72b07a7e31054d4087302b8bc"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200017312&retmode=json",
+      "reuse_saved_on_resume": true,
+      "path": "research/results/discovery_validation_v2/sources/geo_summary_200017312.json",
+      "bytes": 75133,
+      "sha256": "7f39e31cb67613764eb72378538b9f9c619002ebd046e28dd2cd20c1d8435a41"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200034313&retmode=json",
+      "reuse_saved_on_resume": true,
+      "path": "research/results/discovery_validation_v2/sources/geo_summary_200034313.json",
+      "bytes": 1703,
+      "sha256": "5b5ad7e4c68931920c844c45bc8fdd001786d55ec05d6dd65b601e98bc996a95"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200035643&retmode=json",
+      "reuse_saved_on_resume": true,
+      "path": "research/results/discovery_validation_v2/sources/geo_summary_200035643.json",
+      "bytes": 2098,
+      "sha256": "bee79c8fd8b5f6efe634c9ebbe824f29fe1249893a1f769872d3b6b80d658e13"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200037558&retmode=json",
+      "reuse_saved_on_resume": true,
+      "path": "research/results/discovery_validation_v2/sources/geo_summary_200037558.json",
+      "bytes": 4260,
+      "sha256": "6d6cbf9a264214650120db810a6546076241248b127007cb61c09902a33cb85a"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200052778&retmode=json",
+      "reuse_saved_on_resume": true,
+      "path": "research/results/discovery_validation_v2/sources/geo_summary_200052778.json",
+      "bytes": 2827,
+      "sha256": "4d625d13cac6d145c734d98a4df2a7d4838f19b361c96e5bf06e2f7bd0c49f40"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200058657&retmode=json",
+      "reuse_saved_on_resume": true,
+      "path": "research/results/discovery_validation_v2/sources/geo_summary_200058657.json",
+      "bytes": 2619,
+      "sha256": "20944a00b2fe6adbca8c1a009b4d816be0e71179d12ef506045f56378dc1adc9"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200063428&retmode=json",
+      "reuse_saved_on_resume": true,
+      "path": "research/results/discovery_validation_v2/sources/geo_summary_200063428.json",
+      "bytes": 5119,
+      "sha256": "e999ba2cb456cd377ac6dc4584cdd949eec63f842219e49b253176f64204db36"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200063744&retmode=json",
+      "reuse_saved_on_resume": true,
+      "path": "research/results/discovery_validation_v2/sources/geo_summary_200063744.json",
+      "bytes": 3576,
+      "sha256": "502e4a8473b746aa3a225533ff6310a090c7da46adfa232e5ea45af87357e08b"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200064744&retmode=json",
+      "reuse_saved_on_resume": true,
+      "path": "research/results/discovery_validation_v2/sources/geo_summary_200064744.json",
+      "bytes": 3769,
+      "sha256": "126a8be0eec4e03eac249061da273e0d3966a045db6f4e7b86b00e330c6b6e9a"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200067518&retmode=json",
+      "reuse_saved_on_resume": true,
+      "path": "research/results/discovery_validation_v2/sources/geo_summary_200067518.json",
+      "bytes": 3646,
+      "sha256": "a438613fe7593ac93661af6bbfcaac2d9f5e91e75275fa16425ca4bc4b2755a6"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200094335&retmode=json",
+      "reuse_saved_on_resume": true,
+      "path": "research/results/discovery_validation_v2/sources/geo_summary_200094335.json",
+      "bytes": 3325,
+      "sha256": "ef3e78f548ca685c8dc6a47276defe66fa7c142bd156e79fd45079c71ebf85c2"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200095397&retmode=json",
+      "reuse_saved_on_resume": true,
+      "path": "research/results/discovery_validation_v2/sources/geo_summary_200095397.json",
+      "bytes": 1853,
+      "sha256": "813e796e4ad45ade5c61cb169c4492022066c4622aeff6d26c73b0351d866a02"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200095632&retmode=json",
+      "reuse_saved_on_resume": true,
+      "path": "research/results/discovery_validation_v2/sources/geo_summary_200095632.json",
+      "bytes": 2195,
+      "sha256": "51d9c40c618a35a619c68d96a9e96ba4f2423c00fc8a9b3d2c02d2ebf668e36a"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200100574&retmode=json",
+      "reuse_saved_on_resume": true,
+      "path": "research/results/discovery_validation_v2/sources/geo_summary_200100574.json",
+      "bytes": 2851,
+      "sha256": "b2f563cb9cccdb3fc0b372f486d240ae64020d8d2db72dd42a3a7949644dae87"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200130715&retmode=json",
+      "reuse_saved_on_resume": true,
+      "path": "research/results/discovery_validation_v2/sources/geo_summary_200130715.json",
+      "bytes": 3414,
+      "sha256": "4d76300ab5248adfa1865aca365201afb4040cf01f2fd0a57139ba7ad574fd03"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200146017&retmode=json",
+      "reuse_saved_on_resume": true,
+      "path": "research/results/discovery_validation_v2/sources/geo_summary_200146017.json",
+      "bytes": 3754,
+      "sha256": "26cc1ed79a9e795d358e0796452e3d45afd62e610d85aeac0f11e301ef40df34"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200172251&retmode=json",
+      "reuse_saved_on_resume": true,
+      "path": "research/results/discovery_validation_v2/sources/geo_summary_200172251.json",
+      "bytes": 380714,
+      "sha256": "2fd7c8fedc0f6838adf6d1f2442ea551ee427739077a5390af53be1190c7e666"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200199930&retmode=json",
+      "reuse_saved_on_resume": true,
+      "path": "research/results/discovery_validation_v2/sources/geo_summary_200199930.json",
+      "bytes": 4745,
+      "sha256": "e3155033f5e71e7ff542ff4e4269e656182efde861d16df4053e8ef4fda562e4"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200207101&retmode=json",
+      "reuse_saved_on_resume": true,
+      "path": "research/results/discovery_validation_v2/sources/geo_summary_200207101.json",
+      "bytes": 1235,
+      "sha256": "18e55a26ca691f1da6c526667b4aedd5445d2e658abb6ee95d03f74c34936317"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200211722&retmode=json",
+      "reuse_saved_on_resume": true,
+      "path": "research/results/discovery_validation_v2/sources/geo_summary_200211722.json",
+      "bytes": 1510,
+      "sha256": "afc4a248796a8ec17fe0c3eeb84165c64839d03ecca6363a58be13c8457bc1cd"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200211752&retmode=json",
+      "reuse_saved_on_resume": true,
+      "path": "research/results/discovery_validation_v2/sources/geo_summary_200211752.json",
+      "bytes": 1635,
+      "sha256": "242f73331036dc4b343d3848ac1734c3e7a65566603bd593af9d1c2acfef0796"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200220972&retmode=json",
+      "reuse_saved_on_resume": true,
+      "path": "research/results/discovery_validation_v2/sources/geo_summary_200220972.json",
+      "bytes": 2767,
+      "sha256": "4a4219a25d5e6cf9a5809ff04a45394a5aad9442879f1e8d007dc80b5b18ee76"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200222453&retmode=json",
+      "reuse_saved_on_resume": true,
+      "path": "research/results/discovery_validation_v2/sources/geo_summary_200222453.json",
+      "bytes": 1710,
+      "sha256": "4a2a51c5920b7d67d868514492d49dfedf95c9d5e6f4cf11e70748c163b16d95"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200247032&retmode=json",
+      "reuse_saved_on_resume": true,
+      "path": "research/results/discovery_validation_v2/sources/geo_summary_200247032.json",
+      "bytes": 2920,
+      "sha256": "77c40a44daf8f4710bf4b65dd8bb9e6c732ca717cb719a8200eb5228c14a4084"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200284683&retmode=json",
+      "reuse_saved_on_resume": true,
+      "path": "research/results/discovery_validation_v2/sources/geo_summary_200284683.json",
+      "bytes": 2230,
+      "sha256": "470cb3106b24b0edb3767027ce0c883ce2e5d23b372e938f6eacd0254fbcb983"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200292403&retmode=json",
+      "reuse_saved_on_resume": true,
+      "path": "research/results/discovery_validation_v2/sources/geo_summary_200292403.json",
+      "bytes": 3307,
+      "sha256": "ff03d11cc56bf54ae284ca41cf58ca7d100317b67918fddb05ba676f37a6a282"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200301350&retmode=json",
+      "reuse_saved_on_resume": true,
+      "path": "research/results/discovery_validation_v2/sources/geo_summary_200301350.json",
+      "bytes": 2819,
+      "sha256": "3cb1ce97d51ea7213b9d525d76390bcc2062e8e49382affca319c82869632089"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200301479&retmode=json",
+      "reuse_saved_on_resume": true,
+      "path": "research/results/discovery_validation_v2/sources/geo_summary_200301479.json",
+      "bytes": 2060,
+      "sha256": "0d86ba536a4f2ebb523079c07af290ab0ae40d1bd5f7152e12f0cb59da09e870"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3A%28%22airway+smooth+muscle%22+OR+%22bronchial+smooth+muscle%22%29+AND+TITLE_ABS%3A%28circadian+OR+PER2+OR+PER3+OR+clock%29+AND+FIRST_PDATE%3A%5B1900-01-01+TO+2026-10-09%5D&format=json&resultType=core&pageSize=100&cursorMark=%2A",
+      "reuse_saved_on_resume": true,
+      "path": "research/results/discovery_validation_v2/sources/epmc_asm_clock_1.json",
+      "bytes": 64444,
+      "sha256": "1ddbe78835686426e882afc9d3a0a94354353f5cabbefedf2aebc49f43709754",
+      "label": "asm_clock",
+      "query": "TITLE_ABS:(\"airway smooth muscle\" OR \"bronchial smooth muscle\") AND TITLE_ABS:(circadian OR PER2 OR PER3 OR clock) AND FIRST_PDATE:[1900-01-01 TO 2026-10-09]",
+      "page": 1,
+      "hit_count": 10,
+      "returned": 10,
+      "query_complete": true
+    },
+    {
+      "status": "retrieved",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3A%28%22airway+smooth+muscle%22+OR+%22bronchial+smooth+muscle%22%29+AND+TITLE_ABS%3A%28%22glucocorticoid+receptor%22+OR+NR3C1%29+AND+TITLE_ABS%3A%28siRNA+OR+knockdown+OR+silencing+OR+CRISPR+OR+knockout%29+AND+FIRST_PDATE%3A%5B1900-01-01+TO+2026-10-09%5D&format=json&resultType=core&pageSize=100&cursorMark=%2A",
+      "reuse_saved_on_resume": true,
+      "path": "research/results/discovery_validation_v2/sources/epmc_asm_gr_genetic_1.json",
+      "bytes": 59344,
+      "sha256": "2485aff02e30fbb347d50383ec353d42a1d4dd3fbb40563f875f6afe8c57a728",
+      "label": "asm_gr_genetic",
+      "query": "TITLE_ABS:(\"airway smooth muscle\" OR \"bronchial smooth muscle\") AND TITLE_ABS:(\"glucocorticoid receptor\" OR NR3C1) AND TITLE_ABS:(siRNA OR knockdown OR silencing OR CRISPR OR knockout) AND FIRST_PDATE:[1900-01-01 TO 2026-10-09]",
+      "page": 1,
+      "hit_count": 6,
+      "returned": 6,
+      "query_complete": true
+    },
+    {
+      "status": "retrieved",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3A%28%22airway+smooth+muscle%22+OR+%22bronchial+smooth+muscle%22%29+AND+TITLE_ABS%3A%28dexamethasone+OR+budesonide+OR+glucocorticoid%29+AND+TITLE_ABS%3A%28time+OR+temporal+OR+transcriptome+OR+profiling%29+AND+FIRST_PDATE%3A%5B1900-01-01+TO+2026-10-09%5D&format=json&resultType=core&pageSize=100&cursorMark=%2A",
+      "reuse_saved_on_resume": true,
+      "path": "research/results/discovery_validation_v2/sources/epmc_asm_steroid_time_1.json",
+      "bytes": 584744,
+      "sha256": "07b8f9b932d1c1dd734228d884956228e4f63a7ca3d06326ec569f7b6219b2b6",
+      "label": "asm_steroid_time",
+      "query": "TITLE_ABS:(\"airway smooth muscle\" OR \"bronchial smooth muscle\") AND TITLE_ABS:(dexamethasone OR budesonide OR glucocorticoid) AND TITLE_ABS:(time OR temporal OR transcriptome OR profiling) AND FIRST_PDATE:[1900-01-01 TO 2026-10-09]",
+      "page": 1,
+      "hit_count": 70,
+      "returned": 70,
+      "query_complete": true
+    },
+    {
+      "status": "retrieved",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=PER2+AND+%28%22airway+smooth+muscle%22+OR+%22bronchial+smooth+muscle%22%29+AND+FIRST_PDATE%3A%5B1900-01-01+TO+2026-10-09%5D&format=json&resultType=core&pageSize=100&cursorMark=%2A",
+      "reuse_saved_on_resume": true,
+      "path": "research/results/discovery_validation_v2/sources/epmc_per2_asm_fulltext_1.json",
+      "bytes": 323908,
+      "sha256": "e085cc47a24e7a9e5cfbf14ce5d60af0ce0a672d0c1e3205a156994614b7bf7a",
+      "label": "per2_asm_fulltext",
+      "query": "PER2 AND (\"airway smooth muscle\" OR \"bronchial smooth muscle\") AND FIRST_PDATE:[1900-01-01 TO 2026-10-09]",
+      "page": 1,
+      "hit_count": 46,
+      "returned": 46,
+      "query_complete": true
+    },
+    {
+      "status": "retrieved",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28PER3+OR+METTL7A+OR+MAOA+OR+ANGPTL2+OR+FSTL3%29+AND+%28%22airway+smooth+muscle%22+OR+%22bronchial+smooth+muscle%22%29+AND+FIRST_PDATE%3A%5B1900-01-01+TO+2026-10-09%5D&format=json&resultType=core&pageSize=100&cursorMark=%2A",
+      "reuse_saved_on_resume": true,
+      "path": "research/results/discovery_validation_v2/sources/epmc_secondary_asm_1.json",
+      "bytes": 441235,
+      "sha256": "68df24b410365aa8db0f1c3f24f242279645bbb9e5176020bc6cf49888fd2328",
+      "label": "secondary_asm",
+      "query": "(PER3 OR METTL7A OR MAOA OR ANGPTL2 OR FSTL3) AND (\"airway smooth muscle\" OR \"bronchial smooth muscle\") AND FIRST_PDATE:[1900-01-01 TO 2026-10-09]",
+      "page": 1,
+      "hit_count": 65,
+      "returned": 65,
+      "query_complete": true
+    },
+    {
+      "status": "retrieved",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3A%28PER2%29+AND+TITLE_ABS%3A%28NR3C1+OR+%22glucocorticoid+receptor%22%29+AND+TITLE_ABS%3A%28siRNA+OR+knockout+OR+knockdown+OR+CRISPR%29+AND+FIRST_PDATE%3A%5B1900-01-01+TO+2026-10-09%5D&format=json&resultType=core&pageSize=100&cursorMark=%2A",
+      "retrieved_utc": "2026-10-09T11:07:07.897654+00:00",
+      "http_status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "attempts": [],
+      "path": "research/results/discovery_validation_v2/sources/epmc_per2_gr_genetic_1.json",
+      "bytes": 5755,
+      "sha256": "89881c603cef5916ab60f95cfe639b1375d9b85066ef8c5258a6e9dc7ad5d078",
+      "label": "per2_gr_genetic",
+      "query": "TITLE_ABS:(PER2) AND TITLE_ABS:(NR3C1 OR \"glucocorticoid receptor\") AND TITLE_ABS:(siRNA OR knockout OR knockdown OR CRISPR) AND FIRST_PDATE:[1900-01-01 TO 2026-10-09]",
+      "page": 1,
+      "hit_count": 1,
+      "returned": 1,
+      "query_complete": true
+    }
+  ],
+  "series": 31,
+  "papers": 180,
+  "scope": "Scoped indexed search; no-hit is not proof of absence."
+}

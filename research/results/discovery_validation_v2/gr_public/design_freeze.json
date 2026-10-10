@@ -1,0 +1,43 @@
+{
+  "utc": "2026-10-09T12:37:37.614379+00:00",
+  "script": {
+    "path": "research/discovery/validation_gr_acquire.py",
+    "bytes": 4941,
+    "sha256": "54ce483466105119fed73596995341b65a3d0cc98b80fef494f1bd07534a16a7"
+  },
+  "sample_map": {
+    "path": "research/results/discovery_validation_v2/gr_public/sample_map.csv",
+    "bytes": 8477,
+    "sha256": "f995d18e9c153b0514f44708e1780b9e9dedd299e294c57f013a15c025e99bd4"
+  },
+  "candidates": [
+    "PER2",
+    "PER3",
+    "METTL7A",
+    "MAOA",
+    "ANGPTL2",
+    "FSTL3"
+  ],
+  "controls": [
+    "PER1",
+    "FKBP5",
+    "TSC22D3",
+    "DUSP1",
+    "NR3C1"
+  ],
+  "RNA_model": "Each assay separately TMM/voom/eBayes, ~0+genotype_drug; filterByExpr full design",
+  "comparisons": [
+    "CORT_alpha",
+    "CORT_AF2",
+    "CORT_IDR398",
+    "CORT_x_AF2",
+    "CORT_x_IDR398"
+  ],
+  "family": "11 genes x 5 contrasts = 55 Holm per assay; missing/filtered P=1",
+  "unit": "one U2OS cell line, culture replicates; no human-donor inference",
+  "design_boundary": "All transcriptomic samples are GR KO rescued with a construct. No empty KO transcriptomic arm; cannot estimate WT rescue vs empty KO interaction.",
+  "treatment": "100 nM corticosterone 90min; 4SU final30min; cultures temperature-entrained",
+  "assay_dependence": "mRNA-seq and TT-seq parallel samples, not independent datasets of biological units",
+  "publication_status": "2026-08 bioRxiv preprint, not peer-reviewed article",
+  "timing": "Only design metadata read; candidate counts unexamined."
+}

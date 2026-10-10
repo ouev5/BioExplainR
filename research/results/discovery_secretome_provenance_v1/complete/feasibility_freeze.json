@@ -1,0 +1,22 @@
+{
+  "utc": "2026-10-10T00:58:55.765764+00:00",
+  "script": {
+    "path": "research/discovery/secretome_provenance_feasibility.py",
+    "bytes": 5851,
+    "sha256": "478eeaa5d307a50d9275e4cbcf97acd5ee5d74ce179efb1ac4dbacfff376d317"
+  },
+  "inputs": [
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC12141081.xml",
+      "bytes": 187761,
+      "sha256": "1573922d23e2baca85af108303fba4ebcf758fe9547ed9cc7448bc89ada9ac75"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PXD055968_files.json",
+      "bytes": 61216,
+      "sha256": "56eb8eb9ecf9797536c9fb63a6171f0bdc59d56a27be7c169325a90de73b896b"
+    }
+  ],
+  "supplement_url": "https://ars.els-cdn.com/content/image/1-s2.0-S2589-0042(25)00807-7-mmc1.pdf",
+  "rule": "Use original article PII and attachment mmc1; PDF magic plus parsed text before use; no new donor effect inference"
+}

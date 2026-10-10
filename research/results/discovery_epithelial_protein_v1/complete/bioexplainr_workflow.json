@@ -1,0 +1,26 @@
+{
+  "status": "pass",
+  "package_version": "0.4.0.9000",
+  "contexts": {
+    "A549_primary_56": {
+      "family": "A549_primary_56",
+      "n_features": 56,
+      "n_significant": 4,
+      "n_estimable": 11
+    },
+    "HBEC_primary_56": {
+      "family": "HBEC_primary_56",
+      "n_features": 56,
+      "n_significant": 0,
+      "n_estimable": 1
+    },
+    "HBEC_secondary_112": {
+      "family": "HBEC_secondary_112",
+      "n_features": 112,
+      "n_significant": 0,
+      "n_estimable": 2
+    }
+  },
+  "online_model_calls": 0,
+  "scope": "exploratory epithelial protein results, not ASM controlled validation"
+}

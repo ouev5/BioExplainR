@@ -1,0 +1,104 @@
+{
+  "status": "completed_and_audited",
+  "utc": "2026-10-10T01:09:56.189426+00:00",
+  "exact_original_input_records": [
+    {
+      "path": "research/results/discovery_secretome_v1/archives/24h/extracted/txt/proteinGroups.txt",
+      "bytes": 4026207,
+      "sha256": "f179c0267b09f70079c6e51fd5ebf64368f639be77dffe97a95f0060c8818d19"
+    },
+    {
+      "path": "research/results/discovery_secretome_v1/archives/72h/extracted/txt/proteinGroups.txt",
+      "bytes": 5291473,
+      "sha256": "57a13a064b242e40ae6cf646deec3e08390fa70c285ffb5b030719f43e541d23"
+    },
+    {
+      "path": "research/results/discovery_set_validation_v1/protein_full_tables_small/PXD033514/extracted_verified/txt/proteinGroups.txt",
+      "bytes": 32134908,
+      "sha256": "6433f8df5e440965209b0b9007f062a2c26a1828bd15a07635bdf682de1e6aa0"
+    },
+    {
+      "path": "research/results/discovery_set_validation_v1/protein_full_tables_small/PXD033534/extracted/txt/proteinGroups.txt",
+      "bytes": 18116987,
+      "sha256": "e6a744816e8a3d8c80dae585da203b5d8381faa43894f6082b70afc38f4ea5c5"
+    },
+    {
+      "path": "research/results/discovery_secretome_v1/archives/24h/extracted/SampleNameEncription_Secretome24h.txt",
+      "bytes": 588,
+      "sha256": "996986f56ce1f3be2e4176f94701420cbdb29309a6a01807678dc8a85ad08fcb"
+    },
+    {
+      "path": "research/results/discovery_secretome_v1/archives/72h/extracted/SampleNameEncription_Secretome72h.txt",
+      "bytes": 619,
+      "sha256": "c0507d410f78959b94055f600245bcf54ad2502799020bf2f2ccaa80c1a6f3b4"
+    },
+    {
+      "path": "research/results/discovery_set_validation_v1/protein_full_tables_small/PXD033514/extracted_verified/SampleNameEncription_Proteome24h.txt",
+      "bytes": 593,
+      "sha256": "3495ecb7a12e9639fd34527c7bd9fdcda2990fc9e8c89165bb0b8364551e31b6"
+    },
+    {
+      "path": "research/results/discovery_set_validation_v1/protein_full_tables_small/PXD033534/extracted/SampleNameEncription_Proteome72h.txt",
+      "bytes": 591,
+      "sha256": "a7dc889404f5c8f69daea00e813ea6d47eeb56138964d6a07ae6abf4f5713bbd"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/published_measurements.csv",
+      "bytes": 1905447,
+      "sha256": "cb8b6cd2879960915fdba5266ff08f03d7dee77b5d62f57914ebdefadb9994ae"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/all_intensity_cross_array.csv",
+      "bytes": 3259851,
+      "sha256": "2882ec613959a3b5595d689c7fd4d10b5d5b36fb8aeb2197ec88c9cd00dc792c"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/literature_records.csv",
+      "bytes": 347941,
+      "sha256": "b42d3bd2a15abfcc31fe00e2d8cf56510f918e95ab30688b6fe3570847d42da4"
+    }
+  ],
+  "arrays": 4,
+  "decoded_run_columns": 168,
+  "original_published_measurements": 23436,
+  "cross_measurement_comparisons": 281232,
+  "total_intensity_comparisons": 31228,
+  "scale_formula_comparisons": 4968,
+  "secretome24_positive_total_intensity_matches": 0,
+  "secretome24_nonzero_LFQ_matches": 0,
+  "public_literature_records": 180,
+  "fulltext_requested_bounded": 30,
+  "fulltext_parsed": 21,
+  "public_pride_unique": 8,
+  "ASM_EV_patient_labels": 6,
+  "ASM_EV_runs": 18,
+  "GC_candidate_validation_arrays_obtained": 0,
+  "EV_selected_glycolysis_proteins": 8,
+  "EV_selected_reported_P_under_05": 0,
+  "candidate_original_results": "unchanged; no new GC candidate significance tests",
+  "causal_function_confirmed": false,
+  "online_model_calls": 0,
+  "publication": "paused",
+  "audit_reports": [
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/r_audit.json",
+      "bytes": 1022,
+      "sha256": "66d3011a02f4d5a8a0f8195f8bfc6002e9711c464ea464f29ed4239b4611169b"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/independent_audit.json",
+      "bytes": 1746,
+      "sha256": "1b72bb80ff675bf00a30d7e83efc7f54c29c5af5fda28c9fb182318c8c25d1f6"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/EV_selected_table_audit.json",
+      "bytes": 984,
+      "sha256": "aa3056bbbe61db6372b420624b18cbff7a78ab3c97dadd20a59eb8816b518718"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/report_final/bioexplainr_workflow.json",
+      "bytes": 915,
+      "sha256": "4c2a3ed8e5a35d95487b2c0aeae14e8f993bbb5f682f5b92d46af03df3889ff8"
+    }
+  ]
+}

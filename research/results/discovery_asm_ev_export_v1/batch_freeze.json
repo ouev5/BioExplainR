@@ -1,0 +1,43 @@
+{
+  "utc": "2026-10-10T02:05:54.322953+00:00",
+  "script": {
+    "path": "research/discovery/asm_ev_version.py",
+    "bytes": 5415,
+    "sha256": "ca51f77257eb3fb288ea9ef8330e2d8cc2afe78c7aeb371c3981549a4e1c2787"
+  },
+  "reader": {
+    "path": "research/discovery/asm_ev_sqlite.py",
+    "bytes": 7040,
+    "sha256": "dd4f04bd734939f30617c6dec0bb0c7a10c7644f7ea8cbee6a8d3201abe8ea44"
+  },
+  "files": [
+    "pe210308_02.pdResult",
+    "pe210308_03.pdResult",
+    "pe210308_04.pdResult",
+    "pe210308_05.pdResult",
+    "pe210308_06.pdResult",
+    "pe210308_07.pdResult",
+    "pe210308_08.pdResult",
+    "pe210308_09.pdResult",
+    "pe210308_10.pdResult",
+    "pe210308_11.pdResult",
+    "pe210308_12.pdResult",
+    "pe210308_13.pdResult",
+    "pe210308_14.pdResult",
+    "pe210308_15.pdResult",
+    "pe210308_16.pdResult",
+    "pe210308_17.pdResult",
+    "pe210308_18.pdResult"
+  ],
+  "tables": [
+    "SchemaInfo",
+    "WorkflowInputFiles",
+    "Workflows",
+    "StudyInformation",
+    "AnalysisDefinition",
+    "DataTypesColumns"
+  ],
+  "blocksize": 262144,
+  "limit_per_file_bytes": 67108864,
+  "scope": "All18 version/sample/schema metadata, no candidate lookup, no protein or peptide result rows"
+}

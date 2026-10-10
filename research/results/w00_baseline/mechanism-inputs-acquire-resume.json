@@ -1,0 +1,18 @@
+{
+  "command": [
+    "python3",
+    "research/discovery/prepare_mechanism.py",
+    "research/results/discovery_mechanism_v1",
+    "--resume"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-08T16:57:08.045733+00:00",
+  "finished_utc": "2026-10-08T16:58:04.328690+00:00",
+  "exit_code": 1,
+  "status": "fail",
+  "log": {
+    "path": "research/results/w00_baseline/mechanism-inputs-acquire-resume.txt",
+    "bytes": 1124,
+    "sha256": "5729f5d65a40e94a127a1669e85b7ec0d733e30a49fad0bfec9ed399882cc967"
+  }
+}

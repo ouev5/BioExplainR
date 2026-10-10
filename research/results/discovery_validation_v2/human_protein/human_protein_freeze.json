@@ -1,0 +1,29 @@
+{
+  "utc": "2026-10-09T13:26:55.814499+00:00",
+  "script": {
+    "path": "research/discovery/validation_human_supplement.py",
+    "bytes": 1908,
+    "sha256": "5600798212eb6a7c9c1c46616931ec9d71ab03977d2bfbcb6617c381a416ea7a"
+  },
+  "source": "PMC9562650 TableS2 all identified proteins plus original sample intensities, four assays",
+  "candidates": [
+    "PER2",
+    "PER3",
+    "METTL7A",
+    "MAOA",
+    "ANGPTL2",
+    "FSTL3"
+  ],
+  "controls": [
+    "PER1",
+    "FKBP5",
+    "TSC22D3",
+    "DUSP1",
+    "NR3C1"
+  ],
+  "unit": "six human testicular peritubular donors, age29-55; three technical replicates per condition are averaged, not independent people",
+  "primary": "DEX-control within-donor log2 published normalized intensity; 11genes x4assays=44Holm; no imputation; unambiguous exact symbol and same stable protein group across samples",
+  "time": "24h and72h separate acquisition datasets; no cross-time claim unless paired source donor mapping/scale allow direct response contrast",
+  "scope": "Human smooth-muscle-like cells in testis, NOT airway; no candidate causal/function validation from abundance",
+  "timing": "Original article and dataset metadata read, TableS2 quantitative values not examined"
+}

@@ -1,0 +1,67 @@
+{
+  "frozen_utc": "2026-10-09T01:34:13.924690+00:00",
+  "candidate_expression_read": false,
+  "notes": [
+    {
+      "gsm": "GSM7152278",
+      "title": "A549, 18h DMSO rep2",
+      "batch": "set3",
+      "count_column": "18h_DMSO_3"
+    },
+    {
+      "gsm": "GSM7152292",
+      "title": "A549, 18h DMSO rep3",
+      "batch": "set4",
+      "count_column": "18h_DMSO_4"
+    }
+  ],
+  "filterByExpr": {
+    "min_count": 10,
+    "min_total_count": 15,
+    "large_n": 10,
+    "min_prop": 0.7
+  },
+  "analysis": "batch + 12 treatment/time groups; untreated excluded; all pre/baseline/post samples for voom/eBayes; primary three pre-treatment differences-in-differences; post descriptive only",
+  "inputs": [
+    {
+      "path": "research/results/discovery_mechanism_v1/geneCounts.tab.gz",
+      "bytes": 2524990,
+      "sha256": "db961e988dfe8466d6a2426be60f2ec8976698648f48c1b52653fa65ed5ae466"
+    },
+    {
+      "path": "research/results/discovery_mechanism_v1/intervention_metadata.txt",
+      "bytes": 170791,
+      "sha256": "bcd32a50ec96385a79d741ddb7902e9c76c0762e5b1f05e1e1c76dc13ae5abef"
+    },
+    {
+      "path": "research/results/discovery_mechanism_v1/PMC10710461.xml",
+      "bytes": 195169,
+      "sha256": "23ced8b64f275758650a976f73dbda6ee354785537c525350ea2e833e614104f"
+    },
+    {
+      "path": "research/discovery/MECHANISM_PROTOCOL.md",
+      "bytes": 3031,
+      "sha256": "fefa4d2caf78bd50ba944d660ba4400ca03344d29740938daa3877ba201c489a"
+    },
+    {
+      "path": "research/discovery/run_mechanism.R",
+      "bytes": 4099,
+      "sha256": "2a77cddd9dc10237c354c50bb252998026caf9a970e539f553a5ad2984d2871f"
+    },
+    {
+      "path": "research/discovery/audit_mechanism.py",
+      "bytes": 4692,
+      "sha256": "c21a8f6ee4908248bf786e597e21fc67d7b153934a845854277577a7375ceb5f"
+    },
+    {
+      "path": "research/discovery/mechanism_design.py",
+      "bytes": 3048,
+      "sha256": "0a6f7d101b5a43da8cf88a282525ed6cec58053099e4677de690290ec5c84711"
+    },
+    {
+      "path": "research/results/discovery_mechanism_fit_v4/sample_map.csv",
+      "bytes": 6068,
+      "sha256": "8373de6c7b8cf36f45d827f3ebc36f821e43537fd10813f20f132dbb18daa8bc"
+    }
+  ]
+}

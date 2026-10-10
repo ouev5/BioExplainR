@@ -1,0 +1,17 @@
+{
+  "command": [
+    "Rscript",
+    "--vanilla",
+    "research/common_performance/install_comparator.R"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-08T16:57:08.044984+00:00",
+  "finished_utc": "2026-10-08T16:57:39.950118+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/performance-comparator-install-final.txt",
+    "bytes": 16739,
+    "sha256": "53b77da7c280b8903db303951a1858144bd8bbe9965aca3ef38e0224135d44a3"
+  }
+}

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProteomeXchangeDataset id="PXD055968" formatVersion="1.4.0" xsi:noNamespaceSchemaLocation="proteomeXchange-1.4.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <CvList>
+        <Cv fullName="PSI-MS" uri="https://raw.githubusercontent.com/HUPO-PSI/psi-ms-CV/master/psi-ms.obo" id="MS"/>
+        <Cv fullName="PSI-MOD" uri="https://raw.githubusercontent.com/MICommunity/psidev/master/psi/mod/data/PSI-MOD.obo" id="MOD"/>
+        <Cv fullName="UNIMOD" uri="http://www.unimod.org/obo/unimod.obo" id="UNIMOD"/>
+    </CvList>
+    <DatasetSummary announceDate="2025-11-26" hostingRepository="PRIDE" title="Proteomic analysis of bronchial smooth muscle cells extracellular vesicles">
+        <Description>The main objective of CHARMACOMA is to explore the capacity of the severe asthmatic bronchial smooth muscle to modify bronchial epithelium physiology from a metabolic point of view.</Description>
+        <ReviewLevel>
+            <cvParam cvRef="MS" accession="MS:1002854" name="Peer-reviewed dataset"/>
+        </ReviewLevel>
+        <RepositorySupport>
+            <cvParam cvRef="MS" accession="MS:1002857" name="Unsupported dataset by repository"/>
+        </RepositorySupport>
+    </DatasetSummary>
+    <DatasetIdentifierList>
+        <DatasetIdentifier>
+            <cvParam cvRef="MS" accession="MS:1001919" name="ProteomeXchange accession number" value="PXD055968"/>
+        </DatasetIdentifier>
+    </DatasetIdentifierList>
+    <DatasetOriginList>
+        <DatasetOrigin>
+            <cvParam cvRef="MS" accession="MS:1002868" name="Original data"/>
+        </DatasetOrigin>
+    </DatasetOriginList>
+    <SpeciesList>
+        <Species>
+            <cvParam cvRef="MS" accession="MS:1001469" name="taxonomy: scientific name" value="Homo sapiens (Human)"/>
+            <cvParam cvRef="MS" accession="MS:1001467" name="taxonomy: NCBI TaxID" value="NEWT:9606"/>
+        </Species>
+    </SpeciesList>
+    <InstrumentList>
+        <Instrument id="Instrument_1">
+            <cvParam cvRef="MS" accession="MS:1002732" name="Orbitrap Fusion Lumos"/>
+        </Instrument>
+    </InstrumentList>
+    <ModificationList>
+        <cvParam cvRef="MOD" accession="MOD:00425" name="monohydroxylated residue"/>
+        <cvParam cvRef="MOD" accession="MOD:00397" name="iodoacetamide derivatized residue"/>
+    </ModificationList>
+    <ContactList>
+        <Contact id="project_submitter">
+            <cvParam cvRef="MS" accession="MS:1000586" name="contact name" value="Dupuy Jean-William"/>
+            <cvParam cvRef="MS" accession="MS:1000589" name="contact email" value="jean-william.dupuy@u-bordeaux.fr"/>
+            <cvParam cvRef="MS" accession="MS:1000590" name="contact affiliation" value="OncoProt plateform, UAR TBMCore CNRS 3427 INSERM US005 University of Bordeaux"/>
+            <cvParam cvRef="MS" accession="MS:1002037" name="dataset submitter"/>
+        </Contact>
+        <Contact id="project_lab_head">
+            <cvParam cvRef="MS" accession="MS:1002332" name="lab head"/>
+            <cvParam cvRef="MS" accession="MS:1000586" name="contact name" value="Pauline Esteves"/>
+            <cvParam cvRef="MS" accession="MS:1000589" name="contact email" value="pauline.esteves@u-bordeaux.fr"/>
+            <cvParam cvRef="MS" accession="MS:1000590" name="contact affiliation" value="Univ. Bordeaux, INSERM, CRCTB, U 1045, F-33000 Bordeaux, France"/>
+        </Contact>
+    </ContactList>
+    <PublicationList>
+        <Publication id="PMID40487443">
+            <cvParam cvRef="MS" accession="MS:1000879" name="PubMed identifier" value="40487443"/>
+            <cvParam cvRef="MS" accession="MS:1002866" name="Reference" value="Celle E, Chahin A, Beaufils F, Cardouat G, Eyraud E, Bouchet C, Campagnac M, Ousova O, Begueret H, Thumerel M, Dubois R, Dupuy JW, Leste-Lasserre T, Lacomme S, Lager-Lachaud N, Bellvert F, Marthan R, Girodet PO, Berger P, Trian T, Esteves P. Bronchial smooth muscle extracellular vesicles interfere with bronchial epithelium metabolism and function in asthma. iScience. 2025 28(6):112546"/>
+        </Publication>
+        <Publication id="DOI-10_1016_j_isci_2025_112546">
+            <cvParam cvRef="MS" accession="MS:1001922" name="Digital Object Identifier (DOI)" value="10.1016/j.isci.2025.112546"/>
+        </Publication>
+    </PublicationList>
+    <KeywordList>
+        <cvParam cvRef="MS" accession="MS:1001925" name="submitter keyword" value="EVs,Asthma"/>
+    </KeywordList>
+    <FullDatasetLinkList>
+        <FullDatasetLink>
+            <cvParam cvRef="MS" accession="MS:1002852" name="Dataset FTP location" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968"/>
+        </FullDatasetLink>
+        <FullDatasetLink>
+            <cvParam cvRef="MS" accession="MS:1001930" name="PRIDE project URI" value="https://www.ebi.ac.uk/pride/archive/projects/PXD055968"/>
+        </FullDatasetLink>
+    </FullDatasetLinkList>
+    <DatasetFileList>
+        <DatasetFile id="FILE_1" name="pe210308_06.raw">
+            <cvParam cvRef="MS" accession="MS:1002846" name="Associated raw file URI" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/pe210308_06.raw"/>
+        </DatasetFile>
+        <DatasetFile id="FILE_2" name="pe210308_04.msf">
+            <cvParam cvRef="MS" accession="MS:1002849" name="Search engine output file URI" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/pe210308_04.msf"/>
+        </DatasetFile>
+        <DatasetFile id="FILE_3" name="Link_between_files.xlsx">
+            <cvParam cvRef="MS" accession="MS:1002851" name="Other type file URI" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/Link_between_files.xlsx"/>
+        </DatasetFile>
+        <DatasetFile id="FILE_4" name="pe210308_11.pdResult">
+            <cvParam cvRef="MS" accession="MS:1002851" name="Other type file URI" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/pe210308_11.pdResult"/>
+        </DatasetFile>
+        <DatasetFile id="FILE_5" name="pe210308_07.msf">
+            <cvParam cvRef="MS" accession="MS:1002849" name="Search engine output file URI" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/pe210308_07.msf"/>
+        </DatasetFile>
+        <DatasetFile id="FILE_6" name="pe210308_10.pdResult">
+            <cvParam cvRef="MS" accession="MS:1002851" name="Other type file URI" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/pe210308_10.pdResult"/>
+        </DatasetFile>
+        <DatasetFile id="FILE_7" name="pe210308_12.pdResult">
+            <cvParam cvRef="MS" accession="MS:1002851" name="Other type file URI" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/pe210308_12.pdResult"/>
+        </DatasetFile>
+        <DatasetFile id="FILE_8" name="pe210308_11.msf">
+            <cvParam cvRef="MS" accession="MS:1002849" name="Search engine output file URI" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/pe210308_11.msf"/>
+        </DatasetFile>
+        <DatasetFile id="FILE_9" name="pe210308_17.pdResult">
+            <cvParam cvRef="MS" accession="MS:1002851" name="Other type file URI" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/pe210308_17.pdResult"/>
+        </DatasetFile>
+        <DatasetFile id="FILE_10" name="pe210308_01.pdResult">
+            <cvParam cvRef="MS" accession="MS:1002851" name="Other type file URI" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/pe210308_01.pdResult"/>
+        </DatasetFile>
+        <DatasetFile id="FILE_11" name="pe210308_16.pdResult">
+            <cvParam cvRef="MS" accession="MS:1002851" name="Other type file URI" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/pe210308_16.pdResult"/>
+        </DatasetFile>
+        <DatasetFile id="FILE_12" name="pe210308_13.raw">
+            <cvParam cvRef="MS" accession="MS:1002846" name="Associated raw file URI" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/pe210308_13.raw"/>
+        </DatasetFile>
+        <DatasetFile id="FILE_13" name="pe210308_05.pdResult">
+            <cvParam cvRef="MS" accession="MS:1002851" name="Other type file URI" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/pe210308_05.pdResult"/>
+        </DatasetFile>
+        <DatasetFile id="FILE_14" name="pe210308_18.raw">
+            <cvParam cvRef="MS" accession="MS:1002846" name="Associated raw file URI" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/pe210308_18.raw"/>
+        </DatasetFile>
+        <DatasetFile id="FILE_15" name="pe210308_14.pdResult">
+            <cvParam cvRef="MS" accession="MS:1002851" name="Other type file URI" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/pe210308_14.pdResult"/>
+        </DatasetFile>
+        <DatasetFile id="FILE_16" name="pe210308_06.msf">
+            <cvParam cvRef="MS" accession="MS:1002849" name="Search engine output file URI" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/pe210308_06.msf"/>
+        </DatasetFile>
+        <DatasetFile id="FILE_17" name="pe210308_10.raw">
+            <cvParam cvRef="MS" accession="MS:1002846" name="Associated raw file URI" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/pe210308_10.raw"/>
+        </DatasetFile>
+        <DatasetFile id="FILE_18" name="pe210308_03.pdResult">
+            <cvParam cvRef="MS" accession="MS:1002851" name="Other type file URI" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/pe210308_03.pdResult"/>
+        </DatasetFile>
+        <DatasetFile id="FILE_19" name="pe210308_04.pdResult">
+            <cvParam cvRef="MS" accession="MS:1002851" name="Other type file URI" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/pe210308_04.pdResult"/>
+        </DatasetFile>
+        <DatasetFile id="FILE_20" name="pe210308_14.msf">
+            <cvParam cvRef="MS" accession="MS:1002849" name="Search engine output file URI" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/pe210308_14.msf"/>
+        </DatasetFile>
+        <DatasetFile id="FILE_21" name="pe210308_15.msf">
+            <cvParam cvRef="MS" accession="MS:1002849" name="Search engine output file URI" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/pe210308_15.msf"/>
+        </DatasetFile>
+        <DatasetFile id="FILE_22" name="pe210308_09.msf">
+            <cvParam cvRef="MS" accession="MS:1002849" name="Search engine output file URI" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/pe210308_09.msf"/>
+        </DatasetFile>
+        <DatasetFile id="FILE_23" name="pe210308_14.raw">
+            <cvParam cvRef="MS" accession="MS:1002846" name="Associated raw file URI" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/pe210308_14.raw"/>
+        </DatasetFile>
+        <DatasetFile id="FILE_24" name="pe210308_17.msf">
+            <cvParam cvRef="MS" accession="MS:1002849" name="Search engine output file URI" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/pe210308_17.msf"/>
+        </DatasetFile>
+        <DatasetFile id="FILE_25" name="pe210308_01.raw">
+            <cvParam cvRef="MS" accession="MS:1002846" name="Associated raw file URI" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/pe210308_01.raw"/>
+        </DatasetFile>
+        <DatasetFile id="FILE_26" name="pe210308_12.msf">
+            <cvParam cvRef="MS" accession="MS:1002849" name="Search engine output file URI" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/pe210308_12.msf"/>
+        </DatasetFile>
+        <DatasetFile id="FILE_27" name="pe210308_07.pdResult">
+            <cvParam cvRef="MS" accession="MS:1002851" name="Other type file URI" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/pe210308_07.pdResult"/>
+        </DatasetFile>
+        <DatasetFile id="FILE_28" name="pe210308_03.msf">
+            <cvParam cvRef="MS" accession="MS:1002849" name="Search engine output file URI" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/pe210308_03.msf"/>
+        </DatasetFile>
+        <DatasetFile id="FILE_29" name="pe210308_02.msf">
+            <cvParam cvRef="MS" accession="MS:1002849" name="Search engine output file URI" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/pe210308_02.msf"/>
+        </DatasetFile>
+        <DatasetFile id="FILE_30" name="pe210308_02.pdResult">
+            <cvParam cvRef="MS" accession="MS:1002851" name="Other type file URI" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/pe210308_02.pdResult"/>
+        </DatasetFile>
+        <DatasetFile id="FILE_31" name="RP_UP000005640_Homo_sapiens_2023_09_13.fasta">
+            <cvParam cvRef="MS" accession="MS:1002845" name="Associated file URI" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/RP_UP000005640_Homo_sapiens_2023_09_13.fasta"/>
+        </DatasetFile>
+        <DatasetFile id="FILE_32" name="pe210308_18.pdResult">
+            <cvParam cvRef="MS" accession="MS:1002851" name="Other type file URI" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/pe210308_18.pdResult"/>
+        </DatasetFile>
+        <DatasetFile id="FILE_33" name="pe210308_06.pdResult">
+            <cvParam cvRef="MS" accession="MS:1002851" name="Other type file URI" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/pe210308_06.pdResult"/>
+        </DatasetFile>
+        <DatasetFile id="FILE_34" name="pe210308_16.raw">
+            <cvParam cvRef="MS" accession="MS:1002846" name="Associated raw file URI" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/pe210308_16.raw"/>
+        </DatasetFile>
+        <DatasetFile id="FILE_35" name="pe210308_13.pdResult">
+            <cvParam cvRef="MS" accession="MS:1002851" name="Other type file URI" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/pe210308_13.pdResult"/>
+        </DatasetFile>
+        <DatasetFile id="FILE_36" name="pe210308_07.raw">
+            <cvParam cvRef="MS" accession="MS:1002846" name="Associated raw file URI" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/pe210308_07.raw"/>
+        </DatasetFile>
+        <DatasetFile id="FILE_37" name="pe210308_04.raw">
+            <cvParam cvRef="MS" accession="MS:1002846" name="Associated raw file URI" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/pe210308_04.raw"/>
+        </DatasetFile>
+        <DatasetFile id="FILE_38" name="pe210308_18.msf">
+            <cvParam cvRef="MS" accession="MS:1002849" name="Search engine output file URI" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/pe210308_18.msf"/>
+        </DatasetFile>
+        <DatasetFile id="FILE_39" name="pe210308_03.raw">
+            <cvParam cvRef="MS" accession="MS:1002846" name="Associated raw file URI" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/pe210308_03.raw"/>
+        </DatasetFile>
+        <DatasetFile id="FILE_40" name="pe210308_09.pdResult">
+            <cvParam cvRef="MS" accession="MS:1002851" name="Other type file URI" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/pe210308_09.pdResult"/>
+        </DatasetFile>
+        <DatasetFile id="FILE_41" name="pe210308_15.raw">
+            <cvParam cvRef="MS" accession="MS:1002846" name="Associated raw file URI" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/pe210308_15.raw"/>
+        </DatasetFile>
+        <DatasetFile id="FILE_42" name="pe210308_05.msf">
+            <cvParam cvRef="MS" accession="MS:1002849" name="Search engine output file URI" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/pe210308_05.msf"/>
+        </DatasetFile>
+        <DatasetFile id="FILE_43" name="pe210308_12.raw">
+            <cvParam cvRef="MS" accession="MS:1002846" name="Associated raw file URI" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/pe210308_12.raw"/>
+        </DatasetFile>
+        <DatasetFile id="FILE_44" name="pe210308_05.raw">
+            <cvParam cvRef="MS" accession="MS:1002846" name="Associated raw file URI" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/pe210308_05.raw"/>
+        </DatasetFile>
+        <DatasetFile id="FILE_45" name="pe210308_02.raw">
+            <cvParam cvRef="MS" accession="MS:1002846" name="Associated raw file URI" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/pe210308_02.raw"/>
+        </DatasetFile>
+        <DatasetFile id="FILE_46" name="pe210308_09.raw">
+            <cvParam cvRef="MS" accession="MS:1002846" name="Associated raw file URI" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/pe210308_09.raw"/>
+        </DatasetFile>
+        <DatasetFile id="FILE_47" name="pe210308_08.pdResult">
+            <cvParam cvRef="MS" accession="MS:1002851" name="Other type file URI" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/pe210308_08.pdResult"/>
+        </DatasetFile>
+        <DatasetFile id="FILE_48" name="pe210308_10.msf">
+            <cvParam cvRef="MS" accession="MS:1002849" name="Search engine output file URI" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/pe210308_10.msf"/>
+        </DatasetFile>
+        <DatasetFile id="FILE_49" name="pe210308_16.msf">
+            <cvParam cvRef="MS" accession="MS:1002849" name="Search engine output file URI" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/pe210308_16.msf"/>
+        </DatasetFile>
+        <DatasetFile id="FILE_50" name="pe210308_01.msf">
+            <cvParam cvRef="MS" accession="MS:1002849" name="Search engine output file URI" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/pe210308_01.msf"/>
+        </DatasetFile>
+        <DatasetFile id="FILE_51" name="pe210308_15.pdResult">
+            <cvParam cvRef="MS" accession="MS:1002851" name="Other type file URI" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/pe210308_15.pdResult"/>
+        </DatasetFile>
+        <DatasetFile id="FILE_52" name="checksum.txt">
+            <cvParam cvRef="MS" accession="MS:1002851" name="Other type file URI" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/checksum.txt"/>
+        </DatasetFile>
+        <DatasetFile id="FILE_53" name="pe210308_17.raw">
+            <cvParam cvRef="MS" accession="MS:1002846" name="Associated raw file URI" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/pe210308_17.raw"/>
+        </DatasetFile>
+        <DatasetFile id="FILE_54" name="pe210308_13.msf">
+            <cvParam cvRef="MS" accession="MS:1002849" name="Search engine output file URI" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/pe210308_13.msf"/>
+        </DatasetFile>
+        <DatasetFile id="FILE_55" name="pe210308_08.raw">
+            <cvParam cvRef="MS" accession="MS:1002846" name="Associated raw file URI" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/pe210308_08.raw"/>
+        </DatasetFile>
+        <DatasetFile id="FILE_56" name="pe210308_08.msf">
+            <cvParam cvRef="MS" accession="MS:1002849" name="Search engine output file URI" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/pe210308_08.msf"/>
+        </DatasetFile>
+        <DatasetFile id="FILE_57" name="pe210308_11.raw">
+            <cvParam cvRef="MS" accession="MS:1002846" name="Associated raw file URI" value="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/pe210308_11.raw"/>
+        </DatasetFile>
+    </DatasetFileList>
+    <RepositoryRecordList>
+        <RepositoryRecord name="Proteomic analysis of bronchial smooth muscle cells extracellular vesicles" label="PRIDE project" recordID="PXD055968" repositoryID="PRIDE" uri="https://www.ebi.ac.uk/pride/archive/projects/PXD055968"/>
+    </RepositoryRecordList>
+</ProteomeXchangeDataset>

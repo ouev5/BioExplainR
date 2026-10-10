@@ -1,0 +1,36 @@
+{
+  "status": "completed",
+  "independent_donors": 4,
+  "libraries": 31,
+  "retained_genes": 27409,
+  "pooled_test_family": 82227,
+  "selected_rows": 0,
+  "selected_genes": 0,
+  "summary": [
+    {
+      "contrast": "bud_tnf_NT",
+      "tested_genes": 27409,
+      "pooled_BH_significant": 0,
+      "effect_abundance_pass": 0,
+      "two_model_pass": 0,
+      "priority_pass": 0
+    },
+    {
+      "contrast": "bud_kd_noTNF",
+      "tested_genes": 27409,
+      "pooled_BH_significant": 0,
+      "effect_abundance_pass": 0,
+      "two_model_pass": 0,
+      "priority_pass": 0
+    },
+    {
+      "contrast": "three_way",
+      "tested_genes": 27409,
+      "pooled_BH_significant": 0,
+      "effect_abundance_pass": 0,
+      "two_model_pass": 0,
+      "priority_pass": 0
+    }
+  ],
+  "finished_utc": "2026-10-09 07:58:20 UTC"
+}

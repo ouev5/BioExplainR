@@ -1,0 +1,343 @@
+{
+  "utc": "2026-10-10T03:49:27.390939+00:00",
+  "records": [
+    {
+      "name": "hal_doi.json",
+      "url": "https://api.archives-ouvertes.fr/search/?q=doiId_s%3A%2210.1016%2Fj.isci.2025.112546%22&rows=100&wt=json",
+      "started_utc": "2026-10-10T03:48:59.068930+00:00",
+      "http_status": 200,
+      "final_url": "https://api.archives-ouvertes.fr/search/?q=doiId_s%3A%2210.1016%2Fj.isci.2025.112546%22&rows=100&wt=json",
+      "headers": {
+        "date": "Sat, 10 Oct 2026 03:49:02 GMT",
+        "server": "Apache/2.4.68 (Debian)",
+        "served-by": "192.168.176.70 D=78315",
+        "environment": "production",
+        "access-control-allow-origin": "*",
+        "content-length": "520",
+        "content-type": "application/json; charset=utf-8",
+        "strict-transport-security": "max-age=63072000",
+        "connection": "close"
+      },
+      "status": "retrieved",
+      "response": {
+        "path": "research/results/discovery_asm_ev_materials_v1/sources/hal_doi.json",
+        "bytes": 520,
+        "sha256": "8303a55ae116551376384995361ab7ec981862e055bfee52b284c720be05c02d"
+      },
+      "completed_utc": "2026-10-10T03:49:02.428417+00:00"
+    },
+    {
+      "name": "hal_accession.json",
+      "url": "https://api.archives-ouvertes.fr/search/?q=text%3A%22PXD055968%22&rows=100&wt=json",
+      "started_utc": "2026-10-10T03:48:59.068014+00:00",
+      "http_status": 200,
+      "final_url": "https://api.archives-ouvertes.fr/search/?q=text%3A%22PXD055968%22&rows=100&wt=json",
+      "headers": {
+        "date": "Sat, 10 Oct 2026 03:49:00 GMT",
+        "server": "Apache/2.4.68 (Debian)",
+        "served-by": "192.168.176.67 D=71972",
+        "environment": "production",
+        "access-control-allow-origin": "*",
+        "content-length": "116",
+        "content-type": "application/json; charset=utf-8",
+        "strict-transport-security": "max-age=63072000",
+        "connection": "close"
+      },
+      "status": "retrieved",
+      "response": {
+        "path": "research/results/discovery_asm_ev_materials_v1/sources/hal_accession.json",
+        "bytes": 116,
+        "sha256": "316b596864c92e18c8f6688107ad49ecfc3fe632ebdc85efe82c65ed28ba8064"
+      },
+      "completed_utc": "2026-10-10T03:49:00.674022+00:00"
+    },
+    {
+      "name": "hal_title.json",
+      "url": "https://api.archives-ouvertes.fr/search/?q=title_t%3A%22Bronchial+smooth+muscle+extracellular+vesicles+interfere+with+bronchial+epithelium+metabolism+and+function+in+asthma%22&rows=100&wt=json",
+      "started_utc": "2026-10-10T03:48:59.070136+00:00",
+      "http_status": 200,
+      "final_url": "https://api.archives-ouvertes.fr/search/?q=title_t%3A%22Bronchial+smooth+muscle+extracellular+vesicles+interfere+with+bronchial+epithelium+metabolism+and+function+in+asthma%22&rows=100&wt=json",
+      "headers": {
+        "date": "Sat, 10 Oct 2026 03:49:03 GMT",
+        "server": "Apache/2.4.68 (Debian)",
+        "served-by": "192.168.176.71 D=91010",
+        "environment": "production",
+        "access-control-allow-origin": "*",
+        "content-length": "521",
+        "content-type": "application/json; charset=utf-8",
+        "strict-transport-security": "max-age=63072000",
+        "connection": "close"
+      },
+      "status": "retrieved",
+      "response": {
+        "path": "research/results/discovery_asm_ev_materials_v1/sources/hal_title.json",
+        "bytes": 521,
+        "sha256": "4e114c20018a24db7d599800e8e5e239ffce2b5b0faaa42d0d223570f7f9d9a0"
+      },
+      "completed_utc": "2026-10-10T03:49:03.673657+00:00"
+    },
+    {
+      "name": "rdg_accession.json",
+      "url": "https://entrepot.recherche.data.gouv.fr/api/search?q=PXD055968&per_page=100",
+      "started_utc": "2026-10-10T03:48:59.071614+00:00",
+      "http_status": 200,
+      "final_url": "https://entrepot.recherche.data.gouv.fr/api/search?q=PXD055968&per_page=100",
+      "headers": {
+        "date": "Sat, 10 Oct 2026 03:49:00 GMT",
+        "server": "Apache",
+        "access-control-allow-headers": "Accept, Content-Type, X-Dataverse-Key, Range",
+        "access-control-allow-methods": "PUT, GET, POST, DELETE, OPTIONS",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "Accept-Ranges, Content-Range, Content-Encoding",
+        "content-length": "126",
+        "content-type": "application/json;charset=UTF-8",
+        "x-frame-options": "SAMEORIGIN",
+        "x-xss-protection": "1; mode=block",
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "no-referrer-when-downgrade",
+        "strict-transport-security": "max-age=63072000",
+        "set-cookie": "SERVER=web1; path=/",
+        "connection": "close"
+      },
+      "status": "retrieved",
+      "response": {
+        "path": "research/results/discovery_asm_ev_materials_v1/sources/rdg_accession.json",
+        "bytes": 126,
+        "sha256": "95bfa62605ee1e4946613a64e843466daf87134ee5cd35ff00aba32fa01e5c72"
+      },
+      "completed_utc": "2026-10-10T03:49:01.104595+00:00"
+    },
+    {
+      "name": "rdg_doi.json",
+      "url": "https://entrepot.recherche.data.gouv.fr/api/search?q=%2210.1016%2Fj.isci.2025.112546%22&per_page=100",
+      "started_utc": "2026-10-10T03:49:00.674114+00:00",
+      "http_status": 200,
+      "final_url": "https://entrepot.recherche.data.gouv.fr/api/search?q=%2210.1016%2Fj.isci.2025.112546%22&per_page=100",
+      "headers": {
+        "date": "Sat, 10 Oct 2026 03:49:03 GMT",
+        "server": "Apache",
+        "access-control-allow-headers": "Accept, Content-Type, X-Dataverse-Key, Range",
+        "access-control-allow-methods": "PUT, GET, POST, DELETE, OPTIONS",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "Accept-Ranges, Content-Range, Content-Encoding",
+        "content-length": "147",
+        "content-type": "application/json;charset=UTF-8",
+        "x-frame-options": "SAMEORIGIN",
+        "x-xss-protection": "1; mode=block",
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "no-referrer-when-downgrade",
+        "strict-transport-security": "max-age=63072000",
+        "set-cookie": "SERVER=web1; path=/",
+        "connection": "close"
+      },
+      "status": "retrieved",
+      "response": {
+        "path": "research/results/discovery_asm_ev_materials_v1/sources/rdg_doi.json",
+        "bytes": 147,
+        "sha256": "73323260438813c3c8d1de1d0a70140cd627a66e9b712d3b57dbcebd5b22368f"
+      },
+      "completed_utc": "2026-10-10T03:49:03.604999+00:00"
+    },
+    {
+      "name": "openaire_doi.json",
+      "url": "https://api.openaire.eu/search/publications?doi=10.1016%2Fj.isci.2025.112546&format=json",
+      "started_utc": "2026-10-10T03:49:01.104686+00:00",
+      "status": "failed",
+      "error": "The read operation timed out",
+      "completed_utc": "2026-10-10T03:49:27.390378+00:00"
+    },
+    {
+      "name": "figshare_doi.json",
+      "url": "https://api.figshare.com/v2/articles?resource_doi=10.1016%2Fj.isci.2025.112546&page_size=100",
+      "started_utc": "2026-10-10T03:49:02.428575+00:00",
+      "status": "http_error",
+      "http_status": 403,
+      "final_url": "https://api.figshare.com/v2/articles?resource_doi=10.1016%2Fj.isci.2025.112546&page_size=100",
+      "headers": {
+        "Server": "awselb/2.0",
+        "Date": "Sat, 10 Oct 2026 03:49:03 GMT",
+        "Content-Type": "text/html",
+        "Content-Length": "118",
+        "Connection": "close"
+      },
+      "error": "HTTP Error 403: Forbidden",
+      "response": {
+        "path": "research/results/discovery_asm_ev_materials_v1/sources/figshare_doi.json",
+        "bytes": 118,
+        "sha256": "58bf2215b395dcac74c009aa98701854e43cbe54a1cd3a95fee6a647ca9910d4"
+      },
+      "completed_utc": "2026-10-10T03:49:03.212641+00:00"
+    },
+    {
+      "name": "PXD055968_project.json",
+      "url": "https://www.ebi.ac.uk/pride/ws/archive/v2/projects/PXD055968",
+      "started_utc": "2026-10-10T03:49:03.212720+00:00",
+      "http_status": 200,
+      "final_url": "https://www.ebi.ac.uk/pride/ws/archive/v2/projects/PXD055968",
+      "headers": {
+        "Vary": "Origin",
+        "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+        "Content-Type": "text/plain;charset=UTF-8",
+        "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+        "Expires": "0",
+        "Pragma": "no-cache",
+        "X-XSS-Protection": "0",
+        "X-Content-Type-Options": "nosniff",
+        "Connection": "close",
+        "X-Frame-Options": "DENY",
+        "Referrer-Policy": "no-referrer",
+        "Content-Length": "8016"
+      },
+      "status": "retrieved",
+      "response": {
+        "path": "research/results/discovery_asm_ev_materials_v1/sources/PXD055968_project.json",
+        "bytes": 8016,
+        "sha256": "a265c71f78e617efc562967993e112e5ddc144df71880e9c4b40d34799cf1b05"
+      },
+      "completed_utc": "2026-10-10T03:49:05.230257+00:00"
+    },
+    {
+      "name": "PXD055968_files.json",
+      "url": "https://www.ebi.ac.uk/pride/ws/archive/v2/projects/PXD055968/files?pageSize=100&page=0",
+      "started_utc": "2026-10-10T03:49:03.605091+00:00",
+      "http_status": 200,
+      "final_url": "https://www.ebi.ac.uk/pride/ws/archive/v2/projects/PXD055968/files?pageSize=100&page=0",
+      "headers": {
+        "Vary": "Origin",
+        "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+        "Content-Type": "application/json",
+        "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+        "total_records": "56",
+        "Expires": "0",
+        "Pragma": "no-cache",
+        "X-XSS-Protection": "0",
+        "transfer-encoding": "chunked",
+        "X-Content-Type-Options": "nosniff",
+        "Connection": "close",
+        "X-Frame-Options": "DENY",
+        "Referrer-Policy": "no-referrer"
+      },
+      "status": "retrieved",
+      "response": {
+        "path": "research/results/discovery_asm_ev_materials_v1/sources/PXD055968_files.json",
+        "bytes": 61216,
+        "sha256": "56eb8eb9ecf9797536c9fb63a6171f0bdc59d56a27be7c169325a90de73b896b"
+      },
+      "completed_utc": "2026-10-10T03:49:05.129964+00:00"
+    },
+    {
+      "name": "PXD055949_project.json",
+      "url": "https://www.ebi.ac.uk/pride/ws/archive/v2/projects/PXD055949",
+      "started_utc": "2026-10-10T03:49:03.673818+00:00",
+      "http_status": 200,
+      "final_url": "https://www.ebi.ac.uk/pride/ws/archive/v2/projects/PXD055949",
+      "headers": {
+        "Vary": "Origin",
+        "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+        "Content-Type": "text/plain;charset=UTF-8",
+        "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+        "Expires": "0",
+        "Pragma": "no-cache",
+        "X-XSS-Protection": "0",
+        "X-Content-Type-Options": "nosniff",
+        "Connection": "close",
+        "X-Frame-Options": "DENY",
+        "Referrer-Policy": "no-referrer",
+        "Content-Length": "7053"
+      },
+      "status": "retrieved",
+      "response": {
+        "path": "research/results/discovery_asm_ev_materials_v1/sources/PXD055949_project.json",
+        "bytes": 7053,
+        "sha256": "483d404b4b133f899426e3dcae54cc4e25a29c14f9b317a75c2bccff1d39134b"
+      },
+      "completed_utc": "2026-10-10T03:49:07.297228+00:00"
+    },
+    {
+      "name": "PXD055949_files.json",
+      "url": "https://www.ebi.ac.uk/pride/ws/archive/v2/projects/PXD055949/files?pageSize=100&page=0",
+      "started_utc": "2026-10-10T03:49:05.130058+00:00",
+      "http_status": 200,
+      "final_url": "https://www.ebi.ac.uk/pride/ws/archive/v2/projects/PXD055949/files?pageSize=100&page=0",
+      "headers": {
+        "Vary": "Origin",
+        "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+        "Content-Type": "application/json",
+        "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+        "total_records": "48",
+        "Expires": "0",
+        "Pragma": "no-cache",
+        "X-XSS-Protection": "0",
+        "transfer-encoding": "chunked",
+        "X-Content-Type-Options": "nosniff",
+        "Connection": "close",
+        "X-Frame-Options": "DENY",
+        "Referrer-Policy": "no-referrer"
+      },
+      "status": "retrieved",
+      "response": {
+        "path": "research/results/discovery_asm_ev_materials_v1/sources/PXD055949_files.json",
+        "bytes": 52562,
+        "sha256": "c5548599c4287c2d4d9e1c98f399e9fb71c93268a75c0d519b4ae31a4231f132"
+      },
+      "completed_utc": "2026-10-10T03:49:09.329754+00:00"
+    },
+    {
+      "name": "PXD059603_project.json",
+      "url": "https://www.ebi.ac.uk/pride/ws/archive/v2/projects/PXD059603",
+      "started_utc": "2026-10-10T03:49:05.230325+00:00",
+      "http_status": 200,
+      "final_url": "https://www.ebi.ac.uk/pride/ws/archive/v2/projects/PXD059603",
+      "headers": {
+        "Vary": "Origin",
+        "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+        "Content-Type": "text/plain;charset=UTF-8",
+        "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+        "Expires": "0",
+        "Pragma": "no-cache",
+        "X-XSS-Protection": "0",
+        "X-Content-Type-Options": "nosniff",
+        "Connection": "close",
+        "X-Frame-Options": "DENY",
+        "Referrer-Policy": "no-referrer",
+        "Content-Length": "7071"
+      },
+      "status": "retrieved",
+      "response": {
+        "path": "research/results/discovery_asm_ev_materials_v1/sources/PXD059603_project.json",
+        "bytes": 7071,
+        "sha256": "950e5e218cd2dfe7d3f922db5e7f04b3dec9d961d01292c4fec3ac3ae0edbb15"
+      },
+      "completed_utc": "2026-10-10T03:49:06.316502+00:00"
+    },
+    {
+      "name": "PXD059603_files.json",
+      "url": "https://www.ebi.ac.uk/pride/ws/archive/v2/projects/PXD059603/files?pageSize=100&page=0",
+      "started_utc": "2026-10-10T03:49:06.316588+00:00",
+      "http_status": 200,
+      "final_url": "https://www.ebi.ac.uk/pride/ws/archive/v2/projects/PXD059603/files?pageSize=100&page=0",
+      "headers": {
+        "Vary": "Origin",
+        "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+        "Content-Type": "application/json",
+        "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+        "total_records": "38",
+        "Expires": "0",
+        "Pragma": "no-cache",
+        "X-XSS-Protection": "0",
+        "transfer-encoding": "chunked",
+        "X-Content-Type-Options": "nosniff",
+        "Connection": "close",
+        "X-Frame-Options": "DENY",
+        "Referrer-Policy": "no-referrer"
+      },
+      "status": "retrieved",
+      "response": {
+        "path": "research/results/discovery_asm_ev_materials_v1/sources/PXD059603_files.json",
+        "bytes": 41686,
+        "sha256": "e442b99f83fa059d33da890476f624592b2c59d2e0709d37843516f445524be3"
+      },
+      "completed_utc": "2026-10-10T03:49:11.319156+00:00"
+    }
+  ]
+}

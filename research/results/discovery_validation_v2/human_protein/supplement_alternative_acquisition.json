@@ -1,0 +1,105 @@
+{
+  "utc": "2026-10-09T13:32:51.633105+00:00",
+  "records": [
+    {
+      "status": "failed",
+      "url": "https://pmc.ncbi.nlm.nih.gov/utils/oa/oa.fcgi?id=PMC9562650",
+      "path": "research/results/discovery_validation_v2/human_protein/oa_package.xml",
+      "attempts": [
+        {
+          "utc": "2026-10-09T13:29:50.246949+00:00",
+          "error": "<urlopen error [Errno 104] Connection reset by peer>",
+          "attempt": 1
+        },
+        {
+          "utc": "2026-10-09T13:29:51.747854+00:00",
+          "error": "<urlopen error [Errno 104] Connection reset by peer>",
+          "attempt": 2
+        },
+        {
+          "utc": "2026-10-09T13:29:54.709533+00:00",
+          "error": "HTTP Error 404: Not Found",
+          "attempt": 3
+        }
+      ]
+    },
+    {
+      "status": "retrieved",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/9562650/bin/cells-11-03164-s001.zip?download=1",
+      "retrieved_utc": "2026-10-09T13:29:58.780567+00:00",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "attempts": [],
+      "path": "research/results/discovery_validation_v2/human_protein/supplement_alternative_1.bin",
+      "bytes": 1817,
+      "sha256": "b168153189a4cf402084a5dbd3cdd5ea57a031822aeb48c0d2fb9bdda4f55fda",
+      "valid_zip": false
+    },
+    {
+      "status": "failed",
+      "url": "https://www.mdpi.com/2073-4409/11/19/3164/s1?version=1665329229",
+      "path": "research/results/discovery_validation_v2/human_protein/supplement_alternative_2.bin",
+      "attempts": [
+        {
+          "utc": "2026-10-09T13:30:00.558511+00:00",
+          "error": "HTTP Error 403: Forbidden",
+          "attempt": 1
+        },
+        {
+          "utc": "2026-10-09T13:30:03.453979+00:00",
+          "error": "HTTP Error 403: Forbidden",
+          "attempt": 2
+        },
+        {
+          "utc": "2026-10-09T13:30:05.999273+00:00",
+          "error": "HTTP Error 403: Forbidden",
+          "attempt": 3
+        }
+      ]
+    },
+    {
+      "status": "failed",
+      "url": "https://europepmc.org/articles/PMC9562650/bin/cells-11-03164-s001.zip",
+      "path": "research/results/discovery_validation_v2/human_protein/supplement_alternative_3.bin",
+      "attempts": [
+        {
+          "utc": "2026-10-09T13:30:10.676274+00:00",
+          "error": "HTTP Error 403: Forbidden",
+          "attempt": 1
+        },
+        {
+          "utc": "2026-10-09T13:30:13.022618+00:00",
+          "error": "HTTP Error 403: Forbidden",
+          "attempt": 2
+        },
+        {
+          "utc": "2026-10-09T13:30:15.862078+00:00",
+          "error": "HTTP Error 403: Forbidden",
+          "attempt": 3
+        }
+      ]
+    },
+    {
+      "status": "failed",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9562650/supplementaryFiles",
+      "path": "research/results/discovery_validation_v2/human_protein/supplement_alternative_4.bin",
+      "attempts": [
+        {
+          "utc": "2026-10-09T13:30:59.749104+00:00",
+          "error": "The read operation timed out",
+          "attempt": 1
+        },
+        {
+          "utc": "2026-10-09T13:31:42.871064+00:00",
+          "error": "The read operation timed out",
+          "attempt": 2
+        },
+        {
+          "utc": "2026-10-09T13:32:48.632670+00:00",
+          "error": "The read operation timed out",
+          "attempt": 3
+        }
+      ]
+    }
+  ]
+}

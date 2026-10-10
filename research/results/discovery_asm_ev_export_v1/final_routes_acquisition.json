@@ -1,0 +1,60 @@
+{
+  "utc": "2026-10-10T02:37:39.512673+00:00",
+  "records": [
+    {
+      "status": "retrieved",
+      "url": "https://proteomecentral.proteomexchange.org/cgi/GetDataset?ID=PXD055968.0-1&outputMode=XML&test=no",
+      "retrieved_utc": "2026-10-10T02:37:19.086540+00:00",
+      "http_status": 200,
+      "content_type": "text/plain; charset=UTF-8",
+      "attempts": [],
+      "path": "research/results/discovery_asm_ev_export_v1/sources/px_announcement.xml",
+      "bytes": 20168,
+      "sha256": "898d1fe7406c8545d8f70c70ca1be9539bc125bb4cda00039f51885be1722f13"
+    },
+    {
+      "status": "failed",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2589004225008077",
+      "path": "research/results/discovery_asm_ev_export_v1/sources/publisher_article.html",
+      "attempts": [
+        {
+          "utc": "2026-10-10T02:37:19.687155+00:00",
+          "error": "HTTP Error 403: Forbidden",
+          "attempt": 1
+        },
+        {
+          "utc": "2026-10-10T02:37:21.250282+00:00",
+          "error": "HTTP Error 403: Forbidden",
+          "attempt": 2
+        },
+        {
+          "utc": "2026-10-10T02:37:23.823912+00:00",
+          "error": "HTTP Error 403: Forbidden",
+          "attempt": 3
+        }
+      ]
+    },
+    {
+      "status": "failed",
+      "url": "https://zenodo.org/api/records?q=10.1016%2Fj.isci.2025.112546&size=20",
+      "path": "research/results/discovery_asm_ev_export_v1/sources/zenodo_article_doi.json",
+      "attempts": [
+        {
+          "utc": "2026-10-10T02:37:28.472076+00:00",
+          "error": "HTTP Error 500: INTERNAL SERVER ERROR",
+          "attempt": 1
+        },
+        {
+          "utc": "2026-10-10T02:37:31.431429+00:00",
+          "error": "HTTP Error 500: INTERNAL SERVER ERROR",
+          "attempt": 2
+        },
+        {
+          "utc": "2026-10-10T02:37:36.512206+00:00",
+          "error": "HTTP Error 500: INTERNAL SERVER ERROR",
+          "attempt": 3
+        }
+      ]
+    }
+  ]
+}

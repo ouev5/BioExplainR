@@ -1,0 +1,12 @@
+                                contrast n_donors_a n_donors_b positive_donors
+1              non_asthma_BUD_vs_vehicle          7          0               7
+2            fatal_asthma_BUD_vs_vehicle          9          0               9
+3 fatal_asthma_minus_non_asthma_response          9          7              NA
+  negative_donors    effect     ci_low  ci_high       pvalue permutation_p
+1               0 3.5141213  2.4480170 4.580226 1.944479e-04    0.01562500
+2               0 3.5982660  3.2700607 3.926471 6.416623e-09    0.00390625
+3              NA 0.0841447 -0.9911009 1.159390 8.593465e-01    0.84449301
+  permutations holm_three_tests
+1          128     3.888959e-04
+2          512     1.924987e-08
+3        11440     8.593465e-01

@@ -1,0 +1,16 @@
+Error: EEXIST: file already exists, mkdir '/tmp/opencode/paper-v010-browser'
+    at Object.mkdirSync (node:fs:1370:26)
+    at /home/ubuntu/creatR/research/paper_cn_revision/browser_revision.cjs:12:6
+    at Object.<anonymous> (/home/ubuntu/creatR/research/paper_cn_revision/browser_revision.cjs:40:3)
+    at Module._compile (node:internal/modules/cjs/loader:1781:14)
+    at Object..js (node:internal/modules/cjs/loader:1913:10)
+    at Module.load (node:internal/modules/cjs/loader:1505:32)
+    at Function._load (node:internal/modules/cjs/loader:1309:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  errno: -17,
+  code: 'EEXIST',
+  syscall: 'mkdir',
+  path: '/tmp/opencode/paper-v010-browser'
+}

@@ -1,0 +1,18 @@
+{
+  "command": [
+    "env",
+    "NODE_PATH=/tmp/opencode/node_modules",
+    "node",
+    "research/discovery/acquire_supplement_browser.cjs"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-08T14:23:16.475264+00:00",
+  "finished_utc": "2026-10-08T14:25:17.365253+00:00",
+  "exit_code": 1,
+  "status": "fail",
+  "log": {
+    "path": "research/results/w00_baseline/biology-donor-supplement-browser-final.txt",
+    "bytes": 526,
+    "sha256": "6d20d14ef29265fc9fc08463904ce8fea6f4d799a5b8b10093c809969cc5af55"
+  }
+}

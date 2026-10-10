@@ -1,0 +1,133 @@
+{
+  "status": "pass",
+  "utc": "2026-10-10T03:24:13.209761+00:00",
+  "syntax": [
+    {
+      "path": "research/discovery/asm_ev_sqlite.py",
+      "bytes": 7040,
+      "sha256": "22309260b9f81bb33857bce202d9cd3a0aea55e15b13085ae9645e5a34ea6b01"
+    },
+    {
+      "path": "research/discovery/check_asm_ev_export.py",
+      "bytes": 8944,
+      "sha256": "4d15a46ad0511dfaeb1a61c8a23bf52b4a4c752607600b6835e2cb7292c932c4"
+    },
+    {
+      "path": "research/discovery/asm_ev_routes_resume.py",
+      "bytes": 1139,
+      "sha256": "af64492be4492a1b593557c922ae684a41c24b3937b4e16e08ff7715ec6af47c"
+    },
+    {
+      "path": "research/discovery/audit_asm_ev_export.py",
+      "bytes": 8062,
+      "sha256": "37f1994d48105f5bb15e5976197dd8bd660b9b73f16d30dc6a6a0d24d01bcf1c"
+    },
+    {
+      "path": "research/discovery/asm_ev_export.py",
+      "bytes": 4642,
+      "sha256": "8e8cf92ef9a16057cb40f6da84fe6458269355b7c81a7980ef752d3b25788fd9"
+    },
+    {
+      "path": "research/discovery/seal_asm_ev_export.py",
+      "bytes": 5476,
+      "sha256": "cb30062c70a9627961d666b109c2b6e9d1010561271c1da9c945dbb9565a5975"
+    },
+    {
+      "path": "research/discovery/asm_ev_followup.py",
+      "bytes": 10804,
+      "sha256": "8c08c9c87fe8e1770734a4134a2bc5a6d97a5b2f7a12eb8964347b2cf5050449"
+    },
+    {
+      "path": "research/discovery/asm_ev_version.py",
+      "bytes": 6974,
+      "sha256": "e86696d3d16e56ccb270842dcfb9607799150ddc2f1e6fd9cfe0109b117876be"
+    },
+    {
+      "path": "research/discovery/asm_ev_finalize.py",
+      "bytes": 9092,
+      "sha256": "96869765819a2b795eb60f3b979363391eedcb4990cedb53d85f4addfb6ef3ea"
+    }
+  ],
+  "local_links": [
+    {
+      "source": "docs/asm_ev_export_v1/README.md",
+      "target": "research/results/discovery_asm_ev_export_v1/FINDINGS.md",
+      "exists": true,
+      "generated_at_seal": false
+    },
+    {
+      "source": "docs/asm_ev_export_v1/README.md",
+      "target": "research/results/discovery_asm_ev_export_v1/version_evidence_complete.csv",
+      "exists": true,
+      "generated_at_seal": false
+    },
+    {
+      "source": "docs/asm_ev_export_v1/README.md",
+      "target": "research/results/discovery_asm_ev_export_v1/processing_version_comparison.csv",
+      "exists": true,
+      "generated_at_seal": false
+    },
+    {
+      "source": "docs/asm_ev_export_v1/README.md",
+      "target": "research/results/discovery_asm_ev_export_v1/protein_columns_exact.csv",
+      "exists": true,
+      "generated_at_seal": false
+    },
+    {
+      "source": "docs/asm_ev_export_v1/README.md",
+      "target": "research/results/discovery_asm_ev_export_v1/sample_map_verified.csv",
+      "exists": true,
+      "generated_at_seal": false
+    },
+    {
+      "source": "docs/asm_ev_export_v1/README.md",
+      "target": "research/results/discovery_asm_ev_export_v1/required_materials.csv",
+      "exists": true,
+      "generated_at_seal": false
+    },
+    {
+      "source": "docs/asm_ev_export_v1/README.md",
+      "target": "research/results/discovery_asm_ev_export_v1/AUTHOR_MATERIAL_REQUEST.md",
+      "exists": true,
+      "generated_at_seal": false
+    },
+    {
+      "source": "docs/asm_ev_export_v1/README.md",
+      "target": "research/results/discovery_asm_ev_export_v1/independent_audit.json",
+      "exists": true,
+      "generated_at_seal": false
+    },
+    {
+      "source": "docs/asm_ev_export_v1/README.md",
+      "target": "research/results/discovery_asm_ev_export_v1/EXECUTION_NOTES.md",
+      "exists": true,
+      "generated_at_seal": false
+    },
+    {
+      "source": "docs/asm_ev_export_v1/README.md",
+      "target": "research/results/discovery_asm_ev_export_v1/final_status.json",
+      "exists": true,
+      "generated_at_seal": false
+    },
+    {
+      "source": "docs/asm_ev_export_v1/README.md",
+      "target": "docs/asm_ev_export_v1/export_manifest.json",
+      "exists": false,
+      "generated_at_seal": true
+    },
+    {
+      "source": "docs/asm_ev_export_v1/README.md",
+      "target": "docs/asm_ev_export_v1/PXD055968-export-evidence.zip",
+      "exists": false,
+      "generated_at_seal": true
+    }
+  ],
+  "snapshot": {
+    "path": "research/results/discovery_asm_ev_export_v1/rgo_before_asm_ev_export.md",
+    "bytes": 74186,
+    "sha256": "07cfc88fba08a707496a6f8dcb8c5a5109514ff1ab84afce5798db90b072d252"
+  },
+  "scientific_status": "blocked_missing_final_export",
+  "candidate_identity_started": false,
+  "note": "Local Markdown and evidence consistency check; archive/manifest links are generated and verified by seal"
+}

@@ -1,0 +1,246 @@
+{
+  "status": "pass",
+  "utc": "2026-10-10T02:37:17.298676+00:00",
+  "sqlite3_version": "3.45.1",
+  "original_result_files": [
+    {
+      "file": "pe210308_01.pdResult",
+      "schema_records": 207,
+      "metadata_rows": 10,
+      "ranges": 29,
+      "protein_quantitative_columns": []
+    },
+    {
+      "file": "pe210308_02.pdResult",
+      "schema_records": 207,
+      "metadata_rows": 503,
+      "ranges": 28,
+      "protein_quantitative_columns": []
+    },
+    {
+      "file": "pe210308_03.pdResult",
+      "schema_records": 207,
+      "metadata_rows": 503,
+      "ranges": 27,
+      "protein_quantitative_columns": []
+    },
+    {
+      "file": "pe210308_04.pdResult",
+      "schema_records": 207,
+      "metadata_rows": 503,
+      "ranges": 30,
+      "protein_quantitative_columns": []
+    },
+    {
+      "file": "pe210308_05.pdResult",
+      "schema_records": 207,
+      "metadata_rows": 9,
+      "ranges": 23,
+      "protein_quantitative_columns": []
+    },
+    {
+      "file": "pe210308_06.pdResult",
+      "schema_records": 207,
+      "metadata_rows": 9,
+      "ranges": 22,
+      "protein_quantitative_columns": []
+    },
+    {
+      "file": "pe210308_07.pdResult",
+      "schema_records": 207,
+      "metadata_rows": 9,
+      "ranges": 21,
+      "protein_quantitative_columns": []
+    },
+    {
+      "file": "pe210308_08.pdResult",
+      "schema_records": 207,
+      "metadata_rows": 9,
+      "ranges": 23,
+      "protein_quantitative_columns": []
+    },
+    {
+      "file": "pe210308_09.pdResult",
+      "schema_records": 207,
+      "metadata_rows": 9,
+      "ranges": 23,
+      "protein_quantitative_columns": []
+    },
+    {
+      "file": "pe210308_10.pdResult",
+      "schema_records": 207,
+      "metadata_rows": 9,
+      "ranges": 21,
+      "protein_quantitative_columns": []
+    },
+    {
+      "file": "pe210308_11.pdResult",
+      "schema_records": 207,
+      "metadata_rows": 9,
+      "ranges": 23,
+      "protein_quantitative_columns": []
+    },
+    {
+      "file": "pe210308_12.pdResult",
+      "schema_records": 207,
+      "metadata_rows": 9,
+      "ranges": 20,
+      "protein_quantitative_columns": []
+    },
+    {
+      "file": "pe210308_13.pdResult",
+      "schema_records": 207,
+      "metadata_rows": 9,
+      "ranges": 22,
+      "protein_quantitative_columns": []
+    },
+    {
+      "file": "pe210308_14.pdResult",
+      "schema_records": 207,
+      "metadata_rows": 9,
+      "ranges": 22,
+      "protein_quantitative_columns": []
+    },
+    {
+      "file": "pe210308_15.pdResult",
+      "schema_records": 207,
+      "metadata_rows": 9,
+      "ranges": 22,
+      "protein_quantitative_columns": []
+    },
+    {
+      "file": "pe210308_16.pdResult",
+      "schema_records": 207,
+      "metadata_rows": 9,
+      "ranges": 21,
+      "protein_quantitative_columns": []
+    },
+    {
+      "file": "pe210308_17.pdResult",
+      "schema_records": 207,
+      "metadata_rows": 9,
+      "ranges": 21,
+      "protein_quantitative_columns": []
+    },
+    {
+      "file": "pe210308_18.pdResult",
+      "schema_records": 207,
+      "metadata_rows": 9,
+      "ranges": 23,
+      "protein_quantitative_columns": []
+    }
+  ],
+  "msf_crosscheck": {
+    "file": "pe210308_01.msf",
+    "schema_records": 172,
+    "metadata_rows": 5,
+    "ranges": 6,
+    "protein_quantitative_columns": []
+  },
+  "schema_records": 3726,
+  "metadata_rows": 1645,
+  "independently_verified_workflows": [
+    {
+      "file": "pe210308_01.pdResult",
+      "database": "RP_UP000005640_Homo_sapiens_2024_01_22.fasta",
+      "model": "inferys_3.0.0_fragmentation"
+    },
+    {
+      "file": "pe210308_02.pdResult",
+      "database": "RP_UP000005640_Homo_sapiens_2024_01_22.fasta",
+      "model": "inferys_3.0.0_fragmentation"
+    },
+    {
+      "file": "pe210308_03.pdResult",
+      "database": "RP_UP000005640_Homo_sapiens_2024_01_22.fasta",
+      "model": "inferys_3.0.0_fragmentation"
+    },
+    {
+      "file": "pe210308_04.pdResult",
+      "database": "RP_UP000005640_Homo_sapiens_2024_01_22.fasta",
+      "model": "inferys_3.0.0_fragmentation"
+    },
+    {
+      "file": "pe210308_05.pdResult",
+      "database": "RP_UP000005640_Homo_sapiens_2024_01_22.fasta",
+      "model": "inferys_3.0.0_fragmentation"
+    },
+    {
+      "file": "pe210308_06.pdResult",
+      "database": "RP_UP000005640_Homo_sapiens_2024_01_22.fasta",
+      "model": "inferys_3.0.0_fragmentation"
+    },
+    {
+      "file": "pe210308_07.pdResult",
+      "database": "RP_UP000005640_Homo_sapiens_2024_01_22.fasta",
+      "model": "inferys_3.0.0_fragmentation"
+    },
+    {
+      "file": "pe210308_08.pdResult",
+      "database": "RP_UP000005640_Homo_sapiens_2024_01_22.fasta",
+      "model": "inferys_3.0.0_fragmentation"
+    },
+    {
+      "file": "pe210308_09.pdResult",
+      "database": "RP_UP000005640_Homo_sapiens_2024_01_22.fasta",
+      "model": "inferys_3.0.0_fragmentation"
+    },
+    {
+      "file": "pe210308_10.pdResult",
+      "database": "RP_UP000005640_Homo_sapiens_2024_01_22.fasta",
+      "model": "inferys_3.0.0_fragmentation"
+    },
+    {
+      "file": "pe210308_11.pdResult",
+      "database": "RP_UP000005640_Homo_sapiens_2024_01_22.fasta",
+      "model": "inferys_3.0.0_fragmentation"
+    },
+    {
+      "file": "pe210308_12.pdResult",
+      "database": "RP_UP000005640_Homo_sapiens_2024_01_22.fasta",
+      "model": "inferys_3.0.0_fragmentation"
+    },
+    {
+      "file": "pe210308_13.pdResult",
+      "database": "RP_UP000005640_Homo_sapiens_2024_01_22.fasta",
+      "model": "inferys_3.0.0_fragmentation"
+    },
+    {
+      "file": "pe210308_14.pdResult",
+      "database": "RP_UP000005640_Homo_sapiens_2024_01_22.fasta",
+      "model": "inferys_3.0.0_fragmentation"
+    },
+    {
+      "file": "pe210308_15.pdResult",
+      "database": "RP_UP000005640_Homo_sapiens_2024_01_22.fasta",
+      "model": "inferys_3.0.0_fragmentation"
+    },
+    {
+      "file": "pe210308_16.pdResult",
+      "database": "RP_UP000005640_Homo_sapiens_2024_01_22.fasta",
+      "model": "inferys_3.0.0_fragmentation"
+    },
+    {
+      "file": "pe210308_17.pdResult",
+      "database": "RP_UP000005640_Homo_sapiens_2024_01_22.fasta",
+      "model": "inferys_3.0.0_fragmentation"
+    },
+    {
+      "file": "pe210308_18.pdResult",
+      "database": "RP_UP000005640_Homo_sapiens_2024_01_22.fasta",
+      "model": "inferys_3.0.0_fragmentation"
+    }
+  ],
+  "ooxml_linkage_rows": 18,
+  "patients": 6,
+  "repeats": {
+    "595": 3,
+    "614": 3,
+    "615": 3,
+    "BA184": 3,
+    "BA185": 3,
+    "BA186": 3
+  },
+  "probe_overlap_bytes": 458752,
+  "scope": "Independent builtin-sqlite3 readback on partial sparse byte views and OOXML sample mapping; no full-database integrity or candidate identification claim"
+}

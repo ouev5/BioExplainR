@@ -1,0 +1,28 @@
+{
+  "utc": "2026-10-09T13:51:42.528103+00:00",
+  "script": {
+    "path": "research/discovery/validation_early_acquire.py",
+    "bytes": 1782,
+    "sha256": "e5568f493adcff0a5902daa8e099f3342a8e2b17924b6631caa5505a0deb156c"
+  },
+  "study": "GSE135730",
+  "genes": [
+    "PER2",
+    "PER3",
+    "METTL7A",
+    "MAOA",
+    "ANGPTL2",
+    "FSTL3",
+    "PER1",
+    "FKBP5",
+    "TSC22D3",
+    "DUSP1",
+    "NR3C1"
+  ],
+  "design": "4h untreated/IL17A/DEX/both, three stated biological replicates per condition, no donor identifiers or verified ages",
+  "treatment": "DEX1ug/ml,IL17A100ng/ml; source primary humanASM; assembly summary incorrectly says mm9",
+  "analysis": "If per-library RPKM are supplied, unpaired Welch log2(RPKM+1) GC simple effects and interaction, 33Holm; if only condition mean, report descriptive ratios without P/CI.",
+  "mapping": "Exact unambiguous published gene symbol; retain all selected rows and gene-level median if multiple transcripts; do not map genomic coordinates to guessed assembly",
+  "scope": "Early ASM experimental check, not new independent adult donor time series; cannot pair anonymous replicate numbers without source evidence.",
+  "timing": "Metadata examined, candidate RPKM unexamined."
+}

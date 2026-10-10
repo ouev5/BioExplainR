@@ -1,0 +1,70 @@
+{
+  "status": "pass",
+  "pdf_pages": 4,
+  "docx_tables": 4,
+  "performance": {
+    "status": "pass",
+    "runs": 360,
+    "target_scores": 1800,
+    "formal_model_calls": 216,
+    "warmup_calls": 1,
+    "prompt_pairs_identical": 72,
+    "independent_reference": true,
+    "independent_parser": true,
+    "bootstrap_recomputed": true,
+    "tokens": {
+      "ellmer_facts": {
+        "prompt_tokens": 23085,
+        "completion_tokens": 3591,
+        "median_prompt_tokens": 329.0,
+        "median_completion_tokens": 49.0
+      },
+      "bio_client_facts": {
+        "prompt_tokens": 23085,
+        "completion_tokens": 3591,
+        "median_prompt_tokens": 329.0,
+        "median_completion_tokens": 49.0
+      },
+      "ellmer_table": {
+        "prompt_tokens": 78709,
+        "completion_tokens": 1925,
+        "median_prompt_tokens": 2481.0,
+        "median_completion_tokens": 55.0
+      }
+    },
+    "failed_requests": 37,
+    "token_scope": "Only completed responses; timeout tokens unknown"
+  },
+  "mechanism": {
+    "status": "pass",
+    "samples": 47,
+    "published_count_measurements_checked": 188,
+    "WLS_contrasts_checked": 39,
+    "candidate_kept": false,
+    "independent_counts_design_logCPM_WLS_CI_t": true,
+    "independent_GEO_treatment_batch_mapping": true,
+    "independent_full_gene_filter": true,
+    "genes_filter_checked": 35942,
+    "filter_CPM_cutoff": 0.49529963285887507,
+    "filter_minimum_samples": 2.5714285714285716,
+    "Holm": "not_estimable: all three candidate tests filtered",
+    "TMM_voom_eBayes_independently_reestimated": false,
+    "standard_error": "limma contrasts.fit uses common coefficient correlation approximation; independently reconstructed; exact weighted covariance also exported",
+    "max_relative_SE_difference": 0.02188769459591433
+  },
+  "chip": {
+    "status": "pass",
+    "count_keys_checked": 288,
+    "peak_window_hits_checked": 2505,
+    "independent_RefSeq_TSS_and_GenomicRanges": true,
+    "coordinate_system": "BED->1-based inclusive GRanges",
+    "build_out_of_bounds": {
+      "hg18": 12937,
+      "hg19": 0,
+      "hg38": 10043,
+      "mm9": 158229
+    },
+    "interpretation": "Coordinate verification supports hg19; metadata mm9 conflict retained; no author confirmation; no differential occupancy inference"
+  },
+  "scope": "Scientific result content/table audit; not manual visual review"
+}

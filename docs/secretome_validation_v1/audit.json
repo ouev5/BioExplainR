@@ -1,0 +1,136 @@
+{
+  "status": "pass",
+  "utc": "2026-10-10T00:20:57.395486+00:00",
+  "script": {
+    "path": "research/discovery/audit_secretome_report.py",
+    "bytes": 5037,
+    "sha256": "ecbc716f8879eb71c416469d83ba428fb25ae92e88ac94a9bfcd457aee7c27d1"
+  },
+  "table_checks": [
+    {
+      "name": "Table_1_array_scope.csv",
+      "rows": 2
+    },
+    {
+      "name": "Table_2_candidate_results.csv",
+      "rows": 8
+    },
+    {
+      "name": "Table_3_sensitivity.csv",
+      "rows": 12
+    },
+    {
+      "name": "all_BH_significant.csv",
+      "rows": 23
+    },
+    {
+      "name": "all_results.csv",
+      "rows": 846
+    },
+    {
+      "name": "candidate_cross_evidence.csv",
+      "rows": 112
+    },
+    {
+      "name": "candidate_detection.csv",
+      "rows": 112
+    },
+    {
+      "name": "candidate_direct_donor_effects.csv",
+      "rows": 11
+    },
+    {
+      "name": "candidate_direct_time.csv",
+      "rows": 56
+    },
+    {
+      "name": "candidate_donor_effects.csv",
+      "rows": 48
+    },
+    {
+      "name": "candidate_identification.csv",
+      "rows": 7
+    },
+    {
+      "name": "candidate_leave_one.csv",
+      "rows": 26
+    },
+    {
+      "name": "candidate_measurements.csv",
+      "rows": 288
+    },
+    {
+      "name": "candidate_missingness_summary.csv",
+      "rows": 112
+    },
+    {
+      "name": "candidate_raw_intensity_diagnostics.csv",
+      "rows": 288
+    },
+    {
+      "name": "candidate_results.csv",
+      "rows": 112
+    },
+    {
+      "name": "candidate_sensitivity.csv",
+      "rows": 224
+    },
+    {
+      "name": "group_QC.csv",
+      "rows": 1131
+    },
+    {
+      "name": "published_inventory_comparison.csv",
+      "rows": 847
+    },
+    {
+      "name": "published_scale_diagnostics.csv",
+      "rows": 3276
+    },
+    {
+      "name": "published_selected_cell_comparison.csv",
+      "rows": 3276
+    },
+    {
+      "name": "published_selected_results.csv",
+      "rows": 91
+    },
+    {
+      "name": "published_total_intensity_comparison.csv",
+      "rows": 847
+    },
+    {
+      "name": "raw_file_scope.csv",
+      "rows": 84
+    },
+    {
+      "name": "sample_map.csv",
+      "rows": 84
+    },
+    {
+      "name": "sample_scope_comparison.csv",
+      "rows": 14
+    },
+    {
+      "name": "secretion_annotations.csv",
+      "rows": 7
+    }
+  ],
+  "Word_tables": 3,
+  "PDF_pages": 6,
+  "PDF_text_boundary": "pass",
+  "figures": [
+    {
+      "name": "Figure_1_candidates.pdf",
+      "pages": 1,
+      "raster_images": 0
+    },
+    {
+      "name": "Figure_2_complete_array.pdf",
+      "pages": 1,
+      "raster_images": 0
+    }
+  ],
+  "CRC_members": 8,
+  "scope": "Saved original inputs/hash/range/CRC and all CSV-XLSX/native Word correspondence; numeric independent R audit separate"
+}

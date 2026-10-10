@@ -1,0 +1,49 @@
+{
+  "utc": "2026-10-09T13:23:28.226099+00:00",
+  "records": [
+    {
+      "status": "retrieved",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9562650/fullTextXML",
+      "retrieved_utc": "2026-10-09T13:23:21.897668+00:00",
+      "http_status": 200,
+      "content_type": "application/xml",
+      "attempts": [],
+      "path": "research/results/discovery_validation_v2/human_protein/PMC9562650.xml",
+      "bytes": 194407,
+      "sha256": "20977d6e0410203f40701c5fc0cee64b936d3acb6d59f242e1557ffba0052ab8"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12476226/fullTextXML",
+      "retrieved_utc": "2026-10-09T13:23:25.606133+00:00",
+      "http_status": 200,
+      "content_type": "application/xml",
+      "attempts": [],
+      "path": "research/results/discovery_validation_v2/human_protein/PMC12476226.xml",
+      "bytes": 110513,
+      "sha256": "36f7c072028263f6e92ff45242a2f2db223776a74fed92dfa81f5773d00d6e93"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://www.ebi.ac.uk/pride/ws/archive/v2/projects/PXD033514",
+      "retrieved_utc": "2026-10-09T13:23:26.524481+00:00",
+      "http_status": 200,
+      "content_type": "text/plain;charset=UTF-8",
+      "attempts": [],
+      "path": "research/results/discovery_validation_v2/human_protein/PXD033514.json",
+      "bytes": 7352,
+      "sha256": "adf5506ed9a22839567c4e2b0d45368c876bae884c983e9c2bfd3477fe9a573d"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://www.ebi.ac.uk/pride/ws/archive/v2/projects/PXD033534",
+      "retrieved_utc": "2026-10-09T13:23:28.225835+00:00",
+      "http_status": 200,
+      "content_type": "text/plain;charset=UTF-8",
+      "attempts": [],
+      "path": "research/results/discovery_validation_v2/human_protein/PXD033534.json",
+      "bytes": 7352,
+      "sha256": "2ebbe12a76380a85b320045063795120e289058218910984f93b54df66e991b4"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "status": "completed",
+  "utc": "2026-10-09T14:03:29.115036+00:00",
+  "pages": 7,
+  "tables": 4,
+  "figures": 3,
+  "command": [
+    "libreoffice",
+    "-env:UserInstallation=file:///tmp/opencode/validation-report-lo",
+    "--headless",
+    "--convert-to",
+    "pdf",
+    "--outdir",
+    "/home/ubuntu/creatR/docs/biology_validation_v2",
+    "/home/ubuntu/creatR/docs/biology_validation_v2/BioExplainR-公开数据验证-结果增补-v1.docx"
+  ],
+  "returncode": 0,
+  "pdf_figure_mode": "PNG previews from Word, separate original vector PDFs provided",
+  "source": "research/results/discovery_validation_v2",
+  "script": {
+    "path": "research/discovery/build_validation_report.py",
+    "bytes": 22622,
+    "sha256": "79fa265916f6cdfe597dda2cf1665ca57149971fc380f8c655eb872d10c3b647"
+  }
+}

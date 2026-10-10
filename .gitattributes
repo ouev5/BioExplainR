@@ -1,0 +1,10 @@
+# Preserve the original bytes of frozen research results, including CRLF CSVs.
+research/results/** -text
+docs/** -text
+*.csv whitespace=cr-at-eol
+# Large frozen inputs and delivery bundles use Git LFS without altering local bytes.
+docs/biology_discovery_v2/BioExplainR-biological-discovery-results-v1.zip filter=lfs diff=lfs merge=lfs -text
+docs/biology_validation_v2/BioExplainR-公开数据验证-附件.zip filter=lfs diff=lfs merge=lfs -text
+docs/paper_cn_v6/BioExplainR-中文论文-v0.12-附件.zip filter=lfs diff=lfs merge=lfs -text
+docs/paper_cn_v7/BioExplainR-中文论文-v0.13-附件.zip filter=lfs diff=lfs merge=lfs -text
+research/results/discovery_donors_v1/tpm.txt.gz filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,18 @@
+{
+  "command": [
+    "python3",
+    "research/discovery/run_donors.py",
+    "acquire",
+    "research/results/discovery_donors_v1"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-08T13:55:56.032565+00:00",
+  "finished_utc": "2026-10-08T13:56:11.516985+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/biology-donors-metadata-resume.txt",
+    "bytes": 1330,
+    "sha256": "889adde49c05ac445ac8404bfcfd4ba9a0ad5474c22aedc8a1f400c293f18b12"
+  }
+}

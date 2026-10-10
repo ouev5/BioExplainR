@@ -1,0 +1,43 @@
+{
+  "utc": "2026-10-10T01:17:37.650965+00:00",
+  "result": {
+    "status": "pass",
+    "files": 159,
+    "source_code": 61,
+    "archive_members": 232,
+    "archive_bytes": 35438866,
+    "previous_evidence": {
+      "status": "pass",
+      "secretome_records": 12827,
+      "secretome_archive_members": 8608,
+      "secretome_manifest": {
+        "path": "docs/secretome_validation_v1/secretome_manifest.json",
+        "bytes": 5698153,
+        "sha256": "42b4f3d65f41a71e302c1d576968c59e0f0cce915587077c0c4c4a085901d35c"
+      },
+      "protected": 2905,
+      "nested": {
+        "status": "pass",
+        "v012_files": 17257,
+        "original_protected_files": 2905,
+        "snapshot_policy": "Only v0.12 root rgo dependency uses exact pre-secretome snapshot; original scientific paths/hash unchanged",
+        "nested": {
+          "status": "pass",
+          "validation_records": 710,
+          "validation_archive_members": 629,
+          "preceding_paper_and_science": {
+            "status": "pass",
+            "v011_records": 87,
+            "v011_archive_members": 82,
+            "original_science_records": 203,
+            "snapshot_policy": "Explicitrgo/README/indexhistoricaldocumentsnapshots only; alloriginalsciencepaths/hash remain"
+          },
+          "snapshot_policy": "Validationrgo uses startsnapshot; nestedv011rgo/README/index use preciseversioned snapshots; alloriginalsciencepaths/hash unchanged"
+        }
+      },
+      "snapshot_policy": "Only preceding secretome rgo dependency uses exact pre-provenance snapshot; all previous science original paths/hash"
+    },
+    "scope": "Four original/published HTPC array source diagnostics and bounded ASM public material feasibility; no new GC candidate protein validation or full PXD055968 quantified array analysis"
+  },
+  "note": "Verificationrecord outside sealedmember list to avoid selfhash recursion; verify() rechecks all indexed evidence"
+}

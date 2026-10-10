@@ -1,0 +1,117 @@
+{
+  "utc": "2026-10-10T05:47:56.064676+00:00",
+  "script": {
+    "path": "research/paper_cn_revision/build_integrated_paper.py",
+    "bytes": 32112,
+    "sha256": "5cb338a1e8b05027baa54e6816cd5da9154db18632e746bc9fd8c81585a9f13e"
+  },
+  "inputs": [
+    {
+      "path": "docs/paper_cn_v6/manuscript_manifest.json",
+      "bytes": 8647030,
+      "sha256": "b5081d279715ed4aa3182583322e18cf872da033af18542f333ad89528ea973b"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/public_proteome_manifest.json",
+      "bytes": 52936,
+      "sha256": "69c5a4dac3c906f926d0447c54a0996bc53dbcec507bed9dd1378c64f0c2e8a6"
+    },
+    {
+      "path": "docs/paper_cn_v6/manuscript.md",
+      "bytes": 28477,
+      "sha256": "7fdbc90c81ba231f654b81dd65302611e6481b8d95bf4c45a5d5c3a7eb85a182"
+    },
+    {
+      "path": "docs/paper_cn_v6/supplementary.md",
+      "bytes": 38881,
+      "sha256": "28c805f0b7a2b530bd8b488ef2b8f40dd4bda36766d5cda2311c2462454e8bea"
+    },
+    {
+      "path": "research/paper_cn_revision/INTEGRATION_PROTOCOL.md",
+      "bytes": 2205,
+      "sha256": "d861b1743713adf84b6fa5ad377968648169fa1c079e02b2ec7901af313f0d66"
+    },
+    {
+      "path": "research/results/discovery_secretome_v1/all_results.csv",
+      "bytes": 105779,
+      "sha256": "b34dc627a170c67a78e5a8114f9ad8923648c35ca00e14b247607b4c58d8c611"
+    },
+    {
+      "path": "research/results/discovery_secretome_v1/candidate_results.csv",
+      "bytes": 8414,
+      "sha256": "44d52bbdef44969c3048f9e35ac7cd41070f7fe150e8f3e1ecfb5c01429f677c"
+    },
+    {
+      "path": "research/results/discovery_secretome_v1/candidate_donor_effects.csv",
+      "bytes": 5926,
+      "sha256": "2332f7ec9910a09a237e6506fe8e6f0f2d59aa1277322a8765b1654678d14ee4"
+    },
+    {
+      "path": "research/results/discovery_secretome_v1/candidate_sensitivity.csv",
+      "bytes": 19671,
+      "sha256": "5729afc8f8d7c0ccc57745632c74a3d2625702144e2c58f5ee9714b7f402da5b"
+    },
+    {
+      "path": "research/results/discovery_secretome_v1/candidate_direct_time.csv",
+      "bytes": 5331,
+      "sha256": "cd9ab1b207242ed6e3abb241396233eb673492b70ec07041d1181256b22313e6"
+    },
+    {
+      "path": "research/results/discovery_secretome_v1/candidate_identification.csv",
+      "bytes": 853,
+      "sha256": "ace9b4f63e659da0944c6f239a36998da87f935a405b0a57143c0e03b4adacb4"
+    },
+    {
+      "path": "research/results/discovery_secretome_v1/array_summary.csv",
+      "bytes": 254,
+      "sha256": "0ef1b763039954bdedc6c9946130007af56667bd161fbf646bbf6c3e8317bfe9"
+    },
+    {
+      "path": "research/results/discovery_secretome_v1/sample_map.csv",
+      "bytes": 7769,
+      "sha256": "a377b7e091ea17a1928eedf7bb042e73a32c722a681cf306f8152f824211e587"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/cross_array_summary.csv",
+      "bytes": 4592,
+      "sha256": "94103f842f0048d149dc4a9585be52c4be3a3d9c0306a456cfaf76ba7f2136ec"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/scale_formula_summary.csv",
+      "bytes": 662,
+      "sha256": "d5075cc3097bed04bee261742f1e06af86eb26eb0b58b1ed769124cd9ccaa65d"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/project_eligibility_review.csv",
+      "bytes": 3497,
+      "sha256": "f33818a2e03a11f02ac0e5178d95e331f58fac3f248e8995e5f69eab2079ba6e"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/search_coverage.csv",
+      "bytes": 491,
+      "sha256": "b282439aa286bdac1c7e195dfde22f25f4e65b7574cd0588aa917493eb91a54b"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/HBEC_sample_decode.csv",
+      "bytes": 4859,
+      "sha256": "562b44fcc0a9ede4836f01e99fb91850fa139e407babd88206225f07bfa94307"
+    },
+    {
+      "path": "research/results/discovery_asm_ev_export_v1/version_evidence_complete.csv",
+      "bytes": 4555,
+      "sha256": "7d3eaf53fb8b3e756b6a175a2ccbfad76618cb5a02cca59d27da5182be24f082"
+    },
+    {
+      "path": "research/results/discovery_asm_ev_export_v1/required_materials.csv",
+      "bytes": 1248,
+      "sha256": "daefba8583c53bc89170d50626c195bdd711ad0b1679bdfbcd11d59c883eb548"
+    },
+    {
+      "path": "research/results/discovery_secretome_v1/candidate_leave_one.csv",
+      "bytes": 2033,
+      "sha256": "6541cdef30b00a630468e948d68cbd4ee6875a090f4f1afddbc2d50f26cbcb47"
+    }
+  ],
+  "scope": "Saved-evidence manuscript integration; no new candidate statistics",
+  "new_candidate_statistics": false
+}

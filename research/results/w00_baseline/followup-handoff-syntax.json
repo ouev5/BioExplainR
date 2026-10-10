@@ -1,0 +1,25 @@
+{
+  "command": [
+    "env",
+    "PYTHONPYCACHEPREFIX=/tmp/opencode/biology-handoff-pycache",
+    "python3",
+    "-m",
+    "py_compile",
+    "research/common_performance/setup_runtime.py",
+    "research/common_performance/capture_checkpoint.py",
+    "research/discovery/prepare_mechanism.py",
+    "research/manage_baseline.py",
+    "research/package_submission.py",
+    "research/audit_current_results.py"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-08T17:08:31.631645+00:00",
+  "finished_utc": "2026-10-08T17:08:31.749209+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/followup-handoff-syntax.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

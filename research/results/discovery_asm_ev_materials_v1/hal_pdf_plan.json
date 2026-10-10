@@ -1,0 +1,24 @@
+{
+  "reason": "HAL API files_s and actual article page both explicitly list only celle et al. 2025.pdf. Obtain this versioned author-produced article for methods/data-availability provenance, not as a quantitative matrix.",
+  "candidate_identity_started": false,
+  "script": {
+    "path": "research/discovery/asm_ev_materials.py",
+    "bytes": 7968,
+    "sha256": "537f267a790255edb1fde0dfd0f06481ac39b5164823b089e098bb532e62a4f1"
+  },
+  "source_evidence": [
+    {
+      "path": "research/results/discovery_asm_ev_materials_v1/sources/hal_record_full.json",
+      "bytes": 346915,
+      "sha256": "90a498c7892d50391f19c08a8a9b7c279b4b010a9d395934644cffe553682a25"
+    },
+    {
+      "path": "research/results/discovery_asm_ev_materials_v1/sources/hal_record_page.html",
+      "bytes": 157066,
+      "sha256": "ac7c07b3ee81ecb4ec35456bcb789282ee03188aed8ff888f820470b7b1829de"
+    }
+  ],
+  "requests": [
+    ["hal_author_article.pdf", "https://hal.science/hal-05063440v1/file/celle%20et%20al.%202025.pdf"]
+  ]
+}

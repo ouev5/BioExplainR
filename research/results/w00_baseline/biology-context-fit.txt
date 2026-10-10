@@ -1,0 +1,169 @@
+Count input columns:
+ [1] "Gene"                            "count_N021612-siCEBPD-Bud"      
+ [3] "count_N051911-siCEBPD-Bud"       "count_N061311-siCEBPD-Bud"      
+ [5] "count_N010912-siCEBPD-control"   "count_N021612-siCEBPD-control"  
+ [7] "count_N051911-siCEBPD-control"   "count_N061311-siCEBPD-control"  
+ [9] "count_N010912-siCEBPD-TNF"       "count_N021612-siCEBPD-TNF"      
+[11] "count_N051911-siCEBPD-TNF"       "count_N061311-siCEBPD-TNF"      
+[13] "count_N010912-siCEBPD-TNFposBud" "count_N021612-siCEBPD-TNFposBud"
+[15] "count_N051911-siCEBPD-TNFposBud" "count_N061311-siCEBPD-TNFposBud"
+[17] "count_N010912-siCTRL-Bud"        "count_N021612-siCTRL-Bud"       
+[19] "count_N051911-siCTRL-Bud"        "count_N061311-siCTRL-Bud"       
+[21] "count_N010912-siCTRL-control"    "count_N021612-siCTRL-control"   
+[23] "count_N051911-siCTRL-control"    "count_N061311-siCTRL-control"   
+[25] "count_N010912-siCTRL-TNF"        "count_N021612-siCTRL-TNF"       
+[27] "count_N051911-siCTRL-TNF"        "count_N061311-siCTRL-TNF"       
+[29] "count_N010912-siCTRL-TNFposBud"  "count_N021612-siCTRL-TNFposBud" 
+[31] "count_N051911-siCTRL-TNFposBud"  "count_N061311-siCTRL-TNFposBud" 
+Sample titles and treatment/donor metadata:
+[[1]]
+ [1] "!Sample_title"             "N021612-siCEBPD-Bud"      
+ [3] "N051911-siCEBPD-Bud"       "N061311-siCEBPD-Bud"      
+ [5] "N010912-siCEBPD-control"   "N021612-siCEBPD-control"  
+ [7] "N051911-siCEBPD-control"   "N061311-siCEBPD-control"  
+ [9] "N010912-siCEBPD-TNF"       "N021612-siCEBPD-TNF"      
+[11] "N051911-siCEBPD-TNF"       "N061311-siCEBPD-TNF"      
+[13] "N010912-siCEBPD-TNFposBud" "N021612-siCEBPD-TNFposBud"
+[15] "N051911-siCEBPD-TNFposBud" "N061311-siCEBPD-TNFposBud"
+[17] "N010912-siCTRL-Bud"        "N021612-siCTRL-Bud"       
+[19] "N051911-siCTRL-Bud"        "N061311-siCTRL-Bud"       
+[21] "N010912-siCTRL-control"    "N021612-siCTRL-control"   
+[23] "N051911-siCTRL-control"    "N061311-siCTRL-control"   
+[25] "N010912-siCTRL-TNF"        "N021612-siCTRL-TNF"       
+[27] "N051911-siCTRL-TNF"        "N061311-siCTRL-TNF"       
+[29] "N010912-siCTRL-TNFposBud"  "N021612-siCTRL-TNFposBud" 
+[31] "N051911-siCTRL-TNFposBud"  "N061311-siCTRL-TNFposBud" 
+
+[[2]]
+ [1] "!Sample_geo_accession" "GSM4352031"            "GSM4352032"           
+ [4] "GSM4352033"            "GSM4352034"            "GSM4352035"           
+ [7] "GSM4352036"            "GSM4352037"            "GSM4352038"           
+[10] "GSM4352039"            "GSM4352040"            "GSM4352041"           
+[13] "GSM4352042"            "GSM4352043"            "GSM4352044"           
+[16] "GSM4352045"            "GSM4352046"            "GSM4352047"           
+[19] "GSM4352048"            "GSM4352049"            "GSM4352050"           
+[22] "GSM4352051"            "GSM4352052"            "GSM4352053"           
+[25] "GSM4352054"            "GSM4352055"            "GSM4352056"           
+[28] "GSM4352057"            "GSM4352058"            "GSM4352059"           
+[31] "GSM4352060"            "GSM4352061"           
+
+[[3]]
+ [1] "!Sample_characteristics_ch1"  "treatment: siCEBPD-Bud"      
+ [3] "treatment: siCEBPD-Bud"       "treatment: siCEBPD-Bud"      
+ [5] "treatment: siCEBPD-control"   "treatment: siCEBPD-control"  
+ [7] "treatment: siCEBPD-control"   "treatment: siCEBPD-control"  
+ [9] "treatment: siCEBPD-TNF"       "treatment: siCEBPD-TNF"      
+[11] "treatment: siCEBPD-TNF"       "treatment: siCEBPD-TNF"      
+[13] "treatment: siCEBPD-TNFposBud" "treatment: siCEBPD-TNFposBud"
+[15] "treatment: siCEBPD-TNFposBud" "treatment: siCEBPD-TNFposBud"
+[17] "treatment: siCTRL-Bud"        "treatment: siCTRL-Bud"       
+[19] "treatment: siCTRL-Bud"        "treatment: siCTRL-Bud"       
+[21] "treatment: siCTRL-control"    "treatment: siCTRL-control"   
+[23] "treatment: siCTRL-control"    "treatment: siCTRL-control"   
+[25] "treatment: siCTRL-TNF"        "treatment: siCTRL-TNF"       
+[27] "treatment: siCTRL-TNF"        "treatment: siCTRL-TNF"       
+[29] "treatment: siCTRL-TNFposBud"  "treatment: siCTRL-TNFposBud" 
+[31] "treatment: siCTRL-TNFposBud"  "treatment: siCTRL-TNFposBud" 
+
+[[4]]
+ [1] "!Sample_characteristics_ch1" "donor: N021612"             
+ [3] "donor: N051911"              "donor: N061311"             
+ [5] "donor: N010912"              "donor: N021612"             
+ [7] "donor: N051911"              "donor: N061311"             
+ [9] "donor: N010912"              "donor: N021612"             
+[11] "donor: N051911"              "donor: N061311"             
+[13] "donor: N010912"              "donor: N021612"             
+[15] "donor: N051911"              "donor: N061311"             
+[17] "donor: N010912"              "donor: N021612"             
+[19] "donor: N051911"              "donor: N061311"             
+[21] "donor: N010912"              "donor: N021612"             
+[23] "donor: N051911"              "donor: N061311"             
+[25] "donor: N010912"              "donor: N021612"             
+[27] "donor: N051911"              "donor: N061311"             
+[29] "donor: N010912"              "donor: N021612"             
+[31] "donor: N051911"              "donor: N061311"             
+
+[[5]]
+ [1] "!Sample_characteristics_ch1"  "tissue: Airway Smooth Muscle"
+ [3] "tissue: Airway Smooth Muscle" "tissue: Airway Smooth Muscle"
+ [5] "tissue: Airway Smooth Muscle" "tissue: Airway Smooth Muscle"
+ [7] "tissue: Airway Smooth Muscle" "tissue: Airway Smooth Muscle"
+ [9] "tissue: Airway Smooth Muscle" "tissue: Airway Smooth Muscle"
+[11] "tissue: Airway Smooth Muscle" "tissue: Airway Smooth Muscle"
+[13] "tissue: Airway Smooth Muscle" "tissue: Airway Smooth Muscle"
+[15] "tissue: Airway Smooth Muscle" "tissue: Airway Smooth Muscle"
+[17] "tissue: Airway Smooth Muscle" "tissue: Airway Smooth Muscle"
+[19] "tissue: Airway Smooth Muscle" "tissue: Airway Smooth Muscle"
+[21] "tissue: Airway Smooth Muscle" "tissue: Airway Smooth Muscle"
+[23] "tissue: Airway Smooth Muscle" "tissue: Airway Smooth Muscle"
+[25] "tissue: Airway Smooth Muscle" "tissue: Airway Smooth Muscle"
+[27] "tissue: Airway Smooth Muscle" "tissue: Airway Smooth Muscle"
+[29] "tissue: Airway Smooth Muscle" "tissue: Airway Smooth Muscle"
+[31] "tissue: Airway Smooth Muscle" "tissue: Airway Smooth Muscle"
+
+Coefficients:
+ [1] "Intercept"                "donor_N021612_vs_N010912"
+ [3] "donor_N051911_vs_N010912" "donor_N061311_vs_N010912"
+ [5] "kd_KD_vs_NT"              "bud_yes_vs_no"           
+ [7] "tnf_yes_vs_no"            "kdKD.budyes"             
+ [9] "kdKD.tnfyes"              "budyes.tnfyes"           
+[11] "kdKD.budyes.tnfyes"      
+    symbol      feature_id     contrast baseMean log2FoldChange     lfcSE
+1  SPARCL1 ENSG00000152583 bud_NT_noTNF   8.1748    1.533000305 0.5678388
+5  SPARCL1 ENSG00000152583   bud_NT_TNF   8.1748    0.286522039 0.4888375
+9  SPARCL1 ENSG00000152583 bud_KD_noTNF   8.1748    1.391300358 0.6712754
+13 SPARCL1 ENSG00000152583   bud_KD_TNF   8.1748    0.009112291 0.5648495
+17 SPARCL1 ENSG00000152583   bud_tnf_NT   8.1748   -1.246478265 0.7492350
+21 SPARCL1 ENSG00000152583 bud_kd_noTNF   8.1748   -0.141699946 0.8797326
+25 SPARCL1 ENSG00000152583    three_way   8.1748   -0.135709802 1.1541088
+29 SPARCL1 ENSG00000152583  kd_baseline   8.1748   -0.554720517 0.6900929
+          stat      pvalue      padj      ci_low   ci_high
+1   2.69971060 0.006939982        NA  0.42005680 2.6459438
+5   0.58612945 0.557788527        NA -0.67158180 1.2446259
+9   2.07262232 0.038207442        NA  0.07562477 2.7069759
+13  0.01613225 0.987128888        NA -1.09797231 1.1161969
+17 -1.66366789 0.096178817 0.9999309 -2.71495195 0.2219954
+21 -0.16107161 0.872036998 0.9999416 -1.86594414 1.5825442
+25 -0.11758840 0.906393796 0.9999586 -2.39772139 2.1263018
+29 -0.80383454 0.421492542        NA -1.90727777 0.7978367
+   holm_candidate_interactions
+1                           NA
+5                           NA
+9                           NA
+13                          NA
+17                   0.2885365
+21                   1.0000000
+25                   1.0000000
+29                          NA
+                      symbol     contrast n_donors       mean     ci_low
+SPARCL1 bud_kd_noTNF SPARCL1 bud_kd_noTNF        3 -0.3968826 -1.2266545
+SPARCL1 bud_KD_noTNF SPARCL1 bud_KD_noTNF        3  0.8462859 -1.1486471
+SPARCL1 bud_KD_TNF   SPARCL1   bud_KD_TNF        4 -0.1268972 -1.7154116
+SPARCL1 bud_NT_noTNF SPARCL1 bud_NT_noTNF        4  1.1816069  0.4866096
+SPARCL1 bud_NT_TNF   SPARCL1   bud_NT_TNF        4  0.4271280 -1.0611165
+SPARCL1 bud_tnf_NT   SPARCL1   bud_tnf_NT        4 -0.7544790 -2.2514878
+SPARCL1 three_way    SPARCL1    three_way        3  0.5608559 -2.6331591
+                       ci_high     pvalue sign_flip_p permutations
+SPARCL1 bud_kd_noTNF 0.4328893 0.17583790       0.250            8
+SPARCL1 bud_KD_noTNF 2.8412189 0.20950860       0.250            8
+SPARCL1 bud_KD_TNF   1.4616172 0.81574941       0.750           16
+SPARCL1 bud_NT_noTNF 1.8766042 0.01238035       0.125           16
+SPARCL1 bud_NT_TNF   1.9153724 0.42839770       0.500           16
+SPARCL1 bud_tnf_NT   0.7425299 0.20706682       0.250           16
+SPARCL1 three_way    3.7548709 0.52878993       0.750            8
+                     positive_donors negative_donors
+SPARCL1 bud_kd_noTNF               0               3
+SPARCL1 bud_KD_noTNF               3               0
+SPARCL1 bud_KD_TNF                 2               2
+SPARCL1 bud_NT_noTNF               4               0
+SPARCL1 bud_NT_TNF                 3               1
+SPARCL1 bud_tnf_NT                 1               3
+SPARCL1 three_way                  2               1
+                     holm_candidate_interactions
+SPARCL1 bud_kd_noTNF                   0.5275137
+SPARCL1 bud_KD_noTNF                          NA
+SPARCL1 bud_KD_TNF                            NA
+SPARCL1 bud_NT_noTNF                          NA
+SPARCL1 bud_NT_TNF                            NA
+SPARCL1 bud_tnf_NT                     0.5275137
+SPARCL1 three_way                      0.5287899

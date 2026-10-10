@@ -1,0 +1,48 @@
+{
+  "status": "pass",
+  "pdf_pages": 7,
+  "word_tables": 3,
+  "word_figures": 5,
+  "table_data_source": "saved original CSV results",
+  "pdf_text_spans_checked": 270,
+  "pdf_text_outside_page": [],
+  "figures": [
+    {
+      "file": "Figure_1_context_response.pdf",
+      "pages": 1,
+      "text_words": 102,
+      "vector_paths": 91,
+      "within_page": true
+    },
+    {
+      "file": "Figure_2_external_donors.pdf",
+      "pages": 1,
+      "text_words": 43,
+      "vector_paths": 82,
+      "within_page": true
+    },
+    {
+      "file": "Figure_3_paired_measurements.pdf",
+      "pages": 1,
+      "text_words": 51,
+      "vector_paths": 359,
+      "within_page": true
+    },
+    {
+      "file": "Figure_4_PER2_GR_time.pdf",
+      "pages": 1,
+      "text_words": 50,
+      "vector_paths": 57,
+      "within_page": true
+    },
+    {
+      "file": "Figure_5_clock_time_arrays.pdf",
+      "pages": 1,
+      "text_words": 43,
+      "vector_paths": 72,
+      "within_page": true
+    }
+  ],
+  "BioExplainR_v2_scope_limits_present": true,
+  "visual_review": "not performed; model cannot read images"
+}

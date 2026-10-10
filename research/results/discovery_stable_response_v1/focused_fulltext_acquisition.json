@@ -1,0 +1,30 @@
+{
+  "records": [
+    {
+      "status": "failed",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8294620/fullTextXML",
+      "error": "HTTP Error 500: ",
+      "path": "PMC8294620.xml"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9879848/fullTextXML",
+      "path": "PMC9879848.xml",
+      "sha256": "e7bbdece42cc3e8795b93050c56955d053cb8000cd66a638cc7f5224e71aa775",
+      "retrieved_utc": "2026-10-09T08:15:18.499173+00:00"
+    },
+    {
+      "status": "failed",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2701960/fullTextXML",
+      "error": "HTTP Error 500: ",
+      "path": "PMC2701960.xml"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12063231/fullTextXML",
+      "path": "PMC12063231.xml",
+      "sha256": "011ce548084d1b3f2fb5ca9c61f2b998b7913b7ace146c0f84dd8426b6bed302",
+      "retrieved_utc": "2026-10-09T08:18:32.180437+00:00"
+    }
+  ]
+}

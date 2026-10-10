@@ -1,0 +1,10 @@
+正在检查您的浏览器 - reCAPTCHA 正在检查浏览器以便让您访问 pmc.ncbi.nlm.nih.gov…
+如果系统在 5 秒后未自动将您重定向，请点击此处。
+page.waitForEvent: Timeout 120000ms exceeded while waiting for event "download"
+=========================== logs ===========================
+waiting for event "download"
+============================================================
+    at /home/ubuntu/creatR/research/discovery/acquire_supplement_browser.cjs:12:24 {
+  log: [],
+  name: 'TimeoutError'
+}

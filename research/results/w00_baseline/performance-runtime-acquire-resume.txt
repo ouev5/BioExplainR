@@ -1,0 +1,15 @@
+curl: (22) The requested URL returned error: 415
+curl: (22) The requested URL returned error: 415
+curl: (22) The requested URL returned error: 415
+curl: (22) The requested URL returned error: 415
+Traceback (most recent call last):
+  File "/home/ubuntu/creatR/research/common_performance/setup_runtime.py", line 49, in <module>
+    main()
+  File "/home/ubuntu/creatR/research/common_performance/setup_runtime.py", line 40, in main
+    item = fetch(f'https://api.github.com/repos/{repo}/tarball/{commit}', OUT / f'{name}-{commit}.tar.gz')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/creatR/research/common_performance/setup_runtime.py", line 16, in fetch
+    subprocess.run(['curl', '-fsSL', '--retry', '3', '--retry-all-errors', '--connect-timeout', '30', '--max-time', '900',
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['curl', '-fsSL', '--retry', '3', '--retry-all-errors', '--connect-timeout', '30', '--max-time', '900', '-C', '-', '-H', 'Accept: application/octet-stream', '-o', '/tmp/opencode/common-performance-runtime/SCassist-4cd3e7e7f059d5b59d86611e4bb5053ce5d827b9.tar.gz', 'https://api.github.com/repos/NIH-NEI/SCassist/tarball/4cd3e7e7f059d5b59d86611e4bb5053ce5d827b9']' returned non-zero exit status 22.

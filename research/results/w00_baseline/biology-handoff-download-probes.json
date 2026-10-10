@@ -1,0 +1,18 @@
+{
+  "command": [
+    "env",
+    "TMPDIR=/tmp/opencode",
+    "python3",
+    "research/discovery/test_download_ranges.py"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-08T16:20:43.009096+00:00",
+  "finished_utc": "2026-10-08T16:20:43.218531+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/biology-handoff-download-probes.txt",
+    "bytes": 462,
+    "sha256": "d128087578fdce6823effd5db9e8bc330848664c051af2eda6ceaf3910dc68fc"
+  }
+}

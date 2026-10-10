@@ -1,0 +1,84 @@
+[
+  {
+    "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/46cd/5576583/baf6a0bfe233/rcmb.2016-0357OC_f3.jpg",
+    "status": "failed",
+    "exit_code": 35,
+    "error": "curl: (35) Recv failure: Connection reset by peer\n"
+  },
+  {
+    "url": "https://academic.oup.com/ajrcmb/article/57/2/226/8467261",
+    "status": "failed",
+    "exit_code": 22,
+    "error": "curl: (22) The requested URL returned error: 403\n"
+  },
+  {
+    "url": "https://academic.oup.com/ajrcmb/article-pdf/57/2/226/66805205/ajrcmb_57_2_226.pdf",
+    "status": "failed",
+    "exit_code": 22,
+    "error": "curl: (22) The requested URL returned error: 403\n"
+  },
+  {
+    "url": "https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/ajrcmb/57/2/10.1165_rcmb.2016-0357OC/1/rcmb.2016-0357oc_supplement.pdf",
+    "status": "failed",
+    "exit_code": 22,
+    "error": "curl: (22) The requested URL returned error: 403\n"
+  },
+  {
+    "url": "https://api.genome.ucsc.edu/getData/track?genome=hg19;track=ncbiRefSeq;chrom=chr3",
+    "status": "downloaded",
+    "path": "hg19_ncbiRefSeq_chr3.json",
+    "bytes": 3227679,
+    "sha256": "b042d7eed9ed209e0ac68e3ea59398a4c44a07986c855a850832a84a87c40244",
+    "utc": "2026-10-09T02:00:03.766257+00:00"
+  },
+  {
+    "url": "https://api.genome.ucsc.edu/getData/track?genome=hg19;track=ncbiRefSeq;chrom=chr4",
+    "status": "downloaded",
+    "path": "hg19_ncbiRefSeq_chr4.json",
+    "bytes": 1888624,
+    "sha256": "7a254babbb7c17c28fa962ae8c455a8d1aa35bc068ec269840bb707de012b455",
+    "utc": "2026-10-09T02:00:11.416108+00:00"
+  },
+  {
+    "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/46cd/5576583/baf6a0bfe233/rcmb.2016-0357OC_f3.jpg",
+    "status": "downloaded",
+    "path": "Sasse_2017_Figure3.jpg",
+    "bytes": 40016,
+    "sha256": "28bdcaf4feb8c1cc16ee7effe989562f3717025c22dd85e5476e7ede80b96149",
+    "utc": "2026-10-09T02:03:17.658381+00:00"
+  },
+  {
+    "url": "https://academic.oup.com/ajrcmb/article/57/2/226/8467261",
+    "status": "failed",
+    "exit_code": 22,
+    "error": "curl: (22) The requested URL returned error: 403\n"
+  },
+  {
+    "url": "https://academic.oup.com/ajrcmb/article-pdf/57/2/226/66805205/ajrcmb_57_2_226.pdf",
+    "status": "failed",
+    "exit_code": 22,
+    "error": "curl: (22) The requested URL returned error: 403\n"
+  },
+  {
+    "url": "https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/ajrcmb/57/2/10.1165_rcmb.2016-0357OC/1/rcmb.2016-0357oc_supplement.pdf",
+    "status": "failed",
+    "exit_code": 22,
+    "error": "curl: (22) The requested URL returned error: 403\n"
+  },
+  {
+    "url": "https://api.genome.ucsc.edu/getData/track?genome=hg19;track=ncbiRefSeq;chrom=chr6",
+    "status": "downloaded",
+    "path": "hg19_ncbiRefSeq_chr6.json",
+    "bytes": 2314507,
+    "sha256": "cf0021d80768d52803051fbe9db6f146116a27efc3ceb5ede5f8baf9fc9129eb",
+    "utc": "2026-10-09T02:03:41.718270+00:00"
+  },
+  {
+    "url": "https://api.genome.ucsc.edu/getData/track?genome=hg19;track=ncbiRefSeq;chrom=chrX",
+    "status": "downloaded",
+    "path": "hg19_ncbiRefSeq_chrX.json",
+    "bytes": 1438130,
+    "sha256": "ad3f0d96d71bdfa15c92c9b66e17cb88244378679b6869df69af72f3bfc193ca",
+    "utc": "2026-10-09T02:04:01.116887+00:00"
+  }
+]

@@ -1,0 +1,5 @@
+{
+  "reason": "First report workflow used uncertainties rather than BioExplainR's uncertainty field. Direct-time combined table also declared ASM only instead of mixed ASM/A549 scope.",
+  "resolution": "v2 contexts/project/reports expose correct uncertainty notes and scalar scope_limitations; mixed-study scope explicit and units not pooled. v1 outputs retained as superseded. Numerical tables and figures unchanged.",
+  "current_report": "BioExplainR-report-zh-v2.html"
+}

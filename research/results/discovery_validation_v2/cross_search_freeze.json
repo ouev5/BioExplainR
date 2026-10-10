@@ -1,0 +1,18 @@
+{
+  "utc": "2026-10-09T12:17:16.412157+00:00",
+  "script": {
+    "path": "research/discovery/validation_cross_sources.py",
+    "bytes": 4516,
+    "sha256": "cf0c4aafa297830586b9ef8ae27ac14100e1ada67c5e6cbd390c59e3863c3fd3"
+  },
+  "geo_queries": {
+    "human_gr_genetic": "\"Homo sapiens\"[ORGN] AND (NR3C1 OR \"glucocorticoid receptor\") AND (knockout OR knockdown OR CRISPR OR siRNA OR depleted) AND gse[ETYP]",
+    "gr_genetic_dex": "(NR3C1 OR \"glucocorticoid receptor\") AND (knockout OR knockdown OR CRISPR OR siRNA) AND dexamethasone AND gse[ETYP]",
+    "asm_protein": "(\"airway smooth muscle\" OR \"bronchial smooth muscle\") AND (proteomic OR proteomics OR protein) AND gse[ETYP]"
+  },
+  "literature_queries": {
+    "gc_proteomics": "TITLE_ABS:(dexamethasone OR glucocorticoid OR budesonide) AND TITLE_ABS:(proteomics OR proteomic) AND TITLE_ABS:(A549 OR smooth OR lung OR airway OR PER2)",
+    "per2_gr_function": "TITLE_ABS:(PER2) AND TITLE_ABS:(glucocorticoid OR dexamethasone) AND TITLE_ABS:(protein OR knockout OR knockdown OR reporter OR function)"
+  },
+  "reason": "User requests public datasets instead of wet experiments; genetic GR can be cross-tissue support only."
+}

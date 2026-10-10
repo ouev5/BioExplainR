@@ -1,0 +1,31 @@
+{
+  "utc": "2026-10-10T00:50:31.270836+00:00",
+  "script": {
+    "path": "research/discovery/secretome_provenance_diagnostics.py",
+    "bytes": 5234,
+    "sha256": "bd9c0cbb81d7b4223e5976b55f5154f51277084319f7bc6e183e20758f6ab3df"
+  },
+  "inputs": [
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/diff_measurement_cross_array.csv",
+      "bytes": 45843950,
+      "sha256": "de6179c3361a2813905f1a9e27d2b6753b1007db39ab5a91d912b15693a2adb3"
+    },
+    {
+      "path": "research/results/discovery_secretome_v1/archives/24h/extracted/txt/proteinGroups.txt",
+      "bytes": 4026207,
+      "sha256": "f179c0267b09f70079c6e51fd5ebf64368f639be77dffe97a95f0060c8818d19"
+    }
+  ],
+  "timing": "Protein-specific approximatelyconstant offsets now known; no normalization-factor formula evaluated",
+  "formulas": [
+    "LFQ / Peptides",
+    "LFQ / Razor + unique peptides",
+    "LFQ / Unique peptides",
+    "Intensity / Peptides",
+    "Intensity / Razor + unique peptides",
+    "Intensity / Unique peptides"
+  ],
+  "criterion": "Only positive denominator/raw; log2 error <=.000051. All six formulas disclosed, no candidate re-estimation",
+  "note": "Protein-specific fitted offsets not correction; hypothesized normalization diagnostics only"
+}

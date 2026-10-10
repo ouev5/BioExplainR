@@ -1,0 +1,143 @@
+[
+  {
+    "accession": "PXD071199",
+    "title": "Dual-Optimized Surface Hydrophobicity and Rigidity Determines Protein Corona Absorption and Composition on Orally Delivered Nanoparticles Treating Colitis",
+    "description": "Disease-specific protein corona adsorbed on nanocarriers critically determines their in vivo delivery efficiency. Given that macrophages can orchestrate inflammation resolution and mucosa repair, they are regarded as promising therapeutic targets in colitis. Here, we reveal that by altering the physicochemical properties of nanocarriers, we can manipulate the amount and composition of colitis-specific intestinal protein corona (C-IPC) specifically formed on orally administered nanoparticles (NPs), thereby improving colon macrophage targeting and colitis therapy. We demonstrate that increasing surface hydrophobicity of NPs boosts overall protein adsorption during C-IPC formation, leading to improved colon macrophage delivery and colitis therapeutic efficacy of high hydrophobic NPs (Phobic) loaded with budesonide. Moreover, further increasing the rigidity of Phobic can selectively enrich the corona with key macrophage-targeting related proteins, notably S100A8. This dual-optimized hydrophobicity-rigidity co-modulation approach generates an optimal C-IPC characterized by both high protein amount and a high proportion of targeting proteins. Benefiting from it, Phobic with high rigidity (Hard) further promoted the macrophage targeted drug delivery, thus more effectively attenuating the inflammation and restoring the immune homeostasis in male colitis rats. Our work develops a rational strategy of manipulating the disease-specific protein corona formation through multiple-physicochemical properties co-modulation for efficient drug delivery, holding broad promise for diverse nanocarriers and pathologies.",
+    "files": [
+      "P25923-Severe-3_Slot1-23_1_6693.d.rar",
+      "P25923-Mild-2_Slot1-19_1_6688.d.rar",
+      "P25923-Severe-2_Slot1-22_1_6692.d.rar",
+      "P25923-Mild-1_Slot1-18_1_6687.d.rar",
+      "Proteomics_data_file_3-Protein_Identification_list_and_normalized_abundance_NpSpCk_for_colitis-intestinal_biofluids.xlsx",
+      "P25923-Severe-1_Slot1-21_1_6691.d.rar",
+      "uniprotkb_proteome_UP000002494_2025_10_23_Rat-51872.fasta",
+      "P25923-Mild-3_Slot1-20_1_6689.d.rar"
+    ],
+    "sample_protocol": "The C-IF extracted from mild or severe colitis rats were detected using the proteomic analysis via LC-MS/MS. The C-IF samples were carried on the filter-aided sample preparation (FASP) procedure. Briefly, samples were mixed with DTT solution (100 mM) and heated for 5 min. UA buffer (8M Urea, 150 mM Tris-HCl) 200 μL was added, samples were centrifuged (14000 g, 30 min) using the ultrafiltration centrifuge tube (30 kDa) and the filtrate was discarded. IAA (50 mM IAA in UA) 100 μL was added and incubated at room temperature for 30 min, mixture was centrifuged (14000 g, 30 min). UA buffer 100 μL was added and centrifuged (14000 g, 30 min), then ammonium bicarbonate buffer (25 mM) 100 μL was added and centrifuged (14000 g, 30 min). The filtrate was discarded, trypsin buffer (25 μg/mL) was added and incubated for 18 h (300 rpm, 37 °C). After centrifuging (14000 g, 30 min) the filtrate was collected and ammonium bicarbonate buffer (25 mM) was added for centrifugation (14000 g, 30 min). Finally, the filtrate was collected and the peptide samples were obtained by lyophilization. Then the peptides dissolved in 0.1% formic acid were loaded onto a C18-column (Thermo Scientific EASY trap column, 100μm × 2cm, 5 μm) and separated by an Easy nano LC system (Thermo Scientific, USA). 0.1% formic acid was mobile phase A, and 0.1% formic acid with acetonitrile was phase B. The flow rate was set as 250 nL/min, and a gradient of mobile phase B was set as 5%-28% for 0-40 min, 28%-90% for 40-42 min and kept at 90% for 42-60 min. Then the separated samples were analyzed by mass spectrometric (MS, Obitrap Fusion Lumos, Thermo Scientific, USA). The results (Raw files) were analyzed using the MaxQuant software (version 2.0.1.0). The peptide mass tolerance and the MS/MS tolerance were set as 20 ppm and 0.1 Da respectively. MS/MS spectra were searched against UniProt database.",
+    "references": [
+      "Wu J, Ni M, Xing L, Wang Y, Liu X, Zheng Y, Li L, Huang Y. Surface hydrophobicity and rigidity determines protein corona on orally delivered nanoparticles treating colitis. Nat Commun. 2026 17(1):2497--pubMed:41844599--doi: 10.1038/s41467-026-70453-9"
+    ]
+  },
+  {
+    "accession": "PXD071116",
+    "title": "Dual-Optimized Surface Hydrophobicity and Rigidity Determines Protein Corona Absorption and Composition on Orally Delivered Nanoparticles Treating Colitis",
+    "description": "Disease-specific protein corona adsorbed on nanocarriers critically determines their in vivo delivery efficiency. Given that macrophages can orchestrate inflammation resolution and mucosa repair, they are regarded as promising therapeutic targets in colitis. Here, we reveal that by altering the physicochemical properties of nanocarriers, we can manipulate the amount and composition of colitis-specific intestinal protein corona (C-IPC) specifically formed on orally administered nanoparticles (NPs), thereby improving colon macrophage targeting and colitis therapy. We demonstrate that increasing surface hydrophobicity of NPs boosts overall protein adsorption during C-IPC formation, leading to improved colon macrophage delivery and colitis therapeutic efficacy of high hydrophobic NPs (Phobic) loaded with budesonide. Moreover, further increasing the rigidity of Phobic can selectively enrich the corona with key macrophage-targeting related proteins, notably S100A8. This dual-optimized hydrophobicity-rigidity co-modulation approach generates an optimal C-IPC characterized by both high protein amount and a high proportion of targeting proteins. Benefiting from it, Phobic with high rigidity (Hard) further promoted the macrophage targeted drug delivery, thus more effectively attenuating the inflammation and restoring the immune homeostasis in male colitis rats. Our work develops a rational strategy of manipulating the disease-specific protein corona formation through multiple-physicochemical properties co-modulation for efficient drug delivery, holding broad promise for diverse nanocarriers and pathologies.",
+    "files": [
+      "P23101-Soft3.raw",
+      "P23101-Hard2.raw",
+      "P23101-Semi2.raw",
+      "P23101-Semi3.raw",
+      "P23101-Hard1.raw",
+      "Uniprot-20230131-Rattus_norvegicus-Rat-54767.fasta",
+      "Proteomics_data_file_2-Normalized_abundance_NpSpCk_for_C-IPC.xlsx",
+      "P23101-Semi1.raw",
+      "P23101-Hard3.raw",
+      "Proteomics_data_file_1-Protein_Identification_list_for_C-IPC.xlsx",
+      "P23101-Soft1.raw",
+      "P23101-Soft2.raw"
+    ],
+    "sample_protocol": "The C-IPC formed on NPs with different rigidity were detected using the proteomic analysis via LC-MS/MS. The C-IPC samples were carried on the filter-aided sample preparation (FASP) procedure. Briefly, samples were mixed with DTT solution (100 mM) and heated for 5 min. UA buffer (8M Urea, 150 mM Tris-HCl) 200 μL was added, samples were centrifuged (14000 g, 30 min) using the ultrafiltration centrifuge tube (30 kDa) and the filtrate was discarded. IAA (50 mM IAA in UA) 100 μL was added and incubated at room temperature for 30 min, mixture was centrifuged (14000 g, 30 min). UA buffer 100 μL was added and centrifuged (14000 g, 30 min), then ammonium bicarbonate buffer (25 mM) 100 μL was added and centrifuged (14000 g, 30 min). The filtrate was discarded, trypsin buffer (25 μg/mL) was added and incubated for 18 h (300 rpm, 37 °C). After centrifuging (14000 g, 30 min) the filtrate was collected and ammonium bicarbonate buffer (25 mM) was added for centrifugation (14000 g, 30 min). Finally, the filtrate was collected and the peptide samples were obtained by lyophilization. Then the peptides dissolved in 0.1% formic acid were loaded onto a C18-column (Thermo Scientific EASY trap column, 100μm × 2cm, 5 μm) and separated by an Easy nano LC system (Thermo Scientific, USA). 0.1% formic acid was mobile phase A, and 0.1% formic acid with acetonitrile was phase B. The flow rate was set as 250 nL/min, and a gradient of mobile phase B was set as 5%-28% for 0-40 min, 28%-90% for 40-42 min and kept at 90% for 42-60 min. Then the separated samples were analyzed by mass spectrometric (MS, Obitrap Fusion Lumos, Thermo Scientific, USA). The results (Raw files) were analyzed using the MaxQuant software (version 2.0.1.0). The peptide mass tolerance and the MS/MS tolerance were set as 20 ppm and 0.1 Da respectively. MS/MS spectra were searched against UniProt database.",
+    "references": [
+      "Wu J, Ni M, Xing L, Wang Y, Liu X, Zheng Y, Li L, Huang Y. Surface hydrophobicity and rigidity determines protein corona on orally delivered nanoparticles treating colitis. Nat Commun. 2026 17(1):2497--pubMed:41844599--doi: 10.1038/s41467-026-70453-9"
+    ]
+  },
+  {
+    "accession": "PXD054714",
+    "title": "Human microbiome LC-MS Proteomics in Crohn's disease patients",
+    "description": "Introduction. A substantial number of Crohn’s disease (CD) patients experience side-effects and/or non-response to medical drugs. In part, this might be attributed to the interaction of the intestinal microbiome with xenobiotics. The aim of this study was to explore the effect of common CD drugs on the patient’s microbiome in vitro. Methods The fecal microbiome of each of 5 CD patients was exposed to 42 μg/ml budesonide, 55 μg/ml 6-mercaptopurine (6-MP), 5 or 15 μg/ml tofacitinib, or DMSO-control in defined culture medium in an anaerobic chamber at 37°C for 24 hours. Subsequently, DNA and proteins were isolated and subjected to 16 rRNA gene amplicon sequencing and LC-MS proteomic analysis, respectively.",
+    "files": [
+      "SDRF.txt",
+      "220329_HB_B12.raw",
+      "220329_HB_A10.raw",
+      "220329_HB_B2.raw",
+      "220329_HB_A3.raw",
+      "Proteome-based_differences_between_drugs_within_fecal_cultures_of-one_CD_patient.mzid.gz",
+      "220329_HB_A9.raw",
+      "PXD054714_community_annotated.sdrf.tsv",
+      "220329_HB_B6.raw",
+      "220329_HB_B8.raw",
+      "Metaproteome-based_differences_between_6-mercaptopurine_exposure_and_control_comparing_five_CD_patients..mzid.gz",
+      "220329_HB_A11.raw",
+      "220329_HB_B1.raw",
+      "220329_HB_B5.raw",
+      "220329_HB_B9.raw",
+      "220329_HB_A2.raw",
+      "220329_HB_A6.raw",
+      "220329_HB_A1.raw",
+      "Proteome-based_differences_between_drugs_within_fecal_cultures_of-one_CD_patient.mzML",
+      "220329_HB_B4.raw",
+      "220329_HB_A12.raw",
+      "220329_HB_A7.raw",
+      "Metaproteome-based_differences_between_6-mercaptopurine_exposure_and_control_comparing_five_CD_patients..mzML",
+      "220329_HB_A5.raw",
+      "220329_HB_B3.raw",
+      "220329_HB_B11.raw",
+      "220329_HB_B10.raw",
+      "220329_HB_A8.raw",
+      "220329_HB_B7.raw",
+      "220329_HB_A4.raw"
+    ],
+    "sample_protocol": "Sample collection and fecal culture The participants collected complete defecations, using airtight boxes and one sachet AnaeroGen 1.5 L (Ref.: AN0025A, ThermoScientific). The sample was stored immediately at 4 °C until processing within 5 hours. The sample was transferred into an anaerobic chamber with 80 % Nitrogen, 10 % CO2, and 10 % H2 and homogenized in defined culture medium as reported by Li et al. with pH 7.813. The final incubations contained 2 % (w/v) fecal sample, 1 % dimethylsulfoxide, and were exposed to either 55 μg/ml budesonide (Ref.: B7777, Sigma-Aldrich), 42 μg/ml 6-mercaptopurine (Ref.: 852678, Sigma-Aldrich), 5 μg/ml (10 %) or 15 μg/ml (30 %) tofacitinib (Ref.: PZ0017, Pfizer®) or medium. We chose these concentrations based on the maximum oral intake distributed in 200 g colon content. Since 6-MP is dosed per kg body weight, we based our calculations on the approximate median body weight of CD patients, namely 70 kg19. All conditions were incubated in duplicate in a 2 ml 96-deep well plate covered with a PCR cover slip with ventilation holes and being placed in an IKA MS 3 basic plate shaker at 500 rpm for 24 hours at 37°C in the anaerobic chamber. Thereafter, samples were processed on ice and large debris removed by three times repeated centrifugation at 300 x g for 5 min. Then, the culture was pelleted and washed with PBS at 2272 x g for 1 hour at 4 °C as described by Li et al13. DNA was isolated as described elsewhere20, following the adapted protocol Q as described by the Human Microbiome Standards consortium21. Proteins were isolated by diluting washed pellets in 1 ml 0.01 % RapiGest SF (Ref.: 186001861, Waters) in 50 mM ammonium bicarbonate as done for DNA isolation. The supernatant was harvested after mechanical lysis and centrifugation at 16000 g. Proteomics analysis To explore microbial proteins and enzymatic pathways linked to drug exposure, we conducted proteomics analysis based on liquid chromatography followed by label-free quantitative mass spectrometry (LC-MS). Isolated proteins were reduced with 20 mM Dithiothreitol (DTT) for 45 minutes and alkylated with 40 mM Iodoacetamide for 45 minutes in the dark. Alkylation was terminated by 20 mM DTT. Subsequent protein digestion was performed using Endoproteinase LysC and Trypsin (Ref.: V5071, Promega), diluted 1:25 (enzyme to protein) for 2 hours at 37 °C and 750 rpm. For further overnight digestion, 50 mM ammoniumbicarbonate (ABC) was added to reach a final concentration of 1 M urea, and terminated by 1 % formic acid. LC-MS analysis was performed as described by Mezger et al.29, adapted slightly using a 110 minute gradient from 4 % to 32 % acetonitrile.",
+    "references": [
+      "Becker HEF, Mohren R, Le NG, Derijks LJJ, Jonkers DMAE, Penders J. 6-mercaptopurine and tofacitinib alter microbial protein expression but not composition in fecal microbiota incubations from Crohn's disease patients. BMC Biol. 2026 24(1):101--pubMed:41826961--doi: 10.1186/s12915-026-02569-9"
+    ]
+  },
+  {
+    "accession": "PXD029135",
+    "title": "Proteomic effects of budesonide and imiquimod on human bronchial epithelial cells",
+    "description": "We carry out a comparative proteomic analysis of human bronchial epithelial cells from patients clinically treated or not with inhaled budesonide and stimulated or not with the viral mimic Poly(I:C).We also wanted to investigate the potential anti-viral effects of imiquimod, a TLR7 agonist, on the bronchial epithelial cells proteome in vitro.",
+    "files": [
+      "210118_KH_BMC_Sample_6.raw",
+      "210122_KH_BMC_Sample_10.raw",
+      "210114_KH_BMC_Sample_4.raw",
+      "210122_KH_BMC_Sample_24.raw",
+      "210115_KH_BMC_Sample_19.raw",
+      "210115_KH_BMC_Sample_37.raw",
+      "210122_KH_BMC_Sample_32.raw",
+      "210118_KH_BMC_Sample_23.raw",
+      "210115_KH_BMC_Sample_2.raw",
+      "210114_KH_BMC_Sample_14.raw",
+      "210114_KH_BMC_Sample_27.raw",
+      "210115_KH_BMC_Sample_8.raw",
+      "2101122_KH_BMC_Sample_29.raw",
+      "210115_KH_BMC_Sample_30.raw",
+      "median-normalized.txt",
+      "210114_KH_BMC_Sample_41.raw",
+      "210118_KH_BMC_Sample_31.raw",
+      "210122_KH_BMC_Sample_12.raw",
+      "max_quant_results.zip",
+      "210115_KH_BMC_Sample_38.raw",
+      "210114_KH_BMC_Sample_5.raw",
+      "210122_KH_BMC_Sample_39.raw",
+      "210118_KH_BMC_Sample_43.raw",
+      "210122_KH_BMC_Sample_21.raw",
+      "210115_KH_BMC_Sample_9.raw",
+      "210118_KH_BMC_Sample_35.raw",
+      "210114_KH_BMC_Sample_15.raw",
+      "210114_KH_BMC_Sample_1.raw",
+      "210118_KH_BMC_Sample_34.raw",
+      "PXD029135_community_annotated.sdrf.tsv",
+      "210118_KH_BMC_Sample_3.raw",
+      "210115_KH_BMC_Sample_26.raw",
+      "210115_KH_BMC_Sample_13.raw",
+      "210118_KH_BMC_Sample_36.raw",
+      "210114_KH_BMC_Sample_7.raw",
+      "SRDF_File.txt",
+      "210114_KH_BMC_Sample_33.raw",
+      "210115_KH_BMC_Sample_22.raw",
+      "210118_KH_BMC_Sample_42.raw",
+      "210114_KH_BMC_Sample_25.raw",
+      "210118_KH_BMC_Sample_20.raw",
+      "210114_KH_BMC_Sample_16.raw",
+      "210114_KH_BMC_Sample_17.raw",
+      "210115_KH_BMC_Sample_18.raw",
+      "210118_KH_BMC_Sample_28.raw",
+      "210115_KH_BMC_Sample_40.raw",
+      "210118_KH_BMC_Sample_11.raw"
+    ],
+    "sample_protocol": "Cells were lysed in ice cold 5% SDS in 100 mM Tris (pH=7.55) sonication using a Branson Digital Sonifier® 250-D (Branson Ultrasonics Corporation, Danbury, USA), at amplitude 10%, with 10s pulse on and 20s off, for a total of 36 cycles. The lysates were centrifuged at 15,871 xg for 8 minutes to remove insoluble material. 60 μg protein per cell lysate supernatant per sample was processed on HILIC Microspheres (ReSyn Biosciences, Gauteng, South Africa) in a King-Fisher Flex (Thermo Fisher Scientific, Bremen). The following steps were performed in 96-well plates in the system: magnetic microspheres (1:10 protein:beads ratio) were incubated in equilibration buffer (15% ACN, 100 mM NH4Ac, pH=4.5); protein samples were incubated in binding buffer (30% ACN, 200 mM NH4Ac, pH=4.5) for binding of proteins to HILIC beads; beads were washed twice in 95% ACN; digestion of proteins for 1h at 37°C with trypsin (20:1 protein:trypsin ratio) dissolved in 50 mM AMBIC. Peptides were recovered from the plate and dried in a Speedvac (Thermo Fisher Scientific, Germany) prior to C18 desalting.  Peptide desalting was performed using BioPureSPN Mini, PROTO 300 C18 (The Nest Group, Inc., MA, USA). Briefly, columns were equilibrated with 100 μl 70% ACN, 5% FA and conditioned using 100 μl 5% FA. Peptide samples were resuspended in 100 ul 5% FA and loaded on the column. Columns were washed with 5% FA and before elution of peptides using 100 μl 50% ACN, 5% FA. The resulting peptide solution was dried by vacuum centrifugation and stored at -20°C until analysis.    Samples were resuspended in 10 μl 0.1% FA and 6 μl were loaded onto an EASY-nano LC system (Thermo Fisher Scientific, Germany). The analytical column was a silica capillary (75 μm* 16 cm Pico Tip Emitter, New Objective, USA) packed in house with C18 ReproSil-Pur 1.9 μm (Dr. Maisch GmbH, Germany). Peptides were separated using a 60 min LC gradient from 5% to 25% solvent B (80% ACN, 0.1% FA) and continuously sampled by a Q-Exactive HF-X Mass Spectrometer (Thermo Fisher Scientific, Germany) through an electrospray interface. Data were acquired using data-dependent acquisition (DDA) in positive ion mode. Precursor spectra (375 to 1500 m/z) were acquired at 120,000 resolution with automatic gain control (AGC, MS1 target 3x106) and a maximum injection time of 50 ms. The 20 most abundant ion peptides were continuously selected for fragmentation. Fragmentation spectra were acquired at 15,000 resolution with an AGC target of 1x105 ions and a maximum injection time of 20 ms. Isolation width for fragmentation was set to 1.2 m/z.",
+    "references": [
+      "Nieto-Fontarigo JJ, Tillgren S, Cerps S, Sverrild A, Hvidtfeldt M, Ramu S, Menzel M, Sander AF, Porsbjerg C, Uller L. Imiquimod Boosts Interferon Response, and Decreases ACE2 and Pro-Inflammatory Response of Human Bronchial Epithelium in Asthma. Front Immunol. 2021 12:743890--pubMed:34950134--doi: 10.3389/fimmu.2021.743890"
+    ]
+  }
+]

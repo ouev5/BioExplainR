@@ -1,0 +1,127 @@
+{
+  "accession" : "PXD029550",
+  "title" : "The long non-coding RNA DAGAR is regulated by m6A modification and both pathways are important for smooth muscle cell plasticity",
+  "additionalAttributes" : [ ],
+  "projectDescription" : "Vascular smooth muscle cells (SMCs) change between a contractile-differentiated and a proliferative-dedifferentiated phenotype in response to environmental cues. Long non-coding RNAs (lncRNAs) and N6-methyladenosine (m6A) modification regulate cell fate decision. Here we used primary human pulmonary artery SMCs (hPASMCs) and assessed the expression of lncRNAs during SMCs phenotypic modulation. A lncRNA, which we refer to as Differentiation And Growth Arrest-related lncRNA (DAGAR) was increased during differentiation and we demonstrate that it is required for this process. DAGAR was m6A-modified and regulated by the m6A reader YTHDF2 in SMCs and MRC5 cells. A marked downregulation of YTHDF1-3 proteins during both SMC differentiation and MRC5 quiescence was found, consistent with the increase of DAGAR. Remarkably, YTHDF2 immunoprecipitation followed by RNA deep sequencing (RIP-Seq) displayed an enrichment of key SMC-associated transcripts, including smooth muscle myosin heavy chain (MYH11) and members of the TGF, PDGF and VEGF pathways. Knockdown of YTHDF2 induced DAGAR and SMC marker gene expression. We conclude that the lncRNA DAGAR and YTHDF2 contribute to the regulation of SMC plasticity and differentiation programs.",
+  "sampleProcessingProtocol" : "For mass spectrometric analysis of proteins slices were cut out from a silver stained gel, transferred into 2ml micro tubes (Eppendorf) and destained by incubating with 15mM K3Fe (CN)6/50mM Na2S2. Subsequently, gel slices were washed with 50 mM NH4HCO3, 50mM NH4HCO3/acetonitrile (3/1) and 50mM NH4HCO3/acetonitrile (1/1) while shaking gently in an orbital shaker (VXR basic Vibrax, IKA). Gel pieces were lyophilized after shrinking by 100% acetonitrile. To block cysteines, reduction with DTT was carried out for 30 min at 57°C followed by an alkylation step with iodoacetamide for 30 min at room temperature in the darkSubsequently, gel slices were washed and lyophilized again as described above. Proteins were subjected to in-gel tryptic digestion overnight at 37°C with approximately 2 μg trypsin per 100 μl gel volume (Trypsin Gold, mass spectrometry grade, Promega). Peptides were eluted twice with 100 mM NH4HCO3 followed by an additional extraction with 50 mM NH4HCO3 in 50% acetonitrile. Prior to LC-MS/MS analysis, combined eluates were lyophilized and reconstituted in 20 μl of 1 % formic acid. Separation of peptides by reversed-phase chromatography was carried out on an UltiMate 3000 RSLCnano System (Thermo Scientific, Dreieich) which was equipped with a C18 Acclaim Pepmap100 preconcentration column (100μm i.D.x20mm, Thermo Fisher) in front of an Acclaim Pepmap100 C18 nano column (75 μm i.d. × 150 mm, Thermo Fisher). A linear gradient of 4% to 40% acetonitrile in 0.1% formic acid over 90 min was used to separate peptides at a flow rate of 300 nl/min. The LC-system was coupled on-line to a maXis plus UHR-QTOF System (Bruker Daltonics, Bremen) via a CaptiveSpray nanoflow electrospray source (Bruker Daltonics). Data-dependent acquisition of MS/MS spectra by CID fragmentation was performed at a resolution of minimum 60000 for MS and MS/MS scans, respectively. The MS spectra rate of the precursor scan was 2 Hz processing a mass range between m/z 175 and m/z 2000. Via the Compass 1.7 acquisition and processing software (Bruker Daltonics) a dynamic method with a fixed cycle time of 3 s and an m/z dependent collision energy adjustment between 34 and 55 eV was applied.",
+  "dataProcessingProtocol" : "Raw data processing was performed in Data Analysis 4.2 (Bruker Daltonics), and Protein Scape 3.1.3 (Bruker Daltonics) in connection with Mascot 2.5.1 (Matrix Science) facilitated database searching of the Swiss-Prot Homo sapiens database (release-2020_01, 220420 entries). Search parameters were as follows: enzyme specificity trypsin with 2 missed cleavages allowed, precursor tolerance 0.02 Da, MS/MS tolerance 0.04 Da, carbamidomethylation or propionamide modification of cysteine, oxidation of methionine, deamidation of asparagine and glutamine, acetylation of protein N-termini were set as variable modifications. Mascot peptide ion-score cut-off was set 30. Protein list compilation was done using the Protein Extractor function of Protein Scape.",
+  "projectTags" : [ ],
+  "keywords" : [ "Smooth muscle cells", "M6a modifcation", "Dagar" ],
+  "doi" : "10.6019/PXD029550",
+  "submissionType" : "COMPLETE",
+  "license" : "Creative Commons Public Domain (CC0)",
+  "submissionDate" : "2021-11-03",
+  "publicationDate" : "2025-05-06",
+  "submitters" : [ {
+    "title" : "Dr",
+    "firstName" : "Astrid",
+    "lastName" : "Bruckmann",
+    "identifier" : "2348794",
+    "affiliation" : "University Regensburg",
+    "email" : "astrid.bruckmann@ur.de",
+    "country" : "Germany",
+    "orcid" : "0000-0001-6082-2944",
+    "name" : "Astrid Bruckmann",
+    "id" : "2348794"
+  } ],
+  "labPIs" : [ {
+    "title" : "Dr",
+    "firstName" : "Astrid",
+    "lastName" : "Bruckmann",
+    "identifier" : "2315914",
+    "affiliation" : "University Regensburg,Department of Biochemistry, geneticsand Microbiology, Chair of Biochemistry I",
+    "email" : "astrid.bruckmann@ur.de",
+    "country" : "",
+    "orcid" : "",
+    "name" : "Astrid Bruckmann",
+    "id" : "2315914"
+  } ],
+  "instruments" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1001541",
+    "name" : "maXis"
+  } ],
+  "softwares" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1001207",
+    "name" : "Mascot"
+  } ],
+  "experimentTypes" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000433",
+    "name" : "Affinity purification coupled with mass spectrometry proteomics"
+  } ],
+  "quantificationMethods" : [ ],
+  "countries" : [ "Germany" ],
+  "sampleAttributes" : [ {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "EFO:0000635",
+      "name" : "organism part"
+    },
+    "value" : [ {
+      "cvLabel" : "BTO",
+      "accession" : "BTO:0001413",
+      "name" : "primary cell"
+    } ]
+  }, {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "OBI:0100026",
+      "name" : "organism"
+    },
+    "value" : [ {
+      "cvLabel" : "NEWT",
+      "accession" : "NEWT:9606",
+      "name" : "Homo sapiens (Human)"
+    } ]
+  } ],
+  "organisms" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "NEWT",
+    "accession" : "NEWT:9606",
+    "name" : "Homo sapiens (human)"
+  } ],
+  "organismParts" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "BTO",
+    "accession" : "BTO:0001413",
+    "name" : "Primary cell"
+  } ],
+  "diseases" : [ ],
+  "references" : [ {
+    "referenceLine" : "de la Cruz-Thea B, Natali L, Ho-Xuan H, Bruckmann A, Coll-Bonfill N, Strieder N, Peinado VI, Meister G, Musri MM. Differentiation and Growth-Arrest-Related lncRNA (<i>DAGAR</i>): Initial Characterization in Human Smooth Muscle and Fibroblast Cells. Int J Mol Sci. 2024 25(17):9497",
+    "pubmedID" : 39273443,
+    "doi" : "10.3390/ijms25179497"
+  } ],
+  "identifiedPTMStrings" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MOD",
+    "accession" : "MOD:00425",
+    "name" : "monohydroxylated residue"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "MOD",
+    "accession" : "MOD:00417",
+    "name" : "S-carboxamidoethyl-L-cysteine"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "MOD",
+    "accession" : "MOD:00400",
+    "name" : "deamidated residue"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "MOD",
+    "accession" : "MOD:00397",
+    "name" : "iodoacetamide derivatized residue"
+  } ],
+  "totalFileDownloads" : 4185,
+  "botCount" : 1447,
+  "hubCount" : 2684,
+  "organicCount" : 54
+}

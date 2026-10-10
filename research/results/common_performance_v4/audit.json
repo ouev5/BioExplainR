@@ -1,0 +1,33 @@
+{
+  "status": "pass",
+  "runs": 360,
+  "target_scores": 1800,
+  "formal_model_calls": 216,
+  "warmup_calls": 1,
+  "prompt_pairs_identical": 72,
+  "independent_reference": true,
+  "independent_parser": true,
+  "bootstrap_recomputed": true,
+  "tokens": {
+    "ellmer_facts": {
+      "prompt_tokens": 23085,
+      "completion_tokens": 3591,
+      "median_prompt_tokens": 329.0,
+      "median_completion_tokens": 49.0
+    },
+    "bio_client_facts": {
+      "prompt_tokens": 23085,
+      "completion_tokens": 3591,
+      "median_prompt_tokens": 329.0,
+      "median_completion_tokens": 49.0
+    },
+    "ellmer_table": {
+      "prompt_tokens": 78709,
+      "completion_tokens": 1925,
+      "median_prompt_tokens": 2481.0,
+      "median_completion_tokens": 55.0
+    }
+  },
+  "failed_requests": 37,
+  "token_scope": "Only completed responses; timeout tokens unknown"
+}

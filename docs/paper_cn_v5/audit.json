@@ -1,0 +1,43 @@
+{
+  "status": "pass",
+  "created_utc": "2026-10-09T10:22:18.581114+00:00",
+  "source_dependencies": {
+    "status": "pass",
+    "records": 203,
+    "archive_members": 200,
+    "manifest": {
+      "path": "docs/biology_discovery_v2/discovery_manifest.json",
+      "bytes": 77460,
+      "sha256": "6158c0f16771ab4110cd08f4541a4d5e556162d321fc43e7d8af0bd638805d3e"
+    },
+    "handoff_substitution": "Only rgo.md verified against exact pre-v0.11 snapshot; scientific inputs/scripts remain at original paths"
+  },
+  "candidate_table_rows": 12,
+  "external_measurable_candidates": 11,
+  "frozen_denominator": 12,
+  "external_tests": 48,
+  "external_donor_effects": 143,
+  "direct_exposure_tests": 24,
+  "csv_xlsx_pairs": 15,
+  "reference_count": 11,
+  "figure_table_links": 24,
+  "documents": [
+    {
+      "name": "BioExplainR-中文论文-v0.11",
+      "pages": 11,
+      "tables": 2,
+      "figures": 3,
+      "text_spans": 564,
+      "vector_embedding": true
+    },
+    {
+      "name": "BioExplainR-补充材料-v0.11",
+      "pages": 12,
+      "tables": 4,
+      "figures": 2,
+      "text_spans": 595,
+      "vector_embedding": true
+    }
+  ],
+  "scope": "Saved source integrity, paired-test arithmetic, table data, references and PDF geometry; no new fitted analysis or human review"
+}

@@ -1,0 +1,17 @@
+{
+  "command": [
+    "python3",
+    "research/discovery/acquire_chip_sources.py",
+    "research/results/discovery_chip_v1"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-09T01:54:56.854320+00:00",
+  "finished_utc": "2026-10-09T01:55:03.558059+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/continuation-chip-primary-sources.txt",
+    "bytes": 1345,
+    "sha256": "3a2901191ad4a8653202db5715776172dbac40fc2f8509dd1b616f904aac065f"
+  }
+}

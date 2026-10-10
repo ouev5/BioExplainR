@@ -1,0 +1,18 @@
+{
+  "command": [
+    "Rscript",
+    "--vanilla",
+    "research/discovery/audit_donors.R",
+    "research/results/discovery_donors_v1"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-08T15:03:02.078482+00:00",
+  "finished_utc": "2026-10-08T15:03:32.499401+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/biology-donors-r-audit-complete.txt",
+    "bytes": 744,
+    "sha256": "49c53e19bc191658793f72f27012bd7b36a6d6e361d358d6a9bd958e52b9190d"
+  }
+}

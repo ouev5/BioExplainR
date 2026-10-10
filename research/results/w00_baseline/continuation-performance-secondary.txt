@@ -1,0 +1,17 @@
+             method   n targets correct covered   accuracy answered_accuracy
+1            base_r  50     180     180     180 1.00000000        1.00000000
+2            base_r 200     180     180     180 1.00000000        1.00000000
+3      ellmer_table  50     180       8     175 0.04444444        0.04571429
+4      ellmer_table 200     180       0       0 0.00000000                NA
+5       bio_offline  50     180     180     180 1.00000000        1.00000000
+6       bio_offline 200     180     180     180 1.00000000        1.00000000
+7      ellmer_facts  50     180     180     180 1.00000000        1.00000000
+8      ellmer_facts 200     180     180     180 1.00000000        1.00000000
+9  bio_client_facts  50     180     180     180 1.00000000        1.00000000
+10 bio_client_facts 200     180     180     180 1.00000000        1.00000000
+                           comparison              endpoint estimate lower
+1     ellmer_facts minus ellmer_table task_all_five_correct        1     1
+2 bio_client_facts minus ellmer_table task_all_five_correct        1     1
+  upper tasks
+1     1    24
+2     1    24

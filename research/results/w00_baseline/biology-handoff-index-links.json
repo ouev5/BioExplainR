@@ -1,0 +1,17 @@
+{
+  "command": [
+    "python3",
+    "-c",
+    "from html.parser import HTMLParser; from pathlib import Path; from urllib.parse import unquote; import json; links=[]\nclass Links(HTMLParser):\n def handle_starttag(self,tag,attrs):\n  if tag==\"a\": links.extend(value for key,value in attrs if key==\"href\")\npage=Path(\"docs/index.html\"); Links().feed(page.read_text()); assert len(links)==7; assert all((page.parent/unquote(href)).is_file() for href in links); assert sum(\"paper_cn_v4\" in href for href in links)==5; print(json.dumps({\"status\":\"pass\",\"links\":links},ensure_ascii=False,indent=2))"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-08T16:20:42.971854+00:00",
+  "finished_utc": "2026-10-08T16:20:43.031896+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/biology-handoff-index-links.txt",
+    "bytes": 388,
+    "sha256": "2dc8987648f54080880933371b7f8db729c2431903aeae00ac32b2a4e5e3a224"
+  }
+}

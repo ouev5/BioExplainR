@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/ubuntu/creatR/research/discovery/audit_mechanism_complete.py", line 29, in <module>
+    if __name__=='__main__': main()
+                             ^^^^^^
+  File "/home/ubuntu/creatR/research/discovery/audit_mechanism_complete.py", line 23, in main
+    audit_mechanism.main()
+  File "/home/ubuntu/creatR/research/discovery/audit_mechanism.py", line 64, in main
+    assert np.allclose(vals,[float(r[k]) for k in ['log2_effect','se','df','lower','upper','p']],rtol=1e-6,atol=1e-8),(g,r,vals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('FKBP5', {'gene': 'FKBP5', 'contrast': 'DEX', 'status': 'estimable', 'log2_effect': '2.59388903839693', 'se': '0.188920302786379', 'df': '37.5220640362602', 'lower': '2.21127983972226', 'upper': '2.9764982370716', 'p': '3.29282230238205e-16', 'holm': ''}, [2.593889038396935, 0.19175999904597313, 37.5220640362602, 2.205528769583019, 2.982249307210851, 5.25834679487054e-16])

@@ -1,0 +1,13 @@
+{
+  "utc": "2026-10-09T13:08:20.849054+00:00",
+  "script": {
+    "path": "research/discovery/validation_protein.py",
+    "bytes": 11076,
+    "sha256": "15ba38404eb9c2c1f8cae433418760cd18825c3c512aeda8d14bbd56abbb36c1"
+  },
+  "reason": "Actual table contains mouse annotated accessions, consistent with Mus musculus database protocol; PRIDE human organism conflict remains unresolved.",
+  "rule": "Case-insensitive frozen-symbol / TMT1A ortholog names, mouse accession, master/high/noncontaminant and >=2 group-unique peptides",
+  "claim": "Mouse-annotated processed proteomics; biological sample species/cell line not author-confirmed; supporting comparison only, not human ASM protein validation",
+  "primary_units": "Unpaired culture labels, four per condition; exclude neither starred29 nor any observed value in primary",
+  "missing": "All missing candidates retained as P=1 placeholder; no quantitative imputation"
+}

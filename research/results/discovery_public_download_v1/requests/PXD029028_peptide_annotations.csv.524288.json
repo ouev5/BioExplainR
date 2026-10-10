@@ -1,0 +1,22 @@
+{
+  "utc": "2026-10-10T06:18:23.662964+00:00",
+  "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2022/01/PXD029028/peptide_annotations.csv",
+  "start": 524288,
+  "end": 1048575,
+  "exit_code": 0,
+  "stderr": "",
+  "seconds": 20.643736511468887,
+  "completed_utc": "2026-10-10T06:18:44.306701+00:00",
+  "headers": {
+    "path": "research/results/discovery_public_download_v1/requests/PXD029028_peptide_annotations.csv.524288.headers.txt",
+    "bytes": 489,
+    "sha256": "6c8163ca5f67a72bc324e768a39fa98112ca47a71eef23c069866742b306e2c1"
+  },
+  "response": {
+    "path": "research/results/discovery_public_download_v1/ranges/PXD029028_peptide_annotations.csv.524288.bin",
+    "bytes": 524288,
+    "sha256": "ff6c9d1e37656c3c5a2feda91838b56b65861e4d07b51eb741c755c8bbd0bfb2"
+  },
+  "http_status": 206,
+  "status": "retrieved"
+}

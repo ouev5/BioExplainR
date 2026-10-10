@@ -1,0 +1,999 @@
+<?xml version="1.0" encoding="UTF-8"?><article xml:lang="en" article-type="research-article"><front><journal-meta><journal-id journal-id-type="pmc-domain-id">379</journal-id><journal-id journal-id-type="pmc-domain">blackwellopen</journal-id><journal-title-group><journal-title>Electrophoresis</journal-title><abbrev-journal-title>Electrophoresis</abbrev-journal-title></journal-title-group></journal-meta><article-meta><article-id pub-id-type="pmcid">PMC5157777</article-id><article-id pub-id-type="pmcaid">5157777</article-id><article-id pub-id-type="pmcaiid">5157777</article-id><article-id pub-id-type="pmid">26031785</article-id><article-id pub-id-type="doi">10.1002/elps.201400574</article-id><title-group><article-title>Proteomic analysis of cellular soluble proteins from human bronchial smooth muscle cells by combining nondenaturing micro 2DE and quantitative LC‐MS/MS. 2. Similarity search between protein maps for the analysis of protein complexes</article-title></title-group><contrib-group content-type="author"><contrib><name name-style="western"><surname>Jin</surname><given-names initials="Y">Ya</given-names></name><xref ref-type="aff" rid="elps5538-aff-0001">1</xref><xref ref-type="aff" rid="elps5538-aff-0002">2</xref><xref ref-type="aff" rid="elps5538-aff-0003">3</xref></contrib><contrib><name name-style="western"><surname>Yuan</surname><given-names initials="Q">Qi</given-names></name><xref ref-type="aff" rid="elps5538-aff-0001">1</xref><xref rid="elps5538-note-0001" ref-type="author-notes">†</xref></contrib><contrib><name name-style="western"><surname>Zhang</surname><given-names initials="J">Jun</given-names></name><xref ref-type="aff" rid="elps5538-aff-0001">1</xref><xref rid="elps5538-note-0001" ref-type="author-notes">†</xref></contrib><contrib><name name-style="western"><surname>Manabe</surname><given-names initials="T">Takashi</given-names></name><xref ref-type="aff" rid="elps5538-aff-0004">4</xref></contrib><contrib><name name-style="western"><surname>Tan</surname><given-names initials="W">Wen</given-names></name><xref ref-type="aff" rid="elps5538-aff-0001">1</xref><xref ref-type="aff" rid="elps5538-aff-0003">3</xref><xref ref-type="author-notes" rid="_fncrsp93pmc__">✉</xref></contrib></contrib-group><aff id="elps5538-aff-0001"><label><sup>1</sup></label>School of Bioscience and Bioengineering, South China University of Technology, Guangzhou, P. R. China</aff><aff id="elps5538-aff-0002"><label><sup>2</sup></label>Guangdong Provincial Key Laboratory of Fermentation and Enzyme Engineering, South China University of Technology, Guangzhou, P. R. China</aff><aff id="elps5538-aff-0003"><label><sup>3</sup></label>Key Laboratory of Industrial Biotechnology of Guangdong Higher Education Institutes, South China University of Technology, Guangzhou, P. R. China</aff><aff id="elps5538-aff-0004"><label><sup>4</sup></label>Faculty of Science, Ehime University, Matsuyama, Japan</aff><author-notes><fn id="correspondenceTo"><label>*</label><p><bold>Correspondence</bold>: Professor Wen Tan, School of Bioscience and Bioengineering, South China University of Technology, Guangzhou, Guangdong 510006, P. R. China, <bold>Email</bold>: <email>went@scut.edu.cn</email>, <bold>Fax</bold>: +86‐20‐39380669</p></fn><fn id="elps5538-note-0001"><label>†</label><p>These authors contributed equally to this study.</p></fn><fn id="_fncrsp93pmc__"><label>✉</label><p>Corresponding author.</p></fn></author-notes><pub-date><day>20</day><month>7</month><year>2015</year></pub-date><volume>36</volume><issue>17</issue><fpage>1991</fpage><page-range>1991–2001</page-range><pub-history><event event-type="pmc-release"><date><day>30</day><month>12</month><year>2016</year></date></event></pub-history><permissions><copyright-statement>© 2015 The Authors ELECTROPHORESIS Published by Wiley‐VCH Verlag GmbH &amp; Co. KGaA</copyright-statement><license><license-p>This is an open access article under the terms of the <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://creativecommons.org/licenses/by-nc-nd/4.0/" ext-link-type="uri">Creative Commons Attribution‐NonCommercial‐NoDerivs</ext-link> License, which permits use and distribution in any medium, provided the original work is properly cited, the use is non‐commercial and no modifications or adaptations are made.</license-p></license></permissions><self-uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ELPS-36-1991.pdf" content-type="pmc-pdf"><?cloudpmc-path ce9b/5157777/7d427a042754/ELPS-36-1991.pdf?><?cloudpmc-bucket app?><?size 1306269?></self-uri><abstract id="abstract1"><title>Abstract</title><p>Human bronchial smooth muscle cell soluble proteins were analyzed by a combined method of nondenaturing micro 2DE, grid gel‐cutting, and quantitative LC‐MS/MS and a native protein map was prepared for each of the identified 4323 proteins [1]. A method to evaluate the degree of similarity between the protein maps was developed since we expected the proteins comprising a protein complex would be separated together under nondenaturing conditions. The following procedure was employed using Excel macros; (i) maps that have three or more squares with protein quantity data were selected (2328 maps), (ii) within each map, the quantity values of the squares were normalized setting the highest value to be 1.0, (iii) in comparing a map with another map, the smaller normalized quantity in two corresponding squares was taken and summed throughout the map to give an “overlap score,” (iv) each map was compared against all the 2328 maps and the largest overlap score, obtained when a map was compared with itself, was set to be 1.0 thus providing 2328 “overlap factors,” (v) step (iv) was repeated for all maps providing 2328 × 2328 matrix of overlap factors. From the matrix, protein pairs that showed overlap factors above 0.65 from both protein sides were selected (431 protein pairs). Each protein pair was searched in a database (UniProtKB) on complex formation and 301 protein pairs, which comprise 35 protein complexes, were found to be documented. These results demonstrated that native protein maps and their similarity search would enable simultaneous analysis of multiple protein complexes in cells.</p><sec id="kwd-group1" sec-type="kwd-group" disp-level="2"><p><bold>Keywords:</bold> Cellular proteins, Native protein map, Nondenaturing micro 2DE, Protein complex, Quantitative LC‐MS/MS</p></sec></abstract><custom-meta-group><custom-meta><meta-name>status</meta-name><meta-value>released</meta-value></custom-meta><custom-meta><meta-name>display-pdf</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>is-in-collection-domain</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>is-olf</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>is-manuscript</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>is-preprint</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>is-journal-matter</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>is-scanned</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>is-retracted</meta-name><meta-value>no</meta-value></custom-meta></custom-meta-group></article-meta><notes notes-type="article-notes"><sec id="historyarticle-meta1" sec-type="history" disp-level="2"><p>Received 2014 Dec 4; Revised 2015 Feb 16; Accepted 2015 May 7; Issue date 2015 Sep.</p></sec></notes></front><body><def-list id="elps5538-lp-0001"><title>Abbreviations</title><def-item><term>CRTAP</term><def><p>cartilage‐associated protein</p></def></def-item><def-item><term>HBSMC</term><def><p>human bronchial smooth muscle cells</p></def></def-item><def-item><term>HDMS<sup>E</sup></term><def><p>ion mobility separation‐enhanced MS/MS in data‐independent acquisition mode</p></def></def-item><def-item><term>nano‐UPLC</term><def><p>nanoultra performance liquid chromatography</p></def></def-item></def-list><sec id="elps5538-sec-0010" disp-level="1"><label>1.</label><title>Introduction</title><p>Protein interactions in cells have been studied to reconstruct the complex structures and functions of cells. Yeast two‐hybrid system was employed for the global analysis of protein interaction networks in <italic>E. coli</italic> strain DY330 <xref rid="elps5538-bib-0002" ref-type="bibr">2</xref>, <italic>Saccharomyces cerevisiae</italic>
+<xref rid="elps5538-bib-0003" ref-type="bibr">3</xref>, and human <xref rid="elps5538-bib-0004" ref-type="bibr">4</xref>. Since this approach is limited to the detection of binary complexes and not directly aimed to analyze the protein interactions occurring in their physiological conditions, complementary information was obtained by employing affinity purification of targeted protein complexes and their analysis by MS <xref rid="elps5538-bib-0005" ref-type="bibr">5</xref>. Also, biochemical fractionation procedures were combined with mass spectrometric analysis for the analysis of protein complexes in cellular soluble fractions using ion‐exchange HPLC, sucrose gradient centrifugation, and isoelectric focusing <xref rid="elps5538-bib-0006" ref-type="bibr">6</xref> and using blue native electrophoresis <xref rid="elps5538-bib-0007" ref-type="bibr">7</xref>.</p><p>We have been employing nondenaturing micro 2DE for the analysis proteins and protein interactions in human plasma <xref rid="elps5538-bib-0008" ref-type="bibr">8</xref> and <italic>E. coli</italic> cytosol <xref rid="elps5538-bib-0009" ref-type="bibr">9</xref>, <xref rid="elps5538-bib-0010" ref-type="bibr">10</xref>. In these works, CBB‐stained protein spots on the 2DE gels were excised and MALDI‐MS‐PMF was used as a method of protein assignment. However, it was reported that even spots looking well separated on a 2DE gel could consist of several proteins <xref rid="elps5538-bib-0011" ref-type="bibr">11</xref>. Also, in the course of examining the performance of quantitative LC‐MS/MS to analyze the proteins on nondenaturing 2DE gels, we realized that the sensitivity of the apparatus in protein detection exceeded that of conventional protein staining methods. So we developed the combined method of nondenaturing micro 2DE, grid gel‐cutting, and quantitative LC‐MS/MS that enabled not only the comprehensive analysis of proteins in the grid area, but also the reconstruction of quantity distribution maps (native protein maps) of all the identified proteins <xref rid="elps5538-bib-0012" ref-type="bibr">12</xref>. This method was applied for the analysis of HBSMC soluble proteins and 4323 proteins were identified in a 30 mm × 40 mm gel area providing the same number of native protein maps <xref rid="elps5538-bib-0001" ref-type="bibr">1</xref>.</p><p>In this paper, we report on the comparisons of the native protein maps of HBSMC soluble proteins aiming at the acquisition of information on protein–protein interactions. Since each protein map was characterized by several features, such as the position of quantity peak square, number of detected squares, degree of concentration (focused or dispersed), etc., the similarity of two protein maps would suggest that the two proteins migrated together as a protein complex. Since it was difficult to visually compare the maps and judge the similarity between the 4323 protein maps, we developed Excel macros to extract protein pairs with similar maps and examined whether the protein pairs were described in the protein database UniProtKB.</p></sec><sec id="elps5538-sec-0020" disp-level="1"><label>2.</label><title>Materials and methods</title><sec id="elps5538-sec-0030" disp-level="2"><label>2.1.</label><title>Materials, cell culture, protein sample preparation, and nondenaturing micro 2DE</title><p>The materials, the procedures of HBSMC culture, the preparation and the nondenaturing micro 2DE of the soluble protein fraction of HBSMC proteins were performed as previously described <xref rid="elps5538-bib-0001" ref-type="bibr">1</xref>.</p></sec><sec id="elps5538-sec-0040" disp-level="2"><label>2.2.</label><title>Coelectrophoresis of HBSMC soluble proteins with plasma proteins and LMW calibration proteins</title><p>The estimation of apparent p<italic>I</italic> and apparent mass of HBSMC proteins on the nondenaturing 2DE gel was done using the following procedure. A 10‐μL aliquot (<italic>ca</italic>. 160 μg protein) of the fraction of HBSMC soluble protein, which contained 2 mM EDTA, 1 mM PMSF, and 12% w/v glycerol, was mixed with 1 μL human plasma (containing 40% w/v sucrose) and the mixture was applied on the top (basic end) of an agarose IEF micro column gel (1.4 mm id × 47 mm length) that contained 1% w/v agarose and 5% v/v of Pharmalyte pH 3–10 (20‐fold dilution of the commercial solution). The catholyte was 0.04 M NaOH‐0.01 M NaCl and the anolyte was 0.01 M phosphoric acid, both precooled in ice water. IEF was run at 0.12 mA/gel constant current until the voltage increased to 300 V (about 23 min) and then continued at 300 V constant voltage for 25 min. The IEF gel was extruded by water pressure onto a glass plate and the acidic end of the gel was cut off to give a final length of 37 mm, then the gel was transferred onto the top of a polyacrylamide micro slab gel (4.2–17.85% T linear gradient, 5% C, 42 mm high × 38 mm wide × 1 mm thick), where a 100‐μL aliquot of a 0.01 M Tris‐0.02 M glycine buffer (pH 9.0) was added beforehand. A solution of low molecular weight (LMW) calibration proteins (GE Healthcare, Little Chalfont, UK) (0.576 μg/μL), supplemented with 40% w/v sucrose, was applied at the both ends of the IEF gel (each 4 μL) and on the IEF gel along the length of the gel (10 μL) and the second‐dimension electrophoresis was run using a 0.05 M Tris‐0.10 M glycine buffer (pH 9.0) at 10 mA/gel constant current and stopped 45 min after the line of BPB migrated out of the gel bottom (37 min) (totally 82 min). The micro 2DE gel after CBB staining was shown in Fig. <xref rid="elps5538-fig-0001" ref-type="fig">1</xref>A.</p><fig id="elps5538-fig-0001" position="float" xml:lang="en"><?disp-level 3?><label>Figure 1</label><caption><p>The procedure to estimate apparent masses of HBSMC soluble proteins on a nondenaturing micro 2DE gel that was subjected to grid gel‐cutting. (A) A nondenaturing micro 2DE gel obtained by coelectrophoresis of HBSMC soluble proteins and human plasma proteins in the step of IEF and further coelectrophoresis with LMW calibration proteins in the step of gradient gel electrophoresis, after CBB staining (details are described in Section <xref rid="elps5538-sec-0040" ref-type="sec">2.2</xref>). (B) A standard curve of apparent mass versus migration distance was prepared from the result in (A), using the following data points: human plasma low‐density lipoprotein (LDL, 1000 kDa), α2‐macroglobulin (a2M, 500 kDa), haptoglobin 2‐2 polymer (Hp 2‐2, the smallest polymer in the polymer series, 170 kDa), rabbit muscle phosphorylase b (PhB, 97 kDa), bovine serum albumin (Alb, 66 kDa), chicken egg ovalbumin (Ova, 45 kDa) and bovine erythrocyte carbonic anhydrase (CA, 30 kDa). Apparent masses of the 36 rows of the grid of the gel cutting, from M1 to M36 <xref rid="elps5538-bib-0001" ref-type="bibr">1</xref>, were read out from (B) and indicated beside the squares in (A). The band shape of human plasma immunoglobulin G (IgG, 150 kDa), as indicated by the dotted line in (A), was used to estimate the degree of the retardation of basic proteins.</p></caption><alternatives><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" id="nlm-graphic-1" xlink:href="ELPS-36-1991-g001.jpg"><?cloudpmc-path blobs/ce9b/5157777/554d2bfd8f90/ELPS-36-1991-g001.jpg?><?cloudpmc-bucket cdn?><?image-server-status NEVER_LOAD?><?original-height 337?><?original-width 530?><?scaled-height 337?><?scaled-width 530?></graphic><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="thumb" xlink:href="ELPS-36-1991-g001.gif"><?cloudpmc-path blobs/ce9b/5157777/435fc6e65b95/ELPS-36-1991-g001.gif?><?cloudpmc-bucket cdn?></graphic></alternatives></fig></sec><sec id="elps5538-sec-0050" disp-level="2"><label>2.3.</label><title>In‐gel digestion, nano‐UPLC‐MS/MS, and data processing</title><p>The gel pieces were subjected to the procedures of destaining, reduction, alkylation, and in‐gel trypsin digestion, as described in detail in <xref rid="elps5538-bib-0012" ref-type="bibr">12</xref>. The extracted peptides were dried by vacuum centrifugation, reconstituted with a 10 μL‐aliquot of 1% v/v formic acid‐2% v/v acetonitrile and supplemented with a 2 μL‐aliquot of 240 fmol/μL Enolase Digest Standard (Waters Corp., Milford, MA, USA) prepared in 1% v/v formic acid‐2% v/v acetonitrile. Nano‐UPLC (nano‐ultra performance liquid chromatography) separation of the peptides was performed with a nanoACQUITY system equipped with a Symmetry 5 μm C<sub>18</sub>, 180 μm × 20 mm trap column and a UPLC 1.7 μm BEH130 C<sub>18</sub>, 75 μm × 100 mm analytical reverse phase column (all from Waters). On‐line mass spectrometric measurement of the nano‐UPLC‐separated tryptic peptides was performed using a hybrid mass spectrometer coupling ion mobility separation with Q‐TOF analyzer (Synapt G2‐S HDMS, Waters) and equipped with a nano‐ESI source. LC‐MS/MS data were collected in resolution, positive and ion mobility separation‐enhanced MS/MS in data‐independent acquisition mode (HDMS<sup>E</sup>) mode, i.e. ion mobility separation‐enhanced MS/MS in data‐independent acquisition mode, using settings that have been optimized based on the manufacturer recommendations. The nano‐LC‐HDMS<sup>E</sup> data were processed with ProteinLynx Global SERVER (PLGS) <italic>ver</italic>. 2.5.2 (Waters). Data were lock mass calibrated post acquisition. Peak processing parameters were the low energy threshold 20 counts, high energy threshold ten counts and intensity threshold 500 counts. Database searching were performed using the following parameters: database, UniProtKB homo sapiens complete proteome dataset (canonical sequences only, 20 251 entries, 2013‐05‐29); peptide and fragment tolerance, both automatic (typically &lt;10 ppm and &lt;20 ppm, respectively <xref rid="elps5538-bib-0013" ref-type="bibr">13</xref>); maximum of missed trypsin cleavage, 1; maximum protein mass, 600 kDa; fixed modification, carbamidomethylation at Cys; variable modifications, oxidation at Met; false‐positive rate (protein level), 4%. The criteria of protein identification were set as; at least two peptide matches per protein, at least three fragment ion matches per peptide, at least seven fragment ion matches per protein, and protein score above 100. Protein quantities were calculated by PLGS referring to the quantity of the internal standard (tryptic peptides of ENO1_YEAST). Calculated masses of the proteins assigned by nano‐LC‐HDMS<sup>E</sup> were calculated using a laboratory‐made Visual Basic program after searching the information of each protein in Protein Knowledgebase (UniProtKB) and getting the protein chain sequence (without signal peptide and propeptide). Further details of the procedure of nano‐UPLC‐MS/MS were described previously <xref rid="elps5538-bib-0001" ref-type="bibr">1</xref>.</p></sec><sec id="elps5538-sec-0060" disp-level="2"><label>2.4.</label><title>Preparation of protein maps of identified proteins</title><p>One of the aims of grid gel‐cutting was to reconstruct the quantity distribution patterns (native protein maps) of the assigned proteins. The procedures previously used to draw maps of 5 × 18 squares for the analysis of human plasma high‐density lipoprotein and its apolipoproteins <xref rid="elps5538-bib-0012" ref-type="bibr">12</xref> were extended to draw maps of 27 × 36 squares for the analysis of HBSMC soluble proteins using Excel macros; (i) put a tag of the square number to all the data rows that include information on protein name, protein quantity, etc. (about 80 000 rows), (ii) collected all data in one worksheet and sorted them by “protein entry name” as the first priority and “quantity in ng” as the second priority to align each assigned protein in the order of quantity, (iii) copied the data of each assigned protein (maximum 967 lines with different square numbers) to a new worksheet, (iv) converted the values in the column of “quantity in ng” in each protein's worksheet to percent values, setting the highest quantity to be 100%, making a new column of “percent quantity,” (v) drew 27 (wide) × 36 (high) squares to form a grid on each worksheet and to paint each square with a color, the transparency in % of the color was determined by calculating [100%—“percent quantity” of the square]. Using the procedure, the distribution of a protein, in terms of its relative quantity within the grid area, was reconstructed as a color density pattern (a native protein map).</p></sec></sec><sec id="elps5538-sec-0070" disp-level="1"><label>3.</label><title>Results and discussion</title><sec id="elps5538-sec-0080" disp-level="2"><label>3.1.</label><title>Preparation of a standard curve for apparent mass estimation on protein maps</title><p>In order to examine the status of proteins detected on nondenaturing 2DE gels, whether they form protein complexes or not, we used the information obtained by the comparisons between their calculated masses and apparent masses in the analysis of human plasma proteins <xref rid="elps5538-bib-0008" ref-type="bibr">8</xref> and <italic>E. coli</italic> soluble proteins <xref rid="elps5538-bib-0009" ref-type="bibr">9</xref>. So in the analysis of protein complexes in HBSMC soluble proteins, we prepared a standard curve to estimate apparent masses of proteins on the protein maps that have been prepared as described in Section <xref rid="elps5538-sec-0060" ref-type="sec">2.4</xref>. HBSMC soluble proteins were subjected to coelectrophoresis with plasma proteins and LMW calibration proteins as described in Section <xref rid="elps5538-sec-0040" ref-type="sec">2.2</xref> and the micro 2DE gel after CBB staining was shown in Fig. <xref rid="elps5538-fig-0001" ref-type="fig">1</xref>A. The following molecular mass values were employed to prepare the standard curve of apparent mass (Fig. <xref rid="elps5538-fig-0001" ref-type="fig">1</xref>B); human plasma low‐density lipoprotein, 1000 kDa; human plasma α<sub>2</sub>‐macroglobulin (a2M), 500 kDa; human plasma haptoglobin phenotype 2‐2 polymer (Hp 2‐2, the smallest polymer in the polymer series), 170 kDa; rabbit muscle phosphorylase b (PhB), 97 kDa; bovine serum albumin (Alb), 66 kDa; chicken egg ovalbumin (Ova), 45 kDa; bovine erythrocyte carbonic anhydrase, 30 kDa. Then the positions of the 36 rows of the grid‐cut gel area along the apparent mass direction (M1–M36) <xref rid="elps5538-bib-0001" ref-type="bibr">1</xref> were aligned on the pattern of Fig. <xref rid="elps5538-fig-0001" ref-type="fig">1</xref>A using the two protein spots indicated by the outline arrows. In order to facilitate to read out the apparent mass values on each protein map, the positions of M1–M36 were drawn on the standard curve, along the direction of migration distance in Fig. <xref rid="elps5538-fig-0001" ref-type="fig">1</xref>B, the apparent mass values at the center of the squares were calculated, and the values were shown beside the rows in Fig. <xref rid="elps5538-fig-0001" ref-type="fig">1</xref>A. Since we employed nondenaturing conditions in the second dimension run, it is expected that proteins that have p<italic>I</italic> values closer to the pH of the electrophoresis buffer would show smaller mobility. We tried to reduce the effects by using a buffer of pH 9.0 and extended run time of electrophoresis, then the band shape of human plasma IgG was used to estimate the degree of retardation of basic proteins (Fig. <xref rid="elps5538-fig-0001" ref-type="fig">1</xref>A dotted curve). These results were used in judging the possibility of interactions (binding) between proteins, as described in Section <xref rid="elps5538-sec-0110" ref-type="sec">3.4</xref>.</p></sec><sec id="elps5538-sec-0090" disp-level="2"><label>3.2.</label><title>Evaluation of similarity between protein maps</title><p>We obtained native protein maps for the identified 4323 proteins and found each map can be differentiated from others by multiple features including the position of quantity peak in p<italic>I</italic> and apparent mass axes, number of squares in which the protein was detected, degree of concentration (focused or dispersed), shape of the detected square group (lengths in horizontal and vertical directions), etc. Therefore, if two protein maps were quite similar, it might suggest their binding throughout the process of 2DE since the electrophoretic separation was done under nondenaturing conditions. However, in order to examine the similarity between maps we needed to define the “degree of similarity” between a reference map and a sample map. Also, the process must be automated because the comparison would be done between thousands of maps, which means between more than one million map pairs. Therefore, we developed the following method to evaluate the degree of similarity between the maps and to select protein pairs that show similar maps, using Excel macros written in Visual Basic for Applications (VBA). (1) The proteins that have been detected in 3 or more squares within 27 × 36 squares were selected (2328 maps). (2) The quantity values of the squares in a map were normalized setting the highest quantity value to be 1.0. (3) When a map was compared with another map, the smaller normalized quantity from the two corresponding squares was taken and the sum throughout the map was designated as an “overlap score.” (4) Each map was compared against the 2328 protein maps and the largest overlap score, obtained when a map was compared with itself, was set to be 1.0 thus providing 2328 “overlap factors” against each map. (5) The step (4) was repeated for all maps providing 2328 × 2328 matrix of overlap factors and the protein pairs that showed an overlap factor above a threshold value from both protein sides were selected. Figure <xref rid="elps5538-fig-0002" ref-type="fig">2</xref> explains the steps (2) and (3) of the method described above, using simplified model maps of 4 × 4 squares. As shown in Fig. <xref rid="elps5538-fig-0002" ref-type="fig">2</xref>A, when Map 1 is set as a reference and compared with itself, the overlap score and the overlap factor can be calculated to be 3.0 and 1.0, respectively. When Map 2 that has a density peak position different from Map 1 is compared with Map 1 (Fig. <xref rid="elps5538-fig-0002" ref-type="fig">2</xref>B), an overlap score of 1.4 and an overlap factor (1.4/3.0 = ) 0.47 of Map 2 against Map 1 are obtained. Map 3, which has a density peak at the same position as Map 1, provides a high overlap factor of 0.90. The comparison between a pair of maps should be done setting each one as a reference map, as typically shown in Fig. <xref rid="elps5538-fig-0002" ref-type="fig">2</xref>D. When a protein showed wide distribution and the quantity peak position was not clear, a map like Map 4 is obtained and it provides overlap factor of 1.0 against Map 1. However, when Map 4 is set as a reference and compared with Map 1, a much smaller overlap factor of 0.53 is obtained. We tentatively named the method to search similar protein maps as “overlap search.”</p><fig id="elps5538-fig-0002" position="float" xml:lang="en"><?disp-level 3?><label>Figure 2</label><caption><p>The concept of “overlap score” and overlap factor” developed for objective selection of similar protein maps. Simplified model maps of 4 × 4 squares were used to illustrate the steps of the calculation of “overlap score” and “overlap factor.” (A) When Map 1 is set as a reference and compared with itself, overlap score and overlap factor can be calculated to be 3.0 and 1.0, respectively. (B) When Map 2 that has a density peak position different from Map 1 is compared with Map 1, an overlap score of 1.4 and an overlap factor of (1.4/3.0 = ) 0.47 are obtained. (C) Map 3 that has a density peak at the same position as Map 1 provides a high overlap factor of 0.90. (D) When a protein showed wide distribution and the quantity peak position was not as clear as in Map 4, it provides an overlap factor of 1.0 against Map 1. However, when Map 4 is set as a reference and compared with Map 1, a much smaller overlap factor of 0.53 is obtained. Therefore, the comparison between a pair of maps should be done setting each one as a reference map.</p></caption><alternatives><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" id="nlm-graphic-3" xlink:href="ELPS-36-1991-g002.jpg"><?cloudpmc-path blobs/ce9b/5157777/7a3b78e90104/ELPS-36-1991-g002.jpg?><?cloudpmc-bucket cdn?><?image-server-status NEVER_LOAD?><?original-height 402?><?original-width 530?><?scaled-height 402?><?scaled-width 530?></graphic><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="thumb" xlink:href="ELPS-36-1991-g002.gif"><?cloudpmc-path blobs/ce9b/5157777/b322b7aade71/ELPS-36-1991-g002.gif?><?cloudpmc-bucket cdn?></graphic></alternatives></fig></sec><sec id="elps5538-sec-0100" disp-level="2"><label>3.3.</label><title>Application of overlap search to 2328 protein maps</title><p>Figure <xref rid="elps5538-fig-0003" ref-type="fig">3</xref> illustrates the steps (4) and (5) of the method described in Section <xref rid="elps5538-sec-0090" ref-type="sec">3.2</xref>, using proteasome subunit alpha type 1 (PSA1_HUMAN) as an example. When the map of PSA1 was set as a reference and compared with the 2328 maps, overlap factors were obtained as shown in Fig. <xref rid="elps5538-fig-0003" ref-type="fig">3</xref>. The area around PSA1 showed proteins with high overlap scores against PSA1 and the area was expanded as Fig. <xref rid="elps5538-fig-0003" ref-type="fig">3</xref>. The overlap factor of PSA1 was 1.0 because it was compared with itself, and there were a series of proteins that showed high overlap factors (PSA2–PSA7 and PSB1–PSB8) in this area. The comparisons were repeated setting each of the 2328 maps and the values of overlap factors comprised a 2328 × 2328 matrix, in which the overlap factors shown in Fig. <xref rid="elps5538-fig-0003" ref-type="fig">3</xref>A formed one of the rows. Figure <xref rid="elps5538-fig-0003" ref-type="fig">3</xref>C shows an overlap factor matrix around PSA1, specially prepared to illustrate the concept of the 2328 × 2328 matrix. It visualized the presence of many protein pairs with a high overlap factor (a square densely colored) from both sides of the proteins, such as PSA2 against PSA1 (the value at row “PSA1” and column “PSA2”) and PSA1 against PSA2 (the value at row “PSA2” and column “PSA1”). The maps of 16 proteins, PSA1 to PSA7 and PSB1 to PSB9, were shown in Fig. <xref rid="elps5538-fig-0003" ref-type="fig">3</xref>D in order to correlate the matrix with actual protein maps. Each protein in the group of 15 proteins, PSA1–PSA7 and PSB1–PSB8, formed a protein pair with at least one of the other 14 proteins with high overlap factors. However, PSB9 did not show high overlap factors when each of the 15 proteins was set as a reference (Fig. <xref rid="elps5538-fig-0003" ref-type="fig">3</xref>C, the values at column “PSB9”), although the map of PSB9 suggested that the protein might comprise a complex together with the 15 proteins. The results of low overlap factors might be caused by the relatively lower quantity of PSB9 compared with others (about 1/90 to 1/5), which was around the detection limit of the apparatus for each square, then the quantity distribution map was not drawn correctly.</p><fig id="elps5538-fig-0003" position="float" xml:lang="en"><?disp-level 3?><label>Figure 3</label><caption><p>Explanation of the method to find similar protein maps using the steps described in Section <xref rid="elps5538-sec-0100" ref-type="sec">3.3</xref>. (A) The protein map of proteasome subunit alpha type 1 (PSA1_HUMAN) was set as a reference map and overlap factors against 2328 protein maps that had three or more detected squares were calculated and plotted. The x coordinates are the numbers of the 2328 proteins sorted by names in alphabetic order. (B) The area around PSA1 in (A) was expanded and the entry names of proteins were shown. The overlap factor of PSA1 was 1.0 because it was compared against itself. (C) The calculation results like in (A) were accumulated setting each of the 2328 maps forming a 2328 × 2328 matrix of overlap factors, but here only a matrix around PSA1 was shown to illustrate the concept of the overlap factor matrix. For simplicity, the value of overlap factor in each square was replaced with a color density. (D) (on next page) In order to correlate the matrix in (C) with actual protein maps, the maps of 16 proteins, PSA1–PSA7 and PSB1–PSB9, were shown. Each map was added with the UniProt protein entry name (without “_HUMAN”), number of squares detected, percent abundance against the total protein quantity within the grid area, and mass calculated from the amino acid sequence. Details are described in Section <xref rid="elps5538-sec-0100" ref-type="sec">3.3</xref>.</p></caption><alternatives><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" id="nlm-graphic-5" xlink:href="ELPS-36-1991-g003.jpg"><?cloudpmc-path blobs/ce9b/5157777/a6206eb4e141/ELPS-36-1991-g003.jpg?><?cloudpmc-bucket cdn?><?image-server-status NEVER_LOAD?><?original-height 576?><?original-width 263?><?scaled-height 576?><?scaled-width 263?></graphic><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="thumb" xlink:href="ELPS-36-1991-g003.gif"><?cloudpmc-path blobs/ce9b/5157777/0f954b872fa7/ELPS-36-1991-g003.gif?><?cloudpmc-bucket cdn?></graphic></alternatives></fig><p>Fourteen proteins, PSA1–PSA7 and PSB1–PSB7, showed a similar quantity level as shown in Fig. <xref rid="elps5538-fig-0003" ref-type="fig">3</xref>D. Since these proteins have similar calculated masses, these results suggested that they might form an equimolar complex. In fact, search in UniProtKB provided the description that these 14 proteins comprise the 20S proteasome core with (14 × 2 =) 28 subunits that are arranged in four stacked rings, resulting in a barrel‐shaped structure <xref rid="elps5538-bib-0014" ref-type="bibr">14</xref>. Also, it was described that PSB5 and PSB6 can be replaced by PSB8 and PSB9, respectively, which explained the relatively lower quantities of these two compared with the other 14 proteins. All of the 16 proteins showed apparent mass values about 450 kDa at their distribution center and the mass of 20S proteasome core could be calculated from the calculated masses of the subunits to be 669.2 kDa. The discrepancy might be explained that the subunits are compactly stacked to apparently show a smaller mass value than calculated. In our results, the regulatory subunits of proteasome showed map patterns different from the core subunits (Section <xref rid="elps5538-sec-0110" ref-type="sec">3.4</xref>). We speculate that 26S proteasomes were decomposed into two parts in the course of cell disruption (sonication).</p></sec><sec id="elps5538-sec-0110" disp-level="2"><label>3.4.</label><title>Selection of similar protein map pairs and database search</title><p>As described in Section <xref rid="elps5538-sec-0100" ref-type="sec">3.3</xref>, we prepared a 2328 × 2328 matrix of overlap factors and we could decide any threshold value of overlap factors to choose similar protein map pairs. When the threshold values were set at 0.50, 0.60, 0.65, 0.70, 0.75, and 0.80, the number of selected protein pairs were 1904, 724, 431, 241, 132, and 56, respectively. It was expected that the higher the threshold value the higher the ratio of reported protein complexes within the selected protein pairs. However, since we aimed to evaluate the method of overlap search not only to confirm reported protein complexes but also to predict possible protein complexes, a threshold of overlap factor 0.65 from both sides of the proteins, which we judged would cover most of the candidate protein pairs, was tentatively decided. The number of protein pairs above the threshold 0.65 was 431 and they were selected out of ((2328 × 2328 – 2328)/2 =) 2 708 628 protein pairs. Each of the protein in the 431 protein pairs were examined in the sections “Function” and “Interaction/Subunit structure” of the database UniProtKB and we found 301 protein pairs were described to form protein complexes. These results strongly suggested that the overlap search of native protein maps would be useful in visualizing and confirming the presence of protein complexes. Also, the selected threshold value was proved to be appropriate to cover the candidate protein maps pairs. The results of the search in UniProtKB were summarized in Supporting Information 1 and 2. The 301 protein pairs were reported to comprise 35 human protein complexes, as summarized in Table <xref rid="elps5538-tbl-0001" ref-type="table">1</xref>. Then we further examined the remaining 130 protein pairs in STRING, a database of known and predicted protein interactions (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://string-db.org/" ext-link-type="uri">http://string‐db.org/</ext-link>), in order to expand the search from confirmed description of binding in UniProtKB to predicted description of binding in STRING. Although the number of human proteins covered in STRING was smaller than UniProtKB, STRING has the search function “multiple names” that was convenient to search known and predicted interactions between a pair of proteins. Within 130 protein pairs, only one pair of proteins, cartilage‐associated protein (CRTAP) and prolyl 3‐hydroxylase 1 (P3H1), showed a high score in STRING search on the possibility of binding and a paper that reported a three‐protein complex between the two proteins and cyclophilin B (peptidyl‐prolyl cis‐trans isomerase B, PPIB) in chicken <xref rid="elps5538-bib-0015" ref-type="bibr">15</xref> was found. Then we reexamined the maps of the three proteins and found PPIB was also detected at the positions of CRTAP and P3H1, but PPIB also distributed at a basic and high‐apparent mass region that resulted in the overlap factors under the threshold against CRTAP and P3H1. This complex was also shown in Table <xref rid="elps5538-tbl-0001" ref-type="table">1</xref>, because we judged that the presence of the three‐protein complex in HBSMC is highly probable (see also File40 in Supporting Information 2). The positions of the protein complexes listed in Table <xref rid="elps5538-tbl-0001" ref-type="table">1</xref> were illustrated in Fig. <xref rid="elps5538-fig-0004" ref-type="fig">4</xref>. Some of the complexes were not shown in Fig. <xref rid="elps5538-fig-0004" ref-type="fig">4</xref> since it was difficult to directly illustrate their distribution patterns, and details of all the protein complexes were given in Supporting Information 1 and 2. The 129 protein pairs without description on complex formation were further examined on the possibility of complex formation, mainly by the comparisons of their calculated masses and apparent masses, since a protein complex would show an apparent mass value close to the sum of the calculated masses of the two proteins. We tentatively proposed that 50 protein pairs out of the 129 pairs do not form complexes, but as for the remaining 79 pairs we could not get enough information in UniProtKB to judge the presence or absence of their binding. The results of protein map comparisons, database search, and the comparisons of apparent mass and calculated mass, were summarized in a file for each protein pair or protein group as Supporting Information 2. Although each protein map provided information on the state of the protein as homodimer or homooligomer by comparing its apparent mass value with its calculated mass, we focused on the method of overlap search between multiple protein maps and the information was not summarized in this paper. These results will be described in detail elsewhere.</p><table-wrap id="elps5538-tbl-0001" position="float" xml:lang="en"><?disp-level 3?><label>Table 1</label><caption><p>Summary of the search of complex formation in database UniProtKB on the 431 protein pairs that showed overlap factor above 0.65 for each other</p></caption><table frame="hsides" rules="groups"><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/><thead><tr><th align="left" rowspan="1" colspan="1">Protein</th><th align="left" rowspan="1" colspan="1"/><th align="left" rowspan="1" colspan="1"/><th align="left" rowspan="1" colspan="1">File number in</th><th align="left" rowspan="1" colspan="1"/></tr><tr><th align="left" rowspan="1" colspan="1">complex</th><th align="left" rowspan="1" colspan="1">Entry names of searched</th><th align="left" rowspan="1" colspan="1">Name of protein</th><th align="left" rowspan="1" colspan="1">Supporting</th><th align="left" rowspan="1" colspan="1">Reference</th></tr><tr style="border-bottom:solid 1px #000000"><th align="left" rowspan="1" colspan="1">number</th><th align="left" rowspan="1" colspan="1">protein couple(s)<xref rid="elps5538-tbl1-note-0001" ref-type="table-fn"><sup>a</sup></xref>
+</th><th align="left" rowspan="1" colspan="1">complex in UniProtKB</th><th align="left" rowspan="1" colspan="1">Information 2<xref rid="elps5538-tbl1-note-0002" ref-type="table-fn"><sup>b</sup></xref>
+</th><th align="left" rowspan="1" colspan="1">number<xref rid="elps5538-tbl1-note-0003" ref-type="table-fn"><sup>c</sup></xref>
+</th></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">PSA1, PSA2, PSA3, PSA4, PSA5, PSA6, PSA7, PSB1, PSB2, PSB3, PSB4, PSB5, PSB6, PSB7, PSB8</td><td align="left" rowspan="1" colspan="1">26S proteasome 20S core</td><td align="left" rowspan="1" colspan="1">File10, File51,File105</td><td align="left" rowspan="1" colspan="1">
+<xref rid="elps5538-bib-0014" ref-type="bibr">14</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">2</td><td align="left" rowspan="1" colspan="1">ADRM1, ECM29, PRS4, PRS6A, PRS6B, PRS8, PRS10, PSD7,PSD12, PSD13, PSDE, PSMD1, PSMD3, PSMD6, PSMD8, UCHL5</td><td align="left" rowspan="1" colspan="1">26S proteasome / 19S regulatory subunit</td><td align="left" rowspan="1" colspan="1">File107</td><td align="left" rowspan="1" colspan="1">
+<xref rid="elps5538-bib-0014" ref-type="bibr">14</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">3</td><td align="left" rowspan="1" colspan="1">ICT1, RM15</td><td align="left" rowspan="1" colspan="1">39S ribosome mitochondria</td><td align="left" rowspan="1" colspan="1">File81</td><td align="left" rowspan="1" colspan="1">
+<xref rid="elps5538-bib-0016" ref-type="bibr">16</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">4</td><td align="left" rowspan="1" colspan="1">AP2A1, AP2M1</td><td align="left" rowspan="1" colspan="1">Adaptor protein complex 2 (AP‐2)</td><td align="left" rowspan="1" colspan="1">File17</td><td align="left" rowspan="1" colspan="1">
+<xref rid="elps5538-bib-0017" ref-type="bibr">17</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">5</td><td align="left" rowspan="1" colspan="1">ARL2, TBCD</td><td align="left" rowspan="1" colspan="1">ARL2‐TBCD complex</td><td align="left" rowspan="1" colspan="1">File19</td><td align="left" rowspan="1" colspan="1">
+<xref rid="elps5538-bib-0018" ref-type="bibr">18</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">6</td><td align="left" rowspan="1" colspan="1">ARP2, ARP3, ARPC2, ARPC3, ARPC4</td><td align="left" rowspan="1" colspan="1">Arp2/3 complex</td><td align="left" rowspan="1" colspan="1">File20</td><td align="left" rowspan="1" colspan="1">
+<xref rid="elps5538-bib-0019" ref-type="bibr">19</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">7</td><td align="left" rowspan="1" colspan="1">BRE1A, BRE1B</td><td align="left" rowspan="1" colspan="1">BRE1 complex</td><td align="left" rowspan="1" colspan="1">File24</td><td align="left" rowspan="1" colspan="1">
+<xref rid="elps5538-bib-0020" ref-type="bibr">20</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">8</td><td align="left" rowspan="1" colspan="1">CAN2, CPNS1</td><td align="left" rowspan="1" colspan="1">Calpain</td><td align="left" rowspan="1" colspan="1">File25</td><td align="left" rowspan="1" colspan="1">
+<xref rid="elps5538-bib-0021" ref-type="bibr">21</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">9</td><td align="left" rowspan="1" colspan="1">COPA, COPB, COPB2, COPG1, COPZ1</td><td align="left" rowspan="1" colspan="1">Coatomer complex</td><td align="left" rowspan="1" colspan="1">File39</td><td align="left" rowspan="1" colspan="1">
+<xref rid="elps5538-bib-0022" ref-type="bibr">22</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">10</td><td align="left" rowspan="1" colspan="1">COMD5, COMD7, COMDA, DSCR3</td><td align="left" rowspan="1" colspan="1">COMM domain protein complex</td><td align="left" rowspan="1" colspan="1">File38</td><td align="left" rowspan="1" colspan="1">
+<xref rid="elps5538-bib-0023" ref-type="bibr">23</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">11</td><td align="left" rowspan="1" colspan="1">CND1, CND2</td><td align="left" rowspan="1" colspan="1">Condensin complex</td><td align="left" rowspan="1" colspan="1">File37</td><td align="left" rowspan="1" colspan="1">
+<xref rid="elps5538-bib-0024" ref-type="bibr">24</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">12</td><td align="left" rowspan="1" colspan="1">CSN1, CSN2, CSN3, CSN5, CSN6, CSN7A, CSN8</td><td align="left" rowspan="1" colspan="1">COP9 signalosome complex</td><td align="left" rowspan="1" colspan="1">File41</td><td align="left" rowspan="1" colspan="1">
+<xref rid="elps5538-bib-0025" ref-type="bibr">25</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">13</td><td align="left" rowspan="1" colspan="1">XRCC5, XRCC6</td><td align="left" rowspan="1" colspan="1">DNA‐dependent protein kinase complex DNA‐PK</td><td align="left" rowspan="1" colspan="1">File138</td><td align="left" rowspan="1" colspan="1">
+<xref rid="elps5538-bib-0026" ref-type="bibr">26</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">14</td><td align="left" rowspan="1" colspan="1">EF1B, EF1G</td><td align="left" rowspan="1" colspan="1">EF‐1 complex</td><td align="left" rowspan="1" colspan="1">File53</td><td align="left" rowspan="1" colspan="1">
+<xref rid="elps5538-bib-0027" ref-type="bibr">27</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">15</td><td align="left" rowspan="1" colspan="1">VPS25, VPS36</td><td align="left" rowspan="1" colspan="1">Endosomal sorting complex required for transport II (ESCRT‐II)</td><td align="left" rowspan="1" colspan="1">File86</td><td align="left" rowspan="1" colspan="1">
+<xref rid="elps5538-bib-0028" ref-type="bibr">28</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">16</td><td align="left" rowspan="1" colspan="1">(STAM2, STAM1, HGS)</td><td align="left" rowspan="1" colspan="1">ESCRT‐0 complex</td><td align="left" rowspan="1" colspan="1">File44</td><td align="left" rowspan="1" colspan="1">
+<xref rid="elps5538-bib-0029" ref-type="bibr">29</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">17</td><td align="left" rowspan="1" colspan="1">IF2A, IF2B, IF2G</td><td align="left" rowspan="1" colspan="1">Eukaryotic translation initiation factor 2</td><td align="left" rowspan="1" colspan="1">File82</td><td align="left" rowspan="1" colspan="1">
+<xref rid="elps5538-bib-0030" ref-type="bibr">30</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">18</td><td align="left" rowspan="1" colspan="1">EIF3A, EIF3E, EIF3F</td><td align="left" rowspan="1" colspan="1">Eukaryotic translation initiation factor 3 (eIF‐3) complex</td><td align="left" rowspan="1" colspan="1">File57</td><td align="left" rowspan="1" colspan="1">
+<xref rid="elps5538-bib-0031" ref-type="bibr">31</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">19</td><td align="left" rowspan="1" colspan="1">MGN, RBM8A</td><td align="left" rowspan="1" colspan="1">Exon junction complex (EJC)</td><td align="left" rowspan="1" colspan="1">File91</td><td align="left" rowspan="1" colspan="1">
+<xref rid="elps5538-bib-0032" ref-type="bibr">32</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">20</td><td align="left" rowspan="1" colspan="1">FRIH, FRIL</td><td align="left" rowspan="1" colspan="1">Ferritin 24 mer</td><td align="left" rowspan="1" colspan="1">File66</td><td align="left" rowspan="1" colspan="1">
+<xref rid="elps5538-bib-0033" ref-type="bibr">33</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">21</td><td align="left" rowspan="1" colspan="1">RRAGA, RRAGC</td><td align="left" rowspan="1" colspan="1">Rag complex</td><td align="left" rowspan="1" colspan="1">File124</td><td align="left" rowspan="1" colspan="1">
+<xref rid="elps5538-bib-0034" ref-type="bibr">34</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">22</td><td align="left" rowspan="1" colspan="1">ETFA, ETFB</td><td align="left" rowspan="1" colspan="1">ETFA and ETFB</td><td align="left" rowspan="1" colspan="1">File60</td><td align="left" rowspan="1" colspan="1">
+<xref rid="elps5538-bib-0035" ref-type="bibr">35</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">23</td><td align="left" rowspan="1" colspan="1">PDIA3, PDIA6</td><td align="left" rowspan="1" colspan="1">Large shaperon complex</td><td align="left" rowspan="1" colspan="1">File98</td><td align="left" rowspan="1" colspan="1">
+<xref rid="elps5538-bib-0036" ref-type="bibr">36</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">24</td><td align="left" rowspan="1" colspan="1">MCM6, MCM7</td><td align="left" rowspan="1" colspan="1">MCM complex</td><td align="left" rowspan="1" colspan="1">File90</td><td align="left" rowspan="1" colspan="1">
+<xref rid="elps5538-bib-0037" ref-type="bibr">37</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">25</td><td align="left" rowspan="1" colspan="1">DDX3X, DHX9</td><td align="left" rowspan="1" colspan="1">mRNP complex</td><td align="left" rowspan="1" colspan="1">File46</td><td align="left" rowspan="1" colspan="1">
+<xref rid="elps5538-bib-0038" ref-type="bibr">38</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">26</td><td align="left" rowspan="1" colspan="1">SYEP, SYIC</td><td align="left" rowspan="1" colspan="1">Multisynthetase complex</td><td align="left" rowspan="1" colspan="1">File131</td><td align="left" rowspan="1" colspan="1">
+<xref rid="elps5538-bib-0039" ref-type="bibr">39</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">27</td><td align="left" rowspan="1" colspan="1">UBA3, ULA1</td><td align="left" rowspan="1" colspan="1">NEDD8‐activating enzyme E1</td><td align="left" rowspan="1" colspan="1">File134</td><td align="left" rowspan="1" colspan="1">
+<xref rid="elps5538-bib-0040" ref-type="bibr">40</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">28</td><td align="left" rowspan="1" colspan="1">CRTAP, P3H1</td><td align="left" rowspan="1" colspan="1">Newly proposed in human<xref rid="elps5538-tbl1-note-0004" ref-type="table-fn"><sup>d</sup></xref>
+</td><td align="left" rowspan="1" colspan="1">File40</td><td align="left" rowspan="1" colspan="1">
+<xref rid="elps5538-bib-0015" ref-type="bibr">15</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">29</td><td align="left" rowspan="1" colspan="1">NU205, NUP93</td><td align="left" rowspan="1" colspan="1">Nuclear pore complex (NPC)</td><td align="left" rowspan="1" colspan="1">File95</td><td align="left" rowspan="1" colspan="1">
+<xref rid="elps5538-bib-0041" ref-type="bibr">41</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">30</td><td align="left" rowspan="1" colspan="1">HDAC2, MTA2</td><td align="left" rowspan="1" colspan="1">Nucleosome remodeling and histone deacetylation (NuRD) complex</td><td align="left" rowspan="1" colspan="1">File76</td><td align="left" rowspan="1" colspan="1">
+<xref rid="elps5538-bib-0042" ref-type="bibr">42</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">31</td><td align="left" rowspan="1" colspan="1">VATD, VATE1, VATG1, VATH</td><td align="left" rowspan="1" colspan="1">Peripheral V1 complex of vacuolar ATPase</td><td align="left" rowspan="1" colspan="1">File137</td><td align="left" rowspan="1" colspan="1">
+<xref rid="elps5538-bib-0043" ref-type="bibr">43</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">32</td><td align="left" rowspan="1" colspan="1">RL3, RL4, RL6, RL7, RL7A, RL8, RL9, RL11, RL13, RL14,RL15, RL18, RL19, RL26, RL27A, RL28, RL29, RL31,RL32, RL35, RL36L, RS2, RS3A, RS4X, RS6, RS9, RS10,</td><td align="left" rowspan="1" colspan="1">80S ribosome</td><td align="left" rowspan="1" colspan="1">File113 ‐ File122, File125 ‐ File127</td><td align="left" rowspan="1" colspan="1">
+<xref rid="elps5538-bib-0044" ref-type="bibr">44</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">32</td><td align="left" rowspan="1" colspan="1">RS13, RS14, RS15A, RS16, RS18, RS19, RS23, RS25</td><td align="left" rowspan="1" colspan="1">80S ribosome</td><td align="left" rowspan="1" colspan="1">File113 ‐ File122, File125 ‐ File127</td><td align="left" rowspan="1" colspan="1">
+<xref rid="elps5538-bib-0044" ref-type="bibr">44</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">33</td><td align="left" rowspan="1" colspan="1">POP1, RPP30</td><td align="left" rowspan="1" colspan="1">RNase P</td><td align="left" rowspan="1" colspan="1">File101</td><td align="left" rowspan="1" colspan="1">
+<xref rid="elps5538-bib-0045" ref-type="bibr">45</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">34</td><td align="left" rowspan="1" colspan="1">SEP11, SEPT2, SEPT7</td><td align="left" rowspan="1" colspan="1">Septin complex</td><td align="left" rowspan="1" colspan="1">File129</td><td align="left" rowspan="1" colspan="1">
+<xref rid="elps5538-bib-0046" ref-type="bibr">46</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">35</td><td align="left" rowspan="1" colspan="1">TCPA, TCPB, TCPD, TCPE, TCPG, TCPH, TCPQ, TCPZ</td><td align="left" rowspan="1" colspan="1">T‐complex protein 1</td><td align="left" rowspan="1" colspan="1">File133</td><td align="left" rowspan="1" colspan="1">
+<xref rid="elps5538-bib-0047" ref-type="bibr">47</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">36</td><td align="left" rowspan="1" colspan="1">PRP8, U520</td><td align="left" rowspan="1" colspan="1">U4/U6‐U5 tri‐snRNP complex</td><td align="left" rowspan="1" colspan="1">File104</td><td align="left" rowspan="1" colspan="1">
+<xref rid="elps5538-bib-0048" ref-type="bibr">48</xref>
+</td></tr></tbody></table><table-wrap-foot><fn id="elps5538-tbl1-note-0001"><label>a</label><p>The entry names (without the part "_HUMAN") of the protein couples searched in UniProtKB. When two or more couples were described to compose one protein complex, their entry names were combined in one cell.</p></fn><fn id="elps5538-tbl1-note-0002"><label>b</label><p>Details of the database search results were summarized as files as provided in Supporting Information 2.</p></fn><fn id="elps5538-tbl1-note-0003"><label>c</label><p>One paper that described the subunit structure of the corresponding protein complex was cited.</p></fn><fn id="elps5538-tbl1-note-0004"><label>d</label><p>This complex was described in the database for chicken, but not in human.</p></fn></table-wrap-foot></table-wrap><fig id="elps5538-fig-0004" position="float" xml:lang="en"><?disp-level 3?><label>Figure 4</label><caption><p>The positions of the Table <xref rid="elps5538-tbl-0001" ref-type="table">1</xref>‐listed protein complexes on the nondenaturing 2D gel. The numbers correspond to the number of the protein complexes in Table <xref rid="elps5538-tbl-0001" ref-type="table">1</xref> (Column 1). 1, 26S proteasome 20S core; 2, 26S proteasome regulatory subunit; 3, 39S ribosome mitochondria; 4, adaptor protein complex 2 (AP‐2); 5, ARL2‐TBCD complex; 6, Arp2/3 complex; 7, BRE1 complex; (8, Calpain); 9, coatomer complex; 10, COMM domain protein complex; 11, condensin complex; 12, COP9 signalosome complex; (13, DNA‐dependent protein kinase complex DNA‐PK); (14, EF‐1 complex); 15, endosomal sorting complex required for transport II (ESCRT‐II); (16, ESCRT‐0 complex); 17, eukaryotic translation initiation factor 2; 18, eukaryotic translation initiation factor 3; 19, exon junction complex; 20, ferritin 24 mer; (21, Rag complex); 22, ETFA and ETFB; (23, large shaperon complex); (24, MCM complex); (25, mRNP complex); (26, multisynthetase complex); 27, NEDD8‐activating enzyme E1; 28, CRTAP‐P3H1‐PPIB complex (newly proposed in human); 29, nuclear pore complex (NPC); (30, nucleosome remodeling and histone deacetylation (NuRD) complex); 31, Peripheral V1 complex of vacuolar ATPase; 32, 80S ribosome, 33, RNase P; 34, septin complex; 35, T‐complex protein 1; (36, U4/U6‐U5 tri‐snRNP complex). The complexes in the parentheses are not shown in the figure for their complex distribution patterns. Details on all the protein complexes were given in Supporting Information 1 and 2.</p></caption><alternatives><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" id="nlm-graphic-7" xlink:href="ELPS-36-1991-g004.jpg"><?cloudpmc-path blobs/ce9b/5157777/233e98ce6d4e/ELPS-36-1991-g004.jpg?><?cloudpmc-bucket cdn?><?image-server-status NEVER_LOAD?><?original-height 405?><?original-width 378?><?scaled-height 405?><?scaled-width 378?></graphic><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="thumb" xlink:href="ELPS-36-1991-g004.gif"><?cloudpmc-path blobs/ce9b/5157777/9df8c0e1d428/ELPS-36-1991-g004.gif?><?cloudpmc-bucket cdn?></graphic></alternatives></fig></sec><sec id="elps5538-sec-0120" disp-level="2"><label>3.5.</label><title>Maps of low‐abundant proteins</title><p>As described in Section <xref rid="elps5538-sec-0090" ref-type="sec">3.2</xref>, we used 2328 protein maps that had three or more detected squares for the overlap search of protein maps, because we judged that the concept of overlap factor would not efficiently work on the comparisons of maps with one or two detected squares. When 1531 protein maps with one detected square were compared with each other on the overlapping of the detected square, 85 maps overlapped at 13 different squares that provided 350 protein pairs. The search option of “multiple search” in STRING was applied to each group of proteins detected in one of the 13 squares, and 15 protein pairs were reported by STRING to show high scores on protein interactions. These results showed that the protein maps with only one detected square also contain information useful in analyzing protein interactions. However, the method of protein map comparison described in Section <xref rid="elps5538-sec-0090" ref-type="sec">3.2</xref>–<xref rid="elps5538-sec-0110" ref-type="sec">3.4</xref> applied to the maps with three or more detected squares provided more concrete information on multiple protein complexes. Further improvements in the sensitivity of protein identification, such as the use of a Fourier transform ion cyclotron resonance mass spectrometer or an Orbitrap mass spectrometer, would enable to detect the low‐abundant proteins in larger numbers of squares and expand the applicability of the overlap search method to all 4323 proteins or more.</p></sec></sec><sec id="elps5538-sec-0130" disp-level="1"><label>4.</label><title>Concluding remarks</title><p>We obtained 4323 native protein maps of HBSMC soluble proteins using a combined method of nondenaturing micro 2DE, grid gel‐cutting, and quantitative LC‐MS/MS. A method to evaluate the degree of similarity between protein maps with three or more detected squares (2328 maps) was developed introducing the concept of “overlap factor” and a matrix of overlap factors (2328 × 2328) was prepared to select protein map pairs with high similarity. Out of the selected 431 pairs, 301 protein pairs were found to be documented in a database UniProtKB to form protein complexes to comprise 35 protein complexes. These results demonstrated that the overlap search method described here enabled simultaneous analysis of multiple cellular protein complexes on nondenaturing 2D gels. Improvements of the sensitivity of LC‐MS/MS system would further expand the applicability of the method in searching cellular protein complexes present in low quantities.</p></sec><sec id="elps5538-sec-0150" disp-level="1"><p>
+<italic>The authors have declared no conflict of interest</italic>.</p></sec><sec id="sec15" disp-level="1"><title>Supporting information</title><supplementary-material id="supplementary-material1" position="float"><caption><p>Summary of the examination of complex formation on the 431 protein pairs which showed overlap factor above 0.65 for each other. Examining UniProtKB Database, we found that 301 protein pairs have been previously described as 35 protein complexes. Further details on the examination process, the protein maps, our comments on the possibility of complex formation, and UniProtKB Database information (on “Function” and “Interaction‐Subunit Structure” ) of the proteins, were summarized as one of the files in Supporting Information 2 (file numbers are shown in Column A) for each protein pair.</p></caption><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ELPS-36-1991-s001.xlsx" mimetype="application" mime-subtype="vnd.openxmlformats-officedocument.spreadsheetml.sheet"><?cloudpmc-path ce9b/5157777/84a0ffab2518/ELPS-36-1991-s001.xlsx?><?cloudpmc-bucket app?><?size 132905?><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material id="supplementary-material2" position="float"><caption><p>Supporting Information 2</p></caption><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ELPS-36-1991-s002.pdf" mimetype="application" mime-subtype="pdf"><?cloudpmc-path ce9b/5157777/6709626720d7/ELPS-36-1991-s002.pdf?><?cloudpmc-bucket app?><?size 6449313?><caption><p>Click here for additional data file.</p></caption></media></supplementary-material></sec><sec id="elps5538-sec-0140" sec-type="ack" disp-level="1"><title>Acknowledgments</title><p>The mass spectrometry proteomic data have been deposited to the ProteomeXchange Consortium (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.proteomexchange.org" ext-link-type="uri">http://www.proteomexchange.org</ext-link>) via the PRIDE partner repository [49] with the dataset identifier PXD001471. The authors would like to thank the PRIDE team for their great help with the data deposition process. This work is financially supported by “National Natural Science Foundation of China 31400798,” “The Fundamental Research Funds for the Central Universities 2013ZM0048,” “Science and Technology Program of Guangzhou, China 2014J4100022,” “Guangdong Province Key Laboratory of Fermentation and Enzyme Engineering Open Fund, China FJ2013002,” and “Ministry of Science and Technology of Guangdong Province, China 2012A080204001.”</p></sec><sec id="notes1" disp-level="1"><sec id="fn-group1" sec-type="fn-group" disp-level="2"><fn-group><fn id="elps5538-note-0002"><p>
+<bold>Colour Online</bold>: See the article online to view Figs. 1–4 in colour.</p></fn></fn-group></sec></sec><sec id="elps5538-bibl-0001" sec-type="ref-list" disp-level="1"><title>5 References</title><sec id="elps5538-bibl-0001_sec2" disp-level="2"><ref-list><ref id="elps5538-bib-0001"><label>1.</label><mixed-citation id="elps5538-cit-0001"><named-content content-type="citation-string">
+
+Jin, Y.
+, 
+Zhang, J.
+, 
+Yuan, Q.
+, 
+Manabe, T.
+, 
+Tan, W.
+, <italic>Electrophoresis</italic>
+2015, in press (DOI <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="10.1002/elps.201400573" ext-link-type="doi">10.1002/elps.201400573</ext-link>).</named-content></mixed-citation></ref><ref id="elps5538-bib-0002"><label>2.</label><mixed-citation id="elps5538-cit-0002"><named-content content-type="citation-string">
+
+Butland, G.
+, 
+Peregrín‐Alvarez, J. M.
+, 
+Li, J.
+, 
+Yang, W.
+, 
+Yang, X.
+, 
+Canadien, V.
+, 
+Starostine, A.
+, 
+Richards, D.
+, 
+Beattie, B.
+, 
+Krogan, N.
+, 
+Davey, M.
+, 
+Parkinson, J.
+, 
+Greenblatt, J.
+, 
+Emili, A.
+, Nature
+2005, 433, 531–537.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1038/nature03239"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="15690043"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Nature&amp;author=G. Butland&amp;author=J. M. Peregrín‐Alvarez&amp;author=J. Li&amp;author=W. Yang&amp;author=X. Yang&amp;volume=433&amp;publication_year=2005&amp;pages=531-537&amp;pmid=15690043&amp;doi=10.1038/nature03239&amp;"/></mixed-citation></ref><ref id="elps5538-bib-0003"><label>3.</label><mixed-citation id="elps5538-cit-0003"><named-content content-type="citation-string">
+
+Krogan, N. J.
+, 
+Cagney, G.
+, 
+Yu, H.
+, 
+Zhong, G.
+, 
+Guo, X.
+, 
+Ignatchenko, A.
+, 
+Li, J.
+, 
+Pu, S.
+, 
+Datta, N.
+, 
+Tikuisis, A. P.
+, 
+Punna, T.
+, 
+Peregrín‐Alvarez, J. M.
+, 
+Shales, M.
+, 
+Zhang, X.
+, 
+Davey, M.
+, 
+Robinson, M. D.
+, 
+Paccanaro, A.
+, 
+Bray, J. E.
+, 
+Sheung, A.
+, 
+Beattie, B.
+, 
+Richards, D. P.
+, 
+Canadien, V.
+, 
+Lalev, A.
+, 
+Mena, F.
+, 
+Wong, P.
+, 
+Starostine, A.
+, 
+Canete, M. M.
+, 
+Vlasblom, J.
+, 
+Wu, S.
+, 
+Orsi, C.
+, 
+Collins, S. R.
+, 
+Chandran, S.
+, 
+Haw, R.
+, 
+Rilstone, J. J.
+, 
+Gandi, K.
+, 
+Thompson, N. J.
+, 
+Musso, G.
+, 
+St Onge, P.
+, 
+Ghanny, S.
+, 
+Lam, M. H.
+, 
+Butland, G.
+, 
+Altaf‐Ul, A. M.
+, 
+Kanaya, S.
+, 
+Shilatifard, A.
+, 
+O'Shea, E.
+, 
+Weissman, J. S.
+, 
+Ingles, C. J.
+, 
+Hughes, T. R.
+, 
+Parkinson, J.
+, 
+Gerstein, M.
+, 
+Wodak, S. J.
+, 
+Emili, A.
+, 
+Greenblatt, J. F.
+, Nature
+2006, 440, 637–643.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1038/nature04670"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="16554755"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Nature&amp;author=N. J. Krogan&amp;author=G. Cagney&amp;author=H. Yu&amp;author=G. Zhong&amp;author=X. Guo&amp;volume=440&amp;publication_year=2006&amp;pages=637-643&amp;pmid=16554755&amp;doi=10.1038/nature04670&amp;"/></mixed-citation></ref><ref id="elps5538-bib-0004"><label>4.</label><mixed-citation id="elps5538-cit-0004"><named-content content-type="citation-string">
+
+Venkatesan, K.
+, 
+Rual, J. F.
+, 
+Vazquez, A.
+, 
+Stelzl, U.
+, 
+Lemmens, I.
+, 
+Hirozane‐Kishikawa, T.
+, 
+Hao, T.
+, 
+Zenkner, M.
+, 
+Xin, X.
+, 
+Goh, K. I.
+, 
+Yildirim, M. A.
+, 
+Simonis, N.
+, 
+Heinzmann, K.
+, 
+Gebreab, F.
+, 
+Sahalie, J. M.
+, 
+Cevik, S.
+, 
+Simon, C.
+, 
+de Smet, A. S.
+, 
+Dann, E.
+, 
+Smolyar, A.
+, 
+Vinayagam, A.
+, 
+Yu, H.
+, 
+Szeto, D.
+, 
+Borick, H.
+, 
+Dricot, A.
+, 
+Klitgord, N.
+, 
+Murray, R. R.
+, 
+Lin, C.
+, 
+Lalowski, M.
+, 
+Timm, J.
+, 
+Rau, K.
+, 
+Boone, C.
+, 
+Braun, P.
+, 
+Cusick, M. E.
+, 
+Roth, F. P.
+, 
+Hill, D. E.
+, 
+Tavernier, J.
+, 
+Wanker, E. E.
+, 
+Barabási, A. L.
+, 
+Vidal, M.
+, Nat. Methods
+2009, 6, 83–90.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1038/nmeth.1280"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC2872561"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="19060904"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Nat. Methods&amp;author=K. Venkatesan&amp;author=J. F. Rual&amp;author=A. Vazquez&amp;author=U. Stelzl&amp;author=I. Lemmens&amp;volume=6&amp;publication_year=2009&amp;pages=83-90&amp;pmid=19060904&amp;doi=10.1038/nmeth.1280&amp;"/></mixed-citation></ref><ref id="elps5538-bib-0005"><label>5.</label><mixed-citation id="elps5538-cit-0005"><named-content content-type="citation-string">
+
+Ewing, R. M.
+, 
+Chu, P.
+, 
+Elisma, F.
+, 
+Li, H.
+, 
+Taylor, P.
+, 
+Climie, S.
+, 
+McBroom‐Cerajewski, L.
+, 
+Robinson, M. D.
+, 
+O'Connor, L.
+, 
+Li, M.
+, 
+Taylor, R.
+, 
+Dharsee, M.
+, 
+Ho, Y.
+, 
+Heilbut, A.
+, 
+Moore, L.
+, 
+Zhang, S.
+, 
+Ornatsky, O.
+, 
+Bukhman, Y. V.
+, 
+Ethier, M.
+, 
+Sheng, Y.
+, 
+Vasilescu, J.
+, 
+Abu‐Farha, M.
+, 
+Lambert, J. P.
+, 
+Duewel, H. S.
+, 
+Stewart, I. I.
+, 
+Kuehl, B.
+, 
+Hogue, K.
+, 
+Colwill, K.
+, 
+Gladwish, K.
+, 
+Muskat, B.
+, 
+Kinach, R.
+, 
+Adams, S. L.
+, 
+Moran, M. F.
+, 
+Morin, G. B.
+, 
+Topaloglou, T.
+, 
+Figeys, D.
+, Mol. Syst. Biol., 2007, 3, 89.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1038/msb4100134"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC1847948"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="17353931"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Mol. Syst. Biol.&amp;author=R. M. Ewing&amp;author=P. Chu&amp;author=F. Elisma&amp;author=H. Li&amp;author=P. Taylor&amp;volume=3&amp;publication_year=2007&amp;pages=89&amp;pmid=17353931&amp;doi=10.1038/msb4100134&amp;"/></mixed-citation></ref><ref id="elps5538-bib-0006"><label>6.</label><mixed-citation id="elps5538-cit-0006"><named-content content-type="citation-string">
+
+Havugimana, P. C.
+, 
+Hart, G. T.
+, 
+Nepusz, T.
+, 
+Yang, H.
+, 
+Turinsky, A. L.
+, 
+Li, Z.
+, 
+Wang, P. I.
+, 
+Boutz, D. R.
+, 
+Fong, V.
+, 
+Phanse, S.
+, 
+Babu, M.
+, 
+Craig, S. A.
+, 
+Hu, P.
+, 
+Wan, C.
+, 
+Vlasblom, J.
+, 
+Dar, V. U.
+, 
+Bezginov, A.
+, 
+Clark, G. W.
+, 
+Wu, G. C.
+, 
+Wodak, S. J.
+, 
+Tillier, E. R.
+, 
+Paccanaro, A.
+, 
+Marcotte, E. M.
+, 
+Emili, A.
+, Cell
+2012, 150, 1068–1081.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.cell.2012.08.011"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC3477804"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="22939629"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Cell&amp;author=P. C. Havugimana&amp;author=G. T. Hart&amp;author=T. Nepusz&amp;author=H. Yang&amp;author=A. L. Turinsky&amp;volume=150&amp;publication_year=2012&amp;pages=1068-1081&amp;pmid=22939629&amp;doi=10.1016/j.cell.2012.08.011&amp;"/></mixed-citation></ref><ref id="elps5538-bib-0007"><label>7.</label><mixed-citation id="elps5538-cit-0007"><named-content content-type="citation-string">
+
+Wessels, H. J.
+, 
+Vogel, R. O.
+, 
+Lightowlers, R. N.
+, 
+Spelbrink, J. N.
+, 
+Rodenburg, R. J.
+, 
+van den Heuvel, L. P.
+, 
+van Gool, A. J.
+, 
+Gloerich, J.
+, 
+Smeitink, J. A.
+, 
+Nijtmans, L. G.
+, PLoS One
+2013, 8, e68340.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1371/journal.pone.0068340"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC3720734"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="23935861"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=PLoS One&amp;author=H. J. Wessels&amp;author=R. O. Vogel&amp;author=R. N. Lightowlers&amp;author=J. N. Spelbrink&amp;author=R. J. Rodenburg&amp;volume=8&amp;publication_year=2013&amp;pages=e68340&amp;pmid=23935861&amp;doi=10.1371/journal.pone.0068340&amp;"/></mixed-citation></ref><ref id="elps5538-bib-0008"><label>8.</label><mixed-citation id="elps5538-cit-0008"><named-content content-type="citation-string">
+
+Manabe, T.
+, 
+Jin, Y.
+, 
+Tani, O.
+, Electrophoresis
+2007, 28, 843–863.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1002/elps.200600389"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="17274101"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Electrophoresis&amp;author=T. Manabe&amp;author=Y. Jin&amp;author=O. Tani&amp;volume=28&amp;publication_year=2007&amp;pages=843-863&amp;pmid=17274101&amp;doi=10.1002/elps.200600389&amp;"/></mixed-citation></ref><ref id="elps5538-bib-0009"><label>9.</label><mixed-citation id="elps5538-cit-0009"><named-content content-type="citation-string">
+
+Manabe, T.
+, 
+Jin, Y.
+
+Electrophoresis
+2010, 31, 2740–2748.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1002/elps.201000165"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="20661946"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Electrophoresis&amp;author=T. Manabe&amp;author=Y. Jin&amp;volume=31&amp;publication_year=2010&amp;pages=2740-2748&amp;pmid=20661946&amp;doi=10.1002/elps.201000165&amp;"/></mixed-citation></ref><ref id="elps5538-bib-0010"><label>10.</label><mixed-citation id="elps5538-cit-0010"><named-content content-type="citation-string">
+
+Manabe, T.
+, 
+Jin, Y.
+, Electrophoresis
+2011, 32, 300–309.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1002/elps.201000443"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="21254129"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Electrophoresis&amp;author=T. Manabe&amp;author=Y. Jin&amp;volume=32&amp;publication_year=2011&amp;pages=300-309&amp;pmid=21254129&amp;doi=10.1002/elps.201000443&amp;"/></mixed-citation></ref><ref id="elps5538-bib-0011"><label>11.</label><mixed-citation id="elps5538-cit-0011"><named-content content-type="citation-string">
+
+Schmidt, F.
+, 
+Schmid, M.
+, 
+Jungblut, P.R.
+, 
+Mattow, J.
+, 
+Facius, A.
+, 
+Pleissner, K‐P.
+, J. Am. Soc. Mass Spectrom.
+2003, 14, 943–956.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/S1044-0305(03)00345-3"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="12954163"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Am. Soc. Mass Spectrom.&amp;author=F. Schmidt&amp;author=M. Schmid&amp;author=P.R. Jungblut&amp;author=J. Mattow&amp;author=A. Facius&amp;volume=14&amp;publication_year=2003&amp;pages=943-956&amp;pmid=12954163&amp;doi=10.1016/S1044-0305(03)00345-3&amp;"/></mixed-citation></ref><ref id="elps5538-bib-0012"><label>12.</label><mixed-citation id="elps5538-cit-0012"><named-content content-type="citation-string">
+
+Jin, Y.
+, 
+Bu, S.
+, 
+Zhang, J.
+, 
+Yuan, Q.
+, 
+Manabe, T.
+, 
+Tan, W.
+, Electrophoresis
+2014, 35, 2055–2064.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1002/elps.201300628"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="24668886"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Electrophoresis&amp;author=Y. Jin&amp;author=S. Bu&amp;author=J. Zhang&amp;author=Q. Yuan&amp;author=T. Manabe&amp;volume=35&amp;publication_year=2014&amp;pages=2055-2064&amp;pmid=24668886&amp;doi=10.1002/elps.201300628&amp;"/></mixed-citation></ref><ref id="elps5538-bib-0013"><label>13.</label><mixed-citation id="elps5538-cit-0013"><named-content content-type="citation-string">
+
+Li, G. Z.
+, 
+Vissers, J. P.
+, 
+Silva, J. C.
+, 
+Golick, D.
+, 
+Gorenstein, M. V.
+, 
+Geromanos, S. J.
+, Proteomics
+2009, 9, 1696–1719.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1002/pmic.200800564"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="19294629"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Proteomics&amp;author=G. Z. Li&amp;author=J. P. Vissers&amp;author=J. C. Silva&amp;author=D. Golick&amp;author=M. V. Gorenstein&amp;volume=9&amp;publication_year=2009&amp;pages=1696-1719&amp;pmid=19294629&amp;doi=10.1002/pmic.200800564&amp;"/></mixed-citation></ref><ref id="elps5538-bib-0014"><label>14.</label><mixed-citation id="elps5538-cit-0014"><named-content content-type="citation-string">
+
+Wang, X.
+, 
+Chen, C. ‐F.
+, 
+Baker, P. R.
+, 
+Chen, P. ‐L.
+, 
+Kaiser, P.
+, 
+Huang, L.
+, Biochemistry
+2007, 46, 3553–3565.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1021/bi061994u"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="17323924"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Biochemistry&amp;author=X. Wang&amp;author=C. ‐F. Chen&amp;author=P. R. Baker&amp;author=P. ‐L. Chen&amp;author=P. Kaiser&amp;volume=46&amp;publication_year=2007&amp;pages=3553-3565&amp;pmid=17323924&amp;doi=10.1021/bi061994u&amp;"/></mixed-citation></ref><ref id="elps5538-bib-0015"><label>15.</label><mixed-citation id="elps5538-cit-0015"><named-content content-type="citation-string">
+
+Ishikawa, Y.
+, 
+Wirz, J.
+, 
+Vranka, J. A.
+, 
+Nagata, K.
+, 
+Bächinger, H. P.
+, J. Biol. Chem.
+2009, 284, 17641–17647.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1074/jbc.M109.007070"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC2719403"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="19419969"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Biol. Chem.&amp;author=Y. Ishikawa&amp;author=J. Wirz&amp;author=J. A. Vranka&amp;author=K. Nagata&amp;author=H. P. Bächinger&amp;volume=284&amp;publication_year=2009&amp;pages=17641-17647&amp;pmid=19419969&amp;doi=10.1074/jbc.M109.007070&amp;"/></mixed-citation></ref><ref id="elps5538-bib-0016"><label>16.</label><mixed-citation id="elps5538-cit-0016"><named-content content-type="citation-string">
+
+Richter, R.
+, 
+Rorbach, J.
+, 
+Pajak, A.
+, 
+Smith, P. M.
+, 
+Wessels, H. J.
+, 
+Huynen, M. A.
+, 
+Smeitink, J. A.
+, 
+Lightowlers, R. N.
+, 
+Chrzanowska‐Lightowlers, Z. M.
+, EMBO J. 2010, 29, 1116–1125.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1038/emboj.2010.14"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC2845271"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="20186120"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=EMBO J&amp;author=R. Richter&amp;author=J. Rorbach&amp;author=A. Pajak&amp;author=P. M. Smith&amp;author=H. J. Wessels&amp;volume=29&amp;publication_year=2010&amp;pages=1116-1125&amp;pmid=20186120&amp;doi=10.1038/emboj.2010.14&amp;"/></mixed-citation></ref><ref id="elps5538-bib-0017"><label>17.</label><mixed-citation id="elps5538-cit-0017"><named-content content-type="citation-string">
+
+Pearse, B. M.
+, 
+Smith, C. J.
+, 
+Owen, D. J.
+, Curr. Opin. Struct. Biol.
+2000, 10, 220–228.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/s0959-440x(00)00071-3"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="10753805"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Curr. Opin. Struct. Biol.&amp;author=B. M. Pearse&amp;author=C. J. Smith&amp;author=D. J. Owen&amp;volume=10&amp;publication_year=2000&amp;pages=220-228&amp;pmid=10753805&amp;doi=10.1016/s0959-440x(00)00071-3&amp;"/></mixed-citation></ref><ref id="elps5538-bib-0018"><label>18.</label><mixed-citation id="elps5538-cit-0018"><named-content content-type="citation-string">
+
+Bhamidipati, A.
+, 
+Lewis, S. A.
+, 
+Cowan, N. J.
+, J. Cell Biol.
+2000, 149, 1087–1096.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1083/jcb.149.5.1087"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC2174823"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="10831612"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Cell Biol.&amp;author=A. Bhamidipati&amp;author=S. A. Lewis&amp;author=N. J. Cowan&amp;volume=149&amp;publication_year=2000&amp;pages=1087-1096&amp;pmid=10831612&amp;doi=10.1083/jcb.149.5.1087&amp;"/></mixed-citation></ref><ref id="elps5538-bib-0019"><label>19.</label><mixed-citation id="elps5538-cit-0019"><named-content content-type="citation-string">
+
+Welch, M. D.
+, 
+Iwamatsu, A.
+, 
+Mitchison, T. J.
+, Nature
+1997, 385, 265–269.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1038/385265a0"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="9000076"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Nature&amp;author=M. D. Welch&amp;author=A. Iwamatsu&amp;author=T. J. Mitchison&amp;volume=385&amp;publication_year=1997&amp;pages=265-269&amp;pmid=9000076&amp;doi=10.1038/385265a0&amp;"/></mixed-citation></ref><ref id="elps5538-bib-0020"><label>20.</label><mixed-citation id="elps5538-cit-0020"><named-content content-type="citation-string">
+
+Zhu, B.
+, 
+Zheng, Y.
+, 
+Pham, A. ‐D.
+, 
+Mandal, S. S.
+, 
+Erdjument‐Bromage, H.
+, 
+Tempst, P.
+, 
+Reinberg, D.
+, Mol. Cell
+2005, 20, 601–611.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.molcel.2005.09.025"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="16307923"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Mol. Cell&amp;author=B. Zhu&amp;author=Y. Zheng&amp;author=A. ‐D. Pham&amp;author=S. S. Mandal&amp;author=H. Erdjument‐Bromage&amp;volume=20&amp;publication_year=2005&amp;pages=601-611&amp;pmid=16307923&amp;doi=10.1016/j.molcel.2005.09.025&amp;"/></mixed-citation></ref><ref id="elps5538-bib-0021"><label>21.</label><mixed-citation id="elps5538-cit-0021"><named-content content-type="citation-string">
+
+Strobl, S.
+, 
+Fernandez‐Catalan, C.
+, 
+Braun, M.
+, 
+Huber, R.
+, 
+Masumoto, H.
+, 
+Nakagawa, K.
+, 
+Irie, A.
+, 
+Sorimachi, H.
+, 
+Bourenkow, G.
+, 
+Bartunik, H.
+, 
+Suzuki, K.
+, 
+Bode, W.
+, Proc. Natl. Acad. Sci. USA
+2000, 97, 588–592.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1073/pnas.97.2.588"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC15374"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="10639123"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Proc. Natl. Acad. Sci. USA&amp;author=S. Strobl&amp;author=C. Fernandez‐Catalan&amp;author=M. Braun&amp;author=R. Huber&amp;author=H. Masumoto&amp;volume=97&amp;publication_year=2000&amp;pages=588-592&amp;pmid=10639123&amp;doi=10.1073/pnas.97.2.588&amp;"/></mixed-citation></ref><ref id="elps5538-bib-0022"><label>22.</label><mixed-citation id="elps5538-cit-0022"><named-content content-type="citation-string">
+
+Lowe, M.
+, 
+Kreis, T. E.
+, J. Biol. Chem.
+1996, 271, 30725–30730.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1074/jbc.271.48.30725"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="8940050"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Biol. Chem.&amp;author=M. Lowe&amp;author=T. E. Kreis&amp;volume=271&amp;publication_year=1996&amp;pages=30725-30730&amp;pmid=8940050&amp;doi=10.1074/jbc.271.48.30725&amp;"/></mixed-citation></ref><ref id="elps5538-bib-0023"><label>23.</label><mixed-citation id="elps5538-cit-0023"><named-content content-type="citation-string">
+
+Burstein, E.
+, 
+Hoberg, J. E.
+, 
+Wilkinson, A. S.
+, 
+Rumble, J. M.
+, 
+Csomos, R. A.
+, 
+Komarck, C. M.
+, 
+Maine, G. N.
+, 
+Wilkinson, J. C.
+, 
+Mayo, M. W.
+, 
+Duckett, C. S.
+, J. Biol. Chem.
+2005, 280, 22222–22232.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1074/jbc.M501928200"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="15799966"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Biol. Chem.&amp;author=E. Burstein&amp;author=J. E. Hoberg&amp;author=A. S. Wilkinson&amp;author=J. M. Rumble&amp;author=R. A. Csomos&amp;volume=280&amp;publication_year=2005&amp;pages=22222-22232&amp;pmid=15799966&amp;doi=10.1074/jbc.M501928200&amp;"/></mixed-citation></ref><ref id="elps5538-bib-0024"><label>24.</label><mixed-citation id="elps5538-cit-0024"><named-content content-type="citation-string">
+
+Schmiesing, J. A.
+, 
+Gregson, H. C.
+, 
+Zhou, S.
+, 
+Yokomori, K.
+, Mol. Cell. Biol.
+2000, 20, 6996–7006.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1128/mcb.20.18.6996-7006.2000"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC88774"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="10958694"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Mol. Cell. Biol.&amp;author=J. A. Schmiesing&amp;author=H. C. Gregson&amp;author=S. Zhou&amp;author=K. Yokomori&amp;volume=20&amp;publication_year=2000&amp;pages=6996-7006&amp;pmid=10958694&amp;doi=10.1128/mcb.20.18.6996-7006.2000&amp;"/></mixed-citation></ref><ref id="elps5538-bib-0025"><label>25.</label><mixed-citation id="elps5538-cit-0025"><named-content content-type="citation-string">
+
+Fang, L.
+, 
+Wang, X.
+, 
+Yamoah, K.
+, 
+Chen, P. L.
+, 
+Pan, Z. Q.
+, 
+Huang, L.
+, J. Proteome Res.
+2008, 7, 4914–4925.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1021/pr800574c"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC2676908"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="18850735"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Proteome Res.&amp;author=L. Fang&amp;author=X. Wang&amp;author=K. Yamoah&amp;author=P. L. Chen&amp;author=Z. Q. Pan&amp;volume=7&amp;publication_year=2008&amp;pages=4914-4925&amp;pmid=18850735&amp;doi=10.1021/pr800574c&amp;"/></mixed-citation></ref><ref id="elps5538-bib-0026"><label>26.</label><mixed-citation id="elps5538-cit-0026"><named-content content-type="citation-string">
+
+Walker, J. R.
+, 
+Corpina, R. A.
+, 
+Goldberg, J.
+, Nature
+2001, 412, 607–614.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1038/35088000"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="11493912"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Nature&amp;author=J. R. Walker&amp;author=R. A. Corpina&amp;author=J. Goldberg&amp;volume=412&amp;publication_year=2001&amp;pages=607-614&amp;pmid=11493912&amp;doi=10.1038/35088000&amp;"/></mixed-citation></ref><ref id="elps5538-bib-0027"><label>27.</label><mixed-citation id="elps5538-cit-0027"><named-content content-type="citation-string">
+
+Sheu, G. T.
+, 
+Traugh, J. A.
+, J. Biol. Chem.
+1997, 272, 33290–33297.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1074/jbc.272.52.33290"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="9407120"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Biol. Chem.&amp;author=G. T. Sheu&amp;author=J. A. Traugh&amp;volume=272&amp;publication_year=1997&amp;pages=33290-33297&amp;pmid=9407120&amp;doi=10.1074/jbc.272.52.33290&amp;"/></mixed-citation></ref><ref id="elps5538-bib-0028"><label>28.</label><mixed-citation id="elps5538-cit-0028"><named-content content-type="citation-string">
+
+Langelier, C.
+, 
+von Schwedler, U. K.
+, 
+Fisher, R. D.
+, 
+De Domenico, I.
+, 
+White, P. L.
+, 
+Hill, C. P.
+, 
+Kaplan, J.
+, 
+Ward, D.
+, 
+Sundquist, W. I.
+, J. Virol.
+2006, 80, 9465–9480.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1128/JVI.01049-06"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC1617254"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="16973552"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Virol.&amp;author=C. Langelier&amp;author=U. K. von Schwedler&amp;author=R. D. Fisher&amp;author=I. De Domenico&amp;author=P. L. White&amp;volume=80&amp;publication_year=2006&amp;pages=9465-9480&amp;pmid=16973552&amp;doi=10.1128/JVI.01049-06&amp;"/></mixed-citation></ref><ref id="elps5538-bib-0029"><label>29.</label><mixed-citation id="elps5538-cit-0029"><named-content content-type="citation-string">
+
+Bache, K. G.
+, 
+Raiborg, C.
+, 
+Mehlum, A.
+, 
+Stenmark, H.
+, J. Biol. Chem.
+2003, 278, 12513–12521.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1074/jbc.M210843200"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="12551915"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Biol. Chem.&amp;author=K. G. Bache&amp;author=C. Raiborg&amp;author=A. Mehlum&amp;author=H. Stenmark&amp;volume=278&amp;publication_year=2003&amp;pages=12513-12521&amp;pmid=12551915&amp;doi=10.1074/jbc.M210843200&amp;"/></mixed-citation></ref><ref id="elps5538-bib-0030"><label>30.</label><mixed-citation id="elps5538-cit-0030"><named-content content-type="citation-string">
+
+Paytubi, S.
+, 
+Morrice, N. A.
+, 
+Boudeau, J.
+, 
+Proud, C. G.
+, Biochem. J.
+2008, 409, 223–231.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1042/BJ20070811"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="17894550"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Biochem. J.&amp;author=S. Paytubi&amp;author=N. A. Morrice&amp;author=J. Boudeau&amp;author=C. G. Proud&amp;volume=409&amp;publication_year=2008&amp;pages=223-231&amp;pmid=17894550&amp;doi=10.1042/BJ20070811&amp;"/></mixed-citation></ref><ref id="elps5538-bib-0031"><label>31.</label><mixed-citation id="elps5538-cit-0031"><named-content content-type="citation-string">
+
+Zhou, M.
+, 
+Sandercock, A. M.
+, 
+Fraser, C. S.
+, 
+Ridlova, G.
+, 
+Stephens, E.
+, 
+Schenauer, M. R.
+, 
+Yokoi‐Fong, T.
+, 
+Barsky, D.
+, 
+Leary, J. A.
+, 
+Hershey, J. W. B.
+, 
+Doudna, J. A.
+, 
+Robinson, C. V.
+, Proc. Natl. Acad. Sci. USA
+2008, 105, 18139–18144.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1073/pnas.0801313105"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC2587604"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="18599441"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Proc. Natl. Acad. Sci. USA&amp;author=M. Zhou&amp;author=A. M. Sandercock&amp;author=C. S. Fraser&amp;author=G. Ridlova&amp;author=E. Stephens&amp;volume=105&amp;publication_year=2008&amp;pages=18139-18144&amp;pmid=18599441&amp;doi=10.1073/pnas.0801313105&amp;"/></mixed-citation></ref><ref id="elps5538-bib-0032"><label>32.</label><mixed-citation id="elps5538-cit-0032"><named-content content-type="citation-string">
+
+Zhao, X. F.
+, 
+Nowak, N. J.
+, 
+Shows, T. B.
+, 
+Aplan, P. D.
+, Genomics
+2000, 63, 145–148.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1006/geno.1999.6064"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="10662555"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Genomics&amp;author=X. F. Zhao&amp;author=N. J. Nowak&amp;author=T. B. Shows&amp;author=P. D. Aplan&amp;volume=63&amp;publication_year=2000&amp;pages=145-148&amp;pmid=10662555&amp;doi=10.1006/geno.1999.6064&amp;"/></mixed-citation></ref><ref id="elps5538-bib-0033"><label>33.</label><mixed-citation id="elps5538-cit-0033"><named-content content-type="citation-string">
+
+Arosio, P
+, 
+Adelman, T. G.
+, 
+Drysdale, J. W.
+, J. Biol. Chem.
+1978, 253, 4451–4458.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="659425"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Biol. Chem.&amp;author=P Arosio&amp;author=T. G. Adelman&amp;author=J. W. Drysdale&amp;volume=253&amp;publication_year=1978&amp;pages=4451-4458&amp;pmid=659425&amp;"/></mixed-citation></ref><ref id="elps5538-bib-0034"><label>34.</label><mixed-citation id="elps5538-cit-0034"><named-content content-type="citation-string">
+
+Sekiguchi, T.
+, 
+Hirose, E.
+, 
+Nakashima, N.
+, 
+Ii, M.
+, 
+Nishimoto, T.
+, J. Biol. Chem.
+2001, 276, 7246–7257.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1074/jbc.M004389200"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="11073942"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Biol. Chem.&amp;author=T. Sekiguchi&amp;author=E. Hirose&amp;author=N. Nakashima&amp;author=M. Ii&amp;author=T. Nishimoto&amp;volume=276&amp;publication_year=2001&amp;pages=7246-7257&amp;pmid=11073942&amp;doi=10.1074/jbc.M004389200&amp;"/></mixed-citation></ref><ref id="elps5538-bib-0035"><label>35.</label><mixed-citation id="elps5538-cit-0035"><named-content content-type="citation-string">
+
+McKean, M. C.
+, 
+Beckmann, J. D.
+, 
+Frerman, F. E.
+, J. Biol. Chem.
+1983, 258, 1866–1870.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="6822538"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Biol. Chem.&amp;author=M. C. McKean&amp;author=J. D. Beckmann&amp;author=F. E. Frerman&amp;volume=258&amp;publication_year=1983&amp;pages=1866-1870&amp;pmid=6822538&amp;"/></mixed-citation></ref><ref id="elps5538-bib-0036"><label>36.</label><mixed-citation id="elps5538-cit-0036"><named-content content-type="citation-string">
+
+Meunier, L.
+, 
+Usherwood, Y.,‐K.
+, 
+Chung, K. T.
+, 
+Hendershot, L. M.
+, Mol. Biol. Cell
+2002, 13, 4456–4469.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1091/mbc.E02-05-0311"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC138646"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="12475965"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Mol. Biol. Cell&amp;author=L. Meunier&amp;author=Y.,‐K. Usherwood&amp;author=K. T. Chung&amp;author=L. M. Hendershot&amp;volume=13&amp;publication_year=2002&amp;pages=4456-4469&amp;pmid=12475965&amp;doi=10.1091/mbc.E02-05-0311&amp;"/></mixed-citation></ref><ref id="elps5538-bib-0037"><label>37.</label><mixed-citation id="elps5538-cit-0037"><named-content content-type="citation-string">
+
+Ishimi, Y.
+, J. Biol. Chem.
+1997, 272, 24508–24513.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1074/jbc.272.39.24508"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="9305914"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Biol. Chem.&amp;author=Y. Ishimi&amp;volume=272&amp;publication_year=1997&amp;pages=24508-24513&amp;pmid=9305914&amp;doi=10.1074/jbc.272.39.24508&amp;"/></mixed-citation></ref><ref id="elps5538-bib-0038"><label>38.</label><mixed-citation id="elps5538-cit-0038"><named-content content-type="citation-string">
+
+Weidensdorfer, D.
+, 
+Stoehr, N.
+, 
+Baude, A.
+, 
+Lederer, M.
+, 
+Koehn, M.
+, 
+Schierhorn, A.
+, 
+Buchmeier, S.
+, 
+Wahle, E.
+, 
+Huettelmaiery, S.
+
+RNA
+2009, 15, 104–115.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1261/rna.1175909"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC2612774"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="19029303"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=RNA&amp;author=D. Weidensdorfer&amp;author=N. Stoehr&amp;author=A. Baude&amp;author=M. Lederer&amp;author=M. Koehn&amp;volume=15&amp;publication_year=2009&amp;pages=104-115&amp;pmid=19029303&amp;doi=10.1261/rna.1175909&amp;"/></mixed-citation></ref><ref id="elps5538-bib-0039"><label>39.</label><mixed-citation id="elps5538-cit-0039"><named-content content-type="citation-string">
+
+Mirande, M.
+, 
+Le Corre, D.
+, 
+Louvard, D.
+, 
+Reggio, H.
+, 
+Pailliez, J. P.
+, 
+Waller, J. P.
+, Exp. Cell Res.
+1985, 156, 91–102.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/0014-4827(85)90264-2"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="3880707"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Exp. Cell Res.&amp;author=M. Mirande&amp;author=D. Le Corre&amp;author=D. Louvard&amp;author=H. Reggio&amp;author=J. P. Pailliez&amp;volume=156&amp;publication_year=1985&amp;pages=91-102&amp;pmid=3880707&amp;doi=10.1016/0014-4827(85)90264-2&amp;"/></mixed-citation></ref><ref id="elps5538-bib-0040"><label>40.</label><mixed-citation id="elps5538-cit-0040"><named-content content-type="citation-string">
+
+Bohnsack, R. N.
+, 
+Haas, A. L.
+, J. Biol. Chem.
+2003, 278, 26823–26830.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1074/jbc.M303177200"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="12740388"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Biol. Chem.&amp;author=R. N. Bohnsack&amp;author=A. L. Haas&amp;volume=278&amp;publication_year=2003&amp;pages=26823-26830&amp;pmid=12740388&amp;doi=10.1074/jbc.M303177200&amp;"/></mixed-citation></ref><ref id="elps5538-bib-0041"><label>41.</label><mixed-citation id="elps5538-cit-0041"><named-content content-type="citation-string">
+
+Krull, S.
+, 
+Thyberg, J.
+, 
+Bjorkroth, B.
+, 
+Rackwitz, H. R.
+, 
+Cordes, V. C.
+, Mol. Biol. Cell
+2004, 15, 4261–4277.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1091/mbc.E04-03-0165"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC515357"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="15229283"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Mol. Biol. Cell&amp;author=S. Krull&amp;author=J. Thyberg&amp;author=B. Bjorkroth&amp;author=H. R. Rackwitz&amp;author=V. C. Cordes&amp;volume=15&amp;publication_year=2004&amp;pages=4261-4277&amp;pmid=15229283&amp;doi=10.1091/mbc.E04-03-0165&amp;"/></mixed-citation></ref><ref id="elps5538-bib-0042"><label>42.</label><mixed-citation id="elps5538-cit-0042"><named-content content-type="citation-string">
+
+Schmidt, D. R.
+, 
+Schreiber, S. L.
+, Biochemistry
+1999, 38, 14711–14717.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1021/bi991614n"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="10545197"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Biochemistry&amp;author=D. R. Schmidt&amp;author=S. L. Schreiber&amp;volume=38&amp;publication_year=1999&amp;pages=14711-14717&amp;pmid=10545197&amp;doi=10.1021/bi991614n&amp;"/></mixed-citation></ref><ref id="elps5538-bib-0043"><label>43.</label><mixed-citation id="elps5538-cit-0043"><named-content content-type="citation-string">
+
+Adachi, I.
+, 
+Arai, H.
+, 
+Pimental, R.
+, 
+Forgac, M.
+, J. Biol. Chem.
+1990, 265, 960–966.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="1967251"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Biol. Chem.&amp;author=I. Adachi&amp;author=H. Arai&amp;author=R. Pimental&amp;author=M. Forgac&amp;volume=265&amp;publication_year=1990&amp;pages=960-966&amp;pmid=1967251&amp;"/></mixed-citation></ref><ref id="elps5538-bib-0044"><label>44.</label><mixed-citation id="elps5538-cit-0044"><named-content content-type="citation-string">
+
+Anger, A. M.
+, 
+Armache, J. P.
+, 
+Berninghausen, O.
+, 
+Habeck, M.
+, 
+Subklewe, M.
+, 
+Wilson, D. N.
+, 
+Beckmann, R.
+, Nature
+2013, 497, 80–85.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1038/nature12104"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="23636399"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Nature&amp;author=A. M. Anger&amp;author=J. P. Armache&amp;author=O. Berninghausen&amp;author=M. Habeck&amp;author=M. Subklewe&amp;volume=497&amp;publication_year=2013&amp;pages=80-85&amp;pmid=23636399&amp;doi=10.1038/nature12104&amp;"/></mixed-citation></ref><ref id="elps5538-bib-0045"><label>45.</label><mixed-citation id="elps5538-cit-0045"><named-content content-type="citation-string">
+
+Jarrous, N.
+, 
+Eder, P. S.
+, 
+Wesolowski, D.
+, 
+Altman, S.
+, RNA
+1999, 5, 153–157.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1017/s135583829800185x"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC1369747"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="10024167"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=RNA&amp;author=N. Jarrous&amp;author=P. S. Eder&amp;author=D. Wesolowski&amp;author=S. Altman&amp;volume=5&amp;publication_year=1999&amp;pages=153-157&amp;pmid=10024167&amp;doi=10.1017/s135583829800185x&amp;"/></mixed-citation></ref><ref id="elps5538-bib-0046"><label>46.</label><mixed-citation id="elps5538-cit-0046"><named-content content-type="citation-string">
+
+Nagata, K.
+, 
+Asano, T.
+, 
+Nozawa, Y.
+, 
+Inagaki, M.
+, J. Biol. Chem.
+2004, 279, 55895–55904.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1074/jbc.M406153200"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="15485874"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Biol. Chem.&amp;author=K. Nagata&amp;author=T. Asano&amp;author=Y. Nozawa&amp;author=M. Inagaki&amp;volume=279&amp;publication_year=2004&amp;pages=55895-55904&amp;pmid=15485874&amp;doi=10.1074/jbc.M406153200&amp;"/></mixed-citation></ref><ref id="elps5538-bib-0047"><label>47.</label><mixed-citation id="elps5538-cit-0047"><named-content content-type="citation-string">
+
+Rommelaere, H.
+, 
+Van Troys, M.
+, 
+Gao, Y.
+, 
+Melki, R.
+, 
+Cowan, N. J.
+, 
+Vandekerckhove, J.
+, 
+Ampe, C.
+, Proc. Natl. Acad. Sci. USA
+1993, 90, 11975–11979.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1073/pnas.90.24.11975"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC48108"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="7903455"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Proc. Natl. Acad. Sci. USA&amp;author=H. Rommelaere&amp;author=M. Van Troys&amp;author=Y. Gao&amp;author=R. Melki&amp;author=N. J. Cowan&amp;volume=90&amp;publication_year=1993&amp;pages=11975-11979&amp;pmid=7903455&amp;doi=10.1073/pnas.90.24.11975&amp;"/></mixed-citation></ref><ref id="elps5538-bib-0048"><label>48.</label><mixed-citation id="elps5538-cit-0048"><named-content content-type="citation-string">
+
+Liu, S.
+, 
+Rauhut, R.
+, 
+Vornlocher, H. ‐P.
+, 
+Luehrmann, R.
+, RNA
+2006, 12, 1418–1430.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1261/rna.55406"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC1484429"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="16723661"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=RNA&amp;author=S. Liu&amp;author=R. Rauhut&amp;author=H. ‐P. Vornlocher&amp;author=R. Luehrmann&amp;volume=12&amp;publication_year=2006&amp;pages=1418-1430&amp;pmid=16723661&amp;doi=10.1261/rna.55406&amp;"/></mixed-citation></ref><ref id="elps5538-bib-0049"><label>49.</label><mixed-citation id="elps5538-cit-0049"><named-content content-type="citation-string">
+
+Vizcaíno, J. A.
+, 
+Deutsch, E. W.
+, 
+Wang, R.
+, 
+Csordas, A.
+, 
+Reisinger, F.
+, 
+Ríos, D.
+, 
+Dianes, J. A.
+, 
+Sun, Z.
+, 
+Farrah, T.
+, 
+Bandeira, N.
+, 
+Binz, P. A.
+, 
+Xenarios, I.
+, 
+Eisenacher, M.
+, 
+Mayer, G.
+, 
+Gatto, L.
+, 
+Campos, A.
+, 
+Chalkley, R. J.
+, 
+Kraus, H. J.
+, 
+Albar, J. P.
+, 
+Martinez‐Bartolomé, S.
+, 
+Apweiler, R.
+, 
+Omenn, G. S.
+, 
+Martens, L.
+, 
+Jones, A. R.
+, 
+Hermjakob, H.
+, Nat. Biotechnol. 2014, 30, 223–226.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1038/nbt.2839"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC3986813"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="24727771"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Nat. Biotechnol&amp;author=J. A. Vizcaíno&amp;author=E. W. Deutsch&amp;author=R. Wang&amp;author=A. Csordas&amp;author=F. Reisinger&amp;volume=30&amp;publication_year=2014&amp;pages=223-226&amp;pmid=24727771&amp;doi=10.1038/nbt.2839&amp;"/></mixed-citation></ref></ref-list></sec></sec><sec id="_ad93_" xml:lang="en" sec-type="associated-data" disp-level="1"><title>Associated Data</title><sec id="_adsm93_" xml:lang="en" sec-type="supplementary-materials" disp-level="2"><title>Supplementary Materials</title><supplementary-material id="db_ds_supplementary-material1_reqid_" position="float"><caption><p>Summary of the examination of complex formation on the 431 protein pairs which showed overlap factor above 0.65 for each other. Examining UniProtKB Database, we found that 301 protein pairs have been previously described as 35 protein complexes. Further details on the examination process, the protein maps, our comments on the possibility of complex formation, and UniProtKB Database information (on “Function” and “Interaction‐Subunit Structure” ) of the proteins, were summarized as one of the files in Supporting Information 2 (file numbers are shown in Column A) for each protein pair.</p></caption><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ELPS-36-1991-s001.xlsx" mimetype="application" mime-subtype="vnd.openxmlformats-officedocument.spreadsheetml.sheet"><?cloudpmc-path ce9b/5157777/84a0ffab2518/ELPS-36-1991-s001.xlsx?><?cloudpmc-bucket app?><?size 132905?><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material id="db_ds_supplementary-material2_reqid_" position="float"><caption><p>Supporting Information 2</p></caption><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ELPS-36-1991-s002.pdf" mimetype="application" mime-subtype="pdf"><?cloudpmc-path ce9b/5157777/6709626720d7/ELPS-36-1991-s002.pdf?><?cloudpmc-bucket app?><?size 6449313?><caption><p>Click here for additional data file.</p></caption></media></supplementary-material></sec></sec></body></article>

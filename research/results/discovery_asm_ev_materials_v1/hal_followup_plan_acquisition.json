@@ -1,0 +1,155 @@
+{
+  "utc": "2026-10-10T03:50:35.886967+00:00",
+  "records": [
+    {
+      "name": "hal_record_full.json",
+      "url": "https://api.archives-ouvertes.fr/search/?q=docid%3A5063440&fl=%2A&wt=json",
+      "started_utc": "2026-10-10T03:50:07.449370+00:00",
+      "http_status": 200,
+      "final_url": "https://api.archives-ouvertes.fr/search/?q=docid%3A5063440&fl=%2A&wt=json",
+      "headers": {
+        "date": "Sat, 10 Oct 2026 03:50:08 GMT",
+        "server": "Apache/2.4.68 (Debian)",
+        "served-by": "192.168.176.68 D=104259",
+        "environment": "production",
+        "access-control-allow-origin": "*",
+        "transfer-encoding": "chunked",
+        "content-type": "application/json; charset=utf-8",
+        "strict-transport-security": "max-age=63072000",
+        "connection": "close"
+      },
+      "status": "retrieved",
+      "response": {
+        "path": "research/results/discovery_asm_ev_materials_v1/sources/hal_record_full.json",
+        "bytes": 346915,
+        "sha256": "90a498c7892d50391f19c08a8a9b7c279b4b010a9d395934644cffe553682a25"
+      },
+      "completed_utc": "2026-10-10T03:50:13.327430+00:00"
+    },
+    {
+      "name": "hal_record_page.html",
+      "url": "https://hal.science/hal-05063440v1",
+      "started_utc": "2026-10-10T03:50:07.450127+00:00",
+      "http_status": 200,
+      "final_url": "https://hal.science/hal-05063440v1",
+      "headers": {
+        "cache-control": "no-store, no-cache, must-revalidate",
+        "content-type": "text/html; charset=UTF-8",
+        "date": "Sat, 10 Oct 2026 03:50:09 GMT",
+        "environment": "production",
+        "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+        "link": "<https://inbox.hal.science/>; rel=\"http://www.w3.org/ns/ldp#inbox\", <https://hal.science/hal-05063440v1>; rel=\"cite-as\", <https://hal.science/hal-05063440/bibtex>; rel=\"describedby\"; type=\"application/x-bibtex\", <https://hal.science/hal-05063440/json>; rel=\"describedby\"; type=\"application/json\", <https://hal.science/hal-05063440/tei>; rel=\"describedby\"; type=\"application/xml\"; formats=\"http://www.tei-c.org/ns/1.0\", <https://hal.science/hal-05063440/dc>; rel=\"describedby\"; type=\"application/xml\"; formats=\"http://purl.org/dc/elements/1.1/\", <https://hal.science/hal-05063440/dcterms>; rel=\"describedby\"; type=\"application/xml\"; formats=\"http://purl.org/dc/terms/\"",
+        "pragma": "no-cache",
+        "served-by": "192.168.176.91 D=547436",
+        "server": "nginx",
+        "set-cookie": "hal=ts7ujt4m00kua9k7tu2egtpg83; path=/; secure; HttpOnly; SameSite=lax",
+        "vary": "Accept-Encoding",
+        "transfer-encoding": "chunked",
+        "strict-transport-security": "max-age=63072000",
+        "connection": "close"
+      },
+      "status": "retrieved",
+      "response": {
+        "path": "research/results/discovery_asm_ev_materials_v1/sources/hal_record_page.html",
+        "bytes": 157066,
+        "sha256": "ac7c07b3ee81ecb4ec35456bcb789282ee03188aed8ff888f820470b7b1829de"
+      },
+      "completed_utc": "2026-10-10T03:50:10.310581+00:00"
+    },
+    {
+      "name": "rdg_title.json",
+      "url": "https://entrepot.recherche.data.gouv.fr/api/search?q=%22Bronchial%20smooth%20muscle%20extracellular%20vesicles%20interfere%20with%20bronchial%20epithelium%20metabolism%20and%20function%20in%20asthma%22&per_page=100",
+      "started_utc": "2026-10-10T03:50:07.450815+00:00",
+      "http_status": 200,
+      "final_url": "https://entrepot.recherche.data.gouv.fr/api/search?q=%22Bronchial%20smooth%20muscle%20extracellular%20vesicles%20interfere%20with%20bronchial%20epithelium%20metabolism%20and%20function%20in%20asthma%22&per_page=100",
+      "headers": {
+        "date": "Sat, 10 Oct 2026 03:50:09 GMT",
+        "server": "Apache",
+        "access-control-allow-headers": "Accept, Content-Type, X-Dataverse-Key, Range",
+        "access-control-allow-methods": "PUT, GET, POST, DELETE, OPTIONS",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "Accept-Ranges, Content-Range, Content-Encoding",
+        "content-length": "237",
+        "content-type": "application/json;charset=UTF-8",
+        "x-frame-options": "SAMEORIGIN",
+        "x-xss-protection": "1; mode=block",
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "no-referrer-when-downgrade",
+        "strict-transport-security": "max-age=63072000",
+        "set-cookie": "SERVER=web1; path=/",
+        "connection": "close"
+      },
+      "status": "retrieved",
+      "response": {
+        "path": "research/results/discovery_asm_ev_materials_v1/sources/rdg_title.json",
+        "bytes": 237,
+        "sha256": "a9cb3f6463fd54ae4cf303db197439246b7b7e1960ac34612ca00bfe5eb30a86"
+      },
+      "completed_utc": "2026-10-10T03:50:09.619772+00:00"
+    },
+    {
+      "name": "rdg_project.json",
+      "url": "https://entrepot.recherche.data.gouv.fr/api/search?q=CHARMACOMA&per_page=100",
+      "started_utc": "2026-10-10T03:50:07.451127+00:00",
+      "http_status": 200,
+      "final_url": "https://entrepot.recherche.data.gouv.fr/api/search?q=CHARMACOMA&per_page=100",
+      "headers": {
+        "date": "Sat, 10 Oct 2026 03:50:09 GMT",
+        "server": "Apache",
+        "access-control-allow-headers": "Accept, Content-Type, X-Dataverse-Key, Range",
+        "access-control-allow-methods": "PUT, GET, POST, DELETE, OPTIONS",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "Accept-Ranges, Content-Range, Content-Encoding",
+        "content-length": "127",
+        "content-type": "application/json;charset=UTF-8",
+        "x-frame-options": "SAMEORIGIN",
+        "x-xss-protection": "1; mode=block",
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "no-referrer-when-downgrade",
+        "strict-transport-security": "max-age=63072000",
+        "set-cookie": "SERVER=web2; path=/",
+        "connection": "close"
+      },
+      "status": "retrieved",
+      "response": {
+        "path": "research/results/discovery_asm_ev_materials_v1/sources/rdg_project.json",
+        "bytes": 127,
+        "sha256": "bd9918b95f112ed71088a61487d0eeb36aaa843fa3f169c3cfb97159d265d19d"
+      },
+      "completed_utc": "2026-10-10T03:50:09.705742+00:00"
+    },
+    {
+      "name": "hal_project.json",
+      "url": "https://api.archives-ouvertes.fr/search/?q=text%3ACHARMACOMA&rows=100&fl=%2A&wt=json",
+      "started_utc": "2026-10-10T03:50:09.619861+00:00",
+      "http_status": 200,
+      "final_url": "https://api.archives-ouvertes.fr/search/?q=text%3ACHARMACOMA&rows=100&fl=%2A&wt=json",
+      "headers": {
+        "date": "Sat, 10 Oct 2026 03:50:10 GMT",
+        "server": "Apache/2.4.68 (Debian)",
+        "served-by": "192.168.176.67 D=69664",
+        "environment": "production",
+        "access-control-allow-origin": "*",
+        "content-length": "116",
+        "content-type": "application/json; charset=utf-8",
+        "strict-transport-security": "max-age=63072000",
+        "connection": "close"
+      },
+      "status": "retrieved",
+      "response": {
+        "path": "research/results/discovery_asm_ev_materials_v1/sources/hal_project.json",
+        "bytes": 116,
+        "sha256": "316b596864c92e18c8f6688107ad49ecfc3fe632ebdc85efe82c65ed28ba8064"
+      },
+      "completed_utc": "2026-10-10T03:50:12.254736+00:00"
+    },
+    {
+      "name": "openaire_doi_xml.xml",
+      "url": "https://api.openaire.eu/search/publications?doi=10.1016%2Fj.isci.2025.112546&format=xml",
+      "started_utc": "2026-10-10T03:50:09.705829+00:00",
+      "status": "failed",
+      "error": "The read operation timed out",
+      "completed_utc": "2026-10-10T03:50:35.886531+00:00"
+    }
+  ]
+}

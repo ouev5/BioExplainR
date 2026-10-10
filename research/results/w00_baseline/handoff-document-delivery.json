@@ -1,0 +1,27 @@
+{
+  "command": [
+    "python3",
+    "research/package_submission.py",
+    "--revision",
+    "--paper-directory",
+    "docs/paper_cn_v3",
+    "--paper-version",
+    "v0.9.1",
+    "--audit",
+    "docs/paper_cn_v3/audit.json",
+    "--output",
+    "docs/BioExplainR-development-delivery-0.4.0.9000-r10.zip",
+    "--result",
+    "research/results/w00_baseline/handoff-delivery-audit-result.json"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-08T12:44:54.984150+00:00",
+  "finished_utc": "2026-10-08T12:45:02.217434+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/handoff-document-delivery.txt",
+    "bytes": 172,
+    "sha256": "a9f3a862ef84bd746662a36f23a8e41546f80b25f027e4da4231fd9b6a90f27d"
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "utc": "2026-10-10T05:26:15.425732+00:00",
+  "checks": [
+    {
+      "file": {
+        "path": "research/results/discovery_public_proteome_v1/imported/PXD063431_240221_PB_ProteomeDiscoverer_all_Proteins_A549.txt",
+        "bytes": 1237980,
+        "sha256": "2e2b8774f07df6bd25ebc33bb246dddfc7beef880a6a8b9f831ca508bd820301"
+      },
+      "expected_bytes": 1237980,
+      "size_matches": true,
+      "upstream_sha1": "",
+      "upstream_sha1_matches": null,
+      "data_rows": 5428,
+      "columns": 25,
+      "header": [
+        "Proteins Unique Sequence ID",
+        "Accession",
+        "Description",
+        "Gene Name",
+        "Exp q-value Combined",
+        "Contaminant",
+        "Marked as",
+        "Sum PEP Score",
+        "Coverage in Percent",
+        "Number of Peptides",
+        "Number of PSMs",
+        "Number of Unique Peptides",
+        "Number of AAs",
+        "MW in kDa",
+        "calc pI",
+        "A549_NT_1",
+        "A549_dexa_1",
+        "A549_NT_3",
+        "A549_dexa_3",
+        "A549_NT_4",
+        "A549_dexa_4",
+        "A549_NT_5",
+        "A549_dexa_5",
+        "Number of Protein Groups",
+        "Modifications"
+      ]
+    },
+    {
+      "file": {
+        "path": "research/results/discovery_public_proteome_v1/imported/PXD003963_NHDF_con_sn_1_1.pride.mztab.gz",
+        "bytes": 130946,
+        "sha256": "3e2d12aca388b384c8d8bfc1c7eae796f1410fad0b2159e28ad843369fe6bd85"
+      },
+      "expected_bytes": 753018,
+      "size_matches": false,
+      "upstream_sha1": "364b87c631c099c40834b9f9c3b3734facc98f26",
+      "upstream_sha1_matches": true,
+      "row_counts": {
+        "PRT": 800,
+        "PSM": 2872
+      },
+      "protein_header": [
+        "PRH",
+        "accession",
+        "description",
+        "taxid",
+        "species",
+        "database",
+        "database_version",
+        "search_engine",
+        "best_search_engine_score[1]",
+        "search_engine_score[1]_ms_run[1]",
+        "num_psms_ms_run[1]",
+        "num_peptides_distinct_ms_run[1]",
+        "num_peptides_unique_ms_run[1]",
+        "ambiguity_members",
+        "modifications",
+        "protein_coverage"
+      ],
+      "gzip_crc_passed": true
+    },
+    {
+      "file": {
+        "path": "research/results/discovery_public_proteome_v1/imported/PXD003965_NHDF_IL1beta_sn_1_1.pride.mztab.gz",
+        "bytes": 151987,
+        "sha256": "834379d8f419395ca3eaf73ae627fff627d5ab7e69a1050e632253433a8da2ee"
+      },
+      "expected_bytes": 871109,
+      "size_matches": false,
+      "upstream_sha1": "0cebb426e3947102e061d3b07d89a829503c12df",
+      "upstream_sha1_matches": true,
+      "row_counts": {
+        "PRT": 918,
+        "PSM": 3326
+      },
+      "protein_header": [
+        "PRH",
+        "accession",
+        "description",
+        "taxid",
+        "species",
+        "database",
+        "database_version",
+        "search_engine",
+        "best_search_engine_score[1]",
+        "search_engine_score[1]_ms_run[1]",
+        "num_psms_ms_run[1]",
+        "num_peptides_distinct_ms_run[1]",
+        "num_peptides_unique_ms_run[1]",
+        "ambiguity_members",
+        "modifications",
+        "protein_coverage"
+      ],
+      "gzip_crc_passed": true
+    },
+    {
+      "file": {
+        "path": "research/results/discovery_public_proteome_v1/imported/PXD003971_NHDF_IL1beta_Dex_sn_1_1.pride.mztab.gz",
+        "bytes": 135512,
+        "sha256": "9425567cb1961d3e7ba184e4b3bcabfd533989ec9c9c9b6f8425f01305f188be"
+      },
+      "expected_bytes": 770183,
+      "size_matches": false,
+      "upstream_sha1": "73245edcc30aeb9e330405aeb4130e9f85a2c359",
+      "upstream_sha1_matches": true,
+      "row_counts": {
+        "PRT": 762,
+        "PSM": 2984
+      },
+      "protein_header": [
+        "PRH",
+        "accession",
+        "description",
+        "taxid",
+        "species",
+        "database",
+        "database_version",
+        "search_engine",
+        "best_search_engine_score[1]",
+        "search_engine_score[1]_ms_run[1]",
+        "num_psms_ms_run[1]",
+        "num_peptides_distinct_ms_run[1]",
+        "num_peptides_unique_ms_run[1]",
+        "ambiguity_members",
+        "modifications",
+        "protein_coverage"
+      ],
+      "gzip_crc_passed": true
+    }
+  ],
+  "missing_old_verification_log": true,
+  "old_HBEC_median_table_absent": true,
+  "meaning": "Checks from present bytes; no claim that an absent old download/completion record exists"
+}

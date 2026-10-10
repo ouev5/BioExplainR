@@ -1,0 +1,30 @@
+[
+  {
+    "accession": "PXD029237",
+    "title": "Coxsackievirus Adenovirus Receptor co-ordinates pro-inflammatory responses in the lung epithelium",
+    "description": "Airway inflammation and remodelling are key pathophysiologic features process in many respiratory conditions such as asthma. An intact epithelial cell layer is crucial to maintain lung homeostasis, and this depends on intercellular adhesion. The Coxsackievirus Adenovirus Receptor (CAR) is highly expressed in the epithelium where it modulates cell-cell adhesion stability and acts as a receptor for immune cells to facilitate transepithelial migration. Here we investigated the mechanistic role of CAR in mediating responses to the common aeroallergen House Dust Mite (HDM). We demonstrate that administration of HDM in mice lacking CAR in the respiratory epithelium leads to loss of peri-bronchial inflammatory cell infiltration, fewer goblet-cells, decreased IL-4 and IL-13 levels and reduced matrix remodelling. In vitro analysis in human lung epithelial cells confirmed that loss of CAR led to reduced HDM-dependent inflammatory cytokine release leading to reduced inflammatory cell transmigration. Moreover, CAR was required for HDM-induced TGF release leading to enhanced airway smooth muscle cell proliferation and matrix production. Our data demonstrates that CAR is a novel central co-ordinator of lung inflammation through a dual role in leukocyte recruitment and tissue remodelling and may represent an important target for future therapeutic development in lung inflammatory diseases.",
+    "files": [
+      "proteinGroups.txt",
+      "peptides.txt",
+      "Statler_20210203_SN_HS_bioID_04_Ctr.raw",
+      "Oxidation__M_Sites.txt",
+      "Statler_20210203_SN_HS_bioID_03_Ctr.raw",
+      "PXD029237_community_annotated.sdrf.tsv",
+      "BiotinSites.txt",
+      "exp_design.txt",
+      "Statler_20210203_SN_HS_bioID_02_Ctr.raw",
+      "Statler_20210203_SN_HS_bioID_01_Ctr.raw",
+      "Statler_20210203_SN_HS_bioID_01_C5.raw",
+      "Statler_20210203_SN_HS_bioID_02_C5.raw",
+      "Deamidation__NQ_Sites.txt",
+      "Statler_20210203_SN_HS_bioID_03_C5.raw",
+      "Statler_20210203_SN_HS_bioID_04_C5.raw",
+      "BirA_CAR.fasta",
+      "modificationSpecificPeptides.txt"
+    ],
+    "sample_protocol": "16HBE human bronchial epithelial cells expressing CAR-BirA or control construct, pulsed with biotin, were lysed in buffer containing 50 mM Tris pH 7.5; 500mM NaCl; 0.4% SDS; 5 mM EDTA; 1 mM DTT; 2% Triton X and 1x PICS I. To remove insoluble material the samples were centrifuged for 10 min at 12,000 r.p.m. The supernatant (soluble protein fraction) was incubated with the beads (MyoOne Streptavidin C1; Invitrogen) overnight. Beads were collected with a magnetic rack and washed 2 times with wash buffer 1 (0.1% deoxycholate; 1% NP-40; 500 mM NaCl; 1 mM EDTA and 50mM HEPES pH 7.5), 2 times wash buffer 2 (250 mM LiCl, 0.5% NP-40, 0.5% deoxycholate, 1 mM EDTA, and 10 mM Tris pH 8.1)and 2 times with 50 mM Tris pH 7.4/50 mM NaCl. Beads were resuspended in urea buffer (6 M urea, 2 M thiourea, 10 mM HEPES pH 8.0), reduced in 10 mM DTT solution, followed by alkylation using 40 mM chloroacetamide. Samples were first digested with 1 µg endopeptidase LysC (Wako, Osaka, Japan) for 4 h and, after adding 80 µl 50 mM ammonium bicarbonate (pH 8.5), digested with 1 µg sequence-grade trypsin (Promega) overnight. The supernatant was collected and combined with the supernatant from an additional bead wash in 50 mM ammonium bicarbonate (pH 8.5). Samples were acidified with formic acid and peptides were desalted using C18 columns. Peptides were separated on a 20 cm reversed-phase column (ReproSil-Pur 1.9 µm C18-AQ resin, Dr. Maisch GmbH) using a 98 min gradient with a 250 nl/min flow rate of increasing acetonitrile concentration (from 2% to 60%) on a high-performance liquid chromatography system (ThermoScientific). Peptides were measured on a Q Exactive Plus instrument (Thermo Fisher Scientific), operated in the data-dependent mode with a full scan in the Orbitrap (70 K resolution; 3x106Êion count target; maximum injection time 50 ms) followed by top 10 MS2 scans using higher-energy collision dissociation (17.5 K resolution, 5x104Êion count target; 1.6 m/z isolation window; maximum injection time: 250 ms).",
+    "references": [
+      "Ortiz-Zapater E, Bagley DC, Hernandez VL, Roberts LB, Maguire TJA, Voss F, Mertins P, Kirchner M, Peset-Martin I, Woszczek G, Rosenblatt J, Gotthardt M, Santis G, Parsons M. Epithelial coxsackievirus adenovirus receptor promotes house dust mite-induced lung inflammation. Nat Commun. 2022 13(1):6407--pubMed:36302767--doi: 10.1038/s41467-022-33882-w"
+    ]
+  }
+]

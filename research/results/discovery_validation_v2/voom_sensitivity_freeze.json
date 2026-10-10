@@ -1,0 +1,9 @@
+{
+  "utc": "2026-10-09 12:35:50 UTC",
+  "formula": "~ donor + kd * gc",
+  "filter": "edgeR filterByExpr with full donor+kd*gc design",
+  "normalization": "TMM",
+  "model": "voom + limma eBayes",
+  "tests": "11 frozen genes x four contrasts, Holm=44; filtered genes P=1",
+  "timing": "After paired TPM results, before count fitting; exploratory sensitivity"
+}

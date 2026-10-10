@@ -1,0 +1,111 @@
+{
+  "status": "pass",
+  "utc": "2026-10-10T05:57:08.492014+00:00",
+  "main": {
+    "name": "BioExplainR-中文论文-v0.13",
+    "pages": 17,
+    "docx_tables": 4,
+    "figures": 4,
+    "vector_figures": [
+      {
+        "caption": "图 1 原固定候选的四背景响应",
+        "page": 14,
+        "pdf": {
+          "path": "docs/paper_cn_v7/figures/Figure_1.pdf",
+          "bytes": 15463,
+          "sha256": "028ef82c79ea46f7f11b634ddbe3e666927365a504f2c17377faabcf84c8904e"
+        }
+      },
+      {
+        "caption": "图 2 完整54基因的六成人逐供体响应",
+        "page": 15,
+        "pdf": {
+          "path": "docs/paper_cn_v7/figures/Figure_2.pdf",
+          "bytes": 41717,
+          "sha256": "f14477a79edf5cdb67df25526f79f335757c0a23f9f82055c4a737e5730d8f5a"
+        }
+      },
+      {
+        "caption": "图 3 候选证据层级与未确认范围",
+        "page": 16,
+        "pdf": {
+          "path": "docs/paper_cn_v7/figures/Figure_3.pdf",
+          "bytes": 26942,
+          "sha256": "9aa31e9052e2947ef7159a1ed305ddc403970ff257df13191a55830164082e32"
+        }
+      },
+      {
+        "caption": "图 4 上清重点候选的逐日期响应与缺测",
+        "page": 17,
+        "pdf": {
+          "path": "docs/paper_cn_v7/figures/Figure_4.pdf",
+          "bytes": 17146,
+          "sha256": "9b4feb95368b84af3905039c15632597e5c93aa98ed7323e1604c415e2317f3c"
+        }
+      }
+    ]
+  },
+  "supplement": {
+    "name": "BioExplainR-补充材料-v0.13",
+    "pages": 24,
+    "docx_tables": 5,
+    "figures": 6,
+    "vector_figures": [
+      {
+        "caption": "补充图 S1 旧13供体固定候选响应",
+        "page": 19,
+        "pdf": {
+          "path": "docs/paper_cn_v7/figures/Figure_S1.pdf",
+          "bytes": 14395,
+          "sha256": "09d6abe1d1534d31fa5d3b0697e59508123eb8012e5d4683454ff62f05827fb9"
+        }
+      },
+      {
+        "caption": "补充图 S2 A549药理及暴露条件差",
+        "page": 20,
+        "pdf": {
+          "path": "docs/paper_cn_v7/figures/Figure_S2.pdf",
+          "bytes": 15478,
+          "sha256": "b0d24132ea00960c4c9f86f10bcf84beb34f8474c9a372c7f219652e429af8cc"
+        }
+      },
+      {
+        "caption": "补充图 S3 GR遗传交叉检验",
+        "page": 21,
+        "pdf": {
+          "path": "docs/paper_cn_v7/figures/Figure_S3.pdf",
+          "bytes": 14247,
+          "sha256": "389f2773d901e53baefd091fdf9422bb43691eb374362fb440a35344e7e4c401"
+        }
+      },
+      {
+        "caption": "补充图 S4 完整原LFQ的METTL7A逐供体标签",
+        "page": 22,
+        "pdf": {
+          "path": "docs/paper_cn_v7/figures/Figure_S4.pdf",
+          "bytes": 17028,
+          "sha256": "9bce0dd16d7b82e82e5b99b2d98fe5b276a48600db80a03157e04d81e63dbb7f"
+        }
+      },
+      {
+        "caption": "补充图 S5 完整上清数组的效应与统一BH",
+        "page": 23,
+        "pdf": {
+          "path": "docs/paper_cn_v7/figures/Figure_S5.pdf",
+          "bytes": 19432,
+          "sha256": "aca44d0d389c689ac234cb325aa1828f5f7209f836b859569d3e6850b5b6a589"
+        }
+      },
+      {
+        "caption": "补充图 S6 四数组与发表非零LFQ一致性",
+        "page": 24,
+        "pdf": {
+          "path": "docs/paper_cn_v7/figures/Figure_S6.pdf",
+          "bytes": 11976,
+          "sha256": "fce7145a4ecc9d2b24917d0be713d52c342abcdaf8406d1fc2655122b5e4ead6"
+        }
+      }
+    ]
+  },
+  "scope": "Integration of previously sealed statistics and source/design corrections; no new tests"
+}

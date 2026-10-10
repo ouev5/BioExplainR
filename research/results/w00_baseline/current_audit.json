@@ -1,8 +1,8 @@
 {
   "status": "pass",
   "mode": "current",
-  "audited_utc": "2026-10-08T11:42:41.875950+00:00",
-  "manifest_sha256": "75f3571cf96492d944cd0a4c0915bea60030ae23dfbf459a15b5b147a0a26550",
+  "audited_utc": "2026-10-09T06:45:52.250540+00:00",
+  "manifest_sha256": "8a2d43fc853fdfc01d4c3d3eab4152a3b6de86adba3fd26e32647ff07f193f7e",
   "verified_file_counts": {
     "main_experiment": 2169,
     "common_task": 246,
@@ -13,13 +13,23 @@
     "paper_cn_cases": 12,
     "paper_cn_revision": 76,
     "paper_cn_v09": 93,
+    "paper_cn_v091": 95,
+    "paper_cn_v010": 102,
     "discovery_sparcl1": 21,
-    "paper": 153,
-    "historical": 325,
-    "source": 257,
+    "discovery_context": 36,
+    "discovery_donors": 29,
+    "common_performance_preparation": 3,
+    "mechanism_preparation": 8,
+    "common_performance_formal": 1045,
+    "mechanism_fit": 92,
+    "chip_verification": 58,
+    "followup_research_report": 14,
+    "paper": 159,
+    "historical": 393,
+    "source": 327,
     "package_source": 153,
-    "documentation": 45,
-    "baseline": 504,
+    "documentation": 64,
+    "baseline": 790,
     "original": 2905
   },
   "main_experiment": {
@@ -190,7 +200,7 @@
       "passed": 676
     },
     "source_archive": "matches indexed package files (build metadata excluded)",
-    "git_commit": "dbd707566518d4b1d939906dcb001849abc2774e"
+    "git_commit": "545bb89755f9c52011584d530c6294d31b3c9012"
   },
   "miniacc_development": {
     "research/results/miniacc_development_v1": {
@@ -226,18 +236,18 @@
   },
   "paper_cn": {
     "status": "pass",
-    "references": 30,
-    "figures": 2,
-    "external_tables": 11,
+    "references": 32,
+    "figures": 3,
+    "external_tables": 14,
     "docx_tables": 1,
-    "pdf_pages": 9,
+    "pdf_pages": 12,
     "supplement": {
-      "pages": 16,
+      "pages": 18,
       "tables": 0,
       "figures": 8
     },
     "comparison_tools": 6,
-    "body_reduction_percent": 65.75,
+    "body_reduction_percent": 47.39,
     "discovery": {
       "status": "pass",
       "files": 20,
@@ -249,6 +259,220 @@
       "primary_supported": true,
       "independent_r_checks": 12,
       "scope": "External culture experiment in a single cell line; not donor-independent validation"
+    },
+    "figure_table_narrative_links": [
+      {
+        "id": "图 1",
+        "section": "2.1",
+        "status": "pass"
+      },
+      {
+        "id": "图 2",
+        "section": "3.4",
+        "status": "pass"
+      },
+      {
+        "id": "图 3",
+        "section": "3.5",
+        "status": "pass"
+      },
+      {
+        "id": "表 1",
+        "section": "2.3/3.1",
+        "status": "pass"
+      },
+      {
+        "id": "补充图 S1",
+        "section": "2.1",
+        "status": "pass"
+      },
+      {
+        "id": "补充图 S2",
+        "section": "3.2",
+        "status": "pass"
+      },
+      {
+        "id": "补充图 S3",
+        "section": "3.2",
+        "status": "pass"
+      },
+      {
+        "id": "补充图 S4",
+        "section": "3.2",
+        "status": "pass"
+      },
+      {
+        "id": "补充图 S5",
+        "section": "3.2",
+        "status": "pass"
+      },
+      {
+        "id": "补充图 S6",
+        "section": "3.3",
+        "status": "pass"
+      },
+      {
+        "id": "补充图 S7",
+        "section": "3.3",
+        "status": "pass"
+      },
+      {
+        "id": "补充图 S8",
+        "section": "3.6",
+        "status": "pass"
+      },
+      {
+        "id": "补充表 S1",
+        "section": "2.3/3.2",
+        "status": "pass"
+      },
+      {
+        "id": "补充表 S2",
+        "section": "3.2",
+        "status": "pass"
+      },
+      {
+        "id": "补充表 S3",
+        "section": "3.2",
+        "status": "pass"
+      },
+      {
+        "id": "补充表 S4",
+        "section": "3.2",
+        "status": "pass"
+      },
+      {
+        "id": "补充表 S5",
+        "section": "3.2",
+        "status": "pass"
+      },
+      {
+        "id": "补充表 S6",
+        "section": "3.3",
+        "status": "pass"
+      },
+      {
+        "id": "补充表 S7",
+        "section": "3.3",
+        "status": "pass"
+      },
+      {
+        "id": "补充表 S8",
+        "section": "3.3",
+        "status": "pass"
+      },
+      {
+        "id": "补充表 S9",
+        "section": "3.6",
+        "status": "pass"
+      },
+      {
+        "id": "补充表 S10",
+        "section": "3.4",
+        "status": "pass"
+      },
+      {
+        "id": "补充表 S11",
+        "section": "3.5",
+        "status": "pass"
+      },
+      {
+        "id": "补充表 S12",
+        "section": "3.5",
+        "status": "pass"
+      },
+      {
+        "id": "补充表 S13",
+        "section": "3.5",
+        "status": "pass"
+      }
+    ],
+    "candidate_followup": {
+      "paired_donors": 16,
+      "positive_donors": 16,
+      "candidate_interactions_tested": 3,
+      "candidate_interactions_supported": 0,
+      "asthma_response_difference_supported": false,
+      "shared_culture_cell_lines": [
+        "N010912",
+        "N051911",
+        "N061311"
+      ],
+      "novelty": "response already published; new donor distribution and null-interaction reanalysis, not first mechanistic discovery"
+    }
+  },
+  "followup_preparation": {
+    "status": "preparation_partial",
+    "model_calls": 0,
+    "performance_scores": 0,
+    "mechanism_fit": "not_run",
+    "verified_inputs": 5,
+    "scope": "Saved preparation integrity, not research completion"
+  },
+  "formal_followup": {
+    "performance": {
+      "status": "pass",
+      "runs": 360,
+      "target_scores": 1800,
+      "formal_model_calls": 216,
+      "warmup_calls": 1,
+      "prompt_pairs_identical": 72,
+      "independent_reference": true,
+      "independent_parser": true,
+      "bootstrap_recomputed": true,
+      "tokens": {
+        "ellmer_facts": {
+          "prompt_tokens": 23085,
+          "completion_tokens": 3591,
+          "median_prompt_tokens": 329.0,
+          "median_completion_tokens": 49.0
+        },
+        "bio_client_facts": {
+          "prompt_tokens": 23085,
+          "completion_tokens": 3591,
+          "median_prompt_tokens": 329.0,
+          "median_completion_tokens": 49.0
+        },
+        "ellmer_table": {
+          "prompt_tokens": 78709,
+          "completion_tokens": 1925,
+          "median_prompt_tokens": 2481.0,
+          "median_completion_tokens": 55.0
+        }
+      },
+      "failed_requests": 37,
+      "token_scope": "Only completed responses; timeout tokens unknown"
+    },
+    "mechanism": {
+      "status": "pass",
+      "samples": 47,
+      "published_count_measurements_checked": 188,
+      "WLS_contrasts_checked": 39,
+      "candidate_kept": false,
+      "independent_counts_design_logCPM_WLS_CI_t": true,
+      "independent_GEO_treatment_batch_mapping": true,
+      "independent_full_gene_filter": true,
+      "genes_filter_checked": 35942,
+      "filter_CPM_cutoff": 0.49529963285887507,
+      "filter_minimum_samples": 2.5714285714285716,
+      "Holm": "not_estimable: all three candidate tests filtered",
+      "TMM_voom_eBayes_independently_reestimated": false,
+      "standard_error": "limma contrasts.fit uses common coefficient correlation approximation; independently reconstructed; exact weighted covariance also exported",
+      "max_relative_SE_difference": 0.02188769459591433
+    },
+    "chip": {
+      "status": "pass",
+      "count_keys_checked": 288,
+      "peak_window_hits_checked": 2505,
+      "independent_RefSeq_TSS_and_GenomicRanges": true,
+      "coordinate_system": "BED->1-based inclusive GRanges",
+      "build_out_of_bounds": {
+        "hg18": 12937,
+        "hg19": 0,
+        "hg38": 10043,
+        "mm9": 158229
+      },
+      "interpretation": "Coordinate verification supports hg19; metadata mm9 conflict retained; no author confirmation; no differential occupancy inference"
     }
   }
 }

@@ -1,0 +1,20 @@
+{
+  "command": [
+    "/tmp/opencode/paper-venv/bin/python",
+    "research/paper_cn_revision/audit_revision.py",
+    "--directory",
+    "docs/paper_cn_v3",
+    "--version",
+    "v0.9.1"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-08T12:00:34.639251+00:00",
+  "finished_utc": "2026-10-08T12:00:41.122154+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/revision-links-audit.txt",
+    "bytes": 2851,
+    "sha256": "a3723b2b12d03afadfd68d368697663db147eed250cea5f069eb730208dc01f7"
+  }
+}

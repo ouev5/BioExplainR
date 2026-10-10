@@ -1,10 +1,14 @@
 # 当前基线复现与结果审计
 
+当前论文为 **v0.10，12 页主稿/18 页补充**，入口 `paper_cn_v4/README.md`。全部 11 图/14 表＝25 项正文对应见 `paper_cn_v4/figure_table_links.json`；新增后续检验为 `discovery_context_v1/` 与 `discovery_donors_v1/`，研究日志 `biology-*`、导出/网页日志 `biology-paper-*`。10-09 续接新交付 r11 与 baseline-9，完整性入口 `biology-delivery-audit-result.json`；GitHub 仍暂停。R 源码包未改变，软件验收仍引用 `revision-source/package-check` 历史日志；本轮交付审计不代表重新运行软件测试或模型拟合。下述 v0.9.1/r9、v0.9/r8 及更早为历史范围。
+
+v0.9.1 历史稿为 10 页主稿/16 页补充，21 项图表正文对应，见 `paper_cn_v3/FIGURE_TABLE_REVIEW.md` 与 `revision-links-*`。
+
 2026-10-08最新修订：当前稿`paper_cn_v2/`为v0.9（9页主稿/16页补充、六工具比较、SPARCL1固定候选/外部培养实验），详细记录见`implementation_records/PAPER_RELEASE_CONTINUATION.md`。源码/包记录采用`revision-source`、`revision-package-check`；新交付为r8。新发现分析依赖`research/discovery/requirements.txt`（SciPy1.17.1/NumPy1.26.4）。公开GitHub创建被令牌权限403阻塞，DOI未签发；状态见`RELEASE_ARCHIVE.md`。下述v0.8/r7及更早信息为历史范围。
 
 2026-10-08论文续改：当前中文稿为`docs/paper_cn_v1/`的v0.8（23页/8图/0嵌入表），9份CSV/XLSX外置；本轮45项airway数值、15开发场景与工作台项目/PDF修复记录见`implementation_records/PAPER_CN_CONTINUATION.md`。新开发审阅包为r7，当前manifest采用`paper-cn-source`和`paper-cn-package-check`；下文r6和v0.7相关数字保留历史范围。当前模型无PDF/图片直接视觉能力，几何检查不等同人工图稿审阅。
 
-W00 历史软件基线为 BioExplainR 0.3.1；当前开发版为 BioExplainR 0.4.0.9000。当前结果入口为 `research/results/current_manifest.json`，实际执行记录见 `implementation_records/`。Git 尚无 HEAD，manifest 的 commit SHA 为 null；版本通过文件清单 SHA-256 固定。
+W00 历史软件基线为 BioExplainR 0.3.1；当前开发版为 BioExplainR 0.4.0.9000。当前结果入口为 `research/results/current_manifest.json`，实际执行记录见 `implementation_records/`。已有本地提交 `dbd7075`/`545bb89`，后续修订尚未提交；当前内容通过文件清单 SHA-256 固定。
 
 ## 环境
 

@@ -1,0 +1,27 @@
+{
+  "utc": "2026-10-09T13:49:49.332526+00:00",
+  "script": {
+    "path": "research/discovery/validation_human_protein_numeric.py",
+    "bytes": 5586,
+    "sha256": "f17f0f7012d474ad9f22988b475635c35653d7c1c3fdfe6bad08ecb4240ba23d"
+  },
+  "timing": "Post-extraction exploratory: selected METTL7A/FKBP5 intensities and published effects already seen.",
+  "genes": [
+    "PER2",
+    "PER3",
+    "METTL7A",
+    "MAOA",
+    "ANGPTL2",
+    "FSTL3",
+    "PER1",
+    "FKBP5",
+    "TSC22D3",
+    "DUSP1",
+    "NR3C1"
+  ],
+  "response_family": "11 frozen genes x24/72h cellular proteome=22Holm. Unavailable per-sample arrays retained as P=1 placeholder, not null evidence.",
+  "technical_units": "Mean of three published log2 LFQ intensities per donor/condition. One paired difference per donor; n=6.",
+  "direct_family": "11 genes x72h-minus24h within-donor response difference, 11Holm; five matching donor labels. Distinct assay scales cancel within each time response; technical batches/time remain confounded.",
+  "conditional_selection": "Arrays supplied only on original differential lists. Recalculated inference conditional on published selection; not a new unselected protein screen or causal proof.",
+  "missing": "No imputation or significance-based substitutions; no selected row -> arrays_unavailable, effect/CIempty, P=1placeholder."
+}

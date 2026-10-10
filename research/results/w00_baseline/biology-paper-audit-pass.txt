@@ -1,0 +1,9 @@
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+Traceback (most recent call last):
+  File "/home/ubuntu/creatR/research/paper_cn_revision/audit_revision.py", line 155, in <module>
+    if __name__ == "__main__": main()
+                               ^^^^^^
+  File "/home/ubuntu/creatR/research/paper_cn_revision/audit_revision.py", line 117, in main
+    assert compression["core_contributions"] == 4 and compression["v0_9_body"] < compression["v0_8_body"] * .5
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/ubuntu/creatR/research/discovery/finalize_followup.py", line 71, in <module>
+    if __name__ == "__main__": main()
+                               ^^^^^^
+  File "/home/ubuntu/creatR/research/discovery/finalize_followup.py", line 54, in main
+    assert all(s in text for s in ["GSE94335", "GSE146017", "SPARCL1", "interaction_supported"])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

@@ -1,0 +1,23 @@
+{
+  "command": [
+    "/tmp/opencode/paper-venv/bin/python",
+    "research/paper_cn_revision/build_revision.py",
+    "--directory",
+    "docs/paper_cn_v4",
+    "--version",
+    "v0.10",
+    "--reuse-assets",
+    "docs/paper_cn_v3",
+    "--biology-followup"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-08T15:14:40.126191+00:00",
+  "finished_utc": "2026-10-08T15:14:57.335423+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/biology-paper-export.txt",
+    "bytes": 4638,
+    "sha256": "98287fc11bdcbde600d7fe022f579da7cbbd04a0578474cf66b2eb529d44ea35"
+  }
+}

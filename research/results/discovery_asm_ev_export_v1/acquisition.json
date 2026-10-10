@@ -1,0 +1,60 @@
+{
+  "utc": "2026-10-10T01:58:53.859298+00:00",
+  "records": [
+    {
+      "status": "retrieved",
+      "url": "https://www.ebi.ac.uk/pride/ws/archive/v2/projects/PXD055968",
+      "retrieved_utc": "2026-10-10T01:58:46.358549+00:00",
+      "http_status": 200,
+      "content_type": "text/plain;charset=UTF-8",
+      "attempts": [],
+      "path": "research/results/discovery_asm_ev_export_v1/sources/project.json",
+      "bytes": 8016,
+      "sha256": "a265c71f78e617efc562967993e112e5ddc144df71880e9c4b40d34799cf1b05"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://www.ebi.ac.uk/pride/ws/archive/v2/files/byProject?accession=PXD055968&pageSize=1000&page=0",
+      "retrieved_utc": "2026-10-10T01:58:47.432600+00:00",
+      "http_status": 200,
+      "content_type": "application/json",
+      "attempts": [],
+      "path": "research/results/discovery_asm_ev_export_v1/sources/files.json",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/",
+      "retrieved_utc": "2026-10-10T01:58:50.561036+00:00",
+      "http_status": 200,
+      "content_type": "text/html;charset=UTF-8",
+      "attempts": [],
+      "path": "research/results/discovery_asm_ev_export_v1/sources/directory.html",
+      "bytes": 13027,
+      "sha256": "4fe153870100a81ffd5d03df6d36666ce2049c6b71b1f3fe84669e4d2aa1d391"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/checksum.txt",
+      "retrieved_utc": "2026-10-10T01:58:51.283453+00:00",
+      "http_status": 200,
+      "content_type": "text/plain; charset=UTF-8",
+      "attempts": [],
+      "path": "research/results/discovery_asm_ev_export_v1/sources/checksum.txt",
+      "bytes": 7758,
+      "sha256": "07c8d8800d16ac8aaf81cc355b0ef0808983fb639fc8d34ac75448cd34824869"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://proteomecentral.proteomexchange.org/cgi/GetDataset?ID=PXD055968",
+      "retrieved_utc": "2026-10-10T01:58:53.858959+00:00",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "attempts": [],
+      "path": "research/results/discovery_asm_ev_export_v1/sources/proteomecentral.html",
+      "bytes": 7465,
+      "sha256": "82de483c45ccbfdeb60415dc83a54d0b7c9e891bd2f1c9d3b4c3f2f5664c430c"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "utc": "2026-10-10T03:25:29.479639+00:00",
+  "result": {
+    "status": "pass",
+    "files": 986,
+    "source_code": 16,
+    "archive_members": 1007,
+    "archive_bytes": 38177572,
+    "previous_evidence": {
+      "status": "pass",
+      "provenance_records": 236,
+      "provenance_archive_members": 232,
+      "prior_manifest": {
+        "path": "docs/secretome_provenance_v1/provenance_manifest.json",
+        "bytes": 95216,
+        "sha256": "411ca0eef0f469fac22edc9b1689d899cafea45f4775514258bcfd53fb778099"
+      },
+      "protected": 2905,
+      "nested": {
+        "status": "pass",
+        "secretome_records": 12827,
+        "secretome_archive_members": 8608,
+        "secretome_manifest": {
+          "path": "docs/secretome_validation_v1/secretome_manifest.json",
+          "bytes": 5698153,
+          "sha256": "42b4f3d65f41a71e302c1d576968c59e0f0cce915587077c0c4c4a085901d35c"
+        },
+        "protected": 2905,
+        "nested": {
+          "status": "pass",
+          "v012_files": 17257,
+          "original_protected_files": 2905,
+          "snapshot_policy": "Only v0.12 root rgo dependency uses exact pre-secretome snapshot; original scientific paths/hash unchanged",
+          "nested": {
+            "status": "pass",
+            "validation_records": 710,
+            "validation_archive_members": 629,
+            "preceding_paper_and_science": {
+              "status": "pass",
+              "v011_records": 87,
+              "v011_archive_members": 82,
+              "original_science_records": 203,
+              "snapshot_policy": "Explicitrgo/README/indexhistoricaldocumentsnapshots only; alloriginalsciencepaths/hash remain"
+            },
+            "snapshot_policy": "Validationrgo uses startsnapshot; nestedv011rgo/README/index use preciseversioned snapshots; alloriginalsciencepaths/hash unchanged"
+          }
+        },
+        "snapshot_policy": "Only preceding secretome rgo dependency uses exact pre-provenance snapshot; all previous science original paths/hash"
+      },
+      "snapshot_policy": "Only preceding provenance root rgo documentation uses exact pre-export snapshot; all other prior science original paths/hash"
+    },
+    "scientific_status": "blocked_missing_final_export",
+    "candidate_identity_started": false,
+    "scope": "18 submitted pdResult version/schema and single MSF metadata checks via partial original byte ranges; final correct-version joint quantitative export not acquired; no candidate identity or GC analysis"
+  },
+  "note": "Verification output outside own sealedmember list; verify rechecks all indexed evidence"
+}

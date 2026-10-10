@@ -1,0 +1,20 @@
+{
+  "status": "pass",
+  "utc": "2026-10-10T01:03:31.044585+00:00",
+  "script": {
+    "path": "research/discovery/secretome_provenance_selected_table.py",
+    "bytes": 2588,
+    "sha256": "473d36a6f8b69919e5bf72e1f1a9d26fd32aaab9db2754bc7478aa8f4e72c421"
+  },
+  "input": {
+    "path": "research/results/discovery_secretome_provenance_v1/sources/EV_publisher_supplement_normalized.bin",
+    "bytes": 8947418,
+    "sha256": "229e8e41eee68e83a5de42e0ebbe24bd8fbeed89cb5647762c309e27b3722fc5"
+  },
+  "selected_rows": 8,
+  "pvalue_below_05": 0,
+  "observed_pvalue_min": 0.0912,
+  "observed_pvalue_max": 0.59,
+  "discrepancy": "Original body says8significativeupregulated proteins; actualsupplementselectedtable allreportedExprP>.05 (.0912-.590). ExpectedUp is IPA annotation, not evidence8significantgenes. Do not substitute pathwayP orZ for proteinP.",
+  "limitations": "Published selected table only; no originaldonorarray or fullfamily correction. No independent effectre-estimation."
+}

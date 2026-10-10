@@ -1,0 +1,30 @@
+{
+  "status": "pass",
+  "finished_utc": "2026-10-08T16:02:15.684993+00:00",
+  "candidate": "SPARCL1",
+  "positive_paired_donors": 16,
+  "candidate_interactions_supported": 0,
+  "asthma_response_difference_supported": false,
+  "named_donor_overlap_between_followups": [
+    "N010912",
+    "N051911",
+    "N061311"
+  ],
+  "do_not_pool_independent_donors": true,
+  "novelty": "response already published; new donor distribution and null-interaction reanalysis, not first mechanistic discovery",
+  "pseudocount_direction_sensitivity": {
+    "1": {
+      "non_asthma": 3.514121269459118,
+      "fatal_asthma": 3.598265974208352
+    },
+    "0.5": {
+      "non_asthma": 3.583907704083557,
+      "fatal_asthma": 3.6865677493477795
+    },
+    "0.1": {
+      "non_asthma": 3.6477370038314634,
+      "fatal_asthma": 3.7727630766344387
+    }
+  },
+  "implementation": "R independent TPM/paired/t/Welch/exact/Holm; Python count-model algebra and donor sensitivity, not independent DESeq2 fit"
+}

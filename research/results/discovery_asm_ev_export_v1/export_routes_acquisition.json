@@ -1,0 +1,148 @@
+{
+  "utc": "2026-10-10T02:31:50.473665+00:00",
+  "records": [
+    {
+      "status": "retrieved",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12141081/fullTextXML",
+      "retrieved_utc": "2026-10-10T02:30:55.795350+00:00",
+      "http_status": 200,
+      "content_type": "application/xml",
+      "attempts": [],
+      "path": "research/results/discovery_asm_ev_export_v1/sources/article_current.xml",
+      "bytes": 187761,
+      "sha256": "1573922d23e2baca85af108303fba4ebcf758fe9547ed9cc7448bc89ada9ac75",
+      "valid_response": true
+    },
+    {
+      "status": "failed",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC12141081",
+      "path": "research/results/discovery_asm_ev_export_v1/sources/pmc_oa_manifest.xml",
+      "attempts": [
+        {
+          "utc": "2026-10-10T02:30:56.827762+00:00",
+          "error": "HTTP Error 404: Not Found",
+          "attempt": 1
+        },
+        {
+          "utc": "2026-10-10T02:30:58.798533+00:00",
+          "error": "HTTP Error 404: Not Found",
+          "attempt": 2
+        },
+        {
+          "utc": "2026-10-10T02:31:02.173029+00:00",
+          "error": "HTTP Error 404: Not Found",
+          "attempt": 3
+        }
+      ]
+    },
+    {
+      "status": "retrieved",
+      "url": "https://api.datacite.org/dois?query=PXD055968",
+      "retrieved_utc": "2026-10-10T02:31:08.835735+00:00",
+      "http_status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "attempts": [],
+      "path": "research/results/discovery_asm_ev_export_v1/sources/datacite_accession.json",
+      "bytes": 119,
+      "sha256": "a5fd0255a7fe1838a9d14ec26aeca6e452c1d95d0af66d131a84a9b5af37fea7",
+      "valid_response": true,
+      "hits": 0
+    },
+    {
+      "status": "retrieved",
+      "url": "https://api.datacite.org/dois?query=%2210.1016%2Fj.isci.2025.112546%22",
+      "retrieved_utc": "2026-10-10T02:31:12.000911+00:00",
+      "http_status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "attempts": [],
+      "path": "research/results/discovery_asm_ev_export_v1/sources/datacite_article_doi.json",
+      "bytes": 144,
+      "sha256": "41b2bc3698938755c196fb41464bdde5c96767e3cc7e67fcdddca78682a80ea9",
+      "valid_response": true,
+      "hits": 0
+    },
+    {
+      "status": "retrieved",
+      "url": "https://api.crossref.org/works/10.1016/j.isci.2025.112546",
+      "retrieved_utc": "2026-10-10T02:31:12.938847+00:00",
+      "http_status": 200,
+      "content_type": "application/json",
+      "attempts": [],
+      "path": "research/results/discovery_asm_ev_export_v1/sources/crossref_article.json",
+      "bytes": 30712,
+      "sha256": "3efd410aecc583213e86adf0b5b7c49cc6157b366d9c79338d2fb15fbbe5e911",
+      "valid_response": true,
+      "DOI": "10.1016/j.isci.2025.112546",
+      "relations": {},
+      "links": [
+        {
+          "URL": "https://api.elsevier.com/content/article/PII:S2589004225008077?httpAccept=text/xml",
+          "content-type": "text/xml",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://api.elsevier.com/content/article/PII:S2589004225008077?httpAccept=text/plain",
+          "content-type": "text/plain",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        }
+      ]
+    },
+    {
+      "status": "failed",
+      "url": "https://zenodo.org/api/records?q=%22PXD055968%22&size=100",
+      "path": "research/results/discovery_asm_ev_export_v1/sources/zenodo_accession.json",
+      "attempts": [
+        {
+          "utc": "2026-10-10T02:31:13.642852+00:00",
+          "error": "HTTP Error 400: BAD REQUEST",
+          "attempt": 1
+        },
+        {
+          "utc": "2026-10-10T02:31:34.402238+00:00",
+          "error": "HTTP Error 400: BAD REQUEST",
+          "attempt": 2
+        },
+        {
+          "utc": "2026-10-10T02:31:38.535066+00:00",
+          "error": "HTTP Error 400: BAD REQUEST",
+          "attempt": 3
+        }
+      ]
+    },
+    {
+      "status": "failed",
+      "url": "https://api.figshare.com/v2/articles?resource_doi=10.1016%2Fj.isci.2025.112546",
+      "path": "research/results/discovery_asm_ev_export_v1/sources/figshare_article_doi.json",
+      "attempts": [
+        {
+          "utc": "2026-10-10T02:31:42.297914+00:00",
+          "error": "HTTP Error 403: Forbidden",
+          "attempt": 1
+        },
+        {
+          "utc": "2026-10-10T02:31:44.018234+00:00",
+          "error": "HTTP Error 403: Forbidden",
+          "attempt": 2
+        },
+        {
+          "utc": "2026-10-10T02:31:46.681689+00:00",
+          "error": "HTTP Error 403: Forbidden",
+          "attempt": 3
+        }
+      ]
+    },
+    {
+      "status": "retrieved",
+      "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/Link_between_files.xlsx",
+      "retrieved_utc": "2026-10-10T02:31:50.473342+00:00",
+      "http_status": 200,
+      "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "attempts": [],
+      "path": "research/results/discovery_asm_ev_export_v1/sources/Link_between_files.xlsx",
+      "bytes": 13428,
+      "sha256": "b0494ffc67369a25af64641cae1528a9066e26570620f461e4edc1b7b51615b9"
+    }
+  ]
+}

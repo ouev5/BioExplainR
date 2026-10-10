@@ -1,0 +1,29 @@
+{
+  "frozen_utc": "2026-10-08T12:54:39.372074+00:00",
+  "protocol": {
+    "path": "CONTEXT_PROTOCOL.md",
+    "bytes": 3773,
+    "sha256": "54cb58946e5f3f785938106cbcb10787730598bab8823ec035eceee5ef4d8e45"
+  },
+  "scripts": [
+    {
+      "path": "prepare_context.py",
+      "bytes": 3223,
+      "sha256": "ced6b79a33a51905435272663790b4557b195265b8e2375f4c1e9f21ddec682f"
+    },
+    {
+      "path": "run_context.R",
+      "bytes": 7653,
+      "sha256": "d4a9869115250cb08f326c5659f9a77b4faad291b4813cbe39bbda8c738ee23f"
+    },
+    {
+      "path": "audit_context.py",
+      "bytes": 6027,
+      "sha256": "f8e92432b9206b6b82735f32ed6e9132b82f9dd88ddd668083ddbaa69415cf21"
+    }
+  ],
+  "candidate": "ENSG00000152583 / SPARCL1",
+  "timing": "Series metadata and paper read; GSE146017 expression/results unread in this session",
+  "previous_results_known": "airway and GSE34313 SPARCL1 response",
+  "claim": "Context-dependent response, not first SPARCL1 glucocorticoid response"
+}

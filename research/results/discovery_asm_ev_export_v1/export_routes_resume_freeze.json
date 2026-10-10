@@ -1,0 +1,24 @@
+{
+  "utc": "2026-10-10T02:34:36.457841+00:00",
+  "script": {
+    "path": "research/discovery/asm_ev_routes_resume.py",
+    "bytes": 1139,
+    "sha256": "af64492be4492a1b593557c922ae684a41c24b3937b4e16e08ff7715ec6af47c"
+  },
+  "requests": [
+    [
+      "pmc_oa_manifest_corrected.xml",
+      "https://pmc.ncbi.nlm.nih.gov/utils/oa/oa.fcgi?id=PMC12141081"
+    ],
+    [
+      "zenodo_accession_corrected.json",
+      "https://zenodo.org/api/records?q=PXD055968&size=20"
+    ],
+    [
+      "publisher_article.xml",
+      "https://api.elsevier.com/content/article/PII:S2589004225008077?httpAccept=text/xml"
+    ]
+  ],
+  "reason": "NCBI legacy OA path404; use PMC host. Check unquoted Zenodo query and DOI-bound publisher XML; preserve original failures",
+  "candidate_lookups": 0
+}

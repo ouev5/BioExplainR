@@ -1,0 +1,18 @@
+{
+  "command": [
+    "/tmp/opencode/paper-venv/bin/python",
+    "research/discovery/run_donors.py",
+    "analyze",
+    "research/results/discovery_donors_v1"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-08T14:44:48.633273+00:00",
+  "finished_utc": "2026-10-08T14:44:58.765596+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/biology-donors-statistics-final.txt",
+    "bytes": 1199,
+    "sha256": "96ebeff59674af12e568f83d53a8e73579f9d4e32950b0e8bd6e33e3193b074d"
+  }
+}

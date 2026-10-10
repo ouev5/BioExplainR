@@ -1,0 +1,29 @@
+{
+  "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/pe210308_09.pdResult",
+  "requested": [
+    55312384,
+    55574527
+  ],
+  "attempts": [],
+  "status": "retrieved",
+  "utc": "2026-10-10T02:21:51.431457+00:00",
+  "http_status": 206,
+  "headers": {
+    "Date": "Sat, 10 Oct 2026 02:21:47 GMT",
+    "Server": "Apache",
+    "Last-Modified": "Wed, 26 Nov 2025 14:23:31 GMT",
+    "ETag": "\"37b35000-644802403dec0\"",
+    "Accept-Ranges": "bytes",
+    "Content-Length": "262144",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Methods": "GET,OPTIONS",
+    "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+    "Content-Range": "bytes 55312384-55574527/934498304",
+    "Connection": "close"
+  },
+  "file": {
+    "path": "research/results/discovery_asm_ev_export_v1/ranges/pe210308_09.pdResult/55312384-55574527.bin",
+    "bytes": 262144,
+    "sha256": "c79601fe9e3fb7595109af41c894932837cccca96d270de8e4a06b60294fa8c2"
+  }
+}

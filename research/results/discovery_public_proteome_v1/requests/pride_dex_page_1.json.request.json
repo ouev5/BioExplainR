@@ -1,0 +1,30 @@
+{
+  "name": "pride_dex_page_1.json",
+  "url": "https://www.ebi.ac.uk/pride/ws/archive/v2/search/projects?keyword=dexamethasone&pageSize=100&page=1",
+  "started_utc": "2026-10-10T05:11:07.977634+00:00",
+  "http_status": 200,
+  "final_url": "https://www.ebi.ac.uk/pride/ws/archive/v2/search/projects?keyword=dexamethasone&pageSize=100&page=1",
+  "headers": {
+    "Vary": "Origin",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Content-Type": "application/json",
+    "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+    "total_records": "113",
+    "Expires": "0",
+    "Pragma": "no-cache",
+    "X-XSS-Protection": "0",
+    "X-Content-Type-Options": "nosniff",
+    "Connection": "close",
+    "X-Frame-Options": "DENY",
+    "Referrer-Policy": "no-referrer",
+    "Content-Length": "146027"
+  },
+  "status": "retrieved",
+  "response": {
+    "path": "research/results/discovery_public_proteome_v1/sources/pride_dex_page_1.json",
+    "bytes": 146027,
+    "sha256": "d295b1103bc8ed659db66887bd0b54ad08186e5d4fd40324f76848224ddb1598"
+  },
+  "completed_utc": "2026-10-10T05:11:10.842974+00:00",
+  "seconds": 2.8653420321643353
+}

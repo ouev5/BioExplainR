@@ -1,0 +1,35 @@
+{
+  "status": "pass",
+  "utc": "2026-10-10T03:24:13.716144+00:00",
+  "checks": [
+    {
+      "check": "real HTTP206 multi-block + offline exact bytes",
+      "status": "pass"
+    },
+    {
+      "check": "reject outside-file read",
+      "status": "pass"
+    },
+    {
+      "check": "reject ignored",
+      "status": "pass"
+    },
+    {
+      "check": "reject wrong_range",
+      "status": "pass"
+    },
+    {
+      "check": "reject changed ETag across blocks",
+      "status": "pass"
+    },
+    {
+      "check": "reject cached-block hash corruption",
+      "status": "pass"
+    },
+    {
+      "check": "reject missing offline block",
+      "status": "pass"
+    }
+  ],
+  "scope": "Real loopback HTTP range/data-identity/cache rejection checks; not upstream whole-file verification"
+}

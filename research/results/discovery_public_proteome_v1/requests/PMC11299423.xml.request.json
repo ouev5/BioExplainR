@@ -1,0 +1,24 @@
+{
+  "name": "PMC11299423.xml",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11299423/fullTextXML",
+  "started_utc": "2026-10-10T05:13:08.320743+00:00",
+  "status": "http_error",
+  "http_status": 500,
+  "headers": {
+    "Vary": "origin,access-control-request-method,access-control-request-headers,accept-encoding",
+    "Content-Type": "application/json",
+    "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+    "Date": "Sat, 10 Oct 2026 05:13:10 GMT",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Set-Cookie": "JSESSIONID=99982D43475439F1D12CF349DB976A00; Path=/europepmc/webservices/rest; Secure; HttpOnly"
+  },
+  "error": "HTTP Error 500: ",
+  "response": {
+    "path": "research/results/discovery_public_proteome_v1/sources/PMC11299423.xml",
+    "bytes": 151,
+    "sha256": "938bec7a287d8c2175eae862d1535b5c3e84d16a26f83ed70ca9403f13da484d"
+  },
+  "completed_utc": "2026-10-10T05:13:10.743771+00:00",
+  "seconds": 2.42303011380136
+}

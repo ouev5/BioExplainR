@@ -1,0 +1,18 @@
+{
+  "command": [
+    "env",
+    "TMPDIR=/tmp/opencode",
+    "python3",
+    "research/test_current_audit.py"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-08T16:18:53.927346+00:00",
+  "finished_utc": "2026-10-08T16:18:54.133745+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/biology-handoff-audit-probes.txt",
+    "bytes": 103,
+    "sha256": "6299c61ecefc2c6e262ba2dccd92b35e4ade4e41b723fe2eac602dbd7b324b98"
+  }
+}

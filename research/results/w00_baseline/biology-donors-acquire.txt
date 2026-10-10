@@ -1,0 +1,4 @@
+  File "/home/ubuntu/creatR/research/discovery/run_donors.py", line 41
+    (out / "sample_metadata.txt").write_text("".join(line for line in f if line.startswith(("!Sample_title", "!Sample_geo_accession", "!Sample_characteristics")))))
+                                                                                                                                                                   ^
+SyntaxError: unmatched ')'

@@ -1,0 +1,28 @@
+{
+  "command": [
+    "python3",
+    "research/package_submission.py",
+    "--revision",
+    "--biology-followup",
+    "--paper-directory",
+    "docs/paper_cn_v4",
+    "--paper-version",
+    "v0.10",
+    "--audit",
+    "docs/paper_cn_v4/audit.json",
+    "--output",
+    "docs/BioExplainR-development-delivery-0.4.0.9000-r11.zip",
+    "--result",
+    "research/results/w00_baseline/biology-delivery-audit-result.json"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-08T16:21:38.257583+00:00",
+  "finished_utc": "2026-10-08T16:21:50.253695+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/biology-delivery-package.txt",
+    "bytes": 172,
+    "sha256": "36886404e6779b81019cf6c6699efb01221d31812416f2f30c9abaf366ef0043"
+  }
+}

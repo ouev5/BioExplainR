@@ -1,0 +1,78 @@
+{
+  "file": {
+    "path": "research/results/discovery_public_proteome_v1/sources/PXD029135_median-normalized_complete.txt",
+    "bytes": 2055550,
+    "sha256": "e4ea82e370223bf28b63c2a850134efb5f3d70fcd574368c768634a7edc68e46"
+  },
+  "expected_bytes": 2055550,
+  "upstream_sha1": "c99601bc60192720d23fc10d18bc8ce50e5e849f",
+  "upstream_sha1_matches": true,
+  "data_rows": 3072,
+  "columns": 46,
+  "samples": 43,
+  "individuals": 10,
+  "numeric_values": 73453,
+  "NA_values": 58643,
+  "matched_metadata_assays": 43,
+  "main_ICS_polyIC_T2_cells": [
+    {
+      "post_ICS": 0,
+      "polyIC": 0,
+      "imiquimod": 0,
+      "T2high": 0,
+      "samples": 5
+    },
+    {
+      "post_ICS": 0,
+      "polyIC": 0,
+      "imiquimod": 0,
+      "T2high": 1,
+      "samples": 5
+    },
+    {
+      "post_ICS": 0,
+      "polyIC": 1,
+      "imiquimod": 0,
+      "T2high": 0,
+      "samples": 5
+    },
+    {
+      "post_ICS": 0,
+      "polyIC": 1,
+      "imiquimod": 0,
+      "T2high": 1,
+      "samples": 5
+    },
+    {
+      "post_ICS": 1,
+      "polyIC": 0,
+      "imiquimod": 0,
+      "T2high": 0,
+      "samples": 5
+    },
+    {
+      "post_ICS": 1,
+      "polyIC": 0,
+      "imiquimod": 0,
+      "T2high": 1,
+      "samples": 5
+    },
+    {
+      "post_ICS": 1,
+      "polyIC": 1,
+      "imiquimod": 0,
+      "T2high": 0,
+      "samples": 5
+    },
+    {
+      "post_ICS": 1,
+      "polyIC": 1,
+      "imiquimod": 0,
+      "T2high": 1,
+      "samples": 5
+    }
+  ],
+  "unmatched_raw_names": [],
+  "instrument_metadata_conflict": "PRIDE project Q Exactive HF; community SDRF Q Exactive HF-X",
+  "candidate_statistics_started": false
+}

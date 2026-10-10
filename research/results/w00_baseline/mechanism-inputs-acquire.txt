@@ -1,0 +1,15 @@
+curl: (28) Operation timed out after 180000 milliseconds with 5075768 bytes received
+curl: (28) Operation timed out after 180000 milliseconds with 17381221 bytes received
+curl: (28) Operation timed out after 180000 milliseconds with 21811380 bytes received
+curl: (28) Operation timed out after 180000 milliseconds with 25790110 bytes received
+Traceback (most recent call last):
+  File "/home/ubuntu/creatR/research/discovery/prepare_mechanism.py", line 51, in <module>
+    main()
+  File "/home/ubuntu/creatR/research/discovery/prepare_mechanism.py", line 45, in main
+    inputs.append(fetch(url, out / name))
+                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/creatR/research/discovery/prepare_mechanism.py", line 19, in fetch
+    subprocess.run(['curl', '-fsSL', '--retry', '3', '--connect-timeout', '20', '--max-time', '180', '-o', str(path), url], check=True)
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['curl', '-fsSL', '--retry', '3', '--connect-timeout', '20', '--max-time', '180', '-o', 'research/results/discovery_mechanism_v1/intervention_metadata.txt', 'https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE229084&targ=all&form=text&view=full']' returned non-zero exit status 28.

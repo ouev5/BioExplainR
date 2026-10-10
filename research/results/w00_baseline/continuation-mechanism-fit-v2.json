@@ -1,0 +1,18 @@
+{
+  "command": [
+    "Rscript",
+    "--vanilla",
+    "research/discovery/run_mechanism.R",
+    "research/results/discovery_mechanism_fit_v2"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-09T01:32:08.016480+00:00",
+  "finished_utc": "2026-10-09T01:32:11.866000+00:00",
+  "exit_code": 1,
+  "status": "fail",
+  "log": {
+    "path": "research/results/w00_baseline/continuation-mechanism-fit-v2.txt",
+    "bytes": 118,
+    "sha256": "66523daf0375e4b8525c2b45034ad97f1f567d8d28141ab80fcdb4c05d38c020"
+  }
+}

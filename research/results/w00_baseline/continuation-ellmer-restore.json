@@ -1,0 +1,17 @@
+{
+  "command": [
+    "Rscript",
+    "--vanilla",
+    "research/common_performance/install_comparator.R"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-09T01:24:11.072386+00:00",
+  "finished_utc": "2026-10-09T01:25:21.089670+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/continuation-ellmer-restore.txt",
+    "bytes": 32817,
+    "sha256": "8cae60aec151040b2f4206f6a74d9dda63c7251d5431a23242b4b991d28f9be2"
+  }
+}

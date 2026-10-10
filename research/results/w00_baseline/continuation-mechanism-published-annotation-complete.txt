@@ -1,0 +1,105 @@
+Published object class: SummarizedExperiment 
+      sample_id batch                     condition          SV1          SV2
+MG_1          1  set1                 18h untreated  0.084940987  0.003536120
+MG_10        10  set1        2h DEX >\n16h DEX+DMSO  0.084093663 -0.015442726
+MG_11        11  set1      2h DEX >\n16h DEX+KH-103  0.103726615  0.014514907
+MG_12        12  set1         2h DEX >\n16h DEX+MIF  0.151196227  0.136530250
+MG_13        13  set1     2h DEX >\n16h DEX+Cort113  0.177192453  0.144901289
+MG_14        14  set2                 18h untreated -0.006933928 -0.093609583
+MG_16        16  set2                    18h KH-103  0.065557119 -0.113958513
+MG_17        17  set2                       18h MIF  0.019026237 -0.036297408
+MG_18        18  set2                   18h Cort113  0.014160849 -0.038184010
+MG_19        19  set2       16h DMSO >\n2h DEX+DMSO  0.020503035 -0.054250837
+MG_2          2  set1                      18h DMSO  0.083416749 -0.030463833
+MG_20        20  set2   16h KH-103 >\n2h DEX+KH-103 -0.060003021 -0.138811192
+MG_21        21  set2        16h MIF  >\n2h DEX+MIF -0.048473414 -0.160285800
+MG_22        22  set2 16h Cort113 >\n2h DEX+Cort113 -0.058714111 -0.102729246
+MG_23        23  set2        2h DEX >\n16h DEX+DMSO  0.013471979 -0.047747725
+MG_24        24  set2      2h DEX >\n16h DEX+KH-103 -0.088693705 -0.070440603
+MG_25        25  set2         2h DEX >\n16h DEX+MIF -0.828551254  0.368641492
+MG_26        26  set2     2h DEX >\n16h DEX+Cort113 -0.003183902 -0.122368190
+MG_27        27  set3                 18h untreated -0.012264946 -0.059781107
+MG_28        28  set3                      18h DMSO -0.038515508 -0.101502587
+MG_29        29  set3                    18h KH-103 -0.059832854 -0.166832478
+MG_3          3  set1                    18h KH-103  0.077952766 -0.090031244
+MG_30        30  set3                       18h MIF -0.084251330 -0.144738340
+MG_31        31  set3                   18h Cort113 -0.049191774 -0.187411948
+MG_32        32  set3       16h DMSO >\n2h DEX+DMSO -0.012513319 -0.063828835
+MG_33        33  set3   16h KH-103 >\n2h DEX+KH-103 -0.141100522 -0.276881830
+MG_34        34  set3        16h MIF  >\n2h DEX+MIF  0.034984026  0.028348161
+MG_35        35  set3 16h Cort113 >\n2h DEX+Cort113 -0.014975115 -0.004773578
+MG_36        36  set3        2h DEX >\n16h DEX+DMSO -0.092309344 -0.123524093
+MG_37        37  set3      2h DEX >\n16h DEX+KH-103  0.018209865 -0.017694641
+MG_38        38  set3         2h DEX >\n16h DEX+MIF -0.006226553 -0.099079164
+MG_39        39  set3     2h DEX >\n16h DEX+Cort113 -0.037299954 -0.107366859
+MG_4          4  set1                       18h MIF  0.084709397 -0.066362124
+MG_40        40  set4                 18h untreated  0.030658611  0.112733817
+MG_41        41  set4                      18h DMSO -0.046970549  0.043534204
+MG_42        42  set4                    18h KH-103  0.007744891  0.128359381
+MG_43        43  set4                       18h MIF  0.018597318  0.125663218
+MG_44        44  set4                   18h Cort113 -0.006754242  0.042738773
+MG_45        45  set4       16h DMSO >\n2h DEX+DMSO -0.159379417 -0.055522889
+MG_46        46  set4   16h KH-103 >\n2h DEX+KH-103 -0.086579206  0.050878893
+MG_47        47  set4        16h MIF  >\n2h DEX+MIF -0.042139855  0.088027393
+MG_48        48  set4 16h Cort113 >\n2h DEX+Cort113  0.010530609  0.114304540
+MG_49        49  set4        2h DEX >\n16h DEX+DMSO  0.019304966  0.167875485
+MG_5          5  set1                   18h Cort113  0.124506915  0.013101983
+MG_50        50  set4      2h DEX >\n16h DEX+KH-103  0.084843353  0.270311435
+MG_51        51  set4         2h DEX >\n16h DEX+MIF  0.141281819  0.364909457
+MG_52        52  set4     2h DEX >\n16h DEX+Cort113  0.193665822  0.414376249
+MG_6          6  set1       16h DMSO >\n2h DEX+DMSO  0.082460030 -0.048988908
+MG_7          7  set1   16h KH-103 >\n2h DEX+KH-103  0.075846993 -0.023934416
+MG_8          8  set1        16h MIF  >\n2h DEX+MIF  0.076972088  0.060747670
+MG_9          9  set1 16h Cort113 >\n2h DEX+Cort113  0.085302440 -0.031190009
+                        condition2 isInhibited isDEX      condType
+MG_1                       control       FALSE FALSE       control
+MG_10        2h DEX > 16h DEX+DMSO       FALSE  TRUE           DEX
+MG_11      2h DEX > 16h DEX+KH-103        TRUE  TRUE DEX+inhibited
+MG_12         2h DEX > 16h DEX+MIF        TRUE  TRUE DEX+inhibited
+MG_13     2h DEX > 16h DEX+Cort113        TRUE  TRUE DEX+inhibited
+MG_14                      control       FALSE FALSE       control
+MG_16                   18h KH-103        TRUE FALSE     inhibited
+MG_17                      18h MIF        TRUE FALSE     inhibited
+MG_18                  18h Cort113        TRUE FALSE     inhibited
+MG_19       16h DMSO > 2h DEX+DMSO       FALSE  TRUE           DEX
+MG_2                       control       FALSE FALSE       control
+MG_20   16h KH-103 > 2h DEX+KH-103        TRUE  TRUE DEX+inhibited
+MG_21        16h MIF  > 2h DEX+MIF        TRUE  TRUE DEX+inhibited
+MG_22 16h Cort113 > 2h DEX+Cort113        TRUE  TRUE DEX+inhibited
+MG_23        2h DEX > 16h DEX+DMSO       FALSE  TRUE           DEX
+MG_24      2h DEX > 16h DEX+KH-103        TRUE  TRUE DEX+inhibited
+MG_25         2h DEX > 16h DEX+MIF        TRUE  TRUE DEX+inhibited
+MG_26     2h DEX > 16h DEX+Cort113        TRUE  TRUE DEX+inhibited
+MG_27                      control       FALSE FALSE       control
+MG_28                      control       FALSE FALSE       control
+MG_29                   18h KH-103        TRUE FALSE     inhibited
+MG_3                    18h KH-103        TRUE FALSE     inhibited
+MG_30                      18h MIF        TRUE FALSE     inhibited
+MG_31                  18h Cort113        TRUE FALSE     inhibited
+MG_32       16h DMSO > 2h DEX+DMSO       FALSE  TRUE           DEX
+MG_33   16h KH-103 > 2h DEX+KH-103        TRUE  TRUE DEX+inhibited
+MG_34        16h MIF  > 2h DEX+MIF        TRUE  TRUE DEX+inhibited
+MG_35 16h Cort113 > 2h DEX+Cort113        TRUE  TRUE DEX+inhibited
+MG_36        2h DEX > 16h DEX+DMSO       FALSE  TRUE           DEX
+MG_37      2h DEX > 16h DEX+KH-103        TRUE  TRUE DEX+inhibited
+MG_38         2h DEX > 16h DEX+MIF        TRUE  TRUE DEX+inhibited
+MG_39     2h DEX > 16h DEX+Cort113        TRUE  TRUE DEX+inhibited
+MG_4                       18h MIF        TRUE FALSE     inhibited
+MG_40                      control       FALSE FALSE       control
+MG_41                      control       FALSE FALSE       control
+MG_42                   18h KH-103        TRUE FALSE     inhibited
+MG_43                      18h MIF        TRUE FALSE     inhibited
+MG_44                  18h Cort113        TRUE FALSE     inhibited
+MG_45       16h DMSO > 2h DEX+DMSO       FALSE  TRUE           DEX
+MG_46   16h KH-103 > 2h DEX+KH-103        TRUE  TRUE DEX+inhibited
+MG_47        16h MIF  > 2h DEX+MIF        TRUE  TRUE DEX+inhibited
+MG_48 16h Cort113 > 2h DEX+Cort113        TRUE  TRUE DEX+inhibited
+MG_49        2h DEX > 16h DEX+DMSO       FALSE  TRUE           DEX
+MG_5                   18h Cort113        TRUE FALSE     inhibited
+MG_50      2h DEX > 16h DEX+KH-103        TRUE  TRUE DEX+inhibited
+MG_51         2h DEX > 16h DEX+MIF        TRUE  TRUE DEX+inhibited
+MG_52     2h DEX > 16h DEX+Cort113        TRUE  TRUE DEX+inhibited
+MG_6        16h DMSO > 2h DEX+DMSO       FALSE  TRUE           DEX
+MG_7    16h KH-103 > 2h DEX+KH-103        TRUE  TRUE DEX+inhibited
+MG_8         16h MIF  > 2h DEX+MIF        TRUE  TRUE DEX+inhibited
+MG_9  16h Cort113 > 2h DEX+Cort113        TRUE  TRUE DEX+inhibited

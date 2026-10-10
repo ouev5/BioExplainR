@@ -1,0 +1,28 @@
+{
+  "status": "pass",
+  "utc": "2026-10-09T14:03:42.523945+00:00",
+  "old_integrity": {
+    "v011_records": 87,
+    "v011_archive_members": 82,
+    "original_science_records": 203,
+    "rgo_snapshot_policy": "v011exactstartsnapshot; pre-v011scientificsnapshot; all scientificfilesoriginalpath/hash"
+  },
+  "source_counts": {
+    "initial_unique_series": 31,
+    "expanded_unique_series": 193,
+    "expanded_literature_records": 115
+  },
+  "exact_ASM_WLS_numeric_checks": 220,
+  "human_original_XLSX_measurements": 144,
+  "csv_xlsx_pairs": 4,
+  "report_pages": 7,
+  "report_tables": 4,
+  "report_figures": 3,
+  "PDF_spans": 275,
+  "vector_original_figures": [
+    "Figure_1_adult_ASM.pdf",
+    "Figure_2_GR_genetics.pdf",
+    "Figure_3_human_protein.pdf"
+  ],
+  "scope": "Fresh public-data audit; published adult Ct absent, human protein selected-array limitations retained; not global project acceptance"
+}

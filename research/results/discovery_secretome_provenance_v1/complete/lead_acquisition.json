@@ -1,0 +1,60 @@
+{
+  "utc": "2026-10-10T00:45:09.709920+00:00",
+  "records": [
+    {
+      "status": "retrieved",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A40487443+AND+SRC%3AMED&format=json&resultType=core",
+      "retrieved_utc": "2026-10-10T00:45:03.227418+00:00",
+      "http_status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "attempts": [],
+      "path": "research/results/discovery_secretome_provenance_v1/sources/ev_article_metadata.json",
+      "bytes": 16975,
+      "sha256": "caae9a9e95b0f4fdd147e4920b6c320760349ea334ca7bba31334ea65ee7666c"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/Link_between_files.xlsx",
+      "retrieved_utc": "2026-10-10T00:45:04.348569+00:00",
+      "http_status": 200,
+      "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "attempts": [],
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PXD055968_Link_between_files.xlsx",
+      "bytes": 13428,
+      "sha256": "b0494ffc67369a25af64641cae1528a9066e26570620f461e4edc1b7b51615b9"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6706008/fullTextXML",
+      "retrieved_utc": "2026-10-10T00:45:05.834197+00:00",
+      "http_status": 200,
+      "content_type": "application/xml",
+      "attempts": [],
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PTX3_article.xml",
+      "bytes": 106837,
+      "sha256": "6a5ac8611714d61f36ceed868d1810cdab63491a0d896359a3aac139e891f0df"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5686396/fullTextXML",
+      "retrieved_utc": "2026-10-10T00:45:08.138518+00:00",
+      "http_status": 200,
+      "content_type": "application/xml",
+      "attempts": [],
+      "path": "research/results/discovery_secretome_provenance_v1/sources/cough_article.xml",
+      "bytes": 112072,
+      "sha256": "474af8ecac5ec05671f8d7982cfcddb11446282eca63ddc2e7c7986d83000c36"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12141081/fullTextXML",
+      "retrieved_utc": "2026-10-10T00:45:09.699157+00:00",
+      "http_status": 200,
+      "content_type": "application/xml",
+      "attempts": [],
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC12141081.xml",
+      "bytes": 187761,
+      "sha256": "1573922d23e2baca85af108303fba4ebcf758fe9547ed9cc7448bc89ada9ac75"
+    }
+  ]
+}

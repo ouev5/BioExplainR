@@ -1,0 +1,84 @@
+{
+  "status": "pass",
+  "utc": "2026-10-09T16:20:50.458662+00:00",
+  "main": {
+    "name": "BioExplainR-中文论文-v0.12",
+    "pages": 13,
+    "docx_tables": 3,
+    "figures": 3,
+    "vector_figures": [
+      {
+        "caption": "图 1 原固定候选的四背景响应",
+        "page": 11,
+        "pdf": {
+          "path": "docs/paper_cn_v6/figures/Figure_1.pdf",
+          "bytes": 15463,
+          "sha256": "028ef82c79ea46f7f11b634ddbe3e666927365a504f2c17377faabcf84c8904e"
+        }
+      },
+      {
+        "caption": "图 2 完整54基因的六成人逐供体响应",
+        "page": 12,
+        "pdf": {
+          "path": "docs/paper_cn_v6/figures/Figure_2.pdf",
+          "bytes": 41717,
+          "sha256": "f14477a79edf5cdb67df25526f79f335757c0a23f9f82055c4a737e5730d8f5a"
+        }
+      },
+      {
+        "caption": "图 3 候选证据层级与未确认范围",
+        "page": 13,
+        "pdf": {
+          "path": "docs/paper_cn_v6/figures/Figure_3.pdf",
+          "bytes": 25630,
+          "sha256": "cbcf3ba3e0bb20ce1db6d9f46f7773c2430c63b8b2e599d022f47a3412a87bd1"
+        }
+      }
+    ]
+  },
+  "supplement": {
+    "name": "BioExplainR-补充材料-v0.12",
+    "pages": 19,
+    "docx_tables": 5,
+    "figures": 4,
+    "vector_figures": [
+      {
+        "caption": "补充图 S1 旧13供体固定候选响应",
+        "page": 16,
+        "pdf": {
+          "path": "docs/paper_cn_v6/figures/Figure_S1.pdf",
+          "bytes": 14395,
+          "sha256": "09d6abe1d1534d31fa5d3b0697e59508123eb8012e5d4683454ff62f05827fb9"
+        }
+      },
+      {
+        "caption": "补充图 S2 A549药理及暴露条件差",
+        "page": 17,
+        "pdf": {
+          "path": "docs/paper_cn_v6/figures/Figure_S2.pdf",
+          "bytes": 15478,
+          "sha256": "b0d24132ea00960c4c9f86f10bcf84beb34f8474c9a372c7f219652e429af8cc"
+        }
+      },
+      {
+        "caption": "补充图 S3 GR遗传交叉检验",
+        "page": 18,
+        "pdf": {
+          "path": "docs/paper_cn_v6/figures/Figure_S3.pdf",
+          "bytes": 14247,
+          "sha256": "389f2773d901e53baefd091fdf9422bb43691eb374362fb440a35344e7e4c401"
+        }
+      },
+      {
+        "caption": "补充图 S4 完整原LFQ的METTL7A逐供体标签",
+        "page": 19,
+        "pdf": {
+          "path": "docs/paper_cn_v6/figures/Figure_S4.pdf",
+          "bytes": 17028,
+          "sha256": "9bce0dd16d7b82e82e5b99b2d98fe5b276a48600db80a03157e04d81e63dbb7f"
+        }
+      }
+    ]
+  },
+  "scope": "New54gene analysis + preserved public validation manuscript integration; originals retained"
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>BioExplainR Analysis Explanation Report</title><style>body{font-family:-apple-system,'Segoe UI','Noto Sans CJK SC','Microsoft YaHei',sans-serif;max-width:960px;margin:2em auto;padding:0 1em;line-height:1.6;color:#222} table{border-collapse:collapse;margin:.5em 0;font-size:.9em}th,td{border:1px solid #ccc;padding:3px 8px;text-align:left} th{background:#f3f3f3}pre{background:#f6f8fa;padding:.8em;overflow-x:auto}h1{border-bottom:2px solid #2a6f97}h2{color:#2a6f97}</style></head><body>
+<h1>BioExplainR Analysis Explanation Report</h1>
+<p>Generated: 2026-10-08 23:07:09 CST; BioExplainR 0.4.0.9000.</p>
+<p>Note: statistical facts are computed deterministically by R from the full input; model text (if any) only organises language and is not numerically verified. The report contains no API key, raw expression matrix, cell barcodes or sample names.</p>
+<h2>Object 1</h2>
+<h3>Cross-analysis project summary</h3>
+<table><tr><th>name</th><th>type</th><th>source</th><th>source_status</th><th>validation</th></tr><tr><td>candidate</td><td>generic</td><td>NA</td><td>unknown</td><td>not_applicable</td></tr><tr><td>factorial</td><td>generic</td><td>NA</td><td>unknown</td><td>not_applicable</td></tr><tr><td>donor_response</td><td>generic</td><td>NA</td><td>unknown</td><td>not_applicable</td></tr></table>
+<h3>Source consistency check</h3>
+<table><tr><th>check</th><th>status</th><th>detail</th></tr><tr><td>species</td><td>consistent</td><td>Homo sapiens</td></tr><tr><td>tissue</td><td>consistent</td><td>airway smooth muscle</td></tr><tr><td>contrast</td><td>unknown</td><td>No recorded value</td></tr></table>
+<h3>Data dependencies (upstream -&gt; derived result)</h3>
+<table><tr><th>from</th><th>to</th></tr><tr><td>candidate</td><td>factorial</td></tr><tr><td>candidate</td><td>donor_response</td></tr></table>
+<p>Derived enrichment results or plots share inputs with their upstream results and are not independent validation.</p>
+<ul><li>项目包含 3 个结果，2 条记录的数据依赖关系。</li><li>factorial 派生自 candidate；派生结果不构成上游结果的独立验证。</li><li>donor_response 派生自 candidate；派生结果不构成上游结果的独立验证。</li><li>不同分析结果方向一致只能形成待验证的生物学假设，不能自动推出因果关系。</li></ul>
+<h2>candidate</h2>
+<h3>Source and parameters</h3>
+<table><tr><th>item</th><th>value</th></tr><tr><td>analysis_type</td><td>generic</td></tr><tr><td>source_class</td><td>data.frame</td></tr><tr><td>source_package</td><td>NA</td></tr><tr><td>source_status</td><td>unknown</td></tr><tr><td>adapter</td><td>generic</td></tr><tr><td>thresholds</td><td>padj=0.05; lfc=0; p=0.05</td></tr><tr><td>created</td><td>2026-10-08 23:07:09 CST</td></tr></table>
+<h3>User-supplied study context</h3>
+<table><tr><th>item</th><th>value</th></tr><tr><td>species</td><td>Homo sapiens</td></tr><tr><td>tissue</td><td>airway smooth muscle</td></tr></table>
+<h3>Deterministic statistical facts</h3>
+<table><tr><th>item</th><th>value</th></tr><tr><td>class</td><td>data.frame</td></tr><tr><td>type</td><td>list</td></tr><tr><td>is_s4</td><td>FALSE</td></tr><tr><td>size</td><td>1.2 Kb</td></tr><tr><td>dim</td><td>1, 4</td></tr><tr><td>column_types</td><td>character, character, numeric  , numeric  </td></tr><tr><td>novelty</td><td>SPARCL1 glucocorticoid response was reported in Himes 2014 Table 1 and Kan 2019 Table 3.</td></tr></table>
+<h2>factorial</h2>
+<h3>Source and parameters</h3>
+<table><tr><th>item</th><th>value</th></tr><tr><td>analysis_type</td><td>generic</td></tr><tr><td>source_class</td><td>data.frame</td></tr><tr><td>source_package</td><td>NA</td></tr><tr><td>source_status</td><td>unknown</td></tr><tr><td>adapter</td><td>generic</td></tr><tr><td>thresholds</td><td>padj=0.05; lfc=0; p=0.05</td></tr><tr><td>created</td><td>2026-10-08 23:07:09 CST</td></tr></table>
+<h3>User-supplied study context</h3>
+<table><tr><th>item</th><th>value</th></tr><tr><td>species</td><td>Homo sapiens</td></tr><tr><td>tissue</td><td>airway smooth muscle</td></tr></table>
+<h3>Deterministic statistical facts</h3>
+<table><tr><th>item</th><th>value</th></tr><tr><td>class</td><td>data.frame</td></tr><tr><td>type</td><td>list</td></tr><tr><td>is_s4</td><td>FALSE</td></tr><tr><td>size</td><td>6.1 Kb</td></tr><tr><td>dim</td><td>32, 12</td></tr><tr><td>column_types</td><td>character, character, character, numeric  , numeric  , numeric  , numeric  , numeric  , numeric  , numeric  , numeric  , numeric  </td></tr><tr><td>interaction_results</td><td>[{&quot;symbol&quot;:&quot;SPARCL1&quot;,&quot;feature_id&quot;:&quot;ENSG00000152583&quot;,&quot;contrast&quot;:&quot;bud_tnf_NT&quot;,&quot;baseMean&quot;:8.1747998412452407,&quot;log2FoldCh...</td></tr><tr><td>interaction_supported</td><td>FALSE</td></tr></table>
+<h2>donor_response</h2>
+<h3>Source and parameters</h3>
+<table><tr><th>item</th><th>value</th></tr><tr><td>analysis_type</td><td>generic</td></tr><tr><td>source_class</td><td>data.frame</td></tr><tr><td>source_package</td><td>NA</td></tr><tr><td>source_status</td><td>unknown</td></tr><tr><td>adapter</td><td>generic</td></tr><tr><td>thresholds</td><td>padj=0.05; lfc=0; p=0.05</td></tr><tr><td>created</td><td>2026-10-08 23:07:09 CST</td></tr></table>
+<h3>User-supplied study context</h3>
+<table><tr><th>item</th><th>value</th></tr><tr><td>species</td><td>Homo sapiens</td></tr><tr><td>tissue</td><td>airway smooth muscle</td></tr></table>
+<h3>Deterministic statistical facts</h3>
+<table><tr><th>item</th><th>value</th></tr><tr><td>class</td><td>data.frame</td></tr><tr><td>type</td><td>list</td></tr><tr><td>is_s4</td><td>FALSE</td></tr><tr><td>size</td><td>2.7 Kb</td></tr><tr><td>dim</td><td>3, 12</td></tr><tr><td>columns_note</td><td>column names withheld (wide or matrix-like table; may contain sample IDs)</td></tr><tr><td>value_quantiles</td><td>{&quot;min&quot;:-0.99109999999999998,&quot;q25&quot;:0.00029169999999999999,&quot;median&quot;:1.159,&quot;q75&quot;:7,&quot;max&quot;:11440}</td></tr><tr><td>n_na</td><td>5</td></tr><tr><td>integer_like</td><td>FALSE</td></tr><tr><td>has_dimnames</td><td>TRUE</td></tr><tr><td>fraction_zero</td><td>0.129</td></tr><tr><td>endpoint_unit</td><td>within-donor difference in log2(sum transcript TPM + 1)</td></tr><tr><td>candidate_tests</td><td>[{&quot;contrast&quot;:&quot;non_asthma_BUD_vs_vehicle&quot;,&quot;n_donors_a&quot;:7,&quot;n_donors_b&quot;:0,&quot;positive_donors&quot;:7,&quot;negative_donors&quot;:0,&quot;effec...</td></tr><tr><td>positive_donors</td><td>16</td></tr><tr><td>group_difference_supported</td><td>FALSE</td></tr></table>
+<h2>Model configuration (no key)</h2>
+<table><tr><th>item</th><th>value</th></tr><tr><td>preset</td><td>local</td></tr><tr><td>protocol</td><td>none</td></tr><tr><td>model</td><td>NA</td></tr><tr><td>endpoint_host</td><td>NA</td></tr><tr><td>key_source</td><td>none</td></tr><tr><td>timeout</td><td>60</td></tr><tr><td>max_retries</td><td>2</td></tr><tr><td>temperature</td><td>NA</td></tr><tr><td>max_tokens</td><td>1500</td></tr></table>
+<h2>Runtime environment and dependency provenance</h2>
+<table><tr><th>item</th><th>value</th></tr><tr><td>R</td><td>R version 4.3.3 (2024-02-29)</td></tr><tr><td>platform</td><td>x86_64-pc-linux-gnu</td></tr><tr><td>os</td><td>Ubuntu 24.04.4 LTS</td></tr></table>
+<table><tr><th>package</th><th>version</th><th>source</th></tr><tr><td>BioExplainR</td><td>0.4.0.9000</td><td>local/unknown</td></tr><tr><td>httr2</td><td>1.0.0</td><td>CRAN</td></tr><tr><td>jsonlite</td><td>1.8.8</td><td>CRAN</td></tr></table>
+</body></html>

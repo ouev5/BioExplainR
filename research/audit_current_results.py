@@ -258,6 +258,72 @@ def paper(root):
             "geometry_audit_rerun": False}
 
 
+def verify_saved_run(root, name):
+    base = root / name
+    manifest = read_json(resolve(root, f"{name}/files_manifest.json"))
+    rows = manifest["files"]
+    require(len(rows) == len({row["path"] for row in rows}), f"Duplicate saved-run member: {name}")
+    require({row["path"] for row in rows} ==
+            {p.name for p in base.iterdir() if p.is_file() and p.name != "files_manifest.json"},
+            f"Saved-run membership mismatch: {name}")
+    for row in rows:
+        require(Path(row["path"]).name == row["path"], f"Invalid saved-run member: {row['path']}")
+        verify_file(root, dict(row, path=f"{name}/{row['path']}"))
+    require(read_json(base / "audit.json")["status"] == "pass", f"Saved-run audit did not pass: {name}")
+    return len(rows)
+
+
+def candidate_followup(root):
+    context = root / "research/results/discovery_context_v1"
+    donors = root / "research/results/discovery_donors_v1"
+    for name in ["discovery_context_v1", "discovery_donors_v1"]:
+        verify_saved_run(root, f"research/results/{name}")
+    model = read_csv(context / "model_results.csv")
+    interactions = [r for r in model if r["symbol"] == "SPARCL1" and r["holm_candidate_interactions"]]
+    require(len(interactions) == 3 and {r["contrast"] for r in interactions} ==
+            {"bud_tnf_NT", "bud_kd_noTNF", "three_way"}, "Candidate interaction family mismatch")
+    supported = sum(float(r["holm_candidate_interactions"]) < .05 for r in interactions)
+    results = read_csv(donors / "results.csv")
+    require(len(results) == 3 and [r["contrast"] for r in results] ==
+            ["non_asthma_BUD_vs_vehicle", "fatal_asthma_BUD_vs_vehicle",
+             "fatal_asthma_minus_non_asthma_response"], "Donor contrast family mismatch")
+    effects = [r for r in read_csv(donors / "donor_effects.csv") if r["symbol"] == "SPARCL1"]
+    unique(effects, ["donor"], "candidate donor")
+    require(len(effects) == 16, "Candidate paired donor count mismatch")
+    positive = sum(float(r["effect_pc1"]) > 0 for r in effects)
+    for group, result, expected_n in zip(["non_asthma", "fatal_asthma"], results[:2], [7, 9]):
+        rows = [r for r in effects if r["disease"] == group]
+        require(len(rows) == int(result["n_donors_a"]) == expected_n and
+                sum(float(r["effect_pc1"]) > 0 for r in rows) == int(result["positive_donors"]) and
+                close(sum(float(r["effect_pc1"]) for r in rows) / len(rows), result["effect"]),
+                f"Donor summary/effect mismatch: {group}")
+    overlap = sorted({r["donor"] for r in read_csv(context / "samples.csv")} &
+                     {r["donor"] for r in read_csv(donors / "samples.csv")})
+    ledger = read_json(context / "scientific_ledger.json")
+    difference_supported = float(results[2]["holm_three_tests"]) < .05
+    require(ledger["status"] == "pass" and ledger["candidate"] == "SPARCL1" and
+            ledger["positive_paired_donors"] == positive == 16 and
+            ledger["candidate_interactions_supported"] == supported == 0 and
+            ledger["asthma_response_difference_supported"] == difference_supported and not difference_supported and
+            ledger["named_donor_overlap_between_followups"] == overlap ==
+            ["N010912", "N051911", "N061311"] and ledger["do_not_pool_independent_donors"] is True,
+            "Scientific ledger differs from saved follow-up results")
+    return {"paired_donors": len(effects), "positive_donors": positive,
+            "candidate_interactions_tested": len(interactions), "candidate_interactions_supported": supported,
+            "asthma_response_difference_supported": difference_supported,
+            "shared_culture_cell_lines": overlap, "novelty": ledger["novelty"]}
+
+
+def narrative_links(chinese, version):
+    figures, tables = {"v0.9.1": (2, 10), "v0.10": (3, 13)}[version]
+    expected_ids = {f"图 {n}" for n in range(1, figures + 1)} | {"表 1"} | \
+        {f"补充图 S{n}" for n in range(1, 9)} | {f"补充表 S{n}" for n in range(1, tables + 1)}
+    links = chinese.get("figure_table_narrative_links", [])
+    require(len(links) == len(expected_ids) and {r["id"] for r in links} == expected_ids
+            and all(r["status"] == "pass" for r in links), "Incomplete manuscript figure/table narrative coverage")
+    return links
+
+
 def audit(root, manifest_path):
     manifest = read_json(manifest_path)
     counts = {}
@@ -280,13 +346,27 @@ def audit(root, manifest_path):
         verify_file(root, delivery["inspection"])
         inspection = read_json(resolve(root, delivery["inspection"]["path"]))
         require(inspection["status"] == "pass", "Delivery audit did not pass")
+        require(inspection["archive"]["path"] == delivery["path"], "Delivery path differs from inspected archive")
         verify_file(root, inspection["archive"])
         with zipfile.ZipFile(resolve(root, inspection["archive"]["path"])) as archive:
             rows = inspection["member_manifest"]
             require(set(archive.namelist()) == {r["path"] for r in rows} | {"delivery_manifest.json"}, "Delivery membership mismatch")
+            embedded = json.loads(archive.read("delivery_manifest.json"))
+            require(embedded["members"] == rows, "Embedded and inspected delivery manifests differ")
+            if "paper_cn" in manifest:
+                paper_entry = manifest["paper_cn"]
+                require(embedded["current_chinese_manuscript"] ==
+                        f"{paper_entry['path']}/BioExplainR-中文论文-{paper_entry['version']}.pdf" and
+                        embedded["audit"] == paper_entry["audit"]["path"],
+                        "Delivery does not contain the indexed current manuscript")
             for row in rows:
                 verify_file(root, row)
                 require(hashlib.sha256(archive.read(row["path"])).hexdigest() == row["sha256"], "Delivery member hash mismatch")
+            require(embedded.get("excluded_inputs", []) == inspection.get("excluded_inputs", []),
+                    "Excluded-input inventories differ")
+            for row in embedded.get("excluded_inputs", []):
+                require(row["path"] not in archive.namelist(), "Excluded input was included in delivery")
+                verify_file(root, row)
     for key, inventory in [("code_hash", "inventory"), ("package_code_hash", "package_inventory")]:
         rows = read_csv(resolve(root, manifest["source"][inventory]["path"]))
         for row in rows:
@@ -334,8 +414,9 @@ def audit(root, manifest_path):
     if "paper_cn" in manifest:
         verify_file(root, manifest["paper_cn"]["audit"])
         chinese = read_json(resolve(root, manifest["paper_cn"]["audit"]["path"]))
-        revision = manifest["paper_cn"].get("version") == "v0.9"
-        require(chinese["status"] == "pass" and chinese["figures"] == (2 if revision else 8)
+        revision = manifest["paper_cn"].get("version") in {"v0.9", "v0.9.1", "v0.10"}
+        main_figures = {"v0.9": 2, "v0.9.1": 2, "v0.10": 3}.get(manifest["paper_cn"].get("version"), 8)
+        require(chinese["status"] == "pass" and chinese["figures"] == main_figures
                 and chinese["docx_tables"] == (1 if revision else 0), "Chinese manuscript audit did not pass")
         cases = read_csv(root / "research/results/paper_cn_cases_v1/scenario_checks.csv")
         require(len(cases) == 15 and all(r["expected"] == r["actual"] for r in cases), "Chinese paper scenarios mismatch")
@@ -344,6 +425,55 @@ def audit(root, manifest_path):
                 ["status", "references", "figures", "panel_pdfs", "composite_pdfs", "external_tables",
                  "docx_tables", "pdf_pages", "airway_independent_numeric_rechecks", "development_scenarios"])
         result["paper_cn"] = {key: chinese[key] for key in keys}
+        version = manifest["paper_cn"].get("version")
+        if version in {"v0.9.1", "v0.10"}:
+            result["paper_cn"]["figure_table_narrative_links"] = narrative_links(chinese, version)
+        if version == "v0.10":
+            followup = candidate_followup(root)
+            require(chinese.get("candidate_followup") == followup,
+                    "Manuscript candidate summary differs from saved follow-up results")
+            result["paper_cn"]["candidate_followup"] = followup
+    if "common_performance_preparation" in manifest["groups"]:
+        name = "research/results/common_performance_checkpoint_v1"
+        checkpoint = read_json(resolve(root, f"{name}/checkpoint.json"))
+        for row in read_json(resolve(root, f"{name}/files_manifest.json"))["files"]:
+            verify_file(root, dict(row, path=f"{name}/{row['path']}"))
+        require(checkpoint["status"] == "preparation_partial" and
+                checkpoint["performance"]["model_calls"] == checkpoint["performance"]["performance_scores"] == 0 and
+                checkpoint["mechanism"]["statistical_fit"] == "not_run",
+                "Preparation checkpoint is misclassified as completed results")
+        inputs = read_json(resolve(root, "research/results/discovery_mechanism_v1/input_manifest.json"))["inputs"]
+        require(len(inputs) == checkpoint["mechanism"]["verified_inputs"], "Preparation input count mismatch")
+        for row in inputs:
+            verify_file(root, dict(row, path=f"research/results/discovery_mechanism_v1/{row['path']}"))
+        result["followup_preparation"] = {"status": "preparation_partial", "model_calls": 0,
+                                         "performance_scores": 0, "mechanism_fit": "not_run",
+                                         "verified_inputs": len(inputs), "scope": "Saved preparation integrity, not research completion"}
+    if "common_performance_formal" in manifest["groups"]:
+        performance = root / "research/results/common_performance_v4"
+        execution = read_json(performance / "execution.json")
+        audit = read_json(performance / "audit.json")
+        require(execution["status"] == "completed" and execution["runs"] == 360 and
+                execution["model_calls"] == 216 and audit["status"] == "pass" and
+                audit["target_scores"] == 1800, "Formal common-task run or independent audit incomplete")
+        scores = read_csv(performance / "scores.csv")
+        keys = unique(scores, ["task_index", "method", "repeat_id", "fact"], "formal score")
+        methods = {r["method"] for r in scores}
+        require(len(methods) == 5 and len(keys) == 1800, "Formal denominator differs")
+        for row in read_csv(performance / "summary.csv"):
+            selected = [r for r in scores if r["method"] == row["method"]]
+            require(len(selected) == 360 and sum(boolean(r["correct"]) for r in selected) == int(row["correct"]) and
+                    sum(boolean(r["covered"]) for r in selected) == int(row["covered"]), "Formal score summary mismatch")
+        for directory in [root / "research/results/discovery_mechanism_fit_v4", root / "research/results/discovery_chip_analysis_v1"]:
+            for row in read_json(directory / "files_manifest.json")["files"]:
+                verify_file(root, dict(row, path=directory.relative_to(root).as_posix() + "/" + row["path"]))
+        mechanism = read_json(root / "research/results/discovery_mechanism_fit_v4/audit.json")
+        chip = read_json(root / "research/results/discovery_chip_analysis_v1/r_audit.json")
+        require(mechanism["status"] == chip["status"] == "pass" and mechanism["candidate_kept"] is False,
+                "Mechanism/ChIP independent audit incomplete")
+        require(chip["count_keys_checked"] == 288 and chip["peak_window_hits_checked"] == 2505,
+                "ChIP audited denominator differs")
+        result["formal_followup"] = {"performance": audit, "mechanism": mechanism, "chip": chip}
     return result
 
 

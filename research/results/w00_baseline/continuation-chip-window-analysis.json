@@ -1,0 +1,18 @@
+{
+  "command": [
+    "python3",
+    "research/discovery/run_chip.py",
+    "research/results/discovery_chip_v1",
+    "research/results/discovery_chip_analysis_v1"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-09T02:06:34.945648+00:00",
+  "finished_utc": "2026-10-09T02:06:42.869743+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/continuation-chip-window-analysis.txt",
+    "bytes": 1765,
+    "sha256": "6d44e6ab5eb0ab388c0a46d1edc6e026102d21d3319fd6fdf8ae1052ca491cd6"
+  }
+}

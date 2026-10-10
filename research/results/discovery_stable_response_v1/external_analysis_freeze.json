@@ -1,0 +1,21 @@
+{
+  "frozen_utc": "2026-10-09T08:02:32.596383+00:00",
+  "stage": "before selected TPM extraction",
+  "scripts": [
+    {
+      "path": "research/discovery/validate_response.py",
+      "sha256": "235900f84d756935f90c9682e283ef6476470871ab638db4bf12c43a8693212c"
+    }
+  ],
+  "candidate_sha256": "afa59560c594ce8ba5a5c3e9243182a180110ad1d0d26da00019f06d7b1e5cb6",
+  "tpm_sha256": "30ebc92ddbd40bf4dedab57d05b46ba10a763c0130c89f6154862b351189277f",
+  "sample_mapping_sha256": "7bd368e012c810023a7bce6a63f0fd2ad533402cb1d6b7e63539d26e1d2a866a",
+  "excluded_overlapping_donors": [
+    "N010912",
+    "N051911",
+    "N061311"
+  ],
+  "independent_units": 13,
+  "candidate_genes": 12,
+  "tests_in_family": 48
+}

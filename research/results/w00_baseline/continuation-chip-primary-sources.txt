@@ -1,0 +1,38 @@
+[
+  {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=5576583",
+    "status": "failed",
+    "exit_code": 35,
+    "error": "curl: (35) Recv failure: Connection reset by peer\n"
+  },
+  {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5576583/?report=xml",
+    "status": "downloaded",
+    "path": "PMC5576583_article.html",
+    "bytes": 212463,
+    "sha256": "a18a66a0ac71d566db1fc274729efc9c0c391a64b60626dd7aa944b934963c87",
+    "utc": "2026-10-09T01:54:59.833651+00:00"
+  },
+  {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5576583/?pdf=1",
+    "status": "downloaded",
+    "path": "PMC5576583_article_alt.html",
+    "bytes": 212453,
+    "sha256": "2d8d5587f3cf46d86002ee39fb2c820f043215d57d8b279b1e2507e959c6ca70",
+    "utc": "2026-10-09T01:55:01.605667+00:00"
+  },
+  {
+    "url": "https://api.crossref.org/works/10.1165/rcmb.2016-0357OC",
+    "status": "downloaded",
+    "path": "article_crossref.json",
+    "bytes": 20461,
+    "sha256": "1486ff439680dfec8449d9427ae59fc48c9db2b75a32f7139f73b95f3e6eb768",
+    "utc": "2026-10-09T01:55:02.605367+00:00"
+  },
+  {
+    "url": "https://www.atsjournals.org/doi/suppl/10.1165/rcmb.2016-0357OC/suppl_file/rcmb.2016-0357oc_supplement.pdf",
+    "status": "failed",
+    "exit_code": 22,
+    "error": "curl: (22) The requested URL returned error: 403\n"
+  }
+]

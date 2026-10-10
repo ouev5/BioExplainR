@@ -1,0 +1,29 @@
+{
+  "utc": "2026-10-10T03:58:00.572712+00:00",
+  "script": {
+    "path": "research/discovery/asm_ev_materials_review.py",
+    "bytes": 8501,
+    "sha256": "6fca316fd11771df5ab37ad9010c321125d7ebe06fc00709e17e483c5f3087e0"
+  },
+  "command": [
+    "curl",
+    "--location",
+    "--max-time",
+    "60",
+    "--connect-timeout",
+    "15",
+    "--fail-with-body",
+    "--silent",
+    "--show-error",
+    "--user-agent",
+    "BioExplainR-final-materials/0.4",
+    "https://hal.science/hal-05063440v1/file/celle%20et%20al.%202025.pdf"
+  ],
+  "source": {
+    "path": "research/results/discovery_asm_ev_materials_v1/sources/hal_record_full.json",
+    "bytes": 346915,
+    "sha256": "90a498c7892d50391f19c08a8a9b7c279b4b010a9d395934644cffe553682a25"
+  },
+  "reason": "Two urllib attempts interrupted at 45s/180s without a saved body; bounded total curl timeout",
+  "candidate_identity_started": false
+}

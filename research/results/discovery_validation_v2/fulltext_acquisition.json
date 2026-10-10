@@ -1,0 +1,215 @@
+{
+  "records": [
+    {
+      "status": "failed",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8294620/fullTextXML",
+      "path": "research/results/discovery_validation_v2/sources/PMC8294620.xml",
+      "attempts": [
+        {
+          "utc": "2026-10-09T11:07:17.969622+00:00",
+          "error": "HTTP Error 500: ",
+          "attempt": 1
+        },
+        {
+          "utc": "2026-10-09T11:07:19.838122+00:00",
+          "error": "HTTP Error 500: ",
+          "attempt": 2
+        },
+        {
+          "utc": "2026-10-09T11:07:22.959817+00:00",
+          "error": "HTTP Error 500: ",
+          "attempt": 3
+        }
+      ]
+    },
+    {
+      "status": "retrieved",
+      "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_xml/PMC8294620/unicode",
+      "retrieved_utc": "2026-10-09T11:07:26.971159+00:00",
+      "http_status": 200,
+      "content_type": "text/html",
+      "attempts": [],
+      "path": "research/results/discovery_validation_v2/sources/PMC8294620_bioc.xml",
+      "bytes": 6140,
+      "sha256": "478f38e0765ee9c406831bb2fc27e8019ac5227c20c6b28ca0de582d8449354a",
+      "parse_error": "syntax error: line 1, column 0"
+    },
+    {
+      "status": "failed",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7052668/fullTextXML",
+      "path": "research/results/discovery_validation_v2/sources/PMC7052668.xml",
+      "attempts": [
+        {
+          "utc": "2026-10-09T11:07:27.944872+00:00",
+          "error": "HTTP Error 500: ",
+          "attempt": 1
+        },
+        {
+          "utc": "2026-10-09T11:07:30.023991+00:00",
+          "error": "HTTP Error 500: ",
+          "attempt": 2
+        },
+        {
+          "utc": "2026-10-09T11:07:34.192404+00:00",
+          "error": "HTTP Error 500: ",
+          "attempt": 3
+        }
+      ]
+    },
+    {
+      "status": "retrieved",
+      "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_xml/PMC7052668/unicode",
+      "retrieved_utc": "2026-10-09T11:07:38.590676+00:00",
+      "http_status": 200,
+      "content_type": "text/html",
+      "attempts": [],
+      "path": "research/results/discovery_validation_v2/sources/PMC7052668_bioc.xml",
+      "bytes": 6140,
+      "sha256": "478f38e0765ee9c406831bb2fc27e8019ac5227c20c6b28ca0de582d8449354a",
+      "parse_error": "syntax error: line 1, column 0"
+    },
+    {
+      "status": "failed",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6383501/fullTextXML",
+      "path": "research/results/discovery_validation_v2/sources/PMC6383501.xml",
+      "attempts": [
+        {
+          "utc": "2026-10-09T11:07:42.119405+00:00",
+          "error": "HTTP Error 500: ",
+          "attempt": 1
+        },
+        {
+          "utc": "2026-10-09T11:07:45.316373+00:00",
+          "error": "HTTP Error 500: ",
+          "attempt": 2
+        },
+        {
+          "utc": "2026-10-09T11:07:48.509066+00:00",
+          "error": "HTTP Error 500: ",
+          "attempt": 3
+        }
+      ]
+    },
+    {
+      "status": "retrieved",
+      "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_xml/PMC6383501/unicode",
+      "retrieved_utc": "2026-10-09T11:07:54.694166+00:00",
+      "http_status": 200,
+      "content_type": "text/html",
+      "attempts": [
+        {
+          "utc": "2026-10-09T11:07:51.995355+00:00",
+          "error": "<urlopen error [Errno 104] Connection reset by peer>",
+          "attempt": 1
+        }
+      ],
+      "path": "research/results/discovery_validation_v2/sources/PMC6383501_bioc.xml",
+      "bytes": 6140,
+      "sha256": "478f38e0765ee9c406831bb2fc27e8019ac5227c20c6b28ca0de582d8449354a",
+      "parse_error": "syntax error: line 1, column 0"
+    },
+    {
+      "status": "failed",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2809222/fullTextXML",
+      "path": "research/results/discovery_validation_v2/sources/PMC2809222.xml",
+      "attempts": [
+        {
+          "utc": "2026-10-09T11:07:55.886189+00:00",
+          "error": "HTTP Error 500: ",
+          "attempt": 1
+        },
+        {
+          "utc": "2026-10-09T11:07:58.940130+00:00",
+          "error": "HTTP Error 500: ",
+          "attempt": 2
+        },
+        {
+          "utc": "2026-10-09T11:08:02.015408+00:00",
+          "error": "HTTP Error 500: ",
+          "attempt": 3
+        }
+      ]
+    },
+    {
+      "status": "retrieved",
+      "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_xml/PMC2809222/unicode",
+      "retrieved_utc": "2026-10-09T11:08:06.595076+00:00",
+      "http_status": 200,
+      "content_type": "text/html",
+      "attempts": [],
+      "path": "research/results/discovery_validation_v2/sources/PMC2809222_bioc.xml",
+      "bytes": 6140,
+      "sha256": "478f38e0765ee9c406831bb2fc27e8019ac5227c20c6b28ca0de582d8449354a",
+      "parse_error": "syntax error: line 1, column 0"
+    },
+    {
+      "status": "failed",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2274949/fullTextXML",
+      "path": "research/results/discovery_validation_v2/sources/PMC2274949.xml",
+      "attempts": [
+        {
+          "utc": "2026-10-09T11:08:08.305024+00:00",
+          "error": "HTTP Error 500: ",
+          "attempt": 1
+        },
+        {
+          "utc": "2026-10-09T11:08:10.715169+00:00",
+          "error": "HTTP Error 500: ",
+          "attempt": 2
+        },
+        {
+          "utc": "2026-10-09T11:08:14.997063+00:00",
+          "error": "HTTP Error 500: ",
+          "attempt": 3
+        }
+      ]
+    },
+    {
+      "status": "retrieved",
+      "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_xml/PMC2274949/unicode",
+      "retrieved_utc": "2026-10-09T11:08:19.545474+00:00",
+      "http_status": 200,
+      "content_type": "text/html",
+      "attempts": [],
+      "path": "research/results/discovery_validation_v2/sources/PMC2274949_bioc.xml",
+      "bytes": 6140,
+      "sha256": "478f38e0765ee9c406831bb2fc27e8019ac5227c20c6b28ca0de582d8449354a",
+      "parse_error": "syntax error: line 1, column 0"
+    },
+    {
+      "status": "failed",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3488623/fullTextXML",
+      "path": "research/results/discovery_validation_v2/sources/PMC3488623.xml",
+      "attempts": [
+        {
+          "utc": "2026-10-09T11:08:20.967761+00:00",
+          "error": "HTTP Error 500: ",
+          "attempt": 1
+        },
+        {
+          "utc": "2026-10-09T11:08:22.914123+00:00",
+          "error": "HTTP Error 500: ",
+          "attempt": 2
+        },
+        {
+          "utc": "2026-10-09T11:08:26.553559+00:00",
+          "error": "HTTP Error 500: ",
+          "attempt": 3
+        }
+      ]
+    },
+    {
+      "status": "retrieved",
+      "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_xml/PMC3488623/unicode",
+      "retrieved_utc": "2026-10-09T11:08:30.653031+00:00",
+      "http_status": 200,
+      "content_type": "text/html",
+      "attempts": [],
+      "path": "research/results/discovery_validation_v2/sources/PMC3488623_bioc.xml",
+      "bytes": 6140,
+      "sha256": "478f38e0765ee9c406831bb2fc27e8019ac5227c20c6b28ca0de582d8449354a",
+      "parse_error": "syntax error: line 1, column 0"
+    }
+  ],
+  "completed_utc": "2026-10-09T11:08:30.653494+00:00"
+}

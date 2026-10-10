@@ -1,0 +1,62 @@
+{
+  "utc": "2026-10-10T05:24:59.376804+00:00",
+  "script": {
+    "path": "research/discovery/public_proteome_final_sources.py",
+    "bytes": 1504,
+    "sha256": "109105b45c3d458b4f4e2d40c29ea4a847c0346d6e6408c830d67d5414f194be"
+  },
+  "source_evidence": [
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/article_34950134.json",
+      "bytes": 10243,
+      "sha256": "4a962db555e797745440c22f90c63ccc1c7eaa543c098c1f80bd78779e9f6b0f"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/papers_asm_protein_summary.json",
+      "bytes": 108984,
+      "sha256": "527ea60eb7e05e77403035fee8a23d7152f70d94c37b392f76286f19988234da"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/papers_lung_gc_protein_summary.json",
+      "bytes": 82664,
+      "sha256": "efaf983b3ae8d66a7c1850e4990297a40a98aa930bde295deca24a1bdd2a7a5e"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/sources/intrapulmonary_article.json",
+      "bytes": 7357,
+      "sha256": "9c4ecf81f9362cb28d05139475c5d751d6e2a446902baef2e9ad1d90264799a2"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/sources/PMC11161633.xml",
+      "bytes": 87992,
+      "sha256": "1f060960ba55c8483b956b28e87d13a61ceed284308f8a8da04ba0b0dbb19d41"
+    }
+  ],
+  "requests": [
+    {
+      "name": "PMC8688760.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8688760/fullTextXML"
+    },
+    {
+      "name": "PMC11299423_publisher.html",
+      "url": "https://doi.org/10.1096/fj.202400452r"
+    },
+    {
+      "name": "PMC9361782_publisher.html",
+      "url": "https://doi.org/10.1096/fj.202100835r"
+    },
+    {
+      "name": "PMC5105184_publisher.html",
+      "url": "https://doi.org/10.1165/rcmb.2016-0068oc"
+    },
+    {
+      "name": "intrapulmonary_publisher.pdf",
+      "url": "https://erj.ersjournals.com/content/erj/56/1/1902178.full.pdf"
+    },
+    {
+      "name": "zedoarondiol_supplement.pdf",
+      "url": "https://static-content.springer-cdn.com/esm/art%3A10.1038%2Fs41598-024-63970-4/MediaObjects/41598_2024_63970_MOESM1_ESM.pdf"
+    }
+  ],
+  "reason": "Original EPMC fulltext/DOI/publisher media routes; capture final acquisition and design only, no candidate measurements"
+}

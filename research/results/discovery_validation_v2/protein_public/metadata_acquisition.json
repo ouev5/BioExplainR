@@ -1,0 +1,60 @@
+{
+  "utc": "2026-10-09T12:37:48.603428+00:00",
+  "records": [
+    {
+      "status": "retrieved",
+      "url": "https://www.ebi.ac.uk/pride/ws/archive/v2/projects/PXD081613",
+      "retrieved_utc": "2026-10-09T12:37:38.976211+00:00",
+      "http_status": 200,
+      "content_type": "text/plain;charset=UTF-8",
+      "attempts": [],
+      "path": "research/results/discovery_validation_v2/protein_public/pride_project.json",
+      "bytes": 8204,
+      "sha256": "2aa649220a847bcf8a9a78ce574af956056890a740759001393bcb0942b339f6"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://www.ebi.ac.uk/pride/ws/archive/v2/projects/PXD081613/files?pageSize=100",
+      "retrieved_utc": "2026-10-09T12:37:40.570755+00:00",
+      "http_status": 200,
+      "content_type": "application/json",
+      "attempts": [],
+      "path": "research/results/discovery_validation_v2/protein_public/pride_files.json",
+      "bytes": 70723,
+      "sha256": "ca08fa027b6befd7ed06c2d5f1d5dedb4b4e7d8338c2f96fea6d9a139ae2c216"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2026/09/PXD081613/lab_schemeTMT.csv",
+      "retrieved_utc": "2026-10-09T12:37:41.668003+00:00",
+      "http_status": 200,
+      "content_type": "text/csv",
+      "attempts": [],
+      "path": "research/results/discovery_validation_v2/protein_public/lab_schemeTMT.csv",
+      "bytes": 948,
+      "sha256": "2ae0145c15d1bba8e58c26112041287f92b5c676f104acff0dbf037f9a71ad13"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2026/09/PXD081613/1898311467_Anna_TMT_TP_StudyInformation.txt",
+      "retrieved_utc": "2026-10-09T12:37:46.482336+00:00",
+      "http_status": 200,
+      "content_type": "text/plain; charset=UTF-8",
+      "attempts": [],
+      "path": "research/results/discovery_validation_v2/protein_public/protein_study_information.txt",
+      "bytes": 90377,
+      "sha256": "6f12b6e7642e9bc3317cc28aeb8bb33e13bfb739a3d588b2c62114bc6133bb61"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://api.biorxiv.org/details/biorxiv/10.64898/2026.08.12.743743",
+      "retrieved_utc": "2026-10-09T12:37:48.603079+00:00",
+      "http_status": 200,
+      "content_type": "application/json",
+      "attempts": [],
+      "path": "research/results/discovery_validation_v2/protein_public/biorxiv_metadata.json",
+      "bytes": 3769,
+      "sha256": "1787417e4677be0c415fe37c8a23b49ccd02c46d151b87a6c06b320837ab86d9"
+    }
+  ]
+}

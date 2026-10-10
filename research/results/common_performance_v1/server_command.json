@@ -1,0 +1,20 @@
+[
+  "/tmp/opencode/common-performance-runtime/llama-b11429/llama-server",
+  "-m",
+  "/tmp/opencode/common-performance-runtime/qwen2.5-1.5b-instruct-q4_k_m.gguf",
+  "--host",
+  "127.0.0.1",
+  "--port",
+  "18181",
+  "-t",
+  "4",
+  "-c",
+  "16384",
+  "-np",
+  "1",
+  "--alias",
+  "qwen-fixed",
+  "--cache-ram",
+  "0",
+  "--no-cache-prompt"
+]

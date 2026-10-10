@@ -1,0 +1,23 @@
+{
+  "utc": "2026-10-10T02:37:16.863032+00:00",
+  "script": {
+    "path": "research/discovery/asm_ev_finalize.py",
+    "bytes": 9092,
+    "sha256": "96869765819a2b795eb60f3b979363391eedcb4990cedb53d85f4addfb6ef3ea"
+  },
+  "requests": [
+    [
+      "px_announcement.xml",
+      "https://proteomecentral.proteomexchange.org/cgi/GetDataset?ID=PXD055968.0-1&outputMode=XML&test=no"
+    ],
+    [
+      "publisher_article.html",
+      "https://www.sciencedirect.com/science/article/pii/S2589004225008077"
+    ],
+    [
+      "zenodo_article_doi.json",
+      "https://zenodo.org/api/records?q=10.1016%2Fj.isci.2025.112546&size=20"
+    ]
+  ],
+  "scope": "Official version announcement and explicit DOI-linked repository routes; no candidate results"
+}

@@ -1,0 +1,9 @@
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+Traceback (most recent call last):
+  File "/home/ubuntu/creatR/research/paper_cn_revision/audit_revision.py", line 153, in <module>
+    if __name__ == "__main__": main()
+                               ^^^^^^
+  File "/home/ubuntu/creatR/research/paper_cn_revision/audit_revision.py", line 73, in main
+    assert entry["citation"] in paragraph
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

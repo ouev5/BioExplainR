@@ -1,0 +1,47 @@
+Package: iSEE
+Title: Interactive SummarizedExperiment Explorer
+Version: 2.14.0
+Date: 2023-07-22
+Authors@R: c(person("Kevin", "Rue-Albrecht", role = c("aut", "cre"), email = "kevinrue67@gmail.com", comment = c(ORCID = "0000-0003-3899-3872")),
+    person("Federico", "Marini", role="aut", email="marinif@uni-mainz.de", comment = c(ORCID = '0000-0003-3252-7758')),
+    person("Charlotte", "Soneson", role="aut", email="charlottesoneson@gmail.com", comment = c(ORCID = '0000-0003-3833-2169')),
+    person("Aaron", "Lun", role="aut", email="infinite.monkeys.with.keyboards@gmail.com", comment = c(ORCID = '0000-0002-3564-4813')))
+Description: Create an interactive Shiny-based graphical user interface 
+    for exploring data stored in SummarizedExperiment objects, including 
+    row- and column-level metadata. The interface supports transmission of 
+    selections between plots and tables, code tracking, interactive tours, 
+    interactive or programmatic initialization, preservation of app state,
+    and extensibility to new panel types via S4 classes. Special attention 
+    is given to single-cell data in a SingleCellExperiment object with 
+    visualization of dimensionality reduction results.
+Depends: SummarizedExperiment, SingleCellExperiment
+Imports: methods, BiocGenerics, S4Vectors, utils, stats, shiny,
+        shinydashboard, shinyAce, shinyjs, DT, rintrojs, ggplot2,
+        ggrepel, colourpicker, igraph, vipor, mgcv, graphics,
+        grDevices, viridisLite, shinyWidgets, ComplexHeatmap, circlize,
+        grid
+Suggests: testthat, covr, BiocStyle, knitr, rmarkdown, scRNAseq,
+        TENxPBMCData, scater, DelayedArray, HDF5Array, RColorBrewer,
+        viridis, htmltools
+URL: https://github.com/iSEE/iSEE
+BugReports: https://github.com/iSEE/iSEE/issues
+biocViews: CellBasedAssays, Clustering, DimensionReduction,
+        FeatureExtraction, GeneExpression, GUI, ImmunoOncology,
+        ShinyApps, SingleCell, Transcription, Transcriptomics,
+        Visualization
+License: MIT + file LICENSE
+VignetteBuilder: knitr
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+git_url: https://git.bioconductor.org/packages/iSEE
+git_branch: RELEASE_3_18
+git_last_commit: 3e72e8d
+git_last_commit_date: 2023-10-24
+Date/Publication: 2023-10-24
+NeedsCompilation: no
+Packaged: 2023-10-24 21:41:55 UTC; biocbuild
+Author: Kevin Rue-Albrecht [aut, cre] (<https://orcid.org/0000-0003-3899-3872>),
+  Federico Marini [aut] (<https://orcid.org/0000-0003-3252-7758>),
+  Charlotte Soneson [aut] (<https://orcid.org/0000-0003-3833-2169>),
+  Aaron Lun [aut] (<https://orcid.org/0000-0002-3564-4813>)
+Maintainer: Kevin Rue-Albrecht <kevinrue67@gmail.com>

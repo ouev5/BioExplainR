@@ -128,7 +128,17 @@ def manifest():
         "paper_cn_cases": ["research/results/paper_cn_cases_v1", "research/cache/real_objects.rds"],
         "paper_cn_revision": ["docs/paper_cn_v1"],
         "paper_cn_v09": ["docs/paper_cn_v2"],
+        "paper_cn_v091": ["docs/paper_cn_v3"],
+        "paper_cn_v010": ["docs/paper_cn_v4"],
         "discovery_sparcl1": ["research/results/discovery_sparcl1_v1"],
+        "discovery_context": ["research/results/discovery_context_v1"],
+        "discovery_donors": ["research/results/discovery_donors_v1"],
+        "common_performance_preparation": ["research/results/common_performance_checkpoint_v1"],
+        "mechanism_preparation": ["research/results/discovery_mechanism_v1"],
+        "common_performance_formal": ["research/results/common_performance_v4", "research/results/common_performance_applicability_v1"],
+        "mechanism_fit": ["research/results/discovery_mechanism_fit_v4"],
+        "chip_verification": ["research/results/discovery_chip_v1", "research/results/discovery_chip_analysis_v1"],
+        "followup_research_report": ["docs/research_followup_v1"],
         "paper": ["docs/PAPER_DRAFT.md", "docs/SUPPLEMENTARY_MATERIAL.md", "docs/paper_tables.json",
                   "docs/supplementary_tables.json", "docs/paper.css", "docs/submission_assets",
                   "research/results/submission-audit.json", "research/results/reference_audit.json"],
@@ -148,6 +158,9 @@ def manifest():
         claimed.update(row["path"] for row in rows)
         entries[name] = {"entrypoints": roots, "inventory": record(OUT / f"{name}_files.csv"), "file_count": len(rows),
                          "mode": "saved_results", "rerun_experiment": False}
+        if name in {"common_performance_preparation", "mechanism_preparation"}:
+            entries[name]["mode"] = "preparation_partial"
+            entries[name]["note"] = "Inputs/status only; no new performance scores or mechanism fit"
     historical = [p for p in (ROOT / "research/results").rglob("*")
                   if p.is_file() and OUT not in p.parents and p.name != "current_manifest.json"
                   and p.relative_to(ROOT).as_posix() not in claimed]
@@ -164,13 +177,14 @@ def manifest():
                    and "__pycache__" not in p.parts
                    and not any(part in p.relative_to(ROOT).parts for part in ["results", "cache", "study_materials"])]
     rows = write_inventory(OUT / "source_files.csv", source)
+    source_count = len(rows)
     code_hash = hashlib.sha256(json.dumps(rows, sort_keys=True, separators=(",", ":")).encode()).hexdigest()
     package_files = [ROOT / p for p in ["DESCRIPTION", "NAMESPACE", "LICENSE"]]
     for directory in ["R", "man", "inst", "tests"]:
         package_files += [p for p in (ROOT / directory).rglob("*") if p.is_file()]
     package_rows = write_inventory(OUT / "package_source_files.csv", package_files)
     package_hash = hashlib.sha256(json.dumps(package_rows, sort_keys=True, separators=(",", ":")).encode()).hexdigest()
-    docs = [ROOT / "README.md", ROOT / "SESSION_HANDOFF.md"] + list((ROOT / "docs").rglob("*.md"))
+    docs = [ROOT / "README.md", ROOT / "SESSION_HANDOFF.md", ROOT / "docs/index.html"] + list((ROOT / "docs").rglob("*.md"))
     write_inventory(OUT / "documentation_files.csv", docs)
     git = subprocess.run(["git", "rev-parse", "--verify", "HEAD"], cwd=ROOT, capture_output=True, text=True)
     status = subprocess.run(["git", "status", "--short"], cwd=ROOT, capture_output=True, text=True, check=True)
@@ -189,6 +203,7 @@ def manifest():
     artifacts += [p for p in OUT.glob("review-*/*") if p.is_file()]
     artifacts += [p for p in OUT.glob("paper-cn-*/*") if p.is_file()]
     artifacts += [p for p in OUT.glob("revision-*/*") if p.is_file()]
+    artifacts += [p for p in OUT.glob("biology-*") if p.is_file()]
     if (OUT / "continuation-bwrap-offline-smoke-status.txt").is_file():
         artifacts += [OUT / "continuation-bwrap-offline-smoke-status.txt"]
     artifacts += [OUT / "BioExplainR.Rcheck/00check.log", OUT / "BioExplainR.Rcheck/00install.out",
@@ -198,8 +213,8 @@ def manifest():
     result_summary = {"main_experiment": main_experiment(ROOT), "common_task": common_task(ROOT),
                       "supporting": supporting_results(ROOT), "paper": paper(ROOT)}
     write_json(ROOT / "research/results/current_manifest.json", {
-          "manifest_version": "development-baseline-7", "created_utc": now(), "package_version": version,
-         "scope": "Stored 0.3.1 results plus 0.4.0.9000 checks, miniACC, Chinese paper v0.9 comparison/concise main text and fixed SPARCL1 external experiment; expert/user evaluation deferred",
+"manifest_version": "development-baseline-12", "created_utc": now(), "package_version": version,
+          "scope": "Stored v0.10 plus formal common-task/GR-intervention/ChIP research addendum; previous preparation checkpoint retained in historical scope; GitHub publication paused by owner",
         "git": {"commit_sha": git.stdout.strip() if git.returncode == 0 else None,
                 "state": "uncommitted_baseline" if git.returncode else "working_tree",
                 "status": status.stdout.splitlines()},
@@ -220,17 +235,21 @@ def manifest():
                               "historical_output": "research/results/w00_baseline/historical_audit.json"},
         "baseline_artifacts": record(OUT / "manifest_files.csv"), "checks": checks,
         "original_record_inventory": record(OUT / "original_records.csv"),
-          "delivery_bundle": {"path": "docs/BioExplainR-development-delivery-0.4.0.9000-r8.zip", "status": "development_delivery_verified",
-                               "inspection": record(OUT / "revision-delivery-audit-result.json")},
-          "paper_cn": {"path": "docs/paper_cn_v2", "audit": record(ROOT / "docs/paper_cn_v2/audit.json"),
-                        "version": "v0.9", "human_evaluation": "not_in_manuscript; deferred placeholders"},
+          "delivery_bundle": {"path": "docs/BioExplainR-development-delivery-0.4.0.9000-r14.zip", "status": "development_delivery_verified",
+                                "inspection": record(OUT / "handoff-formal-docs-delivery-audit-result.json")},
+"paper_cn": {"path": "docs/paper_cn_v4", "audit": record(ROOT / "docs/paper_cn_v4/audit.json"),
+                         "version": "v0.10", "human_evaluation": "not_in_manuscript; deferred placeholders"},
          "historical_delivery_bundle": {"path": "docs/BioExplainR-submission-bundle.zip", "status": "historical_stale_preserved",
                                          "inspection": record(OUT / "bundle_inspection.json")},
-         "boundaries": ["Stored experiments were audited offline, not rerun", "No new expert or user study",
+          "boundaries": ["Earlier stored experiments were audited offline; new formal follow-up has separate execution records", "No new expert or user study",
+                          "Common-task developmental benchmark; A549 SPARCL1 filtered/not_estimable; ChIP coordinate-verified hg19 without author confirmation",
                         "No Git commit/release/DOI is inferred", "W10/W11 external scientific materials are not complete",
-                         "0.4.0.9000 is a development snapshot; GitHub creation blocked by credential permissions",
-                         "SPARCL1 validation is an external single-cell-line experiment, not donor-independent confirmation"]})
-    print(f"Built current_manifest.json: {len(rows)} source files; code hash {code_hash}")
+                         "0.4.0.9000 is a development snapshot; GitHub publication paused by owner (earlier creation permission error retained)",
+                         "SPARCL1 validation is an external single-cell-line experiment, not donor-independent confirmation",
+                         "SPARCL1 follow-up: 16 paired donors positive in GSE94335, group difference and three candidate interactions unsupported",
+                         "GSE94335/GSE146017 share at least three named culture cell lines; donor counts are not pooled",
+                         "SPARCL1 glucocorticoid response was reported previously (Himes 2014; Kan 2019); no first-discovery claim"]})
+    print(f"Built current_manifest.json: {source_count} source files; code hash {code_hash}")
 
 
 def main():

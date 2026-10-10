@@ -1,0 +1,49 @@
+{
+  "status": "pass",
+  "utc": "2026-10-10T02:31:51.244724+00:00",
+  "version_files": 18,
+  "versions": [
+    "3.1.0.638"
+  ],
+  "search_databases": [
+    "RP_UP000005640_Homo_sapiens_2024_01_22.fasta"
+  ],
+  "prediction_models": [
+    "inferys_3.0.0_fragmentation"
+  ],
+  "samples": 18,
+  "patients": 6,
+  "per_patient_repeats": {
+    "595": 3,
+    "614": 3,
+    "615": 3,
+    "BA184": 3,
+    "BA185": 3,
+    "BA186": 3
+  },
+  "file_inventory": 56,
+  "file_categories": {
+    "RAW": 18,
+    "SEARCH": 18,
+    "OTHER": 19,
+    "FASTA": 1
+  },
+  "protein_abundance_columns": 0,
+  "consensus_quantifier_nodes": 0,
+  "original_file_bytes": 53324150807,
+  "submitted_pdresult_bytes": 16378564608,
+  "linkage_sha1_verified": "ba3b0aba4d013aedafc3d7b1706f65da175b1124",
+  "article_supplement_links": [
+    "mmc1.pdf",
+    "mmc2.mp4",
+    "mmc3.mp4",
+    "mmc4.mp4",
+    "mmc5.mp4",
+    "mmc6.mp4",
+    "mmc7.mp4"
+  ],
+  "full_correct_version_quantitative_export_acquired": false,
+  "candidate_identity_started": false,
+  "reason": "Submitted results are 18 single-run identification-only consensus workflows, with precursor features but no final protein abundance columns or cross-run mapper/quantifier; final paper-version export not acquired",
+  "scope": "Structural version/source evidence only; no protein result rows, no candidate lookup, no disease or GC hypothesis tests"
+}

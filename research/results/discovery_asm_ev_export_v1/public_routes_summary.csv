@@ -1,0 +1,21 @@
+url,status,response,attempts,detail
+https://www.ebi.ac.uk/pride/ws/archive/v2/projects/PXD055968,retrieved,research/results/discovery_asm_ev_export_v1/sources/project.json,0,
+https://www.ebi.ac.uk/pride/ws/archive/v2/files/byProject?accession=PXD055968&pageSize=1000&page=0,invalid_inventory_http200_empty,research/results/discovery_asm_ev_export_v1/sources/files.json,0,empty body retained; corrected file inventory has56 entries
+https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/,retrieved,research/results/discovery_asm_ev_export_v1/sources/directory.html,0,
+https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/checksum.txt,retrieved,research/results/discovery_asm_ev_export_v1/sources/checksum.txt,0,
+https://proteomecentral.proteomexchange.org/cgi/GetDataset?ID=PXD055968,retrieved,research/results/discovery_asm_ev_export_v1/sources/proteomecentral.html,0,
+https://www.ebi.ac.uk/pride/ws/archive/v2/projects/PXD055968/files?pageSize=100&page=0,retrieved,research/results/discovery_asm_ev_export_v1/sources/files_corrected.json,0,
+https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12141081/fullTextXML,retrieved,research/results/discovery_asm_ev_export_v1/sources/article_current.xml,0,
+https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC12141081,failed,research/results/discovery_asm_ev_export_v1/sources/pmc_oa_manifest.xml,3,
+https://api.datacite.org/dois?query=PXD055968,retrieved,research/results/discovery_asm_ev_export_v1/sources/datacite_accession.json,0,DataCite indexed hits=0
+https://api.datacite.org/dois?query=%2210.1016%2Fj.isci.2025.112546%22,retrieved,research/results/discovery_asm_ev_export_v1/sources/datacite_article_doi.json,0,DataCite indexed hits=0
+https://api.crossref.org/works/10.1016/j.isci.2025.112546,retrieved,research/results/discovery_asm_ev_export_v1/sources/crossref_article.json,0,
+https://zenodo.org/api/records?q=%22PXD055968%22&size=100,failed,research/results/discovery_asm_ev_export_v1/sources/zenodo_accession.json,3,
+https://api.figshare.com/v2/articles?resource_doi=10.1016%2Fj.isci.2025.112546,failed,research/results/discovery_asm_ev_export_v1/sources/figshare_article_doi.json,3,
+https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/Link_between_files.xlsx,retrieved,research/results/discovery_asm_ev_export_v1/sources/Link_between_files.xlsx,0,
+https://pmc.ncbi.nlm.nih.gov/utils/oa/oa.fcgi?id=PMC12141081,failed,research/results/discovery_asm_ev_export_v1/sources/pmc_oa_manifest_corrected.xml,3,
+https://zenodo.org/api/records?q=PXD055968&size=20,retrieved,research/results/discovery_asm_ev_export_v1/sources/zenodo_accession_corrected.json,0,Zenodo indexed hits=0
+https://api.elsevier.com/content/article/PII:S2589004225008077?httpAccept=text/xml,retrieved,research/results/discovery_asm_ev_export_v1/sources/publisher_article.xml,0,XML metadata only; originalText elements=0
+https://proteomecentral.proteomexchange.org/cgi/GetDataset?ID=PXD055968.0-1&outputMode=XML&test=no,retrieved,research/results/discovery_asm_ev_export_v1/sources/px_announcement.xml,0,
+https://www.sciencedirect.com/science/article/pii/S2589004225008077,failed,research/results/discovery_asm_ev_export_v1/sources/publisher_article.html,3,
+https://zenodo.org/api/records?q=10.1016%2Fj.isci.2025.112546&size=20,failed,research/results/discovery_asm_ev_export_v1/sources/zenodo_article_doi.json,3,

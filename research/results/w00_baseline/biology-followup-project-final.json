@@ -1,0 +1,17 @@
+{
+  "command": [
+    "Rscript",
+    "--vanilla",
+    "research/discovery/report_followup.R"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-08T15:09:59.186583+00:00",
+  "finished_utc": "2026-10-08T15:10:01.312608+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/biology-followup-project-final.txt",
+    "bytes": 216,
+    "sha256": "3acd3b9566e304bb3134b3f2ba44ab4ef11e17b77347ef42831591f90aa38c41"
+  }
+}

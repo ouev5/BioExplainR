@@ -1,0 +1,221 @@
+{
+  "status": "pass",
+  "utc": "2026-10-10T01:09:56.206072+00:00",
+  "script": {
+    "path": "research/discovery/audit_secretome_provenance_report.py",
+    "bytes": 7556,
+    "sha256": "b6558ed1706b6bfedc1d3ba7340207b83cf33409c961ed157c73384a00d03f96"
+  },
+  "pages": 4,
+  "tables": 3,
+  "figures": 2,
+  "table_pairs": [
+    {
+      "name": "EV_file_linkage.csv",
+      "rows": 21,
+      "columns": 3,
+      "csv": {
+        "path": "docs/secretome_provenance_v1/tables/EV_file_linkage.csv",
+        "bytes": 2483,
+        "sha256": "e9f60b47017352e1a30764ff0b98b9dffa3e728d5fd4abd8fe980bd3014699f0"
+      },
+      "xlsx": {
+        "path": "docs/secretome_provenance_v1/tables/EV_file_linkage.xlsx",
+        "bytes": 6227,
+        "sha256": "fbd12f8d1f9658c701b05428277de573e3833ff2ba0ce87d01969ee0ebe4a280"
+      }
+    },
+    {
+      "name": "EV_selected_glycolysis.csv",
+      "rows": 8,
+      "columns": 8,
+      "csv": {
+        "path": "docs/secretome_provenance_v1/tables/EV_selected_glycolysis.csv",
+        "bytes": 1126,
+        "sha256": "1ea84dbbb39c1955ce2127df0cd2e17e09717f0084f5670f353c16236ba66379"
+      },
+      "xlsx": {
+        "path": "docs/secretome_provenance_v1/tables/EV_selected_glycolysis.xlsx",
+        "bytes": 6189,
+        "sha256": "7658229bd5acef86deb447e02796df30468fb26bcca38f0f5b4a41ab93f9313f"
+      }
+    },
+    {
+      "name": "EV_supplement_scope.csv",
+      "rows": 13,
+      "columns": 7,
+      "csv": {
+        "path": "docs/secretome_provenance_v1/tables/EV_supplement_scope.csv",
+        "bytes": 571,
+        "sha256": "2c373c1064a1d09b3336a79c7a3417dd11b604433426837e8875a360da09d0e6"
+      },
+      "xlsx": {
+        "path": "docs/secretome_provenance_v1/tables/EV_supplement_scope.xlsx",
+        "bytes": 6027,
+        "sha256": "349304a7a6f64948473c9c0a20d24bbdd831f2a942cbfa9fa6b9dd49112f91cf"
+      }
+    },
+    {
+      "name": "Table_1_four_arrays.csv",
+      "rows": 4,
+      "columns": 5,
+      "csv": {
+        "path": "docs/secretome_provenance_v1/tables/Table_1_four_arrays.csv",
+        "bytes": 237,
+        "sha256": "de28486451d3f103dcfe82f4f63938047846772c1bb798421bc194f959a7be04"
+      },
+      "xlsx": {
+        "path": "docs/secretome_provenance_v1/tables/Table_1_four_arrays.xlsx",
+        "bytes": 5831,
+        "sha256": "0b024bdfe4f81728f93f58056596f0111c46f28cdf46f8141ce87657cc93c737"
+      }
+    },
+    {
+      "name": "Table_2_public_sources.csv",
+      "rows": 3,
+      "columns": 3,
+      "csv": {
+        "path": "docs/secretome_provenance_v1/tables/Table_2_public_sources.csv",
+        "bytes": 470,
+        "sha256": "d109a7204c7fe91cd9579fd43fb485b0764d56d670bde8eec7f19698b8452ea0"
+      },
+      "xlsx": {
+        "path": "docs/secretome_provenance_v1/tables/Table_2_public_sources.xlsx",
+        "bytes": 6080,
+        "sha256": "6e30486f27c468710e15419229d723983c4c0592bea1abde27ce6f08e0a3e288"
+      }
+    },
+    {
+      "name": "Table_3_EV_selected_glycolysis.csv",
+      "rows": 8,
+      "columns": 4,
+      "csv": {
+        "path": "docs/secretome_provenance_v1/tables/Table_3_EV_selected_glycolysis.csv",
+        "bytes": 222,
+        "sha256": "589bf40bdb641d39a3d3cc827054f9969d901568003220ac2ba91e00e7215e8b"
+      },
+      "xlsx": {
+        "path": "docs/secretome_provenance_v1/tables/Table_3_EV_selected_glycolysis.xlsx",
+        "bytes": 5861,
+        "sha256": "b1bf2eb5c987e2d2b674ecd85dc22d1d47765e0b59c673ba265904c99aff6975"
+      }
+    },
+    {
+      "name": "cross_array_summary.csv",
+      "rows": 48,
+      "columns": 14,
+      "csv": {
+        "path": "docs/secretome_provenance_v1/tables/cross_array_summary.csv",
+        "bytes": 4592,
+        "sha256": "94103f842f0048d149dc4a9585be52c4be3a3d9c0306a456cfaf76ba7f2136ec"
+      },
+      "xlsx": {
+        "path": "docs/secretome_provenance_v1/tables/cross_array_summary.xlsx",
+        "bytes": 9355,
+        "sha256": "c89731a129db24d8c00c88207dec02e2a16a32869c40f664b5f0d72055d4c26e"
+      }
+    },
+    {
+      "name": "project_feasibility.csv",
+      "rows": 8,
+      "columns": 6,
+      "csv": {
+        "path": "docs/secretome_provenance_v1/tables/project_feasibility.csv",
+        "bytes": 2389,
+        "sha256": "b4435776128bdd1042c20d9f3203303d5aefc3cb555af95a8b31dd10ac37b0d6"
+      },
+      "xlsx": {
+        "path": "docs/secretome_provenance_v1/tables/project_feasibility.xlsx",
+        "bytes": 6832,
+        "sha256": "24a99f81bc1b571cff6495b0dd525e4a8ecce2ef0bde84a94c5f09ca09701435"
+      }
+    },
+    {
+      "name": "public_evidence_scope.csv",
+      "rows": 4,
+      "columns": 5,
+      "csv": {
+        "path": "docs/secretome_provenance_v1/tables/public_evidence_scope.csv",
+        "bytes": 1755,
+        "sha256": "5c8520aa31ae53f7229f7e5c3f294d525fad7f974988a582e57f9d4bca1d050e"
+      },
+      "xlsx": {
+        "path": "docs/secretome_provenance_v1/tables/public_evidence_scope.xlsx",
+        "bytes": 7130,
+        "sha256": "b0eda292d0a68f65d0b5b7073001ac231e944f4afd841b0b12a8219104b49d35"
+      }
+    },
+    {
+      "name": "sample_map.csv",
+      "rows": 168,
+      "columns": 6,
+      "csv": {
+        "path": "docs/secretome_provenance_v1/tables/sample_map.csv",
+        "bytes": 10436,
+        "sha256": "e478a67f7c89873fe34a581691530c516db227d05ff5022cd8efe0d66b842b10"
+      },
+      "xlsx": {
+        "path": "docs/secretome_provenance_v1/tables/sample_map.xlsx",
+        "bytes": 10526,
+        "sha256": "144761c6a033f722062ddfd885cf0be3eb2e2d8d7550448c5e179973905ea80a"
+      }
+    },
+    {
+      "name": "scale_formula_summary.csv",
+      "rows": 6,
+      "columns": 8,
+      "csv": {
+        "path": "docs/secretome_provenance_v1/tables/scale_formula_summary.csv",
+        "bytes": 662,
+        "sha256": "d5075cc3097bed04bee261742f1e06af86eb26eb0b58b1ed769124cd9ccaa65d"
+      },
+      "xlsx": {
+        "path": "docs/secretome_provenance_v1/tables/scale_formula_summary.xlsx",
+        "bytes": 6031,
+        "sha256": "ce3b8756e086859875021fda53c110965b7ea46da9356f71ee2d04a298f0bc24"
+      }
+    },
+    {
+      "name": "secretome24_protein_offsets.csv",
+      "rows": 23,
+      "columns": 7,
+      "csv": {
+        "path": "docs/secretome_provenance_v1/tables/secretome24_protein_offsets.csv",
+        "bytes": 2217,
+        "sha256": "616e4dd3d648f8e3aec905d0691cd4d00eb9eaf669ef1cceb078049f0d706a2b"
+      },
+      "xlsx": {
+        "path": "docs/secretome_provenance_v1/tables/secretome24_protein_offsets.xlsx",
+        "bytes": 7555,
+        "sha256": "cb988b33a49aeec439bbb5ccfe637091c275524aaac3b3d5bafb1d3664695b5a"
+      }
+    }
+  ],
+  "pdf_boundary_failures": [],
+  "figure_checks": [
+    {
+      "path": {
+        "path": "docs/secretome_provenance_v1/figures/Figure_1_match.pdf",
+        "bytes": 11976,
+        "sha256": "fce7145a4ecc9d2b24917d0be713d52c342abcdaf8406d1fc2655122b5e4ead6"
+      },
+      "pages": 1,
+      "raster_images": 0
+    },
+    {
+      "path": {
+        "path": "docs/secretome_provenance_v1/figures/Figure_2_offsets.pdf",
+        "bytes": 16991,
+        "sha256": "29c3513a21b4b739e9bd8fb2e04125b5102488fb91dad3638ce086b880ed4738"
+      },
+      "pages": 1,
+      "raster_images": 0
+    }
+  ],
+  "browser": {
+    "path": "docs/secretome_provenance_v1/browser_final/audit.json",
+    "bytes": 4564,
+    "sha256": "c6b15ecddd0589da061186e25262ccdc0ad158de2018752e6662708d5dafe02d"
+  },
+  "limitations": "Automated content/geometry and real browser checks, not human visual or scientific signoff"
+}

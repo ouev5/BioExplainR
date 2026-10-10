@@ -1,0 +1,14 @@
+{
+  "status": "completed_exploratory_public_data_reanalysis",
+  "discovery": {"dataset": "GSE146017", "donors": 4, "libraries": 31, "genes": 27409, "retained_four_context_signature": 54, "fixed_ranked_candidates": 12},
+  "external": {"dataset": "GSE94335", "donors": 13, "non_asthma": 4, "fatal_asthma": 9, "excluded_known_overlap": ["N010912", "N051911", "N061311"], "measurable_candidates": 11, "replicated_paired_responses": 11, "holm_family_tests": 48, "replicates_modifier_interactions": false},
+  "key_leads": ["PER2 temporal and experimental-context response", "PER3 late ASM repression", "METTL7A and MAOA later accumulation", "ANGPTL2 down and FSTL3 up extracellular-signal candidates"],
+  "negative_or_unresolved": ["All 82227 genome interaction tests failed pooled BH", "No disease-response difference passes 48-test Holm; not equivalence", "LINC00607 absent from external annotation, old airway DEX result unsupported", "TEF response not reproduced in single-line microarray", "METTL7A, MAOA and FSTL3 GR modifier tests fail 48-test Holm", "Array exact permutations fail genome-candidate time family correction"],
+  "novelty_scope": "New candidate-specific integrative analysis and hypotheses; existing glucocorticoid-clock biology and published gene responses acknowledged, not first worldwide discovery.",
+  "time_amendment": "Exploratory after initial marginal results; no dense matched time series or measured circadian phase/amplitude/function",
+  "units_policy": "Do not pool 4 discovery donors, 13 external donors, old16 or culture batches as independent new people",
+  "BioExplainR": {"version": "0.4.0.9000", "load": "actual source via pkgload", "contexts": 9, "report": "v2", "online_model_calls": 0},
+  "independent_implementation": "Python original counts/arrays/WLS and arithmetic; R original TPM, supplement pairing and tests. DESeq2 dispersion and limma moderation not separately refitted across languages.",
+  "report": "docs/biology_discovery_v2",
+  "verification": "numeric_audit.json, external_r_audit.json, report audit.json, browser/audit.json; no model image inspection"
+}

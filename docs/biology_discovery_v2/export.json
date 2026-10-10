@@ -1,0 +1,18 @@
+{
+  "status": "completed",
+  "created_utc": "2026-10-09T08:43:14.198413+00:00",
+  "command": [
+    "libreoffice",
+    "-env:UserInstallation=file:///tmp/opencode/response-discovery-lo",
+    "--headless",
+    "--convert-to",
+    "pdf",
+    "--outdir",
+    "docs/biology_discovery_v2",
+    "docs/biology_discovery_v2/BioExplainR-生物学发现-结果报告-v1.docx"
+  ],
+  "returncode": 0,
+  "figures": 5,
+  "tables": 3,
+  "PDF_figure_mode": "PNG previews embedded by Word; separate original vector PDFs are provided"
+}

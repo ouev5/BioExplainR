@@ -1,0 +1,188 @@
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+{
+  "status": "pass",
+  "references": 32,
+  "figures": 3,
+  "docx_tables": 1,
+  "external_tables": 14,
+  "pdf_pages": 12,
+  "supplement": {
+    "pages": 18,
+    "tables": 0,
+    "figures": 8
+  },
+  "comparison_tools": 6,
+  "body_reduction_percent": 47.39,
+  "discovery": {
+    "status": "pass",
+    "files": 20,
+    "matrix_rows": 41000,
+    "arrays": 10,
+    "probes": [
+      "A_23_P113351"
+    ],
+    "primary_supported": true,
+    "independent_r_checks": 12,
+    "scope": "External culture experiment in a single cell line; not donor-independent validation"
+  },
+  "geometry": [
+    {
+      "file": "docs/paper_cn_v4/figures/Figure_2.pdf",
+      "text_spans": 41,
+      "drawings": 47,
+      "images": 0,
+      "page_bounds": "pass",
+      "text_overlap": "pass"
+    },
+    {
+      "file": "docs/paper_cn_v4/figures/Figure_3.pdf",
+      "text_spans": 61,
+      "drawings": 143,
+      "images": 0,
+      "page_bounds": "pass",
+      "text_overlap": "pass"
+    }
+  ],
+  "candidate_followup": {
+    "paired_donors": 16,
+    "positive_donors": 16,
+    "candidate_interactions_tested": 3,
+    "candidate_interactions_supported": 0,
+    "asthma_response_difference_supported": false,
+    "shared_culture_cell_lines": [
+      "N010912",
+      "N051911",
+      "N061311"
+    ],
+    "novelty": "response already published; new donor distribution and null-interaction reanalysis, not first mechanistic discovery"
+  },
+  "figure_table_narrative_links": [
+    {
+      "id": "图 1",
+      "section": "2.1",
+      "status": "pass"
+    },
+    {
+      "id": "图 2",
+      "section": "3.4",
+      "status": "pass"
+    },
+    {
+      "id": "图 3",
+      "section": "3.5",
+      "status": "pass"
+    },
+    {
+      "id": "表 1",
+      "section": "2.3/3.1",
+      "status": "pass"
+    },
+    {
+      "id": "补充图 S1",
+      "section": "2.1",
+      "status": "pass"
+    },
+    {
+      "id": "补充图 S2",
+      "section": "3.2",
+      "status": "pass"
+    },
+    {
+      "id": "补充图 S3",
+      "section": "3.2",
+      "status": "pass"
+    },
+    {
+      "id": "补充图 S4",
+      "section": "3.2",
+      "status": "pass"
+    },
+    {
+      "id": "补充图 S5",
+      "section": "3.2",
+      "status": "pass"
+    },
+    {
+      "id": "补充图 S6",
+      "section": "3.3",
+      "status": "pass"
+    },
+    {
+      "id": "补充图 S7",
+      "section": "3.3",
+      "status": "pass"
+    },
+    {
+      "id": "补充图 S8",
+      "section": "3.6",
+      "status": "pass"
+    },
+    {
+      "id": "补充表 S1",
+      "section": "2.3/3.2",
+      "status": "pass"
+    },
+    {
+      "id": "补充表 S2",
+      "section": "3.2",
+      "status": "pass"
+    },
+    {
+      "id": "补充表 S3",
+      "section": "3.2",
+      "status": "pass"
+    },
+    {
+      "id": "补充表 S4",
+      "section": "3.2",
+      "status": "pass"
+    },
+    {
+      "id": "补充表 S5",
+      "section": "3.2",
+      "status": "pass"
+    },
+    {
+      "id": "补充表 S6",
+      "section": "3.3",
+      "status": "pass"
+    },
+    {
+      "id": "补充表 S7",
+      "section": "3.3",
+      "status": "pass"
+    },
+    {
+      "id": "补充表 S8",
+      "section": "3.3",
+      "status": "pass"
+    },
+    {
+      "id": "补充表 S9",
+      "section": "3.6",
+      "status": "pass"
+    },
+    {
+      "id": "补充表 S10",
+      "section": "3.4",
+      "status": "pass"
+    },
+    {
+      "id": "补充表 S11",
+      "section": "3.5",
+      "status": "pass"
+    },
+    {
+      "id": "补充表 S12",
+      "section": "3.5",
+      "status": "pass"
+    },
+    {
+      "id": "补充表 S13",
+      "section": "3.5",
+      "status": "pass"
+    }
+  ],
+  "heading_numbering": "disabled inherited Word numbering; literal numbers only",
+  "visual_scope": "Automated PDF text bounds/figure geometry and document content, not independent human review"
+}

@@ -1,0 +1,24 @@
+{
+  "frozen_utc": "2026-10-09T08:05:01.602750+00:00",
+  "stage": "after ASM/A549 response comparison; before full candidate time measurements",
+  "files": [
+    {
+      "path": "research/results/discovery_sparcl1_v1/GSE34313_series_matrix.txt.gz",
+      "sha256": "c76c4311bccd29096fd631c7ac9d3eafbb0ad5c92bc3bbe4b15b0b9eed8102a0"
+    },
+    {
+      "path": "research/results/discovery_sparcl1_v1/GPL6480.annot.gz",
+      "sha256": "aacec81b2d95f183f0827b43e769388a92917811b81920c13ecc8fe148c5a3ab"
+    },
+    {
+      "path": "research/discovery/response_time.py",
+      "sha256": "43856ddce03c806fde76570e34af6044dae671163dce82035065b12caa3736ad"
+    },
+    {
+      "path": "research/discovery/RESPONSE_TIME_AMENDMENT.md",
+      "sha256": "41248a2f1af1da1ab42c6ae348875612281c29f7f000d858a8bc971ff548c36d"
+    }
+  ],
+  "candidate_sha256": "afa59560c594ce8ba5a5c3e9243182a180110ad1d0d26da00019f06d7b1e5cb6",
+  "tests": 24
+}

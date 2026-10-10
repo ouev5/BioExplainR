@@ -1,0 +1,74 @@
+{
+  "utc": "2026-10-10T03:48:59.066535+00:00",
+  "script": {
+    "path": "research/discovery/asm_ev_materials.py",
+    "bytes": 7968,
+    "sha256": "537f267a790255edb1fde0dfd0f06481ac39b5164823b089e098bb532e62a4f1"
+  },
+  "protocol": {
+    "path": "research/discovery/ASM_EV_MATERIALS_PROTOCOL.md",
+    "bytes": 2312,
+    "sha256": "8d13f65a2545e2aa9c5017492a14052676df6f1b8899dc26ee272c13abb60654"
+  },
+  "snapshot": {
+    "path": "research/results/discovery_asm_ev_materials_v1/rgo_before_materials.md",
+    "bytes": 77026,
+    "sha256": "58240f46406a83449d5f0c379ab82033441d856af570a278b1736c457c940c25"
+  },
+  "requests": [
+    [
+      "hal_doi.json",
+      "https://api.archives-ouvertes.fr/search/?q=doiId_s%3A%2210.1016%2Fj.isci.2025.112546%22&rows=100&wt=json"
+    ],
+    [
+      "hal_accession.json",
+      "https://api.archives-ouvertes.fr/search/?q=text%3A%22PXD055968%22&rows=100&wt=json"
+    ],
+    [
+      "hal_title.json",
+      "https://api.archives-ouvertes.fr/search/?q=title_t%3A%22Bronchial+smooth+muscle+extracellular+vesicles+interfere+with+bronchial+epithelium+metabolism+and+function+in+asthma%22&rows=100&wt=json"
+    ],
+    [
+      "rdg_accession.json",
+      "https://entrepot.recherche.data.gouv.fr/api/search?q=PXD055968&per_page=100"
+    ],
+    [
+      "rdg_doi.json",
+      "https://entrepot.recherche.data.gouv.fr/api/search?q=%2210.1016%2Fj.isci.2025.112546%22&per_page=100"
+    ],
+    [
+      "openaire_doi.json",
+      "https://api.openaire.eu/search/publications?doi=10.1016%2Fj.isci.2025.112546&format=json"
+    ],
+    [
+      "figshare_doi.json",
+      "https://api.figshare.com/v2/articles?resource_doi=10.1016%2Fj.isci.2025.112546&page_size=100"
+    ],
+    [
+      "PXD055968_project.json",
+      "https://www.ebi.ac.uk/pride/ws/archive/v2/projects/PXD055968"
+    ],
+    [
+      "PXD055968_files.json",
+      "https://www.ebi.ac.uk/pride/ws/archive/v2/projects/PXD055968/files?pageSize=100&page=0"
+    ],
+    [
+      "PXD055949_project.json",
+      "https://www.ebi.ac.uk/pride/ws/archive/v2/projects/PXD055949"
+    ],
+    [
+      "PXD055949_files.json",
+      "https://www.ebi.ac.uk/pride/ws/archive/v2/projects/PXD055949/files?pageSize=100&page=0"
+    ],
+    [
+      "PXD059603_project.json",
+      "https://www.ebi.ac.uk/pride/ws/archive/v2/projects/PXD059603"
+    ],
+    [
+      "PXD059603_files.json",
+      "https://www.ebi.ac.uk/pride/ws/archive/v2/projects/PXD059603/files?pageSize=100&page=0"
+    ]
+  ],
+  "scope": "Source/attachment metadata only; no candidate measurements",
+  "candidate_identity_started": false
+}

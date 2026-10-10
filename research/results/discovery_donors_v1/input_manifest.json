@@ -1,0 +1,32 @@
+{
+  "inputs": [
+    {
+      "path": "tpm.txt.gz",
+      "bytes": 121575832,
+      "sha256": "30ebc92ddbd40bf4dedab57d05b46ba10a763c0130c89f6154862b351189277f",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE94nnn/GSE94335/suppl/GSE94335_PostQC_all_sample_TPM.txt.gz",
+      "retrieved_utc": "2026-10-08T13:55:58.633135+00:00"
+    },
+    {
+      "path": "series_matrix.txt.gz",
+      "bytes": 3553,
+      "sha256": "973a78d47cb361ba4b2c21b5d3d6e751a7995cd46c89654ef38e2e0ff2d4e1e6",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE94nnn/GSE94335/matrix/GSE94335_series_matrix.txt.gz",
+      "retrieved_utc": "2026-10-08T13:56:01.043134+00:00"
+    },
+    {
+      "path": "paper_metadata.json",
+      "bytes": 9153,
+      "sha256": "a4c4e8dd534f3d181e6feaa48df2f8e58a5769c2d589a7fbf99ef2bb40e153e8",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:30694689&resultType=core&format=json",
+      "retrieved_utc": "2026-10-08T13:56:02.289970+00:00"
+    },
+    {
+      "path": "PMC6604213.xml",
+      "bytes": 133688,
+      "sha256": "5062c764467f166fc43c95ba8814df0547253cebfb88cd3628fdc8e9d3a5c4f8",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6604213/fullTextXML",
+      "retrieved_utc": "2026-10-08T13:56:11.425553+00:00"
+    }
+  ]
+}

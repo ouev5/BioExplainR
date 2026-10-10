@@ -1,0 +1,18 @@
+{
+  "command": [
+    "Rscript",
+    "--vanilla",
+    "research/common_performance/supplemental_scores.R",
+    "/home/ubuntu/creatR/research/results/common_performance_v4"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-09T05:40:03.256357+00:00",
+  "finished_utc": "2026-10-09T05:40:03.612608+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/continuation-performance-secondary.txt",
+    "bytes": 1114,
+    "sha256": "b061f2dae90ed2041806dfe32ea091c0a4aa3dff208bce6937ab5d8f5149961f"
+  }
+}

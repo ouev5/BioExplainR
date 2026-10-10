@@ -1,0 +1,17 @@
+{
+  "command": [
+    "/tmp/opencode/paper-venv/bin/python",
+    "research/discovery/audit_context.py",
+    "research/results/discovery_context_v1"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-08T12:59:40.219610+00:00",
+  "finished_utc": "2026-10-08T12:59:43.536456+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/biology-context-numeric-audit.txt",
+    "bytes": 353,
+    "sha256": "8528768748ad3a17691c00fbff5e40341a80d8c3d1e6170164954ffa3bb98568"
+  }
+}

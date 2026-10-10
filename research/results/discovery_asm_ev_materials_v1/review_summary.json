@@ -1,0 +1,40 @@
+{
+  "utc": "2026-10-10T03:59:45.477933+00:00",
+  "status": "source_review_completed",
+  "completed_requests": 20,
+  "interrupted_pdf_attempts": 2,
+  "project_files": 142,
+  "PXD055968_inventory_unchanged": true,
+  "related_project_scope": [
+    {
+      "project": "PXD055968",
+      "title": "Proteomic analysis of bronchial smooth muscle cells extracellular vesicles",
+      "files": 56,
+      "extensions": "{\".fasta\": 1, \".msf\": 18, \".pdResult\": 18, \".raw\": 18, \".xlsx\": 1}",
+      "scope": "BSM EV preparations",
+      "table_candidates": "Link_between_files.xlsx"
+    },
+    {
+      "project": "PXD055949",
+      "title": "Proteomic analysis of bronchial epithelium challenged with bronchial smooth muscle extracellular vesicles",
+      "files": 48,
+      "extensions": "{\".fasta\": 1, \".msf\": 15, \".pdResult\": 15, \".raw\": 15, \".tsv\": 1, \".xlsx\": 1}",
+      "scope": "EV-challenged bronchial epithelium; not BSM EV array",
+      "table_candidates": "Link_between_files.xlsx|PXD055949_community_annotated.sdrf.tsv"
+    },
+    {
+      "project": "PXD059603",
+      "title": "Proteomic analysis of bronchial epithelium challenged with bronchial smooth muscle extracellular vesicles",
+      "files": 38,
+      "extensions": "{\".fasta\": 1, \".msf\": 12, \".pdResult\": 12, \".raw\": 12, \".xlsx\": 1}",
+      "scope": "EV-challenged bronchial epithelium; not BSM EV array",
+      "table_candidates": "Link_between_files.xlsx"
+    }
+  ],
+  "hal_article_records": 1,
+  "hal_listed_files": 1,
+  "correct_full_export_acquired": false,
+  "candidate_identity_started": false,
+  "author_contact": "draft_only_not_sent",
+  "publication": "paused"
+}

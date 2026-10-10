@@ -6,10 +6,37 @@ from pathlib import Path
 import tempfile
 import unittest
 
-from audit_current_results import main_experiment, unique, verify_file, verify_inventory
+from audit_current_results import main_experiment, narrative_links, unique, verify_file, verify_inventory, verify_saved_run
 
 
 class AuditFailureTests(unittest.TestCase):
+    def test_v010_missing_duplicate_and_failed_narrative_links(self):
+        ids = [f"图 {n}" for n in range(1, 4)] + ["表 1"] + \
+            [f"补充图 S{n}" for n in range(1, 9)] + [f"补充表 S{n}" for n in range(1, 14)]
+        links = [{"id": name, "status": "pass"} for name in ids]
+        self.assertEqual(len(narrative_links({"figure_table_narrative_links": links}, "v0.10")), 25)
+        for broken in [links[:-1], links[:-1] + [links[-2]], links[:-1] + [{"id": ids[-1], "status": "fail"}]]:
+            with self.assertRaisesRegex(ValueError, "Incomplete manuscript"):
+                narrative_links({"figure_table_narrative_links": broken}, "v0.10")
+
+    def test_saved_followup_changed_and_unlisted_member(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            base = root / "run"
+            base.mkdir()
+            content = b'{"status": "pass"}'
+            (base / "audit.json").write_bytes(content)
+            (base / "files_manifest.json").write_text(json.dumps({"files": [
+                {"path": "audit.json", "bytes": len(content), "sha256": hashlib.sha256(content).hexdigest()}]}))
+            self.assertEqual(verify_saved_run(root, "run"), 1)
+            (base / "audit.json").write_bytes(content.replace(b"pass", b"fail"))
+            with self.assertRaisesRegex(ValueError, "SHA-256"):
+                verify_saved_run(root, "run")
+            (base / "audit.json").write_bytes(content)
+            (base / "unlisted.csv").write_text("value\n1\n")
+            with self.assertRaisesRegex(ValueError, "membership mismatch"):
+                verify_saved_run(root, "run")
+
     def test_missing_and_duplicate_score_rows(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

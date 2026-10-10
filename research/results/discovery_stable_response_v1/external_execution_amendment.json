@@ -1,0 +1,5 @@
+{
+  "error": "The frozen gene ENSG00000235770 is absent from GSE94335 annotation; the first extraction stopped rather than completing the planned missing-result handling.",
+  "resolution": "Retain the frozen 12 genes; assign absent-gene tests status not_estimable and P=1 in the original 48-test Holm family. No candidate replacement, input, threshold or ranking change.",
+  "reexecution": "Selected original TPM extraction repeated by amended script. Candidate freeze and input hashes retained."
+}

@@ -1,0 +1,31 @@
+{
+  "scope": "Manual review of every current main/supplementary figure and table against narrative before References; automated checks confirm exported coverage, not scientific prose quality.",
+  "version": "v0.10",
+  "entries": [
+    {"id": "图 1", "section": "2.1", "before": "仅引言简短提及流程", "paragraph_anchor": "我们设计了对象→确定性事实", "citation": "图 1A–D", "introduction": "对象到报告流程", "result_or_design": "计算/载荷边界、四类检查状态、派生依赖", "interpretation": "计算事实、语言与核对分别可追踪"},
+    {"id": "图 2", "section": "3.4", "before": "已有外部统计但未区分既有报道", "paragraph_anchor": "我们按发现集规则固定 SPARCL1", "citation": "图 2A、2B 和 2C", "introduction": "固定候选后外部培养实验", "result_or_design": "24h效应/CI/置换、4h次效应、D为历史层级", "interpretation": "同方向表达重复，且既有文献已报道该响应"},
+    {"id": "图 3", "section": "3.5", "before": "无供体级分布与直接组差/交互图", "paragraph_anchor": "我们核对真实供体后检验布地奈德响应", "citation": "图 3A", "introduction": "核对供体映射后检验多供体响应与机制交互", "result_or_design": "A配对测量、B效应/CI/组差，C四条件BUD与D三预定交互在同段引出", "interpretation": "响应保留但组差与机制交互未获支持"},
+    {"id": "表 1", "section": "2.3/3.1", "before": "方法维度与结果段缺失", "paragraph_anchor": "我们将 BioExplainR 与 iSEE、SCassist", "citation": "详细结果见表 1", "introduction": "与五工具比较任务/输入/计算/检查/离线能力", "result_or_design": "各工具任务定位与BioExplainR审查环节集成", "interpretation": "多对象结果审查与可追踪工作流优势"},
+    {"id": "补充图 S1", "section": "2.1", "before": "主稿正文未引出", "paragraph_anchor": "我们设计了对象→确定性事实", "citation": "补充图 S1", "introduction": "同一平台框架独立技术总览", "result_or_design": "复用主图1框架，非新增实验", "interpretation": "技术总览对应四项设计贡献"},
+    {"id": "补充图 S2", "section": "3.2", "before": "S2–S4成组引用", "paragraph_anchor": "我们用 airway 检查全表事实", "citation": "补充图 S2A、S2C", "introduction": "全表事实阈值同步检查", "result_or_design": "A计数/C敏感性/B配对PCA/D方法来源", "interpretation": "保留完整计数、配对设计及上游数值差异"},
+    {"id": "补充图 S3", "section": "3.2", "before": "S2–S4成组引用", "paragraph_anchor": "我们进一步检查观测数量", "citation": "补充图 S3A–C", "introduction": "观测数量与独立单位同时保留", "result_or_design": "AB为UMAP/QC，C为2700细胞/1供体，D为微阵列设计", "interpretation": "展示/QC不提升独立重复数量"},
+    {"id": "补充图 S4", "section": "3.2", "before": "pasilla只成组引用", "paragraph_anchor": "为检查另一来源的一致性", "citation": "补充图 S4A–D", "introduction": "pasilla六阈值回读", "result_or_design": "PCA/火山图/上下调/阈值轨迹，218=108+110", "interpretation": "另来源事实接口一致"},
+    {"id": "补充图 S5", "section": "3.2", "before": "整图引用", "paragraph_anchor": "我们在 miniACC 分开检查", "citation": "补充图 S5A", "introduction": "映射合法性和完整性分开检查", "result_or_design": "A覆盖43/92，D配对分期，B符号，C显著性", "interpretation": "覆盖、符号及显著性分别呈现"},
+    {"id": "补充图 S6", "section": "3.3", "before": "主消融/双模型合并引用", "paragraph_anchor": "我们比较有界原始预览", "citation": "补充图 S6A–B", "introduction": "三输入事实传递比较", "result_or_design": "AB总体/覆盖、CD家族/双模型", "interpretation": "固定目标传递覆盖，不是全文准确率"},
+    {"id": "补充图 S7", "section": "3.3", "before": "历史修复panel未在正文解释", "paragraph_anchor": "为检查定位明确违例", "citation": "补充图 S7A", "introduction": "声明、图形、参照水平错误注入", "result_or_design": "A声明72fail/18partial，B3pass/6fail，D不变量，C15开发状态", "interpretation": "分离可运行、来源一致、可检查范围"},
+    {"id": "补充图 S8", "section": "3.6", "before": "主稿正文无明确图号引出", "paragraph_anchor": "工作台结果见补充图 S8A–D", "citation": "补充图 S8A–D", "introduction": "项目页面及实际导出工作流", "result_or_design": "AB桌面/移动，C实际工程PDF，D分层验收", "interpretation": "项目检查衔接报告与图导出"},
+    {"id": "补充表 S1", "section": "2.3/3.2", "before": "仅成组引用", "paragraph_anchor": "六个公开来源承担不同任务", "citation": "具体版本、规模、单位和边界见补充表 S1", "introduction": "整理六来源版本、规模和分析边界", "result_or_design": "文库、细胞、供体、病例等单位分别记录", "interpretation": "任务及单位不同，不合并总体分母"},
+    {"id": "补充表 S2", "section": "3.2", "before": "S1–S3成组引用", "paragraph_anchor": "我们用 airway 检查全表事实", "citation": "补充表 S2", "introduction": "九阈值全表事实核对", "result_or_design": "45/45匹配", "interpretation": "摘要随阈值同步、完整输入计数"},
+    {"id": "补充表 S3", "section": "3.2", "before": "S1–S3成组引用", "paragraph_anchor": "为检查另一来源的一致性", "citation": "补充表 S3", "introduction": "pasilla另来源六阈值核对", "result_or_design": "30项全部一致", "interpretation": "另来源数值提取一致性"},
+    {"id": "补充表 S4", "section": "3.2", "before": "S4–S5成组引用", "paragraph_anchor": "我们在 miniACC 分开检查", "citation": "补充表 S4", "introduction": "统一92病例分母的覆盖", "result_or_design": "仅43五模态完整而映射合法", "interpretation": "合法性不代表完整性"},
+    {"id": "补充表 S5", "section": "3.2", "before": "S4–S5成组引用", "paragraph_anchor": "我们在 miniACC 分开检查", "citation": "补充表 S5", "introduction": "33共有特征的效应/方向/显著性", "result_or_design": "18同向/15反向，RNA3/蛋白0显著", "interpretation": "符号、显著性与跨模态量纲分开"},
+    {"id": "补充表 S6", "section": "3.3", "before": "S6–S7成组引用", "paragraph_anchor": "我们比较有界原始预览", "citation": "补充表 S6", "introduction": "三输入主消融", "result_or_design": "437/1440、覆盖516/1440 vs 各1440/1440", "interpretation": "显式facts减少该任务信息不足"},
+    {"id": "补充表 S7", "section": "3.3", "before": "S6–S7成组引用", "paragraph_anchor": "六类家族及双模型结果见", "citation": "补充表 S7", "introduction": "家族分层与同输入双模型", "result_or_design": "R facts各家族全匹配，双模型各480/480", "interpretation": "所测结构化传递覆盖"},
+    {"id": "补充表 S8", "section": "3.3", "before": "已有期望状态与解释", "paragraph_anchor": "当前 15 开发场景逐项结果", "citation": "补充表 S8", "introduction": "15开发场景逐项期望/实测", "result_or_design": "8pass/5fail/1partial/1unverified，15/15", "interpretation": "信息不足不提升通过"},
+    {"id": "补充表 S9", "section": "3.6", "before": "工程结果已有但图S8缺引用", "paragraph_anchor": "我们从源码、包检查、安装及浏览器四层检查", "citation": "补充表 S9", "introduction": "分层工程检查及适用范围", "result_or_design": "677项、checkOK、8表安装重跑一致", "interpretation": "所测环境可运行性与数值复现"},
+    {"id": "补充表 S10", "section": "3.4", "before": "已有外部统计与边界", "paragraph_anchor": "我们按发现集规则固定 SPARCL1", "citation": "补充表 S10", "introduction": "固定候选后外部表达检验", "result_or_design": "主/次比较、Welch/CI/Holm/置换", "interpretation": "仅外部培养实验同方向表达重复"},
+    {"id": "补充表 S11", "section": "3.5", "before": "新增因子模型无表", "paragraph_anchor": "我们随后检验预定机制交互", "citation": "补充表 S11", "introduction": "四基因×八比较的因子模型与三交互Holm", "result_or_design": "simple effects、三交互、全基因BH背景", "interpretation": "低表达与多重性限制机制推断"},
+    {"id": "补充表 S12", "section": "3.5", "before": "新增供体级统计无表", "paragraph_anchor": "我们核对真实供体后检验布地奈德响应", "citation": "补充表 S12", "introduction": "7+9供体配对与组间响应", "result_or_design": "两组效应/CI/Holm/精确P、组差+0.084", "interpretation": "响应保留，组差未获支持且不证明等效"},
+    {"id": "补充表 S13", "section": "3.5", "before": "配对来源与排除未在表体现", "paragraph_anchor": "全部供体及伪计数敏感性见补充表 S13", "citation": "补充表 S13", "introduction": "三基因×16供体效应与伪计数敏感性", "result_or_design": "原TPM、pc1/0.5/0.1、28793/28796排除", "interpretation": "映射冲突与共享细胞系限制供体合并"}
+  ]
+}

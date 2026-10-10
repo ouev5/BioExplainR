@@ -1,0 +1,22 @@
+{
+  "utc": "2026-10-10T06:18:23.675051+00:00",
+  "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2022/01/PXD029028/pepide_matrix.csv",
+  "start": 524288,
+  "end": 1048575,
+  "exit_code": 0,
+  "stderr": "",
+  "seconds": 15.865631870925426,
+  "completed_utc": "2026-10-10T06:18:39.540683+00:00",
+  "headers": {
+    "path": "research/results/discovery_public_download_v1/requests/PXD029028_pepide_matrix.csv.524288.headers.txt",
+    "bytes": 490,
+    "sha256": "a2eee9dc309af5483c58f80eb3f52ee069c43d97d2bede526c7445c91ce725d2"
+  },
+  "response": {
+    "path": "research/results/discovery_public_download_v1/ranges/PXD029028_pepide_matrix.csv.524288.bin",
+    "bytes": 524288,
+    "sha256": "99193e00c68338c4772a36e10b2ace0341507f5745da4d4265e00e43065e6b2a"
+  },
+  "http_status": 206,
+  "status": "retrieved"
+}

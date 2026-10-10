@@ -1,0 +1,27 @@
+{
+  "started_utc": "2026-10-10T03:58:00.573683+00:00",
+  "completed_utc": "2026-10-10T03:59:00.586045+00:00",
+  "command": [
+    "curl",
+    "--location",
+    "--max-time",
+    "60",
+    "--connect-timeout",
+    "15",
+    "--fail-with-body",
+    "--silent",
+    "--show-error",
+    "--user-agent",
+    "BioExplainR-final-materials/0.4",
+    "https://hal.science/hal-05063440v1/file/celle%20et%20al.%202025.pdf"
+  ],
+  "exit_code": 28,
+  "url": "https://hal.science/hal-05063440v1/file/celle%20et%20al.%202025.pdf",
+  "response": {
+    "path": "research/results/discovery_asm_ev_materials_v1/sources/hal_author_article_curl.bin",
+    "bytes": 3564070,
+    "sha256": "1a2e1b62436af1c8c5f66a3ff43d4d93a129975f83cacfc7220fe9cc977f25fb"
+  },
+  "stderr": "curl: (28) Operation timed out after 60000 milliseconds with 3564070 out of 13089865 bytes received\n",
+  "status": "failed_or_partial"
+}

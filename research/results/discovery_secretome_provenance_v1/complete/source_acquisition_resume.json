@@ -1,0 +1,408 @@
+{
+  "status": "completed",
+  "utc": "2026-10-10T00:43:52.519149+00:00",
+  "records": [
+    {
+      "status": "failed",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8024510/fullTextXML",
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC8024510.xml",
+      "attempts": [
+        {
+          "utc": "2026-10-10T00:42:25.323557+00:00",
+          "error": "HTTP Error 500: ",
+          "attempt": 1
+        },
+        {
+          "utc": "2026-10-10T00:42:27.434745+00:00",
+          "error": "HTTP Error 500: ",
+          "attempt": 2
+        },
+        {
+          "utc": "2026-10-10T00:42:31.056668+00:00",
+          "error": "HTTP Error 500: ",
+          "attempt": 3
+        }
+      ]
+    },
+    {
+      "status": "retrieved",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6084315/fullTextXML",
+      "reused_after_interruption": true,
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC6084315.xml",
+      "bytes": 92301,
+      "sha256": "e653fc4abddae3a5e1de6272d603fcda01b317e9be9023c2e1f5d8b727a4a53d"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5157777/fullTextXML",
+      "reused_after_interruption": true,
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC5157777.xml",
+      "bytes": 109874,
+      "sha256": "642ffd7cf74b43695303ef8b23c1a37dfac288be4960c936c8af626e84ed3122"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3060826/fullTextXML",
+      "reused_after_interruption": true,
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC3060826.xml",
+      "bytes": 158613,
+      "sha256": "90ce611f0ada6d7a63a611b0ec8962549eb39452d36400c06e99f0d722359e49"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11143057/fullTextXML",
+      "reused_after_interruption": true,
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC11143057.xml",
+      "bytes": 92153,
+      "sha256": "51084fe5aea01b93e7d87831cd74c592fbdef5a38e26a1e79e00b4ea2c83c4cb"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8694576/fullTextXML",
+      "reused_after_interruption": true,
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC8694576.xml",
+      "bytes": 134836,
+      "sha256": "fb8d6769bde1d6b0be006f790a2e9897e86e9f85a7dddd5effaea3d64a0fcfc9"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6381743/fullTextXML",
+      "reused_after_interruption": true,
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC6381743.xml",
+      "bytes": 127278,
+      "sha256": "778e8603b6c8d2ee6be28ed60dd3e9228a5f067462662ce53be3f836cd214319"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6706008/fullTextXML",
+      "reused_after_interruption": true,
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC6706008.xml",
+      "bytes": 106837,
+      "sha256": "6a5ac8611714d61f36ceed868d1810cdab63491a0d896359a3aac139e891f0df"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4057123/fullTextXML",
+      "reused_after_interruption": true,
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC4057123.xml",
+      "bytes": 184062,
+      "sha256": "ed3e585419ff07b3e2de17c70f0ac5bf70e50331973949e90972abb4d4cca322"
+    },
+    {
+      "status": "failed",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2866838/fullTextXML",
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC2866838.xml",
+      "attempts": [
+        {
+          "utc": "2026-10-10T00:42:35.002916+00:00",
+          "error": "HTTP Error 500: ",
+          "attempt": 1
+        },
+        {
+          "utc": "2026-10-10T00:42:36.905230+00:00",
+          "error": "HTTP Error 500: ",
+          "attempt": 2
+        },
+        {
+          "utc": "2026-10-10T00:42:39.939366+00:00",
+          "error": "HTTP Error 500: ",
+          "attempt": 3
+        }
+      ]
+    },
+    {
+      "status": "retrieved",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3960248/fullTextXML",
+      "reused_after_interruption": true,
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC3960248.xml",
+      "bytes": 81588,
+      "sha256": "01bd6ffd7a0e97f725143389e3a7d2ba4ebabc64ca09126e383448fbdaa7ae5a"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3303634/fullTextXML",
+      "reused_after_interruption": true,
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC3303634.xml",
+      "bytes": 80859,
+      "sha256": "4b06d8be44b5d4ab8b9ac1ea6878bfadf50e6ec51fa5ae647d29c6cd67610c32"
+    },
+    {
+      "status": "failed",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC1978431/fullTextXML",
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC1978431.xml",
+      "attempts": [
+        {
+          "utc": "2026-10-10T00:42:43.783143+00:00",
+          "error": "HTTP Error 500: ",
+          "attempt": 1
+        },
+        {
+          "utc": "2026-10-10T00:42:45.851861+00:00",
+          "error": "HTTP Error 500: ",
+          "attempt": 2
+        },
+        {
+          "utc": "2026-10-10T00:42:48.989957+00:00",
+          "error": "HTTP Error 500: ",
+          "attempt": 3
+        }
+      ]
+    },
+    {
+      "status": "failed",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3578224/fullTextXML",
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC3578224.xml",
+      "attempts": [
+        {
+          "utc": "2026-10-10T00:42:52.822324+00:00",
+          "error": "HTTP Error 500: ",
+          "attempt": 1
+        },
+        {
+          "utc": "2026-10-10T00:42:54.736829+00:00",
+          "error": "HTTP Error 500: ",
+          "attempt": 2
+        },
+        {
+          "utc": "2026-10-10T00:42:57.870670+00:00",
+          "error": "HTTP Error 500: ",
+          "attempt": 3
+        }
+      ]
+    },
+    {
+      "status": "retrieved",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2440089/fullTextXML",
+      "reused_after_interruption": true,
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC2440089.xml",
+      "bytes": 108414,
+      "sha256": "b9a63030fa073db6421ea50bd429d8b52de872a6f8ba110782edf299734fa200"
+    },
+    {
+      "status": "failed",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2701960/fullTextXML",
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC2701960.xml",
+      "attempts": [
+        {
+          "utc": "2026-10-10T00:43:01.670382+00:00",
+          "error": "HTTP Error 500: ",
+          "attempt": 1
+        },
+        {
+          "utc": "2026-10-10T00:43:03.701316+00:00",
+          "error": "HTTP Error 500: ",
+          "attempt": 2
+        },
+        {
+          "utc": "2026-10-10T00:43:06.512182+00:00",
+          "error": "HTTP Error 500: ",
+          "attempt": 3
+        }
+      ]
+    },
+    {
+      "status": "failed",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC1573763/fullTextXML",
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC1573763.xml",
+      "attempts": [
+        {
+          "utc": "2026-10-10T00:43:11.837428+00:00",
+          "error": "HTTP Error 500: ",
+          "attempt": 1
+        },
+        {
+          "utc": "2026-10-10T00:43:13.881021+00:00",
+          "error": "HTTP Error 500: ",
+          "attempt": 2
+        },
+        {
+          "utc": "2026-10-10T00:43:17.039154+00:00",
+          "error": "HTTP Error 500: ",
+          "attempt": 3
+        }
+      ]
+    },
+    {
+      "status": "retrieved",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13430594/fullTextXML",
+      "reused_after_interruption": true,
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC13430594.xml",
+      "bytes": 119234,
+      "sha256": "4f73ad42c17ac8953766bd1fd3767d0c81477af882b4821e3525cd4c14a41cd5"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11743488/fullTextXML",
+      "reused_after_interruption": true,
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC11743488.xml",
+      "bytes": 214650,
+      "sha256": "faf2b1a27d5e4db9c4dd5408774eb8d51a90a01f4ad07200fd08bb4bf58ac624"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9331514/fullTextXML",
+      "reused_after_interruption": true,
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC9331514.xml",
+      "bytes": 143135,
+      "sha256": "afc3cf4da9d983eed0bed645623383c91e407e8d2a9a0aee119a30777cec6a9e"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12992014/fullTextXML",
+      "reused_after_interruption": true,
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC12992014.xml",
+      "bytes": 195313,
+      "sha256": "46c92bbfb33f56bd63cd28eb4e877c283250a19a2283a72a9d44b91e4a3a6e40"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12130637/fullTextXML",
+      "reused_after_interruption": true,
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC12130637.xml",
+      "bytes": 189378,
+      "sha256": "ec94a29f35c8ee049094c2b176c8d02ac5b654d99dbe7b0b79e309e8d2e4006f"
+    },
+    {
+      "status": "failed",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10351616/fullTextXML",
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC10351616.xml",
+      "attempts": [
+        {
+          "utc": "2026-10-10T00:43:20.841577+00:00",
+          "error": "HTTP Error 500: ",
+          "attempt": 1
+        },
+        {
+          "utc": "2026-10-10T00:43:23.886837+00:00",
+          "error": "HTTP Error 500: ",
+          "attempt": 2
+        },
+        {
+          "utc": "2026-10-10T00:43:27.134185+00:00",
+          "error": "HTTP Error 500: ",
+          "attempt": 3
+        }
+      ]
+    },
+    {
+      "status": "retrieved",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9928586/fullTextXML",
+      "reused_after_interruption": true,
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC9928586.xml",
+      "bytes": 282070,
+      "sha256": "c8832e4a15269376f77be8deebcbcb56a89555f52563eba24188289a224c5a21"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8773081/fullTextXML",
+      "reused_after_interruption": true,
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC8773081.xml",
+      "bytes": 125946,
+      "sha256": "f545f154fd965a7c8aa83a5c6cac613467b9bd190f6a4f807784150bfd97fb3f"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11024162/fullTextXML",
+      "reused_after_interruption": true,
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC11024162.xml",
+      "bytes": 246958,
+      "sha256": "19be139f8b9acfef101f671b3c4ca04802f5a31e98903262fddc2fc4e157cf4b"
+    },
+    {
+      "status": "failed",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11105417/fullTextXML",
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC11105417.xml",
+      "attempts": [
+        {
+          "utc": "2026-10-10T00:43:32.029303+00:00",
+          "error": "HTTP Error 500: ",
+          "attempt": 1
+        },
+        {
+          "utc": "2026-10-10T00:43:34.322183+00:00",
+          "error": "HTTP Error 500: ",
+          "attempt": 2
+        },
+        {
+          "utc": "2026-10-10T00:43:37.343173+00:00",
+          "error": "HTTP Error 500: ",
+          "attempt": 3
+        }
+      ]
+    },
+    {
+      "status": "retrieved",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4415891/fullTextXML",
+      "reused_after_interruption": true,
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC4415891.xml",
+      "bytes": 166052,
+      "sha256": "4c3769171ee19de4f5eac8187e7eb9faed359219945475ced6d46907eaa18f32"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12575704/fullTextXML",
+      "reused_after_interruption": true,
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC12575704.xml",
+      "bytes": 184413,
+      "sha256": "4fe9b0f246d74e8d400b952c9c29bfa301f9868e8630153adb5f6d580f487d4e"
+    },
+    {
+      "status": "failed",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6685762/fullTextXML",
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC6685762.xml",
+      "attempts": [
+        {
+          "utc": "2026-10-10T00:43:41.218853+00:00",
+          "error": "HTTP Error 500: ",
+          "attempt": 1
+        },
+        {
+          "utc": "2026-10-10T00:43:43.070914+00:00",
+          "error": "HTTP Error 500: ",
+          "attempt": 2
+        },
+        {
+          "utc": "2026-10-10T00:43:46.132835+00:00",
+          "error": "HTTP Error 500: ",
+          "attempt": 3
+        }
+      ]
+    },
+    {
+      "status": "retrieved",
+      "url": "https://www.ebi.ac.uk/pride/ws/archive/v2/projects/PXD055968",
+      "retrieved_utc": "2026-10-10T00:43:49.835808+00:00",
+      "http_status": 200,
+      "content_type": "text/plain;charset=UTF-8",
+      "attempts": [],
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PXD055968.json",
+      "bytes": 8016,
+      "sha256": "a265c71f78e617efc562967993e112e5ddc144df71880e9c4b40d34799cf1b05"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://www.ebi.ac.uk/pride/ws/archive/v2/projects/PXD055968/files?pageSize=100&page=0",
+      "retrieved_utc": "2026-10-10T00:43:51.304469+00:00",
+      "http_status": 200,
+      "content_type": "application/json",
+      "attempts": [],
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PXD055968_files.json",
+      "bytes": 61216,
+      "sha256": "56eb8eb9ecf9797536c9fb63a6171f0bdc59d56a27be7c169325a90de73b896b"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.3390%2Fcells11193164&format=json&resultType=core",
+      "retrieved_utc": "2026-10-10T00:43:52.268611+00:00",
+      "http_status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "attempts": [],
+      "path": "research/results/discovery_secretome_provenance_v1/sources/original_article_metadata.json",
+      "bytes": 10693,
+      "sha256": "8c62764a3a3be9c735a20141766f352fc67c89f6a84ffbc719a2d3019a5248e8"
+    }
+  ],
+  "pmc_requested": 30,
+  "pmc_parsed": 21,
+  "previous_corrected_pride": "Five raw corrected search responses and saved project table preserved, first process interrupted before final source log"
+}

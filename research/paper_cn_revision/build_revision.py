@@ -1,4 +1,5 @@
 """Build v0.9 with a concise main text, documented tool comparison and separate supplement."""
+import argparse
 import csv
 import hashlib
 import json
@@ -18,8 +19,10 @@ from openpyxl.styles import Alignment, Font
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "docs/paper_cn_v2"
+VERSION = "v0.9"
 OLD = ROOT / "docs/paper_cn_v1"
 CASE = ROOT / "research/results/discovery_sparcl1_v1"
+BIOLOGY = False
 sys.path.insert(0, str(ROOT / "research"))
 from export_paper import native_docx
 
@@ -104,6 +107,9 @@ def make_sources(comparison):
     old = (OLD / "manuscript.md").read_text(encoding="utf-8")
     refs = old.split("# 参考文献\n", 1)[1].split("# 附录 A：", 1)[0].strip()
     refs += "\n30. Masuno K, et al. Expression profiling identifies Klf15 as a glucocorticoid target that regulates airway hyperresponsiveness. Am J Respir Cell Mol Biol. 2011;45:642–649. doi: [10.1165/rcmb.2010-0369OC](https://doi.org/10.1165/rcmb.2010-0369OC)."
+    if BIOLOGY:
+        refs += "\n31. Kan M, Sun M, Jiang X, et al. CEBPD modulates the airway smooth muscle transcriptomic response to glucocorticoids. Respir Res. 2022;23:193. doi: [10.1186/s12931-022-02119-1](https://doi.org/10.1186/s12931-022-02119-1)."
+        refs += "\n32. Kan M, Koziol-White C, Shumyatcher M, et al. Airway smooth muscle-specific transcriptomic signatures of glucocorticoid exposure. Am J Respir Cell Mol Biol. 2019;61:110–120. doi: [10.1165/rcmb.2018-0385OC](https://doi.org/10.1165/rcmb.2018-0385OC)."
     headers, rows = comparison["headers"], comparison["rows"]
     markdown = "| " + " | ".join(headers) + " |\n|" + "---|" * len(headers)
     markdown += "\n" + "\n".join("| " + " | ".join(row) + " |" for row in rows)
@@ -115,23 +121,37 @@ def make_sources(comparison):
     methods = renumber_figure_text(methods)
     methods = re.sub(r"表\s*([1-9])", r"补充表 S\1", methods)
     figures = old.split("# 附录 A：", 1)[1].split("# 附录 B：", 1)[0]
-    figures = renumber_figure_text(figures).replace("paper_cn_v1/", "paper_cn_v2/")
+    figures = renumber_figure_text(figures).replace("paper_cn_v1/", OUT.name + "/")
+    figures = re.sub(r"(?<!补充)表\s*([1-9])(?!\d)", r"补充表 S\1", figures)
+    figures = re.sub(r"补充表 S([1-9])([––—\-])([1-9])(?!\d)", r"补充表 S\1\2S\3", figures)
     figures = figures.replace("论文 PDF 的本附录", "补充 PDF 的本部分")
     tables = old.split("# 附录 B：", 1)[1].split("# 附录 C：", 1)[0]
     tables = re.sub(r"表\s*([1-9])", r"补充表 S\1", tables)
     tables = re.sub(r"Table_(\d)", r"Table_S\1", tables)
     scope = "本补充保留 v0.8 的详细方法及历史结果图表，软件版本与执行日期按原记录标注。S1–S10 是既有方法，S11 为本轮外部发现案例。主稿聚焦四项贡献；本文件并不新增专家或用户评分。参考文献编号与主稿一致。"
-    supplement = '---\ntitle: "BioExplainR 中文论文 v0.9：补充材料"\ndate: "2026-10-08"\nlang: zh-CN\n---\n\n' + scope + "\n\n# 补充方法\n\n" + methods
+    supplement = f'---\ntitle: "BioExplainR 中文论文 {VERSION}：补充材料"\ndate: "2026-10-08"\nlang: zh-CN\n---\n\n' + scope + "\n\n# 补充方法\n\n" + methods
     supplement += "\n## S11 候选固定、外部实验及独立实现复核\n\n" + (ROOT / "research/discovery/PROTOCOL.md").read_text(encoding="utf-8").split("\n", 1)[1]
     supplement += "\n\n外部数值结果见补充表 S10；Python/SciPy 与 R 的十项效应/P/CI/置换值及两项 Holm 值相符。BioExplainR 生成两个 scope/unit 明确区分的上下文与项目，报告并不把软件 pass 解释为机制成立。\n\n# 补充结果图\n\n" + figures
+    if BIOLOGY:
+        added = "\n## S12 因子干预及供体级敏感性\n\n" + (ROOT / "research/discovery/CONTEXT_PROTOCOL.md").read_text().split("\n", 1)[1]
+        added += "\n## S13 多供体响应、公开格式及配对修订\n\n" + (ROOT / "research/discovery/DONOR_PROTOCOL.md").read_text().split("\n", 1)[1]
+        added += "\n\n" + (ROOT / "research/discovery/DONOR_DESIGN_AMENDMENT.md").read_text().split("\n", 1)[1]
+        supplement = supplement.replace("# 补充结果图", added + "\n# 补充结果图")
     supplement += "\n# 补充结果表\n\n" + tables
     supplement += "\n## 补充表 S10 SPARCL1 外部实验与重算\n\n**表注：** 24 小时为主比较，4 小时为次要比较；两侧 Welch、95% CI、两个时间点 Holm 值和 35 种分组枚举置换分别提供。培养重复来自同一细胞系，不作为独立供体。**来源：** `research/results/discovery_sparcl1_v1/validation_results.csv`、公开 GEO 输入及 `r_numeric_checks.csv`。**文件：** `tables/Table_S10.csv`、`tables/Table_S10.xlsx`。\n\n# 后续研究与投稿信息\n\n真实作者、基金、伦理、独立专家评价与人工图稿审阅待负责人确认；用户研究 deferred。DOI 只有归档平台实际签发后填写。\n"
+    if BIOLOGY:
+        supplement = supplement.replace("S11 为本轮外部发现案例", "S11 为原外部候选案例，S12–S13为本轮因子干预与多供体响应重分析")
+        added = "\n## 补充表 S11 SPARCL1 与固定控制的因子模型\n\n**表注：** 全31文库、4供体；32行包括四基因×八比较。三候选交互采用同一Holm family；各全基因交互BH背景另保存在结果目录。未校正simple effects仅用于解释，低表达SPARCL1可能被全基因独立过滤。**来源：** `discovery_context_v1/model_results.csv`。\n"
+        added += "\n## 补充表 S12 SPARCL1 多供体配对及组间响应\n\n**表注：** 7非哮喘/9致死性哮喘供体，响应为log2(全部同基因transcript TPM之和+1)供体内差值。三检验Holm、128/512符号翻转、11,440组间枚举分别提供。组差阴性不证明等效。**来源：** `discovery_donors_v1/results.csv`。\n"
+        added += "\n## 补充表 S13 全部可核对供体效应与伪计数敏感性\n\n**表注：** 三固定基因×16供体，提供原TPM和伪计数1/0.5/0.1下响应。配对来自原论文Table E1 Cell Line，逐样本映射见结果目录samples.csv。28793/28796无法核对配对，先于候选检验排除；不补造N012412两文库。两后续实验至少三供体细胞系同ID，不相加独立供体数。**来源：** `discovery_donors_v1/donor_effects.csv`。\n"
+        supplement = supplement.replace("# 后续研究与投稿信息", added + "\n# 后续研究与投稿信息")
     (OUT / "supplementary.md").write_text(supplement, encoding="utf-8")
     old_body = old.split("# 1 引言", 1)[1].split("# 数据、代码与稿件信息", 1)[0]
     new_body = main.split("# 1 引言", 1)[1].split("# 数据与代码可用性", 1)[0]
     json_write(OUT / "compression.json", {"metric": "non-whitespace Unicode characters from introduction through conclusion",
-        "v0_8_body": len(re.sub(r"\s", "", old_body)), "v0_9_body": len(re.sub(r"\s", "", new_body)),
-        "core_contributions": 4, "technical_methods_moved": 10, "supplementary_methods": 11})
+        "v0_8_body": len(re.sub(r"\s", "", old_body)), "current_body": len(re.sub(r"\s", "", new_body)),
+        "current_version": VERSION,
+        "core_contributions": 4, "technical_methods_moved": 10, "supplementary_methods": 13 if BIOLOGY else 11})
 
 
 def export(source, name, specs, figures):
@@ -181,7 +201,7 @@ def export(source, name, specs, figures):
             page.show_pdf_page(rect, vector, 0, keep_proportion=True)
         replaced.append({"caption": matches[0], "page": page.number+1, "pdf": record(figures[matches[0]])})
     assert len(replaced) == len(figures)
-    pdf.set_metadata({"title": name, "author": "", "subject": "BioExplainR revision v0.9"})
+    pdf.set_metadata({"title": name, "author": "", "subject": f"BioExplainR revision {VERSION}"})
     pdf.save(OUT / f"{name}.pdf", garbage=4, deflate=True)
     result = {"name": name, "pages": len(pdf), "docx_tables": len(doc.tables),
               "figures": len(doc.inline_shapes), "vector_figures": replaced}
@@ -189,31 +209,56 @@ def export(source, name, specs, figures):
 
 
 def main():
+    global OUT, VERSION, BIOLOGY
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--directory", type=Path, default=OUT)
+    parser.add_argument("--version", default=VERSION)
+    parser.add_argument("--reuse-assets", type=Path, help="Copy reviewed figure/table bytes rather than regenerate them")
+    parser.add_argument("--biology-followup", action="store_true", help="Add auditable factorial and paired-donor follow-up")
+    args = parser.parse_args()
+    OUT = args.directory.resolve(); VERSION = args.version
+    BIOLOGY = args.biology_followup
+    if not OUT.is_relative_to(ROOT / "docs"):
+        raise ValueError("Use a manuscript directory under docs")
     for sub in ["tables", "figures", "figures/composites", "figures/panels", "figures/previews"]:
         (OUT / sub).mkdir(parents=True, exist_ok=True)
     comparison = json.loads((Path(__file__).parent / "tool_comparison.json").read_text(encoding="utf-8"))
-    external_table("Table_1", comparison["headers"], comparison["rows"], comparison["scope"])
-    for n in range(1, 10):
-        for ext in ["csv", "xlsx"]:
-            (OUT / f"tables/Table_S{n}.{ext}").write_bytes((OLD / f"tables/Table_{n}.{ext}").read_bytes())
-    for old in (OLD / "figures").rglob("*"):
-        if old.is_file():
-            dest = OUT / "figures" / old.relative_to(OLD / "figures")
-            dest.parent.mkdir(parents=True, exist_ok=True); dest.write_bytes(old.read_bytes())
-    for ext, directory in [("pdf", "composites"), ("png", "previews")]:
-        (OUT / f"figures/Figure_1.{ext}").write_bytes((OLD / f"figures/{directory}/Figure_1.{ext}").read_bytes())
-    rows = read_csv(CASE / "validation_results.csv")
-    external_table("Table_S10", list(rows[0]), [[r[k] for k in rows[0]] for r in rows],
-        "GSE34313; fixed SPARCL1 candidate; single-cell-line culture replication; Welch/CI/Holm/permutation")
-    discovery_figure()
+    if args.reuse_assets:
+        previous = args.reuse_assets.resolve()
+        if previous == OUT:
+            raise ValueError("Reuse a different reviewed version directory")
+        for directory in ["figures", "tables"]:
+            for p in (previous / directory).rglob("*"):
+                if p.is_file():
+                    dest = OUT / p.relative_to(previous)
+                    dest.parent.mkdir(parents=True, exist_ok=True); dest.write_bytes(p.read_bytes())
+    else:
+        external_table("Table_1", comparison["headers"], comparison["rows"], comparison["scope"])
+        for n in range(1, 10):
+            for ext in ["csv", "xlsx"]:
+                (OUT / f"tables/Table_S{n}.{ext}").write_bytes((OLD / f"tables/Table_{n}.{ext}").read_bytes())
+        for old in (OLD / "figures").rglob("*"):
+            if old.is_file():
+                dest = OUT / "figures" / old.relative_to(OLD / "figures")
+                dest.parent.mkdir(parents=True, exist_ok=True); dest.write_bytes(old.read_bytes())
+        for ext, directory in [("pdf", "composites"), ("png", "previews")]:
+            (OUT / f"figures/Figure_1.{ext}").write_bytes((OLD / f"figures/{directory}/Figure_1.{ext}").read_bytes())
+        rows = read_csv(CASE / "validation_results.csv")
+        external_table("Table_S10", list(rows[0]), [[r[k] for k in rows[0]] for r in rows],
+            "GSE34313; fixed SPARCL1 candidate; single-cell-line culture replication; Welch/CI/Holm/permutation")
+        discovery_figure()
+    if BIOLOGY:
+        from biology_assets import make_assets
+        make_assets(OUT, external_table)
     make_sources(comparison)
     spec = {"id": "comparison", "headers": comparison["headers"], "rows": comparison["rows"],
             "widths_cm": [2.5, 2.6, 2.7, 3.1, 2.0, 4.1]}
-    main_export = export(OUT / "manuscript_expanded.md", "BioExplainR-中文论文-v0.9", [spec],
-        {"图 1 BioExplainR 的事实约束工作流": OUT / "figures/Figure_1.pdf",
-         "图 2 SPARCL1 候选固定与外部实验初步重复": OUT / "figures/Figure_2.pdf"})
+    main_figures = {"图 1 BioExplainR 的事实约束工作流": OUT / "figures/Figure_1.pdf",
+                    "图 2 SPARCL1 候选固定与外部实验初步重复": OUT / "figures/Figure_2.pdf"}
+    if BIOLOGY: main_figures["图 3 SPARCL1 多供体响应与机制检验"] = OUT / "figures/Figure_3.pdf"
+    main_export = export(OUT / "manuscript_expanded.md", f"BioExplainR-中文论文-{VERSION}", [spec], main_figures)
     captions = ["平台框架", "配对转录组案例", "单细胞与微阵列案例", "pasilla 数值基准", "miniACC 多组学案例", "模型事实传递", "受控错误与新增场景", "工作台与工程验收"]
-    supplement = export(OUT / "supplementary.md", "BioExplainR-补充材料-v0.9", [],
+    supplement = export(OUT / "supplementary.md", f"BioExplainR-补充材料-{VERSION}", [],
         {f"补充图 S{n} {caption}": OUT / f"figures/composites/Figure_{n}.pdf" for n, caption in enumerate(captions, 1)})
     json_write(OUT / "export_report.json", {"status": "pass", "main": main_export, "supplement": supplement})
     assets = [p for sub in ["tables", "figures"] for p in (OUT / sub).rglob("*") if p.is_file()]

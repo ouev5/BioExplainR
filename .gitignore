@@ -21,3 +21,5 @@ docs/*.zip
 docs/**/rendered_docx/
 research/results/human_evaluation/
 research/study_materials/
+# Local CI workflow retained until GitHub Workflows write permission is available.
+.github/workflows/

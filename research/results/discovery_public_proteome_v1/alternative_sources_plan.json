@@ -1,0 +1,166 @@
+{
+  "utc": "2026-10-10T05:18:51.007366+00:00",
+  "script": {
+    "path": "research/discovery/public_proteome_resume.py",
+    "bytes": 5370,
+    "sha256": "78f510fdb6275ee4a4ad080efc42fa8ec0bafd1a15d148bf1b63e861ef3161ae"
+  },
+  "source_evidence": [
+    {
+      "path": "research/results/discovery_public_proteome_v1/processed_and_article_plan.json",
+      "bytes": 4040,
+      "sha256": "5fc4687dbb1931f144869ca1738348a14cab51e97f4ea434b3f36eb223d16ea9"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/PXD014171_inventory.json",
+      "bytes": 26899,
+      "sha256": "5c7fcb3242942d6310d3692fa76936b78d2ede8736ddc4de7125778384370775"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/PXD015604_inventory.json",
+      "bytes": 65797,
+      "sha256": "9e9eab30b2144e7ce0dd5d2ed2fb91d0916f27821701eb5136642597d3eb0af6"
+    }
+  ],
+  "reason": "Three XML HTTP500 alternatives; lesion-sample and epithelial-co-culture metadata only",
+  "requests": [
+    {
+      "name": "PMC11299423_article.html",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11299423/"
+    },
+    {
+      "name": "PMC5105184_article.html",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5105184/"
+    },
+    {
+      "name": "PMC9361782_article.html",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9361782/"
+    },
+    {
+      "name": "PXD014171_summary.txt",
+      "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2021/05/PXD014171/summary.txt",
+      "expected_file": {
+        "projectAccessions": [
+          "PXD014171"
+        ],
+        "accession": "5993e6b0717d3f4b3f1608ae22b7a0b72f4c4155020416c5c64356902863c010",
+        "fileCategory": {
+          "@type": "CvParam",
+          "cvLabel": "PRIDE",
+          "accession": "PRIDE:0000410",
+          "name": "Other type file URI",
+          "value": "OTHER"
+        },
+        "checksum": "e9355e35c07abade1e4823144543d7265ad427f6",
+        "publicFileLocations": [
+          {
+            "@type": "CvParam",
+            "cvLabel": "PRIDE",
+            "accession": "PRIDE:0000468",
+            "name": "Aspera Protocol",
+            "value": "prd_ascp@fasp.ebi.ac.uk:pride/data/archive/2021/05/PXD014171/summary.txt"
+          },
+          {
+            "@type": "CvParam",
+            "cvLabel": "PRIDE",
+            "accession": "PRIDE:0000469",
+            "name": "FTP Protocol",
+            "value": "ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2021/05/PXD014171/summary.txt"
+          }
+        ],
+        "fileSizeBytes": 7522,
+        "fileName": "summary.txt",
+        "compress": false,
+        "submissionDate": "2019-06-07T11:14:33.000+00:00",
+        "publicationDate": "2021-05-19T14:24:31.696+00:00",
+        "updatedDate": "2019-06-07T11:14:33.000+00:00",
+        "additionalAttributes": [],
+        "totalDownloads": 107
+      }
+    },
+    {
+      "name": "PXD014171_PXD014171_community_annotated.sdrf.tsv",
+      "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2021/05/PXD014171/PXD014171_community_annotated.sdrf.tsv",
+      "expected_file": {
+        "projectAccessions": [
+          "PXD014171"
+        ],
+        "accession": "13bd47bdcfb5e9ae7a2085e01a7cf20e0060bbda672303e56ad17821c5981c10",
+        "fileCategory": {
+          "@type": "CvParam",
+          "cvLabel": "PRIDE",
+          "accession": "PRIDE:0000584",
+          "name": "Experimental design file URI",
+          "value": "EXPERIMENTAL DESIGN"
+        },
+        "checksum": "",
+        "publicFileLocations": [
+          {
+            "@type": "CvParam",
+            "cvLabel": "PRIDE",
+            "accession": "PRIDE:0000469",
+            "name": "FTP Protocol",
+            "value": "ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2021/05/PXD014171/PXD014171_community_annotated.sdrf.tsv"
+          },
+          {
+            "@type": "CvParam",
+            "cvLabel": "PRIDE",
+            "accession": "PRIDE:0000468",
+            "name": "Aspera Protocol",
+            "value": "prd_ascp@fasp.ebi.ac.uk:pride/data/archive/2021/05/PXD014171/PXD014171_community_annotated.sdrf.tsv"
+          }
+        ],
+        "fileSizeBytes": 7450,
+        "fileName": "PXD014171_community_annotated.sdrf.tsv",
+        "compress": false,
+        "submissionDate": "2019-06-07T11:14:33.000+00:00",
+        "publicationDate": "2021-05-19T14:24:31.696+00:00",
+        "updatedDate": "2019-06-07T11:14:33.000+00:00",
+        "additionalAttributes": [],
+        "totalDownloads": 0
+      }
+    },
+    {
+      "name": "PXD015604_Link_between_files.xlsx",
+      "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2023/05/PXD015604/Link_between_files.xlsx",
+      "expected_file": {
+        "projectAccessions": [
+          "PXD015604"
+        ],
+        "accession": "7663daf75bb78d16df9a16fa92dc0a2a580116f3914bdf3a5c569ccfceb52146",
+        "fileCategory": {
+          "@type": "CvParam",
+          "cvLabel": "PRIDE",
+          "accession": "PRIDE:0000410",
+          "name": "Other type file URI",
+          "value": "OTHER"
+        },
+        "checksum": "8f1ec46c065591cecf972626b81defbe776621cf",
+        "publicFileLocations": [
+          {
+            "@type": "CvParam",
+            "cvLabel": "PRIDE",
+            "accession": "PRIDE:0000469",
+            "name": "FTP Protocol",
+            "value": "ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2023/05/PXD015604/Link_between_files.xlsx"
+          },
+          {
+            "@type": "CvParam",
+            "cvLabel": "PRIDE",
+            "accession": "PRIDE:0000468",
+            "name": "Aspera Protocol",
+            "value": "prd_ascp@fasp.ebi.ac.uk:pride/data/archive/2023/05/PXD015604/Link_between_files.xlsx"
+          }
+        ],
+        "fileSizeBytes": 10999,
+        "fileName": "Link_between_files.xlsx",
+        "compress": false,
+        "submissionDate": "2019-09-26T10:13:51.000+00:00",
+        "publicationDate": "2023-05-02T09:43:26.572+00:00",
+        "updatedDate": "2019-09-26T10:13:51.000+00:00",
+        "additionalAttributes": [],
+        "totalDownloads": 83
+      }
+    }
+  ]
+}

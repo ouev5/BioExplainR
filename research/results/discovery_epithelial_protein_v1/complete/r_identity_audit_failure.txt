@@ -1,0 +1,11 @@
+Command: Rscript --vanilla research/discovery/audit_epithelial_identity.R research/results/discovery_epithelial_protein_v1/complete
+Exit code: 1
+Error: 不是所有的r$final_qc == hqc[i]都是TRUE
+
+Diagnostic: first input identity row, source_row 2; Python CSV final_qc is the
+string "False"; read.csv kept it as a string instead of logical FALSE. Identity
+was excluded by both implementations; this was a serialization type difference.
+Resume normalizes only initial_qc/final_qc CSV fields to logical values.
+Two diagnostic command-line attempts without a correct Rscript argument were
+stopped before data processing (old output already has r_audit; --args treated
+as the output directory). No original table or numeric output was changed.

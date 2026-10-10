@@ -1,0 +1,29 @@
+{
+  "name": "PXD029135_median-normalized.txt",
+  "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2021/11/PXD029135/median-normalized.txt",
+  "started_utc": "2026-10-10T05:13:08.312236+00:00",
+  "http_status": 200,
+  "final_url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2021/11/PXD029135/median-normalized.txt",
+  "headers": {
+    "Date": "Sat, 10 Oct 2026 05:13:12 GMT",
+    "Server": "Apache",
+    "Last-Modified": "Wed, 20 Apr 2022 19:14:10 GMT",
+    "ETag": "\"1f5d7e-5dd1acc4c6480\"",
+    "Accept-Ranges": "bytes",
+    "Content-Length": "2055550",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Methods": "GET,OPTIONS",
+    "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+    "Connection": "close",
+    "Content-Type": "text/plain; charset=UTF-8"
+  },
+  "status": "failed_or_partial",
+  "error": "ValueError('Response size/time limit; partial bytes only')",
+  "response": {
+    "path": "research/results/discovery_public_proteome_v1/sources/PXD029135_median-normalized.txt",
+    "bytes": 1769472,
+    "sha256": "2b8bc5645159b3198d0b7aea3dc7b42dbb2091fdcbed6412e767ea668c4c6eb7"
+  },
+  "completed_utc": "2026-10-10T05:15:10.125331+00:00",
+  "seconds": 121.81309007294476
+}

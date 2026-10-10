@@ -1,0 +1,89 @@
+{
+  "utc": "2026-10-10T00:36:16.836987+00:00",
+  "protocol": {
+    "path": "research/discovery/SECRETOME_PROVENANCE_PROTOCOL.md",
+    "bytes": 2765,
+    "sha256": "47842a3b3143a6fc64b603a0ed13f868e234f1733c3e616156c8be0158e7d50f"
+  },
+  "script": {
+    "path": "research/discovery/secretome_provenance.py",
+    "bytes": 13941,
+    "sha256": "19d1715137aa9835b2116f7debe08e5cf78c76f6b1db715699ed98cef0276bb3"
+  },
+  "inputs": [
+    {
+      "path": "research/results/discovery_secretome_v1/archives/24h/extracted/txt/proteinGroups.txt",
+      "bytes": 4026207,
+      "sha256": "f179c0267b09f70079c6e51fd5ebf64368f639be77dffe97a95f0060c8818d19"
+    },
+    {
+      "path": "research/results/discovery_secretome_v1/archives/72h/extracted/txt/proteinGroups.txt",
+      "bytes": 5291473,
+      "sha256": "57a13a064b242e40ae6cf646deec3e08390fa70c285ffb5b030719f43e541d23"
+    },
+    {
+      "path": "research/results/discovery_set_validation_v1/protein_full_tables_small/PXD033514/extracted_verified/txt/proteinGroups.txt",
+      "bytes": 32134908,
+      "sha256": "6433f8df5e440965209b0b9007f062a2c26a1828bd15a07635bdf682de1e6aa0"
+    },
+    {
+      "path": "research/results/discovery_set_validation_v1/protein_full_tables_small/PXD033534/extracted/txt/proteinGroups.txt",
+      "bytes": 18116987,
+      "sha256": "e6a744816e8a3d8c80dae585da203b5d8381faa43894f6082b70afc38f4ea5c5"
+    },
+    {
+      "path": "research/results/discovery_validation_v2/human_protein/Table S2.xlsx",
+      "bytes": 636292,
+      "sha256": "a5cc4a4973e75d587060f151ccd868c5dc365ffa653c2e6b8bde07a839463e5d"
+    },
+    {
+      "path": "research/results/discovery_validation_v2/human_protein/PMC9562650.xml",
+      "bytes": 194407,
+      "sha256": "20977d6e0410203f40701c5fc0cee64b936d3acb6d59f242e1557ffba0052ab8"
+    },
+    {
+      "path": "research/results/discovery_secretome_v1/sample_map.csv",
+      "bytes": 7769,
+      "sha256": "a377b7e091ea17a1928eedf7bb042e73a32c722a681cf306f8152f824211e587"
+    }
+  ],
+  "array_paths": {
+    "secretome24": {
+      "path": "research/results/discovery_secretome_v1/archives/24h/extracted/txt/proteinGroups.txt",
+      "bytes": 4026207,
+      "sha256": "f179c0267b09f70079c6e51fd5ebf64368f639be77dffe97a95f0060c8818d19"
+    },
+    "secretome72": {
+      "path": "research/results/discovery_secretome_v1/archives/72h/extracted/txt/proteinGroups.txt",
+      "bytes": 5291473,
+      "sha256": "57a13a064b242e40ae6cf646deec3e08390fa70c285ffb5b030719f43e541d23"
+    },
+    "proteome24": {
+      "path": "research/results/discovery_set_validation_v1/protein_full_tables_small/PXD033514/extracted_verified/txt/proteinGroups.txt",
+      "bytes": 32134908,
+      "sha256": "6433f8df5e440965209b0b9007f062a2c26a1828bd15a07635bdf682de1e6aa0"
+    },
+    "proteome72": {
+      "path": "research/results/discovery_set_validation_v1/protein_full_tables_small/PXD033534/extracted/txt/proteinGroups.txt",
+      "bytes": 18116987,
+      "sha256": "e6a744816e8a3d8c80dae585da203b5d8381faa43894f6082b70afc38f4ea5c5"
+    }
+  },
+  "queries": {
+    "asm_secretome": "TITLE_ABS:(\"airway smooth muscle\" OR \"bronchial smooth muscle\") AND TITLE_ABS:(secretome OR \"conditioned medium\" OR proteomic)",
+    "asm_gc_secretion": "TITLE_ABS:(\"airway smooth muscle\" OR \"bronchial smooth muscle\") AND TITLE_ABS:(dexamethasone OR glucocorticoid OR budesonide) AND TITLE_ABS:(secreted OR secretion OR extracellular)",
+    "asm_candidates": "(ANGPTL2 OR FSTL3 OR FBN2) AND (\"airway smooth muscle\" OR \"bronchial smooth muscle\")",
+    "asm_proteomics": "TITLE_ABS:(\"human airway smooth muscle\") AND TITLE_ABS:(proteome OR proteomics OR \"mass spectrometry\")",
+    "pxd033504": "PXD033504",
+    "htpc_gc": "TITLE_ABS:(peritubular) AND TITLE_ABS:(dexamethasone OR glucocorticoid)"
+  },
+  "pride_queries": [
+    "airway smooth muscle",
+    "bronchial smooth muscle",
+    "ASM secretome",
+    "smooth muscle dexamethasone"
+  ],
+  "tolerance": 5.1e-05,
+  "timing": "Prior secretome effects and mismatch known; cross-array source comparisons not run; new search not performed",
+  "scientific_scope": "Post-result provenance diagnostics; no new independent sample or corrected candidate significance"
+}

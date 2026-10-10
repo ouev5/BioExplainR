@@ -1,0 +1,39 @@
+{
+  "inputs": [
+    {
+      "path": "intervention_metadata.txt",
+      "bytes": 170791,
+      "sha256": "bcd32a50ec96385a79d741ddb7902e9c76c0762e5b1f05e1e1c76dc13ae5abef",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE229084&targ=gsm&form=text&view=brief",
+      "downloaded_utc": "2026-10-08T16:57:11.581257+00:00"
+    },
+    {
+      "path": "chip_metadata.txt",
+      "bytes": 69452,
+      "sha256": "bc0aa2a2b032045e0931472e4e8133ee0e64dd20ebccf81a8baf3b95a8b6b1da",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE95632&targ=gsm&form=text&view=brief",
+      "downloaded_utc": "2026-10-08T16:57:13.512075+00:00"
+    },
+    {
+      "path": "intervention_series.txt.gz",
+      "bytes": 5320,
+      "sha256": "892ff4b7adcdb8f12f51e0f5d82e1263d09f11b36a5476ed7a3bf7c32c771198",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE229nnn/GSE229084/matrix/GSE229084_series_matrix.txt.gz",
+      "downloaded_utc": "2026-10-08T16:57:14.441959+00:00"
+    },
+    {
+      "path": "geneCounts.tab.gz",
+      "bytes": 2524990,
+      "sha256": "db961e988dfe8466d6a2426be60f2ec8976698648f48c1b52653fa65ed5ae466",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE229nnn/GSE229084/suppl/GSE229084_geneCounts.tab.gz",
+      "downloaded_utc": "2026-10-08T16:57:47.672802+00:00"
+    },
+    {
+      "path": "PMC10710461.xml",
+      "bytes": 195169,
+      "sha256": "23ced8b64f275758650a976f73dbda6ee354785537c525350ea2e833e614104f",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10710461/fullTextXML",
+      "downloaded_utc": "2026-10-08T16:57:52.699536+00:00"
+    }
+  ]
+}

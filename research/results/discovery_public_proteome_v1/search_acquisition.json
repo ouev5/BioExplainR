@@ -1,0 +1,710 @@
+{
+  "utc": "2026-10-10T05:11:13.451910+00:00",
+  "searches": [
+    {
+      "label": "pride_airway",
+      "parameters": {
+        "keyword": "airway smooth muscle"
+      },
+      "complete_to_short_page": true,
+      "records": [
+        {
+          "name": "pride_airway_page_0.json",
+          "url": "https://www.ebi.ac.uk/pride/ws/archive/v2/search/projects?keyword=airway+smooth+muscle&pageSize=100&page=0",
+          "started_utc": "2026-10-10T05:10:56.082047+00:00",
+          "http_status": 200,
+          "final_url": "https://www.ebi.ac.uk/pride/ws/archive/v2/search/projects?keyword=airway+smooth+muscle&pageSize=100&page=0",
+          "headers": {
+            "Vary": "Origin",
+            "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+            "Content-Type": "application/json",
+            "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+            "total_records": "1",
+            "Expires": "0",
+            "Pragma": "no-cache",
+            "X-XSS-Protection": "0",
+            "X-Content-Type-Options": "nosniff",
+            "Connection": "close",
+            "X-Frame-Options": "DENY",
+            "Referrer-Policy": "no-referrer",
+            "Content-Length": "7736"
+          },
+          "status": "retrieved",
+          "response": {
+            "path": "research/results/discovery_public_proteome_v1/sources/pride_airway_page_0.json",
+            "bytes": 7736,
+            "sha256": "3c695659bafeba333e9e340b28ea4473d6ebb80fa56ed69e38606336a2b87fa7"
+          },
+          "completed_utc": "2026-10-10T05:10:58.858819+00:00",
+          "seconds": 2.7767760641872883
+        }
+      ],
+      "returned": 1,
+      "unique_accessions": 1
+    },
+    {
+      "label": "pride_bronchial",
+      "parameters": {
+        "keyword": "bronchial smooth muscle"
+      },
+      "complete_to_short_page": true,
+      "records": [
+        {
+          "name": "pride_bronchial_page_0.json",
+          "url": "https://www.ebi.ac.uk/pride/ws/archive/v2/search/projects?keyword=bronchial+smooth+muscle&pageSize=100&page=0",
+          "started_utc": "2026-10-10T05:10:56.081421+00:00",
+          "http_status": 200,
+          "final_url": "https://www.ebi.ac.uk/pride/ws/archive/v2/search/projects?keyword=bronchial+smooth+muscle&pageSize=100&page=0",
+          "headers": {
+            "Vary": "Origin",
+            "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+            "Content-Type": "application/json",
+            "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+            "total_records": "7",
+            "Expires": "0",
+            "Pragma": "no-cache",
+            "X-XSS-Protection": "0",
+            "X-Content-Type-Options": "nosniff",
+            "Connection": "close",
+            "X-Frame-Options": "DENY",
+            "Referrer-Policy": "no-referrer",
+            "Content-Length": "101349"
+          },
+          "status": "retrieved",
+          "response": {
+            "path": "research/results/discovery_public_proteome_v1/sources/pride_bronchial_page_0.json",
+            "bytes": 101349,
+            "sha256": "906fc5f9f604c12d7b42b5e764867747ea3fbe2b6237b697cfbff796d41ecb07"
+          },
+          "completed_utc": "2026-10-10T05:10:58.784000+00:00",
+          "seconds": 2.7025756891816854
+        }
+      ],
+      "returned": 7,
+      "unique_accessions": 7
+    },
+    {
+      "label": "pride_hasm",
+      "parameters": {
+        "keyword": "HASM"
+      },
+      "complete_to_short_page": true,
+      "records": [
+        {
+          "name": "pride_hasm_page_0.json",
+          "url": "https://www.ebi.ac.uk/pride/ws/archive/v2/search/projects?keyword=HASM&pageSize=100&page=0",
+          "started_utc": "2026-10-10T05:10:56.082903+00:00",
+          "http_status": 200,
+          "final_url": "https://www.ebi.ac.uk/pride/ws/archive/v2/search/projects?keyword=HASM&pageSize=100&page=0",
+          "headers": {
+            "Vary": "Origin",
+            "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+            "Content-Type": "application/json",
+            "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+            "total_records": "15",
+            "Expires": "0",
+            "Pragma": "no-cache",
+            "X-XSS-Protection": "0",
+            "X-Content-Type-Options": "nosniff",
+            "Connection": "close",
+            "X-Frame-Options": "DENY",
+            "Referrer-Policy": "no-referrer",
+            "Content-Length": "141649"
+          },
+          "status": "retrieved",
+          "response": {
+            "path": "research/results/discovery_public_proteome_v1/sources/pride_hasm_page_0.json",
+            "bytes": 141649,
+            "sha256": "16c78cf8e24d391bcefc20794549d9078305d9bfee3664edff3e46d870f5f3e6"
+          },
+          "completed_utc": "2026-10-10T05:10:58.260216+00:00",
+          "seconds": 2.177322331815958
+        }
+      ],
+      "returned": 15,
+      "unique_accessions": 15
+    },
+    {
+      "label": "pride_hbsmc",
+      "parameters": {
+        "keyword": "HBSMC"
+      },
+      "complete_to_short_page": true,
+      "records": [
+        {
+          "name": "pride_hbsmc_page_0.json",
+          "url": "https://www.ebi.ac.uk/pride/ws/archive/v2/search/projects?keyword=HBSMC&pageSize=100&page=0",
+          "started_utc": "2026-10-10T05:10:56.083450+00:00",
+          "http_status": 200,
+          "final_url": "https://www.ebi.ac.uk/pride/ws/archive/v2/search/projects?keyword=HBSMC&pageSize=100&page=0",
+          "headers": {
+            "Vary": "Origin",
+            "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+            "Content-Type": "application/json",
+            "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+            "total_records": "2",
+            "Expires": "0",
+            "Pragma": "no-cache",
+            "X-XSS-Protection": "0",
+            "X-Content-Type-Options": "nosniff",
+            "Connection": "close",
+            "X-Frame-Options": "DENY",
+            "Referrer-Policy": "no-referrer",
+            "Content-Length": "62926"
+          },
+          "status": "retrieved",
+          "response": {
+            "path": "research/results/discovery_public_proteome_v1/sources/pride_hbsmc_page_0.json",
+            "bytes": 62926,
+            "sha256": "70ad72afc18c5b5edf5eda9f7d399190ae5a0675c284346486c3647fb58804d5"
+          },
+          "completed_utc": "2026-10-10T05:10:59.442537+00:00",
+          "seconds": 3.3590935841202736
+        }
+      ],
+      "returned": 2,
+      "unique_accessions": 2
+    },
+    {
+      "label": "pride_dex",
+      "parameters": {
+        "keyword": "dexamethasone"
+      },
+      "complete_to_short_page": true,
+      "records": [
+        {
+          "name": "pride_dex_page_0.json",
+          "url": "https://www.ebi.ac.uk/pride/ws/archive/v2/search/projects?keyword=dexamethasone&pageSize=100&page=0",
+          "started_utc": "2026-10-10T05:10:58.261774+00:00",
+          "http_status": 200,
+          "final_url": "https://www.ebi.ac.uk/pride/ws/archive/v2/search/projects?keyword=dexamethasone&pageSize=100&page=0",
+          "headers": {
+            "Vary": "Origin",
+            "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+            "Content-Type": "application/json",
+            "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+            "total_records": "113",
+            "Expires": "0",
+            "Pragma": "no-cache",
+            "X-XSS-Protection": "0",
+            "X-Content-Type-Options": "nosniff",
+            "Connection": "close",
+            "X-Frame-Options": "DENY",
+            "Referrer-Policy": "no-referrer",
+            "Content-Length": "984305"
+          },
+          "status": "retrieved",
+          "response": {
+            "path": "research/results/discovery_public_proteome_v1/sources/pride_dex_page_0.json",
+            "bytes": 984305,
+            "sha256": "f7143835634cf4de262de654c06c1e3d8e95d1c09eafb789f81619dce9675b62"
+          },
+          "completed_utc": "2026-10-10T05:11:07.971300+00:00",
+          "seconds": 9.709528939798474
+        },
+        {
+          "name": "pride_dex_page_1.json",
+          "url": "https://www.ebi.ac.uk/pride/ws/archive/v2/search/projects?keyword=dexamethasone&pageSize=100&page=1",
+          "started_utc": "2026-10-10T05:11:07.977634+00:00",
+          "http_status": 200,
+          "final_url": "https://www.ebi.ac.uk/pride/ws/archive/v2/search/projects?keyword=dexamethasone&pageSize=100&page=1",
+          "headers": {
+            "Vary": "Origin",
+            "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+            "Content-Type": "application/json",
+            "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+            "total_records": "113",
+            "Expires": "0",
+            "Pragma": "no-cache",
+            "X-XSS-Protection": "0",
+            "X-Content-Type-Options": "nosniff",
+            "Connection": "close",
+            "X-Frame-Options": "DENY",
+            "Referrer-Policy": "no-referrer",
+            "Content-Length": "146027"
+          },
+          "status": "retrieved",
+          "response": {
+            "path": "research/results/discovery_public_proteome_v1/sources/pride_dex_page_1.json",
+            "bytes": 146027,
+            "sha256": "d295b1103bc8ed659db66887bd0b54ad08186e5d4fd40324f76848224ddb1598"
+          },
+          "completed_utc": "2026-10-10T05:11:10.842974+00:00",
+          "seconds": 2.8653420321643353
+        }
+      ],
+      "returned": 113,
+      "unique_accessions": 113
+    },
+    {
+      "label": "pride_bud",
+      "parameters": {
+        "keyword": "budesonide"
+      },
+      "complete_to_short_page": true,
+      "records": [
+        {
+          "name": "pride_bud_page_0.json",
+          "url": "https://www.ebi.ac.uk/pride/ws/archive/v2/search/projects?keyword=budesonide&pageSize=100&page=0",
+          "started_utc": "2026-10-10T05:10:58.784803+00:00",
+          "http_status": 200,
+          "final_url": "https://www.ebi.ac.uk/pride/ws/archive/v2/search/projects?keyword=budesonide&pageSize=100&page=0",
+          "headers": {
+            "Vary": "Origin",
+            "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+            "Content-Type": "application/json",
+            "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+            "total_records": "4",
+            "Expires": "0",
+            "Pragma": "no-cache",
+            "X-XSS-Protection": "0",
+            "X-Content-Type-Options": "nosniff",
+            "Connection": "close",
+            "X-Frame-Options": "DENY",
+            "Referrer-Policy": "no-referrer",
+            "Content-Length": "27352"
+          },
+          "status": "retrieved",
+          "response": {
+            "path": "research/results/discovery_public_proteome_v1/sources/pride_bud_page_0.json",
+            "bytes": 27352,
+            "sha256": "5c6efbccb12a82c617b50e338a5c63a1a705848ff9808395910af453b338c184"
+          },
+          "completed_utc": "2026-10-10T05:10:59.943486+00:00",
+          "seconds": 1.1586875058710575
+        }
+      ],
+      "returned": 4,
+      "unique_accessions": 4
+    },
+    {
+      "label": "pride_gc",
+      "parameters": {
+        "keyword": "glucocorticoid"
+      },
+      "complete_to_short_page": true,
+      "records": [
+        {
+          "name": "pride_gc_page_0.json",
+          "url": "https://www.ebi.ac.uk/pride/ws/archive/v2/search/projects?keyword=glucocorticoid&pageSize=100&page=0",
+          "started_utc": "2026-10-10T05:10:58.859174+00:00",
+          "http_status": 200,
+          "final_url": "https://www.ebi.ac.uk/pride/ws/archive/v2/search/projects?keyword=glucocorticoid&pageSize=100&page=0",
+          "headers": {
+            "Vary": "Origin",
+            "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+            "Content-Type": "application/json",
+            "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+            "total_records": "105",
+            "Expires": "0",
+            "Pragma": "no-cache",
+            "X-XSS-Protection": "0",
+            "X-Content-Type-Options": "nosniff",
+            "Connection": "close",
+            "X-Frame-Options": "DENY",
+            "Referrer-Policy": "no-referrer",
+            "Content-Length": "924359"
+          },
+          "status": "retrieved",
+          "response": {
+            "path": "research/results/discovery_public_proteome_v1/sources/pride_gc_page_0.json",
+            "bytes": 924359,
+            "sha256": "492fbe1253939f7095473c08e58b11dc5dfce290755e1eec65a6394266fd7432"
+          },
+          "completed_utc": "2026-10-10T05:11:06.420678+00:00",
+          "seconds": 7.561514865607023
+        },
+        {
+          "name": "pride_gc_page_1.json",
+          "url": "https://www.ebi.ac.uk/pride/ws/archive/v2/search/projects?keyword=glucocorticoid&pageSize=100&page=1",
+          "started_utc": "2026-10-10T05:11:06.434774+00:00",
+          "http_status": 200,
+          "final_url": "https://www.ebi.ac.uk/pride/ws/archive/v2/search/projects?keyword=glucocorticoid&pageSize=100&page=1",
+          "headers": {
+            "Vary": "Origin",
+            "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+            "Content-Type": "application/json",
+            "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+            "total_records": "105",
+            "Expires": "0",
+            "Pragma": "no-cache",
+            "X-XSS-Protection": "0",
+            "X-Content-Type-Options": "nosniff",
+            "Connection": "close",
+            "X-Frame-Options": "DENY",
+            "Referrer-Policy": "no-referrer",
+            "Content-Length": "34578"
+          },
+          "status": "retrieved",
+          "response": {
+            "path": "research/results/discovery_public_proteome_v1/sources/pride_gc_page_1.json",
+            "bytes": 34578,
+            "sha256": "e4b2d869a41cd8f2980266e63b805a41f192cc0a31b941555996bd0a8bf68a35"
+          },
+          "completed_utc": "2026-10-10T05:11:08.802120+00:00",
+          "seconds": 2.367343783378601
+        }
+      ],
+      "returned": 105,
+      "unique_accessions": 105
+    },
+    {
+      "label": "pride_intrapulmonary",
+      "parameters": {
+        "keyword": "intrapulmonary"
+      },
+      "complete_to_short_page": true,
+      "records": [
+        {
+          "name": "pride_intrapulmonary_page_0.json",
+          "url": "https://www.ebi.ac.uk/pride/ws/archive/v2/search/projects?keyword=intrapulmonary&pageSize=100&page=0",
+          "started_utc": "2026-10-10T05:10:59.443364+00:00",
+          "http_status": 200,
+          "final_url": "https://www.ebi.ac.uk/pride/ws/archive/v2/search/projects?keyword=intrapulmonary&pageSize=100&page=0",
+          "headers": {
+            "Vary": "Origin",
+            "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+            "Content-Type": "application/json",
+            "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+            "total_records": "1",
+            "Expires": "0",
+            "Pragma": "no-cache",
+            "X-XSS-Protection": "0",
+            "X-Content-Type-Options": "nosniff",
+            "Connection": "close",
+            "X-Frame-Options": "DENY",
+            "Referrer-Policy": "no-referrer",
+            "Content-Length": "10343"
+          },
+          "status": "retrieved",
+          "response": {
+            "path": "research/results/discovery_public_proteome_v1/sources/pride_intrapulmonary_page_0.json",
+            "bytes": 10343,
+            "sha256": "fd8a52d222ac13803ce526ee0ef70de2258d615d930234ae7ede6feb5c26385b"
+          },
+          "completed_utc": "2026-10-10T05:11:01.174745+00:00",
+          "seconds": 1.731389744207263
+        }
+      ],
+      "returned": 1,
+      "unique_accessions": 1
+    },
+    {
+      "label": "pride_airway_proteome",
+      "parameters": {
+        "keyword": "airway proteome"
+      },
+      "complete_to_short_page": true,
+      "records": [
+        {
+          "name": "pride_airway_proteome_page_0.json",
+          "url": "https://www.ebi.ac.uk/pride/ws/archive/v2/search/projects?keyword=airway+proteome&pageSize=100&page=0",
+          "started_utc": "2026-10-10T05:10:59.943862+00:00",
+          "http_status": 200,
+          "final_url": "https://www.ebi.ac.uk/pride/ws/archive/v2/search/projects?keyword=airway+proteome&pageSize=100&page=0",
+          "headers": {
+            "Vary": "Origin",
+            "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+            "Content-Type": "application/json",
+            "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+            "total_records": "0",
+            "Expires": "0",
+            "Pragma": "no-cache",
+            "X-XSS-Protection": "0",
+            "X-Content-Type-Options": "nosniff",
+            "Connection": "close",
+            "X-Frame-Options": "DENY",
+            "Referrer-Policy": "no-referrer",
+            "Content-Length": "3"
+          },
+          "status": "retrieved",
+          "response": {
+            "path": "research/results/discovery_public_proteome_v1/sources/pride_airway_proteome_page_0.json",
+            "bytes": 3,
+            "sha256": "5984eac0c5c6d947241e29dd5671b81a1546cedf77e08d38438ac47029969afa"
+          },
+          "completed_utc": "2026-10-10T05:11:01.991137+00:00",
+          "seconds": 2.047280764207244
+        }
+      ],
+      "returned": 0,
+      "unique_accessions": 0
+    },
+    {
+      "label": "pride_actin",
+      "parameters": {
+        "keyword": "airway actin"
+      },
+      "complete_to_short_page": true,
+      "records": [
+        {
+          "name": "pride_actin_page_0.json",
+          "url": "https://www.ebi.ac.uk/pride/ws/archive/v2/search/projects?keyword=airway+actin&pageSize=100&page=0",
+          "started_utc": "2026-10-10T05:11:01.175228+00:00",
+          "http_status": 200,
+          "final_url": "https://www.ebi.ac.uk/pride/ws/archive/v2/search/projects?keyword=airway+actin&pageSize=100&page=0",
+          "headers": {
+            "Vary": "Origin",
+            "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+            "Content-Type": "application/json",
+            "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+            "total_records": "0",
+            "Expires": "0",
+            "Pragma": "no-cache",
+            "X-XSS-Protection": "0",
+            "X-Content-Type-Options": "nosniff",
+            "Connection": "close",
+            "X-Frame-Options": "DENY",
+            "Referrer-Policy": "no-referrer",
+            "Content-Length": "3"
+          },
+          "status": "retrieved",
+          "response": {
+            "path": "research/results/discovery_public_proteome_v1/sources/pride_actin_page_0.json",
+            "bytes": 3,
+            "sha256": "5984eac0c5c6d947241e29dd5671b81a1546cedf77e08d38438ac47029969afa"
+          },
+          "completed_utc": "2026-10-10T05:11:01.931529+00:00",
+          "seconds": 0.7563058435916901
+        }
+      ],
+      "returned": 0,
+      "unique_accessions": 0
+    },
+    {
+      "label": "pride_smooth_muscle",
+      "parameters": {
+        "keyword": "smooth muscle"
+      },
+      "complete_to_short_page": true,
+      "records": [
+        {
+          "name": "pride_smooth_muscle_page_0.json",
+          "url": "https://www.ebi.ac.uk/pride/ws/archive/v2/search/projects?keyword=smooth+muscle&pageSize=100&page=0",
+          "started_utc": "2026-10-10T05:11:01.931800+00:00",
+          "http_status": 200,
+          "final_url": "https://www.ebi.ac.uk/pride/ws/archive/v2/search/projects?keyword=smooth+muscle&pageSize=100&page=0",
+          "headers": {
+            "Vary": "Origin",
+            "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+            "Content-Type": "application/json",
+            "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+            "total_records": "165",
+            "Expires": "0",
+            "Pragma": "no-cache",
+            "X-XSS-Protection": "0",
+            "X-Content-Type-Options": "nosniff",
+            "Connection": "close",
+            "X-Frame-Options": "DENY",
+            "Referrer-Policy": "no-referrer",
+            "Content-Length": "842810"
+          },
+          "status": "retrieved",
+          "response": {
+            "path": "research/results/discovery_public_proteome_v1/sources/pride_smooth_muscle_page_0.json",
+            "bytes": 842810,
+            "sha256": "57f3a2c435a101f4e5746b46c444066e5942f34128e83ceaf2748238fa84996f"
+          },
+          "completed_utc": "2026-10-10T05:11:07.302102+00:00",
+          "seconds": 5.370311910286546
+        },
+        {
+          "name": "pride_smooth_muscle_page_1.json",
+          "url": "https://www.ebi.ac.uk/pride/ws/archive/v2/search/projects?keyword=smooth+muscle&pageSize=100&page=1",
+          "started_utc": "2026-10-10T05:11:07.308729+00:00",
+          "http_status": 200,
+          "final_url": "https://www.ebi.ac.uk/pride/ws/archive/v2/search/projects?keyword=smooth+muscle&pageSize=100&page=1",
+          "headers": {
+            "Vary": "Origin",
+            "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+            "Content-Type": "application/json",
+            "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+            "total_records": "165",
+            "Expires": "0",
+            "Pragma": "no-cache",
+            "X-XSS-Protection": "0",
+            "X-Content-Type-Options": "nosniff",
+            "Connection": "close",
+            "X-Frame-Options": "DENY",
+            "Referrer-Policy": "no-referrer",
+            "Content-Length": "895133"
+          },
+          "status": "retrieved",
+          "response": {
+            "path": "research/results/discovery_public_proteome_v1/sources/pride_smooth_muscle_page_1.json",
+            "bytes": 895133,
+            "sha256": "ed24b08436669824a803917f9fcd98bb8a08f4d78c551730a96782cf9e0217a1"
+          },
+          "completed_utc": "2026-10-10T05:11:13.445272+00:00",
+          "seconds": 6.136547796428204
+        }
+      ],
+      "returned": 165,
+      "unique_accessions": 165
+    },
+    {
+      "label": "pride_lung_smooth_muscle",
+      "parameters": {
+        "keyword": "lung smooth muscle"
+      },
+      "complete_to_short_page": true,
+      "records": [
+        {
+          "name": "pride_lung_smooth_muscle_page_0.json",
+          "url": "https://www.ebi.ac.uk/pride/ws/archive/v2/search/projects?keyword=lung+smooth+muscle&pageSize=100&page=0",
+          "started_utc": "2026-10-10T05:11:01.991401+00:00",
+          "http_status": 200,
+          "final_url": "https://www.ebi.ac.uk/pride/ws/archive/v2/search/projects?keyword=lung+smooth+muscle&pageSize=100&page=0",
+          "headers": {
+            "Vary": "Origin",
+            "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+            "Content-Type": "application/json",
+            "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+            "total_records": "0",
+            "Expires": "0",
+            "Pragma": "no-cache",
+            "X-XSS-Protection": "0",
+            "X-Content-Type-Options": "nosniff",
+            "Connection": "close",
+            "X-Frame-Options": "DENY",
+            "Referrer-Policy": "no-referrer",
+            "Content-Length": "3"
+          },
+          "status": "retrieved",
+          "response": {
+            "path": "research/results/discovery_public_proteome_v1/sources/pride_lung_smooth_muscle_page_0.json",
+            "bytes": 3,
+            "sha256": "5984eac0c5c6d947241e29dd5671b81a1546cedf77e08d38438ac47029969afa"
+          },
+          "completed_utc": "2026-10-10T05:11:03.423668+00:00",
+          "seconds": 1.4322734959423542
+        }
+      ],
+      "returned": 0,
+      "unique_accessions": 0
+    },
+    {
+      "label": "pride_fluticasone",
+      "parameters": {
+        "keyword": "fluticasone"
+      },
+      "complete_to_short_page": true,
+      "records": [
+        {
+          "name": "pride_fluticasone_page_0.json",
+          "url": "https://www.ebi.ac.uk/pride/ws/archive/v2/search/projects?keyword=fluticasone&pageSize=100&page=0",
+          "started_utc": "2026-10-10T05:11:03.423959+00:00",
+          "http_status": 200,
+          "final_url": "https://www.ebi.ac.uk/pride/ws/archive/v2/search/projects?keyword=fluticasone&pageSize=100&page=0",
+          "headers": {
+            "Vary": "Origin",
+            "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+            "Content-Type": "application/json",
+            "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+            "total_records": "1",
+            "Expires": "0",
+            "Pragma": "no-cache",
+            "X-XSS-Protection": "0",
+            "X-Content-Type-Options": "nosniff",
+            "Connection": "close",
+            "X-Frame-Options": "DENY",
+            "Referrer-Policy": "no-referrer",
+            "Content-Length": "4675"
+          },
+          "status": "retrieved",
+          "response": {
+            "path": "research/results/discovery_public_proteome_v1/sources/pride_fluticasone_page_0.json",
+            "bytes": 4675,
+            "sha256": "a1490ad11b27a325597e6b591897573abd2a5a9a16995a176eeac77737698975"
+          },
+          "completed_utc": "2026-10-10T05:11:04.214133+00:00",
+          "seconds": 0.7901806961745024
+        }
+      ],
+      "returned": 1,
+      "unique_accessions": 1
+    },
+    {
+      "label": "pride_hydrocortisone",
+      "parameters": {
+        "keyword": "hydrocortisone"
+      },
+      "complete_to_short_page": true,
+      "records": [
+        {
+          "name": "pride_hydrocortisone_page_0.json",
+          "url": "https://www.ebi.ac.uk/pride/ws/archive/v2/search/projects?keyword=hydrocortisone&pageSize=100&page=0",
+          "started_utc": "2026-10-10T05:11:04.214433+00:00",
+          "http_status": 200,
+          "final_url": "https://www.ebi.ac.uk/pride/ws/archive/v2/search/projects?keyword=hydrocortisone&pageSize=100&page=0",
+          "headers": {
+            "Vary": "Origin",
+            "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+            "Content-Type": "application/json",
+            "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+            "total_records": "23",
+            "Expires": "0",
+            "Pragma": "no-cache",
+            "X-XSS-Protection": "0",
+            "X-Content-Type-Options": "nosniff",
+            "Connection": "close",
+            "X-Frame-Options": "DENY",
+            "Referrer-Policy": "no-referrer",
+            "Content-Length": "255521"
+          },
+          "status": "retrieved",
+          "response": {
+            "path": "research/results/discovery_public_proteome_v1/sources/pride_hydrocortisone_page_0.json",
+            "bytes": 255521,
+            "sha256": "8e5ca3d7ffe90ca2c5c97276604e1ca1351942ee4c4f42bf327a4dedb82887dc"
+          },
+          "completed_utc": "2026-10-10T05:11:08.250431+00:00",
+          "seconds": 4.036004463210702
+        }
+      ],
+      "returned": 23,
+      "unique_accessions": 23
+    },
+    {
+      "label": "pride_control",
+      "parameters": {
+        "keyword": "BioExplainR_unrelated_negative_control_9f3f"
+      },
+      "complete_to_short_page": true,
+      "records": [
+        {
+          "name": "pride_control_page_0.json",
+          "url": "https://www.ebi.ac.uk/pride/ws/archive/v2/search/projects?keyword=BioExplainR_unrelated_negative_control_9f3f&pageSize=100&page=0",
+          "started_utc": "2026-10-10T05:11:08.252151+00:00",
+          "http_status": 200,
+          "final_url": "https://www.ebi.ac.uk/pride/ws/archive/v2/search/projects?keyword=BioExplainR_unrelated_negative_control_9f3f&pageSize=100&page=0",
+          "headers": {
+            "Vary": "Origin",
+            "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+            "Content-Type": "application/json",
+            "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+            "total_records": "0",
+            "Expires": "0",
+            "Pragma": "no-cache",
+            "X-XSS-Protection": "0",
+            "X-Content-Type-Options": "nosniff",
+            "Connection": "close",
+            "X-Frame-Options": "DENY",
+            "Referrer-Policy": "no-referrer",
+            "Content-Length": "3"
+          },
+          "status": "retrieved",
+          "response": {
+            "path": "research/results/discovery_public_proteome_v1/sources/pride_control_page_0.json",
+            "bytes": 3,
+            "sha256": "5984eac0c5c6d947241e29dd5671b81a1546cedf77e08d38438ac47029969afa"
+          },
+          "completed_utc": "2026-10-10T05:11:09.067600+00:00",
+          "seconds": 0.8154545724391937
+        }
+      ],
+      "returned": 0,
+      "unique_accessions": 0
+    }
+  ]
+}

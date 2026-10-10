@@ -1,0 +1,18 @@
+{
+  "command": [
+    "Rscript",
+    "--vanilla",
+    "research/discovery/complete_mechanism_ci.R",
+    "research/results/discovery_mechanism_fit_v4"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-09T01:35:51.899820+00:00",
+  "finished_utc": "2026-10-09T01:35:53.770786+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/continuation-mechanism-ci-export.txt",
+    "bytes": 1517,
+    "sha256": "c0e757a0a6039410d39248998b1f3403d79ef3bf9b8b24d8e9d855021cd567dd"
+  }
+}

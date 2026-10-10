@@ -1,0 +1,16 @@
+{
+  "command": [
+    "Rscript",
+    "--vanilla",
+    "/home/ubuntu/creatR/research/discovery/set_validation_models.R",
+    "/home/ubuntu/creatR/research/results/discovery_set_reproduction_v1"
+  ],
+  "start_utc": "2026-10-09T16:23:13.067088+00:00",
+  "end_utc": "2026-10-09T16:23:44.872543+00:00",
+  "returncode": 0,
+  "log": {
+    "path": "research/results/discovery_set_reproduction_v1/reproduction_step1.log",
+    "bytes": 79,
+    "sha256": "f2f2edefd8e38be63e454d0c0a2622a320e997a39805d309ead16dd82914acca"
+  }
+}

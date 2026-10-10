@@ -1,0 +1,19 @@
+{
+  "recorded_utc": "2026-10-08 12:58:38 UTC",
+  "phase": "after metadata parsing, before count fitting or candidate-result inspection",
+  "refinement": "metadata parser added and integer count validation enforced; scientific protocol unchanged",
+  "scripts": [
+    {
+      "path": "run_context.R",
+      "sha256": "3b53c0292d5aabd08d6fece129246e669525a71f93e80dbc36043bcc29c818d0"
+    },
+    {
+      "path": "context_design.R",
+      "sha256": "f5af6d5268f59f6f03f6c822e3ea4a18d14a9ff26399036af416cb30675e3cc3"
+    },
+    {
+      "path": "audit_context.py",
+      "sha256": "f8e92432b9206b6b82735f32ed6e9132b82f9dd88ddd668083ddbaa69415cf21"
+    }
+  ]
+}

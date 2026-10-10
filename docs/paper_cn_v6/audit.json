@@ -1,0 +1,82 @@
+{
+  "status": "pass",
+  "utc": "2026-10-09T16:20:53.783510+00:00",
+  "historical": {
+    "status": "pass",
+    "v011_records": 87,
+    "v011_archive_members": 82,
+    "original_science_records": 203,
+    "snapshot_policy": "Explicitrgo/README/indexhistoricaldocumentsnapshots only; alloriginalsciencepaths/hash remain"
+  },
+  "source_counts": {
+    "same_direction": 53,
+    "all_six_expected": 50,
+    "tpm_pass": 45,
+    "count_pass": 51,
+    "tpm_sensitivity_direction": 52,
+    "count_leave_one_direction": 52,
+    "robust_supported": 45,
+    "frozen": 54,
+    "tpm_measurable": 53,
+    "count_estimable": 53,
+    "exact_holm_pass": 0
+  },
+  "csv_xlsx_pairs": 34,
+  "references": 16,
+  "documents": [
+    {
+      "name": "BioExplainR-中文论文-v0.12",
+      "pages": 13,
+      "tables": 3,
+      "figures": 3,
+      "spans": 653,
+      "original_PDF_embedding": true
+    },
+    {
+      "name": "BioExplainR-补充材料-v0.12",
+      "pages": 19,
+      "tables": 5,
+      "figures": 4,
+      "spans": 873,
+      "original_PDF_embedding": true
+    }
+  ],
+  "figure_geometry": [
+    {
+      "file": "Figure_1.pdf",
+      "images": 1,
+      "drawings": 91
+    },
+    {
+      "file": "Figure_2.pdf",
+      "images": 0,
+      "drawings": 470
+    },
+    {
+      "file": "Figure_3.pdf",
+      "images": 0,
+      "drawings": 7
+    },
+    {
+      "file": "Figure_S1.pdf",
+      "images": 0,
+      "drawings": 82
+    },
+    {
+      "file": "Figure_S2.pdf",
+      "images": 0,
+      "drawings": 57
+    },
+    {
+      "file": "Figure_S3.pdf",
+      "images": 0,
+      "drawings": 63
+    },
+    {
+      "file": "Figure_S4.pdf",
+      "images": 0,
+      "drawings": 69
+    }
+  ],
+  "scope": "New statistical audits + source-bound tables, originalfigure embedding, citations, narrative and PDF geometry; no human signoff"
+}

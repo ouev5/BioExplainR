@@ -1,0 +1,40 @@
+{
+  "utc": "2026-10-10T02:17:38.817208+00:00",
+  "script": {
+    "path": "research/discovery/asm_ev_version.py",
+    "bytes": 6849,
+    "sha256": "7646915ccfcd15546bda2ba21134223aa8e719c19e81adb2fd6dbbdbc45cea3a"
+  },
+  "reader": {
+    "path": "research/discovery/asm_ev_sqlite.py",
+    "bytes": 7040,
+    "sha256": "22309260b9f81bb33857bce202d9cd3a0aea55e15b13085ae9645e5a34ea6b01"
+  },
+  "missing": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+  ],
+  "tables": [
+    "SchemaInfo",
+    "WorkflowInputFiles",
+    "Workflows",
+    "StudyInformation",
+    "AnalysisDefinition"
+  ],
+  "reason": "600s execution cutoff; retain completed metadata and cached ranges; version/sample/workflow tables suffice without DataTypesColumns rows",
+  "workers": 4,
+  "range_timeout_seconds": 15,
+  "candidate_lookups": 0
+}

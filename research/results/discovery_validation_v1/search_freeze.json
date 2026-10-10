@@ -1,0 +1,43 @@
+{
+  "frozen_utc": "2026-10-09T11:00:42.427079+00:00",
+  "protocol": {
+    "path": "research/discovery/VALIDATION_CONTINUATION_PROTOCOL.md",
+    "bytes": 3635,
+    "sha256": "a292105623c98fe4ced955b43e2ecca4a6808e31e2a7f0baab59a3fc3158c2a7"
+  },
+  "script": {
+    "path": "research/discovery/validation_sources.py",
+    "bytes": 12084,
+    "sha256": "0fa7e91d1db81dded94555100064c6937740bd153b25d2581e66d1bc20dc551a"
+  },
+  "geo_queries": {
+    "asm_steroid": "(\"airway smooth muscle\" OR \"bronchial smooth muscle\") AND (dexamethasone OR glucocorticoid OR budesonide) AND gse[ETYP]",
+    "asm_time": "(\"airway smooth muscle\" OR \"bronchial smooth muscle\") AND (time OR circadian OR period OR rhythm) AND gse[ETYP]",
+    "asm_gr_genetic": "(\"airway smooth muscle\" OR \"bronchial smooth muscle\") AND (NR3C1 OR \"glucocorticoid receptor\") AND (knockdown OR siRNA OR CRISPR OR silencing OR knockout) AND gse[ETYP]",
+    "hsm_steroid": "(\"Homo sapiens\"[ORGN]) AND \"smooth muscle\" AND (dexamethasone OR budesonide) AND gse[ETYP]"
+  },
+  "literature_queries": {
+    "asm_clock": "TITLE_ABS:(\"airway smooth muscle\" OR \"bronchial smooth muscle\") AND TITLE_ABS:(circadian OR PER2 OR PER3 OR clock)",
+    "asm_gr_genetic": "TITLE_ABS:(\"airway smooth muscle\" OR \"bronchial smooth muscle\") AND TITLE_ABS:(\"glucocorticoid receptor\" OR NR3C1) AND TITLE_ABS:(siRNA OR knockdown OR silencing OR CRISPR OR knockout)",
+    "asm_steroid_time": "TITLE_ABS:(\"airway smooth muscle\" OR \"bronchial smooth muscle\") AND TITLE_ABS:(dexamethasone OR budesonide OR glucocorticoid) AND TITLE_ABS:(time OR temporal OR transcriptome OR profiling)",
+    "per2_asm_fulltext": "PER2 AND (\"airway smooth muscle\" OR \"bronchial smooth muscle\")",
+    "secondary_asm": "(PER3 OR METTL7A OR MAOA OR ANGPTL2 OR FSTL3) AND (\"airway smooth muscle\" OR \"bronchial smooth muscle\")",
+    "per2_gr_genetic": "TITLE_ABS:(PER2) AND TITLE_ABS:(NR3C1 OR \"glucocorticoid receptor\") AND TITLE_ABS:(siRNA OR knockout OR knockdown OR CRISPR)"
+  },
+  "candidates": [
+    "PER2",
+    "PER3",
+    "METTL7A",
+    "MAOA",
+    "ANGPTL2",
+    "FSTL3"
+  ],
+  "controls": [
+    "FKBP5",
+    "TSC22D3",
+    "DUSP1"
+  ],
+  "literature_page_size": 100,
+  "max_pages": 10,
+  "timing": "Prior PER2 results known; new series candidate expression not examined."
+}

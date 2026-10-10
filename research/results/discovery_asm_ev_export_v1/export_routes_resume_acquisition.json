@@ -1,0 +1,49 @@
+{
+  "utc": "2026-10-10T02:34:55.532049+00:00",
+  "records": [
+    {
+      "status": "failed",
+      "url": "https://pmc.ncbi.nlm.nih.gov/utils/oa/oa.fcgi?id=PMC12141081",
+      "path": "research/results/discovery_asm_ev_export_v1/sources/pmc_oa_manifest_corrected.xml",
+      "attempts": [
+        {
+          "utc": "2026-10-10T02:34:38.121629+00:00",
+          "error": "HTTP Error 404: Not Found",
+          "attempt": 1
+        },
+        {
+          "utc": "2026-10-10T02:34:43.734504+00:00",
+          "error": "HTTP Error 404: Not Found",
+          "attempt": 2
+        },
+        {
+          "utc": "2026-10-10T02:34:48.661513+00:00",
+          "error": "<urlopen error [Errno 104] Connection reset by peer>",
+          "attempt": 3
+        }
+      ]
+    },
+    {
+      "status": "retrieved",
+      "url": "https://zenodo.org/api/records?q=PXD055968&size=20",
+      "retrieved_utc": "2026-10-10T02:34:54.118480+00:00",
+      "http_status": 200,
+      "content_type": "application/json",
+      "attempts": [],
+      "path": "research/results/discovery_asm_ev_export_v1/sources/zenodo_accession_corrected.json",
+      "bytes": 435,
+      "sha256": "f28861dccce6bebfaae6e4235ada5c7ad52e4d9a78907645feb519cf7193c81d"
+    },
+    {
+      "status": "retrieved",
+      "url": "https://api.elsevier.com/content/article/PII:S2589004225008077?httpAccept=text/xml",
+      "retrieved_utc": "2026-10-10T02:34:55.531787+00:00",
+      "http_status": 200,
+      "content_type": "text/xml;charset=UTF-8",
+      "attempts": [],
+      "path": "research/results/discovery_asm_ev_export_v1/sources/publisher_article.xml",
+      "bytes": 2045,
+      "sha256": "0d5246d72263eec83325ccace209519bd2a330d701a85d31082041767cb541f3"
+    }
+  ]
+}

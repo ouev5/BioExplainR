@@ -1,0 +1,103 @@
+试开URL’https://cloud.r-project.org/src/contrib/curl_8.0.0.tar.gz'
+Content type 'application/x-gzip' length 733542 bytes (716 KB)
+==================================================
+downloaded 716 KB
+
+* installing *source* package ‘curl’ ...
+** 成功将‘curl’程序包解包并MD5和检查
+** using staged installation
+Found INCLUDE_DIR and/or LIB_DIR!
+Using PKG_CFLAGS=-I/tmp/opencode/common-performance-runtime/curl-dev/usr/include/x86_64-linux-gnu 
+Using PKG_LIBS=-L/tmp/opencode/common-performance-runtime/curl-dev -lcurl
+** libs
+using C compiler: ‘gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0’
+gcc -I"/usr/share/R/include" -DNDEBUG -I/tmp/opencode/common-performance-runtime/curl-dev/usr/include/x86_64-linux-gnu  -DSTRICT_R_HEADERS -DR_NO_REMAP     -fvisibility=hidden -fpic  -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/build/r-base-FPSnzf/r-base-4.3.3=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/build/r-base-FPSnzf/r-base-4.3.3=/usr/src/r-base-4.3.3-2build2 -Wdate-time -D_FORTIFY_SOURCE=3  -c callbacks.c -o callbacks.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I/tmp/opencode/common-performance-runtime/curl-dev/usr/include/x86_64-linux-gnu  -DSTRICT_R_HEADERS -DR_NO_REMAP     -fvisibility=hidden -fpic  -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/build/r-base-FPSnzf/r-base-4.3.3=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/build/r-base-FPSnzf/r-base-4.3.3=/usr/src/r-base-4.3.3-2build2 -Wdate-time -D_FORTIFY_SOURCE=3  -c curl.c -o curl.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I/tmp/opencode/common-performance-runtime/curl-dev/usr/include/x86_64-linux-gnu  -DSTRICT_R_HEADERS -DR_NO_REMAP     -fvisibility=hidden -fpic  -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/build/r-base-FPSnzf/r-base-4.3.3=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/build/r-base-FPSnzf/r-base-4.3.3=/usr/src/r-base-4.3.3-2build2 -Wdate-time -D_FORTIFY_SOURCE=3  -c download.c -o download.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I/tmp/opencode/common-performance-runtime/curl-dev/usr/include/x86_64-linux-gnu  -DSTRICT_R_HEADERS -DR_NO_REMAP     -fvisibility=hidden -fpic  -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/build/r-base-FPSnzf/r-base-4.3.3=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/build/r-base-FPSnzf/r-base-4.3.3=/usr/src/r-base-4.3.3-2build2 -Wdate-time -D_FORTIFY_SOURCE=3  -c dryrun.c -o dryrun.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I/tmp/opencode/common-performance-runtime/curl-dev/usr/include/x86_64-linux-gnu  -DSTRICT_R_HEADERS -DR_NO_REMAP     -fvisibility=hidden -fpic  -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/build/r-base-FPSnzf/r-base-4.3.3=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/build/r-base-FPSnzf/r-base-4.3.3=/usr/src/r-base-4.3.3-2build2 -Wdate-time -D_FORTIFY_SOURCE=3  -c escape.c -o escape.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I/tmp/opencode/common-performance-runtime/curl-dev/usr/include/x86_64-linux-gnu  -DSTRICT_R_HEADERS -DR_NO_REMAP     -fvisibility=hidden -fpic  -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/build/r-base-FPSnzf/r-base-4.3.3=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/build/r-base-FPSnzf/r-base-4.3.3=/usr/src/r-base-4.3.3-2build2 -Wdate-time -D_FORTIFY_SOURCE=3  -c fetch.c -o fetch.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I/tmp/opencode/common-performance-runtime/curl-dev/usr/include/x86_64-linux-gnu  -DSTRICT_R_HEADERS -DR_NO_REMAP     -fvisibility=hidden -fpic  -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/build/r-base-FPSnzf/r-base-4.3.3=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/build/r-base-FPSnzf/r-base-4.3.3=/usr/src/r-base-4.3.3-2build2 -Wdate-time -D_FORTIFY_SOURCE=3  -c findport.c -o findport.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I/tmp/opencode/common-performance-runtime/curl-dev/usr/include/x86_64-linux-gnu  -DSTRICT_R_HEADERS -DR_NO_REMAP     -fvisibility=hidden -fpic  -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/build/r-base-FPSnzf/r-base-4.3.3=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/build/r-base-FPSnzf/r-base-4.3.3=/usr/src/r-base-4.3.3-2build2 -Wdate-time -D_FORTIFY_SOURCE=3  -c form.c -o form.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I/tmp/opencode/common-performance-runtime/curl-dev/usr/include/x86_64-linux-gnu  -DSTRICT_R_HEADERS -DR_NO_REMAP     -fvisibility=hidden -fpic  -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/build/r-base-FPSnzf/r-base-4.3.3=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/build/r-base-FPSnzf/r-base-4.3.3=/usr/src/r-base-4.3.3-2build2 -Wdate-time -D_FORTIFY_SOURCE=3  -c getdate.c -o getdate.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I/tmp/opencode/common-performance-runtime/curl-dev/usr/include/x86_64-linux-gnu  -DSTRICT_R_HEADERS -DR_NO_REMAP     -fvisibility=hidden -fpic  -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/build/r-base-FPSnzf/r-base-4.3.3=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/build/r-base-FPSnzf/r-base-4.3.3=/usr/src/r-base-4.3.3-2build2 -Wdate-time -D_FORTIFY_SOURCE=3  -c handle.c -o handle.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I/tmp/opencode/common-performance-runtime/curl-dev/usr/include/x86_64-linux-gnu  -DSTRICT_R_HEADERS -DR_NO_REMAP     -fvisibility=hidden -fpic  -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/build/r-base-FPSnzf/r-base-4.3.3=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/build/r-base-FPSnzf/r-base-4.3.3=/usr/src/r-base-4.3.3-2build2 -Wdate-time -D_FORTIFY_SOURCE=3  -c ieproxy.c -o ieproxy.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I/tmp/opencode/common-performance-runtime/curl-dev/usr/include/x86_64-linux-gnu  -DSTRICT_R_HEADERS -DR_NO_REMAP     -fvisibility=hidden -fpic  -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/build/r-base-FPSnzf/r-base-4.3.3=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/build/r-base-FPSnzf/r-base-4.3.3=/usr/src/r-base-4.3.3-2build2 -Wdate-time -D_FORTIFY_SOURCE=3  -c init.c -o init.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I/tmp/opencode/common-performance-runtime/curl-dev/usr/include/x86_64-linux-gnu  -DSTRICT_R_HEADERS -DR_NO_REMAP     -fvisibility=hidden -fpic  -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/build/r-base-FPSnzf/r-base-4.3.3=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/build/r-base-FPSnzf/r-base-4.3.3=/usr/src/r-base-4.3.3-2build2 -Wdate-time -D_FORTIFY_SOURCE=3  -c interrupt.c -o interrupt.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I/tmp/opencode/common-performance-runtime/curl-dev/usr/include/x86_64-linux-gnu  -DSTRICT_R_HEADERS -DR_NO_REMAP     -fvisibility=hidden -fpic  -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/build/r-base-FPSnzf/r-base-4.3.3=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/build/r-base-FPSnzf/r-base-4.3.3=/usr/src/r-base-4.3.3-2build2 -Wdate-time -D_FORTIFY_SOURCE=3  -c multi.c -o multi.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I/tmp/opencode/common-performance-runtime/curl-dev/usr/include/x86_64-linux-gnu  -DSTRICT_R_HEADERS -DR_NO_REMAP     -fvisibility=hidden -fpic  -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/build/r-base-FPSnzf/r-base-4.3.3=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/build/r-base-FPSnzf/r-base-4.3.3=/usr/src/r-base-4.3.3-2build2 -Wdate-time -D_FORTIFY_SOURCE=3  -c nslookup.c -o nslookup.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I/tmp/opencode/common-performance-runtime/curl-dev/usr/include/x86_64-linux-gnu  -DSTRICT_R_HEADERS -DR_NO_REMAP     -fvisibility=hidden -fpic  -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/build/r-base-FPSnzf/r-base-4.3.3=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/build/r-base-FPSnzf/r-base-4.3.3=/usr/src/r-base-4.3.3-2build2 -Wdate-time -D_FORTIFY_SOURCE=3  -c options.c -o options.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I/tmp/opencode/common-performance-runtime/curl-dev/usr/include/x86_64-linux-gnu  -DSTRICT_R_HEADERS -DR_NO_REMAP     -fvisibility=hidden -fpic  -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/build/r-base-FPSnzf/r-base-4.3.3=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/build/r-base-FPSnzf/r-base-4.3.3=/usr/src/r-base-4.3.3-2build2 -Wdate-time -D_FORTIFY_SOURCE=3  -c reflist.c -o reflist.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I/tmp/opencode/common-performance-runtime/curl-dev/usr/include/x86_64-linux-gnu  -DSTRICT_R_HEADERS -DR_NO_REMAP     -fvisibility=hidden -fpic  -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/build/r-base-FPSnzf/r-base-4.3.3=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/build/r-base-FPSnzf/r-base-4.3.3=/usr/src/r-base-4.3.3-2build2 -Wdate-time -D_FORTIFY_SOURCE=3  -c split.c -o split.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I/tmp/opencode/common-performance-runtime/curl-dev/usr/include/x86_64-linux-gnu  -DSTRICT_R_HEADERS -DR_NO_REMAP     -fvisibility=hidden -fpic  -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/build/r-base-FPSnzf/r-base-4.3.3=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/build/r-base-FPSnzf/r-base-4.3.3=/usr/src/r-base-4.3.3-2build2 -Wdate-time -D_FORTIFY_SOURCE=3  -c ssl.c -o ssl.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I/tmp/opencode/common-performance-runtime/curl-dev/usr/include/x86_64-linux-gnu  -DSTRICT_R_HEADERS -DR_NO_REMAP     -fvisibility=hidden -fpic  -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/build/r-base-FPSnzf/r-base-4.3.3=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/build/r-base-FPSnzf/r-base-4.3.3=/usr/src/r-base-4.3.3-2build2 -Wdate-time -D_FORTIFY_SOURCE=3  -c typechecking.c -o typechecking.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I/tmp/opencode/common-performance-runtime/curl-dev/usr/include/x86_64-linux-gnu  -DSTRICT_R_HEADERS -DR_NO_REMAP     -fvisibility=hidden -fpic  -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/build/r-base-FPSnzf/r-base-4.3.3=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/build/r-base-FPSnzf/r-base-4.3.3=/usr/src/r-base-4.3.3-2build2 -Wdate-time -D_FORTIFY_SOURCE=3  -c urlparser.c -o urlparser.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I/tmp/opencode/common-performance-runtime/curl-dev/usr/include/x86_64-linux-gnu  -DSTRICT_R_HEADERS -DR_NO_REMAP     -fvisibility=hidden -fpic  -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/build/r-base-FPSnzf/r-base-4.3.3=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/build/r-base-FPSnzf/r-base-4.3.3=/usr/src/r-base-4.3.3-2build2 -Wdate-time -D_FORTIFY_SOURCE=3  -c utils.c -o utils.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I/tmp/opencode/common-performance-runtime/curl-dev/usr/include/x86_64-linux-gnu  -DSTRICT_R_HEADERS -DR_NO_REMAP     -fvisibility=hidden -fpic  -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/build/r-base-FPSnzf/r-base-4.3.3=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/build/r-base-FPSnzf/r-base-4.3.3=/usr/src/r-base-4.3.3-2build2 -Wdate-time -D_FORTIFY_SOURCE=3  -c version.c -o version.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I/tmp/opencode/common-performance-runtime/curl-dev/usr/include/x86_64-linux-gnu  -DSTRICT_R_HEADERS -DR_NO_REMAP     -fvisibility=hidden -fpic  -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/build/r-base-FPSnzf/r-base-4.3.3=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/build/r-base-FPSnzf/r-base-4.3.3=/usr/src/r-base-4.3.3-2build2 -Wdate-time -D_FORTIFY_SOURCE=3  -c winidn.c -o winidn.o
+gcc -I"/usr/share/R/include" -DNDEBUG -I/tmp/opencode/common-performance-runtime/curl-dev/usr/include/x86_64-linux-gnu  -DSTRICT_R_HEADERS -DR_NO_REMAP     -fvisibility=hidden -fpic  -g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/build/r-base-FPSnzf/r-base-4.3.3=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/build/r-base-FPSnzf/r-base-4.3.3=/usr/src/r-base-4.3.3-2build2 -Wdate-time -D_FORTIFY_SOURCE=3  -c writer.c -o writer.o
+gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -flto=auto -ffat-lto-objects -Wl,-z,relro -o curl.so callbacks.o curl.o download.o dryrun.o escape.o fetch.o findport.o form.o getdate.o handle.o ieproxy.o init.o interrupt.o multi.o nslookup.o options.o reflist.o split.o ssl.o typechecking.o urlparser.o utils.o version.o winidn.o writer.o -L/tmp/opencode/common-performance-runtime/curl-dev -lcurl -L/usr/lib/R/lib -lR
+installing to /tmp/opencode/common-performance-R-library/00LOCK-curl/00new/curl/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (curl)
+
+下载的程序包在
+	‘/tmp/RtmppjsD08/downloaded_packages’里
+还安装相依关系‘httr2’
+
+试开URL’https://cloud.r-project.org/src/contrib/httr2_1.3.0.tar.gz'
+Content type 'application/x-gzip' length 301901 bytes (294 KB)
+==================================================
+downloaded 294 KB
+
+试开URL’https://cloud.r-project.org/src/contrib/ellmer_0.5.0.tar.gz'
+Content type 'application/x-gzip' length 3166724 bytes (3.0 MB)
+==================================================
+downloaded 3.0 MB
+
+begin installing package ‘httr2’
+* installing *source* package ‘httr2’ ...
+** 成功将‘httr2’程序包解包并MD5和检查
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (httr2)
+begin installing package ‘ellmer’
+* installing *source* package ‘ellmer’ ...
+** 成功将‘ellmer’程序包解包并MD5和检查
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (ellmer)
+
+下载的程序包在
+	‘/tmp/RtmppjsD08/downloaded_packages’里
+ellmer 0.5.0 

@@ -1,0 +1,75 @@
+{
+  "status": "completed",
+  "utc": "2026-10-09T02:11:09.602679+00:00",
+  "tools": [
+    {
+      "tool": "SCassist",
+      "status": "not_applicable",
+      "score": null,
+      "reason": "Seurat single-cell workflow assistant; no native DE five-count interface",
+      "source": {
+        "url": "https://api.github.com/repos/NIH-NEI/SCassist/tarball/4cd3e7e7f059d5b59d86611e4bb5053ce5d827b9",
+        "path": "/tmp/opencode/common-performance-runtime/SCassist-4cd3e7e7f059d5b59d86611e4bb5053ce5d827b9.tar.gz",
+        "bytes": 26014415,
+        "sha256": "e70f65e36d0c2bbe970d6bab0829b2b6cbd7fe3fd1a72331576fa31c120627e7",
+        "commit": "4cd3e7e7f059d5b59d86611e4bb5053ce5d827b9"
+      },
+      "evidence_file": "SCassist_README.md",
+      "evidence_sha256": "7f4bb2ff4f163e97acc20bd1cc11b1782199cfb008cb110056d9238791025134",
+      "archive_full_read": "pass"
+    },
+    {
+      "tool": "GPTCelltype",
+      "status": "not_applicable",
+      "score": null,
+      "reason": "Marker-driven cell-type annotation; no native DE five-count interface",
+      "source": {
+        "url": "https://api.github.com/repos/Winnie09/GPTCelltype/tarball/3d2785aa96ab5f260dd075b688a9fa51654cdf0d",
+        "path": "/tmp/opencode/common-performance-runtime/GPTCelltype-3d2785aa96ab5f260dd075b688a9fa51654cdf0d.tar.gz",
+        "bytes": 5948412,
+        "sha256": "3fefedef15a048a98e43e14b0cf7c4b6dd1dff0205ac87f1be6cfdfaa972d452",
+        "commit": "3d2785aa96ab5f260dd075b688a9fa51654cdf0d"
+      },
+      "evidence_file": "GPTCelltype_README.md",
+      "evidence_sha256": "97b69149902ff39b26d7b0273d9d44b4eea41cf3a73aa0a0324d1646e8878ed6",
+      "archive_full_read": "pass"
+    },
+    {
+      "tool": "GeneAgent",
+      "status": "not_applicable",
+      "score": null,
+      "reason": "Gene-set function analysis agent; no native DE five-count interface",
+      "source": {
+        "url": "https://api.github.com/repos/ncbi-nlp/GeneAgent/tarball/88fd1adb40dce9545bde5b904ef3a628c09d747c",
+        "path": "/tmp/opencode/common-performance-runtime/GeneAgent-88fd1adb40dce9545bde5b904ef3a628c09d747c.tar.gz",
+        "bytes": 6002542,
+        "sha256": "46465346696bd1076a7429d21882860d291e01ff8678164723ba86e9ad9bd963",
+        "commit": "88fd1adb40dce9545bde5b904ef3a628c09d747c"
+      },
+      "evidence_file": "GeneAgent_README.md",
+      "evidence_sha256": "ca10f5f2702a7ab91e52964db3099ad9a249140b6ace909c91c2819ca271209b",
+      "archive_full_read": "pass"
+    },
+    {
+      "tool": "iSEE",
+      "status": "not_applicable",
+      "score": null,
+      "reason": "SummarizedExperiment interactive exploration; no native DE five-count interface",
+      "source_url": "https://bioconductor.org/packages/3.18/bioc/src/contrib/iSEE_2.14.0.tar.gz",
+      "version": "2.14.0/Bioc3.18",
+      "archive_sha256": "44b2ecfea6f47e414b372c04e68be5384e873336c7caffb6b07a206905d71e4e",
+      "evidence_file": "iSEE_DESCRIPTION"
+    },
+    {
+      "tool": "BioExplainR",
+      "status": "applicable",
+      "reason": "Offline facts and model client on DE table"
+    },
+    {
+      "tool": "ellmer",
+      "status": "applicable",
+      "reason": "General model interface, same model/table/facts"
+    }
+  ],
+  "scope": "Source-backed native task applicability; not comprehensive six-tool runtime/performance ranking; non-native wrappers not counted as tool capability"
+}

@@ -1,0 +1,20 @@
+{
+  "command": [
+    "/tmp/opencode/paper-venv/bin/python",
+    "research/paper_cn_revision/audit_revision.py",
+    "--directory",
+    "docs/paper_cn_v4",
+    "--version",
+    "v0.10"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-08T16:01:00.083110+00:00",
+  "finished_utc": "2026-10-08T16:01:06.808442+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/biology-paper-audit-final2.txt",
+    "bytes": 3932,
+    "sha256": "6538a7f63df875b6fdbe1e160ba06dc57e2b5026569b2a237400d5d0e7f38b2a"
+  }
+}

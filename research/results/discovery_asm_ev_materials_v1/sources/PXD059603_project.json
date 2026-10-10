@@ -1,0 +1,125 @@
+{
+  "accession" : "PXD059603",
+  "title" : "Proteomic analysis of bronchial epithelium challenged with bronchial smooth muscle extracellular vesicles",
+  "additionalAttributes" : [ ],
+  "projectDescription" : "The main objective of CHARMACOMA is to explore the capacity of the severe asthmatic bronchial smooth muscle to modify bronchial epithelium physiology from a metabolic point of view.",
+  "sampleProcessingProtocol" : "Cells lysis were processed using RIPA buffer. Each lysate was centrifuged and the supernatant was used for the proteomic analysis. The proteins from epithelium using the Single-pot, solid-phase-enhanced sample preparation (SP3) method (Hughes, Christopher S et al. Nature protocols (2019)). NanoLC-MS/MS analysis were performed using Vanquish Neo UHPLC System (Thermo Scientific) associated to Orbitrap Exploris™ 480. The peptide extracts were loaded onto a 5 mm × 300 µm ID PepMap Neo Trap Cartridge (C18, 5 µm particle size, 100 Å pore size, Thermo Scientific) and separated on an analytical column (25 cm × 75 μm ID, 1.7 µm, C18 beads, Ionopticks) at a flow rate of 300 nL/min at 50°C using a multistep gradient of 3–25% mobile phase B (80% MeCN in 0.1% formic acid) for 45 minutes and 25–35% B for 15 minutes, 35–95% B for 1 minute and an 11-minute wash at 99% B. The mass spectrometer operated in positive ion mode at a 1.4 kV needle voltage, and data were acquired using Xcalibur 4.5 software in a data-dependent mode. MS scans (m/z 375–1500) were recorded at a resolution of R = 120000 (@ m/z 200), a standard AGC target, and an injection time in automatic mode, followed by a top speed duty cycle of up to 1 second for MS/MS acquisition. Precursor ions (2–6 charge states) were isolated in the quadrupole with a mass window of 2 Th and fragmented with HCD @ 30% normalized collision energy. MS/MS data were acquired with a resolution of R = 15000 (@m/z 200), a standard AGC target, and a maximum injection time in automatic mode. Selected precursors were excluded for 45 seconds.",
+  "dataProcessingProtocol" : "Protein identification and label-free quantification (LFQ) were done in Proteome Discoverer 3.1. The CHIMERYS node using the prediction model inferys_3.0.0 fragmentations was used to identify proteins in batch mode by searching against the UniProt Homo sapiens database (82408 entries, released September 2023). Two missed enzyme cleavages were allowed for trypsin. Peptide lengths of 7–30 amino acids, a maximum of 3 modifications, charges of 2–4, and 20 ppm for fragment mass tolerance were set. Oxidation (M) and carbamidomethyl (C) were respectively searched as dynamic and static modifications by the CHIMERYS software. Peptide validation was performed using the Percolator algorithm and only “high confidence” peptides were retained corresponding to a 1% false discovery rate at the peptide level. Minora feature detector node (LFQ) was used along with the feature mapper and precursor ions quantifier. The normalization parameters were selected as follows: (1) Unique peptides, (2) Precursor abundance based on intensity, (3) Normalization mode: total peptide amount, (4) Protein abundance calculation: summed abundances, (5) Protein ratio calculation: pairwise ratio based and (6) Missing values were replaced with random values sampled from the lower 5% of detected values. Quantitative data were considered for master proteins and quantified by a minimum of 2 unique peptides",
+  "projectTags" : [ ],
+  "keywords" : [ "Bronchial epithelium" ],
+  "doi" : "",
+  "submissionType" : "PARTIAL",
+  "license" : "Creative Commons Public Domain (CC0)",
+  "submissionDate" : "2025-01-09",
+  "publicationDate" : "2026-02-09",
+  "submitters" : [ {
+    "title" : "Mr",
+    "firstName" : "Dupuy",
+    "lastName" : "Jean-William",
+    "identifier" : "470196",
+    "affiliation" : "OncoProt plateform, UAR TBMCore CNRS 3427 INSERM US005 University of Bordeaux ",
+    "email" : "jean-william.dupuy@u-bordeaux.fr",
+    "country" : "France",
+    "orcid" : "0000-0002-2448-4797",
+    "name" : "Dupuy Jean-William",
+    "id" : "470196"
+  } ],
+  "labPIs" : [ {
+    "title" : "Dr",
+    "firstName" : "Pauline",
+    "lastName" : "Esteves",
+    "identifier" : "3089139",
+    "affiliation" : "Univ. Bordeaux, INSERM, CRCTB, U 1045, F-33000 Bordeaux, France",
+    "email" : "Pauline.esteves@u-bordeaux.fr",
+    "country" : "",
+    "orcid" : "",
+    "name" : "Pauline Esteves",
+    "id" : "3089139"
+  } ],
+  "instruments" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1003028",
+    "name" : "Orbitrap Exploris 480"
+  } ],
+  "softwares" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1000650",
+    "name" : "Proteome Discoverer"
+  } ],
+  "experimentTypes" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000428",
+    "name" : "Bottom-up proteomics"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000627",
+    "name" : "Data-dependent acquisition"
+  } ],
+  "quantificationMethods" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000425",
+    "name" : "MS1 intensity based label-free quantification method"
+  } ],
+  "countries" : [ "France" ],
+  "sampleAttributes" : [ {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "EFO:0000635",
+      "name" : "organism part"
+    },
+    "value" : [ {
+      "cvLabel" : "CL",
+      "accession" : "CL:0002328",
+      "name" : "bronchial epithelial cell"
+    } ]
+  }, {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "OBI:0100026",
+      "name" : "organism"
+    },
+    "value" : [ {
+      "cvLabel" : "NEWT",
+      "accession" : "NEWT:9606",
+      "name" : "Homo sapiens (Human)"
+    } ]
+  } ],
+  "organisms" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "NEWT",
+    "accession" : "NEWT:9606",
+    "name" : "Homo sapiens (human)"
+  } ],
+  "organismParts" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "CL",
+    "accession" : "CL:0002328",
+    "name" : "Bronchial epithelial cell"
+  } ],
+  "diseases" : [ ],
+  "references" : [ {
+    "referenceLine" : "Celle E, Chahin A, Beaufils F, Cardouat G, Eyraud E, Bouchet C, Campagnac M, Ousova O, Begueret H, Thumerel M, Dubois R, Dupuy JW, Leste-Lasserre T, Lacomme S, Lager-Lachaud N, Bellvert F, Marthan R, Girodet PO, Berger P, Trian T, Esteves P. Bronchial smooth muscle extracellular vesicles interfere with bronchial epithelium metabolism and function in asthma. iScience. 2025 28(6):112546",
+    "pubmedID" : 40487443,
+    "doi" : "10.1016/j.isci.2025.112546"
+  } ],
+  "identifiedPTMStrings" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MOD",
+    "accession" : "MOD:00425",
+    "name" : "monohydroxylated residue"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "MOD",
+    "accession" : "MOD:00397",
+    "name" : "iodoacetamide derivatized residue"
+  } ],
+  "totalFileDownloads" : 126,
+  "otherOmicsLinks" : [ "px:PXD055949", "pride.project:PXD055968", "pride.project:PXD055949", "px:PXD055968" ]
+}

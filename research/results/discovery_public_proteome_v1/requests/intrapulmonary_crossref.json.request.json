@@ -1,0 +1,31 @@
+{
+  "name": "intrapulmonary_crossref.json",
+  "url": "https://api.crossref.org/works/10.1183/13993003.02178-2019",
+  "started_utc": "2026-10-10T05:13:11.537422+00:00",
+  "http_status": 200,
+  "final_url": "https://api.crossref.org/works/10.1183/13993003.02178-2019",
+  "headers": {
+    "Date": "Sat, 10 Oct 2026 05:13:12 GMT",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "access-control-expose-headers": "Link",
+    "access-control-allow-headers": "X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language, Accept-Ranges, Cache-Control",
+    "access-control-allow-origin": "*",
+    "server": "Jetty(9.4.40.v20210413)",
+    "x-rate-limit-limit": "5",
+    "x-rate-limit-interval": "1s",
+    "x-concurrency-limit": "1",
+    "x-api-pool": "public-single",
+    "permissions-policy": "interest-cohort=()",
+    "strict-transport-security": "max-age=86400;"
+  },
+  "status": "retrieved",
+  "response": {
+    "path": "research/results/discovery_public_proteome_v1/sources/intrapulmonary_crossref.json",
+    "bytes": 12731,
+    "sha256": "25e5fd1e1e01f980251547b296b8261023f1d01df56df820defd570d5201f882"
+  },
+  "completed_utc": "2026-10-10T05:13:12.512793+00:00",
+  "seconds": 0.9753707759082317
+}

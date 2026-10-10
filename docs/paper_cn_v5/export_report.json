@@ -1,0 +1,67 @@
+{
+  "status": "pass",
+  "created_utc": "2026-10-09T10:16:27.076119+00:00",
+  "main": {
+    "name": "BioExplainR-中文论文-v0.11",
+    "pages": 11,
+    "docx_tables": 2,
+    "figures": 3,
+    "vector_figures": [
+      {
+        "caption": "图 1 固定候选的四背景响应",
+        "page": 9,
+        "pdf": {
+          "path": "docs/paper_cn_v5/figures/Figure_1.pdf",
+          "bytes": 15463,
+          "sha256": "028ef82c79ea46f7f11b634ddbe3e666927365a504f2c17377faabcf84c8904e"
+        }
+      },
+      {
+        "caption": "图 2 已知重叠排除后的供体配对响应",
+        "page": 10,
+        "pdf": {
+          "path": "docs/paper_cn_v5/figures/Figure_2.pdf",
+          "bytes": 14395,
+          "sha256": "09d6abe1d1534d31fa5d3b0697e59508123eb8012e5d4683454ff62f05827fb9"
+        }
+      },
+      {
+        "caption": "图 3 PER2 的 A549 药理干预与暴露条件差异",
+        "page": 11,
+        "pdf": {
+          "path": "docs/paper_cn_v5/figures/Figure_3.pdf",
+          "bytes": 15478,
+          "sha256": "b0d24132ea00960c4c9f86f10bcf84beb34f8474c9a372c7f219652e429af8cc"
+        }
+      }
+    ]
+  },
+  "supplement": {
+    "name": "BioExplainR-补充材料-v0.11",
+    "pages": 12,
+    "docx_tables": 4,
+    "figures": 2,
+    "vector_figures": [
+      {
+        "caption": "补充图 S1 重点候选的逐供体测量",
+        "page": 11,
+        "pdf": {
+          "path": "docs/paper_cn_v5/figures/Figure_S1.pdf",
+          "bytes": 19590,
+          "sha256": "daec50df04c0d863bd7c9d043002692a4512b0b41c672148063e6159b34a9214"
+        }
+      },
+      {
+        "caption": "补充图 S2 HASM1 的 PER2/PER3 暴露条件",
+        "page": 12,
+        "pdf": {
+          "path": "docs/paper_cn_v5/figures/Figure_S2.pdf",
+          "bytes": 13700,
+          "sha256": "5e59224ce4b20c4e6c90fd974205a570d9a823d78506457b80ea4f456dc0554b"
+        }
+      }
+    ]
+  },
+  "research_refitted": false,
+  "figure_mode": "Original vector PDFs embedded in final PDF; PNG previews in DOCX/HTML"
+}

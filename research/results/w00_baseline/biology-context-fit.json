@@ -1,0 +1,18 @@
+{
+  "command": [
+    "Rscript",
+    "--vanilla",
+    "research/discovery/run_context.R",
+    "research/results/discovery_context_v1"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-08T12:58:29.515560+00:00",
+  "finished_utc": "2026-10-08T12:59:22.863642+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/biology-context-fit.txt",
+    "bytes": 10004,
+    "sha256": "534b8fd818ec529fc0b2972155666a6921d151b910aec3500cda0ad267a3a25a"
+  }
+}

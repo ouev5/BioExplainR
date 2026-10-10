@@ -1,0 +1,18 @@
+{
+  "utc": "2026-10-10T05:26:15.458404+00:00",
+  "request_records": 49,
+  "transport_status_counts": {
+    "retrieved": 37,
+    "http_error": 7,
+    "failed_or_partial": 4,
+    "retrieved_and_reconstructed": 1
+  },
+  "retrieved_HTML_challenges": [
+    "PMC5105184_article.html"
+  ],
+  "valid_fulltext_XML": [
+    "PMC11161633.xml",
+    "PMC8688760.xml"
+  ],
+  "note": "retrieved is a transport status; challenge HTML/partial content never treated as article/table"
+}

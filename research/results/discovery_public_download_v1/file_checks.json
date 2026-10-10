@@ -1,0 +1,1352 @@
+{
+  "utc": "2026-10-10T09:07:48.252541+00:00",
+  "entries": [
+    {
+      "project": "PXD029028",
+      "name": "PXD029028_community_annotated.sdrf.tsv",
+      "acquisition": "new_download",
+      "integrity": {
+        "file": {
+          "path": "research/results/discovery_public_download_v1/sources/PXD029028_PXD029028_community_annotated.sdrf.tsv",
+          "bytes": 42400,
+          "sha256": "ab76d95aed93d1ba439d4e2cd9db0cd876483645d69ebeccb72cc0b775aa0c9d"
+        },
+        "valid": true,
+        "sha1": "065d676248da206d47731dfb2be89d24f0048368",
+        "upstream_sha1_matches": null,
+        "stored_bytes": 42400,
+        "uncompressed_bytes": 42400,
+        "gzip_crc_pass": false
+      },
+      "structure": {
+        "type": "delimited_table",
+        "data_rows": 48,
+        "columns": 34,
+        "header": [
+          "source name",
+          "characteristics[organism]",
+          "characteristics[organism part]",
+          "characteristics[cell type]",
+          "characteristics[biological replicate]",
+          "characteristics[disease]",
+          "characteristics[material type]",
+          "characteristics[treatment]",
+          "characteristics[age]",
+          "characteristics[sex]",
+          "characteristics[individual]",
+          "assay name",
+          "technology type",
+          "comment[technical replicate]",
+          "comment[data file]",
+          "comment[sdrf version]",
+          "comment[sdrf template]",
+          "comment[sdrf template]",
+          "comment[sdrf annotation tool]",
+          "comment[proteomics data acquisition method]",
+          "comment[instrument]",
+          "comment[cleavage agent details]",
+          "comment[label]",
+          "comment[fraction identifier]",
+          "comment[dissociation method]",
+          "comment[precursor mass tolerance]",
+          "comment[fragment mass tolerance]",
+          "comment[reduction reagent]",
+          "comment[alkylation reagent]",
+          "comment[modification parameters]",
+          "comment[modification parameters]",
+          "comment[modification parameters]",
+          "factor value[organism part]",
+          "factor value[treatment]"
+        ]
+      }
+    },
+    {
+      "project": "PXD029028",
+      "name": "pepide_matrix.csv",
+      "acquisition": "new_download",
+      "integrity": {
+        "file": {
+          "path": "research/results/discovery_public_download_v1/sources/PXD029028_pepide_matrix.csv",
+          "bytes": 10989355,
+          "sha256": "46644da5ddd124cca8b0312de930a5a61151db163fd0d43f82674806019d3486"
+        },
+        "valid": true,
+        "sha1": "f9b75b60b79b702872eafd58f7056681451375df",
+        "upstream_sha1_matches": true,
+        "stored_bytes": 10989355,
+        "uncompressed_bytes": 10989355,
+        "gzip_crc_pass": false
+      },
+      "structure": {
+        "type": "delimited_table",
+        "data_rows": 21001,
+        "columns": 50,
+        "header": [
+          "Peptide",
+          "Protein",
+          "Intensity_Mans_S1801_82_scored.txt_0_0",
+          "Intensity_Mans_S1801_102_scored.txt_0_1",
+          "Intensity_Mans_S1801_80_scored.txt_0_2",
+          "Intensity_Mans_S1801_88_scored.txt_0_3",
+          "Intensity_Mans_S1801_107_scored.txt_0_4",
+          "Intensity_Mans_S1801_122_scored.txt_0_5",
+          "Intensity_Mans_S1801_100_scored.txt_0_6",
+          "Intensity_Mans_S1801_86_scored.txt_0_7",
+          "Intensity_Mans_S1801_78_scored.txt_0_8",
+          "Intensity_Mans_S1801_99_scored.txt_0_9",
+          "Intensity_Mans_S1801_130_scored.txt_0_10",
+          "Intensity_Mans_S1801_96_scored.txt_0_11",
+          "Intensity_Mans_S1801_90_scored.txt_0_12",
+          "Intensity_Mans_S1801_103_scored.txt_0_13",
+          "Intensity_Mans_S1801_110_scored.txt_0_14",
+          "Intensity_Mans_S1801_72_scored.txt_0_15",
+          "Intensity_Mans_S1801_108_scored.txt_0_16",
+          "Intensity_Mans_S1801_114_scored.txt_0_17",
+          "Intensity_Mans_S1801_89_scored.txt_0_18",
+          "Intensity_Mans_S1801_112_scored.txt_0_19",
+          "Intensity_Mans_S1801_84_scored.txt_0_20",
+          "Intensity_Mans_S1801_94_scored.txt_0_21",
+          "Intensity_Mans_S1801_111_scored.txt_0_22",
+          "Intensity_Mans_S1801_115_scored.txt_0_23",
+          "Intensity_Mans_S1801_70_scored.txt_0_24",
+          "Intensity_Mans_S1801_81_scored.txt_0_25",
+          "Intensity_Mans_S1801_76_scored.txt_0_26",
+          "Intensity_Mans_S1802_200_scored.txt_0_27",
+          "Intensity_Mans_S1801_125_scored.txt_0_28",
+          "Intensity_Mans_S1801_121_scored.txt_0_29",
+          "Intensity_Mans_S1801_77_scored.txt_0_30",
+          "Intensity_Mans_S1801_126_scored.txt_0_31",
+          "Intensity_Mans_S1801_120_scored.txt_0_32",
+          "Intensity_Mans_S1801_74_scored.txt_0_33",
+          "Intensity_Mans_S1801_68_scored.txt_0_34",
+          "Intensity_Mans_S1802_199_scored.txt_0_35",
+          "Intensity_Mans_S1801_73_scored.txt_0_36",
+          "Intensity_Mans_S1801_98_scored.txt_0_37",
+          "Intensity_Mans_S1802_201_scored.txt_0_38",
+          "Intensity_Mans_S1801_106_scored.txt_0_39",
+          "Intensity_Mans_S1801_104_scored.txt_0_40",
+          "Intensity_Mans_S1801_95_scored.txt_0_41",
+          "Intensity_Mans_S1801_85_scored.txt_0_42",
+          "Intensity_Mans_S1801_69_scored.txt_0_43",
+          "Intensity_Mans_S1801_124_scored.txt_0_44",
+          "Intensity_Mans_S1801_116_scored.txt_0_45",
+          "Intensity_Mans_S1801_128_scored.txt_0_46",
+          "Intensity_Mans_S1801_129_scored.txt_0_47"
+        ]
+      }
+    },
+    {
+      "project": "PXD029028",
+      "name": "peptide_annotations.csv",
+      "acquisition": "new_download",
+      "integrity": {
+        "file": {
+          "path": "research/results/discovery_public_download_v1/sources/PXD029028_peptide_annotations.csv",
+          "bytes": 2557322,
+          "sha256": "d74d94efb175a1845b8adbf55afee99dfb463d005335f8e49779df545b0a6488"
+        },
+        "valid": true,
+        "sha1": "656fa176e936338a77bc59d57ba3d21885141b2b",
+        "upstream_sha1_matches": true,
+        "stored_bytes": 2557322,
+        "uncompressed_bytes": 2557322,
+        "gzip_crc_pass": false
+      },
+      "structure": {
+        "type": "delimited_table",
+        "data_rows": 19823,
+        "columns": 5,
+        "header": [
+          ";annotation;value;",
+          "",
+          "",
+          "",
+          ""
+        ]
+      }
+    },
+    {
+      "project": "PXD014171",
+      "name": "proteinGroups.txt",
+      "acquisition": "new_download",
+      "integrity": {
+        "file": {
+          "path": "research/results/discovery_public_download_v1/sources/PXD014171_proteinGroups.txt",
+          "bytes": 288474,
+          "sha256": "24637990aa2927f5105dbe22ef156bd13144b2d903e066236cc0eddd69d92e68"
+        },
+        "valid": true,
+        "sha1": "727510c6ab98f1631e4f94f292c7b97fcf584113",
+        "upstream_sha1_matches": true,
+        "stored_bytes": 288474,
+        "uncompressed_bytes": 288474,
+        "gzip_crc_pass": false
+      },
+      "structure": {
+        "type": "delimited_table",
+        "data_rows": 218,
+        "columns": 146,
+        "header": [
+          "Protein IDs",
+          "Majority protein IDs",
+          "Peptide counts (all)",
+          "Peptide counts (razor+unique)",
+          "Peptide counts (unique)",
+          "Fasta headers",
+          "Number of proteins",
+          "Peptides",
+          "Razor + unique peptides",
+          "Unique peptides",
+          "Peptides 1",
+          "Peptides 10",
+          "Peptides 11",
+          "Peptides 12",
+          "Peptides 13",
+          "Peptides 14",
+          "Peptides 15",
+          "Peptides 16",
+          "Peptides 17",
+          "Peptides 18",
+          "Peptides 19",
+          "Peptides 2",
+          "Peptides 3",
+          "Peptides 4",
+          "Peptides 5",
+          "Peptides 6",
+          "Peptides 7",
+          "Peptides 8",
+          "Peptides 9",
+          "Razor + unique peptides 1",
+          "Razor + unique peptides 10",
+          "Razor + unique peptides 11",
+          "Razor + unique peptides 12",
+          "Razor + unique peptides 13",
+          "Razor + unique peptides 14",
+          "Razor + unique peptides 15",
+          "Razor + unique peptides 16",
+          "Razor + unique peptides 17",
+          "Razor + unique peptides 18",
+          "Razor + unique peptides 19",
+          "Razor + unique peptides 2",
+          "Razor + unique peptides 3",
+          "Razor + unique peptides 4",
+          "Razor + unique peptides 5",
+          "Razor + unique peptides 6",
+          "Razor + unique peptides 7",
+          "Razor + unique peptides 8",
+          "Razor + unique peptides 9",
+          "Unique peptides 1",
+          "Unique peptides 10",
+          "Unique peptides 11",
+          "Unique peptides 12",
+          "Unique peptides 13",
+          "Unique peptides 14",
+          "Unique peptides 15",
+          "Unique peptides 16",
+          "Unique peptides 17",
+          "Unique peptides 18",
+          "Unique peptides 19",
+          "Unique peptides 2",
+          "Unique peptides 3",
+          "Unique peptides 4",
+          "Unique peptides 5",
+          "Unique peptides 6",
+          "Unique peptides 7",
+          "Unique peptides 8",
+          "Unique peptides 9",
+          "Sequence coverage [%]",
+          "Unique + razor sequence coverage [%]",
+          "Unique sequence coverage [%]",
+          "Mol. weight [kDa]",
+          "Sequence length",
+          "Sequence lengths",
+          "Q-value",
+          "Score",
+          "Identification type 1",
+          "Identification type 10",
+          "Identification type 11",
+          "Identification type 12",
+          "Identification type 13",
+          "Identification type 14",
+          "Identification type 15",
+          "Identification type 16",
+          "Identification type 17",
+          "Identification type 18",
+          "Identification type 19",
+          "Identification type 2",
+          "Identification type 3",
+          "Identification type 4",
+          "Identification type 5",
+          "Identification type 6",
+          "Identification type 7",
+          "Identification type 8",
+          "Identification type 9",
+          "Sequence coverage 1 [%]",
+          "Sequence coverage 10 [%]",
+          "Sequence coverage 11 [%]",
+          "Sequence coverage 12 [%]",
+          "Sequence coverage 13 [%]",
+          "Sequence coverage 14 [%]",
+          "Sequence coverage 15 [%]",
+          "Sequence coverage 16 [%]",
+          "Sequence coverage 17 [%]",
+          "Sequence coverage 18 [%]",
+          "Sequence coverage 19 [%]",
+          "Sequence coverage 2 [%]",
+          "Sequence coverage 3 [%]",
+          "Sequence coverage 4 [%]",
+          "Sequence coverage 5 [%]",
+          "Sequence coverage 6 [%]",
+          "Sequence coverage 7 [%]",
+          "Sequence coverage 8 [%]",
+          "Sequence coverage 9 [%]",
+          "Intensity",
+          "Intensity 1",
+          "Intensity 10",
+          "Intensity 11",
+          "Intensity 12",
+          "Intensity 13",
+          "Intensity 14",
+          "Intensity 15",
+          "Intensity 16",
+          "Intensity 17",
+          "Intensity 18",
+          "Intensity 19",
+          "Intensity 2",
+          "Intensity 3",
+          "Intensity 4",
+          "Intensity 5",
+          "Intensity 6",
+          "Intensity 7",
+          "Intensity 8",
+          "Intensity 9",
+          "MS/MS Count",
+          "Only identified by site",
+          "Reverse",
+          "Potential contaminant",
+          "id",
+          "Peptide IDs",
+          "Peptide is razor",
+          "Mod. peptide IDs",
+          "Evidence IDs",
+          "MS/MS IDs",
+          "Best MS/MS",
+          "Oxidation (M) site IDs",
+          "Oxidation (M) site positions"
+        ]
+      }
+    },
+    {
+      "project": "PXD015566",
+      "name": "Linkbetweenfiles.xlsx",
+      "acquisition": "new_download",
+      "integrity": {
+        "file": {
+          "path": "research/results/discovery_public_download_v1/sources/PXD015566_Linkbetweenfiles.xlsx",
+          "bytes": 10668,
+          "sha256": "38e4f30b2eab69895d535dec4332226aaa58ed86eba3703b4bac0ac489215100"
+        },
+        "valid": true,
+        "sha1": "00fbeaa8f2a126d9eae8a0d31a3ee323d7122809",
+        "upstream_sha1_matches": true,
+        "stored_bytes": 10668,
+        "uncompressed_bytes": 10668,
+        "gzip_crc_pass": false
+      },
+      "structure": {
+        "type": "xlsx",
+        "zip_crc_pass": true,
+        "sheets": [
+          "xl/worksheets/sheet1.xml"
+        ]
+      }
+    },
+    {
+      "project": "PXD003963",
+      "name": "NHDF_con_sn_1_2.pride.mztab.gz",
+      "acquisition": "new_download",
+      "integrity": {
+        "file": {
+          "path": "research/results/discovery_public_download_v1/sources/PXD003963_NHDF_con_sn_1_2.pride.mztab.gz",
+          "bytes": 127738,
+          "sha256": "0e7bde5af93a444b5aa8e88d53a9b98c6542c6174408ae63e8076d73ad9e4b45"
+        },
+        "valid": true,
+        "sha1": "2e397c433544253cad5c23c599eaf6a0bb544b66",
+        "upstream_sha1_matches": true,
+        "stored_bytes": 127738,
+        "uncompressed_bytes": 750159,
+        "gzip_crc_pass": true
+      },
+      "structure": {
+        "type": "mzTab_identification",
+        "rows": {
+          "MTD": 62,
+          "COM": 1,
+          "PRH": 1,
+          "PRT": 806,
+          "PSH": 1,
+          "PSM": 2846
+        },
+        "protein_header": [
+          "PRH",
+          "accession",
+          "description",
+          "taxid",
+          "species",
+          "database",
+          "database_version",
+          "search_engine",
+          "best_search_engine_score[1]",
+          "search_engine_score[1]_ms_run[1]",
+          "num_psms_ms_run[1]",
+          "num_peptides_distinct_ms_run[1]",
+          "num_peptides_unique_ms_run[1]",
+          "ambiguity_members",
+          "modifications",
+          "protein_coverage"
+        ],
+        "protein_abundance_columns": []
+      }
+    },
+    {
+      "project": "PXD003963",
+      "name": "NHDF_con_sn_2_1.pride.mztab.gz",
+      "acquisition": "new_download",
+      "integrity": {
+        "file": {
+          "path": "research/results/discovery_public_download_v1/sources/PXD003963_NHDF_con_sn_2_1.pride.mztab.gz",
+          "bytes": 118742,
+          "sha256": "73de0f9179ae6680eae1bd6deb3e9fee57013aac9753e9dd354f6f9649b61fc2"
+        },
+        "valid": true,
+        "sha1": "dffdae404bf77ca3fdbf69ea44d92b9f3bab6efd",
+        "upstream_sha1_matches": true,
+        "stored_bytes": 118742,
+        "uncompressed_bytes": 686472,
+        "gzip_crc_pass": true
+      },
+      "structure": {
+        "type": "mzTab_identification",
+        "rows": {
+          "MTD": 62,
+          "COM": 1,
+          "PRH": 1,
+          "PRT": 774,
+          "PSH": 1,
+          "PSM": 2567
+        },
+        "protein_header": [
+          "PRH",
+          "accession",
+          "description",
+          "taxid",
+          "species",
+          "database",
+          "database_version",
+          "search_engine",
+          "best_search_engine_score[1]",
+          "search_engine_score[1]_ms_run[1]",
+          "num_psms_ms_run[1]",
+          "num_peptides_distinct_ms_run[1]",
+          "num_peptides_unique_ms_run[1]",
+          "ambiguity_members",
+          "modifications",
+          "protein_coverage"
+        ],
+        "protein_abundance_columns": []
+      }
+    },
+    {
+      "project": "PXD003963",
+      "name": "NHDF_con_sn_2_2.pride.mztab.gz",
+      "acquisition": "new_download",
+      "integrity": {
+        "file": {
+          "path": "research/results/discovery_public_download_v1/sources/PXD003963_NHDF_con_sn_2_2.pride.mztab.gz",
+          "bytes": 123201,
+          "sha256": "2f980b42a6c7d7fb31d23b5f9d869a7f64250fe5587f0878d76a2c422d9b6692"
+        },
+        "valid": true,
+        "sha1": "62b3503b748e10fca9b0fffce4592b20ce1a9568",
+        "upstream_sha1_matches": true,
+        "stored_bytes": 123201,
+        "uncompressed_bytes": 712443,
+        "gzip_crc_pass": true
+      },
+      "structure": {
+        "type": "mzTab_identification",
+        "rows": {
+          "MTD": 62,
+          "COM": 1,
+          "PRH": 1,
+          "PRT": 821,
+          "PSH": 1,
+          "PSM": 2651
+        },
+        "protein_header": [
+          "PRH",
+          "accession",
+          "description",
+          "taxid",
+          "species",
+          "database",
+          "database_version",
+          "search_engine",
+          "best_search_engine_score[1]",
+          "search_engine_score[1]_ms_run[1]",
+          "num_psms_ms_run[1]",
+          "num_peptides_distinct_ms_run[1]",
+          "num_peptides_unique_ms_run[1]",
+          "ambiguity_members",
+          "modifications",
+          "protein_coverage"
+        ],
+        "protein_abundance_columns": []
+      }
+    },
+    {
+      "project": "PXD003963",
+      "name": "NHDF_con_sn_3_1.pride.mztab.gz",
+      "acquisition": "new_download",
+      "integrity": {
+        "file": {
+          "path": "research/results/discovery_public_download_v1/sources/PXD003963_NHDF_con_sn_3_1.pride.mztab.gz",
+          "bytes": 110746,
+          "sha256": "c4597b9cf6883bf2ebe27e9d693a8129d55f181ee24365ab592fb250e363c7b4"
+        },
+        "valid": true,
+        "sha1": "0b1f99f8a3dc2f45071c46dd5aeddaa31bcca6ec",
+        "upstream_sha1_matches": true,
+        "stored_bytes": 110746,
+        "uncompressed_bytes": 634261,
+        "gzip_crc_pass": true
+      },
+      "structure": {
+        "type": "mzTab_identification",
+        "rows": {
+          "MTD": 62,
+          "COM": 1,
+          "PRH": 1,
+          "PRT": 714,
+          "PSH": 1,
+          "PSM": 2377
+        },
+        "protein_header": [
+          "PRH",
+          "accession",
+          "description",
+          "taxid",
+          "species",
+          "database",
+          "database_version",
+          "search_engine",
+          "best_search_engine_score[1]",
+          "search_engine_score[1]_ms_run[1]",
+          "num_psms_ms_run[1]",
+          "num_peptides_distinct_ms_run[1]",
+          "num_peptides_unique_ms_run[1]",
+          "ambiguity_members",
+          "modifications",
+          "protein_coverage"
+        ],
+        "protein_abundance_columns": []
+      }
+    },
+    {
+      "project": "PXD003963",
+      "name": "NHDF_con_sn_3_2.pride.mztab.gz",
+      "acquisition": "new_download",
+      "integrity": {
+        "file": {
+          "path": "research/results/discovery_public_download_v1/sources/PXD003963_NHDF_con_sn_3_2.pride.mztab.gz",
+          "bytes": 119298,
+          "sha256": "9e04485ed1535fdfa1c1514f5c636de2a290aa35394979c990f63689e20735fc"
+        },
+        "valid": true,
+        "sha1": "6e056acaad028fcbfb0b10557431612d17a76660",
+        "upstream_sha1_matches": true,
+        "stored_bytes": 119298,
+        "uncompressed_bytes": 691706,
+        "gzip_crc_pass": true
+      },
+      "structure": {
+        "type": "mzTab_identification",
+        "rows": {
+          "MTD": 62,
+          "COM": 1,
+          "PRH": 1,
+          "PRT": 790,
+          "PSH": 1,
+          "PSM": 2577
+        },
+        "protein_header": [
+          "PRH",
+          "accession",
+          "description",
+          "taxid",
+          "species",
+          "database",
+          "database_version",
+          "search_engine",
+          "best_search_engine_score[1]",
+          "search_engine_score[1]_ms_run[1]",
+          "num_psms_ms_run[1]",
+          "num_peptides_distinct_ms_run[1]",
+          "num_peptides_unique_ms_run[1]",
+          "ambiguity_members",
+          "modifications",
+          "protein_coverage"
+        ],
+        "protein_abundance_columns": []
+      }
+    },
+    {
+      "project": "PXD003965",
+      "name": "NHDF_IL1beta_sn_1_2.pride.mztab.gz",
+      "acquisition": "new_download",
+      "integrity": {
+        "file": {
+          "path": "research/results/discovery_public_download_v1/sources/PXD003965_NHDF_IL1beta_sn_1_2.pride.mztab.gz",
+          "bytes": 158794,
+          "sha256": "e63d31524e5232f65022adc10fed96c1c61d870a1ff9d9513049dbbef031cf52"
+        },
+        "valid": true,
+        "sha1": "3a41078493083f4e533c6b20d9b68115fe8ec67d",
+        "upstream_sha1_matches": true,
+        "stored_bytes": 158794,
+        "uncompressed_bytes": 922493,
+        "gzip_crc_pass": true
+      },
+      "structure": {
+        "type": "mzTab_identification",
+        "rows": {
+          "MTD": 62,
+          "COM": 1,
+          "PRH": 1,
+          "PRT": 949,
+          "PSH": 1,
+          "PSM": 3539
+        },
+        "protein_header": [
+          "PRH",
+          "accession",
+          "description",
+          "taxid",
+          "species",
+          "database",
+          "database_version",
+          "search_engine",
+          "best_search_engine_score[1]",
+          "search_engine_score[1]_ms_run[1]",
+          "num_psms_ms_run[1]",
+          "num_peptides_distinct_ms_run[1]",
+          "num_peptides_unique_ms_run[1]",
+          "ambiguity_members",
+          "modifications",
+          "protein_coverage"
+        ],
+        "protein_abundance_columns": []
+      }
+    },
+    {
+      "project": "PXD003965",
+      "name": "NHDF_IL1beta_sn_2_1.pride.mztab.gz",
+      "acquisition": "new_download",
+      "integrity": {
+        "file": {
+          "path": "research/results/discovery_public_download_v1/sources/PXD003965_NHDF_IL1beta_sn_2_1.pride.mztab.gz",
+          "bytes": 125703,
+          "sha256": "2fac117e202174bd19d62aed60f4ff19fd020370e4473e9ec3c4c2ac5e276b88"
+        },
+        "valid": true,
+        "sha1": "99c9b59b7281430208f7b4d8080a5502adc99321",
+        "upstream_sha1_matches": true,
+        "stored_bytes": 125703,
+        "uncompressed_bytes": 733257,
+        "gzip_crc_pass": true
+      },
+      "structure": {
+        "type": "mzTab_identification",
+        "rows": {
+          "MTD": 62,
+          "COM": 1,
+          "PRH": 1,
+          "PRT": 776,
+          "PSH": 1,
+          "PSM": 2793
+        },
+        "protein_header": [
+          "PRH",
+          "accession",
+          "description",
+          "taxid",
+          "species",
+          "database",
+          "database_version",
+          "search_engine",
+          "best_search_engine_score[1]",
+          "search_engine_score[1]_ms_run[1]",
+          "num_psms_ms_run[1]",
+          "num_peptides_distinct_ms_run[1]",
+          "num_peptides_unique_ms_run[1]",
+          "ambiguity_members",
+          "modifications",
+          "protein_coverage"
+        ],
+        "protein_abundance_columns": []
+      }
+    },
+    {
+      "project": "PXD003965",
+      "name": "NHDF_IL1beta_sn_2_2.pride.mztab.gz",
+      "acquisition": "new_download",
+      "integrity": {
+        "file": {
+          "path": "research/results/discovery_public_download_v1/sources/PXD003965_NHDF_IL1beta_sn_2_2.pride.mztab.gz",
+          "bytes": 135218,
+          "sha256": "8e68c7ef296ccbca81a8fd1093ae341e470c2e4529dd4eabd9148c8b643d31a1"
+        },
+        "valid": true,
+        "sha1": "8c9864f8c1acb43935d72dca2bde2b6616aeba1d",
+        "upstream_sha1_matches": true,
+        "stored_bytes": 135218,
+        "uncompressed_bytes": 796704,
+        "gzip_crc_pass": true
+      },
+      "structure": {
+        "type": "mzTab_identification",
+        "rows": {
+          "MTD": 62,
+          "COM": 1,
+          "PRH": 1,
+          "PRT": 849,
+          "PSH": 1,
+          "PSM": 3030
+        },
+        "protein_header": [
+          "PRH",
+          "accession",
+          "description",
+          "taxid",
+          "species",
+          "database",
+          "database_version",
+          "search_engine",
+          "best_search_engine_score[1]",
+          "search_engine_score[1]_ms_run[1]",
+          "num_psms_ms_run[1]",
+          "num_peptides_distinct_ms_run[1]",
+          "num_peptides_unique_ms_run[1]",
+          "ambiguity_members",
+          "modifications",
+          "protein_coverage"
+        ],
+        "protein_abundance_columns": []
+      }
+    },
+    {
+      "project": "PXD003965",
+      "name": "NHDF_IL1beta_sn_3_1.pride.mztab.gz",
+      "acquisition": "new_download",
+      "integrity": {
+        "file": {
+          "path": "research/results/discovery_public_download_v1/sources/PXD003965_NHDF_IL1beta_sn_3_1.pride.mztab.gz",
+          "bytes": 132902,
+          "sha256": "7aea778e5896f9ecccaabbe4e11191f7854a7b7e82454f93bb7fd11ef2542926"
+        },
+        "valid": true,
+        "sha1": "d5f5abddb55e80dce814913bdcaa94529a23535d",
+        "upstream_sha1_matches": true,
+        "stored_bytes": 132902,
+        "uncompressed_bytes": 760911,
+        "gzip_crc_pass": true
+      },
+      "structure": {
+        "type": "mzTab_identification",
+        "rows": {
+          "MTD": 62,
+          "COM": 1,
+          "PRH": 1,
+          "PRT": 833,
+          "PSH": 1,
+          "PSM": 2862
+        },
+        "protein_header": [
+          "PRH",
+          "accession",
+          "description",
+          "taxid",
+          "species",
+          "database",
+          "database_version",
+          "search_engine",
+          "best_search_engine_score[1]",
+          "search_engine_score[1]_ms_run[1]",
+          "num_psms_ms_run[1]",
+          "num_peptides_distinct_ms_run[1]",
+          "num_peptides_unique_ms_run[1]",
+          "ambiguity_members",
+          "modifications",
+          "protein_coverage"
+        ],
+        "protein_abundance_columns": []
+      }
+    },
+    {
+      "project": "PXD003965",
+      "name": "NHDF_IL1beta_sn_3_2.pride.mztab.gz",
+      "acquisition": "new_download",
+      "integrity": {
+        "file": {
+          "path": "research/results/discovery_public_download_v1/sources/PXD003965_NHDF_IL1beta_sn_3_2.pride.mztab.gz",
+          "bytes": 149138,
+          "sha256": "ee137399f38f6356bf0ff29a6231ea1fbb7b3c0b3e692ef5e99799b565d1cf2a"
+        },
+        "valid": true,
+        "sha1": "c5e81ec1e01b729cf38ea408204f625a42f5db1f",
+        "upstream_sha1_matches": true,
+        "stored_bytes": 149138,
+        "uncompressed_bytes": 850772,
+        "gzip_crc_pass": true
+      },
+      "structure": {
+        "type": "mzTab_identification",
+        "rows": {
+          "MTD": 62,
+          "COM": 1,
+          "PRH": 1,
+          "PRT": 870,
+          "PSH": 1,
+          "PSM": 3262
+        },
+        "protein_header": [
+          "PRH",
+          "accession",
+          "description",
+          "taxid",
+          "species",
+          "database",
+          "database_version",
+          "search_engine",
+          "best_search_engine_score[1]",
+          "search_engine_score[1]_ms_run[1]",
+          "num_psms_ms_run[1]",
+          "num_peptides_distinct_ms_run[1]",
+          "num_peptides_unique_ms_run[1]",
+          "ambiguity_members",
+          "modifications",
+          "protein_coverage"
+        ],
+        "protein_abundance_columns": []
+      }
+    },
+    {
+      "project": "PXD003971",
+      "name": "NHDF_IL1beta_Dex_sn_1_2.pride.mztab.gz",
+      "acquisition": "new_download",
+      "integrity": {
+        "file": {
+          "path": "research/results/discovery_public_download_v1/sources/PXD003971_NHDF_IL1beta_Dex_sn_1_2.pride.mztab.gz",
+          "bytes": 131253,
+          "sha256": "25a40c4da61cb845b57d22b751ea64e6c7616eb13324df6405e4c704d9584d89"
+        },
+        "valid": true,
+        "sha1": "24ffa2d492bdb9051a0adf01582327cd9d1d05b0",
+        "upstream_sha1_matches": true,
+        "stored_bytes": 131253,
+        "uncompressed_bytes": 744990,
+        "gzip_crc_pass": true
+      },
+      "structure": {
+        "type": "mzTab_identification",
+        "rows": {
+          "MTD": 62,
+          "COM": 1,
+          "PRH": 1,
+          "PRT": 756,
+          "PSH": 1,
+          "PSM": 2863
+        },
+        "protein_header": [
+          "PRH",
+          "accession",
+          "description",
+          "taxid",
+          "species",
+          "database",
+          "database_version",
+          "search_engine",
+          "best_search_engine_score[1]",
+          "search_engine_score[1]_ms_run[1]",
+          "num_psms_ms_run[1]",
+          "num_peptides_distinct_ms_run[1]",
+          "num_peptides_unique_ms_run[1]",
+          "ambiguity_members",
+          "modifications",
+          "protein_coverage"
+        ],
+        "protein_abundance_columns": []
+      }
+    },
+    {
+      "project": "PXD003971",
+      "name": "NHDF_IL1beta_Dex_sn_2_1.pride.mztab.gz",
+      "acquisition": "new_download",
+      "integrity": {
+        "file": {
+          "path": "research/results/discovery_public_download_v1/sources/PXD003971_NHDF_IL1beta_Dex_sn_2_1.pride.mztab.gz",
+          "bytes": 128512,
+          "sha256": "dd1c01e2952eb3f4a49c4e1166826d9b829404d36bef3d4e7be8ae9f78416d3d"
+        },
+        "valid": true,
+        "sha1": "1d5c9734d0cc76a39ceeaa0fe4bcd0c232201a2a",
+        "upstream_sha1_matches": true,
+        "stored_bytes": 128512,
+        "uncompressed_bytes": 736054,
+        "gzip_crc_pass": true
+      },
+      "structure": {
+        "type": "mzTab_identification",
+        "rows": {
+          "MTD": 62,
+          "COM": 1,
+          "PRH": 1,
+          "PRT": 775,
+          "PSH": 1,
+          "PSM": 2793
+        },
+        "protein_header": [
+          "PRH",
+          "accession",
+          "description",
+          "taxid",
+          "species",
+          "database",
+          "database_version",
+          "search_engine",
+          "best_search_engine_score[1]",
+          "search_engine_score[1]_ms_run[1]",
+          "num_psms_ms_run[1]",
+          "num_peptides_distinct_ms_run[1]",
+          "num_peptides_unique_ms_run[1]",
+          "ambiguity_members",
+          "modifications",
+          "protein_coverage"
+        ],
+        "protein_abundance_columns": []
+      }
+    },
+    {
+      "project": "PXD003971",
+      "name": "NHDF_IL1beta_Dex_sn_2_2.pride.mztab.gz",
+      "acquisition": "new_download",
+      "integrity": {
+        "file": {
+          "path": "research/results/discovery_public_download_v1/sources/PXD003971_NHDF_IL1beta_Dex_sn_2_2.pride.mztab.gz",
+          "bytes": 133743,
+          "sha256": "21c9f459b817bcbc299ea34aa3f525133109bdb877909f62e86b3fb30fc59d76"
+        },
+        "valid": true,
+        "sha1": "6619926c03667a418abc606bf232f5e3f02cf453",
+        "upstream_sha1_matches": true,
+        "stored_bytes": 133743,
+        "uncompressed_bytes": 767463,
+        "gzip_crc_pass": true
+      },
+      "structure": {
+        "type": "mzTab_identification",
+        "rows": {
+          "MTD": 62,
+          "COM": 1,
+          "PRH": 1,
+          "PRT": 797,
+          "PSH": 1,
+          "PSM": 2922
+        },
+        "protein_header": [
+          "PRH",
+          "accession",
+          "description",
+          "taxid",
+          "species",
+          "database",
+          "database_version",
+          "search_engine",
+          "best_search_engine_score[1]",
+          "search_engine_score[1]_ms_run[1]",
+          "num_psms_ms_run[1]",
+          "num_peptides_distinct_ms_run[1]",
+          "num_peptides_unique_ms_run[1]",
+          "ambiguity_members",
+          "modifications",
+          "protein_coverage"
+        ],
+        "protein_abundance_columns": []
+      }
+    },
+    {
+      "project": "PXD003971",
+      "name": "NHDF_IL1beta_Dex_sn_3_1.pride.mztab.gz",
+      "acquisition": "new_download",
+      "integrity": {
+        "file": {
+          "path": "research/results/discovery_public_download_v1/sources/PXD003971_NHDF_IL1beta_Dex_sn_3_1.pride.mztab.gz",
+          "bytes": 117861,
+          "sha256": "99bdf2d021c1c727bb32490f06ee599705bbf0744ca6745578f9f6f2abff6db3"
+        },
+        "valid": true,
+        "sha1": "ec0579d8483592d8302f253a76ef19e5852d1cbf",
+        "upstream_sha1_matches": true,
+        "stored_bytes": 117861,
+        "uncompressed_bytes": 672954,
+        "gzip_crc_pass": true
+      },
+      "structure": {
+        "type": "mzTab_identification",
+        "rows": {
+          "MTD": 62,
+          "COM": 1,
+          "PRH": 1,
+          "PRT": 766,
+          "PSH": 1,
+          "PSM": 2506
+        },
+        "protein_header": [
+          "PRH",
+          "accession",
+          "description",
+          "taxid",
+          "species",
+          "database",
+          "database_version",
+          "search_engine",
+          "best_search_engine_score[1]",
+          "search_engine_score[1]_ms_run[1]",
+          "num_psms_ms_run[1]",
+          "num_peptides_distinct_ms_run[1]",
+          "num_peptides_unique_ms_run[1]",
+          "ambiguity_members",
+          "modifications",
+          "protein_coverage"
+        ],
+        "protein_abundance_columns": []
+      }
+    },
+    {
+      "project": "PXD003971",
+      "name": "NHDF_IL1beta_Dex_sn_3_2.pride.mztab.gz",
+      "acquisition": "new_download",
+      "integrity": {
+        "file": {
+          "path": "research/results/discovery_public_download_v1/sources/PXD003971_NHDF_IL1beta_Dex_sn_3_2.pride.mztab.gz",
+          "bytes": 135494,
+          "sha256": "73fa33d8e50456e18b51c5776e714cb11e1fc84022037efe1601d458fb1fd57d"
+        },
+        "valid": true,
+        "sha1": "1b897972a472b098eb42d718d72b92a1e7ba5a5b",
+        "upstream_sha1_matches": true,
+        "stored_bytes": 135494,
+        "uncompressed_bytes": 769823,
+        "gzip_crc_pass": true
+      },
+      "structure": {
+        "type": "mzTab_identification",
+        "rows": {
+          "MTD": 62,
+          "COM": 1,
+          "PRH": 1,
+          "PRT": 866,
+          "PSH": 1,
+          "PSM": 2875
+        },
+        "protein_header": [
+          "PRH",
+          "accession",
+          "description",
+          "taxid",
+          "species",
+          "database",
+          "database_version",
+          "search_engine",
+          "best_search_engine_score[1]",
+          "search_engine_score[1]_ms_run[1]",
+          "num_psms_ms_run[1]",
+          "num_peptides_distinct_ms_run[1]",
+          "num_peptides_unique_ms_run[1]",
+          "ambiguity_members",
+          "modifications",
+          "protein_coverage"
+        ],
+        "protein_abundance_columns": []
+      }
+    },
+    {
+      "project": "PXD003963",
+      "name": "NHDF_con_sn_1_1.pride.mztab.gz",
+      "acquisition": "reused_local",
+      "integrity": {
+        "file": {
+          "path": "research/results/discovery_public_proteome_v1/imported/PXD003963_NHDF_con_sn_1_1.pride.mztab.gz",
+          "bytes": 130946,
+          "sha256": "3e2d12aca388b384c8d8bfc1c7eae796f1410fad0b2159e28ad843369fe6bd85"
+        },
+        "valid": true,
+        "sha1": "364b87c631c099c40834b9f9c3b3734facc98f26",
+        "upstream_sha1_matches": true,
+        "stored_bytes": 130946,
+        "uncompressed_bytes": 753018,
+        "gzip_crc_pass": true
+      },
+      "structure": {
+        "type": "mzTab_identification",
+        "rows": {
+          "MTD": 62,
+          "COM": 1,
+          "PRH": 1,
+          "PRT": 800,
+          "PSH": 1,
+          "PSM": 2872
+        },
+        "protein_header": [
+          "PRH",
+          "accession",
+          "description",
+          "taxid",
+          "species",
+          "database",
+          "database_version",
+          "search_engine",
+          "best_search_engine_score[1]",
+          "search_engine_score[1]_ms_run[1]",
+          "num_psms_ms_run[1]",
+          "num_peptides_distinct_ms_run[1]",
+          "num_peptides_unique_ms_run[1]",
+          "ambiguity_members",
+          "modifications",
+          "protein_coverage"
+        ],
+        "protein_abundance_columns": []
+      }
+    },
+    {
+      "project": "PXD003965",
+      "name": "NHDF_IL1beta_sn_1_1.pride.mztab.gz",
+      "acquisition": "reused_local",
+      "integrity": {
+        "file": {
+          "path": "research/results/discovery_public_proteome_v1/imported/PXD003965_NHDF_IL1beta_sn_1_1.pride.mztab.gz",
+          "bytes": 151987,
+          "sha256": "834379d8f419395ca3eaf73ae627fff627d5ab7e69a1050e632253433a8da2ee"
+        },
+        "valid": true,
+        "sha1": "0cebb426e3947102e061d3b07d89a829503c12df",
+        "upstream_sha1_matches": true,
+        "stored_bytes": 151987,
+        "uncompressed_bytes": 871109,
+        "gzip_crc_pass": true
+      },
+      "structure": {
+        "type": "mzTab_identification",
+        "rows": {
+          "MTD": 62,
+          "COM": 1,
+          "PRH": 1,
+          "PRT": 918,
+          "PSH": 1,
+          "PSM": 3326
+        },
+        "protein_header": [
+          "PRH",
+          "accession",
+          "description",
+          "taxid",
+          "species",
+          "database",
+          "database_version",
+          "search_engine",
+          "best_search_engine_score[1]",
+          "search_engine_score[1]_ms_run[1]",
+          "num_psms_ms_run[1]",
+          "num_peptides_distinct_ms_run[1]",
+          "num_peptides_unique_ms_run[1]",
+          "ambiguity_members",
+          "modifications",
+          "protein_coverage"
+        ],
+        "protein_abundance_columns": []
+      }
+    },
+    {
+      "project": "PXD003971",
+      "name": "NHDF_IL1beta_Dex_sn_1_1.pride.mztab.gz",
+      "acquisition": "reused_local",
+      "integrity": {
+        "file": {
+          "path": "research/results/discovery_public_proteome_v1/imported/PXD003971_NHDF_IL1beta_Dex_sn_1_1.pride.mztab.gz",
+          "bytes": 135512,
+          "sha256": "9425567cb1961d3e7ba184e4b3bcabfd533989ec9c9c9b6f8425f01305f188be"
+        },
+        "valid": true,
+        "sha1": "73245edcc30aeb9e330405aeb4130e9f85a2c359",
+        "upstream_sha1_matches": true,
+        "stored_bytes": 135512,
+        "uncompressed_bytes": 770183,
+        "gzip_crc_pass": true
+      },
+      "structure": {
+        "type": "mzTab_identification",
+        "rows": {
+          "MTD": 62,
+          "COM": 1,
+          "PRH": 1,
+          "PRT": 762,
+          "PSH": 1,
+          "PSM": 2984
+        },
+        "protein_header": [
+          "PRH",
+          "accession",
+          "description",
+          "taxid",
+          "species",
+          "database",
+          "database_version",
+          "search_engine",
+          "best_search_engine_score[1]",
+          "search_engine_score[1]_ms_run[1]",
+          "num_psms_ms_run[1]",
+          "num_peptides_distinct_ms_run[1]",
+          "num_peptides_unique_ms_run[1]",
+          "ambiguity_members",
+          "modifications",
+          "protein_coverage"
+        ],
+        "protein_abundance_columns": []
+      }
+    },
+    {
+      "project": "PXD063431",
+      "name": "240221_PB_ProteomeDiscoverer_all_Proteins_A549.txt",
+      "acquisition": "reused_local",
+      "integrity": {
+        "file": {
+          "path": "research/results/discovery_public_proteome_v1/imported/PXD063431_240221_PB_ProteomeDiscoverer_all_Proteins_A549.txt",
+          "bytes": 1237980,
+          "sha256": "2e2b8774f07df6bd25ebc33bb246dddfc7beef880a6a8b9f831ca508bd820301"
+        },
+        "valid": true,
+        "sha1": "8939e19ee4fa1ce3fe89878b331489d1e2d82583",
+        "upstream_sha1_matches": null,
+        "stored_bytes": 1237980,
+        "uncompressed_bytes": 1237980,
+        "gzip_crc_pass": false
+      },
+      "structure": {
+        "type": "delimited_table",
+        "data_rows": 5428,
+        "columns": 25,
+        "header": [
+          "Proteins Unique Sequence ID",
+          "Accession",
+          "Description",
+          "Gene Name",
+          "Exp q-value Combined",
+          "Contaminant",
+          "Marked as",
+          "Sum PEP Score",
+          "Coverage in Percent",
+          "Number of Peptides",
+          "Number of PSMs",
+          "Number of Unique Peptides",
+          "Number of AAs",
+          "MW in kDa",
+          "calc pI",
+          "A549_NT_1",
+          "A549_dexa_1",
+          "A549_NT_3",
+          "A549_dexa_3",
+          "A549_NT_4",
+          "A549_dexa_4",
+          "A549_NT_5",
+          "A549_dexa_5",
+          "Number of Protein Groups",
+          "Modifications"
+        ]
+      }
+    },
+    {
+      "project": "PXD029135",
+      "name": "median-normalized.txt",
+      "acquisition": "reused_local",
+      "integrity": {
+        "file": {
+          "path": "research/results/discovery_public_proteome_v1/sources/PXD029135_median-normalized_complete.txt",
+          "bytes": 2055550,
+          "sha256": "e4ea82e370223bf28b63c2a850134efb5f3d70fcd574368c768634a7edc68e46"
+        },
+        "valid": true,
+        "sha1": "c99601bc60192720d23fc10d18bc8ce50e5e849f",
+        "upstream_sha1_matches": true,
+        "stored_bytes": 2055550,
+        "uncompressed_bytes": 2055550,
+        "gzip_crc_pass": false
+      },
+      "structure": {
+        "type": "delimited_table",
+        "data_rows": 3072,
+        "columns": 46,
+        "header": [
+          "Protein.IDs",
+          "Majority.protein.IDs",
+          "Fasta.headers",
+          "Sample_1",
+          "Sample_2",
+          "Sample_3",
+          "Sample_4",
+          "Sample_5",
+          "Sample_6",
+          "Sample_7",
+          "Sample_8",
+          "Sample_9",
+          "Sample_10",
+          "Sample_11",
+          "Sample_12",
+          "Sample_13",
+          "Sample_14",
+          "Sample_15",
+          "Sample_16",
+          "Sample_17",
+          "Sample_18",
+          "Sample_19",
+          "Sample_20",
+          "Sample_21",
+          "Sample_22",
+          "Sample_23",
+          "Sample_24",
+          "Sample_25",
+          "Sample_26",
+          "Sample_27",
+          "Sample_28",
+          "Sample_29",
+          "Sample_30",
+          "Sample_31",
+          "Sample_32",
+          "Sample_33",
+          "Sample_34",
+          "Sample_35",
+          "Sample_36",
+          "Sample_37",
+          "Sample_38",
+          "Sample_39",
+          "Sample_40",
+          "Sample_41",
+          "Sample_42",
+          "Sample_43"
+        ]
+      }
+    }
+  ],
+  "new_verified": 20,
+  "failed_or_partial": []
+}

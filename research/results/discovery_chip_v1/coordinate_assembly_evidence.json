@@ -1,0 +1,181 @@
+{
+  "status": "coordinate_verified_hg19",
+  "assembly": "hg19/GRCh37",
+  "author_confirmed": false,
+  "compatible_builds": [
+    "hg19"
+  ],
+  "comparison": {
+    "hg18": {
+      "unknown_contigs": [],
+      "out_of_bounds": 12937,
+      "max_observed_end": {
+        "chr1": 249240673,
+        "chr10": 135513871,
+        "chr11": 134823801,
+        "chr12": 133841960,
+        "chr13": 115095467,
+        "chr14": 107254858,
+        "chr15": 102521463,
+        "chr16": 90232195,
+        "chr17": 81186300,
+        "chr18": 78005205,
+        "chr19": 59108875,
+        "chr2": 243152710,
+        "chr20": 62960592,
+        "chr21": 48118699,
+        "chr22": 51235335,
+        "chr3": 197944948,
+        "chr4": 191044303,
+        "chr5": 180868915,
+        "chr6": 171026814,
+        "chr7": 158892219,
+        "chr8": 146288708,
+        "chr9": 141150502,
+        "chrM": 16291,
+        "chrX": 155260484,
+        "chrY": 59363466
+      }
+    },
+    "hg19": {
+      "unknown_contigs": [],
+      "out_of_bounds": 0,
+      "max_observed_end": {
+        "chr1": 249240673,
+        "chr10": 135513871,
+        "chr11": 134823801,
+        "chr12": 133841960,
+        "chr13": 115095467,
+        "chr14": 107254858,
+        "chr15": 102521463,
+        "chr16": 90232195,
+        "chr17": 81186300,
+        "chr18": 78005205,
+        "chr19": 59108875,
+        "chr2": 243152710,
+        "chr20": 62960592,
+        "chr21": 48118699,
+        "chr22": 51235335,
+        "chr3": 197944948,
+        "chr4": 191044303,
+        "chr5": 180868915,
+        "chr6": 171026814,
+        "chr7": 158892219,
+        "chr8": 146288708,
+        "chr9": 141150502,
+        "chrM": 16291,
+        "chrX": 155260484,
+        "chrY": 59363466
+      }
+    },
+    "hg38": {
+      "unknown_contigs": [],
+      "out_of_bounds": 10043,
+      "max_observed_end": {
+        "chr1": 249240673,
+        "chr10": 135513871,
+        "chr11": 134823801,
+        "chr12": 133841960,
+        "chr13": 115095467,
+        "chr14": 107254858,
+        "chr15": 102521463,
+        "chr16": 90232195,
+        "chr17": 81186300,
+        "chr18": 78005205,
+        "chr19": 59108875,
+        "chr2": 243152710,
+        "chr20": 62960592,
+        "chr21": 48118699,
+        "chr22": 51235335,
+        "chr3": 197944948,
+        "chr4": 191044303,
+        "chr5": 180868915,
+        "chr6": 171026814,
+        "chr7": 158892219,
+        "chr8": 146288708,
+        "chr9": 141150502,
+        "chrM": 16291,
+        "chrX": 155260484,
+        "chrY": 59363466
+      }
+    },
+    "mm9": {
+      "unknown_contigs": [
+        "chr20",
+        "chr21",
+        "chr22"
+      ],
+      "out_of_bounds": 158229,
+      "max_observed_end": {
+        "chr1": 249240673,
+        "chr10": 135513871,
+        "chr11": 134823801,
+        "chr12": 133841960,
+        "chr13": 115095467,
+        "chr14": 107254858,
+        "chr15": 102521463,
+        "chr16": 90232195,
+        "chr17": 81186300,
+        "chr18": 78005205,
+        "chr19": 59108875,
+        "chr2": 243152710,
+        "chr20": 62960592,
+        "chr21": 48118699,
+        "chr22": 51235335,
+        "chr3": 197944948,
+        "chr4": 191044303,
+        "chr5": 180868915,
+        "chr6": 171026814,
+        "chr7": 158892219,
+        "chr8": 146288708,
+        "chr9": 141150502,
+        "chrM": 16291,
+        "chrX": 155260484,
+        "chrY": 59363466
+      }
+    }
+  },
+  "peak_files": 18,
+  "evidence": "Whole-genome fingerprint: all 18 files fit hg19 lengths; many coordinates impossible under hg18/hg38/mm9. Source authors did not confirm correction; original GEO mm9 metadata retained.",
+  "acquisitions": [
+    {
+      "url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg18/bigZips/hg18.chrom.sizes",
+      "status": "downloaded",
+      "path": "hg18.chrom.sizes",
+      "bytes": 855,
+      "sha256": "8b35ae05acbea68e53cc5fdc00e1e3862042ca857527418075e0e188349b4097",
+      "utc": "2026-10-09T02:03:17.560493+00:00"
+    },
+    {
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/46cd/5576583/baf6a0bfe233/rcmb.2016-0357OC_f3.jpg?source=continuation",
+      "status": "downloaded",
+      "path": "Sasse_2017_Figure3_verified.jpg",
+      "bytes": 40016,
+      "sha256": "28bdcaf4feb8c1cc16ee7effe989562f3717025c22dd85e5476e7ede80b96149",
+      "utc": "2026-10-09T02:03:18.822400+00:00"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5576583/bin/rcmb.2016-0357OC_f3.jpg?source=continuation",
+      "status": "failed",
+      "exit_code": 35,
+      "error": "curl: (35) Recv failure: Connection reset by peer\n"
+    },
+    {
+      "url": "https://api.genome.ucsc.edu/getData/track?genome=hg19;track=ncbiRefSeq;chrom=chr6;start=35000000;end=36000000",
+      "status": "downloaded",
+      "path": "hg19_FKBP5_annotation.json",
+      "bytes": 33579,
+      "sha256": "3d0e3b5e07f7566559bb2dbc5384a2bd4b5b7647344fddac633b9a915f42e456",
+      "utc": "2026-10-09T02:03:20.966350+00:00"
+    },
+    {
+      "url": "https://api.genome.ucsc.edu/getData/track?genome=hg38;track=ncbiRefSeq;chrom=chr6;start=35000000;end=36000000",
+      "status": "downloaded",
+      "path": "hg38_FKBP5_annotation.json",
+      "bytes": 84061,
+      "sha256": "7475e0d40f4599d1e5e8f110987530ec1564ad36879486dbf14e261cbfddd0db",
+      "utc": "2026-10-09T02:03:22.737453+00:00"
+    }
+  ],
+  "utc": "2026-10-09T02:03:31.788432+00:00"
+}

@@ -1,0 +1,39 @@
+{
+  "status": "completed",
+  "utc": "2026-10-10T09:33:09.029612+00:00",
+  "script": {
+    "path": "research/discovery/epithelial_protein.py",
+    "bytes": 19348,
+    "sha256": "c1fd9dcad144ab208ce2f488e084c2dc9f5367e4f342128236f65389ba64fc9d"
+  },
+  "raw_rows": {
+    "A549": 5428,
+    "HBEC": 3072
+  },
+  "QC_counts": {
+    "A549": {
+      "pass": 5397,
+      "contaminant_qvalue_or_unique_peptides": 31
+    },
+    "HBEC": {
+      "contaminant_or_reverse": 120,
+      "missing_or_mixed_gene_annotation": 230,
+      "pass": 2573,
+      "unresolved_all_member_identity": 143,
+      "mixed_all_member_identity": 6
+    }
+  },
+  "candidate_tests": 224,
+  "measurements": 136,
+  "individual_positions": 1680,
+  "global_tests": 13116,
+  "family_sizes": [
+    56,
+    56,
+    112
+  ],
+  "python": "3.12.3 (main, Mar 23 2026, 19:04:32) [GCC 13.3.0]",
+  "numpy": "1.26.4",
+  "scipy": "1.11.4",
+  "online_model_calls": 0
+}

@@ -1,0 +1,412 @@
+<Workflow Name="pe210308_18" Description="" CreationDate="3/6/2024 4:12:14 PM" CreatedFromUser="ONCOPROT" WaitForEarlierJobs="False" ContinueJob="False" Version="10" WorkflowType="Consensus" TemplateName="CWF_ID" Guid="" RLink="">
+	<WorkflowTree>
+		<WorkflowNode ProcessingNodeNumber="0" ProcessingNodeName="MsfFilesNode" FriendlyName="MSF Files" Description="Selects the .msf file(s) to be processed and copies the processing results into the result file." MainVersion="2" MinorVersion="0" Guid="439943dd-1692-450b-a8a8-b3f07633bc01" Category="Data Input" ParentProcessingNodeNumber="-1" Comment="" UsageConstraint="OnlyOncePerWorkflow" Publisher="Thermo Scientific" NodeState="Completed">
+			<ProcessingNodeInterfaces>
+				<ProcessingNodeInterface Kind="Functional" Name="IProcessingNode" />
+				<ProcessingNodeInterface Kind="Functional" Name="IStartProcessing" />
+			</ProcessingNodeInterfaces>
+			<ConnectionPoints>
+				<ConnectionPoint Direction="Outgoing" Multiplicity="Multiple" ConnectionRequirement="Optional" Mode="Manual" DisplayName="" ConnectionDataHandlingType="FileBased" ParentNodeConstraint="None">
+					<DataContracts>
+						<DataContract DataType="http://thermo.magellan.com/owl/DataTypes/Psms">
+							<DataTypeAttributes>
+								<DataTypeAttribute>http://thermo.magellan.com/owl/DataTypes/WithDecoys</DataTypeAttribute>
+							</DataTypeAttributes>
+						</DataContract>
+						<DataContract DataType="http://thermo.magellan.com/owl/DataTypes/Prsms">
+							<DataTypeAttributes>
+								<DataTypeAttribute>http://thermo.magellan.com/owl/DataTypes/WithDecoys</DataTypeAttribute>
+							</DataTypeAttributes>
+						</DataContract>
+						<DataContract DataType="http://thermo.magellan.com/owl/DataTypes/Proteins">
+							<DataTypeAttributes>
+								<DataTypeAttribute>http://thermo.magellan.com/owl/DataTypes/WithDecoys</DataTypeAttribute>
+							</DataTypeAttributes>
+						</DataContract>
+					</DataContracts>
+				</ConnectionPoint>
+			</ConnectionPoints>
+			<ProcessingNodeParameters>
+				<ProcessingNodeParameter Name="SpectrumStorage" FriendlyName="Spectra to Store" Category="1. Storage Settings" IsAdvanced="False" IntendedPurpose="SpectrumStorage" PurposeDetails="" IsValueSet="True" IsHidden="False" IsConfig="False" DisplayValue="Identified or Quantified">Identified or Quantified</ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="TraceStorage" FriendlyName="Feature Traces to Store" Category="1. Storage Settings" IsAdvanced="False" IntendedPurpose="TracesStorage" PurposeDetails="" IsValueSet="True" IsHidden="False" IsConfig="False" DisplayValue="All">All</ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="MergeResultsBySearchNodeType" FriendlyName="Merge Mode" Category="2. Merging of Identified Peptide and Proteins" IsAdvanced="False" IntendedPurpose="SearchEngineBasedDataMerging" PurposeDetails="" IsValueSet="True" IsHidden="False" IsConfig="False" DisplayValue="Globally by Search Engine Type">Globally by Search Engine Type</ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="ReportedFastaTitleLines" FriendlyName="Reported FASTA Title Lines" Category="3. FASTA Title Line Display" IsAdvanced="False" IntendedPurpose="Unknown" PurposeDetails="" IsValueSet="True" IsHidden="False" IsConfig="False" DisplayValue="Best match">Best match</ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="TitlelineParsingRule" FriendlyName="Title Line Rule" Category="3. FASTA Title Line Display" IsAdvanced="True" IntendedPurpose="Unknown" PurposeDetails="" IsValueSet="True" IsHidden="False" IsConfig="False" DisplayValue="standard">standard</ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="AccessionParsingRule" FriendlyName="Preferred Accession" Category="3. FASTA Title Line Display" IsAdvanced="True" IntendedPurpose="Unknown" PurposeDetails="" IsValueSet="False" IsHidden="False" IsConfig="False" DisplayValue=""></ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="TaxonomyParsingRule" FriendlyName="Preferred Taxonomy" Category="3. FASTA Title Line Display" IsAdvanced="True" IntendedPurpose="Unknown" PurposeDetails="" IsValueSet="False" IsHidden="False" IsConfig="False" DisplayValue=""></ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="AvoidExpressionParsingRule" FriendlyName="Avoid Expressions" Category="3. FASTA Title Line Display" IsAdvanced="True" IntendedPurpose="Unknown" PurposeDetails="" IsValueSet="False" IsHidden="False" IsConfig="False" DisplayValue=""></ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="MaximumDeltaCn" FriendlyName="Maximum Delta Cn" Category="4. PSM Filters" IsAdvanced="True" IntendedPurpose="ResultFilterSet" PurposeDetails="" IsValueSet="True" IsHidden="False" IsConfig="False" DisplayValue="0.05">0.05</ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="MaximumRank" FriendlyName="Maximum Rank" Category="4. PSM Filters" IsAdvanced="True" IntendedPurpose="ResultFilterSet" PurposeDetails="" IsValueSet="True" IsHidden="False" IsConfig="False" DisplayValue="0">0</ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="DeltaMassFilter" FriendlyName="Maximum Delta Mass" Category="4. PSM Filters" IsAdvanced="False" IntendedPurpose="Unknown" PurposeDetails="" IsValueSet="True" IsHidden="False" IsConfig="False" DisplayValue="0 ppm">0 ppm</ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="PeptideScoreName1" FriendlyName="1. Score" Category="4. PSM Filters" IsAdvanced="False" IntendedPurpose="Unknown" PurposeDetails="" IsValueSet="False" IsHidden="False" IsConfig="False" DisplayValue=""></ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="PeptideScoreThreshold1" FriendlyName="1. Threshold" Category="4. PSM Filters" IsAdvanced="False" IntendedPurpose="Unknown" PurposeDetails="" IsValueSet="False" IsHidden="False" IsConfig="False" DisplayValue="0">0</ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="PeptideScoreName2" FriendlyName="2. Score" Category="4. PSM Filters" IsAdvanced="False" IntendedPurpose="Unknown" PurposeDetails="" IsValueSet="False" IsHidden="False" IsConfig="False" DisplayValue=""></ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="PeptideScoreThreshold2" FriendlyName="2. Threshold" Category="4. PSM Filters" IsAdvanced="False" IntendedPurpose="Unknown" PurposeDetails="" IsValueSet="False" IsHidden="False" IsConfig="False" DisplayValue="0">0</ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="PeptideScoreName3" FriendlyName="3. Score" Category="4. PSM Filters" IsAdvanced="False" IntendedPurpose="Unknown" PurposeDetails="" IsValueSet="False" IsHidden="False" IsConfig="False" DisplayValue=""></ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="PeptideScoreThreshold3" FriendlyName="3. Threshold" Category="4. PSM Filters" IsAdvanced="False" IntendedPurpose="Unknown" PurposeDetails="" IsValueSet="False" IsHidden="False" IsConfig="False" DisplayValue="0">0</ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="PeptideScoreName4" FriendlyName="4. Score" Category="4. PSM Filters" IsAdvanced="False" IntendedPurpose="Unknown" PurposeDetails="" IsValueSet="False" IsHidden="False" IsConfig="False" DisplayValue=""></ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="PeptideScoreThreshold4" FriendlyName="4. Threshold" Category="4. PSM Filters" IsAdvanced="False" IntendedPurpose="Unknown" PurposeDetails="" IsValueSet="False" IsHidden="False" IsConfig="False" DisplayValue="0">0</ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="PeptideScoreName5" FriendlyName="5. Score" Category="4. PSM Filters" IsAdvanced="False" IntendedPurpose="Unknown" PurposeDetails="" IsValueSet="False" IsHidden="False" IsConfig="False" DisplayValue=""></ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="PeptideScoreThreshold5" FriendlyName="5. Threshold" Category="4. PSM Filters" IsAdvanced="False" IntendedPurpose="Unknown" PurposeDetails="" IsValueSet="False" IsHidden="False" IsConfig="False" DisplayValue="0">0</ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="PeptideScoreName6" FriendlyName="6. Score" Category="4. PSM Filters" IsAdvanced="True" IntendedPurpose="Unknown" PurposeDetails="" IsValueSet="False" IsHidden="False" IsConfig="False" DisplayValue=""></ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="PeptideScoreThreshold6" FriendlyName="6. Threshold" Category="4. PSM Filters" IsAdvanced="True" IntendedPurpose="Unknown" PurposeDetails="" IsValueSet="False" IsHidden="False" IsConfig="False" DisplayValue="0">0</ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="PeptideScoreName7" FriendlyName="7. Score" Category="4. PSM Filters" IsAdvanced="True" IntendedPurpose="Unknown" PurposeDetails="" IsValueSet="False" IsHidden="False" IsConfig="False" DisplayValue=""></ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="PeptideScoreThreshold7" FriendlyName="7. Threshold" Category="4. PSM Filters" IsAdvanced="True" IntendedPurpose="Unknown" PurposeDetails="" IsValueSet="False" IsHidden="False" IsConfig="False" DisplayValue="0">0</ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="PeptideScoreName8" FriendlyName="8. Score" Category="4. PSM Filters" IsAdvanced="True" IntendedPurpose="Unknown" PurposeDetails="" IsValueSet="False" IsHidden="False" IsConfig="False" DisplayValue=""></ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="PeptideScoreThreshold8" FriendlyName="8. Threshold" Category="4. PSM Filters" IsAdvanced="True" IntendedPurpose="Unknown" PurposeDetails="" IsValueSet="False" IsHidden="False" IsConfig="False" DisplayValue="0">0</ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="PeptideScoreName9" FriendlyName="9. Score" Category="4. PSM Filters" IsAdvanced="True" IntendedPurpose="Unknown" PurposeDetails="" IsValueSet="False" IsHidden="False" IsConfig="False" DisplayValue=""></ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="PeptideScoreThreshold9" FriendlyName="9. Threshold" Category="4. PSM Filters" IsAdvanced="True" IntendedPurpose="Unknown" PurposeDetails="" IsValueSet="False" IsHidden="False" IsConfig="False" DisplayValue="0">0</ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="PeptideScoreName10" FriendlyName="10. Score" Category="4. PSM Filters" IsAdvanced="True" IntendedPurpose="Unknown" PurposeDetails="" IsValueSet="False" IsHidden="False" IsConfig="False" DisplayValue=""></ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="PeptideScoreThreshold10" FriendlyName="10. Threshold" Category="4. PSM Filters" IsAdvanced="True" IntendedPurpose="Unknown" PurposeDetails="" IsValueSet="False" IsHidden="False" IsConfig="False" DisplayValue="0">0</ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="MSFFileNames" FriendlyName="MSF File(s)" Category="Hidden Parameters" IsAdvanced="False" IntendedPurpose="MSFFileContainer" PurposeDetails="" IsValueSet="True" IsHidden="True" IsConfig="False" DisplayValue="D:\Proteome Discoverer Data\TRIAN_Thomas\pe210308\pe210308_18.msf">D:\Proteome Discoverer Data\TRIAN_Thomas\pe210308\pe210308_18.msf</ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="PeptideScoreNames" FriendlyName="PSM scores" Category="Scores" IsAdvanced="False" IntendedPurpose="Unknown" PurposeDetails="" IsValueSet="True" IsHidden="True" IsConfig="True" DisplayValue="Mascot: Ions Score; Sequest HT: XCorr; SEQUEST: XCorr; MSPepSearch: dot Score; MSPepSearch: rev-dot Score; MSPepSearch: MSPepSearch Score; PMI-Byonic: |Log Prob|; PMI-Byonic: Byonic Score; MS Amanda: Amanda Score">Mascot: Ions Score; Sequest HT: XCorr; SEQUEST: XCorr; MSPepSearch: dot Score; MSPepSearch: rev-dot Score; MSPepSearch: MSPepSearch Score; PMI-Byonic: |Log Prob|; PMI-Byonic: Byonic Score; MS Amanda: Amanda Score</ProcessingNodeParameter>
+			</ProcessingNodeParameters>
+			<ProcessingNodePosition X="123.5" Y="55" />
+		</WorkflowNode>
+		<WorkflowNode ProcessingNodeNumber="1" ProcessingNodeName="PsmGroupingNode" FriendlyName="PSM Grouper" Description="Groups redundantly identified PSMs into peptide groups." MainVersion="1" MinorVersion="2" Guid="436914ff-45de-4c2c-8247-1831e0edf5a3" Category="Bottom-Up Analysis" ParentProcessingNodeNumber="0" Comment="" UsageConstraint="OnlyOncePerWorkflow" Publisher="Thermo Scientific" NodeState="Completed">
+			<ProcessingNodeInterfaces>
+				<ProcessingNodeInterface Kind="Functional" Name="IProcessingNode" />
+			</ProcessingNodeInterfaces>
+			<ConnectionPoints>
+				<ConnectionPoint Direction="Incoming" Multiplicity="Multiple" ConnectionRequirement="RequiredAtDesignTime" Mode="AutomaticToAllPossibleParents" DisplayName="Data Input" ConnectionDataHandlingType="FileBased" ParentNodeConstraint="OnlyToGeneratorsOfRequestedData">
+					<DataContracts>
+						<DataContract DataType="http://thermo.magellan.com/owl/DataTypes/Psms">
+							<DataTypeAttributes />
+						</DataContract>
+					</DataContracts>
+				</ConnectionPoint>
+				<ConnectionPoint Direction="Outgoing" Multiplicity="Multiple" ConnectionRequirement="Optional" Mode="Manual" DisplayName="Grouping" ConnectionDataHandlingType="FileBased" ParentNodeConstraint="None">
+					<DataContracts>
+						<DataContract DataType="http://thermo.magellan.com/owl/DataTypes/PeptideGroups">
+							<DataTypeAttributes />
+						</DataContract>
+					</DataContracts>
+				</ConnectionPoint>
+			</ConnectionPoints>
+			<NodeGroupConstraints>
+				<NodeGroupConstraint Name="Top-Down Analysis" Constraint="NotTogetherWithGroup" />
+				<NodeGroupConstraint Name="Grouping" Constraint="NotTogetherWithGroup" />
+				<NodeGroupConstraint Name="Grouping" Constraint="None" />
+			</NodeGroupConstraints>
+			<ProcessingNodeParameters>
+				<ProcessingNodeParameter Name="MinModificationSiteProbability" FriendlyName="Site Probability Threshold" Category="1. Peptide Group Modifications" IsAdvanced="False" IntendedPurpose="MinimumModificationSiteProbability" PurposeDetails="" IsValueSet="True" IsHidden="False" IsConfig="False" DisplayValue="75">75</ProcessingNodeParameter>
+			</ProcessingNodeParameters>
+			<ProcessingNodePosition X="123.5" Y="153.521575927734" />
+		</WorkflowNode>
+		<WorkflowNode ProcessingNodeNumber="2" ProcessingNodeName="ReportPeptideValidatorNode" FriendlyName="Peptide Validator" Description="Calculates confidences for PSMs and peptides based on the specified FDR targets.&#xD;&#xA;Qvality is used to derive q-values and posterior error probabilities (PEPs) for the peptides from the PEPs of the PSMs if available.&#xD;&#xA;If no PEPs are available for the PSMs, q-values and PEPs are calculated from the distribution of scores from the target and decoy searches." MainVersion="1" MinorVersion="2" Guid="db7a1b94-76ad-420b-8e39-c285b2963197" Category="Bottom-Up Analysis" ParentProcessingNodeNumber="1" Comment="" UsageConstraint="OnlyOncePerWorkflow" Publisher="Thermo Scientific" NodeState="Completed">
+			<ProcessingNodeInterfaces>
+				<ProcessingNodeInterface Kind="Functional" Name="IProcessingNode" />
+			</ProcessingNodeInterfaces>
+			<ConnectionPoints>
+				<ConnectionPoint Direction="Incoming" Multiplicity="Multiple" ConnectionRequirement="RequiredAtDesignTime" Mode="AutomaticToAllPossibleParents" DisplayName="Grouping" ConnectionDataHandlingType="FileBased" ParentNodeConstraint="OnlyToGeneratorsOfRequestedData">
+					<DataContracts>
+						<DataContract DataType="http://thermo.magellan.com/owl/DataTypes/Psms">
+							<DataTypeAttributes>
+								<DataTypeAttribute>http://thermo.magellan.com/owl/DataTypes/WithDecoys</DataTypeAttribute>
+							</DataTypeAttributes>
+						</DataContract>
+						<DataContract DataType="http://thermo.magellan.com/owl/DataTypes/PeptideGroups">
+							<DataTypeAttributes />
+						</DataContract>
+					</DataContracts>
+				</ConnectionPoint>
+				<ConnectionPoint Direction="Outgoing" Multiplicity="Multiple" ConnectionRequirement="Optional" Mode="Manual" DisplayName="Validation" ConnectionDataHandlingType="FileBased" ParentNodeConstraint="None">
+					<DataContracts>
+						<DataContract DataType="http://thermo.magellan.com/owl/DataTypes/Psms">
+							<DataTypeAttributes>
+								<DataTypeAttribute>http://thermo.magellan.com/owl/DataTypes/ScoredWithPEP</DataTypeAttribute>
+								<DataTypeAttribute>http://thermo.magellan.com/owl/DataTypes/ScoredWithQValue</DataTypeAttribute>
+								<DataTypeAttribute>http://thermo.magellan.com/owl/DataTypes/Validated</DataTypeAttribute>
+								<DataTypeAttribute>http://thermo.magellan.com/owl/DataTypes/WithDecoys</DataTypeAttribute>
+							</DataTypeAttributes>
+						</DataContract>
+						<DataContract DataType="http://thermo.magellan.com/owl/DataTypes/PeptideGroups">
+							<DataTypeAttributes>
+								<DataTypeAttribute>http://thermo.magellan.com/owl/DataTypes/ScoredWithPEP</DataTypeAttribute>
+								<DataTypeAttribute>http://thermo.magellan.com/owl/DataTypes/ScoredWithQValue</DataTypeAttribute>
+								<DataTypeAttribute>http://thermo.magellan.com/owl/DataTypes/Validated</DataTypeAttribute>
+								<DataTypeAttribute>http://thermo.magellan.com/owl/DataTypes/WithDecoys</DataTypeAttribute>
+							</DataTypeAttributes>
+						</DataContract>
+					</DataContracts>
+				</ConnectionPoint>
+			</ConnectionPoints>
+			<NodeGroupConstraints>
+				<NodeGroupConstraint Name="PeptideValidation" Constraint="NotTogetherWithGroup" />
+				<NodeGroupConstraint Name="PeptideValidation" Constraint="None" />
+			</NodeGroupConstraints>
+			<ProcessingNodeParameters>
+				<ProcessingNodeParameter Name="ChosenValidationMode" FriendlyName="Validation Mode" Category="1. General Validation Settings" IsAdvanced="False" IntendedPurpose="Unknown" PurposeDetails="" IsValueSet="True" IsHidden="False" IsConfig="False" DisplayValue="Automatic (Control peptide level error rate if possible)">Automatic (Control peptide level error rate if possible)</ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="TargetFPRHigh" FriendlyName="Target FDR (Strict) for PSMs" Category="1. General Validation Settings" IsAdvanced="False" IntendedPurpose="PeptideValidation" PurposeDetails="PeptideValidationPurpose/HighConfidenceTarget" IsValueSet="True" IsHidden="False" IsConfig="False" DisplayValue="0.01">0.01</ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="TargetFPRMiddle" FriendlyName="Target FDR (Relaxed) for PSMs" Category="1. General Validation Settings" IsAdvanced="False" IntendedPurpose="PeptideValidation" PurposeDetails="PeptideValidationPurpose/MiddleConfidenceTarget" IsValueSet="True" IsHidden="False" IsConfig="False" DisplayValue="0.05">0.05</ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="TargetPeptideFPRHigh" FriendlyName="Target FDR (Strict) for Peptides" Category="1. General Validation Settings" IsAdvanced="False" IntendedPurpose="PeptideValidation" PurposeDetails="PeptideValidationPurpose/HighConfidencePeptideGroupTarget" IsValueSet="True" IsHidden="False" IsConfig="False" DisplayValue="0.01">0.01</ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="TargetPeptideFPRMiddle" FriendlyName="Target FDR (Relaxed) for Peptides" Category="1. General Validation Settings" IsAdvanced="False" IntendedPurpose="PeptideValidation" PurposeDetails="PeptideValidationPurpose/MiddleConfidencePeptideGroupTarget" IsValueSet="True" IsHidden="False" IsConfig="False" DisplayValue="0.05">0.05</ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="ValidationBasedOn" FriendlyName="Validation Based on" Category="2. Specific Validation Settings" IsAdvanced="True" IntendedPurpose="PeptideValidation" PurposeDetails="PeptideValidationPurpose.PercolatorConfidenceAssignment" IsValueSet="True" IsHidden="False" IsConfig="False" DisplayValue="q-Value">q-Value</ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="TargetDecoySelection" FriendlyName="Target/Decoy Selection for PSM Level FDR Calculation Based on Score" Category="2. Specific Validation Settings" IsAdvanced="False" IntendedPurpose="PeptideValidation" PurposeDetails="PeptideValidationPurpose/TargetDecoySelectionMode" IsValueSet="True" IsHidden="False" IsConfig="False" DisplayValue="Automatic">Automatic</ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="ResetConfidence" FriendlyName="Reset Confidences for Nodes without Decoy Search (Fixed score thresholds)" Category="2. Specific Validation Settings" IsAdvanced="False" IntendedPurpose="PeptideValidation" PurposeDetails="" IsValueSet="True" IsHidden="False" IsConfig="False" DisplayValue="False">False</ProcessingNodeParameter>
+			</ProcessingNodeParameters>
+			<ProcessingNodePosition X="123.5" Y="252.04313659668" />
+		</WorkflowNode>
+		<WorkflowNode ProcessingNodeNumber="3" ProcessingNodeName="PeptideFilterNode" FriendlyName="Peptide and Protein Filter" Description="Filters the peptides and proteins according to the specified filter rules." MainVersion="1" MinorVersion="5" Guid="2e240d11-920a-43d1-bb45-79c81bfd34c6" Category="Bottom-Up Analysis" ParentProcessingNodeNumber="2" Comment="" UsageConstraint="OnlyOncePerWorkflow" Publisher="Thermo Scientific" NodeState="Completed">
+			<ProcessingNodeInterfaces>
+				<ProcessingNodeInterface Kind="Functional" Name="IProcessingNode" />
+			</ProcessingNodeInterfaces>
+			<ConnectionPoints>
+				<ConnectionPoint Direction="Incoming" Multiplicity="Multiple" ConnectionRequirement="RequiredAtDesignTime" Mode="AutomaticToAllPossibleParents" DisplayName="Validation" ConnectionDataHandlingType="FileBased" ParentNodeConstraint="OnlyToGeneratorsOfRequestedData">
+					<DataContracts>
+						<DataContract DataType="http://thermo.magellan.com/owl/DataTypes/Psms">
+							<DataTypeAttributes>
+								<DataTypeAttribute>http://thermo.magellan.com/owl/DataTypes/Validated</DataTypeAttribute>
+							</DataTypeAttributes>
+						</DataContract>
+						<DataContract DataType="http://thermo.magellan.com/owl/DataTypes/PeptideGroups">
+							<DataTypeAttributes>
+								<DataTypeAttribute>http://thermo.magellan.com/owl/DataTypes/Validated</DataTypeAttribute>
+							</DataTypeAttributes>
+						</DataContract>
+						<DataContract DataType="http://thermo.magellan.com/owl/DataTypes/Proteins">
+							<DataTypeAttributes />
+						</DataContract>
+					</DataContracts>
+				</ConnectionPoint>
+				<ConnectionPoint Direction="Outgoing" Multiplicity="Multiple" ConnectionRequirement="Optional" Mode="Manual" DisplayName="Filter" ConnectionDataHandlingType="FileBased" ParentNodeConstraint="None">
+					<DataContracts>
+						<DataContract DataType="http://thermo.magellan.com/owl/DataTypes/Psms">
+							<DataTypeAttributes>
+								<DataTypeAttribute>http://thermo.magellan.com/owl/DataTypes/Filtered</DataTypeAttribute>
+							</DataTypeAttributes>
+						</DataContract>
+						<DataContract DataType="http://thermo.magellan.com/owl/DataTypes/PeptideGroups">
+							<DataTypeAttributes>
+								<DataTypeAttribute>http://thermo.magellan.com/owl/DataTypes/Filtered</DataTypeAttribute>
+							</DataTypeAttributes>
+						</DataContract>
+						<DataContract DataType="http://thermo.magellan.com/owl/DataTypes/Proteins">
+							<DataTypeAttributes>
+								<DataTypeAttribute>http://thermo.magellan.com/owl/DataTypes/Filtered</DataTypeAttribute>
+							</DataTypeAttributes>
+						</DataContract>
+					</DataContracts>
+				</ConnectionPoint>
+			</ConnectionPoints>
+			<NodeGroupConstraints>
+				<NodeGroupConstraint Name="Top-Down Analysis" Constraint="NotTogetherWithGroup" />
+				<NodeGroupConstraint Name="Bottom-Up Analysis" Constraint="None" />
+			</NodeGroupConstraints>
+			<ProcessingNodeParameters>
+				<ProcessingNodeParameter Name="PeptideConfidenceFilter" FriendlyName="Peptide Confidence At Least" Category="1. Peptide Filters" IsAdvanced="False" IntendedPurpose="Unknown" PurposeDetails="" IsValueSet="True" IsHidden="False" IsConfig="False" DisplayValue="High">High</ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="KeepLowerConfidentPeptides" FriendlyName="Keep Lower Confident PSMs" Category="1. Peptide Filters" IsAdvanced="False" IntendedPurpose="Unknown" PurposeDetails="" IsValueSet="True" IsHidden="False" IsConfig="False" DisplayValue="False">False</ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="PeptideLengthFilter" FriendlyName="Minimum Peptide Length" Category="1. Peptide Filters" IsAdvanced="False" IntendedPurpose="MinPeptideLength" PurposeDetails="" IsValueSet="True" IsHidden="False" IsConfig="False" DisplayValue="6">6</ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="RemovePeptidesWithoutProteinReference" FriendlyName="Remove Peptides Without Protein Reference" Category="1. Peptide Filters" IsAdvanced="False" IntendedPurpose="Unknown" PurposeDetails="" IsValueSet="True" IsHidden="False" IsConfig="False" DisplayValue="False">False</ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="NumberOfPeptidesRequiredFilter" FriendlyName="Minimum Number of Peptide Sequences" Category="2. Protein Filters" IsAdvanced="False" IntendedPurpose="Unknown" PurposeDetails="" IsValueSet="True" IsHidden="False" IsConfig="False" DisplayValue="1">1</ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="OnlyCountPeptidesWithRankOne" FriendlyName="Count Only Rank 1 Peptides" Category="2. Protein Filters" IsAdvanced="False" IntendedPurpose="Unknown" PurposeDetails="" IsValueSet="True" IsHidden="False" IsConfig="False" DisplayValue="False">False</ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="OnlyCountPeptidesInTopScoredProteinReference" FriendlyName="Count Peptides Only for Top Scored Protein" Category="2. Protein Filters" IsAdvanced="False" IntendedPurpose="Unknown" PurposeDetails="" IsValueSet="True" IsHidden="False" IsConfig="False" DisplayValue="False">False</ProcessingNodeParameter>
+			</ProcessingNodeParameters>
+			<ProcessingNodePosition X="123.5" Y="350.564575195313" />
+		</WorkflowNode>
+		<WorkflowNode ProcessingNodeNumber="6" ProcessingNodeName="ProteinScorerNode" FriendlyName="Protein Scorer" Description="Calculates the protein scores using the filtered list of identified PSMs according to the specification of the search engines used." MainVersion="1" MinorVersion="2" Guid="dc54a6d4-98a4-40f1-8d39-9001c7926df9" Category="Bottom-Up Analysis" ParentProcessingNodeNumber="3" Comment="" UsageConstraint="OnlyOncePerWorkflow" Publisher="Thermo Scientific" NodeState="Completed">
+			<ProcessingNodeInterfaces>
+				<ProcessingNodeInterface Kind="Functional" Name="IProcessingNode" />
+			</ProcessingNodeInterfaces>
+			<ConnectionPoints>
+				<ConnectionPoint Direction="Incoming" Multiplicity="Multiple" ConnectionRequirement="RequiredAtDesignTime" Mode="AutomaticToAllPossibleParents" DisplayName="Filter" ConnectionDataHandlingType="FileBased" ParentNodeConstraint="OnlyToGeneratorsOfRequestedData">
+					<DataContracts>
+						<DataContract DataType="http://thermo.magellan.com/owl/DataTypes/Psms">
+							<DataTypeAttributes>
+								<DataTypeAttribute>http://thermo.magellan.com/owl/DataTypes/Filtered</DataTypeAttribute>
+							</DataTypeAttributes>
+						</DataContract>
+						<DataContract DataType="http://thermo.magellan.com/owl/DataTypes/Proteins">
+							<DataTypeAttributes>
+								<DataTypeAttribute>http://thermo.magellan.com/owl/DataTypes/Filtered</DataTypeAttribute>
+							</DataTypeAttributes>
+						</DataContract>
+					</DataContracts>
+				</ConnectionPoint>
+				<ConnectionPoint Direction="Outgoing" Multiplicity="Multiple" ConnectionRequirement="Optional" Mode="Manual" DisplayName="Validation" ConnectionDataHandlingType="FileBased" ParentNodeConstraint="None">
+					<DataContracts>
+						<DataContract DataType="http://thermo.magellan.com/owl/DataTypes/Proteins">
+							<DataTypeAttributes>
+								<DataTypeAttribute>http://thermo.magellan.com/owl/DataTypes/ScoredWithNativeScore</DataTypeAttribute>
+							</DataTypeAttributes>
+						</DataContract>
+					</DataContracts>
+				</ConnectionPoint>
+			</ConnectionPoints>
+			<NodeGroupConstraints>
+				<NodeGroupConstraint Name="Top-Down Analysis" Constraint="NotTogetherWithGroup" />
+				<NodeGroupConstraint Name="Bottom-Up Analysis" Constraint="None" />
+			</NodeGroupConstraints>
+			<ProcessingNodeParameters />
+			<ProcessingNodePosition X="123.5" Y="449.086181640625" />
+		</WorkflowNode>
+		<WorkflowNode ProcessingNodeNumber="4" ProcessingNodeName="ProteinFDRValidatorNode" FriendlyName="Protein FDR Validator" Description="Assigns a protein confidence based on the experimental q-values calculated from the FDRs derived at various score thresholds from the ranked lists of target and decoy protein scores." MainVersion="1" MinorVersion="1" Guid="de8abe78-ffa7-417d-b135-f2fd6aeb4b4e" Category="Bottom-Up Analysis" ParentProcessingNodeNumber="6" Comment="" UsageConstraint="OnlyOncePerWorkflow" Publisher="Thermo Scientific" NodeState="Completed">
+			<ProcessingNodeInterfaces>
+				<ProcessingNodeInterface Kind="Functional" Name="IProcessingNode" />
+			</ProcessingNodeInterfaces>
+			<ConnectionPoints>
+				<ConnectionPoint Direction="Incoming" Multiplicity="Multiple" ConnectionRequirement="RequiredAtDesignTime" Mode="AutomaticToAllPossibleParents" DisplayName="Protein Scoring" ConnectionDataHandlingType="FileBased" ParentNodeConstraint="OnlyToGeneratorsOfRequestedData">
+					<DataContracts>
+						<DataContract DataType="http://thermo.magellan.com/owl/DataTypes/Proteins">
+							<DataTypeAttributes>
+								<DataTypeAttribute>http://thermo.magellan.com/owl/DataTypes/ScoredWithNativeScore</DataTypeAttribute>
+							</DataTypeAttributes>
+						</DataContract>
+					</DataContracts>
+				</ConnectionPoint>
+				<ConnectionPoint Direction="Outgoing" Multiplicity="Multiple" ConnectionRequirement="Optional" Mode="Manual" DisplayName="Protein Validation" ConnectionDataHandlingType="FileBased" ParentNodeConstraint="None">
+					<DataContracts>
+						<DataContract DataType="http://thermo.magellan.com/owl/DataTypes/Proteins">
+							<DataTypeAttributes>
+								<DataTypeAttribute>http://thermo.magellan.com/owl/DataTypes/Validated</DataTypeAttribute>
+							</DataTypeAttributes>
+						</DataContract>
+					</DataContracts>
+				</ConnectionPoint>
+			</ConnectionPoints>
+			<NodeGroupConstraints>
+				<NodeGroupConstraint Name="Protein Validation" Constraint="None" />
+			</NodeGroupConstraints>
+			<ProcessingNodeParameters>
+				<ProcessingNodeParameter Name="HighConfidenceThreshold" FriendlyName="Target FDR (Strict)" Category="1. Confidence Thresholds" IsAdvanced="False" IntendedPurpose="Unknown" PurposeDetails="" IsValueSet="True" IsHidden="False" IsConfig="False" DisplayValue="0.01">0.01</ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="MediumConfidenceThreshold" FriendlyName="Target FDR (Relaxed)" Category="1. Confidence Thresholds" IsAdvanced="False" IntendedPurpose="Unknown" PurposeDetails="" IsValueSet="True" IsHidden="False" IsConfig="False" DisplayValue="0.05">0.05</ProcessingNodeParameter>
+			</ProcessingNodeParameters>
+			<ProcessingNodePosition X="123.5" Y="547.607666015625" />
+		</WorkflowNode>
+		<WorkflowNode ProcessingNodeNumber="5" ProcessingNodeName="ProteinGroupingNode" FriendlyName="Protein Grouping" Description="Groups the proteins into protein groups that share the same set or a true sub set of identified peptides.&#xD;&#xA;It thereby creates a parsimonious list of master proteins." MainVersion="1" MinorVersion="4" Guid="f61cc870-ad9a-4437-b22f-46bf7ca2344d" Category="Bottom-Up Analysis" ParentProcessingNodeNumber="6" Comment="" UsageConstraint="OnlyOncePerWorkflow" Publisher="Thermo Scientific" NodeState="Completed">
+			<ProcessingNodeInterfaces>
+				<ProcessingNodeInterface Kind="Functional" Name="IProcessingNode" />
+			</ProcessingNodeInterfaces>
+			<ConnectionPoints>
+				<ConnectionPoint Direction="Incoming" Multiplicity="Multiple" ConnectionRequirement="RequiredAtDesignTime" Mode="AutomaticToAllPossibleParents" DisplayName="Protein Scoring" ConnectionDataHandlingType="FileBased" ParentNodeConstraint="OnlyToGeneratorsOfRequestedData">
+					<DataContracts>
+						<DataContract DataType="http://thermo.magellan.com/owl/DataTypes/Psms">
+							<DataTypeAttributes>
+								<DataTypeAttribute>http://thermo.magellan.com/owl/DataTypes/Filtered</DataTypeAttribute>
+								<DataTypeAttribute>http://thermo.magellan.com/owl/DataTypes/Validated</DataTypeAttribute>
+							</DataTypeAttributes>
+						</DataContract>
+						<DataContract DataType="http://thermo.magellan.com/owl/DataTypes/Proteins">
+							<DataTypeAttributes>
+								<DataTypeAttribute>http://thermo.magellan.com/owl/DataTypes/Filtered</DataTypeAttribute>
+								<DataTypeAttribute>http://thermo.magellan.com/owl/DataTypes/ScoredWithNativeScore</DataTypeAttribute>
+							</DataTypeAttributes>
+						</DataContract>
+					</DataContracts>
+				</ConnectionPoint>
+				<ConnectionPoint Direction="Outgoing" Multiplicity="Multiple" ConnectionRequirement="Optional" Mode="Manual" DisplayName="Protein Grouping" ConnectionDataHandlingType="FileBased" ParentNodeConstraint="None">
+					<DataContracts>
+						<DataContract DataType="http://thermo.magellan.com/owl/DataTypes/ProteinGroups">
+							<DataTypeAttributes />
+						</DataContract>
+					</DataContracts>
+				</ConnectionPoint>
+			</ConnectionPoints>
+			<NodeGroupConstraints>
+				<NodeGroupConstraint Name="Top-Down Analysis" Constraint="NotTogetherWithGroup" />
+				<NodeGroupConstraint Name="Bottom-Up Analysis" Constraint="None" />
+			</NodeGroupConstraints>
+			<ProcessingNodeParameters>
+				<ProcessingNodeParameter Name="ApplyStrictParsimony" FriendlyName="Apply strict parsimony principle" Category="1. Protein Grouping" IsAdvanced="False" IntendedPurpose="FilterSettingForProteinGrouping" PurposeDetails="ApplyStrictParsimony" IsValueSet="True" IsHidden="False" IsConfig="False" DisplayValue="True">True</ProcessingNodeParameter>
+			</ProcessingNodeParameters>
+			<ProcessingNodePosition X="353.276031494141" Y="547.607666015625" />
+		</WorkflowNode>
+		<WorkflowNode ProcessingNodeNumber="8" ProcessingNodeName="PeptideInProteinAnnotationNode" FriendlyName="Peptide in Protein Annotation" Description="Annotates the flanking residues, the position of the peptide in a protein and the position of peptide modifications in the context of a protein to PSMs, peptide groups and proteins." MainVersion="1" MinorVersion="0" Guid="bbee5a14-8821-49cb-beac-90ebf860bbf1" Category="Annotation" ParentProcessingNodeNumber="5" Comment="" UsageConstraint="OnlyOncePerWorkflow" Publisher="Thermo Scientific" NodeState="Completed">
+			<ProcessingNodeInterfaces>
+				<ProcessingNodeInterface Kind="Functional" Name="IProcessingNode" />
+			</ProcessingNodeInterfaces>
+			<ConnectionPoints>
+				<ConnectionPoint Direction="Incoming" Multiplicity="Multiple" ConnectionRequirement="RequiredAtDesignTime" Mode="AutomaticToAllPossibleParents" DisplayName="Protein Grouping" ConnectionDataHandlingType="FileBased" ParentNodeConstraint="OnlyToGeneratorsOfRequestedData">
+					<DataContracts>
+						<DataContract DataType="http://thermo.magellan.com/owl/DataTypes/Psms">
+							<DataTypeAttributes>
+								<DataTypeAttribute>http://thermo.magellan.com/owl/DataTypes/Filtered</DataTypeAttribute>
+								<DataTypeAttribute>http://thermo.magellan.com/owl/DataTypes/Validated</DataTypeAttribute>
+							</DataTypeAttributes>
+						</DataContract>
+						<DataContract DataType="http://thermo.magellan.com/owl/DataTypes/PeptideGroups">
+							<DataTypeAttributes />
+						</DataContract>
+						<DataContract DataType="http://thermo.magellan.com/owl/DataTypes/ProteinGroups">
+							<DataTypeAttributes />
+						</DataContract>
+						<DataContract DataType="http://thermo.magellan.com/owl/DataTypes/Proteins">
+							<DataTypeAttributes />
+						</DataContract>
+					</DataContracts>
+				</ConnectionPoint>
+				<ConnectionPoint Direction="Incoming" Multiplicity="Multiple" ConnectionRequirement="Optional" Mode="OnlyImplicitConnectionToAllPossibleParents" DisplayName="PTM Analysis" ConnectionDataHandlingType="FileBased" ParentNodeConstraint="OnlyToGeneratorsOfRequestedData">
+					<DataContracts>
+						<DataContract DataType="http://thermo.magellan.com/owl/DataTypes/PeptideModificationIsoformGroups">
+							<DataTypeAttributes />
+						</DataContract>
+					</DataContracts>
+				</ConnectionPoint>
+				<ConnectionPoint Direction="Outgoing" Multiplicity="Multiple" ConnectionRequirement="Optional" Mode="Manual" DisplayName="" ConnectionDataHandlingType="FileBased" ParentNodeConstraint="None">
+					<DataContracts>
+						<DataContract DataType="http://thermo.magellan.com/owl/DataTypes/Proteins">
+							<DataTypeAttributes>
+								<DataTypeAttribute>http://thermo.magellan.com/owl/DataTypes/AnnotatedWithPeptideInProteinInformation</DataTypeAttribute>
+							</DataTypeAttributes>
+						</DataContract>
+						<DataContract DataType="http://thermo.magellan.com/owl/DataTypes/Psms">
+							<DataTypeAttributes>
+								<DataTypeAttribute>http://thermo.magellan.com/owl/DataTypes/AnnotatedWithPeptideInProteinInformation</DataTypeAttribute>
+							</DataTypeAttributes>
+						</DataContract>
+						<DataContract DataType="http://thermo.magellan.com/owl/DataTypes/PeptideGroups">
+							<DataTypeAttributes>
+								<DataTypeAttribute>http://thermo.magellan.com/owl/DataTypes/AnnotatedWithPeptideInProteinInformation</DataTypeAttribute>
+							</DataTypeAttributes>
+						</DataContract>
+						<DataContract DataType="http://thermo.magellan.com/owl/DataTypes/PeptideModificationIsoformGroups">
+							<DataTypeAttributes>
+								<DataTypeAttribute>http://thermo.magellan.com/owl/DataTypes/AnnotatedWithPeptideInProteinInformation</DataTypeAttribute>
+							</DataTypeAttributes>
+						</DataContract>
+					</DataContracts>
+				</ConnectionPoint>
+			</ConnectionPoints>
+			<ProcessingNodeParameters>
+				<ProcessingNodeParameter Name="ReportFlankingResidues" FriendlyName="Annotate Flanking Residues of the Peptide" Category="1. Flanking Residues" IsAdvanced="False" IntendedPurpose="Unknown" PurposeDetails="" IsValueSet="True" IsHidden="False" IsConfig="False" DisplayValue="True">True</ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="NumberFlankingResidues" FriendlyName="Number Flanking Residues in Connection Tables" Category="1. Flanking Residues" IsAdvanced="True" IntendedPurpose="Unknown" PurposeDetails="" IsValueSet="True" IsHidden="False" IsConfig="False" DisplayValue="1">1</ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="MinModificationSiteProbability" FriendlyName="Site Probability Threshold" Category="1.1. General Modifications" IsAdvanced="False" IntendedPurpose="Unknown" PurposeDetails="" IsValueSet="True" IsHidden="True" IsConfig="False" DisplayValue="75">75</ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="ModificationPositionInProteins" FriendlyName="Protein Modifications Reported" Category="2. Modifications in Peptide" IsAdvanced="False" IntendedPurpose="Unknown" PurposeDetails="" IsValueSet="True" IsHidden="False" IsConfig="False" DisplayValue="Only for Master Proteins">Only for Master Proteins</ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="ModificationsInProteinsAnnotation" FriendlyName="Modification Sites Reported" Category="3. Modifications in Protein" IsAdvanced="False" IntendedPurpose="Unknown" PurposeDetails="" IsValueSet="True" IsHidden="False" IsConfig="False" DisplayValue="All And Specific">All And Specific</ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="MinimalPsmConfidence" FriendlyName="Minimum PSM Confidence" Category="3. Modifications in Protein" IsAdvanced="False" IntendedPurpose="Unknown" PurposeDetails="" IsValueSet="True" IsHidden="False" IsConfig="False" DisplayValue="High">High</ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="ReportOnlyPtms" FriendlyName="Report Only PTMs" Category="3. Modifications in Protein" IsAdvanced="False" IntendedPurpose="Unknown" PurposeDetails="" IsValueSet="True" IsHidden="False" IsConfig="False" DisplayValue="True">True</ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="ModificationNTerm" FriendlyName="N-Terminal Modification" Category="3. Modifications in Protein" IsAdvanced="False" IntendedPurpose="DynamicTerminalModification" PurposeDetails="" IsValueSet="False" IsHidden="False" IsConfig="False" DisplayValue="None"></ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="ModificationCTerm" FriendlyName="C-Terminal Modification" Category="3. Modifications in Protein" IsAdvanced="False" IntendedPurpose="DynamicTerminalModification" PurposeDetails="" IsValueSet="False" IsHidden="False" IsConfig="False" DisplayValue="None"></ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="Modification1" FriendlyName="Modification" Category="3. Modifications in Protein" IsAdvanced="False" IntendedPurpose="Unknown" PurposeDetails="" IsValueSet="False" IsHidden="False" IsConfig="False" DisplayValue="None"></ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="Modification2" FriendlyName="Modification" Category="3. Modifications in Protein" IsAdvanced="False" IntendedPurpose="Unknown" PurposeDetails="" IsValueSet="False" IsHidden="False" IsConfig="False" DisplayValue="None"></ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="Modification3" FriendlyName="Modification" Category="3. Modifications in Protein" IsAdvanced="False" IntendedPurpose="Unknown" PurposeDetails="" IsValueSet="False" IsHidden="False" IsConfig="False" DisplayValue="None"></ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="Modification4" FriendlyName="Modification" Category="3. Modifications in Protein" IsAdvanced="False" IntendedPurpose="Unknown" PurposeDetails="" IsValueSet="False" IsHidden="False" IsConfig="False" DisplayValue="None"></ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="Modification5" FriendlyName="Modification" Category="3. Modifications in Protein" IsAdvanced="False" IntendedPurpose="Unknown" PurposeDetails="" IsValueSet="False" IsHidden="False" IsConfig="False" DisplayValue="None"></ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="PositionInProteinsAnnotation" FriendlyName="Protein Positions for Peptides" Category="4. Positions in Protein" IsAdvanced="False" IntendedPurpose="Unknown" PurposeDetails="" IsValueSet="True" IsHidden="False" IsConfig="False" DisplayValue="Only for Master Proteins">Only for Master Proteins</ProcessingNodeParameter>
+			</ProcessingNodeParameters>
+			<ProcessingNodePosition X="361" Y="637" />
+		</WorkflowNode>
+		<WorkflowNode ProcessingNodeNumber="7" ProcessingNodeName="DisplayFilterAndLayoutNode" FriendlyName="Display Settings" Description="Persists a user default display filter and user default layout for the result file." MainVersion="2" MinorVersion="2" Guid="c37385f8-29ae-435e-af2f-ab73b295c362" Category="Post-Processing" ParentProcessingNodeNumber="-1" Comment="" UsageConstraint="OnlyOncePerWorkflow" Publisher="Thermo Scientific" NodeState="Completed">
+			<ProcessingNodeInterfaces>
+				<ProcessingNodeInterface Kind="Functional" Name="IProcessingNode" />
+				<ProcessingNodeInterface Kind="Functional" Name="IPostProcessing" />
+			</ProcessingNodeInterfaces>
+			<ConnectionPoints>
+				<ConnectionPoint Direction="Outgoing" Multiplicity="Single" ConnectionRequirement="Optional" Mode="Manual" DisplayName="Post-Processing" ConnectionDataHandlingType="FileBased" ParentNodeConstraint="None">
+					<DataContracts>
+						<DataContract DataType="DisplaySettings">
+							<DataTypeAttributes />
+						</DataContract>
+					</DataContracts>
+				</ConnectionPoint>
+			</ConnectionPoints>
+			<ProcessingNodeParameters>
+				<ProcessingNodeParameter Name="FilterSet" FriendlyName="Filter Set" Category="1. General" IsAdvanced="False" IntendedPurpose="ResultFilterSet" PurposeDetails="FilterSet" IsValueSet="True" IsHidden="False" IsConfig="False" DisplayValue="###   Master Proteins Default Filter:; ###   Row Filter for TargetProtein:; ###   Master is equal to Master; ###; ; 'magellan filter set' 1 'MasterFilter.filterset'  Filter 'TargetProtein' FilterProperties 1  'FilterConditionProperties/FilterScope' 'FilterConditionProperties/FilterScopeValueMainGrid' 1 NARY_AND 1 = FilterConditionProperties 1  'NamedComparableFilterCondition/DisplayPropertyHint' 'Master' property 'Thermo.PD.EntityDataFramework.MasterProteinAssessment, Thermo.Magellan.EntityDataFramework' 'IsMasterProtein' constant 'Thermo.PD.EntityDataFramework.MasterProteinAssessment, Thermo.Magellan.EntityDataFramework' 'IsMasterProtein'">###   Master Proteins Default Filter:; ###   Row Filter for TargetProtein:; ###   Master is equal to Master; ###; ; &#39;magellan filter set&#39; 1 &#39;MasterFilter.filterset&#39;  Filter &#39;TargetProtein&#39; FilterProperties 1  &#39;FilterConditionProperties/FilterScope&#39; &#39;FilterConditionProperties/FilterScopeValueMainGrid&#39; 1 NARY_AND 1 = FilterConditionProperties 1  &#39;NamedComparableFilterCondition/DisplayPropertyHint&#39; &#39;Master&#39; property &#39;Thermo.PD.EntityDataFramework.MasterProteinAssessment, Thermo.Magellan.EntityDataFramework&#39; &#39;IsMasterProtein&#39; constant &#39;Thermo.PD.EntityDataFramework.MasterProteinAssessment, Thermo.Magellan.EntityDataFramework&#39; &#39;IsMasterProtein&#39;</ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="Layout" FriendlyName="Layout Definition" Category="1. General" IsAdvanced="False" IntendedPurpose="ResultFilterSet" PurposeDetails="ResultLayout" IsValueSet="False" IsHidden="False" IsConfig="False" DisplayValue="No summary generated for layout."></ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="DefaultDisplayFilter" FriendlyName="Default Filter Set" Category="Default Display Filter" IsAdvanced="False" IntendedPurpose="Unknown" PurposeDetails="" IsValueSet="True" IsHidden="True" IsConfig="True" DisplayValue="###   This file contains the following filters:; ###; ###   Row Filter for Proteins:; ###   ------------------------------------; ###   AND; ###   |; ###   +--Master is equal to Master; ###   |; ###   +--in category; ###      |; ###      +--Protein FDR Confidence; ###      |; ###      +--High; ###   ------------------------------------; ###; ###; ###   Row Filter for Input Files:; ###   ------------------------------------; ###   FileName does not end with msf; ###   ------------------------------------; ###; ; 'magellan filter set' 1 'HighConfidentMasterProteinFilter.filterset'  FiltersetProperties 1  'LastFileName' 'Z:\HighConfidentMasterProteinFilter.filterset' Filter 'AminoAcids' FilterProperties 1  'Filter/DisplayPropertyHint' 'Amino Acids' 2 TRUE FilterConditionProperties 1  'PredefinedProperty' 'ExcludedBy' TRUE Filter 'DecoyPeptideGroup' FilterProperties 1  'Filter/DisplayPropertyHint' 'Decoy Peptide Groups' 2 TRUE FilterConditionProperties 1  'PredefinedProperty' 'ExcludedBy' = property 'System.Int32, mscorlib' 'ExcludedBy' constant 'System.Int32, mscorlib' '-1' Filter 'DecoyPeptideSpectrumMatch' FilterProperties 1  'Filter/DisplayPropertyHint' 'Decoy PSMs' 2 TRUE FilterConditionProperties 1  'PredefinedProperty' 'ExcludedBy' = property 'System.Int32, mscorlib' 'ExcludedBy' constant 'System.Int32, mscorlib' '-1' Filter 'DecoyProtein' FilterProperties 1  'Filter/DisplayPropertyHint' 'Decoy Proteins' 2 TRUE FilterConditionProperties 1  'PredefinedProperty' 'ExcludedBy' = property 'System.Int32, mscorlib' 'ExcludedBy' constant 'System.Int32, mscorlib' '-1' Filter 'DecoyProteinGroup' FilterProperties 1  'Filter/DisplayPropertyHint' 'Decoy Protein Groups' 2 TRUE FilterConditionProperties 1  'PredefinedProperty' 'ExcludedBy' = property 'System.Int32, mscorlib' 'ExcludedBy' constant 'System.Int32, mscorlib' '-1' Filter 'DecoyProteoformSpectrumMatch' FilterProperties 1  'Filter/DisplayPropertyHint' 'Decoy PrSMs' 2 TRUE FilterConditionProperties 1  'PredefinedProperty' 'ExcludedBy' = property 'System.Int32, mscorlib' 'ExcludedBy' constant 'System.Int32, mscorlib' '-1' Filter 'TargetProtein' FilterProperties 1  'Filter/DisplayPropertyHint' 'Proteins' 2 NARY_AND 2 = FilterConditionProperties 1  'NamedComparableFilterCondition/DisplayPropertyHint' 'Master' property 'Thermo.PD.EntityDataFramework.MasterProteinAssessment, Thermo.Magellan.EntityDataFramework' 'IsMasterProtein' constant 'Thermo.PD.EntityDataFramework.MasterProteinAssessment, Thermo.Magellan.EntityDataFramework' 'IsMasterProtein' datadistribution_particular FilterConditionProperties 1  'NamedComparableFilterCondition/DisplayPropertyHint' 'Protein FDR Confidence' property 'Thermo.Magellan.EntityDataFramework.DataDistributionValue, Thermo.Magellan.EntityDataFramework' 'ProteinFDRConfidence' constant 'Thermo.Magellan.EntityDataFramework.DataDistributionValue, Thermo.Magellan.EntityDataFramework' 'position_id_1' Filter '7899A5F8-6954-4E95-8C2D-BB0C83221B21' 1 datadistribution_level_equals property 'System.Nullable`1[[System.Int32, mscorlib]], mscorlib' '6AED4774-1ECD-4202-B746-B79D936A3D77' constant 'System.Nullable`1[[System.Int32, mscorlib]], mscorlib' '4' FilterConditionProperties 1  'PredefinedProperty' 'ExcludedBy' = property 'System.Int32, mscorlib' 'ExcludedBy' constant 'System.Int32, mscorlib' '-1' Filter 'TargetProteoformSpectrumMatch' FilterProperties 1  'Filter/DisplayPropertyHint' 'PrSMs' 2 TRUE FilterConditionProperties 1  'PredefinedProperty' 'ExcludedBy' = property 'System.Int32, mscorlib' 'ExcludedBy' constant 'System.Int32, mscorlib' '-1' Filter 'UnknownModification' FilterProperties 1  'Filter/DisplayPropertyHint' 'Unknown Modifications' 2 TRUE FilterConditionProperties 1  'PredefinedProperty' 'ExcludedBy' TRUE Filter 'WorkflowInputFile' FilterProperties 1  'Filter/DisplayPropertyHint' 'Input Files' 2 NARY_AND 1 endsnotwith property 'System.String, mscorlib' 'FileName' constant 'System.String, mscorlib' 'msf' FilterConditionProperties 1  'PredefinedProperty' 'ExcludedBy' TRUE">###   This file contains the following filters:; ###; ###   Row Filter for Proteins:; ###   ------------------------------------; ###   AND; ###   |; ###   +--Master is equal to Master; ###   |; ###   +--in category; ###      |; ###      +--Protein FDR Confidence; ###      |; ###      +--High; ###   ------------------------------------; ###; ###; ###   Row Filter for Input Files:; ###   ------------------------------------; ###   FileName does not end with msf; ###   ------------------------------------; ###; ; &#39;magellan filter set&#39; 1 &#39;HighConfidentMasterProteinFilter.filterset&#39;  FiltersetProperties 1  &#39;LastFileName&#39; &#39;Z:\HighConfidentMasterProteinFilter.filterset&#39; Filter &#39;AminoAcids&#39; FilterProperties 1  &#39;Filter/DisplayPropertyHint&#39; &#39;Amino Acids&#39; 2 TRUE FilterConditionProperties 1  &#39;PredefinedProperty&#39; &#39;ExcludedBy&#39; TRUE Filter &#39;DecoyPeptideGroup&#39; FilterProperties 1  &#39;Filter/DisplayPropertyHint&#39; &#39;Decoy Peptide Groups&#39; 2 TRUE FilterConditionProperties 1  &#39;PredefinedProperty&#39; &#39;ExcludedBy&#39; = property &#39;System.Int32, mscorlib&#39; &#39;ExcludedBy&#39; constant &#39;System.Int32, mscorlib&#39; &#39;-1&#39; Filter &#39;DecoyPeptideSpectrumMatch&#39; FilterProperties 1  &#39;Filter/DisplayPropertyHint&#39; &#39;Decoy PSMs&#39; 2 TRUE FilterConditionProperties 1  &#39;PredefinedProperty&#39; &#39;ExcludedBy&#39; = property &#39;System.Int32, mscorlib&#39; &#39;ExcludedBy&#39; constant &#39;System.Int32, mscorlib&#39; &#39;-1&#39; Filter &#39;DecoyProtein&#39; FilterProperties 1  &#39;Filter/DisplayPropertyHint&#39; &#39;Decoy Proteins&#39; 2 TRUE FilterConditionProperties 1  &#39;PredefinedProperty&#39; &#39;ExcludedBy&#39; = property &#39;System.Int32, mscorlib&#39; &#39;ExcludedBy&#39; constant &#39;System.Int32, mscorlib&#39; &#39;-1&#39; Filter &#39;DecoyProteinGroup&#39; FilterProperties 1  &#39;Filter/DisplayPropertyHint&#39; &#39;Decoy Protein Groups&#39; 2 TRUE FilterConditionProperties 1  &#39;PredefinedProperty&#39; &#39;ExcludedBy&#39; = property &#39;System.Int32, mscorlib&#39; &#39;ExcludedBy&#39; constant &#39;System.Int32, mscorlib&#39; &#39;-1&#39; Filter &#39;DecoyProteoformSpectrumMatch&#39; FilterProperties 1  &#39;Filter/DisplayPropertyHint&#39; &#39;Decoy PrSMs&#39; 2 TRUE FilterConditionProperties 1  &#39;PredefinedProperty&#39; &#39;ExcludedBy&#39; = property &#39;System.Int32, mscorlib&#39; &#39;ExcludedBy&#39; constant &#39;System.Int32, mscorlib&#39; &#39;-1&#39; Filter &#39;TargetProtein&#39; FilterProperties 1  &#39;Filter/DisplayPropertyHint&#39; &#39;Proteins&#39; 2 NARY_AND 2 = FilterConditionProperties 1  &#39;NamedComparableFilterCondition/DisplayPropertyHint&#39; &#39;Master&#39; property &#39;Thermo.PD.EntityDataFramework.MasterProteinAssessment, Thermo.Magellan.EntityDataFramework&#39; &#39;IsMasterProtein&#39; constant &#39;Thermo.PD.EntityDataFramework.MasterProteinAssessment, Thermo.Magellan.EntityDataFramework&#39; &#39;IsMasterProtein&#39; datadistribution_particular FilterConditionProperties 1  &#39;NamedComparableFilterCondition/DisplayPropertyHint&#39; &#39;Protein FDR Confidence&#39; property &#39;Thermo.Magellan.EntityDataFramework.DataDistributionValue, Thermo.Magellan.EntityDataFramework&#39; &#39;ProteinFDRConfidence&#39; constant &#39;Thermo.Magellan.EntityDataFramework.DataDistributionValue, Thermo.Magellan.EntityDataFramework&#39; &#39;position_id_1&#39; Filter &#39;7899A5F8-6954-4E95-8C2D-BB0C83221B21&#39; 1 datadistribution_level_equals property &#39;System.Nullable`1[[System.Int32, mscorlib]], mscorlib&#39; &#39;6AED4774-1ECD-4202-B746-B79D936A3D77&#39; constant &#39;System.Nullable`1[[System.Int32, mscorlib]], mscorlib&#39; &#39;4&#39; FilterConditionProperties 1  &#39;PredefinedProperty&#39; &#39;ExcludedBy&#39; = property &#39;System.Int32, mscorlib&#39; &#39;ExcludedBy&#39; constant &#39;System.Int32, mscorlib&#39; &#39;-1&#39; Filter &#39;TargetProteoformSpectrumMatch&#39; FilterProperties 1  &#39;Filter/DisplayPropertyHint&#39; &#39;PrSMs&#39; 2 TRUE FilterConditionProperties 1  &#39;PredefinedProperty&#39; &#39;ExcludedBy&#39; = property &#39;System.Int32, mscorlib&#39; &#39;ExcludedBy&#39; constant &#39;System.Int32, mscorlib&#39; &#39;-1&#39; Filter &#39;UnknownModification&#39; FilterProperties 1  &#39;Filter/DisplayPropertyHint&#39; &#39;Unknown Modifications&#39; 2 TRUE FilterConditionProperties 1  &#39;PredefinedProperty&#39; &#39;ExcludedBy&#39; TRUE Filter &#39;WorkflowInputFile&#39; FilterProperties 1  &#39;Filter/DisplayPropertyHint&#39; &#39;Input Files&#39; 2 NARY_AND 1 endsnotwith property &#39;System.String, mscorlib&#39; &#39;FileName&#39; constant &#39;System.String, mscorlib&#39; &#39;msf&#39; FilterConditionProperties 1  &#39;PredefinedProperty&#39; &#39;ExcludedBy&#39; TRUE</ProcessingNodeParameter>
+				<ProcessingNodeParameter Name="DefaultLayout" FriendlyName="Default Layout" Category="Default Layout" IsAdvanced="False" IntendedPurpose="Unknown" PurposeDetails="" IsValueSet="False" IsHidden="True" IsConfig="True" DisplayValue=""></ProcessingNodeParameter>
+			</ProcessingNodeParameters>
+			<ProcessingNodePosition X="109" Y="44" />
+		</WorkflowNode>
+	</WorkflowTree>
+</Workflow>

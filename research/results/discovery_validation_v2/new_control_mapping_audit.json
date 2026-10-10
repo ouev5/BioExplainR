@@ -1,0 +1,41 @@
+{
+  "utc": "2026-10-09T14:08:20.320991+00:00",
+  "records": [
+    {
+      "status": "retrieved",
+      "url": "https://rest.ensembl.org/lookup/id/ENSG00000179094?content-type=application/json",
+      "retrieved_utc": "2026-10-09T14:08:17.631515+00:00",
+      "http_status": 200,
+      "content_type": "application/json",
+      "attempts": [],
+      "path": "research/results/discovery_validation_v2/sources/ENSG00000179094_lookup.json",
+      "bytes": 436,
+      "sha256": "8e9160ab200df48a5d0ece03ccfc673375033b6ec743ce5b1678d3930574cd94",
+      "gene_mapping_verified": true
+    },
+    {
+      "status": "retrieved",
+      "url": "https://rest.ensembl.org/lookup/id/ENSG00000120129?content-type=application/json",
+      "retrieved_utc": "2026-10-09T14:08:19.312058+00:00",
+      "http_status": 200,
+      "content_type": "application/json",
+      "attempts": [],
+      "path": "research/results/discovery_validation_v2/sources/ENSG00000120129_lookup.json",
+      "bytes": 441,
+      "sha256": "236438a3eeebe5f58e683702830f7ac0f7b040b9c34e5f5827bac596c7fea4c9",
+      "gene_mapping_verified": true
+    },
+    {
+      "status": "retrieved",
+      "url": "https://rest.ensembl.org/lookup/id/ENSG00000113580?content-type=application/json",
+      "retrieved_utc": "2026-10-09T14:08:20.320516+00:00",
+      "http_status": 200,
+      "content_type": "application/json",
+      "attempts": [],
+      "path": "research/results/discovery_validation_v2/sources/ENSG00000113580_lookup.json",
+      "bytes": 457,
+      "sha256": "ebf9a96339844342f48945cf91dc74d2937fd20a8c0a5f56535b20bb5c681eb9",
+      "gene_mapping_verified": true
+    }
+  ]
+}

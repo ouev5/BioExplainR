@@ -1,0 +1,44 @@
+{
+  "utc": "2026-10-10T02:30:52.898633+00:00",
+  "script": {
+    "path": "research/discovery/asm_ev_followup.py",
+    "bytes": 10804,
+    "sha256": "8c08c9c87fe8e1770734a4134a2bc5a6d97a5b2f7a12eb8964347b2cf5050449"
+  },
+  "requests": [
+    [
+      "article_current.xml",
+      "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12141081/fullTextXML"
+    ],
+    [
+      "pmc_oa_manifest.xml",
+      "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC12141081"
+    ],
+    [
+      "datacite_accession.json",
+      "https://api.datacite.org/dois?query=PXD055968"
+    ],
+    [
+      "datacite_article_doi.json",
+      "https://api.datacite.org/dois?query=%2210.1016%2Fj.isci.2025.112546%22"
+    ],
+    [
+      "crossref_article.json",
+      "https://api.crossref.org/works/10.1016/j.isci.2025.112546"
+    ],
+    [
+      "zenodo_accession.json",
+      "https://zenodo.org/api/records?q=%22PXD055968%22&size=100"
+    ],
+    [
+      "figshare_article_doi.json",
+      "https://api.figshare.com/v2/articles?resource_doi=10.1016%2Fj.isci.2025.112546"
+    ],
+    [
+      "Link_between_files.xlsx",
+      "https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/Link_between_files.xlsx"
+    ]
+  ],
+  "reason": "18 archived results are single-run PD3.1 CHIMERYS identification workflows; inspect official article links and bounded repository routes for final cross-run export",
+  "scope": "No candidate or differential-abundance lookup"
+}

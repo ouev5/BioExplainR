@@ -1,0 +1,23 @@
+{
+  "status": "completed",
+  "studies": {
+    "GSE342887": {
+      "raw_genes": 60675,
+      "retained_genes": 18556,
+      "libraries": 18,
+      "rank": 6,
+      "residual_df": 12
+    },
+    "GSE342771": {
+      "raw_genes": 60675,
+      "retained_genes": 20267,
+      "libraries": 17,
+      "rank": 6,
+      "residual_df": 11
+    }
+  },
+  "tests": 110,
+  "family": 55,
+  "unit": "U2OS culture, not donors",
+  "scope": "GR wildtype versus rescue mutants; no empty-KO arm; preprint data; paired assays share samples"
+}

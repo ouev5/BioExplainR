@@ -1,0 +1,357 @@
+{
+  "utc": "2026-10-10T05:10:56.076748+00:00",
+  "script": {
+    "path": "research/discovery/public_proteome_continue.py",
+    "bytes": 12307,
+    "sha256": "5c50db475a68b1603ed21329aac5eef4bd9b4887fba8a4b982236eb0adad4413"
+  },
+  "protocol": {
+    "path": "research/discovery/PUBLIC_PROTEOME_CONTINUATION_PROTOCOL.md",
+    "bytes": 3261,
+    "sha256": "cfd984bd8ebe27a00d81e8175c5a605e335bafc1b0e6ae86c15855a135afc673"
+  },
+  "imported_inputs": [
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/PXD003963_NHDF_con_sn_1_1.pride.mztab.gz",
+      "bytes": 130946,
+      "sha256": "3e2d12aca388b384c8d8bfc1c7eae796f1410fad0b2159e28ad843369fe6bd85"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/PXD003963_files_0.json",
+      "bytes": 34640,
+      "sha256": "4b4e5f279990ca2924135bf5ebe63f081e33e561774cdc86f21f909cc07c877c"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/PXD003963_inventory.json",
+      "bytes": 37281,
+      "sha256": "502b183d5747751222ac9b5d718bd6f65b3233e517eec80a6d3d5d69d5505e3f"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/PXD003963_project_0.json",
+      "bytes": 10968,
+      "sha256": "a84afa9aa4a23ca952ae7e4a7325b8c0f23e0761490a468f482a629ac04a4db3"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/PXD003965_NHDF_IL1beta_sn_1_1.pride.mztab.gz",
+      "bytes": 151987,
+      "sha256": "834379d8f419395ca3eaf73ae627fff627d5ab7e69a1050e632253433a8da2ee"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/PXD003965_files_0.json",
+      "bytes": 35007,
+      "sha256": "ae93eb8cbbc55cf917d8c158737e678e7e784709c7f817029bd745bdfdf364b3"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/PXD003965_inventory.json",
+      "bytes": 37648,
+      "sha256": "81d4d0b38be4ec1f7b9d460d2e772c258607d62291a5aab661245bff2fda4416"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/PXD003965_project_0.json",
+      "bytes": 11047,
+      "sha256": "8f5e961744027a86711bf740040906f9ec8e5c71a301358ea72546f9786c29eb"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/PXD003971_NHDF_IL1beta_Dex_sn_1_1.pride.mztab.gz",
+      "bytes": 135512,
+      "sha256": "9425567cb1961d3e7ba184e4b3bcabfd533989ec9c9c9b6f8425f01305f188be"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/PXD003971_files_0.json",
+      "bytes": 35361,
+      "sha256": "bcfd357d7b575f03e131ff817121544f249b6d9ddc124450ade04f2a69cbf3c9"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/PXD003971_inventory.json",
+      "bytes": 38002,
+      "sha256": "ed17d2d50b31c3b3f2350e283930ef314ce891ebdde6f7dabc1add9cd5dfec10"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/PXD003971_project_0.json",
+      "bytes": 11203,
+      "sha256": "2761f3457a5cde2c787eb7c2d464783bfb1a10e1c477a04e6e64be0e422b0c41"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/PXD015566_files_0.json",
+      "bytes": 38465,
+      "sha256": "3eacea11ed1163eefdd4441f47e82d57fa7a0f4ac6e3f9811c2a164b1d9df51f"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/PXD015566_inventory.json",
+      "bytes": 41458,
+      "sha256": "fbd1e02326592cf2b35611e5dd066764c1a7fb3345f5a175dcc0486fc97880b3"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/PXD015566_project_0.json",
+      "bytes": 8766,
+      "sha256": "9347c841a20c5f2e75aba4d7ed65506e619421236e15a0597a1f51db322e7f47"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/PXD029028_DDA_sample_ID.csv",
+      "bytes": 1396,
+      "sha256": "ed2d59e89e65f928e29ddb036b5baa1279e83ad94db91f7765b7760f38f643da"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/PXD029028_files_0.json",
+      "bytes": 105503,
+      "sha256": "7934da8c10073691f3d4dc0ac62e1c4f96f8f32a1eb8f7253e00a94a8bfe446e"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/PXD029028_inventory.json",
+      "bytes": 113688,
+      "sha256": "74d72a1fd55d94e07094e5c872561f86df8af39469349eeed2f1ca532c2bdd2c"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/PXD029028_meta_data.csv",
+      "bytes": 3972,
+      "sha256": "6d8abff0cd660f9ce65020e4f82c629ce8848b98f01852440d0f4b67aa69fe9f"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/PXD029028_project_0.json",
+      "bytes": 8459,
+      "sha256": "be7487e4098224d7124ab2492a1e873252d9b500149c2d994720e4f307a23f0f"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/PXD029135_PXD029135_community_annotated.sdrf.tsv",
+      "bytes": 32770,
+      "sha256": "8697b4ab58220d3aeefdbd3ef5b01bacc8d52ff29ef6199bd9daf77cbc1b60e0"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/PXD029135_SRDF_File.txt",
+      "bytes": 1138,
+      "sha256": "7f76923521bd6c6f3da00a444b3b6595d1efb141863e418482efef6cb567979e"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/PXD029135_files_0.json",
+      "bytes": 54500,
+      "sha256": "f7dfb4b7210af9c1e6941040ee909a670dc88e14b9718465155e6904f08bb2d7"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/PXD029135_inventory.json",
+      "bytes": 58637,
+      "sha256": "3695ad4fc0889a748970a4539da58c8d706b885ee1b2a356372e7d963685b626"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/PXD029135_project_0.json",
+      "bytes": 7357,
+      "sha256": "4269b96594aa7376802099fa1a718dd2c1ca48310ca4dbaca91642b33a9b2eb2"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/PXD055968_files_0.json",
+      "bytes": 61216,
+      "sha256": "56eb8eb9ecf9797536c9fb63a6171f0bdc59d56a27be7c169325a90de73b896b"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/PXD055968_inventory.json",
+      "bytes": 66145,
+      "sha256": "f382bfd910be0aade6bc1fa37ff2b6c497b9edac74d17516c6b4bdfc4c62de69"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/PXD055968_project_0.json",
+      "bytes": 8016,
+      "sha256": "a265c71f78e617efc562967993e112e5ddc144df71880e9c4b40d34799cf1b05"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/PXD063431_240221_PB_ProteomeDiscoverer_all_Proteins_A549.txt",
+      "bytes": 1237980,
+      "sha256": "2e2b8774f07df6bd25ebc33bb246dddfc7beef880a6a8b9f831ca508bd820301"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/PXD063431_files_0.json",
+      "bytes": 18564,
+      "sha256": "3a5ec94b9bd788425041f55eb51121dbf831cd842936c6639742f307d7329bdf"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/PXD063431_inventory.json",
+      "bytes": 20061,
+      "sha256": "c3445e7c0f4bf7ec260ab77c197db2b0e141ccd6fa82c7a85345574b950b168a"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/PXD063431_project_0.json",
+      "bytes": 6332,
+      "sha256": "5353b0d5f5f4d9e7dfdc73a7e04405ca3135580a7cf02b69ed32bc4c1c236519"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/article_34950134.json",
+      "bytes": 10243,
+      "sha256": "4a962db555e797745440c22f90c63ccc1c7eaa543c098c1f80bd78779e9f6b0f"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/article_42336811.json",
+      "bytes": 6062,
+      "sha256": "11d78983c2446275b64ae9344ada9ce6b23c7b1e51fec1b1f0cabc808d2beab4"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/lead_requests.json",
+      "bytes": 4350,
+      "sha256": "efdf3b4c074665705b6b4800e109381a3f5ccec45e97605314bb56e06a349c0b"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/papers_asm_protein.json",
+      "bytes": 441556,
+      "sha256": "936efe9e9945bfc24b5b0060e57245f36cd2e837488937abc413576129b0855d"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/papers_asm_protein_summary.json",
+      "bytes": 108984,
+      "sha256": "527ea60eb7e05e77403035fee8a23d7152f70d94c37b392f76286f19988234da"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/papers_asm_public.json",
+      "bytes": 239232,
+      "sha256": "d912aee26d0c1b336df764d4139948380253a4eec3e9246de76d5d9114ec9d38"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/papers_asm_public_summary.json",
+      "bytes": 55349,
+      "sha256": "f69acae8ea874ad9923e1aea3116ae83cb8867141b9dc9238cfaa1e4dcb0124d"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/papers_lung_gc_protein.json",
+      "bytes": 335854,
+      "sha256": "933633d3af2d728c8c72ebe6d12d3635472d325c2cb12814d6d03ffb897f5e0d"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/papers_lung_gc_protein_summary.json",
+      "bytes": 82664,
+      "sha256": "efaf983b3ae8d66a7c1850e4990297a40a98aa930bde295deca24a1bdd2a7a5e"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/pride_actin.json",
+      "bytes": 3,
+      "sha256": "5984eac0c5c6d947241e29dd5671b81a1546cedf77e08d38438ac47029969afa"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/pride_airway.json",
+      "bytes": 7736,
+      "sha256": "3c695659bafeba333e9e340b28ea4473d6ebb80fa56ed69e38606336a2b87fa7"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/pride_airway_proteome.json",
+      "bytes": 3,
+      "sha256": "5984eac0c5c6d947241e29dd5671b81a1546cedf77e08d38438ac47029969afa"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/pride_airway_summary.json",
+      "bytes": 4696,
+      "sha256": "89c45a18bd3ac28091c9a05fe4735ac043980464dae5490796d029c74a538c1a"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/pride_bronchial.json",
+      "bytes": 101349,
+      "sha256": "2b2c1158b8845eb6bca41e5f7b8b7dd7305c2a8fac5ba70ec57d2cdbc4472df6"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/pride_bronchial_summary.json",
+      "bytes": 89757,
+      "sha256": "3ef05325a7841d11ae09b49aa6825fbc7e472893ff61e371030cdec375852405"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/pride_bud.json",
+      "bytes": 27352,
+      "sha256": "5c6efbccb12a82c617b50e338a5c63a1a705848ff9808395910af453b338c184"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/pride_bud_summary.json",
+      "bytes": 19354,
+      "sha256": "f3793927e9a5630e5557c456d3917188cefaa5f13215dd73f8cadb87c2f1d967"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/pride_control.json",
+      "bytes": 3,
+      "sha256": "5984eac0c5c6d947241e29dd5671b81a1546cedf77e08d38438ac47029969afa"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/pride_control_summary.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/pride_dex.json",
+      "bytes": 984305,
+      "sha256": "807c36ce4ad5291735069e9194479f8bfc421db15b21918a90ee6405e31dabe0"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/pride_dex_summary.json",
+      "bytes": 728298,
+      "sha256": "52aac2b0f53d84b65dd0854980120ad10ead5080b575a7acebcbb43adafa37c4"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/pride_gc.json",
+      "bytes": 924359,
+      "sha256": "492fbe1253939f7095473c08e58b11dc5dfce290755e1eec65a6394266fd7432"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/pride_gc_summary.json",
+      "bytes": 682866,
+      "sha256": "d5b2fefbef1b3307390629a157f33408c0d3949f9a531b0befdcc58e5dfa5fd9"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/pride_hasm.json",
+      "bytes": 141649,
+      "sha256": "16c78cf8e24d391bcefc20794549d9078305d9bfee3664edff3e46d870f5f3e6"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/pride_hasm_summary.json",
+      "bytes": 112720,
+      "sha256": "b63f147360f3a6cd4f48356eb6b1e17636e1ebb83b1fe9f68e3ad5a52e2b314a"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/pride_hbsmc.json",
+      "bytes": 62926,
+      "sha256": "70ad72afc18c5b5edf5eda9f7d399190ae5a0675c284346486c3647fb58804d5"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/pride_hbsmc_summary.json",
+      "bytes": 68879,
+      "sha256": "fdeef8839d0df979a7dd6fef4ab29fa2376e9dc416e5459a6be71eddcfaabb3d"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/pride_intrapulmonary.json",
+      "bytes": 10343,
+      "sha256": "fd8a52d222ac13803ce526ee0ef70de2258d615d930234ae7ede6feb5c26385b"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/requests.json",
+      "bytes": 4397,
+      "sha256": "c75bc24441a089912d219f7f2fa05d49f994a74f5e8cbed744e2952eb00dcfb1"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/rgo_public_search_20261010.py",
+      "bytes": 3842,
+      "sha256": "b16d01da9365ebbd126d1c54c382fa49e5c39776ae53f6dc78c64561e25f3aa1"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/rgo_public_leads_20261010.py",
+      "bytes": 2524,
+      "sha256": "a652199b6716c5a75fe9e39805b342cab79c15028d4047ccbbdd5b382f28778c"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/rgo_public_verify_20261010.py",
+      "bytes": 5480,
+      "sha256": "569bcaebb53f27892f3f39303bceaa8cd2bfca7a115a94e9e6629101f0ed370d"
+    }
+  ],
+  "keywords": {
+    "airway": "airway smooth muscle",
+    "bronchial": "bronchial smooth muscle",
+    "hasm": "HASM",
+    "hbsmc": "HBSMC",
+    "dex": "dexamethasone",
+    "bud": "budesonide",
+    "gc": "glucocorticoid",
+    "intrapulmonary": "intrapulmonary",
+    "airway_proteome": "airway proteome",
+    "actin": "airway actin",
+    "smooth_muscle": "smooth muscle",
+    "lung_smooth_muscle": "lung smooth muscle",
+    "fluticasone": "fluticasone",
+    "hydrocortisone": "hydrocortisone",
+    "control": "BioExplainR_unrelated_negative_control_9f3f"
+  },
+  "max_pages": 50,
+  "page_size": 100,
+  "scope": "Metadata/file-integrity/design only; no candidate statistics",
+  "candidate_statistics_started": false,
+  "candidate_identity_started": false
+}

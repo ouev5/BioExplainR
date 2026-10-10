@@ -1,0 +1,6 @@
+{
+  "status": "interrupted_after_screen_and_candidate_freeze",
+  "error": "Assigning one excluded_donor string to a zero-row leave-one-donor result failed because no candidates passed the fixed screen.",
+  "scientific_result": "No candidates passed pooled genome-wide FDR; saved screen and empty candidate freeze retained.",
+  "resolution": "New v2 run fixes zero-row assignment only. Original freeze and outputs retained; thresholds and ranking unchanged."
+}

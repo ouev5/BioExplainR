@@ -1,6 +1,12 @@
 # 真实数据实验与复现
 
-当前论文改为 `../docs/paper_cn_v2/README.md`：v0.9主稿9页、独立补充16页，六工具任务比较和固定SPARCL1候选的外部实验。新案例入口`discovery/README.md`、`results/discovery_sparcl1_v1/`；当前源码/包日志为`results/w00_baseline/revision-*`，新审阅包r8。下文旧稿/历史实验仍保留各自日期与范围。
+2026-10-09正式共同任务/受体/ChIP分析已完成：增补`../docs/research_followup_v1/README.md`，360运行/1,800评分，结果`results/common_performance_v4/`；A549候选过滤不可估计`discovery_mechanism_fit_v4/`；ASM18峰文件与坐标/窗口独立复核`discovery_chip_v1/`、`discovery_chip_analysis_v1/`。本地r13/baseline-11，失败/中断另保留。
+
+当前稿为 **v0.10（12 页主稿/18 页补充）**，入口 `../docs/paper_cn_v4/README.md`；11 图/14 表＝25 项正文对应见同目录 `figure_table_links.json`。GSE146017 三候选交互均未通过 Holm；核对原表供体映射后 GSE94335 的 7/7 非哮喘及 9/9 致死性哮喘供体均上调、组间响应差未获支持。新结果目录 `results/discovery_context_v1/`、`results/discovery_donors_v1/`，研究日志 `biology-*`。10-09 续接交付 r11 / baseline-9，GitHub 仍暂停。
+
+历史 v0.9.1（10 页/16 页）21 项正文对应见 `../docs/paper_cn_v3/FIGURE_TABLE_REVIEW.md`，实际文稿/网页日志 `revision-links-*`。
+
+历史 v0.9 稿见 `../docs/paper_cn_v2/README.md`：主稿9页、独立补充16页，六工具任务比较和固定SPARCL1候选的外部实验。案例入口`discovery/README.md`、`results/discovery_sparcl1_v1/`；当时源码/包日志为`results/w00_baseline/revision-*`，审阅包r8。下文旧稿/历史实验仍保留各自日期与范围。
 
 本目录保存实际运行的实验脚本、原始提示/模型响应、逐事实评分、图形核对、浏览器测试和论文结果。当前结果索引为 `results/current_manifest.json`；2026-10-03 六案例实验、precision pilot 与早期共同任务为 historical，2026-10-05 规模结果为当前机制实验。外部评价仅保存匿名聚合记录。
 
@@ -12,6 +18,9 @@
 | 双模型共同任务 | `results/common_task_scale_480/`：StepFun/DeepSeek 各 480/480；600 case-method 行包含 240 模型请求及未配置/缺失条件 |
 | 公开数据 | `results/public_datasets/dataset_tests.json`：airway、PBMC3k、pasilla、ALL、bladderbatch，5/5 保存状态 pass |
 | 独立数值参考 | `results/related_tools/pasilla_fact_checks.csv`：30/30 |
+| 固定候选外部培养实验 | `results/discovery_sparcl1_v1/`：单 HASM1 细胞系，10 数组，Python/R 12 项复核 |
+| 候选因子干预 | `results/discovery_context_v1/`：GSE146017 4 供体/31 文库，三交互阴性，原始计数/完整模型/报告/ledger |
+| 候选多供体响应 | `results/discovery_donors_v1/`：GSE94335 7＋9 配对供体，原表配对证据、TPM/效应/精确检验，R 21 项数值复核 |
 | 外部评价 | `results/human_evaluation/`：720 外部评分、150 功能评分的聚合表；原评分不在项目中 |
 | W00 本轮验证 | `results/w00_baseline/`：历史基线 531 checks（530 pass/1 skip）、包检查 OK、当前/历史离线审计、文稿审计及 hash |
 | 开发续接验证（10-05） | `results/w00_baseline/acceptance-*`：648 checks（647 pass/1 skip）、check OK、HTTP/Shiny/bwrap/API；`continuation-*` 保存环境和早期记录 |

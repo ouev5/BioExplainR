@@ -1,0 +1,90 @@
+{
+  "status": "completed",
+  "assembly": "coordinate_verified_hg19",
+  "author_confirmed": false,
+  "samples": 18,
+  "primary_samples": 8,
+  "genes": [
+    "SPARCL1",
+    "FKBP5",
+    "TSC22D3",
+    "KLF15"
+  ],
+  "all_peaks": 1347409,
+  "qualified_peaks": 1346792,
+  "interpretation": "Published q-qualified peak-window overlaps, not differential occupancy statistics or direct regulatory/functional proof"
+}
+[
+  {
+    "gsm": "GSM2519942",
+    "title": "GR EtOH_1D",
+    "primary": true,
+    "factor": "GR",
+    "gene": "SPARCL1",
+    "window": "TSS_20000",
+    "count": 4
+  },
+  {
+    "gsm": "GSM2519944",
+    "title": "GR EtOH_1E",
+    "primary": true,
+    "factor": "GR",
+    "gene": "SPARCL1",
+    "window": "TSS_20000",
+    "count": 2
+  },
+  {
+    "gsm": "GSM2519945",
+    "title": "GR Dex_2A",
+    "primary": true,
+    "factor": "GR",
+    "gene": "SPARCL1",
+    "window": "TSS_20000",
+    "count": 8
+  },
+  {
+    "gsm": "GSM2519947",
+    "title": "GR Dex_2E",
+    "primary": true,
+    "factor": "GR",
+    "gene": "SPARCL1",
+    "window": "TSS_20000",
+    "count": 8
+  },
+  {
+    "gsm": "GSM2519952",
+    "title": "RNAP2 EtOH_5E",
+    "primary": true,
+    "factor": "RNAP2",
+    "gene": "SPARCL1",
+    "window": "TSS_5000",
+    "count": 0
+  },
+  {
+    "gsm": "GSM2519953",
+    "title": "RNAP2 EtOH_5b",
+    "primary": true,
+    "factor": "RNAP2",
+    "gene": "SPARCL1",
+    "window": "TSS_5000",
+    "count": 0
+  },
+  {
+    "gsm": "GSM2519954",
+    "title": "RNAP2 Dex_6d",
+    "primary": true,
+    "factor": "RNAP2",
+    "gene": "SPARCL1",
+    "window": "TSS_5000",
+    "count": 1
+  },
+  {
+    "gsm": "GSM2519955",
+    "title": "RNAP2 Dex_6e",
+    "primary": true,
+    "factor": "RNAP2",
+    "gene": "SPARCL1",
+    "window": "TSS_5000",
+    "count": 1
+  }
+]

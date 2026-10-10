@@ -1,0 +1,24 @@
+{
+  "status": "completed",
+  "utc": "2026-10-10T00:19:31.547653+00:00",
+  "pages": 6,
+  "tables": 3,
+  "figures": 2,
+  "table_files": 27,
+  "command": [
+    "libreoffice",
+    "-env:UserInstallation=file:///tmp/opencode/validation-report-lo",
+    "--headless",
+    "--convert-to",
+    "pdf",
+    "--outdir",
+    "/home/ubuntu/creatR/docs/secretome_validation_v1",
+    "/home/ubuntu/creatR/docs/secretome_validation_v1/PXD033504-完整分泌蛋白组-结果报告.docx"
+  ],
+  "script": {
+    "path": "research/discovery/build_secretome_report.py",
+    "bytes": 20622,
+    "sha256": "e9eef8ac07662754eb1345c3a4bb5ea5db9fead2de2bb603dc9d06cce9b205d5"
+  },
+  "pdf_figure_mode": "PNG previews in Word/PDF; separate original vector figure PDFs"
+}

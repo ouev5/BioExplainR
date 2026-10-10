@@ -1,0 +1,27 @@
+{
+  "utc": "2026-10-10T05:18:51.004295+00:00",
+  "script": {
+    "path": "research/discovery/public_proteome_resume.py",
+    "bytes": 5370,
+    "sha256": "78f510fdb6275ee4a4ad080efc42fa8ec0bafd1a15d148bf1b63e861ef3161ae"
+  },
+  "source_evidence": [
+    {
+      "path": "research/results/discovery_public_proteome_v1/sources/PXD029135_median-normalized.txt",
+      "bytes": 1769472,
+      "sha256": "2b8bc5645159b3198d0b7aea3dc7b42dbb2091fdcbed6412e767ea668c4c6eb7"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/requests/PXD029135_median-normalized.txt.request.json",
+      "bytes": 1304,
+      "sha256": "1891f962a0c85c1a81c85952db2ecf88deb76cc4eb9e26a52405b2eaefc64576"
+    }
+  ],
+  "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2021/11/PXD029135/median-normalized.txt",
+  "range": "bytes=1736704-2055549",
+  "offset": 1736704,
+  "total_bytes": 2055550,
+  "if_range": "\"1f5d7e-5dd1acc4c6480\"",
+  "overlap_bytes": 32768,
+  "output": "sources/PXD029135_median-normalized_complete.txt"
+}

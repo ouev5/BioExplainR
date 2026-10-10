@@ -1,0 +1,17 @@
+{
+  "command": [
+    "python3",
+    "-c",
+    "from pathlib import Path; import subprocess,json; root=Path.cwd(); p=root/\"docs/implementation_records/PAPER_CN_CONTINUATION.md\"; old=subprocess.check_output([\"git\",\"show\",\"HEAD:docs/implementation_records/PAPER_CN_CONTINUATION.md\"],text=True); current=p.read_text(); marker=\"日期：2026-10-08；软件0.4.0.9000\"; assert old.split(marker,1)[1]==current.split(marker,1)[1]; r=(root/\"docs/paper_cn_v1/README.md\").read_text(); assert \"历史稿\" in r and \"../paper_cn_v3/README.md\" in r and \"../paper_cn_v4/README.md\" in r; s=(root/\"SESSION_HANDOFF.md\").read_text(); assert s.splitlines()[2].startswith(\"## 最新交接：做了什么、没做什么\"); assert \"### 做了什么\" in s and \"### 没做什么\" in s; print(json.dumps({\"status\":\"pass\",\"original_v08_implementation_and_upload_preserved\":True,\"v091_and_current_v010_links\":True,\"front_summary\":True},ensure_ascii=False,indent=2))"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-08T17:08:31.638549+00:00",
+  "finished_utc": "2026-10-08T17:08:31.688742+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/followup-handoff-doc-check.txt",
+    "bytes": 147,
+    "sha256": "2a934df441c76b3e6b5b95386a81bdb41374ebc1f808e569a2f13ed6a5351723"
+  }
+}

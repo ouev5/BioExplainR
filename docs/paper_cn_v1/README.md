@@ -1,8 +1,35 @@
-# BioExplainR 中文论文 v0.8
+# BioExplainR 中文论文 v0.8（历史稿，已归档）
 
-**已归档版本。当前精简主稿v0.9、工具比较与SPARCL1外部实验见 `../paper_cn_v2/README.md`。本目录原文件保留。**
+**本目录为已归档 v0.8 历史稿，不作为当前稿引用。唯一当前稿为 v0.10，入口 [`../paper_cn_v4/README.md`](../paper_cn_v4/README.md)；v0.9.1 已归档于 [`../paper_cn_v3/`](../paper_cn_v3/README.md)，v0.9 已归档于 `../paper_cn_v2/`。本目录原稿/图表保留，仅用于历史比对与上传记录对应。**
 
-日期：2026-10-08；当前软件开发版0.4.0.9000，历史模型结果0.3.1。本目录是新中文稿的唯一入口，旧v0.7稿及历史图表保留。
+## 最新续接：正式共同任务与机制研究增补
+
+当前主稿继续为[v0.10](../paper_cn_v4/README.md)，[v0.9.1指定历史链接](../paper_cn_v3/README.md)保留。本轮正式共同任务360运行/1,800评分及机制/ChIP独立复核完成，新增[4页增补](../research_followup_v1/README.md)。SPARCL1 A549交互因过滤不可估计；ASM峰为坐标核实hg19后的窗口重叠，不作因果证明。正式研究交付为r13，本次交接更新另用r14，GitHub/外部上传仍暂停。
+
+- **做了什么：** 正式评分、机制拟合、ChIP坐标/窗口核实及Python/R独立实现复核已完成；研究增补Word/PDF/HTML已导出。结果/失败/续接入口见[`../../SESSION_HANDOFF.md`](../../SESSION_HANDOFF.md)和[`../implementation_records/PAPER_CN_CONTINUATION.md`](../implementation_records/PAPER_CN_CONTINUATION.md)。
+- **没做什么：** 新结果尚未整合为下一版主稿；未完成湿实验、因果/蛋白/功能/临床验证、专家/用户评分、真实稿件信息或第三方人员sign-off。当前工作稿仍为v0.10，本目录v0.8及下方“未运行”文字只代表各自历史阶段。
+- **本次交接更新：** r14/baseline-12同步三份交接文档，r13保留为正式研究交付；不以新文档更新产生新推理或研究成绩。下一轮从v0.10与研究增补续接。
+- **当前续接边界：** v0.11尚未开始；本次只整理交接文档，没有改写本目录历史稿、没有生成新图表或论文导出。正式工作稿仍是v0.10，v0.9.1链接继续保留为历史入口。
+
+## 上轮准备交接补充：已做／未做（历史时点）
+
+- **用户指定的 v0.9.1 入口：[`../paper_cn_v3/README.md`](../paper_cn_v3/README.md)**（10页主稿／16页补充，21项图表正文对应）。该稿已被v0.10取代；当前入口仍为[`../paper_cn_v4/README.md`](../paper_cn_v4/README.md)，本轮未回退稿件。
+- 已做：保存共同任务性能比较及GR机制检验方案；独立临时库安装ellmer0.5.0，取得并核对本地Qwen模型／llama.cpp归档；取得5项公开干预/元数据/原文输入。状态快照`research/results/common_performance_checkpoint_v1/checkpoint.json`。
+- 未做：任务输入/runner/评分器尚未实现冻结，没有推理或性能数字；机制候选表达未读取，统计/独立复核未跑，ChIP峰和assembly尚未核实。SCassist半包中断、Sasse原文XMLHTTP500均保留。湿实验、蛋白/功能/临床验证及独立人员研究未完成。
+- 最新“做了什么、没做什么”和续接命令见根`SESSION_HANDOFF.md`及[`../implementation_records/PAPER_CN_CONTINUATION.md`](../implementation_records/PAPER_CN_CONTINUATION.md)。本轮未导出新论文/图表或发布GitHub；#45–47仅对应本目录v0.8。交接新包r12，r11为上一轮已完成交付。
+
+## 历史交接摘要（2026-10-09，v0.10主稿完成／正式后续研究前）
+
+- 当前稿 **v0.10**（`docs/paper_cn_v4/`）：12 页主稿（3 主图、1 内嵌表、32 参考文献）＋18 页补充（8 补充图、补充方法 S1–S13、外置表 S1–S13）。新增候选后续检验：SPARCL1 在 GSE146017 的三项交互均未获支持；核对原论文供体映射后 GSE94335 的 7/7 非哮喘与 9/9 致死性哮喘供体均上调，组间响应差未获支持。
+- v0.9.1 历史状态：10 页主稿＋16 页补充，全部 10 图/11 表完成正文引出与解释，记录见 [`../paper_cn_v3/FIGURE_TABLE_REVIEW.md`](../paper_cn_v3/FIGURE_TABLE_REVIEW.md)。
+- 当前 v0.10 实际为 11 图/14 表＝25 项正文对应；本地开发交付入口 r11 及完整性记录见 [`../DEVELOPMENT_DELIVERY.md`](../DEVELOPMENT_DELIVERY.md)。
+- 未完成：共同任务六工具性能排名、新增供体湿实验与机制/蛋白/临床验证、新专家与用户研究、真实作者/基金/伦理等最终信息及人工或第三方审阅。
+- 已暂停/未发布：GitHub 按负责人要求暂停，无远程仓库、公开 release、正式网址或 DOI；v0.9/v0.9.1/v0.10 均未对外上传。公开上传编号 **#45–47 仅对应本目录 v0.8**。
+- 本轮未重跑 R 包源码/build/check、Shiny、HTTP/bwrap 或在线模型；下方运行命令和数字为 v0.8 历史复现入口，不用于覆盖当前稿。
+
+---
+
+历史日期：2026-10-08；软件开发版0.4.0.9000，历史模型结果0.3.1。本目录是v0.8稿件入口，旧v0.7稿及历史图表保留。
 
 ## 阅读与编辑
 

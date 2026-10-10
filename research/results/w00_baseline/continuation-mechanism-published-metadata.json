@@ -1,0 +1,17 @@
+{
+  "command": [
+    "python3",
+    "research/discovery/acquire_published_mechanism.py",
+    "research/results/discovery_mechanism_fit_v4"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-09T03:03:16.932386+00:00",
+  "finished_utc": "2026-10-09T03:03:19.716969+00:00",
+  "exit_code": 1,
+  "status": "fail",
+  "log": {
+    "path": "research/results/w00_baseline/continuation-mechanism-published-metadata.txt",
+    "bytes": 684,
+    "sha256": "e3fa89bb34b013aa297a9a44ce716b2e78e7f68321eb29919cd49a9bba334d6a"
+  }
+}

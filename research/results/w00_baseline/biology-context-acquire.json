@@ -1,0 +1,17 @@
+{
+  "command": [
+    "/tmp/opencode/paper-venv/bin/python",
+    "research/discovery/prepare_context.py",
+    "research/results/discovery_context_v1"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-08T12:54:39.285659+00:00",
+  "finished_utc": "2026-10-08T12:56:33.683841+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/biology-context-acquire.txt",
+    "bytes": 1729,
+    "sha256": "46441f6dff50cda3ecbccf70ad36b24048d4b2a74395a7b19090cbdb3a1d3e54"
+  }
+}

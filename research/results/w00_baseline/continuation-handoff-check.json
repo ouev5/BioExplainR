@@ -1,0 +1,16 @@
+{
+  "command": [
+    "python3",
+    "research/common_performance/check_handoff.py"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-09T05:45:22.456304+00:00",
+  "finished_utc": "2026-10-09T05:45:22.664410+00:00",
+  "exit_code": 1,
+  "status": "fail",
+  "log": {
+    "path": "research/results/w00_baseline/continuation-handoff-check.txt",
+    "bytes": 263,
+    "sha256": "ebf3d1044117ea663d7ce29fa10c33eac448995bd6c38b61882f8779594ff60b"
+  }
+}

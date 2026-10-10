@@ -1,0 +1,24 @@
+{
+  "name": "intrapulmonary_article.json",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A32299863+AND+SRC%3AMED&format=json&resultType=core",
+  "started_utc": "2026-10-10T05:13:10.743998+00:00",
+  "http_status": 200,
+  "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A32299863+AND+SRC%3AMED&format=json&resultType=core",
+  "headers": {
+    "Vary": "origin,access-control-request-method,access-control-request-headers,accept-encoding",
+    "Content-Type": "application/json;charset=UTF-8",
+    "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+    "Date": "Sat, 10 Oct 2026 05:13:12 GMT",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Set-Cookie": "JSESSIONID=D7658C3F7945EF2C8B38B2BBBC48C50F; Path=/europepmc/webservices/rest; Secure; HttpOnly"
+  },
+  "status": "retrieved",
+  "response": {
+    "path": "research/results/discovery_public_proteome_v1/sources/intrapulmonary_article.json",
+    "bytes": 7357,
+    "sha256": "9c4ecf81f9362cb28d05139475c5d751d6e2a446902baef2e9ad1d90264799a2"
+  },
+  "completed_utc": "2026-10-10T05:13:12.323107+00:00",
+  "seconds": 1.5791126731783152
+}

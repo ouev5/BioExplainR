@@ -1,0 +1,36 @@
+{
+  "status": "pass",
+  "utc": "2026-10-10 00:54:58 UTC",
+  "arrays": {
+    "secretome24": {
+      "raw_rows": 600,
+      "selected_comparisons": 70308,
+      "all_comparisons": 7807,
+      "sample_columns": 36
+    },
+    "secretome72": {
+      "raw_rows": 531,
+      "selected_comparisons": 70308,
+      "all_comparisons": 7807,
+      "sample_columns": 48
+    },
+    "proteome24": {
+      "raw_rows": 4043,
+      "selected_comparisons": 70308,
+      "all_comparisons": 7807,
+      "sample_columns": 42
+    },
+    "proteome72": {
+      "raw_rows": 3097,
+      "selected_comparisons": 70308,
+      "all_comparisons": 7807,
+      "sample_columns": 42
+    }
+  },
+  "selected_comparisons": 281232,
+  "all_comparisons": 31228,
+  "sample_columns": 168,
+  "formula_comparisons": 4968,
+  "summary_rows": 48,
+  "scope": "Independent R original MaxQuant tables, decoding, direct/majority identities, numeric transforms/counts; published workbook export verified separately by OOXML parser; no new independent biological evidence"
+}

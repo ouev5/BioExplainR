@@ -1,0 +1,118 @@
+{
+  "utc": "2026-10-10T09:26:46.729951+00:00",
+  "prior": {
+    "status": "pass",
+    "manifest": {
+      "path": "research/results/discovery_public_download_v1/download_manifest.json",
+      "bytes": 37665,
+      "sha256": "afe39806f12dd2dcecf7a1511e5e9e24fc5b2af71c59486bece38c6a291cb14d"
+    },
+    "sealed_files": 157,
+    "complete_files": 25,
+    "v013_bound_records": 302,
+    "scope": "Previous download seal and v0.13 bound records/archive; exact old rgo snapshot"
+  },
+  "inputs": [
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/PXD063431_240221_PB_ProteomeDiscoverer_all_Proteins_A549.txt",
+      "bytes": 1237980,
+      "sha256": "2e2b8774f07df6bd25ebc33bb246dddfc7beef880a6a8b9f831ca508bd820301"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/sources/PXD029135_median-normalized_complete.txt",
+      "bytes": 2055550,
+      "sha256": "e4ea82e370223bf28b63c2a850134efb5f3d70fcd574368c768634a7edc68e46"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/PXD029135_SRDF_File.txt",
+      "bytes": 1138,
+      "sha256": "7f76923521bd6c6f3da00a444b3b6595d1efb141863e418482efef6cb567979e"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/HBEC_sample_decode.csv",
+      "bytes": 4859,
+      "sha256": "562b44fcc0a9ede4836f01e99fb91850fa139e407babd88206225f07bfa94307"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/PXD029135_PXD029135_community_annotated.sdrf.tsv",
+      "bytes": 32770,
+      "sha256": "8697b4ab58220d3aeefdbd3ef5b01bacc8d52ff29ef6199bd9daf77cbc1b60e0"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/PXD063431_project_0.json",
+      "bytes": 6332,
+      "sha256": "5353b0d5f5f4d9e7dfdc73a7e04405ca3135580a7cf02b69ed32bc4c1c236519"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/PXD029135_project_0.json",
+      "bytes": 7357,
+      "sha256": "4269b96594aa7376802099fa1a718dd2c1ca48310ca4dbaca91642b33a9b2eb2"
+    },
+    {
+      "path": "research/results/discovery_set_validation_v1/unselected_protein/frozen_genes.csv",
+      "bytes": 1490,
+      "sha256": "e1b7f7518617753bcd39df45a41be1d4d165c607178bbe28ef2756e9ccaa12b1"
+    },
+    {
+      "path": "research/results/discovery_set_validation_v1/annotation.csv",
+      "bytes": 2858,
+      "sha256": "cd671905ea95a7e130525adf998d912bd84d52cfa479fdb8fd6793b3fe9864c9"
+    }
+  ],
+  "source_code": [
+    {
+      "path": "research/discovery/EPITHELIAL_PROTEIN_PROTOCOL.md",
+      "bytes": 3938,
+      "sha256": "f1768aa5c52620c8c7d4313163180001d588a9d2e68063289be0c3c7f9222f4a"
+    },
+    {
+      "path": "research/discovery/epithelial_protein.py",
+      "bytes": 19348,
+      "sha256": "c1fd9dcad144ab208ce2f488e084c2dc9f5367e4f342128236f65389ba64fc9d"
+    },
+    {
+      "path": "research/discovery/audit_epithelial_protein.R",
+      "bytes": 11289,
+      "sha256": "9b84411946ed8ef5709d7f958715195a8ae35e9672146f7ca587e293959b28a7"
+    },
+    {
+      "path": "research/discovery/report_epithelial_protein.R",
+      "bytes": 3401,
+      "sha256": "4d89edecc0c9ee4cae4ceb16cd84665341ec56a1b22fc9d82a855868c9ed8dac"
+    },
+    {
+      "path": "research/discovery/finish_epithelial_protein.py",
+      "bytes": 16634,
+      "sha256": "fd8bcebcc9680968659eb18b638b2a5aabd45b9320bbf6893920e7e45cc7762a"
+    },
+    {
+      "path": "research/discovery/validation_sources.py",
+      "bytes": 16701,
+      "sha256": "800a3d0f5aaa4ec11004555aa31f9fc0573845213d0ff9410ed1da93aedf854b"
+    }
+  ],
+  "genes": {
+    "path": "research/results/discovery_epithelial_protein_v1/frozen_genes.csv",
+    "bytes": 1634,
+    "sha256": "276b105a731e5891fbd787bd2c01caa6db067e05c0e6d23c93604a54fccf85a0"
+  },
+  "samples": {
+    "path": "research/results/discovery_epithelial_protein_v1/HBEC_samples.csv",
+    "bytes": 4529,
+    "sha256": "d76909f94b0b5937c5a3518d75fbce5410633fdbb4640f29328c7eb3a1fbe596"
+  },
+  "snapshot": {
+    "path": "research/results/discovery_epithelial_protein_v1/rgo_before_epithelial.md",
+    "bytes": 96178,
+    "sha256": "87612444cc42f66471083d8d0dda57085963d184160c40f662dd57d926913018"
+  },
+  "timing": "Prior ASM/HTPC effects known; only first noncandidate epithelial rows/header and metadata inspected; no new candidate abundance inspected",
+  "family_sizes": {
+    "A549_primary": 56,
+    "HBEC_primary": 56,
+    "HBEC_secondary": 112
+  },
+  "online_model_calls": 0,
+  "author_contact": false,
+  "PXD055968": "skipped_by_user"
+}

@@ -1,0 +1,30 @@
+{
+  "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/pe210308_01.msf",
+  "requested": [
+    533200896,
+    533446655
+  ],
+  "attempts": [],
+  "status": "retrieved",
+  "utc": "2026-10-10T02:33:12.168003+00:00",
+  "http_status": 206,
+  "headers": {
+    "Date": "Sat, 10 Oct 2026 02:33:03 GMT",
+    "Server": "Apache",
+    "Last-Modified": "Wed, 26 Nov 2025 14:35:52 GMT",
+    "ETag": "\"1fcbc000-64480502ea200\"",
+    "Accept-Ranges": "bytes",
+    "Content-Length": "245760",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Methods": "GET,OPTIONS",
+    "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+    "Content-Range": "bytes 533200896-533446655/533446656",
+    "Connection": "close",
+    "Content-Type": "application/vnd.epson.msf"
+  },
+  "file": {
+    "path": "research/results/discovery_asm_ev_export_v1/ranges/pe210308_01.msf/533200896-533446655.bin",
+    "bytes": 245760,
+    "sha256": "d5aa17d775ebabd1b71f62f904b10e3df9ba4aef11f2095a9e35972bc42f6366"
+  }
+}

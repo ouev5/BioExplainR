@@ -1,0 +1,42 @@
+{
+  "status": "completed",
+  "utc": "2026-10-10T00:26:46.758293+00:00",
+  "script": {
+    "path": "research/discovery/secretome_analyze.py",
+    "bytes": 16469,
+    "sha256": "27102dd4c6f53119b31382cc0272d73ecc86e148da3ac4453a450dcbab9e5df8"
+  },
+  "full_family": 846,
+  "candidate_family": 112,
+  "summary": [
+    {
+      "time_h": 24,
+      "raw_groups": 600,
+      "QC_groups": 466,
+      "donor_labels": 6,
+      "technical_columns": 36,
+      "estimable_groups": 194,
+      "pooled_BH_significant": 7,
+      "exact_BH_significant": 0,
+      "candidate_unique_groups": 4,
+      "candidate_estimable": 2,
+      "candidate_Holm_significant": 0
+    },
+    {
+      "time_h": 72,
+      "raw_groups": 531,
+      "QC_groups": 380,
+      "donor_labels": 8,
+      "technical_columns": 48,
+      "estimable_groups": 153,
+      "pooled_BH_significant": 16,
+      "exact_BH_significant": 0,
+      "candidate_unique_groups": 3,
+      "candidate_estimable": 2,
+      "candidate_Holm_significant": 1
+    }
+  ],
+  "raw_measurements": 35016,
+  "estimable_candidates": 4,
+  "scope": "Full unselected MaxQuant secretome arrays, paired labels, no imputation, cross-tissue same source"
+}

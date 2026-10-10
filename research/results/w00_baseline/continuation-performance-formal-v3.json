@@ -1,0 +1,17 @@
+{
+  "command": [
+    "python3",
+    "research/common_performance/run_benchmark.py",
+    "research/results/common_performance_v3"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-09T01:33:16.044021+00:00",
+  "finished_utc": "2026-10-09T01:38:34.596342+00:00",
+  "exit_code": -15,
+  "status": "fail",
+  "log": {
+    "path": "research/results/w00_baseline/continuation-performance-formal-v3.txt",
+    "bytes": 213,
+    "sha256": "4d88fac56d4a90804dea4a298a394039f9f1c7e810d88c7a454f61b12a08eb06"
+  }
+}

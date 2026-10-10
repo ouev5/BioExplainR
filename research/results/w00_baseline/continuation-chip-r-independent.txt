@@ -1,0 +1,34 @@
+载入需要的程辑包：stats4
+载入需要的程辑包：BiocGenerics
+
+载入程辑包：‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, aperm, append, as.data.frame, basename, cbind,
+    colnames, dirname, do.call, duplicated, eval, evalq, Filter, Find,
+    get, grep, grepl, intersect, is.unsorted, lapply, Map, mapply,
+    match, mget, order, paste, pmax, pmax.int, pmin, pmin.int,
+    Position, rank, rbind, Reduce, rownames, sapply, setdiff, sort,
+    table, tapply, union, unique, unsplit, which.max, which.min
+
+载入需要的程辑包：S4Vectors
+
+载入程辑包：‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    expand.grid, I, unname
+
+载入需要的程辑包：IRanges
+载入需要的程辑包：GenomeInfoDb
+错误: 不是所有的r$count == length(index)都是TRUE
+停止执行

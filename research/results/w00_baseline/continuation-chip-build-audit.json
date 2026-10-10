@@ -1,0 +1,17 @@
+{
+  "command": [
+    "python3",
+    "research/discovery/verify_chip_assembly.py",
+    "research/results/discovery_chip_v1"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-09T01:53:23.446749+00:00",
+  "finished_utc": "2026-10-09T01:53:34.627282+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/continuation-chip-build-audit.txt",
+    "bytes": 17534,
+    "sha256": "a8b87d2b842a8a8057567fcd6d13b804747567a0ab42b08d3925d02766831b42"
+  }
+}

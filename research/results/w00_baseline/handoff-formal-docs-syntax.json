@@ -1,0 +1,17 @@
+{
+  "command": [
+    "python3",
+    "-c",
+    "from pathlib import Path; p=Path(\"research/manage_baseline.py\"); compile(p.read_text(),str(p),\"exec\"); print(\"Python syntax pass\")"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-09T06:44:08.569238+00:00",
+  "finished_utc": "2026-10-09T06:44:08.628605+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/handoff-formal-docs-syntax.txt",
+    "bytes": 19,
+    "sha256": "353c8ae5366e2ca362516858895732ff40890d59906cbf6d5ec82dab3b374b98"
+  }
+}

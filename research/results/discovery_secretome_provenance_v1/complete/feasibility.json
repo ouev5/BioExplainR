@@ -1,0 +1,31 @@
+{
+  "status": "completed",
+  "utc": "2026-10-10T00:59:04.078497+00:00",
+  "projects": 8,
+  "GC_candidate_validation_arrays_obtained": 0,
+  "EV_full_quantification_analyzed": false,
+  "new_candidate_significance_claims": 0,
+  "supplement": {
+    "status": "failed",
+    "url": "https://ars.els-cdn.com/content/image/1-s2.0-S2589-0042(25)00807-7-mmc1.pdf",
+    "path": "research/results/discovery_secretome_provenance_v1/sources/EV_publisher_supplement.bin",
+    "attempts": [
+      {
+        "utc": "2026-10-10T00:58:57.501737+00:00",
+        "error": "HTTP Error 404: Not Found",
+        "attempt": 1
+      },
+      {
+        "utc": "2026-10-10T00:58:58.780601+00:00",
+        "error": "HTTP Error 404: Not Found",
+        "attempt": 2
+      },
+      {
+        "utc": "2026-10-10T00:59:01.067050+00:00",
+        "error": "HTTP Error 404: Not Found",
+        "attempt": 3
+      }
+    ]
+  },
+  "scope": "Acquired scoped evidence; failure/no qualifying obtained array is not proof no dataset exists"
+}

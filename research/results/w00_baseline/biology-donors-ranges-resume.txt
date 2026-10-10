@@ -1,0 +1,26 @@
+Verified ranges 20/232
+Verified ranges 40/232
+Verified ranges 60/232
+Verified ranges 80/232
+Verified ranges 100/232
+Verified ranges 120/232
+Verified ranges 140/232
+Verified ranges 160/232
+Traceback (most recent call last):
+  File "/home/ubuntu/creatR/research/discovery/download_ranges.py", line 66, in <module>
+    p.add_argument("--workers", type=int, default=12); args = p.parse_args(); download(args.url, args.path, args.workers)
+                                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/creatR/research/discovery/download_ranges.py", line 51, in download
+    result.result()
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/creatR/research/discovery/download_ranges.py", line 33, in get
+    assert part.stat().st_size == end-start+1
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

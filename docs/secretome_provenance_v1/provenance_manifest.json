@@ -1,0 +1,2394 @@
+{
+  "status": "sealed",
+  "utc": "2026-10-10T01:17:08.132345+00:00",
+  "files": [
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/EXECUTION_NOTES.md",
+      "bytes": 4362,
+      "sha256": "a0ff78cbb348982e9491a16a470308c305f32c05bdb8ff80dc37a7980f642548"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/FINDINGS.md",
+      "bytes": 3215,
+      "sha256": "cd9adac36a2e7127baee87edbce42a6ca9d2caa09c92b4336ca977ff9b1b2ebc"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/README.md",
+      "bytes": 1859,
+      "sha256": "d3cb05c2db8c12ccde126560a3895c24fa69224178ce388fec5a01709472d804"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/all_intensity_cross_array.csv",
+      "bytes": 3259851,
+      "sha256": "2882ec613959a3b5595d689c7fd4d10b5d5b36fb8aeb2197ec88c9cd00dc792c"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/analysis.json",
+      "bytes": 20446,
+      "sha256": "fece25ee933305bce0e6c7f6e7a4bae01a88131fadd1decabac5e0003d0ed9ca"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/BioExplainR-provenance-en.html",
+      "bytes": 6929,
+      "sha256": "55d064a713a2c954bd4e0a6b7a51b1b095e3f1b03b34536a6327a218d10b1e26"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/BioExplainR-provenance-zh.html",
+      "bytes": 6765,
+      "sha256": "56f7b04ba2024e8843c3422dbe99dd388c3a41695b19026ca246c9dc7cb7fbec"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/EV_file_linkage.csv",
+      "bytes": 2483,
+      "sha256": "e9f60b47017352e1a30764ff0b98b9dffa3e728d5fd4abd8fe980bd3014699f0"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/EV_selected_glycolysis.csv",
+      "bytes": 1126,
+      "sha256": "1ea84dbbb39c1955ce2127df0cd2e17e09717f0084f5670f353c16236ba66379"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/EV_selected_table_audit.json",
+      "bytes": 984,
+      "sha256": "aa3056bbbe61db6372b420624b18cbff7a78ab3c97dadd20a59eb8816b518718"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/EV_supplement_scope.csv",
+      "bytes": 571,
+      "sha256": "2c373c1064a1d09b3336a79c7a3417dd11b604433426837e8875a360da09d0e6"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/EV_supplement_text.txt",
+      "bytes": 17800,
+      "sha256": "810d98c019967998ccba6c32d6cc7a95bf18187ed88dc78bbf080f7812f8c5ed"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/PXD055968_files.csv",
+      "bytes": 6662,
+      "sha256": "ca3c426e0983a29f1ac5044f41d2cd8ab5dc39b12d440b17e916f1d1124b2b60"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/analysis.json",
+      "bytes": 21023,
+      "sha256": "c386637b3bc012627b96b7fa28add64660620b315b955bf879ec9e0c991722e8"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/bioexplainr_project.rds",
+      "bytes": 3104,
+      "sha256": "59e069588f88f6976169713cd072e87327de85503a3f08f56e1de9637bfacd72"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/bioexplainr_workflow.json",
+      "bytes": 655,
+      "sha256": "06282a99aa03fbe2edc9f03fb2ada8737b283ced397456fed92f0c9629cec1d2"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/cross_array_summary.csv",
+      "bytes": 4592,
+      "sha256": "94103f842f0048d149dc4a9585be52c4be3a3d9c0306a456cfaf76ba7f2136ec"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/diagnostic_freeze.json",
+      "bytes": 1268,
+      "sha256": "ae8ba7bc1c3f7eb8b26a412b5b0a334322bd81d3921d818134add29655211f03"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/diagnostics.json",
+      "bytes": 2398,
+      "sha256": "1f8854336f6be26d31b28c343982c4749fa0e22d0c669f986dfb81b4673305d5"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/diff_measurement_cross_array.csv",
+      "bytes": 45843950,
+      "sha256": "de6179c3361a2813905f1a9e27d2b6753b1007db39ab5a91d912b15693a2adb3"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/ev_article_links.csv",
+      "bytes": 865,
+      "sha256": "92166291cb528b43b10ce039350b84fb07b161b9984532c97074aa91c1e31fa0"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/ev_article_passages.csv",
+      "bytes": 61461,
+      "sha256": "97911d5b6fc6c01184e0b0f439230354e7181327115a1c4f33f85ce6b1a39a83"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/feasibility.json",
+      "bytes": 999,
+      "sha256": "dfe702a31f0e4ef687b454cd0af090932607e4c90cddb8d951cb4ca2d22a3c3c"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/feasibility_freeze.json",
+      "bytes": 908,
+      "sha256": "060ef35aebd452818c9af819e0173b0d360bb5c715d8bffa0c07a16737f2b398"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/freeze.json",
+      "bytes": 3973,
+      "sha256": "68c890cb535f9dc3d7970d556265e3d6367045d5df6c78d0a533290e9632a014"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/fulltext_links.csv",
+      "bytes": 309765,
+      "sha256": "c005779477c9f73f8b48fc3ab6d4f1ae5fe599cb61f18515fda27c477b2d447c"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/fulltext_passages.csv",
+      "bytes": 72936,
+      "sha256": "d42a8606abe210d08239350199fc1e13d2355431fb6c96ab28248723b8cdc54a"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/fulltext_requests.json",
+      "bytes": 873,
+      "sha256": "f019564585dc9eea0b4ab549191f11156a938acfe389779e4f1321a9f278e603"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/handoff_check.json",
+      "bytes": 8022,
+      "sha256": "ed539cbe2142896adb896d0d484826eabaef8e5bb22263a3b02e1f88d270fa3f"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/independent_audit.json",
+      "bytes": 1746,
+      "sha256": "1b72bb80ff675bf00a30d7e83efc7f54c29c5af5fda28c9fb182318c8c25d1f6"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/lead_acquisition.json",
+      "bytes": 2608,
+      "sha256": "f351621572b4943bb365db582e0a40234c4a97511d3c10c3fba301c99d5ce686"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/lead_attachment_metadata.csv",
+      "bytes": 4725,
+      "sha256": "8f4cb40fdf21002f403a376a35fa7ddbfe9b5516ffb3eeca8a1b7e69111c2bed"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/lead_figures_tables.csv",
+      "bytes": 11092,
+      "sha256": "fb177cbb21acf3d9475d537bf46dd1dfd22dde7189461b02ed7e7cca7ad29846"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/lead_freeze.json",
+      "bytes": 961,
+      "sha256": "08f7e86de890d1350caa9fd0d812ed5135240a6fc9fba4bde39598dce3107b88"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/lead_methods_passages.csv",
+      "bytes": 90131,
+      "sha256": "ed1b4eab94c6c78d7110cec4af422c1f9494e132035b9efd6b6b1da016f37cfe"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/literature_titles.txt",
+      "bytes": 27515,
+      "sha256": "b4c4af5844c19ed6a23959a8eb5d2fdfa58bb5dd2892b60c28ebdbbb3d5125b0"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/pride_projects.csv",
+      "bytes": 153740,
+      "sha256": "67ceb369d29faa3169c9f6653b687c4ac89a6cd67e1d7231a41784bab8974d04"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/project_feasibility.csv",
+      "bytes": 2389,
+      "sha256": "b4435776128bdd1042c20d9f3203303d5aefc3cb555af95a8b31dd10ac37b0d6"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/public_evidence_scope.csv",
+      "bytes": 1755,
+      "sha256": "5c8520aa31ae53f7229f7e5c3f294d525fad7f974988a582e57f9d4bca1d050e"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/python_environment.json",
+      "bytes": 233,
+      "sha256": "a59fcff44da73334dd340df020eff93007e40625955e9d1fc095cfd50a4248f9"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/r_audit.json",
+      "bytes": 1022,
+      "sha256": "66d3011a02f4d5a8a0f8195f8bfc6002e9711c464ea464f29ed4239b4611169b"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/r_audit_sessionInfo.txt",
+      "bytes": 873,
+      "sha256": "f60de9b56e8cd84d439005f490dd62aba67dbfe28a6194af9f2e180978b5e1ea"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/report_final/BioExplainR-provenance-en.html",
+      "bytes": 7326,
+      "sha256": "f40909543047fd0543cd95e92a91497e7b45d2ad5d24cd2e2c771a77d2a08621"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/report_final/BioExplainR-provenance-zh.html",
+      "bytes": 7162,
+      "sha256": "d208dbdbb7bad2f0c5754462581807f3ef85e011379730f11cf6cc35dd138113"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/report_final/bioexplainr_project.rds",
+      "bytes": 3318,
+      "sha256": "aa61e7563f2c82a56fb9c162fbd7c76743284e1a0f8e17de806676f7f4f161ce"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/report_final/bioexplainr_workflow.json",
+      "bytes": 915,
+      "sha256": "4c2a3ed8e5a35d95487b2c0aeae14e8f993bbb5f682f5b92d46af03df3889ff8"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/report_final/sessionInfo.txt",
+      "bytes": 1205,
+      "sha256": "c504631a656cfc52ae0662c46d55853aeeaad13270ef56e3ee796f46a82aaeb7"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/resume_freeze.json",
+      "bytes": 681,
+      "sha256": "cbe0abc52c6d863ac16dadb4009307ccb144fce7041c760af8c4da10f452b4a4"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/sample_map.csv",
+      "bytes": 10436,
+      "sha256": "e478a67f7c89873fe34a581691530c516db227d05ff5022cd8efe0d66b842b10"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/scale_formula_comparisons.csv",
+      "bytes": 622001,
+      "sha256": "9339d0824b3d9deba307ea6037b01cada13c63d466d4ab7ab2260a0022cbb8ca"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/scale_formula_summary.csv",
+      "bytes": 662,
+      "sha256": "d5075cc3097bed04bee261742f1e06af86eb26eb0b58b1ed769124cd9ccaa65d"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/scientific_ledger.json",
+      "bytes": 4408,
+      "sha256": "a095f369e3f4062950b2711ebb07d799d7dd80f85ac82d13a60ded3ce04656d7"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/secretome24_protein_offsets.csv",
+      "bytes": 2217,
+      "sha256": "616e4dd3d648f8e3aec905d0691cd4d00eb9eaf669ef1cceb078049f0d706a2b"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/sessionInfo.txt",
+      "bytes": 1205,
+      "sha256": "c504631a656cfc52ae0662c46d55853aeeaad13270ef56e3ee796f46a82aaeb7"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/source_acquisition_resume.json",
+      "bytes": 15428,
+      "sha256": "d8a78c5896af81a975e628627a188b7bb3fe902c067ab148adde017cec2ca7d8"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/supplement_acquisition.json",
+      "bytes": 687,
+      "sha256": "8c5495a71a47863b19ee32a0e4962ffab1812325b2d2c66a0e35a42f548fbba1"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/supplement_amendment.json",
+      "bytes": 528,
+      "sha256": "75324f1e64eb9c3cdf453746908fffbda428f86651ad91ff0f7aa8065d7657d7"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/supplement_review.json",
+      "bytes": 1046,
+      "sha256": "c1ed8360d254736256edd795b21cc4980a7e2ca3bef040bf66378793c76bedf1"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/cross_array_summary.csv",
+      "bytes": 4166,
+      "sha256": "07f7216db5cd09630ff3244d22fae24661a1bbb86091d176dff7369610806af6"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/diff_measurement_cross_array.csv",
+      "bytes": 43614125,
+      "sha256": "841e4867914a98b12c9ecd688171f9f500cf3f5e1ef2fe4e0ec0fad0c69b5ba0"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/freeze.json",
+      "bytes": 4188,
+      "sha256": "51313e05761f91bb1cc460d6043ac0768e4ac99798b07d464e839e2c41229862"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/literature_records.csv",
+      "bytes": 347941,
+      "sha256": "b42d3bd2a15abfcc31fe00e2d8cf56510f918e95ab30688b6fe3570847d42da4"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/original_methods_passages.csv",
+      "bytes": 14948,
+      "sha256": "2898de87391596afaa97dac383cf85b5eae63d6fc35798d80b247cf230794a0f"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/pride_projects.csv",
+      "bytes": 2580840,
+      "sha256": "ba2027e7e04c14f7f999013b3d7b0a98f2f59b74610fd928f181ea79035d8464"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/published_measurements.csv",
+      "bytes": 1905447,
+      "sha256": "cb8b6cd2879960915fdba5266ff08f03d7dee77b5d62f57914ebdefadb9994ae"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/rgo_before_provenance.md",
+      "bytes": 70724,
+      "sha256": "fad06842bdd738056ef6cda0debe26a3b2afda65aa0e6f5e3b2d1ee6c6ff1e2f"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/search_acquisition.json",
+      "bytes": 8604,
+      "sha256": "e2153556225b69a52e6599be8f7988b1f0212fbc29211df2a8ec655963dea247"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/secretome24_sample_offsets.csv",
+      "bytes": 3400,
+      "sha256": "5b75709df39c81750fa47836a050a2fd634cc69e575ffa8ad67e8331d3ef771f"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/EV_publisher_supplement_normalized.bin",
+      "bytes": 8947418,
+      "sha256": "229e8e41eee68e83a5de42e0ebbe24bd8fbeed89cb5647762c309e27b3722fc5"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/EV_supplement_probe_1.bin",
+      "bytes": 1816,
+      "sha256": "f2ad27abb2c90e0c104faa86c8670d31a73b2a73a80755aa392af3fb25816040"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC11024162.xml",
+      "bytes": 246958,
+      "sha256": "19be139f8b9acfef101f671b3c4ca04802f5a31e98903262fddc2fc4e157cf4b"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC11143057.xml",
+      "bytes": 92153,
+      "sha256": "51084fe5aea01b93e7d87831cd74c592fbdef5a38e26a1e79e00b4ea2c83c4cb"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC11743488.xml",
+      "bytes": 214650,
+      "sha256": "faf2b1a27d5e4db9c4dd5408774eb8d51a90a01f4ad07200fd08bb4bf58ac624"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC12130637.xml",
+      "bytes": 189378,
+      "sha256": "ec94a29f35c8ee049094c2b176c8d02ac5b654d99dbe7b0b79e309e8d2e4006f"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC12141081.xml",
+      "bytes": 187761,
+      "sha256": "1573922d23e2baca85af108303fba4ebcf758fe9547ed9cc7448bc89ada9ac75"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC12575704.xml",
+      "bytes": 184413,
+      "sha256": "4fe9b0f246d74e8d400b952c9c29bfa301f9868e8630153adb5f6d580f487d4e"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC12992014.xml",
+      "bytes": 195313,
+      "sha256": "46c92bbfb33f56bd63cd28eb4e877c283250a19a2283a72a9d44b91e4a3a6e40"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC13430594.xml",
+      "bytes": 119234,
+      "sha256": "4f73ad42c17ac8953766bd1fd3767d0c81477af882b4821e3525cd4c14a41cd5"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC2440089.xml",
+      "bytes": 108414,
+      "sha256": "b9a63030fa073db6421ea50bd429d8b52de872a6f8ba110782edf299734fa200"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC3060826.xml",
+      "bytes": 158613,
+      "sha256": "90ce611f0ada6d7a63a611b0ec8962549eb39452d36400c06e99f0d722359e49"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC3303634.xml",
+      "bytes": 80859,
+      "sha256": "4b06d8be44b5d4ab8b9ac1ea6878bfadf50e6ec51fa5ae647d29c6cd67610c32"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC3960248.xml",
+      "bytes": 81588,
+      "sha256": "01bd6ffd7a0e97f725143389e3a7d2ba4ebabc64ca09126e383448fbdaa7ae5a"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC4057123.xml",
+      "bytes": 184062,
+      "sha256": "ed3e585419ff07b3e2de17c70f0ac5bf70e50331973949e90972abb4d4cca322"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC4415891.xml",
+      "bytes": 166052,
+      "sha256": "4c3769171ee19de4f5eac8187e7eb9faed359219945475ced6d46907eaa18f32"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC5157777.xml",
+      "bytes": 109874,
+      "sha256": "642ffd7cf74b43695303ef8b23c1a37dfac288be4960c936c8af626e84ed3122"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC6084315.xml",
+      "bytes": 92301,
+      "sha256": "e653fc4abddae3a5e1de6272d603fcda01b317e9be9023c2e1f5d8b727a4a53d"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC6381743.xml",
+      "bytes": 127278,
+      "sha256": "778e8603b6c8d2ee6be28ed60dd3e9228a5f067462662ce53be3f836cd214319"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC6706008.xml",
+      "bytes": 106837,
+      "sha256": "6a5ac8611714d61f36ceed868d1810cdab63491a0d896359a3aac139e891f0df"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC8694576.xml",
+      "bytes": 134836,
+      "sha256": "fb8d6769bde1d6b0be006f790a2e9897e86e9f85a7dddd5effaea3d64a0fcfc9"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC8773081.xml",
+      "bytes": 125946,
+      "sha256": "f545f154fd965a7c8aa83a5c6cac613467b9bd190f6a4f807784150bfd97fb3f"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC9331514.xml",
+      "bytes": 143135,
+      "sha256": "afc3cf4da9d983eed0bed645623383c91e407e8d2a9a0aee119a30777cec6a9e"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC9928586.xml",
+      "bytes": 282070,
+      "sha256": "c8832e4a15269376f77be8deebcbcb56a89555f52563eba24188289a224c5a21"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PTX3_article.xml",
+      "bytes": 106837,
+      "sha256": "6a5ac8611714d61f36ceed868d1810cdab63491a0d896359a3aac139e891f0df"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PXD055968.json",
+      "bytes": 8016,
+      "sha256": "a265c71f78e617efc562967993e112e5ddc144df71880e9c4b40d34799cf1b05"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PXD055968_Link_between_files.xlsx",
+      "bytes": 13428,
+      "sha256": "b0494ffc67369a25af64641cae1528a9066e26570620f461e4edc1b7b51615b9"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PXD055968_files.json",
+      "bytes": 61216,
+      "sha256": "56eb8eb9ecf9797536c9fb63a6171f0bdc59d56a27be7c169325a90de73b896b"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/cough_article.xml",
+      "bytes": 112072,
+      "sha256": "474af8ecac5ec05671f8d7982cfcddb11446282eca63ddc2e7c7986d83000c36"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/epmc_asm_candidates_1.json",
+      "bytes": 242715,
+      "sha256": "ece03f7b9f02cee843a83edff42ce66a79ef76aa4e8396911a8da7c4a812d6bc"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/epmc_asm_gc_secretion_1.json",
+      "bytes": 493838,
+      "sha256": "c5e4d04fae631dd031166e4216761819afbd127373d4cb82b23b7705db2c823b"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/epmc_asm_proteomics_1.json",
+      "bytes": 48941,
+      "sha256": "eafd87879566d463e6dc1071071c1cc6861cfa023d3d2d5eb85964fc56cc8258"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/epmc_asm_secretome_1.json",
+      "bytes": 494441,
+      "sha256": "5770c04e828c8d4b777f5db7398f5f678fe2f74e0de6f8436fc88e51ccab3303"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/epmc_htpc_gc_1.json",
+      "bytes": 182530,
+      "sha256": "6053767e03ba80b627ab3723e5dfcad3e1ef13d2678a21e629c0a687a0c8525e"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/epmc_pxd033504_1.json",
+      "bytes": 10721,
+      "sha256": "3d599b9cc72c1252edc33c1c2d69b677647599ced9a5327547e671b942ce33db"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/ev_article_metadata.json",
+      "bytes": 16975,
+      "sha256": "caae9a9e95b0f4fdd147e4920b6c320760349ea334ca7bba31334ea65ee7666c"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/original_article_metadata.json",
+      "bytes": 10693,
+      "sha256": "8c62764a3a3be9c735a20141766f352fc67c89f6a84ffbc719a2d3019a5248e8"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/pride_corrected_1.json",
+      "bytes": 7736,
+      "sha256": "3c695659bafeba333e9e340b28ea4473d6ebb80fa56ed69e38606336a2b87fa7"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/pride_corrected_2.json",
+      "bytes": 101349,
+      "sha256": "5a033db6c0dc0e79c45da5a26b746ef433399a55491176f841b4fec8a6a07d9a"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/pride_corrected_3.json",
+      "bytes": 3,
+      "sha256": "5984eac0c5c6d947241e29dd5671b81a1546cedf77e08d38438ac47029969afa"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/pride_corrected_4.json",
+      "bytes": 3,
+      "sha256": "5984eac0c5c6d947241e29dd5671b81a1546cedf77e08d38438ac47029969afa"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/pride_corrected_5.json",
+      "bytes": 3,
+      "sha256": "5984eac0c5c6d947241e29dd5671b81a1546cedf77e08d38438ac47029969afa"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/pride_search_1.json",
+      "bytes": 654980,
+      "sha256": "969052798efa2b2202f2f2d2c5f17f7cdb5c6ddfc01b65f5fca0cac6f05746b8"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/pride_search_2.json",
+      "bytes": 654980,
+      "sha256": "969052798efa2b2202f2f2d2c5f17f7cdb5c6ddfc01b65f5fca0cac6f05746b8"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/pride_search_3.json",
+      "bytes": 654980,
+      "sha256": "969052798efa2b2202f2f2d2c5f17f7cdb5c6ddfc01b65f5fca0cac6f05746b8"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/pride_search_4.json",
+      "bytes": 654980,
+      "sha256": "969052798efa2b2202f2f2d2c5f17f7cdb5c6ddfc01b65f5fca0cac6f05746b8"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/workbook_headers.csv",
+      "bytes": 11733,
+      "sha256": "6323137d9d91aff6e66efde530762ce8a7a7b23abc6786b4dc0d699e61f4fe9f"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/README.md",
+      "bytes": 4202,
+      "sha256": "7821e8a4372a4dd93496bca7972ef7349f6b8fe4ea19379a8fb58b3d81b0a5f3"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/audit.json",
+      "bytes": 7434,
+      "sha256": "850817034953aea8e2009f4525509e2bdf6acfaaa7c233210ca5cf9be692ca9c"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/browser/分泌蛋白组-来源诊断与ASM公开证据续接-1440.png",
+      "bytes": 980757,
+      "sha256": "b20c8c984ec08afecb736f44b43d88b75cc9db6e4b9f1edd9bacce84a80a68ea"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/browser/分泌蛋白组-来源诊断与ASM公开证据续接-390.png",
+      "bytes": 874919,
+      "sha256": "ffed79e157cdc83eef4911372ccfec1c5443a8698ee68b0385384ef87a90713a"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/browser_final/BioExplainR-provenance-en-1440.png",
+      "bytes": 359690,
+      "sha256": "1e1146fcca5ffaf290c90311a49352317a1a8953f8fc55d05df5da54879ed19c"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/browser_final/BioExplainR-provenance-en-390.png",
+      "bytes": 352284,
+      "sha256": "bd0361439b90b7952e52b396e3a83480313d88d4e62fba2f5f6905139ce8788d"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/browser_final/BioExplainR-provenance-zh-1440.png",
+      "bytes": 355599,
+      "sha256": "63b69195ac2e289e6b864b8fc1b453882e2c15881d031e9da900b2bad0d6cbe0"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/browser_final/BioExplainR-provenance-zh-390.png",
+      "bytes": 344460,
+      "sha256": "e75eb9f68f5c0686435742517eedc0c6e1412d48866ce97c0a233750f36c9301"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/browser_final/audit.json",
+      "bytes": 4564,
+      "sha256": "c6b15ecddd0589da061186e25262ccdc0ad158de2018752e6662708d5dafe02d"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/browser_final/分泌蛋白组-来源诊断与ASM公开证据续接-1440.png",
+      "bytes": 980757,
+      "sha256": "b20c8c984ec08afecb736f44b43d88b75cc9db6e4b9f1edd9bacce84a80a68ea"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/browser_final/分泌蛋白组-来源诊断与ASM公开证据续接-390.png",
+      "bytes": 874919,
+      "sha256": "ffed79e157cdc83eef4911372ccfec1c5443a8698ee68b0385384ef87a90713a"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/export.json",
+      "bytes": 1152,
+      "sha256": "c7e79c22b8344a80628ca7930bd6c973b558aa93600aaa64400ffa38a0ed8030"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/figures/Figure_1_match.pdf",
+      "bytes": 11976,
+      "sha256": "fce7145a4ecc9d2b24917d0be713d52c342abcdaf8406d1fc2655122b5e4ead6"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/figures/Figure_1_match.png",
+      "bytes": 45287,
+      "sha256": "c67feb6fb3e4b3e1d0abec58c31760b7eee4f3279cb3fe28c03c18b2f3a277cd"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/figures/Figure_2_offsets.pdf",
+      "bytes": 16991,
+      "sha256": "29c3513a21b4b739e9bd8fb2e04125b5102488fb91dad3638ce086b880ed4738"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/figures/Figure_2_offsets.png",
+      "bytes": 82629,
+      "sha256": "1093478cc5da09985b87d3e7fe01c9692e69f16135c23e249eb8c80017a6c5d7"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/results.md",
+      "bytes": 8204,
+      "sha256": "e5fe9162e587bcfc5615bf116c7fd10ce2425378381cf20ed5e35cd7e64435bf"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/tables/EV_file_linkage.csv",
+      "bytes": 2483,
+      "sha256": "e9f60b47017352e1a30764ff0b98b9dffa3e728d5fd4abd8fe980bd3014699f0"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/tables/EV_file_linkage.xlsx",
+      "bytes": 6227,
+      "sha256": "fbd12f8d1f9658c701b05428277de573e3833ff2ba0ce87d01969ee0ebe4a280"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/tables/EV_selected_glycolysis.csv",
+      "bytes": 1126,
+      "sha256": "1ea84dbbb39c1955ce2127df0cd2e17e09717f0084f5670f353c16236ba66379"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/tables/EV_selected_glycolysis.xlsx",
+      "bytes": 6189,
+      "sha256": "7658229bd5acef86deb447e02796df30468fb26bcca38f0f5b4a41ab93f9313f"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/tables/EV_supplement_scope.csv",
+      "bytes": 571,
+      "sha256": "2c373c1064a1d09b3336a79c7a3417dd11b604433426837e8875a360da09d0e6"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/tables/EV_supplement_scope.xlsx",
+      "bytes": 6027,
+      "sha256": "349304a7a6f64948473c9c0a20d24bbdd831f2a942cbfa9fa6b9dd49112f91cf"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/tables/Table_1_four_arrays.csv",
+      "bytes": 237,
+      "sha256": "de28486451d3f103dcfe82f4f63938047846772c1bb798421bc194f959a7be04"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/tables/Table_1_four_arrays.xlsx",
+      "bytes": 5831,
+      "sha256": "0b024bdfe4f81728f93f58056596f0111c46f28cdf46f8141ce87657cc93c737"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/tables/Table_2_public_sources.csv",
+      "bytes": 470,
+      "sha256": "d109a7204c7fe91cd9579fd43fb485b0764d56d670bde8eec7f19698b8452ea0"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/tables/Table_2_public_sources.xlsx",
+      "bytes": 6080,
+      "sha256": "6e30486f27c468710e15419229d723983c4c0592bea1abde27ce6f08e0a3e288"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/tables/Table_3_EV_selected_glycolysis.csv",
+      "bytes": 222,
+      "sha256": "589bf40bdb641d39a3d3cc827054f9969d901568003220ac2ba91e00e7215e8b"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/tables/Table_3_EV_selected_glycolysis.xlsx",
+      "bytes": 5861,
+      "sha256": "b1bf2eb5c987e2d2b674ecd85dc22d1d47765e0b59c673ba265904c99aff6975"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/tables/cross_array_summary.csv",
+      "bytes": 4592,
+      "sha256": "94103f842f0048d149dc4a9585be52c4be3a3d9c0306a456cfaf76ba7f2136ec"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/tables/cross_array_summary.xlsx",
+      "bytes": 9355,
+      "sha256": "c89731a129db24d8c00c88207dec02e2a16a32869c40f664b5f0d72055d4c26e"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/tables/project_feasibility.csv",
+      "bytes": 2389,
+      "sha256": "b4435776128bdd1042c20d9f3203303d5aefc3cb555af95a8b31dd10ac37b0d6"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/tables/project_feasibility.xlsx",
+      "bytes": 6832,
+      "sha256": "24a99f81bc1b571cff6495b0dd525e4a8ecce2ef0bde84a94c5f09ca09701435"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/tables/public_evidence_scope.csv",
+      "bytes": 1755,
+      "sha256": "5c8520aa31ae53f7229f7e5c3f294d525fad7f974988a582e57f9d4bca1d050e"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/tables/public_evidence_scope.xlsx",
+      "bytes": 7130,
+      "sha256": "b0eda292d0a68f65d0b5b7073001ac231e944f4afd841b0b12a8219104b49d35"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/tables/sample_map.csv",
+      "bytes": 10436,
+      "sha256": "e478a67f7c89873fe34a581691530c516db227d05ff5022cd8efe0d66b842b10"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/tables/sample_map.xlsx",
+      "bytes": 10526,
+      "sha256": "144761c6a033f722062ddfd885cf0be3eb2e2d8d7550448c5e179973905ea80a"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/tables/scale_formula_summary.csv",
+      "bytes": 662,
+      "sha256": "d5075cc3097bed04bee261742f1e06af86eb26eb0b58b1ed769124cd9ccaa65d"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/tables/scale_formula_summary.xlsx",
+      "bytes": 6031,
+      "sha256": "ce3b8756e086859875021fda53c110965b7ea46da9356f71ee2d04a298f0bc24"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/tables/secretome24_protein_offsets.csv",
+      "bytes": 2217,
+      "sha256": "616e4dd3d648f8e3aec905d0691cd4d00eb9eaf669ef1cceb078049f0d706a2b"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/tables/secretome24_protein_offsets.xlsx",
+      "bytes": 7555,
+      "sha256": "cb988b33a49aeec439bbb5ccfe637091c275524aaac3b3d5bafb1d3664695b5a"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/分泌蛋白组-来源诊断与ASM公开证据续接.docx",
+      "bytes": 151759,
+      "sha256": "76c4462fe0a1b9bad38c5482a5455611a083ae51adde8acbcfcbf4464432cc78"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/分泌蛋白组-来源诊断与ASM公开证据续接.html",
+      "bytes": 180403,
+      "sha256": "456fed832340094c47c52a8dec70a52afc7752dfbd7b2d0433cb825867696b13"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/分泌蛋白组-来源诊断与ASM公开证据续接.pdf",
+      "bytes": 348729,
+      "sha256": "42c47c254f598129892186e7f3e1b1c09465882c0c8e38d43565543a286b0330"
+    }
+  ],
+  "source_code": [
+    {
+      "path": "DESCRIPTION",
+      "bytes": 2108,
+      "sha256": "5d59103e170b4eea6a955bb28ab9a65efd14c983e07aa57a7f2533a4844af6bb"
+    },
+    {
+      "path": "NAMESPACE",
+      "bytes": 3181,
+      "sha256": "c1aba4721cc66e304c4d6ce3ba610f3a225a1a04ce510d46459378a2aec58e85"
+    },
+    {
+      "path": "R/BioExplainR-package.R",
+      "bytes": 634,
+      "sha256": "ff9a30dd74f547f02fda0c8f222799981ff0b61b8907e9231deddffd46d9e917"
+    },
+    {
+      "path": "R/adapters-de.R",
+      "bytes": 17243,
+      "sha256": "76dd093251754c1b192253745169ac39dd4c7a81679e76a07ad89f4afa287a43"
+    },
+    {
+      "path": "R/adapters-enrich.R",
+      "bytes": 17831,
+      "sha256": "1066c1be961a7709e737b9bae29182a2e35651a1e33048d31f19ab2648b447e7"
+    },
+    {
+      "path": "R/adapters-extended.R",
+      "bytes": 21608,
+      "sha256": "d58a37371f07bfc41e7f464983a7775a6c41b1fbef52148ab36d57f6daf2d363"
+    },
+    {
+      "path": "R/adapters-multiomics.R",
+      "bytes": 5987,
+      "sha256": "842276174735dd591ca957cdcc2695d45fd61fe68414e12694e7caa65f8b8fa5"
+    },
+    {
+      "path": "R/adapters-plot-generic.R",
+      "bytes": 8666,
+      "sha256": "3dcb08da65225c975dd03389565b032db4ce780ad18fbc9e75770de0e1485625"
+    },
+    {
+      "path": "R/adapters-sc.R",
+      "bytes": 12179,
+      "sha256": "ae21a4e14fa10ede45cf70c71a29019fd838b6fdf4249c280fdd9397553997a6"
+    },
+    {
+      "path": "R/benchmark-contract.R",
+      "bytes": 4397,
+      "sha256": "a0e8c07eb97c195c2619362c3236aa4747d1ea2d55c10d04ea4dd25533556e40"
+    },
+    {
+      "path": "R/cell-proportions.R",
+      "bytes": 16376,
+      "sha256": "786997096cb96cb4b3f4e997c3b326eab257acde51e346090ebc46b0d7235c82"
+    },
+    {
+      "path": "R/claims.R",
+      "bytes": 14741,
+      "sha256": "4a3933c9266941b7b49c1349266b20ca04c23e0fe2af97276cc7c41169b7d791"
+    },
+    {
+      "path": "R/config.R",
+      "bytes": 17213,
+      "sha256": "4f051baa9b33c62f344ff7aa2ef8dbb6c5a2d457b1eb95254aac894e34dd6b4c"
+    },
+    {
+      "path": "R/context.R",
+      "bytes": 23332,
+      "sha256": "e7e5caffdbe20c8e612fc93513750a5adf18fc197b0aec6c88c47babc559fd7c"
+    },
+    {
+      "path": "R/contracts.R",
+      "bytes": 10550,
+      "sha256": "10e9539763717f7efd46cbed1a6795ed2811c151ac812e07cf7437d2ab6f56e6"
+    },
+    {
+      "path": "R/diagnose.R",
+      "bytes": 27610,
+      "sha256": "ee832f81fc77847267ceba590630eb0d512f20a8fc1a7659ccbd6eb2001e58c3"
+    },
+    {
+      "path": "R/docking.R",
+      "bytes": 6106,
+      "sha256": "2dd31afe1efccbe0ad122aadc7bab8b474f7f2cabc9319aa03b7d3b259392869"
+    },
+    {
+      "path": "R/evaluation.R",
+      "bytes": 17455,
+      "sha256": "416523e2550b10565ab753714b4b57f904995088307c1927b8930388f6168d16"
+    },
+    {
+      "path": "R/evidence-live.R",
+      "bytes": 31381,
+      "sha256": "079f763bb17f9b80156e70637dde8cdf7c8c58fccb2871618b2d85d2055e68f7"
+    },
+    {
+      "path": "R/evidence-support.R",
+      "bytes": 8222,
+      "sha256": "82be4a9b3cbaa2ec2b0e34f8def75939a11ea989b727c1decabad473fa4a86cf"
+    },
+    {
+      "path": "R/evidence.R",
+      "bytes": 7447,
+      "sha256": "42a113788cee02fac9d854160238072e07d6b8e3a87a97cc7a2e762407cff0fa"
+    },
+    {
+      "path": "R/explain.R",
+      "bytes": 47904,
+      "sha256": "93da878488e86811e1d313ce9ec90005c4fbe2a888c858096190cf027b42a471"
+    },
+    {
+      "path": "R/explanation-validation.R",
+      "bytes": 7152,
+      "sha256": "13646f21dbf8ac8f0672f5ba89a909010e0c3196015d3c73b6cebc8f861afb5e"
+    },
+    {
+      "path": "R/i18n-en.R",
+      "bytes": 32973,
+      "sha256": "d04c225a03103f8825ccaa65a07890c5ed08d5fb0a88b46bcaed4b926af8c8df"
+    },
+    {
+      "path": "R/i18n.R",
+      "bytes": 1880,
+      "sha256": "543ba1cfd3da62e158a8c0018f92c806f56465207c09fe0706e514152744178c"
+    },
+    {
+      "path": "R/llm.R",
+      "bytes": 7877,
+      "sha256": "69df41c692126fa7edc101950595b2bc329abab2a4eed5f547b2757ed59a929d"
+    },
+    {
+      "path": "R/plot-cross-check.R",
+      "bytes": 15459,
+      "sha256": "463f7126de678bab76ab36577f23bf135a8498f1482a59067466df3adb934c8f"
+    },
+    {
+      "path": "R/plots.R",
+      "bytes": 17333,
+      "sha256": "d64f121061bae60d8856af8253e875d079aec465f9dd5b1749b985c057bff56f"
+    },
+    {
+      "path": "R/project-relations.R",
+      "bytes": 6180,
+      "sha256": "3affcba7df6754b54c8c48a1719e0698d486810d87d4e594399dab20e3904fa2"
+    },
+    {
+      "path": "R/project.R",
+      "bytes": 10721,
+      "sha256": "745096fba006668c67285b84a51c7ba2ae174d540f52473e672aa6cce243e515"
+    },
+    {
+      "path": "R/record.R",
+      "bytes": 10006,
+      "sha256": "46106ab58dbc8c3ac083983c1e7dca6acb1444510a71ecb86147a82fcc75169d"
+    },
+    {
+      "path": "R/report.R",
+      "bytes": 23866,
+      "sha256": "a5fad961e8b3cd90baf5559fbc154e4dfd081f6e6112ac72c43b78576d4988a5"
+    },
+    {
+      "path": "R/runtime.R",
+      "bytes": 9297,
+      "sha256": "1c76df9255b806f636b3c7d984a853a725337ae41904cb48f3848c486b0d5bf9"
+    },
+    {
+      "path": "R/sample-map.R",
+      "bytes": 7735,
+      "sha256": "2906f5e7e0c22e342d43c224b5644de378332d9254b7ec736b0e629d9bc99c9b"
+    },
+    {
+      "path": "R/shiny-app.R",
+      "bytes": 31835,
+      "sha256": "538541d4433ff7020940941557829051edf2c1fa7e7ed2e7ef928c40a28805be"
+    },
+    {
+      "path": "R/shiny-i18n.R",
+      "bytes": 6535,
+      "sha256": "242e92085ee837c73efe15397000fb5a025b3cb700e7a0f9a52a338467950b5d"
+    },
+    {
+      "path": "R/spatial.R",
+      "bytes": 3777,
+      "sha256": "6f9a7218930e07f7510840b7e9d7c41ef2ae5413d11d3406f71ae88d88be4c47"
+    },
+    {
+      "path": "R/teaching.R",
+      "bytes": 16680,
+      "sha256": "a2fa4c89e94e4eae9d8405282b520dbd192fb96755297f4132365ca1f5910f4d"
+    },
+    {
+      "path": "R/utils.R",
+      "bytes": 7629,
+      "sha256": "32bc116ac690faa2d21cb81f2e0d48783a0564b162c9ff70abd3333cd3c343c6"
+    },
+    {
+      "path": "R/validate.R",
+      "bytes": 14816,
+      "sha256": "a4b7154686c44acc58ae5ac31958dfd3880825ab803e452e4e0d7896d541241c"
+    },
+    {
+      "path": "research/discovery/SECRETOME_PROVENANCE_PROTOCOL.md",
+      "bytes": 2765,
+      "sha256": "47842a3b3143a6fc64b603a0ed13f868e234f1733c3e616156c8be0158e7d50f"
+    },
+    {
+      "path": "research/discovery/audit_secretome_provenance.R",
+      "bytes": 7732,
+      "sha256": "0ffd3364a28b88f600a3b714f53926d8789c7ad404502776d0c3b93e1d01ee99"
+    },
+    {
+      "path": "research/discovery/audit_secretome_provenance.py",
+      "bytes": 6082,
+      "sha256": "05c5484f19ee2c460cfce75e39337728ceee5733668ee7a2ded8948e142d29ee"
+    },
+    {
+      "path": "research/discovery/audit_secretome_provenance_report.py",
+      "bytes": 7556,
+      "sha256": "b6558ed1706b6bfedc1d3ba7340207b83cf33409c961ed157c73384a00d03f96"
+    },
+    {
+      "path": "research/discovery/build_secretome_provenance_report.py",
+      "bytes": 15752,
+      "sha256": "0fd31aeb14557306db6ab863ad32725f08201d4f696e6e6a1d30a6f22234a8cd"
+    },
+    {
+      "path": "research/discovery/check_secretome_provenance_handoff.py",
+      "bytes": 3245,
+      "sha256": "fabdccd826c9fd226639f6dc77e6609fe9035ba8c6d7f8c7650c3a79749c1b29"
+    },
+    {
+      "path": "research/discovery/report_secretome_provenance.R",
+      "bytes": 6262,
+      "sha256": "97a582e1fe1b3fe6d9746293b897d893679f6e9c88e65863be02f0719a0f8c4c"
+    },
+    {
+      "path": "research/discovery/seal_secretome.py",
+      "bytes": 4808,
+      "sha256": "4600b06afa773018e631208a6e63b28447bc2d95e6e863844949299feba8c839"
+    },
+    {
+      "path": "research/discovery/seal_secretome_provenance.py",
+      "bytes": 4889,
+      "sha256": "f4f6dff6700ae9cf1ad17d61b6077a3e01beb8968aec9c13028b2d69d68ffbfb"
+    },
+    {
+      "path": "research/discovery/seal_set_validation.py",
+      "bytes": 7635,
+      "sha256": "ef4e6de615d879eb4e8192b60aae9b2e5d7eb719014ac9fbb49e4110e1d4badb"
+    },
+    {
+      "path": "research/discovery/secretome_provenance.py",
+      "bytes": 13941,
+      "sha256": "19d1715137aa9835b2116f7debe08e5cf78c76f6b1db715699ed98cef0276bb3"
+    },
+    {
+      "path": "research/discovery/secretome_provenance_complete.py",
+      "bytes": 10357,
+      "sha256": "c4ff1e4f53dc1d6caf55e0dff510c3180264efd2e7c583cb39177d230036fd5e"
+    },
+    {
+      "path": "research/discovery/secretome_provenance_diagnostics.py",
+      "bytes": 5234,
+      "sha256": "bd9c0cbb81d7b4223e5976b55f5154f51277084319f7bc6e183e20758f6ab3df"
+    },
+    {
+      "path": "research/discovery/secretome_provenance_feasibility.py",
+      "bytes": 5851,
+      "sha256": "478eeaa5d307a50d9275e4cbcf97acd5ee5d74ce179efb1ac4dbacfff376d317"
+    },
+    {
+      "path": "research/discovery/secretome_provenance_leads.py",
+      "bytes": 2770,
+      "sha256": "e19543c1abe0243673fdb9a8dacbec001513320cf01da310a95bf64d89ebed75"
+    },
+    {
+      "path": "research/discovery/secretome_provenance_resume.py",
+      "bytes": 3803,
+      "sha256": "285b379c7a4b7097f85c5bbc36a14443d49c816c47c6f96b6671def308d4f04a"
+    },
+    {
+      "path": "research/discovery/secretome_provenance_selected_table.py",
+      "bytes": 2588,
+      "sha256": "473d36a6f8b69919e5bf72e1f1a9d26fd32aaab9db2754bc7478aa8f4e72c421"
+    },
+    {
+      "path": "research/discovery/secretome_provenance_supplement.py",
+      "bytes": 1616,
+      "sha256": "ea582e75271b9854ac2c9df6c7a97040f639fd101527b4ada7aeffff6cf5660d"
+    },
+    {
+      "path": "research/discovery/secretome_provenance_supplement_review.py",
+      "bytes": 1933,
+      "sha256": "dd74642ea6e2dfc5a5d1e668e0d9ee5c4bee6192dce91afa0e8cb7144929330c"
+    },
+    {
+      "path": "research/discovery/set_integrity.py",
+      "bytes": 3347,
+      "sha256": "a1364935968e0c84b9a24815155cdcb4b6f888e8b80b8f4ad0eb9b09aeae68d4"
+    },
+    {
+      "path": "research/discovery/validation_sources.py",
+      "bytes": 16701,
+      "sha256": "800a3d0f5aaa4ec11004555aa31f9fc0573845213d0ff9410ed1da93aedf854b"
+    }
+  ],
+  "dependencies": [
+    {
+      "path": "research/results/discovery_secretome_v1/archives/24h/extracted/txt/proteinGroups.txt",
+      "bytes": 4026207,
+      "sha256": "f179c0267b09f70079c6e51fd5ebf64368f639be77dffe97a95f0060c8818d19"
+    },
+    {
+      "path": "research/results/discovery_secretome_v1/archives/72h/extracted/txt/proteinGroups.txt",
+      "bytes": 5291473,
+      "sha256": "57a13a064b242e40ae6cf646deec3e08390fa70c285ffb5b030719f43e541d23"
+    },
+    {
+      "path": "research/results/discovery_set_validation_v1/protein_full_tables_small/PXD033514/extracted_verified/txt/proteinGroups.txt",
+      "bytes": 32134908,
+      "sha256": "6433f8df5e440965209b0b9007f062a2c26a1828bd15a07635bdf682de1e6aa0"
+    },
+    {
+      "path": "research/results/discovery_set_validation_v1/protein_full_tables_small/PXD033534/extracted/txt/proteinGroups.txt",
+      "bytes": 18116987,
+      "sha256": "e6a744816e8a3d8c80dae585da203b5d8381faa43894f6082b70afc38f4ea5c5"
+    },
+    {
+      "path": "research/results/discovery_validation_v2/human_protein/Table S2.xlsx",
+      "bytes": 636292,
+      "sha256": "a5cc4a4973e75d587060f151ccd868c5dc365ffa653c2e6b8bde07a839463e5d"
+    },
+    {
+      "path": "research/results/discovery_validation_v2/human_protein/PMC9562650.xml",
+      "bytes": 194407,
+      "sha256": "20977d6e0410203f40701c5fc0cee64b936d3acb6d59f242e1557ffba0052ab8"
+    },
+    {
+      "path": "research/results/discovery_secretome_v1/sample_map.csv",
+      "bytes": 7769,
+      "sha256": "a377b7e091ea17a1928eedf7bb042e73a32c722a681cf306f8152f824211e587"
+    },
+    {
+      "path": "research/results/discovery_secretome_v1/archives/24h/extracted/SampleNameEncription_Secretome24h.txt",
+      "bytes": 588,
+      "sha256": "996986f56ce1f3be2e4176f94701420cbdb29309a6a01807678dc8a85ad08fcb"
+    },
+    {
+      "path": "research/results/discovery_secretome_v1/archives/72h/extracted/SampleNameEncription_Secretome72h.txt",
+      "bytes": 619,
+      "sha256": "c0507d410f78959b94055f600245bcf54ad2502799020bf2f2ccaa80c1a6f3b4"
+    },
+    {
+      "path": "research/results/discovery_set_validation_v1/protein_full_tables_small/PXD033514/extracted_verified/SampleNameEncription_Proteome24h.txt",
+      "bytes": 593,
+      "sha256": "3495ecb7a12e9639fd34527c7bd9fdcda2990fc9e8c89165bb0b8364551e31b6"
+    },
+    {
+      "path": "research/results/discovery_set_validation_v1/protein_full_tables_small/PXD033534/extracted/SampleNameEncription_Proteome72h.txt",
+      "bytes": 591,
+      "sha256": "a7dc889404f5c8f69daea00e813ea6d47eeb56138964d6a07ae6abf4f5713bbd"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/published_measurements.csv",
+      "bytes": 1905447,
+      "sha256": "cb8b6cd2879960915fdba5266ff08f03d7dee77b5d62f57914ebdefadb9994ae"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/all_intensity_cross_array.csv",
+      "bytes": 3259851,
+      "sha256": "2882ec613959a3b5595d689c7fd4d10b5d5b36fb8aeb2197ec88c9cd00dc792c"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/literature_records.csv",
+      "bytes": 347941,
+      "sha256": "b42d3bd2a15abfcc31fe00e2d8cf56510f918e95ab30688b6fe3570847d42da4"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/diff_measurement_cross_array.csv",
+      "bytes": 45843950,
+      "sha256": "de6179c3361a2813905f1a9e27d2b6753b1007db39ab5a91d912b15693a2adb3"
+    }
+  ],
+  "documentation": [
+    {
+      "path": "rgo.md",
+      "bytes": 74186,
+      "sha256": "07cfc88fba08a707496a6f8dcb8c5a5109514ff1ab84afce5798db90b072d252"
+    }
+  ],
+  "archive": {
+    "path": "docs/secretome_provenance_v1/分泌蛋白组-来源诊断与ASM公开证据-附件.zip",
+    "bytes": 35438866,
+    "sha256": "c32bd110ceb506bc8b36a7af933f247f46ba056ae1edd684219fff985de8a95a"
+  },
+  "archive_members": [
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/EXECUTION_NOTES.md",
+      "bytes": 4362,
+      "sha256": "a0ff78cbb348982e9491a16a470308c305f32c05bdb8ff80dc37a7980f642548"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/FINDINGS.md",
+      "bytes": 3215,
+      "sha256": "cd9adac36a2e7127baee87edbce42a6ca9d2caa09c92b4336ca977ff9b1b2ebc"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/README.md",
+      "bytes": 1859,
+      "sha256": "d3cb05c2db8c12ccde126560a3895c24fa69224178ce388fec5a01709472d804"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/all_intensity_cross_array.csv",
+      "bytes": 3259851,
+      "sha256": "2882ec613959a3b5595d689c7fd4d10b5d5b36fb8aeb2197ec88c9cd00dc792c"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/analysis.json",
+      "bytes": 20446,
+      "sha256": "fece25ee933305bce0e6c7f6e7a4bae01a88131fadd1decabac5e0003d0ed9ca"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/BioExplainR-provenance-en.html",
+      "bytes": 6929,
+      "sha256": "55d064a713a2c954bd4e0a6b7a51b1b095e3f1b03b34536a6327a218d10b1e26"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/BioExplainR-provenance-zh.html",
+      "bytes": 6765,
+      "sha256": "56f7b04ba2024e8843c3422dbe99dd388c3a41695b19026ca246c9dc7cb7fbec"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/EV_file_linkage.csv",
+      "bytes": 2483,
+      "sha256": "e9f60b47017352e1a30764ff0b98b9dffa3e728d5fd4abd8fe980bd3014699f0"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/EV_selected_glycolysis.csv",
+      "bytes": 1126,
+      "sha256": "1ea84dbbb39c1955ce2127df0cd2e17e09717f0084f5670f353c16236ba66379"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/EV_selected_table_audit.json",
+      "bytes": 984,
+      "sha256": "aa3056bbbe61db6372b420624b18cbff7a78ab3c97dadd20a59eb8816b518718"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/EV_supplement_scope.csv",
+      "bytes": 571,
+      "sha256": "2c373c1064a1d09b3336a79c7a3417dd11b604433426837e8875a360da09d0e6"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/EV_supplement_text.txt",
+      "bytes": 17800,
+      "sha256": "810d98c019967998ccba6c32d6cc7a95bf18187ed88dc78bbf080f7812f8c5ed"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/PXD055968_files.csv",
+      "bytes": 6662,
+      "sha256": "ca3c426e0983a29f1ac5044f41d2cd8ab5dc39b12d440b17e916f1d1124b2b60"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/analysis.json",
+      "bytes": 21023,
+      "sha256": "c386637b3bc012627b96b7fa28add64660620b315b955bf879ec9e0c991722e8"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/bioexplainr_project.rds",
+      "bytes": 3104,
+      "sha256": "59e069588f88f6976169713cd072e87327de85503a3f08f56e1de9637bfacd72"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/bioexplainr_workflow.json",
+      "bytes": 655,
+      "sha256": "06282a99aa03fbe2edc9f03fb2ada8737b283ced397456fed92f0c9629cec1d2"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/cross_array_summary.csv",
+      "bytes": 4592,
+      "sha256": "94103f842f0048d149dc4a9585be52c4be3a3d9c0306a456cfaf76ba7f2136ec"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/diagnostic_freeze.json",
+      "bytes": 1268,
+      "sha256": "ae8ba7bc1c3f7eb8b26a412b5b0a334322bd81d3921d818134add29655211f03"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/diagnostics.json",
+      "bytes": 2398,
+      "sha256": "1f8854336f6be26d31b28c343982c4749fa0e22d0c669f986dfb81b4673305d5"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/diff_measurement_cross_array.csv",
+      "bytes": 45843950,
+      "sha256": "de6179c3361a2813905f1a9e27d2b6753b1007db39ab5a91d912b15693a2adb3"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/ev_article_links.csv",
+      "bytes": 865,
+      "sha256": "92166291cb528b43b10ce039350b84fb07b161b9984532c97074aa91c1e31fa0"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/ev_article_passages.csv",
+      "bytes": 61461,
+      "sha256": "97911d5b6fc6c01184e0b0f439230354e7181327115a1c4f33f85ce6b1a39a83"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/feasibility.json",
+      "bytes": 999,
+      "sha256": "dfe702a31f0e4ef687b454cd0af090932607e4c90cddb8d951cb4ca2d22a3c3c"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/feasibility_freeze.json",
+      "bytes": 908,
+      "sha256": "060ef35aebd452818c9af819e0173b0d360bb5c715d8bffa0c07a16737f2b398"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/freeze.json",
+      "bytes": 3973,
+      "sha256": "68c890cb535f9dc3d7970d556265e3d6367045d5df6c78d0a533290e9632a014"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/fulltext_links.csv",
+      "bytes": 309765,
+      "sha256": "c005779477c9f73f8b48fc3ab6d4f1ae5fe599cb61f18515fda27c477b2d447c"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/fulltext_passages.csv",
+      "bytes": 72936,
+      "sha256": "d42a8606abe210d08239350199fc1e13d2355431fb6c96ab28248723b8cdc54a"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/fulltext_requests.json",
+      "bytes": 873,
+      "sha256": "f019564585dc9eea0b4ab549191f11156a938acfe389779e4f1321a9f278e603"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/handoff_check.json",
+      "bytes": 8022,
+      "sha256": "ed539cbe2142896adb896d0d484826eabaef8e5bb22263a3b02e1f88d270fa3f"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/independent_audit.json",
+      "bytes": 1746,
+      "sha256": "1b72bb80ff675bf00a30d7e83efc7f54c29c5af5fda28c9fb182318c8c25d1f6"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/lead_acquisition.json",
+      "bytes": 2608,
+      "sha256": "f351621572b4943bb365db582e0a40234c4a97511d3c10c3fba301c99d5ce686"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/lead_attachment_metadata.csv",
+      "bytes": 4725,
+      "sha256": "8f4cb40fdf21002f403a376a35fa7ddbfe9b5516ffb3eeca8a1b7e69111c2bed"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/lead_figures_tables.csv",
+      "bytes": 11092,
+      "sha256": "fb177cbb21acf3d9475d537bf46dd1dfd22dde7189461b02ed7e7cca7ad29846"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/lead_freeze.json",
+      "bytes": 961,
+      "sha256": "08f7e86de890d1350caa9fd0d812ed5135240a6fc9fba4bde39598dce3107b88"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/lead_methods_passages.csv",
+      "bytes": 90131,
+      "sha256": "ed1b4eab94c6c78d7110cec4af422c1f9494e132035b9efd6b6b1da016f37cfe"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/literature_titles.txt",
+      "bytes": 27515,
+      "sha256": "b4c4af5844c19ed6a23959a8eb5d2fdfa58bb5dd2892b60c28ebdbbb3d5125b0"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/pride_projects.csv",
+      "bytes": 153740,
+      "sha256": "67ceb369d29faa3169c9f6653b687c4ac89a6cd67e1d7231a41784bab8974d04"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/project_feasibility.csv",
+      "bytes": 2389,
+      "sha256": "b4435776128bdd1042c20d9f3203303d5aefc3cb555af95a8b31dd10ac37b0d6"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/public_evidence_scope.csv",
+      "bytes": 1755,
+      "sha256": "5c8520aa31ae53f7229f7e5c3f294d525fad7f974988a582e57f9d4bca1d050e"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/python_environment.json",
+      "bytes": 233,
+      "sha256": "a59fcff44da73334dd340df020eff93007e40625955e9d1fc095cfd50a4248f9"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/r_audit.json",
+      "bytes": 1022,
+      "sha256": "66d3011a02f4d5a8a0f8195f8bfc6002e9711c464ea464f29ed4239b4611169b"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/r_audit_sessionInfo.txt",
+      "bytes": 873,
+      "sha256": "f60de9b56e8cd84d439005f490dd62aba67dbfe28a6194af9f2e180978b5e1ea"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/report_final/BioExplainR-provenance-en.html",
+      "bytes": 7326,
+      "sha256": "f40909543047fd0543cd95e92a91497e7b45d2ad5d24cd2e2c771a77d2a08621"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/report_final/BioExplainR-provenance-zh.html",
+      "bytes": 7162,
+      "sha256": "d208dbdbb7bad2f0c5754462581807f3ef85e011379730f11cf6cc35dd138113"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/report_final/bioexplainr_project.rds",
+      "bytes": 3318,
+      "sha256": "aa61e7563f2c82a56fb9c162fbd7c76743284e1a0f8e17de806676f7f4f161ce"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/report_final/bioexplainr_workflow.json",
+      "bytes": 915,
+      "sha256": "4c2a3ed8e5a35d95487b2c0aeae14e8f993bbb5f682f5b92d46af03df3889ff8"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/report_final/sessionInfo.txt",
+      "bytes": 1205,
+      "sha256": "c504631a656cfc52ae0662c46d55853aeeaad13270ef56e3ee796f46a82aaeb7"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/resume_freeze.json",
+      "bytes": 681,
+      "sha256": "cbe0abc52c6d863ac16dadb4009307ccb144fce7041c760af8c4da10f452b4a4"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/sample_map.csv",
+      "bytes": 10436,
+      "sha256": "e478a67f7c89873fe34a581691530c516db227d05ff5022cd8efe0d66b842b10"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/scale_formula_comparisons.csv",
+      "bytes": 622001,
+      "sha256": "9339d0824b3d9deba307ea6037b01cada13c63d466d4ab7ab2260a0022cbb8ca"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/scale_formula_summary.csv",
+      "bytes": 662,
+      "sha256": "d5075cc3097bed04bee261742f1e06af86eb26eb0b58b1ed769124cd9ccaa65d"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/scientific_ledger.json",
+      "bytes": 4408,
+      "sha256": "a095f369e3f4062950b2711ebb07d799d7dd80f85ac82d13a60ded3ce04656d7"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/secretome24_protein_offsets.csv",
+      "bytes": 2217,
+      "sha256": "616e4dd3d648f8e3aec905d0691cd4d00eb9eaf669ef1cceb078049f0d706a2b"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/sessionInfo.txt",
+      "bytes": 1205,
+      "sha256": "c504631a656cfc52ae0662c46d55853aeeaad13270ef56e3ee796f46a82aaeb7"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/source_acquisition_resume.json",
+      "bytes": 15428,
+      "sha256": "d8a78c5896af81a975e628627a188b7bb3fe902c067ab148adde017cec2ca7d8"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/supplement_acquisition.json",
+      "bytes": 687,
+      "sha256": "8c5495a71a47863b19ee32a0e4962ffab1812325b2d2c66a0e35a42f548fbba1"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/supplement_amendment.json",
+      "bytes": 528,
+      "sha256": "75324f1e64eb9c3cdf453746908fffbda428f86651ad91ff0f7aa8065d7657d7"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/complete/supplement_review.json",
+      "bytes": 1046,
+      "sha256": "c1ed8360d254736256edd795b21cc4980a7e2ca3bef040bf66378793c76bedf1"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/cross_array_summary.csv",
+      "bytes": 4166,
+      "sha256": "07f7216db5cd09630ff3244d22fae24661a1bbb86091d176dff7369610806af6"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/diff_measurement_cross_array.csv",
+      "bytes": 43614125,
+      "sha256": "841e4867914a98b12c9ecd688171f9f500cf3f5e1ef2fe4e0ec0fad0c69b5ba0"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/freeze.json",
+      "bytes": 4188,
+      "sha256": "51313e05761f91bb1cc460d6043ac0768e4ac99798b07d464e839e2c41229862"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/literature_records.csv",
+      "bytes": 347941,
+      "sha256": "b42d3bd2a15abfcc31fe00e2d8cf56510f918e95ab30688b6fe3570847d42da4"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/original_methods_passages.csv",
+      "bytes": 14948,
+      "sha256": "2898de87391596afaa97dac383cf85b5eae63d6fc35798d80b247cf230794a0f"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/pride_projects.csv",
+      "bytes": 2580840,
+      "sha256": "ba2027e7e04c14f7f999013b3d7b0a98f2f59b74610fd928f181ea79035d8464"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/published_measurements.csv",
+      "bytes": 1905447,
+      "sha256": "cb8b6cd2879960915fdba5266ff08f03d7dee77b5d62f57914ebdefadb9994ae"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/rgo_before_provenance.md",
+      "bytes": 70724,
+      "sha256": "fad06842bdd738056ef6cda0debe26a3b2afda65aa0e6f5e3b2d1ee6c6ff1e2f"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/search_acquisition.json",
+      "bytes": 8604,
+      "sha256": "e2153556225b69a52e6599be8f7988b1f0212fbc29211df2a8ec655963dea247"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/secretome24_sample_offsets.csv",
+      "bytes": 3400,
+      "sha256": "5b75709df39c81750fa47836a050a2fd634cc69e575ffa8ad67e8331d3ef771f"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/EV_publisher_supplement_normalized.bin",
+      "bytes": 8947418,
+      "sha256": "229e8e41eee68e83a5de42e0ebbe24bd8fbeed89cb5647762c309e27b3722fc5"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/EV_supplement_probe_1.bin",
+      "bytes": 1816,
+      "sha256": "f2ad27abb2c90e0c104faa86c8670d31a73b2a73a80755aa392af3fb25816040"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC11024162.xml",
+      "bytes": 246958,
+      "sha256": "19be139f8b9acfef101f671b3c4ca04802f5a31e98903262fddc2fc4e157cf4b"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC11143057.xml",
+      "bytes": 92153,
+      "sha256": "51084fe5aea01b93e7d87831cd74c592fbdef5a38e26a1e79e00b4ea2c83c4cb"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC11743488.xml",
+      "bytes": 214650,
+      "sha256": "faf2b1a27d5e4db9c4dd5408774eb8d51a90a01f4ad07200fd08bb4bf58ac624"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC12130637.xml",
+      "bytes": 189378,
+      "sha256": "ec94a29f35c8ee049094c2b176c8d02ac5b654d99dbe7b0b79e309e8d2e4006f"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC12141081.xml",
+      "bytes": 187761,
+      "sha256": "1573922d23e2baca85af108303fba4ebcf758fe9547ed9cc7448bc89ada9ac75"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC12575704.xml",
+      "bytes": 184413,
+      "sha256": "4fe9b0f246d74e8d400b952c9c29bfa301f9868e8630153adb5f6d580f487d4e"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC12992014.xml",
+      "bytes": 195313,
+      "sha256": "46c92bbfb33f56bd63cd28eb4e877c283250a19a2283a72a9d44b91e4a3a6e40"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC13430594.xml",
+      "bytes": 119234,
+      "sha256": "4f73ad42c17ac8953766bd1fd3767d0c81477af882b4821e3525cd4c14a41cd5"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC2440089.xml",
+      "bytes": 108414,
+      "sha256": "b9a63030fa073db6421ea50bd429d8b52de872a6f8ba110782edf299734fa200"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC3060826.xml",
+      "bytes": 158613,
+      "sha256": "90ce611f0ada6d7a63a611b0ec8962549eb39452d36400c06e99f0d722359e49"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC3303634.xml",
+      "bytes": 80859,
+      "sha256": "4b06d8be44b5d4ab8b9ac1ea6878bfadf50e6ec51fa5ae647d29c6cd67610c32"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC3960248.xml",
+      "bytes": 81588,
+      "sha256": "01bd6ffd7a0e97f725143389e3a7d2ba4ebabc64ca09126e383448fbdaa7ae5a"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC4057123.xml",
+      "bytes": 184062,
+      "sha256": "ed3e585419ff07b3e2de17c70f0ac5bf70e50331973949e90972abb4d4cca322"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC4415891.xml",
+      "bytes": 166052,
+      "sha256": "4c3769171ee19de4f5eac8187e7eb9faed359219945475ced6d46907eaa18f32"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC5157777.xml",
+      "bytes": 109874,
+      "sha256": "642ffd7cf74b43695303ef8b23c1a37dfac288be4960c936c8af626e84ed3122"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC6084315.xml",
+      "bytes": 92301,
+      "sha256": "e653fc4abddae3a5e1de6272d603fcda01b317e9be9023c2e1f5d8b727a4a53d"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC6381743.xml",
+      "bytes": 127278,
+      "sha256": "778e8603b6c8d2ee6be28ed60dd3e9228a5f067462662ce53be3f836cd214319"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC6706008.xml",
+      "bytes": 106837,
+      "sha256": "6a5ac8611714d61f36ceed868d1810cdab63491a0d896359a3aac139e891f0df"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC8694576.xml",
+      "bytes": 134836,
+      "sha256": "fb8d6769bde1d6b0be006f790a2e9897e86e9f85a7dddd5effaea3d64a0fcfc9"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC8773081.xml",
+      "bytes": 125946,
+      "sha256": "f545f154fd965a7c8aa83a5c6cac613467b9bd190f6a4f807784150bfd97fb3f"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC9331514.xml",
+      "bytes": 143135,
+      "sha256": "afc3cf4da9d983eed0bed645623383c91e407e8d2a9a0aee119a30777cec6a9e"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PMC9928586.xml",
+      "bytes": 282070,
+      "sha256": "c8832e4a15269376f77be8deebcbcb56a89555f52563eba24188289a224c5a21"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PTX3_article.xml",
+      "bytes": 106837,
+      "sha256": "6a5ac8611714d61f36ceed868d1810cdab63491a0d896359a3aac139e891f0df"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PXD055968.json",
+      "bytes": 8016,
+      "sha256": "a265c71f78e617efc562967993e112e5ddc144df71880e9c4b40d34799cf1b05"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PXD055968_Link_between_files.xlsx",
+      "bytes": 13428,
+      "sha256": "b0494ffc67369a25af64641cae1528a9066e26570620f461e4edc1b7b51615b9"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/PXD055968_files.json",
+      "bytes": 61216,
+      "sha256": "56eb8eb9ecf9797536c9fb63a6171f0bdc59d56a27be7c169325a90de73b896b"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/cough_article.xml",
+      "bytes": 112072,
+      "sha256": "474af8ecac5ec05671f8d7982cfcddb11446282eca63ddc2e7c7986d83000c36"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/epmc_asm_candidates_1.json",
+      "bytes": 242715,
+      "sha256": "ece03f7b9f02cee843a83edff42ce66a79ef76aa4e8396911a8da7c4a812d6bc"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/epmc_asm_gc_secretion_1.json",
+      "bytes": 493838,
+      "sha256": "c5e4d04fae631dd031166e4216761819afbd127373d4cb82b23b7705db2c823b"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/epmc_asm_proteomics_1.json",
+      "bytes": 48941,
+      "sha256": "eafd87879566d463e6dc1071071c1cc6861cfa023d3d2d5eb85964fc56cc8258"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/epmc_asm_secretome_1.json",
+      "bytes": 494441,
+      "sha256": "5770c04e828c8d4b777f5db7398f5f678fe2f74e0de6f8436fc88e51ccab3303"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/epmc_htpc_gc_1.json",
+      "bytes": 182530,
+      "sha256": "6053767e03ba80b627ab3723e5dfcad3e1ef13d2678a21e629c0a687a0c8525e"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/epmc_pxd033504_1.json",
+      "bytes": 10721,
+      "sha256": "3d599b9cc72c1252edc33c1c2d69b677647599ced9a5327547e671b942ce33db"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/ev_article_metadata.json",
+      "bytes": 16975,
+      "sha256": "caae9a9e95b0f4fdd147e4920b6c320760349ea334ca7bba31334ea65ee7666c"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/original_article_metadata.json",
+      "bytes": 10693,
+      "sha256": "8c62764a3a3be9c735a20141766f352fc67c89f6a84ffbc719a2d3019a5248e8"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/pride_corrected_1.json",
+      "bytes": 7736,
+      "sha256": "3c695659bafeba333e9e340b28ea4473d6ebb80fa56ed69e38606336a2b87fa7"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/pride_corrected_2.json",
+      "bytes": 101349,
+      "sha256": "5a033db6c0dc0e79c45da5a26b746ef433399a55491176f841b4fec8a6a07d9a"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/pride_corrected_3.json",
+      "bytes": 3,
+      "sha256": "5984eac0c5c6d947241e29dd5671b81a1546cedf77e08d38438ac47029969afa"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/pride_corrected_4.json",
+      "bytes": 3,
+      "sha256": "5984eac0c5c6d947241e29dd5671b81a1546cedf77e08d38438ac47029969afa"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/pride_corrected_5.json",
+      "bytes": 3,
+      "sha256": "5984eac0c5c6d947241e29dd5671b81a1546cedf77e08d38438ac47029969afa"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/pride_search_1.json",
+      "bytes": 654980,
+      "sha256": "969052798efa2b2202f2f2d2c5f17f7cdb5c6ddfc01b65f5fca0cac6f05746b8"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/pride_search_2.json",
+      "bytes": 654980,
+      "sha256": "969052798efa2b2202f2f2d2c5f17f7cdb5c6ddfc01b65f5fca0cac6f05746b8"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/pride_search_3.json",
+      "bytes": 654980,
+      "sha256": "969052798efa2b2202f2f2d2c5f17f7cdb5c6ddfc01b65f5fca0cac6f05746b8"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/pride_search_4.json",
+      "bytes": 654980,
+      "sha256": "969052798efa2b2202f2f2d2c5f17f7cdb5c6ddfc01b65f5fca0cac6f05746b8"
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/workbook_headers.csv",
+      "bytes": 11733,
+      "sha256": "6323137d9d91aff6e66efde530762ce8a7a7b23abc6786b4dc0d699e61f4fe9f"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/README.md",
+      "bytes": 4202,
+      "sha256": "7821e8a4372a4dd93496bca7972ef7349f6b8fe4ea19379a8fb58b3d81b0a5f3"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/audit.json",
+      "bytes": 7434,
+      "sha256": "850817034953aea8e2009f4525509e2bdf6acfaaa7c233210ca5cf9be692ca9c"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/browser/分泌蛋白组-来源诊断与ASM公开证据续接-1440.png",
+      "bytes": 980757,
+      "sha256": "b20c8c984ec08afecb736f44b43d88b75cc9db6e4b9f1edd9bacce84a80a68ea"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/browser/分泌蛋白组-来源诊断与ASM公开证据续接-390.png",
+      "bytes": 874919,
+      "sha256": "ffed79e157cdc83eef4911372ccfec1c5443a8698ee68b0385384ef87a90713a"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/browser_final/BioExplainR-provenance-en-1440.png",
+      "bytes": 359690,
+      "sha256": "1e1146fcca5ffaf290c90311a49352317a1a8953f8fc55d05df5da54879ed19c"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/browser_final/BioExplainR-provenance-en-390.png",
+      "bytes": 352284,
+      "sha256": "bd0361439b90b7952e52b396e3a83480313d88d4e62fba2f5f6905139ce8788d"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/browser_final/BioExplainR-provenance-zh-1440.png",
+      "bytes": 355599,
+      "sha256": "63b69195ac2e289e6b864b8fc1b453882e2c15881d031e9da900b2bad0d6cbe0"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/browser_final/BioExplainR-provenance-zh-390.png",
+      "bytes": 344460,
+      "sha256": "e75eb9f68f5c0686435742517eedc0c6e1412d48866ce97c0a233750f36c9301"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/browser_final/audit.json",
+      "bytes": 4564,
+      "sha256": "c6b15ecddd0589da061186e25262ccdc0ad158de2018752e6662708d5dafe02d"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/browser_final/分泌蛋白组-来源诊断与ASM公开证据续接-1440.png",
+      "bytes": 980757,
+      "sha256": "b20c8c984ec08afecb736f44b43d88b75cc9db6e4b9f1edd9bacce84a80a68ea"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/browser_final/分泌蛋白组-来源诊断与ASM公开证据续接-390.png",
+      "bytes": 874919,
+      "sha256": "ffed79e157cdc83eef4911372ccfec1c5443a8698ee68b0385384ef87a90713a"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/export.json",
+      "bytes": 1152,
+      "sha256": "c7e79c22b8344a80628ca7930bd6c973b558aa93600aaa64400ffa38a0ed8030"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/figures/Figure_1_match.pdf",
+      "bytes": 11976,
+      "sha256": "fce7145a4ecc9d2b24917d0be713d52c342abcdaf8406d1fc2655122b5e4ead6"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/figures/Figure_1_match.png",
+      "bytes": 45287,
+      "sha256": "c67feb6fb3e4b3e1d0abec58c31760b7eee4f3279cb3fe28c03c18b2f3a277cd"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/figures/Figure_2_offsets.pdf",
+      "bytes": 16991,
+      "sha256": "29c3513a21b4b739e9bd8fb2e04125b5102488fb91dad3638ce086b880ed4738"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/figures/Figure_2_offsets.png",
+      "bytes": 82629,
+      "sha256": "1093478cc5da09985b87d3e7fe01c9692e69f16135c23e249eb8c80017a6c5d7"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/results.md",
+      "bytes": 8204,
+      "sha256": "e5fe9162e587bcfc5615bf116c7fd10ce2425378381cf20ed5e35cd7e64435bf"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/tables/EV_file_linkage.csv",
+      "bytes": 2483,
+      "sha256": "e9f60b47017352e1a30764ff0b98b9dffa3e728d5fd4abd8fe980bd3014699f0"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/tables/EV_file_linkage.xlsx",
+      "bytes": 6227,
+      "sha256": "fbd12f8d1f9658c701b05428277de573e3833ff2ba0ce87d01969ee0ebe4a280"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/tables/EV_selected_glycolysis.csv",
+      "bytes": 1126,
+      "sha256": "1ea84dbbb39c1955ce2127df0cd2e17e09717f0084f5670f353c16236ba66379"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/tables/EV_selected_glycolysis.xlsx",
+      "bytes": 6189,
+      "sha256": "7658229bd5acef86deb447e02796df30468fb26bcca38f0f5b4a41ab93f9313f"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/tables/EV_supplement_scope.csv",
+      "bytes": 571,
+      "sha256": "2c373c1064a1d09b3336a79c7a3417dd11b604433426837e8875a360da09d0e6"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/tables/EV_supplement_scope.xlsx",
+      "bytes": 6027,
+      "sha256": "349304a7a6f64948473c9c0a20d24bbdd831f2a942cbfa9fa6b9dd49112f91cf"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/tables/Table_1_four_arrays.csv",
+      "bytes": 237,
+      "sha256": "de28486451d3f103dcfe82f4f63938047846772c1bb798421bc194f959a7be04"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/tables/Table_1_four_arrays.xlsx",
+      "bytes": 5831,
+      "sha256": "0b024bdfe4f81728f93f58056596f0111c46f28cdf46f8141ce87657cc93c737"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/tables/Table_2_public_sources.csv",
+      "bytes": 470,
+      "sha256": "d109a7204c7fe91cd9579fd43fb485b0764d56d670bde8eec7f19698b8452ea0"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/tables/Table_2_public_sources.xlsx",
+      "bytes": 6080,
+      "sha256": "6e30486f27c468710e15419229d723983c4c0592bea1abde27ce6f08e0a3e288"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/tables/Table_3_EV_selected_glycolysis.csv",
+      "bytes": 222,
+      "sha256": "589bf40bdb641d39a3d3cc827054f9969d901568003220ac2ba91e00e7215e8b"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/tables/Table_3_EV_selected_glycolysis.xlsx",
+      "bytes": 5861,
+      "sha256": "b1bf2eb5c987e2d2b674ecd85dc22d1d47765e0b59c673ba265904c99aff6975"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/tables/cross_array_summary.csv",
+      "bytes": 4592,
+      "sha256": "94103f842f0048d149dc4a9585be52c4be3a3d9c0306a456cfaf76ba7f2136ec"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/tables/cross_array_summary.xlsx",
+      "bytes": 9355,
+      "sha256": "c89731a129db24d8c00c88207dec02e2a16a32869c40f664b5f0d72055d4c26e"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/tables/project_feasibility.csv",
+      "bytes": 2389,
+      "sha256": "b4435776128bdd1042c20d9f3203303d5aefc3cb555af95a8b31dd10ac37b0d6"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/tables/project_feasibility.xlsx",
+      "bytes": 6832,
+      "sha256": "24a99f81bc1b571cff6495b0dd525e4a8ecce2ef0bde84a94c5f09ca09701435"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/tables/public_evidence_scope.csv",
+      "bytes": 1755,
+      "sha256": "5c8520aa31ae53f7229f7e5c3f294d525fad7f974988a582e57f9d4bca1d050e"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/tables/public_evidence_scope.xlsx",
+      "bytes": 7130,
+      "sha256": "b0eda292d0a68f65d0b5b7073001ac231e944f4afd841b0b12a8219104b49d35"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/tables/sample_map.csv",
+      "bytes": 10436,
+      "sha256": "e478a67f7c89873fe34a581691530c516db227d05ff5022cd8efe0d66b842b10"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/tables/sample_map.xlsx",
+      "bytes": 10526,
+      "sha256": "144761c6a033f722062ddfd885cf0be3eb2e2d8d7550448c5e179973905ea80a"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/tables/scale_formula_summary.csv",
+      "bytes": 662,
+      "sha256": "d5075cc3097bed04bee261742f1e06af86eb26eb0b58b1ed769124cd9ccaa65d"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/tables/scale_formula_summary.xlsx",
+      "bytes": 6031,
+      "sha256": "ce3b8756e086859875021fda53c110965b7ea46da9356f71ee2d04a298f0bc24"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/tables/secretome24_protein_offsets.csv",
+      "bytes": 2217,
+      "sha256": "616e4dd3d648f8e3aec905d0691cd4d00eb9eaf669ef1cceb078049f0d706a2b"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/tables/secretome24_protein_offsets.xlsx",
+      "bytes": 7555,
+      "sha256": "cb988b33a49aeec439bbb5ccfe637091c275524aaac3b3d5bafb1d3664695b5a"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/分泌蛋白组-来源诊断与ASM公开证据续接.docx",
+      "bytes": 151759,
+      "sha256": "76c4462fe0a1b9bad38c5482a5455611a083ae51adde8acbcfcbf4464432cc78"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/分泌蛋白组-来源诊断与ASM公开证据续接.html",
+      "bytes": 180403,
+      "sha256": "456fed832340094c47c52a8dec70a52afc7752dfbd7b2d0433cb825867696b13"
+    },
+    {
+      "path": "docs/secretome_provenance_v1/分泌蛋白组-来源诊断与ASM公开证据续接.pdf",
+      "bytes": 348729,
+      "sha256": "42c47c254f598129892186e7f3e1b1c09465882c0c8e38d43565543a286b0330"
+    },
+    {
+      "path": "DESCRIPTION",
+      "bytes": 2108,
+      "sha256": "5d59103e170b4eea6a955bb28ab9a65efd14c983e07aa57a7f2533a4844af6bb"
+    },
+    {
+      "path": "NAMESPACE",
+      "bytes": 3181,
+      "sha256": "c1aba4721cc66e304c4d6ce3ba610f3a225a1a04ce510d46459378a2aec58e85"
+    },
+    {
+      "path": "R/BioExplainR-package.R",
+      "bytes": 634,
+      "sha256": "ff9a30dd74f547f02fda0c8f222799981ff0b61b8907e9231deddffd46d9e917"
+    },
+    {
+      "path": "R/adapters-de.R",
+      "bytes": 17243,
+      "sha256": "76dd093251754c1b192253745169ac39dd4c7a81679e76a07ad89f4afa287a43"
+    },
+    {
+      "path": "R/adapters-enrich.R",
+      "bytes": 17831,
+      "sha256": "1066c1be961a7709e737b9bae29182a2e35651a1e33048d31f19ab2648b447e7"
+    },
+    {
+      "path": "R/adapters-extended.R",
+      "bytes": 21608,
+      "sha256": "d58a37371f07bfc41e7f464983a7775a6c41b1fbef52148ab36d57f6daf2d363"
+    },
+    {
+      "path": "R/adapters-multiomics.R",
+      "bytes": 5987,
+      "sha256": "842276174735dd591ca957cdcc2695d45fd61fe68414e12694e7caa65f8b8fa5"
+    },
+    {
+      "path": "R/adapters-plot-generic.R",
+      "bytes": 8666,
+      "sha256": "3dcb08da65225c975dd03389565b032db4ce780ad18fbc9e75770de0e1485625"
+    },
+    {
+      "path": "R/adapters-sc.R",
+      "bytes": 12179,
+      "sha256": "ae21a4e14fa10ede45cf70c71a29019fd838b6fdf4249c280fdd9397553997a6"
+    },
+    {
+      "path": "R/benchmark-contract.R",
+      "bytes": 4397,
+      "sha256": "a0e8c07eb97c195c2619362c3236aa4747d1ea2d55c10d04ea4dd25533556e40"
+    },
+    {
+      "path": "R/cell-proportions.R",
+      "bytes": 16376,
+      "sha256": "786997096cb96cb4b3f4e997c3b326eab257acde51e346090ebc46b0d7235c82"
+    },
+    {
+      "path": "R/claims.R",
+      "bytes": 14741,
+      "sha256": "4a3933c9266941b7b49c1349266b20ca04c23e0fe2af97276cc7c41169b7d791"
+    },
+    {
+      "path": "R/config.R",
+      "bytes": 17213,
+      "sha256": "4f051baa9b33c62f344ff7aa2ef8dbb6c5a2d457b1eb95254aac894e34dd6b4c"
+    },
+    {
+      "path": "R/context.R",
+      "bytes": 23332,
+      "sha256": "e7e5caffdbe20c8e612fc93513750a5adf18fc197b0aec6c88c47babc559fd7c"
+    },
+    {
+      "path": "R/contracts.R",
+      "bytes": 10550,
+      "sha256": "10e9539763717f7efd46cbed1a6795ed2811c151ac812e07cf7437d2ab6f56e6"
+    },
+    {
+      "path": "R/diagnose.R",
+      "bytes": 27610,
+      "sha256": "ee832f81fc77847267ceba590630eb0d512f20a8fc1a7659ccbd6eb2001e58c3"
+    },
+    {
+      "path": "R/docking.R",
+      "bytes": 6106,
+      "sha256": "2dd31afe1efccbe0ad122aadc7bab8b474f7f2cabc9319aa03b7d3b259392869"
+    },
+    {
+      "path": "R/evaluation.R",
+      "bytes": 17455,
+      "sha256": "416523e2550b10565ab753714b4b57f904995088307c1927b8930388f6168d16"
+    },
+    {
+      "path": "R/evidence-live.R",
+      "bytes": 31381,
+      "sha256": "079f763bb17f9b80156e70637dde8cdf7c8c58fccb2871618b2d85d2055e68f7"
+    },
+    {
+      "path": "R/evidence-support.R",
+      "bytes": 8222,
+      "sha256": "82be4a9b3cbaa2ec2b0e34f8def75939a11ea989b727c1decabad473fa4a86cf"
+    },
+    {
+      "path": "R/evidence.R",
+      "bytes": 7447,
+      "sha256": "42a113788cee02fac9d854160238072e07d6b8e3a87a97cc7a2e762407cff0fa"
+    },
+    {
+      "path": "R/explain.R",
+      "bytes": 47904,
+      "sha256": "93da878488e86811e1d313ce9ec90005c4fbe2a888c858096190cf027b42a471"
+    },
+    {
+      "path": "R/explanation-validation.R",
+      "bytes": 7152,
+      "sha256": "13646f21dbf8ac8f0672f5ba89a909010e0c3196015d3c73b6cebc8f861afb5e"
+    },
+    {
+      "path": "R/i18n-en.R",
+      "bytes": 32973,
+      "sha256": "d04c225a03103f8825ccaa65a07890c5ed08d5fb0a88b46bcaed4b926af8c8df"
+    },
+    {
+      "path": "R/i18n.R",
+      "bytes": 1880,
+      "sha256": "543ba1cfd3da62e158a8c0018f92c806f56465207c09fe0706e514152744178c"
+    },
+    {
+      "path": "R/llm.R",
+      "bytes": 7877,
+      "sha256": "69df41c692126fa7edc101950595b2bc329abab2a4eed5f547b2757ed59a929d"
+    },
+    {
+      "path": "R/plot-cross-check.R",
+      "bytes": 15459,
+      "sha256": "463f7126de678bab76ab36577f23bf135a8498f1482a59067466df3adb934c8f"
+    },
+    {
+      "path": "R/plots.R",
+      "bytes": 17333,
+      "sha256": "d64f121061bae60d8856af8253e875d079aec465f9dd5b1749b985c057bff56f"
+    },
+    {
+      "path": "R/project-relations.R",
+      "bytes": 6180,
+      "sha256": "3affcba7df6754b54c8c48a1719e0698d486810d87d4e594399dab20e3904fa2"
+    },
+    {
+      "path": "R/project.R",
+      "bytes": 10721,
+      "sha256": "745096fba006668c67285b84a51c7ba2ae174d540f52473e672aa6cce243e515"
+    },
+    {
+      "path": "R/record.R",
+      "bytes": 10006,
+      "sha256": "46106ab58dbc8c3ac083983c1e7dca6acb1444510a71ecb86147a82fcc75169d"
+    },
+    {
+      "path": "R/report.R",
+      "bytes": 23866,
+      "sha256": "a5fad961e8b3cd90baf5559fbc154e4dfd081f6e6112ac72c43b78576d4988a5"
+    },
+    {
+      "path": "R/runtime.R",
+      "bytes": 9297,
+      "sha256": "1c76df9255b806f636b3c7d984a853a725337ae41904cb48f3848c486b0d5bf9"
+    },
+    {
+      "path": "R/sample-map.R",
+      "bytes": 7735,
+      "sha256": "2906f5e7e0c22e342d43c224b5644de378332d9254b7ec736b0e629d9bc99c9b"
+    },
+    {
+      "path": "R/shiny-app.R",
+      "bytes": 31835,
+      "sha256": "538541d4433ff7020940941557829051edf2c1fa7e7ed2e7ef928c40a28805be"
+    },
+    {
+      "path": "R/shiny-i18n.R",
+      "bytes": 6535,
+      "sha256": "242e92085ee837c73efe15397000fb5a025b3cb700e7a0f9a52a338467950b5d"
+    },
+    {
+      "path": "R/spatial.R",
+      "bytes": 3777,
+      "sha256": "6f9a7218930e07f7510840b7e9d7c41ef2ae5413d11d3406f71ae88d88be4c47"
+    },
+    {
+      "path": "R/teaching.R",
+      "bytes": 16680,
+      "sha256": "a2fa4c89e94e4eae9d8405282b520dbd192fb96755297f4132365ca1f5910f4d"
+    },
+    {
+      "path": "R/utils.R",
+      "bytes": 7629,
+      "sha256": "32bc116ac690faa2d21cb81f2e0d48783a0564b162c9ff70abd3333cd3c343c6"
+    },
+    {
+      "path": "R/validate.R",
+      "bytes": 14816,
+      "sha256": "a4b7154686c44acc58ae5ac31958dfd3880825ab803e452e4e0d7896d541241c"
+    },
+    {
+      "path": "research/discovery/SECRETOME_PROVENANCE_PROTOCOL.md",
+      "bytes": 2765,
+      "sha256": "47842a3b3143a6fc64b603a0ed13f868e234f1733c3e616156c8be0158e7d50f"
+    },
+    {
+      "path": "research/discovery/audit_secretome_provenance.R",
+      "bytes": 7732,
+      "sha256": "0ffd3364a28b88f600a3b714f53926d8789c7ad404502776d0c3b93e1d01ee99"
+    },
+    {
+      "path": "research/discovery/audit_secretome_provenance.py",
+      "bytes": 6082,
+      "sha256": "05c5484f19ee2c460cfce75e39337728ceee5733668ee7a2ded8948e142d29ee"
+    },
+    {
+      "path": "research/discovery/audit_secretome_provenance_report.py",
+      "bytes": 7556,
+      "sha256": "b6558ed1706b6bfedc1d3ba7340207b83cf33409c961ed157c73384a00d03f96"
+    },
+    {
+      "path": "research/discovery/build_secretome_provenance_report.py",
+      "bytes": 15752,
+      "sha256": "0fd31aeb14557306db6ab863ad32725f08201d4f696e6e6a1d30a6f22234a8cd"
+    },
+    {
+      "path": "research/discovery/check_secretome_provenance_handoff.py",
+      "bytes": 3245,
+      "sha256": "fabdccd826c9fd226639f6dc77e6609fe9035ba8c6d7f8c7650c3a79749c1b29"
+    },
+    {
+      "path": "research/discovery/report_secretome_provenance.R",
+      "bytes": 6262,
+      "sha256": "97a582e1fe1b3fe6d9746293b897d893679f6e9c88e65863be02f0719a0f8c4c"
+    },
+    {
+      "path": "research/discovery/seal_secretome.py",
+      "bytes": 4808,
+      "sha256": "4600b06afa773018e631208a6e63b28447bc2d95e6e863844949299feba8c839"
+    },
+    {
+      "path": "research/discovery/seal_secretome_provenance.py",
+      "bytes": 4889,
+      "sha256": "f4f6dff6700ae9cf1ad17d61b6077a3e01beb8968aec9c13028b2d69d68ffbfb"
+    },
+    {
+      "path": "research/discovery/seal_set_validation.py",
+      "bytes": 7635,
+      "sha256": "ef4e6de615d879eb4e8192b60aae9b2e5d7eb719014ac9fbb49e4110e1d4badb"
+    },
+    {
+      "path": "research/discovery/secretome_provenance.py",
+      "bytes": 13941,
+      "sha256": "19d1715137aa9835b2116f7debe08e5cf78c76f6b1db715699ed98cef0276bb3"
+    },
+    {
+      "path": "research/discovery/secretome_provenance_complete.py",
+      "bytes": 10357,
+      "sha256": "c4ff1e4f53dc1d6caf55e0dff510c3180264efd2e7c583cb39177d230036fd5e"
+    },
+    {
+      "path": "research/discovery/secretome_provenance_diagnostics.py",
+      "bytes": 5234,
+      "sha256": "bd9c0cbb81d7b4223e5976b55f5154f51277084319f7bc6e183e20758f6ab3df"
+    },
+    {
+      "path": "research/discovery/secretome_provenance_feasibility.py",
+      "bytes": 5851,
+      "sha256": "478eeaa5d307a50d9275e4cbcf97acd5ee5d74ce179efb1ac4dbacfff376d317"
+    },
+    {
+      "path": "research/discovery/secretome_provenance_leads.py",
+      "bytes": 2770,
+      "sha256": "e19543c1abe0243673fdb9a8dacbec001513320cf01da310a95bf64d89ebed75"
+    },
+    {
+      "path": "research/discovery/secretome_provenance_resume.py",
+      "bytes": 3803,
+      "sha256": "285b379c7a4b7097f85c5bbc36a14443d49c816c47c6f96b6671def308d4f04a"
+    },
+    {
+      "path": "research/discovery/secretome_provenance_selected_table.py",
+      "bytes": 2588,
+      "sha256": "473d36a6f8b69919e5bf72e1f1a9d26fd32aaab9db2754bc7478aa8f4e72c421"
+    },
+    {
+      "path": "research/discovery/secretome_provenance_supplement.py",
+      "bytes": 1616,
+      "sha256": "ea582e75271b9854ac2c9df6c7a97040f639fd101527b4ada7aeffff6cf5660d"
+    },
+    {
+      "path": "research/discovery/secretome_provenance_supplement_review.py",
+      "bytes": 1933,
+      "sha256": "dd74642ea6e2dfc5a5d1e668e0d9ee5c4bee6192dce91afa0e8cb7144929330c"
+    },
+    {
+      "path": "research/discovery/set_integrity.py",
+      "bytes": 3347,
+      "sha256": "a1364935968e0c84b9a24815155cdcb4b6f888e8b80b8f4ad0eb9b09aeae68d4"
+    },
+    {
+      "path": "research/discovery/validation_sources.py",
+      "bytes": 16701,
+      "sha256": "800a3d0f5aaa4ec11004555aa31f9fc0573845213d0ff9410ed1da93aedf854b"
+    },
+    {
+      "path": "research/results/discovery_secretome_v1/archives/24h/extracted/txt/proteinGroups.txt",
+      "bytes": 4026207,
+      "sha256": "f179c0267b09f70079c6e51fd5ebf64368f639be77dffe97a95f0060c8818d19"
+    },
+    {
+      "path": "research/results/discovery_secretome_v1/archives/72h/extracted/txt/proteinGroups.txt",
+      "bytes": 5291473,
+      "sha256": "57a13a064b242e40ae6cf646deec3e08390fa70c285ffb5b030719f43e541d23"
+    },
+    {
+      "path": "research/results/discovery_set_validation_v1/protein_full_tables_small/PXD033514/extracted_verified/txt/proteinGroups.txt",
+      "bytes": 32134908,
+      "sha256": "6433f8df5e440965209b0b9007f062a2c26a1828bd15a07635bdf682de1e6aa0"
+    },
+    {
+      "path": "research/results/discovery_set_validation_v1/protein_full_tables_small/PXD033534/extracted/txt/proteinGroups.txt",
+      "bytes": 18116987,
+      "sha256": "e6a744816e8a3d8c80dae585da203b5d8381faa43894f6082b70afc38f4ea5c5"
+    },
+    {
+      "path": "research/results/discovery_validation_v2/human_protein/Table S2.xlsx",
+      "bytes": 636292,
+      "sha256": "a5cc4a4973e75d587060f151ccd868c5dc365ffa653c2e6b8bde07a839463e5d"
+    },
+    {
+      "path": "research/results/discovery_validation_v2/human_protein/PMC9562650.xml",
+      "bytes": 194407,
+      "sha256": "20977d6e0410203f40701c5fc0cee64b936d3acb6d59f242e1557ffba0052ab8"
+    },
+    {
+      "path": "research/results/discovery_secretome_v1/sample_map.csv",
+      "bytes": 7769,
+      "sha256": "a377b7e091ea17a1928eedf7bb042e73a32c722a681cf306f8152f824211e587"
+    },
+    {
+      "path": "research/results/discovery_secretome_v1/archives/24h/extracted/SampleNameEncription_Secretome24h.txt",
+      "bytes": 588,
+      "sha256": "996986f56ce1f3be2e4176f94701420cbdb29309a6a01807678dc8a85ad08fcb"
+    },
+    {
+      "path": "research/results/discovery_secretome_v1/archives/72h/extracted/SampleNameEncription_Secretome72h.txt",
+      "bytes": 619,
+      "sha256": "c0507d410f78959b94055f600245bcf54ad2502799020bf2f2ccaa80c1a6f3b4"
+    },
+    {
+      "path": "research/results/discovery_set_validation_v1/protein_full_tables_small/PXD033514/extracted_verified/SampleNameEncription_Proteome24h.txt",
+      "bytes": 593,
+      "sha256": "3495ecb7a12e9639fd34527c7bd9fdcda2990fc9e8c89165bb0b8364551e31b6"
+    },
+    {
+      "path": "research/results/discovery_set_validation_v1/protein_full_tables_small/PXD033534/extracted/SampleNameEncription_Proteome72h.txt",
+      "bytes": 591,
+      "sha256": "a7dc889404f5c8f69daea00e813ea6d47eeb56138964d6a07ae6abf4f5713bbd"
+    },
+    {
+      "path": "rgo.md",
+      "bytes": 74186,
+      "sha256": "07cfc88fba08a707496a6f8dcb8c5a5109514ff1ab84afce5798db90b072d252"
+    }
+  ],
+  "previous_evidence": {
+    "status": "pass",
+    "secretome_records": 12827,
+    "secretome_archive_members": 8608,
+    "secretome_manifest": {
+      "path": "docs/secretome_validation_v1/secretome_manifest.json",
+      "bytes": 5698153,
+      "sha256": "42b4f3d65f41a71e302c1d576968c59e0f0cce915587077c0c4c4a085901d35c"
+    },
+    "protected": 2905,
+    "nested": {
+      "status": "pass",
+      "v012_files": 17257,
+      "original_protected_files": 2905,
+      "snapshot_policy": "Only v0.12 root rgo dependency uses exact pre-secretome snapshot; original scientific paths/hash unchanged",
+      "nested": {
+        "status": "pass",
+        "validation_records": 710,
+        "validation_archive_members": 629,
+        "preceding_paper_and_science": {
+          "status": "pass",
+          "v011_records": 87,
+          "v011_archive_members": 82,
+          "original_science_records": 203,
+          "snapshot_policy": "Explicitrgo/README/indexhistoricaldocumentsnapshots only; alloriginalsciencepaths/hash remain"
+        },
+        "snapshot_policy": "Validationrgo uses startsnapshot; nestedv011rgo/README/index use preciseversioned snapshots; alloriginalsciencepaths/hash unchanged"
+      }
+    },
+    "snapshot_policy": "Only preceding secretome rgo dependency uses exact pre-provenance snapshot; all previous science original paths/hash"
+  },
+  "scope": "Four original/published HTPC array source diagnostics and bounded ASM public material feasibility; no new GC candidate protein validation or full PXD055968 quantified array analysis",
+  "publication": "paused",
+  "online_model_calls": 0,
+  "new_wet_experiments": 0
+}

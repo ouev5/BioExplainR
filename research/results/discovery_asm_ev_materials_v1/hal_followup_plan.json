@@ -1,0 +1,29 @@
+{
+  "reason": "HAL DOI and exact title searches identify the same hal-05063440v1 article record; inspect all record fields and repository page for explicit files/relations. Extend French data-repository search to title and project name. Retry OpenAIRE using XML, preserving original timeout.",
+  "candidate_identity_started": false,
+  "script": {
+    "path": "research/discovery/asm_ev_materials.py",
+    "bytes": 7968,
+    "sha256": "537f267a790255edb1fde0dfd0f06481ac39b5164823b089e098bb532e62a4f1"
+  },
+  "source_evidence": [
+    {
+      "path": "research/results/discovery_asm_ev_materials_v1/sources/hal_doi.json",
+      "bytes": 520,
+      "sha256": "8303a55ae116551376384995361ab7ec981862e055bfee52b284c720be05c02d"
+    },
+    {
+      "path": "research/results/discovery_asm_ev_materials_v1/sources/hal_title.json",
+      "bytes": 521,
+      "sha256": "4e114c20018a24db7d599800e8e5e239ffce2b5b0faaa42d0d223570f7f9d9a0"
+    }
+  ],
+  "requests": [
+    ["hal_record_full.json", "https://api.archives-ouvertes.fr/search/?q=docid%3A5063440&fl=%2A&wt=json"],
+    ["hal_record_page.html", "https://hal.science/hal-05063440v1"],
+    ["rdg_title.json", "https://entrepot.recherche.data.gouv.fr/api/search?q=%22Bronchial%20smooth%20muscle%20extracellular%20vesicles%20interfere%20with%20bronchial%20epithelium%20metabolism%20and%20function%20in%20asthma%22&per_page=100"],
+    ["rdg_project.json", "https://entrepot.recherche.data.gouv.fr/api/search?q=CHARMACOMA&per_page=100"],
+    ["hal_project.json", "https://api.archives-ouvertes.fr/search/?q=text%3ACHARMACOMA&rows=100&fl=%2A&wt=json"],
+    ["openaire_doi_xml.xml", "https://api.openaire.eu/search/publications?doi=10.1016%2Fj.isci.2025.112546&format=xml"]
+  ]
+}

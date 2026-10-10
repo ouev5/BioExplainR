@@ -1,0 +1,150 @@
+{
+  "accession" : "PXD063431",
+  "title" : "A549 cells glucocorticoid treatment",
+  "additionalAttributes" : [ ],
+  "projectDescription" : "This project aims to study the molecular signature of glucocorticoid treatment on A549 human lung adenocarcinoma cells on transcriptome and proteome levels. Glucocorticoid treatment was previously identified to induce formation of cytoplasmic Processing-bodies (P-bodies) in epithelial cell lines, which results in the recruitment of mRNA into P-bodies for storage and/or degradation.",
+  "sampleProcessingProtocol" : "A549 cells (human lung adenocarcinoma epithelial cell line, ATCC CCL-185 were cultured Dulbecco's modified eagle medium (DMEM). Cells were treated with or without dexamethasone (n= 4 wells) for 48 h at 1 µM concentration. Identical sets of samples were prepared in parallel for RNA-seq and proteomics analysis.   Total protein was extracted using Laemmli buffer, precipitated over night with TCA, dissolved in 1 M urea + 0.1 mM TrisHCl (pH 8.5), reduced with 10 mM DTT (30 min, 56°C) and alkylated with 20 mM iodoacetamide (30 min, 25°C). Trypsin digestion was performed overnight at 37°C. TFA acidified samples were preconcentrated on a C18 PepMap100 trap-column for 1 min at 15 μL/min with 2% ACN and 0.1% FA in water. For mass spectrometry peptides were separated on an C18 analytical column (PepMap, 75 μm ID × 15 cm) using a 40-min gradient from 8% to 25% buffer B (buffer A: 0.1% FA in water; buffer B: 0.1% FA in 80% ACN) at 450 nl/min and 45°C using an Ultimate 3000 nano-RSLC system coupled to an Exploris 480 quadrupole-orbitrap using nano-electrospray source with FAIMS pro interface (Thermo Scientific). Spectra were recorded in positive ionization mode using Data-Dependent Acquisition with two cycles of FAIMS compensation voltages (-45V and -55V for 1.2 and 0.8 sec, cycles consisted in a survey scan followed by MS2 spectra acquisition in HCD, 30% normalized energy; 2 m/z window; 22,500 FWHM) with 50 ms maximum injection. Single-charged and unassigned states were excluded (± 10 ppm mass width).",
+  "dataProcessingProtocol" : "Resulting raw data were processed using Proteome Discoverer 2.5 software (Thermo Scientific) against the SwissProt human proteome database (reviewed march 2024 release). Precursor and fragment mass tolerances were set at 7 ppm and 0.05 Da, respectively, allowing up to two missed cleavages. Oxidation (M) was set as a variable modification and carbamidomethylation (C) as a fixed modification, with peptide filtering at 1% FDR.",
+  "projectTags" : [ ],
+  "keywords" : [ "Glucocorticoid", "Epithelial a549", "Dexamethasone", "Human", "Cell line" ],
+  "doi" : "",
+  "submissionType" : "PARTIAL",
+  "license" : "Creative Commons Public Domain (CC0)",
+  "submissionDate" : "2025-04-29",
+  "publicationDate" : "2026-03-02",
+  "submitters" : [ {
+    "title" : "Mr",
+    "firstName" : "Wolfgang",
+    "lastName" : "Raffelsberger",
+    "identifier" : "3639908",
+    "affiliation" : "IGBMC",
+    "email" : "wraff@igbmc.fr",
+    "country" : "France",
+    "orcid" : "0000-0002-7426-3693",
+    "name" : "Wolfgang Raffelsberger",
+    "id" : "3639908"
+  } ],
+  "labPIs" : [ {
+    "title" : "Dr",
+    "firstName" : "Patrick",
+    "lastName" : "Brest",
+    "identifier" : "3139199",
+    "affiliation" : "Université Côte d’Azur, IRCAN, 28 avenue de Valombrose, Nice, France",
+    "email" : "patrick.brest@univ-cotedazur.fr",
+    "country" : "",
+    "orcid" : "",
+    "name" : "Patrick Brest",
+    "id" : "3139199"
+  } ],
+  "instruments" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1003028",
+    "name" : "Orbitrap Exploris 480"
+  } ],
+  "softwares" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1000650",
+    "name" : "Proteome Discoverer"
+  } ],
+  "experimentTypes" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000428",
+    "name" : "Bottom-up proteomics"
+  } ],
+  "quantificationMethods" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000652",
+    "name" : "Relative quantification"
+  } ],
+  "countries" : [ "France" ],
+  "sampleAttributes" : [ {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "EFO:0000635",
+      "name" : "organism part"
+    },
+    "value" : [ {
+      "cvLabel" : "CL",
+      "accession" : "CL:0000066",
+      "name" : "epithelial cell"
+    }, {
+      "cvLabel" : "BTO",
+      "accession" : "BTO:0000763",
+      "name" : "lung"
+    } ]
+  }, {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "OBI:0100026",
+      "name" : "organism"
+    },
+    "value" : [ {
+      "cvLabel" : "NEWT",
+      "accession" : "NEWT:9606",
+      "name" : "Homo sapiens (Human)"
+    } ]
+  }, {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "EFO:0000408",
+      "name" : "disease"
+    },
+    "value" : [ {
+      "cvLabel" : "DOID",
+      "accession" : "DOID:3905",
+      "name" : "lung carcinoma"
+    } ]
+  } ],
+  "organisms" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "NEWT",
+    "accession" : "NEWT:9606",
+    "name" : "Homo sapiens (human)"
+  } ],
+  "organismParts" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "CL",
+    "accession" : "CL:0000066",
+    "name" : "Epithelial cell"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "BTO",
+    "accession" : "BTO:0000763",
+    "name" : "Lung"
+  } ],
+  "diseases" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "DOID",
+    "accession" : "DOID:3905",
+    "name" : "Lung carcinoma"
+  } ],
+  "references" : [ {
+    "referenceLine" : "Nicolini VJ, FRENCH GR-P-BODY NETWORK, Brest P. Novel post-transcriptional dimension of glucocorticoid action through mRNA translation and P-body remodeling. Signal Transduct Target Ther. 2026 11(1):245",
+    "pubmedID" : 42336811,
+    "doi" : "10.1038/s41392-026-02760-y"
+  } ],
+  "identifiedPTMStrings" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MOD",
+    "accession" : "MOD:00394",
+    "name" : "acetylated residue"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "MOD",
+    "accession" : "MOD:00397",
+    "name" : "iodoacetamide derivatized residue"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "MOD",
+    "accession" : "MOD:00704",
+    "name" : "dehydrated residue"
+  } ],
+  "totalFileDownloads" : 30
+}

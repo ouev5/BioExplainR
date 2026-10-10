@@ -1,0 +1,56 @@
+{
+  "status": "pass",
+  "utc": "2026-10-10T00:56:33.245312+00:00",
+  "script": {
+    "path": "research/discovery/audit_secretome_provenance.py",
+    "bytes": 6082,
+    "sha256": "05c5484f19ee2c460cfce75e39337728ceee5733668ee7a2ded8948e142d29ee"
+  },
+  "workbook_measurements": 23436,
+  "all_workbook_comparisons": 31228,
+  "EV_independent_donor_labels": 6,
+  "EV_runs": 18,
+  "EV_replications_per_label": 3,
+  "EV_scope": "No GC/vehicle factor; three runs/label even though original linkage calls them biologicalreplicates. Do not count18 independent donors.",
+  "literature_unique": 180,
+  "search": [
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/epmc_asm_candidates_1.json",
+      "hits": 30
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/epmc_asm_gc_secretion_1.json",
+      "hits": 60
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/epmc_asm_proteomics_1.json",
+      "hits": 5
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/epmc_asm_secretome_1.json",
+      "hits": 63
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/epmc_htpc_gc_1.json",
+      "hits": 25
+    },
+    {
+      "path": "research/results/discovery_secretome_provenance_v1/sources/epmc_pxd033504_1.json",
+      "hits": 1
+    }
+  ],
+  "pride_corrected_hits": [
+    1,
+    7,
+    0,
+    0,
+    0
+  ],
+  "pride_unique_projects": 8,
+  "first_pride_endpoint_ignored_keyword": true,
+  "r_audit": {
+    "path": "research/results/discovery_secretome_provenance_v1/complete/r_audit.json",
+    "bytes": 1022,
+    "sha256": "66d3011a02f4d5a8a0f8195f8bfc6002e9711c464ea464f29ed4239b4611169b"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "status": "blocked_missing_final_export",
+  "utc": "2026-10-10T02:38:04.324715+00:00",
+  "version_inspection": "completed",
+  "version_files": 18,
+  "versions": [
+    "3.1.0.638"
+  ],
+  "search_databases": [
+    "RP_UP000005640_Homo_sapiens_2024_01_22.fasta"
+  ],
+  "prediction_models": [
+    "inferys_3.0.0_fragmentation"
+  ],
+  "patients": 6,
+  "file_inventory": 56,
+  "independent_audit": "pass",
+  "protein_tables_with_no_abundance": 54,
+  "exact_schema_tables": 1620,
+  "required_materials": [
+    {
+      "material": "Unfiltered final master-protein/protein-group quantitative export",
+      "requirement": "All proteins and all18 mapped runs; original and normalized abundance; zero/NA/imputation flags; protein accessions/group members and unique peptides",
+      "status": "not acquired",
+      "reason": "all18 submitted pdResult files are single-run CWF_ID results with no protein abundance columns"
+    },
+    {
+      "material": "Paper-version final joint workflow and processing identity",
+      "requirement": "Actual PD/Proline release, processing+consensus workflow, search database SHA, inferys model, grouping/FDR/filter/normalization/missing-data settings",
+      "status": "unresolved",
+      "reason": "PD2.5 vs3.0 vs3.1, inferys2.1 vs3.0, 2020 vs2023 vs2024 database differences"
+    },
+    {
+      "material": "Original peptide/PSM-to-protein evidence and quantification mapping",
+      "requirement": "Unique/shared peptides, validated confidence/q values, master/group membership, cross-run mapping",
+      "status": "final version not acquired",
+      "reason": "candidate identity check must be bound to correct quantified array/version"
+    },
+    {
+      "material": "Six-patient minimal metadata and repeat definitions",
+      "requirement": "Deidentified age or adult status for595/614/615/BA184/BA185/BA186; definition of triplicate culture/extraction/injection; any exclusions",
+      "status": "partially acquired",
+      "reason": "six patients/three repeats each mapped; per-patient ages and repeat type not defined in original linkage"
+    }
+  ],
+  "correct_full_export_acquired": false,
+  "candidate_identity_started": false,
+  "author_contact": "draft_only_not_sent",
+  "publication": "paused",
+  "online_model_calls": 0
+}

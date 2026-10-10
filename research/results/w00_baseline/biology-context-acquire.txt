@@ -1,0 +1,40 @@
+{
+  "status": "acquired",
+  "files": [
+    {
+      "path": "counts.txt.gz",
+      "bytes": 1371256,
+      "sha256": "62d3d3cbf246df73a9cf767f4c0f3f875d5c7d620af260d02de549647b2db30e",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE146nnn/GSE146017/suppl/GSE146017_CEBPD_htseq_gene.txt.gz",
+      "retrieved_utc": "2026-10-08T12:56:18.365289+00:00"
+    },
+    {
+      "path": "series_matrix.txt.gz",
+      "bytes": 4251,
+      "sha256": "d78821d9f79ab65c2ee0e87da4950e74d6354a5a5b207566861aec9859e74ae8",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE146nnn/GSE146017/matrix/GSE146017_series_matrix.txt.gz",
+      "retrieved_utc": "2026-10-08T12:56:21.467259+00:00"
+    },
+    {
+      "path": "PMC4057123.xml",
+      "bytes": 184062,
+      "sha256": "ed3e585419ff07b3e2de17c70f0ac5bf70e50331973949e90972abb4d4cca322",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4057123/fullTextXML",
+      "retrieved_utc": "2026-10-08T12:56:27.457404+00:00"
+    },
+    {
+      "path": "PMC9331514.xml",
+      "bytes": 143135,
+      "sha256": "afc3cf4da9d983eed0bed645623383c91e407e8d2a9a0aee119a30777cec6a9e",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9331514/fullTextXML",
+      "retrieved_utc": "2026-10-08T12:56:31.793511+00:00"
+    },
+    {
+      "path": "novelty_search.json",
+      "bytes": 22297,
+      "sha256": "b1cfb20933abc0f8b15ca8173062dbd5cc30a531f66b6a63061f43de63f0748a",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SPARCL1+AND+%28CEBPD+OR+budesonide+OR+%28TNF+AND+glucocorticoid%29%29+AND+FIRST_PDATE%3A%5B1900-01-01+TO+2026-10-08%5D&format=json&pageSize=25",
+      "retrieved_utc": "2026-10-08T12:56:33.669930+00:00"
+    }
+  ]
+}

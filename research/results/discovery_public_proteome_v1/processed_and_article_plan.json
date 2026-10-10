@@ -1,0 +1,106 @@
+{
+  "utc": "2026-10-10T05:12:29.704939+00:00",
+  "script": {
+    "path": "research/discovery/public_proteome_review.py",
+    "bytes": 6363,
+    "sha256": "5d231f26958b4dc4c0bedef4d20739c5b8e7549612c7af3c6d71cb638435ff91"
+  },
+  "source_evidence": [
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/PXD029135_inventory.json",
+      "bytes": 58637,
+      "sha256": "3695ad4fc0889a748970a4539da58c8d706b885ee1b2a356372e7d963685b626"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/papers_asm_protein_summary.json",
+      "bytes": 108984,
+      "sha256": "527ea60eb7e05e77403035fee8a23d7152f70d94c37b392f76286f19988234da"
+    },
+    {
+      "path": "research/results/discovery_public_proteome_v1/imported/papers_lung_gc_protein_summary.json",
+      "bytes": 82664,
+      "sha256": "efaf983b3ae8d66a7c1850e4990297a40a98aa930bde295deca24a1bdd2a7a5e"
+    }
+  ],
+  "requests": [
+    {
+      "name": "PXD029135_median-normalized.txt",
+      "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2021/11/PXD029135/median-normalized.txt",
+      "expected_file": {
+        "projectAccessions": [
+          "PXD029135"
+        ],
+        "accession": "c74f37cfadf95f444bdd350fc45107c676535f3f9b7db117822ab5e7d269ab06",
+        "fileCategory": {
+          "@type": "CvParam",
+          "cvLabel": "PRIDE",
+          "accession": "PRIDE:0000408",
+          "name": "Search engine output file URI",
+          "value": "SEARCH"
+        },
+        "checksum": "c99601bc60192720d23fc10d18bc8ce50e5e849f",
+        "publicFileLocations": [
+          {
+            "@type": "CvParam",
+            "cvLabel": "PRIDE",
+            "accession": "PRIDE:0000469",
+            "name": "FTP Protocol",
+            "value": "ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2021/11/PXD029135/median-normalized.txt"
+          },
+          {
+            "@type": "CvParam",
+            "cvLabel": "PRIDE",
+            "accession": "PRIDE:0000468",
+            "name": "Aspera Protocol",
+            "value": "prd_ascp@fasp.ebi.ac.uk:pride/data/archive/2021/11/PXD029135/median-normalized.txt"
+          }
+        ],
+        "fileSizeBytes": 2055550,
+        "fileName": "median-normalized.txt",
+        "compress": false,
+        "submissionDate": "2021-10-14T15:00:16.829+00:00",
+        "publicationDate": "2021-11-22T09:53:05.373+00:00",
+        "updatedDate": "2021-10-14T15:00:16.829+00:00",
+        "additionalAttributes": [],
+        "totalDownloads": 271
+      }
+    },
+    {
+      "name": "PMC11161633.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11161633/fullTextXML"
+    },
+    {
+      "name": "PMC11299423.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11299423/fullTextXML"
+    },
+    {
+      "name": "PMC5105184.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5105184/fullTextXML"
+    },
+    {
+      "name": "PMC9361782.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9361782/fullTextXML"
+    },
+    {
+      "name": "intrapulmonary_article.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A32299863+AND+SRC%3AMED&format=json&resultType=core"
+    },
+    {
+      "name": "intrapulmonary_crossref.json",
+      "url": "https://api.crossref.org/works/10.1183/13993003.02178-2019"
+    },
+    {
+      "name": "targeted_zedoarondiol.json",
+      "url": "https://www.ebi.ac.uk/pride/ws/archive/v2/search/projects?keyword=zedoarondiol&pageSize=100&page=0"
+    },
+    {
+      "name": "targeted_tas2r.json",
+      "url": "https://www.ebi.ac.uk/pride/ws/archive/v2/search/projects?keyword=TAS2R&pageSize=100&page=0"
+    },
+    {
+      "name": "targeted_intrapulmonary_asm.json",
+      "url": "https://www.ebi.ac.uk/pride/ws/archive/v2/search/projects?keyword=Intrapulmonary+airway+smooth+muscle&pageSize=100&page=0"
+    }
+  ],
+  "reason": "Restore missing table with upstream integrity; inspect ASM/fetal secretome article data-availability and actual sample designs"
+}

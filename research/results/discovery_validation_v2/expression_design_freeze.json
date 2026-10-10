@@ -1,0 +1,64 @@
+{
+  "utc": "2026-10-09T11:59:48.973816+00:00",
+  "script": {
+    "path": "research/discovery/validation_expression.py",
+    "bytes": 14664,
+    "sha256": "0bbaf0d135a39efe3d04515bf6037d80380030ddbf1b4bf14b834dfd99085f9e"
+  },
+  "protocol": {
+    "path": "research/discovery/VALIDATION_CONTINUATION_PROTOCOL.md",
+    "bytes": 3635,
+    "sha256": "a292105623c98fe4ced955b43e2ecca4a6808e31e2a7f0baab59a3fc3158c2a7"
+  },
+  "sample_map": {
+    "path": "research/results/discovery_validation_v2/expression_sample_map.csv",
+    "bytes": 10960,
+    "sha256": "91b7ddeef8407c2e119ff6936b2ac7135621fc5e7275ff0cd22bbc294aeb542a"
+  },
+  "genes_entrez": {
+    "PER2": "8864",
+    "PER3": "8863",
+    "METTL7A": "25840",
+    "MAOA": "4128",
+    "ANGPTL2": "23452",
+    "FSTL3": "10272",
+    "FKBP5": "2289",
+    "TSC22D3": "1831",
+    "DUSP1": "1843",
+    "GNAS": "2778",
+    "NR3C1": "2908"
+  },
+  "contrasts": [
+    "GC_control",
+    "GC_perturbed",
+    "GC_x_perturbation",
+    "perturbation_vehicle"
+  ],
+  "primary": "Within-donor mean difference of published log2(TPM+1) / GCRMA log2 values; two-sided one-sample t",
+  "family": "Each dataset: 11 genes x 4 contrasts = 44 Holm tests, missing P=1",
+  "exact": "All 2^n donor sign flips; paired exchangeability assumption; Holm across same family",
+  "GSE130715": {
+    "donors": 6,
+    "libraries": 24,
+    "ages": "19-54, all six adult",
+    "perturbation": "GNAS, NOT NR3C1",
+    "dose": "1 uM BUD 24h, single endpoint",
+    "scale": "published TPM; no count-model log2FC claim"
+  },
+  "GSE13168": {
+    "primary_donors": [
+      "donor2",
+      "donor3",
+      "donor4"
+    ],
+    "primary_arrays": 12,
+    "published_arrays": 54,
+    "perturbation": "genetically expressed PKA inhibitor PKI, NOT NR3C1",
+    "scale": "GCRMA log2 values",
+    "age": "not disclosed; adult status not verified",
+    "subset": "basal vs Flu, GFP vs PKI; inflammation arms preserved, not tested in this freeze"
+  },
+  "missing": "No probe/ID -> status missing_annotation, P=1, CI empty; do not substitute genes",
+  "independence": "No exact overlap among six new labels and saved GSE94335 labels; do not sum donor counts; GSE13168 aliases unknown",
+  "timing": "Metadata, original article and published statistical tables read; new candidate arrays/TPM not read."
+}

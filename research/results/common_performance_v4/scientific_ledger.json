@@ -1,0 +1,44 @@
+{
+  "status": "completed_and_independently_audited",
+  "utc": "2026-10-09T05:44:45.261444+00:00",
+  "formal_directory": "common_performance_v4",
+  "run_denominator": 360,
+  "model_attempts": 216,
+  "warmup_model_calls": 1,
+  "target_scores": 1800,
+  "unique_tasks": 24,
+  "previous_attempts": [
+    {
+      "directory": "common_performance_v1",
+      "status": "interrupted",
+      "reason": "ellmer Responses API ignored seed"
+    },
+    {
+      "directory": "common_performance_v2",
+      "status": "failed_before_inference",
+      "reason": "prior service port collision"
+    },
+    {
+      "directory": "common_performance_v3",
+      "status": "interrupted",
+      "reason": "client config/finish_reason interface errors found before whole run"
+    },
+    {
+      "directory": "discovery_mechanism_fit_v1",
+      "status": "failed_before_counts",
+      "reason": "relative path at freeze"
+    },
+    {
+      "directory": "discovery_mechanism_fit_v2",
+      "status": "failed_before_candidate_analysis",
+      "reason": "treatment whitespace in count headers"
+    },
+    {
+      "directory": "discovery_mechanism_fit_v3",
+      "status": "failed_before_candidate_analysis",
+      "reason": "CSV included True read as character in R"
+    }
+  ],
+  "interpretation": "Development counting/transmission benchmark, not six-tool rank, not general reasoning or independent biology",
+  "scope": "Previous failed/interrupted calls excluded from formal scores; no outputs tuned task/prompt rules"
+}

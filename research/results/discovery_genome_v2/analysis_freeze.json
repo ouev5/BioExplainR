@@ -1,0 +1,57 @@
+{
+  "frozen_utc": "2026-10-09T07:57:33.872751+00:00",
+  "stage": "before genome ranking and selection; earlier SPARCL1 analyses known",
+  "analysis": "exploratory published-data reanalysis",
+  "files": [
+    {
+      "path": "research/discovery/GENOME_PROTOCOL.md",
+      "bytes": 3557,
+      "sha256": "9b375cc25fea86ded51fb6ad17e70a26f0c8dfe56599bccee26445d8648bec91"
+    },
+    {
+      "path": "research/discovery/screen_genome.R",
+      "bytes": 8750,
+      "sha256": "e38b379682d4f1ad7d5908190521f78e698cf51be4f930eccbfb9a386d8a519d"
+    },
+    {
+      "path": "research/discovery/freeze_genome.py",
+      "bytes": 1702,
+      "sha256": "ab0c743c7549ee4e5e1a8454fb676208f857169c0514cef38f32f0cca19f3e1a"
+    },
+    {
+      "path": "research/results/discovery_context_v1/model.rds",
+      "bytes": 32636612,
+      "sha256": "ff150cf0ac50522f04d2327126edd28c3d166e210cc41d7d83cbba41497a30c0"
+    },
+    {
+      "path": "research/results/discovery_context_v1/counts.txt.gz",
+      "bytes": 1371256,
+      "sha256": "62d3d3cbf246df73a9cf767f4c0f3f875d5c7d620af260d02de549647b2db30e"
+    },
+    {
+      "path": "research/results/discovery_context_v1/samples.csv",
+      "bytes": 3454,
+      "sha256": "2b73f7e3a79f3fae98fbf031ef9e93d0491d7e16de65d0719829b0d4de022fe6"
+    },
+    {
+      "path": "research/results/discovery_context_v1/size_factors.csv",
+      "bytes": 962,
+      "sha256": "2c423d8617e643d82d8b618f7a510f512d899137488281674d45dba7ca53394d"
+    },
+    {
+      "path": "research/results/discovery_donors_v1/tpm.txt.gz",
+      "bytes": 121575832,
+      "sha256": "30ebc92ddbd40bf4dedab57d05b46ba10a763c0130c89f6154862b351189277f"
+    },
+    {
+      "path": "research/results/discovery_donors_v1/samples.csv",
+      "bytes": 2351,
+      "sha256": "7bd368e012c810023a7bce6a63f0fd2ad533402cb1d6b7e63539d26e1d2a866a"
+    },
+    {
+      "path": "research/results/discovery_donors_v1/original_supplement_verified.pdf",
+      "bytes": 2188400,
+      "sha256": "58ffb30921ad7cb70a7d326dace8393ca6fc4dedc3de374c5c4d928a502ee7d6"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "checks": [
+    {
+      "file": {
+        "path": "research/results/discovery_public_proteome_v1/sources/PXD014171_summary.txt",
+        "bytes": 7522,
+        "sha256": "970f51484c66ee5e5869ea9518cca528ddd4961dcbb6026fae02a600852378ee"
+      },
+      "expected_bytes": 7522,
+      "size_matches": true,
+      "upstream_sha1": "e9355e35c07abade1e4823144543d7265ad427f6",
+      "upstream_sha1_matches": true
+    },
+    {
+      "file": {
+        "path": "research/results/discovery_public_proteome_v1/sources/PXD014171_PXD014171_community_annotated.sdrf.tsv",
+        "bytes": 7450,
+        "sha256": "afb858a61d1937e9dfc8e252f3753fabc9e3a3c028337a721f2447d9c06ca63f"
+      },
+      "expected_bytes": 7450,
+      "size_matches": true,
+      "upstream_sha1": "",
+      "upstream_sha1_matches": null
+    },
+    {
+      "file": {
+        "path": "research/results/discovery_public_proteome_v1/sources/PXD015604_Link_between_files.xlsx",
+        "bytes": 10999,
+        "sha256": "a01f599f1502c887bed038f86f6eeacdc78b02641017c43cc6a7aace44f8d6ad"
+      },
+      "expected_bytes": 10999,
+      "size_matches": true,
+      "upstream_sha1": "8f1ec46c065591cecf972626b81defbe776621cf",
+      "upstream_sha1_matches": true
+    }
+  ],
+  "PXD014171_run_count": 19,
+  "summary_SDRF_run_names_match": true,
+  "PXD014171_published_lesions": 15,
+  "PXD014171_patients": 4,
+  "note": "19 runs are not 19 independent patients; no GC/vehicle factor"
+}

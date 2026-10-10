@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/home/ubuntu/creatR/research/discovery/run_donors.py", line 146, in <module>
+    parser.add_argument("output", type=Path); args = parser.parse_args(); globals()[args.action](args.output)
+                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/creatR/research/discovery/run_donors.py", line 106, in analyze
+    md = parse_design(out, titles, samples, characteristics, observed)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/creatR/research/discovery/donor_design.py", line 23, in parse_design
+    actual = mapping[title]
+             ~~~~~~~^^^^^^^
+KeyError: '28793'

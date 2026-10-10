@@ -1,0 +1,20 @@
+{
+  "command": [
+    "python3",
+    "research/discovery/download_ranges.py",
+    "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE94nnn/GSE94335/suppl/GSE94335_PostQC_all_sample_TPM.txt.gz",
+    "research/results/discovery_donors_v1/tpm.txt.gz",
+    "--workers",
+    "12"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-08T13:46:09.133769+00:00",
+  "finished_utc": "2026-10-08T13:50:37.016926+00:00",
+  "exit_code": 1,
+  "status": "fail",
+  "log": {
+    "path": "research/results/w00_baseline/biology-donors-ranges-resume.txt",
+    "bytes": 1277,
+    "sha256": "c598e384971f6cd8d678dc374e9e54ed757abddfa63cb4f545c68a3ff5ae7dc5"
+  }
+}

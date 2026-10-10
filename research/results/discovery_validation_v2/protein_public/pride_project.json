@@ -1,0 +1,88 @@
+{
+  "accession" : "PXD081613",
+  "title" : "Post-transcriptional glucocorticoid receptor signalling synchronises circadian rhythms",
+  "additionalAttributes" : [ ],
+  "projectDescription" : "Circadian rhythms are driven by cellular clocks throughout the body that maintain optimal health. Glucocorticoid (GC) hormones are vital for synchronising cellular clocks, aligning them with external day/night cycles, but mechanistic understanding is incomplete. We use a glucocorticoid receptor KO/rescue approach to show residue E755 and N-terminal intrinsically disordered region are essential for GC synchronisation, whereas nuclear translocation from the cytoplasm is not. Using nascent and mature transcriptomics with (phospho)proteomics we show that, under physiological GC increases, the GR regulates a substantial proportion of gene expression post-transcriptionally. Rapid upregulation of Per1 mRNA occurs through increased RNA processing not synthesis, which drives GC synchronisation via acute increases in nascent PER1 and not PER2 protein. We find synchronisation to a single GC dose is highly heterogeneous between individual cells. Our findings provide mechanistic insight into nuclear hormone receptor signalling and establishes a cellular basis for the gradual alignment of circadian clocks by daily environmental cycles via systemic cues.",
+  "sampleProcessingProtocol" : "Cell pellets were resuspended in 200µL of lysis bu?er [20mM HEPES containing 0.1% RapiGest (Waters)] with 2µL 250U/µL molecular grade benzonase (Millipore Sigma, E8263) and incubated for 30min at RT. Total protein in each sample was quantified using the Pierce Coomassie Plus (Bradford) Assay Kit (23236) according to the manufacturer?s instructions and normalised to total protein. Samples were incubated with 4mM dithiothreitol (DTT), vortexed and incubated at 60°C for 10min. Iodoacetamide was then added to a final concentration of 14mM and mixed in by vortexing and incubated for additional 45min in the dark, at room temperature. To digest protein into peptides, trypsin was added at a ratio of 50:1 protein: trypsin and samples incubated for 10h at 37°C, shaking at 450RPM. Following digestion, samples were briefly spun down to isolate the digest at the bottom of the tube. To label peptides, TMTPro stock solution was added at a 5:1 ratio of TMT: protein. For the TMT internal bridge channel, a pooled control containing equal protein amount from all samples was prepared. Samples were vortexed for 5s, spun down, then incubated for 1h at RT with gentle vortexing every 5min (2850RPM for 10s). The TMT labelling reaction was quenched by incubation with 5µL of 5% hydroxylamine (0.4% (v/v) final) (ThermoFisher, 90115) for 15min at RT in 500mM HEPES. Labelled samples were then pulled into a single low bind tube. To remove ACN, the multiplexed sample was dried to completion in a vacuum centrifuge. 100µL trifluoroacetic acid (TFA) 0.5% (v/v) was then incubated with the multiplexed sample for at least 45min at 37°C. The sample was then centrifuged at 13,000xg for at least 15min at 4°C to remove all insoluble RapiGest byproducts, and supernatant carefully removed to ensure no particulates remained. Pierce Peptide Desalting Spin Columns (ThermoFisher, 89852) were then used to desalt the sample. To condition the spin columns, the white tip at the bottom of the column was discarded, and the column centrifuged within a 2mL microcentrifuge tube at 2,000xg for 1min to remove the solution and pack the resin material. Columns were then washed 2X with 300µL ACN, then washed 2X with 0.1% TFA in water. The multiplexed sample was then completely dissolved in 200µL of 0.1% TFA in water, before loading onto the column and centrifuging at 3,000xg for 1min. Sample-bound columns were then washed 3X with 300µL 0.1% TFA. To completely remove excess TMT reagent, columns were washed 2X with 300uL 5% methanol, 0.1% TFA solution. Elution of the desalted sample from the column was performed by loading 300µL of 50% ACN, 0.1% TFA solution and centrifuging for 1min 2X. The liquid contents of each sample were evaporated to dryness by vacuum centrifugation using a SpeedVac Concentrator. Multiplexed samples were then fractionated using basic reverse phase into 12 final non-contiguous concatenated fractions per plex. Phosphopeptide enrichment was performed using KingFisher (TiO2 high-transluency (HT)   and ZrO2 HT). 20µL of Ti-IMAC HP beads were added to 200µL of Loading bu?er (1M glycolic   acid in 80% ACN and 5% TFA), and the microsphere washed with 500µL of Loading bu?er.   Dried sample was then resuspended in 200µL of Loading bu?er before adding to beads.   Beads were then washed with 500µL of Loading bu?er, followed by 500µL of Wash bu?er 1   (80% ACN, 1% TFA) then 500µL of Wash bu?er 2 (10% ACN, 0.2% TFA). Samples were eluted   with 200µL of Elution bu?er (1% NH4OH). The above procedure was then repeated using ZrO2 beads.",
+  "dataProcessingProtocol" : "Raw data were imported and data processed in Proteome Discoverer v3.1 (Thermo Fisher Scientific). The raw files were submitted to a database search using Proteome Discoverer with SequestHF against the?Mus musculus. Common contaminant proteins (several types of human keratins, BSA and porcine trypsin) were added to the database. The spectra identification was performed with the following parameters: MS accuracy, 10 p.p.m.; MS/MS accuracy of 0.6 Da for spectra acquired in Ion trap mass analyzer; up to two missed cleavage sites allowed; carbamidomethylation of cysteine and TMTpro 16 plex on lysines?and peptide N-terminal?as a fixed modification; and oxidation of methionine as variable modifications. Percolator node was used for false discovery rate estimation and only rank 1 peptide identifications of high confidence (FDR<1%) were accepted.",
+  "projectTags" : [ ],
+  "keywords" : [ "Nuclear hormone receptor", "Rna processing", "Circadian rhythm", "Glucocorticoid", "Clock synchronisation", "Entrainment", "Post-transcriptional regulation" ],
+  "doi" : "",
+  "submissionType" : "PARTIAL",
+  "license" : "Creative Commons Public Domain (CC0)",
+  "submissionDate" : "2026-07-24",
+  "publicationDate" : "2026-09-04",
+  "submitters" : [ {
+    "title" : "Dr",
+    "firstName" : "Catarina",
+    "lastName" : "de Matos Ferraz Franco",
+    "identifier" : "1000006747",
+    "affiliation" : "MRC Laboratory of Molecular Biology\nFrancis Crick Avenue\nCambridge Biomedical Campus\nCambridge\nCB2 0QH",
+    "email" : "cffranco@mrclmb.ac.uk",
+    "country" : "United Kingdom",
+    "orcid" : "0000-0003-2288-1518",
+    "name" : "Catarina de Matos Ferraz Franco",
+    "id" : "1000006747"
+  } ],
+  "labPIs" : [ {
+    "title" : "Dr",
+    "firstName" : "John",
+    "lastName" : "O'Neill",
+    "identifier" : "3515192",
+    "affiliation" : "MRC Laboratory of Molecular Biology, Cambridge, CB2 0QH, United Kingdom",
+    "email" : "oneill@mrclmb.ac.uk",
+    "country" : "",
+    "orcid" : "",
+    "name" : "John O'Neill",
+    "id" : "3515192"
+  } ],
+  "instruments" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1003356",
+    "name" : "Orbitrap Ascend"
+  } ],
+  "softwares" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1000650",
+    "name" : "Proteome Discoverer"
+  } ],
+  "experimentTypes" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000428",
+    "name" : "Bottom-up proteomics"
+  } ],
+  "quantificationMethods" : [ ],
+  "countries" : [ "United Kingdom" ],
+  "sampleAttributes" : [ {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "OBI:0100026",
+      "name" : "organism"
+    },
+    "value" : [ {
+      "cvLabel" : "NEWT",
+      "accession" : "NEWT:9606",
+      "name" : "Homo sapiens (Human)"
+    } ]
+  } ],
+  "organisms" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "NEWT",
+    "accession" : "NEWT:9606",
+    "name" : "Homo sapiens (human)"
+  } ],
+  "organismParts" : [ ],
+  "diseases" : [ ],
+  "references" : [ ],
+  "identifiedPTMStrings" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MOD",
+    "accession" : "MOD:00696",
+    "name" : "phosphorylated residue"
+  } ],
+  "totalFileDownloads" : 0
+}

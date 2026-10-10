@@ -1,0 +1,275 @@
+[ {
+  "accession" : "PXD004073",
+  "title" : "iTRAQ quantification of hippocampal proteins in a mouse model of unpredictable maternal separation and maternal stress",
+  "projectDescription" : "Adverse experiences in early life are risk factors for the development of behavioral and physiological symptoms that can lead to psychiatric and cognitive disorders later in life. Some of these symptoms can be transmitted to the offspring, in some cases by non-genomic mechanisms involving germ cells. Using a mouse model of unpredictable maternal separation and maternal stress, we show that postnatal trauma alters coping behaviors in adverse conditions in exposed males when adult and in their adult male progeny. The behavioral changes are accompanied by increased glucocorticoid receptor (GR) expression and decreased DNA methylation of the GR promoter in the hippocampus. DNA methylation is also decreased in sperm cells of exposed males when adult. Transgenerational transmission of behavioral symptoms is prevented by paternal environmental enrichment, an effect associated with the reversal of alterations in GR gene expression and DNA methylation in the hippocampus of the male offspring. These findings highlight the influence of both, negative and positive environmental factors on behavior across generations, and the plasticity of the epigenome across life.",
+  "dataProcessingProtocol" : "Peak list generation and database search   Mascot Distiller 2.4.3.3 (Matrix Science, Boston, MA) was used to generate Mascot generic format peak lists. Peak lists were concatenated and searched with ProteinPilot, against a concatenated to a target-decoy (reversed) FASTA database. Methylthio (C), iTRAQ 8-plex labeling at the N terminus and lysine were set as fixed modifications, methionine oxidation, iTRAQ 8-plex labeling of tyrosine, and deamidation of glutamine and asparagine as variable modifications. The iTRAQ 8-plex (Applied Biosystems Zug, Switzerland) quantitation method was used along with the isotope and impurity correction factors for each iTRAQ label provided by the manufacturer. Precursor and fragment tolerances were set at 10 ppm and 0.8 Da, respectively. The enzyme specificity was set to trypsin with an allowance of up to one missed cleavage. The ProteinPilot peptide summary was exported and subjected to further processing using R.",
+  "sampleProcessingProtocol" : "Sample preparation, iTRAQ labeling and LTQ-Orbitrap VELOS mass spectrometric analysis   Hippocampi dissected from adult mice were homogenized in 200 μl lysis buffer (100 mM triethyl ammonium bicarbonate (TEAB) pH ~8, 0.1% SDS, 2M urea) by up-and-down strokes using a 27 gauge syringe, sonicated for 2 min and centrifuged at 13,000 g for 10 min to remove insoluble material. Proteins (50 μg) were precipitated using 6 volumes ice-cold acetone, solubilized, reduced and cysteines were blocked according to the manufacturer’s protocol. Proteins were then digested into peptides with trypsin overnight (1:10 enzyme:substrate). Peptides were differentially labeled with iTRAQ 8-plex reagents (Applied Biosystems) according to the manufacturer’s protocol, and then combined. Peptide samples were desalted and separated in-solution with an Agilent 3100 OFFGEL fractionator (Agilent Technologies) according to the manufacturer’s protocol. Fractions were acidified by adding 50% acetonitrile (ACN), 1% trifluoroacetic acid (1:10) and detergents were removed using ZipTip C18 columns (Millipore). Samples were lyophilized, then resuspended in 3% ACN, 0.1% formic acid for LTQ-Orbitrap Velos analysis using collision induced dissociation and higher energy collisional dissociation fragmentation.",
+  "projectTags" : [ "Biological", "Biomedical" ],
+  "keywords" : [ "Mouse", "Environmental enrichment", "Trangenerational inheritance", "Itraq", "Paternal trauma", "Hippocampus" ],
+  "doi" : "",
+  "submissionType" : "PARTIAL",
+  "publicationDate" : "2018-10-26",
+  "updatedDate" : "2016-04-28",
+  "submissionDate" : "2016-04-28",
+  "downloadCount" : 2504,
+  "avgDownloadsPerFile" : 42.440678,
+  "botCount" : 670,
+  "hubCount" : 1796,
+  "organicCount" : 38,
+  "percentile" : 64,
+  "yearlyDownloads" : [ {
+    "year" : "2021",
+    "count" : 16
+  }, {
+    "year" : "2022",
+    "count" : 518
+  }, {
+    "year" : "2023",
+    "count" : 6
+  }, {
+    "year" : "2024",
+    "count" : 94
+  }, {
+    "year" : "2025",
+    "count" : 1496
+  }, {
+    "year" : "2026",
+    "count" : 374
+  } ],
+  "submitters" : [ "Andrea Mizzi Brunner" ],
+  "labPIs" : [ "Isabelle M Mansuy" ],
+  "affiliations" : [ "ETH Zürich, D-HEST" ],
+  "instruments" : [ "LTQ Orbitrap Velos" ],
+  "softwares" : [ "ProteinPilot Software", "Mascot" ],
+  "quantificationMethods" : [ "iTRAQ" ],
+  "sampleAttributes" : [ "brain", "Mus musculus (Mouse)" ],
+  "organisms" : [ "Mus musculus (mouse)" ],
+  "organismsPart" : [ "Brain" ],
+  "diseases" : [ ],
+  "references" : [ "Gapp K, Bohacek J, Grossmann J, Brunner AM, Manuella F, Nanni P, Mansuy IM. Potential of Environmental Enrichment to Prevent Transgenerational Effects of Paternal Trauma. Neuropsychopharmacology. 2016 41(11):2749-2758--pubMed:27277118--doi: 10.1038/npp.2016.87" ],
+  "experimentTypes" : [ "Shotgun proteomics" ],
+  "projectFileNames" : [ "20120928_30_MSUS_iTRAQ_F2_OG04.raw", "20120925_02_MSUS_iTRAQ_F1_OG02_Resource_134339.raw", "20120928_45_MSUS_iTRAQ_F2_OG05_HCD.raw", "20120925_07_MSUS_iTRAQ_F1_OG07_Resource_134476.raw", "20120925_07_MSUS_iTRAQ_F1_OG07_Resource_134344.raw", "20120928_38_MSUS_iTRAQ_F2_OG11.raw", "20120925_26_MSUS_iTRAQ_F1_OG03_stepped_freshZipTip.raw", "20120928_29_MSUS_iTRAQ_F2_OG03.raw", "20120925_16_MSUS_iTRAQ_F1_OG04_HCD.raw", "20120925_03_MSUS_iTRAQ_F1_OG03_Resource_134340.raw", "20120925_09_MSUS_iTRAQ_F1_OG09.raw", "20120925_03_MSUS_iTRAQ_F1_OG03_Resource_134480.raw", "20120925_12_MSUS_iTRAQ_F1_OG12.raw", "20120925_18_MSUS_iTRAQ_F1_OG06_HCD.raw", "20120925_13_MSUS_iTRAQ_F1_OG01.raw", "20120925_23_MSUS_iTRAQ_F1_OG11_HCD.raw", "20120928_32_MSUS_iTRAQ_F2_OG06.raw", "20120925_01_MSUS_iTRAQ_F1_OG01_Resource_134482.raw", "20120925_04_MSUS_iTRAQ_F1_OG04_Resource_134479.raw", "20120928_27_MSUS_iTRAQ_F2_OG01.raw", "20120925_19_MSUS_iTRAQ_F1_OG07_HCD.raw", "20120925_21_MSUS_iTRAQ_F1_OG09_HCD.raw", "20120925_25_MSUS_iTRAQ_F1_OG03_freshZipTip.raw", "20120925_05_MSUS_iTRAQ_F1_OG05_Resource_134478.raw", "20120925_20_MSUS_iTRAQ_F1_OG08_HCD.raw", "p1244_CIDnHCDlowRes_jModRTinSec.group", "20120925_24_MSUS_iTRAQ_F1_OG12_HCD.raw", "20120925_15_MSUS_iTRAQ_F1_OG03.raw", "20120925_06_MSUS_iTRAQ_F1_OG06_Resource_134477.raw", "20120925_05_MSUS_iTRAQ_F1_OG05_Resource_134342.raw", "20120925_17_MSUS_iTRAQ_F1_OG05_HCD.raw", "20120925_14_MSUS_iTRAQ_F1_OG02.raw", "20120928_31_MSUS_iTRAQ_F2_OG05.raw", "20120928_34_MSUS_iTRAQ_F2_OG07.raw", "20120928_46_MSUS_iTRAQ_F2_OG06_HCD.raw", "20120928_37_MSUS_iTRAQ_F2_OG10.raw", "20120925_22_MSUS_iTRAQ_F1_OG10_HCD.raw", "20120925_02_MSUS_iTRAQ_F1_OG02_Resource_134481.raw", "20120928_28_MSUS_iTRAQ_F2_OG02.raw", "20120928_41_MSUS_iTRAQ_F2_OG01_HCD.raw", "20120925_06_MSUS_iTRAQ_F1_OG06_Resource_134343.raw", "20120925_08_MSUS_iTRAQ_F1_OG08.raw", "20120928_35_MSUS_iTRAQ_F2_OG08.raw", "p1244_CIDnHCDlowRes_jModifiedRTinSec_F1.group", "20120928_42_MSUS_iTRAQ_F2_OG02_HCD.raw", "20120925_01_MSUS_iTRAQ_F1_OG01_Resource_134338.raw", "20120928_48_MSUS_iTRAQ_F2_OG07_HCD.raw", "20120925_04_MSUS_iTRAQ_F1_OG04_Resource_134341.raw", "20120925_11_MSUS_iTRAQ_F1_OG11.raw", "20120928_51_MSUS_iTRAQ_F2_OG10_HCD.raw", "20120928_50_MSUS_iTRAQ_F2_OG09_HCD.raw", "20120928_52_MSUS_iTRAQ_F2_OG11_HCD.raw", "20120928_43_MSUS_iTRAQ_F2_OG03_HCD.raw", "20120928_36_MSUS_iTRAQ_F2_OG09.raw", "20120928_49_MSUS_iTRAQ_F2_OG08_HCD.raw", "20120928_39_MSUS_iTRAQ_F2_OG12.raw", "20120925_10_MSUS_iTRAQ_F1_OG10.raw", "20120928_44_MSUS_iTRAQ_F2_OG04_HCD.raw", "20120928_53_MSUS_iTRAQ_F2_OG12_HCD.raw" ],
+  "highlights" : {
+    "projectDescription" : [ "The behavioral changes are accompanied by increased <em>glucocorticoid</em> receptor (GR) expression and decreased DNA methylation of the GR promoter in the hippocampus." ]
+  }
+}, {
+  "accession" : "PXD002252",
+  "title" : "Identification and characterization of DNA sequences that restrict genomic binding of the glucocorticoid receptor",
+  "projectDescription" : "The glucocorticoid receptor (GR), is a hormone-activated transcription factor which binds to GR binding sequences (GBS) encoded in the genome. Interestingly, of the many genomic sequences matching the GR consensus sequence only a small subset is actually bound.  This indicates that the presence of a GBS alone is insufficient to specify where in the genome GR binds. We identified sequences that can locally prevent GR binding and mass-spec analysis was used to identify proteins that bind to these sequences.",
+  "dataProcessingProtocol" : "Raw data were processed by MaxQuant v1.5.0.0 and LFQ standard settings.",
+  "sampleProcessingProtocol" : "DNA pulldown using biotinylated DNA sequences and a nuclear extract from HeLA cells was used to identify proteins that interact with NRS sequences",
+  "projectTags" : [ "Biomedical" ],
+  "keywords" : [ "Negative regulatory sequences", "Dna binding", "Glucocorticoid receptor" ],
+  "doi" : "",
+  "submissionType" : "PARTIAL",
+  "publicationDate" : "2016-03-30",
+  "updatedDate" : "2015-05-29",
+  "submissionDate" : "2015-05-29",
+  "downloadCount" : 1959,
+  "avgDownloadsPerFile" : 72.55556,
+  "botCount" : 418,
+  "hubCount" : 1520,
+  "organicCount" : 21,
+  "percentile" : 57,
+  "yearlyDownloads" : [ {
+    "year" : "2021",
+    "count" : 32
+  }, {
+    "year" : "2022",
+    "count" : 132
+  }, {
+    "year" : "2023",
+    "count" : 24
+  }, {
+    "year" : "2024",
+    "count" : 30
+  }, {
+    "year" : "2025",
+    "count" : 1469
+  }, {
+    "year" : "2026",
+    "count" : 272
+  } ],
+  "submitters" : [ "David Meierhofer" ],
+  "labPIs" : [ "Sebastiaan H. Meijsing" ],
+  "affiliations" : [ "MPIMG" ],
+  "instruments" : [ "LTQ Orbitrap" ],
+  "softwares" : [ "MaxQuant" ],
+  "quantificationMethods" : [ ],
+  "sampleAttributes" : [ "cell culture", "Homo sapiens (Human)", "permanent cell line cell" ],
+  "organisms" : [ "Homo sapiens (human)" ],
+  "organismsPart" : [ "Cell culture", "Permanent cell line cell" ],
+  "diseases" : [ ],
+  "references" : [ "Telorac J, Prykhozhij SV, Schöne S, Meierhofer D, Sauer S, Thomas-Chollier M, Meijsing SH. Identification and characterization of DNA sequences that prevent glucocorticoid receptor binding to nearby response elements. Nucleic Acids Res. 2016 Mar 25. pii: gkw203--pubMed:27016732--doi: null" ],
+  "experimentTypes" : [ "Affinity purification coupled with mass spectrometry proteomics" ],
+  "projectFileNames" : [ "260613_Jonas_Elu1_U3.RAW", "proteinGroups.txt", "PXD002252_community_annotated.sdrf.tsv", "260613_Jonas_Elu2_UR3.RAW", "140113_Jonas_U3.RAW", "220213_Jonas_Control_1EI.RAW", "OxidationMSites.txt", "260613_Jonas_Elu1_U2.RAW", "220213_Jonas_UR2_short_EII.RAW", "260613_Jonas_Elu1_U1.RAW", "140113_Jonas_U2.RAW", "peptides.txt", "260613_Jonas_Elu2_UR1.RAW", "260613_Jonas_Elu1_neg.RAW", "220213_Jonas_UR3_short_EI.RAW", "220213_Jonas_UR2_short_EI.RAW", "220213_Jonas_Control_2EII.RAW", "220213_Jonas_Control_2EI.RAW", "220213_Jonas_Control_1EII.RAW", "parameters.txt", "260613_Jonas_Elu2_neg.RAW", "140113_Jonas_U1.RAW", "260613_Jonas_Elu2_UR2.RAW", "220213_Jonas_UR3_short_EII.RAW", "140113_Jonas_neg.RAW", "msms.txt", "proteinGroups_Jonas.xlsx" ],
+  "highlights" : {
+    "projectDescription" : [ "The <em>glucocorticoid</em> receptor (GR), is a hormone-activated transcription factor which binds to GR binding sequences (GBS) encoded in the genome." ],
+    "references" : [ "Identification and characterization of DNA sequences that prevent <em>glucocorticoid</em> receptor binding to nearby response elements. Nucleic Acids Res. 2016 Mar 25. pii: gkw203--pubMed:27016732--doi: null" ],
+    "keywords" : [ "<em>Glucocorticoid</em> receptor" ],
+    "title" : [ "Identification and characterization of DNA sequences that restrict genomic binding of the <em>glucocorticoid</em> receptor" ]
+  }
+}, {
+  "accession" : "PXD002190",
+  "title" : "C. elegans SGK-1 IP-MS -  Serum- and Glucocorticoid-Inducible Kinase-1 (SGK-1) Plays a Role in Membrane Trafficking in Caenorhabditis elegans",
+  "projectDescription" : "We performed an IP against SGK-1::GFP and the candidate interacting proteins have been identified by MS.",
+  "dataProcessingProtocol" : "We used prolucid as a search engine and  filtered the search results with DTASelect 2.0 at 0.01 false discovery rate (FDR) at the spectral level, 5 ppm precursor mass accuracy, and a minimal Z score of 4.0. The overall false discovery rate for protein identification is less than 0.5%.",
+  "sampleProcessingProtocol" : "The IP product has been digested by trypsin and the peptides were loaded onto a C18 column and analyzed by MS.",
+  "projectTags" : [ "Biological" ],
+  "keywords" : [ "C. elegans sgk-1 ip-ms" ],
+  "doi" : "",
+  "submissionType" : "PARTIAL",
+  "publicationDate" : "2015-06-29",
+  "updatedDate" : "2015-05-18",
+  "submissionDate" : "2015-05-18",
+  "downloadCount" : 693,
+  "avgDownloadsPerFile" : 173.25,
+  "botCount" : 368,
+  "hubCount" : 315,
+  "organicCount" : 10,
+  "percentile" : 26,
+  "yearlyDownloads" : [ {
+    "year" : "2021",
+    "count" : 16
+  }, {
+    "year" : "2022",
+    "count" : 14
+  }, {
+    "year" : "2023",
+    "count" : 6
+  }, {
+    "year" : "2024",
+    "count" : 86
+  }, {
+    "year" : "2025",
+    "count" : 496
+  }, {
+    "year" : "2026",
+    "count" : 75
+  } ],
+  "submitters" : [ "Ming Zhu" ],
+  "labPIs" : [ "Meng-Qiu Dong" ],
+  "affiliations" : [ "National institute of biological sciences, beijing" ],
+  "instruments" : [ "LTQ Orbitrap" ],
+  "softwares" : [ "ProLuCID" ],
+  "quantificationMethods" : [ "Spectrum counting" ],
+  "sampleAttributes" : [ "diploid cell", "Caenorhabditis elegans", "whole body", "disease free" ],
+  "organisms" : [ "Caenorhabditis elegans" ],
+  "organismsPart" : [ "Whole body", "Diploid cell" ],
+  "diseases" : [ "Disease free" ],
+  "references" : [ "Zhu M, Wu G, Li YX, Stevens JK, Fan CX, Spang A, Dong MQ. Serum- and Glucocorticoid-Inducible Kinase-1 (SGK-1) Plays a Role in Membrane Trafficking in Caenorhabditis elegans. PLoS One. 2015 Jun 26;10(6):e0130778. eCollection 2015--pubMed:26115433--doi: 10.1371/journal.pone.0130778" ],
+  "experimentTypes" : [ "Affinity purification coupled with mass spectrometry proteomics" ],
+  "projectFileNames" : [ "result_SGK-1_IP_MS_rep-1.html", "SGK-1_IP_MS_rep-1.RAW.gz", "SGK-1_IP_MS_rep-2.RAW.gz", "result_SGK-1_IP_MS_rep-2.html" ],
+  "highlights" : {
+    "references" : [ "Serum- and <em>Glucocorticoid</em>-Inducible Kinase-1 (SGK-1) Plays a Role in Membrane Trafficking in Caenorhabditis elegans." ],
+    "title" : [ "C. elegans SGK-1 IP-MS -  Serum- and <em>Glucocorticoid</em>-Inducible Kinase-1 (SGK-1) Plays a Role in Membrane Trafficking in Caenorhabditis elegans" ]
+  }
+}, {
+  "accession" : "PXD001737",
+  "title" : "c-Abl Dependent Tyrosine Phosphorylation  of theCo-chaperone Aha1  Regulates Interaction with Hsp90",
+  "projectDescription" : "The ability of Heat Shock Protein 90 (Hsp90) to hydrolyze ATP is essential for its chaperone function. The co-chaperone Aha1 stimulates Hsp90 ATPase activity tailoring the chaperone function to specific “client” proteins. The intracellular signaling mechanisms directly regulating Aha1 association with Hsp90 remain unknown. Here we show that c-Abl kinase phosphorylates Y223 in human Aha1 (hAha1) promoting its interaction with Hsp90. This also increases Hsp90 ATPase activity,enhancesHsp90 interaction with kinase clients,and compromises the chaperoning of non-kinase clients such as glucocorticoid receptor and CFTR. Suggesting a new regulatory paradigm, we find that Y223 phosphorylation leads to ubiquitination and degradation of hAha1 in the proteasome. Finally pharmacologic inhibition of c-Abl prevents hAha1 interaction with Hsp90 thereby, hypersensitizing cancer cells to Hsp90 inhibitors bothin vitro and ex vivo.",
+  "dataProcessingProtocol" : "LC–MS/MS data analysis, statistical analysis  All LC-MS/MS *.raw Data files were analyzed with MaxQuant version 1.2.2, searching against the SPROT Human database using the following criteria:  18O heavy label was selected for quantitation with a min of 1 high confidence peptide to assign quantitation H/L ratio.  Trypsin was selected as the protease with max miss cleavage set to 2. Carbamiodomethyl (C) was selected as a fixed modification. Variable modifications were set to Oxidization (M), Formylation (n-term), and Phosphorylation (STY). Orbitrap mass spectrometer was selected using an MS error of 20 ppm and a MS/MS error of 0.5 Da.  1% FDR cutoff was selected for peptide, protein, and site identifications. Ratios were reported based on the MS level light and heavy peak areas determined by MaxQuant and reported in the proteinGroups.txt file as heavy/light or (E-Constitutively Phospo mutant/F-Non-Phospo mutant).  Proteins were removed from this results file if they were flagged by MaxQuant as “Contaminants”, “Reverse” or “Only identified by site”. Complete three biological replicates were performed, with each biological replicate split into two technical replicates (18O forward (FWD) labeling, and 18O reverse (REV) labeling). The abundance data from each biological replicate were normalized to the ratio of the bait protein in that run (e.g. normalized to the Flag-AHA1 ratio).  Light and Heavy peak intensities were analyzed in each run to determine protein hits that fell into the category of either E-only hits or F-only hits and retained if they confirmed to this state across all 6 runs.  In the case of E-only or F-only protein hits, spectra counts can be used as a proxy for abundance as these would not of been assigned a quantitation ratio. This produced a list of interactors and their respective quantitated changes between the two AHA-1 phosphorylation states. Further statistical analysis was performed using the R statistical package (http://www.r-project.org/). Proteins with three out of the six observations were retained. Missing values were imputed using row mean imputation. An ANOVA test was then performed to identify proteins that indicate significant variability (P-value < 0.05) between biological replicates within each group.",
+  "sampleProcessingProtocol" : "Yeast Strains, Plasmids and Growth Media The yeast strains yaha1∆ and the parent FY1679-28C (MATa, ura3-52, trp1Δ63, leu2Δ1, his3Δ200) were used in this study(Panaretou et al., 2002).Plasmids were constructed as described previously (Mollapour et al., 2014; Mollapour et al., 2011).   Protein Extraction, Co-immunoprecipitation, and Immunoblotting Total protein extracts were prepared and analyzed by Western blotting, as described previously(Mollapour et al., 2011).   hAha1 Comparative Interactome Analysis Interactomes of FLAG-hAha1-Y223E to FLAG-hAha1-Y223F were analyzed as described previously (Truman et al. 2012).   Trypsin digestion of samples from SDS-PAGE Gel Plugs. IP eluates were loaded onto a 12% MOPS buffered SDS-PAGE gel (Invitrogen) and run for 10m at 200v resulting in a ~2cm “gel plug”.  The gel was stained with 25mL Imperial Stain (Pierce) at room temperature, and destained overnight in dH2O at 4C. The gel plugs for each sample to be analyzed were excised by sterile razor blade, divided into 2 sections ~1cm each, and chopped into ~ 1 mm3 pieces. Each section was washed in dH2O and destained using 100 mM NH4HCO3 pH 7.5 in 50% acetonitrile. A reduction step was performed by addition of 100 μl 50 mM NH4HCO3 pH 7.5 and 10 μl of 200 mM tris(2-carboxyethyl)phosphine HCl at 37 °C for 30 min. The proteins were alkylated by addition of 100 μl of 50 mM iodoacetamide prepared fresh in 50 mM NH4HCO3 pH 7.5 buffer, and allowed to react in the dark at 20 °C for 30 min. Gel sections were washed in water, then acetonitrile, and vacuum dried. Trypsin digestion was carried out overnight at 37 °C with 1:50-1:100 enzyme–protein ratio of sequencing grade-modified trypsin (Promega) in 50 mM NH4HCO3 pH 7.5, and 20 mM CaCl2. Peptides were extracted with 5% formic acid and vacuum dried. Isotopic labeling Peptide digests were reconstituted with 70 μl of Tris–HCl Buffer Solution (10 mM of Tris–HCl, 150 mM NaCl, 20 mM CaCl2, pH 7.6), vortexed for at least 20 min to reconstitute the peptide mixture, then split into two vials of 30 μl each (16O vial and 18O vial) , and 10ul was retained unlabeled and stored in -80C. In a separate vial Mag-Trypsin beads (Clontech) were prepared as follows.  30ul mag-trypsin beads per rxn (16O or 18O) were pooled and washed 3 times with 800 μl of Tris–HCl Buffer Solution, then brought back up in 30ul/sample of Tris-HCL buffer, and aliquoted to a new 1.5ml vial in the quantity of 30ul, vortexing lightly after each aliquot to keep the mag-trypsin beads in suspension.  Using a magnetic rack, the Tris-HCL buffer was removed from the beads, and the 30ul of sample digest from above was added to the beads and vacuum dried.  30 μl of either 16O H2O or 97% 18O H2O (Cambridge Isotopes Laboratories) was added to the respective 16O or 18O prepared Mag-Trypsin bead vial and vortexed for 20 min to reconstitute the peptide mixture, and allowed to exchange overnight at 37 °C. After 18O exchange, the solution was transferred to a new vial and any free trypsin in solution was inactivated with 1 mM PMSF for 30 min at 4 °C. For each sample section, the AHA-1 (E/F) digests were combined 1:1 as follows: Forward (FWD) Sample Set: (F)-16O:(E)-18O and Reversed (REV) Sample Set: (E)-16O:(F)-18O, dried and stored at − 80 °C until analysis. Three biological replicate experiments were performed. HPLC for mass spectrometry All samples were re-suspended in Burdick & Jackson HPLC-grade water containing 0.2% formic acid (Fluka), 0.1% TFA (Pierce), and 0.002% Zwittergent 3–16 (Calbiochem), a sulfobetaine detergent that contributes the following distinct peaks at the end of chromatograms: MH+ at 392, and in-source dimer [2 M + H+] at 783, and some minor impurities of Zwittergent 3–12 seen as MH+ at 336. The peptide samples were loaded to a 0.25 μl C8 OptiPak trapping cartridge custom-packed with Michrom Magic (Optimize Technologies) C8, washed, then switched in-line with a 20 cm by 75 μm C18 packed spray tip nano column packed with Michrom Magic C18AQ, for a 2-step gradient. Mobile phase A was water/acetonitrile/formic acid (98/2/0.2) and mobile phase B was acetonitrile/isopropanol/water/formic acid (80/10/10/0.2). Using a flow rate of 350 nl/min, a 90 min, 2-step LC gradient was run from 5% B to 50% B in 60 min, followed by 50%–95% B over the next 10 min, hold 10 min at 95% B, back to starting conditions and re-equilibrated. LC–MS/MS analysis The samples were analyzed via electrospray tandem mass spectrometry (LC–MS/MS) on a Thermo Q-Exactive Orbitrap mass spectrometer, using a 70,000 RP survey scan in profile mode, m/z 360–2000 Da, with lockmasses, followed by 10 MSMS HCD fragmentation scans at 17,500 resolution on doubly and triply charged precursors. Single charged ions were excluded, and ions selected for MS/MS were placed on an exclusion list for 60 s.",
+  "projectTags" : [ "Biological", "Biomedical" ],
+  "keywords" : [ "Q-exactive", "18o labeling", "Co-chaperone", "C-abl", "Aha1", "Quantative proteomics", "Molecular chaperone", "Heat shock protein 90" ],
+  "doi" : "",
+  "submissionType" : "PARTIAL",
+  "publicationDate" : "2015-08-06",
+  "updatedDate" : "2015-01-27",
+  "submissionDate" : "2015-01-27",
+  "downloadCount" : 1738,
+  "avgDownloadsPerFile" : 96.55556,
+  "botCount" : 464,
+  "hubCount" : 1193,
+  "organicCount" : 81,
+  "percentile" : 53,
+  "yearlyDownloads" : [ {
+    "year" : "2021",
+    "count" : 84
+  }, {
+    "year" : "2022",
+    "count" : 78
+  }, {
+    "year" : "2023",
+    "count" : 84
+  }, {
+    "year" : "2024",
+    "count" : 419
+  }, {
+    "year" : "2025",
+    "count" : 869
+  }, {
+    "year" : "2026",
+    "count" : 204
+  } ],
+  "submitters" : [ "Donald Wolfgeher" ],
+  "labPIs" : [ "Mehdi Mollapour" ],
+  "affiliations" : [ "Department of Urology, Department of Biochemistry and Molecular Biology, Cancer Research Institute, SUNY Upstate Medical University, 750 E. Adams St.,  Syracuse, NY 13210, USA" ],
+  "instruments" : [ "Q Exactive" ],
+  "softwares" : [ "MaxQuant" ],
+  "quantificationMethods" : [ "18O" ],
+  "sampleAttributes" : [ "kidney", "Homo sapiens (Human)", "early embryonic cell" ],
+  "organisms" : [ "Homo sapiens (human)" ],
+  "organismsPart" : [ "Early embryonic cell", "Kidney" ],
+  "diseases" : [ ],
+  "references" : [ "Dunn DM, Woodford MR, Truman AW, Jensen SM, Schulman J, Caza T, Remillard TC, Loiselle D, Wolfgeher D, Blagg BS, Franco L, Haystead TA, Daturpalli S, Mayer MP, Trepel JB, Morgan RM, Prodromou C, Kron SJ, Panaretou B, Stetler-Stevenson WG, Landas SK, Neckers L, Bratslavsky G, Bourboulia D, Mollapour M. c-Abl Mediated Tyrosine Phosphorylation of Aha1 Activates Its Co-chaperone Function in Cancer Cells. Cell Rep. 2015 Jul 28. pii: S2211-1247(15)00730-5--pubMed:26235616--doi: 10.1016/j.celrep.2015.07.004" ],
+  "experimentTypes" : [ "Affinity purification coupled with mass spectrometry proteomics", "Gel-based experiment" ],
+  "projectFileNames" : [ "140218_AT12_mqpar.xml", "HUMAN.fasta", "131029_Andy12_Gel1.pptx", "qe1_2014feb18_25_uc_at12_3-1rev.raw", "qe1_2014feb18_19_uc_at12_1-1rev.raw", "qe1_2014feb18_04_uc_at12_1-2fwd.raw", "qe1_2014feb18_27_uc_at12_3-2rev.raw", "qe1_2014feb18_06_uc_at12_2-1fwd.raw", "qe1_2014feb18_08_uc_at12_2-2fwd.raw", "140310_AT12.txt", "qe1_2014feb18_17b_uc_at12_1-2rev.raw", "combined.zip", "PXD001737_community_annotated.sdrf.tsv", "qe1_2014feb18_02_uc_at12_1-1fwd.raw", "qe1_2014feb18_23_uc_at12_2-2rev.raw", "qe1_2014feb18_32_uc_at12_3-2fwd.raw", "qe1_2014feb18_21_uc_at12_2-1rev.raw", "qe1_2014feb18_30_uc_at12_3-1fwd.raw" ],
+  "highlights" : {
+    "projectDescription" : [ "This also increases Hsp90 ATPase activity,enhancesHsp90 interaction with kinase clients,and compromises the chaperoning of non-kinase clients such as <em>glucocorticoid</em> receptor and CFTR." ]
+  }
+}, {
+  "accession" : "PXD001063",
+  "title" : "Proteomic analysis of cAMP-mediated signaling during differentiation of 3T3-L1 preadipocytes",
+  "projectDescription" : "Initiation of adipocyte differentiation is promoted by the synergistic action of insulin/insulin-like growth factor, glucocorticoids, and agents activating cAMP-dependent signaling. The action of cAMP is mediated via PKA and Epac, where at least part of the PKA function relates to strong repression of Rho kinase activity, whereas Epac counteracts the reduction in insulin/insulin-like growth factor signaling associated with complete repression of Rho kinase activity. However, detailed knowledge of the Epac-dependent branch and the interplay with PKA is still limited. In the present study, we present a comprehensive evaluation of Epac-mediated processes and their interplay with PKA during the initiation of 3T3-L1 preadipocyte differentiation using a combination of proteomics, molecular approaches and bioinformatics. Proteomic analyses revealed 7 proteins specifically regulated in response to Epac activation, 4 in response to PKA activation, and 11 in response to the combined activation by Epac and PKA during the initial phase of differentiation. Network analyses indicated that the identified proteins are involved in pathways of importance for glucose metabolism, inositol metabolism and calcium-dependent signaling thereby adding a novel facet to our understanding of cAMP-mediated potentiation of adipocyte differentiation.",
+  "dataProcessingProtocol" : "Sample analysis A 4800 MALDI TOF/TOF Analyzer from Applied Biosystems was used for recording of positive ion MS and MS/MS spectra. For MS analysis the mass range from 700 to 3500 Da was selected. Total laser shots number was set to 800 and a fixed laser intensity of 3100 was used. For MS/MS analysis, the total number of shots was set to 1280. For each MS spectrum at least three of the most intensive peaks were selected for MS/MS analysis. MS and associated MS/MS data were combined into a single mass list in the mgf. file format using an in-house script developed by Jakob Bunkenborg, University of Southern Denmark. Mass lists were searched in Swiss-Prot 57.7 (497,293 sequences; 175,274,722 residues)  database using an in-house MASCOT server (Matrix Science Ltd, London, UK). The MASCOT server settings were: database: SwissProt, enzyme: trypsin, maximal number of missed cleavages: 1; significant threshold p<0.05; MS mass accuracy: 50 ppm; MS/MS 0.6 Da: partial modification: methionine oxidation",
+  "sampleProcessingProtocol" : "Samples collection for two-dimensional gel analysis Cells were washed three times with warm (37⁰C) HANK’s buffer and collected by scraping. After collection cells were immediately frozen in liquid nitrogen. The cell lysates were prepared by addition of lysis buffer (7 M urea, 2 M thiourea, 2% Chaps, 0.4% DTT, 0.5% Pharmalyte 3–10, 0.5% IPG 6–11 buffer) and shaking overnight. Each sample was centrifuged at 1500 rcf for 15 min at 10oC and the supernatants were transferred to new tubes. Protein concentration was determined by the Bradford method. For the 48h time point samples, cells from three independent experiments were analyzed. Results shown as supplementary data represent result of one biological replicate.   Two-dimensional gel electrophoresis To analyze changes in protein expression and/or modification during differentiation, samples collected at day 0, 8 h, 24 h, 48h and day 8 of differentiation were analyzed by two-dimensional (2D) gel electrophoresis. 2D gel electrophoresis was carried out as described. Briefly, the first dimension 18 cm IPG strips, covering a pH gradient from 4 to 7 (IPG 4-7) (GE Healthcare Cat. No. 17-1233-01) were rehydrated in two steps. First strips were rehydrated overnight in 200 μl of sample diluted in lysis buffer (300 μg of protein per gel were loaded). Next, strips were rehydrated for 6 h in 100 μl of lysis buffer. Isoelectric focusing was performed using a linearly increasing profile:  0 V to 600 V for 2:15 h, f600 V to 3500 for 8 h, and 3500 V for 9:25 h. After focusing the strips were incubated in equilibration buffer (6 M urea, 2% SDS, 30% glycerol, 50 mM Tris–HCl pH 8.8, 1% DTT) for 15 min. and then frozen at -80°C. After thawing gels were incubated in equilibration buffer again for 15 min. The second dimension SDS PAGE was performed using the vertical electrophoresis system Protean II™ (BioRad) and 12.5% (w/v) laboratory made acrylamide gels (acrylamide: N,N’-ethylene-bis-acrylamide ratio 200:1). Gels were run overnight at 20oC. 6 mA per gel were applied for the first 2 h of electrophoresis, then 12 mA per gel. The running buffer contained 0.67% Tris-Base, 1.44% of glycine and 1% SDS. Additionally, buffer recirculation was applied. The gels were stained with Sypro Ruby (Invitrogen™ Cat. No. S11900) and scanned on the Typhoon scanner with an excitation wave length of 488 nm and emission filter at 610 nm. Gel images were analyzed using the DECODON Delta 2D software, version 3.6 (Decodon GmbH).  Mass spectrometry  In gel digestion Spots exhibiting significant changes were cut out from the gel. The gel plugs were washed with 100 μl of water for 5 min. Water was removed and gel plugs were washed with 100 μl of 100% acetonitrile (ACN) for 20 min. ACN was removed and gel plugs were dried in a Speed Vac. Dry gel plugs were rehydrated with 10μl of trypsin solution (10 µg/ml, dissolved in 50 mM NH4HCO3, pH 7.8) for 20 min on the ice. Unabsorbed trypsin was removed and the gel plugs were covered with 20 μl of 50 mM NH4HCO3, pH 7.8. Digestion was carried out overnight at 37°C.  Target loading Desalting and concentration of peptides mixtures were done as described before. In-house made microcolumns, prepared from GE Loader micropipette tips, packed with POROS R2 (Applied Biosystems, USA) were used. The columns were pre-washed with 10 μl of 0.1% trifluoroacetic acid (TFA). 10 μl of peptides mixture from the digested protein were loaded onto microcolumns. The columns were then washed with 10 μl of 0.1% TFA. Peptides were released from the column with 3 μl of 5 μg/μl α- cyano-4-hydroxycinnamic acid diluted in 70% ACN/0.1% TFA and eluted directly onto the MALDI plate. Trypsin digested β-galactosidase was used as a standard for instrument calibration and was placed on every third spot on the MALDI plate.",
+  "projectTags" : [ "Biological" ],
+  "keywords" : [ "Camp; epac; adipogenesis; two-dimensional gel electrophoresis" ],
+  "doi" : "10.6019/PXD001063",
+  "submissionType" : "COMPLETE",
+  "publicationDate" : "2014-09-22",
+  "updatedDate" : "2014-06-16",
+  "submissionDate" : "2014-06-16",
+  "downloadCount" : 516,
+  "avgDownloadsPerFile" : 86.0,
+  "botCount" : 239,
+  "hubCount" : 265,
+  "organicCount" : 12,
+  "percentile" : 19,
+  "yearlyDownloads" : [ {
+    "year" : "2021",
+    "count" : 24
+  }, {
+    "year" : "2022",
+    "count" : 6
+  }, {
+    "year" : "2023",
+    "count" : 46
+  }, {
+    "year" : "2024",
+    "count" : 6
+  }, {
+    "year" : "2025",
+    "count" : 386
+  }, {
+    "year" : "2026",
+    "count" : 48
+  } ],
+  "submitters" : [ "Kamil Borkowski" ],
+  "labPIs" : [ "Karsten Kristiansen" ],
+  "affiliations" : [ "Copenhagen University" ],
+  "instruments" : [ "4800 Proteomics Analyzer" ],
+  "softwares" : [ "Mascot" ],
+  "quantificationMethods" : [ ],
+  "sampleAttributes" : [ "fibroblast", "Mus musculus (Mouse)" ],
+  "organisms" : [ "Mus musculus (mouse)" ],
+  "organismsPart" : [ "Fibroblast" ],
+  "diseases" : [ ],
+  "references" : [ "Borkowski K, Wrzesinski K, Rogowska-Wrzesinska A, Audouze K, Bakke J, Petersen RK, Haj FG, Madsen L, Kristiansen K. Proteomic analysis of cAMP-mediated signaling during differentiation of 3 T3-L1 preadipocytes. Biochim Biophys Acta. 2014 Aug 22. pii: S1570-9639(14)00193-9--pubMed:25152230--doi: 10.1016/j.bbapap.2014.07.015" ],
+  "experimentTypes" : [ "Shotgun proteomics" ],
+  "projectFileNames" : [ "1FtTuCxswm.dat-pride.xml-merged.xml.gz", "Rawdata.zip", "MGF.zip", "1 FtTuCxswm.dat-pride.xml-merged.pride.mgf.gz", "1 FtTuCxswm.dat-pride.xml-merged.pride.mztab.gz", "Mascotsearchdata.zip" ],
+  "highlights" : {
+    "projectDescription" : [ "Initiation of adipocyte differentiation is promoted by the synergistic action of insulin/insulin-like growth factor, <em>glucocorticoids</em>, and agents activating cAMP-dependent signaling." ]
+  }
+} ]

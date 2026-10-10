@@ -1,0 +1,44 @@
+[
+  {
+    "contrast": "non_asthma_BUD_vs_vehicle",
+    "n_donors_a": 7,
+    "n_donors_b": 0,
+    "positive_donors": 7,
+    "negative_donors": 0,
+    "effect": 3.5141212694591175,
+    "ci_low": 2.4480170095452305,
+    "ci_high": 4.5802255293730045,
+    "pvalue": 0.00019444794870161812,
+    "permutation_p": 0.015625,
+    "permutations": 128,
+    "holm_three_tests": 0.00038889589740323624
+  },
+  {
+    "contrast": "fatal_asthma_BUD_vs_vehicle",
+    "n_donors_a": 9,
+    "n_donors_b": 0,
+    "positive_donors": 9,
+    "negative_donors": 0,
+    "effect": 3.598265974208352,
+    "ci_low": 3.270060698615529,
+    "ci_high": 3.9264712498011747,
+    "pvalue": 6.416622637549493e-09,
+    "permutation_p": 0.00390625,
+    "permutations": 512,
+    "holm_three_tests": 1.9249867912648478e-08
+  },
+  {
+    "contrast": "fatal_asthma_minus_non_asthma_response",
+    "n_donors_a": 9,
+    "n_donors_b": 7,
+    "positive_donors": "",
+    "negative_donors": "",
+    "effect": 0.0841447047492343,
+    "ci_low": -0.9911009441462411,
+    "ci_high": 1.1593903536447097,
+    "pvalue": 0.8593465247796537,
+    "permutation_p": 0.844493006993007,
+    "permutations": 11440,
+    "holm_three_tests": 0.8593465247796537
+  }
+]

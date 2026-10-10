@@ -1,8 +1,20 @@
 # 0.4.0.9000 开发交付说明
 
-**最新入口：`BioExplainR-development-delivery-0.4.0.9000-r8.zip`**，新增v0.9主稿/独立补充、六工具比较、SPARCL1固定候选及外部实验全部输入/统计/Python–R复核。当前稿入口`paper_cn_v2/README.md`，审计`paper_cn_v2/audit.json`与`w00_baseline/revision-delivery-audit-result.json`。r1–r7保留。本轮公开发布已授权但GitHub创建仓库返回403，release/网址/DOI未建立；见`RELEASE_ARCHIVE.md`。下文r7/v0.8描述保留历史范围。
+**最新正式研究交付：`BioExplainR-development-delivery-0.4.0.9000-r13.zip`（2026-10-09）。** 当前主稿[v0.10](paper_cn_v4/README.md)配套[4页4表研究增补](research_followup_v1/README.md)已导出。新增共同任务360运行/1,800评分、真实HTTP与独立评分器，A549候选不可估计的完整模型及ASM峰/参考坐标核实。完整性入口`research/results/w00_baseline/continuation-formal-delivery-audit-result.json`，当前索引baseline-11；原2,905保护文件及r1–r12保留。下面r12零调用为其准备时点记录。
 
-本包用于审阅开发实现和当前中文稿，**不是正式 release 或投稿完成证明**。当前中文稿v0.8入口为`paper_cn_v1/`，历史稿v0.7及模型记录来自0.3.1并保留；新契约、ledger、MAE/Spatial和可靠性修复来自0.4.0.9000。已纳入miniACC公开开发案例、45项airway新数值核对和15个开发场景。专家评价后置，用户体验/学习增益研究deferred，当前稿文末仅预留补充位置。
+**最新交接包入口：`BioExplainR-development-delivery-0.4.0.9000-r12.zip`（2026-10-09）。** 当前稿仍为 [v0.10](paper_cn_v4/README.md)，新增保存共同任务／机制准备方案、5项已获取公开输入、依赖与下载失败/中断日志及 `common_performance_checkpoint_v1/checkpoint.json`。**准备部分尚无新模型调用、性能评分或机制拟合**；本地模型/runtime/库在临时目录，ZIP只保留其校验值与复现脚本，半包不进入交付。完整性入口 `research/results/w00_baseline/followup-delivery-audit-result.json`，当前索引 baseline-10；本次根交接独立索引，旧r1–r11保留。
+
+**上一轮已完成交付：`BioExplainR-development-delivery-0.4.0.9000-r11.zip`。** v0.10 为12 页主稿＋18 页补充、25 项图表正文对应，以及 GSE146017 因子干预和 GSE94335 多供体响应重分析。该包纳入两个结果目录的模型/数值/报告/配对证据与 `biology-*` 日志，原始 TPM 的下载命令与完整校验值保存于包内 `excluded_inputs`。原完整性入口 `research/results/w00_baseline/biology-delivery-audit-result.json`（对应当时树，后续文档修订不倒改r11）。
+
+本轮继续使用历史已验收 R 源码包；本地交付不代表外部上传。GitHub 按负责人要求暂停；r1–r11 保留。以下为各轮历史范围。
+
+|历史包|当时内容|原完整性记录（`research/results/w00_baseline/`）|
+|---|---|---|
+|r10|v0.9.1 交接文字补充|`handoff-delivery-audit-result.json`|
+|r9|v0.9.1 全部 21 项图表正文对应|`revision-links-delivery-audit-result.json`|
+|r8|v0.9、六工具比较、SPARCL1 固定候选与单细胞系外部实验|`revision-delivery-audit-result.json`|
+
+r7 历史包用于审阅当时开发实现和中文稿，**不是正式 release 或投稿完成证明**。当时中文稿v0.8入口为`paper_cn_v1/`，历史稿v0.7及模型记录来自0.3.1并保留；新契约、ledger、MAE/Spatial和可靠性修复来自0.4.0.9000。已纳入miniACC公开开发案例、45项airway新数值核对和15个开发场景。专家评价后置，用户体验/学习增益研究deferred，稿件文末仅预留补充位置。
 
 入口：`BioExplainR-development-delivery-0.4.0.9000-r7.zip`；包含新中文论文、8合图/32子图PDF、9份外置CSV/XLSX、论文复现工具与本轮案例/页面日志，以及原有开发审阅内容。r1–r6和旧投稿包保留；r6的598成员仅对应当时树。论文独立附件包为`BioExplainR-中文论文-v0.8-图表附件.zip`。仅需你本人完成的事项见`USER_ACTIONS_REQUIRED.md`。
 
@@ -36,10 +48,10 @@ bio_report(ex, file = "offline-report.html")
 
 ## 审计
 
-ZIP内manifest保存每成员大小/SHA-256，排除自身及外层ZIP。r7外部结果为`paper-cn-delivery-audit-result.json`；r6/r5当时结果分别保留为`review-delivery-audit-result.json`与`continuation-delivery-audit-result.json`。新中文稿审计为`paper_cn_v1/audit.json`；详细交接为`implementation_records/PAPER_CN_CONTINUATION.md`。
+ZIP内manifest保存每成员大小/SHA-256，排除自身及外层ZIP。当前稿审计为 `paper_cn_v4/audit.json`，增补审计在`research_followup_v1/`，当前交付完整性为 `continuation-formal-delivery-audit-result.json`。r12/r11/r7/r6/r5 原结果分别保留为 `followup-delivery-audit-result.json`、`biology-delivery-audit-result.json`、`paper-cn-delivery-audit-result.json`、`review-delivery-audit-result.json`、`continuation-delivery-audit-result.json`。详细交接为 `implementation_records/FORMAL_FOLLOWUP_CONTINUATION.md` 及原研究记录。
 
 ```sh
-python3 research/package_submission.py --audit research/results/w00_baseline/continuation-submission-audit-result.json --verify-only --result research/results/w00_baseline/delivery-recheck-new.json
+python3 research/package_submission.py --audit docs/paper_cn_v4/audit.json --output docs/BioExplainR-development-delivery-0.4.0.9000-r13.zip --verify-only --result research/results/w00_baseline/delivery-recheck-new.json
 Rscript --vanilla inst/fixtures/contracts/validate_fixtures.R
 python3 research/test_frozen_benchmark.py
 python3 research/multiomics/test_audit_miniacc.py

@@ -1,0 +1,65 @@
+载入需要的程辑包：stats4
+载入需要的程辑包：BiocGenerics
+
+载入程辑包：‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, aperm, append, as.data.frame, basename, cbind,
+    colnames, dirname, do.call, duplicated, eval, evalq, Filter, Find,
+    get, grep, grepl, intersect, is.unsorted, lapply, Map, mapply,
+    match, mget, order, paste, pmax, pmax.int, pmin, pmin.int,
+    Position, rank, rbind, Reduce, rownames, sapply, setdiff, sort,
+    table, tapply, union, unique, unsplit, which.max, which.min
+
+载入需要的程辑包：S4Vectors
+
+载入程辑包：‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    expand.grid, I, unname
+
+载入需要的程辑包：IRanges
+载入需要的程辑包：GenomeInfoDb
+$status
+[1] "pass"
+
+$count_keys_checked
+[1] 288
+
+$peak_window_hits_checked
+[1] 2505
+
+$independent_RefSeq_TSS_and_GenomicRanges
+[1] TRUE
+
+$coordinate_system
+[1] "BED->1-based inclusive GRanges"
+
+$build_out_of_bounds
+$build_out_of_bounds$hg18
+[1] 12937
+
+$build_out_of_bounds$hg19
+[1] 0
+
+$build_out_of_bounds$hg38
+[1] 10043
+
+$build_out_of_bounds$mm9
+[1] 158229
+
+
+$interpretation
+[1] "Coordinate verification supports hg19; metadata mm9 conflict retained; no author confirmation; no differential occupancy inference"
+
+Replicate overlap / summit / TSS distance checks pass

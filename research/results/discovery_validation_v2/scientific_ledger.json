@@ -1,0 +1,99 @@
+{
+  "status": "completed_public_data_continuation",
+  "utc": "2026-10-09T14:08:20.323386+00:00",
+  "user_constraint": "No new wet experiments; validation by public datasets and published evidence",
+  "report": "docs/biology_validation_v2/README.md",
+  "online_model_calls": 0,
+  "fresh_wet_experiments": 0,
+  "research_freezes": [
+    {
+      "path": "research/results/discovery_validation_v2/search_freeze.json",
+      "bytes": 2327,
+      "sha256": "9fbac1aa196ad55ca70e0449a425f4b84a9124a221e777a0d51df70df4b36282"
+    },
+    {
+      "path": "research/results/discovery_validation_v2/expression_design_freeze.json",
+      "bytes": 2290,
+      "sha256": "6ae781a9a4774ec52c89e3dc7d0ba8fe148d33818b0ce6090381250143d971bd"
+    },
+    {
+      "path": "research/results/discovery_validation_v2/asm_early/design_freeze.json",
+      "bytes": 1234,
+      "sha256": "d9612eb35e9f0b78e592bc93b415c2ba3d22d4b93b771eb16bc1ade3c3fbf37f"
+    },
+    {
+      "path": "research/results/discovery_validation_v2/gr_public/design_freeze.json",
+      "bytes": 1512,
+      "sha256": "2b2473d5b6fd0a69fc4fa3c0af85bfb7e3a81154ca0268e14e686b1efd9ab2fe"
+    },
+    {
+      "path": "research/results/discovery_validation_v2/protein_public/protein_design_freeze.json",
+      "bytes": 1730,
+      "sha256": "d7c8f48a32f19b06b05177ebdc1496abf1ec4d866612c1897ebec42bf549f1a2"
+    },
+    {
+      "path": "research/results/discovery_validation_v2/human_protein/human_protein_freeze.json",
+      "bytes": 1223,
+      "sha256": "1f003a2ce12aed0f4d656ebcc7e0b7708ad091a0b9fafc5641af4ec626cfa8a0"
+    },
+    {
+      "path": "research/results/discovery_validation_v2/human_protein/selected_array_reanalysis_freeze.json",
+      "bytes": 1340,
+      "sha256": "d8a93262fc54b4ae29f9db9ce3c305b6b8018812d41a2381830593b3e9263ebb"
+    }
+  ],
+  "new_statistics": {
+    "paired_ASM_tests": 88,
+    "early_ASM_tests": 33,
+    "GR_assay_tests": 110,
+    "mouse_protein_tests_including_sensitivity": 88,
+    "human_selected_protein_response_tests": 22,
+    "human_selected_direct_tests": 11
+  },
+  "PER2": {
+    "adult_late_response": "supported by six adult donor directions and paired t/count model; exact sign-flip Holm not confirmed",
+    "early_ASM_induction": "not confirmed",
+    "adult_time_interaction": "not estimable from retrieved published summary, raw Ct absent",
+    "adult_pulse_same_time_Tukey": 0.7831,
+    "GR_rescue_variants": "not confirmed",
+    "adult_ASM_candidate_protein": "not obtained",
+    "candidate_function": "not confirmed; available calcium/cAMP experiments target other clock factors or GR/GNAS"
+  },
+  "METTL7A": {
+    "human_protein": "sixdonorsper24/72h, each6/6positive, donor tHolm22 .0437/.00261, exactHolm.6875; selectedarrayscross-tissueexploratory",
+    "direct_72minus24": "five shared donors,4positive/1negative,Holm11.4122,notconfirmed"
+  },
+  "independent_units": {
+    "new_GSE130715": 6,
+    "new_GSE13168_complete_pairs": 3,
+    "GSE135730": "3 cultures percondition,donoridentity/agenotverified",
+    "GR_U2OS": "onecellline,18/17 parallelRNA libraries sharedsource",
+    "human_HTPC": "6donorsperassay,5sharedtime;3technicalrepeatsaveraged",
+    "policy": "Do not add old13/16/4 and new6; exact IDs differ but undisclosed aliases unresolved."
+  },
+  "source_conflicts": [
+    "GSE135730 human/mm9 summary; stable human gene IDs used, nocoordinateinference",
+    "PXD081613 PRIDEhuman vs Musmusculusdatabaseand7218mouseannotations; unresolved, nothumanproteinproof",
+    "METTL7A currentofficialnameTMT1A; NCBIEntrez25840aliasverified"
+  ],
+  "publication_and_selection": [
+    "GR2026bioRxivpreprintnotpeerreviewed; noemptyKOtranscriptomicarm",
+    "HumanALLproteinliststotalintensityonly; per-libraryarraysavailableonlyselecteddifferentiallists; nozeroeffectclaimformissing",
+    "Noallstageglobalconfirmatoryfamily; allfollowupbasedonknownv011results"
+  ],
+  "verification": {
+    "ASM_raw_R": "396 measurements,88pairedtests; originalTPM/SOFT",
+    "early_R": "132originalRPKMmeasurements,33tests",
+    "GR_Python": "385originalcounts,550WLSnumbers",
+    "ASM_exact_Python": "220WLSnumbers;voom/moderationretained",
+    "mouse_protein_R": "160originalmeasurements,40estimabletests",
+    "human_protein_R": "144selectedarrays,24donoreffects,6estimabletests; XLSXfidelityauditedinPython",
+    "workflow": "8actualBioExplainRcontexts,bilingualofflineHTML; noRpackagecodechange"
+  },
+  "unfulfilled_scientific_claims": [
+    "AdultASM PER2 trueearlylate drugtime interaction",
+    "AdultASM candidateGRgeneticcausality",
+    "AdultASM PER2protein/phase/amplitude/function"
+  ],
+  "completion_scope": "All acquired public datasets analyzed/audited or feasibility-excluded with explicitreason; unresolvedclaimsareevidencegaps, not wetlabuseractions"
+}

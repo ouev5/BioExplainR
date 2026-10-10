@@ -1,0 +1,196 @@
+{
+  "status": "pass",
+  "utc": "2026-10-10T06:07:32.725777+00:00",
+  "prior": {
+    "status": "pass",
+    "queries": 15,
+    "pages": 18,
+    "total_query_hits": 437,
+    "unique_projects": 391,
+    "additional_page_projects": 18,
+    "airway_ASM_text_leads": 21,
+    "complete_inventory_counts": {
+      "PXD014171": 22,
+      "PXD015604": 54,
+      "PXD029550": 72,
+      "PXD055968": 56
+    },
+    "HBEC_rows": 3072,
+    "HBEC_samples": 43,
+    "HBEC_individuals": 10,
+    "HBEC_finite_values": 73453,
+    "HBEC_missing_values": 58643,
+    "HBEC_balanced_T2_ICS_design": true,
+    "request_records": 49,
+    "transport_status_counts": {
+      "retrieved": 37,
+      "http_error": 7,
+      "failed_or_partial": 4,
+      "retrieved_and_reconstructed": 1
+    },
+    "candidate_statistics_started": false,
+    "candidate_identity_started": false,
+    "sealed_files": 215,
+    "previous_evidence": {
+      "status": "pass",
+      "files": 5,
+      "scientific_status": "blocked_missing_final_export",
+      "candidate_identity_started": false,
+      "corrected_HAL_metadata_fields": 262,
+      "previous_evidence": {
+        "status": "pass",
+        "files": 38,
+        "scientific_status": "blocked_missing_final_export",
+        "candidate_identity_started": false,
+        "previous_evidence": {
+          "status": "pass",
+          "export_records": 1007,
+          "export_archive_members": 1007,
+          "snapshot_policy": "Only preceding export root rgo dependency uses exact pre-materials snapshot; all other original paths/hash",
+          "nested": {
+            "status": "pass",
+            "provenance_records": 236,
+            "provenance_archive_members": 232,
+            "prior_manifest": {
+              "path": "docs/secretome_provenance_v1/provenance_manifest.json",
+              "bytes": 95216,
+              "sha256": "411ca0eef0f469fac22edc9b1689d899cafea45f4775514258bcfd53fb778099"
+            },
+            "protected": 2905,
+            "nested": {
+              "status": "pass",
+              "secretome_records": 12827,
+              "secretome_archive_members": 8608,
+              "secretome_manifest": {
+                "path": "docs/secretome_validation_v1/secretome_manifest.json",
+                "bytes": 5698153,
+                "sha256": "42b4f3d65f41a71e302c1d576968c59e0f0cce915587077c0c4c4a085901d35c"
+              },
+              "protected": 2905,
+              "nested": {
+                "status": "pass",
+                "v012_files": 17257,
+                "original_protected_files": 2905,
+                "snapshot_policy": "Only v0.12 root rgo dependency uses exact pre-secretome snapshot; original scientific paths/hash unchanged",
+                "nested": {
+                  "status": "pass",
+                  "validation_records": 710,
+                  "validation_archive_members": 629,
+                  "preceding_paper_and_science": {
+                    "status": "pass",
+                    "v011_records": 87,
+                    "v011_archive_members": 82,
+                    "original_science_records": 203,
+                    "snapshot_policy": "Explicitrgo/README/indexhistoricaldocumentsnapshots only; alloriginalsciencepaths/hash remain"
+                  },
+                  "snapshot_policy": "Validationrgo uses startsnapshot; nestedv011rgo/README/index use preciseversioned snapshots; alloriginalsciencepaths/hash unchanged"
+                }
+              },
+              "snapshot_policy": "Only preceding secretome rgo dependency uses exact pre-provenance snapshot; all previous science original paths/hash"
+            },
+            "snapshot_policy": "Only preceding provenance root rgo documentation uses exact pre-export snapshot; all other prior science original paths/hash"
+          }
+        },
+        "source_checks": {
+          "status": "pass",
+          "completed_request_records": 20,
+          "interrupted_attempts": 2,
+          "retrieved_metadata_responses": 16,
+          "project_files": {
+            "PXD055968": 56,
+            "PXD055949": 48,
+            "PXD059603": 38
+          },
+          "complete_quantitative_exports": 0,
+          "complete_hal_pdf": false
+        }
+      }
+    }
+  },
+  "numeric": {
+    "secretome_family": 846,
+    "candidate_family": 112,
+    "estimable_candidates": 4,
+    "candidate_Holm_pass": 1,
+    "candidate_exact_pass": 0,
+    "candidate_donor_arithmetic": true,
+    "sensitivity_families": 2,
+    "source_comparison_arrays": 4,
+    "EV_single_run_versions": 18,
+    "HBEC_balanced_cells": 8
+  },
+  "csv_xlsx_pairs": 51,
+  "references": 19,
+  "documents": [
+    {
+      "name": "BioExplainR-中文论文-v0.13",
+      "pages": 17,
+      "tables": 4,
+      "figures": 4,
+      "spans": 915,
+      "original_PDF_embedding": true
+    },
+    {
+      "name": "BioExplainR-补充材料-v0.13",
+      "pages": 24,
+      "tables": 5,
+      "figures": 6,
+      "spans": 1078,
+      "original_PDF_embedding": true
+    }
+  ],
+  "figures": [
+    {
+      "file": "Figure_1.pdf",
+      "images": 1,
+      "drawings": 91
+    },
+    {
+      "file": "Figure_2.pdf",
+      "images": 0,
+      "drawings": 470
+    },
+    {
+      "file": "Figure_3.pdf",
+      "images": 0,
+      "drawings": 9
+    },
+    {
+      "file": "Figure_4.pdf",
+      "images": 0,
+      "drawings": 102
+    },
+    {
+      "file": "Figure_S1.pdf",
+      "images": 0,
+      "drawings": 82
+    },
+    {
+      "file": "Figure_S2.pdf",
+      "images": 0,
+      "drawings": 57
+    },
+    {
+      "file": "Figure_S3.pdf",
+      "images": 0,
+      "drawings": 63
+    },
+    {
+      "file": "Figure_S4.pdf",
+      "images": 0,
+      "drawings": 69
+    },
+    {
+      "file": "Figure_S5.pdf",
+      "images": 0,
+      "drawings": 395
+    },
+    {
+      "file": "Figure_S6.pdf",
+      "images": 0,
+      "drawings": 20
+    }
+  ],
+  "new_candidate_statistics": false,
+  "scope": "Saved statistics/donor arithmetic/source integrity, table/Word parity, links, PDF geometry; no human signoff"
+}

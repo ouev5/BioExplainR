@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/ubuntu/creatR/research/discovery/mechanism_design.py", line 51, in <module>
+    if __name__=='__main__': main()
+                             ^^^^^^
+  File "/home/ubuntu/creatR/research/discovery/mechanism_design.py", line 46, in main
+    inputs=[dict(path=str(p.relative_to(ROOT)),bytes=p.stat().st_size,sha256=hashlib.file_digest(p.open('rb'),'sha256').hexdigest()) for p in files])
+                          ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 682, in relative_to
+    raise ValueError(f"{str(self)!r} is not in the subpath of {str(other)!r}")
+ValueError: 'research/results/discovery_mechanism_fit_v1/sample_map.csv' is not in the subpath of '/home/ubuntu/creatR'

@@ -1,0 +1,54 @@
+[
+  {
+    "gene": "SPARCL1",
+    "factor": "GR",
+    "window": "TSS_20000",
+    "treatment": "EtOH",
+    "replicate1": "GSM2519942",
+    "replicate2": "GSM2519944",
+    "peaks1": 4,
+    "peaks2": 2,
+    "peaks1_with_overlap": 2,
+    "peaks2_with_overlap": 2,
+    "overlap_pairs": 2
+  },
+  {
+    "gene": "SPARCL1",
+    "factor": "GR",
+    "window": "TSS_20000",
+    "treatment": "Dex",
+    "replicate1": "GSM2519945",
+    "replicate2": "GSM2519947",
+    "peaks1": 8,
+    "peaks2": 8,
+    "peaks1_with_overlap": 8,
+    "peaks2_with_overlap": 8,
+    "overlap_pairs": 8
+  },
+  {
+    "gene": "SPARCL1",
+    "factor": "RNAP2",
+    "window": "TSS_5000",
+    "treatment": "EtOH",
+    "replicate1": "GSM2519952",
+    "replicate2": "GSM2519953",
+    "peaks1": 0,
+    "peaks2": 0,
+    "peaks1_with_overlap": 0,
+    "peaks2_with_overlap": 0,
+    "overlap_pairs": 0
+  },
+  {
+    "gene": "SPARCL1",
+    "factor": "RNAP2",
+    "window": "TSS_5000",
+    "treatment": "Dex",
+    "replicate1": "GSM2519954",
+    "replicate2": "GSM2519955",
+    "peaks1": 1,
+    "peaks2": 1,
+    "peaks1_with_overlap": 1,
+    "peaks2_with_overlap": 1,
+    "overlap_pairs": 1
+  }
+]

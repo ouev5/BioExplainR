@@ -1,0 +1,121 @@
+{
+  "accession" : "PXD033534",
+  "title" : "Dexamethasone is a regulator of human testicular peritubular cells / Proteome 72 h",
+  "additionalAttributes" : [ ],
+  "projectDescription" : "The functions of human testicular peritubular cells (HTPCs), which form a small compartment located between the seminiferous epithelium and the interstitials areas of the testis, go beyond intratesticular sperm transport and include immunological roles. The expression of the glucocorticoid receptor (GR/NR3C1) by these cells indicates that they are a target of glucocorticoids (GCs), yet detailed insights into consequences of GC actions are unknown. To address this point, we studied cultured HTPCs, which serve as a window into the human testis. We used a cytokine profiler assay to screen for changes in secreted cytokines upon dexamethasone (Dex) treatment and employed qPCR and ELISA studies to verify the results. Dex, used in a therapeutic concentration, decreased proinflammatory factors, including IL6, IL8, MCP1 and CXCL1 within 24 - 48 h. An siRNA-mediated knockdown of GR reduced these actions. Exposure to Dex resulted in reduced GR levels, implying that exposure to Dex could also reduce anti-inflammatory actions of Dex. To evaluate the influence of Dex on HTPCs further, we performed a proteomic analysis of cellular components and secreted proteins. Strong responses were detectable after 24 h (31 significantly altered cellular proteins) and more pronounced ones after 72 h (30 less abundant and 42 more abundant cellular proteins). Dex also altered the composition of the secretome (33 proteins decreased, 13 increased) after 72 h. Among the regulated proteins were ECM- and basement membrane components (e.g. FBLN2, COL1A2, COL3A1), as well as PTX3 and StAR. These results reveal that Dex via GR exerts profound actions in HTPCs. If transferrable to the human testis, changes specifically in ECM and the immunological state of the testis may result in men upon treatment with Dex for medical reasons.  -Proteome Data Subset 72 h-",
+  "sampleProcessingProtocol" : "Peptide samples were dissolved using the LC-eluent A (0.1 % (v/v) formic acid in water). The analysis was carried out on an Ultimate 3000 RSLC instrument connected to a Q Exactive HF-X mass spectrometer (Thermo Scientific, Waltham, MA, USA). For proteome analysis 1.5 µg, and for secretome analysis 750 ng were loaded onto a trap column (Acclaim Pepmap™ 100, 100 µm x 2 cm, C18, 5 µm, 100 Å, Thermo Scientific). LC-separation of peptides was performed on an EASY-spray column (Pepmap™ RSLC C18, 2 µm, 100 Å, 75 µm x 50 cm, Thermo Scientific) with the flow rate set to 250 nL/min. For the proteome analysis of cells incubated with Dex (10 µg/µL) for 24 h a two-step gradient from 3 % B (0.1 % (v/v) formic acid in acetonitrile) to 25 % B in 160 min followed by a ramp to 40 % B for 10 min. For the proteome analysis of cells incubated with Dex (10 µg/uL) for 72 h a two-step gradient from 6 % B to 20 % B in 80 min followed by a ramp to 40 % B for 9 min was used. For the analysis of respective secretome sample sets (for both 24 and 72 h incubation time) a two-step gradient from 3 % B to 25 % B in 30 min, followed by a ramp to 40 % B in 5 min was applied. Mass spectrometry was performed in a data-dependent acquisition mode with a maximum of 15 MS/MS spectral scans per cycle.",
+  "dataProcessingProtocol" : "Acquired MS spectra from each of the 4 separately processed datasets, were processed using MaxQuant (1.6.11.0) with the “match between runs feature” and the label-free quantification feature being activated. Database search was performed using the H. sapiens subset of the Swiss-Prot (retrieval: 10/2020) and complemented by MaxQuant´s built-in contaminant database. Data analysis, Volcano plot analysis, principal component analysis (PCA) and heatmaps was carried out with Perseus (1.6.5.0) and R (4.0.4).",
+  "projectTags" : [ ],
+  "keywords" : [ "Human male fertility; human testis; dexamethasone; cytokines; inflammation; proteomics" ],
+  "doi" : "",
+  "submissionType" : "PARTIAL",
+  "license" : "Creative Commons Public Domain (CC0)",
+  "submissionDate" : "2022-04-28",
+  "publicationDate" : "2023-03-11",
+  "submitters" : [ {
+    "title" : "Mr",
+    "firstName" : "Youli Konstantinovitch",
+    "lastName" : "Stepanov",
+    "identifier" : "2475998",
+    "affiliation" : "LMU München Genzentrum-LAFUGA",
+    "email" : "stepanov@genzentrum.lmu.de",
+    "country" : "Germany",
+    "orcid" : "",
+    "name" : "Youli Konstantinovitch Stepanov",
+    "id" : "2475998"
+  } ],
+  "labPIs" : [ {
+    "title" : "Dr",
+    "firstName" : "Dr. Thomas",
+    "lastName" : "Fröhlich",
+    "identifier" : "2385134",
+    "affiliation" : "Laboratory for Functional Genome Analysis LAFUGA, Gene Center, LMU München, München, Germany, Feodor-Lynen-Straße 25, 81377 München",
+    "email" : "frohlich@genzentrum.lmu.de",
+    "country" : "",
+    "orcid" : "",
+    "name" : "Dr. Thomas Fröhlich",
+    "id" : "2385134"
+  } ],
+  "instruments" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1002877",
+    "name" : "Q Exactive HF-X",
+    "value" : ""
+  } ],
+  "softwares" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1001583",
+    "name" : "MaxQuant"
+  } ],
+  "experimentTypes" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000429",
+    "name" : "Shotgun proteomics"
+  } ],
+  "quantificationMethods" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000425",
+    "name" : "MS1 intensity based label-free quantification method"
+  } ],
+  "countries" : [ "Germany" ],
+  "sampleAttributes" : [ {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "EFO:0000635",
+      "name" : "organism part"
+    },
+    "value" : [ {
+      "cvLabel" : "CL",
+      "accession" : "CL:0002481",
+      "name" : "peritubular myoid cell",
+      "value" : ""
+    } ]
+  }, {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "OBI:0100026",
+      "name" : "organism"
+    },
+    "value" : [ {
+      "cvLabel" : "NEWT",
+      "accession" : "NEWT:9606",
+      "name" : "Homo sapiens (Human)",
+      "value" : ""
+    } ]
+  } ],
+  "organisms" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "NEWT",
+    "accession" : "NEWT:9606",
+    "name" : "Homo sapiens (human)",
+    "value" : ""
+  } ],
+  "organismParts" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "CL",
+    "accession" : "CL:0002481",
+    "name" : "Peritubular myoid cell",
+    "value" : ""
+  } ],
+  "diseases" : [ ],
+  "references" : [ {
+    "referenceLine" : "Stepanov YK, Speidel JD, Herrmann C, Schmid N, Behr R, Köhn FM, Stöckl JB, Pickl U, Trottmann M, Fröhlich T, Mayerhofer A, Welter H. Profound Effects of Dexamethasone on the Immunological State, Synthesis and Secretion Capacity of Human Testicular Peritubular Cells. Cells. 2022 11(19):3164",
+    "pubmedID" : 36231125,
+    "doi" : "10.3390/cells11193164"
+  } ],
+  "identifiedPTMStrings" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MOD",
+    "accession" : "MOD:00397",
+    "name" : "iodoacetamide derivatized residue",
+    "value" : ""
+  } ],
+  "totalFileDownloads" : 1850,
+  "otherOmicsLinks" : [ "pride.project:PXD033514", "pride.project:PXD033504", "px:PXD033514", "px:PXD033504" ]
+}

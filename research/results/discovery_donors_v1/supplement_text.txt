@@ -1,0 +1,4157 @@
+PAGE 1
+Airway Smooth Muscle-Specific Transcriptomic Signatures of Glucocorticoid Exposure
+Mengyuan Kan, Cynthia Koziol-White, Maya Shumyatcher, Martin Johnson, William Jester, 
+Reynold A Panettieri Jr, and Blanca E Himes
+ONLINE DATA SUPPLEMENT
+
+
+PAGE 2
+Online Supplement
+Detailed Methods
+ASM Cell Culture and Treatment
+Primary ASM cells were isolated from white non-smoking donors, 9 who died of fatal asthma 
+and 8 with no chronic illness or medication use. ASM cell cultivation was as described 
+previously (1, 2). Briefly, passages 3 to 4 ASM cells maintained in Ham's F12 medium 
+supplemented with 10% FBS, CaCl2, buffered with HEPES, penicillin/streptomycin, primoch, 
+and additional L-glutamine were used in all experiments. The F12 medium was used for culture 
+because it provides Ca2+ levels that are consistent with seeing contractility of muscles in that 
+media. Cells from each donor were treated with 100 nM budesonide or control vehicle (DMSO) 
+for 24 hours.
+RNA-Seq Library Construction and Sequencing 
+Total RNA was extracted from cells using the miRNAeasy mini kit (Qiagen Sciences, Inc., 
+Germantown, MD). Using approximately 1 µg of RNA from each sample, the Illumina TruSeq 
+Stranded mRNA LT Sample Prep Kit (Illumina, Inc., San Diego, CA) was used to prepare 
+poly(A)-selected stranded RNA-Seq libraries, where second-strand cDNA synthesized with 
+dUTP was digested, and only first-strand cDNA existed in the library. Ambion External RNA 
+Controls Consortium (ERCC) RNA Spike-In Control Mix 1 (Life Technologies Corporation, 
+Carlsbad, CA) was added to the samples. Amplified cDNA fragments were analyzed using the 
+2100 Bioanalyzer (Agilent Technologies, Inc., Santa Clara, CA) to determine fragment quality 
+and size. Library concentrations were determined by Qubit Fluorometric Quantitation (Life 
+Technologies Corporation, Carlsbad, CA). An Illumina HiSeq 2500 instrument was used to 
+E2
+
+
+PAGE 3
+generate 125 bp paired-end reads at the University of Pennsylvania Next-Generation Sequencing 
+Core (Philadelphia, PA). 
+RNA-Seq Data Analysis
+Taffeta scripts were used to analyze RNA-Seq data and generate HTML summary reports 
+(https://github.com/blancahimes/taffeta) (3, 4). Adapter sequences in raw reads were trimmed 
+out using Trimmomatic (v.0.32) (5), and overall QC metrics were obtained using FastQC (6) 
+(v.0.11.7). Trimmed reads for each sample were aligned to the reference hg38 genome and 
+known ERCC transcripts using STAR (7) (v.2.5.2b), while constraining mapped reads to be 
+within reference hg38 or ERCC transcripts. Bamtools (v.2.3.0) (8) was used to summarize the 
+number of mapped reads, including junction spanning reads. The Picard Tools (v.1.96; 
+http://picard.sourceforge.net) RnaSeqMetrics function was used to compute the number of bases 
+assigned to various classes of RNA, according to an hg38 refFlat file obtained via a UCSC 
+Genome Table. HTSeq (v.0.6.1, with the strand setting ‘-s reverse’) was used to quantify both 
+ERCC Spike-In and gene-level read counts, using provided hg38 human transcriptome and 
+ERCC reference files (9). ERCC Spike-in dose-response curves (i.e., plots of ERCC transcript 
+read counts vs. known quantity of ERCC transcript molecules added to samples) were created 
+following the manufacturer’s protocol (10). Gene-level differential expression analysis that 
+compared (1) budesonide vs. control in non-asthma donor-derived ASM, (2) budesonide vs. 
+control in fatal asthma donor-derived ASM, (3) fatal asthma vs. non-asthma donor-derived ASM 
+exposed to control, and (4) fatal asthma vs. non-asthma donor-derived ASM exposed to 
+budesonide, was performed under a negative binomial distribution model with DESeq2 
+(v.1.18.1) (11) while filtering out genes with a total read count <10 before differential analysis 
+E3
+
+
+PAGE 4
+and disabling the default option for independent filtering of differential expression results. Cell 
+donor was used as a covariate in the differential expression analysis of glucocorticoid vs. control 
+comparison; sex and age were used as covariates in fatal asthma vs. non-asthma donor-derived 
+ASM comparisons. Ensembl gene IDs were annotated to official gene symbols using BioMart 
+(2016 archive) (12). Genomic coordinates were retrieved from Ensembl Release 84 (March 
+2016). RNA-Seq data is available in GEO (https://www.ncbi.nlm.nih.gov/geo/) under accession 
+GSE94335.
+Gene Set Enrichment Analysis
+Gene set enrichment analysis was performed with the fast gene set enrichment analysis algorithm 
+implemented in the fgsea R package (v.1.4.1) (13). Gene sets of KEGG and Reactome pathway 
+annotations were downloaded from MsigDB collections (v.6.2) 
+(http://software.broadinstitute.org/gsea/msigdb/collections.jsp) and those with gene number >15 
+and <500 were included for analysis. Genes were sorted according to decreasing z-score from 
+DESeq2 results. If multiple Ensembl gene IDs were annotated to the same gene symbol, that 
+with the largest z-score was retained. Gene-level score for a gene in rank k was calculated by 
+adding a positive or negative value, based on the presence or absence of the gene in the gene set, 
+to the score of the gene in rank k-1, and positive values were weighted by the gene k’s z-score. 
+Enrichment score for a particular gene set was designated as the largest absolute value from all 
+gene scores. P-values were assessed based on the distribution of enrichment scores following 
+10,000 permutations, and subsequently, q-values were obtained using the Benjamini-Hochberg 
+approach. The leading-edge subsets, defined as genes in the ranked list that appear before and at 
+the position of a positive gene-set enrichment score or that appear at and after the position of a 
+E4
+
+
+PAGE 5
+negative gene set enrichment score, correspond to genes that drove the enrichment signal. 
+Dependent pathways with q-value <0.05 were collapsed using the collapsedPathways function in 
+fgsea.
+Analysis of Publicly Available Glucocorticoid-Response Transcriptomic Datasets 
+We sought publicly available transcriptomic datasets that measured the effect of glucocorticoid 
+exposure on various human cell types to determine ASM-specific transcriptomic changes 
+induced by glucocorticoids. GEO searches of the terms “glucocorticoids”, “budesonide”, 
+“dexamethasone”, and “fluticasone” in Homo sapiens, yielded 13 glucocorticoid response 
+datasets (12 microarray and one RNA-Seq). Differential expression results of glucocorticoid vs. 
+control comparison for individual studies were obtained using RAVED 
+(https://github.com/HimesGroup/raved). For the RNA-Seq study, raw sequence data in fastq 
+format was downloaded from SRA and taffeta scripts were used as described for the primary 
+ASM studies above. For microarray studies, GSEMatrix and raw data files were downloaded 
+from GEO. A quality control step obtained quality metrics of raw intensity data using outlier 
+scoring methods from the arrayQualityMetrics R package (14). Scan date was considered as a 
+batch variable via principal component analysis. Differential expression analysis was performed 
+with the limma R package (15) using robust multi-array average (RMA)-processed intensity data 
+(16). For studies with noticeable batch effects, the sva R package (17) was used to obtain 
+adjusted statistics. The Benjamini-Hochberg approach was used to correct for multiple 
+comparisons made. Microarray probes were annotated to official gene symbols using R array 
+annotation packages corresponding to the appropriate platform. For cases in which multiple 
+probe or Ensembl gene IDs annotated to the same official gene symbol, the smallest p-value was 
+E5
+
+
+PAGE 6
+retained for that gene symbol. Full differential expression results for each of these individual 
+studies is available in our previously developed app REALGAR (http://realgar.org/) (18).
+Tissue-Specific Integration of Glucocorticoid-Response Transcriptomic Data
+For cell types that had more than one transcriptomic dataset, we obtained integrated results using 
+two summary statistics-based approaches: (1) an effect size-based method that applied a random-
+effects model with heterogeneity of selected datasets estimated by DerSimonian and Laird’s 
+method (19), and (2) a rank-based method that adopted the Rank Product method (20). For (1), 
+effect sizes measured as log2 fold change and standard errors from individual studies were passed 
+to the meta.summaries function from the rmeta R package (21) to compute combined effect sizes 
+and standard errors. Corresponding p-values were derived from resultant z-score distributions 
+and converted to q-values using the Benjamini-Hochberg approach. For (2), genes present in 
+each individual dataset were ranked according to their unadjusted p-values. Rank product 
+statistics were computed using ranks re-scaled by the total number of genes. The approximate 
+rank product distribution was obtained using 106 permutations, and empirical p-values were 
+defined based on the proportion of simulated rank products that were smaller than the observed 
+rank product. Corresponding q-values were conservatively estimated using false discovery rates. 
+Gene significance per cell type was determined based on having a q-value <0.05 in both effect-
+size- and rank-based integration procedures. Full R code used for integration analysis is available 
+at https://github.com/HimesGroup/Asthma_Transcriptomic_Analysis.
+Hierarchical Clustering
+E6
+
+
+PAGE 7
+Hierarchical clustering was performed to compare cell-type specific gene expression patterns 
+across 15 glucocorticoid vs. control comparisons available among the 14 transcriptomic studies 
+considered (including the comparisons for fatal asthma and non-asthma donor-derived ASM 
+described above). The genes selected to perform clustering were 56 significantly differentially 
+expressed genes in response to budesonide exposure in non-asthma ASM that also had results 
+available in all datasets considered. Study and gene expression similarity were determined based 
+on the Euclidean distance between log2 fold changes in expression as implemented in the 
+heatmap.2 function in the gplots R package.
+Detailed RNA-Seq Quality Control Results
+Thirty-four RNA samples from 17 ASM donors, 9 with fatal asthma and 8 non-asthma controls, 
+with and without budesonide exposure, were obtained (Table E1). For these 34 samples, we 
+obtained an average of 111.3 million trimmed sequencing reads per sample (range 87.9-312.0 
+million reads per sample). An average of 91.8% of RNA-Seq reads aligned to hg38 genome 
+reference files downloaded from Illumina’s iGenomes project (range 84.2%-94.7%), and an 
+average of 34.6% of the mapped reads spanned junctions (range 31.9%-36.9%). An average of 
+94.1% of bases in mapped reads corresponded to mRNA (range 86.5%-95.3%). Plots of 
+normalized read coverage of transcripts vs. normalized position revealed that there was even 
+coverage of transcripts (Fig. E1A). ERCC spike-in dose response plots, which ideally would 
+have slope and R2 equal to 1.0, had an average slope and R2 of 0.95 (range 0.92-0.99) and 0.94 
+(range 0.90-0.95) respectively (Fig. E1B shows the plot for a representative sample). Two 
+housekeeping genes (GABARAP and RPL19) were used as positive controls for sequencing, and 
+as expected, they were highly expressed viz-a-viz their normalized read counts and levels did not 
+E7
+
+
+PAGE 8
+differ significantly by either glucocorticoid exposure or disease status (Fig. E1C). Following the 
+above quality control processing, all samples were deemed of sufficiently high quality to include 
+in differential expression analyses.
+E8
+
+
+PAGE 9
+Online Supplementary Tables
+Table E1. RNA-Seq Quality Control Metrics. The table contains the cell line information, asthma and treatment condition, the number 
+of raw reads for the paired-end samples after adaptor trimming (number of reads in both R1 and R2), the percentage of mapped reads 
+among the total number of raw reads, the percentage of junction spanning reads among the mapped reads, the percentage of mapped 
+bases that mapped to mRNA, the mean insert size of mapped reads, and the slope and R2 values of ERCC spike-in dose response 
+curves for each sequenced samples. ERCC, Ambion External RNA Controls Consortium.
+Sample
+Cell Line
+Asthma 
+Status
+Treatment
+Total Raw
+Reads
+(Million)
+Mapped
+Reads
+(Percent)
+Junction 
+Spanning 
+Reads 
+(Percent)
+mRNA 
+Bases 
+(Percent)
+Mean 
+Insert Size 
+(bp)
+ERCC 
+Spike-In 
+Dose 
+Response 
+Curve 
+(Slope)
+ERCC 
+Spike-In 
+Dose 
+Response 
+Curve ( R2)
+28788
+AS013014
+asthma
+control
+92.3
+92.2
+35.9
+94.1
+363.4
+0.92
+0.94
+28797
+AS013014
+asthma
+budesonide
+87.9
+92.0
+33.8
+87.7
+255.9
+0.96
+0.94
+28763
+AS020811
+asthma
+control
+141.5
+93.6
+33.7
+94.7
+371.9
+0.96
+0.93
+28768
+AS020811
+asthma
+budesonide
+124.7
+84.2
+32.1
+94.7
+262.8
+0.94
+0.94
+28762
+AS021111
+asthma
+budesonide
+98.3
+93.1
+35.9
+94.7
+379.5
+0.94
+0.94
+28765
+AS021111
+asthma
+control
+122.0
+92.9
+33.9
+94.4
+344.5
+0.98
+0.94
+28776
+AS042913
+asthma
+control
+93.3
+90.1
+34.5
+95.2
+306.0
+0.96
+0.94
+28785
+AS042913
+asthma
+budesonide
+105.4
+94.7
+36.1
+95.0
+512.8
+0.97
+0.94
+28786
+AS090513
+asthma
+budesonide
+89.7
+92.6
+33.3
+86.6
+260.4
+0.94
+0.94
+28789
+AS090513
+asthma
+control
+101.8
+92.1
+32.3
+86.5
+277.1
+0.95
+0.95
+28775
+AS100614
+asthma
+control
+93.6
+92.1
+34.9
+95.3
+329.7
+0.94
+0.93
+28780
+AS100614
+asthma
+budesonide
+106.9
+93.8
+34.3
+94.7
+456.5
+0.94
+0.93
+28787
+AS110612
+asthma
+control
+105.9
+90.4
+35.8
+95.2
+319.1
+0.94
+0.93
+28792
+AS110612
+asthma
+budesonide
+110.5
+88.3
+34.3
+94.4
+314.4
+0.97
+0.95
+28774
+AS112514
+asthma
+budesonide
+103.1
+94.1
+35.9
+95.0
+472.0
+0.96
+0.95
+28777
+AS112514
+asthma
+control
+98.6
+91.8
+33.2
+95.1
+336.6
+0.92
+0.93
+28764
+AS113011
+asthma
+control
+108.6
+93.9
+32.9
+94.3
+377.2
+0.95
+0.90
+28773
+AS113011
+asthma
+budesonide
+110.7
+90.6
+36.0
+95.0
+424.7
+0.97
+0.93
+28781
+N010912
+non-asthma
+budesonide
+99.0
+93.2
+35.8
+94.9
+346.1
+0.96
+0.94
+E9
+
+
+PAGE 10
+Table E2. Summary of Evidence for Glucocorticoid Responsiveness-Related Roles of Differentially Expressed Genes. Top-ranked 
+genes that have published reported evidence for playing a role in glucocorticoid response were selected from Tables 2 and 3.
+Gene
+Glucocorticoid Responsiveness-Related Evidence
+ANGPTL7
+Encodes a family of secretory proteins structurally similar to angiopoietins
+mRNA expression is up-regulated by dexamethasone in primary human trabecular meshwork cells (22)
+ANGPTL7 knockdown during dexamethasone exposure significantly affects the expression of steroid-regulated extracellular matrix proteins (23)
+CRISPLD2
+Encodes serum protein implicated in lung development and endotoxin regulation (24)
+In ASM, mRNA expression is upregulated by dexamethasone or IL1β, and CRISPLD2 knockdown increased the IL1β responsiveness of IL6 and IL8 (3)
+In ASM, transcription is induced by dexamethasone via glucocorticoid receptor occupancy (25)
+SNPs within the gene are moderately associated with inhaled corticosteroid resistance and bronchodilator response among asthma patients (3, 26)
+FAM107A
+Encodes a family of stress responsive small proteins
+mRNA expression is induced by dexamethasone in mouse hippocampus (27) and cultured astrocytes (28)
+In mouse liver cells, transcription is strongly induced by prednisolone dependent on glucocorticoid receptor dimerization (29)
+FKBP5
+Encodes a co-chaperone of hsp90 regulating glucocorticoid receptor sensitivity (30)
+In vivo, mRNA expression is up-regulated by inhaled budesonide of airways derived from non-asthmatic (31) and asthmatic subjects (32)
+In vitro, mRNA expression is up-regulated by glucocorticoids in ASM (3, 33, 34)
+In ASM, transcription is induced by dexamethasone via glucocorticoid receptor occupancy (25)
+In lymphoblastoid cell lines, mRNA expression is increased in asthma vs. non-asthma subjects (35)
+GLUL
+Encodes glutamine synthetase that converts glutamate to glutamine
+mRNA expression is up-regulated by dexamethasone in both human (36) and rat myocytes (37), and human ASM (3, 33, 34)
+28784
+N010912
+non-asthma
+control
+95.0
+92.5
+34.5
+94.3
+397.2
+0.96
+0.93
+28779
+N012412
+non-asthma
+control
+108.3
+93.6
+33.3
+94.6
+323.0
+0.93
+0.91
+28782
+N012412
+non-asthma
+budesonide
+24.0
+91.9
+35.4
+94.5
+362.4
+0.94
+0.92
+28791
+N021712
+non-asthma
+control
+108.5
+92.7
+35.7
+94.9
+379.3
+0.97
+0.94
+28794
+N021712
+non-asthma
+budesonide
+95.7
+90.7
+36.1
+95.3
+300.9
+0.96
+0.94
+28769
+N051911
+non-asthma
+budesonide
+113.5
+91.9
+34.8
+94.5
+424.1
+0.96
+0.95
+28772
+N051911
+non-asthma
+control
+109.9
+89.6
+31.9
+94.2
+404.2
+0.94
+0.92
+28766
+N061311
+non-asthma
+budesonide
+108.0
+91.9
+34.3
+94.6
+291.7
+0.95
+0.93
+28771
+N061311
+non-asthma
+control
+121.9
+93.0
+34.1
+94.6
+392.9
+0.96
+0.95
+28790
+N090710
+non-asthma
+budesonide
+101.5
+90.7
+36.2
+94.8
+322.8
+0.96
+0.95
+28795
+N090710
+non-asthma
+control
+109.1
+92.4
+35.7
+94.8
+402.8
+0.96
+0.94
+28778
+N092611
+non-asthma
+budesonide
+312.0
+93.5
+36.9
+94.7
+556.6
+0.99
+0.95
+28783
+N092611
+non-asthma
+control
+94.5
+92.0
+34.3
+94.8
+343.2
+0.95
+0.93
+28767
+N100811
+non-asthma
+control
+106.8
+91.2
+34.4
+94.6
+389.7
+0.96
+0.93
+28770
+N100811
+non-asthma
+budesonide
+109.1
+91.2
+33.1
+94.1
+268.3
+0.94
+0.94
+E10
+
+
+PAGE 11
+GPX3
+mRNA expression is regulated independently via epigenetic or glucocorticoid receptor-mediated mechanisms in lung cancer cells (38)
+ITGA10
+mRNA expression is up-regulated by glucocorticoids in human airways in vivo (31) or in vitro (34), while is down-regulated in zebrafish larvae by prednisolone (39)
+KLF15
+Encodes one family of Kruppel-like, zinc finger transcription factors
+In ASM, mRNA expression is up-regulated by dexamethasone. Overexpression of KLF15 reduces proliferation of human ASM cells, whereas apoptosis is increased in 
+KLF15 knockout murine ASM cells (33) 
+In ASM, transcription is induced by dexamethasone via glucocorticoid receptor elements, and represses ASM hypertrophy (25)
+PDK4
+mRNA expression is up-regulated by dexamethasone in hepatoma cells (40)
+In rat primary hepatocytes, transcription is induced by dexamethasone via glucocorticoid receptor occupancy (41)
+PER1
+Encodes a transcription factor that regulates circadian rhythms
+mRNA expression is up-regulated by glucocorticoids and beta2-adrenoceptor agonist in human bronchial epithelial cells and peripheral blood cells (42), and by 
+dexamethasone in ASM cells (3, 33)
+In A549 cells, transcription is induced by dexamethasone via glucocorticoid receptor occupancy (43)
+TNFRSF11B
+mRNA expression is up-regulated by dexamethasone in mouse calvarial bones (44)
+TSC22D3
+Encodes glucocorticoid-induced leucine zipper, known to inhibit the activation of NFκB and mediate most of the anti-inflammatory effects of glucocorticoids  (45)
+mRNA expression is up-regulated by inhaled budesonide in human airways in vivo (31, 32) and in vitro (3, 33, 34, 45), while down-regulated by inflammatory cytokines 
+(45)
+VCAM1
+Encodes vascular cell adhesion molecule, a type of immunomodulatory protein expressed by human ASM cells (46)
+mRNA expression is down-regulated by glucocorticoids in bronchial epithelial cells (47) and ASM cells (3)
+E11
+
+
+PAGE 12
+Table E3. Differentially Expressed Genes in Fatal Asthma vs. Non-Asthma Donor-Derived ASM Exposed to Budesonide. Two 
+differentially expressed genes had q-value <0.05. 
+Mean Normalized Counts
+Gene 
+Symbol
+Gene Name
+Ensembl ID
+Genomic Coordinates
+Log2 Fold 
+Change
+Q-value
+Asthma
+Non-Asthma
+CCK
+cholecystokinin
+ENSG00000187094
+chr3:42257825-42266207
+-1.74
+2.21E-02
+9.06
+25.69
+PMEL
+premelanosome protein
+ENSG00000185664
+chr12:55954105-55973317
+-2.25
+2.21E-02
+24.57
+117.41
+E12
+
+
+PAGE 13
+Table E4. Gene Set Enrichment Analysis of KEGG and Reactome Pathways. Significantly enriched pathways in non-asthma and fatal 
+asthma donor-derived ASM (q-value <0.05) were selected and ordered by q-value. Pathway annotations were downloaded from 
+MSigDB collections. Genes in the leading edge were sorted based on decreasing z-score from DESeq2 results.
+Non-Asthma Donor-Derived ASM
+Pathway
+Size
+Q-value
+NES
+Genes in Leading Edge
+KEGG: cytokine-cytokine receptor 
+interaction
+163
+0.018
+-1.97
+IFNAR2, IL6ST, CCL28, EGFR, CCR3, KIT, TNFRSF25, CCL13, IFNGR2, TGFBR1, VEGFC, 
+CX3CL1, CCL8, TNFSF9, XCR1, INHBE, IL7R, IL13RA1, TNFRSF10C, BMPR1A, CCL7, TSLP, 
+TNFRSF12A, VEGFA, TGFB2, TNFRSF10B, CCR1, IL1R1, IL12A, TNFRSF10D, IL6, HGF, OSMR, 
+CCL11, GDF5, TGFB3, LIF, IL20RA, FIGF, CCL2, IL17RB, TNFSF15, CXCL16, TNFSF13B, 
+TNFSF10, TNFRSF19, EDA2R, PDGFC, CXCL12, TNFRSF11B
+Reactome: chemokine receptors bind 
+chemokines
+27
+0.018
+-2.10
+CCL28, CCR3, CX3CL1, XCR1, CCL7, CCR1, CCL11, CCL2, CXCL16, CXCL12
+Reactome: antigen presentation 
+folding assembly and peptide 
+loading of class I MHC
+21
+0.018
+-1.93
+B2M, TAP2, CANX, SEC23A, SEC24D, ERAP1, PDIA3, CALR, SEC31A, HSPA5
+KEGG: protein export
+23
+0.018
+-1.89
+SEC61G, IMMP2L, SEC62, SEC61A2, SRP72, SRP9, SPCS2, SEC63, SEC61A1, HSPA5
+KEGG: valine leucine and isoleucine 
+degradation
+43
+0.018
+2.06
+ALDH6A1, ABAT, MCCC1, MCCC2, ALDH7A1, AOX1, HADHB, EHHADH, ALDH2, BCAT2, 
+HADHA, HADH, DBT, ACADS, HSD17B10, IVD, MUT, ACAA2, ACAA1, ACAT2, OXCT1
+Reactome: metabolism of amino 
+acids and derivatives
+161
+0.018
+1.84
+GLUL, ALDH6A1, AASS, CTH, SAT1, MCCC1, CDO1, MCCC2, PSMC5, ALDH7A1, ADI1, DIO3, 
+SHMT1, SQRDL, DLST, ALDH4A1, GLUD1, BCAT2, SRM, TST, PRODH, CNDP2, PSMD8, ODC1, 
+CBS, CKB, KYNU, DBT, GCLM, GCDH, HSD17B10, IVD, INHBB, AHCY, GLS2, ASL, GOT1, 
+MAT2B, GSTZ1, PSMA7, AMD1, MTR, PCSK1, FTCD, INHBA, SUOX, IYD, INHA, PSMB4, PSMB7, 
+ALDH9A1, OGDH, ACAT1, PSMD7, PSMC4, PAOX, SLC25A10, AZIN1
+KEGG: focal adhesion
+184
+0.018
+1.73
+PIK3R1, ITGA10, LAMA2, CAV1, COL4A1, LAMC1, COL4A4, COL5A3, COL5A2, PAK1, LAMB1, 
+PPP1CB, CAV2, BIRC3, KDR, COL11A1, LAMC2, CCND3, TLN2, RAF1, DIAPH1, LAMA3, RAC3, 
+COL4A2, PDGFD, VCL, IGF1R, PPP1R12A, ITGA6, SHC3, MYL12B, PIK3CA, ITGA1, PXN, COMP, 
+SOS2, ITGA5, PDGFA, LAMB4, FYN, ROCK2, COL6A3, RAC1, ITGB1
+KEGG: calcium signaling pathway
+148
+0.038
+-1.60
+CACNA1G, PTAFR, GRPR, PDGFRA, VDAC1, ADCY9, GNAQ, TBXA2R, PLN, PHKB, PTGFR, 
+RYR2, EGFR, PRKACB, CALM2, ADRA1D, CAMK2G, HTR2A, BDKRB2, EDNRA, PPP3CB, 
+CAMK2A, DRD1, PLCB1, ADCY4, ADORA2B, ATP2B4, PHKG1, CACNA1C, HRH1, GRIN2A, 
+HTR2B, P2RX7, ITPKB, BDKRB1, CHRM2, GNA14, ADCY8, CCKAR, SLC8A1, ADCY1
+Reactome: metabolism of lipids and 
+lipoproteins
+404
+0.040
+1.45
+PIK3R1, HSD11B1, CAV1, TXNRD1, PPARG, ARNTL, ABHD5, DHCR24, ACSL1, CYP19A1, LGMN, 
+CERS6, PPP1CB, PCYT2, FABP4, PNPLA8, GPD1L, FAR2, MTMR14, ELOVL1, SLC44A1, TM7SF2, 
+HADHB, ACACB, PLIN2, ETNK2, GPD2, CRLS1, SUMF2, INPP5K, HSD17B4, PEMT, HADHA, 
+CDIPT, ABCG1, MED27, GM2A, NPAS2, PHYH, NCOA3, VAPA, SRD5A3, PRKAG2, HADH, 
+CYP7B1, PNPLA2, PIK3CA, PPARA, ABCA1, BDH1, ACADS, CPT1A, TNFRSF21, MED18, 
+SLC25A1, NFYB, ARSK, CERS5, CYP1A1, CROT, MUT, GPCPD1, TEAD1, ACAA1, SLC44A2, 
+OXCT1, TEAD3, ANKRD1, PLD2, BMP1, CYP2R1, PCYT1A, NCOA2, MED12, CDK19, PPP1CA, 
+MED8, TAZ, MTTP, GBA2, PPM1L, SIN3A, ELOVL6, ACER3, HSD17B7, PEX11A, PIK3C2B, 
+HMGCL, ECHS1, CHPT1, MED10, ELOVL5, ARF3, ESRRA, CHKA, AGPAT1, ABCD1, EP300, 
+CRAT, MED30, ECI1, INPP5E, MTM1, ACOX1, HSD17B3, ARF1, ACAT1, GALC
+E13
+
+
+PAGE 14
+Reactome: transport of glucose and 
+other sugars bile salts and organic 
+acids metal ions and amine 
+compounds
+63
+0.040
+-1.70
+SLC41A1, SLC41A2, SLC39A8, SLC16A1, SLC2A3, CP, SLC39A7, SLC2A12, SLC44A3, SLC47A1, 
+SLC5A3, SLC39A10, SLC14A1, SLC2A5, SLC6A9, SLC6A6
+Reactome: cytosolic tRNA amino 
+acylation
+24
+0.040
+-1.88
+LARS, CARS, DARS, EPRS, NARS, AIMP1, GARS, PPA1, TARS, YARS, AARS, IARS, WARS
+Reactome: nitric oxide stimulates 
+guanylate cyclase
+24
+0.046
+-1.84
+PDE9A, GUCY1B3, MRVI1, PRKG1, GUCY1A3, PRKG2, PDE5A, GUCY1A2
+KEGG: gap junction
+79
+0.046
+-1.71
+TUBB4B, PDGFRA, ADCY9, GNAQ, GJA1, TUBA1C, TUBB3, EGFR, SOS1, PRKACB, KRAS, 
+HTR2A, TUBA1B, GUCY1B3, DRD1, PLCB1, ADCY4, PRKG1, HTR2B, TUBB, GUCY1A3, ADCY8, 
+PRKG2, TUBA1A, TUBA4A, GUCY1A2, PDGFC, ADCY1
+KEGG: small cell lung cancer
+81
+0.046
+1.72
+PIK3R1, LAMA2, NFKBIA, COL4A1, LAMC1, COL4A4, LAMB1, BIRC3, LAMC2, LAMA3, COL4A2, 
+SKP2, MYC, ITGA6, E2F1, CASP9, PIK3CA, TRAF1, LAMB4, TRAF6, ITGB1, RB1, BCL2L1, 
+APAF1, CCNE2
+Fatal Asthma Donor-Derived ASM
+Pathway
+Size
+Q-value
+NES
+Genes in Leading Edge 
+Reactome: signaling by GPCR
+392
+0.010
+-1.56
+ADRA1D, GPR132, PIK3R3, CDK1, PPP3CB, PTGFR, CD55, GNG12, CX3CL1, SOS1, MAPK1, 
+DGKB, ADM2, MMP3, MAP2K1, F2RL1, PRKACB, KRAS, PREX1, CREB1, PDE8B, PDE10A, 
+PDE4C, ARHGEF2, PTGIR, EGFR, TRIO, PDE4B, MCHR1, GRPR, P2RY1, FZD7, RAMP3, CCR3, 
+ADCY7, CALM2, SMO, CCL7, PLCB1, ADCY4, XCR1, PTGER4, CXCL16, DRD1, P2RY12, CCL2, 
+CCL28, S1PR3, KALRN, ADORA2B, RPS6KA3, GNA14, AGT, CCL11, PLA2G4A, RGS6, GNG2, 
+EDN1, RXFP1, PDE7B, EDNRA, GPR68, RGS4, ARHGEF3, ADORA1, BDKRB2, HRH1, PPP1R1B, 
+CHRM2, BDKRB1, CCR1, CXCL12, PRKCE, RASGRF2, ADCY8, CCKAR, SSTR1, HTR2B, ADRA2A, 
+ADCY1, WNT2
+Reactome: transmembrane transport 
+of small molecules
+312
+0.010
+-1.53
+SLC7A1, NUP35, ATP2C1, SLC28A3, SLC24A4, SLC29A4, SLC39A8, SLC2A1, ABCA8, ADCY9, 
+TFRC, SLC20A2, ATP2A2, ABCB5, SLC38A1, SLC44A3, SLC38A4, GNG12, PEX3, CP, SLC30A1, 
+SLC46A1, SLC41A1, SLC35B4, SLC16A7, ATP9A, PRKACB, SLC2A12, ATP6V1B2, SLC12A2, 
+SLC16A1, ATP1A2, NUP205, SLC1A7, ATP1B3, ATP6V1C1, HK2, SLC7A5, SLC41A2, SLC2A3, 
+ADCY7, GLRB, SLC1A3, ATP8B4, ADCY4, AQP1, SLC6A9, AQP7, SLC47A1, SLCO3A1, GNG2, 
+SLC1A2, ATP7A, ABCA10, ATP6V1A, SLC9A7, ABCC6, SLC38A5, SLC14A1, SLC4A4, ADCY8, 
+STEAP3, SLC2A5, SLC39A10, SLC5A3, SLC8A1, ATP8B1, AQP3, SLC6A6, SLC4A7, ADCY1
+KEGG: cytokine-cytokine receptor 
+interaction
+167
+0.010
+-2.20
+CX3CL1, TNFRSF25, IL13RA1, BMPR2, TNFRSF12A, GDF5, IL7R, TNFSF9, EGFR, VEGFC, 
+IL20RA, CCL13, CCR3, INHBE, TNFRSF10C, CCL7, IL1R1, TNFRSF10D, VEGFA, BMPR1A, XCR1, 
+CXCL16, OSMR, CCL8, CCL2, CCL28, IL12A, TSLP, KIT, TNFSF15, CCL11, IL17RB, TNFRSF10B, 
+HGF, CCR1, TGFB3, CXCL12, TGFBR1, PDGFC, TNFSF10, TGFB2, LIF, IL6, TNFSF13B, EDA2R, 
+FIGF, TNFRSF19, TNFRSF11B
+Reactome: G alpha (i) signaling 
+events
+111
+0.010
+-1.78
+MCHR1, CCR3, ADCY7, ADCY4, CXCL16, P2RY12, CCL28, S1PR3, AGT, RGS6, GNG2, RGS4, 
+ADORA1, BDKRB2, CHRM2, BDKRB1, CCR1, CXCL12, ADCY8, SSTR1, ADRA2A, ADCY1
+Reactome: phospholipase C 
+mediated cascade
+45
+0.010
+-1.96
+ADCY9, FGF1, KL, FGFR4, PRKACB, CREB1, FGF2, ADCY7, CALM2, ADCY4, FGF7, FGFR2, 
+PRKCE, ADCY8, FGF5, ADCY1
+Reactome: chemokine receptors bind 
+chemokines
+27
+0.010
+-2.05
+CX3CL1, CCR3, CCL7, XCR1, CXCL16, CCL2, CCL28, CCL11, CCR1, CXCL12
+KEGG: ribosome
+86
+0.010
+2.11
+RPL26L1, RPS7, RPL17, RPL14, RPLP0, RPL10, RPL38, RPL29, RPS29, RPL36, UBA52, RPL28, 
+E14
+
+
+PAGE 15
+RPL11, RPL4, RPL35, RPS18, RPS10, RPS3, RPL27, RPS9, RPS28, RPL12, RPL18, RPL19, RPL8, 
+RPLP2, RPL37, RPL18A, RPL7A, RPS8, RPLP1, RPS27, RPS11, RPS6, RPS2, RPL37A, FAU, 
+RPL10A, RPL23A, RPS5, RPSA, RPS20, RPS26, RPL32, RPL41, RPL13, RPS19, RPS25, RPS16, 
+RPS15, RPL24, RPL13A, RPL3, RPL6, RPS4X, RPL23, RPL15, RPL30
+Reactome: peptide chain elongation
+102
+0.010
+2.14
+RPL26L1, RPS7, RPL17, RPL14, RPLP0, RPL10, RPL38, RPL29, RPS29, RPL36, UBA52, RPL28, 
+RPL11, RPL4, RPL35, RPS18, RPS10, RPS3, RPS28P7, RPL27, RPS9, RPS28, RPL12, RPL18, 
+FAM153A, EEF2, RPL19, RPL8, RPLP2, RPL37, RPL18A, RPS14, RPL7A, RPS8, RPLP1, RPS27, 
+RPS11, RPS6, RPS2, RPL37A, FAU, RPL10A, RPL23A, RPS5, RPSA, RPS20, RPS26, RPL32, RPL41, 
+RPL13, RPS19, RPS25, RPS16, RPS15, RPL24, RPL13A, RPL3, RPL6, RPS19P3, RPS4X, RPL23, 
+RPL15, RPL30, RPL23AP42, RPL23AP2, RPL31, RPL21P134, RPL36A, RPS24
+Reactome: metabolism of amino 
+acids and derivatives
+160
+0.010
+1.79
+GLUL, ALDH6A1, AASS, DIO3, SAT1, MCCC1, BCAT2, CTH, ADI1, CBS, PSMC5, TST, CDO1, 
+SHMT1, ALDH7A1, SRM, ALDH4A1, AHCY, MCCC2, CKB, ODC1, SQRDL, PSMD8, INHBB, DLST, 
+KYNU, ASL, GLS2, CNDP2, GCDH, DBT, GLUD1, INHA, MAT2B, GSTZ1, HSD17B10, IVD, CSAD, 
+SUOX, FTCD, PSMA7, PSMC4, PRODH, PSMD7, PAOX, PCSK1, AFMID, PSMC3, MRI1, GCLM, 
+PSMB4, PSMD4, GRHPR, PSMB10, SLC25A21, PCBD1, PSMB7, ALDH9A1, GOT1
+KEGG: gap junction
+79
+0.019
+-1.78
+PDGFRA, TUBB4B, TUBA1C, HTR2A, GJA1, ADCY9, CDK1, SOS1, MAPK1, MAP2K1, PRKACB, 
+KRAS, EGFR, ADCY7, TUBA1B, PLCB1, GUCY1B3, ADCY4, DRD1, PRKG1, TUBB, TUBA4A, 
+PRKG2, GUCY1A2, TUBA1A, PDGFC, ADCY8, HTR2B, GUCY1A3, ADCY1
+Reactome: nitric oxide stimulates 
+guanylate cyclase
+24
+0.019
+-1.90
+PDE10A, PDE9A, MRVI1, GUCY1B3, PRKG1, PRKG2, GUCY1A2, PDE5A, GUCY1A3
+Reactome: GPCR ligand binding
+203
+0.023
+-1.60
+ADRA1D, GPR132, PTGFR, CD55, GNG12, CX3CL1, ADM2, F2RL1, PTGIR, MCHR1, GRPR, 
+P2RY1, FZD7, RAMP3, CCR3, SMO, CCL7, XCR1, PTGER4, CXCL16, DRD1, P2RY12, CCL2, 
+CCL28, S1PR3, ADORA2B, AGT, CCL11, GNG2, EDN1, RXFP1, EDNRA, GPR68, ADORA1, 
+BDKRB2, HRH1, CHRM2, BDKRB1, CCR1, CXCL12, CCKAR, SSTR1, HTR2B, ADRA2A, WNT2
+KEGG: TGF beta signaling pathway
+79
+0.023
+-1.73
+MAPK1, RPS6KB1, BMPR2, GDF5, ID4, SMAD1, ZFYVE16, NOG, INHBE, E2F5, BMPR1A, 
+ACVR1C, ZFYVE9, GDF6, SMAD5, ID2, SMAD6, TGFB3, THBS2, TGFBR1, TGFB2, FST, SMAD3
+Reactome: voltage gated potassium 
+channels
+31
+0.023
+-1.81
+KCND3, KCNH2, KCNQ5, KCNA5, KCNAB1, KCNH5, KCNS1, KCND2, KCNA3, KCNB2
+Reactome: neurotransmitter receptor 
+binding and downstream 
+transmission in the postsynaptic cell
+109
+0.026
+-1.68
+DLG1, RPS6KA6, ADCY9, KCNJ15, CHRNA1, GNG12, MAPK1, PRKACB, NCALD, CREB1, NSF, 
+AKAP5, MDM2, ADCY7, CALM2, CAMK2A, PLCB1, ADCY4, GRIP2, KCNJ2, RPS6KA3, GNG2, 
+DLG3, GRIN2A, RASGRF2, ADCY8, GRIK4, ADCY1
+Reactome: metabolism of lipids and 
+lipoproteins
+408
+0.030
+1.38
+PPARG, ELOVL1, DHCR24, CAV1, PIK3R1, ACSL1, ARNTL, HSD11B1, CYP19A1, TXNRD1, 
+PPP1CB, FABP4, NPAS2, PCYT2, ABHD5, LGMN, ETNK2, PLIN2, PEMT, MTMR14, GPD2, LPIN3, 
+TM7SF2, HADHB, CYP7B1, HADHA, CERS6, TNFRSF21, NCOA3, CPT1A, CDIPT, PNPLA2, 
+BDH1, ABCA1, ACADS, SUMF2, MED27, PNPLA8, INPP5K, ACACB, OXCT1, ECI1, CRLS1, 
+HMGCL, PRKAG2, HSD17B4, LIPE, FAR2, CROT, ELOVL6, SLC25A1, CYP1A1, AGPAT2, PHYH, 
+TEAD3, ANKRD1, SLC44A2, GPD1L, ABCG1, GM2A, PIK3CA, MED25, VAPA, PPP1CA, TAZ, 
+ACAA1, SLC44A1, ARSK, BMP1, MED18, ABCD1, SRD5A3, ESRRA, PPARA, PLD2, NFYB, MED8, 
+ANGPTL4, CYP39A1, GBA2, CRAT, PIK3CD, CYP2R1, ARF1, GPCPD1, CERS5, AGPAT1
+Reactome: sulfur amino acid 
+metabolism
+23
+0.040
+1.86
+CTH, ADI1, CBS, TST, CDO1, AHCY, SQRDL, CNDP2, MAT2B, CSAD, SUOX, MRI1, GCLM, GOT1
+E15
+
+
+PAGE 16
+Table E5. Publicly Available Glucocorticoid Response Transcriptomic Datasets Selected for 
+Analysis.
+GEO ID
+Cell Type
+Treatment Description
+Control 
+Samples (N)
+Treated 
+Samples (N)
+*GSE94335
+Non-asthma donor-derived ASM
+Budesonide (100 nM, 24 hr)
+8
+8
+*GSE94335
+Fatal asthma donor-derived ASM
+Budesonide (100 nM, 24 hr)
+9
+9
+GSE13168
+ASM
+Fluticasone (10 nM, 0.5 hr)
+3
+3
+GSE34313
+ASM
+Dexamethasone (1 µM, 24 hr)
+3
+3
+SRP033351
+ASM
+Dexamethasone (1 µM, 18 hr)
+4
+4
+GSE1815
+Bronchial epithelium
+Dexamethasone (100 nM, 8 hr)
+4
+4
+GSE55876
+Childhood acute lymphoblastic 
+leukemia cell
+Dexamethasone (100 nM, 6 hr)
+3
+3
+GSE55877
+Childhood acute lymphoblastic 
+leukemia cell
+Dexamethasone (100 nM, 6 hr)
+3
+3
+GSE22152
+Childhood acute lymphoblastic 
+leukemia cell
+Dexamethasone (100 nM, 6 hr)
+6
+6
+GSE44248
+Lymphoblastoid cell line
+Dexamethasone (1 µM, 16 hr)
+8
+8
+GSE61880
+Macrophage
+Dexamethasone (100 nM, 10 
+hr)
+3
+3
+GSE79077
+Macrophage
+Dexamethasone (100 nM, 20 
+hr)
+3
+3
+GSE87000
+Macrophage
+Dexamethasone (100 nM, 6 hr)
+7
+7
+GSE4917
+MCF10A-Myc cell
+Dexamethasone (1 µM, 24 hr)
+3
+3
+GSE46448
+Osteosarcoma U2OS cell
+Dexamethasone (100 nM, 4 hr)
+4
+4
+* Also the current study.
+E16
+
+
+PAGE 17
+Table E6. Significant genes (N=154) identified by integration of four non-asthma ASM studies 
+of glucocorticoid response (including the non-asthma donor-derived cells reported in Table E2). 
+56 genes shown in bold were present in all 14 datasets and used for hierarchical clustering. For 
+rank-based method, if all simulated rank products were larger than the observed rank product, the 
+corresponding p-values and FDR were zero.
+Effect-size-based method
+Rank-based method
+Gene
+Log2 
+Fold 
+Change
+SE
+95% CI 
+lower 
+bound
+95% CI 
+upper 
+bound
+df
+P-value
+Q-value
+Rank 
+Product
+P-value
+FDR
+GPM6B
+2.40
+0.06
+2.27
+2.52
+3
+9.05E-300
+8.69E-296
+0.258
+0
+0
+FAM107A
+4.81
+0.24
+4.35
+5.28
+3
+1.77E-91
+2.13E-88
+0.227
+0
+0
+GPX3
+4.11
+0.23
+3.66
+4.56
+3
+1.18E-71
+1.13E-68
+0.261
+0
+0
+GLUL
+2.92
+0.22
+2.49
+3.34
+3
+1.06E-41
+3.92E-39
+0.253
+0
+0
+CCDC69
+2.15
+0.24
+1.68
+2.62
+3
+2.75E-19
+2.61E-17
+0.127
+0
+0
+MEST
+-2.28
+0.26
+-2.78
+-1.78
+3
+3.55E-19
+3.30E-17
+0.335
+0
+0
+SAMHD1
+3.04
+0.35
+2.35
+3.72
+3
+2.81E-18
+2.49E-16
+0.437
+0
+0
+METTL7A
+2.32
+0.33
+1.68
+2.96
+3
+1.14E-12
+5.78E-11
+0.335
+0
+0
+SORT1
+1.81
+0.26
+1.29
+2.32
+3
+4.57E-12
+2.20E-10
+0.462
+0
+0
+ZBTB16
+5.41
+0.78
+3.88
+6.94
+3
+4.72E-12
+2.26E-10
+0.523
+0
+0
+FKBP5
+3.61
+0.53
+2.58
+4.64
+3
+6.93E-12
+3.24E-10
+0.237
+0
+0
+TSC22D3
+3.50
+0.56
+2.40
+4.59
+3
+3.76E-10
+1.36E-08
+0.501
+0
+0
+MAOA
+2.82
+0.49
+1.85
+3.79
+3
+1.12E-08
+3.02E-07
+0.326
+0
+0
+CRISPLD2
+2.64
+0.47
+1.71
+3.56
+3
+2.12E-08
+5.45E-07
+0.172
+0
+0
+DUSP1
+1.99
+0.52
+0.98
+3.00
+3
+1.09E-04
+1.24E-03
+0.205
+0
+0
+CACNB2
+2.27
+0.70
+0.89
+3.65
+3
+1.23E-03
+9.62E-03
+0.118
+0
+0
+FOXO1
+2.39
+0.09
+2.22
+2.57
+3
+4.61E-156
+1.48E-152
+0.240
+1.00E-06
+9.37E-04
+CITED2
+1.93
+0.25
+1.44
+2.42
+3
+1.30E-14
+8.31E-13
+0.155
+1.00E-06
+9.37E-04
+SPARCL1
+3.40
+0.55
+2.32
+4.49
+3
+6.85E-10
+2.34E-08
+0.463
+1.00E-06
+9.37E-04
+WNT2
+-2.42
+0.43
+-3.25
+-1.58
+3
+1.33E-08
+3.58E-07
+0.520
+1.00E-06
+9.37E-04
+ITGA10
+2.84
+0.59
+1.68
+4.01
+3
+1.68E-06
+3.01E-05
+0.294
+1.00E-06
+9.37E-04
+KLF15
+3.22
+1.19
+0.89
+5.55
+3
+6.80E-03
+3.83E-02
+0.304
+1.00E-06
+9.37E-04
+TEX2
+1.25
+0.14
+0.98
+1.51
+3
+5.98E-20
+6.14E-18
+0.481
+2.00E-06
+1.57E-03
+IMPA2
+2.50
+0.41
+1.71
+3.30
+3
+7.05E-10
+2.40E-08
+0.290
+2.00E-06
+1.57E-03
+PER1
+3.02
+0.17
+2.68
+3.35
+2
+1.11E-70
+1.01E-67
+0.675
+3.00E-06
+2.06E-03
+SOX4
+-2.02
+0.18
+-2.37
+-1.67
+3
+2.62E-30
+5.31E-28
+0.463
+3.00E-06
+2.06E-03
+GDF15
+-2.07
+0.41
+-2.87
+-1.27
+3
+4.02E-07
+8.08E-06
+0.249
+3.00E-06
+2.06E-03
+IL16
+1.47
+0.29
+0.89
+2.04
+3
+5.24E-07
+1.03E-05
+0.288
+3.00E-06
+2.06E-03
+TNFAIP6
+-2.96
+0.85
+-4.62
+-1.31
+3
+4.51E-04
+4.13E-03
+0.492
+3.00E-06
+2.06E-03
+ADAM12
+-1.71
+0.15
+-1.99
+-1.42
+3
+2.68E-31
+5.60E-29
+0.026
+4.00E-06
+2.44E-03
+TNFRSF11B
+-2.29
+0.83
+-3.92
+-0.67
+3
+5.73E-03
+3.35E-02
+0.493
+4.00E-06
+2.44E-03
+TRNP1
+1.76
+0.19
+1.38
+2.14
+2
+1.35E-19
+1.32E-17
+0.760
+5.00E-06
+2.91E-03
+TGFBR2
+1.20
+0.11
+0.98
+1.42
+3
+1.62E-26
+2.61E-24
+0.482
+6.00E-06
+3.39E-03
+PIK3R1
+1.67
+0.17
+1.34
+2.00
+3
+4.75E-23
+6.08E-21
+0.390
+7.00E-06
+3.79E-03
+ANXA4
+1.12
+0.18
+0.76
+1.48
+3
+1.25E-09
+4.13E-08
+0.060
+7.00E-06
+3.79E-03
+KCNK6
+2.42
+0.18
+2.07
+2.76
+2
+7.32E-43
+2.93E-40
+0.546
+8.00E-06
+4.10E-03
+E17
+
+
+PAGE 18
+CXCL12
+-2.13
+0.38
+-2.87
+-1.39
+3
+1.68E-08
+4.40E-07
+0.181
+8.00E-06
+4.10E-03
+STOM
+1.29
+0.05
+1.18
+1.40
+3
+2.48E-123
+6.81E-120
+0.471
+9.00E-06
+4.32E-03
+PRSS35
+-2.24
+0.23
+-2.70
+-1.79
+2
+1.05E-21
+1.23E-19
+0.577
+9.00E-06
+4.32E-03
+MT1E
+1.95
+0.27
+1.42
+2.47
+3
+3.12E-13
+1.69E-11
+0.346
+9.00E-06
+4.32E-03
+RASL11A
+2.55
+0.45
+1.66
+3.44
+2
+1.99E-08
+5.14E-07
+0.744
+1.10E-05
+5.03E-03
+ADAMTS1
+1.94
+0.19
+1.56
+2.31
+3
+6.19E-24
+8.26E-22
+0.028
+1.20E-05
+5.18E-03
+SMARCD2
+1.26
+0.15
+0.97
+1.55
+3
+1.59E-17
+1.32E-15
+0.458
+1.20E-05
+5.18E-03
+LAMA2
+1.71
+0.35
+1.01
+2.40
+3
+1.33E-06
+2.43E-05
+0.309
+1.20E-05
+5.18E-03
+VCAM1
+-2.67
+0.69
+-4.01
+-1.32
+3
+1.00E-04
+1.16E-03
+0.514
+1.20E-05
+5.18E-03
+MT2A
+1.55
+0.56
+0.46
+2.65
+3
+5.44E-03
+3.22E-02
+0.346
+1.40E-05
+5.72E-03
+TCEAL1
+1.09
+0.10
+0.89
+1.28
+3
+7.63E-28
+1.31E-25
+0.479
+1.80E-05
+7.13E-03
+ARMC8
+1.11
+0.12
+0.88
+1.35
+3
+4.52E-21
+4.96E-19
+0.074
+2.00E-05
+7.69E-03
+TJP2
+1.92
+0.15
+1.63
+2.22
+3
+4.37E-38
+1.27E-35
+0.486
+2.10E-05
+7.84E-03
+FGD4
+2.05
+0.33
+1.40
+2.70
+2
+5.40E-10
+1.89E-08
+0.747
+2.10E-05
+7.84E-03
+IRS2
+1.92
+0.17
+1.59
+2.25
+3
+6.77E-30
+1.31E-27
+0.293
+2.20E-05
+7.98E-03
+SCD
+-1.64
+0.51
+-2.64
+-0.63
+3
+1.41E-03
+1.07E-02
+0.438
+2.30E-05
+8.19E-03
+NOV
+-2.11
+0.45
+-2.98
+-1.23
+3
+2.30E-06
+3.98E-05
+0.362
+2.60E-05
+9.08E-03
+FBN2
+2.16
+0.26
+1.64
+2.68
+3
+3.27E-16
+2.41E-14
+0.231
+2.70E-05
+9.27E-03
+PPP1R14A
+3.07
+0.10
+2.88
+3.26
+2
+1.40E-226
+8.98E-223
+0.703
+2.80E-05
+9.28E-03
+ZHX3
+1.03
+0.08
+0.87
+1.20
+3
+5.24E-34
+1.29E-31
+0.526
+2.80E-05
+9.28E-03
+WARS
+-1.06
+0.19
+-1.44
+-0.68
+3
+5.19E-08
+1.25E-06
+0.517
+2.80E-05
+9.28E-03
+KLF9
+1.77
+0.19
+1.40
+2.13
+3
+2.28E-21
+2.60E-19
+0.304
+2.90E-05
+9.29E-03
+FST
+-1.95
+0.09
+-2.12
+-1.78
+3
+2.39E-112
+4.59E-109
+0.241
+3.30E-05
+9.76E-03
+PDE5A
+-1.15
+0.13
+-1.40
+-0.90
+3
+1.97E-19
+1.90E-17
+0.382
+3.20E-05
+9.76E-03
+CDH6
+-1.52
+0.26
+-2.04
+-1.00
+3
+8.87E-09
+2.45E-07
+0.140
+3.20E-05
+9.76E-03
+MOB3B
+2.47
+0.76
+0.98
+3.96
+3
+1.13E-03
+8.94E-03
+0.340
+3.20E-05
+9.76E-03
+SYNJ2
+-1.33
+0.22
+-1.75
+-0.91
+3
+6.67E-10
+2.29E-08
+0.474
+3.10E-05
+9.77E-03
+ERRFI1
+2.00
+0.32
+1.38
+2.62
+2
+2.85E-10
+1.05E-08
+0.576
+3.50E-05
+1.01E-02
+SCN7A
+1.62
+0.36
+0.91
+2.33
+3
+7.35E-06
+1.14E-04
+0.439
+3.50E-05
+1.01E-02
+HSPA2
+1.81
+0.28
+1.26
+2.36
+3
+9.43E-11
+3.75E-09
+0.280
+3.60E-05
+1.02E-02
+ANGPTL7
+3.73
+1.26
+1.27
+6.19
+3
+2.96E-03
+1.98E-02
+0.055
+3.70E-05
+1.03E-02
+WIPI1
+1.09
+0.18
+0.72
+1.45
+3
+4.01E-09
+1.20E-07
+0.520
+4.10E-05
+1.13E-02
+NR3C1
+-1.10
+0.12
+-1.33
+-0.87
+3
+7.17E-21
+7.83E-19
+0.364
+4.40E-05
+1.17E-02
+GLRX
+0.89
+0.21
+0.49
+1.30
+3
+1.81E-05
+2.53E-04
+0.253
+4.40E-05
+1.17E-02
+CEBPD
+1.43
+0.24
+0.97
+1.90
+3
+2.06E-09
+6.52E-08
+0.144
+4.80E-05
+1.25E-02
+BDKRB1
+-2.71
+0.57
+-3.83
+-1.59
+3
+2.08E-06
+3.63E-05
+0.098
+5.00E-05
+1.28E-02
+ALDH6A1
+1.15
+0.23
+0.71
+1.60
+3
+3.56E-07
+7.27E-06
+0.048
+5.40E-05
+1.36E-02
+DCXR
+1.70
+0.43
+0.87
+2.54
+3
+6.61E-05
+8.00E-04
+0.189
+5.70E-05
+1.40E-02
+CCND3
+1.03
+0.06
+0.92
+1.14
+3
+3.66E-74
+3.90E-71
+0.130
+5.90E-05
+1.44E-02
+KCTD12
+-1.75
+0.39
+-2.50
+-0.99
+3
+5.87E-06
+9.31E-05
+0.300
+6.00E-05
+1.44E-02
+SLC16A12
+3.02
+0.27
+2.50
+3.55
+2
+8.17E-30
+1.54E-27
+0.866
+6.10E-05
+1.45E-02
+SLC7A8
+1.66
+0.42
+0.83
+2.48
+3
+8.69E-05
+1.01E-03
+0.456
+6.30E-05
+1.48E-02
+TM2D1
+0.51
+0.06
+0.40
+0.62
+3
+1.74E-19
+1.69E-17
+0.487
+6.80E-05
+1.55E-02
+E18
+
+
+PAGE 19
+MT1X
+2.54
+0.53
+1.50
+3.58
+3
+1.74E-06
+3.09E-05
+0.346
+6.70E-05
+1.55E-02
+HIF3A
+1.84
+0.61
+0.65
+3.04
+3
+2.52E-03
+1.74E-02
+0.272
+7.00E-05
+1.56E-02
+NFKBIA
+1.32
+0.13
+1.07
+1.58
+3
+4.64E-24
+6.28E-22
+0.358
+7.10E-05
+1.57E-02
+SLC7A14
+-2.26
+0.25
+-2.74
+-1.77
+2
+1.19E-19
+1.18E-17
+0.780
+7.60E-05
+1.64E-02
+ABLIM1
+0.72
+0.21
+0.32
+1.13
+3
+5.02E-04
+4.52E-03
+0.014
+7.70E-05
+1.64E-02
+PHC2
+1.33
+0.10
+1.14
+1.53
+3
+7.30E-41
+2.42E-38
+0.387
+8.00E-05
+1.68E-02
+NID1
+1.35
+0.47
+0.44
+2.27
+3
+3.69E-03
+2.36E-02
+0.358
+8.00E-05
+1.68E-02
+IER3
+-2.33
+0.57
+-3.45
+-1.21
+3
+4.67E-05
+5.91E-04
+0.283
+8.20E-05
+1.69E-02
+APBB2
+1.00
+0.10
+0.80
+1.21
+3
+9.59E-22
+1.14E-19
+0.062
+8.50E-05
+1.74E-02
+CPA4
+-1.88
+0.54
+-2.94
+-0.81
+3
+5.62E-04
+4.97E-03
+0.170
+9.30E-05
+1.88E-02
+HSD11B1
+2.45
+0.17
+2.11
+2.79
+3
+1.86E-45
+8.50E-43
+0.279
+1.03E-04
+2.04E-02
+PER3
+-1.95
+0.23
+-2.41
+-1.49
+3
+7.16E-17
+5.55E-15
+0.385
+1.03E-04
+2.04E-02
+SEMA3A
+-1.27
+0.30
+-1.85
+-0.70
+3
+1.59E-05
+2.26E-04
+0.442
+1.03E-04
+2.04E-02
+ADRA1B
+2.63
+0.99
+0.69
+4.57
+3
+7.77E-03
+4.26E-02
+0.036
+1.08E-04
+2.05E-02
+HPS5
+1.25
+0.15
+0.97
+1.54
+3
+7.02E-18
+6.05E-16
+0.278
+1.07E-04
+2.06E-02
+EXT1
+-1.06
+0.15
+-1.37
+-0.76
+3
+6.98E-12
+3.26E-10
+0.224
+1.16E-04
+2.19E-02
+PDK4
+2.82
+0.38
+2.07
+3.58
+3
+2.18E-13
+1.21E-11
+0.383
+1.20E-04
+2.24E-02
+RTKN2
+-2.37
+0.53
+-3.42
+-1.32
+2
+9.26E-06
+1.40E-04
+0.726
+1.22E-04
+2.25E-02
+GPRC5B
+1.68
+0.14
+1.40
+1.96
+3
+2.83E-32
+6.49E-30
+0.260
+1.49E-04
+2.60E-02
+SUN2
+1.54
+0.32
+0.91
+2.16
+3
+1.34E-06
+2.44E-05
+0.473
+1.48E-04
+2.61E-02
+ASB13
+1.17
+0.26
+0.66
+1.69
+3
+8.13E-06
+1.24E-04
+0.078
+1.47E-04
+2.62E-02
+CELF2
+1.18
+0.12
+0.95
+1.42
+3
+2.33E-23
+3.07E-21
+0.145
+1.45E-04
+2.62E-02
+GADD45B
+1.05
+0.15
+0.77
+1.34
+3
+9.07E-13
+4.61E-11
+0.245
+1.52E-04
+2.63E-02
+SYNPO2
+1.50
+0.15
+1.21
+1.79
+2
+1.20E-23
+1.59E-21
+0.699
+1.62E-04
+2.78E-02
+BHLHE40
+-1.81
+0.62
+-3.02
+-0.59
+3
+3.62E-03
+2.33E-02
+0.099
+1.69E-04
+2.87E-02
+VEGFA
+-1.49
+0.40
+-2.28
+-0.71
+3
+2.04E-04
+2.11E-03
+0.515
+1.72E-04
+2.87E-02
+CRABP2
+-1.63
+0.16
+-1.95
+-1.32
+3
+3.05E-24
+4.19E-22
+0.171
+1.76E-04
+2.88E-02
+NEXN
+1.39
+0.37
+0.67
+2.12
+2
+1.50E-04
+1.64E-03
+0.740
+1.76E-04
+2.88E-02
+RAI2
+1.32
+0.23
+0.88
+1.76
+3
+4.72E-09
+1.39E-07
+0.418
+1.79E-04
+2.88E-02
+STARD7
+0.94
+0.18
+0.58
+1.29
+3
+2.86E-07
+5.96E-06
+0.469
+1.75E-04
+2.90E-02
+INPP5A
+1.11
+0.10
+0.91
+1.32
+3
+2.28E-26
+3.60E-24
+0.291
+1.88E-04
+2.94E-02
+GGT5
+1.95
+0.58
+0.80
+3.09
+3
+8.68E-04
+7.19E-03
+0.250
+1.88E-04
+2.94E-02
+TRPC6
+1.30
+0.44
+0.44
+2.17
+3
+3.09E-03
+2.05E-02
+0.501
+1.88E-04
+2.94E-02
+MARCKSL1
+-1.15
+0.23
+-1.61
+-0.69
+3
+7.56E-07
+1.45E-05
+0.329
+1.93E-04
+2.97E-02
+RSPO1
+1.65
+0.61
+0.45
+2.84
+2
+6.80E-03
+3.83E-02
+0.725
+1.87E-04
+2.97E-02
+IGFBP2
+2.60
+0.34
+1.94
+3.27
+3
+1.65E-14
+1.05E-12
+0.286
+1.99E-04
+3.04E-02
+CFLAR
+0.95
+0.16
+0.63
+1.26
+3
+3.43E-09
+1.04E-07
+0.149
+2.01E-04
+3.04E-02
+FER1L6
+-2.84
+0.13
+-3.09
+-2.58
+1
+4.60E-106
+8.04E-103
+0.596
+2.06E-04
+3.07E-02
+NR2F2
+0.92
+0.32
+0.29
+1.55
+3
+4.32E-03
+2.68E-02
+0.364
+2.05E-04
+3.08E-02
+TBX18
+-1.79
+0.08
+-1.95
+-1.63
+1
+5.18E-105
+8.30E-102
+0.775
+2.18E-04
+3.22E-02
+ABAT
+1.26
+0.11
+1.03
+1.48
+3
+1.35E-28
+2.45E-26
+0.005
+2.22E-04
+3.26E-02
+AFAP1L1
+2.02
+0.37
+1.30
+2.75
+2
+4.87E-08
+1.18E-06
+0.550
+2.26E-04
+3.29E-02
+CORO6
+2.23
+0.59
+1.08
+3.38
+2
+1.44E-04
+1.58E-03
+0.608
+2.28E-04
+3.29E-02
+E19
+
+
+PAGE 20
+BDKRB2
+-1.97
+0.07
+-2.11
+-1.84
+3
+5.40E-182
+2.59E-178
+0.098
+2.37E-04
+3.40E-02
+CPPED1
+1.06
+0.08
+0.89
+1.22
+3
+1.64E-36
+4.57E-34
+0.170
+2.46E-04
+3.45E-02
+RHOJ
+-1.43
+0.23
+-1.89
+-0.98
+2
+7.21E-10
+2.44E-08
+0.759
+2.44E-04
+3.46E-02
+TIMP4
+2.12
+0.65
+0.85
+3.39
+3
+1.04E-03
+8.37E-03
+0.485
+2.44E-04
+3.46E-02
+PGBD5
+-1.99
+0.17
+-2.32
+-1.66
+3
+2.16E-32
+5.00E-30
+0.386
+2.62E-04
+3.65E-02
+ITGBL1
+1.12
+0.08
+0.96
+1.27
+3
+6.11E-46
+2.94E-43
+0.295
+2.68E-04
+3.65E-02
+OPN3
+1.01
+0.36
+0.30
+1.71
+3
+5.07E-03
+3.04E-02
+0.371
+2.67E-04
+3.66E-02
+SRPX
+1.05
+0.05
+0.95
+1.15
+3
+1.18E-97
+1.75E-94
+0.467
+2.66E-04
+3.68E-02
+TACC1
+0.96
+0.16
+0.64
+1.27
+3
+3.76E-09
+1.13E-07
+0.475
+2.84E-04
+3.69E-02
+LDB2
+-1.38
+0.15
+-1.68
+-1.08
+3
+2.87E-19
+2.72E-17
+0.312
+2.73E-04
+3.69E-02
+GXYLT2
+-1.52
+0.07
+-1.66
+-1.38
+1
+2.11E-97
+2.90E-94
+0.632
+2.83E-04
+3.70E-02
+RPS6KA2
+0.75
+0.12
+0.51
+1.00
+3
+1.56E-09
+5.07E-08
+0.433
+2.79E-04
+3.71E-02
+CD302
+1.52
+0.26
+1.01
+2.03
+2
+6.59E-09
+1.87E-07
+0.624
+2.79E-04
+3.71E-02
+TCEAL4
+1.29
+0.16
+0.98
+1.60
+3
+3.20E-16
+2.36E-14
+0.479
+2.77E-04
+3.72E-02
+ACSS1
+1.78
+0.66
+0.49
+3.06
+2
+6.68E-03
+3.78E-02
+0.543
+2.93E-04
+3.78E-02
+ULK2
+1.20
+0.06
+1.08
+1.31
+3
+6.76E-94
+8.67E-91
+0.510
+2.96E-04
+3.79E-02
+ADRA2A
+-2.33
+0.84
+-3.98
+-0.67
+3
+5.84E-03
+3.40E-02
+0.036
+3.01E-04
+3.83E-02
+DAAM2
+1.18
+0.20
+0.78
+1.58
+3
+8.83E-09
+2.44E-07
+0.185
+3.14E-04
+3.97E-02
+NT5E
+-0.87
+0.25
+-1.37
+-0.38
+3
+4.84E-04
+4.40E-03
+0.366
+3.24E-04
+4.07E-02
+PER2
+-1.17
+0.37
+-1.90
+-0.44
+3
+1.80E-03
+1.31E-02
+0.385
+3.35E-04
+4.18E-02
+OMD
+1.79
+0.21
+1.38
+2.20
+3
+8.50E-18
+7.26E-16
+0.371
+3.47E-04
+4.27E-02
+JADE1
+1.17
+0.27
+0.65
+1.69
+3
+1.18E-05
+1.74E-04
+0.295
+3.50E-04
+4.28E-02
+MXRA5
+-1.31
+0.17
+-1.64
+-0.97
+3
+1.71E-14
+1.08E-12
+0.349
+3.46E-04
+4.29E-02
+C1QTNF1
+1.09
+0.17
+0.75
+1.43
+3
+4.20E-10
+1.50E-08
+0.112
+3.69E-04
+4.49E-02
+CPM
+1.73
+0.66
+0.43
+3.02
+3
+9.04E-03
+4.78E-02
+0.170
+3.78E-04
+4.51E-02
+ALCAM
+1.18
+0.45
+0.31
+2.05
+3
+8.11E-03
+4.40E-02
+0.047
+3.74E-04
+4.52E-02
+RNF144B
+2.22
+0.49
+1.27
+3.18
+2
+5.18E-06
+8.30E-05
+0.768
+3.77E-04
+4.53E-02
+PLPP3
+-0.85
+0.30
+-1.44
+-0.25
+3
+5.23E-03
+3.12E-02
+0.395
+3.90E-04
+4.63E-02
+ANPEP
+1.16
+0.13
+0.90
+1.42
+3
+3.13E-18
+2.73E-16
+0.058
+4.11E-04
+4.85E-02
+AQP3
+-1.85
+0.50
+-2.84
+-0.86
+3
+2.37E-04
+2.39E-03
+0.067
+4.18E-04
+4.87E-02
+GALNT15
+1.55
+0.26
+1.03
+2.06
+2
+4.15E-09
+1.24E-07
+0.609
+4.17E-04
+4.89E-02
+SLC4A7
+-1.19
+0.25
+-1.67
+-0.71
+3
+1.21E-06
+2.25E-05
+0.455
+4.26E-04
+4.93E-02
+CI, confidence interval; df, degree of freedom; FDR, false discovery rate; SE, standard error.
+E20
+
+
+PAGE 21
+Table E7. Significant genes (N = 8) identified by integration of three studies of childhood acute 
+lymphoblastic leukemia. For rank-based method, if all simulated rank products are larger than 
+the observed rank product, the corresponding p-values and FDR will be zero.
+Effect-size-based method
+Rank-based method
+Gene
+Log2 
+Fold 
+Change
+SE
+95% CI 
+lower 
+bound
+95% CI 
+upper 
+bound
+df
+P-value
+Q-value
+Rank 
+Product
+P-value
+FDR
+FKBP5
+1.86
+0.08
+1.70
+2.03
+2
+9.64E-112
+8.73E-108
+0.311
+0
+0
+TNFSF8
+2.71
+0.35
+2.03
+3.39
+2
+6.09E-15
+1.58E-12
+0.720
+1.00E-06
+9.05E-03
+NR3C1
+1.54
+0.06
+1.43
+1.65
+2
+1.57E-158
+2.84E-154
+0.478
+2.00E-06
+1.03E-02
+TSC22D3
+3.84
+0.65
+2.56
+5.12
+2
+3.78E-09
+3.76E-07
+0.739
+2.00E-06
+1.03E-02
+RUNX2
+3.16
+0.20
+2.76
+3.56
+2
+9.03E-54
+1.63E-50
+0.589
+4.00E-06
+1.45E-02
+NFIL3
+1.70
+0.10
+1.50
+1.89
+2
+6.94E-64
+1.57E-60
+0.470
+5.00E-06
+1.51E-02
+SMAP2
+1.23
+0.06
+1.11
+1.34
+2
+5.91E-102
+3.57E-98
+0.632
+1.80E-05
+4.07E-02
+PFKFB2
+2.27
+0.42
+1.44
+3.10
+2
+7.45E-08
+5.35E-06
+0.515
+1.70E-05
+4.40E-02
+CI, confidence interval; df, degree of freedom; FDR, false discovery rate; SE, standard error.
+E21
+
+
+PAGE 22
+Table E8. Significant genes (N = 78) identified by integration of three studies of macrophage. 
+For rank-based method, if all simulated rank products are larger than the observed rank product, 
+the corresponding p-values and FDR will be zero.
+Effect-size-based method
+Rank-based method
+Gene
+Log2 
+Fold 
+Change
+SE
+95% CI 
+lower 
+bound
+95% CI 
+upper 
+bound
+df
+P-value
+Q-value
+Rank 
+Product
+P-value
+FDR
+FKBP5
+3.29
+0.17
+2.96
+3.62
+2
+2.25E-83
+1.89E-79
+0.292
+0
+0
+ITPKC
+1.50
+0.10
+1.30
+1.71
+2
+8.09E-47
+2.72E-43
+0.365
+0
+0
+TSC22D3
+2.94
+0.35
+2.26
+3.63
+2
+4.31E-17
+1.95E-14
+0.703
+0
+0
+SESN1
+2.33
+0.35
+1.64
+3.01
+2
+2.74E-11
+5.62E-09
+0.582
+0
+0
+KIF13B
+1.26
+0.20
+0.87
+1.65
+2
+3.21E-10
+5.39E-08
+0.374
+0
+0
+ALOX15B
+4.15
+0.67
+2.85
+5.46
+2
+4.51E-10
+7.43E-08
+0.053
+0
+0
+SAP30
+2.42
+0.46
+1.51
+3.32
+2
+1.67E-07
+1.57E-05
+0.571
+0
+0
+SIAH2
+1.69
+0.37
+0.97
+2.41
+2
+4.30E-06
+2.76E-04
+0.589
+0
+0
+IL4I1
+-2.21
+0.53
+-3.25
+-1.16
+2
+3.31E-05
+1.55E-03
+0.357
+0
+0
+PTEN
+1.15
+0.18
+0.79
+1.51
+2
+3.05E-10
+5.22E-08
+0.527
+2.00E-06
+2.92E-03
+JDP2
+1.48
+0.41
+0.69
+2.28
+2
+2.63E-04
+8.29E-03
+0.365
+2.00E-06
+2.92E-03
+ZCCHC6
+1.68
+0.12
+1.44
+1.92
+2
+4.46E-44
+1.25E-40
+0.764
+3.00E-06
+3.73E-03
+DDIT4
+2.79
+0.32
+2.16
+3.41
+2
+2.21E-18
+1.20E-15
+0.235
+4.00E-06
+4.48E-03
+GRB10
+2.54
+0.12
+2.30
+2.78
+1
+1.83E-93
+3.07E-89
+0.325
+6.00E-06
+6.11E-03
+NUDT16
+1.78
+0.24
+1.32
+2.25
+2
+3.31E-14
+1.09E-11
+0.465
+6.00E-06
+6.11E-03
+TFCP2L1
+2.42
+0.44
+1.56
+3.28
+1
+3.40E-08
+3.82E-06
+0.661
+8.00E-06
+7.47E-03
+ZBTB16
+5.02
+0.29
+4.46
+5.59
+1
+1.36E-68
+5.72E-65
+0.758
+9.00E-06
+7.96E-03
+TBC1D16
+2.37
+0.39
+1.60
+3.14
+1
+1.64E-09
+2.46E-07
+0.650
+1.10E-05
+9.24E-03
+PLEKHA7
+2.12
+0.21
+1.71
+2.54
+1
+2.07E-23
+1.83E-20
+0.502
+1.20E-05
+9.60E-03
+DAAM2
+2.70
+0.62
+1.49
+3.91
+1
+1.16E-05
+6.58E-04
+0.230
+2.50E-05
+1.17E-02
+HMGB2
+1.52
+0.35
+0.83
+2.21
+2
+1.49E-05
+8.09E-04
+0.341
+2.40E-05
+1.17E-02
+VASH1
+-1.23
+0.39
+-1.99
+-0.46
+2
+1.61E-03
+3.29E-02
+0.732
+2.40E-05
+1.17E-02
+TPST1
+2.16
+0.50
+1.18
+3.15
+2
+1.68E-05
+8.81E-04
+0.693
+2.60E-05
+1.18E-02
+RAB7B
+-1.68
+0.28
+-2.23
+-1.13
+2
+2.49E-09
+3.58E-07
+0.535
+2.30E-05
+1.19E-02
+GPR68
+-2.00
+0.67
+-3.30
+-0.70
+2
+2.64E-03
+4.65E-02
+0.323
+2.30E-05
+1.19E-02
+FMN1
+1.76
+0.20
+1.36
+2.16
+2
+6.10E-18
+3.01E-15
+0.294
+2.70E-05
+1.19E-02
+NFKBIE
+-1.07
+0.16
+-1.38
+-0.76
+2
+2.11E-11
+4.48E-09
+0.453
+1.90E-05
+1.20E-02
+PIK3IP1
+1.64
+0.25
+1.16
+2.13
+2
+2.53E-11
+5.26E-09
+0.497
+1.90E-05
+1.20E-02
+TFPI
+1.84
+0.26
+1.33
+2.34
+2
+7.08E-13
+1.86E-10
+0.661
+1.80E-05
+1.21E-02
+SLC7A11
+-3.48
+0.18
+-3.84
+-3.12
+2
+1.32E-79
+7.42E-76
+0.608
+1.70E-05
+1.22E-02
+ATF5
+-1.42
+0.22
+-1.85
+-1.00
+2
+6.73E-11
+1.33E-08
+0.096
+1.60E-05
+1.22E-02
+PLAU
+-1.49
+0.15
+-1.79
+-1.20
+2
+2.41E-23
+2.03E-20
+0.501
+2.20E-05
+1.23E-02
+KLF9
+1.50
+0.33
+0.86
+2.14
+2
+4.12E-06
+2.68E-04
+0.377
+2.20E-05
+1.23E-02
+SIRT5
+1.01
+0.30
+0.43
+1.59
+2
+6.63E-04
+1.70E-02
+0.590
+2.20E-05
+1.23E-02
+MERTK
+1.66
+0.29
+1.10
+2.22
+2
+6.99E-09
+9.32E-07
+0.421
+2.90E-05
+1.25E-02
+IRAK3
+1.50
+0.14
+1.23
+1.76
+2
+2.79E-28
+4.26E-25
+0.361
+2.10E-05
+1.26E-02
+TNFSF13B
+-1.35
+0.32
+-1.98
+-0.71
+2
+3.08E-05
+1.45E-03
+0.686
+3.60E-05
+1.48E-02
+E22
+
+
+PAGE 23
+SLA
+1.25
+0.11
+1.03
+1.47
+2
+4.57E-29
+7.68E-26
+0.591
+4.30E-05
+1.66E-02
+PDK4
+3.08
+0.56
+1.98
+4.18
+2
+3.62E-08
+4.03E-06
+0.488
+4.30E-05
+1.66E-02
+HIVEP1
+-1.54
+0.19
+-1.91
+-1.16
+2
+1.19E-15
+4.64E-13
+0.339
+4.60E-05
+1.72E-02
+ENOX2
+0.88
+0.16
+0.56
+1.20
+2
+7.38E-08
+7.51E-06
+0.266
+4.90E-05
+1.79E-02
+MDM2
+1.32
+0.43
+0.48
+2.15
+2
+1.97E-03
+3.83E-02
+0.419
+5.80E-05
+1.87E-02
+FRAT1
+1.85
+0.39
+1.10
+2.61
+2
+1.66E-06
+1.19E-04
+0.297
+5.70E-05
+1.88E-02
+THBS1
+3.82
+1.23
+1.41
+6.22
+2
+1.90E-03
+3.73E-02
+0.663
+5.60E-05
+1.88E-02
+SH3PXD2B
+2.07
+0.60
+0.89
+3.26
+2
+6.09E-04
+1.58E-02
+0.587
+5.50E-05
+1.91E-02
+SMAP2
+1.21
+0.09
+1.02
+1.39
+2
+2.73E-38
+6.54E-35
+0.611
+5.40E-05
+1.93E-02
+GPR34
+1.50
+0.49
+0.55
+2.45
+2
+2.03E-03
+3.89E-02
+0.322
+6.70E-05
+2.08E-02
+MTMR11
+2.28
+0.69
+0.93
+3.63
+1
+8.96E-04
+2.12E-02
+0.438
+7.30E-05
+2.23E-02
+JAKMIP2
+-1.77
+0.18
+-2.11
+-1.42
+2
+8.29E-24
+7.74E-21
+0.365
+7.70E-05
+2.29E-02
+CPM
+1.56
+0.48
+0.62
+2.51
+1
+1.20E-03
+2.64E-02
+0.214
+7.70E-05
+2.29E-02
+PHC2
+0.91
+0.21
+0.50
+1.32
+2
+1.20E-05
+6.79E-04
+0.494
+9.30E-05
+2.65E-02
+ORMDL1
+0.81
+0.20
+0.41
+1.21
+2
+6.33E-05
+2.67E-03
+0.474
+1.17E-04
+3.22E-02
+CIITA
+-2.02
+0.54
+-3.08
+-0.96
+2
+1.87E-04
+6.34E-03
+0.196
+1.20E-04
+3.25E-02
+GLUL
+1.05
+0.20
+0.65
+1.45
+2
+2.40E-07
+2.13E-05
+0.314
+1.23E-04
+3.28E-02
+TSPAN14
+0.77
+0.11
+0.56
+0.97
+2
+3.40E-13
+9.74E-11
+0.705
+1.25E-04
+3.28E-02
+SGMS2
+1.49
+0.41
+0.69
+2.30
+1
+2.66E-04
+8.38E-03
+0.585
+1.30E-04
+3.31E-02
+TXNIP
+1.33
+0.20
+0.94
+1.72
+2
+1.45E-11
+3.12E-09
+0.715
+1.40E-04
+3.41E-02
+ICAM1
+-0.99
+0.25
+-1.48
+-0.51
+2
+6.45E-05
+2.72E-03
+0.349
+1.38E-04
+3.41E-02
+DUSP1
+1.82
+0.50
+0.83
+2.80
+2
+3.13E-04
+9.45E-03
+0.253
+1.37E-04
+3.44E-02
+USP53
+1.62
+0.36
+0.91
+2.33
+1
+8.13E-06
+4.78E-04
+0.729
+1.50E-04
+3.60E-02
+RASSF5
+-0.93
+0.09
+-1.10
+-0.76
+2
+1.05E-26
+1.26E-23
+0.541
+1.57E-04
+3.72E-02
+TMEM39A
+1.03
+0.08
+0.87
+1.19
+2
+2.54E-36
+5.33E-33
+0.678
+1.74E-04
+4.06E-02
+GADD45B
+1.45
+0.38
+0.71
+2.20
+2
+1.37E-04
+5.04E-03
+0.303
+1.97E-04
+4.19E-02
+PMS1
+0.98
+0.20
+0.59
+1.38
+2
+1.23E-06
+9.14E-05
+0.506
+2.01E-04
+4.22E-02
+PTPRE
+-1.25
+0.32
+-1.87
+-0.62
+2
+9.94E-05
+3.81E-03
+0.529
+1.96E-04
+4.22E-02
+METTL7A
+1.49
+0.27
+0.95
+2.02
+2
+4.79E-08
+5.26E-06
+0.422
+1.95E-04
+4.25E-02
+IL13RA1
+0.91
+0.20
+0.51
+1.31
+2
+7.71E-06
+4.59E-04
+0.355
+1.90E-04
+4.26E-02
+PER1
+1.74
+0.51
+0.75
+2.73
+1
+5.98E-04
+1.56E-02
+0.909
+1.93E-04
+4.27E-02
+PRKCE
+1.77
+0.39
+1.01
+2.53
+1
+4.96E-06
+3.12E-04
+0.519
+2.18E-04
+4.47E-02
+SRC
+-1.21
+0.40
+-1.99
+-0.43
+2
+2.32E-03
+4.24E-02
+0.628
+2.24E-04
+4.53E-02
+S1PR2
+-1.06
+0.19
+-1.44
+-0.68
+2
+5.80E-08
+6.12E-06
+0.569
+2.40E-04
+4.63E-02
+FES
+1.17
+0.30
+0.58
+1.77
+2
+1.04E-04
+3.97E-03
+0.289
+2.35E-04
+4.64E-02
+ABLIM3
+1.87
+0.24
+1.40
+2.35
+1
+1.10E-14
+3.90E-12
+0.011
+2.38E-04
+4.65E-02
+SLAMF1
+1.80
+0.54
+0.74
+2.85
+2
+8.78E-04
+2.10E-02
+0.591
+2.47E-04
+4.72E-02
+LRRK2
+1.24
+0.11
+1.02
+1.45
+2
+3.64E-29
+6.80E-26
+0.406
+2.51E-04
+4.74E-02
+MTSS1
+1.57
+0.37
+0.85
+2.29
+2
+1.76E-05
+9.18E-04
+0.439
+2.63E-04
+4.80E-02
+SLC2A6
+-1.48
+0.49
+-2.44
+-0.52
+2
+2.43E-03
+4.38E-02
+0.600
+2.77E-04
+4.95E-02
+FBLN5
+3.03
+0.85
+1.37
+4.68
+2
+3.41E-04
+1.01E-02
+0.285
+2.75E-04
+4.97E-02
+CI, confidence interval; df, degree of freedom; FDR, false discovery rate; SE, standard error.
+E23
+
+
+PAGE 24
+Table E9. CEBPD Expression Changes in Response to Glucocorticoid Exposure in all ASM 
+Studies. Expression levels for RNA-Seq studies GSE94335 and SRP033351 are quantified as 
+normalized counts, and for gene expression microarray studies GSE13168 and GSE34313 are 
+quantified as post-RMA intensity.
+Mean Expression Levels
+Study
+Log2 Fold Change
+Q-value
+Glucocorticoid
+Control
+GSE94335 fatal asthma
+0.48
+3.20E-02
+1155.43
+821.12
+GSE94335 non-asthma
+0.93
+2.71E-05
+1453.71
+808.02
+SRP033351
+1.50
+1.90E-38
+2900.97
+1026.54
+GSE13168
+1.20
+3.95E-01
+11.16
+9.96
+GSE34313
+2.01
+3.02E-06
+15.73
+13.72
+Non-asthma ASM integration
+1.43
+6.52E-08
+N/A
+N/A
+E24
+
+
+PAGE 25
+Table E10. Summary of CEBPD and its Glucocorticoid Responsiveness-Related Role.
+Gene Name
+Ensembl ID
+Genomic 
+Coordinates
+Glucocorticoid Responsiveness-Related Evidence
+CCAAT/enhancer 
+binding protein 
+(C/EBP), delta
+ENSG00000221869
+chr8:47736909-
+47739086
+Encodes a family of  C/EBP transcription factors regulating a wide variety 
+of processes, including inflammation, cell growth arrest and differentiation 
+(48-50)
+mRNA expression is up-regulated by glucocorticoids in ASM (3, 31), lung 
+epithelium (43, 51), skeletal muscle (52) and adipocytes and adipocytes 
+(53, 54).
+In A549 cells, transcription is induced by dexamethasone via glucocorticoid 
+receptor occupancy (43)
+In lymphoblastoid cell lines, mRNA expression is increased in asthma vs. 
+non-asthma subjects (35)
+E25
+
+
+PAGE 26
+Figure Legends
+Figure E1. RNA-Seq data quality control. A) Estimated read coverage across transcripts for 
+each sample. Position and coverage are normalized by adjusting for transcript lengths and total 
+number of reads per sample. B) Correlation between observed ERCC transcript read counts vs. 
+expected ERCC transcript molecules. Use sample 28788 as an example. C) Gene expression of 
+the housekeeping genes GABARAP and RPL19 by condition status (i.e. budesonide vs. control in 
+fatal asthma-derived and non-asthma-derived ASM). RNA-Seq results showed high levels of 
+expression for each gene that did not significantly differ by condition status. BUD, budesonide.
+Figure E2. Volcano plots of differential expression results for fatal asthma-derived vs. non-
+asthma-derived ASM A) exposed to control and B) exposed to budesonide. The y-axis 
+corresponds to the negative log (base 10) of Benjamini-Hochberg corrected p-value (q-values) 
+while the x-axis corresponds to the log (base 2) transformed fold change for difference in 
+expression between categories. Differentially expressed transcripts according to a q-value <0.05 
+are colored in red.
+Figure E3. Venn diagram of the significant genes in comparisons of glucocorticoids vs. control 
+in chALL (lime green), ASM (green), and macrophage (orange), LCL (purple), and U2OS 
+(pink). Significant genes in chALL, ASM, and macrophage cells are from integrated differential 
+expression results, while in LCL and U2OS cells are from single study differential expression 
+results. ASM: airway smooth muscle; chALL: childhood acute lymphoblastic leukemia; LEL: 
+lymphoblastoid cell line; U2OS: human bone osteosarcoma epithelial cell line.
+E26
+
+
+PAGE 27
+Figure E4. CEBPD expression changes in response to glucocorticoid exposure across all cell 
+types considered. A) Cell type-specific differential expression results show that CEBPD had 
+statistically significant changes in ASM and U2OS cells. B) Sample-specific expression results 
+for all ASM studies show consistent increase of CEBPD in response to glucocorticoids, with the 
+smallest fold change observed in fatal asthma donor-derived ASM. ASM: airway smooth 
+muscle; BE: bronchial epithelium; chALL: childhood acute lymphoblastic leukemia; LEL: 
+lymphoblastoid cell line; MCF10A-Myc: immortalized human mammary epithelial cell line 
+MCF10A overexpressing c-Myc; RMA: robust multi-array average; U2OS: human bone 
+osteosarcoma epithelial cell line.
+E27
+
+
+PAGE 28
+References
+1.
+Panettieri RA, Murray RK, DePalo LR, Yadvish PA, Kotlikoff MI. A human airway
+smooth muscle cell line that retains physiological responsiveness. Am J Physiol 1989;256(2 Pt 
+1):C329-335.
+2.
+Cooper PR, Mesaros AC, Zhang J, Christmas P, Stark CM, Douaidy K, Mittelman MA,
+Soberman RJ, Blair IA, Panettieri RA. 20-hete mediates ozone-induced, neutrophil-independent 
+airway hyper-responsiveness in mice. PLoS One 2010;5(4):e10235.
+3.
+Himes BE, Jiang X, Wagner P, Hu R, Wang Q, Klanderman B, Whitaker RM, Duan Q,
+Lasky-Su J, Nikolos C, et al. Rna-seq transcriptome profiling identifies crispld2 as a 
+glucocorticoid responsive gene that modulates cytokine function in airway smooth muscle cells. 
+PLoS One 2014;9(6):e99625.
+4.
+Himes BE, Koziol-White C, Johnson M, Nikolos C, Jester W, Klanderman B, Litonjua
+AA, Tantisira KG, Truskowski K, MacDonald K, et al. Vitamin d modulates expression of the 
+airway smooth muscle transcriptome in fatal asthma. PLoS One 2015;10(7):e0134057.
+5.
+Bolger AM, Lohse M, Usadel B. Trimmomatic: A flexible trimmer for illumina sequence
+data. Bioinformatics 2014.
+6.
+Andrews S. Fastqc a quality control tool for high throughput sequence data. Available
+from: http://www.bioinformatics.babraham.ac.uk/projects/fastqc/ 
+7.
+Dobin A, Davis CA, Schlesinger F, Drenkow J, Zaleski C, Jha S, Batut P, Chaisson M,
+Gingeras TR. Star: Ultrafast universal rna-seq aligner. Bioinformatics 2013;29(1):15-21.
+8.
+Barnett DW, Garrison EK, Quinlan AR, Stromberg MP, Marth GT. Bamtools: A c++ api
+and toolkit for analyzing and managing bam files. Bioinformatics 2011;27(12):1691-1692.
+E28
+
+
+PAGE 29
+9.
+Anders S, Pyl PT, Huber W. Htseq--a python framework to work with high-throughput
+sequencing data. Bioinformatics 2015;31(2):166-169.
+10.
+Mortazavi A, Williams BA, McCue K, Schaeffer L, Wold B. Mapping and quantifying
+mammalian transcriptomes by rna-seq. Nat Methods 2008;5(7):621-628.
+11.
+Love MI, Huber W, Anders S. Moderated estimation of fold change and dispersion for
+rna-seq data with deseq2. Genome Biol 2014;15(12):550.
+12.
+Durinck S, Moreau Y, Kasprzyk A, Davis S, De Moor B, Brazma A, Huber W. Biomart
+and bioconductor: A powerful link between biological databases and microarray data analysis. 
+Bioinformatics 2005;21(16):3439-3440.
+13.
+Sergushichev A. An algorithm for fast preranked gene set enrichment analysis using
+cumulative statistic calculation. bioRxiv 2016.
+14.
+Kauffmann A, Gentleman R, Huber W. Arrayqualitymetrics--a bioconductor package for
+quality assessment of microarray data. Bioinformatics 2009;25(3):415-416.
+15.
+Ritchie ME, Phipson B, Wu D, Hu Y, Law CW, Shi W, Smyth GK. Limma powers
+differential expression analyses for rna-sequencing and microarray studies. Nucleic Acids Res 
+2015;43(7):e47.
+16.
+Love MI, Anders S, Kim V, Huber W. Rna-seq workflow: Gene-level exploratory
+analysis and differential expression. F1000Res 2015;4:1070.
+17.
+Leek JT, Johnson WE, Parker HS, Jaffe AE, Storey JD. The sva package for removing
+batch effects and other unwanted variation in high-throughput experiments. Bioinformatics 
+2012;28(6):882-883.
+E29
+
+
+PAGE 30
+18.
+Shumyatcher M, Hong R, Levin J, Himes BE. Disease-specific integration of omics data
+to guide functional validation of genetic associations. AMIA Annu Symp Proc 2017;2017:1589-
+1596.
+19.
+DerSimonian R, Laird N. Meta-analysis in clinical trials. Control Clin Trials
+1986;7(3):177-188.
+20.
+Breitling R, Armengaud P, Amtmann A, Herzyk P. Rank products: A simple, yet
+powerful, new method to detect differentially regulated genes in replicated microarray 
+experiments. FEBS Lett 2004;573(1-3):83-92.
+21.
+Lumley T. Rmeta: Meta-analysis. R package version 216 2012.
+22.
+Rozsa FW, Reed DM, Scott KM, Pawar H, Moroi SE, Kijek TG, Krafchak CM, Othman
+MI, Vollrath D, Elner VM, et al. Gene expression profile of human trabecular meshwork cells in 
+response to long-term dexamethasone exposure. Mol Vis 2006;12:125-141.
+23.
+Comes N, Buie LK, Borras T. Evidence for a role of angiopoietin-like 7 (angptl7) in
+extracellular matrix formation of the human trabecular meshwork: Implications for glaucoma. 
+Genes Cells 2011;16(2):243-259.
+24.
+Wang ZQ, Xing WM, Fan HH, Wang KS, Zhang HK, Wang QW, Qi J, Yang HM, Yang
+J, Ren YN, et al. The novel lipopolysaccharide-binding protein crispld2 is a critical serum 
+protein to regulate endotoxin function. J Immunol 2009;183(10):6646-6656.
+25.
+Sasse SK, Kadiyala V, Danhorn T, Panettieri RA, Jr., Phang TL, Gerber AN.
+Glucocorticoid receptor chip-seq identifies plcd1 as a klf15 target that represses airway smooth 
+muscle hypertrophy. Am J Respir Cell Mol Biol 2017;57(2):226-237.
+E30
+
+
+PAGE 31
+26.
+Himes BE, Jiang X, Hu R, Wu AC, Lasky-Su JA, Klanderman BJ, Ziniti J, Senter-Sylvia
+J, Lima JJ, Irvin CG, et al. Genome-wide association analysis in asthma subjects identifies 
+spats2l as a novel bronchodilator response gene. PLoS Genet 2012;8(7):e1002824.
+27.
+Schmidt MV, Schulke JP, Liebl C, Stiess M, Avrabos C, Bock J, Wochnik GM, Davies
+HA, Zimmermann N, Scharf SH, et al. Tumor suppressor down-regulated in renal cell carcinoma 
+1 (drr1) is a stress-induced actin bundling factor that modulates synaptic efficacy and cognition. 
+Proc Natl Acad Sci U S A 2011;108(41):17213-17218.
+28.
+Slezak M, Korostynski M, Gieryk A, Golda S, Dzbek J, Piechota M, Wlazlo E, Bilecki
+W, Przewlocki R. Astrocytes are a neural target of morphine action via glucocorticoid receptor-
+dependent signaling. Glia 2013;61(4):623-635.
+29.
+Frijters R, Fleuren W, Toonen EJ, Tuckermann JP, Reichardt HM, van der Maaden H,
+van Elsas A, van Lierop MJ, Dokter W, de Vlieg J, et al. Prednisolone-induced differential gene 
+expression in mouse liver carrying wild type or a dimerization-defective glucocorticoid receptor. 
+BMC Genomics 2010;11:359.
+30.
+Binder EB. The role of fkbp5, a co-chaperone of the glucocorticoid receptor in the
+pathogenesis and therapy of affective and anxiety disorders. Psychoneuroendocrinology 2009;34 
+Suppl 1:S186-195.
+31.
+Leigh R, Mostafa MM, King EM, Rider CF, Shah S, Dumonceaux C, Traves SL,
+McWhae A, Kolisnik T, Kooi C, et al. An inhaled dose of budesonide induces genes involved in 
+transcription and signaling in the human airways: Enhancement of anti- and proinflammatory 
+effector genes. Pharmacol Res Perspect 2016;4(4):e00243.
+E31
+
+
+PAGE 32
+32.
+Kelly MM, King EM, Rider CF, Gwozd C, Holden NS, Eddleston J, Zuraw B, Leigh R,
+O'Byrne PM, Newton R. Corticosteroid-induced gene expression in allergen-challenged 
+asthmatic subjects taking inhaled budesonide. Br J Pharmacol 2012;165(6):1737-1747.
+33.
+Masuno K, Haldar SM, Jeyaraj D, Mailloux CM, Huang X, Panettieri RA, Jr., Jain MK,
+Gerber AN. Expression profiling identifies klf15 as a glucocorticoid target that regulates airway 
+hyperresponsiveness. Am J Respir Cell Mol Biol 2011;45(3):642-649.
+34.
+Misior AM, Deshpande DA, Loza MJ, Pascual RM, Hipp JD, Penn RB. Glucocorticoid- 
+and protein kinase a-dependent transcriptome regulation in airway smooth muscle. Am J Respir 
+Cell Mol Biol 2009;41(1):24-39.
+35.
+Sharma S, Kho AT, Chhabra D, Qiu W, Gaedigk R, Vyhlidal CA, Leeder JS, Barraza-
+Villarreal A, London SJ, Gilliland F, et al. Glucocorticoid genes and the developmental origins 
+of asthma susceptibility and treatment response. Am J Respir Cell Mol Biol 2015;52(5):543-553.
+36.
+Wang Y, Watford M. Glutamine, insulin and glucocorticoids regulate glutamine
+synthetase expression in c2c12 myotubes, hep g2 hepatoma cells and 3t3 l1 adipocytes. Biochim 
+Biophys Acta 2007;1770(4):594-600.
+37.
+Feng B, Hilt DC, Max SR. Transcriptional regulation of glutamine synthetase gene
+expression by dexamethasone in l6 muscle cells. J Biol Chem 1990;265(30):18702-18706.
+38.
+An BC, Jung NK, Park CY, Oh IJ, Choi YD, Park JI, Lee SW. Epigenetic and
+glucocorticoid receptor-mediated regulation of glutathione peroxidase 3 in lung cancer cells. Mol 
+Cells 2016;39(8):631-638.
+39.
+Huo L, Wang L, Yang Z, Li P, Geng D, Xu Y. Prednisolone induces osteoporosis-like
+phenotypes via focal adhesion signaling pathway in zebrafish larvae. Biol Open 2018;7(7).
+E32
+
+
+PAGE 33
+40.
+Huang B, Wu P, Bowker-Kinley MM, Harris RA. Regulation of pyruvate dehydrogenase
+kinase expression by peroxisome proliferator-activated receptor-alpha ligands, glucocorticoids, 
+and insulin. Diabetes 2002;51(2):276-283.
+41.
+Connaughton S, Chowdhury F, Attia RR, Song S, Zhang Y, Elam MB, Cook GA, Park
+EA. Regulation of pyruvate dehydrogenase kinase isoform 4 (pdk4) gene expression by 
+glucocorticoids and insulin. Mol Cell Endocrinol 2010;315(1-2):159-167.
+42.
+Burioka N, Fukuoka Y, Takata M, Endo M, Miyata M, Chikumi H, Tomita K, Kodani M,
+Touge H, Takeda K, et al. Circadian rhythms in the cns and peripheral clock disorders: Function 
+of clock genes: Influence of medication for bronchial asthma on circadian gene. J Pharmacol Sci 
+2007;103(2):144-149.
+43.
+Reddy TE, Pauli F, Sprouse RO, Neff NF, Newberry KM, Garabedian MJ, Myers RM.
+Genomic determination of the glucocorticoid response reveals unexpected mechanisms of gene 
+regulation. Genome Res 2009;19(12):2163-2171.
+44.
+Swanson C, Lorentzon M, Conaway HH, Lerner UH. Glucocorticoid regulation of
+osteoclast differentiation and expression of receptor activator of nuclear factor-kappab (nf-
+kappab) ligand, osteoprotegerin, and receptor activator of nf-kappab in mouse calvarial bones. 
+Endocrinology 2006;147(7):3613-3622.
+45.
+Eddleston J, Herschbach J, Wagelie-Steffen AL, Christiansen SC, Zuraw BL. The anti-
+inflammatory effect of glucocorticoids is mediated by glucocorticoid-induced leucine zipper in 
+epithelial cells. J Allergy Clin Immunol 2007;119(1):115-122.
+46.
+Panettieri RA, Jr. Effects of corticosteroids on structural cells in asthma and chronic
+obstructive pulmonary disease. Proc Am Thorac Soc 2004;1(3):231-234.
+E33
+
+
+PAGE 34
+47.
+Atsuta J, Plitt J, Bochner BS, Schleimer RP. Inhibition of vcam-1 expression in human
+bronchial epithelial cells by glucocorticoids. Am J Respir Cell Mol Biol 1999;20(4):643-650.
+48.
+Hendricks-Taylor LR, Darlington GJ. Inhibition of cell proliferation by c/ebp alpha
+occurs in many cell types, does not require the presence of p53 or rb, and is not affected by large 
+t-antigen. Nucleic acids research 1995.
+49.
+Lekstrom-Himes J, Xanthopoulos KG. Biological role of the ccaat/enhancer-binding
+protein family of transcription factors. The Journal of biological chemistry 1998;273(44):28545-
+28548.
+50.
+Miglino N, Roth M, Tamm M, Borger P. Asthma and copd - the c/ebp connection. The
+open respiratory medicine journal 2012;6:1-13.
+51.
+Berg T, Cassel TN, Schwarze PE, Nord M. Glucocorticoids regulate the ccsp and cyp2b1
+promoters via c/ebpbeta and delta in lung cells. Biochem Biophys Res Commun 2002;293(3):907-
+912.
+52.
+Yang H, Mammen J, Wei W, Menconi M, Evenson A, Fareed M, Petkova V, Hasselgren
+PO. Expression and activity of c/ebpbeta and delta are upregulated by dexamethasone in skeletal 
+muscle. J Cell Physiol 2005;204(1):219-226.
+53.
+MacDougald OA, Cornelius P, Lin FT, Chen SS, Lane MD. Glucocorticoids reciprocally
+regulate expression of the ccaat/enhancer-binding protein alpha and delta genes in 3t3-l1 
+adipocytes and white adipose tissue. J Biol Chem 1994;269(29):19041-19047.
+54.
+Yeh WC, Cao Z, Classon M, McKnight SL. Cascade regulation of terminal adipocyte
+differentiation by three members of the c/ebp family of leucine zipper proteins. Genes Dev 
+1995;9(2):168-181.
+E34
+
+
+PAGE 35
+Figure E1 
+157x183mm (300 x 300 DPI) 
+E35
+
+
+PAGE 36
+Figure E2 
+167x75mm (300 x 300 DPI) 
+E36
+
+
+PAGE 37
+Figure E3 
+128x125mm (300 x 300 DPI) 
+E37
+
+
+PAGE 38
+Figure E4 
+166x196mm (300 x 300 DPI) 
+E38

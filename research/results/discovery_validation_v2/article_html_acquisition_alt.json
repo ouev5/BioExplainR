@@ -1,0 +1,52 @@
+{
+  "records": [
+    {
+      "status": "retrieved",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8294620/?report=xml",
+      "retrieved_utc": "2026-10-09T11:24:23.544346+00:00",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "attempts": [],
+      "path": "research/results/discovery_validation_v2/sources/PMC8294620_article_alt.html",
+      "bytes": 305646,
+      "sha256": "9209ee6eaca0acfe2d0f38a799dd7a65fb91701372177c3f42c5c4956840ed18",
+      "validated_article": true
+    },
+    {
+      "status": "retrieved",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7052668/?report=xml",
+      "retrieved_utc": "2026-10-09T11:24:30.447528+00:00",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "attempts": [
+        {
+          "utc": "2026-10-09T11:24:24.098307+00:00",
+          "error": "<urlopen error [Errno 104] Connection reset by peer>",
+          "attempt": 1
+        },
+        {
+          "utc": "2026-10-09T11:24:25.587312+00:00",
+          "error": "<urlopen error [Errno 104] Connection reset by peer>",
+          "attempt": 2
+        }
+      ],
+      "path": "research/results/discovery_validation_v2/sources/PMC7052668_article_alt.html",
+      "bytes": 176774,
+      "sha256": "53c540dbc9eb30393fd5c7a641a13c1d133400c85f9388cc9f6b7deb2775a81c",
+      "validated_article": true
+    },
+    {
+      "status": "retrieved",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7027561/?report=xml",
+      "retrieved_utc": "2026-10-09T11:24:32.803934+00:00",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "attempts": [],
+      "path": "research/results/discovery_validation_v2/sources/PMC7027561_article_alt.html",
+      "bytes": 227431,
+      "sha256": "ecc0935d92c61b518ac16e37ac9c5c593b8eda1dad599334a1c824e9def5a63f",
+      "validated_article": true
+    }
+  ],
+  "completed_utc": "2026-10-09T11:24:32.836840+00:00"
+}

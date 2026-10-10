@@ -1,0 +1,8 @@
+Command: Rscript --vanilla research/discovery/audit_epithelial_protein.R research/results/discovery_epithelial_protein_v1
+Exit code: 1
+错误: 不是所有的r$gene == trimws(a[["Gene Name"]][row])都是TRUE
+停止执行
+
+The CSV reader converted empty annotation strings to NA. The source table has empty
+Gene Name annotation strings. No candidate statistic or scientific rule was changed.
+Resume entry: audit_resume.R; coalesce only the CSV gene annotation NA to empty string.

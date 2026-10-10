@@ -1,0 +1,104 @@
+[
+  {
+    "label": "pride_airway",
+    "url": "https://www.ebi.ac.uk/pride/ws/archive/v2/search/projects?keyword=airway+smooth+muscle&pageSize=100&page=0",
+    "utc": "2026-10-10T04:12:35.624649+00:00",
+    "status": 200,
+    "bytes": 7736,
+    "sha256": "3c695659bafeba333e9e340b28ea4473d6ebb80fa56ed69e38606336a2b87fa7",
+    "returned": 1
+  },
+  {
+    "label": "pride_bronchial",
+    "url": "https://www.ebi.ac.uk/pride/ws/archive/v2/search/projects?keyword=bronchial+smooth+muscle&pageSize=100&page=0",
+    "utc": "2026-10-10T04:12:35.626863+00:00",
+    "status": 200,
+    "bytes": 101349,
+    "sha256": "2b2c1158b8845eb6bca41e5f7b8b7dd7305c2a8fac5ba70ec57d2cdbc4472df6",
+    "returned": 7
+  },
+  {
+    "label": "pride_hasm",
+    "url": "https://www.ebi.ac.uk/pride/ws/archive/v2/search/projects?keyword=HASM&pageSize=100&page=0",
+    "utc": "2026-10-10T04:12:35.627947+00:00",
+    "status": 200,
+    "bytes": 141649,
+    "sha256": "16c78cf8e24d391bcefc20794549d9078305d9bfee3664edff3e46d870f5f3e6",
+    "returned": 15
+  },
+  {
+    "label": "pride_hbsmc",
+    "url": "https://www.ebi.ac.uk/pride/ws/archive/v2/search/projects?keyword=HBSMC&pageSize=100&page=0",
+    "utc": "2026-10-10T04:12:35.630953+00:00",
+    "status": 200,
+    "bytes": 62926,
+    "sha256": "70ad72afc18c5b5edf5eda9f7d399190ae5a0675c284346486c3647fb58804d5",
+    "returned": 2
+  },
+  {
+    "label": "pride_dex",
+    "url": "https://www.ebi.ac.uk/pride/ws/archive/v2/search/projects?keyword=dexamethasone&pageSize=100&page=0",
+    "utc": "2026-10-10T04:12:35.641956+00:00",
+    "status": 200,
+    "bytes": 984305,
+    "sha256": "807c36ce4ad5291735069e9194479f8bfc421db15b21918a90ee6405e31dabe0",
+    "returned": 100
+  },
+  {
+    "label": "pride_bud",
+    "url": "https://www.ebi.ac.uk/pride/ws/archive/v2/search/projects?keyword=budesonide&pageSize=100&page=0",
+    "utc": "2026-10-10T04:12:35.644950+00:00",
+    "status": 200,
+    "bytes": 27352,
+    "sha256": "5c6efbccb12a82c617b50e338a5c63a1a705848ff9808395910af453b338c184",
+    "returned": 4
+  },
+  {
+    "label": "pride_gc",
+    "url": "https://www.ebi.ac.uk/pride/ws/archive/v2/search/projects?keyword=glucocorticoid&pageSize=100&page=0",
+    "utc": "2026-10-10T04:12:36.652509+00:00",
+    "status": 200,
+    "bytes": 924359,
+    "sha256": "492fbe1253939f7095473c08e58b11dc5dfce290755e1eec65a6394266fd7432",
+    "returned": 100
+  },
+  {
+    "label": "pride_control",
+    "url": "https://www.ebi.ac.uk/pride/ws/archive/v2/search/projects?keyword=BioExplainR_unrelated_negative_control_9f3f&pageSize=100&page=0",
+    "utc": "2026-10-10T04:12:36.997658+00:00",
+    "status": 200,
+    "bytes": 3,
+    "sha256": "5984eac0c5c6d947241e29dd5671b81a1546cedf77e08d38438ac47029969afa",
+    "returned": 0
+  },
+  {
+    "label": "papers_asm_protein",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3A%28%22airway+smooth+muscle%22+OR+%22bronchial+smooth+muscle%22%29+AND+TITLE_ABS%3A%28proteomics+OR+proteomic+OR+secretome+OR+%22mass+spectrometry%22%29&format=json&pageSize=100&resultType=core",
+    "utc": "2026-10-10T04:12:37.080814+00:00",
+    "status": 200,
+    "bytes": 441556,
+    "sha256": "936efe9e9945bfc24b5b0060e57245f36cd2e837488937abc413576129b0855d",
+    "hit_count": 52,
+    "returned": 52
+  },
+  {
+    "label": "papers_lung_gc_protein",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3A%28lung+OR+airway+OR+bronchial%29+AND+TITLE_ABS%3A%28dexamethasone+OR+glucocorticoid+OR+budesonide%29+AND+TITLE_ABS%3A%28proteomics+OR+proteomic+OR+secretome%29&format=json&pageSize=100&resultType=core",
+    "utc": "2026-10-10T04:12:37.440681+00:00",
+    "status": 200,
+    "bytes": 335854,
+    "sha256": "933633d3af2d728c8c72ebe6d12d3635472d325c2cb12814d6d03ffb897f5e0d",
+    "hit_count": 37,
+    "returned": 37
+  },
+  {
+    "label": "papers_asm_public",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3A%28%22airway+smooth+muscle%22+OR+%22bronchial+smooth+muscle%22%29+AND+%28%22data+availability%22+OR+%22GEO%22+OR+%22ProteomeXchange%22%29+AND+TITLE_ABS%3A%28glucocorticoid+OR+dexamethasone+OR+budesonide%29&format=json&pageSize=100&resultType=core",
+    "utc": "2026-10-10T04:12:37.777633+00:00",
+    "status": 200,
+    "bytes": 239232,
+    "sha256": "d912aee26d0c1b336df764d4139948380253a4eec3e9246de76d5d9114ec9d38",
+    "hit_count": 27,
+    "returned": 27
+  }
+]

@@ -1,0 +1,56 @@
+<AnalysisDefinition Version="2" CreationDate="3/6/2024 4:12:10 PM" Name="">
+	<StudyDefinition Version="1" CreationDate="3/6/2024 2:53:17 PM" LastChangeDate="3/6/2024 3:19:57 PM" Name="pe210308" Description="" StudyType="General" Directory="D:\Proteome Discoverer Data\TRIAN_Thomas\pe210308" NextFileSetNumber="1" NextSampleNumber="1">
+		<Factors />
+		<FileSets>
+			<FileSet Name="pe210308_16" Version="1" Id="ea9631d5-c21a-47f3-9ad8-cf2223bb8994" SampleFileSetNumber="16">
+				<Files>
+					<File FileName="D:\Proteome Discoverer Data\TRIAN_Thomas\pe210308\pe210308_16.raw" FileType=".raw" FileTime="3/22/2021 11:58:05 PM" FileSize="1459111906 [Byte]" FileUri="file:///D:/Proteome%20Discoverer%20Data/TRIAN_Thomas/pe210308/pe210308_16.raw" FractionNumber="1" />
+				</Files>
+			</FileSet>
+		</FileSets>
+		<QuanMethods />
+		<Samples>
+			<Sample Name="pe210308_16" SampleType="Sample" Version="1" Id="72b47c06-e4f9-4bff-8418-2ad384087c70" FileSetId="ea9631d5-c21a-47f3-9ad8-cf2223bb8994" SampleNumber="16">
+				<FactorValues />
+			</Sample>
+		</Samples>
+		<StudyDefinitionExtensions>
+			<StudyDefinitionExtension ExtensionGuid="2B9D51EE-1C86-47A0-B328-C732B4B81388">
+				<QuantitationMethods Version="1" />
+			</StudyDefinitionExtension>
+		</StudyDefinitionExtensions>
+	</StudyDefinition>
+	<AnalysisInputFileSets>
+		<AnalysisInputFileSet>
+			<FileSet Name="pe210308_16" Version="1" Id="ea9631d5-c21a-47f3-9ad8-cf2223bb8994" SampleFileSetNumber="16">
+				<Files>
+					<File FileName="D:\Proteome Discoverer Data\TRIAN_Thomas\pe210308\pe210308_16.raw" FileType=".raw" FileTime="3/22/2021 11:58:05 PM" FileSize="1459111906 [Byte]" FileUri="file:///D:/Proteome%20Discoverer%20Data/TRIAN_Thomas/pe210308/pe210308_16.raw" FractionNumber="1" />
+				</Files>
+			</FileSet>
+		</AnalysisInputFileSet>
+	</AnalysisInputFileSets>
+	<StudyAnalysisExtensionSettings>
+		<AnalysisDefinitionExtensionSettings ExtensionGuid="843A8FF2-10F3-4F64-9837-67B421B2AB1B">
+			<GroupingAndQuantificationExtension Version="1">
+				<StudyVariablesForGrouping />
+				<StudyVariablesForSorting />
+				<QuanRatios />
+			</GroupingAndQuantificationExtension>
+		</AnalysisDefinitionExtensionSettings>
+	</StudyAnalysisExtensionSettings>
+	<StudyAnalysisExtensions>
+		<AnalysisDefinitionExtension ExtensionGuid="843A8FF2-10F3-4F64-9837-67B421B2AB1B">
+			<GroupingAndQuantificationExtension Version="1">
+				<Samples>
+					<SampleInfo Version="3" SampleId="72b47c06-e4f9-4bff-8418-2ad384087c70" SampleName="pe210308_16" SampleFileSetNumberDisplayString="F16" SampleNumberDisplayString="S16">
+						<StudyVariables>
+							<StudyVariable Version="1" Name="Sample Type" Value="Sample" Kind="SampleType" />
+						</StudyVariables>
+					</SampleInfo>
+				</Samples>
+				<SampleReplicateGroups />
+				<SampleGroups />
+			</GroupingAndQuantificationExtension>
+		</AnalysisDefinitionExtension>
+	</StudyAnalysisExtensions>
+</AnalysisDefinition>

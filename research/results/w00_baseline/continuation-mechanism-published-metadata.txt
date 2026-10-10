@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/ubuntu/creatR/research/discovery/acquire_published_mechanism.py", line 17, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/ubuntu/creatR/research/discovery/acquire_published_mechanism.py", line 13, in main
+    if r['status']!='downloaded':raise RuntimeError(r)
+                                 ^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: {'url': 'https://ftp.ncbi.nlm.nih.gov/geo/series/GSE229nnn/GSE229084/suppl/GSE229084_SE.processed.rds.gz', 'status': 'failed', 'exit_code': 22, 'error': 'curl: (22) The requested URL returned error: 503\ncurl: (22) The requested URL returned error: 503\n'}

@@ -1,0 +1,10 @@
+{
+  "status": "pass",
+  "endpoints": [
+    "size-specific target accuracy",
+    "task-all-correct paired bootstrap"
+  ],
+  "independent_from_raw_outputs": true,
+  "tasks": 24,
+  "bootstrap_resamples": 2000
+}

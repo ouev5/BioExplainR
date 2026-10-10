@@ -1,0 +1,22 @@
+name,url,status,http_status,response,detail
+hal_doi.json,https://api.archives-ouvertes.fr/search/?q=doiId_s%3A%2210.1016%2Fj.isci.2025.112546%22&rows=100&wt=json,retrieved,200,research/results/discovery_asm_ev_materials_v1/sources/hal_doi.json,Valid HAL response: indexed hits=1
+hal_accession.json,https://api.archives-ouvertes.fr/search/?q=text%3A%22PXD055968%22&rows=100&wt=json,retrieved,200,research/results/discovery_asm_ev_materials_v1/sources/hal_accession.json,Valid HAL response: indexed hits=0
+hal_title.json,https://api.archives-ouvertes.fr/search/?q=title_t%3A%22Bronchial+smooth+muscle+extracellular+vesicles+interfere+with+bronchial+epithelium+metabolism+and+function+in+asthma%22&rows=100&wt=json,retrieved,200,research/results/discovery_asm_ev_materials_v1/sources/hal_title.json,Valid HAL response: indexed hits=1
+rdg_accession.json,https://entrepot.recherche.data.gouv.fr/api/search?q=PXD055968&per_page=100,retrieved,200,research/results/discovery_asm_ev_materials_v1/sources/rdg_accession.json,Valid RDG response: indexed hits=0
+rdg_doi.json,https://entrepot.recherche.data.gouv.fr/api/search?q=%2210.1016%2Fj.isci.2025.112546%22&per_page=100,retrieved,200,research/results/discovery_asm_ev_materials_v1/sources/rdg_doi.json,Valid RDG response: indexed hits=0
+openaire_doi.json,https://api.openaire.eu/search/publications?doi=10.1016%2Fj.isci.2025.112546&format=json,failed,,,The read operation timed out
+figshare_doi.json,https://api.figshare.com/v2/articles?resource_doi=10.1016%2Fj.isci.2025.112546&page_size=100,http_error,403,research/results/discovery_asm_ev_materials_v1/sources/figshare_doi.json,HTTP Error 403: Forbidden
+PXD055968_project.json,https://www.ebi.ac.uk/pride/ws/archive/v2/projects/PXD055968,retrieved,200,research/results/discovery_asm_ev_materials_v1/sources/PXD055968_project.json,
+PXD055968_files.json,https://www.ebi.ac.uk/pride/ws/archive/v2/projects/PXD055968/files?pageSize=100&page=0,retrieved,200,research/results/discovery_asm_ev_materials_v1/sources/PXD055968_files.json,
+PXD055949_project.json,https://www.ebi.ac.uk/pride/ws/archive/v2/projects/PXD055949,retrieved,200,research/results/discovery_asm_ev_materials_v1/sources/PXD055949_project.json,
+PXD055949_files.json,https://www.ebi.ac.uk/pride/ws/archive/v2/projects/PXD055949/files?pageSize=100&page=0,retrieved,200,research/results/discovery_asm_ev_materials_v1/sources/PXD055949_files.json,
+PXD059603_project.json,https://www.ebi.ac.uk/pride/ws/archive/v2/projects/PXD059603,retrieved,200,research/results/discovery_asm_ev_materials_v1/sources/PXD059603_project.json,
+PXD059603_files.json,https://www.ebi.ac.uk/pride/ws/archive/v2/projects/PXD059603/files?pageSize=100&page=0,retrieved,200,research/results/discovery_asm_ev_materials_v1/sources/PXD059603_files.json,
+hal_record_full.json,https://api.archives-ouvertes.fr/search/?q=docid%3A5063440&fl=%2A&wt=json,retrieved,200,research/results/discovery_asm_ev_materials_v1/sources/hal_record_full.json,Valid HAL response: indexed hits=1
+hal_record_page.html,https://hal.science/hal-05063440v1,retrieved,200,research/results/discovery_asm_ev_materials_v1/sources/hal_record_page.html,
+rdg_title.json,https://entrepot.recherche.data.gouv.fr/api/search?q=%22Bronchial%20smooth%20muscle%20extracellular%20vesicles%20interfere%20with%20bronchial%20epithelium%20metabolism%20and%20function%20in%20asthma%22&per_page=100,retrieved,200,research/results/discovery_asm_ev_materials_v1/sources/rdg_title.json,Valid RDG response: indexed hits=0
+rdg_project.json,https://entrepot.recherche.data.gouv.fr/api/search?q=CHARMACOMA&per_page=100,retrieved,200,research/results/discovery_asm_ev_materials_v1/sources/rdg_project.json,Valid RDG response: indexed hits=0
+hal_project.json,https://api.archives-ouvertes.fr/search/?q=text%3ACHARMACOMA&rows=100&fl=%2A&wt=json,retrieved,200,research/results/discovery_asm_ev_materials_v1/sources/hal_project.json,Valid HAL response: indexed hits=0
+openaire_doi_xml.xml,https://api.openaire.eu/search/publications?doi=10.1016%2Fj.isci.2025.112546&format=xml,failed,,,The read operation timed out
+hal_author_article_curl.bin,https://hal.science/hal-05063440v1/file/celle%20et%20al.%202025.pdf,failed_or_partial,,research/results/discovery_asm_ev_materials_v1/sources/hal_author_article_curl.bin,"curl exit=28; curl: (28) Operation timed out after 60000 milliseconds with 3564070 out of 13089865 bytes received
+"

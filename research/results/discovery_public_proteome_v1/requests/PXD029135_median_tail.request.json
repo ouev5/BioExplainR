@@ -1,0 +1,39 @@
+{
+  "utc": "2026-10-10T05:19:34.661623+00:00",
+  "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2021/11/PXD029135/median-normalized.txt",
+  "requested_range": "bytes=1736704-2055549",
+  "http_status": 206,
+  "headers": {
+    "Date": "Sat, 10 Oct 2026 05:19:35 GMT",
+    "Server": "Apache",
+    "Last-Modified": "Wed, 20 Apr 2022 19:14:10 GMT",
+    "ETag": "\"1f5d7e-5dd1acc4c6480\"",
+    "Accept-Ranges": "bytes",
+    "Content-Length": "318846",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Methods": "GET,OPTIONS",
+    "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+    "Content-Range": "bytes 1736704-2055549/2055550",
+    "Connection": "close",
+    "Content-Type": "text/plain; charset=UTF-8"
+  },
+  "status": "retrieved_and_reconstructed",
+  "complete_file": {
+    "path": "research/results/discovery_public_proteome_v1/sources/PXD029135_median-normalized_complete.txt",
+    "bytes": 2055550,
+    "sha256": "e4ea82e370223bf28b63c2a850134efb5f3d70fcd574368c768634a7edc68e46"
+  },
+  "upstream_sha1_matches": true,
+  "overlap_bytes": 32768,
+  "plan": {
+    "path": "research/results/discovery_public_proteome_v1/hbec_range_plan.json",
+    "bytes": 1025,
+    "sha256": "e15657d3eb3233d90f5f545f27927d446d74a19f84021ac1947025ddedbcefba"
+  },
+  "response": {
+    "path": "research/results/discovery_public_proteome_v1/sources/PXD029135_median_tail.bin",
+    "bytes": 318846,
+    "sha256": "b4f8adeb203c0868d73603e8beffbeba9a28713037f5de1eb99e222a7fa9e7b0"
+  },
+  "completed_utc": "2026-10-10T05:19:52.364668+00:00"
+}

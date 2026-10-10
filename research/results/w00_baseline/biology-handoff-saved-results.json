@@ -1,0 +1,17 @@
+{
+  "command": [
+    "python3",
+    "-c",
+    "import sys,json; sys.path.insert(0,\"research\"); from audit_current_results import ROOT,candidate_followup,narrative_links,read_json; summary=candidate_followup(ROOT); paper=read_json(ROOT/\"docs/paper_cn_v4/audit.json\"); assert paper[\"candidate_followup\"]==summary; print(json.dumps({\"status\":\"pass\",\"narrative_items\":len(narrative_links(paper,\"v0.10\")),\"candidate_followup\":summary},ensure_ascii=False,indent=2))"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-08T16:18:53.968003+00:00",
+  "finished_utc": "2026-10-08T16:18:54.453042+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/biology-handoff-saved-results.txt",
+    "bytes": 490,
+    "sha256": "4085045301b8c82d96cafe8ee1b2442222e488c2f915de1c9d6791dc8ad301fb"
+  }
+}

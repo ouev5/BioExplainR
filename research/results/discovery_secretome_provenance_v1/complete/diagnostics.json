@@ -1,0 +1,82 @@
+{
+  "status": "completed",
+  "utc": "2026-10-10T00:50:33.976755+00:00",
+  "summary": [
+    {
+      "measure": "LFQ intensity",
+      "denominator": "Peptides",
+      "cells": 828,
+      "eligible": 803,
+      "matched": 0,
+      "error_min": -2.604901179033053,
+      "error_max": 1.3029973916533812,
+      "mean_absolute_error": 1.1404617710787948
+    },
+    {
+      "measure": "LFQ intensity",
+      "denominator": "Razor + unique peptides",
+      "cells": 828,
+      "eligible": 803,
+      "matched": 0,
+      "error_min": -2.604901179033053,
+      "error_max": 1.3029973916533812,
+      "mean_absolute_error": 1.1352847102729196
+    },
+    {
+      "measure": "LFQ intensity",
+      "denominator": "Unique peptides",
+      "cells": 828,
+      "eligible": 803,
+      "matched": 0,
+      "error_min": -2.604901179033053,
+      "error_max": 1.3029973916533812,
+      "mean_absolute_error": 1.0754909699586113
+    },
+    {
+      "measure": "Intensity",
+      "denominator": "Peptides",
+      "cells": 828,
+      "eligible": 812,
+      "matched": 0,
+      "error_min": -4.094408089564677,
+      "error_max": 0.6309246017029935,
+      "mean_absolute_error": 1.3820471475220861
+    },
+    {
+      "measure": "Intensity",
+      "denominator": "Razor + unique peptides",
+      "cells": 828,
+      "eligible": 812,
+      "matched": 0,
+      "error_min": -4.094408089564677,
+      "error_max": 0.6309246017029935,
+      "mean_absolute_error": 1.3769274679320398
+    },
+    {
+      "measure": "Intensity",
+      "denominator": "Unique peptides",
+      "cells": 828,
+      "eligible": 812,
+      "matched": 0,
+      "error_min": -4.094408089564677,
+      "error_max": 1.5826830535699195,
+      "mean_absolute_error": 1.2856243829246112
+    }
+  ],
+  "linkage_rows": 21,
+  "supplement_probes": [
+    {
+      "status": "retrieved",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/12141081/bin/mmc1.pdf",
+      "retrieved_utc": "2026-10-10T00:50:33.976517+00:00",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "attempts": [],
+      "path": "research/results/discovery_secretome_provenance_v1/sources/EV_supplement_probe_1.bin",
+      "bytes": 1816,
+      "sha256": "f2ad27abb2c90e0c104faa86c8670d31a73b2a73a80755aa392af3fb25816040",
+      "pdf_signature": false
+    }
+  ],
+  "scope": "Scale/feasibility diagnostics; no new pairedGC candidate protein estimates"
+}

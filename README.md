@@ -1,9 +1,14 @@
 # BioExplainR
 
-当前论文：[中文v0.9与独立补充](docs/paper_cn_v2/README.md)；[六工具比较表](docs/paper_cn_v2/tables/Table_1.csv)。
+最新包应用：[实际研究工作流 v3](research/results/package_discovery_workflow_v3/)将已保存统计结果接入 11 个上下文、项目和双语报告，完成 77 项受控声明核对；这是应用与一致性演示。
+当前已导出论文：[中文v0.13与补充](docs/paper_cn_v7/README.md)（17页主稿＋24页补充）；[问题与证据边界](docs/paper_cn_v7/ISSUES.md)。后续新增[上皮蛋白结果](research/results/discovery_epithelial_protein_v1/complete/README.md)单独保存。统一续接记录见 [rgo.md](rgo.md)，本次检查与 GitHub 状态见[发布检查记录](docs/implementation_records/GITHUB_PUBLICATION_REVIEW.md)。
+历史软件论文：[中文v0.10与独立补充](docs/paper_cn_v4/README.md)；[六工具比较表](docs/paper_cn_v4/tables/Table_1.csv)。
+全部11图/14表（25项）的正文引出、结果与结论对应见[图表对应清单](docs/paper_cn_v4/figure_table_links.json)。
 正文聚焦完整事实、科学范围、分项核对、项目溯源四项贡献，详细技术方法移至补充。
 [SPARCL1公开发现案例](research/discovery/README.md)包含固定候选、外部GEO实验和Python/R独立重算。
-代码MIT许可，[引用元数据](CITATION.cff)、[发布/DOI实际状态](docs/RELEASE_ARCHIVE.md)。
+新增多供体与因子干预重分析：16个配对供体均上调，组间响应差与三项候选交互未获支持；详见[后续检验记录](docs/implementation_records/CANDIDATE_FOLLOWUP_CONTINUATION.md)。
+正式后续研究：[共同任务与机制增补](docs/research_followup_v1/README.md)（360运行/1,800评分；A549候选不可估计；ASM峰坐标/独立复核），Word/PDF/HTML与完整结果已保存。
+代码MIT许可，[引用元数据](CITATION.cff)、[本次GitHub发布状态](docs/implementation_records/GITHUB_PUBLICATION_REVIEW.md)、[历史归档/DOI记录](docs/RELEASE_ARCHIVE.md)。
 
 面向初级生物信息学研究员的 R 包（开发版 v0.4.0.9000；0.3.1 为历史基线）：读取已有的 R 分析对象和图表，
 **先由 R 确定性地计算统计事实**，再给出分层的 English 解释；可选地调用你自己配置的
@@ -33,12 +38,20 @@
 2026-10-07 开发进展：新增样本覆盖/两两交集统计和显式跨结果方向检查；公开 TCGA-ACC `miniACC` 案例已运行并保存，详见 [案例与结果](research/multiomics/README.md)。用户体验研究暂不开展，专家评价安排在工程与案例准备完成后。
 
 ```r
+# 从 GitHub 安装开发版：
+install.packages("remotes")
+remotes::install_github("ouev5/BioExplainR", dependencies = NA, upgrade = "never")
+
 # 依赖：httr2, jsonlite, digest（必需）；callr, ggplot2, testthat 等为可选
 install.packages(c("httr2", "jsonlite", "digest", "callr"))
 # 在本仓库目录下：
 install.packages(".", repos = NULL, type = "source")
 # 或 R CMD INSTALL .
 ```
+
+若要克隆完整研究文件树，请先安装 [Git LFS](https://git-lfs.com/)，运行
+`git lfs install` 后再 `git clone https://github.com/ouev5/BioExplainR.git`。
+GitHub 的源码 ZIP 中大文件可能仅为 LFS 指针；R 包安装使用的源码不依赖这些研究大文件。
 
 可选依赖（只在需要对应功能时安装；普通结果表用法保持轻量）：
 
@@ -74,6 +87,11 @@ install.packages(".", repos = NULL, type = "source")
 library(BioExplainR)
 bio_configure("local")            # 显式本地模式，不联网
 
+deg_table <- data.frame(
+  gene = c("GENE_A", "GENE_B", "GENE_C"),
+  log2FoldChange = c(2, -2, 0.1),
+  padj = c(0.01, 0.02, 0.8)
+)
 ex <- bio_explain(deg_table,      # data.frame / DESeqResults / enrichResult / Seurat / ggplot ...
                    species = "Homo sapiens", contrast = "treated vs control",
                    thresholds = list(padj = 0.05, lfc = 1))
@@ -320,15 +338,17 @@ R --vanilla --slave -e 'testthat::test_local(".")'
 - [docs/WEB_APP.md](docs/WEB_APP.md)：本地浏览器工作台的安装、工作流和边界
 - [research/README.md](research/README.md)：五数据集、规模主实验、双模型共同任务及历史实验入口
 - [docs/PAPER_DRAFT.md](docs/PAPER_DRAFT.md)：含实际结果、相关工具比较和局限的中文论文初稿
-- [docs/paper_cn_v2/README.md](docs/paper_cn_v2/README.md)：当前中文v0.9（9页主稿/16页补充）、工具比较及外部候选实验
+- [docs/paper_cn_v7/README.md](docs/paper_cn_v7/README.md)：当前已导出v0.13（17页主稿/24页补充），完整上清与来源诊断整合
+- [docs/paper_cn_v2/README.md](docs/paper_cn_v2/README.md)：历史中文v0.9（9页主稿/16页补充）、工具比较及外部候选实验
+- [docs/paper_cn_v4/README.md](docs/paper_cn_v4/README.md)：历史软件v0.10（12页主稿/18页补充），全部25项图表正文对应及候选后续检验
 - [docs/REPRODUCTION.md](docs/REPRODUCTION.md)：W00 恢复环境、当前/历史审计、版本及文件哈希清单
 - [docs/DATA_CONTRACTS.md](docs/DATA_CONTRACTS.md)、[docs/MIGRATION.md](docs/MIGRATION.md)：W01–W04 数据契约、兼容和版本策略
 - [docs/W01_INTERFACE_INVENTORY.md](docs/W01_INTERFACE_INVENTORY.md)：现有 74 个导出接口与 legacy 对象，供兼容检查
 - [docs/W13_RELEASE_CHECKLIST.md](docs/W13_RELEASE_CHECKLIST.md)：复现、CI、投稿包和作者材料清单
 
-2026-10-05 W00 基线及后续开发检查：历史基线 531 项；当前开发版源码检查 561 项（560 通过、1 跳过），`R CMD check` 为 `Status: OK`。新功能和离线研究入口不改变已保存的 0.3.1 科学结果。
+2026-10-10 发布前源码检查：677 项，676 通过、1 跳过、0 失败/错误/警告。跳过项使用模拟 DESeq2 类，当前环境已有真实 DESeq2。构建、安装和包检查见[本次发布检查记录](docs/implementation_records/GITHUB_PUBLICATION_REVIEW.md)。
 当前保存主实验为 120 个程序生成案例、480 个唯一目标事实、3 种方法×3 轮，共 1,080 次请求、4,320 条评分；双模型各 480/480 匹配，公开数据 5/5 pass。54 请求/225 评分的六案例实验保留为 historical。
-结果与源码入口为 [current_manifest.json](research/results/current_manifest.json)，默认审计 current，旧结果用 `--args --mode=historical`。本轮仅离线核对保存模型结果；事实匹配不能代表全文、科学推理准确率或用户收益。
+旧结果与源码入口为 [current_manifest.json](research/results/current_manifest.json)，对应历史验收文件树；后续各研究使用独立清单，文档快照核验政策见 [rgo.md](rgo.md)。保存模型结果与事实匹配不能代表全文、科学推理准确率或用户收益。
 
 ## 许可证
 

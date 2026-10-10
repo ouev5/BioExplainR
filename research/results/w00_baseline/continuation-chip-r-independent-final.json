@@ -1,0 +1,19 @@
+{
+  "command": [
+    "Rscript",
+    "--vanilla",
+    "research/discovery/audit_chip_complete.R",
+    "research/results/discovery_chip_v1",
+    "research/results/discovery_chip_analysis_v1"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-09T02:08:42.373029+00:00",
+  "finished_utc": "2026-10-09T02:09:07.518024+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/continuation-chip-r-independent-final.txt",
+    "bytes": 1486,
+    "sha256": "00380e14cd5524d8c515a7c08ba667957f67d0dfaeca00d5b30372161d8c5aa3"
+  }
+}

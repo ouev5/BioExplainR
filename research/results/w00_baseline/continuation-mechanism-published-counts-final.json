@@ -1,0 +1,18 @@
+{
+  "command": [
+    "Rscript",
+    "--vanilla",
+    "research/discovery/audit_published_counts.R",
+    "research/results/discovery_mechanism_fit_v4"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-09T03:44:56.718639+00:00",
+  "finished_utc": "2026-10-09T03:45:08.709280+00:00",
+  "exit_code": 1,
+  "status": "fail",
+  "log": {
+    "path": "research/results/w00_baseline/continuation-mechanism-published-counts-final.txt",
+    "bytes": 2707,
+    "sha256": "9e95f48e6e7891d666f5fcee4f1c5cd714851bda5a929ee1ce9fe9cea4ccbeb6"
+  }
+}

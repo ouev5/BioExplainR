@@ -1,0 +1,30 @@
+{
+  "task_index": 9,
+  "repeat": 1,
+  "method": "ellmer_facts",
+  "order": 280,
+  "task_id": "airway_200_a0.05_l1",
+  "status": "returned",
+  "text": "{\n  \"n_features\": 200,\n  \"n_significant\": 5,\n  \"n_up\": 1,\n  \"n_down\": 4,\n  \"n_na_padj\": 48\n}",
+  "finish": "stop",
+  "usage": {
+    "input": 328,
+    "output": 49,
+    "cached_input": 0,
+    "cost": null,
+    "input_preview": "Text[Count all rows. Significant means pad...]"
+  },
+  "model": "qwen-fixed",
+  "parsed": {
+    "n_features": 200,
+    "n_significant": 5,
+    "n_up": 1,
+    "n_down": 4,
+    "n_na_padj": 48
+  },
+  "system": "Return only one JSON object with integer fields n_features, n_significant, n_up, n_down, n_na_padj. No explanation.",
+  "user": "Count all rows. Significant means padj < 0.050000000000000003 AND abs(log2FoldChange) > 1. NA padj is not significant. Up/down means positive/negative significant log2FoldChange. n_na_padj counts NA padj.\nComplete BioExplainR facts (copy the five requested integers):\n{\"n_features\":200,\"lfc_column\":\"log2FoldChange\",\"p_value_column\":null,\"adjusted_p_column\":\"padj\",\"p_value_basis\":\"adjusted_column\",\"n_na_lfc\":0,\"n_tested\":152,\"n_na_padj\":48,\"padj_threshold\":0.050000000000000003,\"lfc_threshold\":1,\"n_significant_any_lfc\":35,\"n_up\":1,\"n_down\":4,\"n_significant\":5,\"min_padj\":8.0909765662788097e-38,\"lfc_range\":[-2.69336211318898,2.14752835959401],\"lfc_median\":-0.107976289130431}",
+  "preparation_sec": 0.027000000000043656,
+  "call_sec": 16.282999999999447,
+  "elapsed_sec": 16.309999999999491
+}

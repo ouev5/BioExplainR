@@ -1,0 +1,19 @@
+{
+  "reason": "First HAL PDF command was terminated by harness at 45000 ms before a response file or completion JSON was saved. Retry with a distinct output name and larger outer command timeout; preserve initial plan, do not treat interrupted command as pass.",
+  "candidate_identity_started": false,
+  "script": {
+    "path": "research/discovery/asm_ev_materials.py",
+    "bytes": 7968,
+    "sha256": "537f267a790255edb1fde0dfd0f06481ac39b5164823b089e098bb532e62a4f1"
+  },
+  "source_evidence": [
+    {
+      "path": "research/results/discovery_asm_ev_materials_v1/sources/hal_record_full.json",
+      "bytes": 346915,
+      "sha256": "90a498c7892d50391f19c08a8a9b7c279b4b010a9d395934644cffe553682a25"
+    }
+  ],
+  "requests": [
+    ["hal_author_article_retry.pdf", "https://hal.science/hal-05063440v1/file/celle%20et%20al.%202025.pdf"]
+  ]
+}

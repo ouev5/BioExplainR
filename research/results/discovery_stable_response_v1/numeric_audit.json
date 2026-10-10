@@ -1,0 +1,15 @@
+{
+  "status": "pass",
+  "pooled_interaction_tests": 82227,
+  "pooled_response_tests": 109636,
+  "retained_signature_genes": 54,
+  "selected_genes": 12,
+  "raw_count_donor_checks": 192,
+  "all_genome_donor_sign_checks": 109636,
+  "fixed_ranking_independently_verified": true,
+  "exact_GR_WLS_numeric_checks": 300,
+  "raw_array_measurement_checks": 110,
+  "direct_time_tests": 24,
+  "marginal_array_tests": 24,
+  "scope": "Independent Python arithmetic, original count/array inputs, weighted fits and pooled multiplicity; DESeq2 dispersions and limma moderation not independently refitted."
+}

@@ -1,0 +1,70 @@
+{
+  "status": "pass",
+  "utc": "2026-10-09T16:23:48.753796+00:00",
+  "commands": [
+    {
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "/home/ubuntu/creatR/research/discovery/set_validation_models.R",
+        "/home/ubuntu/creatR/research/results/discovery_set_reproduction_v1"
+      ],
+      "start_utc": "2026-10-09T16:23:13.067088+00:00",
+      "end_utc": "2026-10-09T16:23:44.872543+00:00",
+      "returncode": 0,
+      "log": {
+        "path": "research/results/discovery_set_reproduction_v1/reproduction_step1.log",
+        "bytes": 79,
+        "sha256": "f2f2edefd8e38be63e454d0c0a2622a320e997a39805d309ead16dd82914acca"
+      }
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "/home/ubuntu/creatR/research/discovery/audit_set_validation.py",
+        "/home/ubuntu/creatR/research/results/discovery_set_reproduction_v1"
+      ],
+      "start_utc": "2026-10-09T16:23:44.873084+00:00",
+      "end_utc": "2026-10-09T16:23:45.601202+00:00",
+      "returncode": 0,
+      "log": {
+        "path": "research/results/discovery_set_reproduction_v1/reproduction_step2.log",
+        "bytes": 627,
+        "sha256": "e8f89528581336fcb5d31d64d7ff412806417aa75c8c311447fd862a5b20efc9"
+      }
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "/home/ubuntu/creatR/research/discovery/audit_set_sensitivity.py",
+        "/home/ubuntu/creatR/research/results/discovery_set_reproduction_v1"
+      ],
+      "start_utc": "2026-10-09T16:23:45.601547+00:00",
+      "end_utc": "2026-10-09T16:23:46.636901+00:00",
+      "returncode": 0,
+      "log": {
+        "path": "research/results/discovery_set_reproduction_v1/reproduction_step3.log",
+        "bytes": 87,
+        "sha256": "1a2a77b790fb6b9e0f736478e2e871d8f448e0ad96eedbf8769868c55d71d039"
+      }
+    },
+    {
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "/home/ubuntu/creatR/research/discovery/report_set_validation.R",
+        "/home/ubuntu/creatR/research/results/discovery_set_reproduction_v1"
+      ],
+      "start_utc": "2026-10-09T16:23:46.637315+00:00",
+      "end_utc": "2026-10-09T16:23:48.734540+00:00",
+      "returncode": 0,
+      "log": {
+        "path": "research/results/discovery_set_reproduction_v1/reproduction_step4.log",
+        "bytes": 218,
+        "sha256": "266bfd65dcbf076ac6839470aa6fba9e22b355e98cf153588dad6109e3c40ea2"
+      }
+    }
+  ],
+  "summary_rows": 54,
+  "scope": "Same public inputs and savedmapping, freshcountfit, independentaudits, actualRpackage; notnewdonors ornewindependenttest"
+}

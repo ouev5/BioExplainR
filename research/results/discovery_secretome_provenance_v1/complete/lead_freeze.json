@@ -1,0 +1,27 @@
+{
+  "utc": "2026-10-10T00:45:01.572328+00:00",
+  "script": {
+    "path": "research/discovery/secretome_provenance_leads.py",
+    "bytes": 2770,
+    "sha256": "e19543c1abe0243673fdb9a8dacbec001513320cf01da310a95bf64d89ebed75"
+  },
+  "requests": [
+    [
+      "ev_article_metadata.json",
+      "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A40487443+AND+SRC%3AMED&format=json&resultType=core"
+    ],
+    [
+      "PXD055968_Link_between_files.xlsx",
+      "https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/Link_between_files.xlsx"
+    ],
+    [
+      "PTX3_article.xml",
+      "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6706008/fullTextXML"
+    ],
+    [
+      "cough_article.xml",
+      "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5686396/fullTextXML"
+    ]
+  ],
+  "scope": "Public material feasibility and candidate identification only; article metadata inspected, no new protein candidate array read"
+}

@@ -1,0 +1,8 @@
+item,pride,article,archived_result,status
+Proteome Discoverer,2.5,3.0,3.1.0.638 (18/18),three-way version difference; final paper analysis version unresolved
+Search engine,Mascot2.5,CHIMERYS,CHIMERYS (18/18),"archive supports CHIMERYS, not the Mascot metadata"
+Prediction model,not stated,inferys_2.1 fragmentation,inferys_3.0.0_fragmentation (18/18),article/archive difference
+Search database,UniProt September3 2020 / 75793 entries,UniProt September2023 / 82408 entries,RP_UP000005640_Homo_sapiens_2024_01_22.fasta (18/18),archive workflow differs from both; submitted standalone FASTA is 2023_09_13
+Peptide charge,not stated,2-4,1-6 (18/18),article/archive difference
+Protein peptide requirement,at least2 specific,master proteins quantified by at least2 unique,CWF_ID minimum peptide sequences1 (18/18),ID filter differs in meaning from final quantified filter; cannot substitute
+Cross-run quantification,Proline / median ratios / 5% background missing inference,Minora + mapper + precursor quantifier / total peptide amount / lower5% random imputation,single raw per result; Minora detection; CWF_ID; no final protein abundance columns or mapper/quantifier,final quantified array and workflow not acquired

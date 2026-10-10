@@ -1,0 +1,26 @@
+{
+  "status": "completed",
+  "utc": "2026-10-10T01:05:23.182650+00:00",
+  "script": {
+    "path": "research/discovery/build_secretome_provenance_report.py",
+    "bytes": 15752,
+    "sha256": "0fd31aeb14557306db6ab863ad32725f08201d4f696e6e6a1d30a6f22234a8cd"
+  },
+  "pages": 4,
+  "tables": 3,
+  "figures": 2,
+  "csv_xlsx_pairs": 12,
+  "command": [
+    "libreoffice",
+    "-env:UserInstallation=file:///tmp/opencode/provenance-lo",
+    "--headless",
+    "--convert-to",
+    "pdf",
+    "--outdir",
+    "/home/ubuntu/creatR/docs/secretome_provenance_v1",
+    "/home/ubuntu/creatR/docs/secretome_provenance_v1/分泌蛋白组-来源诊断与ASM公开证据续接.docx"
+  ],
+  "stdout": "convert /home/ubuntu/creatR/docs/secretome_provenance_v1/分泌蛋白组-来源诊断与ASM公开证据续接.docx as a Writer document -> /home/ubuntu/creatR/docs/secretome_provenance_v1/分泌蛋白组-来源诊断与ASM公开证据续接.pdf using filter : writer_pdf_Export\n",
+  "stderr": "Warning: failed to launch javaldx - java may not function correctly\n",
+  "figure_scope": "ReportWord/PDF containPNG previews, original two vector PDFs provided separately"
+}

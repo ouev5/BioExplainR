@@ -1,0 +1,37 @@
+{
+  "utc": "2026-10-09T12:48:23.760993+00:00",
+  "script": {
+    "path": "research/discovery/validation_protein.py",
+    "bytes": 4213,
+    "sha256": "98fa6702fce72242fcf8451ff623b992f8469f21047ea9d21b509c0cac9de41c"
+  },
+  "sample_map": {
+    "path": "research/results/discovery_validation_v2/protein_public/protein_sample_map.csv",
+    "bytes": 1151,
+    "sha256": "13af9067d639cddda8e7c1ee0855c73ee373295a54960038749b5c7f7c233847"
+  },
+  "candidates": [
+    "PER2",
+    "PER3",
+    "METTL7A",
+    "MAOA",
+    "ANGPTL2",
+    "FSTL3"
+  ],
+  "controls": [
+    "PER1",
+    "FKBP5",
+    "TSC22D3",
+    "DUSP1",
+    "NR3C1"
+  ],
+  "protein_rule": "Use unique exact gene symbol or listed METTL7A/TMT1A alias in table; high-confidence protein with >=2 unique peptides; no imputation",
+  "estimands": "CORT-DMSO log2 normalized protein abundance, separately phase31/43 and 1/3h; four contrasts x11 =44 Holm",
+  "primary_test": "Unpaired Welch t on culture replicates; v labels do not establish paired blocks",
+  "sample29": "Asterisk source meaning unknown, include primary and omit only in sensitivity with original flag retained",
+  "phase_label": "31h/43h are source labels, not claimed CORT exposure lengths; 1h/3h treatment durations",
+  "plex": "Duration confounded with TMT plex, so no direct 3h-1h abundance test",
+  "species_conflict": "PRIDE organism Homo sapiens but search database protocol Mus musculus; verify actual protein accession descriptions before tissue/species claim",
+  "scope": "Published processed quantitative protein table, no raw MS spectrum re-search; cell origin still to verify; no function inference from abundance alone",
+  "timing": "Scheme and metadata read, protein candidate table not yet read."
+}

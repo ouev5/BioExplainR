@@ -1,0 +1,23 @@
+{
+  "status": "pass",
+  "utc": "2026-10-10T01:02:30.136017+00:00",
+  "script": {
+    "path": "research/discovery/secretome_provenance_supplement_review.py",
+    "bytes": 1933,
+    "sha256": "dd74642ea6e2dfc5a5d1e668e0d9ee5c4bee6192dce91afa0e8cb7144929330c"
+  },
+  "input": {
+    "path": "research/results/discovery_secretome_provenance_v1/sources/EV_publisher_supplement_normalized.bin",
+    "bytes": 8947418,
+    "sha256": "229e8e41eee68e83a5de42e0ebbe24bd8fbeed89cb5647762c309e27b3722fc5"
+  },
+  "pages": 13,
+  "identity": "Original title and firstauthor on supplement cover match acquired Cells/iScience source; canonical PII +mmc1 mapping",
+  "correction": "First automatic correspondence test false because text says Supplemental table2, notTableS2. Raw acquisition result preserved; sourceidentity checked here.",
+  "scope": "FiguresS1-S8 and selected IPA pathways/table2 glycolysis proteins, not full unselected protein quantification; no target absence inference",
+  "target_hits": {
+    "ANGPTL2": 0,
+    "FSTL3": 0,
+    "FBN2": 0
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "frozen_utc": "2026-10-08T13:01:40.164604+00:00",
+  "protocol": {
+    "path": "DONOR_PROTOCOL.md",
+    "bytes": 1744,
+    "sha256": "254d257b5cd4370ee328a14521b7ba86fe19d5308b5a83a598613ae01d60e144"
+  },
+  "scripts": [
+    {
+      "path": "run_donors.py",
+      "bytes": 7051,
+      "sha256": "a2c3108071087378ca8c39da5a10c05c4792f072bb173b82b2af4a05bf1effa2"
+    },
+    {
+      "path": "audit_donors.R",
+      "bytes": 2887,
+      "sha256": "a2b21f06b2974e3514ff019c29db26130fbe29122235af382eedaf67d9b28d04"
+    }
+  ],
+  "timing": "Series metadata read; candidate expression unread; GSE146017 negative interactions known"
+}

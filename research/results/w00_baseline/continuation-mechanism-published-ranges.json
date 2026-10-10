@@ -1,0 +1,20 @@
+{
+  "command": [
+    "python3",
+    "research/discovery/download_ranges.py",
+    "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE229nnn/GSE229084/suppl/GSE229084_SE.processed.rds.gz",
+    "research/results/discovery_mechanism_fit_v4/SE.processed.rds.gz",
+    "--workers",
+    "4"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-09T03:08:00.231329+00:00",
+  "finished_utc": "2026-10-09T03:10:57.993070+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/continuation-mechanism-published-ranges.txt",
+    "bytes": 462,
+    "sha256": "925ef5039ea9d12ce4e40548038bf0bfb872a85afb946ef43251f95717d57e04"
+  }
+}

@@ -1,23 +1,393 @@
 {
-  "manifest_version": "development-baseline-7",
-  "created_utc": "2026-10-08T11:42:38.950306+00:00",
+  "manifest_version": "development-baseline-12",
+  "created_utc": "2026-10-09T06:45:42.894045+00:00",
   "package_version": "0.4.0.9000",
-  "scope": "Stored 0.3.1 results plus 0.4.0.9000 checks, miniACC, Chinese paper v0.9 comparison/concise main text and fixed SPARCL1 external experiment; expert/user evaluation deferred",
+  "scope": "Stored v0.10 plus formal common-task/GR-intervention/ChIP research addendum; previous preparation checkpoint retained in historical scope; GitHub publication paused by owner",
   "git": {
-    "commit_sha": "dbd707566518d4b1d939906dcb001849abc2774e",
+    "commit_sha": "545bb89755f9c52011584d530c6294d31b3c9012",
     "state": "working_tree",
     "status": [
+      " M README.md",
       " M SESSION_HANDOFF.md",
-      " M research/results/w00_baseline/documentation_files.csv"
+      " M docs/DEVELOPMENT_DELIVERY.md",
+      " M docs/PUBLIC_REPRODUCTION.md",
+      " M docs/RELEASE_ARCHIVE.md",
+      " M docs/REPRODUCTION.md",
+      " M docs/USER_ACTIONS_REQUIRED.md",
+      " M docs/implementation_records/PAPER_CN_CONTINUATION.md",
+      " M docs/index.html",
+      " M docs/paper_cn_v1/README.md",
+      " M docs/paper_cn_v2/README.md",
+      " M research/README.md",
+      " M research/audit_current_results.py",
+      " M research/discovery/README.md",
+      " M research/manage_baseline.py",
+      " M research/package_submission.py",
+      " M research/paper_cn_revision/audit_revision.py",
+      " M research/paper_cn_revision/browser_revision.cjs",
+      " M research/paper_cn_revision/build_revision.py",
+      " M research/results/current_manifest.json",
+      " M research/results/w00_baseline/current_audit.json",
+      " M research/results/w00_baseline/documentation_files.csv",
+      " M research/results/w00_baseline/historical_files.csv",
+      " M research/results/w00_baseline/manifest_files.csv",
+      " M research/results/w00_baseline/paper_cn_revision_files.csv",
+      " M research/results/w00_baseline/paper_cn_v09_files.csv",
+      " M research/results/w00_baseline/paper_files.csv",
+      " M research/results/w00_baseline/source_files.csv",
+      " M research/test_current_audit.py",
+      "?? docs/implementation_records/CANDIDATE_FOLLOWUP_CONTINUATION.md",
+      "?? docs/implementation_records/FIGURE_TABLE_NARRATIVE_CONTINUATION.md",
+      "?? docs/implementation_records/FORMAL_FOLLOWUP_CONTINUATION.md",
+      "?? docs/paper_cn_v3/",
+      "?? docs/paper_cn_v4/",
+      "?? docs/research_followup_v1/",
+      "?? research/common_performance/",
+      "?? research/discovery/CONTEXT_PROTOCOL.md",
+      "?? research/discovery/DONOR_DESIGN_AMENDMENT.md",
+      "?? research/discovery/DONOR_PROTOCOL.md",
+      "?? research/discovery/MECHANISM_PROTOCOL.md",
+      "?? research/discovery/acquire_chip.py",
+      "?? research/discovery/acquire_chip_build_evidence.py",
+      "?? research/discovery/acquire_chip_sources.py",
+      "?? research/discovery/acquire_donor_supplement.py",
+      "?? research/discovery/acquire_published_mechanism.py",
+      "?? research/discovery/acquire_supplement_browser.cjs",
+      "?? research/discovery/audit_chip.R",
+      "?? research/discovery/audit_chip_complete.R",
+      "?? research/discovery/audit_chip_replicates.R",
+      "?? research/discovery/audit_context.py",
+      "?? research/discovery/audit_donors.R",
+      "?? research/discovery/audit_mechanism.py",
+      "?? research/discovery/audit_mechanism_complete.py",
+      "?? research/discovery/audit_published_counts.R",
+      "?? research/discovery/audit_published_mechanism.py",
+      "?? research/discovery/chip_coordinate_evidence.py",
+      "?? research/discovery/chip_replicates.py",
+      "?? research/discovery/complete_mechanism_ci.R",
+      "?? research/discovery/context_design.R",
+      "?? research/discovery/donor_design.py",
+      "?? research/discovery/download_ranges.py",
+      "?? research/discovery/finalize_followup.py",
+      "?? research/discovery/finalize_mechanism_chip.py",
+      "?? research/discovery/inspect_donor_design.py",
+      "?? research/discovery/inspect_donor_pairing.py",
+      "?? research/discovery/inspect_published_mechanism.R",
+      "?? research/discovery/mechanism_design.py",
+      "?? research/discovery/ocr_chip_figure.py",
+      "?? research/discovery/prepare_context.py",
+      "?? research/discovery/prepare_mechanism.py",
+      "?? research/discovery/report_followup.R",
+      "?? research/discovery/run_chip.py",
+      "?? research/discovery/run_context.R",
+      "?? research/discovery/run_donors.py",
+      "?? research/discovery/run_mechanism.R",
+      "?? research/discovery/test_download_ranges.py",
+      "?? research/discovery/unpack_published_mechanism.py",
+      "?? research/discovery/verify_chip_assembly.py",
+      "?? research/paper_cn_revision/biology_assets.py",
+      "?? research/results/common_performance_applicability_v1/",
+      "?? research/results/common_performance_checkpoint_v1/",
+      "?? research/results/common_performance_v1/",
+      "?? research/results/common_performance_v2/",
+      "?? research/results/common_performance_v3/",
+      "?? research/results/common_performance_v4/",
+      "?? research/results/discovery_chip_analysis_v1/",
+      "?? research/results/discovery_chip_v1/",
+      "?? research/results/discovery_context_v1/",
+      "?? research/results/discovery_donors_v1/",
+      "?? research/results/discovery_mechanism_fit_v1/",
+      "?? research/results/discovery_mechanism_fit_v2/",
+      "?? research/results/discovery_mechanism_fit_v3/",
+      "?? research/results/discovery_mechanism_fit_v4/",
+      "?? research/results/discovery_mechanism_v1/",
+      "?? research/results/w00_baseline/biology-context-acquire.json",
+      "?? research/results/w00_baseline/biology-context-acquire.txt",
+      "?? research/results/w00_baseline/biology-context-fit.json",
+      "?? research/results/w00_baseline/biology-context-fit.txt",
+      "?? research/results/w00_baseline/biology-context-numeric-audit.json",
+      "?? research/results/w00_baseline/biology-context-numeric-audit.txt",
+      "?? research/results/w00_baseline/biology-delivery-audit-result.json",
+      "?? research/results/w00_baseline/biology-delivery-package.json",
+      "?? research/results/w00_baseline/biology-delivery-package.txt",
+      "?? research/results/w00_baseline/biology-donor-pairing-complete.txt",
+      "?? research/results/w00_baseline/biology-donor-pairing-source.json",
+      "?? research/results/w00_baseline/biology-donor-pairing-source.txt",
+      "?? research/results/w00_baseline/biology-donor-pairing-verified.txt",
+      "?? research/results/w00_baseline/biology-donor-supplement-browser-final.json",
+      "?? research/results/w00_baseline/biology-donor-supplement-browser-final.txt",
+      "?? research/results/w00_baseline/biology-donor-supplement-browser.json",
+      "?? research/results/w00_baseline/biology-donor-supplement-browser.txt",
+      "?? research/results/w00_baseline/biology-donor-supplement-extract.json",
+      "?? research/results/w00_baseline/biology-donor-supplement-extract.txt",
+      "?? research/results/w00_baseline/biology-donor-supplement-query.txt",
+      "?? research/results/w00_baseline/biology-donors-acquire-curl.txt",
+      "?? research/results/w00_baseline/biology-donors-acquire-final.txt",
+      "?? research/results/w00_baseline/biology-donors-acquire-timeout.json",
+      "?? research/results/w00_baseline/biology-donors-acquire.json",
+      "?? research/results/w00_baseline/biology-donors-acquire.txt",
+      "?? research/results/w00_baseline/biology-donors-metadata-final.txt",
+      "?? research/results/w00_baseline/biology-donors-metadata-resume.json",
+      "?? research/results/w00_baseline/biology-donors-metadata-resume.txt",
+      "?? research/results/w00_baseline/biology-donors-r-audit-complete.json",
+      "?? research/results/w00_baseline/biology-donors-r-audit-complete.txt",
+      "?? research/results/w00_baseline/biology-donors-r-independent-final.txt",
+      "?? research/results/w00_baseline/biology-donors-r-independent.txt",
+      "?? research/results/w00_baseline/biology-donors-ranges-complete.json",
+      "?? research/results/w00_baseline/biology-donors-ranges-complete.txt",
+      "?? research/results/w00_baseline/biology-donors-ranges-resume.json",
+      "?? research/results/w00_baseline/biology-donors-ranges-resume.txt",
+      "?? research/results/w00_baseline/biology-donors-ranges.txt",
+      "?? research/results/w00_baseline/biology-donors-sample-index.json",
+      "?? research/results/w00_baseline/biology-donors-sample-index.txt",
+      "?? research/results/w00_baseline/biology-donors-statistics-final.json",
+      "?? research/results/w00_baseline/biology-donors-statistics-final.txt",
+      "?? research/results/w00_baseline/biology-donors-statistics.json",
+      "?? research/results/w00_baseline/biology-donors-statistics.txt",
+      "?? research/results/w00_baseline/biology-followup-ledger-final.json",
+      "?? research/results/w00_baseline/biology-followup-ledger-final.txt",
+      "?? research/results/w00_baseline/biology-followup-ledger-reseal.json",
+      "?? research/results/w00_baseline/biology-followup-ledger-reseal.txt",
+      "?? research/results/w00_baseline/biology-followup-ledger.json",
+      "?? research/results/w00_baseline/biology-followup-ledger.txt",
+      "?? research/results/w00_baseline/biology-followup-project-final.json",
+      "?? research/results/w00_baseline/biology-followup-project-final.txt",
+      "?? research/results/w00_baseline/biology-followup-project.json",
+      "?? research/results/w00_baseline/biology-followup-project.txt",
+      "?? research/results/w00_baseline/biology-handoff-audit-probes.json",
+      "?? research/results/w00_baseline/biology-handoff-audit-probes.txt",
+      "?? research/results/w00_baseline/biology-handoff-download-probes.json",
+      "?? research/results/w00_baseline/biology-handoff-download-probes.txt",
+      "?? research/results/w00_baseline/biology-handoff-index-links.json",
+      "?? research/results/w00_baseline/biology-handoff-index-links.txt",
+      "?? research/results/w00_baseline/biology-handoff-paper-audit.json",
+      "?? research/results/w00_baseline/biology-handoff-paper-audit.txt",
+      "?? research/results/w00_baseline/biology-handoff-python-final.json",
+      "?? research/results/w00_baseline/biology-handoff-python-final.txt",
+      "?? research/results/w00_baseline/biology-handoff-python-syntax.json",
+      "?? research/results/w00_baseline/biology-handoff-python-syntax.txt",
+      "?? research/results/w00_baseline/biology-handoff-saved-results.json",
+      "?? research/results/w00_baseline/biology-handoff-saved-results.txt",
+      "?? research/results/w00_baseline/biology-paper-audit-final.json",
+      "?? research/results/w00_baseline/biology-paper-audit-final.txt",
+      "?? research/results/w00_baseline/biology-paper-audit-final2.json",
+      "?? research/results/w00_baseline/biology-paper-audit-final2.txt",
+      "?? research/results/w00_baseline/biology-paper-audit-ok.json",
+      "?? research/results/w00_baseline/biology-paper-audit-ok.txt",
+      "?? research/results/w00_baseline/biology-paper-audit-pass.json",
+      "?? research/results/w00_baseline/biology-paper-audit-pass.txt",
+      "?? research/results/w00_baseline/biology-paper-audit.json",
+      "?? research/results/w00_baseline/biology-paper-audit.txt",
+      "?? research/results/w00_baseline/biology-paper-browser-final.json",
+      "?? research/results/w00_baseline/biology-paper-browser-final.txt",
+      "?? research/results/w00_baseline/biology-paper-browser-ok.json",
+      "?? research/results/w00_baseline/biology-paper-browser-ok.txt",
+      "?? research/results/w00_baseline/biology-paper-browser-pass.json",
+      "?? research/results/w00_baseline/biology-paper-browser-pass.txt",
+      "?? research/results/w00_baseline/biology-paper-browser-pass2.json",
+      "?? research/results/w00_baseline/biology-paper-browser-pass2.txt",
+      "?? research/results/w00_baseline/biology-paper-browser.json",
+      "?? research/results/w00_baseline/biology-paper-browser.txt",
+      "?? research/results/w00_baseline/biology-paper-export-css.json",
+      "?? research/results/w00_baseline/biology-paper-export-css.txt",
+      "?? research/results/w00_baseline/biology-paper-export-css2.json",
+      "?? research/results/w00_baseline/biology-paper-export-css2.txt",
+      "?? research/results/w00_baseline/biology-paper-export-final.json",
+      "?? research/results/w00_baseline/biology-paper-export-final.txt",
+      "?? research/results/w00_baseline/biology-paper-export.json",
+      "?? research/results/w00_baseline/biology-paper-export.txt",
+      "?? research/results/w00_baseline/chip_verification_files.csv",
+      "?? research/results/w00_baseline/common_performance_formal_files.csv",
+      "?? research/results/w00_baseline/common_performance_preparation_files.csv",
+      "?? research/results/w00_baseline/continuation-chip-acquire.json",
+      "?? research/results/w00_baseline/continuation-chip-acquire.txt",
+      "?? research/results/w00_baseline/continuation-chip-build-audit.json",
+      "?? research/results/w00_baseline/continuation-chip-build-audit.txt",
+      "?? research/results/w00_baseline/continuation-chip-build-sources-resume.json",
+      "?? research/results/w00_baseline/continuation-chip-build-sources-resume.txt",
+      "?? research/results/w00_baseline/continuation-chip-build-sources.txt",
+      "?? research/results/w00_baseline/continuation-chip-coordinate-evidence.json",
+      "?? research/results/w00_baseline/continuation-chip-coordinate-evidence.txt",
+      "?? research/results/w00_baseline/continuation-chip-figure-ocr.json",
+      "?? research/results/w00_baseline/continuation-chip-figure-ocr.txt",
+      "?? research/results/w00_baseline/continuation-chip-primary-sources.json",
+      "?? research/results/w00_baseline/continuation-chip-primary-sources.txt",
+      "?? research/results/w00_baseline/continuation-chip-r-independent-final.json",
+      "?? research/results/w00_baseline/continuation-chip-r-independent-final.txt",
+      "?? research/results/w00_baseline/continuation-chip-r-independent.json",
+      "?? research/results/w00_baseline/continuation-chip-r-independent.txt",
+      "?? research/results/w00_baseline/continuation-chip-replicates-independent.json",
+      "?? research/results/w00_baseline/continuation-chip-replicates-independent.txt",
+      "?? research/results/w00_baseline/continuation-chip-replicates.json",
+      "?? research/results/w00_baseline/continuation-chip-replicates.txt",
+      "?? research/results/w00_baseline/continuation-chip-window-analysis.json",
+      "?? research/results/w00_baseline/continuation-chip-window-analysis.txt",
+      "?? research/results/w00_baseline/continuation-current-failure-probes.json",
+      "?? research/results/w00_baseline/continuation-current-failure-probes.txt",
+      "?? research/results/w00_baseline/continuation-ellmer-restore.json",
+      "?? research/results/w00_baseline/continuation-ellmer-restore.txt",
+      "?? research/results/w00_baseline/continuation-final-python-syntax.json",
+      "?? research/results/w00_baseline/continuation-final-python-syntax.txt",
+      "?? research/results/w00_baseline/continuation-formal-delivery-audit-result.json",
+      "?? research/results/w00_baseline/continuation-formal-delivery-package.json",
+      "?? research/results/w00_baseline/continuation-formal-delivery-package.txt",
+      "?? research/results/w00_baseline/continuation-handoff-check-final.json",
+      "?? research/results/w00_baseline/continuation-handoff-check-final.txt",
+      "?? research/results/w00_baseline/continuation-handoff-check-result.json",
+      "?? research/results/w00_baseline/continuation-handoff-check.json",
+      "?? research/results/w00_baseline/continuation-handoff-check.txt",
+      "?? research/results/w00_baseline/continuation-mechanism-audit-complete.json",
+      "?? research/results/w00_baseline/continuation-mechanism-audit-complete.txt",
+      "?? research/results/w00_baseline/continuation-mechanism-audit-final.json",
+      "?? research/results/w00_baseline/continuation-mechanism-audit-final.txt",
+      "?? research/results/w00_baseline/continuation-mechanism-audit.json",
+      "?? research/results/w00_baseline/continuation-mechanism-audit.txt",
+      "?? research/results/w00_baseline/continuation-mechanism-chip-ledger-final.json",
+      "?? research/results/w00_baseline/continuation-mechanism-chip-ledger-final.txt",
+      "?? research/results/w00_baseline/continuation-mechanism-chip-ledger-sealed.json",
+      "?? research/results/w00_baseline/continuation-mechanism-chip-ledger-sealed.txt",
+      "?? research/results/w00_baseline/continuation-mechanism-chip-ledger.json",
+      "?? research/results/w00_baseline/continuation-mechanism-chip-ledger.txt",
+      "?? research/results/w00_baseline/continuation-mechanism-ci-export-v2.json",
+      "?? research/results/w00_baseline/continuation-mechanism-ci-export-v2.txt",
+      "?? research/results/w00_baseline/continuation-mechanism-ci-export.json",
+      "?? research/results/w00_baseline/continuation-mechanism-ci-export.txt",
+      "?? research/results/w00_baseline/continuation-mechanism-design-v2.json",
+      "?? research/results/w00_baseline/continuation-mechanism-design-v2.txt",
+      "?? research/results/w00_baseline/continuation-mechanism-design-v3.json",
+      "?? research/results/w00_baseline/continuation-mechanism-design-v3.txt",
+      "?? research/results/w00_baseline/continuation-mechanism-design-v4.json",
+      "?? research/results/w00_baseline/continuation-mechanism-design-v4.txt",
+      "?? research/results/w00_baseline/continuation-mechanism-design.json",
+      "?? research/results/w00_baseline/continuation-mechanism-design.txt",
+      "?? research/results/w00_baseline/continuation-mechanism-filter-independent.json",
+      "?? research/results/w00_baseline/continuation-mechanism-filter-independent.txt",
+      "?? research/results/w00_baseline/continuation-mechanism-fit-v2.json",
+      "?? research/results/w00_baseline/continuation-mechanism-fit-v2.txt",
+      "?? research/results/w00_baseline/continuation-mechanism-fit-v3.json",
+      "?? research/results/w00_baseline/continuation-mechanism-fit-v3.txt",
+      "?? research/results/w00_baseline/continuation-mechanism-fit-v4.json",
+      "?? research/results/w00_baseline/continuation-mechanism-fit-v4.txt",
+      "?? research/results/w00_baseline/continuation-mechanism-mapping-final.json",
+      "?? research/results/w00_baseline/continuation-mechanism-mapping-final.txt",
+      "?? research/results/w00_baseline/continuation-mechanism-published-annotation-complete.json",
+      "?? research/results/w00_baseline/continuation-mechanism-published-annotation-complete.txt",
+      "?? research/results/w00_baseline/continuation-mechanism-published-annotation.json",
+      "?? research/results/w00_baseline/continuation-mechanism-published-annotation.txt",
+      "?? research/results/w00_baseline/continuation-mechanism-published-counts-final.json",
+      "?? research/results/w00_baseline/continuation-mechanism-published-counts-final.txt",
+      "?? research/results/w00_baseline/continuation-mechanism-published-counts-mapped.json",
+      "?? research/results/w00_baseline/continuation-mechanism-published-counts-mapped.txt",
+      "?? research/results/w00_baseline/continuation-mechanism-published-counts.json",
+      "?? research/results/w00_baseline/continuation-mechanism-published-counts.txt",
+      "?? research/results/w00_baseline/continuation-mechanism-published-mapping-audit.json",
+      "?? research/results/w00_baseline/continuation-mechanism-published-mapping-audit.txt",
+      "?? research/results/w00_baseline/continuation-mechanism-published-metadata-retry.txt",
+      "?? research/results/w00_baseline/continuation-mechanism-published-metadata.json",
+      "?? research/results/w00_baseline/continuation-mechanism-published-metadata.txt",
+      "?? research/results/w00_baseline/continuation-mechanism-published-ranges.json",
+      "?? research/results/w00_baseline/continuation-mechanism-published-ranges.txt",
+      "?? research/results/w00_baseline/continuation-performance-formal-v2.json",
+      "?? research/results/w00_baseline/continuation-performance-formal-v2.txt",
+      "?? research/results/w00_baseline/continuation-performance-formal-v3.json",
+      "?? research/results/w00_baseline/continuation-performance-formal-v3.txt",
+      "?? research/results/w00_baseline/continuation-performance-formal-v4.json",
+      "?? research/results/w00_baseline/continuation-performance-formal-v4.txt",
+      "?? research/results/w00_baseline/continuation-performance-formal.json",
+      "?? research/results/w00_baseline/continuation-performance-formal.txt",
+      "?? research/results/w00_baseline/continuation-performance-independent.json",
+      "?? research/results/w00_baseline/continuation-performance-independent.txt",
+      "?? research/results/w00_baseline/continuation-performance-progress-audit.json",
+      "?? research/results/w00_baseline/continuation-performance-progress-audit.txt",
+      "?? research/results/w00_baseline/continuation-performance-scoring-boundaries.json",
+      "?? research/results/w00_baseline/continuation-performance-scoring-boundaries.txt",
+      "?? research/results/w00_baseline/continuation-performance-scoring.json",
+      "?? research/results/w00_baseline/continuation-performance-scoring.txt",
+      "?? research/results/w00_baseline/continuation-performance-secondary-independent.json",
+      "?? research/results/w00_baseline/continuation-performance-secondary-independent.txt",
+      "?? research/results/w00_baseline/continuation-performance-secondary.json",
+      "?? research/results/w00_baseline/continuation-performance-secondary.txt",
+      "?? research/results/w00_baseline/continuation-performance-selection-audit.json",
+      "?? research/results/w00_baseline/continuation-performance-selection-audit.txt",
+      "?? research/results/w00_baseline/continuation-report-browser.json",
+      "?? research/results/w00_baseline/continuation-report-browser.txt",
+      "?? research/results/w00_baseline/continuation-report-independent.json",
+      "?? research/results/w00_baseline/continuation-report-independent.txt",
+      "?? research/results/w00_baseline/continuation-research-report-export.json",
+      "?? research/results/w00_baseline/continuation-research-report-export.txt",
+      "?? research/results/w00_baseline/continuation-results-seal.json",
+      "?? research/results/w00_baseline/continuation-results-seal.txt",
+      "?? research/results/w00_baseline/continuation-runtime-restore-v2.txt",
+      "?? research/results/w00_baseline/continuation-runtime-restore-v3.json",
+      "?? research/results/w00_baseline/continuation-runtime-restore-v3.txt",
+      "?? research/results/w00_baseline/continuation-runtime-restore.txt",
+      "?? research/results/w00_baseline/continuation-tools-applicability.json",
+      "?? research/results/w00_baseline/continuation-tools-applicability.txt",
+      "?? research/results/w00_baseline/discovery_context_files.csv",
+      "?? research/results/w00_baseline/discovery_donors_files.csv",
+      "?? research/results/w00_baseline/followup-checkpoint-capture.json",
+      "?? research/results/w00_baseline/followup-checkpoint-capture.txt",
+      "?? research/results/w00_baseline/followup-delivery-audit-result.json",
+      "?? research/results/w00_baseline/followup-delivery-package.json",
+      "?? research/results/w00_baseline/followup-delivery-package.txt",
+      "?? research/results/w00_baseline/followup-handoff-doc-check.json",
+      "?? research/results/w00_baseline/followup-handoff-doc-check.txt",
+      "?? research/results/w00_baseline/followup-handoff-syntax.json",
+      "?? research/results/w00_baseline/followup-handoff-syntax.txt",
+      "?? research/results/w00_baseline/followup_research_report_files.csv",
+      "?? research/results/w00_baseline/handoff-delivery-audit-result.json",
+      "?? research/results/w00_baseline/handoff-document-delivery.json",
+      "?? research/results/w00_baseline/handoff-document-delivery.txt",
+      "?? research/results/w00_baseline/handoff-formal-docs-delivery-audit-result.json",
+      "?? research/results/w00_baseline/handoff-formal-docs-delivery-package.json",
+      "?? research/results/w00_baseline/handoff-formal-docs-delivery-package.txt",
+      "?? research/results/w00_baseline/handoff-formal-docs-preservation.json",
+      "?? research/results/w00_baseline/handoff-formal-docs-preservation.txt",
+      "?? research/results/w00_baseline/handoff-formal-docs-syntax.json",
+      "?? research/results/w00_baseline/handoff-formal-docs-syntax.txt",
+      "?? research/results/w00_baseline/mechanism-inputs-acquire-resume.json",
+      "?? research/results/w00_baseline/mechanism-inputs-acquire-resume.txt",
+      "?? research/results/w00_baseline/mechanism-inputs-acquire.json",
+      "?? research/results/w00_baseline/mechanism-inputs-acquire.txt",
+      "?? research/results/w00_baseline/mechanism_fit_files.csv",
+      "?? research/results/w00_baseline/mechanism_preparation_files.csv",
+      "?? research/results/w00_baseline/paper_cn_v010_files.csv",
+      "?? research/results/w00_baseline/paper_cn_v091_files.csv",
+      "?? research/results/w00_baseline/performance-comparator-install-final.json",
+      "?? research/results/w00_baseline/performance-comparator-install-final.txt",
+      "?? research/results/w00_baseline/performance-comparator-install.json",
+      "?? research/results/w00_baseline/performance-comparator-install.txt",
+      "?? research/results/w00_baseline/performance-runtime-acquire-final.txt",
+      "?? research/results/w00_baseline/performance-runtime-acquire-resume.json",
+      "?? research/results/w00_baseline/performance-runtime-acquire-resume.txt",
+      "?? research/results/w00_baseline/performance-runtime-acquire.json",
+      "?? research/results/w00_baseline/performance-runtime-acquire.txt",
+      "?? research/results/w00_baseline/revision-biology-browser/",
+      "?? research/results/w00_baseline/revision-links-audit-boundaries.json",
+      "?? research/results/w00_baseline/revision-links-audit-boundaries.txt",
+      "?? research/results/w00_baseline/revision-links-audit.json",
+      "?? research/results/w00_baseline/revision-links-audit.txt",
+      "?? research/results/w00_baseline/revision-links-browser.json",
+      "?? research/results/w00_baseline/revision-links-browser.txt",
+      "?? research/results/w00_baseline/revision-links-browser/",
+      "?? research/results/w00_baseline/revision-links-delivery-audit-result.json",
+      "?? research/results/w00_baseline/revision-links-delivery.json",
+      "?? research/results/w00_baseline/revision-links-delivery.txt",
+      "?? research/results/w00_baseline/revision-links-export.json",
+      "?? research/results/w00_baseline/revision-links-export.txt",
+      "?? research/results/w00_baseline/revision-links-python-final.json",
+      "?? research/results/w00_baseline/revision-links-python-final.txt",
+      "?? research/results/w00_baseline/revision-links-python-syntax.json",
+      "?? research/results/w00_baseline/revision-links-python-syntax.txt"
     ]
   },
   "source": {
     "inventory": {
       "path": "research/results/w00_baseline/source_files.csv",
-      "bytes": 25540,
-      "sha256": "636e7730cb64ef6329ed37084e6278021183b75ad709b32e0f0dabaaebb5e1e8"
+      "bytes": 33546,
+      "sha256": "9b7180691f8c13ff8ec07c819ca0acbb5889b60a4ebe23f4d12583d092b1d2f2"
     },
-    "code_hash": "b6cfaab6b7734e9ae09205cc0a05522a6336c1bbe562017fa454ae39c695dc30",
+    "code_hash": "e9846f6bb0034908db44cd2cd2f87bc84ab31008a0a0ce1ad513c468d7553968",
     "package_inventory": {
       "path": "research/results/w00_baseline/package_source_files.csv",
       "bytes": 14760,
@@ -33,8 +403,8 @@
   },
   "documentation": {
     "path": "research/results/w00_baseline/documentation_files.csv",
-    "bytes": 4634,
-    "sha256": "440572ebcc4fac966c8964ff1397258200a395b9c745eaffcca5a84051fb67de"
+    "bytes": 6771,
+    "sha256": "e480dd8c3af4f6acfaac3560017fec59a50144761080efe930bb490c24bed989"
   },
   "environment": {
     "path": "research/results/w00_baseline/environment.json",
@@ -144,7 +514,7 @@
       "inventory": {
         "path": "research/results/w00_baseline/paper_cn_revision_files.csv",
         "bytes": 8788,
-        "sha256": "59b761f8efe5bf509272cb9645ffcda0dbb60b5a09ed47de70e93dcf21657587"
+        "sha256": "3ad318fca48a260c54481af70546bb8fa7ff09bb90c6c8b1f98eedb4ed29c791"
       },
       "file_count": 76,
       "mode": "saved_results",
@@ -157,9 +527,35 @@
       "inventory": {
         "path": "research/results/w00_baseline/paper_cn_v09_files.csv",
         "bytes": 10750,
-        "sha256": "9a163363928c49735095baad580bb088424f5b52b6ded59220a735b1b8f1cfbf"
+        "sha256": "12e978268f7b784133892224bae2d58dbdc06b3b0c19522743c0d46bcc5e2891"
       },
       "file_count": 93,
+      "mode": "saved_results",
+      "rerun_experiment": false
+    },
+    "paper_cn_v091": {
+      "entrypoints": [
+        "docs/paper_cn_v3"
+      ],
+      "inventory": {
+        "path": "research/results/w00_baseline/paper_cn_v091_files.csv",
+        "bytes": 10990,
+        "sha256": "a13b9c2ec078fae0e11e5f2d040a2baa23eb03b70c585e2fa9d345de7db847bd"
+      },
+      "file_count": 95,
+      "mode": "saved_results",
+      "rerun_experiment": false
+    },
+    "paper_cn_v010": {
+      "entrypoints": [
+        "docs/paper_cn_v4"
+      ],
+      "inventory": {
+        "path": "research/results/w00_baseline/paper_cn_v010_files.csv",
+        "bytes": 11750,
+        "sha256": "caef005d0b1b044c2e0a019101f8a177816f1b7fd7d955090213fec488d38091"
+      },
+      "file_count": 102,
       "mode": "saved_results",
       "rerun_experiment": false
     },
@@ -176,6 +572,114 @@
       "mode": "saved_results",
       "rerun_experiment": false
     },
+    "discovery_context": {
+      "entrypoints": [
+        "research/results/discovery_context_v1"
+      ],
+      "inventory": {
+        "path": "research/results/w00_baseline/discovery_context_files.csv",
+        "bytes": 4671,
+        "sha256": "14b2f8cbc6813429827ffcd0166972ac3fe44676aee013e15219ed81b4d9cfec"
+      },
+      "file_count": 36,
+      "mode": "saved_results",
+      "rerun_experiment": false
+    },
+    "discovery_donors": {
+      "entrypoints": [
+        "research/results/discovery_donors_v1"
+      ],
+      "inventory": {
+        "path": "research/results/w00_baseline/discovery_donors_files.csv",
+        "bytes": 3737,
+        "sha256": "c2cd9f9c7deab0d6bc77483b344885423715df199a024c251f36cf274231bfcf"
+      },
+      "file_count": 29,
+      "mode": "saved_results",
+      "rerun_experiment": false
+    },
+    "common_performance_preparation": {
+      "entrypoints": [
+        "research/results/common_performance_checkpoint_v1"
+      ],
+      "inventory": {
+        "path": "research/results/w00_baseline/common_performance_preparation_files.csv",
+        "bytes": 440,
+        "sha256": "0c931bd4b76a30eaadd3e0b215e2346adc2b05a7c0b9afc5ce65b14df88651dc"
+      },
+      "file_count": 3,
+      "mode": "preparation_partial",
+      "rerun_experiment": false,
+      "note": "Inputs/status only; no new performance scores or mechanism fit"
+    },
+    "mechanism_preparation": {
+      "entrypoints": [
+        "research/results/discovery_mechanism_v1"
+      ],
+      "inventory": {
+        "path": "research/results/w00_baseline/mechanism_preparation_files.csv",
+        "bytes": 1101,
+        "sha256": "8271db318dfc441b3717edfa283bd4a28ba70f0d60064f3a29ed533747baa137"
+      },
+      "file_count": 8,
+      "mode": "preparation_partial",
+      "rerun_experiment": false,
+      "note": "Inputs/status only; no new performance scores or mechanism fit"
+    },
+    "common_performance_formal": {
+      "entrypoints": [
+        "research/results/common_performance_v4",
+        "research/results/common_performance_applicability_v1"
+      ],
+      "inventory": {
+        "path": "research/results/w00_baseline/common_performance_formal_files.csv",
+        "bytes": 134887,
+        "sha256": "612faec0b02448adbfe2d039a6fda387f5b64f79a8ec97975bee1eaf391f6aba"
+      },
+      "file_count": 1045,
+      "mode": "saved_results",
+      "rerun_experiment": false
+    },
+    "mechanism_fit": {
+      "entrypoints": [
+        "research/results/discovery_mechanism_fit_v4"
+      ],
+      "inventory": {
+        "path": "research/results/w00_baseline/mechanism_fit_files.csv",
+        "bytes": 13499,
+        "sha256": "61ec08b1adec818808818b7b5e407e42957904d348ce71695d9fe2e09881c5e3"
+      },
+      "file_count": 92,
+      "mode": "saved_results",
+      "rerun_experiment": false
+    },
+    "chip_verification": {
+      "entrypoints": [
+        "research/results/discovery_chip_v1",
+        "research/results/discovery_chip_analysis_v1"
+      ],
+      "inventory": {
+        "path": "research/results/w00_baseline/chip_verification_files.csv",
+        "bytes": 7947,
+        "sha256": "33828dea56fb53e3d21e27fb9e679c7e8eb33375c38d851c514f884c438fd147"
+      },
+      "file_count": 58,
+      "mode": "saved_results",
+      "rerun_experiment": false
+    },
+    "followup_research_report": {
+      "entrypoints": [
+        "docs/research_followup_v1"
+      ],
+      "inventory": {
+        "path": "research/results/w00_baseline/followup_research_report_files.csv",
+        "bytes": 1764,
+        "sha256": "ee80cb78c6abdcadd07987dff13cf273e5193d0b63f02230f9d27b0430702a16"
+      },
+      "file_count": 14,
+      "mode": "saved_results",
+      "rerun_experiment": false
+    },
     "paper": {
       "entrypoints": [
         "docs/PAPER_DRAFT.md",
@@ -189,6 +693,7 @@
         "docs/BioExplainR-development-delivery-0.4.0.9000-r2.zip",
         "docs/BioExplainR-中文论文-v0.8-图表附件.zip",
         "docs/BioExplainR-paper-draft.docx",
+        "docs/BioExplainR-development-delivery-0.4.0.9000-r11.zip",
         "docs/BioExplainR-development-delivery-0.4.0.9000-r8.zip",
         "docs/BioExplainR-paper-draft.html",
         "docs/BioExplainR-development-delivery-0.4.0.9000-r5.zip",
@@ -196,11 +701,16 @@
         "docs/BioExplainR-supplementary.html",
         "docs/BioExplainR-API与需求核查报告.docx",
         "docs/BioExplainR-development-delivery-0.4.0.9000.zip",
+        "docs/BioExplainR-development-delivery-0.4.0.9000-r10.zip",
+        "docs/BioExplainR-development-delivery-0.4.0.9000-r14.zip",
         "docs/BioExplainR-development-delivery-0.4.0.9000-r7.zip",
+        "docs/BioExplainR-development-delivery-0.4.0.9000-r12.zip",
+        "docs/BioExplainR-development-delivery-0.4.0.9000-r9.zip",
         "docs/BioExplainR-supplementary.pdf",
         "docs/BioExplainR-development-delivery-0.4.0.9000-r3.zip",
         "docs/BioExplainR-development-delivery-0.4.0.9000-r6.zip",
         "docs/BioExplainR-iMeta-Q1-submission-roadmap.pdf",
+        "docs/BioExplainR-development-delivery-0.4.0.9000-r13.zip",
         "docs/BioExplainR-paper-draft.pdf",
         "docs/BioExplainR-development-delivery-0.4.0.9000-r4.zip",
         "docs/BioExplainR-supplementary.docx",
@@ -208,20 +718,20 @@
       ],
       "inventory": {
         "path": "research/results/w00_baseline/paper_files.csv",
-        "bytes": 18409,
-        "sha256": "384e1798127a59587e20972787ae9bf8f63cb5141051ae524ae2092608149969"
+        "bytes": 19206,
+        "sha256": "1706511bc53bd05a62b6ed6dc2b1a54c93cbbea43e6e2061a5fec43aa1a0fd05"
       },
-      "file_count": 153,
+      "file_count": 159,
       "mode": "saved_results",
       "rerun_experiment": false
     },
     "historical": {
       "inventory": {
         "path": "research/results/w00_baseline/historical_files.csv",
-        "bytes": 45240,
-        "sha256": "7cabbf1bca5c2ef3be75e3fb19544a6ec10de5cd997962577c905a12229b3294"
+        "bytes": 54063,
+        "sha256": "7d05b6a16c2fc10e2f5a1bf96a6bc7f1181b7e837580fd5165a1bcbff159ef50"
       },
-      "file_count": 325,
+      "file_count": 393,
       "mode": "historical",
       "rerun_experiment": false,
       "entrypoints": [
@@ -414,10 +924,68 @@
   },
   "baseline_artifacts": {
     "path": "research/results/w00_baseline/manifest_files.csv",
-    "bytes": 66256,
-    "sha256": "1c94938fcfb151203f2c0197b169f8070fea1e22b04a0ccf6b1ab07ba5b8258b"
+    "bytes": 105481,
+    "sha256": "a6d74689ced4485613f3fbda03f1c915527f6fff809c77c5491376635fbbf4ea"
   },
   "checks": {
+    "biology-donors-statistics": {
+      "command": [
+        "/tmp/opencode/paper-venv/bin/python",
+        "research/discovery/run_donors.py",
+        "analyze",
+        "research/results/discovery_donors_v1"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T14:40:01.978158+00:00",
+      "finished_utc": "2026-10-08T14:40:15.012553+00:00",
+      "exit_code": 1,
+      "status": "fail",
+      "log": {
+        "path": "research/results/w00_baseline/biology-donors-statistics.txt",
+        "bytes": 730,
+        "sha256": "60d97434befe2c194790420cc2c3f04934b8b77b42d2c05b72973054020987ab"
+      }
+    },
+    "biology-paper-browser-pass": {
+      "command": [
+        "env",
+        "BIOEXPLAINR_PAPER_DIRECTORY=docs/paper_cn_v4",
+        "BIOEXPLAINR_PAPER_VERSION=v0.10",
+        "BIOEXPLAINR_MAIN_FIGURES=3",
+        "BIOEXPLAINR_MAIN_TABLES=1",
+        "BIOEXPLAINR_REQUIRED_TEXT=iSEE,SCassist,GeneAgent,ellmer,GPTCelltype,SPARCL1,GSE94335,GSE146017,致死性哮喘",
+        "BIOEXPLAINR_REVISION_BROWSER=/tmp/opencode/paper-v010-browser",
+        "NODE_PATH=/tmp/opencode/node_modules",
+        "node",
+        "research/paper_cn_revision/browser_revision.cjs"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T15:57:22.768749+00:00",
+      "finished_utc": "2026-10-08T15:57:23.170557+00:00",
+      "exit_code": 1,
+      "status": "fail",
+      "log": {
+        "path": "research/results/w00_baseline/biology-paper-browser-pass.txt",
+        "bytes": 855,
+        "sha256": "98eec28947950bed733ca045e459c8bd916894927afa6d4b08779f297a02a4ac"
+      }
+    },
+    "continuation-report-independent": {
+      "command": [
+        "/tmp/opencode/paper-venv/bin/python",
+        "research/common_performance/audit_followup_report.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T05:41:17.989007+00:00",
+      "finished_utc": "2026-10-09T05:41:18.343901+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-report-independent.txt",
+        "bytes": 170,
+        "sha256": "d884eb92bf42e6f205719025d899f2b7be48a7c51fa88391cd82a02291d11807"
+      }
+    },
     "review-legacy-api": {
       "command": [
         "Rscript",
@@ -505,6 +1073,22 @@
         "sha256": "235daf2996b20567e3d040ab783c8a5118b2393d38c9475cc2271aa6479f9faa"
       }
     },
+    "revision-links-audit-boundaries": {
+      "command": [
+        "python3",
+        "research/test_current_audit.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T12:03:49.027055+00:00",
+      "finished_utc": "2026-10-08T12:03:49.099207+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/revision-links-audit-boundaries.txt",
+        "bytes": 101,
+        "sha256": "edb4e2159c923ea45a32656078835cdf531c3d7b414c670dd786978875cb0678"
+      }
+    },
     "paper-cn-assets-layout": {
       "command": [
         "/tmp/opencode/paper-venv/bin/python",
@@ -536,6 +1120,26 @@
         "path": "research/results/w00_baseline/supplemental-capture.txt",
         "bytes": 711,
         "sha256": "6b0ce80a3e511e320a12aea9b6ddf95e4778797851fb7e7622a46d9ef38a7c60"
+      }
+    },
+    "continuation-mechanism-published-ranges": {
+      "command": [
+        "python3",
+        "research/discovery/download_ranges.py",
+        "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE229nnn/GSE229084/suppl/GSE229084_SE.processed.rds.gz",
+        "research/results/discovery_mechanism_fit_v4/SE.processed.rds.gz",
+        "--workers",
+        "4"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T03:08:00.231329+00:00",
+      "finished_utc": "2026-10-09T03:10:57.993070+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-mechanism-published-ranges.txt",
+        "bytes": 462,
+        "sha256": "925ef5039ea9d12ce4e40548038bf0bfb872a85afb946ef43251f95717d57e04"
       }
     },
     "package-check": {
@@ -598,6 +1202,33 @@
         "sha256": "e506fa906cfc7a77f8d6f2619e1bbb55495131fb75cf1409b5d7941e22f2f351"
       }
     },
+    "revision-links-delivery": {
+      "command": [
+        "python3",
+        "research/package_submission.py",
+        "--revision",
+        "--paper-directory",
+        "docs/paper_cn_v3",
+        "--paper-version",
+        "v0.9.1",
+        "--audit",
+        "docs/paper_cn_v3/audit.json",
+        "--output",
+        "docs/BioExplainR-development-delivery-0.4.0.9000-r9.zip",
+        "--result",
+        "research/results/w00_baseline/revision-links-delivery-audit-result.json"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T12:03:49.169501+00:00",
+      "finished_utc": "2026-10-08T12:03:56.683104+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/revision-links-delivery.txt",
+        "bytes": 171,
+        "sha256": "4d95eda4cbfbc52ee504f5dc25055dc0463d46d6393ba32a7b978494473b0972"
+      }
+    },
     "review-contracts": {
       "command": [
         "Rscript",
@@ -632,6 +1263,29 @@
         "path": "research/results/w00_baseline/continuation-source-check.txt",
         "bytes": 1684,
         "sha256": "b4de54b0951a9f77bf99149db898c85373dd8beb7ea4d103aac35f69d7089b07"
+      }
+    },
+    "continuation-final-python-syntax": {
+      "command": [
+        "python3",
+        "-m",
+        "compileall",
+        "-q",
+        "research/common_performance",
+        "research/discovery",
+        "research/manage_baseline.py",
+        "research/audit_current_results.py",
+        "research/package_submission.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T05:44:45.304297+00:00",
+      "finished_utc": "2026-10-09T05:44:45.419873+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-final-python-syntax.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
       }
     },
     "paper-cn-workbench-reload": {
@@ -687,6 +1341,24 @@
         "sha256": "e7646d1cc9e562ccc407da9160bac4aea0b461de461e9693f96d306cdc0b5e0f"
       }
     },
+    "continuation-mechanism-published-counts-final": {
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "research/discovery/audit_published_counts.R",
+        "research/results/discovery_mechanism_fit_v4"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T03:44:56.718639+00:00",
+      "finished_utc": "2026-10-09T03:45:08.709280+00:00",
+      "exit_code": 1,
+      "status": "fail",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-mechanism-published-counts-final.txt",
+        "bytes": 2707,
+        "sha256": "9e95f48e6e7891d666f5fcee4f1c5cd714851bda5a929ee1ce9fe9cea4ccbeb6"
+      }
+    },
     "review-package-check": {
       "command": [
         "R",
@@ -706,6 +1378,59 @@
         "path": "research/results/w00_baseline/review-package-check.txt",
         "bytes": 2480,
         "sha256": "7dd601a4c8aa0c24d61244d40f998bd8b0e3d81e0145f6cce1fb04877c4fc9dd"
+      }
+    },
+    "continuation-mechanism-design": {
+      "command": [
+        "python3",
+        "research/discovery/mechanism_design.py",
+        "research/results/discovery_mechanism_fit_v1"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T01:31:12.378595+00:00",
+      "finished_utc": "2026-10-09T01:31:12.729005+00:00",
+      "exit_code": 1,
+      "status": "fail",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-mechanism-design.txt",
+        "bytes": 744,
+        "sha256": "e717d7095256849e6ed8fabeab9c005b4ccbf15935df5ba5ec8472142b16456f"
+      }
+    },
+    "continuation-mechanism-fit-v3": {
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "research/discovery/run_mechanism.R",
+        "research/results/discovery_mechanism_fit_v3"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T01:33:16.167685+00:00",
+      "finished_utc": "2026-10-09T01:33:18.348639+00:00",
+      "exit_code": 1,
+      "status": "fail",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-mechanism-fit-v3.txt",
+        "bytes": 105,
+        "sha256": "4cb52fd87bb0783fd614ef492110528d3fdc6a04a2b2cbd467a493f8d07bf660"
+      }
+    },
+    "continuation-mechanism-ci-export": {
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "research/discovery/complete_mechanism_ci.R",
+        "research/results/discovery_mechanism_fit_v4"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T01:35:51.899820+00:00",
+      "finished_utc": "2026-10-09T01:35:53.770786+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-mechanism-ci-export.txt",
+        "bytes": 1517,
+        "sha256": "c0e757a0a6039410d39248998b1f3403d79ef3bf9b8b24d8e9d855021cd567dd"
       }
     },
     "continuation-container-probe": {
@@ -877,6 +1602,103 @@
         "sha256": "18ea08fe48494f0fdc4ff9482a543b7163110932e5c8d939ac6bd7d8b5a8e3ca"
       }
     },
+    "revision-links-python-final": {
+      "command": [
+        "python3",
+        "-m",
+        "py_compile",
+        "research/paper_cn_revision/build_revision.py",
+        "research/paper_cn_revision/audit_revision.py",
+        "research/package_submission.py",
+        "research/manage_baseline.py",
+        "research/audit_current_results.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T12:03:48.886930+00:00",
+      "finished_utc": "2026-10-08T12:03:48.961119+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/revision-links-python-final.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    "biology-donors-metadata-resume": {
+      "command": [
+        "python3",
+        "research/discovery/run_donors.py",
+        "acquire",
+        "research/results/discovery_donors_v1"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T13:55:56.032565+00:00",
+      "finished_utc": "2026-10-08T13:56:11.516985+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/biology-donors-metadata-resume.txt",
+        "bytes": 1330,
+        "sha256": "889adde49c05ac445ac8404bfcfd4ba9a0ad5474c22aedc8a1f400c293f18b12"
+      }
+    },
+    "revision-links-browser": {
+      "command": [
+        "node",
+        "research/paper_cn_revision/browser_revision.cjs"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T12:01:01.937203+00:00",
+      "finished_utc": "2026-10-08T12:01:08.574464+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/revision-links-browser.txt",
+        "bytes": 700,
+        "sha256": "f68bbd2752e8a0c04c0134e65610e8402a43fefb597a86044701365a38bc1ac3"
+      }
+    },
+    "biology-donor-supplement-browser": {
+      "command": [
+        "env",
+        "NODE_PATH=/tmp/opencode/node_modules",
+        "node",
+        "research/discovery/acquire_supplement_browser.cjs"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T14:19:56.938513+00:00",
+      "finished_utc": "2026-10-08T14:20:58.309295+00:00",
+      "exit_code": 1,
+      "status": "fail",
+      "log": {
+        "path": "research/results/w00_baseline/biology-donor-supplement-browser.txt",
+        "bytes": 434,
+        "sha256": "636a635880c943c4b3ac424ad8cb44f93f9a9342fad99279978a01b26e2a7a45"
+      }
+    },
+    "biology-paper-export-css": {
+      "command": [
+        "/tmp/opencode/paper-venv/bin/python",
+        "research/paper_cn_revision/build_revision.py",
+        "--directory",
+        "docs/paper_cn_v4",
+        "--version",
+        "v0.10",
+        "--reuse-assets",
+        "docs/paper_cn_v3",
+        "--biology-followup"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T15:58:28.361243+00:00",
+      "finished_utc": "2026-10-08T15:58:41.878016+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/biology-paper-export-css.txt",
+        "bytes": 4836,
+        "sha256": "13820a6978c27bf0bcae447239c11286cc65d0ef90dfea9d7c033306c3ea2e03"
+      }
+    },
     "continuation-contract-fixtures": {
       "command": [
         "Rscript",
@@ -952,6 +1774,22 @@
         "sha256": "547824bfeb2e87ed53d5d225190b2c203e2ff0c641b00f344e7f0ffb962aa029"
       }
     },
+    "continuation-mechanism-published-annotation-complete": {
+      "command": [
+        "python3",
+        "research/discovery/unpack_published_mechanism.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T03:20:29.731636+00:00",
+      "finished_utc": "2026-10-09T03:20:42.008040+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-mechanism-published-annotation-complete.txt",
+        "bytes": 7586,
+        "sha256": "4a02e9541aad4b0d3e94c3803fbd83d415799731fb8f35d928c431583a112715"
+      }
+    },
     "revision-discovery-validation": {
       "command": [
         "/tmp/opencode/paper-venv/bin/python",
@@ -1006,6 +1844,60 @@
         "sha256": "f3e205d175d5ac3150e2a2da25da58a558f5242fa120c9a0526752bfa55e8ece"
       }
     },
+    "continuation-report-browser": {
+      "command": [
+        "node",
+        "research/common_performance/browser_followup.cjs"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T05:41:18.070698+00:00",
+      "finished_utc": "2026-10-09T05:41:19.698325+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-report-browser.txt",
+        "bytes": 216,
+        "sha256": "28b4551bb0180ea3306a67d106d1819f5e0972ad6cc7e75459c99a7f2001e842"
+      }
+    },
+    "continuation-chip-build-audit": {
+      "command": [
+        "python3",
+        "research/discovery/verify_chip_assembly.py",
+        "research/results/discovery_chip_v1"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T01:53:23.446749+00:00",
+      "finished_utc": "2026-10-09T01:53:34.627282+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-chip-build-audit.txt",
+        "bytes": 17534,
+        "sha256": "a8b87d2b842a8a8057567fcd6d13b804747567a0ab42b08d3925d02766831b42"
+      }
+    },
+    "biology-paper-browser": {
+      "command": [
+        "env",
+        "BIOEXPLAINR_PAPER_DIRECTORY=docs/paper_cn_v4",
+        "BIOEXPLAINR_PAPER_VERSION=v0.10",
+        "BIOEXPLAINR_REVISION_BROWSER=/tmp/opencode/paper-v010-browser",
+        "NODE_PATH=/tmp/opencode/node_modules",
+        "node",
+        "research/paper_cn_revision/browser_revision.cjs"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T15:57:04.178534+00:00",
+      "finished_utc": "2026-10-08T15:57:05.297553+00:00",
+      "exit_code": 1,
+      "status": "fail",
+      "log": {
+        "path": "research/results/w00_baseline/biology-paper-browser.txt",
+        "bytes": 25378,
+        "sha256": "bb059540b384f7b0055d936593f297a3bdd09329f57c21f7fec09e87a502d96a"
+      }
+    },
     "apt-dpkg-audit": {
       "command": [
         "sudo",
@@ -1021,6 +1913,39 @@
         "path": "research/results/w00_baseline/apt-dpkg-audit.txt",
         "bytes": 0,
         "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    "performance-comparator-install": {
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "research/common_performance/install_comparator.R"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T16:42:54.480799+00:00",
+      "finished_utc": "2026-10-08T16:43:10.522068+00:00",
+      "exit_code": 1,
+      "status": "fail",
+      "log": {
+        "path": "research/results/w00_baseline/performance-comparator-install.txt",
+        "bytes": 17228,
+        "sha256": "9009697e993933d01b4cdb0308357821ac8cac85096f04f60a0d6f5ddd1a5a10"
+      }
+    },
+    "continuation-handoff-check-final": {
+      "command": [
+        "python3",
+        "research/common_performance/check_handoff_complete.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T05:46:25.858843+00:00",
+      "finished_utc": "2026-10-09T05:46:25.899700+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-handoff-check-final.txt",
+        "bytes": 235,
+        "sha256": "66e037232b85123808071dfa65592f5214fb9779f7239c310e50809beeef1057"
       }
     },
     "revision-archive-secret-scan": {
@@ -1041,6 +1966,62 @@
         "path": "research/results/w00_baseline/revision-archive-secret-scan.txt",
         "bytes": 118,
         "sha256": "1cdb16e0a93af91ead975113ee05ee45135af26fa7671cebc7739bbf8d2a972c"
+      }
+    },
+    "performance-runtime-acquire": {
+      "command": [
+        "python3",
+        "research/common_performance/setup_runtime.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T16:36:57.629783+00:00",
+      "finished_utc": "2026-10-08T16:38:28.052939+00:00",
+      "exit_code": 1,
+      "status": "fail",
+      "log": {
+        "path": "research/results/w00_baseline/performance-runtime-acquire.txt",
+        "bytes": 8584,
+        "sha256": "a575b007c4fa3626e95e3bcd931803c2fda11dbbab25fe46cae52580f0027068"
+      }
+    },
+    "continuation-mechanism-audit-final": {
+      "command": [
+        "python3",
+        "research/discovery/audit_mechanism_complete.py",
+        "research/results/discovery_mechanism_fit_v4"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T01:37:20.004046+00:00",
+      "finished_utc": "2026-10-09T01:37:21.954815+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-mechanism-audit-final.txt",
+        "bytes": 531,
+        "sha256": "0a806208ea0a6011de127564c4c6637029af48d7a27807fd395209a2bf16f177"
+      }
+    },
+    "biology-paper-export-css2": {
+      "command": [
+        "/tmp/opencode/paper-venv/bin/python",
+        "research/paper_cn_revision/build_revision.py",
+        "--directory",
+        "docs/paper_cn_v4",
+        "--version",
+        "v0.10",
+        "--reuse-assets",
+        "docs/paper_cn_v3",
+        "--biology-followup"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T16:00:08.031155+00:00",
+      "finished_utc": "2026-10-08T16:00:21.564324+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/biology-paper-export-css2.txt",
+        "bytes": 4836,
+        "sha256": "ba1bcae392f8f7e60fc5d37e08cc8bde72b2a5aa559d30eb985465623b4290ce"
       }
     },
     "paper-cn-live-browser": {
@@ -1105,6 +2086,38 @@
         "sha256": "0d56e186bf4a23f33cbd7435516308c5f9d89dfbc10aa105353ade071d1ceebb"
       }
     },
+    "performance-runtime-acquire-resume": {
+      "command": [
+        "python3",
+        "research/common_performance/setup_runtime.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T16:42:54.459728+00:00",
+      "finished_utc": "2026-10-08T16:44:47.320007+00:00",
+      "exit_code": 1,
+      "status": "fail",
+      "log": {
+        "path": "research/results/w00_baseline/performance-runtime-acquire-resume.txt",
+        "bytes": 1410,
+        "sha256": "b7da7e8ca4ce00711fbfd147b01a9ecb0790a19f6aafe78d1c352372f0298d18"
+      }
+    },
+    "biology-followup-ledger": {
+      "command": [
+        "/tmp/opencode/paper-venv/bin/python",
+        "research/discovery/finalize_followup.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T15:08:24.250735+00:00",
+      "finished_utc": "2026-10-08T15:08:24.606450+00:00",
+      "exit_code": 1,
+      "status": "fail",
+      "log": {
+        "path": "research/results/w00_baseline/biology-followup-ledger.txt",
+        "bytes": 498,
+        "sha256": "dce6355e03b020c282d15aa5dd772843880a0e3284df0a3e3cbe44e0af032efd"
+      }
+    },
     "acceptance-contracts": {
       "command": [
         "Rscript",
@@ -1140,6 +2153,38 @@
         "sha256": "9920e5e6f10c57acc16323dfb248f3710f6d57d7454cafeac0902a9b3aa4f04e"
       }
     },
+    "continuation-mechanism-chip-ledger-final": {
+      "command": [
+        "python3",
+        "research/discovery/finalize_mechanism_chip.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T03:21:20.200839+00:00",
+      "finished_utc": "2026-10-09T03:21:20.538384+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-mechanism-chip-ledger-final.txt",
+        "bytes": 2970,
+        "sha256": "9e53f6e24edcd4e398bce45e76a898fb70b7f564921cfb8f6a96da20948b8606"
+      }
+    },
+    "biology-donor-supplement-extract": {
+      "command": [
+        "/tmp/opencode/paper-venv/bin/python",
+        "research/discovery/acquire_donor_supplement.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T14:36:20.453541+00:00",
+      "finished_utc": "2026-10-08T14:36:20.884000+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/biology-donor-supplement-extract.txt",
+        "bytes": 382,
+        "sha256": "a1178e662729617a579d2925e4cbbf73150479d9188761c74e5c3c790a4fa796"
+      }
+    },
     "review-miniacc-installed-audit": {
       "command": [
         "python3",
@@ -1155,6 +2200,45 @@
         "path": "research/results/w00_baseline/review-miniacc-installed-audit.txt",
         "bytes": 496,
         "sha256": "68b40358ae69f31edf4ada102c881287715bdae5f7d4c5a24b29d70e29afd36c"
+      }
+    },
+    "continuation-performance-scoring-boundaries": {
+      "command": [
+        "python3",
+        "research/common_performance/test_scoring_boundaries.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T04:10:52.241515+00:00",
+      "finished_utc": "2026-10-09T04:10:53.544002+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-performance-scoring-boundaries.txt",
+        "bytes": 100,
+        "sha256": "a165ebd6b22f73b299d20b1b096a619a869cbfb21323f66e1bb18bcc09dd0ef5"
+      }
+    },
+    "biology-handoff-python-syntax": {
+      "command": [
+        "env",
+        "PYTHONPYCACHEPREFIX=/tmp/opencode/biology-handoff-pycache",
+        "python3",
+        "-m",
+        "py_compile",
+        "research/manage_baseline.py",
+        "research/package_submission.py",
+        "research/audit_current_results.py",
+        "research/test_current_audit.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T16:18:53.924271+00:00",
+      "finished_utc": "2026-10-08T16:18:54.331639+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/biology-handoff-python-syntax.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
       }
     },
     "continuation-install-mae": {
@@ -1196,6 +2280,24 @@
         "sha256": "d737e7b136a06b553dd6e91fdd7b5bb328d218e47d8e24089902abdcc84702bd"
       }
     },
+    "biology-context-fit": {
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "research/discovery/run_context.R",
+        "research/results/discovery_context_v1"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T12:58:29.515560+00:00",
+      "finished_utc": "2026-10-08T12:59:22.863642+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/biology-context-fit.txt",
+        "bytes": 10004,
+        "sha256": "534b8fd818ec529fc0b2972155666a6921d151b910aec3500cda0ad267a3a25a"
+      }
+    },
     "audit-content": {
       "command": [
         "python3",
@@ -1211,6 +2313,40 @@
         "path": "research/results/w00_baseline/audit-content.txt",
         "bytes": 3791,
         "sha256": "d11466932ab52e3fadcf786368768bae3cd7a329f9ffd222b2ce83f19b2212e3"
+      }
+    },
+    "continuation-chip-window-analysis": {
+      "command": [
+        "python3",
+        "research/discovery/run_chip.py",
+        "research/results/discovery_chip_v1",
+        "research/results/discovery_chip_analysis_v1"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T02:06:34.945648+00:00",
+      "finished_utc": "2026-10-09T02:06:42.869743+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-chip-window-analysis.txt",
+        "bytes": 1765,
+        "sha256": "6d44e6ab5eb0ab388c0a46d1edc6e026102d21d3319fd6fdf8ae1052ca491cd6"
+      }
+    },
+    "continuation-performance-secondary-independent": {
+      "command": [
+        "python3",
+        "research/common_performance/audit_supplemental_scores.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T05:40:03.657762+00:00",
+      "finished_utc": "2026-10-09T05:40:03.892603+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-performance-secondary-independent.txt",
+        "bytes": 65,
+        "sha256": "924acc65d649ea21a01e697246fce7170268c536b9fd8ebed4f77d9ea9ee32a0"
       }
     },
     "revision-audit-boundaries-final": {
@@ -1287,6 +2423,39 @@
         "sha256": "a2ab10d6f866f61ca27a2b59ab1de40ea9492fe0794214afabf04cc2b194ff60"
       }
     },
+    "biology-followup-ledger-reseal": {
+      "command": [
+        "/tmp/opencode/paper-venv/bin/python",
+        "research/discovery/finalize_followup.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T16:02:15.338010+00:00",
+      "finished_utc": "2026-10-08T16:02:15.966709+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/biology-followup-ledger-reseal.txt",
+        "bytes": 981,
+        "sha256": "b7c0d9139b9007d7f3c7725c7f8481d2466caf556fade433032a700a0b80f90b"
+      }
+    },
+    "continuation-mechanism-design-v4": {
+      "command": [
+        "python3",
+        "research/discovery/mechanism_design.py",
+        "research/results/discovery_mechanism_fit_v4"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T01:34:13.792742+00:00",
+      "finished_utc": "2026-10-09T01:34:13.960625+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-mechanism-design-v4.txt",
+        "bytes": 336,
+        "sha256": "e54dab65465acade8867217378f28fa0c4b302e64a312bffaa60315d8a13aa02"
+      }
+    },
     "submission-audit": {
       "command": [
         "/tmp/opencode/paper-venv/bin/python",
@@ -1303,6 +2472,58 @@
         "path": "research/results/w00_baseline/submission-audit.txt",
         "bytes": 17034,
         "sha256": "c95bf7045fb5914056b2e52dfcd7dbdbe7e3ced855dd49aa151efdfd3291b045"
+      }
+    },
+    "continuation-mechanism-fit-v4": {
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "research/discovery/run_mechanism.R",
+        "research/results/discovery_mechanism_fit_v4"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T01:34:14.130273+00:00",
+      "finished_utc": "2026-10-09T01:34:31.895041+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-mechanism-fit-v4.txt",
+        "bytes": 1265,
+        "sha256": "7ccec465a6cc6d1859f7d91df5542da701ddea73ce4c8ca2a1c1157d873623d6"
+      }
+    },
+    "continuation-mechanism-filter-independent": {
+      "command": [
+        "python3",
+        "research/discovery/audit_mechanism_complete.py",
+        "research/results/discovery_mechanism_fit_v4"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T01:54:56.897375+00:00",
+      "finished_utc": "2026-10-09T01:55:00.961688+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-mechanism-filter-independent.txt",
+        "bytes": 696,
+        "sha256": "cc9b126925ff42686a36054cbdd778bc2399b31dfe0e5328ddaf95f17994b0be"
+      }
+    },
+    "continuation-chip-coordinate-evidence": {
+      "command": [
+        "python3",
+        "research/discovery/chip_coordinate_evidence.py",
+        "research/results/discovery_chip_v1"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T02:03:15.805309+00:00",
+      "finished_utc": "2026-10-09T02:03:31.814111+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-chip-coordinate-evidence.txt",
+        "bytes": 5339,
+        "sha256": "29775d8a46278cd7e7f5fd6805ef92f1db2cf90d056fb344668d1e806eea82fe"
       }
     },
     "review-source": {
@@ -1340,6 +2561,40 @@
         "sha256": "e4b72b5b674bf8d30d9332c01cc2d0b4a049ec162d3b1ff3e949926e582bab43"
       }
     },
+    "continuation-mechanism-audit-complete": {
+      "command": [
+        "python3",
+        "research/discovery/audit_mechanism_complete.py",
+        "research/results/discovery_mechanism_fit_v4"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T01:35:53.932018+00:00",
+      "finished_utc": "2026-10-09T01:35:57.223109+00:00",
+      "exit_code": 1,
+      "status": "fail",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-mechanism-audit-complete.txt",
+        "bytes": 1051,
+        "sha256": "f44c571dded4705d2bf09809e6afdde5c3c47b9a7d12e12d8f836366ebb1979c"
+      }
+    },
+    "continuation-performance-formal-v2": {
+      "command": [
+        "python3",
+        "research/common_performance/run_benchmark.py",
+        "research/results/common_performance_v2"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T01:32:07.809376+00:00",
+      "finished_utc": "2026-10-09T01:32:12.358431+00:00",
+      "exit_code": 1,
+      "status": "fail",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-performance-formal-v2.txt",
+        "bytes": 753,
+        "sha256": "05e508ab0552fdbc685057c09c00621774875b072aece67b94d234cef3946fc3"
+      }
+    },
     "continuation-source-final": {
       "command": [
         "R",
@@ -1357,6 +2612,54 @@
         "path": "research/results/w00_baseline/continuation-source-final.txt",
         "bytes": 1685,
         "sha256": "852cd0a6c68f33fbb550c4ef13f3223716bc8e8c37782dfc1bd6fe1a3e9281d7"
+      }
+    },
+    "handoff-formal-docs-delivery-package": {
+      "command": [
+        "python3",
+        "research/package_submission.py",
+        "--audit",
+        "docs/paper_cn_v4/audit.json",
+        "--output",
+        "docs/BioExplainR-development-delivery-0.4.0.9000-r14.zip",
+        "--revision",
+        "--biology-followup",
+        "--preparation-checkpoint",
+        "--formal-followup",
+        "--paper-directory",
+        "docs/paper_cn_v4",
+        "--paper-version",
+        "v0.10",
+        "--result",
+        "research/results/w00_baseline/handoff-formal-docs-delivery-audit-result.json"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T06:44:33.367084+00:00",
+      "finished_utc": "2026-10-09T06:44:52.915660+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/handoff-formal-docs-delivery-package.txt",
+        "bytes": 172,
+        "sha256": "384eae02647d57117895bd674d66fc5ed009d1774691955ba9aebaabc3bd1773"
+      }
+    },
+    "continuation-mechanism-fit-v2": {
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "research/discovery/run_mechanism.R",
+        "research/results/discovery_mechanism_fit_v2"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T01:32:08.016480+00:00",
+      "finished_utc": "2026-10-09T01:32:11.866000+00:00",
+      "exit_code": 1,
+      "status": "fail",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-mechanism-fit-v2.txt",
+        "bytes": 118,
+        "sha256": "66523daf0375e4b8525c2b45034ad97f1f567d8d28141ab80fcdb4c05d38c020"
       }
     },
     "acceptance-sandbox-limits": {
@@ -1377,6 +2680,23 @@
         "path": "research/results/w00_baseline/acceptance-sandbox-limits.txt",
         "bytes": 117,
         "sha256": "18ea08fe48494f0fdc4ff9482a543b7163110932e5c8d939ac6bd7d8b5a8e3ca"
+      }
+    },
+    "continuation-mechanism-design-v3": {
+      "command": [
+        "python3",
+        "research/discovery/mechanism_design.py",
+        "research/results/discovery_mechanism_fit_v3"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T01:33:16.027496+00:00",
+      "finished_utc": "2026-10-09T01:33:16.096176+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-mechanism-design-v3.txt",
+        "bytes": 336,
+        "sha256": "e54dab65465acade8867217378f28fa0c4b302e64a312bffaa60315d8a13aa02"
       }
     },
     "source-check": {
@@ -1455,6 +2775,40 @@
         "path": "research/results/w00_baseline/capture-baseline.txt",
         "bytes": 75,
         "sha256": "c41ea3d5410ece6fef3d6ee65dcf01d55b5d5da7fced72aed88ab251e725f0d0"
+      }
+    },
+    "biology-handoff-audit-probes": {
+      "command": [
+        "env",
+        "TMPDIR=/tmp/opencode",
+        "python3",
+        "research/test_current_audit.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T16:18:53.927346+00:00",
+      "finished_utc": "2026-10-08T16:18:54.133745+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/biology-handoff-audit-probes.txt",
+        "bytes": 103,
+        "sha256": "6299c61ecefc2c6e262ba2dccd92b35e4ade4e41b723fe2eac602dbd7b324b98"
+      }
+    },
+    "continuation-results-seal": {
+      "command": [
+        "python3",
+        "research/common_performance/seal_formal_results.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T05:44:45.216872+00:00",
+      "finished_utc": "2026-10-09T05:44:45.688893+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-results-seal.txt",
+        "bytes": 1492,
+        "sha256": "646c7bdf7b9064a48d11c52cfe459739898aa18808e662c42895b0e71b96fa16"
       }
     },
     "review-miniacc-audit": {
@@ -1652,6 +3006,66 @@
         "sha256": "c95bf7045fb5914056b2e52dfcd7dbdbe7e3ced855dd49aa151efdfd3291b045"
       }
     },
+    "continuation-chip-figure-ocr": {
+      "command": [
+        "/tmp/opencode/paper-venv/bin/python",
+        "research/discovery/ocr_chip_figure.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T02:18:20.133859+00:00",
+      "finished_utc": "2026-10-09T02:19:01.753458+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-chip-figure-ocr.txt",
+        "bytes": 519,
+        "sha256": "97eaea76e8ced9395dc072303ea3059229b213a02f1050503a0e5ba509e2e265"
+      }
+    },
+    "handoff-document-delivery": {
+      "command": [
+        "python3",
+        "research/package_submission.py",
+        "--revision",
+        "--paper-directory",
+        "docs/paper_cn_v3",
+        "--paper-version",
+        "v0.9.1",
+        "--audit",
+        "docs/paper_cn_v3/audit.json",
+        "--output",
+        "docs/BioExplainR-development-delivery-0.4.0.9000-r10.zip",
+        "--result",
+        "research/results/w00_baseline/handoff-delivery-audit-result.json"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T12:44:54.984150+00:00",
+      "finished_utc": "2026-10-08T12:45:02.217434+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/handoff-document-delivery.txt",
+        "bytes": 172,
+        "sha256": "a9f3a862ef84bd746662a36f23a8e41546f80b25f027e4da4231fd9b6a90f27d"
+      }
+    },
+    "continuation-mechanism-audit": {
+      "command": [
+        "python3",
+        "research/discovery/audit_mechanism.py",
+        "research/results/discovery_mechanism_fit_v4"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T01:34:43.431489+00:00",
+      "finished_utc": "2026-10-09T01:34:47.099100+00:00",
+      "exit_code": 1,
+      "status": "fail",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-mechanism-audit.txt",
+        "bytes": 501,
+        "sha256": "081760bde2dc05f1d7d511e3c444e9a4e7799caf9eea8f1dff3263385f17514f"
+      }
+    },
     "revision-audit-boundaries": {
       "command": [
         "python3",
@@ -1666,6 +3080,41 @@
         "path": "research/results/w00_baseline/revision-audit-boundaries.txt",
         "bytes": 101,
         "sha256": "2c37d50a88147ca2ebd5197d74ee37d462dab650d793512e849814c28d5a38f0"
+      }
+    },
+    "continuation-mechanism-published-counts-mapped": {
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "research/discovery/audit_published_counts.R",
+        "research/results/discovery_mechanism_fit_v4"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T03:47:17.638328+00:00",
+      "finished_utc": "2026-10-09T03:47:31.319000+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-mechanism-published-counts-mapped.txt",
+        "bytes": 2669,
+        "sha256": "c6dacf2ce2d3c6ded8a5543afe0e06654e07c1a20ed23d14d7a47a4278416f92"
+      }
+    },
+    "performance-comparator-install-final": {
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "research/common_performance/install_comparator.R"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T16:57:08.044984+00:00",
+      "finished_utc": "2026-10-08T16:57:39.950118+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/performance-comparator-install-final.txt",
+        "bytes": 16739,
+        "sha256": "53b77da7c280b8903db303951a1858144bd8bbe9965aca3ef38e0224135d44a3"
       }
     },
     "continuation-package-final": {
@@ -1687,6 +3136,25 @@
         "path": "research/results/w00_baseline/continuation-package-final.txt",
         "bytes": 2480,
         "sha256": "7dd601a4c8aa0c24d61244d40f998bd8b0e3d81e0145f6cce1fb04877c4fc9dd"
+      }
+    },
+    "continuation-chip-replicates-independent": {
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "research/discovery/audit_chip_replicates.R",
+        "research/results/discovery_chip_v1",
+        "research/results/discovery_chip_analysis_v1"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T02:14:25.716756+00:00",
+      "finished_utc": "2026-10-09T02:15:17.581017+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-chip-replicates-independent.txt",
+        "bytes": 1540,
+        "sha256": "3eff0867997c3380e15e6b1512bb908d23a3c935d75921b5543fb28b0cda8ccb"
       }
     },
     "continuation-bwrap-user-actions-final": {
@@ -1721,6 +3189,46 @@
         "path": "research/results/w00_baseline/continuation-bwrap-offline-smoke-final.txt",
         "bytes": 186,
         "sha256": "e4633f86f13109a346abf0b6988e09722015fb88509ec976a794c61481ca31ed"
+      }
+    },
+    "continuation-performance-progress-audit": {
+      "command": [
+        "python3",
+        "research/common_performance/audit_progress.py",
+        "research/results/common_performance_v4"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T02:14:25.712582+00:00",
+      "finished_utc": "2026-10-09T02:14:26.288073+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-performance-progress-audit.txt",
+        "bytes": 243,
+        "sha256": "4404366e55c4c13584653ffa89730ba8c49808bd85b5b02ad0f17f85c6a0af03"
+      }
+    },
+    "biology-paper-export": {
+      "command": [
+        "/tmp/opencode/paper-venv/bin/python",
+        "research/paper_cn_revision/build_revision.py",
+        "--directory",
+        "docs/paper_cn_v4",
+        "--version",
+        "v0.10",
+        "--reuse-assets",
+        "docs/paper_cn_v3",
+        "--biology-followup"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T15:14:40.126191+00:00",
+      "finished_utc": "2026-10-08T15:14:57.335423+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/biology-paper-export.txt",
+        "bytes": 4638,
+        "sha256": "98287fc11bdcbde600d7fe022f579da7cbbd04a0578474cf66b2eb529d44ea35"
       }
     },
     "continuation-build": {
@@ -1832,6 +3340,23 @@
         "sha256": "20671f16cbd908c543eab805fd3d23e28a930d94e24ed6d650e905deb09f2e1e"
       }
     },
+    "biology-followup-project": {
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "research/discovery/report_followup.R"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T15:07:08.241476+00:00",
+      "finished_utc": "2026-10-08T15:07:10.025958+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/biology-followup-project.txt",
+        "bytes": 210,
+        "sha256": "dcfa0d39e911380bfc13084d3bc03700f6516304e9e4d4a0d72250aef11a5619"
+      }
+    },
     "ensure-dev": {
       "command": [
         "bash",
@@ -1846,6 +3371,22 @@
         "path": "research/results/w00_baseline/ensure-dev.txt",
         "bytes": 88,
         "sha256": "0516f0d67face4674b0873041914f27dcb6edfa98a7ca524c26f02c69e0ff129"
+      }
+    },
+    "handoff-formal-docs-preservation": {
+      "command": [
+        "python3",
+        "research/common_performance/check_handoff_complete.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T06:44:08.541355+00:00",
+      "finished_utc": "2026-10-09T06:44:08.657692+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/handoff-formal-docs-preservation.txt",
+        "bytes": 235,
+        "sha256": "66e037232b85123808071dfa65592f5214fb9779f7239c310e50809beeef1057"
       }
     },
     "paper-cn-assets": {
@@ -1864,6 +3405,22 @@
         "sha256": "f12ca2c9482fb6bba3ce59080ae9b2e653201c12a650e1c648ffffc17be50c69"
       }
     },
+    "biology-followup-ledger-final": {
+      "command": [
+        "/tmp/opencode/paper-venv/bin/python",
+        "research/discovery/finalize_followup.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T15:10:01.366648+00:00",
+      "finished_utc": "2026-10-08T15:10:01.865935+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/biology-followup-ledger-final.txt",
+        "bytes": 981,
+        "sha256": "c90eaa6feeeb36d874bba7afe7260ebf8c3b03bacbd653a8b104695c5d7414ac"
+      }
+    },
     "continuation-optional-restore-verify": {
       "command": [
         "bash",
@@ -1879,6 +3436,23 @@
         "path": "research/results/w00_baseline/continuation-optional-restore-verify.txt",
         "bytes": 1785,
         "sha256": "67767c35ccc08b0c3d0ac2b5b6a97863c9690f8b7ad5da0c7ad28c6ab2cf0cff"
+      }
+    },
+    "continuation-chip-replicates": {
+      "command": [
+        "python3",
+        "research/discovery/chip_replicates.py",
+        "research/results/discovery_chip_analysis_v1"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T02:12:17.217398+00:00",
+      "finished_utc": "2026-10-09T02:12:17.364026+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-chip-replicates.txt",
+        "bytes": 1145,
+        "sha256": "08b68f0b1e884c7905161cf7c5a0e8323e204482fb27ab35012ec8526c3aae52"
       }
     },
     "continuation-build-user-actions-final2": {
@@ -1971,6 +3545,23 @@
         "sha256": "6e9b703b8056fb94c9c516ba37c2d144524969d8befe0d55b86e193c5711c28d"
       }
     },
+    "biology-handoff-index-links": {
+      "command": [
+        "python3",
+        "-c",
+        "from html.parser import HTMLParser; from pathlib import Path; from urllib.parse import unquote; import json; links=[]\nclass Links(HTMLParser):\n def handle_starttag(self,tag,attrs):\n  if tag==\"a\": links.extend(value for key,value in attrs if key==\"href\")\npage=Path(\"docs/index.html\"); Links().feed(page.read_text()); assert len(links)==7; assert all((page.parent/unquote(href)).is_file() for href in links); assert sum(\"paper_cn_v4\" in href for href in links)==5; print(json.dumps({\"status\":\"pass\",\"links\":links},ensure_ascii=False,indent=2))"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T16:20:42.971854+00:00",
+      "finished_utc": "2026-10-08T16:20:43.031896+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/biology-handoff-index-links.txt",
+        "bytes": 388,
+        "sha256": "2dc8987648f54080880933371b7f8db729c2431903aeae00ac32b2a4e5e3a224"
+      }
+    },
     "continuation-benchmark-tests": {
       "command": [
         "python3",
@@ -2004,6 +3595,23 @@
         "path": "research/results/w00_baseline/paper-cn-source.txt",
         "bytes": 1989,
         "sha256": "d3817ccd460c58add5251040e5903d3cf93d804fcd862db2661d3ef997b99b00"
+      }
+    },
+    "continuation-mechanism-published-metadata": {
+      "command": [
+        "python3",
+        "research/discovery/acquire_published_mechanism.py",
+        "research/results/discovery_mechanism_fit_v4"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T03:03:16.932386+00:00",
+      "finished_utc": "2026-10-09T03:03:19.716969+00:00",
+      "exit_code": 1,
+      "status": "fail",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-mechanism-published-metadata.txt",
+        "bytes": 684,
+        "sha256": "e3fa89bb34b013aa297a9a44ce716b2e78e7f68321eb29919cd49a9bba334d6a"
       }
     },
     "acceptance-sandbox-final": {
@@ -2062,6 +3670,26 @@
         "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
       }
     },
+    "biology-paper-audit-ok": {
+      "command": [
+        "/tmp/opencode/paper-venv/bin/python",
+        "research/paper_cn_revision/audit_revision.py",
+        "--directory",
+        "docs/paper_cn_v4",
+        "--version",
+        "v0.10"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T15:56:44.316647+00:00",
+      "finished_utc": "2026-10-08T15:56:51.190142+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/biology-paper-audit-ok.txt",
+        "bytes": 3932,
+        "sha256": "6538a7f63df875b6fdbe1e160ba06dc57e2b5026569b2a237400d5d0e7f38b2a"
+      }
+    },
     "revision-document-audit-final": {
       "command": [
         "/tmp/opencode/paper-venv/bin/python",
@@ -2110,6 +3738,43 @@
         "sha256": "ae8eb49ed6a9633ce8b54aa2f3d285c8ec0ae35fe4a5f60e32cd9c42c49f63e2"
       }
     },
+    "continuation-chip-primary-sources": {
+      "command": [
+        "python3",
+        "research/discovery/acquire_chip_sources.py",
+        "research/results/discovery_chip_v1"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T01:54:56.854320+00:00",
+      "finished_utc": "2026-10-09T01:55:03.558059+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-chip-primary-sources.txt",
+        "bytes": 1345,
+        "sha256": "3a2901191ad4a8653202db5715776172dbac40fc2f8509dd1b616f904aac065f"
+      }
+    },
+    "biology-donors-ranges-complete": {
+      "command": [
+        "python3",
+        "research/discovery/download_ranges.py",
+        "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE94nnn/GSE94335/suppl/GSE94335_PostQC_all_sample_TPM.txt.gz",
+        "research/results/discovery_donors_v1/tpm.txt.gz",
+        "--workers",
+        "12"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T13:51:09.505669+00:00",
+      "finished_utc": "2026-10-08T13:52:10.469284+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/biology-donors-ranges-complete.txt",
+        "bytes": 689,
+        "sha256": "07ab6bc17caba5327a08de47a46cb39945aac4720205a78eb2567ea83168a474"
+      }
+    },
     "acceptance-environment": {
       "command": [
         "python3",
@@ -2130,6 +3795,35 @@
         "sha256": "a88f7a25b0788522bf776af0bcdb054f1126f0603749b792f209e9b1be666e1e"
       }
     },
+    "followup-delivery-package": {
+      "command": [
+        "python3",
+        "research/package_submission.py",
+        "--revision",
+        "--biology-followup",
+        "--preparation-checkpoint",
+        "--paper-directory",
+        "docs/paper_cn_v4",
+        "--paper-version",
+        "v0.10",
+        "--audit",
+        "docs/paper_cn_v4/audit.json",
+        "--output",
+        "docs/BioExplainR-development-delivery-0.4.0.9000-r12.zip",
+        "--result",
+        "research/results/w00_baseline/followup-delivery-audit-result.json"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T17:09:01.812399+00:00",
+      "finished_utc": "2026-10-08T17:09:14.053944+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/followup-delivery-package.txt",
+        "bytes": 172,
+        "sha256": "c87e14767ea27a8389354b90203e84e541db7bff31fdfabf957371e70cee84ba"
+      }
+    },
     "revision-document-audit-reviewed": {
       "command": [
         "/tmp/opencode/paper-venv/bin/python",
@@ -2146,6 +3840,23 @@
         "sha256": "2b69184ea9f1f0eb962a848ffe16876293c341f8f38ac2e78ff80a621b518245"
       }
     },
+    "biology-context-numeric-audit": {
+      "command": [
+        "/tmp/opencode/paper-venv/bin/python",
+        "research/discovery/audit_context.py",
+        "research/results/discovery_context_v1"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T12:59:40.219610+00:00",
+      "finished_utc": "2026-10-08T12:59:43.536456+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/biology-context-numeric-audit.txt",
+        "bytes": 353,
+        "sha256": "8528768748ad3a17691c00fbff5e40341a80d8c3d1e6170164954ffa3bb98568"
+      }
+    },
     "review-audit-probes-final": {
       "command": [
         "python3",
@@ -2160,6 +3871,23 @@
         "path": "research/results/w00_baseline/review-audit-probes-final.txt",
         "bytes": 101,
         "sha256": "4d781620bc10541738c207349d827f2b375d4f72493bce92c5f0ea15cb151f4e"
+      }
+    },
+    "handoff-formal-docs-syntax": {
+      "command": [
+        "python3",
+        "-c",
+        "from pathlib import Path; p=Path(\"research/manage_baseline.py\"); compile(p.read_text(),str(p),\"exec\"); print(\"Python syntax pass\")"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T06:44:08.569238+00:00",
+      "finished_utc": "2026-10-09T06:44:08.628605+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/handoff-formal-docs-syntax.txt",
+        "bytes": 19,
+        "sha256": "353c8ae5366e2ca362516858895732ff40890d59906cbf6d5ec82dab3b374b98"
       }
     },
     "continuation-isolated-final": {
@@ -2207,6 +3935,60 @@
         "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
       }
     },
+    "biology-donors-statistics-final": {
+      "command": [
+        "/tmp/opencode/paper-venv/bin/python",
+        "research/discovery/run_donors.py",
+        "analyze",
+        "research/results/discovery_donors_v1"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T14:44:48.633273+00:00",
+      "finished_utc": "2026-10-08T14:44:58.765596+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/biology-donors-statistics-final.txt",
+        "bytes": 1199,
+        "sha256": "96ebeff59674af12e568f83d53a8e73579f9d4e32950b0e8bd6e33e3193b074d"
+      }
+    },
+    "biology-paper-audit-final2": {
+      "command": [
+        "/tmp/opencode/paper-venv/bin/python",
+        "research/paper_cn_revision/audit_revision.py",
+        "--directory",
+        "docs/paper_cn_v4",
+        "--version",
+        "v0.10"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T16:01:00.083110+00:00",
+      "finished_utc": "2026-10-08T16:01:06.808442+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/biology-paper-audit-final2.txt",
+        "bytes": 3932,
+        "sha256": "6538a7f63df875b6fdbe1e160ba06dc57e2b5026569b2a237400d5d0e7f38b2a"
+      }
+    },
+    "continuation-runtime-restore-v3": {
+      "command": [
+        "python3",
+        "research/common_performance/setup_runtime.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T01:26:25.062345+00:00",
+      "finished_utc": "2026-10-09T01:36:19.544022+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-runtime-restore-v3.txt",
+        "bytes": 1811,
+        "sha256": "c38e86cfef511a0d670a79067f39a37d989f83abd1fff129926524812c02da6b"
+      }
+    },
     "continuation-bwrap-permission-probe": {
       "command": [
         "bash",
@@ -2222,6 +4004,24 @@
         "path": "research/results/w00_baseline/continuation-bwrap-permission-probe.txt",
         "bytes": 255,
         "sha256": "af3800f1896377906c568145bfa04e6c561771cb6c335c202dd3aba713a3372d"
+      }
+    },
+    "continuation-chip-build-sources-resume": {
+      "command": [
+        "python3",
+        "research/discovery/acquire_chip_build_evidence.py",
+        "research/results/discovery_chip_v1",
+        "--resume"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T02:03:15.894006+00:00",
+      "finished_utc": "2026-10-09T02:04:01.133282+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-chip-build-sources-resume.txt",
+        "bytes": 3209,
+        "sha256": "67736cdc11a47d702e11a2f83767b84e8678867595106e80247c0d54e6e2802b"
       }
     },
     "acceptance-http": {
@@ -2240,6 +4040,26 @@
         "path": "research/results/w00_baseline/acceptance-http.txt",
         "bytes": 154,
         "sha256": "db44131827b458329873dc2386b64f9ed2f30023a4c5cac45069af5f97369899"
+      }
+    },
+    "biology-paper-audit": {
+      "command": [
+        "/tmp/opencode/paper-venv/bin/python",
+        "research/paper_cn_revision/audit_revision.py",
+        "--directory",
+        "docs/paper_cn_v4",
+        "--version",
+        "v0.10"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T15:53:37.425698+00:00",
+      "finished_utc": "2026-10-08T15:53:39.867453+00:00",
+      "exit_code": 1,
+      "status": "fail",
+      "log": {
+        "path": "research/results/w00_baseline/biology-paper-audit.txt",
+        "bytes": 498,
+        "sha256": "7dc489a2fe3efaffa905cb4dbaacbe63e6032157d993887ca8bad4ad0423f3da"
       }
     },
     "acceptance-bwrap-final": {
@@ -2319,6 +4139,23 @@
         "sha256": "3c0fc047e5a2aabefd05371049a3096dc9237f4d6d0654e20501dd4950a11b46"
       }
     },
+    "continuation-performance-independent": {
+      "command": [
+        "python3",
+        "research/common_performance/audit_benchmark.py",
+        "/home/ubuntu/creatR/research/results/common_performance_v4"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T05:40:02.648650+00:00",
+      "finished_utc": "2026-10-09T05:40:03.211393+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-performance-independent.txt",
+        "bytes": 861,
+        "sha256": "26baa1ef508250c06e81156c9bb6c1fabcdd257ccebde66f36a178886f978ea2"
+      }
+    },
     "continuation-installed-full-smoke": {
       "command": [
         "env",
@@ -2355,6 +4192,81 @@
         "path": "research/results/w00_baseline/review-shiny.txt",
         "bytes": 627,
         "sha256": "34ed02eebb68c76fb057a1369c797d70adcc37d0b534868a0beb423796034264"
+      }
+    },
+    "revision-links-python-syntax": {
+      "command": [
+        "python3",
+        "-m",
+        "py_compile",
+        "research/paper_cn_revision/build_revision.py",
+        "research/paper_cn_revision/audit_revision.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T12:00:23.173018+00:00",
+      "finished_utc": "2026-10-08T12:00:23.229646+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/revision-links-python-syntax.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    "continuation-chip-r-independent-final": {
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "research/discovery/audit_chip_complete.R",
+        "research/results/discovery_chip_v1",
+        "research/results/discovery_chip_analysis_v1"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T02:08:42.373029+00:00",
+      "finished_utc": "2026-10-09T02:09:07.518024+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-chip-r-independent-final.txt",
+        "bytes": 1486,
+        "sha256": "00380e14cd5524d8c515a7c08ba667957f67d0dfaeca00d5b30372161d8c5aa3"
+      }
+    },
+    "continuation-performance-formal-v4": {
+      "command": [
+        "python3",
+        "research/common_performance/run_benchmark.py",
+        "research/results/common_performance_v4"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T01:52:24.146243+00:00",
+      "finished_utc": "2026-10-09T05:39:56.232360+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-performance-formal-v4.txt",
+        "bytes": 16365,
+        "sha256": "b6bca3c4a08ac0bbd69f405e434d2770a7f1a301c734a9c800a0422f0f3bf0e3"
+      }
+    },
+    "biology-paper-audit-pass": {
+      "command": [
+        "/tmp/opencode/paper-venv/bin/python",
+        "research/paper_cn_revision/audit_revision.py",
+        "--directory",
+        "docs/paper_cn_v4",
+        "--version",
+        "v0.10"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T15:55:13.139683+00:00",
+      "finished_utc": "2026-10-08T15:55:18.388422+00:00",
+      "exit_code": 1,
+      "status": "fail",
+      "log": {
+        "path": "research/results/w00_baseline/biology-paper-audit-pass.txt",
+        "bytes": 637,
+        "sha256": "1588221fc4d2b2c0f204e5f4cc2f27aabece28dc62e5bc1f4dbdff3f7a1ea543"
       }
     },
     "continuation-source-initial": {
@@ -2429,6 +4341,29 @@
         "sha256": "702c3bc4a833ce107102888b28993c4958ad34fd8940e54f701babaf47c15d4e"
       }
     },
+    "biology-paper-export-final": {
+      "command": [
+        "/tmp/opencode/paper-venv/bin/python",
+        "research/paper_cn_revision/build_revision.py",
+        "--directory",
+        "docs/paper_cn_v4",
+        "--version",
+        "v0.10",
+        "--reuse-assets",
+        "docs/paper_cn_v3",
+        "--biology-followup"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T15:56:30.345870+00:00",
+      "finished_utc": "2026-10-08T15:56:44.268723+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/biology-paper-export-final.txt",
+        "bytes": 4836,
+        "sha256": "74a12de7645a4695f441ec2695d7523e22635a19f60c5a77625f02571cc1f132"
+      }
+    },
     "continuation-fixtures-user-actions-final": {
       "command": [
         "Rscript",
@@ -2465,6 +4400,48 @@
         "path": "research/results/w00_baseline/continuation-package-user-actions-final3.txt",
         "bytes": 2480,
         "sha256": "7dd601a4c8aa0c24d61244d40f998bd8b0e3d81e0145f6cce1fb04877c4fc9dd"
+      }
+    },
+    "biology-paper-browser-final": {
+      "command": [
+        "env",
+        "BIOEXPLAINR_PAPER_DIRECTORY=docs/paper_cn_v4",
+        "BIOEXPLAINR_PAPER_VERSION=v0.10",
+        "BIOEXPLAINR_MAIN_FIGURES=3",
+        "BIOEXPLAINR_MAIN_TABLES=1",
+        "BIOEXPLAINR_REQUIRED_TEXT=iSEE,SCassist,GeneAgent,ellmer,GPTCelltype,SPARCL1,GSE94335,GSE146017,致死性哮喘",
+        "BIOEXPLAINR_REVISION_BROWSER=/tmp/opencode/paper-v010-browser3",
+        "NODE_PATH=/tmp/opencode/node_modules",
+        "node",
+        "research/paper_cn_revision/browser_revision.cjs"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T15:58:41.926743+00:00",
+      "finished_utc": "2026-10-08T15:58:47.221987+00:00",
+      "exit_code": 1,
+      "status": "fail",
+      "log": {
+        "path": "research/results/w00_baseline/biology-paper-browser-final.txt",
+        "bytes": 37602,
+        "sha256": "15464279a1b5bdbe0aa2ee32d4faea16ff60135c6a8e447f00054de74717e553"
+      }
+    },
+    "continuation-mechanism-ci-export-v2": {
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "research/discovery/complete_mechanism_ci.R",
+        "research/results/discovery_mechanism_fit_v4"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T01:37:18.557107+00:00",
+      "finished_utc": "2026-10-09T01:37:19.885650+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-mechanism-ci-export-v2.txt",
+        "bytes": 1517,
+        "sha256": "c0e757a0a6039410d39248998b1f3403d79ef3bf9b8b24d8e9d855021cd567dd"
       }
     },
     "paper-cn-delivery": {
@@ -2507,6 +4484,34 @@
         "sha256": "c95bf7045fb5914056b2e52dfcd7dbdbe7e3ced855dd49aa151efdfd3291b045"
       }
     },
+    "biology-delivery-package": {
+      "command": [
+        "python3",
+        "research/package_submission.py",
+        "--revision",
+        "--biology-followup",
+        "--paper-directory",
+        "docs/paper_cn_v4",
+        "--paper-version",
+        "v0.10",
+        "--audit",
+        "docs/paper_cn_v4/audit.json",
+        "--output",
+        "docs/BioExplainR-development-delivery-0.4.0.9000-r11.zip",
+        "--result",
+        "research/results/w00_baseline/biology-delivery-audit-result.json"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T16:21:38.257583+00:00",
+      "finished_utc": "2026-10-08T16:21:50.253695+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/biology-delivery-package.txt",
+        "bytes": 172,
+        "sha256": "36886404e6779b81019cf6c6699efb01221d31812416f2f30c9abaf366ef0043"
+      }
+    },
     "w13-package-check": {
       "command": [
         "R",
@@ -2526,6 +4531,22 @@
         "path": "research/results/w00_baseline/w13-package-check.txt",
         "bytes": 2480,
         "sha256": "7dd601a4c8aa0c24d61244d40f998bd8b0e3d81e0145f6cce1fb04877c4fc9dd"
+      }
+    },
+    "biology-donor-pairing-source": {
+      "command": [
+        "/tmp/opencode/paper-venv/bin/python",
+        "research/discovery/acquire_donor_supplement.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T13:59:58.142408+00:00",
+      "finished_utc": "2026-10-08T13:59:59.678389+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/biology-donor-pairing-source.txt",
+        "bytes": 391,
+        "sha256": "2a7b8a1ee7821e2144a5395d30b0f88414024f3ad33507df88f64a55b27a8900"
       }
     },
     "paper-cn-document-audit-final": {
@@ -2561,6 +4582,30 @@
         "path": "research/results/w00_baseline/continuation-shell-syntax.txt",
         "bytes": 0,
         "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    "biology-paper-browser-ok": {
+      "command": [
+        "env",
+        "BIOEXPLAINR_PAPER_DIRECTORY=docs/paper_cn_v4",
+        "BIOEXPLAINR_PAPER_VERSION=v0.10",
+        "BIOEXPLAINR_MAIN_FIGURES=3",
+        "BIOEXPLAINR_MAIN_TABLES=1",
+        "BIOEXPLAINR_REQUIRED_TEXT=iSEE,SCassist,GeneAgent,ellmer,GPTCelltype,SPARCL1,GSE94335,GSE146017,致死性哮喘",
+        "BIOEXPLAINR_REVISION_BROWSER=/tmp/opencode/paper-v010-browser4",
+        "NODE_PATH=/tmp/opencode/node_modules",
+        "node",
+        "research/paper_cn_revision/browser_revision.cjs"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T16:00:21.610994+00:00",
+      "finished_utc": "2026-10-08T16:00:28.184366+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/biology-paper-browser-ok.txt",
+        "bytes": 696,
+        "sha256": "ff14a9353f1176733a914263e8e1ffd6802621e41f520c8c0ffd38e28334b027"
       }
     },
     "revision-paper-export": {
@@ -2655,6 +4700,24 @@
         "sha256": "fc6918ab6998430c2768a8f0e35ca4bafebab072ece7c4e8e67ac321957ba8d0"
       }
     },
+    "continuation-performance-secondary": {
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "research/common_performance/supplemental_scores.R",
+        "/home/ubuntu/creatR/research/results/common_performance_v4"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T05:40:03.256357+00:00",
+      "finished_utc": "2026-10-09T05:40:03.612608+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-performance-secondary.txt",
+        "bytes": 1114,
+        "sha256": "b061f2dae90ed2041806dfe32ea091c0a4aa3dff208bce6937ab5d8f5149961f"
+      }
+    },
     "paper-cn-installed-smoke": {
       "command": [
         "env",
@@ -2691,6 +4754,23 @@
         "path": "research/results/w00_baseline/continuation-build-final.txt",
         "bytes": 292,
         "sha256": "fc6918ab6998430c2768a8f0e35ca4bafebab072ece7c4e8e67ac321957ba8d0"
+      }
+    },
+    "continuation-performance-formal": {
+      "command": [
+        "python3",
+        "research/common_performance/run_benchmark.py",
+        "research/results/common_performance_v1"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T01:29:35.889692+00:00",
+      "finished_utc": "2026-10-09T01:32:57.283988+00:00",
+      "exit_code": -15,
+      "status": "fail",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-performance-formal.txt",
+        "bytes": 1533,
+        "sha256": "c9d323f4f4977c78b667232ebe7636fb75e8fb5de8297ec38379ee3c71d4af17"
       }
     },
     "improvement-package-check": {
@@ -2732,6 +4812,104 @@
         "path": "research/results/w00_baseline/capture-baseline-final.txt",
         "bytes": 75,
         "sha256": "c41ea3d5410ece6fef3d6ee65dcf01d55b5d5da7fced72aed88ab251e725f0d0"
+      }
+    },
+    "continuation-chip-acquire": {
+      "command": [
+        "python3",
+        "research/discovery/acquire_chip.py",
+        "research/results/discovery_chip_v1"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T01:34:13.858583+00:00",
+      "finished_utc": "2026-10-09T01:41:26.357998+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-chip-acquire.txt",
+        "bytes": 10178,
+        "sha256": "58d1333ba931f38b0453b49da5075e6e2029b5296ab786a0661c76a07727f7ae"
+      }
+    },
+    "biology-donors-ranges-resume": {
+      "command": [
+        "python3",
+        "research/discovery/download_ranges.py",
+        "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE94nnn/GSE94335/suppl/GSE94335_PostQC_all_sample_TPM.txt.gz",
+        "research/results/discovery_donors_v1/tpm.txt.gz",
+        "--workers",
+        "12"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T13:46:09.133769+00:00",
+      "finished_utc": "2026-10-08T13:50:37.016926+00:00",
+      "exit_code": 1,
+      "status": "fail",
+      "log": {
+        "path": "research/results/w00_baseline/biology-donors-ranges-resume.txt",
+        "bytes": 1277,
+        "sha256": "c598e384971f6cd8d678dc374e9e54ed757abddfa63cb4f545c68a3ff5ae7dc5"
+      }
+    },
+    "biology-handoff-python-final": {
+      "command": [
+        "env",
+        "PYTHONPYCACHEPREFIX=/tmp/opencode/biology-handoff-pycache",
+        "python3",
+        "-m",
+        "py_compile",
+        "research/manage_baseline.py",
+        "research/package_submission.py",
+        "research/audit_current_results.py",
+        "research/test_current_audit.py",
+        "research/discovery/download_ranges.py",
+        "research/discovery/test_download_ranges.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T16:20:42.964841+00:00",
+      "finished_utc": "2026-10-08T16:20:43.117037+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/biology-handoff-python-final.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    "biology-handoff-paper-audit": {
+      "command": [
+        "/tmp/opencode/paper-venv/bin/python",
+        "research/paper_cn_revision/audit_revision.py",
+        "--directory",
+        "docs/paper_cn_v4",
+        "--version",
+        "v0.10"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T16:20:42.998600+00:00",
+      "finished_utc": "2026-10-08T16:20:50.032326+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/biology-handoff-paper-audit.txt",
+        "bytes": 3932,
+        "sha256": "6538a7f63df875b6fdbe1e160ba06dc57e2b5026569b2a237400d5d0e7f38b2a"
+      }
+    },
+    "continuation-mechanism-published-mapping-audit": {
+      "command": [
+        "python3",
+        "research/discovery/audit_published_mechanism.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T03:21:20.034530+00:00",
+      "finished_utc": "2026-10-09T03:21:20.127501+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-mechanism-published-mapping-audit.txt",
+        "bytes": 73,
+        "sha256": "8cee5718914b49d171acaae2daaa591f0a30d40fdd924553a97baae0da12c1a5"
       }
     },
     "review-benchmark": {
@@ -2830,6 +5008,69 @@
         "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
       }
     },
+    "continuation-formal-delivery-package": {
+      "command": [
+        "python3",
+        "research/package_submission.py",
+        "--audit",
+        "docs/paper_cn_v4/audit.json",
+        "--output",
+        "docs/BioExplainR-development-delivery-0.4.0.9000-r13.zip",
+        "--revision",
+        "--biology-followup",
+        "--preparation-checkpoint",
+        "--formal-followup",
+        "--paper-directory",
+        "docs/paper_cn_v4",
+        "--paper-version",
+        "v0.10",
+        "--result",
+        "research/results/w00_baseline/continuation-formal-delivery-audit-result.json"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T05:45:22.573738+00:00",
+      "finished_utc": "2026-10-09T05:45:40.654126+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-formal-delivery-package.txt",
+        "bytes": 172,
+        "sha256": "3d7a10af27b084e8820c9160d96e8ae5956be445b9ed8fb73eb7f4f53f057045"
+      }
+    },
+    "followup-checkpoint-capture": {
+      "command": [
+        "python3",
+        "research/common_performance/capture_checkpoint.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T17:05:37.563149+00:00",
+      "finished_utc": "2026-10-08T17:05:39.715559+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/followup-checkpoint-capture.txt",
+        "bytes": 3002,
+        "sha256": "e55040d63320bafb098bfa2239fd8b2327248ed4ebbc2d0c876cd0cb670fa275"
+      }
+    },
+    "continuation-mechanism-mapping-final": {
+      "command": [
+        "python3",
+        "research/discovery/audit_mechanism_complete.py",
+        "research/results/discovery_mechanism_fit_v4"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T02:12:17.258791+00:00",
+      "finished_utc": "2026-10-09T02:12:22.784178+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-mechanism-mapping-final.txt",
+        "bytes": 747,
+        "sha256": "e72a3f704be357eef0129bb176961277237e302170695c7cf511d34d85032945"
+      }
+    },
     "paper-cn-input-inventory": {
       "command": [
         "python3",
@@ -2879,6 +5120,22 @@
         "path": "research/results/w00_baseline/review-miniacc-boundaries.txt",
         "bytes": 113,
         "sha256": "87aa530d21c96032a28294ada615276463c011d7fb6244647b34eef4de5caa73"
+      }
+    },
+    "continuation-performance-selection-audit": {
+      "command": [
+        "python3",
+        "research/common_performance/audit_selection.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T03:59:04.569159+00:00",
+      "finished_utc": "2026-10-09T03:59:05.214358+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-performance-selection-audit.txt",
+        "bytes": 273,
+        "sha256": "48af921080363f68a8f5ac6e011bb87a928a0a2beda67e66edd483575f0302b7"
       }
     },
     "audit-failure-tests": {
@@ -2931,6 +5188,22 @@
         "path": "research/results/w00_baseline/paper-cn-assets-manifest.txt",
         "bytes": 74,
         "sha256": "3867d5f99a3ad9e6ed2b4a536da3d638119d38c8e17b0f48a6736321673661f4"
+      }
+    },
+    "continuation-current-failure-probes": {
+      "command": [
+        "python3",
+        "research/test_current_audit.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T03:32:37.055436+00:00",
+      "finished_utc": "2026-10-09T03:32:37.276004+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-current-failure-probes.txt",
+        "bytes": 103,
+        "sha256": "6299c61ecefc2c6e262ba2dccd92b35e4ade4e41b723fe2eac602dbd7b324b98"
       }
     },
     "revision-discovery-freeze": {
@@ -2990,6 +5263,40 @@
         "sha256": "90d77093f083f807bf6efeff0c2e8e1525d59cef81e7dca03c3ae8ad1e2d27e0"
       }
     },
+    "continuation-handoff-check": {
+      "command": [
+        "python3",
+        "research/common_performance/check_handoff.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T05:45:22.456304+00:00",
+      "finished_utc": "2026-10-09T05:45:22.664410+00:00",
+      "exit_code": 1,
+      "status": "fail",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-handoff-check.txt",
+        "bytes": 263,
+        "sha256": "ebf3d1044117ea663d7ce29fa10c33eac448995bd6c38b61882f8779594ff60b"
+      }
+    },
+    "continuation-performance-scoring": {
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "research/common_performance/score_complete.R",
+        "/home/ubuntu/creatR/research/results/common_performance_v4"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T05:40:01.525048+00:00",
+      "finished_utc": "2026-10-09T05:40:02.585402+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-performance-scoring.txt",
+        "bytes": 1068,
+        "sha256": "436a228ce50f6872c12ee706f282af6ec6586d02a2a778612c7bd45c605d1cea"
+      }
+    },
     "continuation-bwrap-offline-smoke": {
       "command": [
         "bash",
@@ -3021,6 +5328,42 @@
         "path": "research/results/w00_baseline/paper-cn-upload-verification.txt",
         "bytes": 2435,
         "sha256": "875f6c368539845ffd1b629f65b81a5e39928a9da132d2adb1a36b104f5032a9"
+      }
+    },
+    "biology-donors-sample-index": {
+      "command": [
+        "/tmp/opencode/paper-venv/bin/python",
+        "research/discovery/run_donors.py",
+        "analyze",
+        "research/results/discovery_donors_v1"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T14:41:44.635780+00:00",
+      "finished_utc": "2026-10-08T14:41:53.963570+00:00",
+      "exit_code": 1,
+      "status": "fail",
+      "log": {
+        "path": "research/results/w00_baseline/biology-donors-sample-index.txt",
+        "bytes": 730,
+        "sha256": "cbd21e920c1dafb0c6c231c7dd3ef3b0105d03e183481c55ecfc6507e8a46fe9"
+      }
+    },
+    "continuation-mechanism-published-counts": {
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "research/discovery/audit_published_counts.R",
+        "research/results/discovery_mechanism_fit_v4"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T03:32:37.081346+00:00",
+      "finished_utc": "2026-10-09T03:32:50.373957+00:00",
+      "exit_code": 1,
+      "status": "fail",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-mechanism-published-counts.txt",
+        "bytes": 2731,
+        "sha256": "7c8baa0f4bf0d6a946615034c533631f5c4289719a27a539c2e1be2745ef36f9"
       }
     },
     "continuation-isolated-library": {
@@ -3063,6 +5406,40 @@
         "sha256": "88b9141cb58f11737b41844c74cbe5d9637404f57b3afb015ee2f41ab63691cd"
       }
     },
+    "mechanism-inputs-acquire": {
+      "command": [
+        "python3",
+        "research/discovery/prepare_mechanism.py",
+        "research/results/discovery_mechanism_v1"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T16:42:54.452303+00:00",
+      "finished_utc": "2026-10-08T16:55:02.264263+00:00",
+      "exit_code": 1,
+      "status": "fail",
+      "log": {
+        "path": "research/results/w00_baseline/mechanism-inputs-acquire.txt",
+        "bytes": 1312,
+        "sha256": "6d445abfe07c78556066f3734dfc5d93689dea90d4360fa13b70a3e5d7776edb"
+      }
+    },
+    "biology-handoff-saved-results": {
+      "command": [
+        "python3",
+        "-c",
+        "import sys,json; sys.path.insert(0,\"research\"); from audit_current_results import ROOT,candidate_followup,narrative_links,read_json; summary=candidate_followup(ROOT); paper=read_json(ROOT/\"docs/paper_cn_v4/audit.json\"); assert paper[\"candidate_followup\"]==summary; print(json.dumps({\"status\":\"pass\",\"narrative_items\":len(narrative_links(paper,\"v0.10\")),\"candidate_followup\":summary},ensure_ascii=False,indent=2))"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T16:18:53.968003+00:00",
+      "finished_utc": "2026-10-08T16:18:54.453042+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/biology-handoff-saved-results.txt",
+        "bytes": 490,
+        "sha256": "4085045301b8c82d96cafe8ee1b2442222e488c2f915de1c9d6791dc8ad301fb"
+      }
+    },
     "paper-cn-shiny": {
       "command": [
         "python3",
@@ -3079,6 +5456,46 @@
         "path": "research/results/w00_baseline/paper-cn-shiny.txt",
         "bytes": 900,
         "sha256": "a7cab0133dec086d5bf00515a211ab5bafc385ebd3ef05558d7b0fbdca798c2f"
+      }
+    },
+    "biology-donor-supplement-browser-final": {
+      "command": [
+        "env",
+        "NODE_PATH=/tmp/opencode/node_modules",
+        "node",
+        "research/discovery/acquire_supplement_browser.cjs"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T14:23:16.475264+00:00",
+      "finished_utc": "2026-10-08T14:25:17.365253+00:00",
+      "exit_code": 1,
+      "status": "fail",
+      "log": {
+        "path": "research/results/w00_baseline/biology-donor-supplement-browser-final.txt",
+        "bytes": 526,
+        "sha256": "6d20d14ef29265fc9fc08463904ce8fea6f4d799a5b8b10093c809969cc5af55"
+      }
+    },
+    "revision-links-export": {
+      "command": [
+        "/tmp/opencode/paper-venv/bin/python",
+        "research/paper_cn_revision/build_revision.py",
+        "--directory",
+        "docs/paper_cn_v3",
+        "--version",
+        "v0.9.1",
+        "--reuse-assets",
+        "docs/paper_cn_v2"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T12:00:23.084700+00:00",
+      "finished_utc": "2026-10-08T12:00:34.589011+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/revision-links-export.txt",
+        "bytes": 4239,
+        "sha256": "92b8941572535cb3e318d3e19d0c832180fa4fd70ccfdf917722b99717efd990"
       }
     },
     "audit-current-initial": {
@@ -3243,6 +5660,24 @@
         "sha256": "a03e2061e7b7d83dffd68185b93c5341cfa42ffd8bc1e00a987699ebe268d7df"
       }
     },
+    "continuation-mechanism-published-annotation": {
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "research/discovery/inspect_published_mechanism.R",
+        "research/results/discovery_mechanism_fit_v4"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T03:18:46.168747+00:00",
+      "finished_utc": "2026-10-09T03:18:46.632940+00:00",
+      "exit_code": 1,
+      "status": "fail",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-mechanism-published-annotation.txt",
+        "bytes": 71,
+        "sha256": "7604092d0e0c45ade40b1cc99dba2467a1302cccaef58bda34fa9a0367c09ae8"
+      }
+    },
     "acceptance-package-check": {
       "command": [
         "R",
@@ -3262,6 +5697,22 @@
         "path": "research/results/w00_baseline/acceptance-package-check.txt",
         "bytes": 2480,
         "sha256": "7dd601a4c8aa0c24d61244d40f998bd8b0e3d81e0145f6cce1fb04877c4fc9dd"
+      }
+    },
+    "continuation-mechanism-chip-ledger-sealed": {
+      "command": [
+        "python3",
+        "research/discovery/finalize_mechanism_chip.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T03:48:23.949961+00:00",
+      "finished_utc": "2026-10-09T03:48:24.390001+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-mechanism-chip-ledger-sealed.txt",
+        "bytes": 3192,
+        "sha256": "232fb4cf9f6fd049b1527653abbe698ea2b7befb6811d6b19f63816abcda36b9"
       }
     },
     "paper-cn-audit-probes": {
@@ -3302,6 +5753,42 @@
         "sha256": "a88f7a25b0788522bf776af0bcdb054f1126f0603749b792f209e9b1be666e1e"
       }
     },
+    "continuation-mechanism-design-v2": {
+      "command": [
+        "python3",
+        "research/discovery/mechanism_design.py",
+        "research/results/discovery_mechanism_fit_v2"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T01:32:07.775182+00:00",
+      "finished_utc": "2026-10-09T01:32:07.901182+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-mechanism-design-v2.txt",
+        "bytes": 336,
+        "sha256": "e54dab65465acade8867217378f28fa0c4b302e64a312bffaa60315d8a13aa02"
+      }
+    },
+    "continuation-chip-r-independent": {
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "research/discovery/audit_chip.R",
+        "research/results/discovery_chip_v1",
+        "research/results/discovery_chip_analysis_v1"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T02:06:42.961337+00:00",
+      "finished_utc": "2026-10-09T02:06:52.252926+00:00",
+      "exit_code": 1,
+      "status": "fail",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-chip-r-independent.txt",
+        "bytes": 1043,
+        "sha256": "a3dab6e43268fc2d511878c370117285b420050a0af0f05fa6506e1080b78253"
+      }
+    },
     "paper-cn-export-corrected": {
       "command": [
         "/tmp/opencode/paper-venv/bin/python",
@@ -3334,6 +5821,41 @@
         "path": "research/results/w00_baseline/continuation-paper-audit-user-actions-final.txt",
         "bytes": 17034,
         "sha256": "c95bf7045fb5914056b2e52dfcd7dbdbe7e3ced855dd49aa151efdfd3291b045"
+      }
+    },
+    "followup-handoff-doc-check": {
+      "command": [
+        "python3",
+        "-c",
+        "from pathlib import Path; import subprocess,json; root=Path.cwd(); p=root/\"docs/implementation_records/PAPER_CN_CONTINUATION.md\"; old=subprocess.check_output([\"git\",\"show\",\"HEAD:docs/implementation_records/PAPER_CN_CONTINUATION.md\"],text=True); current=p.read_text(); marker=\"日期：2026-10-08；软件0.4.0.9000\"; assert old.split(marker,1)[1]==current.split(marker,1)[1]; r=(root/\"docs/paper_cn_v1/README.md\").read_text(); assert \"历史稿\" in r and \"../paper_cn_v3/README.md\" in r and \"../paper_cn_v4/README.md\" in r; s=(root/\"SESSION_HANDOFF.md\").read_text(); assert s.splitlines()[2].startswith(\"## 最新交接：做了什么、没做什么\"); assert \"### 做了什么\" in s and \"### 没做什么\" in s; print(json.dumps({\"status\":\"pass\",\"original_v08_implementation_and_upload_preserved\":True,\"v091_and_current_v010_links\":True,\"front_summary\":True},ensure_ascii=False,indent=2))"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T17:08:31.638549+00:00",
+      "finished_utc": "2026-10-08T17:08:31.688742+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/followup-handoff-doc-check.txt",
+        "bytes": 147,
+        "sha256": "2a934df441c76b3e6b5b95386a81bdb41374ebc1f808e569a2f13ed6a5351723"
+      }
+    },
+    "biology-donors-acquire": {
+      "command": [
+        "/tmp/opencode/paper-venv/bin/python",
+        "research/discovery/run_donors.py",
+        "acquire",
+        "research/results/discovery_donors_v1"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T13:01:14.317104+00:00",
+      "finished_utc": "2026-10-08T13:01:14.340933+00:00",
+      "exit_code": 1,
+      "status": "fail",
+      "log": {
+        "path": "research/results/w00_baseline/biology-donors-acquire.txt",
+        "bytes": 428,
+        "sha256": "8a8bfdec46bcb6c0fe3fda62ee61b123b059f6bb8116d8b7ec74eb39d89561d3"
       }
     },
     "acceptance-build": {
@@ -3440,6 +5962,46 @@
         "sha256": "904b0d670d0aad16a0f5d0ec90ff8b84750c7bd32dae8f1fe0af42307214ea50"
       }
     },
+    "biology-paper-browser-pass2": {
+      "command": [
+        "env",
+        "BIOEXPLAINR_PAPER_DIRECTORY=docs/paper_cn_v4",
+        "BIOEXPLAINR_PAPER_VERSION=v0.10",
+        "BIOEXPLAINR_MAIN_FIGURES=3",
+        "BIOEXPLAINR_MAIN_TABLES=1",
+        "BIOEXPLAINR_REQUIRED_TEXT=iSEE,SCassist,GeneAgent,ellmer,GPTCelltype,SPARCL1,GSE94335,GSE146017,致死性哮喘",
+        "BIOEXPLAINR_REVISION_BROWSER=/tmp/opencode/paper-v010-browser2",
+        "NODE_PATH=/tmp/opencode/node_modules",
+        "node",
+        "research/paper_cn_revision/browser_revision.cjs"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T15:57:27.653843+00:00",
+      "finished_utc": "2026-10-08T15:57:32.013742+00:00",
+      "exit_code": 1,
+      "status": "fail",
+      "log": {
+        "path": "research/results/w00_baseline/biology-paper-browser-pass2.txt",
+        "bytes": 25376,
+        "sha256": "15f4897c03a7a690da1931a2236aa6c916dcec61faf19f32147936d72adb2d9c"
+      }
+    },
+    "continuation-tools-applicability": {
+      "command": [
+        "python3",
+        "research/common_performance/capture_applicability.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T02:10:58.870736+00:00",
+      "finished_utc": "2026-10-09T02:11:09.619419+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-tools-applicability.txt",
+        "bytes": 3350,
+        "sha256": "267bd3f5199bd7caf38219667fa1847bc7ec20992d9996cad2b61d30ca02bb56"
+      }
+    },
     "acceptance-delivery": {
       "command": [
         "python3",
@@ -3474,6 +6036,23 @@
         "path": "research/results/w00_baseline/paper-cn-document-audit.txt",
         "bytes": 802,
         "sha256": "1279c30f21663880e73ac7130bce28cf43f70214233d43676d6177c8a3b8f0a8"
+      }
+    },
+    "biology-context-acquire": {
+      "command": [
+        "/tmp/opencode/paper-venv/bin/python",
+        "research/discovery/prepare_context.py",
+        "research/results/discovery_context_v1"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T12:54:39.285659+00:00",
+      "finished_utc": "2026-10-08T12:56:33.683841+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/biology-context-acquire.txt",
+        "bytes": 1729,
+        "sha256": "46441f6dff50cda3ecbccf70ad36b24048d4b2a74395a7b19090cbdb3a1d3e54"
       }
     },
     "continuation-build-user-actions-final": {
@@ -3520,6 +6099,23 @@
         "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
       }
     },
+    "continuation-ellmer-restore": {
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "research/common_performance/install_comparator.R"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T01:24:11.072386+00:00",
+      "finished_utc": "2026-10-09T01:25:21.089670+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-ellmer-restore.txt",
+        "bytes": 32817,
+        "sha256": "8cae60aec151040b2f4206f6a74d9dda63c7251d5431a23242b4b991d28f9be2"
+      }
+    },
     "python-install": {
       "command": [
         "/tmp/opencode/paper-venv/bin/pip",
@@ -3555,6 +6151,57 @@
         "sha256": "9747fe92e581ac98075dc848c406cf19d0cbd0654d76bb1464102d0e3909eb85"
       }
     },
+    "continuation-research-report-export": {
+      "command": [
+        "/tmp/opencode/paper-venv/bin/python",
+        "research/common_performance/build_followup_report.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T05:40:03.937458+00:00",
+      "finished_utc": "2026-10-09T05:40:07.109122+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-research-report-export.txt",
+        "bytes": 599,
+        "sha256": "b30f76bc157db558348e34241e7ece495fa1471b2085e056f492c3e54d34b91c"
+      }
+    },
+    "continuation-performance-formal-v3": {
+      "command": [
+        "python3",
+        "research/common_performance/run_benchmark.py",
+        "research/results/common_performance_v3"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T01:33:16.044021+00:00",
+      "finished_utc": "2026-10-09T01:38:34.596342+00:00",
+      "exit_code": -15,
+      "status": "fail",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-performance-formal-v3.txt",
+        "bytes": 213,
+        "sha256": "4d88fac56d4a90804dea4a298a394039f9f1c7e810d88c7a454f61b12a08eb06"
+      }
+    },
+    "mechanism-inputs-acquire-resume": {
+      "command": [
+        "python3",
+        "research/discovery/prepare_mechanism.py",
+        "research/results/discovery_mechanism_v1",
+        "--resume"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T16:57:08.045733+00:00",
+      "finished_utc": "2026-10-08T16:58:04.328690+00:00",
+      "exit_code": 1,
+      "status": "fail",
+      "log": {
+        "path": "research/results/w00_baseline/mechanism-inputs-acquire-resume.txt",
+        "bytes": 1124,
+        "sha256": "5729f5d65a40e94a127a1669e85b7ec0d733e30a49fad0bfec9ed399882cc967"
+      }
+    },
     "paper-cn-assets-final": {
       "command": [
         "/tmp/opencode/paper-venv/bin/python",
@@ -3569,6 +6216,95 @@
         "path": "research/results/w00_baseline/paper-cn-assets-final.txt",
         "bytes": 74,
         "sha256": "3867d5f99a3ad9e6ed2b4a536da3d638119d38c8e17b0f48a6736321673661f4"
+      }
+    },
+    "biology-paper-audit-final": {
+      "command": [
+        "/tmp/opencode/paper-venv/bin/python",
+        "research/paper_cn_revision/audit_revision.py",
+        "--directory",
+        "docs/paper_cn_v4",
+        "--version",
+        "v0.10"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T15:54:07.611493+00:00",
+      "finished_utc": "2026-10-08T15:54:09.059637+00:00",
+      "exit_code": 1,
+      "status": "fail",
+      "log": {
+        "path": "research/results/w00_baseline/biology-paper-audit-final.txt",
+        "bytes": 569,
+        "sha256": "33a22f793f77eab9f6d2d72b812e53e6e359e7c4438c8ff6588e3df9087eea44"
+      }
+    },
+    "biology-donors-r-audit-complete": {
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "research/discovery/audit_donors.R",
+        "research/results/discovery_donors_v1"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T15:03:02.078482+00:00",
+      "finished_utc": "2026-10-08T15:03:32.499401+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/biology-donors-r-audit-complete.txt",
+        "bytes": 744,
+        "sha256": "49c53e19bc191658793f72f27012bd7b36a6d6e361d358d6a9bd958e52b9190d"
+      }
+    },
+    "biology-followup-project-final": {
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "research/discovery/report_followup.R"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T15:09:59.186583+00:00",
+      "finished_utc": "2026-10-08T15:10:01.312608+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/biology-followup-project-final.txt",
+        "bytes": 216,
+        "sha256": "3acd3b9566e304bb3134b3f2ba44ab4ef11e17b77347ef42831591f90aa38c41"
+      }
+    },
+    "biology-handoff-download-probes": {
+      "command": [
+        "env",
+        "TMPDIR=/tmp/opencode",
+        "python3",
+        "research/discovery/test_download_ranges.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T16:20:43.009096+00:00",
+      "finished_utc": "2026-10-08T16:20:43.218531+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/biology-handoff-download-probes.txt",
+        "bytes": 462,
+        "sha256": "d128087578fdce6823effd5db9e8bc330848664c051af2eda6ceaf3910dc68fc"
+      }
+    },
+    "continuation-mechanism-chip-ledger": {
+      "command": [
+        "python3",
+        "research/discovery/finalize_mechanism_chip.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-09T02:24:01.951150+00:00",
+      "finished_utc": "2026-10-09T02:24:02.154081+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/continuation-mechanism-chip-ledger.txt",
+        "bytes": 2790,
+        "sha256": "448bd7fab1dfedd87155274e0e5659b28fd09548be606c67391b79e398c679e6"
       }
     },
     "review-delivery-final-verify": {
@@ -3667,6 +6403,51 @@
         "sha256": "18ea08fe48494f0fdc4ff9482a543b7163110932e5c8d939ac6bd7d8b5a8e3ca"
       }
     },
+    "revision-links-audit": {
+      "command": [
+        "/tmp/opencode/paper-venv/bin/python",
+        "research/paper_cn_revision/audit_revision.py",
+        "--directory",
+        "docs/paper_cn_v3",
+        "--version",
+        "v0.9.1"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T12:00:34.639251+00:00",
+      "finished_utc": "2026-10-08T12:00:41.122154+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/revision-links-audit.txt",
+        "bytes": 2851,
+        "sha256": "a3723b2b12d03afadfd68d368697663db147eed250cea5f069eb730208dc01f7"
+      }
+    },
+    "followup-handoff-syntax": {
+      "command": [
+        "env",
+        "PYTHONPYCACHEPREFIX=/tmp/opencode/biology-handoff-pycache",
+        "python3",
+        "-m",
+        "py_compile",
+        "research/common_performance/setup_runtime.py",
+        "research/common_performance/capture_checkpoint.py",
+        "research/discovery/prepare_mechanism.py",
+        "research/manage_baseline.py",
+        "research/package_submission.py",
+        "research/audit_current_results.py"
+      ],
+      "working_directory": ".",
+      "started_utc": "2026-10-08T17:08:31.631645+00:00",
+      "finished_utc": "2026-10-08T17:08:31.749209+00:00",
+      "exit_code": 0,
+      "status": "pass",
+      "log": {
+        "path": "research/results/w00_baseline/followup-handoff-syntax.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
     "paper-cn-paper-bundle": {
       "command": [
         "/tmp/opencode/paper-venv/bin/python",
@@ -3711,22 +6492,22 @@
     "sha256": "e6f0a825028f204d6cefc9af003cfc70ebb645dcb9c586d22c84f029c78ce2be"
   },
   "delivery_bundle": {
-    "path": "docs/BioExplainR-development-delivery-0.4.0.9000-r8.zip",
+    "path": "docs/BioExplainR-development-delivery-0.4.0.9000-r14.zip",
     "status": "development_delivery_verified",
     "inspection": {
-      "path": "research/results/w00_baseline/revision-delivery-audit-result.json",
-      "bytes": 172128,
-      "sha256": "7d4472474b6d745a5a8d7102eaf690f3263c94818027a021ceffd60517e35f31"
+      "path": "research/results/w00_baseline/handoff-formal-docs-delivery-audit-result.json",
+      "bytes": 540784,
+      "sha256": "4b6ac36e50bc18df788af03dd652fe9de2ac490b885cede96cd7ed11466da6dd"
     }
   },
   "paper_cn": {
-    "path": "docs/paper_cn_v2",
+    "path": "docs/paper_cn_v4",
     "audit": {
-      "path": "docs/paper_cn_v2/audit.json",
-      "bytes": 974,
-      "sha256": "2b69184ea9f1f0eb962a848ffe16876293c341f8f38ac2e78ff80a621b518245"
+      "path": "docs/paper_cn_v4/audit.json",
+      "bytes": 3833,
+      "sha256": "909d6374f68d3bc82a2da3573c656fbd2a94ef8ad73fa481dfa8c43385cc83c1"
     },
-    "version": "v0.9",
+    "version": "v0.10",
     "human_evaluation": "not_in_manuscript; deferred placeholders"
   },
   "historical_delivery_bundle": {
@@ -3739,11 +6520,15 @@
     }
   },
   "boundaries": [
-    "Stored experiments were audited offline, not rerun",
+    "Earlier stored experiments were audited offline; new formal follow-up has separate execution records",
     "No new expert or user study",
+    "Common-task developmental benchmark; A549 SPARCL1 filtered/not_estimable; ChIP coordinate-verified hg19 without author confirmation",
     "No Git commit/release/DOI is inferred",
     "W10/W11 external scientific materials are not complete",
-    "0.4.0.9000 is a development snapshot; GitHub creation blocked by credential permissions",
-    "SPARCL1 validation is an external single-cell-line experiment, not donor-independent confirmation"
+    "0.4.0.9000 is a development snapshot; GitHub publication paused by owner (earlier creation permission error retained)",
+    "SPARCL1 validation is an external single-cell-line experiment, not donor-independent confirmation",
+    "SPARCL1 follow-up: 16 paired donors positive in GSE94335, group difference and three candidate interactions unsupported",
+    "GSE94335/GSE146017 share at least three named culture cell lines; donor counts are not pooled",
+    "SPARCL1 glucocorticoid response was reported previously (Himes 2014; Kan 2019); no first-discovery claim"
   ]
 }

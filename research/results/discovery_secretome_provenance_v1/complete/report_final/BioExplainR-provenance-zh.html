@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><title>BioExplainR 分析解释报告</title><style>body{font-family:-apple-system,'Segoe UI','Noto Sans CJK SC','Microsoft YaHei',sans-serif;max-width:960px;margin:2em auto;padding:0 1em;line-height:1.6;color:#222} table{border-collapse:collapse;margin:.5em 0;font-size:.9em}th,td{border:1px solid #ccc;padding:3px 8px;text-align:left} th{background:#f3f3f3}pre{background:#f6f8fa;padding:.8em;overflow-x:auto}h1{border-bottom:2px solid #2a6f97}h2{color:#2a6f97}</style><meta name='viewport' content='width=device-width, initial-scale=1'><style>body{overflow-wrap:anywhere}table{max-width:100%}.bio-table-wrap{max-width:100%;overflow-x:auto}@media(max-width:600px){body{margin:1em auto;padding:0 .75em}h1{font-size:25px}}</style></head><body>
+<h1>BioExplainR 分析解释报告</h1>
+<p>生成时间：2026-10-10 09:09:48 CST；BioExplainR 0.4.0.9000。</p>
+<p>说明：统计事实由 R 从完整输入确定性计算；模型文本（如有）仅组织语言，未经数值核验。报告不包含 API key、原始表达矩阵、细胞条码或样本名称。</p>
+<h2>对象 1</h2>
+<h3>跨分析项目摘要</h3>
+<div class='bio-table-wrap'><table><tr><th>name</th><th>type</th><th>source</th><th>source_status</th><th>validation</th></tr><tr><td>provenance</td><td>generic</td><td>MaxQuant_original_and_published_TableS2</td><td>user_declared</td><td>not_applicable</td></tr><tr><td>public_source</td><td>generic</td><td>NA</td><td>user_declared</td><td>not_applicable</td></tr></table></div>
+<h3>来源一致性检查</h3>
+<div class='bio-table-wrap'><table><tr><th>check</th><th>status</th><th>detail</th></tr><tr><td>species</td><td>consistent</td><td>Homo sapiens</td></tr><tr><td>tissue</td><td>review_needed</td><td>human testicular peritubular cells | bronchial smooth muscle extracellular vesicles</td></tr><tr><td>contrast</td><td>consistent</td><td>Original vs published processed arrays</td></tr></table></div>
+<h3>数据依赖关系（上游 → 派生结果）</h3>
+<p>（空表）</p>
+<p>派生的富集或图表与上游共享输入，不构成独立验证。</p>
+<ul><li>项目包含 2 个结果，0 条记录的数据依赖关系。</li><li>物种、组织或比较方向存在多个记录值，应确认这些结果是否适合联合解释。</li><li>不同分析结果方向一致只能形成待验证的生物学假设，不能自动推出因果关系。</li></ul>
+<h2>provenance</h2>
+<h3>来源与参数</h3>
+<div class='bio-table-wrap'><table><tr><th>item</th><th>value</th></tr><tr><td>analysis_type</td><td>generic</td></tr><tr><td>source_class</td><td>cross_array_provenance_counts</td></tr><tr><td>source_package</td><td>MaxQuant_original_and_published_TableS2</td></tr><tr><td>source_status</td><td>user_declared</td></tr><tr><td>adapter</td><td>NA</td></tr></table></div>
+<h3>用户提供的研究背景</h3>
+<div class='bio-table-wrap'><table><tr><th>item</th><th>value</th></tr><tr><td>species</td><td>Homo sapiens</td></tr><tr><td>tissue</td><td>human testicular peritubular cells</td></tr><tr><td>contrast</td><td>Original vs published processed arrays</td></tr></table></div>
+<h3>确定性统计事实</h3>
+<div class='bio-table-wrap'><table><tr><th>item</th><th>value</th></tr><tr><td>n_arrays</td><td>4</td></tr><tr><td>n_decoded_run_columns</td><td>168</td></tr><tr><td>n_original_published_measurements</td><td>23436</td></tr><tr><td>n_cross_measurement_checks</td><td>281232</td></tr><tr><td>n_total_intensity_checks</td><td>31228</td></tr><tr><td>secretome24_nonzero_LFQ_checks</td><td>803</td></tr><tr><td>secretome24_matched_LFQ</td><td>0</td></tr><tr><td>secretome24_published_ALL_positions</td><td>467</td></tr><tr><td>secretome24_matched_positive_total_intensity</td><td>0</td></tr><tr><td>secretome24_both_zero_total_intensity</td><td>9</td></tr><tr><td>scientific_scope</td><td>Original-published source diagnostics; no new effect tests</td></tr><tr><td>scope_limitations</td><td>Post-result source diagnostics; complete comparison counts, no new candidateP or independent biological sample. Origi...</td></tr></table></div>
+<h3>前 4 行摘要</h3>
+<div class='bio-table-wrap'><table><tr><th>array</th><th>original_nonzero_LFQ</th><th>matched_rounding</th><th>published_ALL</th><th>matched_positive_ALL</th></tr><tr><td>proteome24</td><td>4543</td><td>4543</td><td>3943</td><td>3870</td></tr><tr><td>proteome72</td><td>14829</td><td>14829</td><td>3017</td><td>3002</td></tr><tr><td>secretome24</td><td>803</td><td>0</td><td>467</td><td>0</td></tr><tr><td>secretome72</td><td>2128</td><td>2128</td><td>380</td><td>377</td></tr></table></div>
+<h2>public_source</h2>
+<h3>来源与参数</h3>
+<div class='bio-table-wrap'><table><tr><th>item</th><th>value</th></tr><tr><td>analysis_type</td><td>generic</td></tr><tr><td>source_class</td><td>scoped_public_source_feasibility</td></tr><tr><td>source_package</td><td>NA</td></tr><tr><td>source_status</td><td>user_declared</td></tr><tr><td>adapter</td><td>NA</td></tr></table></div>
+<h3>用户提供的研究背景</h3>
+<div class='bio-table-wrap'><table><tr><th>item</th><th>value</th></tr><tr><td>species</td><td>Homo sapiens</td></tr><tr><td>tissue</td><td>bronchial smooth muscle extracellular vesicles</td></tr></table></div>
+<h3>确定性统计事实</h3>
+<div class='bio-table-wrap'><table><tr><th>item</th><th>value</th></tr><tr><td>literature_unique_records</td><td>180</td></tr><tr><td>pride_unique_projects</td><td>8</td></tr><tr><td>ASM_EV_donor_labels</td><td>6</td></tr><tr><td>ASM_EV_runs</td><td>18</td></tr><tr><td>qualifying_GC_candidate_arrays_obtained</td><td>0</td></tr><tr><td>EV_selected_glycolysis_rows</td><td>8</td></tr><tr><td>EV_selected_reported_P_under05</td><td>0</td></tr><tr><td>online_model_calls</td><td>0</td></tr><tr><td>scientific_scope</td><td>Scoped metadata and original-paper review; EV identity lead, not GC causal validation</td></tr><tr><td>scope_limitations</td><td>NoGCvehicle; six patients not18independent donors, originalsamepatientreplicates. Fullunselectedquantifiedarray notan...</td></tr></table></div>
+<h2>模型配置（不含密钥）</h2>
+<div class='bio-table-wrap'><table><tr><th>item</th><th>value</th></tr><tr><td>preset</td><td>local</td></tr><tr><td>protocol</td><td>none</td></tr><tr><td>model</td><td>NA</td></tr><tr><td>endpoint_host</td><td>NA</td></tr><tr><td>key_source</td><td>none</td></tr><tr><td>timeout</td><td>60</td></tr><tr><td>max_retries</td><td>2</td></tr><tr><td>temperature</td><td>NA</td></tr><tr><td>max_tokens</td><td>1500</td></tr></table></div>
+<h2>运行环境与依赖来源</h2>
+<div class='bio-table-wrap'><table><tr><th>item</th><th>value</th></tr><tr><td>R</td><td>R version 4.3.3 (2024-02-29)</td></tr><tr><td>platform</td><td>x86_64-pc-linux-gnu</td></tr><tr><td>os</td><td>Ubuntu 24.04.4 LTS</td></tr></table></div>
+<div class='bio-table-wrap'><table><tr><th>package</th><th>version</th><th>source</th></tr><tr><td>BioExplainR</td><td>0.4.0.9000</td><td>local/unknown</td></tr><tr><td>httr2</td><td>1.0.0</td><td>CRAN</td></tr><tr><td>jsonlite</td><td>1.8.8</td><td>CRAN</td></tr></table></div>
+</body></html>

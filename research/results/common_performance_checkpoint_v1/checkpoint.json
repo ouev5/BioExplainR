@@ -1,0 +1,70 @@
+{
+  "status": "preparation_partial",
+  "captured_utc": "2026-10-08T17:05:39.707767+00:00",
+  "narrative_date": "2026-10-09; execution timestamps retained from host UTC without clock changes",
+  "performance": {
+    "protocol": {
+      "path": "PROTOCOL.md",
+      "bytes": 3331,
+      "sha256": "1e5fa41d365c25e5e63cf45844b7acd3dc44d308a505e0a7e9dad00034e6e9c8"
+    },
+    "ellmer_version": "0.5.0",
+    "library": "/tmp/opencode/common-performance-R-library",
+    "assets": [
+      {
+        "path": "llama-b11429-bin-ubuntu-x64.tar.gz",
+        "bytes": 17693462,
+        "sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+        "location": "/tmp/opencode/common-performance-runtime/llama-b11429-bin-ubuntu-x64.tar.gz",
+        "status": "hash_verified_not_used_for_inference"
+      },
+      {
+        "path": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+        "bytes": 1117320736,
+        "sha256": "6a1a2eb6d15622bf3c96857206351ba97e1af16c30d7a74ee38970e434e9407e",
+        "location": "/tmp/opencode/common-performance-runtime/qwen2.5-1.5b-instruct-q4_k_m.gguf",
+        "status": "hash_verified_not_used_for_inference"
+      },
+      {
+        "path": "SCassist-4cd3e7e7f059d5b59d86611e4bb5053ce5d827b9.tar.gz",
+        "bytes": 19243008,
+        "sha256": "fc844ec8651d481e1a3b54a2ddb45fb84ba582221d56994ae08257d353724115",
+        "status": "incomplete_not_usable",
+        "location": "/tmp/opencode/common-performance-runtime/SCassist-4cd3e7e7f059d5b59d86611e4bb5053ce5d827b9.tar.gz"
+      }
+    ],
+    "benchmark_input_freeze": "not_created",
+    "runner": "not_implemented",
+    "model_calls": 0,
+    "performance_scores": 0,
+    "runtime_manifest": "not_created; latest acquisition interrupted",
+    "interrupted_execution": "performance-runtime-acquire-final.txt exists without completion metadata"
+  },
+  "mechanism": {
+    "frozen_protocol": {
+      "path": "frozen_protocol.json",
+      "bytes": 441,
+      "sha256": "3219b2997a5b6bffd4cb3ddc3a5119478c995556415019a5fd439bcd6f14c5c8"
+    },
+    "verified_inputs": 5,
+    "gene_counts": {
+      "path": "geneCounts.tab.gz",
+      "bytes": 2524990,
+      "sha256": "db961e988dfe8466d6a2426be60f2ec8976698648f48c1b52653fa65ed5ae466",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE229nnn/GSE229084/suppl/GSE229084_geneCounts.tab.gz",
+      "downloaded_utc": "2026-10-08T16:57:47.672802+00:00"
+    },
+    "chip_peaks_downloaded": false,
+    "chip_assembly": "unverified; GEO metadata says mm9 for human HASM2",
+    "missing_source": "PMC5576583.xml: Europe PMC HTTP 500",
+    "candidate_expression_read": false,
+    "statistical_fit": "not_run",
+    "independent_numeric_audit": "not_run",
+    "acquisition_script_revision": {
+      "path": "prepare_mechanism.py",
+      "bytes": 2713,
+      "sha256": "8b3d237d5b1b660cb2540cacff090ec40731970d50f656e09fb4a0fa75dbb2e2"
+    },
+    "revision_note": "Resume/downloader changed after initial freeze; original script hash retained, no candidate analysis"
+  }
+}

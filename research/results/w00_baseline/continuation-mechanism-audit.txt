@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/ubuntu/creatR/research/discovery/audit_mechanism.py", line 77, in <module>
+    if __name__=='__main__': main()
+                             ^^^^^^
+  File "/home/ubuntu/creatR/research/discovery/audit_mechanism.py", line 64, in main
+    assert np.allclose(vals,[float(r[k]) for k in ['log2_effect','se','df','lower','upper','p']],rtol=1e-6,atol=1e-8),(g,r,vals)
+                             ^^^^^^^^^^^
+ValueError: could not convert string to float: ''

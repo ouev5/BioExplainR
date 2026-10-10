@@ -1,0 +1,151 @@
+{
+  "utc": "2026-10-10T05:19:39.090630+00:00",
+  "plan": {
+    "path": "research/results/discovery_public_proteome_v1/alternative_sources_plan.json",
+    "bytes": 6058,
+    "sha256": "2878254c457ddb5ff71bb3dee16161539b2f03fdfd6b412d25c60a79eca23ef5"
+  },
+  "records": [
+    {
+      "name": "PMC11299423_article.html",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11299423/",
+      "started_utc": "2026-10-10T05:19:34.696106+00:00",
+      "status": "failed_or_partial",
+      "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))",
+      "completed_utc": "2026-10-10T05:19:39.036512+00:00",
+      "seconds": 4.340404758229852
+    },
+    {
+      "name": "PMC5105184_article.html",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5105184/",
+      "started_utc": "2026-10-10T05:19:34.701173+00:00",
+      "http_status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5105184/",
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "vary": "Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site",
+        "x-ua-compatible": "IE=edge",
+        "access-control-allow-origin": "*",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+        "pragma": "no-cache",
+        "expires": "Mon, 01 Jan 1990 00:00:00 GMT",
+        "date": "Sat, 10 Oct 2026 05:19:37 GMT",
+        "strict-transport-security": "max-age=31536000",
+        "permissions-policy": "ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*, ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factors=*, ch-ua-platform=*, ch-ua-platform-version=*",
+        "cross-origin-opener-policy": "same-origin",
+        "content-security-policy": "require-trusted-types-for 'script';report-uri /recaptcha/challengepage/_/RecaptchaChallengePageUi/cspreport",
+        "accept-ch": "Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factors, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version",
+        "cross-origin-resource-policy": "same-site",
+        "reporting-endpoints": "default=\"/recaptcha/challengepage/_/RecaptchaChallengePageUi/web-reports?context=eJzjctHikmII1pBiaL15jnU6EJcsOs_aBsRdQDwHiA0VLrE6A3GRxBXWFiD-VHWDVaT6Buu3Yl82jhJfNpa3_mxCPBwvpy6_xiZwYOf3o4xKekn5hfFFqcmJBSXJGYm6QJ4ukM7JSc1LTy1ITE-NNzIwMjOwNDTUMzCNLzAAAAVgMMk\"",
+        "server": "ESF",
+        "x-xss-protection": "0",
+        "x-frame-options": "SAMEORIGIN",
+        "x-content-type-options": "nosniff",
+        "Alt-Svc": "clear",
+        "Connection": "close",
+        "Transfer-Encoding": "chunked"
+      },
+      "status": "retrieved",
+      "response": {
+        "path": "research/results/discovery_public_proteome_v1/sources/PMC5105184_article.html",
+        "bytes": 21313,
+        "sha256": "5787ef6a1b3e26ffd45c9c2edaa9eb60d6a22e64808a94b2c14e299b20384e2b"
+      },
+      "completed_utc": "2026-10-10T05:19:39.089272+00:00",
+      "seconds": 4.388103546574712
+    },
+    {
+      "name": "PMC9361782_article.html",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9361782/",
+      "started_utc": "2026-10-10T05:19:34.701818+00:00",
+      "status": "failed_or_partial",
+      "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))",
+      "completed_utc": "2026-10-10T05:19:35.688085+00:00",
+      "seconds": 0.9862736389040947
+    },
+    {
+      "name": "PXD014171_summary.txt",
+      "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2021/05/PXD014171/summary.txt",
+      "started_utc": "2026-10-10T05:19:34.704452+00:00",
+      "http_status": 200,
+      "final_url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2021/05/PXD014171/summary.txt",
+      "headers": {
+        "Date": "Sat, 10 Oct 2026 05:19:35 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Fri, 15 Apr 2022 00:54:07 GMT",
+        "ETag": "\"1d62-5dca6d901a9c0\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "7522",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Connection": "close",
+        "Content-Type": "text/plain; charset=UTF-8"
+      },
+      "status": "retrieved",
+      "response": {
+        "path": "research/results/discovery_public_proteome_v1/sources/PXD014171_summary.txt",
+        "bytes": 7522,
+        "sha256": "970f51484c66ee5e5869ea9518cca528ddd4961dcbb6026fae02a600852378ee"
+      },
+      "completed_utc": "2026-10-10T05:19:36.126025+00:00",
+      "seconds": 1.421576987951994
+    },
+    {
+      "name": "PXD014171_PXD014171_community_annotated.sdrf.tsv",
+      "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2021/05/PXD014171/PXD014171_community_annotated.sdrf.tsv",
+      "started_utc": "2026-10-10T05:19:35.688454+00:00",
+      "http_status": 200,
+      "final_url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2021/05/PXD014171/PXD014171_community_annotated.sdrf.tsv",
+      "headers": {
+        "Date": "Sat, 10 Oct 2026 05:19:36 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Fri, 11 Sep 2026 17:37:35 GMT",
+        "ETag": "\"1d1a-65b388a3095c0\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "7450",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Connection": "close",
+        "Content-Type": "text/tab-separated-values"
+      },
+      "status": "retrieved",
+      "response": {
+        "path": "research/results/discovery_public_proteome_v1/sources/PXD014171_PXD014171_community_annotated.sdrf.tsv",
+        "bytes": 7450,
+        "sha256": "afb858a61d1937e9dfc8e252f3753fabc9e3a3c028337a721f2447d9c06ca63f"
+      },
+      "completed_utc": "2026-10-10T05:19:36.528446+00:00",
+      "seconds": 0.8399969507008791
+    },
+    {
+      "name": "PXD015604_Link_between_files.xlsx",
+      "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2023/05/PXD015604/Link_between_files.xlsx",
+      "started_utc": "2026-10-10T05:19:36.126302+00:00",
+      "http_status": 200,
+      "final_url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2023/05/PXD015604/Link_between_files.xlsx",
+      "headers": {
+        "Date": "Sat, 10 Oct 2026 05:19:36 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Tue, 02 May 2023 09:46:15 GMT",
+        "ETag": "\"2af7-5fab2cf7187c0\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "10999",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Connection": "close",
+        "Content-Type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+      },
+      "status": "retrieved",
+      "response": {
+        "path": "research/results/discovery_public_proteome_v1/sources/PXD015604_Link_between_files.xlsx",
+        "bytes": 10999,
+        "sha256": "a01f599f1502c887bed038f86f6eeacdc78b02641017c43cc6a7aace44f8d6ad"
+      },
+      "completed_utc": "2026-10-10T05:19:37.866189+00:00",
+      "seconds": 1.7398915123194456
+    }
+  ]
+}

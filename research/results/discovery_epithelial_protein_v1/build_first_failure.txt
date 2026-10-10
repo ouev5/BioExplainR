@@ -1,0 +1,10 @@
+Command: python3 research/discovery/finish_epithelial_protein.py build
+Exit code: 1
+Traceback:
+  finish_epithelial_protein.py build -> delivery_checks
+  assert "PXD063431" in content and "PXD029135" in content and "not ASM" in html.unescape(content)
+AssertionError
+
+Long package scope_limitations facts are truncated in the default report table. The
+final corrected report adds a complete, readable study scope section; scientific
+numerical outputs and the frozen first report script are not changed.

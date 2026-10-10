@@ -1,0 +1,22 @@
+{
+  "command": [
+    "/tmp/opencode/paper-venv/bin/python",
+    "research/paper_cn_revision/build_revision.py",
+    "--directory",
+    "docs/paper_cn_v3",
+    "--version",
+    "v0.9.1",
+    "--reuse-assets",
+    "docs/paper_cn_v2"
+  ],
+  "working_directory": ".",
+  "started_utc": "2026-10-08T12:00:23.084700+00:00",
+  "finished_utc": "2026-10-08T12:00:34.589011+00:00",
+  "exit_code": 0,
+  "status": "pass",
+  "log": {
+    "path": "research/results/w00_baseline/revision-links-export.txt",
+    "bytes": 4239,
+    "sha256": "92b8941572535cb3e318d3e19d0c832180fa4fd70ccfdf917722b99717efd990"
+  }
+}

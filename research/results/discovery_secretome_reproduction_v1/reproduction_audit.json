@@ -1,0 +1,83 @@
+{
+  "status": "pass",
+  "utc": "2026-10-10T00:26:56.961380+00:00",
+  "commands": [
+    {
+      "command": [
+        "/tmp/opencode/validation-report-venv/bin/python",
+        "/home/ubuntu/creatR/research/discovery/secretome_analyze.py",
+        "design",
+        "/home/ubuntu/creatR/research/results/discovery_secretome_reproduction_v1"
+      ],
+      "start_utc": "2026-10-10T00:26:44.026533+00:00",
+      "end_utc": "2026-10-10T00:26:45.391309+00:00",
+      "returncode": 0,
+      "log": {
+        "path": "research/results/discovery_secretome_reproduction_v1/command_1.log",
+        "bytes": 460,
+        "sha256": "f59926326f4c0123f458ea5ea6537e3ce51e58e52f9157417070981653ef3db9"
+      }
+    },
+    {
+      "command": [
+        "/tmp/opencode/validation-report-venv/bin/python",
+        "/home/ubuntu/creatR/research/discovery/secretome_analyze.py",
+        "analyze",
+        "/home/ubuntu/creatR/research/results/discovery_secretome_reproduction_v1"
+      ],
+      "start_utc": "2026-10-10T00:26:45.391548+00:00",
+      "end_utc": "2026-10-10T00:26:46.853078+00:00",
+      "returncode": 0,
+      "log": {
+        "path": "research/results/discovery_secretome_reproduction_v1/command_2.log",
+        "bytes": 2609,
+        "sha256": "de3819ed2828112ccf759c9c03c71425b7ea39abf38a5bf476901db326a382ec"
+      }
+    },
+    {
+      "command": [
+        "Rscript",
+        "/home/ubuntu/creatR/research/discovery/audit_secretome.R",
+        "/home/ubuntu/creatR/research/results/discovery_secretome_reproduction_v1"
+      ],
+      "start_utc": "2026-10-10T00:26:46.853339+00:00",
+      "end_utc": "2026-10-10T00:26:54.857453+00:00",
+      "returncode": 0,
+      "log": {
+        "path": "research/results/discovery_secretome_reproduction_v1/command_3.log",
+        "bytes": 1020,
+        "sha256": "5d367b49a33910f78860d797bc0e27923375de4dcfae084c5bd4f4af420bbb58"
+      }
+    },
+    {
+      "command": [
+        "Rscript",
+        "/home/ubuntu/creatR/research/discovery/report_secretome.R",
+        "/home/ubuntu/creatR/research/results/discovery_secretome_reproduction_v1"
+      ],
+      "start_utc": "2026-10-10T00:26:54.857715+00:00",
+      "end_utc": "2026-10-10T00:26:56.958587+00:00",
+      "returncode": 0,
+      "log": {
+        "path": "research/results/discovery_secretome_reproduction_v1/command_4.log",
+        "bytes": 242,
+        "sha256": "97b911c10670f33d6b5ab2a96556c415289fd521686f2d82235865ea7750d394"
+      }
+    }
+  ],
+  "byte_identical_numeric_tables": 17,
+  "independent_R": {
+    "status": "pass",
+    "utc": "2026-10-10 00:26:54 UTC",
+    "raw_measurements": 35016,
+    "donor_rows": 5836,
+    "full_family": 846,
+    "candidate_family": 112,
+    "sensitivity_statistics": 224,
+    "direct_time_statistics": 56,
+    "leave_one_rows": 26,
+    "independent_sample_mapping": true,
+    "scope": "Independent R original arrays/decoders/summary, all QC/measurements/technical means/donor pairs/t/CI/exact/pooledBH and fixedHolm; same public source"
+  },
+  "scope": "Actual same-source rerun; no new independent cohort; original results untouched"
+}

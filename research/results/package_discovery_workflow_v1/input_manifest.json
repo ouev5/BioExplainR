@@ -1,0 +1,33 @@
+{
+  "utc": "2026-10-10 09:51:24 UTC",
+  "inputs": {
+    "response": {
+      "path": "research/results/discovery_stable_response_v1/response_full_results.csv",
+      "sha256": "e8596721bd0d05154fb2c4a301d1eebc190d7de9aaf04829d0067d1327a56ec3"
+    },
+    "interactions": {
+      "path": "research/results/discovery_genome_v2/genome_screen.csv",
+      "sha256": "5fc052c0dba3195b2256b2fa853707a646c8008c63168927cbbf85e79ba7a47d"
+    },
+    "adult": {
+      "path": "research/results/discovery_set_validation_v1/tpm_results.csv",
+      "sha256": "69d4a0cd90b6c25e6152421e4cd0a96e1b332995b8201e72fdeb960c2683e4f1"
+    },
+    "intracellular": {
+      "path": "research/results/discovery_set_validation_v1/unselected_protein/results.csv",
+      "sha256": "a5d4a22ccce9b4b45a3cf3a33d798fd94707fbf802a720ea85e458115bf71a89"
+    },
+    "secretome": {
+      "path": "research/results/discovery_secretome_v1/candidate_results.csv",
+      "sha256": "44d52bbdef44969c3048f9e35ac7cd41070f7fe150e8f3e1ecfb5c01429f677c"
+    },
+    "epithelial": {
+      "path": "research/results/discovery_epithelial_protein_v1/complete/candidate_results.csv",
+      "sha256": "4a459f5eaf02014d16465f733f581636fa860dcc1c19fa50ed2206dda04919df"
+    }
+  },
+  "source_sha256": "462c4847a04a17729d9e468e76b4593a27af8ea75484d643e388c2ed649bb06e",
+  "scope": "Saved statistical outputs; actual package context/claim/report application; no new biological sample or statistical fit",
+  "package_version": "0.4.0.9000",
+  "online_model_calls": 0
+}

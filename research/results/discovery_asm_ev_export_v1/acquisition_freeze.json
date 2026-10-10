@@ -1,0 +1,51 @@
+{
+  "utc": "2026-10-10T01:58:45.416518+00:00",
+  "script": {
+    "path": "research/discovery/asm_ev_export.py",
+    "bytes": 3822,
+    "sha256": "fbb6cffc57722c5738841550bb605736c12ab625232b27fd75394dbff1b02a66"
+  },
+  "protocol": {
+    "path": "research/discovery/ASM_EV_EXPORT_PROTOCOL.md",
+    "bytes": 2756,
+    "sha256": "f308ca93c2ab08c8f91074e9029775cc52f64792e29b64e037d7ed6c76b7fc09"
+  },
+  "snapshot": {
+    "path": "research/results/discovery_asm_ev_export_v1/rgo_before_asm_ev_export.md",
+    "bytes": 74186,
+    "sha256": "07cfc88fba08a707496a6f8dcb8c5a5109514ff1ab84afce5798db90b072d252"
+  },
+  "requests": [
+    [
+      "project.json",
+      "https://www.ebi.ac.uk/pride/ws/archive/v2/projects/PXD055968"
+    ],
+    [
+      "files.json",
+      "https://www.ebi.ac.uk/pride/ws/archive/v2/files/byProject?accession=PXD055968&pageSize=1000&page=0"
+    ],
+    [
+      "directory.html",
+      "https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/"
+    ],
+    [
+      "checksum.txt",
+      "https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/11/PXD055968/checksum.txt"
+    ],
+    [
+      "proteomecentral.html",
+      "https://proteomecentral.proteomexchange.org/cgi/GetDataset?ID=PXD055968"
+    ]
+  ],
+  "initial_database": "pe210308_01.pdResult",
+  "initial_range": [
+    0,
+    1048575
+  ],
+  "scope": "Version/schema evidence only; no candidate identity or effects inspected",
+  "prior_manifest": {
+    "path": "docs/secretome_provenance_v1/provenance_manifest.json",
+    "bytes": 95216,
+    "sha256": "411ca0eef0f469fac22edc9b1689d899cafea45f4775514258bcfd53fb778099"
+  }
+}

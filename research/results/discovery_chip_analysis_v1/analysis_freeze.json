@@ -1,0 +1,179 @@
+{
+  "frozen_utc": "2026-10-09T02:06:35.268325+00:00",
+  "candidate_peaks_read": false,
+  "assembly": "coordinate-verified hg19 among hg18/hg19/hg38/mm9; not author-confirmed",
+  "coordinates": "BED zero-based half-open, TSS on minus strand=txEnd-1; symmetric +/-width includes central nucleotide",
+  "primary": "uninfected EtOH/Dex; GR TSS+/-20kb and RNAP2 TSS+/-5kb; transduction libraries secondary descriptions",
+  "inputs": [
+    {
+      "path": "research/discovery/MECHANISM_PROTOCOL.md",
+      "bytes": 3031,
+      "sha256": "fefa4d2caf78bd50ba944d660ba4400ca03344d29740938daa3877ba201c489a"
+    },
+    {
+      "path": "research/discovery/audit_chip.R",
+      "bytes": 3478,
+      "sha256": "e1d398d4772e0b8db6d5df4c38b9daeb53751673a67ed275eea818b0583c8f52"
+    },
+    {
+      "path": "research/discovery/run_chip.py",
+      "bytes": 6003,
+      "sha256": "d15b6be6c71ed7f9aca55301ec9d14aa3ab8ff31f473d3288564574d5fdec94c"
+    },
+    {
+      "path": "research/results/discovery_chip_analysis_v1/annotation.json",
+      "bytes": 7373,
+      "sha256": "4eea369fa691df630a0d3c96c236b90b8ff7632850bc38e428c16d14e2091876"
+    },
+    {
+      "path": "research/results/discovery_chip_analysis_v1/windows.csv",
+      "bytes": 1456,
+      "sha256": "45b4751aa76c53de4f486831bfbb70a1a64bd9c801244b541d46428c1fd83c2a"
+    },
+    {
+      "path": "research/results/discovery_chip_v1/GSM2519942_1D_AGTGAG_peaks.narrowPeak.gz",
+      "bytes": 2782729,
+      "sha256": "012feb9439e3fcf20d3bc2e3955ef481294c0d5cb38caa140bd15f31045653be"
+    },
+    {
+      "path": "research/results/discovery_chip_v1/GSM2519944_1E_GCACTA_peaks.narrowPeak.gz",
+      "bytes": 2687087,
+      "sha256": "fe785d193a16a67a6e7efa34091016afb05de18184a70c6854ce14936802f904"
+    },
+    {
+      "path": "research/results/discovery_chip_v1/GSM2519945_2A_ACCTCA_peaks.narrowPeak.gz",
+      "bytes": 2951812,
+      "sha256": "5f0a321043ca8cf3cd97aaa60492775344293779c3f3c59064187211bd88eb7c"
+    },
+    {
+      "path": "research/results/discovery_chip_v1/GSM2519947_2E_GTGCTT_peaks.narrowPeak.gz",
+      "bytes": 3237467,
+      "sha256": "82f6e27563d33f4678d627c595a23bff8df3bfc088d7128604e35b4d6a224d07"
+    },
+    {
+      "path": "research/results/discovery_chip_v1/GSM2519948_3D_AAGCCT_peaks.narrowPeak.gz",
+      "bytes": 2554022,
+      "sha256": "aecbbdffc28b5eb95e218ee1ed53ebc47a5baee7db21e5b28e82989859f9f91d"
+    },
+    {
+      "path": "research/results/discovery_chip_v1/GSM2519949_3E_GTCGTA_peaks.narrowPeak.gz",
+      "bytes": 2543353,
+      "sha256": "5e4d559bed1fa93397161c41de9c49e3704cb367117f6479ebdc7ac9dc99e585"
+    },
+    {
+      "path": "research/results/discovery_chip_v1/GSM2519950_4B_AAGAGG_peaks.narrowPeak.gz",
+      "bytes": 3007830,
+      "sha256": "7a71d22dd23c0ce7deced5494c4c634870479307f5a1cc6ce82e78aadb6c1cf6"
+    },
+    {
+      "path": "research/results/discovery_chip_v1/GSM2519951_4C_GGAGAA_peaks.narrowPeak.gz",
+      "bytes": 2699218,
+      "sha256": "50f61297a2ec2bc6cbef92fd4e0edc96ca11a18fcc58775901e8fa3cefd02dc7"
+    },
+    {
+      "path": "research/results/discovery_chip_v1/GSM2519952_5E_GAGTCA_peaks.narrowPeak.gz",
+      "bytes": 1267946,
+      "sha256": "3cb4e865813b00a9aa6a1ba26a3d7c400cc24ee6c2e0c2c20a5fcb43d92544b5"
+    },
+    {
+      "path": "research/results/discovery_chip_v1/GSM2519953_5b_AGCATG_peaks.narrowPeak.gz",
+      "bytes": 1348353,
+      "sha256": "048337c891117665f0d68f9813c59890ea6df4ebe2853318e677036ffd12a70b"
+    },
+    {
+      "path": "research/results/discovery_chip_v1/GSM2519954_6d_CGTAGA_peaks.narrowPeak.gz",
+      "bytes": 1374099,
+      "sha256": "e5787736d4e521db1b680d207c0e1650e69c880a765bc6864238692c257c9ff0"
+    },
+    {
+      "path": "research/results/discovery_chip_v1/GSM2519955_6e_TCAGAG_peaks.narrowPeak.gz",
+      "bytes": 1212188,
+      "sha256": "6a7c71e3570d02c8e67c34c2905a54f1e882d27d62ee447df7a51fe23762b538"
+    },
+    {
+      "path": "research/results/discovery_chip_v1/GSM2519956_7c_CACAGT_peaks.narrowPeak.gz",
+      "bytes": 1349267,
+      "sha256": "70e5a64fd8ad7df1e127a00b897556758fbce20dbfbef66f440706818fce9568"
+    },
+    {
+      "path": "research/results/discovery_chip_v1/GSM2519957_7e_TTGGCA_peaks.narrowPeak.gz",
+      "bytes": 805546,
+      "sha256": "04c9053620b6bcc75222047e7f536e0c978e3c9ac01337be2f4ee8959990b3ae"
+    },
+    {
+      "path": "research/results/discovery_chip_v1/GSM2519958_8B_AACCAG_peaks.narrowPeak.gz",
+      "bytes": 1159373,
+      "sha256": "3f4bcd10fae6e1675bb91e71f71342d21f1602e007c40aebcc60c95439bb5a9a"
+    },
+    {
+      "path": "research/results/discovery_chip_v1/GSM2519959_8D_TGGTGA_peaks.narrowPeak.gz",
+      "bytes": 995635,
+      "sha256": "634481ab1ada22c522431255fb57ce290e7a91ba334aac0da5d4e429a9d2f705"
+    },
+    {
+      "path": "research/results/discovery_chip_v1/GSM2519960_9b_AGTGAG_peaks.narrowPeak.gz",
+      "bytes": 948037,
+      "sha256": "140ee5908f1dcb33faad85569de0e4494822b603a3ae056e746ab2914b2a3460"
+    },
+    {
+      "path": "research/results/discovery_chip_v1/GSM2519961_9e_GCACTA_peaks.narrowPeak.gz",
+      "bytes": 1065280,
+      "sha256": "afcc8597d3e2e99be6ea9955927d7ef13558555a40858341b2ae95e7be2bbd96"
+    },
+    {
+      "path": "research/results/discovery_chip_v1/coordinate_assembly_evidence.json",
+      "bytes": 5339,
+      "sha256": "29775d8a46278cd7e7f5fd6805ef92f1db2cf90d056fb344668d1e806eea82fe"
+    },
+    {
+      "path": "research/results/discovery_chip_v1/hg18.chrom.sizes",
+      "bytes": 855,
+      "sha256": "8b35ae05acbea68e53cc5fdc00e1e3862042ca857527418075e0e188349b4097"
+    },
+    {
+      "path": "research/results/discovery_chip_v1/hg19.chrom.sizes",
+      "bytes": 1971,
+      "sha256": "b404927655a4aada254ea94ad4da0c8901ed0737e67a0dcabedf673354b1f505"
+    },
+    {
+      "path": "research/results/discovery_chip_v1/hg19_ncbiRefSeq_chr3.json",
+      "bytes": 3227679,
+      "sha256": "b042d7eed9ed209e0ac68e3ea59398a4c44a07986c855a850832a84a87c40244"
+    },
+    {
+      "path": "research/results/discovery_chip_v1/hg19_ncbiRefSeq_chr4.json",
+      "bytes": 1888624,
+      "sha256": "7a254babbb7c17c28fa962ae8c455a8d1aa35bc068ec269840bb707de012b455"
+    },
+    {
+      "path": "research/results/discovery_chip_v1/hg19_ncbiRefSeq_chr6.json",
+      "bytes": 2314507,
+      "sha256": "cf0021d80768d52803051fbe9db6f146116a27efc3ceb5ede5f8baf9fc9129eb"
+    },
+    {
+      "path": "research/results/discovery_chip_v1/hg19_ncbiRefSeq_chrX.json",
+      "bytes": 1438130,
+      "sha256": "ad3f0d96d71bdfa15c92c9b66e17cb88244378679b6869df69af72f3bfc193ca"
+    },
+    {
+      "path": "research/results/discovery_chip_v1/hg38.chrom.sizes",
+      "bytes": 11672,
+      "sha256": "e1d9152418038457a959e949d99c9caf7ae3e4f87cfbb4ffe7d8b9a54ba1202b"
+    },
+    {
+      "path": "research/results/discovery_chip_v1/mm9.chrom.sizes",
+      "bytes": 584,
+      "sha256": "5737a0a2a5eb712bba0e33565e8d6f2c68c9b89bcfa992dc22da0c8def5e8dce"
+    },
+    {
+      "path": "research/results/discovery_chip_v1/peak_samples.json",
+      "bytes": 2151,
+      "sha256": "f21f86604d0873ea080a9e8b1475856b6539a8c30da6c2b64560c1c76cdcd34f"
+    },
+    {
+      "path": "research/results/discovery_mechanism_v1/chip_metadata.txt",
+      "bytes": 69452,
+      "sha256": "bc0aa2a2b032045e0931472e4e8133ee0e64dd20ebccf81a8baf3b95a8b6b1da"
+    }
+  ]
+}
