@@ -1,0 +1,41 @@
+{
+  "status": "pass",
+  "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2023/03/PXD033504/HTPCsSecretome_24h_1uMdex.7z",
+  "start": 398196768,
+  "end": 398458911,
+  "last_modified": "Sat, 11 Mar 2023 12:11:51 GMT",
+  "body": {
+    "path": "research/results/discovery_secretome_v1/archives/24h/parts/398196768-398458911.bin",
+    "bytes": 262144,
+    "sha256": "819377f04a5452df5fdce0afe9eea0ce401ea41d0bb2c512e8ce28071842686c"
+  },
+  "attempts": [
+    {
+      "utc": "2026-10-09T23:56:00.832157+00:00",
+      "returncode": 28,
+      "bytes": 87718,
+      "stderr": "curl: (28) Operation timed out after 45003 milliseconds with 87718 out of 262144 bytes received\n",
+      "header": {
+        "path": "research/results/discovery_secretome_v1/archives/24h/parts/398196768-398458911.attempt1.headers.txt",
+        "bytes": 474,
+        "sha256": "c4afe509424cd5098b43f2d81ec8286107fa61a92730d90887d1e60bedbf0d0c"
+      },
+      "failed_body": {
+        "path": "research/results/discovery_secretome_v1/archives/24h/parts/398196768-398458911.attempt1.partial.bin",
+        "bytes": 87718,
+        "sha256": "f5fae6e06a18207fe485fa32eb54da555c059f07efa08a9e9972f9e34f0c9c7a"
+      }
+    },
+    {
+      "utc": "2026-10-09T23:56:47.273455+00:00",
+      "returncode": 0,
+      "bytes": 262144,
+      "stderr": "",
+      "header": {
+        "path": "research/results/discovery_secretome_v1/archives/24h/parts/398196768-398458911.attempt2.headers.txt",
+        "bytes": 474,
+        "sha256": "c7aeb7aadcfda832efffa0a075836d0d3e1197791aef0fce02cad7b35228478b"
+      }
+    }
+  ]
+}
