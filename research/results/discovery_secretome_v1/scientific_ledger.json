@@ -1,0 +1,58 @@
+{
+  "status": "completed_public_secretome_reanalysis",
+  "utc": "2026-10-10T00:18:13.915714+00:00",
+  "script": {
+    "path": "research/discovery/finalize_secretome.py",
+    "bytes": 7173,
+    "sha256": "b0597f1787f5e6f10877eab9d5b479ee5bc00ae950dcd6d973f524dd2357ec69"
+  },
+  "full_family": 846,
+  "candidate_family": 112,
+  "candidate_estimable": 4,
+  "candidate_significant": 1,
+  "same_direction_corrected_support": [
+    {
+      "feature_id": "ENSG00000138829",
+      "symbol": "FBN2",
+      "time_h": "72",
+      "ASM_discovery_direction": "1",
+      "adult_ASM_TPM_effect": "1.0304450244360632",
+      "adult_ASM_Holm54": "0.04898161037360448",
+      "secretome_status": "estimable",
+      "secretome_n_pairs": "7",
+      "secretome_effect": "1.535178718989764",
+      "secretome_Holm112": "0.012682876094831102",
+      "direction_concordance": "same",
+      "same_direction_corrected_support": "True",
+      "scope": "ASM BUD RNA vs HTPC DEX extracellular LFQ; cross-tissue/drug/dose/scale, not matched multiomics or secretion rate"
+    }
+  ],
+  "opposite_direction_estimable": [],
+  "independent_numeric_R": {
+    "status": "pass",
+    "utc": "2026-10-10 00:13:00 UTC",
+    "raw_measurements": 35016,
+    "donor_rows": 5836,
+    "full_family": 846,
+    "candidate_family": 112,
+    "sensitivity_statistics": 224,
+    "direct_time_statistics": 56,
+    "leave_one_rows": 26,
+    "independent_sample_mapping": true,
+    "scope": "Independent R original arrays/decoders/summary, all QC/measurements/technical means/donor pairs/t/CI/exact/pooledBH and fixedHolm; same public source"
+  },
+  "workflow": {
+    "status": "pass",
+    "contexts": 2,
+    "full_family": 846,
+    "full_significant": 23,
+    "candidate_family": 112,
+    "candidate_significant": 1,
+    "online_model_calls": 0,
+    "package_version": "0.4.0.9000"
+  },
+  "new_independent_ASM_protein_donors": 0,
+  "new_wet_experiments": 0,
+  "online_model_calls": 0,
+  "interpretation": "Human HTPC extracellular relative abundance, same prior source; secretion rate/GR candidate dependence/ASM function not established"
+}

@@ -1,0 +1,32 @@
+{
+  "status": "completed",
+  "utc": "2026-10-10T00:15:28.165053+00:00",
+  "script": {
+    "path": "research/discovery/secretome_quantification_diagnostics.py",
+    "bytes": 5330,
+    "sha256": "2aef54314d6f4da06cdd8703570b42e6690d5f60e90416c7002859c98ab37c7f"
+  },
+  "summary": [
+    {
+      "time_h": 24,
+      "selected_cells": 828,
+      "log2_Intensity_matches": 0,
+      "nonzeroLFQ_offset_min": 2.0270667946577383,
+      "nonzeroLFQ_offset_max": 5.446250218472322,
+      "published_all_rows": 467,
+      "exact_or_Majority_resolved": 466,
+      "total_intensity_equal": 9
+    },
+    {
+      "time_h": 72,
+      "selected_cells": 2448,
+      "log2_Intensity_matches": 0,
+      "nonzeroLFQ_offset_min": -5.050045209387122e-05,
+      "nonzeroLFQ_offset_max": 5.089555281756475e-05,
+      "published_all_rows": 380,
+      "exact_or_Majority_resolved": 380,
+      "total_intensity_equal": 380
+    }
+  ],
+  "scope": "Raw identification/intensity evidence only, not normalizedLFQ response or imputed candidate significance"
+}

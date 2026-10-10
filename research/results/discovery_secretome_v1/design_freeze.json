@@ -1,0 +1,108 @@
+{
+  "utc": "2026-10-10T00:11:16.020201+00:00",
+  "script": {
+    "path": "research/discovery/secretome_analyze.py",
+    "bytes": 16469,
+    "sha256": "27102dd4c6f53119b31382cc0272d73ecc86e148da3ac4453a450dcbab9e5df8"
+  },
+  "inputs": [
+    {
+      "path": "research/results/discovery_secretome_v1/archives/24h/extracted/SampleNameEncription_Secretome24h.txt",
+      "bytes": 588,
+      "sha256": "996986f56ce1f3be2e4176f94701420cbdb29309a6a01807678dc8a85ad08fcb"
+    },
+    {
+      "path": "research/results/discovery_secretome_v1/archives/24h/extracted/txt/parameters.txt",
+      "bytes": 3644,
+      "sha256": "79f64fd3bf0765c1e97574d5958d78e95541eee11b95308ef08bdf3b2e7e58c2"
+    },
+    {
+      "path": "research/results/discovery_secretome_v1/archives/24h/extracted/txt/proteinGroups.txt",
+      "bytes": 4026207,
+      "sha256": "f179c0267b09f70079c6e51fd5ebf64368f639be77dffe97a95f0060c8818d19"
+    },
+    {
+      "path": "research/results/discovery_secretome_v1/archives/24h/extracted/txt/summary.txt",
+      "bytes": 12118,
+      "sha256": "7d3b0961d71b3af7085f77c0cdaed3276846d62c90c338d0fdace848eac92cfd"
+    },
+    {
+      "path": "research/results/discovery_secretome_v1/archives/72h/extracted/SampleNameEncription_Secretome72h.txt",
+      "bytes": 619,
+      "sha256": "c0507d410f78959b94055f600245bcf54ad2502799020bf2f2ccaa80c1a6f3b4"
+    },
+    {
+      "path": "research/results/discovery_secretome_v1/archives/72h/extracted/txt/parameters.txt",
+      "bytes": 3644,
+      "sha256": "50a8619f4dd8d18ec3849eda9b155f7d849084c98e3e7d21112eceb3f364af82"
+    },
+    {
+      "path": "research/results/discovery_secretome_v1/archives/72h/extracted/txt/proteinGroups.txt",
+      "bytes": 5291473,
+      "sha256": "57a13a064b242e40ae6cf646deec3e08390fa70c285ffb5b030719f43e541d23"
+    },
+    {
+      "path": "research/results/discovery_secretome_v1/archives/72h/extracted/txt/summary.txt",
+      "bytes": 15532,
+      "sha256": "b5eaff6ead6c2615ac009a95b857f7d5747c0691b1e062d1afef4997cb071102"
+    }
+  ],
+  "execution_scripts": [
+    {
+      "path": "research/discovery/secretome_analyze.py",
+      "bytes": 16469,
+      "sha256": "27102dd4c6f53119b31382cc0272d73ecc86e148da3ac4453a450dcbab9e5df8"
+    },
+    {
+      "path": "research/discovery/audit_secretome.R",
+      "bytes": 10685,
+      "sha256": "e54ec553d1f949171b48e1139189215d3ee235a3deff2bcd75e83f3677d92b8c"
+    },
+    {
+      "path": "research/discovery/secretome_evidence.py",
+      "bytes": 7929,
+      "sha256": "be3780ac16598bdc9be61923f0d06a460cdeaced707311fe50abdf245684e40f"
+    },
+    {
+      "path": "research/discovery/report_secretome.R",
+      "bytes": 3049,
+      "sha256": "841a0b01387804812d3ba5d7eadaeb7799ce781a7e857d0bd4f213653e395603"
+    }
+  ],
+  "sample_map": {
+    "path": "research/results/discovery_secretome_v1/sample_map.csv",
+    "bytes": 7769,
+    "sha256": "a377b7e091ea17a1928eedf7bb042e73a32c722a681cf306f8152f824211e587"
+  },
+  "genes": {
+    "path": "research/results/discovery_secretome_v1/frozen_genes.csv",
+    "bytes": 2930,
+    "sha256": "01bda9e58ca4a981b43796627b2d470ae6378d402777542bae09518c7de3ea1d"
+  },
+  "published_donors": {
+    "24": [
+      "02.10.19",
+      "07.06.16",
+      "10.03.09",
+      "10.09.19",
+      "12.03.19",
+      "18.11.14"
+    ],
+    "72": [
+      "02.10.19",
+      "07.06.16",
+      "10.03.09",
+      "12.03.19",
+      "21.10.14",
+      "28.08.14"
+    ]
+  },
+  "timing": "Decoded samples/summary/parameters and published headers inspected; candidate LFQ not read",
+  "primary_technical_min": 2,
+  "strict_technical_min": 3,
+  "minimum_pairs": 3,
+  "candidate_family": 112,
+  "direct_time_family": 56,
+  "full_BH_family": "All QC-passing groups x available timepoints pooled",
+  "scope": "Paired biopsy-date donor labels, technical means, same HTPC source, extracellular abundance not secretion rate"
+}

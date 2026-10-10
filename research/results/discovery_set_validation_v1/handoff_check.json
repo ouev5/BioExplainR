@@ -1,0 +1,20 @@
+{
+  "status": "pass",
+  "utc": "2026-10-09T16:22:02.985016+00:00",
+  "python_scripts": 26,
+  "index_links": 18,
+  "prior": {
+    "status": "pass",
+    "validation_records": 710,
+    "validation_archive_members": 629,
+    "preceding_paper_and_science": {
+      "status": "pass",
+      "v011_records": 87,
+      "v011_archive_members": 82,
+      "original_science_records": 203,
+      "snapshot_policy": "Explicitrgo/README/indexhistoricaldocumentsnapshots only; alloriginalsciencepaths/hash remain"
+    },
+    "snapshot_policy": "Validationrgo uses startsnapshot; nestedv011rgo/README/index use preciseversioned snapshots; alloriginalsciencepaths/hash unchanged"
+  },
+  "scope": "NewnavigationandPythonAST/whitespace; originalscientificpaths/hashes and exactoldnavigation snapshots; no package functionality change"
+}

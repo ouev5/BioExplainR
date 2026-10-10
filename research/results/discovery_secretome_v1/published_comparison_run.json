@@ -1,0 +1,30 @@
+{
+  "status": "completed",
+  "utc": "2026-10-10T00:13:36.229584+00:00",
+  "script": {
+    "path": "research/discovery/secretome_evidence.py",
+    "bytes": 7929,
+    "sha256": "be3780ac16598bdc9be61923f0d06a460cdeaced707311fe50abdf245684e40f"
+  },
+  "summary": [
+    {
+      "time_h": 24,
+      "published_all_rows": 467,
+      "all_exact_matches": 423,
+      "selected_rows": 23,
+      "compared_cells": 828,
+      "matched_rounding": 0,
+      "raw_zero_published_finite": 25
+    },
+    {
+      "time_h": 72,
+      "published_all_rows": 380,
+      "all_exact_matches": 346,
+      "selected_rows": 68,
+      "compared_cells": 2448,
+      "matched_rounding": 2128,
+      "raw_zero_published_finite": 320
+    }
+  ],
+  "scope": "Published same-source lists, full exact/token inventory and selected-cell comparison; no-hit not null; UniProt not drug-response validation"
+}

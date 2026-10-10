@@ -1,0 +1,10 @@
+{
+  "utc": "2026-10-10T00:13:35.128850+00:00",
+  "script": {
+    "path": "research/discovery/secretome_evidence_complete.py",
+    "bytes": 662,
+    "sha256": "dbd910421907d7ac6f96fb4553ef29f46ccc627143c3f01fd6bbc5ce903f3040"
+  },
+  "reason": "Original comparison exceeded Python default131072 CSV field limit on full MaxQuant peptide IDs; no comparison outputs written",
+  "change": "Set10MiB field limit only; original frozen analysis/evidence scripts and all numeric outputs preserved"
+}

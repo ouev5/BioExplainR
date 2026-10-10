@@ -1,0 +1,22 @@
+{
+  "status": "pass",
+  "utc": "2026-10-09T14:49:16.320274+00:00",
+  "raw_count_measurements": 1272,
+  "exact_WLS_numeric_checks": 1060,
+  "set_counts": {
+    "same_direction": 53,
+    "all_six_expected": 50,
+    "tpm_pass": 45,
+    "count_pass": 51,
+    "tpm_sensitivity_direction": 52,
+    "count_leave_one_direction": 52,
+    "robust_supported": 45,
+    "frozen": 54,
+    "tpm_measurable": 53,
+    "count_estimable": 53,
+    "exact_holm_pass": 0
+  },
+  "primary_tests": 54,
+  "secondary_tests": 162,
+  "scope": "Independent raw count and WLS arithmetic; R moderation retained; new result-after-known-candidates expansion"
+}

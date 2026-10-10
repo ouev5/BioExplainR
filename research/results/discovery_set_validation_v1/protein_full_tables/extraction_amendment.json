@@ -1,0 +1,10 @@
+{
+  "utc": "2026-10-09T14:56:35.005643+00:00",
+  "script": {
+    "path": "research/discovery/set_protein_extract.py",
+    "bytes": 6529,
+    "sha256": "7b72e22392055daee101cb02db9de508f8b2edc5f543db5ade47a26845cbc550"
+  },
+  "reason": "Header inspection confirmed published complete proteinGroups members inside solid blocks. Increase bounded transfer to necessary block2 only,282034015/503686729bytes; retain initial128MiB plan and failed inspection records.",
+  "method": "6concurrent 8MiBHTTP206 parts, exact range/length and identicalLast-Modified; no candidate result selection. Map/parameters/proteinGroups member CRCs; upstreamwholearchiveSHA1 not asserted."
+}

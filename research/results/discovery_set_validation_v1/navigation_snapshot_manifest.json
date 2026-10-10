@@ -1,0 +1,30 @@
+{
+  "utc": "2026-10-09T16:14:56.809539+00:00",
+  "snapshots": [
+    {
+      "original": {
+        "path": "README.md",
+        "bytes": 20388,
+        "sha256": "3e2e71ff83c4ac57547178978eea18743ffde6af918e2162323180f4f3f6aecf"
+      },
+      "snapshot": {
+        "path": "research/results/discovery_set_validation_v1/README_before_set_validation.md",
+        "bytes": 20388,
+        "sha256": "3e2e71ff83c4ac57547178978eea18743ffde6af918e2162323180f4f3f6aecf"
+      }
+    },
+    {
+      "original": {
+        "path": "docs/index.html",
+        "bytes": 1998,
+        "sha256": "952d4d684b60f4027873725406eae28756e5e8330aa1a0ce82ca2e2fe5516661"
+      },
+      "snapshot": {
+        "path": "research/results/discovery_set_validation_v1/index_before_set_validation.html",
+        "bytes": 1998,
+        "sha256": "952d4d684b60f4027873725406eae28756e5e8330aa1a0ce82ca2e2fe5516661"
+      }
+    }
+  ],
+  "policy": "Only updated current README/index dependencies use exactoldbyte snapshots; originalsciencefilehashes stay unchanged"
+}

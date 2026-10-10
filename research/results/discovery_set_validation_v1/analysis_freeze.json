@@ -1,0 +1,77 @@
+{
+  "utc": "2026-10-09T14:35:48.727941+00:00",
+  "inputs": [
+    {
+      "path": "research/results/discovery_stable_response_v1/stable_response_screen.csv",
+      "bytes": 3026655,
+      "sha256": "3530775e11352a5b0d3be6644ec7268fbf7ed4861ac856caa2832c3d8b1eb205"
+    },
+    {
+      "path": "research/results/discovery_validation_v2/expression_sample_map.csv",
+      "bytes": 10960,
+      "sha256": "91b7ddeef8407c2e119ff6936b2ac7135621fc5e7275ff0cd22bbc294aeb542a"
+    },
+    {
+      "path": "research/results/discovery_validation_v2/sources/GSE130715_tpm.txt.gz",
+      "bytes": 3695017,
+      "sha256": "fe40898bbe61c36f1d18123943591f4c0340d12f972ee5c02ac06b2631ab07da"
+    },
+    {
+      "path": "research/results/discovery_validation_v2/sources/GSE130715_counts.txt.gz",
+      "bytes": 821203,
+      "sha256": "55bfdb6d1332494933efac44a438e4e50d7ecd73a18592281eb20fc232a6fc61"
+    },
+    {
+      "path": "research/results/discovery_validation_v2/sources/GSE130715_metadata.txt",
+      "bytes": 107811,
+      "sha256": "9a3cd329fc2cc2db940f372c5d3a1438c18e47d32e280f96150328beee298824"
+    },
+    {
+      "path": "docs/biology_validation_v2/validation_manifest.json",
+      "bytes": 299725,
+      "sha256": "52f9554205419d427424f4753e7f2781b6459f266229f9cc3d51a4b592871984"
+    }
+  ],
+  "scripts": [
+    {
+      "path": "research/discovery/SET_VALIDATION_PROTOCOL.md",
+      "bytes": 3180,
+      "sha256": "15f075b2195d6456d2848fcb9c31500017cafd791b99371ce8d0f969d5aeaa6a"
+    },
+    {
+      "path": "research/discovery/set_validation.py",
+      "bytes": 9719,
+      "sha256": "b2a769b68adffc3da2f19a96590efd599c19d2ebea9cafa0e323545c3b77653a"
+    },
+    {
+      "path": "research/discovery/set_validation_models.R",
+      "bytes": 6743,
+      "sha256": "8981bc425520fae3048d46f022c287cca6ae74adcc1910b8bbdef708b309b318"
+    },
+    {
+      "path": "research/discovery/audit_set_validation.py",
+      "bytes": 5611,
+      "sha256": "9d57a4219a366545c1457e4b7900ee31e083b843e901f564ab7fe27d57d225f0"
+    }
+  ],
+  "set": {
+    "path": "research/results/discovery_set_validation_v1/frozen_set.csv",
+    "bytes": 6193,
+    "sha256": "d4bbff85054a9f9b59c342aa0f26ddd083470de0e2c9fc08fc064071d66c6bb6"
+  },
+  "samples": {
+    "path": "research/results/discovery_set_validation_v1/samples.csv",
+    "bytes": 4564,
+    "sha256": "511420936fd8c257eb71b7bc62b355a48b226b61be71b5d423497987facf0560"
+  },
+  "hgnc_url": "https://storage.googleapis.com/public-download-files/hgnc/tsv/tsv/hgnc_complete_set.txt",
+  "contrasts": [
+    "GC_control",
+    "GC_perturbed",
+    "GC_x_perturbation",
+    "perturbation_vehicle"
+  ],
+  "primary_family": 54,
+  "secondary_family": 162,
+  "timing": "Known prior six-candidate results; new 54-gene extraction not performed; exploratory expansion"
+}

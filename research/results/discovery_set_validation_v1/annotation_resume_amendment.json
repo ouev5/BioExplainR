@@ -1,0 +1,11 @@
+{
+  "utc": "2026-10-09T14:45:32.907522+00:00",
+  "script": {
+    "path": "research/discovery/set_annotation_resume.py",
+    "bytes": 3241,
+    "sha256": "c8a1870286846846024c855b925976d9301110a5581dc3cd955c0184e6c53bf7"
+  },
+  "reason": "Original Google HGNC full-table transfer exceeded 360s and left no file; repeated freeze correctly refused existing directory. Use official exact-Ensembl HGNC REST records, preserving all mapping rules, original freeze, set and samples.",
+  "network_budget": "curl connect10/max30 seconds per exact ID, four concurrent requests; failed response and return code saved",
+  "timing": "No new candidate TPM/count extraction yet"
+}

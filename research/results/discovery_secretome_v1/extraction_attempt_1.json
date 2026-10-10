@@ -1,0 +1,11 @@
+{
+  "utc": "2026-10-09T23:49:28.569630+00:00",
+  "script": {
+    "path": "research/discovery/secretome_acquire.py",
+    "bytes": 11630,
+    "sha256": "99a4de696bf541a821059a294884303162995f9b2b521f8fdc59b91a3e1a5656"
+  },
+  "concurrency": 8,
+  "reason": "Preserve prior connection failures, reuse hash-verified successful ranges; retries with backoff",
+  "coverage": "Inspection shows requested mapping/table/parameters span all solid blocks; verify upstream full-container SHA1 from complete byte coverage"
+}

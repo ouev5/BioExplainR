@@ -1,0 +1,36 @@
+{
+  "project": "PXD033534",
+  "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2023/03/PXD033534/HTPCsProteome_72h_1uMdex.7z",
+  "utc": "2026-10-09T14:54:24.556108+00:00",
+  "container_bytes": 1332639631,
+  "solid": true,
+  "blocks": 3,
+  "uncompressed_total": 4417189181,
+  "targets": [
+    "txt/proteinGroups.txt"
+  ],
+  "packed_blocks": [
+    {
+      "block": 0,
+      "start": 32,
+      "end": 387,
+      "packed_bytes": 356
+    },
+    {
+      "block": 1,
+      "start": 388,
+      "end": 828952373,
+      "packed_bytes": 828951986
+    },
+    {
+      "block": 2,
+      "start": 828952374,
+      "end": 1332639102,
+      "packed_bytes": 503686729
+    }
+  ],
+  "status": "members_and_packed_blocks_inspected",
+  "transferred_bytes": 0,
+  "range_records": [],
+  "whole_archive_hash_verified": false
+}
