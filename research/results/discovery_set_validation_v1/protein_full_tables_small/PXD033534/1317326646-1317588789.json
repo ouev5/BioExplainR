@@ -1,0 +1,57 @@
+{
+  "status": "pass",
+  "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2023/03/PXD033534/HTPCsProteome_72h_1uMdex.7z",
+  "start": 1317326646,
+  "end": 1317588789,
+  "last_modified": "Sat, 11 Mar 2023 12:58:07 GMT",
+  "body": {
+    "path": "research/results/discovery_set_validation_v1/protein_full_tables_small/PXD033534/1317326646-1317588789.bin",
+    "bytes": 262144,
+    "sha256": "1b1d1b6c664f2c72b367dc61e364ba09ef40ac2062bebc7afdc2b18a6acb0641"
+  },
+  "attempts": [
+    {
+      "utc": "2026-10-09T15:56:53.627574+00:00",
+      "returncode": 28,
+      "bytes": 191715,
+      "stderr": "curl: (28) Operation timed out after 40000 milliseconds with 191715 out of 262144 bytes received\n",
+      "header": {
+        "path": "research/results/discovery_set_validation_v1/protein_full_tables_small/PXD033534/1317326646-1317588789.attempt1.headers.txt",
+        "bytes": 477,
+        "sha256": "41515013c27dfe6124533c55c5522c0d5be3e47bd5591f3e7eda747041ca91f1"
+      },
+      "failed_body": {
+        "path": "research/results/discovery_set_validation_v1/protein_full_tables_small/PXD033534/1317326646-1317588789.attempt1.partial.bin",
+        "bytes": 191715,
+        "sha256": "6d87c3cc5e13a46b8b5064ffc59de735e87798f2e86ea728bcf1a064fdea3d1f"
+      }
+    },
+    {
+      "utc": "2026-10-09T15:57:33.644688+00:00",
+      "returncode": 28,
+      "bytes": 191715,
+      "stderr": "curl: (28) Operation timed out after 40000 milliseconds with 191715 out of 262144 bytes received\n",
+      "header": {
+        "path": "research/results/discovery_set_validation_v1/protein_full_tables_small/PXD033534/1317326646-1317588789.attempt2.headers.txt",
+        "bytes": 477,
+        "sha256": "24c2a8a8362c58eedc364c900b9b4e5f6b4500490da2fc7b8994a0bc60943cef"
+      },
+      "failed_body": {
+        "path": "research/results/discovery_set_validation_v1/protein_full_tables_small/PXD033534/1317326646-1317588789.attempt2.partial.bin",
+        "bytes": 191715,
+        "sha256": "6d87c3cc5e13a46b8b5064ffc59de735e87798f2e86ea728bcf1a064fdea3d1f"
+      }
+    },
+    {
+      "utc": "2026-10-09T15:58:00.326984+00:00",
+      "returncode": 0,
+      "bytes": 262144,
+      "stderr": "",
+      "header": {
+        "path": "research/results/discovery_set_validation_v1/protein_full_tables_small/PXD033534/1317326646-1317588789.attempt3.headers.txt",
+        "bytes": 477,
+        "sha256": "f059ac797880640c59e829b108d89ebc6e165bb3ca4e83050c36fbe7ab18076e"
+      }
+    }
+  ]
+}

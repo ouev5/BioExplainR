@@ -1,0 +1,41 @@
+{
+  "status": "pass",
+  "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2023/03/PXD033534/HTPCsProteome_72h_1uMdex.7z",
+  "start": 839438134,
+  "end": 839700277,
+  "last_modified": "Sat, 11 Mar 2023 12:58:07 GMT",
+  "body": {
+    "path": "research/results/discovery_set_validation_v1/protein_full_tables_small/PXD033534/839438134-839700277.bin",
+    "bytes": 262144,
+    "sha256": "f383f91b5b2d62f9a9e1d497c29fb37d0c6b8ce7ab066e1837ce9eec702c520a"
+  },
+  "attempts": [
+    {
+      "utc": "2026-10-09T15:34:01.747119+00:00",
+      "returncode": 18,
+      "bytes": 87717,
+      "stderr": "curl: (18) transfer closed with 174427 bytes remaining to read\n",
+      "header": {
+        "path": "research/results/discovery_set_validation_v1/protein_full_tables_small/PXD033534/839438134-839700277.attempt1.headers.txt",
+        "bytes": 475,
+        "sha256": "c6c725e645cedd501e74d1a53da79a04694c982e466462678dc23d6ac63cf771"
+      },
+      "failed_body": {
+        "path": "research/results/discovery_set_validation_v1/protein_full_tables_small/PXD033534/839438134-839700277.attempt1.partial.bin",
+        "bytes": 87717,
+        "sha256": "5b33b3e8f6751ddd88847969584c045e46f8936c7ed7011b2df91f8b6716fde1"
+      }
+    },
+    {
+      "utc": "2026-10-09T15:34:23.000312+00:00",
+      "returncode": 0,
+      "bytes": 262144,
+      "stderr": "",
+      "header": {
+        "path": "research/results/discovery_set_validation_v1/protein_full_tables_small/PXD033534/839438134-839700277.attempt2.headers.txt",
+        "bytes": 475,
+        "sha256": "fb0fadc6867cfb508d7cea939557971391e0e0cf6c2ee0c49ae03f7125a6a926"
+      }
+    }
+  ]
+}
