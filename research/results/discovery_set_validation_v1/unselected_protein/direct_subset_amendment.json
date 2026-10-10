@@ -1,0 +1,12 @@
+{
+  "utc": "2026-10-09T16:08:19.054860+00:00",
+  "script": {
+    "path": "research/discovery/set_protein_direct_subset.py",
+    "bytes": 2082,
+    "sha256": "164bd424c3c5eb759840846a0acdb5047d6a95a981b8c0be67983446c22c3e43"
+  },
+  "timing": "After raw7labeldirectresults, exploratory extra-label exclusion sensitivity",
+  "purpose": "Do not let unresolvedextra10.09.19label silently determine direct72-24 result; retain originalraw6 andpublishedselected5 estimates separately",
+  "family": 56,
+  "limit": "SeparateLCgradients/MaxQuantassays,time/batchnotseparable; difference in estimated drugresponse is not absolute protein accumulation kinetics"
+}

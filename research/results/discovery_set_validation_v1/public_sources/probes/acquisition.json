@@ -1,0 +1,243 @@
+{
+  "utc": "2026-10-09T15:09:13.012037+00:00",
+  "records": [
+    {
+      "utc": "2026-10-09T15:09:13.009971+00:00",
+      "url": "https://ftp.ebi.ac.uk/pride-archive/2023/03/PXD033514/HTPCsProteome_24h_1uMdex.7z",
+      "range": "1712825077-1713873652",
+      "returncode": 28,
+      "stderr": "curl: (28) Operation timed out after 40001 milliseconds with 535714 out of 1048576 bytes received\n",
+      "body": {
+        "path": "research/results/discovery_set_validation_v1/public_sources/probes/ebi_range.bin",
+        "bytes": 535714,
+        "sha256": "a4a20187f2139fef5e169243b539e0c604faaa0381fa2876a581a65a8c454d7e"
+      },
+      "headers": {
+        "path": "research/results/discovery_set_validation_v1/public_sources/probes/ebi_range.bin.headers.txt",
+        "bytes": 478,
+        "sha256": "bd7895f044e17ee1f551438de18abfc6cec2a3ae3423f6cf505299ce0416f5d9"
+      }
+    },
+    {
+      "utc": "2026-10-09T15:09:13.007394+00:00",
+      "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2023/03/PXD033514/HTPCsProteome_24h_1uMdex.7z",
+      "range": "1712825077-1713873652",
+      "returncode": 28,
+      "stderr": "curl: (28) Operation timed out after 40002 milliseconds with 679714 out of 1048576 bytes received\n",
+      "body": {
+        "path": "research/results/discovery_set_validation_v1/public_sources/probes/pride_range.bin",
+        "bytes": 679714,
+        "sha256": "1d632417e89adc1d4fe9e560a5e7d41fd716c585083a9e97f3e4cf3412fb3291"
+      },
+      "headers": {
+        "path": "research/results/discovery_set_validation_v1/public_sources/probes/pride_range.bin.headers.txt",
+        "bytes": 478,
+        "sha256": "60438a9e46cb438192cae6c85a86878e3ce4b19349e8ca91773c893fdfa11da6"
+      }
+    },
+    {
+      "utc": "2026-10-09T15:08:39.694366+00:00",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM1044671&targ=self&form=text&view=full",
+      "range": null,
+      "returncode": 0,
+      "stderr": "",
+      "body": {
+        "path": "research/results/discovery_set_validation_v1/public_sources/probes/GSM1044671.txt",
+        "bytes": 467900,
+        "sha256": "89542969a2a192cf15755631257a06c43855469acaffba353400f50de6dd5146"
+      },
+      "headers": {
+        "path": "research/results/discovery_set_validation_v1/public_sources/probes/GSM1044671.txt.headers.txt",
+        "bytes": 936,
+        "sha256": "23d954e35aae9f37dce902b0b47d4841b8f8df0792aeee8ec2329852fad92104"
+      }
+    },
+    {
+      "utc": "2026-10-09T15:08:33.685589+00:00",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM1044672&targ=self&form=text&view=full",
+      "range": null,
+      "returncode": 35,
+      "stderr": "curl: (35) Recv failure: Connection reset by peer\n",
+      "body": {
+        "path": "research/results/discovery_set_validation_v1/public_sources/probes/GSM1044672.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "headers": {
+        "path": "research/results/discovery_set_validation_v1/public_sources/probes/GSM1044672.txt.headers.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "utc": "2026-10-09T15:08:33.727949+00:00",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM1044673&targ=self&form=text&view=full",
+      "range": null,
+      "returncode": 35,
+      "stderr": "curl: (35) Recv failure: Connection reset by peer\n",
+      "body": {
+        "path": "research/results/discovery_set_validation_v1/public_sources/probes/GSM1044673.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "headers": {
+        "path": "research/results/discovery_set_validation_v1/public_sources/probes/GSM1044673.txt.headers.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "utc": "2026-10-09T15:08:38.796239+00:00",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM1044674&targ=self&form=text&view=full",
+      "range": null,
+      "returncode": 0,
+      "stderr": "",
+      "body": {
+        "path": "research/results/discovery_set_validation_v1/public_sources/probes/GSM1044674.txt",
+        "bytes": 468126,
+        "sha256": "401fca622a1c90a4e00bcb26a672b9071ed98ebea466affed96165340dcb565b"
+      },
+      "headers": {
+        "path": "research/results/discovery_set_validation_v1/public_sources/probes/GSM1044674.txt.headers.txt",
+        "bytes": 936,
+        "sha256": "106e6899a6565ffda0ed5396cbb2c3824f581fbff949eb2e16ac477a116d3288"
+      }
+    },
+    {
+      "utc": "2026-10-09T15:08:37.236156+00:00",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM1044675&targ=self&form=text&view=full",
+      "range": null,
+      "returncode": 0,
+      "stderr": "",
+      "body": {
+        "path": "research/results/discovery_set_validation_v1/public_sources/probes/GSM1044675.txt",
+        "bytes": 468055,
+        "sha256": "2b11c94fef563cb4f484947e3c9a06738a2c443d5b2b3ee0af75c0593be28923"
+      },
+      "headers": {
+        "path": "research/results/discovery_set_validation_v1/public_sources/probes/GSM1044675.txt.headers.txt",
+        "bytes": 936,
+        "sha256": "c4dc7718da6ac3a2f5e77a3a36cb4a3706b5fd54a0c6bbe19fb09a7f0fe62532"
+      }
+    },
+    {
+      "utc": "2026-10-09T15:08:34.557586+00:00",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM1044676&targ=self&form=text&view=full",
+      "range": null,
+      "returncode": 35,
+      "stderr": "curl: (35) Recv failure: Connection reset by peer\n",
+      "body": {
+        "path": "research/results/discovery_set_validation_v1/public_sources/probes/GSM1044676.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "headers": {
+        "path": "research/results/discovery_set_validation_v1/public_sources/probes/GSM1044676.txt.headers.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "utc": "2026-10-09T15:08:38.702380+00:00",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM1044677&targ=self&form=text&view=full",
+      "range": null,
+      "returncode": 0,
+      "stderr": "",
+      "body": {
+        "path": "research/results/discovery_set_validation_v1/public_sources/probes/GSM1044677.txt",
+        "bytes": 467647,
+        "sha256": "ec1e38ab92e1255344fcc21c7752fbf704f77536519a190cdaccc24e3fe5979b"
+      },
+      "headers": {
+        "path": "research/results/discovery_set_validation_v1/public_sources/probes/GSM1044677.txt.headers.txt",
+        "bytes": 936,
+        "sha256": "f7bcb32f62486a89923ae28651f9c14460cb74fed055b6989d6a3b3486890edc"
+      }
+    },
+    {
+      "utc": "2026-10-09T15:08:45.860859+00:00",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM1044678&targ=self&form=text&view=full",
+      "range": null,
+      "returncode": 0,
+      "stderr": "",
+      "body": {
+        "path": "research/results/discovery_set_validation_v1/public_sources/probes/GSM1044678.txt",
+        "bytes": 468109,
+        "sha256": "a6e5362cd470bb6f3db9a6e966227b1c80bcd676bf618e64f9ccc8fb2d23d270"
+      },
+      "headers": {
+        "path": "research/results/discovery_set_validation_v1/public_sources/probes/GSM1044678.txt.headers.txt",
+        "bytes": 936,
+        "sha256": "178066d3016b581a3342444766ed7c21e4c352b8c542a87e8709f678147ae45c"
+      }
+    },
+    {
+      "utc": "2026-10-09T15:08:43.777727+00:00",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM1044679&targ=self&form=text&view=full",
+      "range": null,
+      "returncode": 0,
+      "stderr": "",
+      "body": {
+        "path": "research/results/discovery_set_validation_v1/public_sources/probes/GSM1044679.txt",
+        "bytes": 467954,
+        "sha256": "7964d27fe988e2030cc23693c33f3400d283daef0f44edb516a6add5e3ae0916"
+      },
+      "headers": {
+        "path": "research/results/discovery_set_validation_v1/public_sources/probes/GSM1044679.txt.headers.txt",
+        "bytes": 936,
+        "sha256": "90f4f26e0e8a29fa4b2971ea2ba31e05d27a6b553a6f00ff62b2682e260abec8"
+      }
+    },
+    {
+      "utc": "2026-10-09T15:08:46.628902+00:00",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM1044680&targ=self&form=text&view=full",
+      "range": null,
+      "returncode": 0,
+      "stderr": "",
+      "body": {
+        "path": "research/results/discovery_set_validation_v1/public_sources/probes/GSM1044680.txt",
+        "bytes": 468106,
+        "sha256": "69abaf3c1c7338c6a47737b8717d3bb3ba2788556e50eaafbf18040cf312fa35"
+      },
+      "headers": {
+        "path": "research/results/discovery_set_validation_v1/public_sources/probes/GSM1044680.txt.headers.txt",
+        "bytes": 936,
+        "sha256": "2fdab2b03e374ab0a527cc84da2ec460b305af7fa62a3aeb3167a5a11670f122"
+      }
+    },
+    {
+      "utc": "2026-10-09T15:08:47.246360+00:00",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM1044681&targ=self&form=text&view=full",
+      "range": null,
+      "returncode": 0,
+      "stderr": "",
+      "body": {
+        "path": "research/results/discovery_set_validation_v1/public_sources/probes/GSM1044681.txt",
+        "bytes": 467963,
+        "sha256": "9dc5feebb4ab338e9ad38eddd73bdf6417def008cbb9e169603aae06a1787607"
+      },
+      "headers": {
+        "path": "research/results/discovery_set_validation_v1/public_sources/probes/GSM1044681.txt.headers.txt",
+        "bytes": 936,
+        "sha256": "32bdca7b0d838ba28f08c7a9863b001f1c62d0a3cd966ace49d6a8364dae12fd"
+      }
+    },
+    {
+      "utc": "2026-10-09T15:08:48.671575+00:00",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM1044682&targ=self&form=text&view=full",
+      "range": null,
+      "returncode": 0,
+      "stderr": "",
+      "body": {
+        "path": "research/results/discovery_set_validation_v1/public_sources/probes/GSM1044682.txt",
+        "bytes": 468098,
+        "sha256": "d684d68212b21fe8df5a99e34f05c2e546a83919735ed0587817e6463722cf8f"
+      },
+      "headers": {
+        "path": "research/results/discovery_set_validation_v1/public_sources/probes/GSM1044682.txt.headers.txt",
+        "bytes": 936,
+        "sha256": "43523b03ecc8e2bb8533d337640c42114da7c699efc9f8bdfbea2e97b2aa716f"
+      }
+    }
+  ]
+}

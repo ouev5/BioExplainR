@@ -1,0 +1,20 @@
+{
+  "utc": "2026-10-09T15:42:03.801964+00:00",
+  "script": {
+    "path": "research/discovery/set_protein_numeric.py",
+    "bytes": 7386,
+    "sha256": "90eaa5b051d39065fb9c84340474ed2eb85496b7dd2a247fe0c0597131f21f23"
+  },
+  "genes": {
+    "path": "research/results/discovery_set_validation_v1/unselected_protein/frozen_genes.csv",
+    "bytes": 1490,
+    "sha256": "e1b7f7518617753bcd39df45a41be1d4d165c607178bbe28ef2756e9ccaa12b1"
+  },
+  "timing": "OriginalselectedMETTL7Aresults known, first5noncandidate24hrawrows andmetadata read; new unselected candidateLFQ not inspected",
+  "units": "All available decoded biopsy-date donor labels, three technical replicates per donor/condition; do not count technical measurements as n",
+  "quality": "Exclude Reverse+, Potentialcontaminant+, Onlyidentifiedbysite+; exact singleton Gene names + aliasMETTL7A/TMT1A, BMAL1/ARNTL; multiple matchinggroups ambiguous not selected",
+  "missing": "LFQ<=0 missing, noimputation; require >=2 of3 observed each donor/condition, mean log2LFQ acrossavailabletechnical repeats; min3 paired donors",
+  "family": "56genes x2timepoints =112two-sided pairedt/Holm; exactsignflips another112. MissingP=1/emptyCI, notnull",
+  "scale": "OriginalMaxQuantLFQ, no claim reproducing Perseusprocessedselection values",
+  "scope": "Cross-tissueHTPC, same biological source aspreviousselectedtable, notnewindependentcohort; newfullarrayreanalysis; noASMproteinclaim"
+}

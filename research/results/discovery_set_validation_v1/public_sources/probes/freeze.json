@@ -1,0 +1,81 @@
+{
+  "utc": "2026-10-09T15:08:32.991790+00:00",
+  "queries": [
+    [
+      "ebi_range.bin",
+      "https://ftp.ebi.ac.uk/pride-archive/2023/03/PXD033514/HTPCsProteome_24h_1uMdex.7z",
+      "1712825077-1713873652"
+    ],
+    [
+      "pride_range.bin",
+      "https://ftp.pride.ebi.ac.uk/pride/data/archive/2023/03/PXD033514/HTPCsProteome_24h_1uMdex.7z",
+      "1712825077-1713873652"
+    ],
+    [
+      "GSM1044671.txt",
+      "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM1044671&targ=self&form=text&view=full",
+      null
+    ],
+    [
+      "GSM1044672.txt",
+      "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM1044672&targ=self&form=text&view=full",
+      null
+    ],
+    [
+      "GSM1044673.txt",
+      "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM1044673&targ=self&form=text&view=full",
+      null
+    ],
+    [
+      "GSM1044674.txt",
+      "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM1044674&targ=self&form=text&view=full",
+      null
+    ],
+    [
+      "GSM1044675.txt",
+      "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM1044675&targ=self&form=text&view=full",
+      null
+    ],
+    [
+      "GSM1044676.txt",
+      "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM1044676&targ=self&form=text&view=full",
+      null
+    ],
+    [
+      "GSM1044677.txt",
+      "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM1044677&targ=self&form=text&view=full",
+      null
+    ],
+    [
+      "GSM1044678.txt",
+      "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM1044678&targ=self&form=text&view=full",
+      null
+    ],
+    [
+      "GSM1044679.txt",
+      "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM1044679&targ=self&form=text&view=full",
+      null
+    ],
+    [
+      "GSM1044680.txt",
+      "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM1044680&targ=self&form=text&view=full",
+      null
+    ],
+    [
+      "GSM1044681.txt",
+      "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM1044681&targ=self&form=text&view=full",
+      null
+    ],
+    [
+      "GSM1044682.txt",
+      "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM1044682&targ=self&form=text&view=full",
+      null
+    ]
+  ],
+  "script": {
+    "path": "research/discovery/set_source_probes.py",
+    "bytes": 2186,
+    "sha256": "28116a2a5d309b64cadb52ca6fb47b5eb384afd09cc5a6f5b674cd91c096654b"
+  },
+  "reason": "8MiB protein ranges repeatedly timed out; test alternate EBIhost and1MiBbudget; GEOall response truncated in platform before samples, request each actualGSM"
+}

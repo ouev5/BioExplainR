@@ -1,0 +1,39 @@
+{
+  "status": "completed_set_expansion",
+  "utc": "2026-10-09T15:51:23.313254+00:00",
+  "set_counts": {
+    "same_direction": 53,
+    "all_six_expected": 50,
+    "tpm_pass": 45,
+    "count_pass": 51,
+    "tpm_sensitivity_direction": 52,
+    "count_leave_one_direction": 52,
+    "robust_supported": 45,
+    "frozen": 54,
+    "tpm_measurable": 53,
+    "count_estimable": 53,
+    "exact_holm_pass": 0
+  },
+  "analysis_scope": "After-known-candidatesexploratory, same-sourceTPM/count sensitivity; noaggregateindependentdonortotal",
+  "unsupported_claims": [
+    "adultPER2earlythenlatewithin-donortrajectory",
+    "adultASMNR3C1causalrescue",
+    "circadianphase/amplitude",
+    "candidatecontractionfunction"
+  ],
+  "online_model_calls": 0,
+  "wet_experiments": 0,
+  "source_results": [
+    {
+      "path": "research/results/discovery_set_validation_v1/numeric_audit.json",
+      "bytes": 627,
+      "sha256": "da227b1b99ebeeffe2a606ba1332e697f189d1d49f8f88904b36b9b88cfecd77"
+    },
+    {
+      "path": "research/results/discovery_set_validation_v1/sensitivity_audit.json",
+      "bytes": 282,
+      "sha256": "9a3b7d6dffd341ca2ea78a88704a26a140dd6231d45587f01450253da9a0cdb4"
+    }
+  ],
+  "protein_status": "See unselected_protein/run.json and r_audit.json; priorselectedarrays are samebiologicalsource"
+}

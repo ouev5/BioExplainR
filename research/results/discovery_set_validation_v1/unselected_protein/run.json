@@ -1,0 +1,36 @@
+{
+  "status": "completed",
+  "utc": "2026-10-09T16:03:43.705624+00:00",
+  "script": {
+    "path": "research/discovery/set_protein_numeric.py",
+    "bytes": 7454,
+    "sha256": "0451599a5f448692750efd6442ab41d22066631d8f31cf1b3e0f31bce4dfcbf1"
+  },
+  "inputs": [
+    {
+      "path": "research/results/discovery_set_validation_v1/protein_full_tables_small/PXD033514/extracted_verified/txt/proteinGroups.txt",
+      "bytes": 32134908,
+      "sha256": "6433f8df5e440965209b0b9007f062a2c26a1828bd15a07635bdf682de1e6aa0"
+    },
+    {
+      "path": "research/results/discovery_set_validation_v1/protein_full_tables_small/PXD033514/extracted_verified/SampleNameEncription_Proteome24h.txt",
+      "bytes": 593,
+      "sha256": "3495ecb7a12e9639fd34527c7bd9fdcda2990fc9e8c89165bb0b8364551e31b6"
+    },
+    {
+      "path": "research/results/discovery_set_validation_v1/protein_full_tables_small/PXD033534/extracted/txt/proteinGroups.txt",
+      "bytes": 18116987,
+      "sha256": "e6a744816e8a3d8c80dae585da203b5d8381faa43894f6082b70afc38f4ea5c5"
+    },
+    {
+      "path": "research/results/discovery_set_validation_v1/protein_full_tables_small/PXD033534/extracted/SampleNameEncription_Proteome72h.txt",
+      "bytes": 591,
+      "sha256": "a7dc889404f5c8f69daea00e813ea6d47eeb56138964d6a07ae6abf4f5713bbd"
+    }
+  ],
+  "raw_technical_columns": 84,
+  "tests": 112,
+  "estimable": 11,
+  "significant": 4,
+  "scope": "UnselectedoriginalMaxQuantfullarrays, allactualdonorlabels; sameHTPCsource; technicalrepeatsaveraged; zerosmissing/noimputation"
+}

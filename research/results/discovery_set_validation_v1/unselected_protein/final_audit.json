@@ -1,0 +1,16 @@
+{
+  "status": "pass",
+  "utc": "2026-10-09T16:08:59.243654+00:00",
+  "complete_HTTP_range_parts": 2998,
+  "member_CRC_checks": 6,
+  "protein_sensitivity_numeric_checks": 85,
+  "published_raw_cells": 144,
+  "observed_matching_to_rounding": 142,
+  "rawzero_publishedfinite": 2,
+  "source_conflicts": [
+    "7rawdonorlabels vs6published,extra10.09.19age/QCunverified",
+    "MaxQuantparameters1.6.15vsreported1.6.11",
+    "twooriginalLFQzero cells have finitepublishedvalues"
+  ],
+  "scope": "Allsuccessfulpackedranges/CRC andraw-versus-publishedscope explicit; notwholearchiveSHA1 or freshMSsearch; samebiologicalsource"
+}

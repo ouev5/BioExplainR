@@ -1,0 +1,41 @@
+{
+  "utc": "2026-10-09T14:48:21.726657+00:00",
+  "records": [
+    {
+      "url": "https://www.ebi.ac.uk/pride/ws/archive/v2/projects/PXD033514/files?pageSize=100&page=0",
+      "utc": "2026-10-09T14:47:38.370815+00:00",
+      "returncode": 0,
+      "stderr": "",
+      "path": "research/results/discovery_set_validation_v1/public_sources/PXD033514_file_inventory.json",
+      "bytes": 48653,
+      "sha256": "900f4fd338eabd9cd6ced9d90e8219bf3c808864801b8df9b315c57b4e8f2155"
+    },
+    {
+      "url": "https://www.ebi.ac.uk/pride/ws/archive/v2/projects/PXD033534/files?pageSize=100&page=0",
+      "utc": "2026-10-09T14:47:38.266018+00:00",
+      "returncode": 0,
+      "stderr": "",
+      "path": "research/results/discovery_set_validation_v1/public_sources/PXD033534_file_inventory.json",
+      "bytes": 48590,
+      "sha256": "0ecaaf14dc24c4bd559cae19b9e3798bce295294aae7d13624c41b67f7b6d1dc"
+    },
+    {
+      "url": "https://www.ebi.ac.uk/pride/ws/archive/v2/projects/PXD033504/files?pageSize=100&page=0",
+      "utc": "2026-10-09T14:47:41.159024+00:00",
+      "returncode": 0,
+      "stderr": "",
+      "path": "research/results/discovery_set_validation_v1/public_sources/PXD033504_file_inventory.json",
+      "bytes": 97117,
+      "sha256": "a4180a5f59abb8a483217b0fcea6d25a27d8cd5e070918ee4bbe46a398b8c6a3"
+    },
+    {
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE42538&targ=all&form=text&view=full",
+      "utc": "2026-10-09T14:48:21.724394+00:00",
+      "returncode": 28,
+      "stderr": "curl: (28) Operation timed out after 45000 milliseconds with 1698328 bytes received\n",
+      "path": "research/results/discovery_set_validation_v1/public_sources/GSE42538_full_metadata.txt",
+      "bytes": 1698328,
+      "sha256": "655fdd3c0adf43e7dfb822bf5cefbe5c86e101c9f8099eedf5c236324ff689a2"
+    }
+  ]
+}

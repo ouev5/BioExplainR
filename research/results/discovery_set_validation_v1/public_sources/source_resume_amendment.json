@@ -1,0 +1,27 @@
+{
+  "utc": "2026-10-09T14:47:36.704548+00:00",
+  "script": {
+    "path": "research/discovery/set_public_sources_resume.py",
+    "bytes": 2236,
+    "sha256": "e2d8c897048ce55cf8de6e746aba124cc3368f8e19fdcf2a85e1e8809d1e2590"
+  },
+  "queries": [
+    [
+      "PXD033514_file_inventory.json",
+      "https://www.ebi.ac.uk/pride/ws/archive/v2/projects/PXD033514/files?pageSize=100&page=0"
+    ],
+    [
+      "PXD033534_file_inventory.json",
+      "https://www.ebi.ac.uk/pride/ws/archive/v2/projects/PXD033534/files?pageSize=100&page=0"
+    ],
+    [
+      "PXD033504_file_inventory.json",
+      "https://www.ebi.ac.uk/pride/ws/archive/v2/projects/PXD033504/files?pageSize=100&page=0"
+    ],
+    [
+      "GSE42538_full_metadata.txt",
+      "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE42538&targ=all&form=text&view=full"
+    ]
+  ],
+  "reason": "Initial incorrect PRIDE file endpoint returned empty bodies; use projects/accession/files and retain failed inputs"
+}

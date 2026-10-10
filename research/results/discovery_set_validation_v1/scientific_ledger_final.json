@@ -1,0 +1,75 @@
+{
+  "status": "completed_public_data_set_and_unselected_protein",
+  "utc": "2026-10-09T16:17:10.763034+00:00",
+  "previous_stage": {
+    "path": "research/results/discovery_set_validation_v1/scientific_ledger.json",
+    "bytes": 1305,
+    "sha256": "0739f34c6af7538cb3dcc2b9c43b403e9345d80042c0c253067144d6077bdc95"
+  },
+  "set_counts": {
+    "same_direction": 53,
+    "all_six_expected": 50,
+    "tpm_pass": 45,
+    "count_pass": 51,
+    "tpm_sensitivity_direction": 52,
+    "count_leave_one_direction": 52,
+    "robust_supported": 45,
+    "frozen": 54,
+    "tpm_measurable": 53,
+    "count_estimable": 53,
+    "exact_holm_pass": 0
+  },
+  "secondary_GNAS_interactions": {
+    "tpm": [],
+    "count": []
+  },
+  "protein": {
+    "original_groups": [
+      4043,
+      3097
+    ],
+    "raw_donor_labels_per_assay": 7,
+    "published_donors_per_assay": 6,
+    "new_donor_independence": "sameHTPCsource; extra10.09.19age/QCunverified",
+    "tests": 112,
+    "estimable": 11,
+    "Holm_pass": 4,
+    "raw_LFQ_measurements": 924,
+    "complete_HTTP_parts": 2998,
+    "member_CRCs": 6,
+    "conflicts": [
+      "raw7/published6labels",
+      "MaxQuant1.6.15/reported1.6.11",
+      "2rawLFQzeroswithpublishedfinitevalues"
+    ],
+    "exact_fullfamily": "notconfirmed",
+    "direct_time_scope": "exploratoryresponsecontrast across separatelyprocessedassays,notproteinaccumulation"
+  },
+  "actual_BioExplainR_contexts": 5,
+  "online_model_calls": 0,
+  "wet_experiments": 0,
+  "report": "docs/paper_cn_v6/README.md",
+  "GSE42538": "complete12samplemetadata,excludednosteroidfactor,notASM",
+  "source_audits": [
+    {
+      "path": "research/results/discovery_set_validation_v1/unselected_protein/r_audit.json",
+      "bytes": 245,
+      "sha256": "475654e9b96dfc266339161e0877cea70dd748d9f100af2f1e8c3c0c2c127c5a"
+    },
+    {
+      "path": "research/results/discovery_set_validation_v1/unselected_protein/r_sensitivity_audit.json",
+      "bytes": 187,
+      "sha256": "c5d1132d0ae50595648d23ce242bcad1165b8103f3de13ba7bf416e41577cc65"
+    },
+    {
+      "path": "research/results/discovery_set_validation_v1/unselected_protein/final_audit.json",
+      "bytes": 620,
+      "sha256": "828a6ce94f532941123cd5f7914e24d84f3d243480403c172a7a7b9ed6da1a25"
+    },
+    {
+      "path": "research/results/discovery_set_validation_v1/unselected_protein/bioexplainr_workflow.json",
+      "bytes": 150,
+      "sha256": "49ecef6528fec7b60432c8568fd5cc8b7dbab60ff8f957ad4a5b9616967833eb"
+    }
+  ]
+}

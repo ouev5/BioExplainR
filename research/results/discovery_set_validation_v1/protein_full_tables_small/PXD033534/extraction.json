@@ -1,0 +1,32 @@
+{
+  "status": "pass",
+  "utc": "2026-10-09T16:00:37.667564+00:00",
+  "outputs": [
+    {
+      "path": "research/results/discovery_set_validation_v1/protein_full_tables_small/PXD033534/extracted/SampleNameEncription_Proteome72h.txt",
+      "bytes": 591,
+      "sha256": "a7dc889404f5c8f69daea00e813ea6d47eeb56138964d6a07ae6abf4f5713bbd",
+      "crc32": 208374003,
+      "member": "SampleNameEncription_Proteome72h.txt"
+    },
+    {
+      "path": "research/results/discovery_set_validation_v1/protein_full_tables_small/PXD033534/extracted/txt/parameters.txt",
+      "bytes": 3628,
+      "sha256": "d120e6b0d5ee8a211ff5ac5ea979e9e3ebbcef70649eed70547cb5b82c379584",
+      "crc32": 700004154,
+      "member": "txt/parameters.txt"
+    },
+    {
+      "path": "research/results/discovery_set_validation_v1/protein_full_tables_small/PXD033534/extracted/txt/proteinGroups.txt",
+      "bytes": 18116987,
+      "sha256": "e6a744816e8a3d8c80dae585da203b5d8381faa43894f6082b70afc38f4ea5c5",
+      "crc32": 1018836620,
+      "member": "txt/proteinGroups.txt"
+    }
+  ],
+  "partial_container": true,
+  "whole_archive_SHA1_verified": false,
+  "downloaded_block_bytes": 503686729,
+  "range_parts": 1922,
+  "scope": "Complete unselected MaxQuant proteinGroups with per-member CRC, original mapping and processing parameters"
+}
