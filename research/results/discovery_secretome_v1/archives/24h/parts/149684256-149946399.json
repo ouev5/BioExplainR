@@ -1,0 +1,57 @@
+{
+  "status": "pass",
+  "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2023/03/PXD033504/HTPCsSecretome_24h_1uMdex.7z",
+  "start": 149684256,
+  "end": 149946399,
+  "last_modified": "Sat, 11 Mar 2023 12:11:51 GMT",
+  "body": {
+    "path": "research/results/discovery_secretome_v1/archives/24h/parts/149684256-149946399.bin",
+    "bytes": 262144,
+    "sha256": "13f563828bb69e4ce138d23e0519f60fd66eae7d21756c43079852532cf6b961"
+  },
+  "attempts": [
+    {
+      "utc": "2026-10-09T23:52:07.189261+00:00",
+      "returncode": 28,
+      "bytes": 0,
+      "stderr": "curl: (28) Operation timed out after 45002 milliseconds with 0 bytes received\n",
+      "header": {
+        "path": "research/results/discovery_secretome_v1/archives/24h/parts/149684256-149946399.attempt1.headers.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "failed_body": {
+        "path": "research/results/discovery_secretome_v1/archives/24h/parts/149684256-149946399.attempt1.partial.bin",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "utc": "2026-10-09T23:52:54.204419+00:00",
+      "returncode": 28,
+      "bytes": 223718,
+      "stderr": "curl: (28) Operation timed out after 45000 milliseconds with 223718 out of 262144 bytes received\n",
+      "header": {
+        "path": "research/results/discovery_secretome_v1/archives/24h/parts/149684256-149946399.attempt2.headers.txt",
+        "bytes": 474,
+        "sha256": "3108e961884c35eb02d10ee0dbf2c52fe09dc2d1ec9d464ce6cccb49a4e7ba55"
+      },
+      "failed_body": {
+        "path": "research/results/discovery_secretome_v1/archives/24h/parts/149684256-149946399.attempt2.partial.bin",
+        "bytes": 223718,
+        "sha256": "68a41302481c45a12fe7a23b5babd80d19985bd751f120ca7b0b591144442fb3"
+      }
+    },
+    {
+      "utc": "2026-10-09T23:52:59.776565+00:00",
+      "returncode": 0,
+      "bytes": 262144,
+      "stderr": "",
+      "header": {
+        "path": "research/results/discovery_secretome_v1/archives/24h/parts/149684256-149946399.attempt3.headers.txt",
+        "bytes": 474,
+        "sha256": "2e67aa2bdf9b8ab563e1c76e1928c6c20bc1548c3387802951626abd094c5526"
+      }
+    }
+  ]
+}
