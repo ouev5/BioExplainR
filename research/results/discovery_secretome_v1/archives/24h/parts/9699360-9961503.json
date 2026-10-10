@@ -1,0 +1,41 @@
+{
+  "status": "pass",
+  "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2023/03/PXD033504/HTPCsSecretome_24h_1uMdex.7z",
+  "start": 9699360,
+  "end": 9961503,
+  "last_modified": "Sat, 11 Mar 2023 12:11:51 GMT",
+  "body": {
+    "path": "research/results/discovery_secretome_v1/archives/24h/parts/9699360-9961503.bin",
+    "bytes": 262144,
+    "sha256": "d0e60f8b2800f1b9546ca3fac5c1989b2dc493da8f9e1391a32c9ba93b609011"
+  },
+  "attempts": [
+    {
+      "utc": "2026-10-09T23:48:49.302163+00:00",
+      "returncode": 7,
+      "bytes": 0,
+      "stderr": "curl: (7) Failed to connect to ftp.pride.ebi.ac.uk port 443 after 227 ms: Couldn't connect to server\n",
+      "header": {
+        "path": "research/results/discovery_secretome_v1/archives/24h/parts/9699360-9961503.attempt1.headers.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "failed_body": {
+        "path": "research/results/discovery_secretome_v1/archives/24h/parts/9699360-9961503.attempt1.partial.bin",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "utc": "2026-10-09T23:48:50.822657+00:00",
+      "returncode": 0,
+      "bytes": 262144,
+      "stderr": "",
+      "header": {
+        "path": "research/results/discovery_secretome_v1/archives/24h/parts/9699360-9961503.attempt2.headers.txt",
+        "bytes": 470,
+        "sha256": "e43caa69d38ef8686a654307e266889a4d886c92e7904221b7e1d9d7e17b31b0"
+      }
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "utc": "2026-10-09T23:48:12.683296+00:00",
+  "bytes": 267099,
+  "range_records": [
+    {
+      "utc": "2026-10-09T23:48:12.076463+00:00",
+      "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2023/03/PXD033504/HTPCsSecretome_72h_1uMdex.7z",
+      "start": 0,
+      "end": 262143,
+      "returncode": 0,
+      "stderr": "",
+      "body": {
+        "path": "research/results/discovery_secretome_v1/archives/72h/0-262143.bin",
+        "bytes": 262144,
+        "sha256": "bf0d1e4e311c0d3cf02651a249d5067d3ff1c427c68eda6d450c86d2f83dfac3"
+      },
+      "headers": {
+        "path": "research/results/discovery_secretome_v1/archives/72h/0-262143.headers.txt",
+        "bytes": 463,
+        "sha256": "cdee6dee393675ffbfe62770c46a8450aaa21f5b03331cab8bb089f6d15edc2d"
+      }
+    },
+    {
+      "utc": "2026-10-09T23:48:12.682172+00:00",
+      "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2023/03/PXD033504/HTPCsSecretome_72h_1uMdex.7z",
+      "start": 645398528,
+      "end": 645403482,
+      "returncode": 0,
+      "stderr": "",
+      "body": {
+        "path": "research/results/discovery_secretome_v1/archives/72h/645398528-645403482.bin",
+        "bytes": 4955,
+        "sha256": "7b75bc38de5461d683bfb3535558bff20e60a7939eeb5630eb86ceafdb1aa89c"
+      },
+      "headers": {
+        "path": "research/results/discovery_secretome_v1/archives/72h/645398528-645403482.headers.txt",
+        "bytes": 472,
+        "sha256": "84d7164aea8bd6f41afa18239c3f2c2eb7e92095703103da5efe8f458fc703ac"
+      }
+    }
+  ]
+}

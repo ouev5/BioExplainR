@@ -1,0 +1,33 @@
+{
+  "status": "pass",
+  "utc": "2026-10-09T23:48:12.683269+00:00",
+  "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2023/03/PXD033504/HTPCsSecretome_72h_1uMdex.7z",
+  "container_bytes": 645403483,
+  "upstream_sha1": "080485c328a5fcdea0039318cbf206c2d752d193",
+  "targets": [
+    "SampleNameEncription_Secretome72h.txt",
+    "txt/parameters.txt",
+    "txt/proteinGroups.txt",
+    "txt/summary.txt"
+  ],
+  "needed_blocks": [
+    0,
+    1
+  ],
+  "packed_blocks": [
+    {
+      "block": 0,
+      "start": 32,
+      "end": 639940869,
+      "bytes": 639940838
+    },
+    {
+      "block": 1,
+      "start": 639940870,
+      "end": 645402964,
+      "bytes": 5462095
+    }
+  ],
+  "partial_container": true,
+  "whole_archive_SHA1_verified": false
+}
