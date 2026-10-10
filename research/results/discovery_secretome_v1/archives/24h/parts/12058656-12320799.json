@@ -1,0 +1,57 @@
+{
+  "status": "pass",
+  "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2023/03/PXD033504/HTPCsSecretome_24h_1uMdex.7z",
+  "start": 12058656,
+  "end": 12320799,
+  "last_modified": "Sat, 11 Mar 2023 12:11:51 GMT",
+  "body": {
+    "path": "research/results/discovery_secretome_v1/archives/24h/parts/12058656-12320799.bin",
+    "bytes": 262144,
+    "sha256": "d9bf66b38799333d4cc87877af22c8e36f03ef9379800ecfc8eb117dc02b3c86"
+  },
+  "attempts": [
+    {
+      "utc": "2026-10-09T23:48:49.727116+00:00",
+      "returncode": 7,
+      "bytes": 0,
+      "stderr": "curl: (7) Failed to connect to ftp.pride.ebi.ac.uk port 443 after 175 ms: Couldn't connect to server\n",
+      "header": {
+        "path": "research/results/discovery_secretome_v1/archives/24h/parts/12058656-12320799.attempt1.headers.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "failed_body": {
+        "path": "research/results/discovery_secretome_v1/archives/24h/parts/12058656-12320799.attempt1.partial.bin",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "utc": "2026-10-09T23:48:49.956256+00:00",
+      "returncode": 7,
+      "bytes": 0,
+      "stderr": "curl: (7) Failed to connect to ftp.pride.ebi.ac.uk port 443 after 222 ms: Couldn't connect to server\n",
+      "header": {
+        "path": "research/results/discovery_secretome_v1/archives/24h/parts/12058656-12320799.attempt2.headers.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "failed_body": {
+        "path": "research/results/discovery_secretome_v1/archives/24h/parts/12058656-12320799.attempt2.partial.bin",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "utc": "2026-10-09T23:48:51.773553+00:00",
+      "returncode": 0,
+      "bytes": 262144,
+      "stderr": "",
+      "header": {
+        "path": "research/results/discovery_secretome_v1/archives/24h/parts/12058656-12320799.attempt3.headers.txt",
+        "bytes": 472,
+        "sha256": "fa3a8e8e9bf42d5e76eca8baa27d5fa8ed958c0d18bed88566dc1030393988b5"
+      }
+    }
+  ]
+}

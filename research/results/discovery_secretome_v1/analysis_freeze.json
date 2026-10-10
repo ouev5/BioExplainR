@@ -1,0 +1,69 @@
+{
+  "utc": "2026-10-09T23:47:57.338473+00:00",
+  "protocol": {
+    "path": "research/discovery/SECRETOME_PROTOCOL.md",
+    "bytes": 3442,
+    "sha256": "e031f58f0024acffb2b346dd7609c656dddb90994956f8bf7ba4216b30aa15ba"
+  },
+  "script": {
+    "path": "research/discovery/secretome_acquire.py",
+    "bytes": 9997,
+    "sha256": "4b2a810a835573ac3df48df2fc028cff1b55466bd779482bc1da584035d0f028"
+  },
+  "inputs": [
+    {
+      "path": "research/results/discovery_set_validation_v1/annotation.csv",
+      "bytes": 2858,
+      "sha256": "cd671905ea95a7e130525adf998d912bd84d52cfa479fdb8fd6793b3fe9864c9"
+    },
+    {
+      "path": "research/results/discovery_set_validation_v1/public_sources/PXD033504_file_inventory.json",
+      "bytes": 97117,
+      "sha256": "a4180a5f59abb8a483217b0fcea6d25a27d8cd5e070918ee4bbe46a398b8c6a3"
+    },
+    {
+      "path": "research/results/discovery_set_validation_v1/public_sources/protein_file_inventory.csv",
+      "bytes": 28330,
+      "sha256": "0470d5447b119780e6f3c968bc4ee3ce2ffa2bd56dcadfaf2d98567a44f22e84"
+    },
+    {
+      "path": "research/results/discovery_validation_v2/human_protein/PMC9562650.xml",
+      "bytes": 194407,
+      "sha256": "20977d6e0410203f40701c5fc0cee64b936d3acb6d59f242e1557ffba0052ab8"
+    },
+    {
+      "path": "research/results/discovery_validation_v2/human_protein/Table S2.xlsx",
+      "bytes": 636292,
+      "sha256": "a5cc4a4973e75d587060f151ccd868c5dc365ffa653c2e6b8bde07a839463e5d"
+    },
+    {
+      "path": "docs/paper_cn_v6/manuscript_manifest.json",
+      "bytes": 8647030,
+      "sha256": "b5081d279715ed4aa3182583322e18cf872da033af18542f333ad89528ea973b"
+    },
+    {
+      "path": "research/results/latest_manifest.json",
+      "bytes": 2837225,
+      "sha256": "093a4cee15de1a7d35b6e4ec6fef5b08956003b5c56b37ccb8816bc8ed473cbb"
+    }
+  ],
+  "genes": {
+    "path": "research/results/discovery_secretome_v1/frozen_genes.csv",
+    "bytes": 2930,
+    "sha256": "01bda9e58ca4a981b43796627b2d470ae6378d402777542bae09518c7de3ea1d"
+  },
+  "inventory": {
+    "path": "research/results/discovery_secretome_v1/file_inventory.csv",
+    "bytes": 14134,
+    "sha256": "1633af8f8df54ddcf4bd25bf12a5fe9b9722a7f63af1b6957592a8a40b249ce5"
+  },
+  "snapshot": {
+    "path": "research/results/discovery_secretome_v1/rgo_before_secretome.md",
+    "bytes": 66637,
+    "sha256": "2a2c8d0039da27bc1506fdafc0db80265bf628983c8fc8e389acb31ec96d9185"
+  },
+  "timing": "Prior ASM results and published detection known; original secretome candidate LFQ not read",
+  "candidate_family": 112,
+  "full_family": "All QC-passing protein groups across both timepoints; missing P=1",
+  "method": "LFQ zeros missing/no imputation; >=2/3 technical repeats per condition, >=3 paired donor labels"
+}
