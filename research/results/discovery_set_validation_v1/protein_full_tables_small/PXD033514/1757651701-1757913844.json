@@ -1,0 +1,41 @@
+{
+  "status": "pass",
+  "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2023/03/PXD033514/HTPCsProteome_24h_1uMdex.7z",
+  "start": 1757651701,
+  "end": 1757913844,
+  "last_modified": "Sat, 11 Mar 2023 12:30:13 GMT",
+  "body": {
+    "path": "research/results/discovery_set_validation_v1/protein_full_tables_small/PXD033514/1757651701-1757913844.bin",
+    "bytes": 262144,
+    "sha256": "e6db209dcc45f7e29434d0560da3a431b4e67b5ba2c44da850ca4429d5bc3f9b"
+  },
+  "attempts": [
+    {
+      "utc": "2026-10-09T15:19:26.151969+00:00",
+      "returncode": 7,
+      "bytes": 0,
+      "stderr": "curl: (7) Failed to connect to ftp.pride.ebi.ac.uk port 443 after 182 ms: Couldn't connect to server\n",
+      "header": {
+        "path": "research/results/discovery_set_validation_v1/protein_full_tables_small/PXD033514/1757651701-1757913844.attempt4.headers.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "failed_body": {
+        "path": "research/results/discovery_set_validation_v1/protein_full_tables_small/PXD033514/1757651701-1757913844.attempt4.partial.bin",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "utc": "2026-10-09T15:19:42.967503+00:00",
+      "returncode": 0,
+      "bytes": 262144,
+      "stderr": "",
+      "header": {
+        "path": "research/results/discovery_set_validation_v1/protein_full_tables_small/PXD033514/1757651701-1757913844.attempt5.headers.txt",
+        "bytes": 477,
+        "sha256": "ed9e95403638a4a41076ec17048f933f34474b47c12f187da9a23bbf077ec8ad"
+      }
+    }
+  ]
+}
