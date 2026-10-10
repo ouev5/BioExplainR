@@ -1,0 +1,56 @@
+{
+  "status": "failed",
+  "url": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2023/03/PXD033514/HTPCsProteome_24h_1uMdex.7z",
+  "start": 1931453173,
+  "end": 1931715316,
+  "attempts": [
+    {
+      "utc": "2026-10-09T15:26:16.670143+00:00",
+      "returncode": 7,
+      "bytes": 0,
+      "stderr": "curl: (7) Failed to connect to ftp.pride.ebi.ac.uk port 443 after 191 ms: Couldn't connect to server\n",
+      "header": {
+        "path": "research/results/discovery_set_validation_v1/protein_full_tables_small/PXD033514/1931453173-1931715316.attempt4.headers.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "failed_body": {
+        "path": "research/results/discovery_set_validation_v1/protein_full_tables_small/PXD033514/1931453173-1931715316.attempt4.partial.bin",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "utc": "2026-10-09T15:26:19.343552+00:00",
+      "returncode": 18,
+      "bytes": 87715,
+      "stderr": "curl: (18) transfer closed with 174429 bytes remaining to read\n",
+      "header": {
+        "path": "research/results/discovery_set_validation_v1/protein_full_tables_small/PXD033514/1931453173-1931715316.attempt5.headers.txt",
+        "bytes": 477,
+        "sha256": "c8c42e197b746048c72ab4c66da649912dd63ecee6fde24145ce6f5aeaf4dc2e"
+      },
+      "failed_body": {
+        "path": "research/results/discovery_set_validation_v1/protein_full_tables_small/PXD033514/1931453173-1931715316.attempt5.partial.bin",
+        "bytes": 87715,
+        "sha256": "c5143fbe61a7a24e4241821e4ef4953c3ec2ca0d854847743c2da0f33eab3ab8"
+      }
+    },
+    {
+      "utc": "2026-10-09T15:26:34.211897+00:00",
+      "returncode": 18,
+      "bytes": 215715,
+      "stderr": "curl: (18) transfer closed with 46429 bytes remaining to read\n",
+      "header": {
+        "path": "research/results/discovery_set_validation_v1/protein_full_tables_small/PXD033514/1931453173-1931715316.attempt6.headers.txt",
+        "bytes": 477,
+        "sha256": "1d46b9084100113b3c3ca77f7feb983f5f8375f4f77e2e03906bccdac9e95cfe"
+      },
+      "failed_body": {
+        "path": "research/results/discovery_set_validation_v1/protein_full_tables_small/PXD033514/1931453173-1931715316.attempt6.partial.bin",
+        "bytes": 215715,
+        "sha256": "a624ace6c44538075ce6e78537843ca8c9e445548f34443a47a061857f7588cb"
+      }
+    }
+  ]
+}
